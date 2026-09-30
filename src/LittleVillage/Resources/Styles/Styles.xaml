@@ -12,6 +12,10 @@
     <x:String x:Key="GameTitle">Mała wioska</x:String>
     <x:String x:Key="GameSubtitle">Opowieść z zapomnianej wsi</x:String>
 
+    <!-- Menu główne: podtytuł czytany razem z nazwą wsi -->
+    <x:String x:Key="MainMenuSubtitle">Opowieść z małej zapomnianej wsi zwanej</x:String>
+    <x:String x:Key="MainMenuTitle">Zapadlina</x:String>
+
     <!-- ===== Style domyślne ===== -->
 
     <Style TargetType="Page" ApplyToDerivedTypes="True">

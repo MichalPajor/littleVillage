@@ -20,8 +20,8 @@
 
             <VerticalStackLayout Padding="26,30,26,28" Spacing="0">
 
-                <Label Text="{StaticResource GameSubtitle}" Style="{StaticResource StoryChapter}" />
-                <Label Text="{StaticResource GameTitle}" Style="{StaticResource StoryTitle}" FontSize="46" />
+                <Label Text="{StaticResource MainMenuSubtitle}" Style="{StaticResource StoryChapter}" />
+                <Label Text="{StaticResource MainMenuTitle}" Style="{StaticResource StoryTitle}" FontSize="46" />
                 <Image
                     Source="decor_underline.png"
                     WidthRequest="190"
