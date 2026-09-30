@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — ikona: księżyc, świerk i kropla krwi -->
+<svg xmlns="http://www.w3.org/2000/svg" width="456" height="456" viewBox="0 0 456 456">
+<circle cx="250" cy="200" r="92" fill="#EDEBE6"/>
+<circle cx="222" cy="176" r="13" fill="none" stroke="#000000" stroke-width="5"/>
+<circle cx="276" cy="226" r="9" fill="none" stroke="#000000" stroke-width="4"/>
+<path d="M176 336L204 270L192 272L212 222L200 224L220 168L210 170L228 120L246 170L236 168L256 224L244 222L264 272L252 270L280 336Z" fill="#000000" stroke="#EDEBE6" stroke-width="6" stroke-linejoin="round"/>
+<path d="M300 300C300 316 290 326 296 340C306 326 304 314 300 300Z" fill="#A8101A"/>
+<circle cx="298" cy="348" r="8" fill="#A8101A"/>
+</svg>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:BasePage
+    x:Class="LittleVillage.Views.GamePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:LittleVillage.Controls"
+    xmlns:story="clr-namespace:LittleVillage.Core.Story;assembly=LittleVillage.Core"
+    xmlns:views="clr-namespace:LittleVillage.Views"
+    xmlns:vm="clr-namespace:LittleVillage.ViewModels"
+    x:DataType="vm:GameViewModel">
+
+    <views:BasePage.Resources>
+        <!-- Wygląd elementów tekstu fabuły -->
+        <controls:StoryBlockTemplateSelector x:Key="StoryBlockSelector">
+            <controls:StoryBlockTemplateSelector.ChapterTemplate>
+                <DataTemplate x:DataType="story:StoryBlock">
+                    <Label Text="{Binding Text}" Style="{StaticResource StoryChapter}" Margin="0,0,0,-14" />
+                </DataTemplate>
+            </controls:StoryBlockTemplateSelector.ChapterTemplate>
+
+            <controls:StoryBlockTemplateSelector.TitleTemplate>
+                <DataTemplate x:DataType="story:StoryBlock">
+                    <VerticalStackLayout Spacing="0">
+                        <Label Text="{Binding Text}" Style="{StaticResource StoryTitle}" />
+                        <Image Source="decor_underline.png" WidthRequest="190" HeightRequest="10" Aspect="Fill" HorizontalOptions="Start" />
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </controls:StoryBlockTemplateSelector.TitleTemplate>
+
+            <controls:StoryBlockTemplateSelector.ParagraphTemplate>
+                <DataTemplate x:DataType="story:StoryBlock">
+                    <controls:StoryTextLabel
+                        Style="{StaticResource StoryParagraph}"
+                        StoryText="{Binding Text}"
+                        HasDropCap="{Binding HasDropCap}" />
+                </DataTemplate>
+            </controls:StoryBlockTemplateSelector.ParagraphTemplate>
+
+            <controls:StoryBlockTemplateSelector.DividerTemplate>
+                <DataTemplate x:DataType="story:StoryBlock">
+                    <Image Source="decor_divider.png" HeightRequest="18" Aspect="AspectFit" HorizontalOptions="Fill" />
+                </DataTemplate>
+            </controls:StoryBlockTemplateSelector.DividerTemplate>
+        </controls:StoryBlockTemplateSelector>
+    </views:BasePage.Resources>
+
+    <!-- Proporcje z makiety 390×844: okno fabuły zaczyna się na wysokości 432. -->
+    <Grid RowDefinitions="432*,412*">
+
+        <!-- Tło sceny z animowanymi warstwami -->
+        <controls:SceneBackgroundView Grid.RowSpan="2" Scene="{Binding Scene}" />
+
+        <!-- Ekwipunek -->
+        <controls:SketchIconButton
+            Grid.Row="0"
+            Margin="0,28,12,0"
+            HorizontalOptions="End"
+            VerticalOptions="Start"
+            FaceSize="58,58"
+            IconSize="34"
+            Icon="ic_backpack.png"
+            StrokeThickness="4"
+            CornerRadius="14,10,9,16"
+            Command="{Binding OpenInventoryCommand}"
+            SemanticProperties.Description="Otwórz ekwipunek" />
+
+        <!-- Okno fabuły; dolna krawędź schowana poza ekranem (ujemny margines) -->
+        <controls:InkFrame
+            Grid.Row="1"
+            Margin="12,0,12,-16"
+            FrameCornerRadius="6,10,0,0"
+            controls:SlideAway.IsCollapsed="{Binding IsPanelCollapsed}"
+            controls:SlideAway.ExtraDistance="28"
+            SemanticProperties.Description="Tekst fabuły">
+
+            <ScrollView x:Name="StoryScroll" Margin="4,4,2,0">
+                <VerticalStackLayout x:Name="StoryContent" Padding="16,34,14,56" Spacing="14">
+
+                    <VerticalStackLayout
+                        Spacing="14"
+                        BindableLayout.ItemsSource="{Binding Blocks}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource StoryBlockSelector}" />
+
+                    <Label Text="{Binding Question}" Style="{StaticResource StoryQuestion}" IsVisible="{Binding HasChoices}" />
+
+                    <VerticalStackLayout Spacing="12" BindableLayout.ItemsSource="{Binding Choices}">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="vm:ChoiceViewModel">
+                                <controls:SketchChoiceButton
+                                    Numeral="{Binding Numeral}"
+                                    Text="{Binding Text}"
+                                    IsSelected="{Binding IsSelected}"
+                                    CornerRadius="{Binding CornerRadius}"
+                                    Command="{Binding SelectCommand}"
+                                    SemanticProperties.Description="{Binding Text}" />
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </VerticalStackLayout>
+
+                    <Grid x:Name="StoryFooter" MinimumHeightRequest="76">
+                        <Label
+                            Text="Wybierz, co robisz, by pójść dalej."
+                            Style="{StaticResource Hint}"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            IsVisible="{Binding ShowChoiceHint}" />
+                        <controls:SketchIconButton
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            FaceSize="66,66"
+                            IconSize="38"
+                            Icon="ic_arrow_right.png"
+                            StrokeThickness="4"
+                            ShadowOffset="5"
+                            CornerRadius="16,11,10,18"
+                            Command="{Binding AdvanceCommand}"
+                            IsVisible="{Binding CanAdvance}"
+                            SemanticProperties.Description="Dalej" />
+                    </Grid>
+                </VerticalStackLayout>
+            </ScrollView>
+        </controls:InkFrame>
+
+        <!-- Zwiń / rozwiń okno fabuły -->
+        <controls:SketchIconButton
+            Grid.Row="1"
+            Margin="0,-20,30,0"
+            HorizontalOptions="End"
+            VerticalOptions="Start"
+            FaceSize="44,44"
+            IconSize="22"
+            StrokeThickness="3"
+            ShadowOffset="3"
+            CornerRadius="10,12,13,9"
+            Command="{Binding TogglePanelCommand}"
+            controls:SlideAway.IsCollapsed="{Binding IsPanelCollapsed}"
+            controls:SlideAway.IncludeWidth="False"
+            controls:SlideAway.ExtraDistance="8"
+            SemanticProperties.Description="Ukryj lub pokaż okno fabuły">
+            <controls:SketchIconButton.Style>
+                <Style TargetType="controls:SketchIconButton">
+                    <Setter Property="Icon" Value="ic_panel_hide.png" />
+                    <Style.Triggers>
+                        <DataTrigger TargetType="controls:SketchIconButton" Binding="{Binding IsPanelCollapsed}" Value="True">
+                            <Setter Property="Icon" Value="ic_panel_show.png" />
+                            <Setter Property="CornerRadius" Value="12,0,12,0" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </controls:SketchIconButton.Style>
+        </controls:SketchIconButton>
+
+        <!-- ===== Ekwipunek (nakładka) ===== -->
+        <Grid Grid.RowSpan="2" IsVisible="{Binding IsInventoryOpen}">
+            <BoxView Color="{StaticResource Scrim}">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding CloseInventoryCommand}" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+
+            <controls:InkFrame
+                x:Name="InventoryFrame"
+                Margin="24,72"
+                FrameBackgroundColor="{StaticResource Paper}"
+                MaximumWidthRequest="420"
+                VerticalOptions="Center">
+                <!-- Okno dopasowuje się do liczby przedmiotów; przy długiej liście lista się przewija. -->
+                <Grid Padding="22,26,18,24" RowDefinitions="Auto,Auto,Auto" RowSpacing="0">
+
+                    <Label Text="Ekwipunek" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
+                    <controls:SketchIconButton
+                        HorizontalOptions="End"
+                        VerticalOptions="Start"
+                        FaceSize="40,40"
+                        IconSize="20"
+                        Icon="ic_close.png"
+                        StrokeThickness="3"
+                        ShadowOffset="3"
+                        Command="{Binding CloseInventoryCommand}"
+                        SemanticProperties.Description="Zamknij ekwipunek" />
+
+                    <Image Grid.Row="1" Source="decor_underline.png" WidthRequest="150" HeightRequest="8" Aspect="Fill" HorizontalOptions="Start" />
+
+                    <ScrollView Grid.Row="2" Margin="0,18,0,0" MaximumHeightRequest="440">
+                        <VerticalStackLayout Spacing="16">
+                            <Label Text="Twój tobołek jest pusty." Style="{StaticResource Hint}" IsVisible="{Binding HasInventoryItems, Converter={StaticResource InvertedBool}}" />
+                            <VerticalStackLayout Spacing="16" BindableLayout.ItemsSource="{Binding InventoryItems}">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate x:DataType="story:InventoryItem">
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="{Binding Name}" Style="{StaticResource ItemName}" />
+                                            <Label Text="{Binding Description}" Style="{StaticResource Hint}" LineHeight="1.35" />
+                                        </VerticalStackLayout>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </VerticalStackLayout>
+                        </VerticalStackLayout>
+                    </ScrollView>
+                </Grid>
+            </controls:InkFrame>
+        </Grid>
+    </Grid>
+
+</views:BasePage>

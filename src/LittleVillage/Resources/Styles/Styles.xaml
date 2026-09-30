@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <!-- Konwertery (CommunityToolkit.Maui) -->
+    <toolkit:InvertedBoolConverter x:Key="InvertedBool" />
+
+    <!-- Teksty stałe gry -->
+    <x:String x:Key="GameTitle">Mała wioska</x:String>
+    <x:String x:Key="GameSubtitle">Opowieść z zapomnianej wsi</x:String>
+
+    <!-- ===== Style domyślne ===== -->
+
+    <Style TargetType="Page" ApplyToDerivedTypes="True">
+        <Setter Property="BackgroundColor" Value="{StaticResource Ink}" />
+        <Setter Property="Padding" Value="0" />
+    </Style>
+
+    <Style TargetType="Shell" ApplyToDerivedTypes="True">
+        <Setter Property="Shell.BackgroundColor" Value="{StaticResource Ink}" />
+        <Setter Property="Shell.NavBarIsVisible" Value="False" />
+        <Setter Property="Shell.FlyoutBehavior" Value="Disabled" />
+    </Style>
+
+    <!-- Baza wszystkich etykiet. Style z kluczem dziedziczą po niej (BasedOn),
+         bo jawny styl w MAUI zastępuje styl domyślny zamiast go uzupełniać. -->
+    <Style x:Key="BaseLabel" TargetType="Label">
+        <Setter Property="FontFamily" Value="Alegreya" />
+        <Setter Property="FontSize" Value="17" />
+        <Setter Property="TextColor" Value="{StaticResource Ink}" />
+    </Style>
+
+    <Style TargetType="Label" BasedOn="{StaticResource BaseLabel}" />
+
+    <Style TargetType="ScrollView">
+        <Setter Property="VerticalScrollBarVisibility" Value="Default" />
+    </Style>
+
+    <!-- ===== Tekst fabuły (wartości z makiety) ===== -->
+
+    <!-- „Rozdział pierwszy” -->
+    <Style x:Key="StoryChapter" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+        <Setter Property="FontFamily" Value="AlegreyaItalic" />
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="TextColor" Value="{StaticResource Ash}" />
+    </Style>
+
+    <!-- Tytuły: gry, rozdziałów, okien -->
+    <Style x:Key="StoryTitle" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+        <Setter Property="FontFamily" Value="PirataOne" />
+        <Setter Property="FontSize" Value="38" />
+        <Setter Property="LineHeight" Value="1.05" />
+    </Style>
+
+    <Style x:Key="StoryParagraph" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+        <Setter Property="FontSize" Value="17" />
+        <Setter Property="LineHeight" Value="1.55" />
+        <Setter Property="LineBreakMode" Value="WordWrap" />
+    </Style>
+
+    <!-- „Co robisz?” -->
+    <Style x:Key="StoryQuestion" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+        <Setter Property="FontFamily" Value="PirataOne" />
+        <Setter Property="FontSize" Value="28" />
+        <Setter Property="LineHeight" Value="1.1" />
+    </Style>
+
+    <!-- Podpowiedzi, podpisy -->
+    <Style x:Key="Hint" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+        <Setter Property="FontFamily" Value="AlegreyaItalic" />
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="TextColor" Value="{StaticResource Ash}" />
+    </Style>
+
+    <Style x:Key="ItemName" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+        <Setter Property="FontFamily" Value="AlegreyaBold" />
+        <Setter Property="FontSize" Value="18" />
+    </Style>
+
+</ResourceDictionary>

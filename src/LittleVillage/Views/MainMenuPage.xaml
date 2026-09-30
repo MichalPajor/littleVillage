@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:BasePage
+    x:Class="LittleVillage.Views.MainMenuPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:LittleVillage.Controls"
+    xmlns:views="clr-namespace:LittleVillage.Views"
+    xmlns:vm="clr-namespace:LittleVillage.ViewModels"
+    x:DataType="vm:MainMenuViewModel">
+
+    <Grid RowDefinitions="*,Auto">
+
+        <controls:SceneBackgroundView Grid.RowSpan="2" Scene="{Binding Scene}" />
+
+        <controls:InkFrame
+            x:Name="MenuFrame"
+            Grid.Row="1"
+            Margin="24,0,24,40"
+            MaximumWidthRequest="420">
+
+            <VerticalStackLayout Padding="26,30,26,28" Spacing="0">
+
+                <Label Text="{StaticResource GameSubtitle}" Style="{StaticResource StoryChapter}" />
+                <Label Text="{StaticResource GameTitle}" Style="{StaticResource StoryTitle}" FontSize="46" />
+                <Image
+                    Source="decor_underline.png"
+                    WidthRequest="190"
+                    HeightRequest="10"
+                    Aspect="Fill"
+                    HorizontalOptions="Start" />
+
+                <!-- Menu -->
+                <VerticalStackLayout Margin="0,28,0,0" Spacing="18" IsVisible="{Binding IsMainMenuVisible}">
+                    <controls:SketchTextButton
+                        Text="Nowa gra"
+                        Command="{Binding NewGameCommand}"
+                        SemanticProperties.Description="Nowa gra" />
+                    <controls:SketchTextButton
+                        Text="Kontynuuj"
+                        CornerRadius="10,15,16,11"
+                        Command="{Binding ContinueCommand}"
+                        IsVisible="{Binding CanContinue}"
+                        SemanticProperties.Description="Kontynuuj zapisaną grę" />
+                </VerticalStackLayout>
+
+                <!-- Potwierdzenie nadpisania zapisu -->
+                <VerticalStackLayout Margin="0,24,0,0" Spacing="18" IsVisible="{Binding IsConfirmingNewGame}">
+                    <Label Style="{StaticResource StoryParagraph}" Text="Zacząć od nowa? Dotychczasowa opowieść przepadnie jak ślad na mokradłach." />
+                    <controls:SketchTextButton Text="Tak, od nowa" Command="{Binding ConfirmNewGameCommand}" />
+                    <controls:SketchTextButton Text="Nie" CornerRadius="10,15,16,11" Command="{Binding CancelNewGameCommand}" />
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </controls:InkFrame>
+    </Grid>
+
+</views:BasePage>

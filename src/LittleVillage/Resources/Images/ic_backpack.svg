@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — plecak / ekwipunek (z makiety) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<g fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M18 11C18 5 30 5 30 11"/>
+<path d="M11 21C11 14 16 11 24 11C32 11 37 14 37 21V39C37 42 35 43 32 43H16C13 43 11 42 11 39Z"/>
+<path d="M11 23C17 27 31 27 37 23"/>
+<rect x="18" y="30" width="12" height="8" rx="2"/>
+<path d="M24 26V31"/>
+<path d="M11 30H7V38H11"/>
+</g>
+</svg>

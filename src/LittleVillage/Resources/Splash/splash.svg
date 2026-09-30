@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — natywny ekran startowy: plama krwi na czarnym tle -->
+<svg xmlns="http://www.w3.org/2000/svg" width="66" height="70" viewBox="0 0 66 70">
+<path d="M30 14C36 8 46 12 44 20C52 18 56 26 50 31C58 36 52 46 44 42C44 52 32 54 30 45C24 52 12 48 16 40C6 38 8 26 17 26C12 18 22 10 30 14Z" fill="#A8101A"/>
+<path d="M28 22C32 20 38 24 36 30C34 34 28 34 26 30C24 27 25 23 28 22Z" fill="#5C0409" opacity="0.55"/>
+<path d="M10 38C10 48 8 58 11 66C14 58 13 48 14 38Z" fill="#A8101A"/>
+<path d="M36 48C36 52 35 56 37 59C39 56 38 52 39 48Z" fill="#A8101A"/>
+<circle cx="58" cy="14" r="3" fill="#A8101A"/>
+<circle cx="54" cy="46" r="2" fill="#A8101A"/>
+<circle cx="4" cy="22" r="2.2" fill="#A8101A"/>
+</svg>

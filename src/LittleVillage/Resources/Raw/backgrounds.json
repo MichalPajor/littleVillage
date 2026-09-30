@@ -1,0 +1,41 @@
+// Tła scen. Klucz tła = wartość tagu „# tlo: klucz” w plikach .ink.
+// Współrzędne warstw (x, y, width, height) podane są w jednostkach płótna (width × height tła).
+// Płótno skaluje się jak „AspectFill”: wypełnia ekran, nadmiar jest przycinany (środek zostaje widoczny).
+//
+// Animacje (type): sway (kołysanie, amplitude = stopnie), drift (poziomo, amplitude = jednostki płótna),
+//                  bob (pionowo), blink (mruganie), flicker (migotanie, amplitude = min. nieprzezroczystość).
+// duration = długość cyklu w ms, phase = przesunięcie fazy 0–1, anchorX/anchorY = punkt obrotu w warstwie (0–1).
+{
+  "default": "wies_noc",
+  "backgrounds": {
+    "wies_noc": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        { "image": "bg_wies_noc_tlo.png", "x": 0, "y": 0, "width": 390, "height": 400 },
+        {
+          "image": "bg_wies_noc_chmury.png", "x": 14, "y": 134, "width": 346, "height": 88,
+          "animation": { "type": "drift", "amplitude": 9, "duration": 14000 }
+        },
+        {
+          "image": "bg_wies_noc_wrony.png", "x": 50, "y": 40, "width": 180, "height": 90,
+          "animation": { "type": "bob", "amplitude": 4, "duration": 3200 }
+        },
+        {
+          "image": "bg_wies_noc_swierk_lewy.png", "x": -26, "y": 174, "width": 112, "height": 232,
+          "animation": { "type": "sway", "amplitude": 1.6, "duration": 4600, "anchorX": 0.5, "anchorY": 0.974 }
+        },
+        {
+          "image": "bg_wies_noc_swierk_prawy.png", "x": 324, "y": 188, "width": 102, "height": 218,
+          "animation": { "type": "sway", "amplitude": 1.3, "duration": 5200, "anchorX": 0.5, "anchorY": 0.972, "phase": 0.35 }
+        },
+        {
+          "image": "bg_wies_noc_oczy.png", "x": 226, "y": 310, "width": 66, "height": 36,
+          "animation": { "type": "blink", "duration": 5600 }
+        },
+        { "image": "bg_wies_noc_przod.png", "x": 0, "y": 220, "width": 390, "height": 624 }
+      ]
+    }
+  }
+}

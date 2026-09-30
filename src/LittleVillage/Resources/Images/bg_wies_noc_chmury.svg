@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — chmury (dryfują)
+     Warstwa tła „wies_noc” wycięta z makiety (współrzędne płótna 390×844, viewBox = położenie warstwy).
+     Położenie i animację warstwy opisuje Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="346" height="88" viewBox="14 134 346 88">
+<defs>
+<filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"></feTurbulence>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"></line>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"></line>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M190 190C200 172 228 172 236 186C246 170 276 172 282 190C296 180 322 184 326 198C344 196 356 206 352 216H186C176 212 178 196 190 190Z" fill="#EDEBE6" stroke-width="4"></path>
+<path d="M20 150C60 140 110 146 150 140" fill="none" stroke-width="3"></path>
+<path d="M44 163C84 157 118 161 158 155" fill="none" stroke-width="2"></path>
+</g>
+</svg>

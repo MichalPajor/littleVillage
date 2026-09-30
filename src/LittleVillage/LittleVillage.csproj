@@ -1,0 +1,119 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net10.0-android</TargetFrameworks>
+		<TargetFrameworks Condition="!$([MSBuild]::IsOSPlatform('linux'))">$(TargetFrameworks);net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net10.0-windows10.0.19041.0</TargetFrameworks>
+
+		<OutputType>Exe</OutputType>
+		<RootNamespace>LittleVillage</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- Generowanie kodu z XAML w czasie kompilacji (szybsze działanie, błędy bindingów wykrywane przy budowaniu). -->
+		<MauiXamlInflator>SourceGen</MauiXamlInflator>
+		<MauiStrictXamlCompilation>true</MauiStrictXamlCompilation>
+
+		<!-- Display name -->
+		<ApplicationTitle>Mała wioska</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.littlevillage.game</ApplicationId>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>0.1</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
+		<WindowsPackageType>None</WindowsPackageType>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#000000" />
+
+		<!-- Splash Screen (natywny, przed ekranem powitalnym aplikacji) -->
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#000000" BaseSize="96,102" />
+
+		<!-- Images: pliki SVG są rasteryzowane do PNG w czasie budowania; w XAML odwołujemy się do nich jako *.png -->
+		<MauiImage Include="Resources\Images\*" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Wersja jawna (nie $(MauiVersion)), bo CommunityToolkit.Maui 15 wymaga MAUI >= 10.0.90. -->
+		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.90" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="15.0.1" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\LittleVillage.Core\LittleVillage.Core.csproj" />
+	</ItemGroup>
+
+	<!-- =====================================================================
+	     Fabuła ink: pliki Story\*.ink są kompilowane do story.json przy każdym
+	     budowaniu (tylko gdy się zmieniły). Błędy w fabule pojawiają się jako
+	     błędy kompilacji z nazwą pliku i numerem linii.
+	     ===================================================================== -->
+	<PropertyGroup>
+		<InkMainFile>$(MSBuildProjectDirectory)\Story\main.ink</InkMainFile>
+		<InkOutputFile>$(MSBuildProjectDirectory)\$(BaseIntermediateOutputPath)ink\story.json</InkOutputFile>
+		<InkBuildProject>$(MSBuildProjectDirectory)\..\..\tools\LittleVillage.InkBuild\LittleVillage.InkBuild.csproj</InkBuildProject>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<InkSource Include="Story\**\*.ink" />
+		<None Remove="Story\**\*.ink" />
+		<None Include="@(InkSource)" />
+
+		<!-- Kompilator fabuły: referencja tylko po to, by NuGet restore i kolejność budowania go obejmowały.
+		     Nic z niego nie trafia do aplikacji (ReferenceOutputAssembly=false). -->
+		<ProjectReference Include="$(InkBuildProject)"
+		                  ReferenceOutputAssembly="false"
+		                  Private="false"
+		                  SkipGetTargetFrameworkProperties="true"
+		                  GlobalPropertiesToRemove="TargetFramework;RuntimeIdentifier;SelfContained" />
+	</ItemGroup>
+
+	<Target Name="BuildInkCompiler" Condition="'$(DesignTimeBuild)' != 'true'">
+		<MSBuild Projects="$(InkBuildProject)"
+		         Targets="Build"
+		         Properties="Configuration=$(Configuration);Platform=AnyCPU"
+		         RemoveProperties="TargetFramework;RuntimeIdentifier;SelfContained">
+			<Output TaskParameter="TargetOutputs" PropertyName="InkCompilerPath" />
+		</MSBuild>
+	</Target>
+
+	<Target Name="CompileInkStory"
+	        DependsOnTargets="BuildInkCompiler"
+	        Inputs="@(InkSource);$(InkCompilerPath)"
+	        Outputs="$(InkOutputFile)"
+	        Condition="'$(DesignTimeBuild)' != 'true'">
+		<Exec Command="dotnet &quot;$(InkCompilerPath)&quot; &quot;$(InkMainFile)&quot; &quot;$(InkOutputFile)&quot;" />
+		<ItemGroup>
+			<FileWrites Include="$(InkOutputFile)" />
+		</ItemGroup>
+	</Target>
+
+	<Target Name="IncludeInkStory" BeforeTargets="ProcessMauiAssets" DependsOnTargets="CompileInkStory">
+		<ItemGroup>
+			<MauiAsset Include="$(InkOutputFile)" LogicalName="story.json" />
+		</ItemGroup>
+	</Target>
+
+</Project>

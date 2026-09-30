@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Oficjalne źródła kompilatora ink (inkle Ltd, licencja MIT), wersja 1.2.1.
+       Używany wyłącznie w czasie budowania (LittleVillage.InkBuild) i w testach — nie trafia do aplikacji. -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Ink</RootNamespace>
+    <AssemblyName>ink_compiler</AssemblyName>
+    <Version>1.2.1</Version>
+    <Nullable>disable</Nullable>
+    <IsPackable>false</IsPackable>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>$(NoWarn);1701;1702;1591;CS0618;CS0162;CS0168;CS0219;CS0414;CS0649;CS0169</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ink-engine-runtime\ink-engine-runtime.csproj" />
+  </ItemGroup>
+
+</Project>

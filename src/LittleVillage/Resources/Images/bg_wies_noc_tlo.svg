@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło: niebo, księżyc, linia boru
+     Warstwa tła „wies_noc” wycięta z makiety (współrzędne płótna 390×844, viewBox = położenie warstwy).
+     Położenie i animację warstwy opisuje Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="400" viewBox="0 0 390 400">
+<defs>
+<filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"></feTurbulence>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"></line>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"></line>
+</pattern>
+</defs>
+<rect width="390" height="400" fill="#EDEBE6"></rect>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 0H390V95C300 120 220 80 140 110C90 128 40 100 0 118Z" fill="url(#hatchDense)" stroke="none"></path>
+<path d="M0 118C40 100 90 128 140 110C220 80 300 120 390 95V175C310 200 230 160 150 190C90 210 40 180 0 200Z" fill="url(#hatch)" stroke="none"></path>
+<circle cx="282" cy="150" r="60" fill="#FFFFFF" stroke-width="5"></circle>
+<circle cx="262" cy="134" r="9" fill="none" stroke-width="2.5"></circle>
+<circle cx="302" cy="172" r="6" fill="none" stroke-width="2.5"></circle>
+<circle cx="298" cy="126" r="4" fill="none" stroke-width="2"></circle>
+<path d="M322 118C334 136 334 164 318 184" fill="none" stroke-width="2"></path>
+<path d="M314 110C326 126 328 146 322 160" fill="none" stroke-width="1.6"></path>
+<path d="M-10 380L-10 290L5 262L12 285L22 240L34 280L44 255L56 290L70 230L84 282L96 250L108 286L122 238L136 280L148 258L160 292L176 226L190 280L202 252L214 288L230 232L246 284L258 256L270 290L286 244L300 284L312 260L326 292L342 236L356 282L368 252L380 288L392 246L400 270L400 380Z" fill="#000000" stroke-width="3"></path>
+</g>
+</svg>
