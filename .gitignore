@@ -481,6 +481,10 @@ $RECYCLE.BIN/
 # Vim temporary swap files
 *.swp
 
+# LittleVillage: wyniki budowania z WSL/Linuksa (patrz Directory.Build.props)
+obj-unix/
+bin-unix/
+
 # LittleVillage: pliki lokalne, nie trafiaja do repozytorium
 /screens/
 /docs/

@@ -1,0 +1,19 @@
+<Project>
+
+  <!--
+    Ten sam katalog jest otwierany z Windows (Visual Studio) i z WSL (VS Code, dotnet CLI).
+    Wspolne obj/ konczylo sie nadpisywaniem project.assets.json przez restore z drugiego systemu
+    (inne sciezki paczek, inne klucze platform) i bledem NETSDK1005 na Windows.
+    Na Linuksie wyniki budowania trafiaja wiec do osobnych katalogow; Windows zostaje przy obj/ i bin/.
+  -->
+  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Linux'))">
+    <BaseIntermediateOutputPath>$(MSBuildProjectDirectory)/obj-unix/</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(MSBuildProjectDirectory)/bin-unix/</BaseOutputPath>
+  </PropertyGroup>
+
+  <!-- Katalogi wynikowe drugiego systemu nie moga trafic do domyslnych globow (Compile, MauiAsset itd.). -->
+  <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj/**;bin/**;obj-unix/**;bin-unix/**</DefaultItemExcludes>
+  </PropertyGroup>
+
+</Project>

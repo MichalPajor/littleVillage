@@ -72,7 +72,7 @@
 	     ===================================================================== -->
 	<PropertyGroup>
 		<InkMainFile>$(MSBuildProjectDirectory)\Story\main.ink</InkMainFile>
-		<InkOutputFile>$(MSBuildProjectDirectory)\$(BaseIntermediateOutputPath)ink\story.json</InkOutputFile>
+		<InkOutputFile>$([MSBuild]::NormalizePath('$(MSBuildProjectDirectory)', '$(BaseIntermediateOutputPath)', 'ink', 'story.json'))</InkOutputFile>
 		<InkBuildProject>$(MSBuildProjectDirectory)\..\..\tools\LittleVillage.InkBuild\LittleVillage.InkBuild.csproj</InkBuildProject>
 	</PropertyGroup>
 
