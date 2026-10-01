@@ -57,7 +57,7 @@ Drewno musiał ścinać daleko, pod borem. Zdarzało mu się wpaść w płytkie 
 # tlo: budowa_jezioro
 # rozdzial: Prolog
 # tytul: Chata
-Maciek wybrał brzeg jeziora. Coś w głębi serca mówiło mu, że to miejsce jest dla niego. Może to wizualny urok tego zbiornika był dla niego tak przyciągający. Spróchniałe, zwęglone bale po dawnej chałupie zepchnął w wysokie trzciny i przestał się nimi przejmować. Było, minęło – powtarzał sobie podczas karczowania brzegu, gdy do głowy wracały mu opowieści mieszkańców. Drzewa ścinał na zboczach, a pnie staczał w dół. Do pokrycia dachu zbierał trzcinę, której tu nie brakowało – sięgała mu ponad głowę.
+Maciek wybrał brzeg jeziora. Coś w głębi serca mówiło mu, że to miejsce jest dla niego. Może to wizualny urok tego zbiornika był dla niego tak przyciągający. Spróchniałe, zwęglone bale po dawnej chałupie zepchnął w wysokie trzciny, by się nimi nie przejmować. Było, minęło – powtarzał sobie podczas karczowania brzegu, gdy do głowy wracały mu opowieści mieszkańców. Drzewa ścinał na zboczach, a pnie staczał w dół. Do pokrycia dachu zbierał trzcinę, której tu nie brakowało – sięgała mu ponad głowę.
 -> praca
 
 = praca
