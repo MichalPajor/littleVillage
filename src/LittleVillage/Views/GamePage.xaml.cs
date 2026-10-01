@@ -45,15 +45,25 @@ public partial class GamePage : BasePage
     private async Task OnPageShownAsync()
     {
         StoryContent.Opacity = 0;
+        ScrollStoryToTop();
 
-        // Nie czekamy na przewinięcie: przed pierwszym layoutem ScrollToAsync na Androidzie
-        // potrafi się nigdy nie zakończyć, a tekst zostałby niewidoczny.
-        if (StoryScroll.ScrollY > 0)
-        {
-            _ = StoryScroll.ScrollToAsync(0, 0, animated: false);
-        }
-
+        // Nowe akapity układają się dopiero po chwili, a zmiana wysokości treści potrafi
+        // przywrócić stare przewinięcie — dlatego ponawiamy po ułożeniu i po pojawieniu się strony.
+        await Task.Delay(50);
+        ScrollStoryToTop();
         await StoryContent.FadeToAsync(1, 350, Easing.CubicOut);
+        ScrollStoryToTop();
+    }
+
+    private void ScrollStoryToTop()
+    {
+#if ANDROID
+        // Bezpośrednio na natywnym widoku: działa od razu, także zanim MAUI zakończy układanie treści.
+        (StoryScroll.Handler?.PlatformView as Android.Views.View)?.ScrollTo(0, 0);
+#endif
+
+        // Bez await: przed pierwszym układem ScrollToAsync potrafi się nigdy nie zakończyć.
+        _ = StoryScroll.ScrollToAsync(0, 0, animated: false);
     }
 
     // Po wyborze opcji pokazujemy przycisk „Dalej” pod opcjami.
