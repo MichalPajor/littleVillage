@@ -12,8 +12,8 @@ public static class Palette
     /// <summary>Papier — tło, przyciski.</summary>
     public static readonly Color Paper = Color.FromArgb("#EDEBE6");
 
-    /// <summary>Okno fabuły: papier z przezroczystością 88%.</summary>
-    public static readonly Color PaperTranslucent = Color.FromRgba(237, 235, 230, 224);
+    /// <summary>Okno fabuły: papier kryjący w 96% — tło ledwie prześwituje, tekst czytelny.</summary>
+    public static readonly Color PaperTranslucent = Color.FromRgba(237, 235, 230, 245);
 
     /// <summary>Biel — światła: księżyc, ściany.</summary>
     public static readonly Color White = Color.FromArgb("#FFFFFF");
