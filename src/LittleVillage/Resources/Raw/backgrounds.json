@@ -36,6 +36,47 @@
         },
         { "image": "bg_wies_noc_przod.png", "x": 0, "y": 220, "width": 390, "height": 624 }
       ]
+    },
+    "zapadlina": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        { "image": "bg_zapadlina_tlo.png", "x": 0, "y": 0, "width": 390, "height": 430 },
+        {
+          "image": "bg_zapadlina_oczy.png", "x": 308, "y": 238, "width": 32, "height": 16,
+          "animation": { "type": "blink", "duration": 6400, "phase": 0.3 }
+        },
+        {
+          "image": "bg_zapadlina_wrony.png", "x": 156, "y": 34, "width": 96, "height": 46,
+          "animation": { "type": "bob", "amplitude": 4, "duration": 3400 }
+        },
+        {
+          "image": "bg_zapadlina_swierk_a.png", "x": 228, "y": 236, "width": 44, "height": 176,
+          "animation": { "type": "sway", "amplitude": 1.4, "duration": 5000, "anchorX": 0.5, "anchorY": 0.95 }
+        },
+        {
+          "image": "bg_zapadlina_swierk_b.png", "x": 254, "y": 188, "width": 40, "height": 150,
+          "animation": { "type": "sway", "amplitude": 1.2, "duration": 5600, "anchorX": 0.5, "anchorY": 0.94, "phase": 0.4 }
+        },
+        {
+          "image": "bg_zapadlina_dym.png", "x": 108, "y": 236, "width": 104, "height": 120,
+          "animation": { "type": "bob", "amplitude": 2.5, "duration": 4200 }
+        },
+        {
+          "image": "bg_zapadlina_ognie.png", "x": 110, "y": 148, "width": 122, "height": 50,
+          "animation": { "type": "flicker", "amplitude": 0.25, "duration": 3000 }
+        },
+        {
+          "image": "bg_zapadlina_mgla_gora.png", "x": -26, "y": 218, "width": 284, "height": 42,
+          "animation": { "type": "drift", "amplitude": 10, "duration": 13000 }
+        },
+        {
+          "image": "bg_zapadlina_mgla_dol.png", "x": 88, "y": 326, "width": 236, "height": 42,
+          "animation": { "type": "drift", "amplitude": 12, "duration": 17000, "phase": 0.5 }
+        },
+        { "image": "bg_zapadlina_przod.png", "x": 0, "y": 310, "width": 390, "height": 534 }
+      ]
     }
   }
 }

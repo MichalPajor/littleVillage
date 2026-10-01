@@ -24,8 +24,7 @@ public sealed class GameSessionTests : IDisposable
     {
         var first = CreateSession();
         await first.InitializeAsync();
-        await first.StartNewGameAsync();
-        var afterChoice = await first.AdvanceAsync(1);
+        var started = await first.StartNewGameAsync();
 
         var second = CreateSession();
         await second.InitializeAsync();
@@ -33,10 +32,14 @@ public sealed class GameSessionTests : IDisposable
 
         var restored = await second.ContinueSavedGameAsync();
 
-        Assert.Equal(afterChoice.Ending, restored.Ending);
-        Assert.Equal(afterChoice.BackgroundKey, restored.BackgroundKey);
-        Assert.Equal(afterChoice.Blocks, restored.Blocks);
+        Assert.Equal(started.Ending, restored.Ending);
+        Assert.Equal(started.BackgroundKey, restored.BackgroundKey);
+        Assert.Equal(started.Blocks, restored.Blocks);
+        Assert.Equal(started.Choices, restored.Choices);
         Assert.Contains(second.GetInventory(), i => i.Id == "siekiera");
+
+        // Wznowiona gra przyjmuje wybór dokładnie tak, jak przerwana.
+        Assert.Equal(PageEnding.End, (await second.AdvanceAsync(0)).Ending);
     }
 
     [Fact]

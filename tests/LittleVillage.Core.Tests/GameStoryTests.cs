@@ -22,63 +22,53 @@ public sealed class GameStoryTests
     }
 
     [Fact]
-    public void First_page_matches_mockup_layout()
+    public void Prologue_opens_with_chapter_title_and_village_background()
     {
         var page = CreateEngine().StartNew();
 
-        Assert.Equal("wies_noc", page.BackgroundKey);
-        Assert.Equal(PageEnding.Choices, page.Ending);
-        Assert.Equal("Co robisz?", page.Question);
-        Assert.Equal(3, page.Choices.Count);
-
+        Assert.Equal("zapadlina", page.BackgroundKey);
         Assert.Equal(StoryBlockKind.Chapter, page.Blocks[0].Kind);
-        Assert.Equal("Rozdział pierwszy", page.Blocks[0].Text);
+        Assert.Equal("Prolog", page.Blocks[0].Text);
         Assert.Equal(StoryBlockKind.Title, page.Blocks[1].Kind);
-        Assert.Equal(StoryBlockKind.Paragraph, page.Blocks[2].Kind);
+        Assert.Equal("Zapadlina", page.Blocks[1].Text);
         Assert.True(page.Blocks[2].HasDropCap);
-        Assert.Equal(StoryBlockKind.Divider, page.Blocks[^1].Kind);
         Assert.Single(page.Blocks, b => b.HasDropCap);
+        Assert.Single(page.Blocks, b => b.Kind == StoryBlockKind.Divider);
     }
 
     [Fact]
-    public void Starting_inventory_uses_names_from_ink()
+    public void Maciek_chooses_one_of_three_places_for_the_hut()
+    {
+        var page = CreateEngine().StartNew();
+
+        Assert.Equal(PageEnding.Choices, page.Ending);
+        Assert.Equal("Gdzie Maciek postawi chatę?", page.Question);
+        Assert.Equal(
+            ["Na skraju lasu, od wschodu.", "Przy mokradłach, na północy.", "Nad jeziorem."],
+            page.Choices.Select(c => c.Text));
+    }
+
+    [Fact]
+    public void Starting_inventory_is_what_Maciek_carries()
     {
         var engine = CreateEngine();
         engine.StartNew();
 
         var inventory = engine.GetInventory();
 
-        Assert.Equal(["krzesiwo", "chleb"], inventory.Select(i => i.Id));
-        Assert.Equal("Pajda chleba", inventory[1].Name);
-        Assert.False(string.IsNullOrWhiteSpace(inventory[1].Description));
-    }
-
-    [Fact]
-    public void Barn_path_adds_lamp_pauses_and_remembers_it_at_the_end()
-    {
-        var engine = CreateEngine();
-        engine.StartNew();
-
-        var barn = engine.Choose(0);
-        Assert.Equal(PageEnding.Continue, barn.Ending);
-        Assert.Contains(engine.GetInventory(), i => i is { Id: "kaganek", Name: "Kaganek" });
-
-        var end = engine.Continue();
-        Assert.Equal(PageEnding.End, end.Ending);
-        Assert.Contains(end.Blocks, b => b.Text.StartsWith("Kaganek w twojej dłoni"));
-        Assert.Contains(end.Blocks, b => b.Kind == StoryBlockKind.Divider);
-        Assert.Equal("wies_noc", end.BackgroundKey);
+        Assert.Equal(["siekiera", "chleb"], inventory.Select(i => i.Id));
+        Assert.All(inventory, i => Assert.False(string.IsNullOrWhiteSpace(i.Description)));
     }
 
     [Theory]
     [InlineData(0)]
     [InlineData(1)]
     [InlineData(2)]
-    public void Every_first_choice_reaches_the_end(int choice)
+    public void Every_choice_reaches_the_end_without_leftover_tags(int choice)
     {
         var engine = CreateEngine();
-        var page = engine.StartNew();
-        page = engine.Choose(choice);
+        engine.StartNew();
+        var page = engine.Choose(choice);
 
         for (var guard = 0; page.Ending == PageEnding.Continue && guard < 20; guard++)
         {
@@ -86,21 +76,20 @@ public sealed class GameStoryTests
         }
 
         Assert.Equal(PageEnding.End, page.Ending);
+        Assert.Equal("zapadlina", page.BackgroundKey);
         Assert.All(page.Blocks, b => Assert.DoesNotContain("#", b.Text));
     }
 
     [Fact]
-    public void Saved_state_restores_choices_and_inventory()
+    public void Saved_state_restores_the_choice_page()
     {
         var engine = CreateEngine();
         engine.StartNew();
-        engine.Choose(1);
         var state = engine.SaveState();
 
         var restored = CreateEngine();
-        restored.RestoreState(state, "wies_noc");
+        restored.RestoreState(state, "zapadlina");
 
-        Assert.Contains(restored.GetInventory(), i => i.Id == "siekiera");
-        Assert.Equal(PageEnding.End, restored.Continue().Ending);
+        Assert.Equal(PageEnding.End, restored.Choose(2).Ending);
     }
 }

@@ -2,8 +2,7 @@
 //  Zmienne globalne — pamięć o decyzjach gracza.
 // ------------------------------------------------------------
 
-// Rośnie, gdy bohater stawia czoła strachowi.
-VAR odwaga = 0
-
-// Czy ojciec wie o tym, co dzieje się w obejściu.
-VAR ojciec_wie = false
+// Gdzie Maciek (dziadek Jaromira) postawił chatę w prologu.
+// Od tego wyboru zależą późniejsze losy rodziny.
+LIST Siedliska = przy_lesie, przy_mokradlach, nad_jeziorem
+VAR chata_macka = ()

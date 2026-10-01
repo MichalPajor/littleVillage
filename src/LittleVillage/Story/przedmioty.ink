@@ -1,31 +1,27 @@
 // ------------------------------------------------------------
 //  Przedmioty i ekwipunek.
-//  Dodanie przedmiotu:   ~ ekwipunek += kaganek
-//  Zabranie przedmiotu:  ~ ekwipunek -= kaganek
-//  Sprawdzenie:          { ekwipunek ? kaganek: ... }
+//  Dodanie przedmiotu:   ~ ekwipunek += siekiera
+//  Zabranie przedmiotu:  ~ ekwipunek -= chleb
+//  Sprawdzenie:          { ekwipunek ? siekiera: ... }
 // ------------------------------------------------------------
 
-LIST Przedmioty = krzesiwo, chleb, kaganek, siekiera
+LIST Przedmioty = siekiera, chleb
 
-// Ekwipunek na początku gry.
-VAR ekwipunek = (krzesiwo, chleb)
+// Ekwipunek na początku gry — to, co Maciek przyniósł w tobołku.
+VAR ekwipunek = (siekiera, chleb)
 
 // Nazwa wyświetlana w oknie ekwipunku.
 === function nazwa_przedmiotu(p)
 { p:
-    - krzesiwo:  ~ return "Krzesiwo"
-    - chleb:     ~ return "Pajda chleba"
-    - kaganek:   ~ return "Kaganek"
-    - siekiera:  ~ return "Siekiera ojca"
+    - siekiera:  ~ return "Siekiera"
+    - chleb:     ~ return "Bochenek chleba"
 }
 ~ return ""
 
 // Opis wyświetlany pod nazwą.
 === function opis_przedmiotu(p)
 { p:
-    - krzesiwo:  ~ return "Stal, krzemień i hubka w skórzanym woreczku. Bez niego noc jest dłuższa."
-    - chleb:     ~ return "Owinięta w lnianą szmatkę. Matka mówi, że chleb odpędza złe."
-    - kaganek:   ~ return "Gliniany, z łojem. Kopci, ale świeci."
-    - siekiera:  ~ return "Ciężka, z wyślizganym toporzyskiem. Ojciec rąbał nią drwa, zanim zaczął się bać lasu."
+    - siekiera:  ~ return "Kupiona w mieście za pieniądze z czterech lat pracy na cudzym polu. Na niej opiera się cała przyszłość."
+    - chleb:     ~ return "Twardy, razowy, owinięty w lnianą szmatkę. Musi starczyć na długo."
 }
 ~ return ""
