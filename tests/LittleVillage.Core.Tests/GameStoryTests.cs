@@ -93,8 +93,8 @@ public sealed class GameStoryTests
     }
 
     [Theory]
-    [InlineData(Forest, "budowa_las", "skraj lasu", "Las nie milkł")]
-    [InlineData(Marsh, "budowa_mokradla", "łąki przy mokradłach", "Bagno nie spało")]
+    [InlineData(Forest, "budowa_las", "skraj lasu", "Las nigdy nie milkł")]
+    [InlineData(Marsh, "budowa_mokradla", "łąki przy mokradłach", "Bagna nigdy nie spały")]
     [InlineData(Lake, "budowa_jezioro", "brzeg jeziora", "Jezioro nocą oddychało")]
     public void Building_and_nights_depend_on_the_chosen_place(int place, string background, string placeText, string nightText)
     {
@@ -112,8 +112,10 @@ public sealed class GameStoryTests
         Assert.Equal(background, nights.BackgroundKey);
         Assert.Contains(nights.Blocks, b => b.Text.StartsWith(nightText));
         Assert.Contains(nights.Blocks, b => b.Text.Contains("wycie"));
-        Assert.Equal("Co zrobi Maciek?", nights.Question);
-        Assert.Equal(["Wyjść z szałasu i sprawdzić, co to.", "Zostać w szałasie."], nights.Choices.Select(c => c.Text));
+        Assert.Equal("Co powinien zrobić Maciek?", nights.Question);
+        Assert.Equal(2, nights.Choices.Count);
+        Assert.StartsWith("Wziąć siekierę", nights.Choices[GoOut].Text);
+        Assert.StartsWith("Zostać w szałasie", nights.Choices[Stay].Text);
     }
 
     [Fact]

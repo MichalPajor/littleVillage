@@ -42,44 +42,43 @@ Trzecie leżało nad jeziorem i było najbardziej malownicze. Woda była czysta,
 # tlo: budowa_las
 # rozdzial: Prolog
 # tytul: Chata
-Maciek wybrał skraj lasu. Uznał, że drewno pod ręką jest warte więcej niż spokojny sen, a ze snem jakoś to będzie. Pierwszego ranka wbił siekierę w najbliższy świerk. Echo uderzenia odbiło się od boru i wróciło do niego dziwnie przeciągłe, jakby las powtórzył je po swojemu.
-Drzewa ścinał tuż za progiem przyszłej chaty. Pnie same leżały mu pod nogami – trzeba było tylko okrzesać gałęzie i przetoczyć je kilka kroków dalej.
+Maciek wybrał skraj lasu. Uznał, że drewno pod ręką pozwoli mu szybciej postawić chatę, a na tym zależało mu najbardziej. Żyzna ziemia przyda się pod warzywa – w końcu coś trzeba jeść. A sen? Jakoś to będzie. Już pierwszego ranka zabrał się do pracy i wbił siekierę w najbliższy świerk. Echo uderzenia potoczyło się w stronę boru i wróciło do niego dziwnie przeciągłe, jakby las powtórzył je po swojemu, dodając nutę czegoś tajemniczego.
 -> praca
 
 = mokradla
 # tlo: budowa_mokradla
 # rozdzial: Prolog
 # tytul: Chata
-Maciek wybrał łąki przy mokradłach. Ludzie przy studni kręcili głowami, ale on widział tylko trawę po kolana i torf, którego starczy na sto zim. Gadanie o topielcach zostawił babom.
-Ziemia uginała się tu pod stopami, więc przez pierwszy tydzień znosił z pagórka kamienie i układał z nich podmurówkę, żeby chata nie zapadła się w błoto. Drewno musiał ścinać daleko, pod borem, i każdy pień wlec przez pół niecki na sznurze przerzuconym przez ramię.
+Maciek wybrał łąki przy mokradłach. Gdy zaczął pracę, ludzie, którzy go widzieli, kręcili głowami z dezaprobatą i zdziwieniem. Dla nich było to ostatnie miejsce, w którym postawiliby chatę. Ziemia uginała się tu pod stopami, ale dawała torf, którego starczyłoby nawet na sto zim. Żeby chata nie zapadła się w błoto, Maciek musiał przygotować podmurówkę. Przez cały pierwszy dzień znosił z pagórków kamienie i sumiennie je układał.
+Drewno musiał ścinać daleko, pod borem. Zdarzało mu się wpaść w płytkie bajoro – w końcu nie znał jeszcze dobrze terenu – i buty miał wiecznie przemoczone. Gdy myślał o tym, co opowiadali ludzie, czuł niepokój, ale i ciekawość. Nie dawało mu spokoju, co takiego mogło mrugać nad bagnami. Starał się omijać czarną wodę i wziął sobie do serca przestrogę o topielcach. Jeśli istniały, na pewno nie chciał ich spotkać.
 -> praca
 
 = jezioro
 # tlo: budowa_jezioro
 # rozdzial: Prolog
 # tytul: Chata
-Maciek wybrał brzeg jeziora. Spróchniałe, zwęglone bale po dawnej chałupie zepchnął w trzciny i nie oglądał się za nimi. Co było, minęło – tak sobie powtarzał, karczując brzeg.
-Pnie ścinał na zboczu, w bukach, i staczał je w dół, aż same dojeżdżały pod wodę. Na dach nacinał trzciny – sięgały mu ponad głowę, a w pęczkach były lekkie jak słoma.
+Maciek wybrał brzeg jeziora. Coś w głębi serca mówiło mu, że to miejsce jest dla niego. Może tak przyciągał go urok jeziora. Spróchniałe, zwęglone bale po dawnej chałupie zepchnął w wysokie trzciny i przestał się nimi przejmować. Było, minęło – powtarzał sobie podczas karczowania brzegu, gdy do głowy wracały mu opowieści mieszkańców. Drzewa ścinał na zboczach, a pnie staczał w dół. Do pokrycia dachu zbierał trzcinę, której tu nie brakowało – sięgała mu ponad głowę.
 -> praca
 
 = praca
-Budowa trwała ponad miesiąc. Najpierw okorowywał pnie, potem ciosał je siekierą na grube bale i wycinał w końcach zamki, żeby ściany trzymały się same, bez jednego gwoździa. Bal kładł na balu, a szczeliny zatykał mchem i gliną. Ręce pokryły mu się pęcherzami, które pękały i zarastały, aż skóra stała się twarda jak kora.
-Jadł tylko chleb. Kroił go na coraz cieńsze kromki, popijał wodą i powtarzał sobie, że jak skończy dach, pójdzie do miasta po więcej. Bochenek twardniał, kurczył się i z każdym dniem ważył mniej – a Maciek razem z nim.
-Spał w szałasie z gałęzi, który sklecił pierwszego wieczoru: kilka żerdzi opartych o pień, przykrytych gałęziami i darnią. Mieścił się w nim tylko na leżąco, z siekierą pod ręką. # dalej
+Budowa trwała ponad miesiąc. Czasami ktoś z mieszkańców przychodził pomóc Maćkowi. Najczęściej był to Andrzej, z którym zawsze rozmawiało mu się najlepiej. Andrzej lubił opowiadać o swoim synu, który był jego oczkiem w głowie. Chłopak miał jedenaście lat, a już był dla ojca ogromnym wsparciem. Andrzej sam nie miał wiele, ale widząc, w jakiej biedzie żyje Maciek, czasem przynosił mu coś do zjedzenia.
+Sama budowa nie była skomplikowana: ściąć drzewa, okorować je, pociąć na bale odpowiedniej długości i wyciąć na ich końcach zamki, żeby po złożeniu dobrze się trzymały. Dzięki temu ściany stały bez jednego gwoździa. Szczeliny zatykał mchem i gliną. Dłonie pokryły mu się pęcherzami, które pękały i zrastały się, aż skóra stała się twarda jak kora.
+Swój chleb jadł bardzo oszczędnie – kromkę na śniadanie i kromkę na kolację, popijając je wodą. Powtarzał sobie, że po kolejny bochenek pójdzie do miasta, jak tylko skończy dach. Bochenek twardniał, kurczył się i z każdym dniem ważył coraz mniej – a Maciek razem z nim.
+Noce spędzał w szałasie z gałęzi, który naprędce postawił pierwszego wieczoru: kilka konarów opartych o pień, przykrytych gałęziami z liśćmi i darnią, a w środku posłanie z mchu. Mieścił się w nim tylko na leżąco. Siekierę zawsze trzymał u boku. # dalej
 -> noce
 
 = noce
-Noce były najgorsze. Wiosenny chłód wchodził pod ubranie i kąsał do kości, a ognisko dogasało długo przed świtem. Maciek leżał z otwartymi oczami i słuchał.
+Noce były najgorsze. Wiosenny chłód i wilgoć wchodziły pod ubranie, kąsając przenikliwie do kości. Ciężko było zasnąć. Maciek leżał z otwartymi oczami i słuchał.
 { chata_macka:
-    - przy_lesie: Las nie milkł ani na chwilę. Trzaskały gałęzie, choć nie było wiatru. Coś chodziło między pniami, zatrzymywało się i ruszało znowu – zawsze wtedy, gdy Maciek wstrzymywał oddech.
-    - przy_mokradlach: Bagno nie spało. Bulgotało, mlaskało, czasem westchnęło tak po ludzku, że Maciek siadał na posłaniu. A po północy, daleko nad czarną wodą, zapalało się światełko i mrugało – jakby ktoś stał tam z kagankiem i czekał.
-    - else: Jezioro nocą oddychało. Pluskało przy brzegu, choć nie było fali, a raz Maciek usłyszał, jak coś ciężkiego wychodzi z wody i powoli idzie przez trzciny w stronę szałasu. Rano na mule nie było żadnych śladów.
+    - przy_lesie: Las nigdy nie milkł. Nie było wiatru, a gałęzie trzaskały tak, jakby ktoś – albo coś – leniwie po nich chodził. Maciek często wstrzymywał oddech i nasłuchiwał, choć od niektórych dźwięków przechodziły go ciarki.
+    - przy_mokradlach: Bagna nigdy nie spały. Bulgotały, mlaskały, a czasem – miał wrażenie – wzdychały po ludzku. Gdy usłyszał to pierwszy raz, wzdrygnął się, złapał za siekierę i wyjrzał z szałasu. Opowieści ludzi okazały się prawdziwe. Po północy, daleko nad czarną wodą, zapalało się małe światełko i mrugało – jakby ktoś stał tam z kagankiem i wabił do siebie.
+    - else: Jezioro nocą oddychało. Każdy powiew znad wody był ciepły i przyjemny. Choć nie było wiatru ani fal, przy brzegu co jakiś czas coś pluskało. Raz Maciek usłyszał, jakby coś ciężkiego wychodziło z wody i szło brzegiem przez trzciny w stronę szałasu. Rano sprawdził, ale w błocie nie było żadnych śladów.
 }
-Którejś nocy, gdy z bochenka została mu już tylko pięta, usłyszał coś innego. Ciche, urywane wycie – cienkie, jakby wilcze, ale słabe, bardziej skamlenie niż zew. Dobiegało z zarośli niedaleko szałasu. Milkło i wracało znowu.
-# pytanie: Co zrobi Maciek?
-*   [Wyjść z szałasu i sprawdzić, co to.]
+Którejś nocy, gdy z bochenka została mu już tylko piętka, usłyszał dźwięk, jakiego dotąd tu nie słyszał. Ciche, urywane wycie – cienkie, jakby wilcze, ale słabe. Dobiegało z zarośli niedaleko szałasu. Maciek próbował zamknąć oczy i zasnąć, ale wycie wciąż wracało.
+# pytanie: Co powinien zrobić Maciek?
+*   [Wziąć siekierę – choć po ciemku łatwo ją zgubić w błocie – wyjść z szałasu i sprawdzić, co to.]
     -> pies
-*   [Zostać w szałasie.]
+*   [Zostać w szałasie i mimo wszystko spróbować zasnąć. Tu czuje się bezpiecznie.]
     -> zostal
 
 = zostal
