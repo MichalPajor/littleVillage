@@ -5,12 +5,44 @@ namespace LittleVillage.Core.Tests;
 /// <summary>Testy prawdziwej fabuły gry — pilnują, by zmiany w plikach .ink niczego nie zepsuły.</summary>
 public sealed class GameStoryTests
 {
+    // Indeksy wyborów w prologu.
+    private const int Forest = 0, Marsh = 1, Lake = 2;
+    private const int GoOut = 0, Stay = 1;
+    private const int FeedDog = 0, KeepBread = 1;
+
     private static InkStoryEngine CreateEngine()
     {
         var engine = new InkStoryEngine();
         engine.Load(InkTestStory.Game);
         return engine;
     }
+
+    /// <summary>Gra wybierając kolejno podane opcje; strony bez wyborów przewija „Dalej”. Zwraca wszystkie strony.</summary>
+    private static List<StoryPage> Play(InkStoryEngine engine, params int[] choices)
+    {
+        var pages = new List<StoryPage> { engine.StartNew() };
+        var queue = new Queue<int>(choices);
+
+        for (var guard = 0; guard < 50; guard++)
+        {
+            var page = pages[^1];
+            switch (page.Ending)
+            {
+                case PageEnding.Continue:
+                    pages.Add(engine.Continue());
+                    break;
+                case PageEnding.Choices when queue.Count > 0:
+                    pages.Add(engine.Choose(queue.Dequeue()));
+                    break;
+                default:
+                    return pages;
+            }
+        }
+
+        throw new InvalidOperationException("Fabuła nie dochodzi do końca ani do wyboru.");
+    }
+
+    private static IEnumerable<string> Inventory(InkStoryEngine engine) => engine.GetInventory().Select(i => i.Id);
 
     [Fact]
     public void Story_compiles_without_errors()
@@ -61,23 +93,113 @@ public sealed class GameStoryTests
     }
 
     [Theory]
-    [InlineData(0)]
-    [InlineData(1)]
-    [InlineData(2)]
-    public void Every_choice_reaches_the_end_without_leftover_tags(int choice)
+    [InlineData(Forest, "budowa_las", "skraj lasu", "Las nie milkł")]
+    [InlineData(Marsh, "budowa_mokradla", "łąki przy mokradłach", "Bagno nie spało")]
+    [InlineData(Lake, "budowa_jezioro", "brzeg jeziora", "Jezioro nocą oddychało")]
+    public void Building_and_nights_depend_on_the_chosen_place(int place, string background, string placeText, string nightText)
     {
         var engine = CreateEngine();
         engine.StartNew();
-        var page = engine.Choose(choice);
 
-        for (var guard = 0; page.Ending == PageEnding.Continue && guard < 20; guard++)
+        var building = engine.Choose(place);
+        Assert.Equal(background, building.BackgroundKey);
+        Assert.Equal(PageEnding.Continue, building.Ending);
+        Assert.Equal("Chata", building.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.Contains(building.Blocks, b => b.Text.Contains(placeText));
+        Assert.Contains(building.Blocks, b => b.Text.Contains("szałasie z gałęzi"));
+
+        var nights = engine.Continue();
+        Assert.Equal(background, nights.BackgroundKey);
+        Assert.Contains(nights.Blocks, b => b.Text.StartsWith(nightText));
+        Assert.Contains(nights.Blocks, b => b.Text.Contains("wycie"));
+        Assert.Equal("Co zrobi Maciek?", nights.Question);
+        Assert.Equal(["Wyjść z szałasu i sprawdzić, co to.", "Zostać w szałasie."], nights.Choices.Select(c => c.Text));
+    }
+
+    [Fact]
+    public void Staying_in_the_shelter_skips_the_dog_and_keeps_the_bread()
+    {
+        var engine = CreateEngine();
+
+        var pages = Play(engine, Forest, Stay);
+
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.DoesNotContain(pages, p => p.BackgroundKey == "zarosla_noc");
+        Assert.Contains(pages[^1].Blocks, b => b.Text.Contains("ślady łap"));
+        Assert.Contains("chleb", Inventory(engine));
+    }
+
+    [Fact]
+    public void Going_out_finds_the_wolf_like_dog_at_night()
+    {
+        var engine = CreateEngine();
+
+        var dogPage = Play(engine, Marsh, GoOut)[^1];
+
+        Assert.Equal("zarosla_noc", dogPage.BackgroundKey);
+        Assert.Contains(dogPage.Blocks, b => b.Text.Contains("wilczy"));
+        Assert.Equal(["Dać psu kawałek chleba.", "Nie dawać i wrócić do szałasu."], dogPage.Choices.Select(c => c.Text));
+    }
+
+    [Fact]
+    public void Feeding_the_dog_uses_up_the_bread_and_tames_it()
+    {
+        var engine = CreateEngine();
+
+        var pages = Play(engine, Lake, GoOut, FeedDog);
+
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Contains(pages[^1].Blocks, b => b.Text.Contains("krok w krok"));
+        Assert.Equal(["siekiera"], Inventory(engine));
+    }
+
+    [Fact]
+    public void Refusing_the_dog_keeps_the_bread()
+    {
+        var engine = CreateEngine();
+
+        var pages = Play(engine, Forest, GoOut, KeepBread);
+
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Contains(pages[^1].Blocks, b => b.Text.Contains("Sam ledwo zipię"));
+        Assert.Equal(["siekiera", "chleb"], Inventory(engine));
+    }
+
+    public static TheoryData<int[]> AllProloguePaths()
+    {
+        var data = new TheoryData<int[]>();
+        foreach (var place in new[] { Forest, Marsh, Lake })
         {
-            page = engine.Continue();
+            data.Add([place, Stay]);
+            data.Add([place, GoOut, FeedDog]);
+            data.Add([place, GoOut, KeepBread]);
         }
 
-        Assert.Equal(PageEnding.End, page.Ending);
-        Assert.Equal("zapadlina", page.BackgroundKey);
-        Assert.All(page.Blocks, b => Assert.DoesNotContain("#", b.Text));
+        return data;
+    }
+
+    [Theory]
+    [MemberData(nameof(AllProloguePaths))]
+    public void Every_prologue_path_reaches_the_end_without_leftover_tags(int[] choices)
+    {
+        var pages = Play(CreateEngine(), choices);
+
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.All(pages.SelectMany(p => p.Blocks), b => Assert.DoesNotContain("#", b.Text));
+        Assert.All(pages, p => Assert.False(string.IsNullOrEmpty(p.BackgroundKey)));
+    }
+
+    [Theory]
+    [MemberData(nameof(AllProloguePaths))]
+    public void Every_background_used_by_the_story_exists(int[] choices)
+    {
+        var catalog = Scenes.BackgroundCatalog.Parse(File.ReadAllText(TestPaths.BackgroundsJson));
+
+        foreach (var key in Play(CreateEngine(), choices).Select(p => p.BackgroundKey).Distinct())
+        {
+            // Resolve zwraca tło domyślne dla nieznanego klucza — literówka w „# tlo:” byłaby niewidoczna.
+            Assert.Equal(key, catalog.Resolve(key)?.Key);
+        }
     }
 
     [Fact]
@@ -90,6 +212,6 @@ public sealed class GameStoryTests
         var restored = CreateEngine();
         restored.RestoreState(state, "zapadlina");
 
-        Assert.Equal(PageEnding.End, restored.Choose(2).Ending);
+        Assert.Equal("budowa_jezioro", restored.Choose(Lake).BackgroundKey);
     }
 }

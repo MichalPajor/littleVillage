@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „zarośla nocą”: pierwszy plan: mokra trawa, ślady łap
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="424" viewBox="0 420 390 424">
+<defs>
+<filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M-10 436C80 428 180 436 260 430C320 426 360 432 400 430V844H-10Z" fill="#EDEBE6" stroke-width="3"/>
+<path d="M-10 436C80 428 180 436 260 430C320 426 360 432 400 430V844H-10Z" fill="url(#hatch)" stroke="none" opacity="0.55"/>
+<path d="M244.66303251427283 631.837667581716l-3.7 -14.9M244.66303251427283 631.837667581716l2.5 -17.4M244.66303251427283 631.837667581716l7.4 -12.4" fill="none" stroke-width="2.2"/>
+<path d="M137.50502338600847 725.7105972527006l-3.8 -15.2M137.50502338600847 725.7105972527006l2.5 -17.8M137.50502338600847 725.7105972527006l7.6 -12.7" fill="none" stroke-width="2.2"/>
+<path d="M8.651162906415857 473.62495342186094l-3.7 -14.9M8.651162906415857 473.62495342186094l2.5 -17.3M8.651162906415857 473.62495342186094l7.4 -12.4" fill="none" stroke-width="2.2"/>
+<path d="M375.68917635064037 547.9376884915534l-3.4 -13.5M375.68917635064037 547.9376884915534l2.3 -15.8M375.68917635064037 547.9376884915534l6.8 -11.3" fill="none" stroke-width="2.2"/>
+<path d="M231.14203150993077 574.8099004417226l-3.2 -13.0M231.14203150993077 574.8099004417226l2.2 -15.1M231.14203150993077 574.8099004417226l6.5 -10.8" fill="none" stroke-width="2.2"/>
+<path d="M121.94155786679521 593.970050358012l-3.6 -14.4M121.94155786679521 593.970050358012l2.4 -16.8M121.94155786679521 593.970050358012l7.2 -12.0" fill="none" stroke-width="2.2"/>
+<path d="M117.15754961257984 597.0925331182775l-3.9 -15.4M117.15754961257984 597.0925331182775l2.6 -18.0M117.15754961257984 597.0925331182775l7.7 -12.9" fill="none" stroke-width="2.2"/>
+<path d="M10.499269953638716 672.0106208075271l-3.8 -15.2M10.499269953638716 672.0106208075271l2.5 -17.7M10.499269953638716 672.0106208075271l7.6 -12.7" fill="none" stroke-width="2.2"/>
+<path d="M120.90651120993628 536.7897586893445l-3.9 -15.6M120.90651120993628 536.7897586893445l2.6 -18.2M120.90651120993628 536.7897586893445l7.8 -13.0" fill="none" stroke-width="2.2"/>
+<path d="M93.09111899015835 523.0837929579974l-3.4 -13.4M93.09111899015835 523.0837929579974l2.2 -15.6M93.09111899015835 523.0837929579974l6.7 -11.2" fill="none" stroke-width="2.2"/>
+<path d="M272.24589860319145 489.71826012642987l-3.2 -12.7M272.24589860319145 489.71826012642987l2.1 -14.9M272.24589860319145 489.71826012642987l6.4 -10.6" fill="none" stroke-width="2.2"/>
+<path d="M130.16392367498338 775.0801677073505l-3.4 -13.4M130.16392367498338 775.0801677073505l2.2 -15.7M130.16392367498338 775.0801677073505l6.7 -11.2" fill="none" stroke-width="2.2"/>
+<path d="M333.65872565410575 516.0208506970097l-3.2 -12.8M333.65872565410575 516.0208506970097l2.1 -15.0M333.65872565410575 516.0208506970097l6.4 -10.7" fill="none" stroke-width="2.2"/>
+<path d="M253.59062675407299 795.1103260493026l-3.4 -13.5M253.59062675407299 795.1103260493026l2.3 -15.8M253.59062675407299 795.1103260493026l6.8 -11.3" fill="none" stroke-width="2.2"/>
+<path d="M87.76085866192507 497.1585366370117l-3.5 -14.0M87.76085866192507 497.1585366370117l2.3 -16.3M87.76085866192507 497.1585366370117l7.0 -11.6" fill="none" stroke-width="2.2"/>
+<path d="M74.41348428208342 764.6431226739284l-4.0 -15.8M74.41348428208342 764.6431226739284l2.6 -18.5M74.41348428208342 764.6431226739284l7.9 -13.2" fill="none" stroke-width="2.2"/>
+<path d="M71.59866218904975 558.6509353864399l-3.9 -15.6M71.59866218904975 558.6509353864399l2.6 -18.3M71.59866218904975 558.6509353864399l7.8 -13.0" fill="none" stroke-width="2.2"/>
+<path d="M250.35553003369472 764.4405580426715l-3.2 -12.9M250.35553003369472 764.4405580426715l2.1 -15.0M250.35553003369472 764.4405580426715l6.4 -10.7" fill="none" stroke-width="2.2"/>
+<path d="M50.578763740481655 563.8577274395158l-3.9 -15.6M50.578763740481655 563.8577274395158l2.6 -18.2M50.578763740481655 563.8577274395158l7.8 -13.0" fill="none" stroke-width="2.2"/>
+<path d="M105.75805262655844 585.0781694600728l-3.3 -13.3M105.75805262655844 585.0781694600728l2.2 -15.5M105.75805262655844 585.0781694600728l6.7 -11.1" fill="none" stroke-width="2.2"/>
+<path d="M163.71076167858823 609.7136254151334l-4.1 -16.3M163.71076167858823 609.7136254151334l2.7 -19.0M163.71076167858823 609.7136254151334l8.2 -13.6" fill="none" stroke-width="2.2"/>
+<path d="M60.839164985960075 451.8180998874268l-4.1 -16.5M60.839164985960075 451.8180998874268l2.7 -19.2M60.839164985960075 451.8180998874268l8.2 -13.7" fill="none" stroke-width="2.2"/>
+<path d="M343.19151813415874 834.8963254612304l-3.4 -13.4M343.19151813415874 834.8963254612304l2.2 -15.6M343.19151813415874 834.8963254612304l6.7 -11.2" fill="none" stroke-width="2.2"/>
+<path d="M370.5628548893789 811.677113620422l-3.0 -12.1M370.5628548893789 811.677113620422l2.0 -14.2M370.5628548893789 811.677113620422l6.1 -10.1" fill="none" stroke-width="2.2"/>
+<path d="M290.75397355930346 776.3124849186717l-3.7 -14.8M290.75397355930346 776.3124849186717l2.5 -17.2M290.75397355930346 776.3124849186717l7.4 -12.3" fill="none" stroke-width="2.2"/>
+<path d="M202.4158408918438 562.7263160951868l-3.2 -12.8M202.4158408918438 562.7263160951868l2.1 -15.0M202.4158408918438 562.7263160951868l6.4 -10.7" fill="none" stroke-width="2.2"/>
+<ellipse cx="210" cy="470" rx="4" ry="5.5" fill="#000000" stroke="none"/>
+<circle cx="206" cy="463" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="210" cy="461" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="214" cy="463" r="1.8" fill="#000000" stroke="none"/>
+<ellipse cx="222" cy="500" rx="4" ry="5.5" fill="#000000" stroke="none"/>
+<circle cx="218" cy="493" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="222" cy="491" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="226" cy="493" r="1.8" fill="#000000" stroke="none"/>
+<ellipse cx="206" cy="534" rx="4" ry="5.5" fill="#000000" stroke="none"/>
+<circle cx="202" cy="527" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="206" cy="525" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="210" cy="527" r="1.8" fill="#000000" stroke="none"/>
+<ellipse cx="224" cy="568" rx="4" ry="5.5" fill="#000000" stroke="none"/>
+<circle cx="220" cy="561" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="224" cy="559" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="228" cy="561" r="1.8" fill="#000000" stroke="none"/>
+<ellipse cx="208" cy="604" rx="4" ry="5.5" fill="#000000" stroke="none"/>
+<circle cx="204" cy="597" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="208" cy="595" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="212" cy="597" r="1.8" fill="#000000" stroke="none"/>
+<ellipse cx="226" cy="640" rx="4" ry="5.5" fill="#000000" stroke="none"/>
+<circle cx="222" cy="633" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="226" cy="631" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="230" cy="633" r="1.8" fill="#000000" stroke="none"/>
+<ellipse cx="210" cy="678" rx="4" ry="5.5" fill="#000000" stroke="none"/>
+<circle cx="206" cy="671" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="210" cy="669" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="214" cy="671" r="1.8" fill="#000000" stroke="none"/>
+<path d="M0 690C40 740 60 800 70 844H0Z" fill="url(#hatchNight)" stroke="none"/>
+<path d="M390 680C350 740 340 800 336 844H390Z" fill="url(#hatchNight)" stroke="none"/>
+</g>
+</svg>

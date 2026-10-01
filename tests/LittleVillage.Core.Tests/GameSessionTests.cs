@@ -39,7 +39,7 @@ public sealed class GameSessionTests : IDisposable
         Assert.Contains(second.GetInventory(), i => i.Id == "siekiera");
 
         // Wznowiona gra przyjmuje wybór dokładnie tak, jak przerwana.
-        Assert.Equal(PageEnding.End, (await second.AdvanceAsync(0)).Ending);
+        Assert.Equal("budowa_las", (await second.AdvanceAsync(0)).BackgroundKey);
     }
 
     [Fact]
@@ -49,10 +49,11 @@ public sealed class GameSessionTests : IDisposable
         await session.InitializeAsync();
         await session.StartNewGameAsync();
 
+        // Nad jeziorem, zostaje w szałasie — najkrótsza droga do końca prologu.
         var page = await session.AdvanceAsync(2);
-        while (page.Ending == PageEnding.Continue)
+        foreach (var choice in new int?[] { null, 1 })
         {
-            page = await session.AdvanceAsync(null);
+            page = await session.AdvanceAsync(choice);
         }
 
         Assert.Equal(PageEnding.End, page.Ending);

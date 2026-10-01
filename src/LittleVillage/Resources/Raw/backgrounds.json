@@ -77,6 +77,65 @@
         },
         { "image": "bg_zapadlina_przod.png", "x": 0, "y": 310, "width": 390, "height": 534 }
       ]
+    },
+    "budowa_las": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_budowa_niebo.png", "x": 0, "y": 0, "width": 390, "height": 270},
+        {"image": "bg_budowa_chmura.png", "x": 190, "y": 92, "width": 150, "height": 40, "animation": {"type": "drift", "amplitude": 14, "duration": 18000}},
+        {"image": "bg_budowa_wrony.png", "x": 196, "y": 40, "width": 110, "height": 44, "animation": {"type": "bob", "amplitude": 4, "duration": 3600}},
+        {"image": "bg_budowa_tlo_las.png", "x": 0, "y": 100, "width": 390, "height": 190},
+        {"image": "bg_budowa_las_swierki.png", "x": 300, "y": 120, "width": 90, "height": 170, "animation": {"type": "sway", "amplitude": 1.3, "duration": 5200, "anchorX": 0.5, "anchorY": 0.95}},
+        {"image": "bg_budowa_plac.png", "x": 0, "y": 240, "width": 390, "height": 236},
+        {"image": "bg_budowa_dym.png", "x": 104, "y": 300, "width": 50, "height": 112, "animation": {"type": "bob", "amplitude": 3, "duration": 3800}},
+        {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+      ]
+    },
+    "budowa_mokradla": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_budowa_niebo.png", "x": 0, "y": 0, "width": 390, "height": 270},
+        {"image": "bg_budowa_chmura.png", "x": 190, "y": 92, "width": 150, "height": 40, "animation": {"type": "drift", "amplitude": 14, "duration": 18000}},
+        {"image": "bg_budowa_wrony.png", "x": 196, "y": 40, "width": 110, "height": 44, "animation": {"type": "bob", "amplitude": 4, "duration": 3600}},
+        {"image": "bg_budowa_tlo_mokradla.png", "x": 0, "y": 150, "width": 390, "height": 130},
+        {"image": "bg_budowa_mokradla_mgla.png", "x": -30, "y": 216, "width": 330, "height": 34, "animation": {"type": "drift", "amplitude": 12, "duration": 15000}},
+        {"image": "bg_budowa_plac.png", "x": 0, "y": 240, "width": 390, "height": 236},
+        {"image": "bg_budowa_dym.png", "x": 104, "y": 300, "width": 50, "height": 112, "animation": {"type": "bob", "amplitude": 3, "duration": 3800}},
+        {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+      ]
+    },
+    "budowa_jezioro": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_budowa_niebo.png", "x": 0, "y": 0, "width": 390, "height": 270},
+        {"image": "bg_budowa_chmura.png", "x": 190, "y": 92, "width": 150, "height": 40, "animation": {"type": "drift", "amplitude": 14, "duration": 18000}},
+        {"image": "bg_budowa_wrony.png", "x": 196, "y": 40, "width": 110, "height": 44, "animation": {"type": "bob", "amplitude": 4, "duration": 3600}},
+        {"image": "bg_budowa_tlo_jezioro.png", "x": 0, "y": 140, "width": 390, "height": 140},
+        {"image": "bg_budowa_jezioro_blyski.png", "x": 20, "y": 204, "width": 340, "height": 44, "animation": {"type": "drift", "amplitude": 5, "duration": 6000}},
+        {"image": "bg_budowa_plac.png", "x": 0, "y": 240, "width": 390, "height": 236},
+        {"image": "bg_budowa_dym.png", "x": 104, "y": 300, "width": 50, "height": 112, "animation": {"type": "bob", "amplitude": 3, "duration": 3800}},
+        {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+      ]
+    },
+    "zarosla_noc": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_zarosla_niebo.png", "x": 0, "y": 0, "width": 390, "height": 320},
+        {"image": "bg_zarosla_chmury.png", "x": 180, "y": 120, "width": 200, "height": 44, "animation": {"type": "drift", "amplitude": 10, "duration": 16000}},
+        {"image": "bg_zarosla_las.png", "x": 0, "y": 150, "width": 390, "height": 290},
+        {"image": "bg_zarosla_oczy_las.png", "x": 126, "y": 222, "width": 30, "height": 14, "animation": {"type": "blink", "duration": 7000, "phase": 0.5}},
+        {"image": "bg_zarosla_krzaki.png", "x": 0, "y": 260, "width": 400, "height": 200},
+        {"image": "bg_zarosla_slepia.png", "x": 250, "y": 310, "width": 32, "height": 24, "animation": {"type": "flicker", "amplitude": 0.55, "duration": 2600}},
+        {"image": "bg_zarosla_przod.png", "x": 0, "y": 420, "width": 390, "height": 424}
+      ]
     }
   }
 }

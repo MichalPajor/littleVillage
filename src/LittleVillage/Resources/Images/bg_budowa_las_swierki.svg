@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „budowa chaty”: wariant las: świerki (kołyszą się)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="170" viewBox="300 120 90 170">
+<defs>
+<filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<line x1="318" y1="292" x2="318" y2="280" stroke-width="4"/><path d="M298.0 284.0L318.0 242.0L338.0 284.0Z M302.0 254.0L318.0 212.0L334.0 254.0Z M306.0 224.0L318.0 182.0L330.0 224.0Z M310.0 194.0L318.0 152.0L326.0 194.0Z M314.0 164.0L318.0 122.0L322.0 164.0Z" fill="#000000" stroke-width="2.4"/>
+<line x1="364" y1="286" x2="364" y2="274" stroke-width="4"/><path d="M346.0 278.0L364.0 241.0L382.0 278.0Z M349.6 251.6L364.0 214.6L378.4 251.6Z M353.2 225.2L364.0 188.2L374.8 225.2Z M356.8 198.8L364.0 161.8L371.2 198.8Z M360.4 172.4L364.0 135.4L367.6 172.4Z" fill="#000000" stroke-width="2.4"/>
+</g>
+</svg>
