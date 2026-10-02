@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — przełącz na tryb ciemny (sierp księżyca w stylu makiety) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<path d="M30 6C20 9 14 18 15 28C16 37 24 43 33 42C27 46 15 44 9 36C3 27 6 13 16 8C20 6 25 5 30 6Z" fill="#000000" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M36 14l1.5 3.5l3.5 1.5l-3.5 1.5l-1.5 3.5l-1.5-3.5l-3.5-1.5l3.5-1.5z" fill="#000000"/>
+</svg>

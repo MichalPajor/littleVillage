@@ -15,4 +15,14 @@
     <x:Static x:Key="BloodDark" Member="theme:Palette.BloodDark" />
     <x:Static x:Key="Scrim" Member="theme:Palette.Scrim" />
 
+    <!-- Kolory zależne od trybu jasny/ciemny. Wartości startowe = tryb jasny;
+         ThemeService podmienia je w locie, widoki używają ich przez DynamicResource. -->
+    <x:Static x:Key="TextInk" Member="theme:Palette.Ink" />
+    <x:Static x:Key="TextMuted" Member="theme:Palette.Ash" />
+    <x:Static x:Key="PanelBackground" Member="theme:Palette.PaperTranslucent" />
+    <x:Static x:Key="PanelSolid" Member="theme:Palette.Paper" />
+    <x:Static x:Key="PanelStroke" Member="theme:Palette.Ink" />
+    <x:Static x:Key="ButtonFace" Member="theme:Palette.Paper" />
+    <x:Static x:Key="ButtonInk" Member="theme:Palette.Ink" />
+
 </ResourceDictionary>

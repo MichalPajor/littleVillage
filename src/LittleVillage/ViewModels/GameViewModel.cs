@@ -17,6 +17,7 @@ public sealed partial class GameViewModel(
     INavigationService navigation,
     IDialogService dialogs,
     IMessenger messenger,
+    IThemeService theme,
     ILogger<GameViewModel> logger) : ViewModelBase
 {
     private StoryPage? _shownPage;
@@ -53,6 +54,10 @@ public sealed partial class GameViewModel(
     [ObservableProperty]
     public partial bool HasInventoryItems { get; set; }
 
+    /// <summary>Tryb ciemny okien z tekstem (czarne tło, jasne litery).</summary>
+    [ObservableProperty]
+    public partial bool IsDarkMode { get; set; }
+
     public bool HasChoices => Ending == PageEnding.Choices;
 
     /// <summary>Przycisk „Dalej” pojawia się po wybraniu opcji albo od razu, gdy scena nie ma wyborów.</summary>
@@ -62,6 +67,8 @@ public sealed partial class GameViewModel(
 
     public override Task OnAppearingAsync()
     {
+        IsDarkMode = theme.IsDark;
+
         if (session.CurrentPage is { } page && !ReferenceEquals(page, _shownPage))
         {
             Show(page);
@@ -93,6 +100,13 @@ public sealed partial class GameViewModel(
 
     [RelayCommand]
     private void TogglePanel() => IsPanelCollapsed = !IsPanelCollapsed;
+
+    [RelayCommand]
+    private void ToggleTheme()
+    {
+        theme.SetDark(!theme.IsDark);
+        IsDarkMode = theme.IsDark;
+    }
 
     [RelayCommand]
     private void OpenInventory()

@@ -22,7 +22,7 @@
 
                 <Label Text="{StaticResource MainMenuSubtitle}" Style="{StaticResource StoryChapter}" />
                 <Label Text="{StaticResource MainMenuTitle}" Style="{StaticResource StoryTitle}" FontSize="46" />
-                <Image
+                <controls:ThemedImage
                     Source="decor_underline.png"
                     WidthRequest="190"
                     HeightRequest="10"

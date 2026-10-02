@@ -62,6 +62,8 @@ public static class MauiProgram
         services.AddSingleton<INavigationService, ShellNavigationService>();
         services.AddSingleton<IDialogService, DialogService>();
         services.AddSingleton<IMessenger>(WeakReferenceMessenger.Default);
+        services.AddSingleton(Preferences.Default);
+        services.AddSingleton<IThemeService, ThemeService>();
         return services;
     }
 

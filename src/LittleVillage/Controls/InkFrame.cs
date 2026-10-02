@@ -20,14 +20,20 @@ public sealed class InkFrame : ContentView
 
     public static readonly BindableProperty FrameCornerRadiusProperty = BindableProperty.Create(
         nameof(FrameCornerRadius), typeof(CornerRadius), typeof(InkFrame), new CornerRadius(6, 10, 8, 12),
-        propertyChanged: (b, _, n) => ((InkFrame)b)._outer.StrokeShape = new RoundRectangle { CornerRadius = (CornerRadius)n });
+        propertyChanged: (b, _, n) => ((InkFrame)b)._outer?.StrokeShape = new RoundRectangle { CornerRadius = (CornerRadius)n });
 
     /// <summary>Tło okna — domyślnie półprzezroczysty papier (okno fabuły); nieprzezroczysty dla okien nakładanych.</summary>
     public static readonly BindableProperty FrameBackgroundColorProperty = BindableProperty.Create(
         nameof(FrameBackgroundColor), typeof(Color), typeof(InkFrame), Palette.PaperTranslucent,
-        propertyChanged: (b, _, n) => ((InkFrame)b)._outer.BackgroundColor = (Color)n);
+        propertyChanged: (b, _, n) => ((InkFrame)b)._outer?.BackgroundColor = (Color)n);
+
+    /// <summary>Kolor obramowania (zewnętrznego i wewnętrznej linii).</summary>
+    public static readonly BindableProperty FrameStrokeColorProperty = BindableProperty.Create(
+        nameof(FrameStrokeColor), typeof(Color), typeof(InkFrame), Palette.Ink,
+        propertyChanged: (b, _, n) => ((InkFrame)b).ApplyStroke((Color)n));
 
     private readonly Border _outer;
+    private readonly Border _innerLine;
     private readonly ContentView _contentHost;
     private readonly Image _blood;
 
@@ -35,10 +41,10 @@ public sealed class InkFrame : ContentView
     {
         _contentHost = new ContentView();
 
-        var innerLine = new Border
+        _innerLine = new Border
         {
             Margin = 5,
-            Stroke = Palette.Ink,
+            Stroke = FrameStrokeColor,
             StrokeThickness = 1.5,
             StrokeShape = new Rectangle(),
             BackgroundColor = Colors.Transparent,
@@ -48,10 +54,10 @@ public sealed class InkFrame : ContentView
         _outer = new Border
         {
             BackgroundColor = FrameBackgroundColor,
-            Stroke = Palette.Ink,
+            Stroke = FrameStrokeColor,
             StrokeThickness = 4,
             StrokeShape = new RoundRectangle { CornerRadius = FrameCornerRadius },
-            Content = new Grid { Children = { innerLine, _contentHost } },
+            Content = new Grid { Children = { _innerLine, _contentHost } },
         };
 
         _blood = new Image
@@ -87,9 +93,26 @@ public sealed class InkFrame : ContentView
         set => SetValue(FrameBackgroundColorProperty, value);
     }
 
+    public Color FrameStrokeColor
+    {
+        get => (Color)GetValue(FrameStrokeColorProperty);
+        set => SetValue(FrameStrokeColorProperty, value);
+    }
+
     public CornerRadius FrameCornerRadius
     {
         get => (CornerRadius)GetValue(FrameCornerRadiusProperty);
         set => SetValue(FrameCornerRadiusProperty, value);
+    }
+
+    private void ApplyStroke(Color color)
+    {
+        if (_outer is null || _innerLine is null)
+        {
+            return;
+        }
+
+        _outer.Stroke = color;
+        _innerLine.Stroke = color;
     }
 }

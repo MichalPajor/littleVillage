@@ -168,6 +168,13 @@ public abstract class SketchButton : ContentView
 
     private void ApplyShape()
     {
+        // Styl (np. kolory trybu ciemnego) może ustawić właściwości jeszcze w trakcie konstruktora,
+        // zanim powstaną ramki — wtedy wygląd nałoży koniec konstruktora.
+        if (_face is null || _shadow is null)
+        {
+            return;
+        }
+
         var offset = ShadowOffset;
 
         _face.StrokeShape = new RoundRectangle { CornerRadius = CornerRadius };
@@ -181,6 +188,11 @@ public abstract class SketchButton : ContentView
 
     private void UpdateVisualState()
     {
+        if (_face is null || _shadow is null)
+        {
+            return;
+        }
+
         var inverted = _isPressed || IsSelected;
         var foreground = inverted ? FaceColor : InkColor;
 

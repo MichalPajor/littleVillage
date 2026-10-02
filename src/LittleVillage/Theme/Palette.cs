@@ -27,6 +27,15 @@ public static class Palette
     /// <summary>Krew zakrzepła — cień w plamach krwi.</summary>
     public static readonly Color BloodDark = Color.FromArgb("#5C0409");
 
+    /// <summary>Tryb ciemny: okno fabuły — prawie czerń kryjąca w 96%.</summary>
+    public static readonly Color NightTranslucent = Color.FromRgba(14, 14, 14, 245);
+
+    /// <summary>Tryb ciemny: okna nieprzezroczyste i lica przycisków.</summary>
+    public static readonly Color Night = Color.FromArgb("#0E0E0E");
+
+    /// <summary>Tryb ciemny: podpisy, podpowiedzi (jaśniejszy popiół, czytelny na czerni).</summary>
+    public static readonly Color AshLight = Color.FromArgb("#A8A6A0");
+
     /// <summary>Przyciemnienie pod oknami nakładanymi na ekran (ekwipunek).</summary>
     public static readonly Color Scrim = Color.FromRgba(0, 0, 0, 170);
 }

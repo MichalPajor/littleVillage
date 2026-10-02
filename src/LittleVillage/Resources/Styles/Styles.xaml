@@ -3,7 +3,8 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:controls="clr-namespace:LittleVillage.Controls">
 
     <!-- Konwertery (CommunityToolkit.Maui) -->
     <toolkit:InvertedBoolConverter x:Key="InvertedBool" />
@@ -34,7 +35,7 @@
     <Style x:Key="BaseLabel" TargetType="Label">
         <Setter Property="FontFamily" Value="Alegreya" />
         <Setter Property="FontSize" Value="17" />
-        <Setter Property="TextColor" Value="{StaticResource Ink}" />
+        <Setter Property="TextColor" Value="{DynamicResource TextInk}" />
     </Style>
 
     <Style TargetType="Label" BasedOn="{StaticResource BaseLabel}" />
@@ -43,13 +44,32 @@
         <Setter Property="VerticalScrollBarVisibility" Value="Default" />
     </Style>
 
+    <!-- ===== Kontrolki gry — kolory zależne od trybu jasny/ciemny ===== -->
+
+    <!-- Styl z kluczem, by jawne style przycisków mogły po nim dziedziczyć (BasedOn). -->
+    <Style x:Key="SketchButtonTheme" TargetType="controls:SketchButton">
+        <Setter Property="FaceColor" Value="{DynamicResource ButtonFace}" />
+        <Setter Property="InkColor" Value="{DynamicResource ButtonInk}" />
+    </Style>
+
+    <Style TargetType="controls:SketchButton" ApplyToDerivedTypes="True" BasedOn="{StaticResource SketchButtonTheme}" />
+
+    <Style TargetType="controls:InkFrame">
+        <Setter Property="FrameBackgroundColor" Value="{DynamicResource PanelBackground}" />
+        <Setter Property="FrameStrokeColor" Value="{DynamicResource PanelStroke}" />
+    </Style>
+
+    <Style TargetType="controls:ThemedImage">
+        <Setter Property="TintColor" Value="{DynamicResource TextInk}" />
+    </Style>
+
     <!-- ===== Tekst fabuły (wartości z makiety) ===== -->
 
     <!-- „Rozdział pierwszy” -->
     <Style x:Key="StoryChapter" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
         <Setter Property="FontFamily" Value="AlegreyaItalic" />
         <Setter Property="FontSize" Value="15" />
-        <Setter Property="TextColor" Value="{StaticResource Ash}" />
+        <Setter Property="TextColor" Value="{DynamicResource TextMuted}" />
     </Style>
 
     <!-- Tytuły: gry, rozdziałów, okien -->
@@ -76,7 +96,7 @@
     <Style x:Key="Hint" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
         <Setter Property="FontFamily" Value="AlegreyaItalic" />
         <Setter Property="FontSize" Value="15" />
-        <Setter Property="TextColor" Value="{StaticResource Ash}" />
+        <Setter Property="TextColor" Value="{DynamicResource TextMuted}" />
     </Style>
 
     <Style x:Key="ItemName" TargetType="Label" BasedOn="{StaticResource BaseLabel}">

@@ -22,7 +22,7 @@
                 <DataTemplate x:DataType="story:StoryBlock">
                     <VerticalStackLayout Spacing="0">
                         <Label Text="{Binding Text}" Style="{StaticResource StoryTitle}" />
-                        <Image Source="decor_underline.png" WidthRequest="190" HeightRequest="10" Aspect="Fill" HorizontalOptions="Start" />
+                        <controls:ThemedImage Source="decor_underline.png" WidthRequest="190" HeightRequest="10" Aspect="Fill" HorizontalOptions="Start" />
                     </VerticalStackLayout>
                 </DataTemplate>
             </controls:StoryBlockTemplateSelector.TitleTemplate>
@@ -38,7 +38,7 @@
 
             <controls:StoryBlockTemplateSelector.DividerTemplate>
                 <DataTemplate x:DataType="story:StoryBlock">
-                    <Image Source="decor_divider.png" HeightRequest="18" Aspect="AspectFit" HorizontalOptions="Fill" />
+                    <controls:ThemedImage Source="decor_divider.png" HeightRequest="18" Aspect="AspectFit" HorizontalOptions="Fill" />
                 </DataTemplate>
             </controls:StoryBlockTemplateSelector.DividerTemplate>
         </controls:StoryBlockTemplateSelector>
@@ -63,6 +63,31 @@
             CornerRadius="14,10,9,16"
             Command="{Binding OpenInventoryCommand}"
             SemanticProperties.Description="Otwórz ekwipunek" />
+
+        <!-- Tryb jasny / ciemny okien z tekstem: księżyc = przełącz na ciemny, słońce = na jasny -->
+        <controls:SketchIconButton
+            Grid.Row="0"
+            Margin="0,104,19,0"
+            HorizontalOptions="End"
+            VerticalOptions="Start"
+            FaceSize="44,44"
+            IconSize="24"
+            StrokeThickness="3"
+            ShadowOffset="3"
+            CornerRadius="12,9,13,10"
+            Command="{Binding ToggleThemeCommand}"
+            SemanticProperties.Description="Przełącz tryb jasny lub ciemny">
+            <controls:SketchIconButton.Style>
+                <Style TargetType="controls:SketchIconButton" BasedOn="{StaticResource SketchButtonTheme}">
+                    <Setter Property="Icon" Value="ic_theme_dark.png" />
+                    <Style.Triggers>
+                        <DataTrigger TargetType="controls:SketchIconButton" Binding="{Binding IsDarkMode}" Value="True">
+                            <Setter Property="Icon" Value="ic_theme_light.png" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </controls:SketchIconButton.Style>
+        </controls:SketchIconButton>
 
         <!-- Okno fabuły; dolna krawędź schowana poza ekranem (ujemny margines) -->
         <controls:InkFrame
@@ -138,7 +163,7 @@
             controls:SlideAway.ExtraDistance="8"
             SemanticProperties.Description="Ukryj lub pokaż okno fabuły">
             <controls:SketchIconButton.Style>
-                <Style TargetType="controls:SketchIconButton">
+                <Style TargetType="controls:SketchIconButton" BasedOn="{StaticResource SketchButtonTheme}">
                     <Setter Property="Icon" Value="ic_panel_hide.png" />
                     <Style.Triggers>
                         <DataTrigger TargetType="controls:SketchIconButton" Binding="{Binding IsPanelCollapsed}" Value="True">
@@ -161,7 +186,7 @@
             <controls:InkFrame
                 x:Name="InventoryFrame"
                 Margin="24,72"
-                FrameBackgroundColor="{StaticResource Paper}"
+                FrameBackgroundColor="{DynamicResource PanelSolid}"
                 MaximumWidthRequest="420"
                 VerticalOptions="Center">
                 <!-- Okno dopasowuje się do liczby przedmiotów; przy długiej liście lista się przewija. -->
@@ -179,7 +204,7 @@
                         Command="{Binding CloseInventoryCommand}"
                         SemanticProperties.Description="Zamknij ekwipunek" />
 
-                    <Image Grid.Row="1" Source="decor_underline.png" WidthRequest="150" HeightRequest="8" Aspect="Fill" HorizontalOptions="Start" />
+                    <controls:ThemedImage Grid.Row="1" Source="decor_underline.png" WidthRequest="150" HeightRequest="8" Aspect="Fill" HorizontalOptions="Start" />
 
                     <ScrollView Grid.Row="2" Margin="0,18,0,0" MaximumHeightRequest="440">
                         <VerticalStackLayout Spacing="16">
