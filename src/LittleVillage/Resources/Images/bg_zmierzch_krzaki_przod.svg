@@ -21,14 +21,13 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<path d="M208 438 Q193 425 215 420 Q192 409 207 405 Q197 395 224 396 Q207 381 223 381 Q213 367 235 372 Q230 358 251 367 Q243 347 257 353 Q257 340 276 354 Q275 334 287 343 Q291 329 303 347 Q309 331 318 346 Q327 327 334 340 Q347 321 352 336 Q363 329 361 353 Q377 341 375 357 Q396 345 393 359 Q417 350 410 365 Q429 362 414 380 Q434 379 418 394 Q446 392 436 403 Q447 408 419 420 Q449 425 438 432 L428 438 Z" fill="#000000" stroke-width="3"/>
-<path d="M250 400q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-<path d="M276 380q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-<path d="M300 392q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-<path d="M322 372q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-<path d="M350 384q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-<path d="M372 400q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-<path d="M290 414q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-<path d="M340 408q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M216 440 Q205 430 221 428 Q203 422 215 420 Q208 415 229 415 Q215 407 227 407 Q220 400 237 403 Q233 396 249 400 Q242 390 254 393 Q254 386 268 394 Q267 383 276 388 Q279 380 289 390 Q293 381 300 389 Q307 379 312 386 Q322 376 326 384 Q335 380 333 393 Q345 387 344 395 Q360 389 358 396 Q375 391 370 399 Q385 398 373 407 Q388 406 376 414 Q398 413 390 419 Q399 421 377 428 Q400 430 392 434 L384 440 Z" fill="#000000" stroke-width="3"/>
+<path d="M240 418q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M262 404q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M286 398q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M310 400q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M334 406q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M356 418q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M298 418q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
 </g>
 </svg>

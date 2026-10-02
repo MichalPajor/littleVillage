@@ -101,8 +101,16 @@ for (lx, ly, rot) in [(160, 398, 20), (182, 394, -10), (168, 422, 40), (150, 410
     dog.append(f'<path d="M{lx} {ly}c4-6 12-6 14 0c-4 4-10 4-14 0z" fill="#000000" stroke-width="1.4" transform="rotate({rot} {lx} {ly})"/>')
 L["krzaki"] = (0, 260, 400, 200, group(k))
 
-# pies — rysunek autora (assets/wilczek.svg), siedzi w przerwie miedzy krzakami
-L["pies"] = (200, 292, 140, 144, art.sitting("translate(208 300) scale(0.3)", skip=("cień",)))
+# pies — rysunek autora (assets/wilczek2.svg) bez kresek szczekania: chudy, zjezony, warczy,
+# wychyla sie zza krzaka w przerwie miedzy krzakami (zad i tylne nogi zaslania krzak "krzak_przod")
+DOG = "translate(190 326) scale(0.27)"
+DOG_EYE = (239, 357)    # oko psa po przeksztalceniu
+L["pies"] = (180, 334, 170, 100, art.barking(DOG, skip=("szczekanie",)))
+L["krzak_przod"] = (270, 360, 110, 76, group([
+    f'<path d="{bush(326, 434, 52, 64, 9)}" fill="#000000" stroke-width="3"/>',
+    *[f'<path d="M{x} {y}q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>' for x, y in [(300, 404), (318, 392), (338, 400), (326, 418)]]]))
+L["blysk_oka"] = (DOG_EYE[0] - 5, DOG_EYE[1] - 5, 10, 10, group([
+    f'<circle cx="{DOG_EYE[0]}" cy="{DOG_EYE[1] - 0.6}" r="1.3" fill="#FFFFFF" stroke="none"/>']))
 
 # blyszczace slepia psa (migocza w swietle ksiezyca)
 # ---------- PIERWSZY PLAN: mokra trawa w poswiacie, slady prowadzace do krzaka
@@ -118,11 +126,12 @@ p.append('<path d="M0 690C40 740 60 800 70 844H0Z" fill="url(#hatchNight)" strok
 p.append('<path d="M390 680C350 740 340 800 336 844H390Z" fill="url(#hatchNight)" stroke="none"/>')
 L["przod"] = (0, 420, 390, 424, group(p))
 
-ORDER = ["niebo", "chmury", "las", "oczy_las", "krzaki", "pies", "przod"]
+ORDER = ["niebo", "chmury", "las", "oczy_las", "krzaki", "pies", "krzak_przod", "blysk_oka", "przod"]
 COMMENTS = {
     "niebo": "nocne niebo z księżycem i gwiazdami", "chmury": "chmury przed księżycem (dryfują)",
     "las": "ściana lasu i polana w poświacie", "oczy_las": "oczy w lesie (mrugają)",
-    "krzaki": "krzaki", "pies": "młody pies między krzakami (rysunek autora: assets/wilczek.svg)", "przod": "pierwszy plan: mokra trawa, ślady łap",
+    "krzaki": "krzaki", "pies": "chudy, warczący pies (rysunek autora: assets/wilczek2.svg)",
+    "krzak_przod": "krzak zasłaniający zad psa", "blysk_oka": "błysk w oku psa (migocze)", "przod": "pierwszy plan: mokra trawa, ślady łap",
 }
 
 if __name__ == "__main__":

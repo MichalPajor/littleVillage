@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- LittleVillage — tło „zmierzch”: jarzące się oko topielca (migocze)
+<!-- LittleVillage — tło „zarośla nocą”: krzak zasłaniający zad psa
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="266 322 12 12">
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="76" viewBox="270 360 110 76">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
@@ -21,7 +21,10 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<circle cx="272" cy="328" r="3" fill="#FFFFFF" stroke-width="1"/>
-<circle cx="271.6" cy="328" r="1.3" fill="#000000" stroke="none"/>
+<path d="M274 440 Q265 429 275 425 Q268 419 279 417 Q268 407 274 405 Q272 398 286 402 Q279 390 286 391 Q280 377 289 381 Q288 373 300 384 Q297 369 304 374 Q304 361 311 370 Q313 362 319 375 Q322 362 326 370 Q331 357 334 367 Q339 358 341 372 Q348 361 349 372 Q355 367 353 383 Q361 376 359 387 Q367 383 363 395 Q374 390 371 399 Q383 396 378 405 Q387 406 378 415 Q389 417 381 424 Q389 428 378 434 L378 440 Z" fill="#000000" stroke-width="3"/>
+<path d="M300 404q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M318 392q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M338 400q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M326 418q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
 </g>
 </svg>
