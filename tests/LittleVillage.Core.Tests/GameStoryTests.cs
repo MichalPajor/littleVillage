@@ -139,19 +139,19 @@ public sealed class GameStoryTests
         var dogPage = Play(engine, Marsh, GoOut)[^1];
 
         Assert.Equal("zarosla_noc", dogPage.BackgroundKey);
-        Assert.Contains(dogPage.Blocks, b => b.Text.Contains("wilczy"));
+        Assert.Contains(dogPage.Blocks, b => b.Text.Contains("długi i wąski"));
         Assert.Equal(["Dać psu kawałek chleba.", "Nie dawać i wrócić do szałasu."], dogPage.Choices.Select(c => c.Text));
     }
 
     [Fact]
-    public void Feeding_the_dog_uses_up_the_bread_and_tames_it()
+    public void Feeding_the_dog_uses_up_the_bread()
     {
         var engine = CreateEngine();
 
         var pages = Play(engine, Lake, GoOut, FeedDog);
 
         Assert.Equal(PageEnding.End, pages[^1].Ending);
-        Assert.Contains(pages[^1].Blocks, b => b.Text.Contains("krok w krok"));
+        Assert.Contains(pages[^1].Blocks, b => b.Text.Contains("śniadania nie będzie"));
         Assert.Equal(["siekiera"], Inventory(engine));
     }
 

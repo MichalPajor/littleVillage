@@ -83,8 +83,7 @@ Którejś nocy, gdy z bochenka została mu już tylko piętka, usłyszał dźwi�
 
 = zostal
 ~ los_psa = niespotkany
-Maciek zacisnął palce na toporzysku i nie ruszył się z miejsca. Wycie trwało jeszcze długo. Potem przeszło w ciche skomlenie i ucichło przed świtem.
-Rano w trawie za szałasem znalazł drobne ślady łap. Prowadziły w stronę zarośli i tam się urywały.
+Maciej zacisnął palce na toporze i nie ruszył się z miejsca. Wycie trwało jeszcze długo. Potem przeszło w ciche skomlenie i przed świtem ucichło. Rano w trawie za szałasem znalazł ślady łap. Prowadziły w stronę zarośli.
 -> prolog_ciag_dalszy
 
 
@@ -93,29 +92,27 @@ Rano w trawie za szałasem znalazł drobne ślady łap. Prowadziły w stronę za
 // ------------------------------------------------------------
 === pies ===
 # tlo: zarosla_noc
-Maciek wyczołgał się z szałasu z siekierą w ręku. Noc była jasna od księżyca, trawa mokra od rosy. Szedł za dźwiękiem powoli, krok za krokiem, a wycie raz cichło, raz wracało – coraz bliżej.
-W gęstych krzakach coś się poruszyło. Maciek rozgarnął gałęzie trzonkiem siekiery – i zamarł.
-Spod krzaka patrzyły na niego dwa błyszczące ślepia. Pies – młody, tak chudy, że można by policzyć mu żebra, z łapami za dużymi do reszty ciała. Pysk miał długi i wąski, wilczy, a uszy postawione sztywno. Nie uciekał. Warczał tylko cicho, trzęsąc się cały, jakby sam nie wierzył we własną groźbę.
-Maciek sięgnął do tobołka. Został mu jeden z ostatnich kawałków chleba – twardy jak kamień, ale wciąż chleb. Jutro miał być jego śniadaniem.
+Maciej wyczołgał się z szałasu z siekierą w ręku. Noc była jasna od księżyca, a trawa mokra od rosy. Szedł powoli za dźwiękiem, krok po kroku, czując, że serce chce mu się wyrwać z piersi. Wycie raz cichło, a raz wybrzmiewało coraz bliżej.
+W gęstych krzakach usłyszał szelest. Rozgarnął gałęzie trzonkiem siekiery i zamarł. Z ciemności wyłoniły się dwa błyszczące ślepia. W świetle księżyca dostrzegł, że to młody pies. Był tak chudy, że można było policzyć mu żebra, a łapy miał nieproporcjonalnie duże w stosunku do reszty ciała. Pysk miał długi i wąski, a uszy postawione sztywno. Nie uciekał przed Maćkiem. Warczał cicho, trzęsąc się cały.
+Maciej sięgnął do kieszeni. Było w niej małe zawiniątko z ostatnim kawałkiem chleba – twardym jak kamień, ale miał to być jego jutrzejszy posiłek.
 # pytanie: Co zrobi Maciek?
 *   [Dać psu kawałek chleba.]
-    -> nakarmiony
+    -> dal_chleb
 *   [Nie dawać i wrócić do szałasu.]
-    -> odprawiony
+    -> nie_dal_chleba
 
-= nakarmiony
+= dal_chleb
 ~ ekwipunek -= chleb
-~ los_psa = oswojony
-Maciek ułamał chleb i rzucił go pod krzak. Pies cofnął się i warknął – a potem chwycił kęs i zniknął w ciemności, zanim Maciek zdążył mrugnąć.
-Wrócił następnej nocy. I kolejnej. Najpierw siadał na skraju polany i patrzył, jak Maciek ciosa bale. Z każdym dniem podchodził bliżej, aż któregoś ranka Maciek obudził się z ciepłym grzbietem przy boku, wciśniętym w szałas.
-Od tamtej pory pies chodził za nim krok w krok. Chleba już nie było i głód doskwierał jak nigdy, ale noce – choć wciąż pełne dźwięków – przestały być takie samotne.
+~ los_psa = nakarmiony
+Maciek otworzył zawiniątko, wyciągnął z niego kawałek chleba i rzucił go pod krzak. Pies cofnął się i warknął, ale po chwili zaczął wąchać to, co spadło. Nagle porwał chleb w pysk i zniknął w ciemności, zanim Maciek zdążył mrugnąć.
+Mężczyzna wrócił do szałasu i zasnął ze świadomością, że jutro śniadania nie będzie.
 -> prolog_ciag_dalszy
 
-= odprawiony
+= nie_dal_chleba
 ~ los_psa = porzucony
-Maciek schował chleb z powrotem do tobołka.
-– Sam ledwo zipię – mruknął, jakby pies mógł go zrozumieć.
-Wycofał się powoli i wrócił do szałasu. Wycie odezwało się jeszcze raz, cichsze niż przedtem. Więcej tej nocy go nie słyszał.
+Maciek zostawił chleb w kieszeni.
+– Sam ledwo zipię – mruknął do psa, jakby chciał się przed nim usprawiedliwić.
+Wycofał się powoli i wrócił do szałasu. Wycie odezwało się jeszcze raz, cichsze niż przedtem. Więcej tej nocy go nie usłyszał.
 -> prolog_ciag_dalszy
 
 
