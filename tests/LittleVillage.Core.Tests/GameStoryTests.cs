@@ -129,7 +129,6 @@ public sealed class GameStoryTests
         var pages = Play(engine, Forest, Stay);
 
         Assert.DoesNotContain(pages, p => p.BackgroundKey == "zarosla_noc");
-        Assert.True(Has(pages, "ślady łap"));
         Assert.True(Has(pages, "Muchy już go obsiadły"));
         Assert.True(Has(pages, "Rozsądny człowiek siedzi w szałasie"));
         Assert.Equal("zmierzch_zdobycz", pages[^1].BackgroundKey);
@@ -144,7 +143,7 @@ public sealed class GameStoryTests
 
         Assert.Equal("zarosla_noc", dogPage.BackgroundKey);
         Assert.Contains(dogPage.Blocks, b => b.Text.Contains("długi i wąski"));
-        Assert.Equal(["Dać psu kawałek chleba.", "Nie dawać i wrócić do szałasu."], dogPage.Choices.Select(c => c.Text));
+        Assert.Equal(["Da psu kawałek chleba.", "Nie da i wróci do szałasu."], dogPage.Choices.Select(c => c.Text));
     }
 
     [Fact]

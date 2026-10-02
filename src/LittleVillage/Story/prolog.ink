@@ -11,7 +11,7 @@
 Zapadlina – wieś leżąca tam, gdzie ziemia, zmęczona byciem równiną, osunęła się w dół. Chcąc do niej dotrzeć, zawsze trzeba było schodzić z pagórków, brzegów i zboczy – czy to od gościńca przez Bukowy Grzbiet, czy od boru udeptaną ścieżką. Z miasta wracało się sześć godzin, a ostatni odcinek drogi prowadził krętą ścieżką między mokradłami, wciąż w dół. Mgła lubiła tę nieckę. Wlewała się w nią o zmierzchu jak mleko do miski i bywało, że nawet do południa nie chciała z niej wyjść.
 Od wschodu napierał las – stary, iglasty i tak gęsty, że nawet w południe drzewa rzucały głęboki, chłodny cień. Na północy miękka ziemia przechodziła w mokradła porośnięte pałkami, turzycą i karłowatymi krzewami. Woda stała tam czarna, mętna i nieruchoma. Niektórzy powiadali, że nie wolno zbyt długo się w nią wpatrywać, bo można tym wywołać topielce uwięzione pod warstwą mułu. Po nocach często latały nad nią błędne ognie. Na zachodzie, w najniższym miejscu niecki, leżało jezioro, okrągłe, jakby ktoś wycisnął je kolanem. Mówiono, że nikt nie widział jego dna.
 Wieś była młoda i mała. Pięć chałup stało daleko od siebie, bo każdy brał tyle pola, ile był w stanie wykarczować i obronić. Mieszkało w niej około trzydziestu osób, licząc z dziećmi. Wszyscy dobrze się znali. Kościół był dopiero w mieście; chodziło się do niego kilka razy w roku, na najważniejsze święta, o ile pozwalały na to warunki. Wtedy w niecce nie zostawała ani jedna żywa dusza.
-Jakieś siedemdziesiąt lat przed tym, nim Jaromir pierwszy raz spojrzał w stronę lasu, jego dziadek zszedł do Zapadliny z tobołkiem na ramieniu. Maciek nie miał nic poza siekierą, chlebem, parą rąk i uporem. Siekierę i chleb kupił w mieście za pieniądze, które zarobił przez cztery lata pracy na cudzym polu. Chciał wreszcie mieć coś swojego – miejsce, w którym mógłby zamieszkać i dać rodzinie dach nad głową. Tutaj mógł mieć tyle ziemi, ile zdoła oczyścić. Była wiosna, pola parowały, a gdzieniegdzie w cieniu leżał jeszcze brudny śnieg. Maciek trzeci dzień chodził po niecce i wybierał miejsce na chatę. Trzy miejsca najczęściej wracały do niego w myślach.
+Jakieś siedemdziesiąt lat przed tym, nim Jaromir pierwszy raz spojrzał w stronę lasu, jego dziadek zszedł do Zapadliny z tobołkiem na ramieniu. Maciek nie miał nic poza siekierą, chlebem, parą rąk i uporem. Siekierę i chleb kupił w mieście za pieniądze, które zarobił przez cztery lata pracy na cudzym polu. Chciał wreszcie mieć coś swojego – miejsce, w którym mógłby zamieszkać i dać rodzinie dach nad głową. Tutaj mógł mieć tyle ziemi, ile zdoła oczyścić. Była wiosna, pola parowały, a gdzieniegdzie w cieniu leżał jeszcze brudny śnieg. Maciek trzeci dzień chodził po niecce i wybierał miejsce na chatę. Trzy najczęściej wracały w jego myślach.
 # ozdobnik
 Pierwsze leżało na wschodnim skraju wsi, pod samym lasem. Ziemia była żyzna, drewno miał na wyciągnięcie ręki, a i zwierzyny nie brakowało. Tylko że od boru zawsze ciągnął chłód, nawet w południe, a nocą dochodziły stamtąd tajemnicze, przerażające dźwięki.
 Drugie było na północy, przy mokradłach. Były tam rozległe łąki, na których można by wypasać bydło, a torfu do palenia nigdy by nie zabrakło. Za to po północy nad bagnami podobno coś mrugało. Ludzie spotkani przy studni mówili tylko: – Tam się nie chodzi i nie buduje. Tam się tylko topi.
@@ -83,7 +83,7 @@ Którejś nocy, gdy z bochenka została mu już tylko piętka, usłyszał dźwi�
 
 = zostal
 ~ los_psa = niespotkany
-Maciej zacisnął palce na toporze i nie ruszył się z miejsca. Wycie trwało jeszcze długo. Potem przeszło w ciche skomlenie i przed świtem ucichło. Rano w trawie za szałasem znalazł ślady łap. Prowadziły w stronę zarośli. # dalej
+Maciej zacisnął palce na toporze i nie ruszył się z miejsca. Wycie trwało jeszcze długo. Potem przeszło w ciche skomlenie i przed świtem ucichło. # dalej
 -> dach
 
 
@@ -96,9 +96,9 @@ Maciej wyczołgał się z szałasu z siekierą w ręku. Noc była jasna od księ
 W gęstych krzakach usłyszał szelest. Rozgarnął gałęzie trzonkiem siekiery i zamarł. Z ciemności wyłoniły się dwa błyszczące ślepia. W świetle księżyca dostrzegł, że to młody pies. Był tak chudy, że można było policzyć mu żebra, a łapy miał nieproporcjonalnie duże w stosunku do reszty ciała. Pysk miał długi i wąski, a uszy postawione sztywno. Nie uciekał przed Maćkiem. Warczał cicho, trzęsąc się cały.
 Maciej sięgnął do kieszeni. Było w niej małe zawiniątko z ostatnim kawałkiem chleba – twardym jak kamień, ale miał to być jego jutrzejszy posiłek.
 # pytanie: Co zrobi Maciek?
-*   [Dać psu kawałek chleba.]
+*   [Da psu kawałek chleba.]
     -> dal_chleb
-*   [Nie dawać i wrócić do szałasu.]
+*   [Nie da i wróci do szałasu.]
     -> nie_dal_chleba
 
 = dal_chleb
@@ -133,7 +133,7 @@ Wycofał się powoli i wrócił do szałasu. Wycie odezwało się jeszcze raz, c
 ~ ekwipunek -= chleb
 Rano Maciek rozwinął zawiniątko i zjadł ostatni kawałek chleba. Gryzł go powoli, długo, jakby chciał, żeby dał mu sił na cały dzień. Popił wodą, otrzepał dłonie i poszedł do pracy.
 -> trzcina ->
-Ciął ją siekierą przy samej ziemi, wiązał w snopy i znosił pod chatę. Raz za razem, aż przestał liczyć. Plecy paliły go żywym ogniem, ale sterta przy ścianie rosła.
+Ciął gęstwinę siekierą przy samej ziemi, wiązał w snopy i znosił pod chatę. Raz za razem, aż przestał liczyć. Plecy paliły go żywym ogniem, ale sterta przy ścianie rosła.
 Po południu trzciny w tym miejscu już nie było, więc ruszył dalej. Wracał w stronę chaty od innej strony – od tej, z której kilka nocy temu dochodziło wycie. Szedł, aż nagle noga zawisła mu w powietrzu.
 W trawie pod krzakiem leżał pies. Chudy, z długim pyskiem i za dużymi łapami. Leżał na boku, sztywny, z na wpół otwartymi oczami. Muchy już go obsiadły.
 { los_psa == niespotkany:
@@ -150,9 +150,9 @@ W trawie pod krzakiem leżał pies. Chudy, z długim pyskiem i za dużymi łapam
 -> uplyw_czasu
 
 = bez_chleba
-Rano Maciek obudził się głodny. Sięgnął odruchowo do kieszeni i przypomniał sobie, że zawiniątko jest puste. Westchnął, popił wodą i poszedł do pracy.
+Rano Maciek obudził się głodny. Sięgnął odruchowo do kieszeni i przypomniał sobie, że zawiniątko jest puste. Westchnął, napił się wody i poszedł do pracy.
 -> trzcina ->
-Ciął ją siekierą przy samej ziemi, wiązał w snopy i znosił pod chatę. Raz za razem, aż przestał liczyć.
+Ciął gęstwinę siekierą przy samej ziemi, wiązał w snopy i znosił pod chatę. Raz za razem, aż przestał liczyć.
 Koło południa, prostując obolałe plecy, zauważył w oddali ruch. Na skraju łąki, między kępami trawy, kręcił się pies – ten sam, chudy, z długim pyskiem. Węszył przy ziemi, przystawał i patrzył w jego stronę, gotów w każdej chwili czmychnąć.
 Maciek uśmiechnął się, pierwszy raz od wielu dni.
 – Żyjesz – mruknął.
@@ -195,7 +195,7 @@ Maciek zerwał się na równe nogi. Siekiera sama znalazła się w jego dłoniac
 Krzaki rozchyliły się. Z mgły wyłoniła się postać.
 Była wyższa od człowieka, o dobre trzy głowy. Stała na dwóch nogach, ale zgarbiona, z rękami zwisającymi niemal do ziemi. Miała ludzki kształt – i wcale nie była człowiekiem. W paszczy trzymała coś dużego i bezwładnego, co zwisało jej po obu stronach łba.
 Maciek poznał to po łapach. Za dużych do reszty ciała.
-Postać zacisnęła szczęki. Rozległ się trzask – głośny, mokry, jak łamane suche gałęzie, tyle że nie były to gałęzie. Potem stwór odwrócił się i pomknął w stronę mokradeł, tak szybko, że mgła zawirowała za nim jak woda.
+Postać zacisnęła szczęki. Rozległ się trzask – głośny, mokry, jak łamane suche gałęzie, tyle że to nie były one. Potem stwór odwrócił się i pomknął w stronę mokradeł, tak szybko, że mgła zawirowała za nim jak woda.
 Maciek nie mógł się ruszyć. Trząsł się cały, zimny pot spływał mu po plecach, a nogi miał jak z waty. Siekiera ciążyła mu w dłoniach, bezużyteczna. Stał tak bardzo długo, aż ciemność znów ucichła.
 -> strach_o_chate ->
 Maciek szybko wszedł do szałasu. Długo jeszcze leżał z otwartymi oczami, wsłuchując się w ciemność, aż wyczerpany pracą i strachem zasnął.
@@ -214,7 +214,7 @@ Pies wypadł z ciemności jak strzała i stanął między Maćkiem a zaroślami.
 Długo trwało, zanim Maciek doszedł do siebie. W końcu osunął się na ziemię przy szałasie i oddychał ciężko, jakby przebiegł pół niecki. Pies przestał ujadać. Podszedł do niego niepewnie, z opuszczonym łbem – i zamerdał ogonem, dumny z siebie jak nikt na świecie.
 Maciek wyciągnął drżącą rękę. Pies obwąchał ją, a potem pierwszy raz pozwolił się pogłaskać.
 – Dobry pies – szepnął Maciek. – Dobry – odetchnął.
-Tej nocy weszli do szałasu razem. Pies zwinął się w kłębek przy boku Maćka i zasnął pierwszy. Maciek długo jeszcze leżał z otwartymi oczami, wsłuchując się w ciemność. Ale po raz pierwszy od przyjścia do Zapadliny miał towarzysza.
+Tej nocy weszli do szałasu razem. Pies zwinął się w kłębek przy boku człowieka i zasnął pierwszy. Maciek długo jeszcze leżał z otwartymi oczami, wsłuchując się w ciemność. Ale po raz pierwszy od przyjścia do Zapadliny miał towarzysza.
 -> prolog_ciag_dalszy
 
 // Tylko gdy chata stoi przy mokradłach — stwór uciekł właśnie tam.
