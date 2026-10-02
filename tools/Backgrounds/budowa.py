@@ -64,7 +64,7 @@ L["tlo_jezioro"] = (0, 140, 390, 140, group(j))
 L["jezioro_blyski"] = (20, 204, 340, 44, group([
     '<path d="M40 214c14-3 28-3 42 0M150 226c12-3 24-3 36 0M250 212c14-3 26-3 38 0M90 240c10-2 20-2 30 0M300 236c10-2 20-2 30 0" fill="none" stroke="#FFFFFF" stroke-width="3.4"/>']))
 
-# ---------- PLAC BUDOWY (wspolny): polana, zrab chaty z krokwiami, bale, pien z siekiera, szalas, ognisko, Maciek
+# ---------- PLAC BUDOWY (wspolny): polana, zrab chaty z krokwiami, bale, pien do ciosania, szalas, Maciek
 b = ['<path d="M-10 262C70 252 150 258 230 254C300 250 350 256 400 252V470H-10Z" fill="#EDEBE6" stroke-width="3.4"/>']
 # zrab: 7 warstw bali, w dolnych czterech otwor na drzwi; konce bali wystaja na rogach
 x0, x1, y_bot, lh = 120, 270, 392, 12
@@ -92,12 +92,10 @@ for (cx, cy) in [(292, 388), (314, 388), (336, 388), (303, 370), (325, 370), (31
     b.append(f'<circle cx="{cx}" cy="{cy}" r="10" fill="#FFFFFF" stroke-width="2.4"/>')
     b.append(f'<circle cx="{cx}" cy="{cy}" r="5" fill="none" stroke-width="1.1"/>')
     b.append(f'<circle cx="{cx}" cy="{cy}" r="1.3" fill="#000000" stroke="none"/>')
-# pien z wbita siekiera i wiory
+# pien do ciosania i wiory
 b.append('<path d="M236 424L239 404C242 398 264 398 268 404L270 424Z" fill="#FFFFFF" stroke-width="3"/>')
 b.append('<ellipse cx="253" cy="403" rx="15" ry="4.5" fill="#EDEBE6" stroke-width="2.4"/>')
 b.append('<ellipse cx="253" cy="403" rx="7" ry="2" fill="none" stroke-width="1.2"/>')
-b.append('<line x1="253" y1="402" x2="272" y2="380" stroke-width="5"/>')
-b.append('<path d="M266 382C276 366 296 368 298 384C290 378 278 378 270 390Z" fill="#FFFFFF" stroke-width="2.6"/>')
 for (wx, wy, r) in [(214, 412, 20), (226, 420, -30), (282, 414, 50), (200, 424, 10), (290, 424, -15), (160, 410, 35)]:
     b.append(f'<path d="M{wx} {wy}l7-2l1 3z" fill="#FFFFFF" stroke-width="1.3" transform="rotate({r} {wx} {wy})"/>')
 # szalas z galezi (zerdzie o pien, galezie, ciemne wejscie) + tobolek na kiju
@@ -107,12 +105,6 @@ b.append('<path d="M38 414L52 380L66 414Z" fill="#000000" stroke-width="2"/>')
 b.append('<path d="M10 360q8 -4 16 0M78 372q8 -4 16 0M20 392q8-4 16 0" fill="none" stroke-width="1.6"/>')
 b.append('<line x1="108" y1="414" x2="104" y2="352" stroke-width="3"/>')
 b.append('<path d="M104 356C96 356 94 368 100 372C106 376 114 372 113 364C112 358 108 355 104 356Z" fill="url(#hatch)" stroke-width="2.2"/>')
-# ognisko w kregu kamieni
-b.append('<path d="M120 418c-4-8 2-16 8-20c0 6 4 8 6 4c4 6 2 12-2 16z" fill="#FFFFFF" stroke-width="2"/>')
-b.append('<path d="M140 418c-2-6 2-10 6-12c0 4 2 6 4 3c2 4 0 8-3 9z" fill="#FFFFFF" stroke-width="1.8"/>')
-for (sx, sy) in [(116, 422), (126, 425), (138, 425), (150, 422), (110, 418), (156, 418)]:
-    b.append(f'<ellipse cx="{sx}" cy="{sy}" rx="5" ry="3.4" fill="#FFFFFF" stroke-width="1.8"/>')
-b.append('<path d="M118 426l38-6M122 420l30 4" fill="none" stroke-width="2.4"/>')
 # Maciek z profilu niesie bal na ramieniu
 mx, my = 362, 424
 b.append(f'<g stroke-width="2.4">'
@@ -125,10 +117,6 @@ b.append(f'<g stroke-width="2.4">'
          f'<path d="M{mx + 4} {my - 46}l-10 -8" fill="none" stroke-width="3"/>'
          f'</g>')
 L["plac"] = (0, 240, 390, 236, group(b))
-
-L["dym"] = (104, 300, 50, 112, group([
-    '<path d="M130 404c-5-7 5-12 0-19c-5-7 5-12 0-19c-5-7 4-11 0-17c-4-6 3-9 0-14" fill="none" stroke-width="2.2"/>',
-    '<path d="M140 400c-4-6 4-10 0-16c-4-6 4-10 0-16" fill="none" stroke-width="1.6"/>']))
 
 # ---------- PIERWSZY PLAN: pnie po scietych drzewach, trawa, lezacy pien
 p = ['<path d="M-10 430H400V844H-10Z" fill="#EDEBE6" stroke="none"/>']
@@ -150,13 +138,13 @@ COMMENTS = {
     "tlo_las": "wariant las: ściana boru za polaną", "las_swierki": "wariant las: świerki (kołyszą się)",
     "tlo_mokradla": "wariant mokradła: podmokła łąka, oczka wody, pałki", "mokradla_mgla": "wariant mokradła: mgła (dryfuje)",
     "tlo_jezioro": "wariant jezioro: tafla wody, trzciny, buki na drugim brzegu", "jezioro_blyski": "wariant jezioro: błyski na wodzie (dryfują)",
-    "plac": "plac budowy: zrąb chaty, krokwie, bale, pień z siekierą, szałas z gałęzi, ognisko, Maciek z balem",
-    "dym": "dym z ogniska (unosi się)", "przod": "pierwszy plan: pnie po ściętych drzewach, leżący pień, trawa",
+    "plac": "plac budowy: zrąb chaty, krokwie, bale, pień do ciosania, szałas z gałęzi, Maciek z balem",
+    "przod": "pierwszy plan: pnie po ściętych drzewach, leżący pień, trawa",
 }
 VARIANTS = {
-    "las": ["niebo", "chmura", "wrony", "tlo_las", "las_swierki", "plac", "dym", "przod"],
-    "mokradla": ["niebo", "chmura", "wrony", "tlo_mokradla", "mokradla_mgla", "plac", "dym", "przod"],
-    "jezioro": ["niebo", "chmura", "wrony", "tlo_jezioro", "jezioro_blyski", "plac", "dym", "przod"],
+    "las": ["niebo", "chmura", "wrony", "tlo_las", "las_swierki", "plac", "przod"],
+    "mokradla": ["niebo", "chmura", "wrony", "tlo_mokradla", "mokradla_mgla", "plac", "przod"],
+    "jezioro": ["niebo", "chmura", "wrony", "tlo_jezioro", "jezioro_blyski", "plac", "przod"],
 }
 
 if __name__ == "__main__":

@@ -118,21 +118,25 @@ public sealed class GameStoryTests
         Assert.StartsWith("Zostać w szałasie", nights.Choices[Stay].Text);
     }
 
+    private static bool Has(IEnumerable<StoryPage> pages, string text) =>
+        pages.SelectMany(p => p.Blocks).Any(b => b.Text.Contains(text));
+
     [Fact]
-    public void Staying_in_the_shelter_skips_the_dog_and_keeps_the_bread()
+    public void Staying_in_the_shelter_skips_the_dog_and_finds_it_dead_next_day()
     {
         var engine = CreateEngine();
 
         var pages = Play(engine, Forest, Stay);
 
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
         Assert.DoesNotContain(pages, p => p.BackgroundKey == "zarosla_noc");
-        Assert.Contains(pages[^1].Blocks, b => b.Text.Contains("ślady łap"));
-        Assert.Contains("chleb", Inventory(engine));
+        Assert.True(Has(pages, "ślady łap"));
+        Assert.True(Has(pages, "Muchy już go obsiadły"));
+        Assert.True(Has(pages, "Rozsądny człowiek siedzi w szałasie"));
+        Assert.Equal("zmierzch_zdobycz", pages[^1].BackgroundKey);
     }
 
     [Fact]
-    public void Going_out_finds_the_wolf_like_dog_at_night()
+    public void Going_out_finds_the_young_dog_at_night()
     {
         var engine = CreateEngine();
 
@@ -144,27 +148,89 @@ public sealed class GameStoryTests
     }
 
     [Fact]
-    public void Feeding_the_dog_uses_up_the_bread()
+    public void Feeding_the_dog_uses_up_the_bread_and_the_dog_defends_Maciek()
     {
         var engine = CreateEngine();
 
         var pages = Play(engine, Lake, GoOut, FeedDog);
 
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
-        Assert.Contains(pages[^1].Blocks, b => b.Text.Contains("śniadania nie będzie"));
-        Assert.Equal(["siekiera"], Inventory(engine));
+        Assert.True(Has(pages, "śniadania nie będzie"));
+        Assert.True(Has(pages, "– Żyjesz – mruknął."));
+        Assert.False(Has(pages, "Muchy już go obsiadły"));
+        Assert.Equal("zmierzch_obrona", pages[^1].BackgroundKey);
+        Assert.True(Has(pages, "miał towarzysza"));
+        Assert.Equal(["siekiera", "pies_towarzysz"], Inventory(engine));
+        Assert.Equal("Pies – towarzysz", engine.GetInventory()[1].Name);
     }
 
     [Fact]
-    public void Refusing_the_dog_keeps_the_bread()
+    public void Refusing_the_dog_means_eating_the_bread_and_finding_it_dead()
     {
         var engine = CreateEngine();
 
         var pages = Play(engine, Forest, GoOut, KeepBread);
 
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
-        Assert.Contains(pages[^1].Blocks, b => b.Text.Contains("Sam ledwo zipię"));
-        Assert.Equal(["siekiera", "chleb"], Inventory(engine));
+        Assert.True(Has(pages, "Sam ledwo zipię"));
+        Assert.True(Has(pages, "zjadł ostatni kawałek chleba"));
+        Assert.True(Has(pages, "Sam ledwo zipałem"));
+        Assert.Equal("zmierzch_zdobycz", pages[^1].BackgroundKey);
+        Assert.Equal(["siekiera"], Inventory(engine));
+    }
+
+    [Theory]
+    [InlineData(Forest, "budowa_las", "skraju mokradeł, pół godziny drogi")]
+    [InlineData(Marsh, "budowa_mokradla", "brodzić po nią w zimnym błocie")]
+    [InlineData(Lake, "budowa_jezioro", "szepcze za plecami")]
+    public void Roof_page_keeps_the_place_background_and_reed_sentence(int place, string background, string reedText)
+    {
+        var pages = Play(CreateEngine(), place, Stay);
+
+        var roof = pages.Single(p => p.Blocks.Any(b => b.Kind == StoryBlockKind.Title && b.Text == "Dach"));
+        Assert.Equal(background, roof.BackgroundKey);
+        Assert.Contains(roof.Blocks, b => b.Text.Contains(reedText));
+    }
+
+    [Theory]
+    [InlineData(Forest, false)]
+    [InlineData(Marsh, true)]
+    [InlineData(Lake, false)]
+    public void Fear_for_the_hut_only_when_it_stands_by_the_marsh(int place, bool expected)
+    {
+        Assert.Equal(expected, Has(Play(CreateEngine(), place, Stay), "może popełnił błąd"));
+        Assert.Equal(expected, Has(Play(CreateEngine(), place, GoOut, FeedDog), "może popełnił błąd"));
+    }
+
+    [Theory]
+    [MemberData(nameof(AllProloguePaths))]
+    public void Roof_page_is_a_separate_page_after_the_night(int[] choices)
+    {
+        var pages = Play(CreateEngine(), choices);
+
+        var roofIndex = pages.FindIndex(p => p.Blocks.Any(b => b.Kind == StoryBlockKind.Title && b.Text == "Dach"));
+        Assert.True(roofIndex > 0);
+        Assert.Equal(StoryBlockKind.Chapter, pages[roofIndex].Blocks[0].Kind);
+        Assert.Equal(PageEnding.Continue, pages[roofIndex - 1].Ending);
+    }
+
+    [Fact]
+    public void Dog_scene_keeps_its_night_background_until_the_page_ends()
+    {
+        var pages = Play(CreateEngine(), Forest, GoOut, FeedDog);
+
+        var fed = pages.Single(p => p.Blocks.Any(b => b.Text.Contains("śniadania nie będzie")));
+        Assert.Equal("zarosla_noc", fed.BackgroundKey);
+    }
+
+    [Fact]
+    public void Evening_starts_at_dusk_before_the_creature_appears()
+    {
+        var pages = Play(CreateEngine(), Lake, Stay);
+
+        var dusk = pages.Single(p => p.BackgroundKey == "zmierzch");
+        Assert.Equal(PageEnding.Continue, dusk.Ending);
+        Assert.Contains(dusk.Blocks, b => b.Text.StartsWith("Obudziła go cisza"));
+        Assert.True(Has(pages, "zawilce"));
+        Assert.True(Has(pages, "żurawinę"));
     }
 
     public static TheoryData<int[]> AllProloguePaths()

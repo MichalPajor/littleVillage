@@ -13,28 +13,13 @@
       "height": 844,
       "backgroundColor": "#EDEBE6",
       "layers": [
-        { "image": "bg_wies_noc_tlo.png", "x": 0, "y": 0, "width": 390, "height": 400 },
-        {
-          "image": "bg_wies_noc_chmury.png", "x": 14, "y": 134, "width": 346, "height": 88,
-          "animation": { "type": "drift", "amplitude": 9, "duration": 14000 }
-        },
-        {
-          "image": "bg_wies_noc_wrony.png", "x": 50, "y": 40, "width": 180, "height": 90,
-          "animation": { "type": "bob", "amplitude": 4, "duration": 3200 }
-        },
-        {
-          "image": "bg_wies_noc_swierk_lewy.png", "x": -26, "y": 174, "width": 112, "height": 232,
-          "animation": { "type": "sway", "amplitude": 1.6, "duration": 4600, "anchorX": 0.5, "anchorY": 0.974 }
-        },
-        {
-          "image": "bg_wies_noc_swierk_prawy.png", "x": 324, "y": 188, "width": 102, "height": 218,
-          "animation": { "type": "sway", "amplitude": 1.3, "duration": 5200, "anchorX": 0.5, "anchorY": 0.972, "phase": 0.35 }
-        },
-        {
-          "image": "bg_wies_noc_oczy.png", "x": 226, "y": 310, "width": 66, "height": 36,
-          "animation": { "type": "blink", "duration": 5600 }
-        },
-        { "image": "bg_wies_noc_przod.png", "x": 0, "y": 220, "width": 390, "height": 624 }
+        {"image": "bg_wies_noc_tlo.png", "x": 0, "y": 0, "width": 390, "height": 400},
+        {"image": "bg_wies_noc_chmury.png", "x": 14, "y": 134, "width": 346, "height": 88, "animation": {"type": "drift", "amplitude": 9, "duration": 14000}},
+        {"image": "bg_wies_noc_wrony.png", "x": 50, "y": 40, "width": 180, "height": 90, "animation": {"type": "bob", "amplitude": 4, "duration": 3200}},
+        {"image": "bg_wies_noc_swierk_lewy.png", "x": -26, "y": 174, "width": 112, "height": 232, "animation": {"type": "sway", "amplitude": 1.6, "duration": 4600, "anchorX": 0.5, "anchorY": 0.974}},
+        {"image": "bg_wies_noc_swierk_prawy.png", "x": 324, "y": 188, "width": 102, "height": 218, "animation": {"type": "sway", "amplitude": 1.3, "duration": 5200, "anchorX": 0.5, "anchorY": 0.972, "phase": 0.35}},
+        {"image": "bg_wies_noc_oczy.png", "x": 226, "y": 310, "width": 66, "height": 36, "animation": {"type": "blink", "duration": 5600}},
+        {"image": "bg_wies_noc_przod.png", "x": 0, "y": 220, "width": 390, "height": 624}
       ]
     },
     "zapadlina": {
@@ -42,40 +27,16 @@
       "height": 844,
       "backgroundColor": "#EDEBE6",
       "layers": [
-        { "image": "bg_zapadlina_tlo.png", "x": 0, "y": 0, "width": 390, "height": 430 },
-        {
-          "image": "bg_zapadlina_oczy.png", "x": 308, "y": 238, "width": 32, "height": 16,
-          "animation": { "type": "blink", "duration": 6400, "phase": 0.3 }
-        },
-        {
-          "image": "bg_zapadlina_wrony.png", "x": 156, "y": 34, "width": 96, "height": 46,
-          "animation": { "type": "bob", "amplitude": 4, "duration": 3400 }
-        },
-        {
-          "image": "bg_zapadlina_swierk_a.png", "x": 228, "y": 236, "width": 44, "height": 176,
-          "animation": { "type": "sway", "amplitude": 1.4, "duration": 5000, "anchorX": 0.5, "anchorY": 0.95 }
-        },
-        {
-          "image": "bg_zapadlina_swierk_b.png", "x": 254, "y": 188, "width": 40, "height": 150,
-          "animation": { "type": "sway", "amplitude": 1.2, "duration": 5600, "anchorX": 0.5, "anchorY": 0.94, "phase": 0.4 }
-        },
-        {
-          "image": "bg_zapadlina_dym.png", "x": 108, "y": 236, "width": 104, "height": 120,
-          "animation": { "type": "bob", "amplitude": 2.5, "duration": 4200 }
-        },
-        {
-          "image": "bg_zapadlina_ognie.png", "x": 110, "y": 148, "width": 122, "height": 50,
-          "animation": { "type": "flicker", "amplitude": 0.25, "duration": 3000 }
-        },
-        {
-          "image": "bg_zapadlina_mgla_gora.png", "x": -26, "y": 218, "width": 284, "height": 42,
-          "animation": { "type": "drift", "amplitude": 10, "duration": 13000 }
-        },
-        {
-          "image": "bg_zapadlina_mgla_dol.png", "x": 88, "y": 326, "width": 236, "height": 42,
-          "animation": { "type": "drift", "amplitude": 12, "duration": 17000, "phase": 0.5 }
-        },
-        { "image": "bg_zapadlina_przod.png", "x": 0, "y": 310, "width": 390, "height": 534 }
+        {"image": "bg_zapadlina_tlo.png", "x": 0, "y": 0, "width": 390, "height": 430},
+        {"image": "bg_zapadlina_oczy.png", "x": 308, "y": 238, "width": 32, "height": 16, "animation": {"type": "blink", "duration": 6400, "phase": 0.3}},
+        {"image": "bg_zapadlina_wrony.png", "x": 156, "y": 34, "width": 96, "height": 46, "animation": {"type": "bob", "amplitude": 4, "duration": 3400}},
+        {"image": "bg_zapadlina_swierk_a.png", "x": 228, "y": 236, "width": 44, "height": 176, "animation": {"type": "sway", "amplitude": 1.4, "duration": 5000, "anchorX": 0.5, "anchorY": 0.95}},
+        {"image": "bg_zapadlina_swierk_b.png", "x": 254, "y": 188, "width": 40, "height": 150, "animation": {"type": "sway", "amplitude": 1.2, "duration": 5600, "anchorX": 0.5, "anchorY": 0.94, "phase": 0.4}},
+        {"image": "bg_zapadlina_dym.png", "x": 108, "y": 236, "width": 104, "height": 120, "animation": {"type": "bob", "amplitude": 2.5, "duration": 4200}},
+        {"image": "bg_zapadlina_ognie.png", "x": 110, "y": 148, "width": 122, "height": 50, "animation": {"type": "flicker", "amplitude": 0.25, "duration": 3000}},
+        {"image": "bg_zapadlina_mgla_gora.png", "x": -26, "y": 218, "width": 284, "height": 42, "animation": {"type": "drift", "amplitude": 10, "duration": 13000}},
+        {"image": "bg_zapadlina_mgla_dol.png", "x": 88, "y": 326, "width": 236, "height": 42, "animation": {"type": "drift", "amplitude": 12, "duration": 17000, "phase": 0.5}},
+        {"image": "bg_zapadlina_przod.png", "x": 0, "y": 310, "width": 390, "height": 534}
       ]
     },
     "budowa_las": {
@@ -89,7 +50,6 @@
         {"image": "bg_budowa_tlo_las.png", "x": 0, "y": 100, "width": 390, "height": 190},
         {"image": "bg_budowa_las_swierki.png", "x": 300, "y": 120, "width": 90, "height": 170, "animation": {"type": "sway", "amplitude": 1.3, "duration": 5200, "anchorX": 0.5, "anchorY": 0.95}},
         {"image": "bg_budowa_plac.png", "x": 0, "y": 240, "width": 390, "height": 236},
-        {"image": "bg_budowa_dym.png", "x": 104, "y": 300, "width": 50, "height": 112, "animation": {"type": "bob", "amplitude": 3, "duration": 3800}},
         {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
       ]
     },
@@ -104,7 +64,6 @@
         {"image": "bg_budowa_tlo_mokradla.png", "x": 0, "y": 150, "width": 390, "height": 130},
         {"image": "bg_budowa_mokradla_mgla.png", "x": -30, "y": 216, "width": 330, "height": 34, "animation": {"type": "drift", "amplitude": 12, "duration": 15000}},
         {"image": "bg_budowa_plac.png", "x": 0, "y": 240, "width": 390, "height": 236},
-        {"image": "bg_budowa_dym.png", "x": 104, "y": 300, "width": 50, "height": 112, "animation": {"type": "bob", "amplitude": 3, "duration": 3800}},
         {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
       ]
     },
@@ -119,7 +78,6 @@
         {"image": "bg_budowa_tlo_jezioro.png", "x": 0, "y": 140, "width": 390, "height": 140},
         {"image": "bg_budowa_jezioro_blyski.png", "x": 20, "y": 204, "width": 340, "height": 44, "animation": {"type": "drift", "amplitude": 5, "duration": 6000}},
         {"image": "bg_budowa_plac.png", "x": 0, "y": 240, "width": 390, "height": 236},
-        {"image": "bg_budowa_dym.png", "x": 104, "y": 300, "width": 50, "height": 112, "animation": {"type": "bob", "amplitude": 3, "duration": 3800}},
         {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
       ]
     },
@@ -133,8 +91,55 @@
         {"image": "bg_zarosla_las.png", "x": 0, "y": 150, "width": 390, "height": 290},
         {"image": "bg_zarosla_oczy_las.png", "x": 126, "y": 222, "width": 30, "height": 14, "animation": {"type": "blink", "duration": 7000, "phase": 0.5}},
         {"image": "bg_zarosla_krzaki.png", "x": 0, "y": 260, "width": 400, "height": 200},
-        {"image": "bg_zarosla_slepia.png", "x": 250, "y": 310, "width": 32, "height": 24, "animation": {"type": "flicker", "amplitude": 0.55, "duration": 2600}},
+        {"image": "bg_zarosla_pies.png", "x": 200, "y": 292, "width": 140, "height": 144, "animation": {"type": "bob", "amplitude": 0.8, "duration": 900}},
         {"image": "bg_zarosla_przod.png", "x": 0, "y": 420, "width": 390, "height": 424}
+      ]
+    },
+    "zmierzch": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_zmierzch_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_zmierzch_krzaki.png", "x": 210, "y": 300, "width": 190, "height": 136},
+        {"image": "bg_zmierzch_oczy.png", "x": 330, "y": 344, "width": 30, "height": 14, "animation": {"type": "blink", "duration": 5200}},
+        {"image": "bg_zmierzch_mgla_gora.png", "x": -30, "y": 352, "width": 330, "height": 36, "animation": {"type": "drift", "amplitude": 10, "duration": 12000}},
+        {"image": "bg_zmierzch_mgla_dol.png", "x": 60, "y": 396, "width": 340, "height": 38, "animation": {"type": "drift", "amplitude": 12, "duration": 15000, "phase": 0.5}},
+        {"image": "bg_zmierzch_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+      ]
+    },
+    "zmierzch_zdobycz": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_zmierzch_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_zmierzch_krzaki.png", "x": 210, "y": 300, "width": 190, "height": 136},
+        {"image": "bg_zmierzch_mgla_gora.png", "x": -30, "y": 352, "width": 330, "height": 36, "animation": {"type": "drift", "amplitude": 10, "duration": 12000}},
+        {"image": "bg_zmierzch_stwor_zdobycz.png", "x": 220, "y": 130, "width": 180, "height": 304, "animation": {"type": "bob", "amplitude": 1.5, "duration": 2600}},
+        {"image": "bg_zmierzch_pies_martwy.png", "x": 196, "y": 180, "width": 130, "height": 150},
+        {"image": "bg_zmierzch_krew.png", "x": 238, "y": 216, "width": 40, "height": 110},
+        {"image": "bg_zmierzch_oczy_stwora.png", "x": 253, "y": 188, "width": 16, "height": 14, "animation": {"type": "flicker", "amplitude": 0.4, "duration": 2400}},
+        {"image": "bg_zmierzch_maciek.png", "x": 160, "y": 316, "width": 80, "height": 92},
+        {"image": "bg_zmierzch_mgla_dol.png", "x": 60, "y": 396, "width": 340, "height": 38, "animation": {"type": "drift", "amplitude": 12, "duration": 15000, "phase": 0.5}},
+        {"image": "bg_zmierzch_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+      ]
+    },
+    "zmierzch_obrona": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_zmierzch_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_zmierzch_krzaki.png", "x": 210, "y": 300, "width": 190, "height": 136},
+        {"image": "bg_zmierzch_stwor_cien.png", "x": 220, "y": 130, "width": 180, "height": 304, "animation": {"type": "sway", "amplitude": 0.8, "duration": 4200, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_zmierzch_krzaki_przod.png", "x": 226, "y": 330, "width": 174, "height": 100},
+        {"image": "bg_zmierzch_slepia.png", "x": 251, "y": 186, "width": 20, "height": 18, "animation": {"type": "flicker", "amplitude": 0.45, "duration": 2000}},
+        {"image": "bg_zmierzch_mgla_gora.png", "x": -30, "y": 352, "width": 330, "height": 36, "animation": {"type": "drift", "amplitude": 10, "duration": 12000}},
+        {"image": "bg_zmierzch_maciek.png", "x": 160, "y": 316, "width": 80, "height": 92},
+        {"image": "bg_zmierzch_pies_obrona.png", "x": 200, "y": 318, "width": 190, "height": 110, "animation": {"type": "bob", "amplitude": 1.2, "duration": 420}},
+        {"image": "bg_zmierzch_mgla_dol.png", "x": 60, "y": 396, "width": 340, "height": 38, "animation": {"type": "drift", "amplitude": 12, "duration": 15000, "phase": 0.5}},
+        {"image": "bg_zmierzch_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
       ]
     }
   }

@@ -5,7 +5,7 @@
 //  Sprawdzenie:          { ekwipunek ? siekiera: ... }
 // ------------------------------------------------------------
 
-LIST Przedmioty = siekiera, chleb
+LIST Przedmioty = siekiera, chleb, pies_towarzysz
 
 // Ekwipunek na początku gry — to, co Maciek przyniósł w tobołku.
 VAR ekwipunek = (siekiera, chleb)
@@ -15,6 +15,7 @@ VAR ekwipunek = (siekiera, chleb)
 { p:
     - siekiera:  ~ return "Siekiera"
     - chleb:     ~ return "Bochenek chleba"
+    - pies_towarzysz: ~ return "Pies – towarzysz"
 }
 ~ return ""
 
@@ -23,5 +24,6 @@ VAR ekwipunek = (siekiera, chleb)
 { p:
     - siekiera:  ~ return "Kupiona w mieście za pieniądze z czterech lat pracy na cudzym polu. Na niej opiera się cała przyszłość."
     - chleb:     ~ return "Twardy, razowy, owinięty w lnianą szmatkę. Musi starczyć na długo."
+    - pies_towarzysz: ~ return "Chudy, z długim pyskiem i za dużymi łapami. Obronił Maćka przed stworem z zarośli i od tamtej nocy nie odstępuje go na krok."
 }
 ~ return ""

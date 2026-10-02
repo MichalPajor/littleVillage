@@ -8,8 +8,9 @@ LIST Siedliska = przy_lesie, przy_mokradlach, nad_jeziorem
 VAR chata_macka = ()
 
 // Młody dziki pies spotkany w prologu.
-//   nakarmiony  — Maciek dał mu chleb; pies będzie przychodził, oswoi się i zostanie jego towarzyszem
-//   porzucony   — Maciek go znalazł, ale nie nakarmił (kiedyś znajdzie jego szczątki)
-//   niespotkany — Maciek nie wyszedł z szałasu
-LIST LosyPsa = nakarmiony, porzucony, niespotkany
+//   nakarmiony  — Maciek dał mu chleb; pies krąży coraz bliżej chaty
+//   oswojony    — nakarmiony pies obronił Maćka przed stworem i został jego towarzyszem
+//   porzucony   — Maciek go znalazł, ale nie nakarmił; pies zdechł, a stwór porwał jego ciało
+//   niespotkany — Maciek nie wyszedł z szałasu; pies zdechł, a stwór porwał jego ciało
+LIST LosyPsa = nakarmiony, oswojony, porzucony, niespotkany
 VAR los_psa = ()

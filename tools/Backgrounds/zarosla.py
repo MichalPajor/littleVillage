@@ -4,6 +4,7 @@
 #   python3 tools/Backgrounds/zarosla.py --master > podglad.svg
 import sys, random, math
 from common import *
+import art
 
 L = {}
 rnd = random.Random(3)
@@ -98,14 +99,12 @@ dog.append('<path d="M150 432C150 412 166 400 190 398C178 404 170 414 168 432Z" 
 dog.append('<path d="M150 400c10 8 16 18 18 34M160 392c8 4 18 6 26 4M140 420c10-2 18 0 24 6" fill="none" stroke-width="2.6"/>')
 for (lx, ly, rot) in [(160, 398, 20), (182, 394, -10), (168, 422, 40), (150, 410, -30)]:
     dog.append(f'<path d="M{lx} {ly}c4-6 12-6 14 0c-4 4-10 4-14 0z" fill="#000000" stroke-width="1.4" transform="rotate({rot} {lx} {ly})"/>')
-# pies powiekszony 1,5x i podniesiony nad krawedz okna z tekstem
-DOG = 'translate(-112 -262) scale(1.5)'
-L["krzaki"] = (0, 260, 400, 200, group(k + [f'<g transform="{DOG}">'] + dog + ['</g>']))
+L["krzaki"] = (0, 260, 400, 200, group(k))
+
+# pies — rysunek autora (assets/wilczek.svg), siedzi w przerwie miedzy krzakami
+L["pies"] = (200, 292, 140, 144, art.sitting("translate(208 300) scale(0.3)", skip=("cień",)))
 
 # blyszczace slepia psa (migocza w swietle ksiezyca)
-L["slepia"] = (250, 310, 32, 24, group([f'<g transform="{DOG}">',
-    '<circle cx="254.5" cy="386.2" r="1.3" fill="#FFFFFF" stroke="none"/>', '</g>']))
-
 # ---------- PIERWSZY PLAN: mokra trawa w poswiacie, slady prowadzace do krzaka
 p = ['<path d="M-10 436C80 428 180 436 260 430C320 426 360 432 400 430V844H-10Z" fill="#EDEBE6" stroke-width="3"/>',
      '<path d="M-10 436C80 428 180 436 260 430C320 426 360 432 400 430V844H-10Z" fill="url(#hatch)" stroke="none" opacity="0.55"/>']
@@ -119,12 +118,11 @@ p.append('<path d="M0 690C40 740 60 800 70 844H0Z" fill="url(#hatchNight)" strok
 p.append('<path d="M390 680C350 740 340 800 336 844H390Z" fill="url(#hatchNight)" stroke="none"/>')
 L["przod"] = (0, 420, 390, 424, group(p))
 
-ORDER = ["niebo", "chmury", "las", "oczy_las", "krzaki", "slepia", "przod"]
+ORDER = ["niebo", "chmury", "las", "oczy_las", "krzaki", "pies", "przod"]
 COMMENTS = {
     "niebo": "nocne niebo z księżycem i gwiazdami", "chmury": "chmury przed księżycem (dryfują)",
     "las": "ściana lasu i polana w poświacie", "oczy_las": "oczy w lesie (mrugają)",
-    "krzaki": "krzaki i młody pies o wilczym pysku wychylający się spod krzaka",
-    "slepia": "błyszczące ślepia psa (migoczą)", "przod": "pierwszy plan: mokra trawa, ślady łap",
+    "krzaki": "krzaki", "pies": "młody pies między krzakami (rysunek autora: assets/wilczek.svg)", "przod": "pierwszy plan: mokra trawa, ślady łap",
 }
 
 if __name__ == "__main__":

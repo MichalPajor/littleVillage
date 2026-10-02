@@ -1,7 +1,9 @@
 # Wspolne elementy rysunkow tel (styl makiety: kreska atramentu, kreskowanie, papier + czern).
 import os
 
-DEFS = '''<filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+# Obszar filtra w jednostkach plotna (nie %): przy przeskalowanych grupach Svg.Skia (rasteryzacja MAUI)
+# liczy procenty od nieprzeskalowanego ksztaltu i obcinal np. glowe stwora.
+DEFS = '''<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
 <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
 </filter>

@@ -49,11 +49,12 @@ public sealed class GameSessionTests : IDisposable
         await session.InitializeAsync();
         await session.StartNewGameAsync();
 
-        // Nad jeziorem, zostaje w szałasie — najkrótsza droga do końca prologu.
-        var page = await session.AdvanceAsync(2);
-        foreach (var choice in new int?[] { null, 1 })
+        // Nad jeziorem, zostaje w szałasie; strony bez wyborów przewijamy „Dalej”.
+        var choices = new Queue<int>([2, 1]);
+        var page = session.CurrentPage!;
+        while (page.Ending != PageEnding.End)
         {
-            page = await session.AdvanceAsync(choice);
+            page = await session.AdvanceAsync(page.Ending == PageEnding.Choices ? choices.Dequeue() : null);
         }
 
         Assert.Equal(PageEnding.End, page.Ending);

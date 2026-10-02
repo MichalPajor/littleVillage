@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- LittleVillage — tło „zarośla nocą”: krzaki i młody pies o wilczym pysku wychylający się spod krzaka
+<!-- LittleVillage — tło „zarośla nocą”: krzaki
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 260 400 200">
 <defs>
-<filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
 <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
 </filter>
@@ -56,28 +56,5 @@
 <path d="M354 388q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
 <path d="M398 374q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
 <path d="M353 378q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
-<g transform="translate(-112 -262) scale(1.5)">
-<path d="M150 432C150 412 166 400 190 398C204 398 214 404 220 414L222 436Z" fill="#EDEBE6" stroke-width="2.8"/>
-<path d="M168 412c4 6 4 14 2 20M180 408c4 7 4 16 2 24M192 406c4 8 4 18 2 26" fill="none" stroke-width="1.6"/>
-<path d="M204 432l-2 -18M216 432l2 -18" fill="none" stroke-width="6"/>
-<path d="M196 434c2 -4 10 -4 12 0M210 434c2 -4 10 -4 12 0" fill="#EDEBE6" stroke-width="2.4"/>
-<path d="M206 410C212 392 222 380 236 376L246 380C256 378 270 380 284 386C288 388 288 392 284 394C272 396 258 398 248 402C240 408 232 414 222 418Z" fill="#EDEBE6" stroke-width="2.8"/>
-<path d="M232 386C240 384 250 386 262 388" fill="none" stroke-width="1.4"/>
-<path d="M228 404l8-3M226 410l7-2" fill="none" stroke-width="1.2"/>
-<path d="M248 402C258 398 272 396 284 394C276 400 262 404 250 406Z" fill="url(#hatchDense)" stroke-width="1.4"/>
-<path d="M226 398c6-6 14-8 22-6" fill="none" stroke-width="1.4"/>
-<path d="M246 387C249 383 256 383 259 387C256 390 249 390 246 387Z" fill="#000000" stroke-width="1.2"/>
-<path d="M281 384c4 0 6 3 4 6c-2 2-5 1-6-1z" fill="#000000" stroke-width="1.6"/>
-<path d="M262 395l4 3l3-3l3 3l3-3" fill="none" stroke-width="1.4"/>
-<path d="M232 380L230 356L244 374Z" fill="#EDEBE6" stroke-width="2.6"/>
-<path d="M242 378L246 354L256 376Z" fill="#EDEBE6" stroke-width="2.6"/>
-<path d="M234 374L233 362M246 372L248 362" fill="none" stroke-width="1.4"/>
-<path d="M150 432C150 412 166 400 190 398C178 404 170 414 168 432Z" fill="url(#hatchDense)" stroke="none"/>
-<path d="M150 400c10 8 16 18 18 34M160 392c8 4 18 6 26 4M140 420c10-2 18 0 24 6" fill="none" stroke-width="2.6"/>
-<path d="M160 398c4-6 12-6 14 0c-4 4-10 4-14 0z" fill="#000000" stroke-width="1.4" transform="rotate(20 160 398)"/>
-<path d="M182 394c4-6 12-6 14 0c-4 4-10 4-14 0z" fill="#000000" stroke-width="1.4" transform="rotate(-10 182 394)"/>
-<path d="M168 422c4-6 12-6 14 0c-4 4-10 4-14 0z" fill="#000000" stroke-width="1.4" transform="rotate(40 168 422)"/>
-<path d="M150 410c4-6 12-6 14 0c-4 4-10 4-14 0z" fill="#000000" stroke-width="1.4" transform="rotate(-30 150 410)"/>
-</g>
 </g>
 </svg>
