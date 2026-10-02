@@ -105,17 +105,21 @@ def maciek(mx, my):
 L["maciek"] = (160, 316, 80, 92, group([maciek(190, 404)]))
 
 # ---------- STWOR: topielec — rysunek autora (assets/topielec.svg)
-# Opis: "wyzsza od czlowieka o dobre trzy glowy". Maciek ma ~68 jednostek wzrostu, glowa ~13,
-# wiec topielec ~107 jednostek (rysunek: ~495) -> skala 0,22; stopy na y=420, z prawej strony.
-K = 0.22
-TOP = f"translate(251 292) scale({K})"
-MOUTH = (271, 339)     # paszcza po przeksztalceniu (92,212 w rysunku)
-EYE = (272, 328)       # oko po przeksztalceniu (96,164 w rysunku)
+# Opis: "wyzsza od czlowieka o dobre trzy glowy" (~107 jednostek przy ~68 Macka). Topielec stoi blizej
+# widza niz Maciek (stopy nizej, tuz nad oknem z tekstem), wiec na obrazku jest wiekszy: ~145 jednostek.
+K = 0.29               # skala rysunku (stopy na y=582, sylwetka ok. 495 jednostek)
+FEET_Y = 428           # stopy na plotnie
+LEFT_X = 250           # lewa krawedz sylwetki (x=50 w rysunku)
+TX, TY = LEFT_X - 50 * K, FEET_Y - 582 * K
+TOP = f"translate({TX:.1f} {TY:.1f}) scale({K})"
+MOUTH = (round(TX + 92 * K), round(TY + 212 * K))   # paszcza (92,212 w rysunku)
+EYE = (round(TX + 96 * K), round(TY + 164 * K))     # oko (96,164 w rysunku)
+STWOR_BOX = (240, round(TY + 80 * K), 104, round(FEET_Y + 6 - (TY + 80 * K)))
 
 # zdobycz: topielec wyszedl z krzakow; w paszczy bezwladne cialo psa, kapie krew
-L["stwor_zdobycz"] = (246, 300, 80, 130, art.topielec(TOP))
-L["pies_martwy"] = (240, 320, 50, 66, art.barking(
-    f"translate({MOUTH[0] - 4} {MOUTH[1] + 14}) rotate(-84) scale(0.085) translate(-330 -150)", skip=("cień", "szczekanie", "drżenie")))
+L["stwor_zdobycz"] = (*STWOR_BOX, art.topielec(TOP))
+L["pies_martwy"] = (MOUTH[0] - 32, MOUTH[1] - 28, 60, 86, art.barking(
+    f"translate({MOUTH[0] - 5} {MOUTH[1] + 18}) rotate(-84) scale({0.39 * K:.3f}) translate(-330 -150)", skip=("cień", "szczekanie", "drżenie")))
 L["krew"] = (MOUTH[0] - 14, MOUTH[1] - 4, 24, 90, '<g fill="#A8101A" filter="url(#ink)">'
             f'<path d="M{MOUTH[0] - 1} {MOUTH[1] + 1}c1 4-1 7 0 11c1-3 2-7 1-11z"/>'
             f'<ellipse cx="{MOUTH[0] - 2}" cy="{MOUTH[1] + 40}" rx="1.4" ry="2.2"/>'
@@ -127,7 +131,7 @@ L["oczy_stwora"] = (EYE[0] - 5, EYE[1] - 5, 10, 10, group([
     f'<circle cx="{EYE[0] - 0.4}" cy="{EYE[1]}" r="1" fill="#000000" stroke="none"/>']))
 
 # obrona: topielec w krzakach (krzaki_przod zaslaniaja mu nogi), oko jarzy sie w mroku
-L["stwor_cien"] = (246, 300, 80, 130, art.topielec(TOP, skip=("kałuża",)))
+L["stwor_cien"] = (*STWOR_BOX, art.topielec(TOP, skip=("kałuża",)))
 L["krzaki_przod"] = (226, 330, 174, 100, group([
     f'<path d="{bush(300, 434, 84, 48, 7)}" fill="#000000" stroke-width="3"/>',
     *[f'<path d="M{x:.0f} {y:.0f}q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>'
@@ -137,7 +141,7 @@ L["slepia"] = (EYE[0] - 6, EYE[1] - 6, 12, 12, group([
     f'<circle cx="{EYE[0] - 0.4}" cy="{EYE[1]}" r="1.3" fill="#000000" stroke="none"/>']))
 
 # pies w postawie obronnej — rysunek autora (assets/wilczek2.svg), odbity, by szczekal w strone stwora
-L["pies_obrona"] = (196, 350, 112, 76, art.barking("translate(300 357) scale(-0.17 0.17)"))
+L["pies_obrona"] = (176, 352, 112, 76, art.barking("translate(280 359) scale(-0.17 0.17)"))
 
 # ---------- PIERWSZY PLAN: ciemna trawa
 f = ['<path d="M-10 430H400V844H-10Z" fill="#EDEBE6" stroke="none"/>',
