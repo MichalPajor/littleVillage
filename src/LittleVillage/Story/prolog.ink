@@ -10,11 +10,11 @@
 # tytul: Zapadlina
 Zapadlina – wieś leżąca tam, gdzie ziemia, zmęczona byciem równiną, osunęła się w dół. Chcąc do niej dotrzeć, zawsze trzeba było schodzić z pagórków, brzegów i zboczy – czy to od gościńca przez Bukowy Grzbiet, czy od boru udeptaną ścieżką. Z miasta wracało się sześć godzin, a ostatni odcinek drogi prowadził krętą ścieżką między mokradłami, wciąż w dół. Mgła lubiła tę nieckę. Wlewała się w nią o zmierzchu jak mleko do miski i bywało, że nawet do południa nie chciała z niej wyjść.
 Od wschodu napierał las – stary, iglasty i tak gęsty, że nawet w południe drzewa rzucały głęboki, chłodny cień. Na północy miękka ziemia przechodziła w mokradła porośnięte pałkami, turzycą i karłowatymi krzewami. Woda stała tam czarna, mętna i nieruchoma. Niektórzy powiadali, że nie wolno zbyt długo się w nią wpatrywać, bo można tym wywołać topielce uwięzione pod warstwą mułu. Po nocach często latały nad nią błędne ognie. Na zachodzie, w najniższym miejscu niecki, leżało jezioro, okrągłe, jakby ktoś wycisnął je kolanem. Mówiono, że nikt nie widział jego dna.
-Wieś była młoda i mała. Pięć chałup stało daleko od siebie, bo każdy brał tyle pola, ile był w stanie wykarczować i obronić. Mieszkało w niej około trzydziestu osób, licząc z dziećmi. Wszyscy dobrze się znali. Kościół był dopiero w mieście; chodziło się do niego kilka razy w roku, na najważniejsze święta, o ile pozwalały na to warunki. Wtedy w niecce nie zostawała ani jedna żywa dusza.
+Wieś była mała, ale nie młoda. Pięć chałup stało daleko od siebie, bo każdy brał tyle pola, ile był w stanie wykarczować i obronić. Mieszkało w niej około trzydziestu osób, licząc z dziećmi. Wszyscy dobrze się znali. Kościół był dopiero w mieście; chodziło się do niego kilka razy w roku, na najważniejsze święta, o ile pozwalały na to warunki. Wtedy w niecce nie zostawała ani jedna żywa dusza.
 Jakieś siedemdziesiąt lat przed tym, nim Jaromir pierwszy raz spojrzał w stronę lasu, jego dziadek zszedł do Zapadliny z tobołkiem na ramieniu. Maciek nie miał nic poza siekierą, chlebem, parą rąk i uporem. Siekierę i chleb kupił w mieście za pieniądze, które zarobił przez cztery lata pracy na cudzym polu. Chciał wreszcie mieć coś swojego – miejsce, w którym mógłby zamieszkać i dać rodzinie dach nad głową. Tutaj mógł mieć tyle ziemi, ile zdoła oczyścić. Była wiosna, pola parowały, a gdzieniegdzie w cieniu leżał jeszcze brudny śnieg. Maciek trzeci dzień chodził po niecce i wybierał miejsce na chatę. Trzy najczęściej wracały w jego myślach.
 # ozdobnik
 Pierwsze leżało na wschodnim skraju wsi, pod samym lasem. Ziemia była żyzna, drewno miał na wyciągnięcie ręki, a i zwierzyny nie brakowało. Tylko że od boru zawsze ciągnął chłód, nawet w południe, a nocą dochodziły stamtąd tajemnicze, przerażające dźwięki.
-Drugie było na północy, przy mokradłach. Były tam rozległe łąki, na których można by wypasać bydło, a torfu do palenia nigdy by nie zabrakło. Za to po północy nad bagnami podobno coś mrugało. Ludzie spotkani przy studni mówili tylko: – Tam się nie chodzi i nie buduje. Tam się tylko topi.
+Drugie było na północy, przy mokradłach. Znajdowały się tam rozległe łąki, na których można by wypasać bydło, a torfu do palenia nigdy by nie zabrakło. Za to po północy nad bagnami podobno coś mrugało. Ludzie spotkani przy studni mówili tylko: – Tam się nie chodzi i nie buduje. Tam się tylko topi.
 Trzecie leżało nad jeziorem i było najbardziej malownicze. Woda była czysta, ryby same wskakiwały do ręki, a brzeg łagodny – trzeba było tylko przedrzeć się przez gęste trzciny. Był tam też ślad po chałupie, która kiedyś tu stała: stare, spróchniałe i zwęglone bale. Nikt we wsi nie chciał powiedzieć, kto w niej mieszkał ani co się z nim stało, a ludzie żegnali się za każdym razem, gdy ktoś o niej wspomniał.
 # pytanie: Gdzie Maciek postawi chatę?
 *   [Na skraju lasu, od wschodu.]
@@ -263,7 +263,7 @@ Stał tak długo, aż słońce wzeszło nad borem. Potem zawrócił. Nie dlatego
 -> dach_gotowy
 
 = dach_gotowy
-Ostatnie snopy trzciny ułożył przed południem. Związał je łykiem, docisnął żerdziami i zszedł z drabiny. Pierwszy raz od przyjścia do Zapadliny stanął przed swoją chatą, która miała dach. # pokaz: dach
+Ostatnie snopy trzciny ułożył przed południem. Związał je łykiem, docisnął żerdziami i zszedł z drabiny. Pierwszy raz od przyjścia do Zapadliny stał przed chatą, której dach wyglądał tak dobrze. # pokaz: dach
 Tej nocy po raz pierwszy spał pod nim. Ściany pachniały żywicą i wilgotną gliną, a przez szparę w drzwiach przeciskało się światło księżyca.
 Nie było jeszcze łóżka, ale przynajmniej nie spał pod gołym niebem. W tych czterech ścianach czuł ciepło i bezpieczeństwo.
 { los_psa == oswojony: Pies zwinął się na progu, tak jakby to miejsce od zawsze było jego. }
@@ -306,7 +306,7 @@ Wtedy Maciej opowiedział jeszcze raz, ze szczegółami, wszystko, co go spotka�
 // ------------------------------------------------------------
 === legenda ===
 # tlo: legenda
-– Podobno wszystko zaczęło się tam, nad jeziorem, gdzie leżą te zwęglone bale – odezwał się cicho Andrzej. – Mieszkała tam kiedyś kobieta. Zielarka. Ludzie chodzili do niej z bólem, chorobami i gorączką – była pomocna. Ale z czasem coś w nią weszło. Nikt nie wiedział dlaczego. Gadała po nocach, ale nie do siebie – do kogoś, kogo nikt nie widział. Mówiła, że umarli przychodzą do niej znad wody i opowiadają, że będą się działy straszne rzeczy. Ludzie przestali do niej chodzić, bo się bali.
+– Podobno wszystko zaczęło się tam, nad jeziorem, gdzie leżą te zwęglone bale – odezwał się cicho Andrzej. – Mieszkała tam kiedyś kobieta. Zielarka. Ludzie chodzili do niej z bólem, chorobami i gorączką – była pomocna. Ale z czasem coś w nią weszło. Nikt nie wiedział dlaczego. Gadała po nocach, ale nie do siebie – do kogoś, kogo nikt nie widział. Mówiła, że umarli przychodzą do niej znad wody i opowiadają o strasznej przyszłości. Ludzie przestali do niej chodzić, bo się bali.
 Potem we wsi zaczęło się dziać źle. Mleko kwaśniało w wiadrach, małe dzieci budziły się z krzykiem, warzywa gniły w ziemi. Zaczęły też ginąć zwierzęta – najpierw cielę, potem krowa, potem cały kurnik w jedną noc – ludzie powiedzieli, że to jej sprawka, że jest wiedźmą.
 Pewnej nocy kilku chłopów zebrało się pod jej chatą. Zabili drzwi deskami, kiedy spała, obłożyli ściany słomą i podpalili. # pokaz: chlopi, ogien
 Andrzej zamilkł na chwilę.
