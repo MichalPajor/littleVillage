@@ -199,7 +199,8 @@ Postać zacisnęła szczęki. Rozległ się trzask – głośny, mokry, jak łam
 Maciek nie mógł się ruszyć. Trząsł się cały, zimny pot spływał mu po plecach, a nogi miał jak z waty. Siekiera ciążyła mu w dłoniach, bezużyteczna. Stał tak bardzo długo, aż ciemność znów ucichła.
 -> strach_o_chate ->
 Maciek szybko wszedł do szałasu. Długo jeszcze leżał z otwartymi oczami, wsłuchując się w ciemność, aż wyczerpany pracą i strachem zasnął.
--> prolog_ciag_dalszy
+# dalej
+-> zgliszcza
 
 = obrona
 # tlo: zmierzch_obrona
@@ -215,7 +216,8 @@ Długo trwało, zanim Maciek doszedł do siebie. W końcu osunął się na ziemi
 Maciek wyciągnął drżącą rękę. Pies obwąchał ją, a potem pierwszy raz pozwolił się pogłaskać.
 – Dobry pies – szepnął Maciek. – Dobry – odetchnął.
 Tej nocy weszli do szałasu razem. Pies zwinął się w kłębek przy boku człowieka i zasnął pierwszy. Maciek długo jeszcze leżał z otwartymi oczami, wsłuchując się w ciemność. Ale po raz pierwszy od przyjścia do Zapadliny miał towarzysza.
--> prolog_ciag_dalszy
+# dalej
+-> zgliszcza
 
 // Tylko gdy chata stoi przy mokradłach — stwór uciekł właśnie tam.
 = strach_o_chate
@@ -223,6 +225,83 @@ Tej nocy weszli do szałasu razem. Pies zwinął się w kłębek przy boku czło
     A potem dotarło do niego, dokąd stwór pobiegł. Na mokradła. Przecież tam, niedaleko czarnej wody, stała jego chata. Tam od miesiąca spał, jadł i pracował, kilkadziesiąt kroków od bagna. „Tam się nie buduje. Tam się tylko topi” – przypomniały mu się słowa ludzi spod studni. Pierwszy raz od dnia, w którym wbił siekierę w pierwszy pień, pomyślał, że może popełnił błąd. Że może trzeba było posłuchać.
 }
 ->->
+
+
+// ------------------------------------------------------------
+//  Zgliszcza — poranek po nocy z topielcem, dokończenie dachu,
+//  rozmowa z Andrzejem.
+// ------------------------------------------------------------
+=== zgliszcza ===
+{ chata_macka:
+    - przy_lesie: # tlo: chata_las
+    - przy_mokradlach: # tlo: chata_mokradla
+    - else: # tlo: chata_jezioro
+}
+# rozdzial: Prolog
+# tytul: Zgliszcza
+Zaczęło świtać. Obudził się zesztywniały i zziębnięty. Przez chwilę nie wiedział, czy to, co widział w nocy, wydarzyło się naprawdę. Potem przypomniał sobie trzask w zaroślach i przeszedł go dreszcz.
+{ los_psa == oswojony:
+    Pies leżał przy wejściu do szałasu z łbem na łapach i patrzył w stronę mokradeł. Już nie spał. Maciek miał wrażenie, że czuwał tak przez większą część nocy.
+- else:
+    W szałasie było cicho. Maciek wyjrzał na zewnątrz. W trawie przy zaroślach odbijały się wąskie, długie ślady, za długie jak na zwierzę, i ciągnęły się w stronę mokradeł. Między nimi ciemniały plamy krwi. # pokaz: slady
+}
+Maciej podszedł do swojej niedokończonej chaty i usiadł na jej progu. Siedział i patrzył przed siebie. Myśli kłębiły się w nim jak mgła nad wsią. Uciekać. Zostawić wszystko, póki jeszcze żyje, i nigdy nie wracać. A z drugiej strony – ponad miesiąc pracy, pęcherze na dłoniach, ostatnie kromki chleba. Każdy bal w tych ścianach ociosał sam. I dokąd miałby pójść? Na cudze pole, znowu za miskę kaszy? Obiecał przecież, że sprowadzi tu rodzinę. Że będą mieli swój dach.
+# pytanie: Co postanowi Maciek?
+*   [Zostanie. Za dużo w to miejsce włożył.]
+    -> zostaje
+*   [Spakuje to, co ma, i odejdzie, póki czas.]
+    -> odchodzi
+
+= zostaje
+Wstał, otrzepał spodnie i spojrzał na dach. Został jeden pas trzciny, może dwa.
+– Nie po to budowałem, żeby teraz uciekać – powiedział głośno, jakby chciał, żeby usłyszało go coś więcej niż las. # dalej
+-> dach_gotowy
+
+= odchodzi
+~ chcial_odejsc = true
+Zarzucił tobołek na ramię i ruszył pod górę, w stronę gościńca. Szedł szybko, nie oglądając się za siebie. Dopiero na grzbiecie niecki przystanął i spojrzał w dół.
+Chata stała tam, mała i niedokończona, z dachem jak niedopowiedziane zdanie. Jego chata.
+{ los_psa == oswojony: Pies szedł za nim kawałek, a potem usiadł w połowie zbocza i patrzył – raz na niego, raz na chatę – jakby czekał, aż Maciek sam zrozumie. }
+Stał tak długo, aż słońce wzeszło nad borem. Potem zawrócił. Nie dlatego, że przestał się bać. Po prostu nie miał dokąd pójść. # dalej
+-> dach_gotowy
+
+= dach_gotowy
+Ostatnie snopy trzciny ułożył przed południem. Związał je łykiem, docisnął żerdziami i zszedł z drabiny. Pierwszy raz od przyjścia do Zapadliny stanął przed swoją chatą, która miała dach. # pokaz: dach
+Tej nocy po raz pierwszy spał pod nim. Ściany pachniały żywicą i wilgotną gliną, a przez szparę w drzwiach przeciskało się światło księżyca.
+Nie było jeszcze łóżka, ale przynajmniej nie spał pod gołym niebem. W tych czterech ścianach czuł ciepło i bezpieczeństwo.
+{ los_psa == oswojony: Pies zwinął się na progu, tak jakby to miejsce od zawsze było jego. }
+Rano poszedł do Andrzeja. Musiał komuś powiedzieć. # dalej
+-> u_andrzeja
+
+= u_andrzeja
+# tlo: izba_andrzeja
+Chałupa Andrzeja stała na pagórku, z dala od wody. W izbie było ciepło i ciasno. Staś, syn Andrzeja, siedział przy stole na szerokim podłokietniku drewnianego krzesła i strugał nożykiem patyk. Na widok Maćka uśmiechnął się szeroko.
+Maciek chciał opowiedzieć wszystko. Zaczął od samego początku: od ciszy, od kroków i… od postaci wyższej od człowieka o trzy głowy, z rękami do ziemi.
+Andrzej słuchał, aż nagle parsknął śmiechem.
+– Z głodu ci się przywidziało, Maćku. Otrząśnij się. Miesiąc o chlebie i wodzie, to człowiek i archanioła Michała zobaczy.
+Staś przestał strugać. Patrzył na Maćka z otwartymi ustami i zauważalnym strachem w oczach.
+– Czy to prawda? – zapytał.
+# pytanie: Co zrobi Maciek?
+*   [Potwierdzi stanowczo, że to prawda, i powie wszystko do końca, przy chłopcu. Niech wie, przed czym ma się strzec.]
+    ~ stas_zaufanie = true
+    -> prawda_przy_chlopcu
+*   [Uśmiechnie się i powie, że to chyba był tylko sen, ale poprosi Andrzeja, żeby odesłał chłopca, i w cztery oczy opowie wszystko ze szczegółami. To nie są rzeczy dla dziecka.]
+    -> w_cztery_oczy
+
+= prawda_przy_chlopcu
+– Tak, to prawda. Niech dzieciak słucha – powiedział Maciek. – Lepiej, żeby się bał, niż poszedł nad bagno sam i już nigdy nie wrócił.
+Andrzej spojrzał na syna, potem na Maćka. Uśmiech powoli zniknął mu z twarzy.
+-> dziad_opowiadal
+
+= w_cztery_oczy
+– Właściwie to… to był pewnie zły sen – odpowiedział chłopcu.
+Poprosił jednak Andrzeja o rozmowę w cztery oczy. Ten wysłał Stasia po wodę. Chłopiec wyszedł niechętnie, a drzwi zostawił uchylone. Żaden z mężczyzn tego nie zauważył.
+-> dziad_opowiadal
+
+= dziad_opowiadal
+– Ręce do ziemi, mówisz – odezwał się w końcu Andrzej, już bez śmiechu. – Wyższa o trzy głowy. – Podszedł do okna i długo patrzył w stronę jeziora. – Mój dziad opowiadał o czymś takim. Myślałem, że dzieci straszył.
+Wtedy Maciej opowiedział jeszcze raz, ze szczegółami, wszystko, co go spotkało.
+-> prolog_ciag_dalszy
 
 
 // Kolejna scena prologu — do napisania.

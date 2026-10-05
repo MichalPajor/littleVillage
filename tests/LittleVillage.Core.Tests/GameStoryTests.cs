@@ -9,6 +9,8 @@ public sealed class GameStoryTests
     private const int Forest = 0, Marsh = 1, Lake = 2;
     private const int GoOut = 0, Stay = 1;
     private const int FeedDog = 0, KeepBread = 1;
+    private const int StayHere = 0, Leave = 1;          // rano po nocy z topielcem
+    private const int TellBoy = 0, SendBoyAway = 1;      // rozmowa u Andrzeja
 
     private static InkStoryEngine CreateEngine()
     {
@@ -131,7 +133,7 @@ public sealed class GameStoryTests
         Assert.DoesNotContain(pages, p => p.BackgroundKey == "zarosla_noc");
         Assert.True(Has(pages, "Muchy już go obsiadły"));
         Assert.True(Has(pages, "Rozsądny człowiek siedzi w szałasie"));
-        Assert.Equal("zmierzch_zdobycz", pages[^1].BackgroundKey);
+        Assert.Contains(pages, p => p.BackgroundKey == "zmierzch_zdobycz");
     }
 
     [Fact]
@@ -156,7 +158,7 @@ public sealed class GameStoryTests
         Assert.True(Has(pages, "śniadania nie będzie"));
         Assert.True(Has(pages, "– Żyjesz – mruknął."));
         Assert.False(Has(pages, "Muchy już go obsiadły"));
-        Assert.Equal("zmierzch_obrona", pages[^1].BackgroundKey);
+        Assert.Contains(pages, p => p.BackgroundKey == "zmierzch_obrona");
         Assert.True(Has(pages, "miał towarzysza"));
         Assert.Equal(["siekiera", "pies_towarzysz"], Inventory(engine));
         Assert.Equal("Pies – towarzysz", engine.GetInventory()[1].Name);
@@ -172,7 +174,7 @@ public sealed class GameStoryTests
         Assert.True(Has(pages, "Sam ledwo zipię"));
         Assert.True(Has(pages, "zjadł ostatni kawałek chleba"));
         Assert.True(Has(pages, "Sam ledwo zipałem"));
-        Assert.Equal("zmierzch_zdobycz", pages[^1].BackgroundKey);
+        Assert.Contains(pages, p => p.BackgroundKey == "zmierzch_zdobycz");
         Assert.Equal(["siekiera"], Inventory(engine));
     }
 
@@ -237,9 +239,12 @@ public sealed class GameStoryTests
         var data = new TheoryData<int[]>();
         foreach (var place in new[] { Forest, Marsh, Lake })
         {
-            data.Add([place, Stay]);
-            data.Add([place, GoOut, FeedDog]);
-            data.Add([place, GoOut, KeepBread]);
+            foreach (var tail in new[] { new[] { StayHere, TellBoy }, [Leave, SendBoyAway] })
+            {
+                data.Add([place, Stay, .. tail]);
+                data.Add([place, GoOut, FeedDog, .. tail]);
+                data.Add([place, GoOut, KeepBread, .. tail]);
+            }
         }
 
         return data;
@@ -267,6 +272,80 @@ public sealed class GameStoryTests
             // Resolve zwraca tło domyślne dla nieznanego klucza — literówka w „# tlo:” byłaby niewidoczna.
             Assert.Equal(key, catalog.Resolve(key)?.Key);
         }
+    }
+
+    // ----- Zgliszcza: poranek po topielcu, dach, rozmowa u Andrzeja -----
+
+    [Theory]
+    [InlineData(Forest, "chata_las")]
+    [InlineData(Marsh, "chata_mokradla")]
+    [InlineData(Lake, "chata_jezioro")]
+    public void Morning_after_the_creature_is_at_the_hut_of_the_chosen_place(int place, string background)
+    {
+        var pages = Play(CreateEngine(), place, Stay);
+
+        var morning = pages[^1];
+        Assert.Equal(background, morning.BackgroundKey);
+        Assert.Equal("Zgliszcza", morning.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.Equal("Co postanowi Maciek?", morning.Question);
+        Assert.Equal(2, morning.Choices.Count);
+    }
+
+    [Fact]
+    public void Morning_shows_the_creature_tracks_only_when_the_dog_is_dead()
+    {
+        var dead = Play(CreateEngine(), Forest, GoOut, KeepBread)[^1];
+        var alive = Play(CreateEngine(), Forest, GoOut, FeedDog)[^1];
+
+        Assert.Contains(dead.Blocks, b => b.Reveal == "slady" && b.Text.Contains("plamy krwi"));
+        Assert.DoesNotContain(alive.Blocks, b => b.Reveal == "slady");
+        Assert.Contains(alive.Blocks, b => b.Text.StartsWith("Pies leżał przy wejściu do szałasu"));
+    }
+
+    [Fact]
+    public void Leaving_turns_back_and_the_dog_waits_on_the_slope()
+    {
+        var pages = Play(CreateEngine(), Lake, GoOut, FeedDog, Leave);
+
+        Assert.True(Has(pages, "Po prostu nie miał dokąd pójść."));
+        Assert.True(Has(pages, "Pies szedł za nim kawałek"));
+        Assert.False(Has(pages, "Nie po to budowałem"));
+    }
+
+    [Fact]
+    public void Roof_gets_finished_and_the_last_thatch_is_revealed()
+    {
+        var pages = Play(CreateEngine(), Marsh, Stay, StayHere);
+
+        var roof = pages.Single(p => p.Blocks.Any(b => b.Text.StartsWith("Ostatnie snopy trzciny")));
+        Assert.Equal("chata_mokradla", roof.BackgroundKey);
+        Assert.Contains(roof.Blocks, b => b.Reveal == "dach");
+        Assert.Equal(PageEnding.Continue, roof.Ending);
+    }
+
+    [Fact]
+    public void At_Andrzejs_the_boy_asks_and_Maciek_decides()
+    {
+        var pages = Play(CreateEngine(), Forest, Stay, StayHere);
+
+        var talk = pages[^1];
+        Assert.Equal("izba_andrzeja", talk.BackgroundKey);
+        Assert.Contains(talk.Blocks, b => b.Text == "– Czy to prawda? – zapytał.");
+        Assert.StartsWith("Potwierdzi stanowczo", talk.Choices[TellBoy].Text);
+        Assert.StartsWith("Uśmiechnie się", talk.Choices[SendBoyAway].Text);
+    }
+
+    [Theory]
+    [InlineData(TellBoy, "Niech dzieciak słucha", "drzwi zostawił uchylone")]
+    [InlineData(SendBoyAway, "drzwi zostawił uchylone", "Niech dzieciak słucha")]
+    public void Telling_the_boy_or_sending_him_away(int choice, string present, string absent)
+    {
+        var pages = Play(CreateEngine(), Forest, Stay, StayHere, choice);
+
+        Assert.True(Has(pages, present));
+        Assert.False(Has(pages, absent));
+        Assert.True(Has(pages, "Mój dziad opowiadał o czymś takim."));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 
     [Fact]

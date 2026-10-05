@@ -133,7 +133,8 @@ public sealed class RevealTests
     // ----- strażnicy prawdziwej fabuły -----
 
     private static readonly int[][] AllPaths =
-        [.. new[] { 0, 1, 2 }.SelectMany(place => new[] { new[] { place, 1 }, [place, 0, 0], [place, 0, 1] })];
+        [.. new[] { 0, 1, 2 }.SelectMany(place => new[] { new[] { place, 1 }, [place, 0, 0], [place, 0, 1] })
+            .SelectMany(path => new[] { new[] { 0, 0 }, [1, 1] }.Select(tail => path.Concat(tail).ToArray()))];
 
     private static IEnumerable<StoryPage> PlayAll()
     {

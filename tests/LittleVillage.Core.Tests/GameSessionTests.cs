@@ -49,8 +49,8 @@ public sealed class GameSessionTests : IDisposable
         await session.InitializeAsync();
         await session.StartNewGameAsync();
 
-        // Nad jeziorem, zostaje w szałasie; strony bez wyborów przewijamy „Dalej”.
-        var choices = new Queue<int>([2, 1]);
+        // Nad jeziorem, zostaje w szałasie, rano zostaje, mówi chłopcu prawdę; strony bez wyborów przewijamy „Dalej”.
+        var choices = new Queue<int>([2, 1, 0, 0]);
         var page = session.CurrentPage!;
         while (page.Ending != PageEnding.End)
         {
