@@ -310,7 +310,7 @@ Wtedy Maciej opowiedział jeszcze raz, ze szczegółami, wszystko, co go spotka�
 Potem we wsi zaczęło się dziać źle. Mleko kwaśniało w wiadrach, małe dzieci budziły się z krzykiem, warzywa gniły w ziemi. Zaczęły też ginąć zwierzęta – najpierw cielę, potem krowa, potem cały kurnik w jedną noc – ludzie powiedzieli, że to jej sprawka – zaczęli nazywać ją wiedźmą.
 Pewnej nocy kilku chłopów zebrało się pod jej chatą. Zabili drzwi deskami, kiedy spała, obłożyli ściany słomą i podpalili. # pokaz: chlopi, ogien
 Andrzej zamilkł na chwilę.
-– Dziad mówił, że krzyczała do samego końca. Nie z bólu, Maćku. Przeklinała. Wieś, ziemię, każdego, kto tu mieszka i kto kiedyś zamieszka. Że nikt nie zazna spokoju, dopóki ci, którzy ją odwiedzają, nie zamordują wszystkich mieszkańców wsi. Słychać było też, jak jęczała, że wszystkie kości naszych dzieci będą połamane, a ich krew wypita.
+– Dziad mówił, że krzyczała do samego końca. Nie z bólu, Maćku. Przeklinała. Wieś, ziemię, każdego, kto tu mieszka i kto kiedyś zamieszka. Że nikt nie zazna spokoju, dopóki ci, którzy ją odwiedzają, nie zamordują wszystkich mieszkańców wsi. Słychać było też, jak jęczała, rzucając słowa klątwy: „Kości dzieci waszych będą połamane, a krew ich wypita…”.
 – Straszne… A ci, co ją spalili?
 – Żaden nie dożył zimy. Jeden po drugim tracili rozum. Gadali do siebie, nie spali, chodzili nocami nad wodę. Aż w końcu wszyscy weszli w bagno, jeden za drugim, i już nie wyszli. Ci, którzy ich ostatni widzieli, mówili, że w oczach mieli coś dziwnego. Jakby żarzące się węgielki. # pokaz: wegielki
 Andrzej spojrzał mu prosto w oczy.
