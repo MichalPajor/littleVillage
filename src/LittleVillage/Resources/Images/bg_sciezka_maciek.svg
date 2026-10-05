@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „droga do miasta”: Maciek z tobołkiem idzie ścieżką
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="92" viewBox="184 252 50 92">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="2.2"><path d="M198.5 340.0L201.0 315.0L206.0 315.0L207.2 340.0Z M214.8 340.0L211.0 315.0L207.2 315.0L208.5 340.0Z" fill="#000000"/><path d="M192.2 317.5C189.8 301.2 193.5 287.5 197.2 282.5L214.8 282.5C218.5 287.5 222.2 301.2 219.8 317.5Z" fill="#000000"/><circle cx="206" cy="276.2" r="6.9" fill="#000000"/><path d="M192.2 272.5L219.8 272.5L213.5 267.5L198.5 267.5Z" fill="#000000"/><line x1="213.5" y1="287.5" x2="233.5" y2="260.0" stroke-width="2.6"/><path d="M228.5 260.0C221.0 258.8 219.8 270.0 224.8 275.0C229.8 278.8 238.5 277.5 238.5 270.0C238.5 263.8 233.5 258.8 228.5 260.0Z" fill="url(#hatch)" stroke-width="2"/></g>
+</g>
+</svg>

@@ -18,6 +18,9 @@ VAR los_psa = ()
 // Rano po nocy z topielcem Maciek chciał uciec z Zapadliny (zawrócił, ale to w nim zostało).
 VAR chcial_odejsc = false
 
+// Pies wyciągnął Maćka z bagna, gdy ten poszedł za głosem żony.
+VAR pies_uratowal = false
+
 // Czy Maciek przeszukał zgliszcza chaty wiedźmy nad jeziorem.
 VAR przeszukal_zgliszcza = false
 

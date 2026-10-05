@@ -276,6 +276,44 @@
         {"image": "bg_wieczor_ogien.png", "x": 150, "y": 300, "width": 128, "height": 126, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 1300}, "revealOn": "ogien"},
         {"image": "bg_wieczor_pies.png", "x": 270, "y": 368, "width": 96, "height": 50, "revealOn": "pies"}
       ]
+    },
+    "sciezka": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_sciezka_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_sciezka_swiatelko.png", "x": 34, "y": 262, "width": 44, "height": 44, "animation": {"type": "flicker", "amplitude": 0.3, "duration": 2800}, "revealOn": "swiatelko"},
+        {"image": "bg_sciezka_mgla.png", "x": -30, "y": 250, "width": 450, "height": 150, "animation": {"type": "drift", "amplitude": 10, "duration": 14000}},
+        {"image": "bg_sciezka_maciek.png", "x": 184, "y": 252, "width": 50, "height": 92, "animation": {"type": "bob", "amplitude": 0.8, "duration": 900}},
+        {"image": "bg_sciezka_pies.png", "x": 226, "y": 314, "width": 64, "height": 36, "revealOn": "pies"},
+        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+      ]
+    },
+    "sciezka_po": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_sciezka_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_sciezka_mgla.png", "x": -30, "y": 250, "width": 450, "height": 150, "animation": {"type": "drift", "amplitude": 10, "duration": 14000}},
+        {"image": "bg_sciezka_pies_warczy.png", "x": 100, "y": 330, "width": 104, "height": 64, "animation": {"type": "bob", "amplitude": 0.6, "duration": 400}, "revealOn": "upadek"},
+        {"image": "bg_sciezka_maciek_lezy.png", "x": 140, "y": 364, "width": 144, "height": 46, "revealOn": "upadek"},
+        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+      ]
+    },
+    "sciezka_smierc": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_sciezka_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_sciezka_mgla.png", "x": -30, "y": 250, "width": 450, "height": 150, "animation": {"type": "drift", "amplitude": 10, "duration": 14000}},
+        {"image": "bg_sciezka_swiatelko_blisko.png", "x": 110, "y": 312, "width": 52, "height": 48, "animation": {"type": "flicker", "amplitude": 0.3, "duration": 2200}},
+        {"image": "bg_sciezka_kregi.png", "x": 58, "y": 364, "width": 102, "height": 28, "revealOn": "bagno"},
+        {"image": "bg_sciezka_oczy.png", "x": 76, "y": 350, "width": 64, "height": 34, "animation": {"type": "flicker", "amplitude": 0.45, "duration": 1800}, "revealOn": "oczy"},
+        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+      ]
     }
   }
 }

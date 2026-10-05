@@ -13,6 +13,7 @@ public sealed class GameStoryTests
     private const int TellBoy = 0, SendBoyAway = 1;      // rozmowa u Andrzeja
     private const int Search = 0, Avoid = 1;             // zgliszcza chaty wiedzmy
     private const int TakeFlint = 0, LeaveFlint = 1;     // krzesiwo w popiele
+    private const int FollowVoice = 0, WalkOn = 1;       // glos z mokradel
 
     private static InkStoryEngine CreateEngine()
     {
@@ -241,7 +242,7 @@ public sealed class GameStoryTests
         var data = new TheoryData<int[]>();
         foreach (var place in new[] { Forest, Marsh, Lake })
         {
-            foreach (var tail in new[] { new[] { StayHere, TellBoy, Search, TakeFlint }, [Leave, SendBoyAway, Avoid] })
+            foreach (var tail in new[] { new[] { StayHere, TellBoy, Search, TakeFlint, WalkOn }, [Leave, SendBoyAway, Avoid, WalkOn] })
             {
                 data.Add([place, Stay, .. tail]);
                 data.Add([place, GoOut, FeedDog, .. tail]);
@@ -458,7 +459,6 @@ public sealed class GameStoryTests
         var pages = Play(engine, Forest, Stay, Leave, SendBoyAway, Avoid);
 
         Assert.True(Has(pages, "Niektórych rzeczy lepiej nie ruszać."));
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
         Assert.Equal(["siekiera"], Inventory(engine));
     }
 
@@ -475,7 +475,7 @@ public sealed class GameStoryTests
     [Fact]
     public void With_the_flint_Maciek_lights_a_fire_and_the_dog_lies_by_it()
     {
-        var evening = Play(CreateEngine(), Marsh, GoOut, FeedDog, StayHere, TellBoy, Search, TakeFlint)[^1];
+        var evening = Play(CreateEngine(), Marsh, GoOut, FeedDog, StayHere, TellBoy, Search, TakeFlint).Single(p => p.BackgroundKey!.StartsWith("wieczor_"));
 
         Assert.Equal("wieczor_mokradla", evening.BackgroundKey);
         Assert.Contains(evening.Blocks, b => b.Reveal == "ogien" && b.Text.EndsWith("zatliła się iskra."));
@@ -486,7 +486,7 @@ public sealed class GameStoryTests
     [Fact]
     public void Without_the_flint_the_evening_is_cold_and_the_fire_never_appears()
     {
-        var evening = Play(CreateEngine(), Lake, GoOut, FeedDog, StayHere, TellBoy, Search, LeaveFlint)[^1];
+        var evening = Play(CreateEngine(), Lake, GoOut, FeedDog, StayHere, TellBoy, Search, LeaveFlint).Single(p => p.BackgroundKey!.StartsWith("wieczor_"));
 
         Assert.Equal("wieczor_jezioro", evening.BackgroundKey);
         Assert.Contains(evening.Blocks, b => b.Text.StartsWith("Wieczór zapadł chłodny i ciemny."));
@@ -497,11 +497,63 @@ public sealed class GameStoryTests
     [Fact]
     public void Without_the_figurine_there_is_nothing_to_sell()
     {
-        var evening = Play(CreateEngine(), Forest, Stay, Leave, SendBoyAway, Avoid)[^1];
+        var evening = Play(CreateEngine(), Forest, Stay, Leave, SendBoyAway, Avoid).Single(p => p.BackgroundKey!.StartsWith("wieczor_"));
 
         Assert.Equal("wieczor_las", evening.BackgroundKey);
         Assert.DoesNotContain(evening.Blocks, b => b.Text.Contains("Figurkę"));
         Assert.Contains(evening.Blocks, b => b.Text.Contains("przyprowadzi tu rodzinę"));
+    }
+
+    // ----- Droga do miasta: glos z mokradel -----
+
+    [Fact]
+    public void Road_to_town_starts_at_dawn_with_the_voice_choice()
+    {
+        var road = Play(CreateEngine(), Forest, GoOut, FeedDog, StayHere, TellBoy, Search, TakeFlint)[^1];
+
+        Assert.Equal("sciezka", road.BackgroundKey);
+        Assert.Contains(road.Blocks, b => b.Reveal == "pies" && b.Text.StartsWith("Pies szedł tuż przy jego boku"));
+        Assert.Contains(road.Blocks, b => b.Reveal == "swiatelko");
+        Assert.Contains(road.Blocks, b => b.Text.Contains("głos jego żony"));
+        Assert.StartsWith("Pójdzie w stronę głosu", road.Choices[FollowVoice].Text);
+    }
+
+    [Fact]
+    public void Following_the_voice_with_the_dog_ends_with_a_rescue_and_the_ridge()
+    {
+        var pages = Play(CreateEngine(), Lake, GoOut, FeedDog, StayHere, TellBoy, Search, TakeFlint, FollowVoice);
+
+        var rescue = pages.Single(p => p.BackgroundKey == "sciezka_po");
+        Assert.Contains(rescue.Blocks, b => b.Reveal == "upadek" && b.Text.StartsWith("Leżał w błocie"));
+        Assert.Equal("zapadlina", pages[^1].BackgroundKey);
+        Assert.Contains(pages[^1].Blocks, b => b.Text.StartsWith("Dopiero na Bukowym Grzbiecie"));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Theory]
+    [InlineData(Stay)]
+    [InlineData(GoOut, KeepBread)]
+    public void Following_the_voice_without_the_dog_drowns_Maciek(params int[] dogChoices)
+    {
+        var pages = Play(CreateEngine(), [Marsh, .. dogChoices, StayHere, TellBoy, Search, TakeFlint, FollowVoice]);
+
+        var death = pages[^1];
+        Assert.Equal(PageEnding.Death, death.Ending);
+        Assert.Equal("sciezka_smierc", death.BackgroundKey);
+        Assert.Contains(death.Blocks, b => b.Reveal == "oczy" && b.Text.Contains("Żarzące się jak węgielki"));
+        Assert.Contains(death.Blocks, b => b.Reveal == "bagno");
+        Assert.EndsWith("pod który nikt już nie wróci.", death.Blocks[^1].Text);
+    }
+
+    [Fact]
+    public void Walking_on_ignores_the_voice_and_reaches_the_ridge()
+    {
+        var pages = Play(CreateEngine(), Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn);
+
+        Assert.True(Has(pages, "Głos wołał jeszcze dwa razy"));
+        Assert.DoesNotContain(pages, p => p.Ending == PageEnding.Death);
+        Assert.Equal("zapadlina", pages[^1].BackgroundKey);
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 
     [Fact]

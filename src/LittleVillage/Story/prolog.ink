@@ -382,7 +382,56 @@ Ominął jezioro szerokim łukiem i ani razu nie spojrzał w stronę trzcin. Nie
 }
 Długo siedział, patrząc w stronę gościńca, i układał w myślach plan. Chata była gotowa. Czas było ruszyć do miasta – kupić chleba, sól, może trochę kaszy.
 { ekwipunek ? figurka: Figurkę spróbuje sprzedać albo wymienić na jedzenie. Może ktoś w mieście zapłaci za taką osobliwość. }
-A potem, gdy tylko zbierze siły, przyprowadzi tu rodzinę. Do domu, który zbudował własnymi rękami.
+A potem, gdy tylko zbierze siły, przyprowadzi tu rodzinę. Do domu, który zbudował własnymi rękami. # dalej
+-> droga_do_miasta
+
+
+// ------------------------------------------------------------
+//  Droga do miasta — kręta ścieżka między mokradłami, głos znad wody.
+// ------------------------------------------------------------
+=== droga_do_miasta ===
+# tlo: sciezka
+Wyruszył o świcie. Do miasta było sześć godzin drogi, a pierwszy jej odcinek prowadził krętą ścieżką między mokradłami, pod górę, aż na Bukowy Grzbiet. Był gotowy i zmotywowany, by czym prędzej zrealizować swój plan. Nie mógł się doczekać, aż zamieszka w nowej chacie razem ze swoją żoną i dzieckiem. Myślał o nich teraz i czuł, że bardzo za nimi tęskni.
+{ los_psa == oswojony:
+    Pies szedł tuż przy jego boku i wesoło poruszał ogonem. # pokaz: pies
+}
+Mgła leżała nisko nad czarną wodą. Ścieżka była wąska, miejscami tak rozmiękła, że trzeba było przeskakiwać z kępy na kępę. Maciek szedł ostrożnie i patrzył tylko pod nogi. Pamiętał, co mówili ludzie: w tę wodę nie wolno patrzeć zbyt długo.
+W połowie drogi coś kazało mu jednak podnieść wzrok. W głębi mokradeł mrugało blade światełko. Świtało już na dobre, a ono wciąż tam było. Mrugało powoli, równo, jakby ktoś stał z kagankiem i czekał. # pokaz: swiatelko
+Wtedy usłyszał swoje imię.
+– Maaaciek…
+Cicho, przeciągle, znad wody. Głosem, który brzmiał jak głos jego żony.
+Wołała go tak zawsze, gdy potrzebowała jego pomocy. Przecież miała na niego czekać… miała nie opuszczać dotychczasowego miejsca… A może to tylko głosy w jego głowie… A może to bagno woła go do siebie.
+# pytanie: Co zrobi Maciek?
+*   [Pójdzie w stronę głosu – być może jego żona potrzebuje pomocy.]
+    { los_psa == oswojony: -> ratunek | -> utoniecie }
+*   [Nie odwróci się i pójdzie dalej – to na pewno nie może być ona.]
+    -> nie_odwraca_sie
+
+= ratunek
+# tlo: sciezka_po
+~ pies_uratowal = true
+Zrobił krok ze ścieżki, potem drugi, minął gęstwinę i przeskoczył przez grząskie błoto. Bagno zachlupotało i chwyciło go za kostki zimnymi palcami. Poczuł, jak jego nogi wciąga pod powierzchnię. Wtedy pies skoczył, chwycił go zębami za sukmanę i szarpnął z całej siły do tyłu. Maciek runął na plecy i krzyknął. Światełko zgasło jak zdmuchnięte, a nad bagnami rozległ się cichy chichot.
+Leżał w błocie, dysząc, a pies stał nad nim i warczał w stronę mokradeł, dopóki mgła nie zamknęła się nad wodą. # pokaz: upadek # dalej
+-> na_grzbiecie
+
+= utoniecie
+# tlo: sciezka_smierc
+Zrobił krok ze ścieżki, potem drugi, minął gęstwinę i przeskoczył przez grząskie błoto. Bagno zachlupotało i chwyciło go za kostki zimnymi palcami. Poczuł, jak jego nogi wciąga pod powierzchnię. Głos był coraz bliżej – stał się teraz czuły, znajomy, taki, za którym tęsknił od lat.
+– Maaaciek…
+Stał nieruchomo, choć woda sięgała mu już kolan, potem pasa. Nie czuł zimna. Czuł tylko, że ktoś ukochany się do niego zbliża.
+Dopiero gdy czarna woda zamknęła mu się na piersi, zrozumiał. Szarpnął się, ale coś trzymało go za nogi – coś, co miało palce. Światełko zamrugało tuż przed jego twarzą i zobaczył, że to nie kaganek. To były oczy. Żarzące się jak węgielki. # pokaz: oczy
+Bagno westchnęło po ludzku i zamknęło się nad nim. # pokaz: bagno
+Nad Zapadliną wstawał dzień. Chata stała pusta, z nowym dachem, pod który nikt już nie wróci. # smierc
+-> END
+
+= nie_odwraca_sie
+Zacisnął zęby i szedł dalej, krok za krokiem, nie odwracając głowy. Głos wołał jeszcze dwa razy, coraz ciszej. Potem umilkł. # dalej
+-> na_grzbiecie
+
+= na_grzbiecie
+# tlo: zapadlina
+Dopiero na Bukowym Grzbiecie Maciek odważył się obejrzeć. W dole leżała Zapadlina – mała, cicha, przykryta mgłą jak całunem. Gdzieś tam stała jego chata.
+Odwrócił się i ruszył gościńcem w stronę miasta.
 -> prolog_ciag_dalszy
 
 

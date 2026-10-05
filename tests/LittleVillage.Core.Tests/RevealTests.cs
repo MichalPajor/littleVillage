@@ -134,7 +134,7 @@ public sealed class RevealTests
 
     private static readonly int[][] AllPaths =
         [.. new[] { 0, 1, 2 }.SelectMany(place => new[] { new[] { place, 1 }, [place, 0, 0], [place, 0, 1] })
-            .SelectMany(path => new[] { new[] { 0, 0, 0, 0 }, [1, 1, 0, 1], [0, 1, 1] }.Select(tail => path.Concat(tail).ToArray()))];
+            .SelectMany(path => new[] { new[] { 0, 0, 0, 0, 0 }, [1, 1, 0, 1, 1], [0, 1, 1, 0] }.Select(tail => path.Concat(tail).ToArray()))];
 
     private static IEnumerable<StoryPage> PlayAll()
     {
@@ -145,7 +145,7 @@ public sealed class RevealTests
             var page = engine.StartNew();
             var queue = new Queue<int>(choices);
             yield return page;
-            while (page.Ending != PageEnding.End)
+            while (page.Ending is not (PageEnding.End or PageEnding.Death))
             {
                 page = page.Ending == PageEnding.Choices ? engine.Choose(queue.Dequeue()) : engine.Continue();
                 yield return page;

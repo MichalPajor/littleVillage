@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „droga do miasta”: mgła nad wodą (dryfuje)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="150" viewBox="-30 250 450 150">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M-20 262 Q-3 259 14 262 Q31 265 48 262 Q65 259 82 262 Q99 265 116 262 Q133 259 150 262 C162 266 154 271 140 271 Q133 268 116 271 Q99 274 82 271 Q65 268 48 271 Q31 274 14 271 Q-3 268 -20 271 C-32 271 -32 262 -20 262Z" fill="#EDEBE6" stroke-width="1.9"/>
+<path d="M250 276 Q266 274 282 276 Q298 278 314 276 Q330 274 346 276 Q362 278 378 276 Q394 274 410 276 C422 280 414 284 400 284 Q394 282 378 284 Q362 286 346 284 Q330 282 314 284 Q298 286 282 284 Q266 282 250 284 C238 284 238 276 250 276Z" fill="#EDEBE6" stroke-width="1.8"/>
+<path d="M-10 344 Q4 341 18 344 Q32 347 46 344 Q60 341 74 344 Q88 347 102 344 Q116 341 130 344 C142 349 134 354 120 354 Q116 351 102 354 Q88 357 74 354 Q60 351 46 354 Q32 357 18 354 Q4 351 -10 354 C-22 354 -22 344 -10 344Z" fill="#EDEBE6" stroke-width="1.9"/>
+<path d="M270 382 Q285 379 300 382 Q315 385 330 382 Q345 379 360 382 Q375 385 390 382 Q405 379 420 382 C432 386 424 391 410 391 Q405 388 390 391 Q375 394 360 391 Q345 388 330 391 Q315 394 300 391 Q285 388 270 391 C258 391 258 382 270 382Z" fill="#EDEBE6" stroke-width="1.9"/>
+</g>
+</svg>
