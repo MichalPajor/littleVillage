@@ -28,6 +28,6 @@ VAR ekwipunek = (siekiera, chleb)
     - chleb:     ~ return "Twardy, razowy, owinięty w lnianą szmatkę. Musi starczyć na długo."
     - pies_towarzysz: ~ return "Chudy, z długim pyskiem i za dużymi łapami. Obronił Maćka przed stworem z zarośli i od tamtej nocy nie odstępuje go na krok."
     - figurka:   ~ return "Mała drewniana postać z rękami sięgającymi do stóp, nadpalona z jednej strony. Wygrzebana z popiołu po chacie wiedźmy."
-    - krzesiwo:  ~ return "Wygrzebane z popiołu po chacie wiedźmy. Czyżby to nim ją podpalono?"
+    - krzesiwo:  ~ return "Leżało w popiele obok figurki. Czyżby to nim podpalono chatę wiedźmy?"
 }
 ~ return ""

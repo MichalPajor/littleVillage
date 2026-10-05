@@ -111,7 +111,7 @@ public sealed class GameStoryTests
         Assert.Equal(PageEnding.Continue, building.Ending);
         Assert.Equal("Chata", building.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
         Assert.Contains(building.Blocks, b => b.Text.Contains(placeText));
-        Assert.Contains(building.Blocks, b => b.Text.Contains("szałasie z gałęzi"));
+        Assert.Contains(building.Blocks, b => b.Text.Contains("Sypiał w szałasie"));
 
         var nights = engine.Continue();
         Assert.Equal(background, nights.BackgroundKey);
@@ -162,7 +162,7 @@ public sealed class GameStoryTests
         Assert.True(Has(pages, "– Żyjesz – mruknął."));
         Assert.False(Has(pages, "Muchy już go obsiadły"));
         Assert.Contains(pages, p => p.BackgroundKey == "zmierzch_obrona");
-        Assert.True(Has(pages, "miał towarzysza"));
+        Assert.True(Has(pages, "nie był już sam"));
         Assert.Equal(["siekiera", "pies_towarzysz"], Inventory(engine));
         Assert.Equal("Pies – towarzysz", engine.GetInventory()[1].Name);
     }
@@ -400,7 +400,7 @@ public sealed class GameStoryTests
         (string Earlier, string Next)[] boundaries =
         [
             ("Muchy już go obsiadły", "Mijały dni"),
-            ("Długo jeszcze leżał z otwartymi oczami", "Zaczęło świtać"),
+            ("nie mógł zmrużyć oka", "Zaczęło świtać"),
             ("Zielarka.", "Wracając od Andrzeja"),
         ];
         foreach (var (earlier, next) in boundaries)
@@ -526,7 +526,7 @@ public sealed class GameStoryTests
         var rescue = pages.Single(p => p.BackgroundKey == "sciezka_po");
         Assert.Contains(rescue.Blocks, b => b.Reveal == "upadek" && b.Text.StartsWith("Leżał w błocie"));
         Assert.Equal("zapadlina", pages[^1].BackgroundKey);
-        Assert.Contains(pages[^1].Blocks, b => b.Text.StartsWith("Dopiero na Bukowym Grzbiecie"));
+        Assert.Contains(pages[^1].Blocks, b => b.Text.StartsWith("Na Bukowym Grzbiecie"));
         Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 
