@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „zgliszcza”: dzień, jezioro, buki na drugim brzegu
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="440" viewBox="0 0 390 440">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 0H390V60C300 80 210 50 130 72C80 86 40 68 0 82Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M0 82C40 68 80 86 130 72C210 50 300 80 390 60V122C310 142 220 114 140 134C80 150 40 128 0 144Z" fill="url(#hatch)" stroke="none"/>
+<path d="M-10 196C60 186 130 184 200 188C270 192 330 186 400 188V214H-10Z" fill="#EDEBE6" stroke-width="3"/>
+<circle cx="10" cy="189" r="10" fill="#FFFFFF" stroke-width="2.2"/>
+<circle cx="32" cy="181" r="12" fill="#FFFFFF" stroke-width="2.2"/>
+<circle cx="56" cy="178" r="11" fill="#FFFFFF" stroke-width="2.2"/>
+<circle cx="80" cy="177" r="12" fill="#FFFFFF" stroke-width="2.2"/>
+<circle cx="104" cy="181" r="10" fill="#FFFFFF" stroke-width="2.2"/>
+<circle cx="250" cy="184" r="9" fill="#FFFFFF" stroke-width="2.2"/>
+<circle cx="272" cy="178" r="11" fill="#FFFFFF" stroke-width="2.2"/>
+<circle cx="296" cy="179" r="10" fill="#FFFFFF" stroke-width="2.2"/>
+<circle cx="318" cy="184" r="9" fill="#FFFFFF" stroke-width="2.2"/>
+<path d="M-10 212C80 206 170 210 260 206C320 204 370 208 400 206V300H-10Z" fill="#FFFFFF" stroke-width="3.2"/>
+<path d="M-10 216H400V298H-10Z" fill="url(#water)" stroke="none"/>
+<path d="M40 236c16-3 30-3 46 0M170 252c14-3 28-3 40 0M280 232c16-3 30-3 44 0M110 276c12-2 24-2 34 0" fill="none" stroke="#FFFFFF" stroke-width="3.4"/>
+<path d="M-10 296C80 288 170 294 260 290C320 288 370 292 400 290V440H-10Z" fill="#EDEBE6" stroke-width="3"/>
+</g>
+</svg>

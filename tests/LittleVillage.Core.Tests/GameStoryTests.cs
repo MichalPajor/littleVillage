@@ -11,6 +11,8 @@ public sealed class GameStoryTests
     private const int FeedDog = 0, KeepBread = 1;
     private const int StayHere = 0, Leave = 1;          // rano po nocy z topielcem
     private const int TellBoy = 0, SendBoyAway = 1;      // rozmowa u Andrzeja
+    private const int Search = 0, Avoid = 1;             // zgliszcza chaty wiedzmy
+    private const int TakeFlint = 0, LeaveFlint = 1;     // krzesiwo w popiele
 
     private static InkStoryEngine CreateEngine()
     {
@@ -239,7 +241,7 @@ public sealed class GameStoryTests
         var data = new TheoryData<int[]>();
         foreach (var place in new[] { Forest, Marsh, Lake })
         {
-            foreach (var tail in new[] { new[] { StayHere, TellBoy }, [Leave, SendBoyAway] })
+            foreach (var tail in new[] { new[] { StayHere, TellBoy, Search, TakeFlint }, [Leave, SendBoyAway, Avoid] })
             {
                 data.Add([place, Stay, .. tail]);
                 data.Add([place, GoOut, FeedDog, .. tail]);
@@ -345,7 +347,6 @@ public sealed class GameStoryTests
         Assert.True(Has(pages, present));
         Assert.False(Has(pages, absent));
         Assert.True(Has(pages, "Mój dziad opowiadał o czymś takim."));
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 
     [Theory]
@@ -355,8 +356,7 @@ public sealed class GameStoryTests
     {
         var pages = Play(CreateEngine(), Forest, Stay, StayHere, choice);
 
-        var legend = pages[^1];
-        Assert.Equal("legenda", legend.BackgroundKey);
+        var legend = pages.Single(p => p.BackgroundKey == "legenda");
         Assert.Contains(legend.Blocks, b => b.Text.Contains("Zielarka.") && b.Reveal is null);
         Assert.Contains(legend.Blocks, b => b.Reveal == "chlopi, ogien" && b.Text.StartsWith("Pewnej nocy kilku chłopów"));
         Assert.Contains(legend.Blocks, b => b.Reveal == "wegielki" && b.Text.Contains("żarzące się węgielki"));
@@ -370,13 +370,104 @@ public sealed class GameStoryTests
     [InlineData(Lake, "Swoją chatę postawił dokładnie tam")]
     public void Legend_hits_Maciek_differently_depending_on_the_hut(int place, string? text)
     {
-        var legend = Play(CreateEngine(), place, Stay, StayHere, TellBoy)[^1];
+        var legend = Play(CreateEngine(), place, Stay, StayHere, TellBoy).Single(p => p.BackgroundKey == "legenda");
 
         Assert.Equal(text is not null, legend.Blocks.Any(b => b.Text.Contains("Maciek poczuł, jak zimno") || b.Text.StartsWith("Maciek zbladł")));
         if (text is not null)
         {
             Assert.Contains(legend.Blocks, b => b.Text.Contains(text));
         }
+    }
+
+    // ----- Strażnik: tag "# dalej" w osobnej linii przed przejściem do innej sceny przyczepia się
+    //       do pierwszej linii tamtej sceny - strona "przecieka" do następnej. -----
+
+    [Theory]
+    [MemberData(nameof(AllProloguePaths))]
+    public void Pages_never_leak_into_the_next_scene(int[] choices)
+    {
+        var pages = Play(CreateEngine(), choices);
+
+        foreach (var page in pages)
+        {
+            // Tytuł sceny zawsze otwiera stronę, nigdy nie trafia w jej środek.
+            var title = page.Blocks.Select((b, i) => (b, i)).Where(x => x.b.Kind == StoryBlockKind.Title).Select(x => x.i);
+            Assert.All(title, i => Assert.True(i <= 1, $"Tytuł w środku strony: {page.Blocks[i].Text}"));
+        }
+
+        // Pierwsze zdania kolejnych scen nie mogą trafić na stronę poprzedniej.
+        (string Earlier, string Next)[] boundaries =
+        [
+            ("Muchy już go obsiadły", "Mijały dni"),
+            ("Długo jeszcze leżał z otwartymi oczami", "Zaczęło świtać"),
+            ("Zielarka.", "Wracając od Andrzeja"),
+        ];
+        foreach (var (earlier, next) in boundaries)
+        {
+            Assert.DoesNotContain(pages, p => p.Blocks.Any(b => b.Text.Contains(earlier)) && p.Blocks.Any(b => b.Text.StartsWith(next)));
+        }
+    }
+
+    // ----- Zgliszcza chaty wiedzmy -----
+
+    [Theory]
+    [InlineData(Forest, false)]
+    [InlineData(Lake, true)]
+    public void Ruins_page_follows_the_legend_and_offers_a_search(int place, bool seesThemFromHome)
+    {
+        var page = Play(CreateEngine(), place, Stay, StayHere, TellBoy)[^1];
+
+        Assert.Equal("zgliszcza", page.BackgroundKey);
+        Assert.StartsWith("Wracając od Andrzeja", page.Blocks[0].Text);
+        Assert.Equal(seesThemFromHome, page.Blocks.Any(b => b.Text.Contains("sterczące jak żebra")));
+        Assert.Equal(["Pójdzie do zgliszcz i przeszuka popiół.", "Będzie się trzymał od nich z daleka."], page.Choices.Select(c => c.Text));
+    }
+
+    [Fact]
+    public void Searching_the_ashes_finds_the_figurine_and_the_flint()
+    {
+        var engine = CreateEngine();
+
+        var page = Play(engine, Forest, GoOut, FeedDog, StayHere, TellBoy, Search)[^1];
+
+        Assert.Contains(page.Blocks, b => b.Reveal == "maciek" && b.Text.StartsWith("Rozgarnął trzciny siekierą"));
+        Assert.Contains(page.Blocks, b => b.Text.Contains("warknął cicho na jego kieszeń"));
+        Assert.Equal("Czy Maciek weźmie krzesiwo?", page.Question);
+        Assert.Contains("figurka", Inventory(engine));
+        Assert.DoesNotContain("krzesiwo", Inventory(engine));
+    }
+
+    [Theory]
+    [InlineData(TakeFlint, true)]
+    [InlineData(LeaveFlint, false)]
+    public void Flint_goes_to_the_inventory_only_when_taken(int choice, bool taken)
+    {
+        var engine = CreateEngine();
+
+        Play(engine, Lake, Stay, StayHere, TellBoy, Search, choice);
+
+        Assert.Equal(taken, Inventory(engine).Contains("krzesiwo"));
+        Assert.Contains("figurka", Inventory(engine));
+    }
+
+    [Fact]
+    public void Avoiding_the_ruins_leaves_inventory_untouched()
+    {
+        var engine = CreateEngine();
+
+        var pages = Play(engine, Forest, Stay, Leave, SendBoyAway, Avoid);
+
+        Assert.True(Has(pages, "Niektórych rzeczy lepiej nie ruszać."));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal(["siekiera"], Inventory(engine));
+    }
+
+    [Fact]
+    public void Dog_does_not_growl_when_there_is_no_dog()
+    {
+        var page = Play(CreateEngine(), Forest, Stay, StayHere, TellBoy, Search)[^1];
+
+        Assert.DoesNotContain(page.Blocks, b => b.Text.Contains("warknął"));
     }
 
     [Fact]

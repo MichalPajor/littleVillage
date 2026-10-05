@@ -139,14 +139,13 @@ W trawie pod krzakiem leżał pies. Chudy, z długim pyskiem i za dużymi łapam
 { los_psa == niespotkany:
     Maciek długo stał nad nim bez ruchu. Dopiero teraz zrozumiał, co wyło tamtej nocy. Nie wilk, nie żadna zmora – tylko głodne, zziębnięte szczenię, które wołało, aż przestało.
     Ścisnęło go w gardle. Pomyślał, że mógł wtedy wyjść. Ale zaraz odpowiedział sam sobie: mógł też wyjść prosto w paszczę wilka. W nocy nie wiadomo, co czeka w krzakach. Rozsądny człowiek siedzi w szałasie z siekierą pod ręką – i żyje.
-    Odwrócił wzrok, zarzucił snop na plecy i wrócił do pracy. Psa zostawił tam, gdzie leżał.
+    Odwrócił wzrok, zarzucił snop na plecy i wrócił do pracy. Psa zostawił tam, gdzie leżał. # dalej
 - else:
     Maciek osunął się na kolana. Pamiętał te ślepia w świetle księżyca, to warczenie bez przekonania, drżenie całego ciała. Pies prosił, a on zostawił chleb w kieszeni.
     Jeden kawałek. Jeden twardy kawałek chleba.
     – Sam ledwo zipałem – powiedział na głos, jakby ktoś go oskarżał. – Gdybym oddał wszystko, to kto by tu leżał? Pies czy ja?
-    Słowa brzmiały rozsądnie, ale nie przyniosły ulgi. Maciek wstał, otrzepał kolana i nie patrząc więcej pod krzak, wrócił do noszenia trzciny. Ciało zostawił tak, jak leżało.
+    Słowa brzmiały rozsądnie, ale nie przyniosły ulgi. Maciek wstał, otrzepał kolana i nie patrząc więcej pod krzak, wrócił do noszenia trzciny. Ciało zostawił tak, jak leżało. # dalej
 }
-# dalej
 -> uplyw_czasu
 
 = bez_chleba
@@ -198,8 +197,7 @@ Maciek poznał to po łapach. Za dużych do reszty ciała. # pokaz: cialo
 Postać zacisnęła szczęki. Rozległ się trzask – głośny, mokry, jak łamane suche gałęzie, tyle że to nie były one. Potem stwór odwrócił się i pomknął w stronę mokradeł, tak szybko, że mgła zawirowała za nim jak woda.
 Maciek nie mógł się ruszyć. Trząsł się cały, zimny pot spływał mu po plecach, a nogi miał jak z waty. Siekiera ciążyła mu w dłoniach, bezużyteczna. Stał tak bardzo długo, aż ciemność znów ucichła.
 -> strach_o_chate ->
-Maciek szybko wszedł do szałasu. Długo jeszcze leżał z otwartymi oczami, wsłuchując się w ciemność, aż wyczerpany pracą i strachem zasnął.
-# dalej
+Maciek szybko wszedł do szałasu. Długo jeszcze leżał z otwartymi oczami, wsłuchując się w ciemność, aż wyczerpany pracą i strachem zasnął. # dalej
 -> zgliszcza
 
 = obrona
@@ -215,8 +213,7 @@ Pies wypadł z ciemności jak strzała i stanął między Maćkiem a zaroślami.
 Długo trwało, zanim Maciek doszedł do siebie. W końcu osunął się na ziemię przy szałasie i oddychał ciężko, jakby przebiegł pół niecki. Pies przestał ujadać. Podszedł do niego niepewnie, z opuszczonym łbem – i zamerdał ogonem, dumny z siebie jak nikt na świecie.
 Maciek wyciągnął drżącą rękę. Pies obwąchał ją, a potem pierwszy raz pozwolił się pogłaskać.
 – Dobry pies – szepnął Maciek. – Dobry – odetchnął.
-Tej nocy weszli do szałasu razem. Pies zwinął się w kłębek przy boku człowieka i zasnął pierwszy. Maciek długo jeszcze leżał z otwartymi oczami, wsłuchując się w ciemność. Ale po raz pierwszy od przyjścia do Zapadliny miał towarzysza.
-# dalej
+Tej nocy weszli do szałasu razem. Pies zwinął się w kłębek przy boku człowieka i zasnął pierwszy. Maciek długo jeszcze leżał z otwartymi oczami, wsłuchując się w ciemność. Ale po raz pierwszy od przyjścia do Zapadliny miał towarzysza. # dalej
 -> zgliszcza
 
 // Tylko gdy chata stoi przy mokradłach — stwór uciekł właśnie tam.
@@ -323,10 +320,45 @@ Andrzej spojrzał mu prosto w oczy.
     - nad_jeziorem: Maciek zbladł. Te bale zepchnął własnymi rękami w trzciny. Swoją chatę postawił dokładnie tam, gdzie płonęła tamta.
 }
 { stas_zaufanie:
-    Staś siedział bez ruchu, ściskając w dłoni niedokończony patyk.
+    Staś siedział bez ruchu, ściskając w dłoni niedokończony patyk. # dalej
 - else:
-    Za uchylonymi drzwiami coś cicho skrzypnęło. Kiedy Andrzej wyjrzał, w sieni stało tylko wiadro z wodą. Staś był już daleko na podwórzu.
+    Za uchylonymi drzwiami coś cicho skrzypnęło. Kiedy Andrzej wyjrzał, w sieni stało tylko wiadro z wodą. Staś był już daleko na podwórzu. # dalej
 }
+-> zgliszcza_wiedzmy
+
+
+// ------------------------------------------------------------
+//  Zgliszcza chaty wiedźmy w trzcinach nad jeziorem.
+// ------------------------------------------------------------
+=== zgliszcza_wiedzmy ===
+# tlo: zgliszcza
+Wracając od Andrzeja, Maciek nie mógł przestać myśleć o zgliszczach.
+{ chata_macka == nad_jeziorem: Teraz, kiedy wiedział, czym są, widział je za każdym razem, gdy spojrzał w trzciny przy swoim domu. Czarne, zwęglone bale sterczące jak żebra. }
+Coś w środku kusiło go, by dokładnie je zbadać, choć czuł lęk.
+# pytanie: Co zrobi Maciek?
+*   [Pójdzie do zgliszcz i przeszuka popiół.]
+    -> przeszukuje
+*   [Będzie się trzymał od nich z daleka.]
+    -> omija
+
+= przeszukuje
+~ przeszukal_zgliszcza = true
+~ ekwipunek += figurka
+Rozgarnął trzciny siekierą i ukląkł przy zwęglonych belach. Popiół był zimny, zbity i wilgotny. Grzebał w nim długo, sam nie wiedząc, czego szuka, aż palce trafiły na coś twardego. # pokaz: maciek
+Mała figurka z drewna, nadpalona z jednej strony. Ludzka postać z rękami za długimi, sięgającymi do stóp.
+Maciek długo obracał ją w dłoniach. Pomyślał, że może wymieni ją w mieście na coś do jedzenia, i schował ją do kieszeni.
+{ los_psa == oswojony: Pies, który dotąd węszył przy brzegu, cofnął się i warknął cicho na jego kieszeń. }
+Wtedy dostrzegł w popiele coś jeszcze.
+– Niemożliwe – powiedział cicho i wyciągnął coś, co przypominało krzesiwo. – Czyżby nim podpalono chatę wiedźmy?
+# pytanie: Czy Maciek weźmie krzesiwo?
+*   [Tak – przeklęte czy nie, da mu to możliwość rozpalania ognia i przygotowania ciepłych posiłków.]
+    ~ ekwipunek += krzesiwo
+    -> prolog_ciag_dalszy
+*   [Nie – nie chce ryzykować klątwy, która mogłaby na niego spaść.]
+    -> prolog_ciag_dalszy
+
+= omija
+Ominął jezioro szerokim łukiem i ani razu nie spojrzał w stronę trzcin. Niektórych rzeczy lepiej nie ruszać.
 -> prolog_ciag_dalszy
 
 

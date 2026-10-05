@@ -218,6 +218,19 @@
         {"image": "bg_legenda_chlopi.png", "x": 100, "y": 264, "width": 290, "height": 146, "revealOn": "chlopi"},
         {"image": "bg_legenda_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
       ]
+    },
+    "zgliszcza": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_zgliszcza_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_zgliszcza_chmura.png", "x": 60, "y": 92, "width": 150, "height": 40, "animation": {"type": "drift", "amplitude": 14, "duration": 18000}},
+        {"image": "bg_zgliszcza_zgliszcza.png", "x": 34, "y": 248, "width": 352, "height": 168},
+        {"image": "bg_zgliszcza_maciek.png", "x": 146, "y": 272, "width": 108, "height": 90, "revealOn": "maciek"},
+        {"image": "bg_zgliszcza_trzciny.png", "x": -12, "y": 280, "width": 414, "height": 146, "animation": {"type": "sway", "amplitude": 0.6, "duration": 4200, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_zgliszcza_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+      ]
     }
   }
 }

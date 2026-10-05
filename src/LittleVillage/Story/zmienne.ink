@@ -18,5 +18,8 @@ VAR los_psa = ()
 // Rano po nocy z topielcem Maciek chciał uciec z Zapadliny (zawrócił, ale to w nim zostało).
 VAR chcial_odejsc = false
 
+// Czy Maciek przeszukał zgliszcza chaty wiedźmy nad jeziorem.
+VAR przeszukal_zgliszcza = false
+
 // Czy Maciek powiedział Stasiowi, synowi Andrzeja, prawdę o stworze (true), czy zbył go i rozmawiał z Andrzejem w cztery oczy (false).
 VAR stas_zaufanie = false
