@@ -202,6 +202,14 @@ public sealed class GameStoryTests
     {
         Assert.Equal(expected, Has(Play(CreateEngine(), place, Stay), "może popełnił błąd"));
         Assert.Equal(expected, Has(Play(CreateEngine(), place, GoOut, FeedDog), "może popełnił błąd"));
+
+        // Chata stoi przy samym bagnie — stwór znika tuż obok, a nie „gdzieś na mokradłach”.
+        foreach (var pages in new[] { Play(CreateEngine(), place, Stay), Play(CreateEngine(), place, GoOut, FeedDog) })
+        {
+            Assert.Equal(expected, Has(pages, "w stronę pobliskich mokradeł"));
+            Assert.Equal(expected, Has(pages, "stwór nie uciekł daleko"));
+            Assert.True(Has(pages, expected ? "w stronę pobliskich mokradeł," : "w stronę mokradeł,"));
+        }
     }
 
     [Theory]

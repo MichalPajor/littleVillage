@@ -194,7 +194,7 @@ Maciek zerwał się na równe nogi. Siekiera sama znalazła się w jego dłoniac
 Krzaki rozchyliły się. Z mgły wyłoniła się postać. # pokaz: topielec
 Była wyższa od człowieka, o dobre trzy głowy. Stała na dwóch nogach, ale zgarbiona, z rękami zwisającymi niemal do ziemi. Miała ludzki kształt – i wcale nie była człowiekiem. W paszczy trzymała coś dużego i bezwładnego, co opadało jej po obu stronach łba.
 Maciek poznał to po łapach. Za dużych do reszty ciała. # pokaz: cialo
-Postać zacisnęła szczęki. Rozległ się trzask – głośny, mokry, jak łamane suche gałęzie, tyle że to nie były one. Potem stwór odwrócił się i pomknął w stronę mokradeł, tak szybko, że mgła zawirowała za nim jak woda.
+Postać zacisnęła szczęki. Rozległ się trzask – głośny, mokry, jak łamane suche gałęzie, tyle że to nie były one. Potem stwór odwrócił się i pomknął w stronę {chata_macka == przy_mokradlach:pobliskich }mokradeł, tak szybko, że mgła zawirowała za nim jak woda.
 Maciek nie mógł się ruszyć. Trząsł się cały, zimny pot spływał mu po plecach, a nogi miał jak z waty. Siekiera ciążyła mu w dłoniach, bezużyteczna. Stał tak bardzo długo, aż ciemność znów ucichła.
 -> strach_o_chate ->
 Maciek szybko wszedł do szałasu. Długo jeszcze nie mógł zmrużyć oka i nasłuchiwał, aż wyczerpany pracą i strachem zasnął. # dalej
@@ -206,7 +206,7 @@ Krzaki rozchyliły się. W mroku zapłonęły dwa ślepia – wysoko, za wysoko 
 Maciek nie mógł się ruszyć. Trząsł się cały, zimny pot spływał mu po plecach. Ślepia patrzyły prosto na niego i powoli, bardzo powoli przybliżały się.
 Wtedy z oddali dobiegło szczekanie.
 Pies wypadł z ciemności jak strzała i stanął między Maćkiem a zaroślami. Sierść zjeżyła mu się na karku, zaparł się w miejscu i ujadał – głośno, zajadle, bez chwili przerwy, choć cały drżał. Chudy, młody, z za dużymi łapami – i nie cofnął się ani o krok. # pokaz: pies
-Ślepia zatrzymały się. Postać zawahała się, wydała z siebie gardłowy syk – a potem zawróciła i z trzaskiem gałęzi pomknęła w stronę mokradeł, aż mgła zawirowała za nią jak woda.
+Ślepia zatrzymały się. Postać zawahała się, wydała z siebie gardłowy syk – a potem zawróciła i z trzaskiem gałęzi pomknęła w stronę {chata_macka == przy_mokradlach:pobliskich }mokradeł, aż mgła zawirowała za nią jak woda.
 -> strach_o_chate ->
 ~ los_psa = oswojony
 ~ ekwipunek += pies_towarzysz
@@ -219,7 +219,7 @@ Tej nocy weszli do szałasu razem. Pies zwinął się w kłębek przy boku czło
 // Tylko gdy chata stoi przy mokradłach — stwór uciekł właśnie tam.
 = strach_o_chate
 { chata_macka == przy_mokradlach:
-    A potem dotarło do niego, dokąd stwór pobiegł. Na mokradła. Przecież tam, niedaleko czarnej wody, stała jego chata. Tam od miesiąca spał, jadł i pracował, kilkadziesiąt kroków od bagna. „Tam się nie buduje. Tam się tylko topi” – przypomniały mu się słowa ludzi spod studni. Pierwszy raz od dnia, w którym zaczął budowę, pomyślał, że może popełnił błąd. Że może trzeba było posłuchać.
+    A potem dotarło do niego, że stwór nie uciekł daleko. Zniknął w bagnie, kilkadziesiąt kroków od szałasu – tam, gdzie Maciek od miesiąca spał, jadł i pracował. Może był tam od początku. Może co noc, gdy Maciek nasłuchiwał bulgotania czarnej wody, coś po drugiej stronie nasłuchiwało jego. „Tam się nie buduje. Tam się tylko topi” – przypomniały mu się słowa ludzi spod studni. Pierwszy raz od dnia, w którym zaczął budowę, pomyślał, że może popełnił błąd. Że może trzeba było posłuchać.
 }
 ->->
 
