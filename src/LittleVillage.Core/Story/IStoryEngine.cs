@@ -22,7 +22,8 @@ public interface IStoryEngine
     string SaveState();
 
     /// <summary>Przywraca stan ink zapisany przez <see cref="SaveState"/>.</summary>
-    void RestoreState(string stateJson, string? backgroundKey);
+    /// <param name="revealed">Warstwy tła odsłonięte już na wyświetlanej stronie i wcześniej przy tym samym tle.</param>
+    void RestoreState(string stateJson, string? backgroundKey, IEnumerable<string>? revealed = null);
 
     /// <summary>Zwraca bieżący ekwipunek gracza.</summary>
     IReadOnlyList<InventoryItem> GetInventory();

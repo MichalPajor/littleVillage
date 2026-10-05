@@ -20,7 +20,11 @@ public enum StoryBlockKind
 /// <param name="Kind">Rodzaj elementu.</param>
 /// <param name="Text">Tekst (pusty dla separatora).</param>
 /// <param name="HasDropCap">Czy akapit zaczyna się inicjałem (pierwszy akapit po tytule).</param>
-public sealed record StoryBlock(StoryBlockKind Kind, string Text, bool HasDropCap = false);
+/// <param name="Reveal">
+/// Warstwy tła odsłaniane, gdy gracz doczyta do tego akapitu (tag <c># pokaz: nazwa</c>),
+/// zapisane jako lista rozdzielona przecinkami — patrz <see cref="RevealList"/>.
+/// </param>
+public sealed record StoryBlock(StoryBlockKind Kind, string Text, bool HasDropCap = false, string? Reveal = null);
 
 /// <summary>Opcja wyboru dostępna na końcu strony.</summary>
 /// <param name="Index">Indeks wyboru w silniku ink.</param>
@@ -41,12 +45,17 @@ public enum PageEnding
 }
 
 /// <summary>Jedna „strona” fabuły: tekst, tło i sposób przejścia dalej.</summary>
+/// <param name="AlreadyRevealed">
+/// Warstwy tła odsłonięte już na wcześniejszych stronach z tym samym tłem — widoczne od razu
+/// (lista rozdzielona przecinkami, <see cref="RevealList"/>).
+/// </param>
 public sealed record StoryPage(
     IReadOnlyList<StoryBlock> Blocks,
     IReadOnlyList<StoryChoice> Choices,
     PageEnding Ending,
     string? BackgroundKey,
-    string? Question);
+    string? Question,
+    string? AlreadyRevealed = null);
 
 /// <summary>Przedmiot w ekwipunku gracza.</summary>
 /// <param name="Id">Nazwa elementu listy ink, np. <c>kaganek</c>.</param>

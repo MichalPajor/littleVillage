@@ -34,6 +34,15 @@ public sealed class SceneBackgroundView : ContentView
         set => SetValue(SceneProperty, value);
     }
 
+    /// <summary>
+    /// Ukrywa wszystkie warstwy odsłaniane przez tekst (<c>revealOn</c>) poza podanymi — te widać od razu.
+    /// Wywoływane przy każdej nowej stronie fabuły.
+    /// </summary>
+    public void ResetReveals(IEnumerable<string> alreadyRevealed) => _current?.ResetReveals(alreadyRevealed);
+
+    /// <summary>Płynnie odsłania warstwy oznaczone tą nazwą (tag <c># pokaz: nazwa</c>).</summary>
+    public void Reveal(string name) => _current?.Reveal(name);
+
     private async void OnSceneChanged(SceneBackground? oldScene, SceneBackground? newScene)
     {
         if (newScene is null || ReferenceEquals(oldScene, newScene) || newScene.Key == _current?.Scene.Key)
@@ -65,7 +74,11 @@ public sealed class SceneBackgroundView : ContentView
     /// <summary>Komplet warstw jednego tła.</summary>
     private sealed class SceneLayerSet : AbsoluteLayout
     {
-        private readonly List<(Image View, BackgroundLayer Layer)> _layers = [];
+        private const string RevealAnimationName = "LayerReveal";
+
+        // Obrazek w pojemniku: odsłanianie steruje przezroczystością pojemnika, a zapętlone animacje
+        // (w tym mruganie i migotanie, które same zmieniają przezroczystość) działają na obrazku.
+        private readonly List<(Image View, ContentView Holder, BackgroundLayer Layer)> _layers = [];
         private double _scale = 1;
 
         public SceneLayerSet(SceneBackground scene)
@@ -82,8 +95,9 @@ public sealed class SceneBackgroundView : ContentView
                     image.AnchorY = animation.AnchorY;
                 }
 
-                _layers.Add((image, layer));
-                Add(image);
+                var holder = new ContentView { Content = image, Opacity = layer.RevealOn is null ? 1 : 0 };
+                _layers.Add((image, holder, layer));
+                Add(holder);
             }
         }
 
@@ -101,9 +115,9 @@ public sealed class SceneBackgroundView : ContentView
             var offsetX = (width - Scene.Width * _scale) / 2;
             var offsetY = (height - Scene.Height * _scale) / 2;
 
-            foreach (var (view, layer) in _layers)
+            foreach (var (_, holder, layer) in _layers)
             {
-                SetLayoutBounds((IView)view, new Rect(
+                SetLayoutBounds((IView)holder, new Rect(
                     offsetX + layer.X * _scale,
                     offsetY + layer.Y * _scale,
                     layer.Width * _scale,
@@ -113,7 +127,7 @@ public sealed class SceneBackgroundView : ContentView
 
         public void StartAnimations()
         {
-            foreach (var (view, layer) in _layers)
+            foreach (var (view, _, layer) in _layers)
             {
                 if (layer.Animation is not { Type: not LayerAnimationType.None } animation)
                 {
@@ -128,9 +142,36 @@ public sealed class SceneBackgroundView : ContentView
 
         public void StopAnimations()
         {
-            foreach (var (view, _) in _layers)
+            foreach (var (view, holder, _) in _layers)
             {
                 view.AbortAnimation(AnimationName);
+                holder.AbortAnimation(RevealAnimationName);
+            }
+        }
+
+        public void ResetReveals(IEnumerable<string> alreadyRevealed)
+        {
+            var visible = new HashSet<string>(alreadyRevealed, StringComparer.OrdinalIgnoreCase);
+            foreach (var (_, holder, layer) in _layers)
+            {
+                if (layer.RevealOn is { } name)
+                {
+                    holder.AbortAnimation(RevealAnimationName);
+                    holder.Opacity = visible.Contains(name) ? 1 : 0;
+                }
+            }
+        }
+
+        public void Reveal(string name)
+        {
+            foreach (var (_, holder, layer) in _layers)
+            {
+                if (string.Equals(layer.RevealOn, name, StringComparison.OrdinalIgnoreCase) && holder.Opacity < 1)
+                {
+                    holder.AbortAnimation(RevealAnimationName);
+                    new Animation(v => holder.Opacity = v, holder.Opacity, 1)
+                        .Commit(holder, RevealAnimationName, length: 900, easing: Easing.CubicOut);
+                }
             }
         }
 

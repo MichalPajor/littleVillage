@@ -5,6 +5,7 @@
 // Animacje (type): sway (kołysanie, amplitude = stopnie), drift (poziomo, amplitude = jednostki płótna),
 //                  bob (pionowo), blink (mruganie), flicker (migotanie, amplitude = min. nieprzezroczystość).
 // duration = długość cyklu w ms, phase = przesunięcie fazy 0–1, anchorX/anchorY = punkt obrotu w warstwie (0–1).
+// revealOn = warstwa niewidoczna, dopóki gracz nie doczyta do akapitu z tagiem „# pokaz: nazwa” (tło nie zdradza fabuły).
 {
   "default": "wies_noc",
   "backgrounds": {
@@ -91,9 +92,9 @@
         {"image": "bg_zarosla_las.png", "x": 0, "y": 150, "width": 390, "height": 290},
         {"image": "bg_zarosla_oczy_las.png", "x": 126, "y": 222, "width": 30, "height": 14, "animation": {"type": "blink", "duration": 7000, "phase": 0.5}},
         {"image": "bg_zarosla_krzaki.png", "x": 0, "y": 260, "width": 400, "height": 200},
-        {"image": "bg_zarosla_pies.png", "x": 180, "y": 334, "width": 170, "height": 100, "animation": {"type": "bob", "amplitude": 0.8, "duration": 420}},
+        {"image": "bg_zarosla_pies.png", "x": 180, "y": 334, "width": 170, "height": 100, "animation": {"type": "bob", "amplitude": 0.8, "duration": 420}, "revealOn": "pies"},
         {"image": "bg_zarosla_krzak_przod.png", "x": 270, "y": 360, "width": 110, "height": 76},
-        {"image": "bg_zarosla_blysk_oka.png", "x": 234, "y": 352, "width": 10, "height": 10, "animation": {"type": "flicker", "amplitude": 0.2, "duration": 2200}},
+        {"image": "bg_zarosla_blysk_oka.png", "x": 234, "y": 352, "width": 10, "height": 10, "animation": {"type": "flicker", "amplitude": 0.2, "duration": 2200}, "revealOn": "pies"},
         {"image": "bg_zarosla_przod.png", "x": 0, "y": 420, "width": 390, "height": 424}
       ]
     },
@@ -104,7 +105,7 @@
       "layers": [
         {"image": "bg_zmierzch_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_zmierzch_krzaki.png", "x": 210, "y": 300, "width": 190, "height": 136},
-        {"image": "bg_zmierzch_oczy.png", "x": 330, "y": 344, "width": 30, "height": 14, "animation": {"type": "blink", "duration": 5200}},
+        {"image": "bg_zmierzch_oczy.png", "x": 330, "y": 344, "width": 30, "height": 14, "animation": {"type": "blink", "duration": 5200}, "revealOn": "oczy"},
         {"image": "bg_zmierzch_mgla_gora.png", "x": -30, "y": 352, "width": 330, "height": 36, "animation": {"type": "drift", "amplitude": 10, "duration": 12000}},
         {"image": "bg_zmierzch_mgla_dol.png", "x": 60, "y": 396, "width": 340, "height": 38, "animation": {"type": "drift", "amplitude": 12, "duration": 15000, "phase": 0.5}},
         {"image": "bg_zmierzch_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
@@ -118,10 +119,10 @@
         {"image": "bg_zmierzch_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_zmierzch_krzaki.png", "x": 210, "y": 300, "width": 190, "height": 136},
         {"image": "bg_zmierzch_mgla_gora.png", "x": -30, "y": 352, "width": 330, "height": 36, "animation": {"type": "drift", "amplitude": 10, "duration": 12000}},
-        {"image": "bg_zmierzch_stwor_zdobycz.png", "x": 240, "y": 282, "width": 104, "height": 152, "animation": {"type": "bob", "amplitude": 1, "duration": 2600}},
-        {"image": "bg_zmierzch_pies_martwy.png", "x": 230, "y": 293, "width": 60, "height": 86},
-        {"image": "bg_zmierzch_krew.png", "x": 248, "y": 317, "width": 24, "height": 90},
-        {"image": "bg_zmierzch_oczy_stwora.png", "x": 258, "y": 302, "width": 10, "height": 10, "animation": {"type": "flicker", "amplitude": 0.4, "duration": 2400}},
+        {"image": "bg_zmierzch_stwor_zdobycz.png", "x": 240, "y": 282, "width": 104, "height": 152, "animation": {"type": "bob", "amplitude": 1, "duration": 2600}, "revealOn": "topielec"},
+        {"image": "bg_zmierzch_pies_martwy.png", "x": 230, "y": 293, "width": 60, "height": 86, "revealOn": "cialo"},
+        {"image": "bg_zmierzch_krew.png", "x": 248, "y": 317, "width": 24, "height": 90, "revealOn": "cialo"},
+        {"image": "bg_zmierzch_oczy_stwora.png", "x": 258, "y": 302, "width": 10, "height": 10, "animation": {"type": "flicker", "amplitude": 0.4, "duration": 2400}, "revealOn": "topielec"},
         {"image": "bg_zmierzch_maciek.png", "x": 160, "y": 316, "width": 80, "height": 92},
         {"image": "bg_zmierzch_mgla_dol.png", "x": 60, "y": 396, "width": 340, "height": 38, "animation": {"type": "drift", "amplitude": 12, "duration": 15000, "phase": 0.5}},
         {"image": "bg_zmierzch_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
@@ -134,12 +135,12 @@
       "layers": [
         {"image": "bg_zmierzch_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_zmierzch_krzaki.png", "x": 210, "y": 300, "width": 190, "height": 136},
-        {"image": "bg_zmierzch_stwor_cien.png", "x": 240, "y": 282, "width": 104, "height": 152, "animation": {"type": "sway", "amplitude": 0.8, "duration": 4200, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_zmierzch_stwor_cien.png", "x": 240, "y": 282, "width": 104, "height": 152, "animation": {"type": "sway", "amplitude": 0.8, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "revealOn": "topielec"},
         {"image": "bg_zmierzch_krzaki_przod.png", "x": 226, "y": 330, "width": 174, "height": 100},
-        {"image": "bg_zmierzch_slepia.png", "x": 257, "y": 301, "width": 12, "height": 12, "animation": {"type": "flicker", "amplitude": 0.45, "duration": 2000}},
+        {"image": "bg_zmierzch_slepia.png", "x": 257, "y": 301, "width": 12, "height": 12, "animation": {"type": "flicker", "amplitude": 0.45, "duration": 2000}, "revealOn": "topielec"},
         {"image": "bg_zmierzch_mgla_gora.png", "x": -30, "y": 352, "width": 330, "height": 36, "animation": {"type": "drift", "amplitude": 10, "duration": 12000}},
         {"image": "bg_zmierzch_maciek.png", "x": 160, "y": 316, "width": 80, "height": 92},
-        {"image": "bg_zmierzch_pies_obrona.png", "x": 176, "y": 352, "width": 112, "height": 76, "animation": {"type": "bob", "amplitude": 0.8, "duration": 420}},
+        {"image": "bg_zmierzch_pies_obrona.png", "x": 176, "y": 352, "width": 112, "height": 76, "animation": {"type": "bob", "amplitude": 0.8, "duration": 420}, "revealOn": "pies"},
         {"image": "bg_zmierzch_mgla_dol.png", "x": 60, "y": 396, "width": 340, "height": 38, "animation": {"type": "drift", "amplitude": 12, "duration": 15000, "phase": 0.5}},
         {"image": "bg_zmierzch_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
       ]

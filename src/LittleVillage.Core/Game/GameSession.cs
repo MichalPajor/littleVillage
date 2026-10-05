@@ -59,7 +59,7 @@ public sealed class GameSession(
         var snapshot = await saves.LoadAsync(cancellationToken)
             ?? throw new InvalidOperationException("Brak zapisanej gry.");
 
-        engine.RestoreState(snapshot.InkState, snapshot.Page.BackgroundKey);
+        engine.RestoreState(snapshot.InkState, snapshot.Page.BackgroundKey, RevealList.AllOn(snapshot.Page));
         CurrentPage = snapshot.Page;
         return snapshot.Page;
     }

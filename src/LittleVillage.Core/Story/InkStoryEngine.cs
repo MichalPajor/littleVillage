@@ -9,6 +9,9 @@ public sealed class InkStoryEngine(InkStoryOptions options) : IStoryEngine
     private InkStory? _story;
     private string? _currentBackground;
 
+    // Warstwy odsłonięte na stronach z bieżącym tłem — zostają widoczne na kolejnych stronach z tym tłem.
+    private readonly HashSet<string> _revealed = new(StringComparer.OrdinalIgnoreCase);
+
     public InkStoryEngine() : this(new InkStoryOptions())
     {
     }
@@ -34,6 +37,7 @@ public sealed class InkStoryEngine(InkStoryOptions options) : IStoryEngine
     {
         Story.ResetState();
         _currentBackground = null;
+        _revealed.Clear();
         return BuildPage();
     }
 
@@ -52,11 +56,13 @@ public sealed class InkStoryEngine(InkStoryOptions options) : IStoryEngine
 
     public string SaveState() => Story.state.ToJson();
 
-    public void RestoreState(string stateJson, string? backgroundKey)
+    public void RestoreState(string stateJson, string? backgroundKey, IEnumerable<string>? revealed = null)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(stateJson);
         Story.state.LoadJson(stateJson);
         _currentBackground = backgroundKey;
+        _revealed.Clear();
+        _revealed.UnionWith(revealed ?? []);
     }
 
     public IReadOnlyList<InventoryItem> GetInventory()
@@ -75,6 +81,7 @@ public sealed class InkStoryEngine(InkStoryOptions options) : IStoryEngine
 
     private StoryPage BuildPage()
     {
+        var startBackground = _currentBackground;
         var builder = new StoryPageBuilder(_currentBackground);
 
         while (Story.canContinue && !builder.BreakRequested)
@@ -85,6 +92,15 @@ public sealed class InkStoryEngine(InkStoryOptions options) : IStoryEngine
 
         _currentBackground = builder.BackgroundKey;
 
+        // Inne tło = inne warstwy: to, co odsłonięto na poprzednim tle, nie dotyczy nowego.
+        var sameBackground = string.Equals(startBackground, _currentBackground, StringComparison.OrdinalIgnoreCase);
+        if (!sameBackground)
+        {
+            _revealed.Clear();
+        }
+
+        var alreadyRevealed = RevealList.Join(_revealed);
+
         var choices = Story.currentChoices
             .Select(choice => new StoryChoice(choice.index, choice.text.Trim()))
             .ToArray();
@@ -94,7 +110,10 @@ public sealed class InkStoryEngine(InkStoryOptions options) : IStoryEngine
             : Story.canContinue ? PageEnding.Continue
             : PageEnding.End;
 
-        return builder.Build(ending == PageEnding.Choices ? choices : [], ending, options.DefaultQuestion);
+        var page = builder.Build(ending == PageEnding.Choices ? choices : [], ending, options.DefaultQuestion, alreadyRevealed);
+
+        _revealed.UnionWith(page.Blocks.SelectMany(b => RevealList.Split(b.Reveal)));
+        return page;
     }
 
     private InventoryItem CreateItem(InkListItem item, int value)

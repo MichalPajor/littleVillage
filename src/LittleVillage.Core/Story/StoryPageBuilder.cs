@@ -4,6 +4,7 @@ namespace LittleVillage.Core.Story;
 internal sealed class StoryPageBuilder(string? initialBackground)
 {
     private readonly List<StoryBlock> _blocks = [];
+    private readonly List<string> _pendingReveals = [];
     private bool _nextParagraphHasDropCap;
 
     public string? BackgroundKey { get; private set; } = initialBackground;
@@ -23,18 +24,31 @@ internal sealed class StoryPageBuilder(string? initialBackground)
         var trimmed = text?.Trim();
         if (!string.IsNullOrEmpty(trimmed))
         {
-            _blocks.Add(new StoryBlock(StoryBlockKind.Paragraph, trimmed, _nextParagraphHasDropCap));
+            _blocks.Add(new StoryBlock(StoryBlockKind.Paragraph, trimmed, _nextParagraphHasDropCap, RevealList.Join(_pendingReveals)));
             _nextParagraphHasDropCap = false;
+            _pendingReveals.Clear();
         }
     }
 
-    public StoryPage Build(IReadOnlyList<StoryChoice> choices, PageEnding ending, string defaultQuestion) =>
-        new(
+    public StoryPage Build(IReadOnlyList<StoryChoice> choices, PageEnding ending, string defaultQuestion, string? alreadyRevealed)
+    {
+        // Tag # pokaz bez akapitu po nim (np. tuż przed wyborami) — odsłania przy ostatnim akapicie strony.
+        var lastParagraph = _blocks.FindLastIndex(b => b.Kind == StoryBlockKind.Paragraph);
+        if (_pendingReveals.Count > 0 && lastParagraph >= 0)
+        {
+            var last = _blocks[lastParagraph];
+            _blocks[lastParagraph] = last with { Reveal = RevealList.Join(RevealList.Split(last.Reveal).Concat(_pendingReveals)) };
+            _pendingReveals.Clear();
+        }
+
+        return new StoryPage(
             _blocks.ToArray(),
             choices,
             ending,
             BackgroundKey,
-            ending == PageEnding.Choices ? Question ?? defaultQuestion : null);
+            ending == PageEnding.Choices ? Question ?? defaultQuestion : null,
+            alreadyRevealed);
+    }
 
     private void ApplyTag(StoryTag tag)
     {
@@ -58,6 +72,9 @@ internal sealed class StoryPageBuilder(string? initialBackground)
                 break;
             case StoryTag.Continue:
                 BreakRequested = true;
+                break;
+            case StoryTag.Reveal when tag.Value is not null:
+                _pendingReveals.AddRange(RevealList.Split(tag.Value));
                 break;
         }
     }

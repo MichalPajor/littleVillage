@@ -61,6 +61,12 @@ public sealed record BackgroundLayer
     public double Height { get; init; }
 
     public LayerAnimation? Animation { get; init; }
+
+    /// <summary>
+    /// Nazwa odsłonięcia (tag <c># pokaz: nazwa</c> w fabule). Warstwa z tą wartością jest na starcie
+    /// niewidoczna i pojawia się dopiero, gdy gracz doczyta do akapitu z tagiem — tło nie zdradza fabuły.
+    /// </summary>
+    public string? RevealOn { get; init; }
 }
 
 /// <summary>Tło sceny złożone z warstw. Płótno skalowane jest jak „AspectFill” (wypełnia ekran, nadmiar przycięty).</summary>

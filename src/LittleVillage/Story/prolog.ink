@@ -93,7 +93,7 @@ Maciej zacisnął palce na toporze i nie ruszył się z miejsca. Wycie trwało j
 === pies ===
 # tlo: zarosla_noc
 Maciej wyczołgał się z szałasu z siekierą w ręku. Noc była jasna od księżyca, a trawa mokra od rosy. Szedł powoli za dźwiękiem, krok po kroku, czując, że serce chce mu się wyrwać z piersi. Wycie raz cichło, a raz wybrzmiewało coraz bliżej.
-W gęstych krzakach usłyszał szelest. Rozgarnął gałęzie trzonkiem siekiery i zamarł. Z ciemności wyłoniły się dwa błyszczące ślepia. W świetle księżyca dostrzegł, że to młody pies. Był tak chudy, że można było policzyć mu żebra, a łapy miał nieproporcjonalnie duże w stosunku do reszty ciała. Pysk miał długi i wąski, a uszy postawione sztywno. Nie uciekał przed Maćkiem. Warczał cicho, trzęsąc się cały.
+W gęstych krzakach usłyszał szelest. Rozgarnął gałęzie trzonkiem siekiery i zamarł. Z ciemności wyłoniły się dwa błyszczące ślepia. W świetle księżyca dostrzegł, że to młody pies. Był tak chudy, że można było policzyć mu żebra, a łapy miał nieproporcjonalnie duże w stosunku do reszty ciała. Pysk miał długi i wąski, a uszy postawione sztywno. Nie uciekał przed Maćkiem. Warczał cicho, trzęsąc się cały. # pokaz: pies
 Maciej sięgnął do kieszeni. Było w niej małe zawiniątko z ostatnim kawałkiem chleba – twardym jak kamień, ale miał to być jego jutrzejszy posiłek.
 # pytanie: Co zrobi Maciek?
 *   [Da psu kawałek chleba.]
@@ -186,15 +186,15 @@ Zszedł z dachu i usiadł przy szałasie. Chciał odpocząć tylko chwilę, zani
 …i zasnął.
 Obudziła go cisza.
 Nie było słychać świerszczy, żab ani wiatru. Nad niecką wisiała mgła, gęsta i biała, sięgająca kolan. Maciek nie wiedział, ile spał. Wiedział tylko, że coś jest nie tak – czuł to ciałem i duszą, zanim zrozumiał umysłem.
-Wtedy rozległ się dźwięk. Nie wycie ani krzyk, lecz coś pośrodku: przeciągły, gardłowy jęk, który przeszedł w trzask łamanych gałęzi. Coś ciężkiego wskoczyło w zarośla – tuż obok, kilkanaście kroków od szałasu.
+Wtedy rozległ się dźwięk. Nie wycie ani krzyk, lecz coś pośrodku: przeciągły, gardłowy jęk, który przeszedł w trzask łamanych gałęzi. Coś ciężkiego wskoczyło w zarośla – tuż obok, kilkanaście kroków od szałasu. # pokaz: oczy
 Maciek zerwał się na równe nogi. Siekiera sama znalazła się w jego dłoniach. Ściskał topór tak mocno, że zbielały mu kostki, i patrzył w ciemność, skąd dochodziły kroki – powolne, ciężkie, coraz bliższe. # dalej
 { los_psa == nakarmiony: -> obrona | -> zdobycz }
 
 = zdobycz
 # tlo: zmierzch_zdobycz
-Krzaki rozchyliły się. Z mgły wyłoniła się postać.
+Krzaki rozchyliły się. Z mgły wyłoniła się postać. # pokaz: topielec
 Była wyższa od człowieka, o dobre trzy głowy. Stała na dwóch nogach, ale zgarbiona, z rękami zwisającymi niemal do ziemi. Miała ludzki kształt – i wcale nie była człowiekiem. W paszczy trzymała coś dużego i bezwładnego, co zwisało jej po obu stronach łba.
-Maciek poznał to po łapach. Za dużych do reszty ciała.
+Maciek poznał to po łapach. Za dużych do reszty ciała. # pokaz: cialo
 Postać zacisnęła szczęki. Rozległ się trzask – głośny, mokry, jak łamane suche gałęzie, tyle że to nie były one. Potem stwór odwrócił się i pomknął w stronę mokradeł, tak szybko, że mgła zawirowała za nim jak woda.
 Maciek nie mógł się ruszyć. Trząsł się cały, zimny pot spływał mu po plecach, a nogi miał jak z waty. Siekiera ciążyła mu w dłoniach, bezużyteczna. Stał tak bardzo długo, aż ciemność znów ucichła.
 -> strach_o_chate ->
@@ -203,10 +203,10 @@ Maciek szybko wszedł do szałasu. Długo jeszcze leżał z otwartymi oczami, ws
 
 = obrona
 # tlo: zmierzch_obrona
-Krzaki rozchyliły się. W mroku zapłonęły dwa ślepia – wysoko, za wysoko jak na wilka czy dzika. Postać stała w zaroślach na dwóch nogach, zgarbiona, z rękami zwisającymi niemal do ziemi. Miała ludzki kształt – i wcale nie była człowiekiem.
+Krzaki rozchyliły się. W mroku zapłonęły dwa ślepia – wysoko, za wysoko jak na wilka czy dzika. Postać stała w zaroślach na dwóch nogach, zgarbiona, z rękami zwisającymi niemal do ziemi. Miała ludzki kształt – i wcale nie była człowiekiem. # pokaz: topielec
 Maciek nie mógł się ruszyć. Trząsł się cały, zimny pot spływał mu po plecach. Ślepia patrzyły prosto na niego i powoli, bardzo powoli przybliżały się.
 Wtedy z oddali dobiegło szczekanie.
-Pies wypadł z ciemności jak strzała i stanął między Maćkiem a zaroślami. Sierść zjeżyła mu się na karku, łapy rozstawił szeroko i ujadał – głośno, zajadle, bez chwili przerwy, choć cały drżał. Chudy, młody, z za dużymi łapami – i nie cofnął się ani o krok.
+Pies wypadł z ciemności jak strzała i stanął między Maćkiem a zaroślami. Sierść zjeżyła mu się na karku, łapy rozstawił szeroko i ujadał – głośno, zajadle, bez chwili przerwy, choć cały drżał. Chudy, młody, z za dużymi łapami – i nie cofnął się ani o krok. # pokaz: pies
 Ślepia zatrzymały się. Postać zawahała się, wydała z siebie gardłowy syk – a potem zawróciła i z trzaskiem gałęzi pomknęła w stronę mokradeł, aż mgła zawirowała za nią jak woda.
 -> strach_o_chate ->
 ~ los_psa = oswojony

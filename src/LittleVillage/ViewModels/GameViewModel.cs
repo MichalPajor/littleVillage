@@ -146,7 +146,7 @@ public sealed partial class GameViewModel(
         Scene = session.Backgrounds.Resolve(page.BackgroundKey);
         IsPanelCollapsed = false;
 
-        messenger.Send(new StoryPageShownMessage());
+        messenger.Send(new StoryPageShownMessage(page));
     }
 
     private void Select(ChoiceViewModel choice)
