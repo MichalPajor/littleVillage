@@ -307,7 +307,7 @@ Wtedy Maciej opowiedział jeszcze raz, ze szczegółami, wszystko, co go spotka�
 === legenda ===
 # tlo: legenda
 – Podobno wszystko zaczęło się tam, nad jeziorem, gdzie leżą te zwęglone bale – odezwał się cicho Andrzej. – Mieszkała tam kiedyś kobieta. Zielarka. Ludzie chodzili do niej z bólem, chorobami i gorączką – była pomocna. Ale z czasem coś w nią weszło. Nikt nie wiedział dlaczego. Gadała po nocach, ale nie do siebie – do kogoś, kogo nikt nie widział. Mówiła, że umarli przychodzą do niej znad wody i opowiadają o strasznej przyszłości. Ludzie przestali do niej chodzić, bo się bali.
-Potem we wsi zaczęło się dziać źle. Mleko kwaśniało w wiadrach, małe dzieci budziły się z krzykiem, warzywa gniły w ziemi. Zaczęły też ginąć zwierzęta – najpierw cielę, potem krowa, potem cały kurnik w jedną noc – ludzie powiedzieli, że to jej sprawka, że jest wiedźmą.
+Potem we wsi zaczęło się dziać źle. Mleko kwaśniało w wiadrach, małe dzieci budziły się z krzykiem, warzywa gniły w ziemi. Zaczęły też ginąć zwierzęta – najpierw cielę, potem krowa, potem cały kurnik w jedną noc – ludzie powiedzieli, że to jej sprawka – zaczęli nazywać ją wiedźmą.
 Pewnej nocy kilku chłopów zebrało się pod jej chatą. Zabili drzwi deskami, kiedy spała, obłożyli ściany słomą i podpalili. # pokaz: chlopi, ogien
 Andrzej zamilkł na chwilę.
 – Dziad mówił, że krzyczała do samego końca. Nie z bólu, Maćku. Przeklinała. Wieś, ziemię, każdego, kto tu mieszka i kto kiedyś zamieszka. Że nikt nie zazna spokoju, dopóki ci, którzy ją odwiedzają, nie zamordują wszystkich mieszkańców wsi. Słychać było też, jak jęczała, że wszystkie kości naszych dzieci będą połamane, a ich krew wypita.
