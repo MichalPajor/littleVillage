@@ -29,37 +29,55 @@ for i in range(14):
         n.append(f'<path d="M{x:.0f} {y - 3:.0f}v6M{x - 3:.0f} {y:.0f}h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>')
 L["niebo"] = (0, 0, 390, 270, n[0] + "\n" + group(n[1:]))
 
-# ---------- OGNISKO przed chata (przed drzwiami): krag kamieni, plomienie, krotki dym, iskry, blask
+# ---------- OGNISKO przed chata (przed drzwiami): palenisko, plomienie, dym, iskry — osobne warstwy
 FX, FY = 214, 410
 f = [f'<ellipse cx="{FX}" cy="{FY + 4}" rx="58" ry="11" fill="#FFFFFF" stroke="none" opacity="0.9"/>']
 for dx, dy in [(-26, 6), (-14, 10), (0, 11), (14, 10), (26, 6), (-32, 1), (32, 1)]:
     f.append(f'<ellipse cx="{FX + dx}" cy="{FY + dy}" rx="6" ry="4" fill="#FFFFFF" stroke-width="2"/>')
 f.append(f'<path d="M{FX - 20} {FY + 4}l40-6M{FX - 16} {FY - 2}l34 6" fill="none" stroke-width="3"/>')
+L["palenisko"] = (150, 394, 128, 32, group(f))
+
+fl = []
 for (dx, h, w) in [(-10, 34, 9), (0, 50, 12), (11, 38, 9)]:
     x = FX + dx
-    f.append(f'<path d="M{x - w} {FY}C{x - w} {FY - h * 0.4:.0f} {x - w * 0.3:.0f} {FY - h * 0.6:.0f} {x - w * 0.2:.0f} {FY - h}C{x + w * 0.2:.0f} {FY - h * 0.7:.0f} {x + w * 0.6:.0f} {FY - h * 0.8:.0f} {x + w * 0.4:.0f} {FY - h * 1.15:.0f}C{x + w * 1.1:.0f} {FY - h * 0.6:.0f} {x + w} {FY - h * 0.3:.0f} {x + w} {FY}Z" fill="#FFFFFF" stroke-width="2.2"/>')
-    f.append(f'<path d="M{x - w * 0.4:.0f} {FY}C{x - w * 0.4:.0f} {FY - h * 0.3:.0f} {x} {FY - h * 0.4:.0f} {x} {FY - h * 0.6:.0f}C{x + w * 0.3:.0f} {FY - h * 0.4:.0f} {x + w * 0.4:.0f} {FY - h * 0.2:.0f} {x + w * 0.4:.0f} {FY}Z" fill="#000000" stroke="none"/>')
-f.append(f'<path d="M{FX + 4} {FY - 62}C{FX + 12} {FY - 76} {FX + 2} {FY - 88} {FX + 14} {FY - 102}" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 5"/>')
-for (dx, dy) in [(-22, -54), (20, -64), (-6, -78), (12, -86)]:
-    f.append(f'<circle cx="{FX + dx}" cy="{FY + dy}" r="1.8" fill="#FFFFFF" stroke-width="0.8"/>')
-L["ogien"] = (150, 300, 128, 126, group(f))
+    fl.append(f'<path d="M{x - w} {FY}C{x - w} {FY - h * 0.4:.0f} {x - w * 0.3:.0f} {FY - h * 0.6:.0f} {x - w * 0.2:.0f} {FY - h}C{x + w * 0.2:.0f} {FY - h * 0.7:.0f} {x + w * 0.6:.0f} {FY - h * 0.8:.0f} {x + w * 0.4:.0f} {FY - h * 1.15:.0f}C{x + w * 1.1:.0f} {FY - h * 0.6:.0f} {x + w} {FY - h * 0.3:.0f} {x + w} {FY}Z" fill="#FFFFFF" stroke-width="2.2"/>')
+    fl.append(f'<path d="M{x - w * 0.4:.0f} {FY}C{x - w * 0.4:.0f} {FY - h * 0.3:.0f} {x} {FY - h * 0.4:.0f} {x} {FY - h * 0.6:.0f}C{x + w * 0.3:.0f} {FY - h * 0.4:.0f} {x + w * 0.4:.0f} {FY - h * 0.2:.0f} {x + w * 0.4:.0f} {FY}Z" fill="#000000" stroke="none"/>')
+L["plomienie"] = (182, 340, 64, 74, group(fl))
+
+L["dym"] = (204, 290, 40, 64, group([
+    f'<path d="M{FX + 4} {FY - 62}C{FX + 12} {FY - 76} {FX + 2} {FY - 88} {FX + 14} {FY - 102}C{FX + 20} {FY - 110} {FX + 12} {FY - 116} {FX + 18} {FY - 118}" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 5"/>']))
+
+
+def sparks(points, r=1.8):
+    return [f'<path d="M{x} {y - r * 1.6:.1f}L{x + r:.1f} {y}L{x} {y + r * 1.6:.1f}L{x - r:.1f} {y}Z" fill="#FFFFFF" stroke-width="0.9"/>' for x, y in points]
+
+
+L["iskry_a"] = (184, 318, 62, 46, group(sparks([(FX - 22, FY - 54), (FX + 20, FY - 64), (FX - 4, FY - 80)])))
+L["iskry_b"] = (184, 318, 62, 46, group(sparks([(FX + 10, FY - 56), (FX - 14, FY - 70), (FX + 16, FY - 86)], 1.5)))
 
 # ---------- PIES po drugiej stronie ogniska, patrzy w plomienie (rysunek autora wilczek2, bez kresek szczekania)
 L["pies"] = (270, 368, 96, 50, art.barking("translate(274 372) scale(0.095)", skip=("cień", "szczekanie", "drżenie")))
 
 COMMON = ["niebo"]
 VARIANTS = {"las": ["tlo_las", "las_swierki"], "mokradla": ["tlo_mokradla", "mokradla_mgla"], "jezioro": ["tlo_jezioro", "jezioro_blyski"]}
-REVEAL = {"ogien": "ogien", "pies": "pies"}
-ANIM = {"ogien": {"type": "flicker", "amplitude": 0.75, "duration": 1300}}
+FIRE = ["palenisko", "dym", "plomienie", "iskry_a", "iskry_b"]
+REVEAL = {**{n: "ogien" for n in FIRE}, "pies": "pies"}
+ANIM = {"plomienie": {"type": "flame", "amplitude": 0.14, "duration": 1500, "anchorX": 0.5, "anchorY": 0.95},
+        "dym": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1},
+        "iskry_a": {"type": "rise", "amplitude": 26, "duration": 2200},
+        "iskry_b": {"type": "rise", "amplitude": 22, "duration": 2200, "phase": 0.5}}
 
 
 def layers(variant):
     """(prefiks pliku, nazwa) w kolejnosci: niebo, otoczenie wariantu, chata ze strzecha, przod, ognisko, pies."""
     return ([("bg_wieczor", "niebo")] + [("bg_budowa", n) for n in VARIANTS[variant]]
-            + [("bg_chata", "chata"), ("bg_chata", "strzecha_szczyt"), ("bg_budowa", "przod"), ("bg_wieczor", "ogien"), ("bg_wieczor", "pies")])
+            + [("bg_chata", "chata"), ("bg_chata", "strzecha_szczyt"), ("bg_budowa", "przod")]
+            + [("bg_wieczor", n) for n in FIRE] + [("bg_wieczor", "pies")])
 
 
-COMMENTS = {"niebo": "nocne niebo z księżycem", "ogien": "ognisko z dymem i blaskiem (# pokaz: ogien)",
+COMMENTS = {"niebo": "nocne niebo z księżycem", "palenisko": "krąg kamieni, polana i blask (# pokaz: ogien)",
+            "plomienie": "płomienie ogniska (# pokaz: ogien, liżą od podstawy)", "dym": "dym (# pokaz: ogien, kołysze się)",
+            "iskry_a": "iskry (# pokaz: ogien, unoszą się)", "iskry_b": "iskry (# pokaz: ogien, unoszą się)",
             "pies": "pies przy ognisku (rysunek autora, # pokaz: pies)"}
 
 if __name__ == "__main__":
@@ -74,4 +92,4 @@ if __name__ == "__main__":
             key = f"{prefix}_{name}"; both[key] = mods[prefix][name]; order.append(key)
         print(master(both, order))
     else:
-        write_layers(sys.argv[1], "bg_wieczor", "wieczór przy chacie", L, ["niebo", "ogien", "pies"], COMMENTS)
+        write_layers(sys.argv[1], "bg_wieczor", "wieczór przy chacie", L, ["niebo"] + FIRE + ["pies"], COMMENTS)

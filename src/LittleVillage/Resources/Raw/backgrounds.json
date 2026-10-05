@@ -3,7 +3,9 @@
 // Płótno skaluje się jak „AspectFill”: wypełnia ekran, nadmiar jest przycinany (środek zostaje widoczny).
 //
 // Animacje (type): sway (kołysanie, amplitude = stopnie), drift (poziomo, amplitude = jednostki płótna),
-//                  bob (pionowo), blink (mruganie), flicker (migotanie, amplitude = min. nieprzezroczystość).
+//                  bob (pionowo), blink (mruganie), flicker (migotanie, amplitude = min. nieprzezroczystość),
+//                  flame (płomień liże od podstawy = anchor, amplitude = rozciąganie, np. 0,12),
+//                  rise (iskry: unoszą się i gasną, amplitude = wysokość wzlotu).
 // duration = długość cyklu w ms, phase = przesunięcie fazy 0–1, anchorX/anchorY = punkt obrotu w warstwie (0–1).
 // revealOn = warstwa niewidoczna, dopóki gracz nie doczyta do akapitu z tagiem „# pokaz: nazwa” (tło nie zdradza fabuły).
 {
@@ -214,7 +216,11 @@
         {"image": "bg_legenda_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_legenda_wegielki.png", "x": 326, "y": 228, "width": 64, "height": 46, "animation": {"type": "flicker", "amplitude": 0.35, "duration": 2600}, "revealOn": "wegielki"},
         {"image": "bg_legenda_chata.png", "x": 150, "y": 206, "width": 194, "height": 148},
-        {"image": "bg_legenda_ogien.png", "x": 156, "y": 4, "width": 182, "height": 346, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 1400}, "revealOn": "ogien"},
+        {"image": "bg_legenda_dym.png", "x": 200, "y": 6, "width": 108, "height": 230, "animation": {"type": "sway", "amplitude": 2.2, "duration": 6000, "anchorX": 0.5, "anchorY": 0.97}, "revealOn": "ogien"},
+        {"image": "bg_legenda_plomienie_dach.png", "x": 164, "y": 154, "width": 190, "height": 124, "animation": {"type": "flame", "amplitude": 0.12, "duration": 1700, "anchorX": 0.5, "anchorY": 0.93}, "revealOn": "ogien"},
+        {"image": "bg_legenda_plomienie_sciany.png", "x": 160, "y": 286, "width": 166, "height": 60, "animation": {"type": "flame", "amplitude": 0.16, "duration": 1300, "anchorX": 0.5, "anchorY": 0.89, "phase": 0.4}, "revealOn": "ogien"},
+        {"image": "bg_legenda_iskry_a.png", "x": 210, "y": 120, "width": 110, "height": 80, "animation": {"type": "rise", "amplitude": 34, "duration": 2400}, "revealOn": "ogien"},
+        {"image": "bg_legenda_iskry_b.png", "x": 210, "y": 120, "width": 110, "height": 80, "animation": {"type": "rise", "amplitude": 30, "duration": 2400, "phase": 0.5}, "revealOn": "ogien"},
         {"image": "bg_legenda_chlopi.png", "x": 100, "y": 264, "width": 290, "height": 146, "revealOn": "chlopi"},
         {"image": "bg_legenda_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
       ]
@@ -243,7 +249,11 @@
         {"image": "bg_chata_chata.png", "x": 0, "y": 230, "width": 390, "height": 246},
         {"image": "bg_chata_strzecha_szczyt.png", "x": 150, "y": 228, "width": 90, "height": 50},
         {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
-        {"image": "bg_wieczor_ogien.png", "x": 150, "y": 300, "width": 128, "height": 126, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 1300}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_palenisko.png", "x": 150, "y": 394, "width": 128, "height": 32, "revealOn": "ogien"},
+        {"image": "bg_wieczor_dym.png", "x": 204, "y": 290, "width": 40, "height": 64, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_plomienie.png", "x": 182, "y": 340, "width": 64, "height": 74, "animation": {"type": "flame", "amplitude": 0.14, "duration": 1500, "anchorX": 0.5, "anchorY": 0.95}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_iskry_a.png", "x": 184, "y": 318, "width": 62, "height": 46, "animation": {"type": "rise", "amplitude": 26, "duration": 2200}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_iskry_b.png", "x": 184, "y": 318, "width": 62, "height": 46, "animation": {"type": "rise", "amplitude": 22, "duration": 2200, "phase": 0.5}, "revealOn": "ogien"},
         {"image": "bg_wieczor_pies.png", "x": 270, "y": 368, "width": 96, "height": 50, "revealOn": "pies"}
       ]
     },
@@ -258,7 +268,11 @@
         {"image": "bg_chata_chata.png", "x": 0, "y": 230, "width": 390, "height": 246},
         {"image": "bg_chata_strzecha_szczyt.png", "x": 150, "y": 228, "width": 90, "height": 50},
         {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
-        {"image": "bg_wieczor_ogien.png", "x": 150, "y": 300, "width": 128, "height": 126, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 1300}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_palenisko.png", "x": 150, "y": 394, "width": 128, "height": 32, "revealOn": "ogien"},
+        {"image": "bg_wieczor_dym.png", "x": 204, "y": 290, "width": 40, "height": 64, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_plomienie.png", "x": 182, "y": 340, "width": 64, "height": 74, "animation": {"type": "flame", "amplitude": 0.14, "duration": 1500, "anchorX": 0.5, "anchorY": 0.95}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_iskry_a.png", "x": 184, "y": 318, "width": 62, "height": 46, "animation": {"type": "rise", "amplitude": 26, "duration": 2200}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_iskry_b.png", "x": 184, "y": 318, "width": 62, "height": 46, "animation": {"type": "rise", "amplitude": 22, "duration": 2200, "phase": 0.5}, "revealOn": "ogien"},
         {"image": "bg_wieczor_pies.png", "x": 270, "y": 368, "width": 96, "height": 50, "revealOn": "pies"}
       ]
     },
@@ -273,7 +287,11 @@
         {"image": "bg_chata_chata.png", "x": 0, "y": 230, "width": 390, "height": 246},
         {"image": "bg_chata_strzecha_szczyt.png", "x": 150, "y": 228, "width": 90, "height": 50},
         {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
-        {"image": "bg_wieczor_ogien.png", "x": 150, "y": 300, "width": 128, "height": 126, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 1300}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_palenisko.png", "x": 150, "y": 394, "width": 128, "height": 32, "revealOn": "ogien"},
+        {"image": "bg_wieczor_dym.png", "x": 204, "y": 290, "width": 40, "height": 64, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_plomienie.png", "x": 182, "y": 340, "width": 64, "height": 74, "animation": {"type": "flame", "amplitude": 0.14, "duration": 1500, "anchorX": 0.5, "anchorY": 0.95}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_iskry_a.png", "x": 184, "y": 318, "width": 62, "height": 46, "animation": {"type": "rise", "amplitude": 26, "duration": 2200}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_iskry_b.png", "x": 184, "y": 318, "width": 62, "height": 46, "animation": {"type": "rise", "amplitude": 22, "duration": 2200, "phase": 0.5}, "revealOn": "ogien"},
         {"image": "bg_wieczor_pies.png", "x": 270, "y": 368, "width": 96, "height": 50, "revealOn": "pies"}
       ]
     },

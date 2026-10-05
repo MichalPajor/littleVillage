@@ -21,8 +21,20 @@ public enum LayerAnimationType
     /// <summary>Mruganie — oczy w lesie. Znika na krótko pod koniec cyklu.</summary>
     Blink,
 
-    /// <summary>Migotanie — płomień świecy, kaganka. Amplituda = minimalna nieprzezroczystość (0–1).</summary>
+    /// <summary>Migotanie — mrugające światełka, ślepia. Amplituda = minimalna nieprzezroczystość (0–1).</summary>
     Flicker,
+
+    /// <summary>
+    /// Płomień — rozciąga się i kurczy od podstawy (punkt zaczepienia = podstawa ognia), faluje i lekko się kołysze.
+    /// Amplituda = siła rozciągania (np. 0,12 = ±12% wysokości).
+    /// </summary>
+    Flame,
+
+    /// <summary>
+    /// Unoszenie z wygasaniem — iskry, popiół: warstwa wędruje w górę, pojawia się i gaśnie, po czym zaczyna od nowa.
+    /// Amplituda = wysokość wzlotu w jednostkach płótna.
+    /// </summary>
+    Rise,
 }
 
 /// <summary>Parametry animacji warstwy.</summary>

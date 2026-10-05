@@ -193,6 +193,17 @@ public sealed class SceneBackgroundView : ContentView
                 case LayerAnimationType.Blink:
                     view.Opacity = BlinkOpacity(t);
                     break;
+                case LayerAnimationType.Flame:
+                    // Dwa nakładające się rytmy dają nieregularne „lizanie”; szerokość lekko odwrotnie do wysokości.
+                    var stretch = 0.6 * wave + 0.4 * Math.Sin(t * 2 * Math.PI * 3 + 1.1);
+                    view.ScaleY = 1 + animation.Amplitude * stretch;
+                    view.ScaleX = 1 - animation.Amplitude * 0.35 * Math.Sin(t * 2 * Math.PI * 2 + 0.5);
+                    view.Rotation = animation.Amplitude * 10 * Math.Sin(t * 2 * Math.PI + 0.7);
+                    break;
+                case LayerAnimationType.Rise:
+                    view.TranslationY = -animation.Amplitude * _scale * t;
+                    view.Opacity = t < 0.15 ? t / 0.15 : (1 - t) / 0.85;
+                    break;
                 case LayerAnimationType.Flicker:
                     var noise = 0.5 + 0.3 * Math.Sin(t * 2 * Math.PI * 7) + 0.2 * Math.Sin(t * 2 * Math.PI * 13 + 1.3);
                     view.Opacity = animation.Amplitude + (1 - animation.Amplitude) * Math.Clamp(noise, 0, 1);

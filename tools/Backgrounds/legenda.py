@@ -1,7 +1,7 @@
 # Generator tla "legenda": noc nad jeziorem, chata zielarki (wiedzmy) z peczkami ziol pod okapem.
 # Warstwy odslaniane w trakcie opowiesci Andrzeja:
 #   chlopi   — sylwetki chlopow z widlami i pochodnia, deski na drzwiach   (# pokaz: chlopi)
-#   ogien    — plomienie na scianach i strzesze, dym                         (# pokaz: ogien)
+#   ogien    — plomienie na strzesze i scianach, dym, iskry (osobne warstwy)  (# pokaz: ogien)
 #   wegielki — zarzace sie oczy nad bagnem                                  (# pokaz: wegielki)
 # Uzycie z katalogu glownego repozytorium:
 #   python3 tools/Backgrounds/legenda.py src/LittleVillage/Resources/Images   -> pliki bg_legenda_*.svg
@@ -90,11 +90,24 @@ def flame(x, y, h, w):
             f'C{x + w * 1.1:.0f} {y - h * 0.6:.0f} {x + w} {y - h * 0.3:.0f} {x + w} {y}Z" fill="#FFFFFF" stroke-width="2.2"/>'
             f'<path d="M{x - w * 0.4:.0f} {y}C{x - w * 0.4:.0f} {y - h * 0.3:.0f} {x} {y - h * 0.4:.0f} {x} {y - h * 0.6:.0f}C{x + w * 0.3:.0f} {y - h * 0.4:.0f} {x + w * 0.4:.0f} {y - h * 0.2:.0f} {x + w * 0.4:.0f} {y}Z" fill="#000000" stroke="none"/>')
 
-o = ['<path d="M236 262C226 230 250 210 236 180C226 160 246 140 240 116M262 270C276 240 256 216 270 190C280 170 262 150 270 130" fill="none" stroke="#000000" stroke-width="7" stroke-linecap="round" opacity="0.8"/>']
-for (x, y, h, w) in [(206, 302, 30, 12), (230, 296, 40, 14), (252, 286, 52, 16), (276, 296, 40, 14), (298, 302, 28, 11),
-                     (200, 352, 22, 9), (290, 350, 24, 9), (262, 354, 18, 8)]:
-    o.append(flame(x, y, h, w))
-L["ogien"] = (156, 4, 182, 346, near(o))
+ROOF_FLAMES = [(206, 302, 30, 12), (230, 296, 40, 14), (252, 286, 52, 16), (276, 296, 40, 14), (298, 302, 28, 11)]
+WALL_FLAMES = [(200, 352, 22, 9), (290, 350, 24, 9), (262, 354, 18, 8)]
+# plomienie na strzesze i przy scianach — osobno, kazde "liza" od swojej podstawy (animacja flame)
+L["plomienie_dach"] = (164, 154, 190, 124, near([flame(*f) for f in ROOF_FLAMES]))
+L["plomienie_sciany"] = (160, 286, 166, 60, near([flame(*f) for f in WALL_FLAMES]))
+# dym — dwie smugi nad strzecha, kolysza sie od podstawy
+L["dym"] = (200, 6, 108, 230, near([
+    '<path d="M236 262C226 230 250 210 236 180C226 160 246 140 240 116M262 270C276 240 256 216 270 190C280 170 262 150 270 130" fill="none" stroke="#000000" stroke-width="7" stroke-linecap="round" opacity="0.8"/>']))
+
+
+def sparks(points, r=2.2):
+    """Iskry: biale rombiki z czarnym obrysem."""
+    return [f'<path d="M{x} {y - r * 1.6:.1f}L{x + r:.1f} {y}L{x} {y + r * 1.6:.1f}L{x - r:.1f} {y}Z" fill="#FFFFFF" stroke-width="1"/>' for x, y in points]
+
+
+# iskry nad ogniem — dwie warstwy w przesunietej fazie (animacja rise)
+L["iskry_a"] = (210, 120, 110, 80, group(sparks([(228, 190), (262, 168), (296, 184), (246, 140), (284, 132)])))
+L["iskry_b"] = (210, 120, 110, 80, group(sparks([(238, 176), (274, 194), (306, 160), (222, 150), (260, 128)], 1.8)))
 
 # ---------- WEGIELKI: zarzace sie oczy nad bagnem (odslaniane, migocza)
 e = []
@@ -115,14 +128,21 @@ p.append('<path d="M0 690C40 740 60 800 70 844H0Z" fill="url(#hatchNight)" strok
 p.append('<path d="M390 680C350 740 340 800 336 844H390Z" fill="url(#hatchNight)" stroke="none"/>')
 L["przod"] = (0, 410, 390, 434, group(p))
 
-ORDER = ["tlo", "wegielki", "chata", "ogien", "chlopi", "przod"]
-REVEAL = {"chlopi": "chlopi", "ogien": "ogien", "wegielki": "wegielki"}
-ANIM = {"ogien": {"type": "flicker", "amplitude": 0.75, "duration": 1400},
+ORDER = ["tlo", "wegielki", "chata", "dym", "plomienie_dach", "plomienie_sciany", "iskry_a", "iskry_b", "chlopi", "przod"]
+REVEAL = {"chlopi": "chlopi", "dym": "ogien", "plomienie_dach": "ogien", "plomienie_sciany": "ogien", "iskry_a": "ogien", "iskry_b": "ogien", "wegielki": "wegielki"}
+ANIM = {"plomienie_dach": {"type": "flame", "amplitude": 0.12, "duration": 1700, "anchorX": 0.5, "anchorY": 0.93},
+        "plomienie_sciany": {"type": "flame", "amplitude": 0.16, "duration": 1300, "anchorX": 0.5, "anchorY": 0.89, "phase": 0.4},
+        "dym": {"type": "sway", "amplitude": 2.2, "duration": 6000, "anchorX": 0.5, "anchorY": 0.97},
+        "iskry_a": {"type": "rise", "amplitude": 34, "duration": 2400},
+        "iskry_b": {"type": "rise", "amplitude": 30, "duration": 2400, "phase": 0.5},
         "wegielki": {"type": "flicker", "amplitude": 0.35, "duration": 2600}}
 COMMENTS = {
     "tlo": "noc, sierp księżyca, bór, jezioro, mokradła", "chata": "chata zielarki z pęczkami ziół",
     "chlopi": "chłopi z widłami, młotem i pochodnią, deski na drzwiach (# pokaz: chlopi)",
-    "ogien": "płomienie i dym (# pokaz: ogien, migocze)", "wegielki": "żarzące się oczy nad bagnem (# pokaz: wegielki, migoczą)",
+    "plomienie_dach": "płomienie na strzesze (# pokaz: ogien, liżą od podstawy)",
+    "plomienie_sciany": "płomienie przy ścianach (# pokaz: ogien, liżą od podstawy)",
+    "dym": "dym nad chatą (# pokaz: ogien, kołysze się)",
+    "iskry_a": "iskry (# pokaz: ogien, unoszą się)", "iskry_b": "iskry (# pokaz: ogien, unoszą się)", "wegielki": "żarzące się oczy nad bagnem (# pokaz: wegielki, migoczą)",
     "przod": "pierwszy plan: ciemna trawa",
 }
 
