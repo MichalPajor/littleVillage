@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „wieczór przy chacie”: nocne niebo z księżycem
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="270" viewBox="0 0 390 270">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<rect width="390" height="270" fill="#EDEBE6" stroke="none"/>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 0H390V270H0Z" fill="url(#hatchNight)" stroke="none"/>
+<circle cx="72" cy="78" r="26" fill="#FFFFFF" stroke-width="3.6"/>
+<circle cx="64" cy="70" r="5" fill="none" stroke-width="2"/>
+<circle cx="80" cy="88" r="3.5" fill="none" stroke-width="1.8"/>
+<path d="M151 42v6M148 45h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M71 135v6M68 138h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M224 105v6M221 108h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M215 63v6M212 66h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M281 89v6M278 92h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M299 101v6M296 104h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M321 71v6M318 74h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M67 31v6M64 34h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M278 34v6M275 37h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M252 95v6M249 98h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M32 118v6M29 121h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M22 129v6M19 132h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M321 40v6M318 43h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+<path d="M279 111v6M276 114h6" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+</g>
+</svg>

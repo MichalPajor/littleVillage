@@ -35,7 +35,7 @@ public sealed partial class GameViewModel(
     public partial string? Question { get; set; }
 
     [ObservableProperty]
-    [NotifyPropertyChangedFor(nameof(HasChoices), nameof(CanAdvance), nameof(ShowChoiceHint))]
+    [NotifyPropertyChangedFor(nameof(HasChoices), nameof(CanAdvance), nameof(ShowChoiceHint), nameof(IsDeath))]
     [NotifyCanExecuteChangedFor(nameof(AdvanceCommand))]
     public partial PageEnding Ending { get; set; }
 
@@ -61,7 +61,10 @@ public sealed partial class GameViewModel(
     public bool HasChoices => Ending == PageEnding.Choices;
 
     /// <summary>Przycisk „Dalej” pojawia się po wybraniu opcji albo od razu, gdy scena nie ma wyborów.</summary>
-    public bool CanAdvance => Ending != PageEnding.Choices || SelectedChoice is not null;
+    public bool CanAdvance => Ending != PageEnding.Death && (Ending != PageEnding.Choices || SelectedChoice is not null);
+
+    /// <summary>Bohater zginął — zamiast „Dalej” przycisk powrotu do ostatniego zapisu.</summary>
+    public bool IsDeath => Ending == PageEnding.Death;
 
     public bool ShowChoiceHint => Ending == PageEnding.Choices && SelectedChoice is null;
 
@@ -94,6 +97,21 @@ public sealed partial class GameViewModel(
         catch (Exception exception)
         {
             logger.LogError(exception, "Błąd podczas przechodzenia dalej w fabule.");
+            await dialogs.AlertAsync("Coś poszło nie tak", exception.Message);
+        }
+    }
+
+    /// <summary>Po śmierci: wczytuje stronę z decyzją, która do niej doprowadziła.</summary>
+    [RelayCommand(AllowConcurrentExecutions = false)]
+    private async Task TryAgainAsync()
+    {
+        try
+        {
+            Show(await session.ContinueSavedGameAsync());
+        }
+        catch (Exception exception)
+        {
+            logger.LogError(exception, "Nie udało się wczytać ostatniego zapisu po śmierci.");
             await dialogs.AlertAsync("Coś poszło nie tak", exception.Message);
         }
     }

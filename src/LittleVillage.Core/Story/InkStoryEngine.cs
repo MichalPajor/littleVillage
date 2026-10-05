@@ -108,6 +108,7 @@ public sealed class InkStoryEngine(InkStoryOptions options) : IStoryEngine
         var ending = (builder.BreakRequested && Story.canContinue) ? PageEnding.Continue
             : choices.Length > 0 ? PageEnding.Choices
             : Story.canContinue ? PageEnding.Continue
+            : builder.DeathRequested ? PageEnding.Death
             : PageEnding.End;
 
         var page = builder.Build(ending == PageEnding.Choices ? choices : [], ending, options.DefaultQuestion, alreadyRevealed);

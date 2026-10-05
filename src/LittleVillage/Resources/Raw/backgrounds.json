@@ -231,6 +231,51 @@
         {"image": "bg_zgliszcza_trzciny.png", "x": -12, "y": 280, "width": 414, "height": 146, "animation": {"type": "sway", "amplitude": 0.6, "duration": 4200, "anchorX": 0.5, "anchorY": 1}},
         {"image": "bg_zgliszcza_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
       ]
+    },
+    "wieczor_las": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_wieczor_niebo.png", "x": 0, "y": 0, "width": 390, "height": 270},
+        {"image": "bg_budowa_tlo_las.png", "x": 0, "y": 100, "width": 390, "height": 190},
+        {"image": "bg_budowa_las_swierki.png", "x": 300, "y": 120, "width": 90, "height": 170, "animation": {"type": "sway", "amplitude": 1.3, "duration": 5200, "anchorX": 0.5, "anchorY": 0.95}},
+        {"image": "bg_chata_chata.png", "x": 0, "y": 230, "width": 390, "height": 246},
+        {"image": "bg_chata_strzecha_szczyt.png", "x": 150, "y": 228, "width": 90, "height": 50},
+        {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
+        {"image": "bg_wieczor_ogien.png", "x": 150, "y": 300, "width": 128, "height": 126, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 1300}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_pies.png", "x": 270, "y": 368, "width": 96, "height": 50, "revealOn": "pies"}
+      ]
+    },
+    "wieczor_mokradla": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_wieczor_niebo.png", "x": 0, "y": 0, "width": 390, "height": 270},
+        {"image": "bg_budowa_tlo_mokradla.png", "x": 0, "y": 150, "width": 390, "height": 130},
+        {"image": "bg_budowa_mokradla_mgla.png", "x": -30, "y": 216, "width": 330, "height": 34, "animation": {"type": "drift", "amplitude": 12, "duration": 15000}},
+        {"image": "bg_chata_chata.png", "x": 0, "y": 230, "width": 390, "height": 246},
+        {"image": "bg_chata_strzecha_szczyt.png", "x": 150, "y": 228, "width": 90, "height": 50},
+        {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
+        {"image": "bg_wieczor_ogien.png", "x": 150, "y": 300, "width": 128, "height": 126, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 1300}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_pies.png", "x": 270, "y": 368, "width": 96, "height": 50, "revealOn": "pies"}
+      ]
+    },
+    "wieczor_jezioro": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_wieczor_niebo.png", "x": 0, "y": 0, "width": 390, "height": 270},
+        {"image": "bg_budowa_tlo_jezioro.png", "x": 0, "y": 140, "width": 390, "height": 140},
+        {"image": "bg_budowa_jezioro_blyski.png", "x": 20, "y": 204, "width": 340, "height": 44, "animation": {"type": "drift", "amplitude": 5, "duration": 6000}},
+        {"image": "bg_chata_chata.png", "x": 0, "y": 230, "width": 390, "height": 246},
+        {"image": "bg_chata_strzecha_szczyt.png", "x": 150, "y": 228, "width": 90, "height": 50},
+        {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
+        {"image": "bg_wieczor_ogien.png", "x": 150, "y": 300, "width": 128, "height": 126, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 1300}, "revealOn": "ogien"},
+        {"image": "bg_wieczor_pies.png", "x": 270, "y": 368, "width": 96, "height": 50, "revealOn": "pies"}
+      ]
     }
   }
 }

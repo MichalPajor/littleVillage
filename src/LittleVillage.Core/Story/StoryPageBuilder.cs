@@ -14,6 +14,9 @@ internal sealed class StoryPageBuilder(string? initialBackground)
     /// <summary>Czy natrafiono na tag <c># dalej</c> — strona ma się tu zakończyć.</summary>
     public bool BreakRequested { get; private set; }
 
+    /// <summary>Czy scena kończy się śmiercią bohatera (tag <c># smierc</c>).</summary>
+    public bool DeathRequested { get; private set; }
+
     public void AddLine(string? text, IEnumerable<string>? rawTags)
     {
         foreach (var tag in (rawTags ?? []).Select(StoryTag.Parse))
@@ -72,6 +75,9 @@ internal sealed class StoryPageBuilder(string? initialBackground)
                 break;
             case StoryTag.Continue:
                 BreakRequested = true;
+                break;
+            case StoryTag.Death:
+                DeathRequested = true;
                 break;
             case StoryTag.Reveal when tag.Value is not null:
                 _pendingReveals.AddRange(RevealList.Split(tag.Value));

@@ -74,6 +74,7 @@ public sealed class GameSession(
             PageEnding.Choices when choiceIndex is { } index => engine.Choose(index),
             PageEnding.Choices => throw new InvalidOperationException("Ta strona wymaga wybrania opcji."),
             PageEnding.Continue => engine.Continue(),
+            PageEnding.Death => throw new InvalidOperationException("Bohater nie żyje — wczytaj ostatni zapis."),
             _ => throw new InvalidOperationException("Opowieść dobiegła końca."),
         };
 
@@ -96,6 +97,10 @@ public sealed class GameSession(
         if (page.Ending == PageEnding.End)
         {
             await saves.DeleteAsync(cancellationToken);
+        }
+        else if (page.Ending == PageEnding.Death)
+        {
+            // Zapis zostaje na stronie z decyzją, która doprowadziła do śmierci — stąd gracz spróbuje jeszcze raz.
         }
         else
         {

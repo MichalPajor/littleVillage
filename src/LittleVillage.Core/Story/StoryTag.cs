@@ -16,6 +16,7 @@ public readonly record struct StoryTag(string Name, string? Value)
     public const string Divider = "ozdobnik";
     public const string Continue = "dalej";
     public const string Reveal = "pokaz";
+    public const string Death = "smierc";
 
     public static StoryTag Parse(string rawTag)
     {

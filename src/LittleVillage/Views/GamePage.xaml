@@ -142,6 +142,11 @@
                             Command="{Binding AdvanceCommand}"
                             IsVisible="{Binding CanAdvance}"
                             SemanticProperties.Description="Dalej" />
+                        <controls:SketchTextButton
+                            Text="Spróbuj jeszcze raz"
+                            Command="{Binding TryAgainCommand}"
+                            IsVisible="{Binding IsDeath}"
+                            SemanticProperties.Description="Wróć do ostatniego zapisu przed śmiercią" />
                     </Grid>
                 </VerticalStackLayout>
             </ScrollView>

@@ -470,6 +470,40 @@ public sealed class GameStoryTests
         Assert.DoesNotContain(page.Blocks, b => b.Text.Contains("warknął"));
     }
 
+    // ----- Wieczór przy chacie -----
+
+    [Fact]
+    public void With_the_flint_Maciek_lights_a_fire_and_the_dog_lies_by_it()
+    {
+        var evening = Play(CreateEngine(), Marsh, GoOut, FeedDog, StayHere, TellBoy, Search, TakeFlint)[^1];
+
+        Assert.Equal("wieczor_mokradla", evening.BackgroundKey);
+        Assert.Contains(evening.Blocks, b => b.Reveal == "ogien" && b.Text.EndsWith("zatliła się iskra."));
+        Assert.Contains(evening.Blocks, b => b.Reveal == "pies" && b.Text.StartsWith("Pies położył się"));
+        Assert.Contains(evening.Blocks, b => b.Text.Contains("Figurkę spróbuje sprzedać"));
+    }
+
+    [Fact]
+    public void Without_the_flint_the_evening_is_cold_and_the_fire_never_appears()
+    {
+        var evening = Play(CreateEngine(), Lake, GoOut, FeedDog, StayHere, TellBoy, Search, LeaveFlint)[^1];
+
+        Assert.Equal("wieczor_jezioro", evening.BackgroundKey);
+        Assert.Contains(evening.Blocks, b => b.Text.StartsWith("Wieczór zapadł chłodny i ciemny."));
+        Assert.DoesNotContain(evening.Blocks, b => b.Reveal is not null);
+        Assert.Contains(evening.Blocks, b => b.Text.Contains("Figurkę spróbuje sprzedać"));
+    }
+
+    [Fact]
+    public void Without_the_figurine_there_is_nothing_to_sell()
+    {
+        var evening = Play(CreateEngine(), Forest, Stay, Leave, SendBoyAway, Avoid)[^1];
+
+        Assert.Equal("wieczor_las", evening.BackgroundKey);
+        Assert.DoesNotContain(evening.Blocks, b => b.Text.Contains("Figurkę"));
+        Assert.Contains(evening.Blocks, b => b.Text.Contains("przyprowadzi tu rodzinę"));
+    }
+
     [Fact]
     public void Visit_avoids_repeating_names_in_neighbouring_sentences()
     {

@@ -353,12 +353,36 @@ Wtedy dostrzegł w popiele coś jeszcze.
 # pytanie: Czy Maciek weźmie krzesiwo?
 *   [Tak – przeklęte czy nie, da mu to możliwość rozpalania ognia i przygotowania ciepłych posiłków.]
     ~ ekwipunek += krzesiwo
-    -> prolog_ciag_dalszy
+    -> wieczor_przy_chacie
 *   [Nie – nie chce ryzykować klątwy, która mogłaby na niego spaść.]
-    -> prolog_ciag_dalszy
+    -> wieczor_przy_chacie
 
 = omija
-Ominął jezioro szerokim łukiem i ani razu nie spojrzał w stronę trzcin. Niektórych rzeczy lepiej nie ruszać.
+Ominął jezioro szerokim łukiem i ani razu nie spojrzał w stronę trzcin. Niektórych rzeczy lepiej nie ruszać. # dalej
+-> wieczor_przy_chacie
+
+
+// ------------------------------------------------------------
+//  Wieczór przy chacie — ogień (jeśli ma krzesiwo) i plan wyprawy do miasta.
+// ------------------------------------------------------------
+=== wieczor_przy_chacie ===
+{ chata_macka:
+    - przy_lesie: # tlo: wieczor_las
+    - przy_mokradlach: # tlo: wieczor_mokradla
+    - else: # tlo: wieczor_jezioro
+}
+{ ekwipunek ? krzesiwo:
+    Wieczorem Maciek nazbierał suchych gałęzi i ułożył je w kręgu kamieni przed chatą. Krzesiwo leżało mu w dłoni dziwnie ciężkie. Przez chwilę obracał je w palcach, myśląc o tym, czyje ręce trzymały je ostatnie. Potem uderzył raz, drugi, trzeci – i w hubie zatliła się iskra. # pokaz: ogien
+    Ogień buchnął jasno, a ciepło uderzyło go w twarz tak nagle, że aż zakręciło mu się w głowie. Pierwszy raz od przyjścia do Zapadliny ugotował w glinianym garnku gorącą zupę z pokrzywy i szczawiu. Jadł powoli, parząc sobie usta, i nic na świecie nie smakowało mu tak dobrze.
+    { los_psa == oswojony:
+        Pies położył się po drugiej stronie ogniska. Płomienie odbijały się w jego ślepiach, a on patrzył na nie jak urzeczony. # pokaz: pies
+    }
+- else:
+    Wieczór zapadł chłodny i ciemny. Maciek zjadł garść surowego szczawiu i kilka pomarszczonych jagód żurawiny, popił wodą i usiadł na progu.
+}
+Długo siedział, patrząc w stronę gościńca, i układał w myślach plan. Chata była gotowa. Czas było ruszyć do miasta – kupić chleba, sól, może trochę kaszy.
+{ ekwipunek ? figurka: Figurkę spróbuje sprzedać albo wymienić na jedzenie. Może ktoś w mieście zapłaci za taką osobliwość. }
+A potem, gdy tylko zbierze siły, przyprowadzi tu rodzinę. Do domu, który zbudował własnymi rękami.
 -> prolog_ciag_dalszy
 
 

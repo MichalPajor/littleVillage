@@ -42,6 +42,12 @@ public enum PageEnding
 
     /// <summary>Koniec opowieści.</summary>
     End,
+
+    /// <summary>
+    /// Śmierć bohatera (tag <c># smierc</c> na końcu sceny). Zapis nie jest nadpisywany ani usuwany —
+    /// gracz wraca do strony z decyzją, która do niej doprowadziła.
+    /// </summary>
+    Death,
 }
 
 /// <summary>Jedna „strona” fabuły: tekst, tło i sposób przejścia dalej.</summary>
