@@ -275,7 +275,7 @@ Rano poszedł do Andrzeja. Musiał komuś powiedzieć. # dalej
 
 = u_andrzeja
 # tlo: izba_andrzeja
-Chałupa Andrzeja stała na pagórku, z dala od wody. W izbie było ciepło i ciasno. Staś, syn Andrzeja, siedział przy stole na szerokim podłokietniku drewnianego krzesła i strugał nożykiem patyk. Na widok Maćka uśmiechnął się szeroko.
+Chałupa Andrzeja stała na pagórku, z dala od wody. W izbie było ciepło i ciasno. Staś, syn gospodarza, siedział przy stole na szerokim podłokietniku drewnianego krzesła i strugał nożykiem patyk. Na widok gościa uśmiechnął się szeroko.
 Maciek chciał opowiedzieć wszystko. Zaczął od samego początku: od ciszy, od kroków i… od postaci wyższej od człowieka o trzy głowy, z rękami do ziemi.
 Andrzej słuchał, aż nagle parsknął śmiechem.
 – Z głodu ci się przywidziało, Maćku. Otrząśnij się. Miesiąc o chlebie i wodzie, to człowiek i archanioła Michała zobaczy.
@@ -300,7 +300,33 @@ Poprosił jednak Andrzeja o rozmowę w cztery oczy. Ten wysłał Stasia po wodę
 
 = dziad_opowiadal
 – Ręce do ziemi, mówisz – odezwał się w końcu Andrzej, już bez śmiechu. – Wyższa o trzy głowy. – Podszedł do okna i długo patrzył w stronę jeziora. – Mój dziad opowiadał o czymś takim. Myślałem, że dzieci straszył.
-Wtedy Maciej opowiedział jeszcze raz, ze szczegółami, wszystko, co go spotkało.
+Wtedy Maciej opowiedział jeszcze raz, ze szczegółami, wszystko, co go spotkało. # dalej
+-> legenda
+
+
+// ------------------------------------------------------------
+//  Legenda o wiedźmie znad jeziora — opowiada Andrzej.
+// ------------------------------------------------------------
+=== legenda ===
+# tlo: legenda
+– Podobno wszystko zaczęło się tam, nad jeziorem, gdzie leżą te zwęglone bale – odezwał się cicho Andrzej. – Mieszkała tam kiedyś kobieta. Zielarka. Ludzie chodzili do niej z bólem, chorobami i gorączką – była pomocna. Ale z czasem coś w nią weszło. Nikt nie wiedział dlaczego. Gadała po nocach, ale nie do siebie – do kogoś, kogo nikt nie widział. Mówiła, że umarli przychodzą do niej znad wody i opowiadają, że będą się działy straszne rzeczy. Ludzie przestali do niej chodzić, bo się bali.
+Potem we wsi zaczęło się dziać źle. Mleko kwaśniało w wiadrach, małe dzieci budziły się z krzykiem, warzywa gniły w ziemi. Zaczęły też ginąć zwierzęta – najpierw cielę, potem krowa, potem cały kurnik w jedną noc – ludzie powiedzieli, że to jej sprawka, że jest wiedźmą.
+Pewnej nocy kilku chłopów zebrało się pod jej chatą. Zabili drzwi deskami, kiedy spała, obłożyli ściany słomą i podpalili. # pokaz: chlopi, ogien
+Andrzej zamilkł na chwilę.
+– Dziad mówił, że krzyczała do samego końca. Nie z bólu, Maćku. Przeklinała. Wieś, ziemię, każdego, kto tu mieszka i kto kiedyś zamieszka. Że nikt nie zazna spokoju, dopóki ci, którzy ją odwiedzają, nie zamordują wszystkich mieszkańców wsi. Słychać było też, jak jęczała, że wszystkie kości naszych dzieci będą połamane, a ich krew wypita.
+– Straszne… A ci, co ją spalili?
+– Żaden nie dożył zimy. Jeden po drugim tracili rozum. Gadali do siebie, nie spali, chodzili nocami nad wodę. Aż w końcu wszyscy weszli w bagno, jeden za drugim, i już nie wyszli. Ci, którzy ich ostatni widzieli, mówili, że w oczach mieli coś dziwnego. Jakby żarzące się węgielki. # pokaz: wegielki
+Andrzej spojrzał mu prosto w oczy.
+– To ich oczy mrugają po nocach nad mokradłami. Nie żadne błędne ognie. Oni tam stoją i wypatrują. I wabią.
+{ chata_macka:
+    - przy_mokradlach: Maciek poczuł, jak zimno ściska go w żołądku. Każdej nocy widział te światełka ze swojego progu. Myślał, że to gnijące drewno albo bagienny gaz. Że to tylko światło.
+    - nad_jeziorem: Maciek zbladł. Te bale zepchnął własnymi rękami w trzciny. Swoją chatę postawił dokładnie tam, gdzie płonęła tamta.
+}
+{ stas_zaufanie:
+    Staś siedział bez ruchu, ściskając w dłoni niedokończony patyk.
+- else:
+    Za uchylonymi drzwiami coś cicho skrzypnęło. Kiedy Andrzej wyjrzał, w sieni stało tylko wiadro z wodą. Staś był już daleko na podwórzu.
+}
 -> prolog_ciag_dalszy
 
 

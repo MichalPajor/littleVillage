@@ -348,6 +348,45 @@ public sealed class GameStoryTests
         Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 
+    [Theory]
+    [InlineData(TellBoy, "Staś siedział bez ruchu", "Za uchylonymi drzwiami")]
+    [InlineData(SendBoyAway, "Za uchylonymi drzwiami", "Staś siedział bez ruchu")]
+    public void Legend_is_told_with_the_boy_listening_one_way_or_another(int choice, string present, string absent)
+    {
+        var pages = Play(CreateEngine(), Forest, Stay, StayHere, choice);
+
+        var legend = pages[^1];
+        Assert.Equal("legenda", legend.BackgroundKey);
+        Assert.Contains(legend.Blocks, b => b.Text.Contains("Zielarka.") && b.Reveal is null);
+        Assert.Contains(legend.Blocks, b => b.Reveal == "chlopi, ogien" && b.Text.StartsWith("Pewnej nocy kilku chłopów"));
+        Assert.Contains(legend.Blocks, b => b.Reveal == "wegielki" && b.Text.Contains("żarzące się węgielki"));
+        Assert.True(Has(pages, present));
+        Assert.False(Has(pages, absent));
+    }
+
+    [Theory]
+    [InlineData(Forest, null)]
+    [InlineData(Marsh, "Każdej nocy widział te światełka")]
+    [InlineData(Lake, "Swoją chatę postawił dokładnie tam")]
+    public void Legend_hits_Maciek_differently_depending_on_the_hut(int place, string? text)
+    {
+        var legend = Play(CreateEngine(), place, Stay, StayHere, TellBoy)[^1];
+
+        Assert.Equal(text is not null, legend.Blocks.Any(b => b.Text.Contains("Maciek poczuł, jak zimno") || b.Text.StartsWith("Maciek zbladł")));
+        if (text is not null)
+        {
+            Assert.Contains(legend.Blocks, b => b.Text.Contains(text));
+        }
+    }
+
+    [Fact]
+    public void Visit_avoids_repeating_names_in_neighbouring_sentences()
+    {
+        var talk = Play(CreateEngine(), Forest, Stay, StayHere)[^1];
+
+        Assert.Contains(talk.Blocks, b => b.Text.Contains("Staś, syn gospodarza,") && b.Text.Contains("Na widok gościa"));
+    }
+
     [Fact]
     public void Saved_state_restores_the_choice_page()
     {

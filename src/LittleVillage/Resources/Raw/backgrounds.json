@@ -205,6 +205,19 @@
         {"image": "bg_izba_andrzej.png", "x": 0, "y": 216, "width": 92, "height": 172},
         {"image": "bg_izba_stas.png", "x": 282, "y": 194, "width": 108, "height": 140, "animation": {"type": "bob", "amplitude": 0.6, "duration": 700}}
       ]
+    },
+    "legenda": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_legenda_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_legenda_wegielki.png", "x": 326, "y": 228, "width": 64, "height": 46, "animation": {"type": "flicker", "amplitude": 0.35, "duration": 2600}, "revealOn": "wegielki"},
+        {"image": "bg_legenda_chata.png", "x": 150, "y": 206, "width": 194, "height": 148},
+        {"image": "bg_legenda_ogien.png", "x": 156, "y": 4, "width": 182, "height": 346, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 1400}, "revealOn": "ogien"},
+        {"image": "bg_legenda_chlopi.png", "x": 100, "y": 264, "width": 290, "height": 146, "revealOn": "chlopi"},
+        {"image": "bg_legenda_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+      ]
     }
   }
 }
