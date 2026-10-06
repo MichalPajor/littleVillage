@@ -408,7 +408,7 @@ public sealed class GameStoryTests
         (string Earlier, string Next)[] boundaries =
         [
             ("Muchy już go obsiadły", "Mijały dni"),
-            ("nie zmrużył oka", "Zaczęło świtać"),
+            ("zmrużył oka", "Zaczęło świtać"),
             ("Zielarka.", "Wracając od Andrzeja"),
         ];
         foreach (var (earlier, next) in boundaries)
