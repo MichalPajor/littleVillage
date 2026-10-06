@@ -105,7 +105,7 @@ Maciek sięgnął do kieszeni. Było w niej małe zawiniątko z ostatnim kawałk
 ~ ekwipunek -= chleb
 ~ los_psa = nakarmiony
 Maciek rozwinął szmatkę i rzucił chleb pod krzak. Pies cofnął się i warknął, ale po chwili zaczął wąchać to, co spadło. Nagle porwał zdobycz w pysk i zniknął w ciemności, zanim Maciek zdążył mrugnąć.
-Mężczyzna wpełzł z powrotem pod gałęzie i zasnął ze świadomością, że jutro śniadania nie będzie. # dalej
+Mężczyzna wpełzł z powrotem pod gałęzie swojego szałasu i zasnął ze świadomością, że jutro śniadania nie będzie. # dalej
 -> dach
 
 = nie_dal_chleba
