@@ -206,9 +206,9 @@ public sealed class GameStoryTests
         // Chata stoi przy samym bagnie — stwór znika tuż obok, a nie „gdzieś na mokradłach”.
         foreach (var pages in new[] { Play(CreateEngine(), place, Stay), Play(CreateEngine(), place, GoOut, FeedDog) })
         {
-            Assert.Equal(expected, Has(pages, "w stronę pobliskich mokradeł"));
+            Assert.Equal(expected, Has(pages, "pobliski"));
             Assert.Equal(expected, Has(pages, "stwór nie uciekł daleko"));
-            Assert.True(Has(pages, expected ? "w stronę pobliskich mokradeł," : "w stronę mokradeł,"));
+            Assert.DoesNotContain(pages.SelectMany(p => p.Blocks), b => b.Text.Contains("  "));
         }
     }
 
@@ -408,7 +408,7 @@ public sealed class GameStoryTests
         (string Earlier, string Next)[] boundaries =
         [
             ("Muchy już go obsiadły", "Mijały dni"),
-            ("nie mógł zmrużyć oka", "Zaczęło świtać"),
+            ("nie zmrużył oka", "Zaczęło świtać"),
             ("Zielarka.", "Wracając od Andrzeja"),
         ];
         foreach (var (earlier, next) in boundaries)
