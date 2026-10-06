@@ -82,7 +82,13 @@ blood = '<g fill="#A8101A" filter="url(#ink)">' + "".join(
     [(42, 426, 2.8), (74, 420, 2.2), (106, 428, 3.2), (138, 421, 2.4), (170, 428, 2.8), (306, 421, 2.6), (338, 428, 3), (370, 422, 2.2)]) + '</g>'
 L["slady"] = (0, 392, 390, 42, group(s) + "\n" + blood)
 
+# rodzina przed progiem nowej chaty (prolog, powrot z miasta) — odslaniana: "# pokaz: rodzina"
+import postacie
+L["rodzina"] = (120, 330, 140, 80, group([postacie.man(154, 404, 0.66, hat=True), postacie.child(234, 402, 0.7, arm="l8 -8"),
+                                          postacie.woman(198, 396, 0.62)]))
+
 COMMENTS = {
+    "rodzina": "Maciek, Marianna i Dobrosław przed progiem (odsłaniane: # pokaz: rodzina)",
     "chata": "chata z prawie gotową strzechą, drabina, szałas, sterta trzciny, pień",
     "strzecha_szczyt": "ostatni pas strzechy (odsłaniany: # pokaz: dach)",
     "slady": "długie ślady topielca i krew (odsłaniane: # pokaz: slady)",
@@ -94,19 +100,20 @@ VARIANTS = {
     "jezioro": COMMON_TOP + ["tlo_jezioro", "jezioro_blyski"],
 }
 OWN = ["chata", "strzecha_szczyt"]
+FAMILY = "rodzina"   # nad pierwszym planem, jak slady
 PRZOD = "przod"   # pierwszy plan z tla budowy (pnie, lezacy pien, trawa)
 
 
 def layers(variant):
     """Kolejnosc warstw wariantu: (prefiks pliku, nazwa)."""
     # slady leza na trawie pierwszego planu, wiec sa nad nim
-    return [("bg_budowa", n) for n in VARIANTS[variant]] + [("bg_chata", n) for n in OWN] + [("bg_budowa", PRZOD), ("bg_chata", "slady")]
+    return [("bg_budowa", n) for n in VARIANTS[variant]] + [("bg_chata", n) for n in OWN] + [("bg_budowa", PRZOD), ("bg_chata", "slady"), ("bg_chata", FAMILY)]
 
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":
         both = dict(budowa.L)
         both.update(L)
-        print(master(both, VARIANTS[sys.argv[2]] + OWN + [PRZOD, "slady"]))
+        print(master(both, VARIANTS[sys.argv[2]] + OWN + [PRZOD, "slady", FAMILY]))
     else:
-        write_layers(sys.argv[1], "bg_chata", "chata", L, OWN + ["slady"], COMMENTS)
+        write_layers(sys.argv[1], "bg_chata", "chata", L, OWN + ["slady", FAMILY], COMMENTS)

@@ -26,3 +26,9 @@ VAR przeszukal_zgliszcza = false
 
 // Czy Maciek powiedział Stasiowi, synowi Andrzeja, prawdę o stworze (true), czy zbył go i rozmawiał z Andrzejem w cztery oczy (false).
 VAR stas_zaufanie = false
+
+// Komu Maciek sprzedał w mieście figurkę: staruszce (true — ta odprawi nad nią czary i naśle stwora na chatę) czy handlarzowi starzyzną.
+VAR figurka_u_staruchy = false
+
+// Czy Maciek opowiedział żonie o stworze, legendzie i głosie znad bagien.
+VAR zona_wie = false

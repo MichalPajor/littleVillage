@@ -6,5 +6,6 @@
 INCLUDE zmienne.ink
 INCLUDE przedmioty.ink
 INCLUDE prolog.ink
+INCLUDE prolog_miasto.ink
 
 -> prolog

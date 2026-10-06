@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „miasto”: gościniec przez pola, na horyzoncie wieża kościoła i dachy miasta
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="440" viewBox="0 0 390 440">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 0H390V60C300 80 210 50 130 72C80 86 40 68 0 82Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M0 82C40 68 80 86 130 72C210 50 300 80 390 60V122C310 142 220 114 140 134C80 150 40 128 0 144Z" fill="url(#hatch)" stroke="none"/>
+<circle cx="86" cy="58" r="20" fill="#FFFFFF" stroke-width="3"/>
+<path d="M86 28v-8M86 88v8M56 58h-8M116 58h8M65 37l-6-6M107 37l6-6M65 79l-6 6M107 79l6 6" fill="none" stroke-width="2"/>
+<path d="M232 194V187L241 180L250 187V194Z" fill="#FFFFFF" stroke-width="2"/>
+<path d="M232 187L241 180L250 187Z" fill="url(#hatchDense)" stroke-width="2"/>
+<path d="M250 192V183L258 174L266 183V192Z" fill="#FFFFFF" stroke-width="2"/>
+<path d="M250 183L258 174L266 183Z" fill="url(#hatchDense)" stroke-width="2"/>
+<path d="M268 194V188L278 182L288 188V194Z" fill="#FFFFFF" stroke-width="2"/>
+<path d="M268 188L278 182L288 188Z" fill="url(#hatchDense)" stroke-width="2"/>
+<path d="M300 193V185L309 177L318 185V193Z" fill="#FFFFFF" stroke-width="2"/>
+<path d="M300 185L309 177L318 185Z" fill="url(#hatchDense)" stroke-width="2"/>
+<path d="M318 195V189L326 183L334 189V195Z" fill="#FFFFFF" stroke-width="2"/>
+<path d="M318 189L326 183L334 189Z" fill="url(#hatchDense)" stroke-width="2"/>
+<path d="M336 194V187L343 180L350 187V194Z" fill="#FFFFFF" stroke-width="2"/>
+<path d="M336 187L343 180L350 187Z" fill="url(#hatchDense)" stroke-width="2"/>
+<path d="M284 196V150H296V196Z" fill="#FFFFFF" stroke-width="2.4"/>
+<path d="M282 150L290 118L298 150Z" fill="#000000" stroke-width="2"/>
+<path d="M290 118V106M286 110H294" fill="none" stroke-width="1.8"/>
+<rect x="287" y="160" width="6" height="8" fill="#000000" stroke-width="1"/>
+<path d="M-10 200C60 182 140 186 210 196C270 204 330 190 400 196V440H-10Z" fill="#EDEBE6" stroke-width="3"/>
+<path d="M-10 214C80 208 120 218 150 216" fill="none" stroke-width="1.2"/>
+<path d="M262 216C300 210 350 220 400 214" fill="none" stroke-width="1.2"/>
+<path d="M-10 236C80 230 120 240 146 238" fill="none" stroke-width="1.2"/>
+<path d="M268 238C300 232 350 242 400 236" fill="none" stroke-width="1.2"/>
+<path d="M-10 258C80 252 120 262 142 260" fill="none" stroke-width="1.2"/>
+<path d="M274 260C300 254 350 264 400 258" fill="none" stroke-width="1.2"/>
+<path d="M-10 280C80 274 120 284 138 282" fill="none" stroke-width="1.2"/>
+<path d="M280 282C300 276 350 286 400 280" fill="none" stroke-width="1.2"/>
+<path d="M-10 302C80 296 120 306 134 304" fill="none" stroke-width="1.2"/>
+<path d="M286 304C300 298 350 308 400 302" fill="none" stroke-width="1.2"/>
+<path d="M-10 324C80 318 120 328 130 326" fill="none" stroke-width="1.2"/>
+<path d="M292 326C300 320 350 330 400 324" fill="none" stroke-width="1.2"/>
+<path d="M-10 346C80 340 120 350 126 348" fill="none" stroke-width="1.2"/>
+<path d="M298 348C300 342 350 352 400 346" fill="none" stroke-width="1.2"/>
+<path d="M-10 368C80 362 120 372 122 370" fill="none" stroke-width="1.2"/>
+<path d="M304 370C300 364 350 374 400 368" fill="none" stroke-width="1.2"/>
+<path d="M-10 390C80 384 120 394 118 392" fill="none" stroke-width="1.2"/>
+<path d="M310 392C300 386 350 396 400 390" fill="none" stroke-width="1.2"/>
+<circle cx="14" cy="186" r="9" fill="url(#hatchDense)" stroke-width="2"/>
+<circle cx="26" cy="182" r="11" fill="url(#hatchDense)" stroke-width="2"/>
+<circle cx="38" cy="186" r="9" fill="url(#hatchDense)" stroke-width="2"/>
+<circle cx="50" cy="182" r="11" fill="url(#hatchDense)" stroke-width="2"/>
+<circle cx="345" cy="190" r="9" fill="url(#hatchDense)" stroke-width="2"/>
+<circle cx="357" cy="186" r="11" fill="url(#hatchDense)" stroke-width="2"/>
+<circle cx="369" cy="190" r="9" fill="url(#hatchDense)" stroke-width="2"/>
+<circle cx="140" cy="184" r="9" fill="url(#hatchDense)" stroke-width="2"/>
+<circle cx="152" cy="180" r="11" fill="url(#hatchDense)" stroke-width="2"/>
+<path d="M120 440C150 400 210 380 196 340C184 304 220 280 250 262C272 248 270 222 276 198" fill="none" stroke-width="3"/>
+<path d="M262 440C258 404 252 378 236 344C224 316 250 292 268 270C286 250 284 222 284 198" fill="none" stroke-width="3"/>
+<path d="M200 430C206 404 214 380 210 352M240 318C248 296 262 280 272 262" fill="none" stroke-width="1" stroke-dasharray="6 8"/>
+</g>
+</svg>

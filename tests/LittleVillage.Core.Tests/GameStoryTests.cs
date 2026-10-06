@@ -14,6 +14,8 @@ public sealed class GameStoryTests
     private const int Search = 0, Avoid = 1;             // zgliszcza chaty wiedzmy
     private const int TakeFlint = 0, LeaveFlint = 1;     // krzesiwo w popiele
     private const int FollowVoice = 0, WalkOn = 1;       // glos z mokradel
+    private const int SellToWitch = 0, SellToDealer = 1; // figurka w miescie
+    private const int TellWife = 0, KeepQuiet = 1;       // rozmowa z zona
 
     private static InkStoryEngine CreateEngine()
     {
@@ -250,7 +252,12 @@ public sealed class GameStoryTests
         var data = new TheoryData<int[]>();
         foreach (var place in new[] { Forest, Marsh, Lake })
         {
-            foreach (var tail in new[] { new[] { StayHere, TellBoy, Search, TakeFlint, WalkOn }, [Leave, SendBoyAway, Avoid, WalkOn] })
+            foreach (var tail in new[]
+            {
+                new[] { StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife },
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet],
+            })
             {
                 data.Add([place, Stay, .. tail]);
                 data.Add([place, GoOut, FeedDog, .. tail]);
@@ -533,9 +540,9 @@ public sealed class GameStoryTests
 
         var rescue = pages.Single(p => p.BackgroundKey == "sciezka_po");
         Assert.Contains(rescue.Blocks, b => b.Reveal == "upadek" && b.Text.StartsWith("Leżał w błocie"));
-        Assert.Equal("zapadlina", pages[^1].BackgroundKey);
-        Assert.Contains(pages[^1].Blocks, b => b.Text.StartsWith("Na Bukowym Grzbiecie"));
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        var ridge = pages.Single(p => p.Blocks.Any(b => b.Text.StartsWith("Na Bukowym Grzbiecie")));
+        Assert.Equal("zapadlina", ridge.BackgroundKey);
+        Assert.Equal("gosciniec", pages[pages.IndexOf(ridge) + 1].BackgroundKey);
     }
 
     [Theory]
@@ -560,8 +567,7 @@ public sealed class GameStoryTests
 
         Assert.True(Has(pages, "Głos wołał jeszcze dwa razy"));
         Assert.DoesNotContain(pages, p => p.Ending == PageEnding.Death);
-        Assert.Equal("zapadlina", pages[^1].BackgroundKey);
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Contains(pages, p => p.BackgroundKey == "zapadlina" && p.Blocks.Any(b => b.Text.StartsWith("Na Bukowym Grzbiecie")));
     }
 
     [Fact]
@@ -583,5 +589,130 @@ public sealed class GameStoryTests
         restored.RestoreState(state, "zapadlina");
 
         Assert.Equal("budowa_jezioro", restored.Choose(Lake).BackgroundKey);
+    }
+
+    // ----- Miasto, rodzina i zakonczenie prologu -----
+
+    // Z psem, figurka i krzesiwem, az do wyboru w miescie.
+    private static readonly int[] ToTownWithDogAndFigurine = [Lake, GoOut, FeedDog, StayHere, TellBoy, Search, TakeFlint, WalkOn];
+
+    [Fact]
+    public void In_town_the_old_woman_offers_more_for_the_figurine_and_the_dog_growls_at_her()
+    {
+        var pages = Play(CreateEngine(), ToTownWithDogAndFigurine);
+
+        Assert.Contains(pages, p => p.BackgroundKey == "gosciniec" && p.Blocks[0].Text == "Prolog");
+        Assert.True(Has(pages, "To nie żaden święty"));
+        Assert.True(Has(pages, "– Dwa grosze – rzekł w końcu."));
+        var oldWoman = pages[^1];
+        Assert.Equal("zaulek", oldWoman.BackgroundKey);
+        Assert.Contains(oldWoman.Blocks, b => b.Reveal == "starucha" && b.Text.Contains("zasnute bielmem"));
+        Assert.Contains(oldWoman.Blocks, b => b.Reveal == "pies" && b.Text.StartsWith("Pies zjeżył sierść"));
+        Assert.Equal("Komu Maciek sprzeda figurkę?", oldWoman.Question);
+        Assert.StartsWith("Staruszce", oldWoman.Choices[SellToWitch].Text);
+        Assert.StartsWith("Handlarzowi", oldWoman.Choices[SellToDealer].Text);
+    }
+
+    [Fact]
+    public void Without_the_figurine_Maciek_only_shops_and_never_meets_the_old_woman()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn);
+
+        Assert.DoesNotContain(pages, p => p.BackgroundKey == "zaulek");
+        Assert.False(Has(pages, "drewnianą postać"));
+        Assert.True(Has(pages, "nasiona różnych warzyw"));
+        Assert.Equal("czworaki", pages[^1].BackgroundKey);
+        Assert.Equal("Czy Maciek opowie żonie o tamtej nocy?", pages[^1].Question);
+        Assert.Contains("zapasy", Inventory(engine));
+        Assert.Contains("nasiona", Inventory(engine));
+    }
+
+    [Fact]
+    public void Selling_to_the_old_woman_with_the_dog_ends_with_the_fight_and_Andrzej()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. ToTownWithDogAndFigurine, SellToWitch, TellWife]);
+
+        Assert.True(Has(pages, "kosz sadzeniaków"));
+        Assert.True(Has(pages, "Drugą oddał psu."));
+        Assert.True(Has(pages, "Wiedziała, o czym mówi."));
+        Assert.True(Has(pages, "Tego wieczoru przed nową chatą zapłonął ogień"));
+        Assert.True(Has(pages, "Chata nad jeziorem. Mężczyzna, kobieta i dziecko."));
+        Assert.Contains(pages, p => p.BackgroundKey == "czary");
+        Assert.Contains(pages, p => p.BackgroundKey == "noc_atak" && Has([p], "obudził ich pies"));
+        var fight = pages.Single(p => p.BackgroundKey == "walka");
+        Assert.Contains(fight.Blocks, b => b.Reveal == "kaluza");
+        Assert.True(Has(pages, "Pies leżał obok"));
+        Assert.DoesNotContain(pages, p => p.BackgroundKey is "pod_podloga" or "kapliczki");
+        Assert.DoesNotContain("figurka", Inventory(engine));
+        Assert.StartsWith("Dwa bochenki", engine.GetInventory().Single(i => i.Id == "zapasy").Description);
+        AssertPrologueEndsWithJaromir(pages);
+    }
+
+    [Fact]
+    public void Selling_to_the_old_woman_without_the_dog_ends_with_the_massacre_under_the_floor()
+    {
+        var pages = Play(CreateEngine(), Marsh, Stay, StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToWitch, KeepQuiet);
+
+        Assert.True(Has(pages, "uniosła brwi"));
+        Assert.True(Has(pages, "zjedli kolację na progu nowej chaty"));
+        Assert.True(Has(pages, "Chata przy mokradłach."));
+        Assert.True(Has(pages, "obudził ich huk"));
+        var underFloor = pages.Single(p => p.BackgroundKey == "pod_podloga");
+        Assert.Contains(underFloor.Blocks, b => b.Reveal == "krew");
+        Assert.Contains(underFloor.Blocks, b => b.Text == "Matka krzyczała dłużej.");
+        Assert.True(Has(pages, "wychował razem ze Stasiem"));
+        Assert.DoesNotContain(pages, p => p.BackgroundKey == "walka");
+        AssertPrologueEndsWithJaromir(pages);
+    }
+
+    [Theory]
+    [InlineData(Forest, SellToDealer)]
+    [InlineData(Marsh, SellToDealer)]
+    public void Selling_to_the_dealer_brings_peaceful_years_with_chapels(int place, int sale)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, place, GoOut, FeedDog, StayHere, TellBoy, Search, LeaveFlint, WalkOn, sale, TellWife);
+
+        Assert.True(Has(pages, "odliczył dwa grosze"));
+        Assert.StartsWith("Bochenek chleba", engine.GetInventory().Single(i => i.Id == "zapasy").Description);
+        Assert.DoesNotContain(pages, p => p.BackgroundKey is "czary" or "noc_atak" or "walka" or "pod_podloga");
+        var years = pages.First(p => p.BackgroundKey == "kapliczki");
+        Assert.Contains(years.Blocks, b => b.Reveal == "kapliczki");
+        Assert.True(Has(pages, "Pies zestarzał się przy progu"));
+        AssertPrologueEndsWithJaromir(pages);
+    }
+
+    [Fact]
+    public void Without_the_figurine_the_prologue_ends_peacefully()
+    {
+        var pages = Play(CreateEngine(), Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet);
+
+        Assert.Contains(pages, p => p.BackgroundKey == "kapliczki");
+        Assert.False(Has(pages, "Pies zestarzał się"));
+        AssertPrologueEndsWithJaromir(pages);
+    }
+
+    [Theory]
+    [InlineData(Forest, "chata_las", "Na skraju lasu, w cieniu świerków, z dachem")]
+    [InlineData(Marsh, "chata_mokradla", "Na łące przy mokradłach, na kamiennej podmurówce, z dachem")]
+    [InlineData(Lake, "chata_jezioro", "Nad jeziorem, wśród szumiących trzcin, z dachem")]
+    public void Family_arrives_at_the_hut_built_in_the_chosen_place(int place, string background, string text)
+    {
+        var pages = Play(CreateEngine(), place, Stay, Leave, SendBoyAway, Avoid, WalkOn, TellWife);
+
+        var home = pages.Single(p => p.Blocks.Any(b => b.Text.StartsWith("Chata stała tam, gdzie ją zostawił.")));
+        Assert.Equal(background, home.BackgroundKey);
+        Assert.Contains(home.Blocks, b => b.Reveal == "dach" && b.Text.Contains(text));
+        Assert.Contains(home.Blocks, b => b.Reveal == "rodzina");
+        Assert.True(Has(pages, "Piwniczka"));
+    }
+
+    private static void AssertPrologueEndsWithJaromir(List<StoryPage> pages)
+    {
+        Assert.True(Has(pages, "Dali mu na imię Jaromir."));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal("_Koniec prologu. Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
     }
 }

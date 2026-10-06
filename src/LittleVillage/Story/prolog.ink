@@ -431,12 +431,12 @@ Zacisnął zęby i szedł dalej, krok za krokiem, nie odwracając głowy. Głos 
 = na_grzbiecie
 # tlo: zapadlina
 Na Bukowym Grzbiecie Maciek wreszcie odważył się obejrzeć. W dole leżała Zapadlina – cicha, przykryta mgłą jak całunem. Gdzieś tam stała jego chata.
-Potem ruszył gościńcem w stronę miasta.
--> prolog_ciag_dalszy
+Potem ruszył gościńcem w stronę miasta. # dalej
+-> miasto
 
 
-// Kolejna scena prologu — do napisania.
+// Koniec prologu — dalej akt pierwszy z Jaromirem (do napisania).
 === prolog_ciag_dalszy ===
 # ozdobnik
-_Ciąg dalszy nastąpi…_
+_Koniec prologu. Ciąg dalszy nastąpi…_
 -> END

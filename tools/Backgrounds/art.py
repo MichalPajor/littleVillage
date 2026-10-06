@@ -1,5 +1,6 @@
 # Rysunki dostarczone przez autora (katalog assets/):
-#   wilczek.svg  — pies siedzi, wilczek2.svg — pies szczeka z profilu, topielec.svg — stwor z mokradel.
+#   wilczek.svg  — pies siedzi, wilczek2.svg — pies szczeka z profilu, topielec.svg — stwor z mokradel,
+#   wiedzma.svg  — starucha w kapturze z kosturem (patrzy w lewo).
 # Wycina tresc rysunku (bez <defs>, korzysta z wspolnych DEFS: filtr "ink", wzory "hatch", "hatchDense")
 # i pozwala ja umiescic na plotnie tla dowolnym przeksztalceniem.
 import os, re
@@ -21,7 +22,9 @@ def _sections(name):
 def drawing(name, transform, skip=()):
     """Rysunek jako grupa SVG z podanym przeksztalceniem; skip = poczatki komentarzy sekcji do pominiecia."""
     opening, parts = _sections(name)
-    body = "\n".join(p for (c, p) in parts if not any(c.startswith(k) for k in skip))
+    # z pominietej sekcji zostaja tylko znaczniki grup — grupa moze sie otwierac w jednej sekcji, a zamykac w innej
+    body = "\n".join(p if not any(c.startswith(k) for k in skip) else "\n".join(re.findall(r"<g\b[^>]*>|</g>", p))
+                     for (c, p) in parts)
     return f'<g transform="{transform}">\n{opening}\n{body}\n</g>\n</g>'
 
 
@@ -36,3 +39,8 @@ def barking(transform, skip=()):
 def topielec(transform, skip=()):
     """Stwor z mokradel. Uklad rysunku: oko (96,164), paszcza (92,212), stopy na y=582."""
     return drawing("topielec.svg", transform, skip)
+
+
+def wiedzma(transform, skip=()):
+    """Starucha w kapturze. Uklad rysunku: twarz z lewej (~x 80, y 150), stopy/cien na y~496."""
+    return drawing("wiedzma.svg", transform, skip)

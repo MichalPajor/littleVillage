@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „klątwa”: stwór pod nadprożem (rysunek autora; # pokaz: stwor)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="336" viewBox="20 92 168 336">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="translate(198 94) scale(-0.56 0.56)">
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M246 336C240 380 232 416 224 446" fill="none" stroke-width="34"/>
+<path d="M246 336C240 380 232 416 224 446" fill="none" stroke="#EDEBE6" stroke-width="26"/>
+<path d="M246 336C240 380 232 416 224 446" fill="none" stroke="url(#hatch)" stroke-width="26"/>
+<path d="M224 446C230 482 236 520 240 550" fill="none" stroke-width="26"/>
+<path d="M224 446C230 482 236 520 240 550" fill="none" stroke="#EDEBE6" stroke-width="18"/>
+<path d="M224 446C230 482 236 520 240 550" fill="none" stroke="url(#hatch)" stroke-width="18"/>
+<path d="M248 548C240 560 220 566 194 568C184 570 182 578 190 580H258C266 574 262 556 248 548Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M248 548C240 560 220 566 194 568C184 570 182 578 190 580H258C266 574 262 556 248 548Z" fill="url(#hatch)" stroke="none"/>
+<path d="M188 572l-8 4M188 578l-8 2" fill="none" stroke-width="3"/>
+<path d="M196 154C180 220 156 300 140 344C128 384 120 420 118 452" fill="none" stroke-width="24"/>
+<path d="M196 154C180 220 156 300 140 344C128 384 120 420 118 452" fill="none" stroke="#EDEBE6" stroke-width="16"/>
+<path d="M196 154C180 220 156 300 140 344C128 384 120 420 118 452" fill="none" stroke="url(#hatch)" stroke-width="16"/>
+<path d="M114 452C108 470 108 484 112 494" fill="none" stroke-width="20"/>
+<path d="M114 452C108 470 108 484 112 494" fill="none" stroke="#EDEBE6" stroke-width="13"/>
+<path d="M108 490C102 512 98 530 100 548M114 494C112 518 112 536 116 552M120 492C124 512 126 528 128 542" fill="none" stroke-width="8"/>
+<path d="M108 490C102 512 98 530 100 548M114 494C112 518 112 536 116 552M120 492C124 512 126 528 128 542" fill="none" stroke="#EDEBE6" stroke-width="3"/>
+<path d="M100 548l-2 8M116 552l1 8M128 542l3 7" fill="none" stroke-width="3"/>
+<path d="M196 138C214 112 246 104 262 126C280 156 276 220 262 270C256 296 250 316 246 332C242 350 222 356 206 346C196 320 192 290 184 262C176 236 170 210 176 186C180 168 186 152 196 138Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M262 132C276 160 274 220 260 268C254 292 248 312 244 330C238 300 246 250 252 210C256 180 258 154 262 132Z" fill="url(#hatch)" stroke="none"/>
+<path d="M240 112l6-5M256 120l7-3M268 140l7 0M274 162l7 2M276 186l7 3" fill="none" stroke-width="3"/>
+<path d="M186 196C196 200 210 200 222 194M184 214C196 218 212 218 226 212M186 232C198 236 214 236 228 230M190 250C202 254 216 254 228 248" fill="none" stroke-width="2.4"/>
+<path d="M200 290C206 300 210 312 212 324" fill="none" stroke-width="2.4"/>
+<path d="M228 330C222 372 210 410 198 442" fill="none" stroke-width="34"/>
+<path d="M228 330C222 372 210 410 198 442" fill="none" stroke="#EDEBE6" stroke-width="26"/>
+<circle cx="198" cy="442" r="15" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M198 442C204 480 210 518 214 550" fill="none" stroke-width="26"/>
+<path d="M198 442C204 480 210 518 214 550" fill="none" stroke="#EDEBE6" stroke-width="18"/>
+<path d="M210 470C214 500 216 520 218 540" fill="none" stroke="url(#hatchDense)" stroke-width="5"/>
+<path d="M222 546C212 560 190 566 160 568C150 570 146 578 156 580H232C240 574 236 556 222 546Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M176 568V580M192 566V580M206 562V580" fill="none" stroke-width="2.4"/>
+<path d="M154 571l-9 3M154 578l-9 1" fill="none" stroke-width="3.2"/>
+<path d="M204 140C182 138 152 148 130 160L138 188C156 180 176 178 186 184Z" fill="#EDEBE6" stroke="none"/>
+<path d="M204 140C182 138 152 148 130 160M138 188C156 180 176 178 186 184" fill="none" stroke-width="5"/>
+<path d="M150 170C160 168 172 168 182 172" fill="none" stroke-width="2.2"/>
+<path d="M98 130C120 116 152 124 162 150C168 190 162 242 158 300C150 262 140 232 130 222C126 190 118 160 98 130Z" fill="#000000" stroke-width="3"/>
+<path d="M150 160C146 138 124 128 104 132C84 136 72 152 74 172C76 190 80 206 86 222C92 236 106 238 112 226C118 212 126 202 140 194C152 186 154 174 150 160Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M140 150C148 162 148 178 138 190C130 196 122 204 116 214C118 196 128 182 140 150Z" fill="url(#hatch)" stroke="none"/>
+<ellipse cx="96" cy="164" rx="11" ry="9" fill="#000000" stroke-width="2"/>
+<circle cx="93" cy="163" r="2" fill="#FFFFFF" stroke="none"/>
+<path d="M82 152C90 148 102 148 112 154" fill="none" stroke-width="3.5"/>
+<path d="M77 180l2 4M81 179l2 4" fill="none" stroke-width="2.2"/>
+<path d="M82 196C90 194 100 198 108 206C106 218 98 228 92 228C86 218 83 206 82 196Z" fill="#000000" stroke-width="2"/>
+<path d="M86 198l2 6M92 198l1 6M98 201l0 6M88 224l1-6M94 225l0-6" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
+<path d="M118 176C122 182 124 190 122 198" fill="none" stroke-width="2.2"/>
+<path d="M104 132C96 146 90 156 86 152M114 130C110 148 106 160 104 170M126 130C130 170 122 208 126 262M140 134C148 178 140 222 146 284M152 142C160 184 156 234 160 302" fill="none" stroke-width="3.5"/>
+<path d="M206 154C202 206 192 256 180 298" fill="none" stroke-width="28"/>
+<path d="M206 154C202 206 192 256 180 298" fill="none" stroke="#EDEBE6" stroke-width="20"/>
+<circle cx="180" cy="298" r="13" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M180 298C172 344 162 404 150 466" fill="none" stroke-width="22"/>
+<path d="M180 298C172 344 162 404 150 466" fill="none" stroke="#EDEBE6" stroke-width="14"/>
+<path d="M162 330C158 360 154 390 150 420" fill="none" stroke="url(#hatchDense)" stroke-width="4"/>
+<path d="M148 464C142 478 142 490 148 500" fill="none" stroke-width="24"/>
+<path d="M148 464C142 478 142 490 148 500" fill="none" stroke="#EDEBE6" stroke-width="16"/>
+<path d="M140 496C134 520 130 542 132 564M148 500C146 526 144 548 148 570M156 500C158 524 160 544 164 562M160 478C170 490 172 502 168 514" fill="none" stroke-width="9"/>
+<path d="M140 496C134 520 130 542 132 564M148 500C146 526 144 548 148 570M156 500C158 524 160 544 164 562M160 478C170 490 172 502 168 514" fill="none" stroke="#EDEBE6" stroke-width="3.5"/>
+<path d="M132 564l-2 9M148 570l1 9M164 562l4 8M168 514l2 7" fill="none" stroke-width="3.4"/>
+<path d="M222 114C230 150 216 172 226 206C232 226 222 246 228 270" fill="none" stroke-width="3"/>
+<path d="M234 112C246 140 238 160 246 186" fill="none" stroke-width="2.4"/>
+<path d="M226 206C218 202 214 196 216 190C222 194 226 200 226 206ZM228 250C236 246 240 240 238 234C232 238 228 244 228 250Z" fill="#000000" stroke-width="1.5"/>
+<path d="M200 168C192 196 196 220 188 244" fill="none" stroke-width="2.4"/>
+<path d="M174 330C168 352 172 368 166 388" fill="none" stroke-width="2.4"/>
+<g fill="#000000" stroke="none">
+<path d="M126 272C129 277 130 280 126 282C122 280 123 277 126 272Z"/>
+<path d="M146 300C149 305 150 308 146 310C142 308 143 305 146 300Z"/>
+<path d="M160 318C163 323 164 326 160 328C156 326 157 323 160 318Z"/>
+<path d="M228 284C231 289 232 292 228 294C224 292 225 289 228 284Z"/>
+<path d="M120 572C123 577 124 580 120 582C116 580 117 577 120 572Z"/>
+<path d="M98 562C101 567 102 570 98 572C94 570 95 567 98 562Z"/>
+</g>
+</g>
+</g>
+</svg>

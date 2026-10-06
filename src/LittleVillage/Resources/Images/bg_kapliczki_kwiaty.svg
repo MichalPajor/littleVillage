@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „lata spokoju”: polne kwiaty (kołyszą się)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="40" viewBox="222 396 168 40">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M230 432C229 422 232 414 231 408" fill="none" stroke-width="1.4"/>
+<circle cx="231" cy="405" r="3" fill="#000000" stroke-width="1.2"/>
+<path d="M241 427C240 417 243 409 242 403" fill="none" stroke-width="1.4"/>
+<circle cx="242" cy="400" r="3" fill="#FFFFFF" stroke-width="1.2"/>
+<path d="M252 422C251 412 254 404 253 398" fill="none" stroke-width="1.4"/>
+<circle cx="253" cy="395" r="3" fill="#000000" stroke-width="1.2"/>
+<path d="M263 432C262 422 265 414 264 408" fill="none" stroke-width="1.4"/>
+<circle cx="264" cy="405" r="3" fill="#FFFFFF" stroke-width="1.2"/>
+<path d="M274 427C273 417 276 409 275 403" fill="none" stroke-width="1.4"/>
+<circle cx="275" cy="400" r="3" fill="#000000" stroke-width="1.2"/>
+<path d="M285 422C284 412 287 404 286 398" fill="none" stroke-width="1.4"/>
+<circle cx="286" cy="395" r="3" fill="#FFFFFF" stroke-width="1.2"/>
+<path d="M296 432C295 422 298 414 297 408" fill="none" stroke-width="1.4"/>
+<circle cx="297" cy="405" r="3" fill="#000000" stroke-width="1.2"/>
+<path d="M307 427C306 417 309 409 308 403" fill="none" stroke-width="1.4"/>
+<circle cx="308" cy="400" r="3" fill="#FFFFFF" stroke-width="1.2"/>
+<path d="M318 422C317 412 320 404 319 398" fill="none" stroke-width="1.4"/>
+<circle cx="319" cy="395" r="3" fill="#000000" stroke-width="1.2"/>
+<path d="M329 432C328 422 331 414 330 408" fill="none" stroke-width="1.4"/>
+<circle cx="330" cy="405" r="3" fill="#FFFFFF" stroke-width="1.2"/>
+<path d="M340 427C339 417 342 409 341 403" fill="none" stroke-width="1.4"/>
+<circle cx="341" cy="400" r="3" fill="#000000" stroke-width="1.2"/>
+<path d="M351 422C350 412 353 404 352 398" fill="none" stroke-width="1.4"/>
+<circle cx="352" cy="395" r="3" fill="#FFFFFF" stroke-width="1.2"/>
+<path d="M362 432C361 422 364 414 363 408" fill="none" stroke-width="1.4"/>
+<circle cx="363" cy="405" r="3" fill="#000000" stroke-width="1.2"/>
+<path d="M373 427C372 417 375 409 374 403" fill="none" stroke-width="1.4"/>
+<circle cx="374" cy="400" r="3" fill="#FFFFFF" stroke-width="1.2"/>
+</g>
+</svg>
