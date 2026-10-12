@@ -39,6 +39,15 @@ Ale on już ocierał usta rękawem i był przy drzwiach. Zanim zdążyła powied
 Trawa o świcie była mokra od rosy i zimna, przez co buty szybko mu przemakały. Pachniała tak, jak pachnie tylko o tej porze – świeżo, zielono, trochę jak ogórek przekrojony na pół. Nad łąkami wisiały jeszcze strzępy mgły, ale słońce już je rozganiało, a w każdej kropli na źdźbłach zapalała się maleńka iskra. Skowronki wzbijały się w niebo i śpiewały tak wysoko, że nie sposób było ich dojrzeć.
 U Stasiowych czekali już na niego. Franek, najstarszy z wnuków gospodarza, był rosły i o cztery lata starszy od Jaromira. Jego brat Antek, młodszy od niego o dwie zimy, dłubał patykiem w ziemi, kopiąc rowek, którym chciał przeprowadzić wodę z jednej kałuży do drugiej. Po chwili od strony jeziora nadbiegała Hanka, córka kowala, z warkoczem podskakującym na plecach. # pokaz: dzieci
 – Co dziś robimy? – pytał Franek, choć wszyscy wiedzieli, że i tak zdecyduje on sam. # dalej
+-> wojna
+
+= wojna
+# tlo: laka_bitwa
+Najczęściej zaczynało się od wojny.
+Każdy miał swój miecz – okorowany kij z leszczyny albo z wierzby, z zaostrzonym końcem. Jaromir nosił go zatkniętego za pasek, a gdy musiał się z nim rozstać, zawsze odstawiał go na swoje miejsce: w róg stodoły. Nie było w całej wsi równiejszej broni – gładkiej od ciągłego trzymania i ciemnej od potu dłoni. { figurka_u_staruchy: Ojciec bez słowa pomógł mu go zaostrzyć, wieczorem przy progu. | Ojciec pomógł mu go wystrugać, śmiejąc się, że takim orężem to i smoka można by pokonać. }
+Wrogiem były chwasty. Na miedzach i przy rowach rosły ich nieprzebrane armie: gorysze pagórkowe z kwiatostanami wielkimi jak talerze, osty najeżone fioletowymi głowami i pokrzywy sięgające aż po uszy. Dzieci wbiegały na łąki z okrzykiem, od którego płoszyły się wróble. Kije świstały w powietrzu, łodygi pękały z soczystym trzaskiem, a kolczaste łby fruwały dookoła. # pokaz: bitwa
+Po każdej bitwie przychodził czas na liczenie ran. Nierzadko były to kolana zdarte do krwi, łydki pokryte bąblami od parzydełek pokrzyw, podrapane przedramiona i dłonie. Hanka znała na wszystko sposób: przykładała do oparzeń liście babki i kazała trzymać, dopóki nie przestanie piec. Nikt nie płakał – no, może czasem Antek, ale tylko odrobinę, i zaraz potem udawał, że to pot spływa mu do oczu.
+Potem padali w trawę, zdyszani i szczęśliwi, i leżeli na plecach z rozrzuconymi rękami. Nad nimi płynęły białe chmury, z których każdy wyczytywał coś innego – konia, okręt, starą babę z miotłą, niedźwiedzia. Pachniało rozgrzaną ziemią, rumiankiem i zgniecionym zielem. Gdzieś blisko brzęczał trzmiel, a pasikoniki strzelały spod rąk jak iskry z ogniska. # dalej
 -> rozdzial_pierwszy_ciag_dalszy
 
 

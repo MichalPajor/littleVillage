@@ -761,4 +761,22 @@ public sealed class GameStoryTests
         Assert.EndsWith("że i tak zdecyduje on sam.", morning.Blocks[^1].Text);
         Assert.False(Has(pages, "Józek"));
     }
+
+    [Theory]
+    [InlineData(false, "Ojciec pomógł mu go wystrugać, śmiejąc się")]
+    [InlineData(true, "Ojciec bez słowa pomógł mu go zaostrzyć")]
+    public void Chapter_one_war_with_weeds_depends_on_the_father(bool cursed, string father)
+    {
+        int[] choices = cursed
+            ? [.. ToTownWithDogAndFigurine, SellToWitch, TellWife]
+            : [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
+        var pages = Play(CreateEngine(), choices);
+
+        var war = pages.First(p => p.BackgroundKey == "laka_bitwa");
+        Assert.Equal("Najczęściej zaczynało się od wojny.", war.Blocks[0].Text);
+        Assert.Contains(war.Blocks, b => b.Text.Contains(father));
+        Assert.Contains(war.Blocks, b => b.Reveal == "bitwa" && b.Text.Contains("kolczaste łby fruwały dookoła"));
+        Assert.EndsWith("jak iskry z ogniska.", war.Blocks[^1].Text);
+        Assert.Equal(PageEnding.Continue, war.Ending);
+    }
 }

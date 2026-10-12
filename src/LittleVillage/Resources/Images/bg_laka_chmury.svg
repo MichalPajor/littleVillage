@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „wojna z chwastami”: chmury jak koń i okręt (dryfują)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="70" viewBox="50 70 270 70">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M60 96C58 84 70 78 82 82C92 74 112 74 120 82C130 78 142 84 140 94C150 92 158 98 154 106H64C56 106 54 98 60 96Z" fill="#FFFFFF" stroke-width="2"/><path d="M140 94C146 84 156 78 162 82C166 86 162 92 156 96" fill="#FFFFFF" stroke-width="2"/><path d="M74 106l-4 10M88 106l-2 10M126 106l2 10M140 106l4 10" fill="none" stroke-width="2"/>
+<path d="M232 120H312L300 132H244Z" fill="#FFFFFF" stroke-width="2"/><path d="M270 120V88M270 90C284 96 288 108 272 116M268 94C256 100 254 110 266 116" fill="#FFFFFF" stroke-width="2"/>
+</g>
+</svg>
