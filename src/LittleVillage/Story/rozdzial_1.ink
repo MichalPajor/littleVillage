@@ -27,6 +27,18 @@ Matka, Agnieszka, była od niego młodsza o dobre piętnaście lat. Pachniała c
     W kącie izby, na zydlu, siadywała babka Marianna, zgarbiona i cicha. Czasem gładziła wnuka po głowie i patrzyła na niego tak, jakby widziała w nim kogoś innego.
 }
 Ale w domu bywał niewiele. Lato należało do niego – całe, od pierwszych upałów aż do żniw – i jego dni wyglądały niemal tak samo, a mimo to żaden nie był podobny do poprzedniego. # dalej
+-> poranek
+
+= poranek
+# tlo: poranek
+Budziło go pianie koguta i smuga światła, która przeciskała się przez szparę w okiennicy i kładła mu się złotym paskiem na twarzy. Przez chwilę leżał jeszcze pod pierzyną, słuchając, jak matka krząta się przy piecu – jak bulgota woda gotowana w garnkach, jak trzaska podsycany ogień pod blachą, jak skrzypią deski pod jej krokami. Z izby płynął zapach podpłomyków i świeżo upieczonego chleba.
+Potem przypominał sobie, że jest lato, i zrywał się z posłania jak oparzony.
+Śniadanie jadł prawie na stojąco. Gruba pajda posmarowana masłem, kubek mleka prosto od krowy, jeszcze ciepłego, czasem biały ser. Matka kręciła głową z uśmiechem.
+– Usiądźże, synku. Nikt ci tego nie zabierze. Nie braknie ci dnia na zabawę z dzieciakami.
+Ale on już ocierał usta rękawem i był przy drzwiach. Zanim zdążyła powiedzieć, żeby uważał, krzyknął tylko: – Idę do sąsiadów! – i już pędził przez podwórze, rozpędzając kury, które z gdakaniem uciekały mu spod nóg. # pokaz: jaromir
+Trawa o świcie była mokra od rosy i zimna, przez co buty szybko mu przemakały. Pachniała tak, jak pachnie tylko o tej porze – świeżo, zielono, trochę jak ogórek przekrojony na pół. Nad łąkami wisiały jeszcze strzępy mgły, ale słońce już je rozganiało, a w każdej kropli na źdźbłach zapalała się maleńka iskra. Skowronki wzbijały się w niebo i śpiewały tak wysoko, że nie sposób było ich dojrzeć.
+U Stasiowych czekali już na niego. Franek, najstarszy z wnuków gospodarza, był rosły i o cztery lata starszy od Jaromira. Jego brat Antek, młodszy od niego o dwie zimy, dłubał patykiem w ziemi, kopiąc rowek, którym chciał przeprowadzić wodę z jednej kałuży do drugiej. Po chwili od strony jeziora nadbiegała Hanka, córka kowala, z warkoczem podskakującym na plecach. # pokaz: dzieci
+– Co dziś robimy? – pytał Franek, choć wszyscy wiedzieli, że i tak zdecyduje on sam. # dalej
 -> rozdzial_pierwszy_ciag_dalszy
 
 

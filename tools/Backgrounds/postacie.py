@@ -79,3 +79,32 @@ def axe_arms(sx, sy, k=1.0):
             f'<path d="M{Q(12, -22)}L{Q(30, -56)}" fill="none" stroke-width="{3.2 * k:.1f}"/>'
             f'<path d="M{Q(24, -50)}L{Q(40, -62)}C{Q(44, -56)} {Q(42, -46)} {Q(36, -42)}L{Q(30, -46)}Z" fill="#FFFFFF" stroke-width="{2.2 * k:.1f}"/>'
             f'</g>')
+
+
+def running_child(x, y, k=1.0, facing=1):
+    """Biegnacy chlopiec z profilu (facing=1 w prawo, -1 w lewo): noga w wykroku, rece w ruchu."""
+    f = facing
+    P = lambda dx, dy: f"{x + dx * f * k:.1f} {y + dy * k:.1f}"
+    return (f'<g stroke-width="2">'
+            f'<path d="M{P(-2, -16)}L{P(-12, -2)}L{P(-16, 0)}M{P(2, -16)}L{P(8, -6)}L{P(14, -2)}" fill="none" stroke-width="{3.4 * k:.1f}"/>'
+            f'<path d="M{P(-6, -15)}C{P(-8, -24)} {P(-4, -32)} {P(1, -33)}C{P(6, -32)} {P(8, -24)} {P(5, -15)}Z" fill="#000000"/>'
+            f'<circle cx="{x + 3 * f * k:.1f}" cy="{y - 39 * k:.1f}" r="{6 * k:.1f}" fill="#000000"/>'
+            f'<path d="M{P(-3, -42)}c{2 * f * k:.1f} {-6 * k:.1f} {10 * f * k:.1f} {-6 * k:.1f} {12 * f * k:.1f} 0" fill="#000000"/>'
+            f'<path d="M{P(-2, -28)}L{P(-10, -20)}M{P(3, -28)}L{P(12, -32)}" fill="none" stroke-width="{2.8 * k:.1f}"/>'
+            f'</g>')
+
+
+def girl(x, y, k=1.0, running=False, facing=1):
+    """Dziewczynka w sukience z warkoczem (przodem albo w biegu z profilu)."""
+    f = facing
+    P = lambda dx, dy: f"{x + dx * f * k:.1f} {y + dy * k:.1f}"
+    legs = (f'<path d="M{P(-3, -10)}L{P(-10, 0)}M{P(2, -10)}L{P(9, -2)}" fill="none" stroke-width="{3 * k:.1f}"/>' if running else
+            f'<path d="M{P(-3, -10)}V{y:.1f}M{P(3, -10)}V{y:.1f}" fill="none" stroke-width="{3 * k:.1f}"/>')
+    return (f'<g stroke-width="2">{legs}'
+            f'<path d="M{P(-4, -30)}L{P(-11, -9)}Q{P(0, -6)} {P(11, -9)}L{P(4, -30)}Z" fill="#000000"/>'
+            f'<path d="M{P(-6, -29)}C{P(-7, -34)} {P(-4, -36)} {P(0, -36)}C{P(4, -36)} {P(7, -34)} {P(6, -29)}Z" fill="#000000"/>'
+            f'<circle cx="{x}" cy="{y - 42 * k:.1f}" r="{5.6 * k:.1f}" fill="#000000"/>'
+            f'<path d="M{P(-4, -44)}C{P(-10, -40)} {P(-12, -32)} {P(-16, -26)}" fill="none" stroke-width="{2.6 * k:.1f}"/>'   # warkocz
+            f'<circle cx="{x - 16 * f * k:.1f}" cy="{y - 25 * k:.1f}" r="{1.8 * k:.1f}" fill="#FFFFFF" stroke-width="1"/>'      # kokardka
+            f'<path d="M{P(-3, -30)}L{P(-9, -22)}M{P(3, -30)}L{P(10, -24)}" fill="none" stroke-width="{2.4 * k:.1f}"/>'
+            f'</g>')

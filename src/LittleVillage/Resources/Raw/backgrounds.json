@@ -475,6 +475,22 @@
         {"image": "bg_lato_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
         {"image": "bg_lato_kwiaty.png", "x": 0, "y": 396, "width": 390, "height": 44, "animation": {"type": "sway", "amplitude": 2, "duration": 3400, "anchorX": 0.5, "anchorY": 1}}
       ]
+    },
+    "poranek": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_poranek_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_poranek_mgla.png", "x": 130, "y": 164, "width": 290, "height": 30, "animation": {"type": "drift", "amplitude": 10, "duration": 15000}},
+        {"image": "bg_poranek_skowronki.png", "x": 90, "y": 60, "width": 160, "height": 50, "animation": {"type": "bob", "amplitude": 6, "duration": 2200}},
+        {"image": "bg_poranek_dym.png", "x": 54, "y": 116, "width": 30, "height": 46, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_poranek_kury.png", "x": 120, "y": 330, "width": 120, "height": 40, "animation": {"type": "bob", "amplitude": 1.2, "duration": 700}},
+        {"image": "bg_poranek_rosa.png", "x": 10, "y": 350, "width": 370, "height": 80, "animation": {"type": "flicker", "amplitude": 0.2, "duration": 1600}},
+        {"image": "bg_poranek_dzieci.png", "x": 200, "y": 252, "width": 190, "height": 110, "revealOn": "dzieci"},
+        {"image": "bg_poranek_jaromir.png", "x": 126, "y": 360, "width": 60, "height": 64, "animation": {"type": "bob", "amplitude": 1.6, "duration": 360}, "revealOn": "jaromir"},
+        {"image": "bg_poranek_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+      ]
     }
   }
 }

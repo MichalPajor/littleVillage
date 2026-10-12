@@ -747,4 +747,18 @@ public sealed class GameStoryTests
         Assert.Equal(PageEnding.Continue, summer.Ending);
         Assert.DoesNotContain(summer.Blocks, b => b.Text.Contains("  "));
     }
+
+    [Fact]
+    public void Chapter_one_morning_runs_to_the_neighbours()
+    {
+        var pages = Play(CreateEngine(), Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet);
+
+        var morning = pages.First(p => p.BackgroundKey == "poranek");
+        Assert.Equal(PageEnding.Continue, morning.Ending);
+        Assert.StartsWith("Budziło go pianie koguta", morning.Blocks[0].Text);
+        Assert.Contains(morning.Blocks, b => b.Reveal == "jaromir" && b.Text.Contains("– Idę do sąsiadów! –"));
+        Assert.Contains(morning.Blocks, b => b.Reveal == "dzieci" && b.Text.Contains("nadbiegała Hanka"));
+        Assert.EndsWith("że i tak zdecyduje on sam.", morning.Blocks[^1].Text);
+        Assert.False(Has(pages, "Józek"));
+    }
 }

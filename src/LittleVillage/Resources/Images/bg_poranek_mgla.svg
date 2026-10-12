@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „poranek”: strzępy mgły nad łąką (dryfują)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="30" viewBox="130 164 290 30">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M146 174 Q159 172 173 174 Q186 176 200 174 Q213 172 226 174 Q240 176 253 174 Q267 172 280 174 C292 177 284 180 270 180 Q267 178 253 180 Q240 182 226 180 Q213 178 200 180 Q186 182 173 180 Q159 178 146 180 C134 180 134 174 146 174Z" fill="#EDEBE6" stroke-width="1.6"/>
+<path d="M296 178 Q307 176 319 178 Q330 180 342 178 Q353 176 364 178 Q376 180 387 178 Q399 176 410 178 C422 181 414 184 400 184 Q399 182 387 184 Q376 186 364 184 Q353 182 342 184 Q330 186 319 184 Q307 182 296 184 C284 184 284 178 296 178Z" fill="#EDEBE6" stroke-width="1.6"/>
+</g>
+</svg>
