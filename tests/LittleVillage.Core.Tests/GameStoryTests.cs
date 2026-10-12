@@ -712,7 +712,39 @@ public sealed class GameStoryTests
     private static void AssertPrologueEndsWithJaromir(List<StoryPage> pages)
     {
         Assert.True(Has(pages, "Dali mu na imię Jaromir."));
+        Assert.True(Has(pages, "kapliczki"));
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec prologu._") && p.Ending == PageEnding.Continue);
         Assert.Equal(PageEnding.End, pages[^1].Ending);
-        Assert.Equal("_Koniec prologu. Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+    }
+
+    // ----- Rozdzial pierwszy: Lato -----
+
+    public static TheoryData<int[], string, string?, bool> ChapterOneVariants() => new()
+    {
+        // figurka u staruchy: dom na pagorku, milczacy ojciec; z psem zyje babka Marianna
+        { [.. ToTownWithDogAndFigurine, SellToWitch, TellWife], "Jaromir mieszkał w chałupie na pagórku", "Mówił mało", true },
+        { [Marsh, Stay, StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToWitch, KeepQuiet], "Jaromir mieszkał w chałupie na pagórku", "Mówił mało", false },
+        // spokojne lata: chata dziadka Macka w wybranym miejscu, ojciec opowiada bajki
+        { [Forest, GoOut, FeedDog, StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, TellWife], "Jaromir mieszkał w chacie pod lasem", "Lubił żartować", false },
+        { [Marsh, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet], "Jaromir mieszkał w chacie przy mokradłach", "Lubił żartować", false },
+        { [Lake, Stay, Leave, SendBoyAway, Avoid, WalkOn, TellWife], "Jaromir mieszkał w chacie nad jeziorem", "Lubił żartować", false },
+    };
+
+    [Theory]
+    [MemberData(nameof(ChapterOneVariants))]
+    public void Chapter_one_follows_every_prologue_ending(int[] choices, string home, string? father, bool grandmother)
+    {
+        var pages = Play(CreateEngine(), choices);
+
+        var summer = pages.First(p => p.BackgroundKey == "zapadlina_lato");
+        Assert.Equal("Rozdział pierwszy", summer.Blocks[0].Text);
+        Assert.Equal("Lato", summer.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.Contains(summer.Blocks, b => b.Text.Contains("Przy drogach pojawiły się kapliczki"));
+        Assert.Contains(summer.Blocks, b => b.Text.StartsWith(home));
+        Assert.Contains(summer.Blocks, b => b.Text.Contains(father!));
+        Assert.Equal(grandmother, Has([summer], "babka Marianna"));
+        Assert.Equal(PageEnding.Continue, summer.Ending);
+        Assert.DoesNotContain(summer.Blocks, b => b.Text.Contains("  "));
     }
 }

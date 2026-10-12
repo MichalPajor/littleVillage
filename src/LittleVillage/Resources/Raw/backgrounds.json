@@ -457,9 +457,23 @@
         {"image": "bg_kapliczki_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_kapliczki_chmury.png", "x": 60, "y": 70, "width": 230, "height": 40, "animation": {"type": "drift", "amplitude": 12, "duration": 17000}},
         {"image": "bg_kapliczki_ptaki.png", "x": 120, "y": 110, "width": 150, "height": 40, "animation": {"type": "bob", "amplitude": 5, "duration": 2400}},
-        {"image": "bg_kapliczki_kapliczki.png", "x": 40, "y": 150, "width": 320, "height": 280, "revealOn": "kapliczki"},
+        {"image": "bg_kapliczki_kapliczki.png", "x": 16, "y": 150, "width": 360, "height": 280, "revealOn": "kapliczki"},
         {"image": "bg_kapliczki_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
         {"image": "bg_kapliczki_kwiaty.png", "x": 222, "y": 396, "width": 168, "height": 40, "animation": {"type": "sway", "amplitude": 2, "duration": 3400, "anchorX": 0.5, "anchorY": 1}}
+      ]
+    },
+    "zapadlina_lato": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_lato_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_lato_chmury.png", "x": 110, "y": 74, "width": 230, "height": 40, "animation": {"type": "drift", "amplitude": 12, "duration": 17000}},
+        {"image": "bg_lato_ptaki.png", "x": 100, "y": 104, "width": 170, "height": 40, "animation": {"type": "bob", "amplitude": 5, "duration": 2400}},
+        {"image": "bg_lato_dym.png", "x": 80, "y": 220, "width": 200, "height": 60, "animation": {"type": "sway", "amplitude": 2.5, "duration": 5200, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_lato_kapliczki.png", "x": 14, "y": 150, "width": 376, "height": 280},
+        {"image": "bg_lato_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
+        {"image": "bg_lato_kwiaty.png", "x": 0, "y": 396, "width": 390, "height": 44, "animation": {"type": "sway", "amplitude": 2, "duration": 3400, "anchorX": 0.5, "anchorY": 1}}
       ]
     }
   }

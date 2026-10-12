@@ -66,7 +66,8 @@ def shrine(x, y, s=1.0):
     return "".join(g)
 
 
-L["kapliczki"] = (40, 150, 320, 280, group([shrine(84, 418, 1.3), shrine(282, 252, 0.8), shrine(214, 226, 0.55)]))
+L["kapliczki"] = (16, 150, 360, 280, group([shrine(84, 418, 1.3), shrine(282, 252, 0.8), shrine(214, 226, 0.55),
+                                            shrine(150, 290, 0.5), shrine(338, 336, 0.7), shrine(40, 262, 0.45), shrine(250, 196, 0.36)]))
 
 p = ['<path d="M-10 420H400V844H-10Z" fill="#EDEBE6" stroke="none"/>']
 for i in range(20):

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „Zapadlina latem”: chmury (dryfują)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="40" viewBox="110 74 230 40">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M120 88 Q128 84 136 88 Q144 92 152 88 Q160 84 168 88 Q176 92 184 88 Q192 84 200 88 C212 94 204 99 190 99 Q192 95 184 99 Q176 103 168 99 Q160 95 152 99 Q144 103 136 99 Q128 95 120 99 C108 99 108 88 120 88Z" fill="#FFFFFF" stroke-width="2"/>
+<path d="M240 100 Q248 97 256 100 Q264 103 272 100 Q280 97 288 100 Q296 103 304 100 Q312 97 320 100 C332 105 324 110 310 110 Q312 107 304 110 Q296 113 288 110 Q280 107 272 110 Q264 113 256 110 Q248 107 240 110 C228 110 228 100 240 100Z" fill="#FFFFFF" stroke-width="2"/>
+</g>
+</svg>

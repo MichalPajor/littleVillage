@@ -199,11 +199,12 @@ Przesiedział w piwniczce do rana. Tak, jak obiecał ojcu. # dalej
 # tlo: izba_andrzeja
 { los_psa == oswojony:
     Rano zajrzał do nich Andrzej. Zastał Mariannę na klepisku, z głową męża na kolanach. Nie płakała już. Pies leżał obok i nie pozwalał nikomu podejść.
-    Maćka pochowali na cmentarzu przy kościele w mieście. Wdowa do chaty już nie wróciła – zamieszkała z chłopcem u przyjaciela męża, który przyjął ich pod swój dach jak rodzinę.
+    Maćka pochowali na cmentarzu przy kościele w mieście. Wdowa do chaty już nie wróciła – zamieszkała z chłopcem u gospodarza z pagórka, który przyjął ich pod swój dach jak rodzinę.
 - else:
     Rano zajrzał do nich Andrzej. Drzwi chaty leżały w trawie, wyrwane razem z futryną. W izbie nie było nikogo – tylko ślady, które ciągnęły się w stronę bagna, i ciemne plamy na klepisku. Długo stał w progu, zanim usłyszał spod podłogi ciche pochlipywanie.
     Chłopiec nie powiedział ani słowa – ani tego dnia, ani przez wiele następnych. Andrzej zabrał go do siebie i wychował razem ze Stasiem jak własne dziecko.
 }
+Po tamtej nocy wieś zaczęła stawiać kapliczki – przy drogach, na rozstajach, na skraju lasu i przy kładce nad mokradłami. Z każdym rokiem przybywało ich więcej, aż w całej niecce nie zostało miejsce, z którego nie byłoby widać choć jednej.
 Dobrosław wyrósł na milczącego, silnego mężczyznę. Nigdy nie chodził nad bagna i nigdy nie zszedł do żadnej piwnicy. Ożenił się z dziewczyną z sąsiedniej wsi i wkrótce urodził mu się syn.
 Dali mu na imię Jaromir. # dalej
 -> prolog_ciag_dalszy
@@ -219,7 +220,7 @@ Dali mu na imię Jaromir. # dalej
 Topielec nie przyszedł. Ani tego roku, ani następnego.
 Maciek i Marianna orali pole, które z każdym rokiem było trochę większe. Dobrosław rósł szybko – najpierw pasał gęsi, potem chodził za pługiem, aż w końcu sam prowadził konia.{ los_psa == oswojony: Pies zestarzał się przy progu i pewnej zimy po prostu nie wstał. Pochowali go pod lasem.}
 Czasem, w długie zimowe wieczory, Maciek opowiadał chłopcu o pierwszej wiośnie w Zapadlinie. O wyciu w zaroślach, o postaci z rękami do ziemi, o głosie, który wołał go znad bagien. O zielarce spalonej w chacie nad jeziorem. Syn słuchał z wypiekami na twarzy, ale traktował to jak bajki – takie, jakie opowiada się dzieciom, żeby nie chodziły same nad wodę.
-Kiedy był już dorosły, wieś zaczęła stawiać kapliczki. Jedną przy drodze z Bukowego Grzbietu, drugą na skraju lasu, trzecią przy kładce nad mokradłami. Ludzie mówili, że od tamtej pory światełka nad bagnami mrugają rzadziej. Dobrosław w to nie wierzył, ale co roku w maju przystrajał je kwiatami razem z innymi. # pokaz: kapliczki
+Kiedy był już dorosły, wieś zaczęła stawiać kapliczki. Jedną przy drodze z Bukowego Grzbietu, drugą na skraju lasu, trzecią przy kładce nad mokradłami. Potem przybywały kolejne, aż stały niemal przy każdej miedzy. Ludzie mówili, że od tamtej pory światełka nad bagnami mrugają rzadziej. Dobrosław w to nie wierzył, ale co roku w maju przystrajał je kwiatami razem z innymi. # pokaz: kapliczki
 Rodzice zmarli ze starości, jedno po drugim, w tej samej chacie, którą Maciek kiedyś zbudował od pierwszego bala. On sam ożenił się z dziewczyną z sąsiedniej wsi i wkrótce urodził mu się syn.
 Dali mu na imię Jaromir. # dalej
 -> prolog_ciag_dalszy

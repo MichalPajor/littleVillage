@@ -435,8 +435,8 @@ Potem ruszył gościńcem w stronę miasta. # dalej
 -> miasto
 
 
-// Koniec prologu — dalej akt pierwszy z Jaromirem (do napisania).
+// Koniec prologu — dalej rozdział pierwszy z Jaromirem.
 === prolog_ciag_dalszy ===
 # ozdobnik
-_Koniec prologu. Ciąg dalszy nastąpi…_
--> END
+_Koniec prologu._ # dalej
+-> rozdzial_pierwszy
