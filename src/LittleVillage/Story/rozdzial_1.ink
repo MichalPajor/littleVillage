@@ -48,6 +48,15 @@ Każdy miał swój miecz – okorowany kij z leszczyny albo z wierzby, z zaostrz
 Wrogiem były chwasty. Na miedzach i przy rowach rosły ich nieprzebrane armie: gorysze pagórkowe z kwiatostanami wielkimi jak talerze, osty najeżone fioletowymi głowami i pokrzywy sięgające aż po uszy. Dzieci wbiegały na łąki z okrzykiem, od którego płoszyły się wróble. Kije świstały w powietrzu, łodygi pękały z soczystym trzaskiem, a kolczaste łby fruwały dookoła. # pokaz: bitwa
 Po każdej bitwie przychodził czas na liczenie ran. Nierzadko były to kolana zdarte do krwi, łydki pokryte bąblami od parzydełek pokrzyw, podrapane przedramiona i dłonie. Hanka znała na wszystko sposób: przykładała do oparzeń liście babki i kazała trzymać, dopóki nie przestanie piec. Nikt nie płakał – no, może czasem Antek, ale tylko odrobinę, i zaraz potem udawał, że to pot spływa mu do oczu.
 Potem padali w trawę, zdyszani i szczęśliwi, i leżeli na plecach z rozrzuconymi rękami. Nad nimi płynęły białe chmury, z których każdy wyczytywał coś innego – konia, okręt, starą babę z miotłą, niedźwiedzia. Pachniało rozgrzaną ziemią, rumiankiem i zgniecionym zielem. Gdzieś blisko brzęczał trzmiel, a pasikoniki strzelały spod rąk jak iskry z ogniska. # dalej
+-> luki
+
+= luki
+# tlo: luki
+Kiedy miecze się nudziły, przychodziła pora na łuki.
+Najlepsze były z leszczyny, która rosła gęsto na skraju lasu – prosta, giętka i mocna. Franek wybierał pręt długi na wysokość chłopca, a Jaromir obstrugiwał go nożykiem, który dostał od ojca na imieniny. Trzeba było uważać, żeby nie zebrać za dużo drewna w jednym miejscu, bo wtedy łuk pękał przy pierwszym naciągnięciu. Na cięciwę szedł gruby sznurek, wykradziony matce z kosza, albo – w lepsze dni – kawałek żyłki.
+Strzały robili również z leszczyny, ale zdecydowanie cieńszej. Grotów nie było – za to czubek zaostrzali tak, że kłuł jak cierń, a na drugim końcu – lotki z papieru albo z piór zbieranych na podwórzach po całej wsi.
+Celem był snop słomy postawiony na miedzy, z kołem namalowanym sadzą. Pociski leciały dość prosto, wbijały się w ziemię albo w cel, a czasem szybowały wysoko w niebo. Najlepiej szło to Hance. Mrużyła jedno oko, wysuwała koniuszek języka i nie chybiała ani razu – a chłopcy, choć za nic by się do tego nie przyznali, podziwiali ją za to bardziej niż za cokolwiek innego. # pokaz: hanka
+Raz Jaromir trafił w sam środek koła. Przez resztę dnia chodził tak dumny, że zapomniał nawet o obiedzie, i matka musiała wołać go wiele razy. # pokaz: trafienie # dalej
 -> rozdzial_pierwszy_ciag_dalszy
 
 

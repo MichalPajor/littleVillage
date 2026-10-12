@@ -779,4 +779,17 @@ public sealed class GameStoryTests
         Assert.EndsWith("jak iskry z ogniska.", war.Blocks[^1].Text);
         Assert.Equal(PageEnding.Continue, war.Ending);
     }
+
+    [Fact]
+    public void Chapter_one_bows_end_with_Jaromirs_bullseye()
+    {
+        var pages = Play(CreateEngine(), Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet);
+
+        var bows = pages.First(p => p.BackgroundKey == "luki");
+        Assert.Equal("Kiedy miecze się nudziły, przychodziła pora na łuki.", bows.Blocks[0].Text);
+        Assert.Contains(bows.Blocks, b => b.Text.Contains("Franek wybierał pręt długi na wysokość chłopca"));
+        Assert.Contains(bows.Blocks, b => b.Reveal == "hanka" && b.Text.StartsWith("Celem był snop słomy"));
+        Assert.Contains(bows.Blocks, b => b.Reveal == "trafienie" && b.Text.StartsWith("Raz Jaromir trafił w sam środek koła."));
+        Assert.Equal(PageEnding.Continue, bows.Ending);
+    }
 }

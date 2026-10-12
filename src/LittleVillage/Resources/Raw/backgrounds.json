@@ -507,6 +507,19 @@
         {"image": "bg_laka_rumianki.png", "x": 0, "y": 396, "width": 390, "height": 40, "animation": {"type": "sway", "amplitude": 2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}},
         {"image": "bg_laka_trzmiel.png", "x": 300, "y": 360, "width": 30, "height": 24, "animation": {"type": "bob", "amplitude": 4, "duration": 800}}
       ]
+    },
+    "luki": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_luki_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_luki_klosy.png", "x": 0, "y": 230, "width": 390, "height": 40, "animation": {"type": "sway", "amplitude": 1.4, "duration": 3000, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_luki_strzala.png", "x": 120, "y": 120, "width": 80, "height": 30, "animation": {"type": "drift", "amplitude": 26, "duration": 3000}},
+        {"image": "bg_luki_trafienie.png", "x": 262, "y": 314, "width": 46, "height": 24, "revealOn": "trafienie"},
+        {"image": "bg_luki_hanka.png", "x": 16, "y": 310, "width": 196, "height": 112, "revealOn": "hanka"},
+        {"image": "bg_luki_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+      ]
     }
   }
 }
