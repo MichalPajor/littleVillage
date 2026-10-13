@@ -12,6 +12,10 @@ public sealed class SceneBackgroundView : ContentView
         nameof(Scene), typeof(SceneBackground), typeof(SceneBackgroundView),
         propertyChanged: (b, o, n) => ((SceneBackgroundView)b).OnSceneChanged((SceneBackground?)o, (SceneBackground?)n));
 
+    public static readonly BindableProperty IsInvertedProperty = BindableProperty.Create(
+        nameof(IsInverted), typeof(bool), typeof(SceneBackgroundView), false,
+        propertyChanged: (b, _, n) => ((SceneBackgroundView)b)._current?.SetInverted((bool)n));
+
     private const string AnimationName = "SceneLayer";
     private const uint CrossFadeDuration = 700;
 
@@ -34,6 +38,13 @@ public sealed class SceneBackgroundView : ContentView
         set => SetValue(SceneProperty, value);
     }
 
+    /// <summary>Tryb ciemny: tło odwrócone filtrem kolorów (jasny papier ciemnieje, kreska jaśnieje, czerwień zostaje).</summary>
+    public bool IsInverted
+    {
+        get => (bool)GetValue(IsInvertedProperty);
+        set => SetValue(IsInvertedProperty, value);
+    }
+
     /// <summary>
     /// Ukrywa wszystkie warstwy odsłaniane przez tekst (<c>revealOn</c>) poza podanymi — te widać od razu.
     /// Wywoływane przy każdej nowej stronie fabuły.
@@ -51,7 +62,7 @@ public sealed class SceneBackgroundView : ContentView
         }
 
         var previous = _current;
-        var next = new SceneLayerSet(newScene) { Opacity = previous is null ? 1 : 0 };
+        var next = new SceneLayerSet(newScene, IsInverted) { Opacity = previous is null ? 1 : 0 };
         _current = next;
 
         _root.Add(next);
@@ -80,15 +91,18 @@ public sealed class SceneBackgroundView : ContentView
         // (w tym mruganie i migotanie, które same zmieniają przezroczystość) działają na obrazku.
         private readonly List<(Image View, ContentView Holder, BackgroundLayer Layer)> _layers = [];
         private double _scale = 1;
+        private bool _inverted;
 
-        public SceneLayerSet(SceneBackground scene)
+        public SceneLayerSet(SceneBackground scene, bool inverted)
         {
             Scene = scene;
-            BackgroundColor = Color.FromArgb(scene.BackgroundColor);
+            _inverted = inverted;
+            BackgroundColor = SceneColors.Map(Color.FromArgb(scene.BackgroundColor), inverted);
 
             foreach (var layer in scene.Layers)
             {
                 var image = new Image { Source = layer.Image, Aspect = Aspect.Fill };
+                image.HandlerChanged += (_, _) => SceneColors.ApplyFilter(image, _inverted);
                 if (layer.Animation is { } animation)
                 {
                     image.AnchorX = animation.AnchorX;
@@ -102,6 +116,16 @@ public sealed class SceneBackgroundView : ContentView
         }
 
         public SceneBackground Scene { get; }
+
+        public void SetInverted(bool inverted)
+        {
+            _inverted = inverted;
+            BackgroundColor = SceneColors.Map(Color.FromArgb(Scene.BackgroundColor), inverted);
+            foreach (var (view, _, _) in _layers)
+            {
+                SceneColors.ApplyFilter(view, inverted);
+            }
+        }
 
         /// <summary>Rozmieszcza warstwy tak, by płótno wypełniło widok (nadmiar przycięty, środek widoczny).</summary>
         public void Arrange(double width, double height)

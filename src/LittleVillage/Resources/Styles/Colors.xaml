@@ -24,5 +24,7 @@
     <x:Static x:Key="PanelStroke" Member="theme:Palette.Ink" />
     <x:Static x:Key="ButtonFace" Member="theme:Palette.Paper" />
     <x:Static x:Key="ButtonInk" Member="theme:Palette.Ink" />
+    <!-- Tryb ciemny: tła scen odwracane filtrem kolorów (SceneColors), bez osobnych rysunków. -->
+    <x:Boolean x:Key="SceneInverted">False</x:Boolean>
 
 </ResourceDictionary>

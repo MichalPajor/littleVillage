@@ -221,6 +221,6 @@ Topielec nie przyszedł. Ani tego roku, ani następnego.
 Maciek i Marianna orali pole, które z każdym rokiem było trochę większe. Dobrosław rósł szybko – najpierw pasał gęsi, potem chodził za pługiem, aż w końcu sam prowadził konia.{ los_psa == oswojony: Pies zestarzał się przy progu i pewnej zimy po prostu nie wstał. Pochowali go pod lasem.}
 Czasem, w długie zimowe wieczory, Maciek opowiadał chłopcu o pierwszej wiośnie w Zapadlinie. O wyciu w zaroślach, o postaci z rękami do ziemi, o głosie, który wołał go znad bagien. O zielarce spalonej w chacie nad jeziorem. Syn słuchał z wypiekami na twarzy, ale traktował to jak bajki – takie, jakie opowiada się dzieciom, żeby nie chodziły same nad wodę.
 Kiedy był już dorosły, wieś zaczęła stawiać kapliczki. Jedną przy drodze z Bukowego Grzbietu, drugą na skraju lasu, trzecią przy kładce nad mokradłami. Potem przybywały kolejne, aż stały niemal przy każdej miedzy. Ludzie mówili, że od tamtej pory światełka nad bagnami mrugają rzadziej. Dobrosław w to nie wierzył, ale co roku w maju przystrajał je kwiatami razem z innymi. # pokaz: kapliczki
-Rodzice zmarli ze starości, jedno po drugim, w tej samej chacie, którą Maciek kiedyś zbudował od pierwszego bala. On sam ożenił się z dziewczyną z sąsiedniej wsi i wkrótce urodził mu się syn.
+Rodzice Dobrosława zmarli ze starości, jedno po drugim, w tej samej chacie, którą Maciek kiedyś zbudował od pierwszego bala. On sam ożenił się z dziewczyną z sąsiedniej wsi i wkrótce urodził mu się syn.
 Dali mu na imię Jaromir. # dalej
 -> prolog_ciag_dalszy

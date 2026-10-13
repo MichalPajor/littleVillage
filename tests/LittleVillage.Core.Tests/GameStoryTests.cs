@@ -740,7 +740,7 @@ public sealed class GameStoryTests
         var summer = pages.First(p => p.BackgroundKey == "zapadlina_lato");
         Assert.Equal("Rozdział pierwszy", summer.Blocks[0].Text);
         Assert.Equal("Lato", summer.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
-        Assert.Contains(summer.Blocks, b => b.Text.Contains("Przy drogach pojawiły się kapliczki"));
+        Assert.Contains(summer.Blocks, b => b.Text.Contains("Przy drogach stało mnóstwo kapliczek"));
         Assert.Contains(summer.Blocks, b => b.Text.StartsWith(home));
         Assert.Contains(summer.Blocks, b => b.Text.Contains(father!));
         Assert.Equal(grandmother, Has([summer], "babka Marianna"));
@@ -787,7 +787,7 @@ public sealed class GameStoryTests
 
         var bows = pages.First(p => p.BackgroundKey == "luki");
         Assert.Equal("Kiedy miecze się nudziły, przychodziła pora na łuki.", bows.Blocks[0].Text);
-        Assert.Contains(bows.Blocks, b => b.Text.Contains("Franek wybierał pręt długi na wysokość chłopca"));
+        Assert.Contains(bows.Blocks, b => b.Text.Contains("Franek wybierał z niej gałąź o odpowiedniej długości"));
         Assert.Contains(bows.Blocks, b => b.Reveal == "hanka" && b.Text.StartsWith("Celem był snop słomy"));
         Assert.Contains(bows.Blocks, b => b.Reveal == "trafienie" && b.Text.StartsWith("Raz Jaromir trafił w sam środek koła."));
         Assert.Equal(PageEnding.Continue, bows.Ending);

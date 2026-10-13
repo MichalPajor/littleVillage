@@ -10,7 +10,7 @@
 
     <Grid RowDefinitions="*,Auto">
 
-        <controls:SceneBackgroundView Grid.RowSpan="2" Scene="{Binding Scene}" />
+        <controls:SceneBackgroundView Grid.RowSpan="2" Scene="{Binding Scene}" IsInverted="{DynamicResource SceneInverted}" />
 
         <controls:InkFrame
             x:Name="MenuFrame"

@@ -48,7 +48,7 @@
     <Grid RowDefinitions="432*,412*">
 
         <!-- Tło sceny z animowanymi warstwami -->
-        <controls:SceneBackgroundView x:Name="SceneView" Grid.RowSpan="2" Scene="{Binding Scene}" />
+        <controls:SceneBackgroundView x:Name="SceneView" Grid.RowSpan="2" Scene="{Binding Scene}" IsInverted="{DynamicResource SceneInverted}" />
 
         <!-- Ekwipunek -->
         <controls:SketchIconButton

@@ -26,6 +26,7 @@ public sealed class ThemeService(IPreferences preferences) : IThemeService
         resources["PanelStroke"] = IsDark ? Palette.Paper : Palette.Ink;
         resources["ButtonFace"] = IsDark ? Palette.Night : Palette.Paper;
         resources["ButtonInk"] = IsDark ? Palette.Paper : Palette.Ink;
+        resources["SceneInverted"] = IsDark;
     }
 
     public void SetDark(bool isDark)
