@@ -57,6 +57,45 @@ Najlepsze były z leszczyny, która rosła gęsto na skraju lasu – prosta, gi�
 Strzały robili również z leszczyny, ale zdecydowanie cieńszej. Grotów nie było – za to czubek zaostrzali tak, że kłuł jak cierń, a na drugim końcu – lotki z papieru albo z piór zbieranych na podwórzach po całej wsi.
 Celem był snop słomy postawiony na miedzy, z kołem namalowanym sadzą. Pociski leciały dość prosto, wbijały się w ziemię albo w cel, a czasem szybowały wysoko w niebo. Najlepiej szło to Hance. Mrużyła jedno oko, wysuwała koniuszek języka i nie chybiała ani razu – a chłopcy, choć za nic by się do tego nie przyznali, podziwiali ją za to bardziej niż za cokolwiek innego. # pokaz: hanka
 Raz Jaromir trafił w sam środek koła. Przez resztę dnia chodził tak dumny, że zapomniał nawet o obiedzie, i matka musiała wołać go wiele razy. # pokaz: trafienie # dalej
+-> lato_baza
+
+= lato_baza
+# tlo: baza
+Najważniejszym miejscem na świecie była jednak baza.
+Stała – a raczej wisiała – w koronie starego bzu, który rósł na skraju łąki, tak rozłożysty, że w jego cieniu mogłoby się schować kilka krów. Budowali ją przez jedno długie lato. Deski znosili, skąd się dało: z rozwalonego chlewika, z płotu, którego nikt już nie naprawiał, {figurka_u_staruchy:ze stodoły Stasia, który kręcił głową, ale nie bronił|ze stodoły ojca Jaromira, który udawał, że niczego nie widzi}. Przybijali je gwoździami wyprostowanymi kamieniem na kamieniu, a tam, gdzie ich zabrakło, wiązali sznurkiem. Na górę prowadziła drabinka ze szczebli przywiązanych do pnia.
+W środku mieściło się pięcioro, jeśli siedzieli ciasno – czwórce było więc całkiem wygodnie. Mieli tam wszystko, czego potrzeba: skrzynkę na skarby, w której leżały kolorowe kamyki, pióra i muszelki, a na wypadek napaści – kołczan ze strzałami, łuk i „miecze”.
+Najpiękniej było tam w czasie ulewy. Letnia burza przychodziła nagle, ciemnym wałem zza lasu, i zanim dzieci zdążyły dobiec do domów, spadały pierwsze ciężkie krople. Wtedy wdrapywali się do bazy i siedzieli skuleni pod dachem z desek, przez który i tak trochę kapało. Liście szumiały jak morze, którego żadne z nich nigdy nie widziało, grzmoty przetaczały się nad niecką, a powietrze pachniało deszczem, mokrym drewnem i kwitnącym bzem tak słodko, że kręciło się w głowie. Po burzy łąka parowała, a na niebie stawała tęcza. # pokaz: burza # dalej
+-> lato_jezioro
+
+= lato_jezioro
+# tlo: jezioro_lato
+Kiedy słońce wspinało się w zenit, a nad polami zaczynał drgać żar, cała gromada ruszała nad jezioro. Biegli na wyścigi przez łąkę, zrzucając po drodze koszule, i z wrzaskiem wpadali do wody, aż bryzgi leciały pod niebo. Przy brzegu było płytko i piaszczyście, woda nagrzana słońcem jak w cebrze, a stopy łaskotały drobne rybki. Franek popisywał się, skacząc na głowę z przewróconego pnia, a Antek siedział na płyciźnie i łapał w dłonie kijanki. # pokaz: kapiel
+{ figurka_u_staruchy: Jaromir nigdy nie wchodził głębiej niż po pas. Ojciec zakazał mu tego raz, krótko i tak surowo, że chłopak nie śmiał zapytać dlaczego. Równie stanowczo zabronił zbliżać się do mokradeł i do trzcin po zachodniej stronie, gdzie podobno stała kiedyś jakaś chata. | Na zachodnim brzegu, w szuwarach, sterczały jeszcze z ziemi czarne kikuty zwęglonych bali. Dzieci straszyły się nimi nawzajem, opowiadając sobie historię o spalonej zielarce – tę samą, którą wieczorami snuł ojciec Jaromira – ale w pełnym słońcu nikt się nie bał. }
+Potem suszyli się na trawie, leżąc na brzuchach, i jedli to, co dał las: poziomki, borówki, od których czerniały zęby i języki, i kwaśne liście szczawiu żute dla ochłody. Czasem ktoś przyniósł z domu ogórka albo kawałek sera i dzielili go sprawiedliwie, na tyle części, ile było ust. W sadzie u Wójcików dojrzewały czereśnie, a gospodarz spał po obiedzie tak twardo, że nie słyszał, jak ktoś trzęsie gałęziami.
+Upał kładł się na wszystkim jak ciepła pierzyna. Świerszcze cykały tak głośno, jakby od ich grania zależało, czy słońce w ogóle zajdzie. Od pokosów, które chłopi przewracali grabiami, szedł zapach siana, a od miedzy wiało słodyczą macierzanki i koniczyny. Pszczoły brzęczały w lipach, motyle siadały na kwiatach, a czas płynął tak wolno, że dzień wydawał się nie mieć końca. # dalej
+-> lato_wieczor
+
+= lato_wieczor
+# tlo: wieczor_lato
+A jednak kończył się zawsze. Słońce zsuwało się za las, cienie wydłużały się na łące, aż sięgały od jednego jej skraju do drugiego, a niebo nad jeziorem nabierało koloru dojrzałych malin. Wtedy z kolejnych podwórek zaczynały dobiegać wołania.
+– Jaroooomir! Do doooomu! # pokaz: matka
+Głos matki niósł się po całej niecce. Chłopiec udawał, że nie słyszy, dopóki nie zawołała po raz drugi – a za trzecim razem pojawiała się w nim nuta, która nie wróżyła nic dobrego. Wtedy żegnał się z resztą, umawiał na jutro – zawsze na jutro, zawsze przy drewnianym słupku, który znaczył granicę pola ojca, zaraz po śniadaniu – i biegł przez łąkę, na której zapalały się pierwsze świetliki. # pokaz: jaromir
+Wracał brudny, z trawą we włosach, z ziemią pod paznokciami i z kolanami w strupach. Matka wzdychała, łapała go za ucho i prowadziła do ceberka z wodą, a potem stawiała przed nim miskę z jajecznicą albo zsiadłe mleko z ziemniakami.
+{ figurka_u_staruchy:
+    Ojciec siedział naprzeciwko i milczał. Kiedy kończył, zawsze robił to samo: wstawał, sprawdzał, czy drzwi są dobrze zaryglowane, i dopiero wtedy szedł spać.
+    { los_psa == oswojony:
+        Babka Marianna podnosiła się wtedy z zydla, kreśliła wnukowi krzyżyk na czole i szeptała coś, czego nie rozumiał.
+    }
+- else:
+    Ojciec, jeśli wieczór był ciepły, wynosił ławę przed chatę i opowiadał. O dziadku Maćku, który zszedł do Zapadliny z samą siekierą, o stworze z rękami do ziemi, o głosie, co wołał znad bagien. Jaromira zwykle morzył sen w połowie, z głową na jego kolanach, i nigdy nie słyszał zakończenia.
+}
+Potem leżał na sienniku pod oknem i słuchał nocy. Żaby rechotały w rozlewiskach, w stajni parsknął koń, gdzieś daleko zaszczekał pies. Przez szparę w okiennicy widać było gwiazdy – tyle, że nie dało się ich policzyć, choć nigdy nie przestawał próbować.
+Zasypiał z uśmiechem, myśląc o jutrze. Jutro będzie znów lato. Jutro będzie znów cały dzień. # dalej
+-> zloty_dzien
+
+= zloty_dzien
+# tlo: zapadlina_lato
+Takich dni było bez liku. Zlewały mu się potem w pamięci w jeden długi, złoty dzień, pachnący sianem i rozgrzaną ziemią, pełen słońca, śmiechu i brzęczenia pszczół. Mijały kolejne wiosny i zimy, a Jaromir rósł – coraz wyżej sięgał do gałęzi bzu, coraz dalej dolatywała jego strzała, coraz rzadziej potrzebował drabinki, żeby wspiąć się do bazy. # dalej
 -> rozdzial_pierwszy_ciag_dalszy
 
 

@@ -520,6 +520,43 @@
         {"image": "bg_luki_hanka.png", "x": 16, "y": 310, "width": 196, "height": 112, "revealOn": "hanka"},
         {"image": "bg_luki_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
       ]
+    },
+    "baza": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_lato2_b_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_lato2_b_liscie.png", "x": 60, "y": 150, "width": 290, "height": 110, "animation": {"type": "sway", "amplitude": 2.4, "duration": 2600, "anchorX": 0.5, "anchorY": 0.5}},
+        {"image": "bg_lato2_b_chmura.png", "x": -10, "y": 0, "width": 410, "height": 110, "revealOn": "burza"},
+        {"image": "bg_lato2_b_deszcz_a.png", "x": 0, "y": 100, "width": 390, "height": 240, "animation": {"type": "rise", "amplitude": -40, "duration": 700}, "revealOn": "burza"},
+        {"image": "bg_lato2_b_deszcz_b.png", "x": 0, "y": 100, "width": 390, "height": 240, "animation": {"type": "rise", "amplitude": -40, "duration": 700, "phase": 0.5}, "revealOn": "burza"},
+        {"image": "bg_lato2_b_blyskawica.png", "x": 300, "y": 60, "width": 50, "height": 90, "animation": {"type": "flicker", "amplitude": 0, "duration": 2300}, "revealOn": "burza"}
+      ]
+    },
+    "jezioro_lato": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_lato2_j_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_lato2_j_blyski.png", "x": 60, "y": 210, "width": 300, "height": 110, "animation": {"type": "flicker", "amplitude": 0.25, "duration": 1500}},
+        {"image": "bg_lato2_j_wazki.png", "x": 150, "y": 140, "width": 120, "height": 40, "animation": {"type": "bob", "amplitude": 5, "duration": 900}},
+        {"image": "bg_lato2_j_kapiel.png", "x": 120, "y": 200, "width": 210, "height": 140, "animation": {"type": "bob", "amplitude": 1.4, "duration": 800}, "revealOn": "kapiel"}
+      ]
+    },
+    "wieczor_lato": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_lato2_w_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_lato2_w_dym.png", "x": 54, "y": 130, "width": 30, "height": 50, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_lato2_w_matka.png", "x": 66, "y": 270, "width": 44, "height": 74, "revealOn": "matka"},
+        {"image": "bg_lato2_w_jaromir.png", "x": 176, "y": 352, "width": 60, "height": 70, "animation": {"type": "bob", "amplitude": 1.6, "duration": 360}, "revealOn": "jaromir"},
+        {"image": "bg_lato2_w_swietliki_a.png", "x": 120, "y": 280, "width": 260, "height": 150, "animation": {"type": "flicker", "amplitude": 0.1, "duration": 1900}},
+        {"image": "bg_lato2_w_swietliki_b.png", "x": 120, "y": 280, "width": 260, "height": 150, "animation": {"type": "flicker", "amplitude": 0.1, "duration": 1900, "phase": 0.5}}
+      ]
     }
   }
 }

@@ -792,4 +792,39 @@ public sealed class GameStoryTests
         Assert.Contains(bows.Blocks, b => b.Reveal == "trafienie" && b.Text.StartsWith("Raz Jaromir trafił w sam środek koła."));
         Assert.Equal(PageEnding.Continue, bows.Ending);
     }
+
+    [Theory]
+    [InlineData(true)]
+    [InlineData(false)]
+    public void Chapter_one_summer_day_from_the_base_to_the_evening(bool cursed)
+    {
+        int[] choices = cursed
+            ? [.. ToTownWithDogAndFigurine, SellToWitch, TellWife]
+            : [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
+        var pages = Play(CreateEngine(), choices);
+
+        var baseInTree = pages.First(p => p.BackgroundKey == "baza");
+        Assert.Contains(baseInTree.Blocks, b => b.Text.Contains("w koronie starego bzu"));
+        Assert.Contains(baseInTree.Blocks, b => b.Text.Contains(cursed ? "ze stodoły Stasia" : "ze stodoły ojca Jaromira"));
+        Assert.Contains(baseInTree.Blocks, b => b.Text.Contains("czwórce było więc całkiem wygodnie"));
+        Assert.Contains(baseInTree.Blocks, b => b.Reveal == "burza");
+
+        var lake = pages.First(p => p.BackgroundKey == "jezioro_lato");
+        Assert.Contains(lake.Blocks, b => b.Reveal == "kapiel");
+        Assert.Equal(cursed, Has([lake], "nigdy nie wchodził głębiej niż po pas"));
+        Assert.Equal(!cursed, Has([lake], "czarne kikuty zwęglonych bali"));
+
+        var evening = pages.First(p => p.BackgroundKey == "wieczor_lato");
+        Assert.Contains(evening.Blocks, b => b.Reveal == "matka" && b.Text == "– Jaroooomir! Do doooomu!");
+        Assert.Contains(evening.Blocks, b => b.Reveal == "jaromir" && b.Text.Contains("drewnianym słupku"));
+        Assert.Equal(cursed, Has([evening], "drzwi są dobrze zaryglowane"));
+        Assert.Equal(cursed, Has([evening], "Babka Marianna"));
+        Assert.Equal(!cursed, Has([evening], "morzył sen w połowie"));
+
+        var golden = pages[^2];
+        Assert.Equal("zapadlina_lato", golden.BackgroundKey);
+        Assert.StartsWith("Takich dni było bez liku.", golden.Blocks[0].Text);
+        Assert.False(Has(pages, "Józek"));
+        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+    }
 }
