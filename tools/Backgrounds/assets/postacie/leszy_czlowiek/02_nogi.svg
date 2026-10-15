@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- nogi: stoi nieruchomo; przy kroku warstwa przesuwa się razem z całością -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="nogi" data-anim="brak" data-origin="150,512" data-range="0" data-period="-">
+<path d="M128 404C128 440 126 476 126 500M176 404C178 440 180 476 180 500" fill="none" stroke-width="16"/>
+<path d="M128 404C128 440 126 476 126 500M176 404C178 440 180 476 180 500" fill="none" stroke="#EDEBE6" stroke-width="9"/>
+<path d="M118 496C116 506 124 512 150 512L152 500C140 500 134 498 134 490Z" fill="#000000" stroke-width="3"/>
+<path d="M188 496C190 506 182 512 156 512L154 500C166 500 172 498 172 490Z" fill="#000000" stroke-width="3"/>
+<path d="M150 512C166 512 182 508 196 500M156 512C140 512 122 508 108 500" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+</g>
+</g>
+</svg>

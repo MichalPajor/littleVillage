@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- głowa (okrągła buzia, piegi): przechyla się ±3° przy origin 150,206, okres 4 s; zawiera podgrupy oczy i usta -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="glowa" data-anim="obrot" data-origin="150,206" data-range="3deg" data-period="4">
+<path d="M142 198L142 216L158 216L158 198Z" fill="#FFFFFF" stroke-width="3"/>
+<path d="M106 150C106 112 126 96 150 96C174 96 194 112 194 150C194 182 176 204 150 206C124 204 106 182 106 150Z" fill="#FFFFFF" stroke-width="4"/>
+<path d="M180 160C184 176 178 192 166 200C176 190 180 176 180 160Z" fill="url(#hatch)" stroke="none"/>
+<!-- oczy: duże, jasne; mruganie = skala Y 1→0 na 0.12 s co 3–5 s, origin 150,152; źrenice mogą patrzeć na boki przesuwem ±2 px -->
+<g id="oczy" data-anim="mruganie" data-origin="150,152" data-range="1-0" data-period="3-5">
+<ellipse cx="134" cy="152" rx="10" ry="11" fill="#FFFFFF" stroke-width="2.4"/>
+<circle cx="134" cy="153" r="6.5" fill="#FFFFFF" stroke-width="1.6"/>
+<circle cx="134" cy="153" r="6.5" fill="url(#hatch)" stroke="none"/>
+<circle cx="134" cy="153" r="3" fill="#000000" stroke="none"/>
+<circle cx="131.5" cy="150" r="1.6" fill="#FFFFFF" stroke="none"/>
+<path d="M124 147l-3 -3M144 147l3 -3M141 142l2 -4" fill="none" stroke-width="1.4"/>
+<ellipse cx="166" cy="152" rx="10" ry="11" fill="#FFFFFF" stroke-width="2.4"/>
+<circle cx="166" cy="153" r="6.5" fill="#FFFFFF" stroke-width="1.6"/>
+<circle cx="166" cy="153" r="6.5" fill="url(#hatch)" stroke="none"/>
+<circle cx="166" cy="153" r="3" fill="#000000" stroke="none"/>
+<circle cx="163.5" cy="150" r="1.6" fill="#FFFFFF" stroke="none"/>
+<path d="M156 147l-3 -3M176 147l3 -3M173 142l2 -4" fill="none" stroke-width="1.4"/>
+</g>
+<path d="M124 136C130 133 138 133 142 136M158 136C162 133 170 133 176 136" fill="none" stroke-width="1.8"/>
+<path d="M150 162C148 168 148 172 152 173" fill="none" stroke-width="1.6"/>
+<circle cx="140" cy="166" r="1.1" fill="#000000" stroke="none"/>
+<circle cx="144" cy="170" r="1.1" fill="#000000" stroke="none"/>
+<circle cx="137" cy="170" r="1.1" fill="#000000" stroke="none"/>
+<circle cx="160" cy="166" r="1.1" fill="#000000" stroke="none"/>
+<circle cx="156" cy="170" r="1.1" fill="#000000" stroke="none"/>
+<circle cx="163" cy="170" r="1.1" fill="#000000" stroke="none"/>
+<circle cx="150" cy="164" r="1.1" fill="#000000" stroke="none"/>
+<!-- usta: uśmiech; przy rozmowie otwieranie = skala Y 1→1.6 przy origin 150,184 -->
+<g id="usta" data-anim="skala" data-origin="150,184" data-range="1-1.6" data-period="-">
+<path d="M140 182C144 188 156 188 160 182" fill="none" stroke-width="2.4"/>
+</g>
+<path d="M120 174c3 0 5 2 5 4M180 174c-3 0 -5 2 -5 4" fill="none" stroke-width="1.2"/>
+</g>
+</g>
+</svg>

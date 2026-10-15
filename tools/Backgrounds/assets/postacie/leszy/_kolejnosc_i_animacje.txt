@@ -1,0 +1,13 @@
+leszy – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. data-origin w jednostkach viewBox.
+
+00_cien.svg  —  cień: ledwo zauważalne pulsowanie w rytm oddechu
+01_korzenie.svg  —  korzenie: korzenie prawie nieruchome; przy kroku rozchylają się skalą X 1.0–1.1 przy origin 150,470
+02_nogi.svg  —  nogi: nogi lekko uginają się skalą Y 0.98–1.0 przy origin 150,470 (ciężki oddech)
+03_ramie_lewe.svg  —  ramię lewe: ramię lewe kołysze się wolno ±4° w barku; pazury dodatkowo drgają obrót ±3° przy origin 56,420
+04_ramie_prawe.svg  —  ramię prawe: ramię prawe (sięgające) unosi się ±6° w barku; SIĘGANIE = obrót do −60° w 1 s; pazury rozwierają się skalą 1.0–1.2 przy origin 240,380
+05_tulow.svg  —  tułów: tułów oddycha skalą Y 0.985–1.0 przy origin 150,336; głowa, poroże, mech, broda i oczy przesuwają się razem z nim
+06_glowa.svg  —  głowa: głowa przechyla się wolno ±3° przy nasadzie; przy spojrzeniu na gracza obraca się skokowo o 6° w 0.2 s
+07_poroze.svg  —  poroże: poroże porusza się razem z głową (ta sama transformacja) plus własne drganie ±1.5°
+08_mech_na_porozu.svg  —  mech na porożu: strzępy mchu kołyszą się skew X ±4° przy górze poroża, w przeciwfazie do głowy
+09_broda.svg  —  broda: broda z mchu kołysze się skew X ±3° przy brodzie
+10_oczy.svg  —  oczy: węgielki żarzą się: skala 0.6–1.4 nieregularnie (2 s), czerwień może pulsować kryciem 0.7–1.0; mruganie = krótkie zniknięcie na 0.1 s co 5–9 s

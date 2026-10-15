@@ -1,0 +1,15 @@
+strzyga – warstwy do złożenia od spodu (00) do wierzchu. viewBox 32 70 260 460 (proporcje 300×530). data-origin w jednostkach viewBox.
+
+00_cien.svg  —  cień: pulsuje skalą X 0.94–1.0 w rytm szybkiego oddechu, origin 160,510, okres 2.2 s
+01_noga_dalsza.svg  —  noga dalsza (lewa, w cieniu): ugina się skalą Y 0.96–1.0 przy origin 70,508, okres 2.2 s; krok = obrót w biodrze (origin 100,298) ±15°
+02_reka_dalsza.svg  —  ręka dalsza (lewa, w cieniu): kołysze się ±4° w barku, origin 150,160, okres 2.2 s; szpony zaciskają się obrotem ±6° przy nadgarstku 142,372
+03_tulow.svg  —  tułów: przygarbiony, z garbem, wystającymi kręgami, łopatką i żebrami, zapadnięty brzuch; oddycha skalą Y 0.97–1.0 przy origin 118,300, okres 2.2 s; przed skokiem pochyla się obrotem +10° przy origin 118,300
+04_calun.svg  —  resztki całunu na biodrach: strzępy kołyszą się skew X ±5° przy origin 118,296, okres 1.6 s
+05_noga_blizsza.svg  —  noga bliższa (prawa): ugina się skalą Y 0.96–1.0 przy origin 150,508, okres 2.2 s; krok = obrót w biodrze (origin 116,294) ±15° w przeciwfazie do dalszej
+06_reka_blizsza.svg  —  ręka bliższa (prawa): łokieć wysunięty w bok jak u pająka, szpony nisko przy ziemi; kołysze się ±4° w barku, origin 172,164, okres 2.2 s; ATAK = obrót w barku −95° w 0.25 s (zamach), potem uderzenie +115° w 0.12 s; szpony drapią ziemię przesuwem X ±4 px
+07_wlosy_tyl.svg  —  włosy z tyłu głowy: spływają na kark i bark; kołyszą się skew X ±4° przy origin 204,126, okres 2 s; przy skoku odchylają się obrotem −25°
+08_glowa.svg  —  głowa: wydłużona czaszka opuszczona przed barkami, pyskiem w prawo-dół; kiwa się ±3° przy origin 200,170 (kark), okres 2.2 s; przy wyczuciu ofiary unosi się skokowo obrotem −18° w 0.2 s; zawiera jamę ust i górną szczękę z podwójnym rzędem zębów (żuchwa osobno)
+09_oczy.svg  —  oczy: drobne, jasne punkty w głębi skośnych oczodołów; mruganie = skala Y 1→0 na 0.08 s co 3–6 s, origin 252,160; przy ataku powiększają się skalą 1.0→1.6
+10_szczeka.svg  —  szczęka: żuchwa z podwójnym rzędem zębów, w stawie pod uchem, rozwarta; otwieranie szerzej = obrót +15° przy origin 214,200, zamknięcie = −20°; podgrupa krew wydłuża się skalą Y 1→1.6 przy origin 246,250
+11_wlosy_przod.svg  —  włosy z przodu: długie, czarne pasma zwisają z ciemienia przed i za twarzą, pojedyncze kosmyki przecinają twarz; kołyszą się skew X ±6° przy origin 230,120, okres 1.8 s, z opóźnieniem 0.2 s względem głowy
+12_ziemia.svg  —  ziemia (opcjonalna): kępki trawy i kamyki; trawa kołysze się skew X ±3° przy origin 150,510, okres 4 s; warstwa na wierzchu, można pominąć

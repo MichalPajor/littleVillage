@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- twarz: głowa kiwa się ±2° przy szyi; przy zagadce przechyla się o 10° w bok -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="twarz" data-anim="obrot" data-origin="150,160" data-range="2deg" data-period="4">
+<path d="M132 84C126 110 128 136 138 152C144 162 156 162 162 152C172 136 174 110 168 84C160 72 140 72 132 84Z" fill="#FFFFFF" stroke-width="4"/>
+<path d="M130 118C136 124 138 134 142 146M170 118C164 124 162 134 158 146" fill="none" stroke-width="2.2"/>
+<path d="M132 116C134 128 138 140 144 150C140 142 134 130 130 118Z M168 116C166 128 162 140 156 150C160 142 166 130 170 118Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M134 104C138 96 146 96 150 104C146 112 138 112 134 104Z M150 104C154 96 162 96 166 104C162 112 154 112 150 104Z" fill="#000000" stroke-width="2"/>
+<path d="M138 104C140 100 146 100 148 104C146 107 140 107 138 104Z M152 104C154 100 160 100 162 104C160 107 154 107 152 104Z" fill="#FFFFFF" stroke="none"/>
+<path d="M132 96C136 90 146 88 150 92M150 92C154 88 164 90 168 96" fill="none" stroke-width="2.6"/>
+<path d="M150 110L148 126L153 126" fill="none" stroke-width="2"/>
+<path d="M140 138C146 136 154 136 160 138" fill="none" stroke-width="3"/>
+<path d="M142 138l0 3M147 137l0 4M152 137l0 4M157 138l0 3" fill="none" stroke-width="1.5"/>
+<path d="M148 160C140 168 134 180 134 190L166 190C166 180 160 168 152 160Z" fill="#FFFFFF" stroke-width="3.5"/>
+<path d="M142 176C146 182 154 182 158 176" fill="none" stroke-width="2"/>
+</g>
+</g>
+</svg>

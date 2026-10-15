@@ -1,0 +1,15 @@
+odmieniec – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. Kierunek: przodem, stoi grzecznie.
+WARIANT A (z daleka jak Marysia): pokaż 00_cien, 01_nogi, 02_koszulka, 03_rece_A, 07_glowa_A, 08_twarz_A, 09_wstazka.
+WARIANT B (prawda): pokaż 00_cien, 01_nogi, 02_koszulka, 04_rece_B, 05_twarz_B, 06_glowa_B, 09_wstazka.
+Przemiana A→B: przenikanie krycia warstw _A → _B (np. 0.6 s), wstążka zostaje.
+
+00_cien.svg  —  cień: prawie nieruchomy; odmieniec stoi grzecznie
+01_nogi.svg  —  nogi bose, chude: nieruchome (stoi grzecznie); przy kroku naprzemienny przesuw Y −4 px
+02_koszulka.svg  —  lniana koszulka do kolan (Marysi): oddycha skalą Y 0.99–1.0 przy origin 150,400, okres 3 s; dół lekko faluje skew X ±1°
+03_rece_A.svg  —  ręce wariant A (ludzkie, z drobnymi pęknięciami jak kora): wzdłuż ciała, kołyszą się ledwie ±2° w barkach (origin 126,284 i 174,284), okres 3 s
+04_rece_B.svg  —  ręce wariant B (prawda): palce z gałązek, z rękawa wyrasta pęd z liśćmi; gałązki drgają skew ±4° przy nadgarstkach (90,360 i 210,360); pęd kołysze się obrotem ±6° przy origin 212,286
+05_twarz_B.svg  —  twarz wariant B: wyrzeźbiona w drewnie, słoje dookoła, w miejscu oczu dwa sęki z ciemnymi dziurkami; porusza się razem z głową_B; zawiera podgrupę oczy_B
+06_glowa_B.svg  —  głowa wariant B (prawda): włosy z korzonków; korzonki drgają skew ±3° przy origin 150,120, okres 2 s; cała głowa przechyla się ±3° przy origin 150,206
+07_glowa_A.svg  —  głowa wariant A (z daleka jak Marysia): jasne, kręcone włosy; przechyla się powoli ±3° przy origin 150,206 (szyja), okres 4 s; co jakiś czas przechyla się nienaturalnie o 20° w 0.4 s i wraca
+08_twarz_A.svg  —  twarz wariant A: ludzka buzia ze skórą w drobnych pęknięciach jak kora, oczy odrobinę za ciemne i za duże; porusza się razem z głową_A; zawiera podgrupę oczy_A
+09_wstazka.svg  —  czerwona wstążka we włosach (jak u Marysi): końce kołyszą się obrotem ±4° przy origin 178,104 (węzeł), okres 3 s

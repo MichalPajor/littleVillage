@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="22 80 255 450">
+<!-- siwa broda do ziemi, której koniec zawija się wokół nóżek: kołysze się skew X ±3° przy origin 150,250 (podbródek), okres 3 s; owijanie się = koniec brody obraca się +30° przy origin 180,476 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="broda" data-anim="kolysanie" data-origin="150,250" data-range="3deg" data-period="3">
+<path d="M124 236C118 270 120 310 128 350C134 390 132 420 126 446C122 470 128 492 150 500C176 508 214 506 232 494C242 484 234 472 222 476C206 482 190 482 178 474C172 450 172 420 170 390C172 340 178 290 178 236C166 246 136 246 124 236Z" fill="#FFFFFF" stroke-width="4"/>
+<path d="M178 236C178 290 172 340 170 390C172 420 172 450 178 474C170 470 164 450 162 420C162 380 168 330 168 290C168 270 168 252 166 242Z" fill="url(#hatch)" stroke="none"/>
+<path d="M130.0 252C121.9 300 130.8 360 125.2 420C122.0 450 130.0 480 140.0 498" fill="none" stroke-width="1.2"/>
+<path d="M135.2 252C126.4 300 135.7 360 130.4 420C127.2 450 135.2 480 145.2 498" fill="none" stroke-width="1.2"/>
+<path d="M140.4 252C137.7 300 146.8 360 138.5 420C132.4 450 140.4 480 150.4 498" fill="none" stroke-width="1.2"/>
+<path d="M145.6 252C137.4 300 149.9 360 139.8 420C137.6 450 145.6 480 155.6 498" fill="none" stroke-width="1.2"/>
+<path d="M150.8 252C142.2 300 151.6 360 144.5 420C142.8 450 150.8 480 160.8 498" fill="none" stroke-width="1.2"/>
+<path d="M156.0 252C153.4 300 162.6 360 154.5 420C148.0 450 156.0 480 166.0 498" fill="none" stroke-width="1.2"/>
+<path d="M161.2 252C157.6 300 162.7 360 155.7 420C153.2 450 161.2 480 171.2 498" fill="none" stroke-width="1.2"/>
+<path d="M166.4 252C161.4 300 172.3 360 165.2 420C158.4 450 166.4 480 176.4 498" fill="none" stroke-width="1.2"/>
+<path d="M171.6 252C168.6 300 172.3 360 168.4 420C163.6 450 171.6 480 181.6 498" fill="none" stroke-width="1.2"/>
+<path d="M180 476C196 484 214 486 226 480M184 490C200 496 214 496 224 492" fill="none" stroke-width="1.2"/>
+</g>
+</g>
+</svg>

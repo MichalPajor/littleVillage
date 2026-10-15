@@ -171,9 +171,11 @@ L["z_tlo"] = (0, 0, 390, 440, z[0] + "\n" + group(z[1:]))
 
 L["z_maciek"] = (40, 300, 60, 126, group([postacie.man(70, 420, 1.45, arm="l12 22")]))
 # starucha (rysunek autora, patrzy w lewo — na Macka); stopy na y~420
-L["z_starucha"] = (150, 236, 132, 188, art.wiedzma("translate(150 228) scale(0.39) translate(-40 -24)"))
+RIG_STARUCHA = art.wiedzma_rig(art.parse_transform("translate(150 228) scale(0.39) translate(-40 -24)"), "z_starucha")
+art.install_rig(L, RIG_STARUCHA)
 # pies warczy na staruche (rysunek autora wilczek2, zwrocony w prawo)
-L["z_pies"] = (70, 360, 96, 66, art.barking("translate(164 364) scale(-0.15 0.15)", skip=("drżenie",)))
+RIG_Z_PIES = art.dog_barking(art.parse_transform("translate(164 364) scale(-0.15 0.15)"), "z_pies", shiver=False)
+art.install_rig(L, RIG_Z_PIES)
 
 z2 = ['<path d="M-10 420H400V844H-10Z" fill="#EDEBE6" stroke="none"/>']
 for i in range(14):
@@ -204,6 +206,16 @@ COMMENTS = {"g_tlo": "gościniec przez pola, na horyzoncie wieża kościoła i d
             "z_tlo": "biedniejsza część rynku: krzywe chałupy, płachty z cebulą i żelastwem", "z_maciek": "Maciek",
             "z_starucha": "starucha w kapturze (rysunek autora; # pokaz: starucha)", "z_pies": "pies warczy na staruchę (rysunek autora; # pokaz: pies)",
             "z_przod": "pierwszy plan: błoto"}
+
+for _old, _rig, _txt in [("z_starucha", RIG_STARUCHA, "starucha w kapturze"), ("z_pies", RIG_Z_PIES, "pies warczy na staruchę")]:
+    VARIANTS = {k: art.expand(v, _old, _rig) for k, v in VARIANTS.items()}
+    for _rev in REVEAL.values():
+        if _old in _rev:
+            _rev.update({n: _rev[_old] for n in art.rig_names(_rig)})
+            del _rev[_old]
+    ANIM.pop(_old, None)
+    ANIM.update(art.rig_anims(_rig))
+    COMMENTS.update({n: f"{_txt} — {n[len(_old) + 1:]} (rysunek autora z warstw)" for n in art.rig_names(_rig)})
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":

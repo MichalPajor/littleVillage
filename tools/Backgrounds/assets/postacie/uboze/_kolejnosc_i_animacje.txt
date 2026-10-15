@@ -1,0 +1,11 @@
+uboze – warstwy do złożenia od spodu (00) do wierzchu. viewBox 22 80 255 450 (proporcje 300×530, kadr przybliżony). Kierunek: przodem, lekko w prawo. Wielkość w scenie: jak kura.
+Ręce: pokaż tylko jeden wariant — 06_rece_z_okruchem albo 07_rece_z_naparstkiem.
+
+00_cien.svg  —  cień: pulsuje skalą X przy dreptaniu, origin 150,512, okres 2 s
+01_tulow.svg  —  tułów w małej, połatanej kapocie przewiązanej sznurkiem: oddycha skalą Y 0.98–1.02 przy origin 150,430, okres 2.4 s; przy chichotaniu podskakuje przesuwem Y −3 px
+02_broda.svg  —  siwa broda do ziemi, której koniec zawija się wokół nóżek: kołysze się skew X ±3° przy origin 150,250 (podbródek), okres 3 s; owijanie się = koniec brody obraca się +30° przy origin 180,476
+03_nozki.svg  —  kurze nóżki (cienkie, łuskowate, trzy pazurki z przodu, jeden z tyłu): dreptanie = naprzemienny przesuw Y −3 px co 0.5 s; przy przestępowaniu pazurki rozchylają się obrotem ±6°
+04_glowa.svg  —  głowa (duży nos, wąskie wesołe oczka, krzaczaste brwi, wąsy): przekrzywia się ±4° przy origin 150,248, okres 2.4 s; przy śmiechu kiwa się szybko ±6° (okres 0.3 s); zawiera podgrupę oczy
+05_czapeczka.svg  —  czerwona czapeczka z opadającym czubkiem i pomponikiem: kiwanie = obrót ±6° przy origin 150,166, okres 1.2 s; czubek dodatkowo dynda obrotem ±10° przy origin 222,140
+06_rece_z_okruchem.svg  —  ręce trzymające okruch chleba (wariant 1): skubanie = ręce unoszą się obrotem −4°→+4° przy origin 150,300 (barki), okres 2 s; okruszki spadają przesuwem Y +20 px
+07_rece_z_naparstkiem.svg  —  ręce trzymające naparstek mleka (wariant 2): picie = ręce unoszą naparstek obrotem −15° przy origin 150,300 w 0.6 s

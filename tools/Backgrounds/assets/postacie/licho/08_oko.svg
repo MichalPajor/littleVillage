@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- oko: jedyne, wielkie, w prawym oczodole; mruganie = skala Y 1→0.05 na 0.1 s co 5–9 s, origin 164,114; źrenica podąża za graczem przesuwem ±3 px; czerwona obwódka pulsuje kryciem 0.7–1.0, okres 2 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="oko" data-anim="mruganie" data-origin="164,116" data-range="1-0.05" data-period="5-9">
+<path d="M150 116C154 104 174 104 178 116C174 128 154 128 150 116Z" fill="#A8101A" stroke-width="2.2"/>
+<path d="M153 116C156 108 172 108 175 116C172 124 156 124 153 116Z" fill="#FFFFFF" stroke-width="1.6"/>
+<circle cx="165" cy="116" r="5" fill="#000000" stroke="none"/>
+<circle cx="167" cy="114" r="1.5" fill="#FFFFFF" stroke="none"/>
+</g>
+</g>
+</svg>

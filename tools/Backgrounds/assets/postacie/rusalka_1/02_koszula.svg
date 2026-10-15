@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- mokra lniana koszula (tułów): przy obrocie postaci szerokość X waha się 0.92–1.0 (pseudo-obrót), origin 150,300, okres 2.4 s; dół koszuli faluje skew X ±3° przy origin 150,300 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="koszula" data-anim="skala" data-origin="150,300" data-range="0.98-1.02" data-period="2.4">
+<path d="M142 124L142 156L158 156L158 124Z" fill="#FFFFFF" stroke-width="3"/>
+<path d="M142 140C146 144 154 144 158 140" fill="none" stroke-width="1.4"/>
+<path d="M114 152C104 172 108 202 120 222C126 240 124 256 128 268C118 290 112 320 112 350C110 380 106 410 102 446L198 446C194 410 190 380 188 350C188 320 182 290 172 268C176 256 174 240 180 222C192 202 196 172 186 152C172 160 160 164 150 164C140 164 128 160 114 152Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M110 380L102 446L198 446L190 380C170 394 130 394 110 380Z" fill="url(#hatch)" stroke="none"/>
+<path d="M120 200C116 220 120 236 128 248M180 200C184 220 180 236 172 248" fill="url(#hatch)" stroke="none"/>
+<path d="M128 176C134 192 146 196 150 196M172 176C166 192 154 196 150 196" fill="none" stroke-width="2"/>
+<path d="M130 272C138 278 162 278 170 272" fill="none" stroke-width="1.8"/>
+<path d="M136 290C134 330 132 380 132 440M164 290C166 330 168 380 168 440M150 300C150 340 150 390 150 440" fill="none" stroke-width="1.8"/>
+<path d="M128 272C120 300 118 330 120 356M172 272C180 300 182 330 180 356M126 360C136 366 164 366 174 360" fill="none" stroke-width="1.4"/>
+<path d="M132 156C138 168 162 168 168 156" fill="none" stroke-width="2.4"/>
+<path d="M150 166V182M146 172l8 0M146 178l8 0" fill="none" stroke-width="1.4"/>
+</g>
+</g>
+</svg>

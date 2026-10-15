@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „zmierzch”: topielec wychodzący z krzaków — tyl (rysunek autora z warstw)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="89" height="155" viewBox="247 282 89 155">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.29000 0.00000 0.00000 0.29000 235.50000 259.20000)"><g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="cien" data-anim="skala" data-origin="190,582" data-range="0.97-1.03" data-period="3">
+<ellipse cx="190" cy="582" rx="130" ry="12" fill="url(#hatch)" stroke="none"/>
+<path d="M90 584C110 578 130 578 150 584M240 586C258 580 276 580 294 586M180 592C196 588 212 588 228 592" fill="none" stroke-width="2.2"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="noga_dalsza" data-anim="obrot" data-origin="246,336" data-range="3deg" data-period="4">
+<path d="M246 336C240 380 232 416 224 446" fill="none" stroke-width="34"/>
+<path d="M246 336C240 380 232 416 224 446" fill="none" stroke="#EDEBE6" stroke-width="26"/>
+<path d="M246 336C240 380 232 416 224 446" fill="none" stroke="url(#hatch)" stroke-width="26"/>
+<path d="M224 446C230 482 236 520 240 550" fill="none" stroke-width="26"/>
+<path d="M224 446C230 482 236 520 240 550" fill="none" stroke="#EDEBE6" stroke-width="18"/>
+<path d="M224 446C230 482 236 520 240 550" fill="none" stroke="url(#hatch)" stroke-width="18"/>
+<path d="M248 548C240 560 220 566 194 568C184 570 182 578 190 580H258C266 574 262 556 248 548Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M248 548C240 560 220 566 194 568C184 570 182 578 190 580H258C266 574 262 556 248 548Z" fill="url(#hatch)" stroke="none"/>
+<path d="M188 572l-8 4M188 578l-8 2" fill="none" stroke-width="3"/>
+</g>
+</g>
+</g></g>
+</svg>

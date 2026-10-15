@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- kapelusz: porusza się razem z głową (ta sama transformacja); rondo może dodatkowo opadać skalą Y 1.0–1.03 przy origin 166,112 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="kapelusz" data-anim="obrot" data-origin="150,160" data-range="2deg" data-period="7">
+<path d="M90 118C120 100 190 94 236 108C244 114 236 122 226 122C180 116 120 118 94 130C84 134 80 124 90 118Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M90 118C120 100 190 94 236 108C244 114 236 122 226 122C180 116 120 118 94 130C84 134 80 124 90 118Z" fill="url(#hatch)" stroke="none"/>
+<path d="M128 104C130 80 150 60 176 64C200 68 206 90 204 104Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M128 104C130 80 150 60 176 64C200 68 206 90 204 104Z" fill="url(#hatch)" stroke="none"/>
+<path d="M140 84l-4 10M160 70l-2 12M186 72l4 12M94 130l-2 10M110 124l-2 10M200 120l4 8M226 122l6 6" fill="none" stroke-width="2.2"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="-14 -26 316 558">
+<!-- tułów z szyją (siedzący, chudy, żebra pod sierścią): przy wyciu klatka rozszerza się skalą X 0.97→1.03 przy origin 190,500, okres 3 s (wdech na początku wycia) -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="tulow" data-anim="skala" data-origin="190,500" data-range="0.97-1.03" data-period="3">
+<path d="M96 128C104 160 108 200 112 240C106 270 104 300 112 320C118 336 132 342 150 342C168 360 176 380 186 398L190 500L248 500C264 470 264 420 254 380C248 330 232 280 216 240C204 214 190 196 180 186C168 164 156 140 148 108Z" fill="#FFFFFF" stroke-width="5"/>
+<path d="M216 240C232 280 248 330 254 380C264 420 264 470 248 500L236 500C250 460 250 410 240 370C232 320 220 280 204 248Z" fill="url(#hatch)" stroke="none"/>
+<path d="M186 256C198 266 210 270 222 270M184 274C196 284 210 288 226 288M186 292C198 302 212 306 228 306M190 310C200 318 212 322 226 322M196 328C204 334 214 336 224 336" fill="none" stroke-width="2.2"/>
+<path d="M199.8 301.6l1.8 9.2" fill="none" stroke-width="1.5"/>
+<path d="M209.2 321.5l4.2 6.2" fill="none" stroke-width="1.5"/>
+<path d="M225.5 291.4l0.8 6.0" fill="none" stroke-width="1.5"/>
+<path d="M187.5 247.1l2.5 7.5" fill="none" stroke-width="1.5"/>
+<path d="M151.0 243.8l4.2 8.3" fill="none" stroke-width="1.5"/>
+<path d="M211.3 237.6l1.2 6.0" fill="none" stroke-width="1.5"/>
+<path d="M199.4 233.9l5.2 7.4" fill="none" stroke-width="1.5"/>
+<path d="M166.8 243.7l0.9 9.0" fill="none" stroke-width="1.5"/>
+<path d="M173.1 325.8l2.7 7.9" fill="none" stroke-width="1.5"/>
+<path d="M166.4 323.5l2.3 9.2" fill="none" stroke-width="1.5"/>
+<path d="M221.5 252.9l2.6 5.7" fill="none" stroke-width="1.5"/>
+<path d="M161.7 227.2l3.5 7.2" fill="none" stroke-width="1.5"/>
+<path d="M150.3 294.6l2.9 6.2" fill="none" stroke-width="1.5"/>
+<path d="M215.5 272.9l3.2 6.8" fill="none" stroke-width="1.5"/>
+<path d="M206.4 226.3l0.6 5.7" fill="none" stroke-width="1.5"/>
+<path d="M210.0 312.9l5.0 7.2" fill="none" stroke-width="1.5"/>
+<path d="M179.3 283.6l3.3 4.8" fill="none" stroke-width="1.5"/>
+<path d="M164.5 325.1l4.2 7.5" fill="none" stroke-width="1.5"/>
+<path d="M224.4 323.6l2.9 6.4" fill="none" stroke-width="1.5"/>
+<path d="M192.0 305.3l4.5 7.3" fill="none" stroke-width="1.5"/>
+<path d="M213.8 314.6l5.2 7.8" fill="none" stroke-width="1.5"/>
+<path d="M157.3 257.5l2.7 8.9" fill="none" stroke-width="1.5"/>
+<path d="M177.2 321.7l2.2 6.5" fill="none" stroke-width="1.5"/>
+<path d="M175.3 239.5l3.3 5.2" fill="none" stroke-width="1.5"/>
+<path d="M205.1 329.6l2.9 5.0" fill="none" stroke-width="1.5"/>
+<path d="M228.9 278.7l2.5 6.0" fill="none" stroke-width="1.5"/>
+<path d="M148 108C156 140 168 164 180 186L170 192C158 170 146 146 138 116Z" fill="url(#hatch)" stroke="none"/>
+<path d="M137.8 159.9l5.9 6.9" fill="none" stroke-width="1.5"/>
+<path d="M110.4 170.2l1.8 5.6" fill="none" stroke-width="1.5"/>
+<path d="M143.3 179.3l4.9 5.1" fill="none" stroke-width="1.5"/>
+<path d="M152.2 166.2l2.5 5.7" fill="none" stroke-width="1.5"/>
+<path d="M124.3 138.9l4.6 8.1" fill="none" stroke-width="1.5"/>
+<path d="M145.4 191.9l4.7 7.2" fill="none" stroke-width="1.5"/>
+<path d="M116.1 153.3l3.6 7.7" fill="none" stroke-width="1.5"/>
+<path d="M135.3 137.0l3.9 5.1" fill="none" stroke-width="1.5"/>
+<path d="M126.9 194.8l5.8 7.1" fill="none" stroke-width="1.5"/>
+<path d="M162.8 134.4l4.2 6.3" fill="none" stroke-width="1.5"/>
+<path d="M111.4 164.0l1.8 5.8" fill="none" stroke-width="1.5"/>
+<path d="M145.8 139.7l4.3 8.1" fill="none" stroke-width="1.5"/>
+<path d="M122.2 130.7l5.2 5.7" fill="none" stroke-width="1.5"/>
+<path d="M111.0 136.8l4.7 8.0" fill="none" stroke-width="1.5"/>
+<path d="M178 420C174 380 198 354 226 360C256 368 266 410 258 446C252 478 228 494 204 490C186 486 180 458 178 420Z" fill="#FFFFFF" stroke-width="4.5"/>
+<path d="M226 360C256 368 266 410 258 446C252 478 228 494 204 490C228 470 240 440 236 404C234 384 230 370 226 360Z" fill="url(#hatch)" stroke="none"/>
+<path d="M194 400C200 388 212 380 224 380" fill="none" stroke-width="2"/>
+<path d="M206.2 410.6l0.6 5.9" fill="none" stroke-width="1.5"/>
+<path d="M216.8 425.6l3.0 7.0" fill="none" stroke-width="1.5"/>
+<path d="M191.9 430.4l2.3 5.5" fill="none" stroke-width="1.5"/>
+<path d="M211.2 457.9l2.4 6.1" fill="none" stroke-width="1.5"/>
+<path d="M221.4 466.3l1.0 7.1" fill="none" stroke-width="1.5"/>
+<path d="M238.8 403.3l-0.1 6.8" fill="none" stroke-width="1.5"/>
+<path d="M197.2 408.2l2.4 8.5" fill="none" stroke-width="1.5"/>
+<path d="M199.0 440.7l0.7 7.1" fill="none" stroke-width="1.5"/>
+<path d="M217.4 404.4l2.5 5.9" fill="none" stroke-width="1.5"/>
+<path d="M224.0 429.9l2.1 7.7" fill="none" stroke-width="1.5"/>
+<path d="M212.7 421.0l0.2 8.4" fill="none" stroke-width="1.5"/>
+<path d="M202.2 440.2l1.5 9.0" fill="none" stroke-width="1.5"/>
+<path d="M226.5 420.2l-0.5 6.1" fill="none" stroke-width="1.5"/>
+<path d="M210.9 453.0l2.6 7.1" fill="none" stroke-width="1.5"/>
+<path d="M206 488L160 492C146 494 142 506 152 512L218 512C226 504 222 492 206 488Z" fill="#FFFFFF" stroke-width="4"/>
+<path d="M160 498C158 504 158 508 160 512M172 496C170 502 170 508 172 512M184 496C182 502 182 508 184 512" fill="none" stroke-width="1.8"/>
+<path d="M152 509l-6 3l6 0ZM164 509l-6 3l6 0ZM176 509l-6 3l6 0Z" fill="#000000" stroke-width="1"/>
+</g>
+</g>
+</svg>

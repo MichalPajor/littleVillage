@@ -55,7 +55,8 @@ L["c_jaskolki"] = (60, 120, 140, 40, group([crow(70, 140, 0.55), crow(100, 132, 
 L["c_maciek"] = (20, 316, 74, 112, group([postacie.man(62, 424, 1.35, bundle=True)]))
 L["c_dziecko"] = (180, 362, 70, 50, group([postacie.crouching_child(198, 404, 1.15)]))
 L["c_marianna"] = (210, 274, 44, 60, group([postacie.woman(219, 330, 0.6)]))
-L["c_pies"] = (92, 380, 56, 46, art.sitting("translate(96 384) scale(0.085)", skip=("cień",)))
+RIG_C_PIES = art.dog_sitting(art.parse_transform("translate(96 384) scale(0.085)"), "c_pies", shadow=False)
+art.install_rig(L, RIG_C_PIES)
 
 p = ['<path d="M-10 420H400V844H-10Z" fill="#EDEBE6" stroke="none"/>']
 for i in range(20):
@@ -68,7 +69,8 @@ L["c_przod"] = (0, 410, 390, 434, group(p))
 L["s_rodzina"] = (150, 236, 110, 190, group([
     postacie.woman(208, 316, 0.6, bundle=True),
     postacie.man_with_child(212, 414, 0.95)]))
-L["s_pies"] = (238, 376, 70, 44, art.barking("translate(242 380) scale(0.1)", skip=("cień", "szczekanie", "drżenie")))
+RIG_S_PIES = art.dog_barking(art.parse_transform("translate(242 380) scale(0.1)"), "s_pies", shadow=False, bark=False, shiver=False, quiet=True)
+art.install_rig(L, RIG_S_PIES)
 
 
 VARIANTS = {
@@ -92,6 +94,14 @@ def all_layers():
     both.update({f"bg_sciezka_{n}": v for n, v in sciezka.L.items()})
     return both
 
+
+for _old, _rig, _txt in [("c_pies", RIG_C_PIES, "pies przy Czworakach"), ("s_pies", RIG_S_PIES, "pies idzie z rodziną")]:
+    VARIANTS = {k: art.expand(v, _old, _rig, prefix="bg_rodzina") for k, v in VARIANTS.items()}
+    REVEAL.update({n: REVEAL[_old] for n in art.rig_names(_rig)})
+    del REVEAL[_old]
+    ANIM.pop(_old, None)
+    ANIM.update(art.rig_anims(_rig))
+    COMMENTS.update({n: f"{_txt} — {n[len(_old) + 1:]} (rysunek autora z warstw)" for n in art.rig_names(_rig)})
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":

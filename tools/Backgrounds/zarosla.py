@@ -105,7 +105,9 @@ L["krzaki"] = (0, 260, 400, 200, group(k))
 # wychyla sie zza krzaka w przerwie miedzy krzakami (zad i tylne nogi zaslania krzak "krzak_przod")
 DOG = "translate(190 326) scale(0.27)"
 DOG_EYE = (239, 357)    # oko psa po przeksztalceniu
-L["pies"] = (180, 334, 170, 100, art.barking(DOG, skip=("szczekanie",)))
+# pies warczy i drzy (rysunek autora z warstw: assets/postacie/szczeniak_szczeka); glowa nieruchoma — blysk oka jest osobna warstwa
+RIG_PIES = art.dog_barking(art.parse_transform(DOG), "pies", bark=False, quiet=True)
+art.install_rig(L, RIG_PIES)
 L["krzak_przod"] = (270, 360, 110, 76, group([
     f'<path d="{bush(326, 434, 52, 64, 9)}" fill="#000000" stroke-width="3"/>',
     *[f'<path d="M{x} {y}q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>' for x, y in [(300, 404), (318, 392), (338, 400), (326, 418)]]]))
@@ -133,6 +135,9 @@ COMMENTS = {
     "krzaki": "krzaki", "pies": "chudy, warczący pies (rysunek autora: assets/wilczek2.svg)",
     "krzak_przod": "krzak zasłaniający zad psa", "blysk_oka": "błysk w oku psa (migocze)", "przod": "pierwszy plan: mokra trawa, ślady łap",
 }
+
+ORDER = art.expand(ORDER, "pies", RIG_PIES)
+COMMENTS.update({n: "chudy, warczący pies — " + n.split("_", 1)[1] + " (rysunek autora z warstw)" for n in art.rig_names(RIG_PIES)})
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":

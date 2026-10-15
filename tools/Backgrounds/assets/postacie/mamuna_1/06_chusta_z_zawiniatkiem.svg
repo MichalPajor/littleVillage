@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- chusta z zawiniątkiem (odmieniec): przewieszona przez bark; zawiniątko kołysze się obrotem ±3° przy origin 150,150 (pas chusty na barku), okres 1.6 s; podgrupa odmieniec_paluszki drga osobno -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="chusta_z_zawiniatkiem" data-anim="obrot" data-origin="150,150" data-range="3deg" data-period="1.6">
+<path d="M146 148C170 176 190 214 196 256" fill="none" stroke-width="12"/>
+<path d="M146 148C170 176 190 214 196 256" fill="none" stroke="#EDEBE6" stroke-width="7"/>
+<path d="M146 148C170 176 190 214 196 256" fill="none" stroke="url(#hatch)" stroke-width="7"/>
+<path d="M104 262C100 238 124 222 156 224C188 226 206 246 200 274C196 298 170 312 140 310C114 308 102 290 104 262Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M104 262C100 238 124 222 156 224C188 226 206 246 200 274C196 298 170 312 140 310C114 308 102 290 104 262Z" fill="url(#hatch)" stroke="none"/>
+<path d="M112 250C134 260 164 262 196 252M108 274C132 284 166 286 198 276M118 298C138 302 162 302 184 296" fill="none" stroke-width="2"/>
+<path d="M196 274C206 286 210 300 206 318L196 312L194 330L186 308" fill="#EDEBE6" stroke-width="3"/>
+<path d="M120 232C118 222 124 214 134 214C144 214 150 222 148 232Z" fill="#000000" stroke-width="2.5"/>
+<!-- zawiniątko: odmieniec wystawia gałązkowe paluszki; drgają obrotem ±8° przy origin 132,226 nieregularnie co 2–4 s -->
+<g id="odmieniec_paluszki" data-anim="obrot" data-origin="132,226" data-range="8deg" data-period="2-4">
+<path d="M126 220L118 202M118 202l-6-6M118 202l-2-8M132 218L134 198M134 198l-3-7M134 198l4-6M140 222L150 206M150 206l6-2M150 206l1-7" fill="none" stroke-width="2.6"/>
+</g>
+</g>
+</g>
+</svg>

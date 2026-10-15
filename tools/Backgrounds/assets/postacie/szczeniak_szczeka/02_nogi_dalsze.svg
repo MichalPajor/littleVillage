@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="400" viewBox="0 0 560 400">
+<!-- nogi_dalsze: dalsze nogi: drżenie przesuw X ±1 px, okres 0.1 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="nogi_dalsze" data-anim="przesuw" data-origin="350,370" data-range="1px" data-period="0.1">
+<g transform="translate(70 0)">
+<path d="M200 234C206 278 198 318 186 346L208 350C218 320 226 280 224 240Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M200 234C206 278 198 318 186 346L208 350C218 320 226 280 224 240Z" fill="url(#hatch)" stroke="none"/>
+<path d="M170 362C168 348 182 342 198 344C214 346 222 352 220 362C218 370 208 372 194 372C178 372 170 370 170 362Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M186 360V371M200 360V372" fill="none" stroke-width="2.6"/>
+<path d="M318 228C332 262 340 302 340 346L362 350C362 300 354 256 344 226Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M318 228C332 262 340 302 340 346L362 350C362 300 354 256 344 226Z" fill="url(#hatch)" stroke="none"/>
+<path d="M326 362C324 348 338 342 354 344C370 346 378 352 376 362C374 370 364 372 350 372C334 372 326 370 326 362Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M342 360V371M356 360V372" fill="none" stroke-width="2.6"/>
+</g>
+</g>
+</g>
+</svg>

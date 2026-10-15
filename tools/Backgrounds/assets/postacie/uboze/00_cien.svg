@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="22 80 255 450">
+<!-- cień: pulsuje skalą X przy dreptaniu, origin 150,512, okres 2 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="cien" data-anim="skala" data-origin="150,512" data-range="0.96-1.0" data-period="2">
+<ellipse cx="160" cy="512" rx="90" ry="9" fill="url(#hatch)" stroke="none"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- głowa: głowa przechyla się wolno ±3° przy nasadzie; przy spojrzeniu na gracza obraca się skokowo o 6° w 0.2 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="glowa" data-anim="obrot" data-origin="150,176" data-range="3deg" data-period="6">
+<path d="M118 172C110 140 112 96 124 72C134 56 166 56 176 72C188 96 190 140 182 172C170 180 130 180 118 172Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M118 172C110 140 112 96 124 72C134 56 166 56 176 72C188 96 190 140 182 172C170 180 130 180 118 172Z" fill="url(#hatch)" stroke="none"/>
+<path d="M122 80L124 120L120 160L126 160L128 120L128 80ZM176 82L176 120L180 160L174 160L172 120L170 82ZM150 60L148 80L152 92L154 80Z" fill="#000000" stroke="none"/>
+<path d="M114 100l-8 2M112 140l-8 2M186 100l8 2M188 140l8 2" fill="none" stroke-width="2.6"/>
+<path d="M124 148L136 152L142 146L150 156L158 146L166 152L178 148L172 164L160 160L150 170L140 160L128 164Z" fill="#000000" stroke-width="2.5"/>
+<path d="M132 152l2 6M142 150l1 8M150 156l0 8M158 150l-1 8M168 152l-2 6" fill="none" stroke="#EDEBE6" stroke-width="1.6"/>
+</g>
+</g>
+</svg>

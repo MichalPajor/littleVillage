@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „zarośla nocą”: chudy, warczący pies — ogon (rysunek autora z warstw)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="153" height="109" viewBox="190 326 153 109">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.27000 0.00000 0.00000 0.27000 190.00000 326.00000)"><g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="ogon" data-anim="obrot" data-origin="438,238" data-range="4deg" data-period="0.3">
+<g transform="translate(70 0)">
+<path d="M368 168C404 150 432 118 446 82C452 104 446 136 428 158C414 174 396 184 382 190Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M440 92C448 98 450 112 444 128C438 118 436 104 440 92Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M408 146l8-4M420 128l8-2M398 166l8 0" fill="none" stroke-width="2.4"/>
+</g>
+</g>
+</g>
+</g></g>
+</svg>

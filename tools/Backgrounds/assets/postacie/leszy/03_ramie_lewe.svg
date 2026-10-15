@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- ramię lewe: ramię lewe kołysze się wolno ±4° w barku; pazury dodatkowo drgają obrót ±3° przy origin 56,420 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="ramie_lewe" data-anim="obrot" data-origin="104,180" data-range="4deg" data-period="7">
+<path d="M104 180C84 220 68 260 62 300C56 340 54 380 56 420" fill="none" stroke-width="20"/>
+<path d="M104 180C84 220 68 260 62 300C56 340 54 380 56 420" fill="none" stroke="#EDEBE6" stroke-width="12"/>
+<path d="M104 180C84 220 68 260 62 300C56 340 54 380 56 420" fill="none" stroke="url(#hatch)" stroke-width="12"/>
+<path d="M96 200C80 240 68 280 64 320M58 360C56 380 56 400 58 416" fill="none" stroke-width="2.6"/>
+<path d="M62 300l-10 4M60 340l-9 2M70 250l-9 0" fill="none" stroke-width="3"/>
+<path d="M56 420C40 440 26 462 18 496M56 420C46 446 42 472 44 504M56 420C58 450 60 480 66 508M56 420C70 440 80 464 86 496" fill="none" stroke-width="7"/>
+<path d="M56 420C40 440 26 462 18 496M56 420C46 446 42 472 44 504M56 420C58 450 60 480 66 508M56 420C70 440 80 464 86 496" fill="none" stroke="#EDEBE6" stroke-width="3"/>
+<path d="M30 460l-8-2M40 476l-8 2M50 460l6-6M64 470l8-2M74 470l-6-6M18 496l-4 6M44 504l-2 6M66 508l2 6M86 496l5 6" fill="none" stroke-width="3"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- skarb Jaromira, wariant: pióro. Wisi na rzemyku; kołysze się obrotem ±5° przy origin 150,214 (kark), okres 3 s. Pokaż tylko jeden skarb naraz. -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="skarb_pioro" data-anim="obrot" data-origin="150,214" data-range="5deg" data-period="3">
+<path d="M140 214C140 226 144 240 150 248C156 240 160 226 160 214" fill="none" stroke-width="2.4"/>
+<path d="M140 214C140 226 144 240 150 248C156 240 160 226 160 214" fill="none" stroke="#EDEBE6" stroke-width="0.8"/>
+<path d="M150 246C144 258 140 274 142 292C146 300 152 300 156 292C160 274 156 258 150 246Z" fill="#FFFFFF" stroke-width="2.2"/>
+<path d="M150 246C150 266 150 286 150 304" fill="none" stroke-width="1.6"/>
+<path d="M150 256l-6 4M150 256l6 4" fill="none" stroke-width="0.9"/>
+<path d="M150 261l-6 4M150 261l6 4" fill="none" stroke-width="0.9"/>
+<path d="M150 266l-6 4M150 266l6 4" fill="none" stroke-width="0.9"/>
+<path d="M150 271l-6 4M150 271l6 4" fill="none" stroke-width="0.9"/>
+<path d="M150 276l-6 4M150 276l6 4" fill="none" stroke-width="0.9"/>
+<path d="M150 281l-6 4M150 281l6 4" fill="none" stroke-width="0.9"/>
+<path d="M150 286l-6 4M150 286l6 4" fill="none" stroke-width="0.9"/>
+<path d="M150 291l-6 4M150 291l6 4" fill="none" stroke-width="0.9"/>
+<path d="M141 280l-4 3M157 270l4 2" fill="none" stroke-width="1.4"/>
+</g>
+</g>
+</svg>

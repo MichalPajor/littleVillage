@@ -1,0 +1,11 @@
+szczeniak_szczeka – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 560 400 (jak w poprzedniej wersji). data-origin w jednostkach viewBox; grupy mają wewnętrzny transform translate(70 0) — origin podany już po przeliczeniu.
+Szczeniak szczekający (profil w lewo) bez zmian wyglądu.
+
+00_cien.svg  —  cien: cień: drga w rytm szczekania
+01_ogon.svg  —  ogon: ogon sztywno w górę: drga obrotem ±4° przy nasadzie (origin po przeliczeniu ok. 438,238), okres 0.3 s
+02_nogi_dalsze.svg  —  nogi_dalsze: dalsze nogi: drżenie przesuw X ±1 px, okres 0.1 s
+03_tulow.svg  —  tulow: tułów (chudy, zjeżony kark): drży przesuwem X ±1 px, okres 0.1 s; przy szczeknięciu szarpnięcie do przodu przesuw X −4 px
+04_glowa.svg  —  glowa: głowa z otwartym pyskiem: szczeknięcie = obrót −6°→0 przy origin ok. 230,190 (po przeliczeniu), okres 0.3 s, seria szczeknięć bez przerwy
+05_nogi_blizsze.svg  —  nogi_blizsze: bliższe nogi rozstawione szeroko: drżenie przesuw X ±1 px, okres 0.1 s
+06_szczekanie.svg  —  szczekanie: kreski dźwięku przed pyskiem: pojawiają się i rosną skalą 0.8→1.2 przy origin ok. 70,150 (po przeliczeniu) w rytm każdego szczeknięcia
+07_drzenie.svg  —  drzenie: łuki drżenia przy łapach i karku: migają (krycie 1↔0) co 0.2 s

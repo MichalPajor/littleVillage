@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="610" viewBox="40 80 300 530">
+<!-- blizna: opcjonalna, rozdz. 13 — ślad po siekierze Maćka na długim ramieniu; porusza się razem z ramie_blizsze (origin 206,154) -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="blizna" data-anim="brak" data-origin="194,224" data-range="0" data-period="-">
+<path d="M182 214L208 236L206 240L180 218Z" fill="#FFFFFF" stroke-width="2"/>
+<path d="M184 210l-4 8M190 214l-4 9M196 219l-4 9M202 224l-4 9M208 229l-4 8" fill="none" stroke-width="2.6"/>
+</g>
+</g>
+</svg>

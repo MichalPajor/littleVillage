@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- lniana koszulka do kolan (Marysi): oddycha skalą Y 0.99–1.0 przy origin 150,400, okres 3 s; dół lekko faluje skew X ±1° -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="koszulka" data-anim="skala" data-origin="150,400" data-range="0.99-1.0" data-period="3">
+<path d="M112 220C100 260 96 320 92 400L104 394L118 402L134 394L150 404L166 394L182 402L196 394L208 400C204 320 200 260 188 220C176 214 162 212 150 212C138 212 124 214 112 220Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M188 220C200 260 204 320 208 400L196 394C192 330 186 270 176 226Z" fill="url(#hatch)" stroke="none"/>
+<path d="M134 218C138 230 162 230 166 218" fill="none" stroke-width="2.4"/>
+<path d="M150 226V246M146 232h8M146 240h8" fill="none" stroke-width="1.4"/>
+<path d="M126 260C122 300 118 350 114 392M150 270C150 310 150 360 150 400M174 260C178 300 182 350 186 392" fill="none" stroke-width="1.6"/>
+<path d="M98 360C120 368 180 368 202 360" fill="none" stroke-width="1.4" stroke-dasharray="4 4"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- oczy: węgielki żarzą się: skala 0.6–1.4 nieregularnie (2 s), czerwień może pulsować kryciem 0.7–1.0; mruganie = krótkie zniknięcie na 0.1 s co 5–9 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="oczy" data-anim="skala" data-origin="150,118" data-range="0.6-1.4" data-period="2">
+<ellipse cx="136" cy="112" rx="14" ry="19" fill="#000000" stroke-width="3"/>
+<ellipse cx="166" cy="110" rx="14" ry="19" fill="#000000" stroke-width="3"/>
+<path d="M124 100l-8-6M126 124l-8 4M178 98l8-6M176 122l8 4M136 92l-2-8M166 90l2-8" fill="none" stroke-width="3"/>
+<circle cx="137" cy="120" r="4" fill="#FFFFFF" stroke="none"/><circle cx="137" cy="120" r="2" fill="#A8101A" stroke="none"/>
+<circle cx="165" cy="118" r="4" fill="#FFFFFF" stroke="none"/><circle cx="165" cy="118" r="2" fill="#A8101A" stroke="none"/>
+</g>
+</g>
+</svg>

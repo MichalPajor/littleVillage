@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="610" viewBox="40 80 300 530">
+<!-- szyja: szyja: porusza się razem z głową (ta sama transformacja) -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="szyja" data-anim="brak" data-origin="170,170" data-range="0" data-period="-">
+<path d="M204 140C182 138 152 148 130 160L138 188C156 180 176 178 186 184Z" fill="#EDEBE6" stroke="none"/>
+<path d="M204 140C182 138 152 148 130 160M138 188C156 180 176 178 186 184" fill="none" stroke-width="5"/>
+<path d="M150 170C160 168 172 168 182 172" fill="none" stroke-width="2.2"/>
+</g>
+</g>
+</svg>

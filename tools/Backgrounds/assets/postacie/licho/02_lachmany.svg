@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- łachmany: suknia bez rękawów oddycha skalą Y 0.99–1.0 przy origin 150,300; zwisające strzępy u dołu kołyszą się skew X ±3° przy origin 150,420, okres 3 s (wiatr) -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+'
+<g id="lachmany" data-anim="kolysanie" data-origin="150,420" data-range="3deg" data-period="3">
+<path d="M104 300C96 340 96 380 92 420L98 470L110 452L116 480L128 456L138 486L150 460L162 488L174 458L186 482L198 452L208 476L208 420C204 380 204 340 196 300Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M104 300C96 340 96 380 92 420L98 470L110 452L116 480L128 456L138 486L150 460L162 488L174 458L186 482L198 452L208 476L208 420C204 380 204 340 196 300Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M112 330C108 370 106 410 104 440M188 330C192 370 194 410 196 440M150 320C150 360 150 400 150 456" fill="none" stroke-width="2.4"/>
+<path d="M118 360C120 350 132 348 136 358C132 368 120 370 118 360Z M176 400C180 392 190 394 190 404C186 412 176 410 176 400Z" fill="#000000" stroke-width="2"/>
+<path d="M98 470l-6 8M116 480l-2 8M138 486l-2 8M162 488l0 8M186 482l2 8M208 476l4 8M96 360l-8 2M94 410l-8 2M206 360l8 2M206 410l8 2" fill="none" stroke-width="2.2"/>
+<path d="M104 300C120 306 140 308 150 310C160 308 180 306 196 300" fill="none" stroke-width="6"/>
+<path d="M104 300C120 306 140 308 150 310C160 308 180 306 196 300" fill="none" stroke="#EDEBE6" stroke-width="2.4"/>
+<path d="M150 310C146 324 140 336 142 350C144 356 150 354 150 346C150 336 152 326 150 310Z" fill="#EDEBE6" stroke-width="2.4"/>
+<path d="M104 200C108 230 108 270 104 302L120 302C124 270 124 230 120 204Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M104 200C108 230 108 270 104 302L120 302C124 270 124 230 120 204Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M196 200C192 230 192 270 196 302L180 302C176 270 176 230 180 204Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M196 200C192 230 192 270 196 302L180 302C176 270 176 230 180 204Z" fill="url(#hatchDense)" stroke="none"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- nogi: bose, chude; przy kroku naprzemienny przesuw Y ±4 px; stojąc, drżą skew X ±1° przy origin 150,512 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="nogi" data-anim="drzenie" data-origin="150,512" data-range="1deg" data-period="0.8">
+<path d="M128 440C126 464 124 486 124 500M174 440C176 464 178 486 178 500" fill="none" stroke-width="13"/>
+<path d="M128 440C126 464 124 486 124 500M174 440C176 464 178 486 178 500" fill="none" stroke="#EDEBE6" stroke-width="7"/>
+<path d="M130 460l-7 1M172 470l7 1" fill="none" stroke-width="2"/>
+<path d="M112 500C108 506 112 512 122 512L150 512C154 506 148 500 140 498Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M150 512L164 512M148 508L162 504M146 503L158 497" fill="none" stroke-width="3"/>
+<path d="M164 512l5 0M162 504l5-2M158 497l4-3" fill="none" stroke-width="2.4"/>
+<path d="M190 500C194 506 190 512 180 512L152 512C148 506 154 500 162 498Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M152 512L138 512M154 508L140 504M156 503L144 497" fill="none" stroke-width="3"/>
+<path d="M138 512l-5 0M140 504l-5-2M144 497l-4-3" fill="none" stroke-width="2.4"/>
+</g>
+</g>
+</svg>

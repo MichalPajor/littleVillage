@@ -1,0 +1,11 @@
+poludnica – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. data-origin w jednostkach viewBox.
+
+00_cien.svg  —  cień: pulsuje skalą X w rytm unoszenia postaci
+01_zar.svg  —  żar: fale żaru przesuwają się poziomo ±6 px i migoczą kryciem 0.5–1.0; warstwa pod koszulą
+02_koszula.svg  —  koszula: cała postać (koszula+włosy+twarz+wianek+ręce) unosi się góra-dół ±6 px; sam dół koszuli faluje skew X ±2° przy origin 150,160
+03_wlosy.svg  —  włosy: rozwiane włosy falują skew X ±5° przy nasadzie, szybciej niż koszula (upał)
+04_twarz.svg  —  twarz: głowa kiwa się ±2° przy szyi; przy zagadce przechyla się o 10° w bok
+05_wianek.svg  —  wianek: porusza się razem z twarzą (ta sama transformacja)
+06_reka_z_sierpem.svg  —  ręka z sierpem: ręka z sierpem kołysze się ±8° w barku; ZAMACH = obrót z −10° do +120° w 0.25 s, potem powrót w 0.6 s
+07_reka_wyciagnieta.svg  —  ręka wyciągnięta: ręka wyciągnięta unosi się i opada ±5° w barku; palce można drgać skalą 0.95–1.05 przy origin 268,190
+08_zboze_z_przodu.svg  —  zboże z przodu: kłosy na pierwszym planie kołyszą się skew X ±3° przy ziemi; warstwa na samym wierzchu, można pominąć

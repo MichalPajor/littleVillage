@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- nogi: nogi lekko uginają się skalą Y 0.98–1.0 przy origin 150,470 (ciężki oddech) -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="nogi" data-anim="obrot" data-origin="150,336" data-range="2deg" data-period="6">
+<path d="M132 330C126 370 122 420 124 468M168 330C174 370 178 420 176 468" fill="none" stroke-width="24"/>
+<path d="M132 330C126 370 122 420 124 468M168 330C174 370 178 420 176 468" fill="none" stroke="#EDEBE6" stroke-width="16"/>
+<path d="M132 330C126 370 122 420 124 468M168 330C174 370 178 420 176 468" fill="none" stroke="url(#hatch)" stroke-width="16"/>
+<path d="M128 344C124 384 122 424 124 460M172 346C176 386 178 426 176 460" fill="none" stroke-width="3"/>
+<path d="M122 400l-8 2M126 440l-8 4M180 400l8 2M178 440l8 4" fill="none" stroke-width="2.5"/>
+</g>
+</g>
+</svg>

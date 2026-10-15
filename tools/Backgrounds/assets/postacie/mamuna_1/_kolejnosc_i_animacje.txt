@@ -1,0 +1,12 @@
+mamuna_1 – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. data-origin w jednostkach viewBox. Kierunek: z profilu w lewo.
+Wariant 1: niesie w chuście zawiniątko z odmieńcem.
+
+00_cien.svg  —  cień: wydłużona plama pod stopami; pulsuje skalą X 0.95–1.0 w rytm kroków, origin 150,512, okres 1.6 s
+01_noga_dalsza.svg  —  noga dalsza (tylna, na palcach): skradanie = obrót w biodrze (origin 184,304) od +12° do −12°, okres 1.6 s, w przeciwfazie do bliższej; stopa unosi się przesuwem Y −6 px w połowie kroku
+02_reka_dalsza.svg  —  ręka dalsza (zwisa przed ciałem do kolan): kołysze się ±5° w barku, origin 150,166, okres 1.6 s (w rytm kroku); długie palce drgają obrotem ±4° przy nadgarstku 76,398
+03_tulow.svg  —  tułów: chudy, garbaty; oddycha skalą Y 0.98–1.0 przy origin 180,314, okres 3 s; przy skradaniu kołysze się obrotem ±2° przy origin 180,310
+04_noga_blizsza.svg  —  noga bliższa (przednia, wykroczna): skradanie = obrót w biodrze (origin 170,306) od −12° do +12°, okres 1.6 s; palce-korzonki przy stawianiu stopy rozchylają się skalą X 1.0–1.08 przy origin 90,506
+05_lachmany.svg  —  łachmany z kory i mchu: narzucone na garb; strzępy mchu u dołu kołyszą się skew X ±4° przy origin 196,330, okres 1.6 s (krok); płaty kory poruszają się razem z tułowiem
+06_chusta_z_zawiniatkiem.svg  —  chusta z zawiniątkiem (odmieniec): przewieszona przez bark; zawiniątko kołysze się obrotem ±3° przy origin 150,150 (pas chusty na barku), okres 1.6 s; podgrupa odmieniec_paluszki drga osobno
+07_reka_blizsza.svg  —  ręka bliższa (podtrzymuje zawiniątko od spodu): porusza się razem z chustą obrotem ±3° przy origin 170,168, okres 1.6 s; palce zaciskają się obrotem ±5° przy nadgarstku 132,298
+08_glowa_z_wlosami.svg  —  głowa z włosami z suchych gałązek i liści: kiwa się ±4° przy origin 136,166 (kark), okres 1.6 s, wysuwa się do przodu przesuwem X −6 px przy każdym kroku; gałązki drgają skew ±2°; zawiera podgrupę oczy

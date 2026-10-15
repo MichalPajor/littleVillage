@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="32 70 260 460">
+<!-- włosy z tyłu głowy: spływają na kark i bark; kołyszą się skew X ±4° przy origin 204,126, okres 2 s; przy skoku odchylają się obrotem −25° -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wlosy_tyl" data-anim="kolysanie" data-origin="204,126" data-range="4deg" data-period="2">
+<path d="M204 120C184 136 172 170 168 220C164 262 158 300 148 330L160 322L162 344L172 318L178 338L184 310C188 270 192 230 198 196C202 172 208 150 218 134Z" fill="#000000" stroke-width="3"/>
+<path d="M190 150C182 190 178 240 174 290M198 160C192 200 188 250 184 300" fill="none" stroke="#FFFFFF" stroke-width="1.4"/>
+</g>
+</g>
+</svg>

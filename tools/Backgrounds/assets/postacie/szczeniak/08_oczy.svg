@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="430" viewBox="0 0 400 430">
+<!-- oczy: oczy: mruganie = skala Y 1→0.1 przy origin 200,160 co 3–5 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="oczy" data-anim="mruganie" data-origin="200,160" data-range="1-0.1" data-period="3-5">
+<path d="M138 150L148 155M262 150L252 155" fill="none" stroke-width="3.5"/>
+<ellipse cx="161" cy="160" rx="13" ry="14" fill="#000000" stroke-width="2"/>
+<ellipse cx="239" cy="160" rx="13" ry="14" fill="#000000" stroke-width="2"/>
+<circle cx="156" cy="154" r="4.6" fill="#FFFFFF" stroke="none"/>
+<circle cx="165" cy="166" r="2" fill="#FFFFFF" stroke="none"/>
+<circle cx="234" cy="154" r="4.6" fill="#FFFFFF" stroke="none"/>
+<circle cx="243" cy="166" r="2" fill="#FFFFFF" stroke="none"/>
+</g>
+</g>
+</svg>

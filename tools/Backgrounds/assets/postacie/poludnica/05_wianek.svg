@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- wianek: porusza się razem z twarzą (ta sama transformacja) -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wianek" data-anim="obrot" data-origin="150,160" data-range="2deg" data-period="4">
+<path d="M126 86C136 70 164 70 174 86" fill="none" stroke-width="6"/>
+<path d="M126 86C136 70 164 70 174 86" fill="none" stroke="#EDEBE6" stroke-width="2.4"/>
+<path d="M128 80l-8-8M134 72l-6-12M146 68l-2-14M158 68l2-14M168 72l6-12M130 86l-10-2M172 82l10-4" fill="none" stroke-width="3"/>
+<path d="M128 80l-8-8M134 72l-6-12M146 68l-2-14M158 68l2-14M168 72l6-12" fill="none" stroke="#EDEBE6" stroke-width="1"/>
+<circle cx="138" cy="74" r="6" fill="#A8101A" stroke-width="1.8"/><circle cx="138" cy="74" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="164" cy="76" r="5.5" fill="#A8101A" stroke-width="1.8"/><circle cx="164" cy="76" r="1.6" fill="#000000" stroke="none"/>
+<circle cx="152" cy="68" r="4" fill="#A8101A" stroke-width="1.6"/><circle cx="152" cy="68" r="1.2" fill="#000000" stroke="none"/>
+</g>
+</g>
+</svg>

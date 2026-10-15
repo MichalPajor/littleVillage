@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- łachmany z kory i mchu: narzucone na garb; strzępy mchu u dołu kołyszą się skew X ±4° przy origin 196,330, okres 1.6 s (krok); płaty kory poruszają się razem z tułowiem -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="lachmany" data-anim="kolysanie" data-origin="196,330" data-range="4deg" data-period="1.6">
+<path d="M140 150C164 118 216 124 230 178C240 220 244 290 242 360L232 352L228 384L218 360L212 396L200 368L192 400L182 370L172 392L166 356L156 372L154 330C150 290 150 240 146 200C144 180 142 164 140 150Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M140 150C164 118 216 124 230 178C240 220 244 290 242 360L232 352L228 384L218 360L212 396L200 368L192 400L182 370L172 392L166 356L156 372L154 330C150 290 150 240 146 200C144 180 142 164 140 150Z" fill="url(#hatch)" stroke="none"/>
+<path d="M194 158 L214 152 L222 176 L218 200 L198 204 L190 182Z" fill="#EDEBE6" stroke-width="3"/>
+<path d="M198 157C196 173 200 183 198 199" fill="none" stroke-width="1.6"/>
+<path d="M206 157C204 173 208 183 206 199" fill="none" stroke-width="1.6"/>
+<path d="M214 157C212 173 216 183 214 199" fill="none" stroke-width="1.6"/>
+<path d="M202 226 L228 222 L234 250 L230 278 L206 280 L200 252Z" fill="#EDEBE6" stroke-width="3"/>
+<path d="M208 227C206 245 210 257 208 275" fill="none" stroke-width="1.6"/>
+<path d="M217 227C215 245 219 257 217 275" fill="none" stroke-width="1.6"/>
+<path d="M226 227C224 245 228 257 226 275" fill="none" stroke-width="1.6"/>
+<path d="M166 266 L188 262 L192 290 L186 314 L166 312 L162 288Z" fill="#EDEBE6" stroke-width="3"/>
+<path d="M170 267C168 283 172 293 170 309" fill="none" stroke-width="1.6"/>
+<path d="M177 267C175 283 179 293 177 309" fill="none" stroke-width="1.6"/>
+<path d="M184 267C182 283 186 293 184 309" fill="none" stroke-width="1.6"/>
+<path d="M212 300 L232 298 L236 322 L230 340 L214 338Z" fill="#EDEBE6" stroke-width="3"/>
+<path d="M218 303C216 315 220 323 218 335" fill="none" stroke-width="1.6"/>
+<path d="M224 303C222 315 226 323 224 335" fill="none" stroke-width="1.6"/>
+<path d="M230 303C228 315 232 323 230 335" fill="none" stroke-width="1.6"/>
+<path d="M232 352l2 14M228 384l-2 12M212 396l0 12M192 400l-2 12M172 392l-2 10M156 372l-4 10M242 300l8 4M244 330l8 2M150 290l-8 2M150 250l-8 0" fill="none" stroke-width="2.2"/>
+<path d="M216 360C214 372 216 380 214 390M196 372C196 384 198 392 196 402M176 372C176 382 178 390 176 398" fill="none" stroke="url(#hatchDense)" stroke-width="5"/>
+<path d="M150 150C172 132 204 134 222 160M154 160C170 148 194 148 210 164" fill="none" stroke-width="2"/>
+</g>
+</g>
+</svg>

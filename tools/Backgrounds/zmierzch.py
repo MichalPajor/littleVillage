@@ -117,7 +117,9 @@ EYE = (round(TX + 96 * K), round(TY + 164 * K))     # oko (96,164 w rysunku)
 STWOR_BOX = (240, round(TY + 80 * K), 104, round(FEET_Y + 6 - (TY + 80 * K)))
 
 # zdobycz: topielec wyszedl z krzakow; w paszczy bezwladne cialo psa, kapie krew
-L["stwor_zdobycz"] = (*STWOR_BOX, art.topielec(TOP))
+# topielec z warstw (assets/postacie/topielec): ramiona kolysza sie, krople spadaja; glowa nieruchoma — w paszczy cialo psa
+RIG_ZDOBYCZ = art.topielec_rig(art.parse_transform(TOP), "stwor_zdobycz", head=False, drops_fall=30 * K)
+art.install_rig(L, RIG_ZDOBYCZ)
 L["pies_martwy"] = (MOUTH[0] - 32, MOUTH[1] - 28, 60, 86, art.barking(
     f"translate({MOUTH[0] - 5} {MOUTH[1] + 18}) rotate(-84) scale({0.39 * K:.3f}) translate(-330 -150)", skip=("cień", "szczekanie", "drżenie")))
 L["krew"] = (MOUTH[0] - 14, MOUTH[1] - 4, 24, 90, '<g fill="#A8101A" filter="url(#ink)">'
@@ -131,7 +133,8 @@ L["oczy_stwora"] = (EYE[0] - 5, EYE[1] - 5, 10, 10, group([
     f'<circle cx="{EYE[0] - 0.4}" cy="{EYE[1]}" r="1" fill="#000000" stroke="none"/>']))
 
 # obrona: topielec w krzakach (krzaki_przod zaslaniaja mu nogi), oko jarzy sie w mroku
-L["stwor_cien"] = (*STWOR_BOX, art.topielec(TOP, skip=("kałuża",)))
+RIG_CIEN = art.topielec_rig(art.parse_transform(TOP), "stwor_cien", head=False, shadow=False, drops_fall=30 * K)
+art.install_rig(L, RIG_CIEN)
 L["krzaki_przod"] = (226, 330, 174, 100, group([
     f'<path d="{bush(300, 434, 84, 48, 7)}" fill="#000000" stroke-width="3"/>',
     *[f'<path d="M{x:.0f} {y:.0f}q4 -3 8 0" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>'
@@ -141,7 +144,8 @@ L["slepia"] = (EYE[0] - 6, EYE[1] - 6, 12, 12, group([
     f'<circle cx="{EYE[0] - 0.4}" cy="{EYE[1]}" r="1.3" fill="#000000" stroke="none"/>']))
 
 # pies w postawie obronnej — rysunek autora (assets/wilczek2.svg), odbity, by szczekal w strone stwora
-L["pies_obrona"] = (176, 352, 112, 76, art.barking("translate(280 359) scale(-0.17 0.17)"))
+RIG_OBRONA = art.dog_barking(art.parse_transform("translate(280 359) scale(-0.17 0.17)"), "pies_obrona")
+art.install_rig(L, RIG_OBRONA)
 
 # ---------- PIERWSZY PLAN: ciemna trawa
 f = ['<path d="M-10 430H400V844H-10Z" fill="#EDEBE6" stroke="none"/>',
@@ -166,6 +170,11 @@ VARIANTS = {
     "zdobycz": ["tlo", "krzaki", "mgla_gora", "stwor_zdobycz", "pies_martwy", "krew", "oczy_stwora", "maciek", "mgla_dol", "przod"],
     "obrona": ["tlo", "krzaki", "stwor_cien", "krzaki_przod", "slepia", "mgla_gora", "maciek", "pies_obrona", "mgla_dol", "przod"],
 }
+
+for _old, _rig, _txt in [("stwor_zdobycz", RIG_ZDOBYCZ, "topielec wychodzący z krzaków"), ("stwor_cien", RIG_CIEN, "topielec w krzakach"),
+                         ("pies_obrona", RIG_OBRONA, "pies ujadający w obronie Maćka")]:
+    VARIANTS = {k: art.expand(v, _old, _rig) for k, v in VARIANTS.items()}
+    COMMENTS.update({n: f"{_txt} — {n[len(_old) + 1:]} (rysunek autora z warstw)" for n in art.rig_names(_rig)})
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":

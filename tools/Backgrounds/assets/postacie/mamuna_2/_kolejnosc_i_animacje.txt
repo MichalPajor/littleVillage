@@ -1,0 +1,11 @@
+mamuna_2 – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. data-origin w jednostkach viewBox. Kierunek: z profilu w lewo.
+Wariant 2: sięga po dziecko i odwraca twarz od czerwonej wstążki (wstążka w tle, poza rysunkiem).
+
+00_cien.svg  —  cień: wydłużona plama pod stopami; pulsuje skalą X 0.95–1.0 w rytm kroków, origin 150,512, okres 1.6 s
+01_noga_dalsza.svg  —  noga dalsza (tylna, na palcach): skradanie = obrót w biodrze (origin 184,304) od +12° do −12°, okres 1.6 s, w przeciwfazie do bliższej; stopa unosi się przesuwem Y −6 px w połowie kroku
+02_reka_siegajaca.svg  —  ręka dalsza, wyciągnięta przed siebie (sięga po dziecko w kołysce): wysuwa się obrotem w barku od +10° do −6°, origin 150,166, okres 2.4 s; palce rozwierają i zaciskają się obrotem ±10° przy nadgarstku 40,240
+03_tulow.svg  —  tułów: chudy, garbaty; oddycha skalą Y 0.98–1.0 przy origin 180,314, okres 3 s; przy skradaniu kołysze się obrotem ±2° przy origin 180,310
+04_noga_blizsza.svg  —  noga bliższa (przednia, wykroczna): skradanie = obrót w biodrze (origin 170,306) od −12° do +12°, okres 1.6 s; palce-korzonki przy stawianiu stopy rozchylają się skalą X 1.0–1.08 przy origin 90,506
+05_lachmany.svg  —  łachmany z kory i mchu: narzucone na garb; strzępy mchu u dołu kołyszą się skew X ±4° przy origin 196,330, okres 1.6 s (krok); płaty kory poruszają się razem z tułowiem
+06_glowa_z_wlosami.svg  —  głowa z włosami z suchych gałązek: odwrócona od wstążki, odchylona w tył obrotem +14° przy origin 136,166; drga ±3° nerwowo (okres 0.6 s); oczy zaciśnięte, paszcza rozwarta w grymasie
+07_reka_zaslaniajaca.svg  —  ręka bliższa uniesiona przed twarz (zasłania się przed czerwoną wstążką z tła): drży obrotem ±3° przy origin 170,168, okres 0.5 s; przy mocniejszym odruchu unosi się obrotem −15° w 0.2 s; palce rozczapierzone

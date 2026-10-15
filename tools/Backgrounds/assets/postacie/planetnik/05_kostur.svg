@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- kostur rozwidlony u góry jak proca, w drugiej ręce: wysuwa się z krokiem obrót ±4° przy origin 266,512 (dolny koniec), okres 1.4 s; uderzenie o ziemię = przesuw Y −4 px -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="kostur" data-anim="obrot" data-origin="266,512" data-range="4deg" data-period="1.4">
+<path d="M266 512L250 176" fill="none" stroke-width="12"/>
+<path d="M266 512L250 176" fill="none" stroke="#EDEBE6" stroke-width="6"/>
+<path d="M250 178L236 128M250 178L264 126" fill="none" stroke-width="10"/>
+<path d="M250 178L236 128M250 178L264 126" fill="none" stroke="#EDEBE6" stroke-width="4"/>
+<path d="M236 128l-3-6M264 126l3-6" fill="none" stroke-width="3"/>
+<ellipse cx="256" cy="330" rx="6" ry="3.5" fill="#000000" stroke="none" transform="rotate(-87 256 330)"/>
+<ellipse cx="262" cy="440" rx="5" ry="3" fill="#000000" stroke="none" transform="rotate(-87 262 440)"/>
+<path d="M252 222l8 4M260 400l-8 2" fill="none" stroke-width="2.4"/>
+<path d="M150.3 193.1 L153.1 198.0 L156.7 204.7 L161.0 212.9 L165.9 222.0 L171.2 231.5 L176.9 241.0 L182.9 249.9 L189.1 257.7 L195.9 264.8 L203.4 271.5 L211.4 277.8 L219.3 283.6 L226.9 288.9 L233.8 293.4 L239.4 297.1 L243.5 300.0 L252.5 288.0 L248.4 284.7 L242.8 280.5 L236.3 275.7 L229.2 270.4 L221.8 264.6 L214.8 258.5 L208.3 252.3 L202.9 246.3 L198.1 239.4 L193.2 231.1 L188.3 222.1 L183.6 212.8 L179.3 203.7 L175.5 195.4 L172.3 188.2 L169.7 182.9Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M150.3 193.1 L153.1 198.0 L156.7 204.7 L161.0 212.9 L165.9 222.0 L171.2 231.5 L176.9 241.0 L182.9 249.9 L189.1 257.7 L195.9 264.8 L203.4 271.5 L211.4 277.8 L219.3 283.6 L226.9 288.9 L233.8 293.4 L239.4 297.1 L243.5 300.0 L247.1 295.2 L243.0 292.2 L237.4 288.3 L230.7 283.6 L223.3 278.3 L215.6 272.5 L208.0 266.3 L200.8 259.8 L194.6 253.1 L189.0 245.7 L183.4 237.0 L178.0 227.7 L173.0 218.3 L168.3 209.2 L164.2 200.9 L160.8 194.1 L158.1 189.0Z" fill="url(#hatch)" stroke="none"/>
+<path d="M244 284C240 294 242 306 250 310L266 308C270 298 268 288 260 282Z" fill="#EDEBE6" stroke-width="3"/>
+<path d="M246 292H266M246 300H266" fill="none" stroke-width="1.6"/>
+</g>
+</g>
+</svg>

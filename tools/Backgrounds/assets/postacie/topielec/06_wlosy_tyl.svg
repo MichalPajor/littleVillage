@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="610" viewBox="40 80 300 530">
+<!-- wlosy_tyl: mokre włosy z tyłu: ciężko kołyszą się skew X ±3° przy origin 130,130, okres 3 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wlosy_tyl" data-anim="kolysanie" data-origin="130,130" data-range="3deg" data-period="3">
+<path d="M98 130C120 116 152 124 162 150C168 190 162 242 158 300C150 262 140 232 130 222C126 190 118 160 98 130Z" fill="#000000" stroke-width="3"/>
+</g>
+</g>
+</svg>

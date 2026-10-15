@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- skarb Jaromira, wariant: muszelka. Wisi na rzemyku; kołysze się obrotem ±5° przy origin 150,214 (kark), okres 3 s. Pokaż tylko jeden skarb naraz. -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="skarb_muszelka" data-anim="obrot" data-origin="150,214" data-range="5deg" data-period="3">
+<path d="M140 214C140 226 144 240 150 248C156 240 160 226 160 214" fill="none" stroke-width="2.4"/>
+<path d="M140 214C140 226 144 240 150 248C156 240 160 226 160 214" fill="none" stroke="#EDEBE6" stroke-width="0.8"/>
+<path d="M150 248L136 262C134 274 142 282 150 282C158 282 166 274 164 262Z" fill="#FFFFFF" stroke-width="2.4"/>
+<path d="M150 250L136.5 280" fill="none" stroke-width="1.1"/>
+<path d="M150 250L141.0 280" fill="none" stroke-width="1.1"/>
+<path d="M150 250L145.5 280" fill="none" stroke-width="1.1"/>
+<path d="M150 250L150.0 280" fill="none" stroke-width="1.1"/>
+<path d="M150 250L154.5 280" fill="none" stroke-width="1.1"/>
+<path d="M150 250L159.0 280" fill="none" stroke-width="1.1"/>
+<path d="M150 250L163.5 280" fill="none" stroke-width="1.1"/>
+<path d="M144 252L140 248L146 248ZM156 252L160 248L154 248Z" fill="#FFFFFF" stroke-width="1.4"/>
+</g>
+</g>
+</svg>

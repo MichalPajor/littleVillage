@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- ramię prawe: ramię prawe (sięgające) unosi się ±6° w barku; SIĘGANIE = obrót do −60° w 1 s; pazury rozwierają się skalą 1.0–1.2 przy origin 240,380 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="ramie_prawe" data-anim="obrot" data-origin="196,180" data-range="6deg" data-period="7">
+<path d="M196 180C218 212 240 246 246 282C252 316 248 350 240 380" fill="none" stroke-width="20"/>
+<path d="M196 180C218 212 240 246 246 282C252 316 248 350 240 380" fill="none" stroke="#EDEBE6" stroke-width="12"/>
+<path d="M196 180C218 212 240 246 246 282C252 316 248 350 240 380" fill="none" stroke="url(#hatch)" stroke-width="12"/>
+<path d="M206 200C224 226 240 254 244 290M246 330C244 350 242 364 240 376" fill="none" stroke-width="2.6"/>
+<path d="M246 282l10 2M250 320l9 0M232 240l9-2" fill="none" stroke-width="3"/>
+<path d="M240 380C224 396 212 416 206 446M240 380C236 404 238 428 242 458M240 380C250 402 258 426 270 450M240 380C258 392 274 408 288 430" fill="none" stroke-width="7"/>
+<path d="M240 380C224 396 212 416 206 446M240 380C236 404 238 428 242 458M240 380C250 402 258 426 270 450M240 380C258 392 274 408 288 430" fill="none" stroke="#EDEBE6" stroke-width="3"/>
+<path d="M218 416l-8 0M236 420l-8 2M254 412l8-4M270 404l6-6M206 446l-4 6M242 458l0 6M270 450l4 6M288 430l6 4" fill="none" stroke-width="3"/>
+</g>
+</g>
+</svg>

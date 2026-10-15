@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- włosy (tył): z jednej strony odgarnięte za ramię, z drugiej spływają; kołyszą się skew X ±5° przy origin 150,72, okres 2.8 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wlosy_tyl" data-anim="kolysanie" data-origin="150,72" data-range="5deg" data-period="2.8">
+<path d="M126 72C110 92 104 130 102 180C100 220 96 260 92 292L104 284L106 304L116 282L122 298L126 270C128 230 130 190 136 150C138 130 140 100 146 80ZM174 76C186 96 192 130 196 170C198 200 204 220 214 236L200 232L206 250L192 236L188 252L182 226C176 196 174 160 170 130Z" fill="#000000" stroke-width="3"/>
+<path d="M114 120C110 170 108 220 104 270M124 110C120 160 118 210 116 260M186 120C190 160 194 190 200 220" fill="none" stroke="#FFFFFF" stroke-width="1.4"/>
+<path d="M100.0 220.0C99.0 224.3 93.7 237.3 94.0 246.0C94.3 254.7 101.7 263.7 102.0 272.0C102.3 280.3 97.0 292.0 96.0 296.0" fill="none" stroke-width="2.4"/>
+<path d="M94 246q5 -2 8 3q-5 2 -8 -3Z" fill="#000000" stroke-width="1"/>
+<path d="M102 272q5 -2 8 3q-5 2 -8 -3Z" fill="#000000" stroke-width="1"/>
+<path d="M204.0 200.0C205.7 203.3 213.7 212.7 214.0 220.0C214.3 227.3 207.3 240.0 206.0 244.0" fill="none" stroke-width="2.4"/>
+<path d="M214 220q5 -2 8 3q-5 2 -8 -3Z" fill="#000000" stroke-width="1"/>
+</g>
+</g>
+</svg>

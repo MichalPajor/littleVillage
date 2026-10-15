@@ -1,0 +1,13 @@
+szczeniak – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 400 430 (jak w poprzedniej wersji). data-origin w jednostkach viewBox.
+Szczeniak siedzący (przodem) bez zmian wyglądu.
+
+00_cien.svg  —  cien: cień: pulsuje skalą X przy merdaniu, origin 200,404
+01_ogon.svg  —  ogon: ogon: merdanie = obrót ±15° przy nasadzie, origin 276,372, okres 0.6 s
+02_tulow.svg  —  tulow: tułów i zady: oddech skalą Y 0.98–1.02 przy origin 200,394, okres 2 s
+03_lapy_tylne.svg  —  lapy_tylne: tylne łapy: nieruchome
+04_lapy_przednie.svg  —  lapy_przednie: przednie nogi z dużymi łapami: przestępowanie = naprzemienny przesuw Y −4 px
+05_futro_na_piersi.svg  —  futro_na_piersi: futro na piersi: drga skew ±2° przy origin 200,214
+06_uszy.svg  —  uszy: uszy: strzyżenie = obrót ±6° każdego ucha przy nasadach (148,110 i 252,110), okres 2.5 s; razem z głową
+07_glowa.svg  —  glowa: głowa z kryzą policzków i wilczą maską: przechylanie (ciekawość) obrót ±5° przy origin 200,226, okres 2.5 s; uszy, oczy i pyszczek poruszają się razem z nią
+08_oczy.svg  —  oczy: oczy: mruganie = skala Y 1→0.1 przy origin 200,160 co 3–5 s
+09_pyszczek.svg  —  pyszczek: pyszczek z nosem: węszenie = nos drga skalą 1.0→1.1 przy origin 200,163 (seria 3 drgnięć)

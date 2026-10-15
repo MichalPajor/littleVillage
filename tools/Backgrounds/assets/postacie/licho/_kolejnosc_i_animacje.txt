@@ -1,0 +1,11 @@
+licho – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. data-origin w jednostkach viewBox.
+
+00_cien.svg  —  cień: pulsuje skalą X 0.95–1.0 w rytm oddechu, origin 150,514, okres 5 s
+01_nogi.svg  —  nogi: bose, chude; przy kroku naprzemienny przesuw Y ±4 px; stojąc, drżą skew X ±1° przy origin 150,512
+02_lachmany.svg  —  łachmany: suknia bez rękawów oddycha skalą Y 0.99–1.0 przy origin 150,300; zwisające strzępy u dołu kołyszą się skew X ±3° przy origin 150,420, okres 3 s (wiatr)
+03_tulow.svg  —  tułów: wychudzona pierś i obojczyki, oddycha skalą Y 0.98–1.0 przy origin 150,300, okres 5 s; warstwa pod łachmanami
+04_reka_lewa.svg  —  ręka lewa (po lewej stronie rysunku): kołysze się ±4° w barku, origin 102,190, okres 4 s; szpony drgają obrotem ±3° przy nadgarstku 64,420; ATAK = obrót w barku do −80° w 0.3 s
+05_reka_prawa.svg  —  ręka prawa (po prawej stronie rysunku): kołysze się ±4° w przeciwfazie, origin 198,190, okres 4 s; szpony drgają ±3° przy nadgarstku 238,420; ATAK = obrót do +80° w 0.3 s
+06_glowa_z_kapturem.svg  —  głowa z kapturem: kiwa się ±3° przy origin 150,196 (szyja), okres 5 s; przy spojrzeniu na gracza przechyla się skokowo o 8° w 0.2 s; zawiera twarz z zaszytym lewym okiem i podgrupę usta
+07_wlosy.svg  —  włosy: rzadkie siwe kosmyki spod kaptura kołyszą się skew X ±4° przy origin 150,160, okres 3.5 s; warstwa nad kapturem
+08_oko.svg  —  oko: jedyne, wielkie, w prawym oczodole; mruganie = skala Y 1→0.05 na 0.1 s co 5–9 s, origin 164,114; źrenica podąża za graczem przesuwem ±3 px; czerwona obwódka pulsuje kryciem 0.7–1.0, okres 2 s

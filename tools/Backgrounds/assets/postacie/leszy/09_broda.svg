@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- broda: broda z mchu kołysze się skew X ±3° przy brodzie -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="broda" data-anim="kolysanie" data-origin="150,170" data-range="3deg" data-period="5">
+<path d="M122 170L132 210L124 260L136 300L130 340L146 350L150 326L156 356L170 340L166 300L178 260L170 210L180 170Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M122 170L132 210L124 260L136 300L130 340L146 350L150 326L156 356L170 340L166 300L178 260L170 210L180 170Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M138 190C136 230 136 270 140 310M162 192C164 234 162 274 160 316M150 200C150 250 152 300 150 330" fill="none" stroke-width="2.2"/>
+<path d="M130 342l-6 16M156 356l2 16M146 350l-2 14M170 340l6 12" fill="none" stroke-width="2.4"/>
+<path d="M170 246C176 242 182 246 180 252C176 254 170 252 170 246ZM128 282C134 278 138 282 136 288C132 290 128 288 128 282Z" fill="#000000" stroke="none"/>
+</g>
+</g>
+</svg>

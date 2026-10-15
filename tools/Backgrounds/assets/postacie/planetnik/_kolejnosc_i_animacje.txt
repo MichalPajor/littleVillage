@@ -1,0 +1,11 @@
+planetnik – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. Kierunek: z profilu w prawo, w pół kroku; wiatr wieje od przodu (z prawej), rozwiewa włosy, brodę i płaszcz w lewo.
+Powróz wychodzi poza prawą górną krawędź — w scenie dociągnij go do chmury.
+
+00_cien.svg  —  cień: przesuwa się z krokiem, skala X 0.95–1.0, origin 160,512, okres 1.4 s
+01_plaszcz.svg  —  obszerny, wytarty płaszcz z kapturem odrzuconym na plecy: łopocze na wietrze — skew X ±6° przy origin 156,170 (bark), szybko (okres 0.8 s), dół płaszcza dodatkowo faluje skalą X 0.92–1.05
+02_worek.svg  —  worek z łatą na plecach (z paskiem przez pierś): podskakuje w rytm kroku — obrót ±3° przy origin 150,200, okres 1.4 s
+03_nogi.svg  —  nogi w onucach z rzemieniami i łapciach, w pół kroku: chód = naprzemienny obrót w biodrze ±14° przy origin 155,320, okres 1.4 s (przednia i tylna w przeciwfazie)
+04_tulow.svg  —  tułów (wytarta sukmana przepasana sznurem): kołysze się z krokiem skew X ±2° przy origin 160,326, okres 1.4 s
+05_kostur.svg  —  kostur rozwidlony u góry jak proca, w drugiej ręce: wysuwa się z krokiem obrót ±4° przy origin 266,512 (dolny koniec), okres 1.4 s; uderzenie o ziemię = przesuw Y −4 px
+06_reka_z_powrozem.svg  —  ręka uniesiona z powrozem, który biegnie ukośnie w górę, poza krawędź rysunku (ciągnie chmurę): ciągnięcie = obrót w barku od 0° do +12° (ręka w dół) w 0.8 s i powrót w 1.2 s, origin 166,182; koniec powrozu zwisający z dłoni kołysze się skew ±8° przy origin 226,106
+07_glowa_z_broda.svg  —  głowa z długimi siwymi włosami i brodą rozwianymi w jedną stronę (wiatr od przodu): włosy i broda falują skew X ±6° przy origin 172,110 / 200,140, szybko (okres 0.6 s); głowa kiwa się z krokiem ±2° przy origin 180,156; zawiera podgrupę oczy

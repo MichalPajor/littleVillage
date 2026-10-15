@@ -63,7 +63,8 @@ L["c_tlo"] = (0, 0, 390, 440, c[0] + "\n" + group(c[1:]) + "\n" + red([
 L["c_cien"] = (150, 20, 250, 320, f'<g filter="url(#ink)"><path d="{CLOAK}" fill="#000000" opacity="0.82" '
               f'transform="translate(160 20) scale(0.74) translate(-80 -30)"/></g>')
 # starucha przy stole (rysunek autora), patrzy w lewo — na miske
-L["c_starucha"] = (232, 150, 156, 290, art.wiedzma("translate(238 142) scale(0.58) translate(-40 -24)", skip=("cień", "kostur")))
+RIG_C_STARUCHA = art.wiedzma_rig(art.parse_transform("translate(238 142) scale(0.58) translate(-40 -24)"), "c_starucha", staff=False, shadow=False)
+art.install_rig(L, RIG_C_STARUCHA)
 L["c_plomien"] = (114, 252, 24, 32, group([
     '<path d="M126 278C118 272 120 262 126 254C132 262 134 272 126 278Z" fill="#FFFFFF" stroke-width="2"/>',
     '<path d="M126 276C123 272 124 266 126 263C128 266 129 272 126 276Z" fill="#000000" stroke="none"/>']))
@@ -132,9 +133,11 @@ L["w_tlo"] = (0, 0, 390, 440, w[0] + "\n" + group(w[1:]))
 
 # stwor (rysunek autora, odwrocony w prawo), przygarbiony pod nadprożem
 K = 0.56
-L["w_stwor"] = (20, 92, 168, 336, art.topielec(f"translate({30 + 300 * K:.0f} {420 - 582 * K:.0f}) scale({-K} {K})", skip=("kałuża",)))
+RIG_W_STWOR = art.topielec_rig(art.parse_transform(f"translate({30 + 300 * K:.0f} {420 - 582 * K:.0f}) scale({-K} {K})"), "w_stwor", shadow=False, drops_fall=30 * K)
+art.install_rig(L, RIG_W_STWOR)
 # pies skacze stworowi do przedramienia
-L["w_pies"] = (96, 262, 130, 104, art.barking("translate(104 300) rotate(-28) scale(0.2)", skip=("cień", "szczekanie")))
+RIG_W_PIES = art.dog_barking(art.parse_transform("translate(104 300) rotate(-28) scale(0.2)"), "w_pies", shadow=False, bark=False)
+art.install_rig(L, RIG_W_PIES)
 # Maciek (tylem do Marianny) i Marianna za nim; rece z siekiera osobno (zamach)
 MX, MY, MK = 266, 418, 1.45
 L["maciek"] = (220, 262, 160, 160, group([postacie.woman(338, 412, 1.2), postacie.man(MX, MY, MK, hat=False)]))
@@ -214,6 +217,16 @@ COMMENTS = {"c_tlo": "izba staruchy przy świecy: stół, miska z czarną wodą,
             "p_tlo": "widok z piwniczki: szpary między deskami, światło księżyca", "p_dziecko": "skulony Dobrosław",
             "p_cien": "cień przesuwa się nad deskami (# pokaz: cien)", "p_plamy": "krew na szparach (# pokaz: krew)",
             "p_krew_a": "krople krwi spadają przez szpary (# pokaz: krew)", "p_krew_b": "krople krwi spadają przez szpary (# pokaz: krew)"}
+
+for _old, _rig, _txt in [("c_starucha", RIG_C_STARUCHA, "starucha przy stole"), ("w_stwor", RIG_W_STWOR, "stwór pod nadprożem"),
+                         ("w_pies", RIG_W_PIES, "pies skacze stworowi do ramienia")]:
+    VARIANTS = {k: art.expand(v, _old, _rig) for k, v in VARIANTS.items()}
+    if _old in REVEAL:
+        REVEAL.update({n: REVEAL[_old] for n in art.rig_names(_rig)})
+        del REVEAL[_old]
+    ANIM.pop(_old, None)
+    ANIM.update(art.rig_anims(_rig))
+    COMMENTS.update({n: f"{_txt} — {n[len(_old) + 1:]} (rysunek autora z warstw)" for n in art.rig_names(_rig)})
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":

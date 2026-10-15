@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- kula (r=24): dryfuje przesuwem Y ±12 px i X ±7 px, okres 2.5 s; migocze skalą 0.95–1.05 nieregularnie; czasem gaśnie (krycie →0.2) na 0.3 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="kula_5" data-anim="przesuw" data-origin="238,392" data-range="12px" data-period="2.5">
+<path d="M266.0 390.5L274.2 390.1" fill="none" stroke-width="1.6"/>
+<path d="M262.5 405.5L270.0 409.6" fill="none" stroke-width="1.6"/>
+<path d="M254.0 414.9L259.5 422.7" fill="none" stroke-width="1.6"/>
+<path d="M235.7 419.9L234.7 430.9" fill="none" stroke-width="1.6"/>
+<path d="M222.7 415.5L218.0 422.8" fill="none" stroke-width="1.6"/>
+<path d="M213.6 405.8L205.8 410.3" fill="none" stroke-width="1.6"/>
+<path d="M210.1 393.8L201.8 394.4" fill="none" stroke-width="1.6"/>
+<path d="M213.0 379.4L202.6 374.2" fill="none" stroke-width="1.6"/>
+<path d="M225.6 366.9L220.7 356.9" fill="none" stroke-width="1.6"/>
+<path d="M239.7 364.1L240.2 355.4" fill="none" stroke-width="1.6"/>
+<path d="M251.1 367.2L255.9 358.0" fill="none" stroke-width="1.6"/>
+<path d="M262.9 379.1L272.9 373.9" fill="none" stroke-width="1.6"/>
+<circle cx="238" cy="392" r="24" fill="#FFFFFF" stroke-width="2.6"/>
+<path d="M224.8 383.6A16.8 16.8 0 0 1 235.6 376.4" fill="none" stroke-width="1.2"/>
+</g>
+</g>
+</svg>

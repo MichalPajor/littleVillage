@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="430" viewBox="0 0 400 430">
+<!-- ogon: ogon: merdanie = obrót ±15° przy nasadzie, origin 276,372, okres 0.6 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="ogon" data-anim="obrot" data-origin="276,372" data-range="15deg" data-period="0.6">
+<path d="M270 352C318 340 352 364 356 392C358 412 334 420 302 414C280 410 262 402 256 394C288 398 318 396 322 386C324 372 300 368 278 374Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M330 362C346 372 356 384 356 396C356 408 344 414 330 416C340 404 342 382 330 362Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M300 372l6-6M314 380l6-6M290 404l5 6M310 406l4 7" fill="none" stroke-width="2.4"/>
+</g>
+</g>
+</svg>

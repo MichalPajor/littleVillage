@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="32 70 260 460">
+<!-- tułów: przygarbiony, z garbem, wystającymi kręgami, łopatką i żebrami, zapadnięty brzuch; oddycha skalą Y 0.97–1.0 przy origin 118,300, okres 2.2 s; przed skokiem pochyla się obrotem +10° przy origin 118,300 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="tulow" data-anim="skala" data-origin="118,300" data-range="0.97-1.0" data-period="2.2">
+<path d="M96 300C86 268 90 236 100 214C106 196 108 176 118 160C132 140 156 132 176 138L186 152C192 168 190 188 182 204C174 222 160 236 154 252C150 268 148 284 142 300C128 312 106 312 96 300Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M96 300C86 268 90 236 100 214C106 196 108 176 118 160C126 150 134 144 144 140C130 156 122 176 118 198C112 228 112 268 120 306C110 308 100 306 96 300Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M182 204C174 222 160 236 154 252C150 268 148 284 142 300C150 286 156 268 162 252C168 236 178 222 186 196Z" fill="#000000" stroke="none"/>
+<path d="M120 172C134 168 150 170 164 178M114 188C130 184 150 186 172 196M110 204C126 200 146 204 170 214M108 220C122 218 140 222 160 232M110 236C122 234 136 238 150 246" fill="none" stroke-width="2.4"/>
+<path d="M128 150C120 160 116 172 118 186C124 176 132 164 142 156Z" fill="#EDEBE6" stroke-width="2.4"/>
+<path d="M118 268C126 274 136 274 146 268M116 284C124 288 132 288 140 286" fill="none" stroke-width="2"/>
+<path d="M162 150C170 152 178 156 184 162" fill="none" stroke-width="2.2"/>
+<path d="M98.9 247.1Q90.6 247.7 90.1 250.6Q89.6 253.6 97.1 256.9Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M98.0 229.1Q89.8 229.4 89.2 232.3Q88.6 235.3 96.0 238.9Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M101.7 211.3Q93.5 210.4 92.5 213.3Q91.5 216.1 98.3 220.7Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M106.1 193.5Q98.0 191.9 96.7 194.6Q95.5 197.3 101.9 202.5Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M111.6 175.8Q103.8 173.2 102.2 175.8Q100.6 178.3 106.4 184.2Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M120.5 160.5Q113.5 156.2 111.3 158.3Q109.2 160.5 113.5 167.5Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M133.3 147.5Q127.6 141.6 125.0 143.1Q122.4 144.6 124.7 152.5Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M147.8 139.7Q143.8 132.5 140.9 133.3Q138.0 134.0 138.2 142.3Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M163.0 136.8Q160.7 128.9 157.7 129.0Q154.7 129.1 153.0 137.2Z" fill="#EDEBE6" stroke-width="2.6"/>
+</g>
+</g>
+</svg>

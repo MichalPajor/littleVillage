@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="610" viewBox="40 80 300 530">
+<!-- wodorosty: wodorosty na barkach i ramieniu: kołyszą się skew X ±5° przy origin 230,150, okres 2.5 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wodorosty" data-anim="kolysanie" data-origin="230,150" data-range="5deg" data-period="2.5">
+<path d="M222 114C230 150 216 172 226 206C232 226 222 246 228 270" fill="none" stroke-width="3"/>
+<path d="M234 112C246 140 238 160 246 186" fill="none" stroke-width="2.4"/>
+<path d="M226 206C218 202 214 196 216 190C222 194 226 200 226 206ZM228 250C236 246 240 240 238 234C232 238 228 244 228 250Z" fill="#000000" stroke-width="1.5"/>
+<path d="M200 168C192 196 196 220 188 244" fill="none" stroke-width="2.4"/>
+<path d="M174 330C168 352 172 368 166 388" fill="none" stroke-width="2.4"/>
+</g>
+</g>
+</svg>

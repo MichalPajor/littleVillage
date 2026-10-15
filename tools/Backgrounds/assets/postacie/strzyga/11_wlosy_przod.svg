@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="32 70 260 460">
+<!-- włosy z przodu: długie, czarne pasma zwisają z ciemienia przed i za twarzą, pojedyncze kosmyki przecinają twarz; kołyszą się skew X ±6° przy origin 230,120, okres 1.8 s, z opóźnieniem 0.2 s względem głowy -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wlosy_przod" data-anim="kolysanie" data-origin="230,120" data-range="6deg" data-period="1.8">
+<path d="M212 118C200 136 194 170 194 220C194 270 190 310 182 344L192 336L194 358L202 332L208 350L212 320C214 276 214 236 216 200C218 170 222 146 230 130Z" fill="#000000" stroke-width="3"/>
+<path d="M214 118C230 108 252 108 266 118C256 116 244 118 234 124C228 128 222 130 216 128Z" fill="#000000" stroke-width="3"/>
+<path d="M226 120C220 140 220 170 224 200C226 230 222 270 216 300L224 296L226 312L232 292L234 260C236 224 234 190 232 160C232 144 234 132 238 124Z" fill="#000000" stroke-width="2.6"/>
+<path d="M200 150C198 200 198 260 192 320M208 140C206 180 206 230 204 280" fill="none" stroke="#FFFFFF" stroke-width="1.3"/>
+<path d="M234 124C232 150 236 180 240 210M244 122C246 150 250 176 252 200" fill="none" stroke-width="2.2"/>
+</g>
+</g>
+</svg>

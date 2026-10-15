@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="610" viewBox="40 80 300 530">
+<!-- tulow: tułów przygarbiony, wychudły: ciężki oddech skalą Y 0.98–1.0 przy origin 230,340, okres 4 s; garb unosi się przy ataku obrotem −8° przy origin 230,340 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="tulow" data-anim="skala" data-origin="230,340" data-range="0.98-1.0" data-period="4">
+<path d="M196 138C214 112 246 104 262 126C280 156 276 220 262 270C256 296 250 316 246 332C242 350 222 356 206 346C196 320 192 290 184 262C176 236 170 210 176 186C180 168 186 152 196 138Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M262 132C276 160 274 220 260 268C254 292 248 312 244 330C238 300 246 250 252 210C256 180 258 154 262 132Z" fill="url(#hatch)" stroke="none"/>
+<path d="M240 112l6-5M256 120l7-3M268 140l7 0M274 162l7 2M276 186l7 3" fill="none" stroke-width="3"/>
+<path d="M186 196C196 200 210 200 222 194M184 214C196 218 212 218 226 212M186 232C198 236 214 236 228 230M190 250C202 254 216 254 228 248" fill="none" stroke-width="2.4"/>
+<path d="M200 290C206 300 210 312 212 324" fill="none" stroke-width="2.4"/>
+</g>
+</g>
+</svg>

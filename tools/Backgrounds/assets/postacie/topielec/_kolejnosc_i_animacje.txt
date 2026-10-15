@@ -1,0 +1,16 @@
+topielec – warstwy do złożenia od spodu (00) do wierzchu. viewBox 40 80 300 530 (jak w poprzedniej wersji). data-origin w jednostkach viewBox.
+Topielec bez zmian wyglądu. Warstwa 12_blizna jest opcjonalna (rozdz. 13) — pokaż ją razem z 09_ramie_blizsze i animuj tą samą transformacją.
+
+00_cien.svg  —  cien: kałuża z kręgami pod stopami: kręgi rozszerzają się skalą 1.0→1.1 i znikają co 3 s, origin 190,582
+01_noga_dalsza.svg  —  noga_dalsza: noga dalsza (w cieniu): przy ciężkim kroku obrót ±10° w biodrze, origin 246,336; w spoczynku lekkie ugięcie ±3°
+02_ramie_dalsze.svg  —  ramie_dalsze: ramię dalsze: zwisa i kołysze się bezwładnie ±4° w barku, origin 196,154, okres 4 s
+03_tulow.svg  —  tulow: tułów przygarbiony, wychudły: ciężki oddech skalą Y 0.98–1.0 przy origin 230,340, okres 4 s; garb unosi się przy ataku obrotem −8° przy origin 230,340
+04_noga_blizsza.svg  —  noga_blizsza: noga bliższa: przy ciężkim kroku obrót ±10° w biodrze, origin 228,330, w przeciwfazie do dalszej
+05_szyja.svg  —  szyja: szyja: porusza się razem z głową (ta sama transformacja)
+06_wlosy_tyl.svg  —  wlosy_tyl: mokre włosy z tyłu: ciężko kołyszą się skew X ±3° przy origin 130,130, okres 3 s
+07_glowa.svg  —  glowa: głowa wysunięta do przodu: kiwa się ±4° przy origin 150,160, okres 4 s; przy ataku paszcza „otwiera się” przez obrót głowy +10° w 0.2 s
+08_wlosy_przod.svg  —  wlosy_przod: mokre strąki z przodu: kołyszą się skew X ±4° przy origin 140,130, okres 3 s, opóźnione o 0.3 s względem głowy
+09_ramie_blizsze.svg  —  ramie_blizsze: ramię bliższe, ręka prawie do ziemi: kołysze się ±5° w barku, origin 206,154, okres 4 s; ATAK = obrót −70° w 0.3 s; palce drgają ±4° przy nadgarstku 150,466
+10_blizna.svg  —  blizna: opcjonalna, rozdz. 13 — ślad po siekierze Maćka na długim ramieniu; porusza się razem z ramie_blizsze (origin 206,154)
+11_wodorosty.svg  —  wodorosty: wodorosty na barkach i ramieniu: kołyszą się skew X ±5° przy origin 230,150, okres 2.5 s
+12_krople.svg  —  krople: krople wody z włosów i palców: spadają przesuwem Y +30 px i znikają w 1.2 s, kolejne z opóźnieniem 0.3 s

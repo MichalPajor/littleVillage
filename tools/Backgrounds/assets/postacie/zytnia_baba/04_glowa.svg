@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- głowa ze słomy: przechyla się ±3° przy origin 150,150 (powrósło na szyi), okres 4 s; zawiera podgrupy oczy i usta (trzy czarne dziury) -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="glowa" data-anim="obrot" data-origin="150,150" data-range="3deg" data-period="4">
+<path d="M118 104C116 74 130 56 150 56C170 56 184 74 182 104C180 126 168 146 150 150C132 146 120 126 118 104Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M170 64C184 80 186 110 176 132C170 142 162 148 156 150C170 134 176 110 170 64Z" fill="url(#hatch)" stroke="none"/>
+<path d="M124.0 60C122.0 90 126.0 120 137.0 148" fill="none" stroke-width="1"/>
+<path d="M130.5 60C128.5 90 132.5 120 140.2 148" fill="none" stroke-width="1"/>
+<path d="M137.0 60C135.0 90 139.0 120 143.5 148" fill="none" stroke-width="1"/>
+<path d="M143.5 60C141.5 90 145.5 120 146.8 148" fill="none" stroke-width="1"/>
+<path d="M150.0 60C148.0 90 152.0 120 150.0 148" fill="none" stroke-width="1"/>
+<path d="M156.5 60C154.5 90 158.5 120 153.2 148" fill="none" stroke-width="1"/>
+<path d="M163.0 60C161.0 90 165.0 120 156.5 148" fill="none" stroke-width="1"/>
+<path d="M169.5 60C167.5 90 171.5 120 159.8 148" fill="none" stroke-width="1"/>
+<path d="M176.0 60C174.0 90 178.0 120 163.0 148" fill="none" stroke-width="1"/>
+<g transform="rotate(0 150 62)"><rect x="128.0" y="57" width="44" height="10" fill="#EDEBE6" stroke-width="2.6"/><path d="M131.0 57l4 10" fill="none" stroke-width="1.4"/><path d="M137.0 57l4 10" fill="none" stroke-width="1.4"/><path d="M143.0 57l4 10" fill="none" stroke-width="1.4"/><path d="M149.0 57l4 10" fill="none" stroke-width="1.4"/><path d="M155.0 57l4 10" fill="none" stroke-width="1.4"/><path d="M161.0 57l4 10" fill="none" stroke-width="1.4"/><path d="M167.0 57l4 10" fill="none" stroke-width="1.4"/></g>
+<!-- twarz ze słomy: trzy czarne dziury — oczy i usta, bez nosa; "mruganie" = dziury oczu zwężają się skalą Y 1→0.3 co 6–10 s (origin 150,98); usta otwierają się skalą Y 1→1.5 przy origin 150,128 -->
+<g id="oczy" data-anim="skala" data-origin="150,98" data-range="1-0.3" data-period="6-10">
+<path d="M128 98C130 88 142 88 144 98C142 108 130 108 128 98Z" fill="#000000" stroke-width="2"/>
+<path d="M156 98C158 88 170 88 172 98C170 108 158 108 156 98Z" fill="#000000" stroke-width="2"/>
+</g>
+<g id="usta" data-anim="skala" data-origin="150,128" data-range="1-1.5" data-period="-">
+<path d="M142 124C144 116 156 116 158 124C158 134 154 140 150 140C146 140 142 134 142 124Z" fill="#000000" stroke-width="2"/>
+</g>
+<path d="M128 98l-4 -2M144 98l3 -3M156 98l-3 -3M172 98l4 -2M142 128l-4 2M158 128l4 2" fill="none" stroke-width="1.2"/>
+</g>
+</g>
+</svg>

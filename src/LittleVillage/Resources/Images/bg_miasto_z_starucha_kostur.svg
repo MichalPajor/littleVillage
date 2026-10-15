@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „miasto”: starucha w kapturze — kostur (rysunek autora z warstw)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="133" height="193" viewBox="143 228 133 193">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.39000 0.00000 0.00000 0.39000 134.40000 218.64000)"><g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="kostur" data-anim="obrot" data-origin="78,528" data-range="2deg" data-period="3">
+<g transform="translate(-18 30)">
+<path d="M96 498L72 232" fill="none" stroke-width="13"/>
+<path d="M96 498L72 232" fill="none" stroke="#EDEBE6" stroke-width="6"/>
+<path d="M72 232C64 220 66 206 78 202C88 200 92 210 86 216" fill="none" stroke-width="12"/>
+<path d="M72 232C64 220 66 206 78 202C88 200 92 210 86 216" fill="none" stroke="#EDEBE6" stroke-width="5"/>
+<ellipse cx="84" cy="370" rx="7" ry="4" fill="#000000" stroke="none" transform="rotate(-80 84 370)"/>
+<ellipse cx="90" cy="430" rx="6" ry="3.5" fill="#000000" stroke="none" transform="rotate(-80 90 430)"/>
+</g>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="reka" data-anim="obrot" data-origin="114,276" data-range="3deg" data-period="3">
+<path d="M114 276C96 280 80 292 72 302L90 318C100 306 114 300 124 298Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M114 276C96 280 80 292 72 302L90 318C100 306 114 300 124 298Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M86 304l-6 4M92 310l-5 6M98 315l-2 7" fill="none" stroke-width="2"/>
+<g transform="translate(-14 2)">
+<path d="M70 300C64 306 64 322 72 326C82 330 94 324 96 314C98 304 88 296 70 300Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M68 308H92M68 316H92" fill="none" stroke-width="2.4"/>
+<path d="M66 308l-6 2M66 316l-6 2M68 324l-5 3" fill="none" stroke-width="2.6"/>
+<circle cx="86" cy="308" r="2" fill="#000000" stroke="none"/>
+<circle cx="86" cy="316" r="2" fill="#000000" stroke="none"/>
+</g>
+</g>
+</g>
+</g></g>
+</svg>

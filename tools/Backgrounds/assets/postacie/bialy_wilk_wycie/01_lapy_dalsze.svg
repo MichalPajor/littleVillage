@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="-14 -26 316 558">
+<!-- łapa przednia dalsza (w cieniu): nieruchoma podczas wycia; przy drżeniu przesuw X ±1 px -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="lapy_dalsze" data-anim="brak" data-origin="156,510" data-range="0" data-period="-">
+<path d="M144.0 300.0 L144.4 307.8 L144.8 318.2 L145.1 330.7 L145.5 344.5 L145.9 359.0 L146.2 373.5 L146.6 387.4 L147.0 400.0 L147.1 412.2 L147.2 424.9 L147.4 437.7 L147.5 450.2 L147.6 462.0 L147.8 472.5 L147.9 481.3 L148.0 488.0 L164.0 488.0 L164.1 481.3 L164.2 472.5 L164.4 462.0 L164.5 450.2 L164.6 437.7 L164.8 424.9 L164.9 412.2 L165.0 400.0 L165.4 387.4 L165.8 373.5 L166.1 359.0 L166.5 344.5 L166.9 330.7 L167.2 318.2 L167.6 307.8 L168.0 300.0Z" fill="#FFFFFF" stroke-width="3.5"/>
+<path d="M144.0 300.0 L144.4 307.8 L144.8 318.2 L145.1 330.7 L145.5 344.5 L145.9 359.0 L146.2 373.5 L146.6 387.4 L147.0 400.0 L147.1 412.2 L147.2 424.9 L147.4 437.7 L147.5 450.2 L147.6 462.0 L147.8 472.5 L147.9 481.3 L148.0 488.0 L164.0 488.0 L164.1 481.3 L164.2 472.5 L164.4 462.0 L164.5 450.2 L164.6 437.7 L164.8 424.9 L164.9 412.2 L165.0 400.0 L165.4 387.4 L165.8 373.5 L166.1 359.0 L166.5 344.5 L166.9 330.7 L167.2 318.2 L167.6 307.8 L168.0 300.0Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M176.0 512C180.0 500 168.0 488 156 488C142.0 488 134.0 498 134.0 508L134.0 512Z" fill="#FFFFFF" stroke-width="3.5"/>
+<path d="M176.0 512C180.0 500 168.0 488 156 488C142.0 488 134.0 498 134.0 508L134.0 512Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M140.0 498C138.0 504 138.0 508 140.0 512" fill="none" stroke-width="1.8"/>
+<path d="M148.0 498C146.0 504 146.0 508 148.0 512" fill="none" stroke-width="1.8"/>
+<path d="M156.0 498C154.0 504 154.0 508 156.0 512" fill="none" stroke-width="1.8"/>
+<path d="M135.2 509l-5 3l5 0Z" fill="#000000" stroke-width="1"/>
+<path d="M143.2 509l-5 3l5 0Z" fill="#000000" stroke-width="1"/>
+<path d="M151.2 509l-5 3l5 0Z" fill="#000000" stroke-width="1"/>
+</g>
+</g>
+</svg>

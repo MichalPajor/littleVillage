@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- tułów: tułów oddycha skalą Y 0.985–1.0 przy origin 150,336; głowa, poroże, mech, broda i oczy przesuwają się razem z nim -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="tulow" data-anim="skala" data-origin="150,336" data-range="0.985-1.0" data-period="6">
+<path d="M100 180C96 230 100 290 112 336L188 336C200 290 204 230 200 180C196 150 176 136 150 136C124 136 104 150 100 180Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M100 180C96 230 100 290 112 336L188 336C200 290 204 230 200 180C196 150 176 136 150 136C124 136 104 150 100 180Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M112 190L120 240L114 300L120 330L124 330L124 300L128 240L120 190ZM136 160L140 220L134 290L140 334L146 334L142 290L148 220L142 160ZM170 170L174 230L178 300L172 334L178 334L186 300L182 230L178 170Z" fill="#000000" stroke="none"/>
+<path d="M156 180L160 230L156 290L160 320L164 320L164 290L166 230L160 180Z" fill="#000000" stroke="none"/>
+<path d="M98 190l-8 4M96 240l-8 2M100 290l-8 2M204 190l8 4M206 240l8 2M202 290l8 2" fill="none" stroke-width="3"/>
+<path d="M126 262C130 258 136 260 134 266C130 268 126 266 126 262ZM180 248C184 244 190 246 188 252C184 254 180 252 180 248ZM150 300C154 296 160 298 158 304C154 306 150 304 150 300Z" fill="#FFFFFF" stroke-width="1.6"/>
+<circle cx="188" cy="300" r="7" fill="#000000" stroke-width="2.5"/>
+<circle cx="112" cy="215" r="6" fill="#000000" stroke-width="2.5"/>
+</g>
+</g>
+</svg>

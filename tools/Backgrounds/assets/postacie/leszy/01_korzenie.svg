@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- korzenie: korzenie prawie nieruchome; przy kroku rozchylają się skalą X 1.0–1.1 przy origin 150,470 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="korzenie" data-anim="obrot" data-origin="150,470" data-range="1deg" data-period="6">
+<path d="M122 466C104 480 80 490 46 504M124 470C116 488 112 500 112 512M124 466C132 484 136 498 134 512M178 466C196 480 220 490 254 504M176 470C184 488 188 500 188 512M176 466C168 484 164 498 166 512" fill="none" stroke-width="11"/>
+<path d="M122 466C104 480 80 490 46 504M124 470C116 488 112 500 112 512M124 466C132 484 136 498 134 512M178 466C196 480 220 490 254 504M176 470C184 488 188 500 188 512M176 466C168 484 164 498 166 512" fill="none" stroke="#EDEBE6" stroke-width="6"/>
+<path d="M122 466C104 480 80 490 46 504M124 470C116 488 112 500 112 512M124 466C132 484 136 498 134 512M178 466C196 480 220 490 254 504M176 470C184 488 188 500 188 512M176 466C168 484 164 498 166 512" fill="none" stroke="url(#hatch)" stroke-width="6"/>
+<path d="M70 494l-8 10M90 486l-4 10M230 494l8 10M210 486l4 10M46 504l-8 2M254 504l8 2" fill="none" stroke-width="3"/>
+</g>
+</g>
+</svg>

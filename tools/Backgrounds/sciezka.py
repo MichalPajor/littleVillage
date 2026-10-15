@@ -71,7 +71,8 @@ def walker(mx, my, k=1.0):
 L["maciek"] = (184, 252, 50, 92, group([walker(206, 340, 1.25)]))
 
 # ---------- PIES przy boku (rysunek autora wilczek2 bez kresek szczekania i drzenia)
-L["pies"] = (226, 314, 64, 36, art.barking("translate(288 318) scale(-0.075 0.075)", skip=("cień", "szczekanie", "drżenie")))
+RIG_PIES = art.dog_barking(art.parse_transform("translate(288 318) scale(-0.075 0.075)"), "pies", shadow=False, bark=False, shiver=False, quiet=True)
+art.install_rig(L, RIG_PIES)
 
 # ---------- PO RATUNKU: Maciek lezy w blocie na sciezce, pies warczy w strone bagna (z lewej)
 lez = (f'<g stroke-width="2.2">'
@@ -84,7 +85,8 @@ lez = (f'<g stroke-width="2.2">'
        f'</g>')
 L["maciek_lezy"] = (140, 364, 144, 46, group([
     lez.replace('<g stroke-width="2.2">', '<g stroke-width="6" stroke="#EDEBE6">'), lez]))
-L["pies_warczy"] = (100, 330, 104, 64, art.barking("translate(102 334) scale(0.17)", skip=("drżenie",)))
+RIG_WARCZY = art.dog_barking(art.parse_transform("translate(102 334) scale(0.17)"), "pies_warczy", shiver=False)
+art.install_rig(L, RIG_WARCZY)
 
 # ---------- SMIERC: swiatelko tuz nad woda przy sciezce, zarzace sie oczy, kregi na wodzie
 L["swiatelko_blisko"] = (110, 312, 52, 48, group([light(136, 336, 8)]))
@@ -127,6 +129,16 @@ COMMENTS = {"tlo": "świt, Bukowy Grzbiet, mokradła, kręta ścieżka pod gór�
             "maciek_lezy": "Maciek leży w błocie", "pies_warczy": "pies warczy w stronę bagna (rysunek autora)",
             "swiatelko_blisko": "światełko tuż nad wodą", "oczy": "żarzące się oczy w bagnie", "kregi": "kręgi na wodzie po utonięciu",
             "przod": "pierwszy plan: trawa"}
+
+for _old, _rig, _txt in [("pies", RIG_PIES, "pies przy boku"), ("pies_warczy", RIG_WARCZY, "pies warczy w stronę bagna")]:
+    VARIANTS = {k: art.expand(v, _old, _rig) for k, v in VARIANTS.items()}
+    for _rev in REVEAL.values():
+        if _old in _rev:
+            _rev.update({n: _rev[_old] for n in art.rig_names(_rig)})
+            del _rev[_old]
+    ANIM.pop(_old, None)
+    ANIM.update(art.rig_anims(_rig))
+    COMMENTS.update({n: f"{_txt} — {n[len(_old) + 1:]} (rysunek autora z warstw)" for n in art.rig_names(_rig)})
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":

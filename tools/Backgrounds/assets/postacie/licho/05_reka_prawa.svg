@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- ręka prawa (po prawej stronie rysunku): kołysze się ±4° w przeciwfazie, origin 198,190, okres 4 s; szpony drgają ±3° przy nadgarstku 238,420; ATAK = obrót do +80° w 0.3 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="reka_prawa" data-anim="obrot" data-origin="202,206" data-range="4deg" data-period="4">
+<path d="M202 206C216 236 224 266 228 300C234 340 236 380 238 420" fill="none" stroke-width="21"/>
+<path d="M202 206C216 236 224 266 228 300C234 340 236 380 238 420" fill="none" stroke="#EDEBE6" stroke-width="14"/>
+<path d="M232 320C234 350 236 380 238 410" fill="none" stroke="url(#hatch)" stroke-width="13"/>
+<circle cx="228" cy="300" r="9" fill="#EDEBE6" stroke-width="3"/>
+<circle cx="216" cy="246" r="3.5" fill="#000000" stroke-width="1.6"/>
+<circle cx="236" cy="360" r="3" fill="#000000" stroke-width="1.6"/>
+<path d="M238 416C244 426 246 436 244 446L228 448C224 438 224 428 228 418Z" fill="#EDEBE6" stroke-width="3.2"/>
+<path d="M244 446C252 456 258 468 262 484M240 448C242 462 242 476 240 490M232 448C228 462 224 476 218 488M228 440C220 446 214 454 212 462" fill="none" stroke-width="5"/>
+<path d="M244 446C252 456 258 468 262 484M240 448C242 462 242 476 240 490M232 448C228 462 224 476 218 488M228 440C220 446 214 454 212 462" fill="none" stroke="#EDEBE6" stroke-width="2"/>
+<path d="M262 484C266 492 268 498 266 504M240 490C240 498 240 504 236 508M218 488C212 494 210 500 212 506M212 462C206 466 204 472 206 478" fill="none" stroke-width="3.5"/>
+</g>
+</g>
+</svg>

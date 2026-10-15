@@ -56,12 +56,13 @@ L["iskry_a"] = (184, 318, 62, 46, group(sparks([(FX - 22, FY - 54), (FX + 20, FY
 L["iskry_b"] = (184, 318, 62, 46, group(sparks([(FX + 10, FY - 56), (FX - 14, FY - 70), (FX + 16, FY - 86)], 1.5)))
 
 # ---------- PIES po drugiej stronie ogniska, patrzy w plomienie (rysunek autora wilczek2, bez kresek szczekania)
-L["pies"] = (270, 368, 96, 50, art.barking("translate(274 372) scale(0.095)", skip=("cień", "szczekanie", "drżenie")))
+RIG_PIES = art.dog_barking(art.parse_transform("translate(274 372) scale(0.095)"), "pies", shadow=False, bark=False, shiver=False, quiet=True)
+art.install_rig(L, RIG_PIES)
 
 COMMON = ["niebo"]
 VARIANTS = {"las": ["tlo_las", "las_swierki"], "mokradla": ["tlo_mokradla", "mokradla_mgla"], "jezioro": ["tlo_jezioro", "jezioro_blyski"]}
 FIRE = ["palenisko", "dym", "plomienie", "iskry_a", "iskry_b"]
-REVEAL = {**{n: "ogien" for n in FIRE}, "pies": "pies"}
+REVEAL = {**{n: "ogien" for n in FIRE}, **{n: "pies" for n in art.rig_names(RIG_PIES)}}
 ANIM = {"plomienie": {"type": "flame", "amplitude": 0.14, "duration": 1500, "anchorX": 0.5, "anchorY": 0.95},
         "dym": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1},
         "iskry_a": {"type": "rise", "amplitude": 26, "duration": 2200},
@@ -72,13 +73,16 @@ def layers(variant):
     """(prefiks pliku, nazwa) w kolejnosci: niebo, otoczenie wariantu, chata ze strzecha, przod, ognisko, pies."""
     return ([("bg_wieczor", "niebo")] + [("bg_budowa", n) for n in VARIANTS[variant]]
             + [("bg_chata", "chata"), ("bg_chata", "strzecha_szczyt"), ("bg_budowa", "przod")]
-            + [("bg_wieczor", n) for n in FIRE] + [("bg_wieczor", "pies")])
+            + [("bg_wieczor", n) for n in FIRE] + [("bg_wieczor", n) for n in art.rig_names(RIG_PIES)])
 
 
 COMMENTS = {"niebo": "nocne niebo z księżycem", "palenisko": "krąg kamieni, polana i blask (# pokaz: ogien)",
             "plomienie": "płomienie ogniska (# pokaz: ogien, liżą od podstawy)", "dym": "dym (# pokaz: ogien, kołysze się)",
             "iskry_a": "iskry (# pokaz: ogien, unoszą się)", "iskry_b": "iskry (# pokaz: ogien, unoszą się)",
             "pies": "pies przy ognisku (rysunek autora, # pokaz: pies)"}
+
+ANIM.update(art.rig_anims(RIG_PIES))
+COMMENTS.update({n: "pies przy ognisku — " + n.split("_", 1)[1] + " (rysunek autora z warstw, # pokaz: pies)" for n in art.rig_names(RIG_PIES)})
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":
@@ -92,4 +96,4 @@ if __name__ == "__main__":
             key = f"{prefix}_{name}"; both[key] = mods[prefix][name]; order.append(key)
         print(master(both, order))
     else:
-        write_layers(sys.argv[1], "bg_wieczor", "wieczór przy chacie", L, ["niebo"] + FIRE + ["pies"], COMMENTS)
+        write_layers(sys.argv[1], "bg_wieczor", "wieczór przy chacie", L, ["niebo"] + FIRE + art.rig_names(RIG_PIES), COMMENTS)

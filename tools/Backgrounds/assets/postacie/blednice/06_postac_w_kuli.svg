@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- postać ze światła w największej kuli: upiornie chuda, z wydłużonymi kończynami, czaszkowatą głową z rozwartą szczęką, unoszącymi się włosami i postrzępionym całunem; nogi bez stóp rozpływają się w smugi; trzyma kaganek w wyciągniętej, kościstej dłoni. Porusza się razem z kula_1 (ta sama transformacja) plus powolne kołysanie ±3° przy origin 143,256; włosy i strzępy całunu falują skew ±6°; płomyk w kaganku migocze skalą Y 0.8–1.2 przy origin 191,249 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="postac_w_kuli" data-anim="kolysanie" data-origin="148,300" data-range="3deg" data-period="4">
+<path d="M139 200C132 210 130 226 126 244" fill="none" stroke="#FFFFFF" stroke-width="1.3"/>
+<path d="M141 199C136 212 134 228 132 250" fill="none" stroke="#FFFFFF" stroke-width="1.1"/>
+<path d="M146 199C152 208 156 222 160 236" fill="none" stroke="#FFFFFF" stroke-width="1.1"/>
+<path d="M148 201C156 206 162 214 166 220" fill="none" stroke="#FFFFFF" stroke-width="1.0"/>
+<path d="M137 203C130 206 124 214 120 226" fill="none" stroke="#FFFFFF" stroke-width="1.0"/>
+<path d="M144 198C144 190 140 186 134 186" fill="none" stroke="#FFFFFF" stroke-width="1.0"/>
+<path d="M146 198C150 190 156 188 162 190" fill="none" stroke="#FFFFFF" stroke-width="1.0"/>
+<path d="M146 222C158 236 166 256 170 280L176 298L168 290L166 306L160 288L154 300L154 278C150 258 146 240 142 228Z" fill="#FFFFFF" stroke-width="1"/>
+<path d="M150 236C156 254 160 272 162 290M146 236C150 252 152 270 152 286" fill="none" stroke-width="0.8"/>
+<path d="M170 298C172 304 170 310 174 314" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M160 300C160 306 158 310 160 316" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+<path d="M176 296C180 300 182 306 186 306" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+<path d="M140 252L136 272L134 290" fill="none" stroke-width="4"/>
+<path d="M140 252L136 272L134 290" fill="none" stroke="#FFFFFF" stroke-width="2.4"/>
+<path d="M146 252L150 272L148 290" fill="none" stroke-width="4"/>
+<path d="M146 252L150 272L148 290" fill="none" stroke="#FFFFFF" stroke-width="2.4"/>
+<circle cx="136" cy="272" r="2" fill="#FFFFFF" stroke-width="0.8"/><circle cx="150" cy="272" r="2" fill="#FFFFFF" stroke-width="0.8"/>
+<path d="M134 290C132 296 134 302 130 308" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M148 290C150 296 146 300 148 306" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M131 300v3M147 300v3" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="1 3"/>
+<path d="M136 246C136 252 140 256 143 256C146 256 150 252 150 246Z" fill="#FFFFFF" stroke-width="1"/>
+<path d="M137 216C134 226 134 238 137 248L149 248C152 238 152 226 149 216C146 214 140 214 137 216Z" fill="#FFFFFF" stroke-width="1"/>
+<path d="M143 216V248" fill="none" stroke-width="0.9"/>
+<path d="M143 221C140 222 137 224 136 226M143 221C146 222 149 224 150 226" fill="none" stroke-width="0.8"/>
+<path d="M143 226C140 227 137 229 136 231M143 226C146 227 149 229 150 231" fill="none" stroke-width="0.8"/>
+<path d="M143 231C140 232 137 234 136 236M143 231C146 232 149 234 150 236" fill="none" stroke-width="0.8"/>
+<path d="M143 236C140 237 137 239 136 241M143 236C146 237 149 239 150 241" fill="none" stroke-width="0.8"/>
+<path d="M140 242C141 244 145 244 146 242" fill="none" stroke-width="0.8"/>
+<path d="M142 212L142 217M144 212L144 217" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+<path d="M137 220L128 242L124 266" fill="none" stroke-width="3.6"/>
+<path d="M137 220L128 242L124 266" fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
+<circle cx="128" cy="242" r="1.8" fill="#FFFFFF" stroke-width="0.8"/>
+<path d="M124 266L120 280" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M124 266L123 282" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M124 266L127 281" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M124 266L130 278" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M149 220L166 226L184 226" fill="none" stroke-width="3.6"/>
+<path d="M149 220L166 226L184 226" fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
+<circle cx="166" cy="226" r="1.8" fill="#FFFFFF" stroke-width="0.8"/>
+<path d="M184 226L192 222" fill="none" stroke="#FFFFFF" stroke-width="1.1"/>
+<path d="M184 226L193 225" fill="none" stroke="#FFFFFF" stroke-width="1.1"/>
+<path d="M184 226L192 229" fill="none" stroke="#FFFFFF" stroke-width="1.1"/>
+<path d="M184 226L190 232" fill="none" stroke="#FFFFFF" stroke-width="1.1"/>
+<path d="M184 226L186 218" fill="none" stroke="#FFFFFF" stroke-width="1.1"/>
+<path d="M191 228L191 236" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="1.5 1.5"/>
+<!-- kaganek -->
+<path d="M186 236L196 236L198 250L184 250Z" fill="#FFFFFF" stroke-width="1"/>
+<path d="M184 250L198 250L195 254L187 254Z" fill="#FFFFFF" stroke-width="1"/>
+<path d="M191 239C189 243 189 247 191 249C193 247 193 243 191 239Z" fill="#000000" stroke="none"/>
+<path d="M188 237V249M194 237V249" fill="none" stroke-width="0.7"/>
+<path d="M138 205C137 199 140 196 143.5 196C147 196 149.5 199 149 204C148.5 209 147 214 145.5 218C144.5 220 142 220 141 217C139.5 213 138.5 209 138 205Z" fill="#FFFFFF" stroke-width="1" transform="rotate(-12 143 206)"/>
+<g transform="rotate(-12 143 206)">
+<path d="M139.5 204C139.5 201.5 142 201 142.8 203C142.8 205.5 140.5 206 139.5 204ZM144.5 203.5C144.5 201 147 201 147.8 203C147.8 205.5 145.5 206 144.5 203.5Z" fill="#000000" stroke="none"/>
+<path d="M141.5 210C141.5 208.5 145.5 208.5 145.5 210C145.5 215 144 219 143.5 219C143 219 141.5 215 141.5 210Z" fill="#000000" stroke="none"/>
+<path d="M142 211l0.5 2M144 211l0 2.5M145.5 211l-0.4 2" fill="none" stroke="#FFFFFF" stroke-width="0.5"/>
+<path d="M143.5 206l-0.8 2.2l1.2 0" fill="none" stroke-width="0.6"/>
+</g>
+</g>
+</g>
+</svg>

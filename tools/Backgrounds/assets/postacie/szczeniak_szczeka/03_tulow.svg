@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="400" viewBox="0 0 560 400">
+<!-- tulow: tułów (chudy, zjeżony kark): drży przesuwem X ±1 px, okres 0.1 s; przy szczeknięciu szarpnięcie do przodu przesuw X −4 px -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="tulow" data-anim="przesuw" data-origin="300,240" data-range="1px" data-period="0.1">
+<g transform="translate(70 0)">
+<path d="M166 140L174 116L184 136L192 108L202 134L212 104L220 132L230 110L238 138L248 120L254 146L264 134L268 154C302 156 340 154 372 164C392 172 398 196 392 220C386 236 372 244 356 242C330 222 290 214 250 222C226 228 206 248 186 250C166 250 152 236 150 216C148 196 154 170 166 140Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M372 172C388 182 392 204 386 222C380 232 370 238 360 238C374 220 378 196 372 172Z" fill="url(#hatch)" stroke="none"/>
+<path d="M232 190C240 200 240 212 234 222M248 184C256 196 256 210 250 220M264 182C272 194 272 208 266 218M280 182C288 192 288 204 284 214" fill="none" stroke-width="2.4"/>
+<path d="M340 176C350 184 354 196 352 206" fill="none" stroke-width="2.4"/>
+<path d="M188 100l2-10M206 96l1-10M224 100l4-9M242 110l5-8" fill="none" stroke-width="2.6"/>
+</g>
+</g>
+</g>
+</svg>

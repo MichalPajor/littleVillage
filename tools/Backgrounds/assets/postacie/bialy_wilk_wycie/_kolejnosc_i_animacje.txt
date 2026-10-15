@@ -1,0 +1,11 @@
+bialy_wilk_wycie – warstwy do złożenia od spodu (00) do wierzchu. viewBox -14 -26 316 558. data-origin w jednostkach viewBox.
+Poza B: siedzi i wyje, z profilu w lewo.
+
+00_cien.svg  —  cień: pulsuje skalą X przy wyciu (wdech/wydech), origin 190,510, okres 3 s
+01_lapy_dalsze.svg  —  łapa przednia dalsza (w cieniu): nieruchoma podczas wycia; przy drżeniu przesuw X ±1 px
+02_ogon.svg  —  ogon owinięty wokół łap: koniec kołysze się obrotem ±4° przy origin 248,476 (nasada), okres 3 s; przy końcu wycia unosi się o 6°
+03_tulow.svg  —  tułów z szyją (siedzący, chudy, żebra pod sierścią): przy wyciu klatka rozszerza się skalą X 0.97→1.03 przy origin 190,500, okres 3 s (wdech na początku wycia)
+04_lapy_blizsze.svg  —  łapa przednia bliższa z obręczą wytartej sierści (ślad po rzemieniu/bransolecie) i kryzą sierści na piersi: nieruchoma; kryza drży skew ±2° przy origin 120,260 podczas wycia
+05_grzywa.svg  —  zjeżona grzywa na karku i grzbiecie: drży skew X ±3° przy origin 180,180, szybko (okres 0.4 s) — sierść nastroszona
+06_glowa.svg  —  głowa uniesiona, pysk otwarty do wycia: wycie = obrót −8°→0 przy origin 130,120 (łeb idzie w górę), okres 3 s; pysk to część głowy
+07_oczy.svg  —  oczy ludzkie, jasne, z wyraźną źrenicą i cienką czerwoną obwódką, smutne: mruganie = skala Y 1→0.2 przy origin 107,64 co 5–8 s; podczas wycia mogą się przymknąć do 0.5

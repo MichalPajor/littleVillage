@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="610" viewBox="40 80 300 530">
+<!-- ramie_dalsze: ramię dalsze: zwisa i kołysze się bezwładnie ±4° w barku, origin 196,154, okres 4 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="ramie_dalsze" data-anim="obrot" data-origin="196,154" data-range="4deg" data-period="4">
+<path d="M196 154C180 220 156 300 140 344C128 384 120 420 118 452" fill="none" stroke-width="24"/>
+<path d="M196 154C180 220 156 300 140 344C128 384 120 420 118 452" fill="none" stroke="#EDEBE6" stroke-width="16"/>
+<path d="M196 154C180 220 156 300 140 344C128 384 120 420 118 452" fill="none" stroke="url(#hatch)" stroke-width="16"/>
+<path d="M114 452C108 470 108 484 112 494" fill="none" stroke-width="20"/>
+<path d="M114 452C108 470 108 484 112 494" fill="none" stroke="#EDEBE6" stroke-width="13"/>
+<path d="M108 490C102 512 98 530 100 548M114 494C112 518 112 536 116 552M120 492C124 512 126 528 128 542" fill="none" stroke-width="8"/>
+<path d="M108 490C102 512 98 530 100 548M114 494C112 518 112 536 116 552M120 492C124 512 126 528 128 542" fill="none" stroke="#EDEBE6" stroke-width="3"/>
+<path d="M100 548l-2 8M116 552l1 8M128 542l3 7" fill="none" stroke-width="3"/>
+</g>
+</g>
+</svg>

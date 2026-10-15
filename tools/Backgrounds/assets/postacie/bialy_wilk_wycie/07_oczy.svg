@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="-14 -26 316 558">
+<!-- oczy ludzkie, jasne, z wyraźną źrenicą i cienką czerwoną obwódką, smutne: mruganie = skala Y 1→0.2 przy origin 107,64 co 5–8 s; podczas wycia mogą się przymknąć do 0.5 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="oczy" data-anim="mruganie" data-origin="107,64" data-range="1-0.2" data-period="5-8">
+<g transform="translate(130 124) scale(1.28) translate(-130 -120)">
+<g transform="rotate(-50 112 66)">
+<path d="M103 66C107.5 58.3 116.5 58.3 121 66C116.5 72.6 107.5 72.6 103 66Z" fill="#FFFFFF" stroke="#A8101A" stroke-width="2.2"/>
+<path d="M102 65.5C107.5 57.75 116.5 57.75 122 65.5" fill="none" stroke-width="2.6"/>
+<circle cx="112" cy="64.5" r="5.2" fill="#FFFFFF" stroke-width="1.6"/>
+<circle cx="112" cy="64.5" r="5.2" fill="url(#hatch)" stroke="none"/>
+<circle cx="112" cy="64.5" r="2.5" fill="#000000" stroke="none"/>
+<circle cx="110.3" cy="62.6" r="1.1" fill="#FFFFFF" stroke="none"/>
+<path d="M106.6 73.15C110.2 74.8 114.7 74.8 118.3 72.6" fill="none" stroke-width="1.2"/>
+<path d="M101 55.0C110.2 52.8 115.6 48.4 122 45.1" fill="none" stroke-width="2.4"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

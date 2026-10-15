@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- ręka z laską: ręka i laska kołyszą się ledwo zauważalnie ±1.5° w barku; liście na lasce drgają skew ±3° przy origin 232,160 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="reka_z_laska" data-anim="obrot" data-origin="190,160" data-range="1.5deg" data-period="5">
+<path d="M190 160C206 200 220 250 226 300" fill="none" stroke-width="18"/>
+<path d="M190 160C206 200 220 250 226 300" fill="none" stroke="#EDEBE6" stroke-width="11"/>
+<path d="M190 160C206 200 220 250 226 300" fill="none" stroke="url(#hatch)" stroke-width="11"/>
+<path d="M218 298C212 304 212 320 220 324C228 328 238 322 240 312C242 302 234 294 218 298Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M216 306H236M216 314H236M240 306l6 2M240 314l6 2" fill="none" stroke-width="2.2"/>
+<path d="M246 512L232 60" fill="none" stroke-width="12"/>
+<path d="M246 512L232 60" fill="none" stroke="#EDEBE6" stroke-width="6"/>
+<path d="M236 200C246 192 256 194 258 204C250 208 240 206 236 200Z M238 150C250 144 258 150 254 160C246 160 240 156 238 150Z M234 100C224 94 220 100 226 108C232 108 234 104 234 100Z" fill="#EDEBE6" stroke-width="2.4"/>
+<path d="M236 200L258 204M238 150L254 160M234 100L226 108" fill="none" stroke-width="1.6"/>
+<ellipse cx="240" cy="380" rx="6" ry="3.5" fill="#000000" stroke="none" transform="rotate(-85 240 380)"/>
+</g>
+</g>
+</svg>

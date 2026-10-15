@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- ręka lewa (po lewej stronie rysunku): obrót w barku ±6°, origin 110,200, okres 3.5 s; przy ataku obrót do −70° (uniesienie ku widzowi) -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="reka_lewa" data-anim="obrot" data-origin="110,200" data-range="6deg" data-period="3.5">
+<path d="M110 200C96 230 88 266 82 300" fill="none" stroke-width="13"/>
+<path d="M110 200C96 230 88 266 82 300" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+<path d="M82 300C74 310 70 324 70 340M82 300C80 316 80 332 84 348M82 300C90 312 96 326 98 342M82 300C72 300 64 306 60 314" fill="none" stroke-width="5"/>
+<path d="M82 300C74 310 70 324 70 340M82 300C80 316 80 332 84 348M82 300C90 312 96 326 98 342M82 300C72 300 64 306 60 314" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+<path d="M70 340l-2 7M84 348l1 7M98 342l3 6M60 314l-5 3" fill="none" stroke-width="2.4"/>
+</g>
+</g>
+</svg>

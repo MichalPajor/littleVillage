@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="430" viewBox="0 0 400 430">
+<!-- futro_na_piersi: futro na piersi: drga skew ±2° przy origin 200,214 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="futro_na_piersi" data-anim="kolysanie" data-origin="200,214" data-range="2deg" data-period="2">
+<path d="M166 212L176 230L168 246L182 258L174 276L190 286L200 302L210 286L226 276L218 258L232 246L224 230L234 212Z" fill="#FFFFFF" stroke-width="3.5"/>
+</g>
+</g>
+</svg>

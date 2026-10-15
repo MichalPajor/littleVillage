@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- twarz wariant B: wyrzeźbiona w drewnie, słoje dookoła, w miejscu oczu dwa sęki z ciemnymi dziurkami; porusza się razem z głową_B; zawiera podgrupę oczy_B -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="twarz_B" data-anim="obrot" data-origin="150,206" data-range="3deg" data-period="4">
+<path d="M142 198L142 216L158 216L158 198Z" fill="#EDEBE6" stroke-width="3"/>
+<path d="M106 150C106 112 126 96 150 96C174 96 194 112 194 150C194 182 176 204 150 206C124 204 106 182 106 150Z" fill="#EDEBE6" stroke-width="4"/>
+<ellipse cx="150" cy="156" rx="38" ry="44" fill="none" stroke-width="1.4"/>
+<ellipse cx="150" cy="156" rx="30" ry="35" fill="none" stroke-width="1.2"/>
+<ellipse cx="150" cy="156" rx="22" ry="26" fill="none" stroke-width="1.2"/>
+<ellipse cx="150" cy="156" rx="14" ry="17" fill="none" stroke-width="1.2"/>
+<path d="M114 140C118 170 126 190 140 200M186 140C182 170 174 190 160 200" fill="none" stroke-width="1.2"/>
+<path d="M180 160C184 176 178 192 166 200C176 190 180 176 180 160Z" fill="url(#hatch)" stroke="none"/>
+<!-- oczy B: dwa sęki z ciemnymi dziurkami; "mruganie" = dziurki zwężają się skalą 1→0.4 przy origin 150,150 co 6–10 s -->
+<g id="oczy_B" data-anim="skala" data-origin="150,150" data-range="1-0.4" data-period="6-10">
+<ellipse cx="132" cy="150" rx="12" ry="10" fill="#EDEBE6" stroke-width="3"/>
+<ellipse cx="132" cy="150" rx="8" ry="6.5" fill="none" stroke-width="1.6"/>
+<ellipse cx="132" cy="150" rx="4" ry="3.5" fill="#000000" stroke="none"/>
+<ellipse cx="168" cy="150" rx="12" ry="10" fill="#EDEBE6" stroke-width="3"/>
+<ellipse cx="168" cy="150" rx="8" ry="6.5" fill="none" stroke-width="1.6"/>
+<ellipse cx="168" cy="150" rx="4" ry="3.5" fill="#000000" stroke="none"/>
+</g>
+<path d="M150 160L147 170L150 172" fill="none" stroke-width="1.6"/>
+<path d="M136 184L142 182L146 186L150 182L154 186L158 182L164 184" fill="none" stroke-width="2.4"/>
+<path d="M144 186l-1 4M156 186l1 4" fill="none" stroke-width="1.2"/>
+</g>
+</g>
+</svg>

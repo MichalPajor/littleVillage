@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- żar: fale żaru przesuwają się poziomo ±6 px i migoczą kryciem 0.5–1.0; warstwa pod koszulą -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="zar" data-anim="przesuw" data-origin="150,490" data-range="6px" data-period="2">
+<path d="M90 500C104 494 118 506 132 500C146 494 160 506 174 500C188 494 202 504 212 498" fill="none" stroke-width="2.4"/>
+<path d="M98 488C110 482 122 494 134 488C146 482 158 494 170 488C182 482 194 492 204 486" fill="none" stroke-width="2"/>
+<path d="M106 476C116 470 126 480 136 474C146 468 156 480 166 474C176 468 186 476 196 472" fill="none" stroke-width="1.6"/>
+</g>
+</g>
+</svg>

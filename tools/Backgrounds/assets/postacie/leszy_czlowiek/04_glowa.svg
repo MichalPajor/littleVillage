@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- głowa: głowa powoli obraca się ±2° przy szyi (patrzy); broda kołysze się skew X ±2° przy origin 150,170 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="glowa" data-anim="obrot" data-origin="150,160" data-range="2deg" data-period="7">
+<path d="M138 140C130 120 136 92 156 88C176 86 190 98 196 112L190 148C188 164 170 172 150 164C140 160 136 152 138 140Z" fill="#000000" stroke-width="4.5"/>
+<path d="M194 110L216 126L198 132L204 146L188 150C186 134 190 120 194 110Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M200 128l6 3M198 140l5 2" fill="none" stroke-width="1.8"/>
+<path d="M150 164L138 200L146 240L136 280L156 300L170 262L164 230L176 196L180 158Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M150 164L138 200L146 240L136 280L156 300L170 262L164 230L176 196L180 158Z" fill="url(#hatch)" stroke="none"/>
+<path d="M152 180C150 210 152 240 150 270M162 184C162 214 164 244 160 274" fill="none" stroke-width="1.8"/>
+<path d="M136 112C126 132 120 160 122 190C124 212 116 232 120 252M146 104C136 130 134 150 130 176" fill="none" stroke-width="4.5"/>
+<path d="M136 112C126 132 120 160 122 190C124 212 116 232 120 252M146 104C136 130 134 150 130 176" fill="none" stroke="#EDEBE6" stroke-width="1.6"/>
+<path d="M128 150l-10 3M122 212l-10 2M118 250l-8-4M134 160l-8 6" fill="none" stroke-width="2"/>
+</g>
+</g>
+</svg>

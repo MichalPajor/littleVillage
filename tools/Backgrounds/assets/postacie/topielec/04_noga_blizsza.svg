@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="610" viewBox="40 80 300 530">
+<!-- noga_blizsza: noga bliższa: przy ciężkim kroku obrót ±10° w biodrze, origin 228,330, w przeciwfazie do dalszej -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="noga_blizsza" data-anim="obrot" data-origin="228,330" data-range="3deg" data-period="4">
+<path d="M228 330C222 372 210 410 198 442" fill="none" stroke-width="34"/>
+<path d="M228 330C222 372 210 410 198 442" fill="none" stroke="#EDEBE6" stroke-width="26"/>
+<circle cx="198" cy="442" r="15" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M198 442C204 480 210 518 214 550" fill="none" stroke-width="26"/>
+<path d="M198 442C204 480 210 518 214 550" fill="none" stroke="#EDEBE6" stroke-width="18"/>
+<path d="M210 470C214 500 216 520 218 540" fill="none" stroke="url(#hatchDense)" stroke-width="5"/>
+<path d="M222 546C212 560 190 566 160 568C150 570 146 578 156 580H232C240 574 236 556 222 546Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M176 568V580M192 566V580M206 562V580" fill="none" stroke-width="2.4"/>
+<path d="M154 571l-9 3M154 578l-9 1" fill="none" stroke-width="3.2"/>
+</g>
+</g>
+</svg>

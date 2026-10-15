@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- kożuch: kożuch oddycha skalą Y przy origin 150,404; włosie na brzegach można drgać skalą 1.0–1.03 (wiatr) -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="kozuch" data-anim="skala" data-origin="150,404" data-range="0.99-1.0" data-period="5">
+<path d="M120 150C110 200 104 300 108 400L196 404C204 300 200 200 186 150Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M120 150C110 200 104 300 108 400L196 404C204 300 200 200 186 150Z" fill="url(#hatch)" stroke="none"/>
+<path d="M108 400l-6 6M118 402l-5 7M130 402l-3 8M142 403l-2 8M156 403l0 8M170 404l2 8M184 404l4 7M196 404l6 5M112 300l-6 2M110 340l-6 1M108 370l-6 2M198 300l6 2M200 340l6 1M200 370l6 2" fill="none" stroke-width="2.2"/>
+<path d="M186 150C190 230 194 320 196 404" fill="none" stroke-width="3"/>
+<path d="M112 180l-7-4M110 220l-8-2M108 260l-8 0M198 180l7-4M200 220l8-2M202 260l8 0M202 330l8 2M110 330l-8 2M124 152l-4-8M150 150l0-8M180 152l4-8" fill="none" stroke-width="2.4"/>
+<circle cx="188" cy="190" r="3.5" fill="#000000" stroke="none"/><circle cx="190" cy="230" r="3.5" fill="#000000" stroke="none"/><circle cx="192" cy="270" r="3.5" fill="#000000" stroke="none"/>
+<path d="M104 290C130 296 170 296 204 290" fill="none" stroke-width="7"/>
+<path d="M104 290C130 296 170 296 204 290" fill="none" stroke="#EDEBE6" stroke-width="3"/>
+<path d="M150 296C146 310 140 320 134 330M150 296C156 308 160 318 162 330" fill="none" stroke-width="3"/>
+</g>
+</g>
+</svg>

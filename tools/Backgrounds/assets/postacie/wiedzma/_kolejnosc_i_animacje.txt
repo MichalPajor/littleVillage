@@ -1,0 +1,9 @@
+wiedzma – warstwy do złożenia od spodu (00) do wierzchu. viewBox 24 24 336 490 (jak w poprzedniej wersji). data-origin w jednostkach viewBox.
+Wiedźma bez zmian wyglądu.
+
+00_cien.svg  —  cien: cień: prawie nieruchomy
+01_plaszcz.svg  —  plaszcz: szary, postrzępiony płaszcz z kapturem i garbem: oddycha skalą Y 0.99–1.0 przy origin 210,496; postrzępiony dół faluje skew X ±2° przy origin 210,300, okres 4 s
+02_twarz.svg  —  twarz: twarz w cieniu kaptura (nos, zapadnięte wargi, spiczasty podbródek): wysuwa się z kaptura przesuwem X −4 px przy mówieniu; podbródek drga przesuwem Y ±1 px (mamrotanie)
+03_oczy.svg  —  oczy: oczy: jedno zasnute bielmem, drugie czarne i bystre; mruganie tylko bystrego oka (skala Y 1→0 przy origin 135,142) co 4–7 s; bielmo się nie porusza
+04_kostur.svg  —  kostur: sękaty kostur: kołysze się ±2° przy dolnym końcu, origin 78,528, okres 3 s; stuknięcie = przesuw Y −5 px w 0.15 s
+05_reka.svg  —  reka: koścista dłoń z długimi paznokciami zaciśnięta na kosturze: porusza się razem z kosturem; palce drgają skalą 0.97–1.03

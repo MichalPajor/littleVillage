@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="400" viewBox="0 0 560 400">
+<!-- drzenie: łuki drżenia przy łapach i karku: migają (krycie 1↔0) co 0.2 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="drzenie" data-anim="mruganie" data-origin="300,300" data-range="1-0" data-period="0.2">
+<g transform="translate(70 0)">
+<path d="M206 82C210 76 216 74 222 76M236 88C240 82 246 80 252 82" fill="none" stroke-width="2.6"/>
+<path d="M78 318C74 326 74 334 78 342M68 322C64 328 64 334 68 340" fill="none" stroke-width="2.6"/>
+<path d="M474 330C480 336 482 344 480 352M484 326C490 334 492 344 490 354" fill="none" stroke-width="2.6"/>
+<path d="M404 196C410 202 412 210 410 218" fill="none" stroke-width="2.6"/>
+</g>
+</g>
+</g>
+</svg>

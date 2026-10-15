@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- nogi w onucach z rzemieniami i łapciach, w pół kroku: chód = naprzemienny obrót w biodrze ±14° przy origin 155,320, okres 1.4 s (przednia i tylna w przeciwfazie) -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="nogi" data-anim="obrot" data-origin="155,320" data-range="14deg" data-period="1.4">
+<path d="M138.4 316.9 L136.9 324.1 L134.8 333.6 L132.2 345.0 L129.2 357.6 L126.1 370.7 L123.0 383.8 L120.0 396.3 L117.3 407.6 L114.5 418.3 L111.6 429.4 L108.5 440.5 L105.6 451.3 L102.8 461.4 L100.4 470.5 L98.3 478.1 L96.8 483.9 L111.2 488.1 L113.1 482.4 L115.5 474.9 L118.3 466.0 L121.4 455.9 L124.7 445.2 L128.1 434.1 L131.5 423.1 L134.7 412.4 L138.1 401.3 L141.8 388.9 L145.7 375.9 L149.5 362.9 L153.2 350.5 L156.5 339.4 L159.4 330.0 L161.6 323.1Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M138.4 316.9 L136.9 324.1 L134.8 333.6 L132.2 345.0 L129.2 357.6 L126.1 370.7 L123.0 383.8 L120.0 396.3 L117.3 407.6 L114.5 418.3 L111.6 429.4 L108.5 440.5 L105.6 451.3 L102.8 461.4 L100.4 470.5 L98.3 478.1 L96.8 483.9 L111.2 488.1 L113.1 482.4 L115.5 474.9 L118.3 466.0 L121.4 455.9 L124.7 445.2 L128.1 434.1 L131.5 423.1 L134.7 412.4 L138.1 401.3 L141.8 388.9 L145.7 375.9 L149.5 362.9 L153.2 350.5 L156.5 339.4 L159.4 330.0 L161.6 323.1Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M112.5 425.0L128.5 433.0M112.5 433.0L128.5 425.0" fill="none" stroke-width="1.4"/>
+<path d="M108.1 440.2L124.1 448.2M108.1 448.2L124.1 440.2" fill="none" stroke-width="1.4"/>
+<path d="M103.7 455.4L119.7 463.4M103.7 463.4L119.7 455.4" fill="none" stroke-width="1.4"/>
+<path d="M99.3 470.6L115.3 478.6M99.3 478.6L115.3 470.6" fill="none" stroke-width="1.4"/>
+<path d="M94 484C90 496 102 512 114 512L138 512C144 508 138 500 128 498C118 494 112 486 110 480Z" fill="#EDEBE6" stroke-width="3.2"/>
+<path d="M98 496l5 14M104 496l-5 14" fill="none" stroke-width="0.9"/>
+<path d="M107 496l5 14M113 496l-5 14" fill="none" stroke-width="0.9"/>
+<path d="M116 496l5 14M122 496l-5 14" fill="none" stroke-width="0.9"/>
+<path d="M125 496l5 14M131 496l-5 14" fill="none" stroke-width="0.9"/>
+<path d="M148.7 324.0 L151.5 331.0 L155.4 340.4 L159.9 351.4 L164.7 363.6 L169.6 376.4 L174.2 389.2 L178.2 401.2 L181.2 411.9 L183.2 422.2 L184.7 433.1 L185.9 444.1 L186.6 455.0 L187.2 465.2 L187.6 474.5 L188.0 482.4 L188.5 488.4 L203.5 487.6 L203.4 481.8 L203.4 474.1 L203.3 464.7 L203.1 454.3 L202.7 443.0 L201.9 431.3 L200.7 419.5 L198.8 408.1 L196.2 396.2 L192.8 383.3 L188.8 369.9 L184.5 356.6 L180.3 343.9 L176.5 332.6 L173.4 323.1 L171.3 316.0Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M148.7 324.0 L151.5 331.0 L155.4 340.4 L159.9 351.4 L164.7 363.6 L169.6 376.4 L174.2 389.2 L178.2 401.2 L181.2 411.9 L183.2 422.2 L184.7 433.1 L185.9 444.1 L186.6 455.0 L187.2 465.2 L187.6 474.5 L188.0 482.4 L188.5 488.4 L194.5 488.1 L194.2 482.1 L193.9 474.3 L193.6 465.0 L193.2 454.7 L192.6 443.7 L191.6 432.3 L190.2 421.1 L188.2 410.4 L185.4 399.2 L181.6 386.8 L177.3 373.8 L172.6 360.8 L168.1 348.4 L163.8 337.2 L160.3 327.8 L157.7 320.8Z" fill="url(#hatch)" stroke="none"/>
+<path d="M183.5 425.5L199.5 433.5M183.5 433.5L199.5 425.5" fill="none" stroke-width="1.4"/>
+<path d="M184.7 441.1L200.7 449.1M184.7 449.1L200.7 441.1" fill="none" stroke-width="1.4"/>
+<path d="M185.9 456.7L201.9 464.7M185.9 464.7L201.9 456.7" fill="none" stroke-width="1.4"/>
+<path d="M187.1 472.3L203.1 480.3M187.1 480.3L203.1 472.3" fill="none" stroke-width="1.4"/>
+<path d="M182 488C178 502 184 514 196 514L226 514C234 510 230 500 218 496C208 494 202 488 200 482Z" fill="#EDEBE6" stroke-width="3.2"/>
+<path d="M190 498l5 14M196 498l-5 14" fill="none" stroke-width="0.9"/>
+<path d="M199 498l5 14M205 498l-5 14" fill="none" stroke-width="0.9"/>
+<path d="M208 498l5 14M214 498l-5 14" fill="none" stroke-width="0.9"/>
+<path d="M217 498l5 14M223 498l-5 14" fill="none" stroke-width="0.9"/>
+</g>
+</g>
+</svg>

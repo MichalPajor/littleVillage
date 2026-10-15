@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- tułów: wychudzona pierś i obojczyki, oddycha skalą Y 0.98–1.0 przy origin 150,300, okres 5 s; warstwa pod łachmanami -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+'
+<g id="tulow" data-anim="skala" data-origin="150,300" data-range="0.98-1.0" data-period="5">
+<path d="M98 198C96 240 100 280 108 304L192 304C200 280 204 240 202 198C186 190 114 190 98 198Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M100 206C120 200 140 202 150 206C160 202 180 200 200 206" fill="none" stroke-width="3"/>
+<path d="M112 206C110 214 112 222 116 226M188 206C190 214 188 222 184 226" fill="none" stroke-width="2.2"/>
+<path d="M126 232C136 240 164 240 174 232M126 248C136 256 164 256 174 248M128 264C138 272 162 272 172 264M132 280C140 286 160 286 168 280" fill="none" stroke-width="2.2"/>
+<path d="M150 214C150 240 150 270 150 300" fill="none" stroke-width="2"/>
+<path d="M104 230C106 250 108 270 110 296" fill="none" stroke="url(#hatch)" stroke-width="10"/>
+<path d="M196 230C194 250 192 270 190 296" fill="none" stroke="url(#hatch)" stroke-width="10"/>
+<circle cx="138" cy="226" r="4" fill="#000000" stroke-width="1.6"/>
+<circle cx="166" cy="258" r="3.2" fill="#000000" stroke-width="1.6"/>
+<circle cx="136" cy="276" r="2.6" fill="#000000" stroke-width="1.4"/>
+</g>
+</g>
+</svg>

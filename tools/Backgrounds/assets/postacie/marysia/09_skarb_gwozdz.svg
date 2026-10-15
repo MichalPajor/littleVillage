@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- skarb Jaromira, wariant: stary kuty gwóźdź. Wisi na rzemyku; kołysze się obrotem ±5° przy origin 150,214 (kark), okres 3 s. Pokaż tylko jeden skarb naraz. -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="skarb_gwozdz" data-anim="obrot" data-origin="150,214" data-range="5deg" data-period="3">
+<path d="M140 214C140 226 144 240 150 248C156 240 160 226 160 214" fill="none" stroke-width="2.4"/>
+<path d="M140 214C140 226 144 240 150 248C156 240 160 226 160 214" fill="none" stroke="#EDEBE6" stroke-width="0.8"/>
+<path d="M150 248C146 250 146 254 150 256" fill="none" stroke-width="2"/>
+<path d="M138 254L162 254L162 260L138 260Z" fill="#EDEBE6" stroke-width="2.4"/>
+<path d="M144 260L156 260L152 300L150 306L148 300Z" fill="#EDEBE6" stroke-width="2.4"/>
+<path d="M152 262L154 262L151 300Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M146 274l6 0M147 286l4 0" fill="none" stroke-width="1"/>
+</g>
+</g>
+</svg>

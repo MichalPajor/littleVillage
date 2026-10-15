@@ -1,0 +1,11 @@
+blednice (błędnice, błędne ognie) – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. data-origin w jednostkach viewBox.
+Środki kul: kula_1 150,250 r64 · kula_2 62,118 r22 · kula_3 242,104 r28 · kula_4 66,408 r17 · kula_5 238,392 r24. Jeśli przesuwasz kule osobno, przesuwaj razem z nimi odpowiadający fragment poświaty i parę oczu (albo wytnij je per kula).
+
+00_poswiata.svg  —  poświata: kropkowane kręgi wokół kul; każdy krąg pulsuje skalą 0.95–1.05 i kryciem 0.4–1.0 wokół środka swojej kuli, okres 3 s (rozjedź fazy kul)
+01_kula_1.svg  —  kula największa (r=64): unosi się po pętli — przesuw Y ±10 px, okres 4 s, i X ±6 px, okres 6 s; migocze skalą 0.97–1.03 co 0.3 s; w środku postać ze światła (osobna warstwa)
+02_kula_2.svg  —  kula (r=22): dryfuje przesuwem Y ±11 px i X ±6 px, okres 2.2 s; migocze skalą 0.95–1.05 nieregularnie; czasem gaśnie (krycie →0.2) na 0.3 s
+03_kula_3.svg  —  kula (r=28): dryfuje przesuwem Y ±14 px i X ±8 px, okres 2.8 s; migocze skalą 0.95–1.05 nieregularnie; czasem gaśnie (krycie →0.2) na 0.3 s
+04_kula_4.svg  —  kula (r=17): dryfuje przesuwem Y ±8 px i X ±5 px, okres 1.8 s; migocze skalą 0.95–1.05 nieregularnie; czasem gaśnie (krycie →0.2) na 0.3 s
+05_kula_5.svg  —  kula (r=24): dryfuje przesuwem Y ±12 px i X ±7 px, okres 2.5 s; migocze skalą 0.95–1.05 nieregularnie; czasem gaśnie (krycie →0.2) na 0.3 s
+06_postac_w_kuli.svg  —  postać ze światła w największej kuli: upiornie chuda, z wydłużonymi kończynami, czaszkowatą głową z rozwartą szczęką, unoszącymi się włosami i postrzępionym całunem; nogi bez stóp rozpływają się w smugi; trzyma kaganek w wyciągniętej, kościstej dłoni. Porusza się razem z kula_1 (ta sama transformacja) plus powolne kołysanie ±3° przy origin 143,256; włosy i strzępy całunu falują skew ±6°; płomyk w kaganku migocze skalą Y 0.8–1.2 przy origin 191,249
+07_oczy.svg  —  oczy palaczy wiedźmy (czerwone kropki): w każdej kuli dwie; przesuwają się razem ze swoją kulą; mruganie = krycie 1→0 na 0.1 s co 3–7 s, różne fazy dla każdej pary; mogą się żarzyć skalą 0.8–1.3

@@ -1,0 +1,11 @@
+rusalka_1 – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. data-origin w jednostkach viewBox. Kierunek: przodem.
+Rusałka 1: obraca się w tańcu, jedna ręka nad głową, druga w bok, włosy rozwiane w łuk.
+
+00_wlosy_tyl.svg  —  włosy (tył): rozwiane w łuk przy obrocie; kołyszą się obrotem ±8° przy origin 150,72, okres 2.4 s, opóźnione o 0.3 s względem tułowia; pasma wodorostów kołyszą się razem
+01_reka_lewa.svg  —  ręka po prawej stronie rysunku, wyciągnięta w bok jak do tańca: faluje obrotem ±10° w barku, origin 188,158, okres 2.4 s; dłoń kołysze się ±12° przy nadgarstku 268,168
+02_koszula.svg  —  mokra lniana koszula (tułów): przy obrocie postaci szerokość X waha się 0.92–1.0 (pseudo-obrót), origin 150,300, okres 2.4 s; dół koszuli faluje skew X ±3° przy origin 150,300
+03_reka_prawa.svg  —  ręka po lewej stronie rysunku, uniesiona nad głowę: faluje obrotem ±8° w barku, origin 112,158, okres 2.4 s, w przeciwfazie do drugiej ręki
+04_glowa.svg  —  głowa: przechylona, przy obrocie kiwa się ±6° przy origin 150,128 (szyja); zawiera podgrupy oczy i usta
+05_wianek.svg  —  wianek z sitowia z lilią wodną: porusza się razem z głową (ta sama transformacja), trzciny drgają skew ±3°
+06_krople.svg  —  krople wody z włosów i palców: każda spada przesuwem Y +30 px i znika (krycie 1→0) w 1.2 s, potem wraca; startuj kolejne krople z opóźnieniem 0.3 s
+07_woda_i_odbicie.svg  —  woda i odbicie: kręgi wokół nóg rozszerzają się skalą 1.0→1.15 i znikają (krycie) co 3 s, origin 150,420; kreski odbicia drgają przesuwem X ±4 px; warstwa na wierzchu, zasłania nogi poniżej linii wody

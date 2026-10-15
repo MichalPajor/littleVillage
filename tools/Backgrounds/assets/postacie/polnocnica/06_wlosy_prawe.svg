@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- włosy prawe: kołysanie skew X ±4° w przeciwfazie do lewych, origin 178,100, okres 5 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wlosy_prawe" data-anim="kolysanie" data-origin="178,100" data-range="4deg" data-period="5">
+<path d="M178 92C200 110 214 150 220 196C226 240 238 280 256 316C266 336 278 350 290 360L254 350C230 320 212 280 200 236C190 196 186 156 178 120Z" fill="#000000" stroke-width="3"/>
+<path d="M254 350l6 8M290 360l8 4M256 316l10 4" fill="none" stroke-width="2"/>
+<path d="M204 140C212 180 220 230 236 280" fill="none" stroke="#FFFFFF" stroke-width="1.4"/>
+<path d="M174 100C182 120 186 140 184 160" fill="none" stroke="#FFFFFF" stroke-width="1.4"/>
+</g>
+</g>
+</svg>

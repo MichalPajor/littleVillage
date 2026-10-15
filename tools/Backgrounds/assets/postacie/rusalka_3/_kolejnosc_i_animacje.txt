@@ -1,0 +1,12 @@
+rusalka_3 – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. data-origin w jednostkach viewBox. Kierunek: przodem.
+Rusałka 3: odgarnia włosy jedną ręką, drugą wyciąga w bok jak w tańcu.
+
+00_wlosy_tyl.svg  —  włosy (tył): z jednej strony odgarnięte za ramię, z drugiej spływają; kołyszą się skew X ±5° przy origin 150,72, okres 2.8 s
+01_reka_prawa.svg  —  ręka po lewej stronie rysunku, wyciągnięta w dół i w bok jak do tańca: faluje obrotem ±8° w barku, origin 112,158, okres 2.8 s
+02_koszula.svg  —  mokra lniana koszula (tułów): oddycha skalą Y 0.99–1.0 przy origin 150,300, okres 2.8 s; dół koszuli faluje skew X ±2°
+03_glowa.svg  —  głowa: lekko odchylona w stronę uniesionej ręki, kiwa się ±4° przy origin 150,128; zawiera podgrupy oczy i usta
+04_wianek.svg  —  wianek z sitowia z lilią: porusza się razem z głową
+05_wlosy_przod.svg  —  włosy (przód, strona nieodgarnięta): pasmo spływa przez ramię na pierś; kołysze się skew X ±4° przy origin 140,110
+06_reka_lewa_odgarnia.svg  —  ręka po prawej stronie rysunku, uniesiona do głowy, odgarnia włosy: przesuwa się obrotem ±6° w barku, origin 188,158, okres 2.8 s; dłoń sunie po włosach przesuwem ±6 px
+07_krople.svg  —  krople wody z włosów i palców: spadają przesuwem Y +30 px i znikają w 1.2 s, kolejne z opóźnieniem 0.3 s
+08_woda_i_odbicie.svg  —  woda i odbicie: kręgi wokół nóg rozszerzają się skalą 1.0→1.15 i znikają co 3 s, origin 150,420; kreski odbicia drgają przesuwem X ±4 px; warstwa na wierzchu

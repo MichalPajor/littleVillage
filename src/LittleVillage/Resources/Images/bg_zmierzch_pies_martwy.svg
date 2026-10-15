@@ -22,6 +22,7 @@
 </defs>
 <g transform="translate(257 339) rotate(-84) scale(0.113) translate(-330 -150)">
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" transform="translate(70 0)">
+
 <path d="M368 168C404 150 432 118 446 82C452 104 446 136 428 158C414 174 396 184 382 190Z" fill="#EDEBE6" stroke-width="5"/>
 <path d="M440 92C448 98 450 112 444 128C438 118 436 104 440 92Z" fill="url(#hatchDense)" stroke="none"/>
 <path d="M408 146l8-4M420 128l8-2M398 166l8 0" fill="none" stroke-width="2.4"/>
@@ -64,6 +65,8 @@
 <path d="M402 344C400 334 414 330 432 332C452 334 464 342 462 356C460 370 446 376 426 376C406 376 396 370 396 360C396 352 398 348 402 344Z" fill="#FFFFFF" stroke-width="5"/>
 <path d="M418 358C418 366 420 372 422 375M434 360V376M448 358C448 364 446 370 444 374" fill="none" stroke-width="3"/>
 <path d="M454 372l5 4M444 376l3 5" fill="none" stroke-width="2.8"/>
+
+
 </g>
 </g>
 </svg>

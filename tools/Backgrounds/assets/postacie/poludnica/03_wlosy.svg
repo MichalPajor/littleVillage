@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- włosy: rozwiane włosy falują skew X ±5° przy nasadzie, szybciej niż koszula (upał) -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wlosy" data-anim="kolysanie" data-origin="150,90" data-range="5deg" data-period="3">
+<path d="M132 86C120 100 110 130 108 170C106 220 96 270 82 320C70 360 56 380 44 396L74 390C92 360 106 320 114 270C120 230 122 190 126 150Z" fill="#FFFFFF" stroke-width="3.5"/>
+<path d="M168 84C180 100 190 130 194 170C200 210 212 240 232 272C250 300 270 316 290 330C280 336 262 340 240 338C218 330 200 300 190 268C182 240 176 200 170 150Z" fill="#FFFFFF" stroke-width="3.5"/>
+<path d="M176 100C190 140 198 190 216 240C230 280 254 300 280 312" fill="none" stroke-width="2"/>
+<path d="M186 110C196 160 206 210 228 254C242 282 262 298 284 306" fill="none" stroke="url(#hatch)" stroke-width="6"/>
+<path d="M118 130C112 180 104 240 88 300C80 330 68 356 56 376" fill="none" stroke-width="1.8"/>
+<path d="M124 140C118 190 108 250 94 310" fill="none" stroke="url(#hatch)" stroke-width="5"/>
+<path d="M44 396l-10 6M56 392l-6 10M68 390l-2 10M290 330l10 2M276 338l6 10M254 340l2 10M236 338l-4 8" fill="none" stroke-width="2"/>
+<path d="M150 70C146 90 150 110 160 128M138 76C130 96 128 118 134 140M166 72C174 92 178 112 176 136" fill="none" stroke-width="2.6"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="430" viewBox="0 0 400 430">
+<!-- lapy_tylne: tylne łapy: nieruchome -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="lapy_tylne" data-anim="brak" data-origin="200,400" data-range="0" data-period="-">
+<path d="M76 394C74 382 88 376 106 378C124 380 132 388 128 398C124 406 108 408 92 406C80 404 76 400 76 394Z" fill="#FFFFFF" stroke-width="4.5"/>
+<path d="M92 392V405M106 392V407" fill="none" stroke-width="2.6"/>
+<path d="M324 394C326 382 312 376 294 378C276 380 268 388 272 398C276 406 292 408 308 406C320 404 324 400 324 394Z" fill="#FFFFFF" stroke-width="4.5"/>
+<path d="M308 392V405M294 392V407" fill="none" stroke-width="2.6"/>
+</g>
+</g>
+</svg>

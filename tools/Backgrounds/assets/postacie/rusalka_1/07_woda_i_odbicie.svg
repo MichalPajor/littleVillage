@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- woda i odbicie: kręgi wokół nóg rozszerzają się skalą 1.0→1.15 i znikają (krycie) co 3 s, origin 150,420; kreski odbicia drgają przesuwem X ±4 px; warstwa na wierzchu, zasłania nogi poniżej linii wody -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="woda_i_odbicie" data-anim="przesuw" data-origin="150,420" data-range="4px" data-period="3">
+<path d="M0 418C30 412 60 422 90 416C110 412 120 410 150 412C180 410 192 412 210 416C240 422 270 412 300 418V530H0Z" fill="#EDEBE6" stroke-width="3.5"/>
+<ellipse cx="150" cy="420" rx="56" ry="8" fill="none" stroke-width="2.4"/>
+<ellipse cx="150" cy="424" rx="84" ry="12" fill="none" stroke-width="1.8"/>
+<ellipse cx="150" cy="428" rx="116" ry="16" fill="none" stroke-width="1.2"/>
+<path d="M110 438H142M158 438H190" fill="none" stroke-width="1.8"/>
+<path d="M109 447H134M166 447H191" fill="none" stroke-width="1.7"/>
+<path d="M107 456H126M174 456H193" fill="none" stroke-width="1.6"/>
+<path d="M106 465H142M158 465H194" fill="none" stroke-width="1.6"/>
+<path d="M105 474H134M166 474H195" fill="none" stroke-width="1.5"/>
+<path d="M103 483H126M174 483H197" fill="none" stroke-width="1.4"/>
+<path d="M102 492H142M158 492H198" fill="none" stroke-width="1.3"/>
+<path d="M101 501H134M166 501H199" fill="none" stroke-width="1.2"/>
+<path d="M99 510H126M174 510H201" fill="none" stroke-width="1.2"/>
+<path d="M98 519H142M158 519H202" fill="none" stroke-width="1.1"/>
+<path d="M110 442H122M178 442H190" fill="none" stroke-width="2.6"/>
+<path d="M110 454H122M178 454H190" fill="none" stroke-width="2.6"/>
+<path d="M110 466H122M178 466H190" fill="none" stroke-width="2.6"/>
+<path d="M110 478H122M178 478H190" fill="none" stroke-width="2.6"/>
+<path d="M20 450H60M230 456H280M30 480H70M220 490H270M40 508H90M206 512H256" fill="none" stroke-width="1.4"/>
+<circle cx="110" cy="438" r="1" fill="#000000"/><circle cx="196" cy="444" r="1" fill="#000000"/>
+</g>
+</g>
+</svg>

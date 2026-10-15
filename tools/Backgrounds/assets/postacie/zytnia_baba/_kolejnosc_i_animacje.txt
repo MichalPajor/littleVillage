@@ -1,0 +1,10 @@
+zytnia_baba – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. Kierunek: przodem, lekko w lewo.
+Zboże z przodu zasłania ją do pasa; ciało poniżej jest dorysowane, więc warstwę zboża można pominąć.
+
+00_cien.svg  —  cień: prawie niewidoczny między źdźbłami; pulsuje skalą X 0.98–1.0, okres 4 s
+01_cialo.svg  —  ciało z powiązanych snopków (pionowe źdźbła, powrósła na szyi i w pasie): oddycha skalą Y 0.99–1.01 przy origin 150,512, okres 4 s; całość kołysze się jak zboże na wietrze skew X ±2° przy origin 150,512, okres 5 s
+02_ramie_siegajace.svg  —  ramię sięgające w dół, w zboże (szuka w nim czegoś): grzebie obrotem ±5° w barku, origin 118,170, okres 3 s; słomiane palce znikają w zbożu z przodu
+03_ramie_z_bucikiem.svg  —  ramię z małym czerwonym bucikiem (trop do rozdz. 15): kołysze się ±3° w barku, origin 182,170, okres 4 s; przy pokazywaniu bucika unosi go obrotem −20° w 0.5 s
+04_glowa.svg  —  głowa ze słomy: przechyla się ±3° przy origin 150,150 (powrósło na szyi), okres 4 s; zawiera podgrupy oczy i usta (trzy czarne dziury)
+05_wlosy_z_klosow.svg  —  włosy z kłosów zwisające po bokach: kołyszą się skew X ±4° przy origin 150,70, okres 3 s (wiatr w zbożu), z opóźnieniem 0.3 s względem głowy
+06_zboze_z_przodu.svg  —  zboże z przodu (zasłania ją do pasa): kłosy kołyszą się skew X ±4° przy origin 150,530 (ziemia), okres 2.5 s; warstwa na samym wierzchu

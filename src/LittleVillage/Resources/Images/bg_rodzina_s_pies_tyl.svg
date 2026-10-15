@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „rodzina”: pies idzie z rodziną — tyl (rysunek autora z warstw)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="41" viewBox="242 380 57 41">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.10000 0.00000 0.00000 0.10000 242.00000 380.00000)"><g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="nogi_dalsze" data-anim="przesuw" data-origin="350,370" data-range="1px" data-period="0.1">
+<g transform="translate(70 0)">
+<path d="M200 234C206 278 198 318 186 346L208 350C218 320 226 280 224 240Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M200 234C206 278 198 318 186 346L208 350C218 320 226 280 224 240Z" fill="url(#hatch)" stroke="none"/>
+<path d="M170 362C168 348 182 342 198 344C214 346 222 352 220 362C218 370 208 372 194 372C178 372 170 370 170 362Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M186 360V371M200 360V372" fill="none" stroke-width="2.6"/>
+<path d="M318 228C332 262 340 302 340 346L362 350C362 300 354 256 344 226Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M318 228C332 262 340 302 340 346L362 350C362 300 354 256 344 226Z" fill="url(#hatch)" stroke="none"/>
+<path d="M326 362C324 348 338 342 354 344C370 346 378 352 376 362C374 370 364 372 350 372C334 372 326 370 326 362Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M342 360V371M356 360V372" fill="none" stroke-width="2.6"/>
+</g>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="tulow" data-anim="przesuw" data-origin="300,240" data-range="1px" data-period="0.1">
+<g transform="translate(70 0)">
+<path d="M166 140L174 116L184 136L192 108L202 134L212 104L220 132L230 110L238 138L248 120L254 146L264 134L268 154C302 156 340 154 372 164C392 172 398 196 392 220C386 236 372 244 356 242C330 222 290 214 250 222C226 228 206 248 186 250C166 250 152 236 150 216C148 196 154 170 166 140Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M372 172C388 182 392 204 386 222C380 232 370 238 360 238C374 220 378 196 372 172Z" fill="url(#hatch)" stroke="none"/>
+<path d="M232 190C240 200 240 212 234 222M248 184C256 196 256 210 250 220M264 182C272 194 272 208 266 218M280 182C288 192 288 204 284 214" fill="none" stroke-width="2.4"/>
+<path d="M340 176C350 184 354 196 352 206" fill="none" stroke-width="2.4"/>
+<path d="M188 100l2-10M206 96l1-10M224 100l4-9M242 110l5-8" fill="none" stroke-width="2.6"/>
+</g>
+</g>
+</g>
+</g></g>
+</svg>

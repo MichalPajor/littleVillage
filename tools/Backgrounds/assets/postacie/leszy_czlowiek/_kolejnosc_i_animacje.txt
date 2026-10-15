@@ -1,0 +1,9 @@
+leszy_czlowiek – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. data-origin w jednostkach viewBox.
+
+00_cien.svg  —  cień: prawie nieruchomy
+01_kozuch.svg  —  kożuch: kożuch oddycha skalą Y przy origin 150,404; włosie na brzegach można drgać skalą 1.0–1.03 (wiatr)
+02_nogi.svg  —  nogi: stoi nieruchomo; przy kroku warstwa przesuwa się razem z całością
+03_reka_z_laska.svg  —  ręka z laską: ręka i laska kołyszą się ledwo zauważalnie ±1.5° w barku; liście na lasce drgają skew ±3° przy origin 232,160
+04_glowa.svg  —  głowa: głowa powoli obraca się ±2° przy szyi (patrzy); broda kołysze się skew X ±2° przy origin 150,170
+05_kapelusz.svg  —  kapelusz: porusza się razem z głową (ta sama transformacja); rondo może dodatkowo opadać skalą Y 1.0–1.03 przy origin 166,112
+06_oczy.svg  —  oczy: dwa jasne punkty: mruganie = skala Y 1→0 na 0.1 s co 4–8 s; przy zdradzeniu się mogą zmienić fill na #A8101A

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- czerwona wstążka we włosach (jak u Marysi): końce kołyszą się obrotem ±4° przy origin 178,104 (węzeł), okres 3 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wstazka" data-anim="obrot" data-origin="178,104" data-range="4deg" data-period="3">
+<path d="M178 104C188 90 202 92 200 104C198 114 186 110 178 104Z" fill="#A8101A" stroke-width="2.2"/>
+<path d="M178 104C166 92 154 98 158 110C162 118 172 112 178 104Z" fill="#A8101A" stroke-width="2.2"/>
+<path d="M178 104L188 134L194 130L182 104ZM178 104L174 136L180 136L180 104Z" fill="#A8101A" stroke-width="2"/>
+<circle cx="178" cy="104" r="4" fill="#A8101A" stroke-width="2"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="336" height="490" viewBox="24 24 336 490">
+<!-- kostur: sękaty kostur: kołysze się ±2° przy dolnym końcu, origin 78,528, okres 3 s; stuknięcie = przesuw Y −5 px w 0.15 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="kostur" data-anim="obrot" data-origin="78,528" data-range="2deg" data-period="3">
+<g transform="translate(-18 30)">
+<path d="M96 498L72 232" fill="none" stroke-width="13"/>
+<path d="M96 498L72 232" fill="none" stroke="#EDEBE6" stroke-width="6"/>
+<path d="M72 232C64 220 66 206 78 202C88 200 92 210 86 216" fill="none" stroke-width="12"/>
+<path d="M72 232C64 220 66 206 78 202C88 200 92 210 86 216" fill="none" stroke="#EDEBE6" stroke-width="5"/>
+<ellipse cx="84" cy="370" rx="7" ry="4" fill="#000000" stroke="none" transform="rotate(-80 84 370)"/>
+<ellipse cx="90" cy="430" rx="6" ry="3.5" fill="#000000" stroke="none" transform="rotate(-80 90 430)"/>
+</g>
+</g>
+</g>
+</svg>

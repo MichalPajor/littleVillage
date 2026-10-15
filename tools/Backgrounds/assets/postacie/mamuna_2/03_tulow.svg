@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- tułów: chudy, garbaty; oddycha skalą Y 0.98–1.0 przy origin 180,314, okres 3 s; przy skradaniu kołysze się obrotem ±2° przy origin 180,310 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="tulow" data-anim="skala" data-origin="180,314" data-range="0.98-1.0" data-period="3">
+<path d="M138 152C150 132 178 128 196 146C214 166 218 210 214 250C212 280 206 300 196 314L160 316C154 290 150 260 150 230C150 206 146 184 138 152Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M138 152C150 132 178 128 196 146C214 166 218 210 214 250C212 280 206 300 196 314L186 314C196 280 200 230 196 190C192 166 176 150 158 146C150 146 144 148 138 152Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M154 180C164 184 176 184 186 180M152 196C162 200 176 200 188 196M152 212C162 216 176 216 188 212" fill="none" stroke-width="2.2"/>
+<path d="M168.4 137.1 L167.0 137.5 L165.1 137.9 L162.7 138.4 L159.9 139.0 L156.9 139.7 L153.8 140.4 L150.6 141.3 L147.5 142.4 L144.3 143.6 L141.0 145.1 L137.7 146.7 L134.4 148.3 L131.3 149.8 L128.6 151.2 L126.4 152.4 L124.8 153.2 L131.2 166.8 L133.0 166.0 L135.4 164.9 L138.1 163.6 L141.1 162.2 L144.2 160.8 L147.3 159.5 L150.1 158.4 L152.5 157.6 L154.9 157.0 L157.4 156.5 L160.1 156.1 L162.8 155.8 L165.4 155.5 L167.8 155.2 L169.9 155.0 L171.6 154.9Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M168.4 137.1 L167.0 137.5 L165.1 137.9 L162.7 138.4 L159.9 139.0 L156.9 139.7 L153.8 140.4 L150.6 141.3 L147.5 142.4 L144.3 143.6 L141.0 145.1 L137.7 146.7 L134.4 148.3 L131.3 149.8 L128.6 151.2 L126.4 152.4 L124.8 153.2 L131.2 166.8 L133.0 166.0 L135.4 164.9 L138.1 163.6 L141.1 162.2 L144.2 160.8 L147.3 159.5 L150.1 158.4 L152.5 157.6 L154.9 157.0 L157.4 156.5 L160.1 156.1 L162.8 155.8 L165.4 155.5 L167.8 155.2 L169.9 155.0 L171.6 154.9Z" fill="url(#hatch)" stroke="none"/>
+</g>
+</g>
+</svg>

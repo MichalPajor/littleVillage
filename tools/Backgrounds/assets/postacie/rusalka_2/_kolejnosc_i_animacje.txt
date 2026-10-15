@@ -1,0 +1,12 @@
+rusalka_2 – warstwy do złożenia od spodu (00) do wierzchu. viewBox 0 0 300 530. data-origin w jednostkach viewBox. Kierunek: przodem.
+Rusałka 2: wyciąga dłoń do widza, ma na szyi czerwone korale z jarzębiny (jedyny czerwony akcent).
+
+00_wlosy_tyl.svg  —  włosy (tył): mokre pasma do pasa; kołyszą się skew X ±3° przy origin 150,72, okres 3.5 s
+01_reka_lewa.svg  —  ręka po lewej stronie rysunku, opuszczona wzdłuż ciała: kołysze się ±4° w barku, origin 112,158, okres 3 s
+02_koszula.svg  —  mokra lniana koszula (tułów): oddycha skalą Y 0.99–1.0 przy origin 150,300, okres 3 s; dół koszuli faluje skew X ±2°
+03_glowa.svg  —  głowa: przechylona w bok, kiwa się ±3° przy origin 150,128; zawiera podgrupy oczy i usta (uśmiech poszerza się, gdy gracz się zbliża)
+04_wianek.svg  —  wianek z sitowia z liliami: porusza się razem z głową
+05_wlosy_przod.svg  —  włosy (przód): pasma spływają po ramionach na pierś; kołyszą się skew X ±3° przy origin 150,120
+06_reka_prawa_do_widza.svg  —  ręka po prawej stronie rysunku, wyciągnięta dłonią do widza (skrót perspektywiczny): przybliża się skalą 1.0→1.15 przy origin 188,158, okres 3 s (zaprasza); palce zginają się obrotem ±8° przy origin 196,226
+07_krople.svg  —  krople wody z włosów i palców: spadają przesuwem Y +30 px i znikają w 1.2 s, kolejne z opóźnieniem 0.3 s
+08_woda_i_odbicie.svg  —  woda i odbicie: kręgi wokół nóg rozszerzają się skalą 1.0→1.15 i znikają co 3 s, origin 150,420; kreski odbicia drgają przesuwem X ±4 px; warstwa na wierzchu

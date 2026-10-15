@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="610" viewBox="40 80 300 530">
+<!-- krople: krople wody z włosów i palców: spadają przesuwem Y +30 px i znikają w 1.2 s, kolejne z opóźnieniem 0.3 s -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="krople" data-anim="przesuw" data-origin="150,400" data-range="30px" data-period="1.2">
+<g fill="#000000" stroke="none">
+<path d="M126 272C129 277 130 280 126 282C122 280 123 277 126 272Z"/>
+<path d="M146 300C149 305 150 308 146 310C142 308 143 305 146 300Z"/>
+<path d="M160 318C163 323 164 326 160 328C156 326 157 323 160 318Z"/>
+<path d="M228 284C231 289 232 292 228 294C224 292 225 289 228 284Z"/>
+<path d="M120 572C123 577 124 580 120 582C116 580 117 577 120 572Z"/>
+<path d="M98 562C101 567 102 570 98 572C94 570 95 567 98 562Z"/>
+</g>
+</g>
+</g>
+</svg>

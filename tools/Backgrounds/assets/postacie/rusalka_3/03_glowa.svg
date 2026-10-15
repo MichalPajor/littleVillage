@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="0 0 300 530">
+<!-- głowa: lekko odchylona w stronę uniesionej ręki, kiwa się ±4° przy origin 150,128; zawiera podgrupy oczy i usta -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="glowa" data-anim="obrot" data-origin="150,128" data-range="4deg" data-period="2.8">
+<g transform="rotate(-10 150 128) translate(150 132) scale(1.2) translate(-150 -132)">
+<path d="M124 92C124 66 136 56 150 56C164 56 176 66 176 92C176 112 168 128 150 132C132 128 124 112 124 92Z" fill="#FFFFFF" stroke-width="4"/>
+<path d="M126 100C128 112 134 120 140 124M174 100C172 112 166 120 160 124" fill="none" stroke-width="1.6"/>
+<path d="M128 104C130 112 134 118 138 120C134 114 130 108 128 104ZM172 104C170 112 166 118 162 120C166 114 170 108 172 104Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M132 84C136 80 142 80 146 83M154 83C158 80 164 80 168 84" fill="none" stroke-width="2"/>
+<!-- oczy całe czarne: mruganie = skala Y 1→0.1 na 0.1 s co 6–10 s (rzadko!), origin 150,92 -->
+<g id="oczy" data-anim="mruganie" data-origin="150,92" data-range="1-0.1" data-period="6-10">
+<path d="M132 92C136 86 144 86 147 92C144 97 136 97 132 92Z" fill="#000000" stroke-width="1.6"/>
+<path d="M153 92C156 86 164 86 168 92C164 97 156 97 153 92Z" fill="#000000" stroke-width="1.6"/>
+<circle cx="143" cy="90" r="1" fill="#FFFFFF" stroke="none"/><circle cx="164" cy="90" r="1" fill="#FFFFFF" stroke="none"/>
+</g>
+<path d="M150 96L148 106L152 107" fill="none" stroke-width="1.6"/>
+<!-- usta: uśmiech za szeroki; poszerzanie = skala X 1.0→1.25 przy origin 150,114 -->
+<g id="usta" data-anim="skala" data-origin="150,114" data-range="1-1.25" data-period="-">
+<path d="M131 110C138 118 162 118 169 110C163 122 137 122 131 110Z" fill="#000000" stroke-width="1.8"/>
+<path d="M137 114l1 3M142 115l0 4M147 116l0 4M153 116l0 4M158 115l0 4M163 114l-1 3" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M130 109l-3-3M170 109l3-3" fill="none" stroke-width="1.6"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

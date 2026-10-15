@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="530" viewBox="32 70 260 460">
+<!-- szczęka: żuchwa z podwójnym rzędem zębów, w stawie pod uchem, rozwarta; otwieranie szerzej = obrót +15° przy origin 214,200, zamknięcie = −20°; podgrupa krew wydłuża się skalą Y 1→1.6 przy origin 246,250 -->
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.6"/></pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.8"/></pattern>
+</defs>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="szczeka" data-anim="obrot" data-origin="214,200" data-range="-20-15deg" data-period="-">
+<path d="M212 198C208 222 220 244 244 250C260 254 274 246 276 232L270 224C262 234 248 238 236 234C224 228 218 214 218 200Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M216 210C220 226 230 238 244 244C232 236 224 224 220 210Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M226 230l2-12 3 11M233 234l2-14 3 13M240 236l2-15 3 14M247 236l2-15 3 14M254 234l2-14 3 13M261 231l2-12 3 11M267 227l1-9 3 8" fill="#FFFFFF" stroke-width="1.5"/>
+<path d="M230 229l1-7 2 7M237 232l1-8 2 8M244 233l1-8 2 8M251 232l1-8 2 8M258 229l1-7 2 7" fill="#FFFFFF" stroke-width="1.1"/>
+<circle cx="214" cy="200" r="4" fill="#EDEBE6" stroke-width="2.4"/>
+<g id="krew" data-anim="skala" data-origin="246,250" data-range="1-1.6" data-period="-">
+<path d="M242 248C242 260 240 272 244 286C246 294 252 292 250 282C248 270 250 258 248 248Z" fill="#A8101A" stroke="none"/>
+<path d="M245 288C248 296 243 302 246 310C251 304 251 296 245 288Z" fill="#A8101A" stroke="none"/>
+<path d="M262 246C264 254 262 262 264 268C267 264 267 256 265 248Z" fill="#A8101A" stroke="none"/>
+<path d="M232 244C240 248 252 250 266 244" fill="none" stroke="#A8101A" stroke-width="2"/>
+<ellipse cx="248" cy="326" rx="2.4" ry="3.4" fill="#A8101A" stroke="none"/>
+</g>
+</g>
+</g>
+</svg>
