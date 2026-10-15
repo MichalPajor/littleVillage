@@ -51,6 +51,20 @@ public sealed class GameStoryTests
 
     private static IEnumerable<string> Inventory(InkStoryEngine engine) => engine.GetInventory().Select(i => i.Id);
 
+    /// <summary>Ekwipunek Maćka na końcu prologu — rozdział pierwszy zaczyna Jaromir z pustym tobołkiem.</summary>
+    private static IReadOnlyList<InventoryItem> InventoryAtPrologueEnd(params int[] choices)
+    {
+        var engine = CreateEngine();
+        var page = engine.StartNew();
+        var queue = new Queue<int>(choices);
+        for (var guard = 0; guard < 200 && !page.Blocks.Any(b => b.Text == "_Koniec prologu._"); guard++)
+        {
+            page = page.Ending == PageEnding.Choices ? engine.Choose(queue.Dequeue()) : engine.Continue();
+        }
+
+        return engine.GetInventory();
+    }
+
     [Fact]
     public void Story_compiles_without_errors()
     {
@@ -645,8 +659,9 @@ public sealed class GameStoryTests
         Assert.Contains(fight.Blocks, b => b.Reveal == "kaluza");
         Assert.True(Has(pages, "Pies leżał obok"));
         Assert.DoesNotContain(pages, p => p.BackgroundKey is "pod_podloga" or "kapliczki");
-        Assert.DoesNotContain("figurka", Inventory(engine));
-        Assert.StartsWith("Dwa bochenki", engine.GetInventory().Single(i => i.Id == "zapasy").Description);
+        var bundle = InventoryAtPrologueEnd([.. ToTownWithDogAndFigurine, SellToWitch, TellWife]);
+        Assert.DoesNotContain(bundle, i => i.Id == "figurka");
+        Assert.StartsWith("Dwa bochenki", bundle.Single(i => i.Id == "zapasy").Description);
         AssertPrologueEndsWithJaromir(pages);
     }
 
@@ -676,7 +691,8 @@ public sealed class GameStoryTests
         var pages = Play(engine, place, GoOut, FeedDog, StayHere, TellBoy, Search, LeaveFlint, WalkOn, sale, TellWife);
 
         Assert.True(Has(pages, "odliczył dwa grosze"));
-        Assert.StartsWith("Bochenek chleba", engine.GetInventory().Single(i => i.Id == "zapasy").Description);
+        Assert.StartsWith("Bochenek chleba", InventoryAtPrologueEnd(place, GoOut, FeedDog, StayHere, TellBoy, Search, LeaveFlint, WalkOn, sale, TellWife)
+            .Single(i => i.Id == "zapasy").Description);
         Assert.DoesNotContain(pages, p => p.BackgroundKey is "czary" or "noc_atak" or "walka" or "pod_podloga");
         var years = pages.First(p => p.BackgroundKey == "kapliczki");
         Assert.Contains(years.Blocks, b => b.Reveal == "kapliczki");
@@ -826,5 +842,15 @@ public sealed class GameStoryTests
         Assert.StartsWith("Takich dni było bez liku.", golden.Blocks[0].Text);
         Assert.False(Has(pages, "Józek"));
         Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+    }
+
+    [Fact]
+    public void Chapter_one_starts_Jaromir_with_an_empty_bundle()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. ToTownWithDogAndFigurine, SellToDealer, TellWife]);
+
+        Assert.Contains(pages, p => p.BackgroundKey == "zapadlina_lato");
+        Assert.Empty(engine.GetInventory());
     }
 }

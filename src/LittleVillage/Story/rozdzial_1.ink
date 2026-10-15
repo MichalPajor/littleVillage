@@ -8,6 +8,8 @@
 // ------------------------------------------------------------
 
 === rozdzial_pierwszy ===
+// Nowy bohater — Jaromir zaczyna z pustym tobołkiem (przedmioty Maćka zostają w prologu).
+~ ekwipunek = ()
 # tlo: zapadlina_lato
 # rozdzial: Rozdział pierwszy
 # tytul: Lato
