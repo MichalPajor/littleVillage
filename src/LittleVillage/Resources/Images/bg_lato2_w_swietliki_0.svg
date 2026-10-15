@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- LittleVillage — tło „lato”: świetliki (migoczą)
+<!-- LittleVillage — tło „lato”: świetliki (wędrują)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="260" height="150" viewBox="120 280 260 150">
+<svg xmlns="http://www.w3.org/2000/svg" width="138" height="74" viewBox="132 322 138 74">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
@@ -22,11 +22,7 @@
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
 <circle cx="140" cy="330" r="1.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.6"/><path d="M136 330h-2M144 330h2M140 326v-2M140 334v2" fill="none" stroke-width="0.8"/>
-<circle cx="196" cy="300" r="1.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.6"/><path d="M192 300h-2M200 300h2M196 296v-2M196 304v2" fill="none" stroke-width="0.8"/>
 <circle cx="262" cy="342" r="1.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.6"/><path d="M258 342h-2M266 342h2M262 338v-2M262 346v2" fill="none" stroke-width="0.8"/>
-<circle cx="318" cy="312" r="1.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.6"/><path d="M314 312h-2M322 312h2M318 308v-2M318 316v2" fill="none" stroke-width="0.8"/>
-<circle cx="352" cy="360" r="1.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.6"/><path d="M348 360h-2M356 360h2M352 356v-2M352 364v2" fill="none" stroke-width="0.8"/>
 <circle cx="170" cy="388" r="1.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.6"/><path d="M166 388h-2M174 388h2M170 384v-2M170 392v2" fill="none" stroke-width="0.8"/>
-<circle cx="288" cy="400" r="1.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.6"/><path d="M284 400h-2M292 400h2M288 396v-2M288 404v2" fill="none" stroke-width="0.8"/>
 </g>
 </svg>

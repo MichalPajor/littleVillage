@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- LittleVillage — tło „poranek”: kury na podwórzu
+<!-- LittleVillage — tło „lato”: gwiazda (zapala się po kolei)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="120 330 120 40">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="256 24 12 12">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
@@ -21,8 +21,6 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<path d="M132 362c-8 0 -10 -10 -4 -14c4 -3 10 -2 12 2l4 -6l2 2l-2 6c2 6 -2 10 -10 10z" fill="#FFFFFF" stroke-width="1.6"/><path d="M136 346l2 -3l2 3" fill="#A8101A" stroke="none"/><path d="M129 362v4M133 362v4" fill="none" stroke-width="1.2"/>
-<path d="M170 356c8 0 10 -10 4 -14c-4 -3 -10 -2 -12 2l-4 -6l-2 2l2 6c-2 6 2 10 10 10z" fill="#FFFFFF" stroke-width="1.6"/><path d="M166 340l-2 -3l-2 3" fill="#A8101A" stroke="none"/><path d="M173 356v4M169 356v4" fill="none" stroke-width="1.2"/>
-<path d="M206 364c-8 0 -10 -10 -4 -14c4 -3 10 -2 12 2l4 -6l2 2l-2 6c2 6 -2 10 -10 10z" fill="#FFFFFF" stroke-width="1.6"/><path d="M210 348l2 -3l2 3" fill="#A8101A" stroke="none"/><path d="M203 364v4M207 364v4" fill="none" stroke-width="1.2"/>
+<path d="M258 30h8M262 26v8" fill="none" stroke="#FFFFFF" stroke-width="1.6"/><circle cx="262" cy="30" r="1.2" fill="#FFFFFF" stroke="none"/>
 </g>
 </svg>

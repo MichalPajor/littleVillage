@@ -72,29 +72,47 @@ p = ['<path d="M-10 420H400V844H-10Z" fill="#EDEBE6" stroke="none"/>']
 for i in range(22):
     p.append(grass(rnd.uniform(0, 390), rnd.uniform(436, 840), rnd.uniform(0.9, 1.3)))
 L["przod"] = (0, 410, 390, 434, group(p))
-kw = []
-for i in range(30):
-    x = 6 + i * 13
-    y = 434 - (i % 3) * 5
-    kw.append(f'<path d="M{x} {y}C{x - 1} {y - 10} {x + 2} {y - 18} {x + 1} {y - 24}" fill="none" stroke-width="1.4"/>')
-    if i % 3 == 0:
-        kw.append(f'<ellipse cx="{x + 1}" cy="{y - 30}" rx="2.2" ry="6" fill="url(#hatchDense)" stroke-width="1.2"/>')     # klos
-    else:
-        kw.append(f'<circle cx="{x + 1}" cy="{y - 27}" r="3" fill="{"#FFFFFF" if i % 2 else "#000000"}" stroke-width="1.2"/>')
-L["kwiaty"] = (0, 396, 390, 44, group(kw))
+# klosy i polne kwiaty w szesciu pasach — kazdy kolysze sie z opoznieniem, wiec przez lake przechodzi fala wiatru
+STRIPS = 6
+for k in range(STRIPS):
+    kw = []
+    for i in range(30):
+        if i * STRIPS // 30 != k:
+            continue
+        x = 6 + i * 13
+        y = 434 - (i % 3) * 5
+        kw.append(f'<path d="M{x} {y}C{x - 1} {y - 10} {x + 2} {y - 18} {x + 1} {y - 24}" fill="none" stroke-width="1.4"/>')
+        if i % 3 == 0:
+            kw.append(f'<ellipse cx="{x + 1}" cy="{y - 30}" rx="2.2" ry="6" fill="url(#hatchDense)" stroke-width="1.2"/>')     # klos
+        else:
+            kw.append(f'<circle cx="{x + 1}" cy="{y - 27}" r="3" fill="{"#FFFFFF" if i % 2 else "#000000"}" stroke-width="1.2"/>')
+    L[f"kwiaty_{k}"] = (k * 65, 396, 66, 44, group(kw))
 
-ORDER = ["tlo", "chmury", "ptaki", "dym", "kapliczki", "przod", "kwiaty"]
+# puch dmuchawcow niesiony wiatrem przez lake (unosi sie w prawo i w gore)
+import postacie
+for k, (x, y) in enumerate([(20, 330), (60, 380), (10, 270), (90, 300)]):
+    L[f"puch_{k}"] = (x - 8, y - 14, 16, 18, group([postacie.fluff(x, y, 1.3)]))
+# bocian przelatuje lukiem nad niecka
+L["bocian"] = (-62, 86, 74, 42, group([postacie.stork(-26, 106, 1.1)]))
+
+ORDER = ["tlo", "chmury", "ptaki", "bocian", "dym", "kapliczki", "przod"] + [f"kwiaty_{k}" for k in range(STRIPS)] + [f"puch_{k}" for k in range(4)]
 REVEAL = {}
 ANIM = {"chmury": {"type": "drift", "amplitude": 12, "duration": 17000},
         "ptaki": {"type": "bob", "amplitude": 5, "duration": 2400},
-        "dym": {"type": "sway", "amplitude": 2.5, "duration": 5200, "anchorX": 0.5, "anchorY": 1},
-        "kwiaty": {"type": "sway", "amplitude": 2, "duration": 3400, "anchorX": 0.5, "anchorY": 1}}
+        "bocian": {"type": "arc", "amplitude": 22, "dx": 470, "dy": -24, "duration": 18000, "phase": 0.2},
+        "dym": {"type": "sway", "amplitude": 2.5, "duration": 5200, "anchorX": 0.5, "anchorY": 1}}
+ANIM.update({f"kwiaty_{k}": {"type": "sway", "amplitude": 3, "duration": 3600, "anchorX": 0.5, "anchorY": 1, "phase": round(k * 0.07, 2)} for k in range(STRIPS)})
+ANIM.update({f"puch_{k}": {"type": "float", "amplitude": 6, "dx": 300, "dy": -70, "duration": 11000 + k * 1300, "phase": round(k * 0.25, 2)} for k in range(4)})
 COMMENTS = {"tlo": "Zapadlina latem: dziewięć domów, kładka przez mokradła, jezioro, bór, pola, stara lipa", "chmury": "chmury (dryfują)",
             "ptaki": "skowronki", "dym": "dym z kominów (kołysze się)", "kapliczki": "kapliczki z kwiatami przy drogach i na rozstajach",
-            "przod": "pierwszy plan: trawa", "kwiaty": "kłosy i polne kwiaty (kołyszą się)"}
+            "przod": "pierwszy plan: trawa", "bocian": "bocian przelatujący łukiem nad niecką"}
+COMMENTS.update({f"kwiaty_{k}": f"kłosy i polne kwiaty, pas {k + 1} z {STRIPS} (fala wiatru)" for k in range(STRIPS)})
+COMMENTS.update({f"puch_{k}": "puch dmuchawca niesiony wiatrem" for k in range(4)})
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":
         print(master(L, ORDER))
     else:
         write_layers(sys.argv[1], "bg_lato", "Zapadlina latem", L, ORDER, COMMENTS)
+        import bgjson
+        bgjson.upsert("zapadlina_lato", bgjson.entry("bg_lato", ORDER, L, ANIM, REVEAL))

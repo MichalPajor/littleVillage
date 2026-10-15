@@ -81,16 +81,20 @@ def axe_arms(sx, sy, k=1.0):
             f'</g>')
 
 
-def running_child(x, y, k=1.0, facing=1):
-    """Biegnacy chlopiec z profilu (facing=1 w prawo, -1 w lewo): noga w wykroku, rece w ruchu."""
+def running_child(x, y, k=1.0, facing=1, pose=0):
+    """Biegnacy chlopiec z profilu (facing=1 w prawo, -1 w lewo); pose 0 = wykrok, pose 1 = nogi mijaja sie (klatki biegu)."""
     f = facing
     P = lambda dx, dy: f"{x + dx * f * k:.1f} {y + dy * k:.1f}"
+    legs = (f'M{P(-2, -16)}L{P(-12, -2)}L{P(-16, 0)}M{P(2, -16)}L{P(8, -6)}L{P(14, -2)}' if pose == 0 else
+            f'M{P(-1, -16)}L{P(-6, -7)}L{P(-1, 0)}M{P(1, -16)}L{P(5, -8)}L{P(2, -1)}')
+    arms = (f'M{P(-2, -28)}L{P(-10, -20)}M{P(3, -28)}L{P(12, -32)}' if pose == 0 else
+            f'M{P(-2, -28)}L{P(4, -20)}M{P(3, -28)}L{P(-6, -24)}')
     return (f'<g stroke-width="2">'
-            f'<path d="M{P(-2, -16)}L{P(-12, -2)}L{P(-16, 0)}M{P(2, -16)}L{P(8, -6)}L{P(14, -2)}" fill="none" stroke-width="{3.4 * k:.1f}"/>'
+            f'<path d="{legs}" fill="none" stroke-width="{3.4 * k:.1f}"/>'
             f'<path d="M{P(-6, -15)}C{P(-8, -24)} {P(-4, -32)} {P(1, -33)}C{P(6, -32)} {P(8, -24)} {P(5, -15)}Z" fill="#000000"/>'
             f'<circle cx="{x + 3 * f * k:.1f}" cy="{y - 39 * k:.1f}" r="{6 * k:.1f}" fill="#000000"/>'
             f'<path d="M{P(-3, -42)}c{2 * f * k:.1f} {-6 * k:.1f} {10 * f * k:.1f} {-6 * k:.1f} {12 * f * k:.1f} 0" fill="#000000"/>'
-            f'<path d="M{P(-2, -28)}L{P(-10, -20)}M{P(3, -28)}L{P(12, -32)}" fill="none" stroke-width="{2.8 * k:.1f}"/>'
+            f'<path d="{arms}" fill="none" stroke-width="{2.8 * k:.1f}"/>'
             f'</g>')
 
 
@@ -108,3 +112,44 @@ def girl(x, y, k=1.0, running=False, facing=1):
             f'<circle cx="{x - 16 * f * k:.1f}" cy="{y - 25 * k:.1f}" r="{1.8 * k:.1f}" fill="#FFFFFF" stroke-width="1"/>'      # kokardka
             f'<path d="M{P(-3, -30)}L{P(-9, -22)}M{P(3, -30)}L{P(10, -24)}" fill="none" stroke-width="{2.4 * k:.1f}"/>'
             f'</g>')
+
+
+# ---------- zwierzeta i drobiazgi do animacji
+
+def stork(x, y, k=1.0):
+    """Bocian w locie (w prawo): rozpostarte skrzydla z czarnymi lotkami, wyciagnieta szyja i nogi."""
+    P = lambda dx, dy: f"{x + dx * k:.1f} {y + dy * k:.1f}"
+    return (f'<g stroke-width="1.6">'
+            f'<path d="M{P(-18, 0)}C{P(-8, -3)} {P(8, -3)} {P(16, -1)}L{P(28, -4)}L{P(30, -2)}L{P(16, 2)}C{P(6, 4)} {P(-8, 3)} {P(-18, 0)}Z" fill="#FFFFFF"/>'
+            f'<path d="M{P(-4, -1)}C{P(-10, -14)} {P(-20, -18)} {P(-30, -16)}L{P(-22, -8)}C{P(-14, -6)} {P(-8, -3)} {P(-4, -1)}Z" fill="#FFFFFF"/>'
+            f'<path d="M{P(-30, -16)}L{P(-22, -8)}L{P(-26, -14)}Z" fill="#000000"/>'
+            f'<path d="M{P(2, 1)}C{P(-4, 12)} {P(-14, 16)} {P(-24, 16)}L{P(-16, 8)}C{P(-8, 6)} {P(-2, 3)} {P(2, 1)}Z" fill="#FFFFFF"/>'
+            f'<path d="M{P(-24, 16)}L{P(-16, 8)}L{P(-20, 14)}Z" fill="#000000"/>'
+            f'<path d="M{P(28, -4)}l7 1M{P(-18, 0)}l-12 2M{P(-18, 1)}l-12 4" fill="none" stroke="#A8101A" stroke-width="1.6"/>'
+            f'</g>')
+
+
+def bat(x, y, k=1.0):
+    """Nietoperz z rozpostartymi skrzydlami."""
+    P = lambda dx, dy: f"{x + dx * k:.1f} {y + dy * k:.1f}"
+    return (f'<path d="M{P(0, 0)}C{P(-4, -4)} {P(-10, -6)} {P(-18, -4)}C{P(-15, -1)} {P(-14, 2)} {P(-14, 4)}C{P(-10, 1)} {P(-6, 2)} {P(-3, 4)}'
+            f'L{P(0, 2)}L{P(3, 4)}C{P(6, 2)} {P(10, 1)} {P(14, 4)}C{P(14, 2)} {P(15, -1)} {P(18, -4)}C{P(10, -6)} {P(4, -4)} {P(0, 0)}Z" fill="#000000" stroke-width="1"/>'
+            f'<path d="M{P(-2, -1)}l-1 -3M{P(2, -1)}l1 -3" fill="none" stroke-width="1"/>')
+
+
+def butterfly(x, y, k=1.0):
+    """Motyl: cztery skrzydla (biale z czarnymi plamkami), tulow, czulki."""
+    P = lambda dx, dy: f"{x + dx * k:.1f} {y + dy * k:.1f}"
+    return (f'<g stroke-width="1.2">'
+            f'<path d="M{P(0, 0)}C{P(-6, -10)} {P(-14, -8)} {P(-12, -1)}C{P(-10, 2)} {P(-4, 2)} {P(0, 0)}ZM{P(0, 0)}C{P(6, -10)} {P(14, -8)} {P(12, -1)}C{P(10, 2)} {P(4, 2)} {P(0, 0)}Z" fill="#FFFFFF"/>'
+            f'<path d="M{P(0, 1)}C{P(-5, 3)} {P(-9, 9)} {P(-4, 9)}C{P(-1, 8)} {P(0, 4)} {P(0, 1)}ZM{P(0, 1)}C{P(5, 3)} {P(9, 9)} {P(4, 9)}C{P(1, 8)} {P(0, 4)} {P(0, 1)}Z" fill="#FFFFFF"/>'
+            f'<circle cx="{x - 8 * k:.1f}" cy="{y - 5 * k:.1f}" r="{1.6 * k:.1f}" fill="#000000" stroke="none"/><circle cx="{x + 8 * k:.1f}" cy="{y - 5 * k:.1f}" r="{1.6 * k:.1f}" fill="#000000" stroke="none"/>'
+            f'<path d="M{P(0, -3)}V{y + 6 * k:.1f}M{P(0, -3)}l-3 -5M{P(0, -3)}l3 -5" fill="none" stroke-width="1.6"/>'
+            f'</g>')
+
+
+def fluff(x, y, k=1.0):
+    """Nasionko dmuchawca: kropka i parasolka z wloskow."""
+    rays = "".join(f'M{x:.1f} {y - 6 * k:.1f}l{dx * k:.1f} {-5 * k:.1f}' for dx in (-5, -2.5, 0, 2.5, 5))
+    return (f'<path d="M{x:.1f} {y:.1f}V{y - 6 * k:.1f}{rays}" fill="none" stroke-width="0.9"/>'
+            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{1.3 * k:.1f}" fill="#000000" stroke="none"/>')

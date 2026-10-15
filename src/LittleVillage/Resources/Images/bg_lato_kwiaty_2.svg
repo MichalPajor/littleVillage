@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- LittleVillage — tło „wojna z chwastami”: odlatujące kolczaste łby (# pokaz: bitwa, unoszą się)
+<!-- LittleVillage — tło „Zapadlina latem”: kłosy i polne kwiaty, pas 3 z 6 (fala wiatru)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="240 260 120 60">
+<svg xmlns="http://www.w3.org/2000/svg" width="66" height="44" viewBox="130 396 66 44">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
@@ -21,9 +21,15 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<ellipse cx="262" cy="300" rx="4" ry="3.4" fill="url(#hatchDense)" stroke-width="1.4"/><path d="M259 297l-2 -4M265 297l2 -4" fill="none" stroke-width="1.2"/>
-<ellipse cx="290" cy="286" rx="4" ry="3.4" fill="url(#hatchDense)" stroke-width="1.4"/><path d="M287 283l-2 -4M293 283l2 -4" fill="none" stroke-width="1.2"/>
-<ellipse cx="318" cy="306" rx="4" ry="3.4" fill="url(#hatchDense)" stroke-width="1.4"/><path d="M315 303l-2 -4M321 303l2 -4" fill="none" stroke-width="1.2"/>
-<ellipse cx="344" cy="280" rx="4" ry="3.4" fill="url(#hatchDense)" stroke-width="1.4"/><path d="M341 277l-2 -4M347 277l2 -4" fill="none" stroke-width="1.2"/>
+<path d="M136 429C135 419 138 411 137 405" fill="none" stroke-width="1.4"/>
+<circle cx="137" cy="402" r="3" fill="#000000" stroke-width="1.2"/>
+<path d="M149 424C148 414 151 406 150 400" fill="none" stroke-width="1.4"/>
+<circle cx="150" cy="397" r="3" fill="#FFFFFF" stroke-width="1.2"/>
+<path d="M162 434C161 424 164 416 163 410" fill="none" stroke-width="1.4"/>
+<ellipse cx="163" cy="404" rx="2.2" ry="6" fill="url(#hatchDense)" stroke-width="1.2"/>
+<path d="M175 429C174 419 177 411 176 405" fill="none" stroke-width="1.4"/>
+<circle cx="176" cy="402" r="3" fill="#FFFFFF" stroke-width="1.2"/>
+<path d="M188 424C187 414 190 406 189 400" fill="none" stroke-width="1.4"/>
+<circle cx="189" cy="397" r="3" fill="#000000" stroke-width="1.2"/>
 </g>
 </svg>

@@ -64,16 +64,30 @@ L["chwasty"] = (0, 220, 390, 210, group(w))
 # dzieci szturmuja chwasty z kijami (# pokaz: bitwa)
 def with_stick(fig, x, y, k, sx, sy, ex, ey):
     return fig + f'<path d="M{x + sx * k:.1f} {y + sy * k:.1f}L{x + ex * k:.1f} {y + ey * k:.1f}" fill="none" stroke-width="{2.6 * k:.1f}"/>'
-kids = [with_stick(postacie.running_child(150, 412, 1.35, facing=1), 150, 412, 1.35, 12, -32, 34, -50),                 # Jaromir szarzuje
-        with_stick(postacie.child(212, 404, 1.5, arm="l12 -14"), 212, 404, 1.5, 18, -42, 30, -72),                      # Franek z kijem w gorze
-        with_stick(postacie.girl(96, 408, 1.2, running=True, facing=1), 96, 408, 1.2, 10, -24, 28, -40),                # Hanka
-        with_stick(postacie.running_child(50, 416, 1.1, facing=1), 50, 416, 1.1, 12, -32, 30, -42)]                    # Antek
-L["dzieci"] = (20, 280, 240, 146, group(kids))
-# odlatujace kolczaste lby (animacja rise) i sploszone wroble
-L["lby"] = (240, 260, 120, 60, group([f'<ellipse cx="{x}" cy="{y}" rx="4" ry="3.4" fill="url(#hatchDense)" stroke-width="1.4"/>'
-                                     f'<path d="M{x - 3} {y - 3}l-2 -4M{x + 3} {y - 3}l2 -4" fill="none" stroke-width="1.2"/>'
-                                     for (x, y) in [(262, 300), (290, 286), (318, 306), (344, 280)]]))
+def kids(up):
+    """Dzieci szturmuja chwasty; up=True — kije w gorze (zamach), False — kije w dol (ciecie)."""
+    j = (34, -50) if up else (36, -24)
+    f = (30, -72) if up else (40, -40)
+    h = (28, -40) if up else (30, -18)
+    a = (30, -42) if up else (32, -20)
+    return group([with_stick(postacie.running_child(150, 412, 1.35, facing=1, pose=0 if up else 1), 150, 412, 1.35, 12, -32, *j),   # Jaromir
+                  with_stick(postacie.child(212, 404, 1.5, arm="l12 -14" if up else "l14 4"), 212, 404, 1.5, 18, -42 if up else -38, *f),  # Franek
+                  with_stick(postacie.girl(96, 408, 1.2, running=True, facing=1), 96, 408, 1.2, 10, -24, *h),                     # Hanka
+                  with_stick(postacie.running_child(50, 416, 1.1, facing=1, pose=1 if up else 0), 50, 416, 1.1, 12, -32, *a)])    # Antek
+
+
+L["dzieci_a"] = (20, 280, 240, 146, kids(True))
+L["dzieci_b"] = (20, 280, 240, 146, kids(False))
+# sciete kolczaste lby leca lukiem (kazdy osobno) i sploszone wroble
+def burr(x, y):
+    return (f'<ellipse cx="{x}" cy="{y}" rx="4" ry="3.4" fill="url(#hatchDense)" stroke-width="1.4"/>'
+            f'<path d="M{x - 3} {y - 3}l-2 -4M{x + 3} {y - 3}l2 -4" fill="none" stroke-width="1.2"/>')
+BURRS = [(276, 336), (336, 330), (296, 318)]
+for k, (x, y) in enumerate(BURRS):
+    L[f"lby_{k}"] = (x - 7, y - 9, 14, 14, group([burr(x, y)]))
 L["wroble"] = (240, 130, 140, 60, group([crow(250, 160, 0.4), crow(290, 146, 0.35), crow(330, 166, 0.4), crow(350, 140, 0.3)]))
+# motyl krazy nad chwastami
+L["motyl"] = (288, 262, 28, 22, group([postacie.butterfly(302, 272, 1.1)]))
 
 # pierwszy plan: trawa, rumianki, trzmiel
 p = ['<path d="M-10 420H400V844H-10Z" fill="#EDEBE6" stroke="none"/>']
@@ -91,23 +105,30 @@ L["trzmiel"] = (300, 360, 30, 24, group(['<ellipse cx="314" cy="372" rx="7" ry="
                                          '<path d="M311 368v8M316 367v10" fill="none" stroke="#FFFFFF" stroke-width="1.4"/>',
                                          '<ellipse cx="312" cy="365" rx="4" ry="2.5" fill="#FFFFFF" stroke-width="1"/><ellipse cx="318" cy="365" rx="4" ry="2.5" fill="#FFFFFF" stroke-width="1"/>']))
 
-ORDER = ["tlo", "chmury", "wroble", "chwasty", "lby", "dzieci", "przod", "rumianki", "trzmiel"]
-REVEAL = {"dzieci": "bitwa", "lby": "bitwa", "wroble": "bitwa"}
+ORDER = ["tlo", "chmury", "wroble", "chwasty", "motyl"] + [f"lby_{k}" for k in range(len(BURRS))] + ["dzieci", "przod", "rumianki", "trzmiel"]
+REVEAL = {"dzieci": "bitwa", "wroble": "bitwa"}
+REVEAL.update({f"lby_{k}": "bitwa" for k in range(len(BURRS))})
 ANIM = {"chmury": {"type": "drift", "amplitude": 14, "duration": 18000},
         "wroble": {"type": "bob", "amplitude": 6, "duration": 900},
         "chwasty": {"type": "sway", "amplitude": 1.6, "duration": 2600, "anchorX": 0.5, "anchorY": 1},
-        "lby": {"type": "rise", "amplitude": 30, "duration": 1600},
-        "dzieci": {"type": "bob", "amplitude": 1.4, "duration": 420},
+        "motyl": {"type": "wander", "amplitude": 26, "flap": 0.65, "duration": 7000},
+        "dzieci": {"type": "frames", "duration": 760},
         "rumianki": {"type": "sway", "amplitude": 2, "duration": 3200, "anchorX": 0.5, "anchorY": 1},
         "trzmiel": {"type": "bob", "amplitude": 4, "duration": 800}}
-COMMENTS = {"tlo": "łąka i miedza, w oddali chałupy i lipa", "chmury": "chmury jak koń i okręt (dryfują)",
+ANIM.update({f"lby_{k}": {"type": "arc", "amplitude": 36 + k * 8, "dx": 34 + k * 14, "dy": 28, "spin": 240, "duration": 1900 + k * 300, "phase": round(k * 0.33, 2)}
+             for k in range(len(BURRS))})
+EXTRA = {"dzieci": {"frames": ["dzieci_a", "dzieci_b"]}}
+COMMENTS = {**{f"lby_{k}": "ścięty kolczasty łeb lecący łukiem (# pokaz: bitwa)" for k in range(3)}, "tlo": "łąka i miedza, w oddali chałupy i lipa", "chmury": "chmury jak koń i okręt (dryfują)",
             "wroble": "spłoszone wróble (# pokaz: bitwa)", "chwasty": "gorysze, osty i pokrzywy (kołyszą się)",
-            "lby": "odlatujące kolczaste łby (# pokaz: bitwa, unoszą się)", "dzieci": "dzieci z kijami-mieczami (# pokaz: bitwa)",
+            "dzieci_a": "dzieci z kijami w górze (# pokaz: bitwa, klatka 1)", "dzieci_b": "dzieci tną kijami (# pokaz: bitwa, klatka 2)",
+            "motyl": "motyl krążący nad chwastami",
             "przod": "pierwszy plan: trawa", "rumianki": "rumianki (kołyszą się)", "trzmiel": "trzmiel"}
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":
         hide = set() if len(sys.argv) > 2 and sys.argv[2] == "wszystko" else set(REVEAL)
-        print(master(L, [n for n in ORDER if n not in hide]))
+        print(master(L, [EXTRA.get(n, {}).get("frames", [n])[0] for n in ORDER if n not in hide]))
     else:
-        write_layers(sys.argv[1], "bg_laka", "wojna z chwastami", L, ORDER, COMMENTS)
+        write_layers(sys.argv[1], "bg_laka", "wojna z chwastami", L, list(L.keys()), COMMENTS)
+        import bgjson
+        bgjson.upsert("laka_bitwa", bgjson.entry("bg_laka", ORDER, L, ANIM, REVEAL, EXTRA))

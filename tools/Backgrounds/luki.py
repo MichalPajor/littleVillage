@@ -58,12 +58,16 @@ L["klosy"] = (0, 230, 390, 40, group([f'<ellipse cx="{x + 1}" cy="{252 - (x % 3)
 # Hanka mierzy z luku (profil w prawo), chlopcy patrza z boku
 HX, HY, HK = 120, 416, 1.5
 bow = (f'<path d="M{HX + 22 * HK:.0f} {HY - 52 * HK:.0f}C{HX + 34 * HK:.0f} {HY - 40 * HK:.0f} {HX + 34 * HK:.0f} {HY - 20 * HK:.0f} {HX + 22 * HK:.0f} {HY - 8 * HK:.0f}" fill="none" stroke-width="{2.6 * HK:.1f}"/>'
-       f'<path d="M{HX + 22 * HK:.0f} {HY - 52 * HK:.0f}L{HX + 2 * HK:.0f} {HY - 30 * HK:.0f}L{HX + 22 * HK:.0f} {HY - 8 * HK:.0f}" fill="none" stroke-width="1"/>'
-       f'<path d="M{HX + 2 * HK:.0f} {HY - 30 * HK:.0f}L{HX + 44 * HK:.0f} {HY - 30 * HK:.0f}" fill="none" stroke-width="{1.6 * HK:.1f}"/>'
-       f'<path d="M{HX + 4 * HK:.0f} {HY - 30 * HK:.0f}l-6 -4M{HX + 4 * HK:.0f} {HY - 30 * HK:.0f}l-6 4" fill="none" stroke-width="1.4"/>')
+       f'<path d="M{HX + 22 * HK:.0f} {HY - 52 * HK:.0f}L{HX + 2 * HK:.0f} {HY - 30 * HK:.0f}L{HX + 22 * HK:.0f} {HY - 8 * HK:.0f}" fill="none" stroke-width="1"/>')
 kids = [postacie.girl(HX, HY, HK), bow,
         postacie.child(44, 410, 1.3), postacie.child(76, 414, 1.15, arm="l8 -10")]
 L["hanka"] = (16, 310, 196, 112, group(kids))
+# strzala Hanki: wylatuje z luku i wbija sie w snop (lot po luku, grotem do przodu)
+AX0, AX1, AY = HX + 2 * HK, HX + 44 * HK, HY - 30 * HK
+L["strzala_hanki"] = (round(AX0) - 8, round(AY) - 8, round(AX1 - AX0) + 16, 16, group([
+    f'<path d="M{AX0:.0f} {AY:.0f}L{AX1:.0f} {AY:.0f}" fill="none" stroke-width="{1.6 * HK:.1f}"/>',
+    f'<path d="M{AX1:.0f} {AY:.0f}l-6 -4M{AX1:.0f} {AY:.0f}l-6 4" fill="none" stroke-width="1.6"/>',
+    f'<path d="M{AX0 + 2:.0f} {AY:.0f}l-6 -4M{AX0 + 2:.0f} {AY:.0f}l-6 4M{AX0 + 6:.0f} {AY:.0f}l-6 -4M{AX0 + 6:.0f} {AY:.0f}l-6 4" fill="none" stroke-width="1.3"/>']))
 # strzala Jaromira w samym srodku kola
 L["trafienie"] = (TX - 38, TY - 16, 46, 24, group(['<path d="M300 330L264 320" fill="none" stroke-width="2.4"/>',
                                                    '<path d="M264 320l-6 -6M264 320l-7 2M269 321l-6 -6M269 321l-7 2" fill="none" stroke-width="1.6"/>']))
@@ -73,12 +77,16 @@ for i in range(20):
     p.append(grass(rnd.uniform(0, 390), rnd.uniform(436, 840), rnd.uniform(0.9, 1.3)))
 L["przod"] = (0, 410, 390, 434, group(p))
 
-ORDER = ["tlo", "klosy", "strzala", "trafienie", "hanka", "przod"]
-REVEAL = {"hanka": "hanka", "trafienie": "trafienie"}
-ANIM = {"strzala": {"type": "drift", "amplitude": 26, "duration": 3000},
-        "klosy": {"type": "sway", "amplitude": 1.4, "duration": 3000, "anchorX": 0.5, "anchorY": 1}}
+ORDER = ["tlo", "klosy", "strzala", "trafienie", "hanka", "strzala_hanki", "przod"]
+REVEAL = {"hanka": "hanka", "strzala_hanki": "hanka", "trafienie": "trafienie"}
+ANIM = {"strzala": {"type": "arc", "amplitude": 50, "dx": 170, "dy": 34, "tangent": True, "duration": 4600, "anchorX": 0.5, "anchorY": 0.5},
+        "klosy": {"type": "sway", "amplitude": 1.4, "duration": 3000, "anchorX": 0.5, "anchorY": 1},
+        "strzala_hanki": {"type": "arc", "amplitude": 14, "dx": round(TX - 14 - AX1), "dy": round(TY - AY), "tangent": True, "duration": 2800,
+                          "anchorX": 0.5, "anchorY": 0.5},
+        # trafienie: wlatuje z lewej i drga, grot w kole jest osia obrotu
+        "trafienie": {"type": "strike", "amplitude": 7, "dx": 110, "duration": 2600, "once": True, "anchorX": 0.83, "anchorY": 0.67}}
 COMMENTS = {"tlo": "miedza przy zbożu, snop słomy z kołem z sadzy, leszczyna pod lasem, chybione strzały",
-            "klosy": "kłosy za miedzą (kołyszą się)", "strzala": "strzała w locie (dryfuje)",
+            "klosy": "kłosy za miedzą (kołyszą się)", "strzala": "strzała szybująca wysoko (lot po łuku)", "strzala_hanki": "strzała Hanki lecąca do snopa (# pokaz: hanka)",
             "trafienie": "strzała Jaromira w środku koła (# pokaz: trafienie)", "hanka": "Hanka mierzy z łuku, chłopcy patrzą (# pokaz: hanka)",
             "przod": "pierwszy plan: trawa"}
 
@@ -88,3 +96,5 @@ if __name__ == "__main__":
         print(master(L, [n for n in ORDER if n not in hide]))
     else:
         write_layers(sys.argv[1], "bg_luki", "łuki", L, ORDER, COMMENTS)
+        import bgjson
+        bgjson.upsert("luki", bgjson.entry("bg_luki", ORDER, L, ANIM, REVEAL))

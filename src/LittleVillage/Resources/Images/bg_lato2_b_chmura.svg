@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- LittleVillage — tło „lato”: wał burzowych chmur (# pokaz: burza)
+<!-- LittleVillage — tło „lato”: wał burzowych chmur (# pokaz: burza, potem ustępuje)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
 <svg xmlns="http://www.w3.org/2000/svg" width="410" height="110" viewBox="-10 0 410 110">
 <defs>

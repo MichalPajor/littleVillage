@@ -470,10 +470,20 @@
         {"image": "bg_lato_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_lato_chmury.png", "x": 110, "y": 74, "width": 230, "height": 40, "animation": {"type": "drift", "amplitude": 12, "duration": 17000}},
         {"image": "bg_lato_ptaki.png", "x": 100, "y": 104, "width": 170, "height": 40, "animation": {"type": "bob", "amplitude": 5, "duration": 2400}},
+        {"image": "bg_lato_bocian.png", "x": -62, "y": 86, "width": 74, "height": 42, "animation": {"type": "arc", "amplitude": 22, "dx": 470, "dy": -24, "duration": 18000, "phase": 0.2}},
         {"image": "bg_lato_dym.png", "x": 80, "y": 220, "width": 200, "height": 60, "animation": {"type": "sway", "amplitude": 2.5, "duration": 5200, "anchorX": 0.5, "anchorY": 1}},
         {"image": "bg_lato_kapliczki.png", "x": 14, "y": 150, "width": 376, "height": 280},
         {"image": "bg_lato_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
-        {"image": "bg_lato_kwiaty.png", "x": 0, "y": 396, "width": 390, "height": 44, "animation": {"type": "sway", "amplitude": 2, "duration": 3400, "anchorX": 0.5, "anchorY": 1}}
+        {"image": "bg_lato_kwiaty_0.png", "x": 0, "y": 396, "width": 66, "height": 44, "animation": {"type": "sway", "amplitude": 3, "duration": 3600, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}},
+        {"image": "bg_lato_kwiaty_1.png", "x": 65, "y": 396, "width": 66, "height": 44, "animation": {"type": "sway", "amplitude": 3, "duration": 3600, "anchorX": 0.5, "anchorY": 1, "phase": 0.07}},
+        {"image": "bg_lato_kwiaty_2.png", "x": 130, "y": 396, "width": 66, "height": 44, "animation": {"type": "sway", "amplitude": 3, "duration": 3600, "anchorX": 0.5, "anchorY": 1, "phase": 0.14}},
+        {"image": "bg_lato_kwiaty_3.png", "x": 195, "y": 396, "width": 66, "height": 44, "animation": {"type": "sway", "amplitude": 3, "duration": 3600, "anchorX": 0.5, "anchorY": 1, "phase": 0.21}},
+        {"image": "bg_lato_kwiaty_4.png", "x": 260, "y": 396, "width": 66, "height": 44, "animation": {"type": "sway", "amplitude": 3, "duration": 3600, "anchorX": 0.5, "anchorY": 1, "phase": 0.28}},
+        {"image": "bg_lato_kwiaty_5.png", "x": 325, "y": 396, "width": 66, "height": 44, "animation": {"type": "sway", "amplitude": 3, "duration": 3600, "anchorX": 0.5, "anchorY": 1, "phase": 0.35}},
+        {"image": "bg_lato_puch_0.png", "x": 12, "y": 316, "width": 16, "height": 18, "animation": {"type": "float", "amplitude": 6, "dx": 300, "dy": -70, "duration": 11000, "phase": 0.0}},
+        {"image": "bg_lato_puch_1.png", "x": 52, "y": 366, "width": 16, "height": 18, "animation": {"type": "float", "amplitude": 6, "dx": 300, "dy": -70, "duration": 12300, "phase": 0.25}},
+        {"image": "bg_lato_puch_2.png", "x": 2, "y": 256, "width": 16, "height": 18, "animation": {"type": "float", "amplitude": 6, "dx": 300, "dy": -70, "duration": 13600, "phase": 0.5}},
+        {"image": "bg_lato_puch_3.png", "x": 82, "y": 286, "width": 16, "height": 18, "animation": {"type": "float", "amplitude": 6, "dx": 300, "dy": -70, "duration": 14900, "phase": 0.75}}
       ]
     },
     "poranek": {
@@ -482,13 +492,14 @@
       "backgroundColor": "#EDEBE6",
       "layers": [
         {"image": "bg_poranek_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
-        {"image": "bg_poranek_mgla.png", "x": 130, "y": 164, "width": 290, "height": 30, "animation": {"type": "drift", "amplitude": 10, "duration": 15000}},
+        {"image": "bg_poranek_mgla.png", "x": 130, "y": 164, "width": 290, "height": 30, "animation": {"type": "drift", "amplitude": 10, "duration": 15000}, "hideAfter": 18000, "fadeDuration": 6000},
         {"image": "bg_poranek_skowronki.png", "x": 90, "y": 60, "width": 160, "height": 50, "animation": {"type": "bob", "amplitude": 6, "duration": 2200}},
+        {"image": "bg_poranek_skowronek.png", "x": 108, "y": 160, "width": 30, "height": 20, "animation": {"type": "arc", "amplitude": 6, "dx": 34, "dy": -120, "duration": 7000}},
         {"image": "bg_poranek_dym.png", "x": 54, "y": 116, "width": 30, "height": 46, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1}},
-        {"image": "bg_poranek_kury.png", "x": 120, "y": 330, "width": 120, "height": 40, "animation": {"type": "bob", "amplitude": 1.2, "duration": 700}},
+        {"image": "bg_poranek_kury_a.png", "x": 120, "y": 330, "width": 120, "height": 40, "animation": {"type": "frames", "duration": 1300}, "frames": ["bg_poranek_kury_a.png", "bg_poranek_kury_b.png"]},
         {"image": "bg_poranek_rosa.png", "x": 10, "y": 350, "width": 370, "height": 80, "animation": {"type": "flicker", "amplitude": 0.2, "duration": 1600}},
         {"image": "bg_poranek_dzieci.png", "x": 200, "y": 252, "width": 190, "height": 110, "revealOn": "dzieci"},
-        {"image": "bg_poranek_jaromir.png", "x": 126, "y": 360, "width": 60, "height": 64, "animation": {"type": "bob", "amplitude": 1.6, "duration": 360}, "revealOn": "jaromir"},
+        {"image": "bg_poranek_jaromir_a.png", "x": 126, "y": 360, "width": 60, "height": 64, "animation": {"type": "frames", "duration": 380}, "revealOn": "jaromir", "frames": ["bg_poranek_jaromir_a.png", "bg_poranek_jaromir_b.png"]},
         {"image": "bg_poranek_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
       ]
     },
@@ -501,8 +512,11 @@
         {"image": "bg_laka_chmury.png", "x": 50, "y": 70, "width": 270, "height": 70, "animation": {"type": "drift", "amplitude": 14, "duration": 18000}},
         {"image": "bg_laka_wroble.png", "x": 240, "y": 130, "width": 140, "height": 60, "animation": {"type": "bob", "amplitude": 6, "duration": 900}, "revealOn": "bitwa"},
         {"image": "bg_laka_chwasty.png", "x": 0, "y": 220, "width": 390, "height": 210, "animation": {"type": "sway", "amplitude": 1.6, "duration": 2600, "anchorX": 0.5, "anchorY": 1}},
-        {"image": "bg_laka_lby.png", "x": 240, "y": 260, "width": 120, "height": 60, "animation": {"type": "rise", "amplitude": 30, "duration": 1600}, "revealOn": "bitwa"},
-        {"image": "bg_laka_dzieci.png", "x": 20, "y": 280, "width": 240, "height": 146, "animation": {"type": "bob", "amplitude": 1.4, "duration": 420}, "revealOn": "bitwa"},
+        {"image": "bg_laka_motyl.png", "x": 288, "y": 262, "width": 28, "height": 22, "animation": {"type": "wander", "amplitude": 26, "flap": 0.65, "duration": 7000}},
+        {"image": "bg_laka_lby_0.png", "x": 269, "y": 327, "width": 14, "height": 14, "animation": {"type": "arc", "amplitude": 36, "dx": 34, "dy": 28, "spin": 240, "duration": 1900, "phase": 0.0}, "revealOn": "bitwa"},
+        {"image": "bg_laka_lby_1.png", "x": 329, "y": 321, "width": 14, "height": 14, "animation": {"type": "arc", "amplitude": 44, "dx": 48, "dy": 28, "spin": 240, "duration": 2200, "phase": 0.33}, "revealOn": "bitwa"},
+        {"image": "bg_laka_lby_2.png", "x": 289, "y": 309, "width": 14, "height": 14, "animation": {"type": "arc", "amplitude": 52, "dx": 62, "dy": 28, "spin": 240, "duration": 2500, "phase": 0.66}, "revealOn": "bitwa"},
+        {"image": "bg_laka_dzieci_a.png", "x": 20, "y": 280, "width": 240, "height": 146, "animation": {"type": "frames", "duration": 760}, "revealOn": "bitwa", "frames": ["bg_laka_dzieci_a.png", "bg_laka_dzieci_b.png"]},
         {"image": "bg_laka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
         {"image": "bg_laka_rumianki.png", "x": 0, "y": 396, "width": 390, "height": 40, "animation": {"type": "sway", "amplitude": 2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}},
         {"image": "bg_laka_trzmiel.png", "x": 300, "y": 360, "width": 30, "height": 24, "animation": {"type": "bob", "amplitude": 4, "duration": 800}}
@@ -515,9 +529,10 @@
       "layers": [
         {"image": "bg_luki_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_luki_klosy.png", "x": 0, "y": 230, "width": 390, "height": 40, "animation": {"type": "sway", "amplitude": 1.4, "duration": 3000, "anchorX": 0.5, "anchorY": 1}},
-        {"image": "bg_luki_strzala.png", "x": 120, "y": 120, "width": 80, "height": 30, "animation": {"type": "drift", "amplitude": 26, "duration": 3000}},
-        {"image": "bg_luki_trafienie.png", "x": 262, "y": 314, "width": 46, "height": 24, "revealOn": "trafienie"},
+        {"image": "bg_luki_strzala.png", "x": 120, "y": 120, "width": 80, "height": 30, "animation": {"type": "arc", "amplitude": 50, "dx": 170, "dy": 34, "tangent": true, "duration": 4600, "anchorX": 0.5, "anchorY": 0.5}},
+        {"image": "bg_luki_trafienie.png", "x": 262, "y": 314, "width": 46, "height": 24, "animation": {"type": "strike", "amplitude": 7, "dx": 110, "duration": 2600, "once": true, "anchorX": 0.83, "anchorY": 0.67}, "revealOn": "trafienie"},
         {"image": "bg_luki_hanka.png", "x": 16, "y": 310, "width": 196, "height": 112, "revealOn": "hanka"},
+        {"image": "bg_luki_strzala_hanki.png", "x": 115, "y": 363, "width": 79, "height": 16, "animation": {"type": "arc", "amplitude": 14, "dx": 100, "dy": -41, "tangent": true, "duration": 2800, "anchorX": 0.5, "anchorY": 0.5}, "revealOn": "hanka"},
         {"image": "bg_luki_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
       ]
     },
@@ -527,11 +542,21 @@
       "backgroundColor": "#EDEBE6",
       "layers": [
         {"image": "bg_lato2_b_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_lato2_b_tecza.png", "x": -60, "y": 90, "width": 160, "height": 140, "revealOn": "burza", "appearAfter": 15000, "fadeDuration": 6000},
         {"image": "bg_lato2_b_liscie.png", "x": 60, "y": 150, "width": 290, "height": 110, "animation": {"type": "sway", "amplitude": 2.4, "duration": 2600, "anchorX": 0.5, "anchorY": 0.5}},
-        {"image": "bg_lato2_b_chmura.png", "x": -10, "y": 0, "width": 410, "height": 110, "revealOn": "burza"},
-        {"image": "bg_lato2_b_deszcz_a.png", "x": 0, "y": 100, "width": 390, "height": 240, "animation": {"type": "rise", "amplitude": -40, "duration": 700}, "revealOn": "burza"},
-        {"image": "bg_lato2_b_deszcz_b.png", "x": 0, "y": 100, "width": 390, "height": 240, "animation": {"type": "rise", "amplitude": -40, "duration": 700, "phase": 0.5}, "revealOn": "burza"},
-        {"image": "bg_lato2_b_blyskawica.png", "x": 300, "y": 60, "width": 50, "height": 90, "animation": {"type": "flicker", "amplitude": 0, "duration": 2300}, "revealOn": "burza"}
+        {"image": "bg_lato2_b_kaluze.png", "x": 30, "y": 360, "width": 310, "height": 70, "revealOn": "burza"},
+        {"image": "bg_lato2_b_krag_0.png", "x": 48, "y": 368, "width": 24, "height": 8, "animation": {"type": "ripple", "amplitude": 1.3, "duration": 900, "anchorX": 0.5, "anchorY": 0.5, "phase": 0.0}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
+        {"image": "bg_lato2_b_krag_1.png", "x": 72, "y": 370, "width": 24, "height": 8, "animation": {"type": "ripple", "amplitude": 1.3, "duration": 1030, "anchorX": 0.5, "anchorY": 0.5, "phase": 0.21}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
+        {"image": "bg_lato2_b_krag_2.png", "x": 278, "y": 376, "width": 24, "height": 8, "animation": {"type": "ripple", "amplitude": 1.3, "duration": 1160, "anchorX": 0.5, "anchorY": 0.5, "phase": 0.42}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
+        {"image": "bg_lato2_b_krag_3.png", "x": 302, "y": 378, "width": 24, "height": 8, "animation": {"type": "ripple", "amplitude": 1.3, "duration": 1290, "anchorX": 0.5, "anchorY": 0.5, "phase": 0.63}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
+        {"image": "bg_lato2_b_krag_4.png", "x": 158, "y": 416, "width": 24, "height": 8, "animation": {"type": "ripple", "amplitude": 1.3, "duration": 1420, "anchorX": 0.5, "anchorY": 0.5, "phase": 0.84}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
+        {"image": "bg_lato2_b_chmura.png", "x": -10, "y": 0, "width": 410, "height": 110, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
+        {"image": "bg_lato2_b_deszcz_0.png", "x": 0, "y": 96, "width": 396, "height": 250, "animation": {"type": "rise", "amplitude": -46, "duration": 620, "phase": 0.0}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
+        {"image": "bg_lato2_b_deszcz_1.png", "x": 0, "y": 96, "width": 396, "height": 250, "animation": {"type": "rise", "amplitude": -46, "duration": 620, "phase": 0.33}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
+        {"image": "bg_lato2_b_deszcz_2.png", "x": 0, "y": 96, "width": 396, "height": 250, "animation": {"type": "rise", "amplitude": -46, "duration": 620, "phase": 0.67}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
+        {"image": "bg_lato2_b_krople.png", "x": 146, "y": 200, "width": 124, "height": 16, "animation": {"type": "rise", "amplitude": -26, "duration": 800}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
+        {"image": "bg_lato2_b_blyskawica.png", "x": 300, "y": 60, "width": 50, "height": 90, "animation": {"type": "flash", "amplitude": 1, "duration": 5200}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
+        {"image": "bg_lato2_b_rozblysk.png", "x": 0, "y": 0, "width": 390, "height": 440, "animation": {"type": "flash", "amplitude": 0.75, "duration": 5200}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 1000, "noInvert": true, "depth": 0}
       ]
     },
     "jezioro_lato": {
@@ -541,8 +566,12 @@
       "layers": [
         {"image": "bg_lato2_j_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_lato2_j_blyski.png", "x": 60, "y": 210, "width": 300, "height": 110, "animation": {"type": "flicker", "amplitude": 0.25, "duration": 1500}},
-        {"image": "bg_lato2_j_wazki.png", "x": 150, "y": 140, "width": 120, "height": 40, "animation": {"type": "bob", "amplitude": 5, "duration": 900}},
-        {"image": "bg_lato2_j_kapiel.png", "x": 120, "y": 200, "width": 210, "height": 140, "animation": {"type": "bob", "amplitude": 1.4, "duration": 800}, "revealOn": "kapiel"}
+        {"image": "bg_lato2_j_wazka_0.png", "x": 156, "y": 152, "width": 22, "height": 16, "animation": {"type": "wander", "amplitude": 22, "flap": 0.5, "duration": 5200}},
+        {"image": "bg_lato2_j_wazka_1.png", "x": 236, "y": 142, "width": 22, "height": 16, "animation": {"type": "wander", "amplitude": 30, "flap": 0.5, "duration": 6600, "phase": 0.4}},
+        {"image": "bg_lato2_j_plusk.png", "x": 216, "y": 288, "width": 60, "height": 26, "animation": {"type": "ripple", "amplitude": 1.2, "duration": 3400, "phase": 0.3, "anchorX": 0.5, "anchorY": 0.6}, "revealOn": "kapiel"},
+        {"image": "bg_lato2_j_kapiel.png", "x": 130, "y": 270, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 1.4, "duration": 800}, "revealOn": "kapiel"},
+        {"image": "bg_lato2_j_antek_a.png", "x": 224, "y": 290, "width": 66, "height": 44, "animation": {"type": "frames", "duration": 500}, "revealOn": "kapiel", "frames": ["bg_lato2_j_antek_a.png", "bg_lato2_j_antek_b.png"]},
+        {"image": "bg_lato2_j_franek.png", "x": 284, "y": 222, "width": 32, "height": 46, "animation": {"type": "arc", "amplitude": 34, "dx": -54, "dy": 54, "spin": -170, "duration": 3400, "anchorX": 0.5, "anchorY": 0.5}, "revealOn": "kapiel"}
       ]
     },
     "wieczor_lato": {
@@ -550,12 +579,23 @@
       "height": 844,
       "backgroundColor": "#EDEBE6",
       "layers": [
-        {"image": "bg_lato2_w_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_lato2_w_niebo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_lato2_w_gwiazda_0.png", "x": 34, "y": 34, "width": 12, "height": 12, "appearAfter": 6000, "fadeDuration": 2500},
+        {"image": "bg_lato2_w_gwiazda_1.png", "x": 114, "y": 18, "width": 12, "height": 12, "appearAfter": 10000, "fadeDuration": 2500},
+        {"image": "bg_lato2_w_gwiazda_2.png", "x": 190, "y": 48, "width": 12, "height": 12, "appearAfter": 14000, "fadeDuration": 2500},
+        {"image": "bg_lato2_w_gwiazda_3.png", "x": 256, "y": 24, "width": 12, "height": 12, "appearAfter": 18000, "fadeDuration": 2500},
+        {"image": "bg_lato2_w_gwiazda_4.png", "x": 344, "y": 54, "width": 12, "height": 12, "appearAfter": 22000, "fadeDuration": 2500},
+        {"image": "bg_lato2_w_gwiazda_5.png", "x": 84, "y": 90, "width": 12, "height": 12, "appearAfter": 26000, "fadeDuration": 2500},
+        {"image": "bg_lato2_w_slonce.png", "x": 288, "y": 154, "width": 72, "height": 72, "animation": {"type": "slide", "dy": 70, "duration": 70000, "once": true}},
+        {"image": "bg_lato2_w_nietoperz.png", "x": 180, "y": 96, "width": 40, "height": 24, "animation": {"type": "wander", "amplitude": 60, "flap": 0.6, "duration": 5600}, "appearAfter": 5000, "fadeDuration": 2000},
+        {"image": "bg_lato2_w_tlo.png", "x": -10, "y": 170, "width": 410, "height": 270},
         {"image": "bg_lato2_w_dym.png", "x": 54, "y": 130, "width": 30, "height": 50, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1}},
         {"image": "bg_lato2_w_matka.png", "x": 66, "y": 270, "width": 44, "height": 74, "revealOn": "matka"},
-        {"image": "bg_lato2_w_jaromir.png", "x": 176, "y": 352, "width": 60, "height": 70, "animation": {"type": "bob", "amplitude": 1.6, "duration": 360}, "revealOn": "jaromir"},
-        {"image": "bg_lato2_w_swietliki_a.png", "x": 120, "y": 280, "width": 260, "height": 150, "animation": {"type": "flicker", "amplitude": 0.1, "duration": 1900}},
-        {"image": "bg_lato2_w_swietliki_b.png", "x": 120, "y": 280, "width": 260, "height": 150, "animation": {"type": "flicker", "amplitude": 0.1, "duration": 1900, "phase": 0.5}}
+        {"image": "bg_lato2_w_jaromir_a.png", "x": 176, "y": 352, "width": 60, "height": 70, "animation": {"type": "frames", "duration": 380}, "revealOn": "jaromir", "frames": ["bg_lato2_w_jaromir_a.png", "bg_lato2_w_jaromir_b.png"]},
+        {"image": "bg_lato2_w_swietliki_0.png", "x": 132, "y": 322, "width": 138, "height": 74, "animation": {"type": "wander", "amplitude": 10, "duration": 4200, "phase": 0.0}},
+        {"image": "bg_lato2_w_swietliki_1.png", "x": 188, "y": 292, "width": 138, "height": 116, "animation": {"type": "wander", "amplitude": 13, "duration": 5100, "phase": 0.27}},
+        {"image": "bg_lato2_w_swietliki_2.png", "x": 152, "y": 344, "width": 156, "height": 68, "animation": {"type": "wander", "amplitude": 16, "duration": 6000, "phase": 0.54}},
+        {"image": "bg_lato2_w_swietliki_3.png", "x": 122, "y": 292, "width": 226, "height": 46, "animation": {"type": "wander", "amplitude": 19, "duration": 6900, "phase": 0.81}}
       ]
     }
   }

@@ -54,12 +54,24 @@ def hen(x, y, f=1):
     return (f'<path d="M{x} {y}c{-8 * f} 0 {-10 * f} -10 {-4 * f} -14c{4 * f} -3 {10 * f} -2 {12 * f} 2l{4 * f} -6l{2 * f} 2l{-2 * f} 6c{2 * f} 6 {-2 * f} 10 {-10 * f} 10z" fill="#FFFFFF" stroke-width="1.6"/>'
             f'<path d="M{x + 4 * f} {y - 16}l{2 * f} -3l{2 * f} 3" fill="#A8101A" stroke="none"/>'
             f'<path d="M{x - 3 * f} {y}v4M{x + 1 * f} {y}v4" fill="none" stroke-width="1.2"/>')
-L["kury"] = (120, 330, 120, 40, group([hen(132, 362, 1), hen(170, 356, -1), hen(206, 364, 1)]))
+def hen_peck(x, y, f=1):
+    """Kura z lbem przy ziemi (druga klatka dziobania)."""
+    return (f'<path d="M{x} {y}c{-8 * f} 0 {-10 * f} -10 {-4 * f} -14c{4 * f} -3 {10 * f} -2 {12 * f} 2l{4 * f} 8l{2 * f} 3l{-3 * f} 1c{-2 * f} 1 {-6 * f} 0 {-11 * f} 0z" fill="#FFFFFF" stroke-width="1.6"/>'
+            f'<path d="M{x + 9 * f} {y - 5}l{2 * f} -2l{1 * f} 3" fill="#A8101A" stroke="none"/>'
+            f'<path d="M{x - 3 * f} {y}v4M{x + 1 * f} {y}v4M{x + 13 * f} {y}l{1 * f} 2" fill="none" stroke-width="1.2"/>')
+
+
+# kury dziobia ziarno: dwie klatki, w kazdej inna kura ma leb przy ziemi
+L["kury_a"] = (120, 330, 120, 40, group([hen(132, 362, 1), hen_peck(170, 356, -1), hen(206, 364, 1)]))
+L["kury_b"] = (120, 330, 120, 40, group([hen_peck(132, 362, 1), hen(170, 356, -1), hen_peck(206, 364, 1)]))
+# skowronek wzlatuje coraz wyzej
+L["skowronek"] = (108, 160, 30, 20, group([crow(112, 172, 0.42)]))
 # rosa: iskierki w kroplach na trawie (migocza)
 L["rosa"] = (10, 350, 370, 80, group([f'<path d="M{x} {y}m-3 0h6m-3 -3v6" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>'
                                       f'<circle cx="{x}" cy="{y}" r="1.2" fill="#FFFFFF" stroke="none"/>'
                                       for (x, y) in [(30, 372), (78, 404), (128, 380), (186, 412), (240, 376), (296, 400), (350, 384), (360, 420), (60, 422)]]))
-L["jaromir"] = (126, 360, 60, 64, group([postacie.running_child(150, 418, 1.3, facing=1)]))
+L["jaromir_a"] = (126, 360, 60, 64, group([postacie.running_child(150, 418, 1.3, facing=1, pose=0)]))
+L["jaromir_b"] = (126, 360, 60, 64, group([postacie.running_child(150, 418, 1.3, facing=1, pose=1)]))
 L["dzieci"] = (200, 252, 190, 110, group([postacie.child(342, 336, 1.25),                                  # Franek, rosly
                                           postacie.crouching_child(268, 340, 0.9),                         # Antek kopie rowek
                                           postacie.girl(214, 306, 0.8, running=True, facing=1)]))          # Hanka nadbiega
@@ -69,23 +81,32 @@ for i in range(20):
     p.append(grass(rnd.uniform(0, 390), rnd.uniform(436, 840), rnd.uniform(0.9, 1.3)))
 L["przod"] = (0, 410, 390, 434, group(p))
 
-ORDER = ["tlo", "mgla", "skowronki", "dym", "kury", "rosa", "dzieci", "jaromir", "przod"]
+ORDER = ["tlo", "mgla", "skowronki", "skowronek", "dym", "kury", "rosa", "dzieci", "jaromir", "przod"]
 REVEAL = {"jaromir": "jaromir", "dzieci": "dzieci"}
 ANIM = {"mgla": {"type": "drift", "amplitude": 10, "duration": 15000},
         "skowronki": {"type": "bob", "amplitude": 6, "duration": 2200},
+        "skowronek": {"type": "arc", "amplitude": 6, "dx": 34, "dy": -120, "duration": 7000},
         "dym": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1},
-        "kury": {"type": "bob", "amplitude": 1.2, "duration": 700},
+        "kury": {"type": "frames", "duration": 1300},
         "rosa": {"type": "flicker", "amplitude": 0.2, "duration": 1600},
-        "jaromir": {"type": "bob", "amplitude": 1.6, "duration": 360}}
+        "jaromir": {"type": "frames", "duration": 380}}
+# mgla rozwiewa sie w trakcie czytania; klatki kur i biegu
+EXTRA = {"mgla": {"hideAfter": 18000, "fadeDuration": 6000},
+         "kury": {"frames": ["kury_a", "kury_b"]},
+         "jaromir": {"frames": ["jaromir_a", "jaromir_b"]}}
 COMMENTS = {"tlo": "letni świt: dom Jaromira z otwartymi drzwiami, zagroda Stasiowych z płotem i kałużami, bór, wschodzące słońce",
             "mgla": "strzępy mgły nad łąką (dryfują)", "skowronki": "skowronki", "dym": "dym z komina (kołysze się)",
-            "kury": "kury na podwórzu", "rosa": "iskierki rosy na trawie (migoczą)",
-            "jaromir": "Jaromir biegnie przez podwórze (# pokaz: jaromir)", "dzieci": "Franek, Antek przy rowku, nadbiegająca Hanka (# pokaz: dzieci)",
+            "kury_a": "kury na podwórzu (klatka 1 dziobania)", "kury_b": "kury na podwórzu (klatka 2 dziobania)",
+            "skowronek": "skowronek wzlatujący coraz wyżej", "rosa": "iskierki rosy na trawie (migoczą)",
+            "jaromir_a": "Jaromir biegnie przez podwórze, klatka 1 (# pokaz: jaromir)", "jaromir_b": "Jaromir biegnie, klatka 2 (# pokaz: jaromir)", "dzieci": "Franek, Antek przy rowku, nadbiegająca Hanka (# pokaz: dzieci)",
             "przod": "pierwszy plan: trawa"}
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":
         hide = set() if len(sys.argv) > 2 and sys.argv[2] == "wszystko" else set(REVEAL)
-        print(master(L, [n for n in ORDER if n not in hide]))
+        names = [EXTRA.get(n, {}).get("frames", [n])[0] for n in ORDER if n not in hide]
+        print(master(L, names))
     else:
-        write_layers(sys.argv[1], "bg_poranek", "poranek", L, ORDER, COMMENTS)
+        write_layers(sys.argv[1], "bg_poranek", "poranek", L, list(L.keys()), COMMENTS)
+        import bgjson
+        bgjson.upsert("poranek", bgjson.entry("bg_poranek", ORDER, L, ANIM, REVEAL, EXTRA))
