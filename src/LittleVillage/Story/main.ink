@@ -8,5 +8,6 @@ INCLUDE przedmioty.ink
 INCLUDE prolog.ink
 INCLUDE prolog_miasto.ink
 INCLUDE rozdzial_1.ink
+INCLUDE rozdzial_2.ink
 
 -> prolog

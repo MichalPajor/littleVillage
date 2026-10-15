@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „izba szkolna”: pierwszy plan: podłoga
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="434" viewBox="0 410 390 434">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M-10 420H400V844H-10Z" fill="url(#hatch)" stroke="none" opacity="0.35"/>
+<path d="M-200 440L-753 844" fill="none" stroke-width="0.9"/>
+<path d="M-160 440L-657 844" fill="none" stroke-width="0.9"/>
+<path d="M-120 440L-561 844" fill="none" stroke-width="0.9"/>
+<path d="M-80 440L-465 844" fill="none" stroke-width="0.9"/>
+<path d="M-40 440L-369 844" fill="none" stroke-width="0.9"/>
+<path d="M0 440L-273 844" fill="none" stroke-width="0.9"/>
+<path d="M40 440L-177 844" fill="none" stroke-width="0.9"/>
+<path d="M80 440L-81 844" fill="none" stroke-width="0.9"/>
+<path d="M120 440L15 844" fill="none" stroke-width="0.9"/>
+<path d="M160 440L111 844" fill="none" stroke-width="0.9"/>
+<path d="M200 440L207 844" fill="none" stroke-width="0.9"/>
+<path d="M240 440L303 844" fill="none" stroke-width="0.9"/>
+<path d="M280 440L399 844" fill="none" stroke-width="0.9"/>
+<path d="M320 440L495 844" fill="none" stroke-width="0.9"/>
+<path d="M360 440L591 844" fill="none" stroke-width="0.9"/>
+<path d="M400 440L687 844" fill="none" stroke-width="0.9"/>
+<path d="M440 440L783 844" fill="none" stroke-width="0.9"/>
+<path d="M480 440L879 844" fill="none" stroke-width="0.9"/>
+<path d="M520 440L975 844" fill="none" stroke-width="0.9"/>
+<path d="M560 440L1071 844" fill="none" stroke-width="0.9"/>
+</g>
+</svg>

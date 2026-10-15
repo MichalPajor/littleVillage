@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „izba szkolna”: ławki z dziećmi (od tyłu)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="140" viewBox="0 300 390 140">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M10 352H360V360H10Z" fill="url(#hatchDense)" stroke-width="2"/>
+<path d="M16 360V382M354 360V382" fill="none" stroke-width="2.4"/>
+<path d="M29 354C28 338 34 332 40 332C46 332 52 338 51 354Z" fill="#000000"/>
+<circle cx="40" cy="326" r="6.5" fill="#000000"/>
+<path d="M65 354C64 338 70 332 76 332C82 332 88 338 87 354Z" fill="#000000"/>
+<circle cx="76" cy="326" r="6.5" fill="#000000"/>
+<path d="M277 354C276 338 282 332 288 332C294 332 300 338 299 354Z" fill="#000000"/>
+<circle cx="288" cy="326" r="6.5" fill="#000000"/>
+<path d="M319 354C318 338 324 332 330 332C336 332 342 338 341 354Z" fill="#000000"/>
+<circle cx="330" cy="326" r="6.5" fill="#000000"/>
+<path d="M-8 404H382V412H-8Z" fill="url(#hatchDense)" stroke-width="2"/>
+<path d="M-2 412V434M376 412V434" fill="none" stroke-width="2.4"/>
+<path d="M8 406C6 386 14 378 22 378C30 378 38 386 36 406Z" fill="#000000"/>
+<circle cx="22" cy="370" r="8.5" fill="#000000"/>
+<path d="M56 406C54 386 62 378 70 378C78 378 86 386 84 406Z" fill="#000000"/>
+<circle cx="70" cy="370" r="8.5" fill="#000000"/>
+<path d="M286 406C284 386 292 378 300 378C308 378 316 386 314 406Z" fill="#000000"/>
+<circle cx="300" cy="370" r="8.5" fill="#000000"/>
+<path d="M338 406C336 386 344 378 352 378C360 378 368 386 366 406Z" fill="#000000"/>
+<circle cx="352" cy="370" r="8.5" fill="#000000"/>
+</g>
+</svg>

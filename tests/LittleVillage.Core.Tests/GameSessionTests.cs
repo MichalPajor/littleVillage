@@ -51,7 +51,7 @@ public sealed class GameSessionTests : IDisposable
 
         // Nad jeziorem, zostaje w szałasie, rano zostaje, mówi chłopcu prawdę, bierze figurkę i krzesiwo, idzie dalej,
         // sprzedaje figurkę handlarzowi i mówi żonie prawdę; strony bez wyborów przewijamy „Dalej”.
-        var choices = new Queue<int>([2, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1]);  // + wybory rozdzialu pierwszego
+        var choices = new Queue<int>([2, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0]);  // + wybory rozdzialu pierwszego i drugiego
         var page = session.CurrentPage!;
         while (page.Ending != PageEnding.End)
         {

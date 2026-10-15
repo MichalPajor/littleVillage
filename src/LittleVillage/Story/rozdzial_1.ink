@@ -171,8 +171,8 @@ Takich dni było bez liku. Zlewały mu się potem w pamięci w jeden długi, zł
 -> rozdzial_pierwszy_ciag_dalszy
 
 
-// Kolejne strony rozdziału — do napisania (autor przysyła je po redakcji).
+// Koniec rozdziału pierwszego — dalej rozdział drugi.
 === rozdzial_pierwszy_ciag_dalszy ===
 # ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+_Koniec rozdziału pierwszego._ # dalej
+-> rozdzial_drugi

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „izba szkolna”: Jaromir, Franek i Hanka ze szczapą (# pokaz: obrona)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="70" viewBox="60 290 90 70">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="2"><path d="M121.5 356.0L124.1 335.2L128.0 335.2L128.0 356.0ZM134.5 356.0L130.6 335.2L126.7 335.2L128.0 356.0Z" fill="#000000"/><path d="M117.6 336.5C116.3 324.8 118.9 315.7 124.1 313.1H131.9C137.1 315.7 139.7 324.8 138.4 336.5Z" fill="#000000"/><circle cx="128" cy="305.3" r="7.8" fill="#000000"/><path d="M120.2 301.4c2.6 -7.8 13.0 -7.8 15.6 0" fill="#000000"/></g>
+<g stroke-width="2"><path d="M96.5 356.0L99.5 332.0L104.0 332.0L104.0 356.0ZM111.5 356.0L107.0 332.0L102.5 332.0L104.0 356.0Z" fill="#000000"/><path d="M92.0 333.5C90.5 320.0 93.5 309.5 99.5 306.5H108.5C114.5 309.5 117.5 320.0 116.0 333.5Z" fill="#000000"/><circle cx="104" cy="297.5" r="9.0" fill="#000000"/><path d="M95.0 293.0c3.0 -9.0 15.0 -9.0 18.0 0" fill="#000000"/></g>
+<g stroke-width="2"><path d="M78.2 345.5V358.0M85.8 345.5V358.0" fill="none" stroke-width="3.8"/><path d="M77.0 320.5L68.2 346.8Q82.0 350.5 95.8 346.8L87.0 320.5Z" fill="#000000"/><path d="M74.5 321.8C73.2 315.5 77.0 313.0 82.0 313.0C87.0 313.0 90.8 315.5 89.5 321.8Z" fill="#000000"/><circle cx="82" cy="305.5" r="7.0" fill="#000000"/><path d="M77.0 303.0C69.5 308.0 67.0 318.0 62.0 325.5" fill="none" stroke-width="3.2"/><circle cx="62.0" cy="326.8" r="2.2" fill="#FFFFFF" stroke-width="1"/><path d="M78.2 320.5L70.8 330.5M85.8 320.5L94.5 328.0" fill="none" stroke-width="3.0"/></g>
+<path d="M92 324L104 300" fill="none" stroke-width="4"/>
+</g>
+</svg>

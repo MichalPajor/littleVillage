@@ -132,9 +132,13 @@ public sealed class RevealTests
 
     // ----- strażnicy prawdziwej fabuły -----
 
+    // Rozdzial drugi: kazdy ogon prologu i rozdzialu pierwszego konczy sie innym zestawem wyborow (wszystkie opcje choc raz).
+    private static readonly int[][] ChapterTwoTails = [[0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1], [0, 2, 0, 0, 0, 0, 0, 0], [1, 1, 0, 1, 0, 1, 0, 1]];
+
     private static readonly int[][] AllPaths =
         [.. new[] { 0, 1, 2 }.SelectMany(place => new[] { new[] { place, 1 }, [place, 0, 0], [place, 0, 1] })
-            .SelectMany(path => new[] { new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 1, 1, 0, 0, 0, 0, 2, 1, 0], [1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1] }.Select(tail => path.Concat(tail).ToArray()))];
+            .SelectMany(path => new[] { new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 1, 1, 0, 0, 0, 0, 2, 1, 0], [1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1] }
+                .Select((tail, i) => path.Concat(tail).Concat(ChapterTwoTails[i]).ToArray()))];
 
     private static IEnumerable<StoryPage> PlayAll()
     {

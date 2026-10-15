@@ -40,3 +40,11 @@ VAR skarb_jaromira = ()
 
 // Czy Jaromir okazał odwagę nad jeziorem (podpłynął mimo zakazu ojca / dotknął zwęglonych bali).
 VAR odwaga_jaromira = false
+
+// ---------- Rozdział drugi (szkoła) ----------
+// Czy Jaromir zawołał we mgle do tego, kto liczył w głębi boru (las go zapamięta).
+VAR zawolal_do_lasu = false
+
+// Jak Jaromir zachował się, gdy Bartek zniszczył Antkowi tabliczkę: stanął w obronie, pobiegł po nauczyciela albo odwrócił wzrok.
+LIST ObronaAntka = stanal, poskarzyl, odwrocil_wzrok
+VAR obrona_antka = ()

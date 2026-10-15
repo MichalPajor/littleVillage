@@ -30,7 +30,7 @@ public sealed class GameStoryTests
         var pages = new List<StoryPage> { engine.StartNew() };
         var queue = new Queue<int>(choices);
 
-        for (var guard = 0; guard < 50; guard++)
+        for (var guard = 0; guard < 120; guard++)
         {
             var page = pages[^1];
             switch (page.Ending)
@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -742,7 +742,11 @@ public sealed class GameStoryTests
     private const int FirstOption = 0, SecondOption = 1;        // odwaga nad jeziorem (kolejnosc zalezy od zakonczenia prologu)
     private const int ComeHome = 0, PlayOn = 1;                 // wolanie matki
 
+    private const int Shout = 0, WalkFaster = 1;                // liczenie we mgle (rozdzial drugi)
+    private const int Defend = 0, FetchTeacher = 1, LookAway = 2; // Bartek i tabliczka Antka
+
     private static readonly int[] Summer = [RunOut, Contest, Shell, FirstOption, PlayOn];
+    private static readonly int[] School = [Shout, Defend];
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -888,12 +892,12 @@ public sealed class GameStoryTests
         Assert.Equal(cursed, Has(evening, "Babka Marianna"));
         Assert.Equal(!cursed, Has(evening, "morzył sen w połowie"));
 
-        var golden = pages[^2];
-        Assert.Equal("zapadlina_lato", golden.BackgroundKey);
+        var golden = pages.Last(p => p.BackgroundKey == "zapadlina_lato" && Has([p], "Takich dni"));
         Assert.StartsWith("Takich dni było bez liku.", golden.Blocks[0].Text);
         Assert.False(Has(pages, "Józek"));
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
-        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+        var end = pages[pages.IndexOf(golden) + 1];
+        Assert.Equal("_Koniec rozdziału pierwszego._", end.Blocks[^1].Text);
+        Assert.Equal(PageEnding.Continue, end.Ending);
     }
 
     [Fact]
@@ -904,5 +908,67 @@ public sealed class GameStoryTests
 
         Assert.Contains(pages, p => p.BackgroundKey == "zapadlina_lato");
         Assert.Empty(engine.GetInventory());
+    }
+
+    // ----- Rozdzial drugi: Szkola -----
+
+    [Theory]
+    [InlineData(true, "gdyby nie Agnieszka", "Ty będziesz czytał")]
+    [InlineData(false, "Ty będziesz czytał za nas obu", "Z liter pole")]
+    public void Chapter_two_opens_in_autumn_with_the_father_of_the_prologue_ending(bool cursed, string father, string absent)
+    {
+        var pages = Play(CreateEngine(), [.. cursed ? CursedPrologue : PeacefulPrologue, .. Summer]);
+
+        var autumn = On(pages, "jesien").Single();
+        Assert.Equal("Rozdział drugi", autumn.Blocks[0].Text);
+        Assert.Equal("Szkoła", autumn.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.StartsWith("Lato skończyło się tak, jak kończy się każde lato", autumn.Blocks.First(b => b.Kind == StoryBlockKind.Paragraph).Text);
+        Assert.True(Has([autumn], father));
+        Assert.False(Has([autumn], absent));
+        Assert.Contains(autumn.Blocks, b => b.Reveal == "jaromir" && b.Text.StartsWith("Matka uszyła mu z lnianego płótna torbę"));
+        Assert.EndsWith("Antek, Hanka i on.", autumn.Blocks[^1].Text);
+        Assert.Equal(PageEnding.Continue, autumn.Ending);
+    }
+
+    [Theory]
+    [InlineData(Shout, true, "ktoś powiedział spokojnie:")]
+    [InlineData(WalkFaster, false, "Antek odważył się obejrzeć.")]
+    public void Chapter_two_counting_in_the_fog_remembers_the_call(int choice, bool called, string text)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, choice]);
+
+        var fog = On(pages, "droga_bor");
+        Assert.StartsWith("Pierwszego dnia wyszli jeszcze przed świtem.", fog[0].Blocks[0].Text);
+        Assert.Equal("– …czterysta jeden… czterysta dwa… czterysta trzy…", fog[0].Blocks.Single(b => b.Text.Contains("czterysta jeden")).Text);
+        Assert.Equal("Co zrobi Jaromir?", fog[0].Question);
+        Assert.Equal(["Zawołać, kto tam jest?", "Iść szybciej i nie oglądać się za siebie."], fog[0].Choices.Select(c => c.Text));
+        Assert.True(Has(fog.Skip(1), text));
+        Assert.Equal(called, fog[1].Blocks.Any(b => b.Reveal == "oczy" && b.Text == "– …czterysta cztery."));
+        Assert.Equal(called, System.Text.Json.JsonDocument.Parse(engine.SaveState()).RootElement.GetProperty("variablesState").TryGetProperty("zawolal_do_lasu", out var v) && v.GetBoolean());
+        Assert.Equal(PageEnding.Continue, fog[1].Ending);
+    }
+
+    [Theory]
+    [InlineData(Defend, "stanal", "obrona", "Jaromirowi został po tym guz na czole")]
+    [InlineData(FetchTeacher, "poskarzyl", "ignacy", "skarżypyty kończą w młyńskim stawie")]
+    [InlineData(LookAway, "odwrocil_wzrok", "tabliczka", "Jaromir czuł na plecach jego wzrok")]
+    public void Chapter_two_school_and_Bartek_with_Anteks_slate(int choice, string attitude, string reveal, string text)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, choice]);
+
+        var school = On(pages, "szkola_izba");
+        Assert.StartsWith("Szkoła mieściła się w drewnianym budynku", school[0].Blocks[0].Text);
+        Assert.Contains(school[0].Blocks, b => b.Reveal == "bartek" && b.Text.StartsWith("Pewnego dnia, gdy pan Ignacy wyszedł"));
+        Assert.Equal("Jak zachowa się Jaromir?", school[0].Question);
+        Assert.Equal(3, school[0].Choices.Count);
+        Assert.Contains(school[1].Blocks, b => b.Reveal == reveal);
+        Assert.True(Has([school[1]], text));
+        Assert.Equal(PageEnding.Continue, school[1].Ending);
+        var state = System.Text.Json.JsonDocument.Parse(engine.SaveState()).RootElement.GetProperty("variablesState");
+        Assert.True(state.GetProperty("obrona_antka").GetProperty("list").TryGetProperty($"ObronaAntka.{attitude}", out _));
+        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 }
