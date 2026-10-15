@@ -32,3 +32,11 @@ VAR figurka_u_staruchy = false
 
 // Czy Maciek opowiedział żonie o stworze, legendzie i głosie znad bagien.
 VAR zona_wie = false
+
+// ---------- Rozdział pierwszy (Jaromir) ----------
+// Co Jaromir schował do skrzynki na skarby w bazie na bzie.
+LIST SkarbyJaromira = muszelka, pioro, gwozdz
+VAR skarb_jaromira = ()
+
+// Czy Jaromir okazał odwagę nad jeziorem (podpłynął mimo zakazu ojca / dotknął zwęglonych bali).
+VAR odwaga_jaromira = false

@@ -266,11 +266,11 @@ public sealed class GameStoryTests
         var data = new TheoryData<int[]>();
         foreach (var place in new[] { Forest, Marsh, Lake })
         {
-            foreach (var tail in new[]
+            foreach (var tail in new int[][]
             {
-                new[] { StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife },
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -730,11 +730,24 @@ public sealed class GameStoryTests
         Assert.True(Has(pages, "Dali mu na imię Jaromir."));
         Assert.True(Has(pages, "kapliczki"));
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec prologu._") && p.Ending == PageEnding.Continue);
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
-        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+        Assert.Contains(pages, p => p.BackgroundKey == "zapadlina_lato");
     }
 
     // ----- Rozdzial pierwszy: Lato -----
+
+    // Wybory w rozdziale pierwszym.
+    private const int CalmBreakfast = 0, RunOut = 1;            // sniadanie
+    private const int Contest = 0, PracticeAlone = 1;           // zawody z Hanka
+    private const int Shell = 0, Feather = 1, Nail = 2;         // skarb w bazie
+    private const int FirstOption = 0, SecondOption = 1;        // odwaga nad jeziorem (kolejnosc zalezy od zakonczenia prologu)
+    private const int ComeHome = 0, PlayOn = 1;                 // wolanie matki
+
+    private static readonly int[] Summer = [RunOut, Contest, Shell, FirstOption, PlayOn];
+    private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
+    private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
+
+    /// <summary>Wszystkie strony z danym tlem (wybor dzieli strone na dwie).</summary>
+    private static List<StoryPage> On(List<StoryPage> pages, string background) => pages.Where(p => p.BackgroundKey == background).ToList();
 
     public static TheoryData<int[], string, string?, bool> ChapterOneVariants() => new()
     {
@@ -764,18 +777,20 @@ public sealed class GameStoryTests
         Assert.DoesNotContain(summer.Blocks, b => b.Text.Contains("  "));
     }
 
-    [Fact]
-    public void Chapter_one_morning_runs_to_the_neighbours()
+    [Theory]
+    [InlineData(RunOut, "– Idę do sąsiadów! – i już pędził przez podwórze")]
+    [InlineData(CalmBreakfast, "łyżkę miodu na chleb")]
+    public void Chapter_one_morning_runs_to_the_neighbours(int breakfast, string text)
     {
-        var pages = Play(CreateEngine(), Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet);
+        var morning = On(Play(CreateEngine(), [.. PeacefulPrologue, breakfast]), "poranek");
 
-        var morning = pages.First(p => p.BackgroundKey == "poranek");
-        Assert.Equal(PageEnding.Continue, morning.Ending);
-        Assert.StartsWith("Budziło go pianie koguta", morning.Blocks[0].Text);
-        Assert.Contains(morning.Blocks, b => b.Reveal == "jaromir" && b.Text.Contains("– Idę do sąsiadów! –"));
-        Assert.Contains(morning.Blocks, b => b.Reveal == "dzieci" && b.Text.Contains("nadbiegała Hanka"));
-        Assert.EndsWith("że i tak zdecyduje on sam.", morning.Blocks[^1].Text);
-        Assert.False(Has(pages, "Józek"));
+        Assert.StartsWith("Budziło go pianie koguta", morning[0].Blocks[0].Text);
+        Assert.Equal("Co zrobi Jaromir?", morning[0].Question);
+        Assert.StartsWith("Usiądzie i zje spokojnie", morning[0].Choices[CalmBreakfast].Text);
+        Assert.Contains(morning.SelectMany(p => p.Blocks), b => b.Reveal == "jaromir" && b.Text.Contains(text));
+        Assert.Contains(morning.SelectMany(p => p.Blocks), b => b.Reveal == "dzieci" && b.Text.Contains("nadbiegała Hanka"));
+        Assert.EndsWith("że i tak zdecyduje on sam.", morning[^1].Blocks[^1].Text);
+        Assert.False(Has(morning, "Józek"));
     }
 
     [Theory]
@@ -783,10 +798,7 @@ public sealed class GameStoryTests
     [InlineData(true, "Ojciec bez słowa pomógł mu go zaostrzyć")]
     public void Chapter_one_war_with_weeds_depends_on_the_father(bool cursed, string father)
     {
-        int[] choices = cursed
-            ? [.. ToTownWithDogAndFigurine, SellToWitch, TellWife]
-            : [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
-        var pages = Play(CreateEngine(), choices);
+        var pages = Play(CreateEngine(), [.. cursed ? CursedPrologue : PeacefulPrologue, RunOut]);
 
         var war = pages.First(p => p.BackgroundKey == "laka_bitwa");
         Assert.Equal("Najczęściej zaczynało się od wojny.", war.Blocks[0].Text);
@@ -796,17 +808,61 @@ public sealed class GameStoryTests
         Assert.Equal(PageEnding.Continue, war.Ending);
     }
 
-    [Fact]
-    public void Chapter_one_bows_end_with_Jaromirs_bullseye()
+    [Theory]
+    [InlineData(Contest, "Przegrywał, oczywiście.")]
+    [InlineData(PracticeAlone, "Odchodził na koniec miedzy")]
+    public void Chapter_one_bows_contest_with_Hanka_and_the_knife(int contest, string text)
     {
-        var pages = Play(CreateEngine(), Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet);
+        var engine = CreateEngine();
+        var bows = On(Play(engine, [.. PeacefulPrologue, RunOut, contest]), "luki");
 
-        var bows = pages.First(p => p.BackgroundKey == "luki");
-        Assert.Equal("Kiedy miecze się nudziły, przychodziła pora na łuki.", bows.Blocks[0].Text);
-        Assert.Contains(bows.Blocks, b => b.Text.Contains("Franek wybierał z niej gałąź o odpowiedniej długości"));
-        Assert.Contains(bows.Blocks, b => b.Reveal == "hanka" && b.Text.StartsWith("Celem był snop słomy"));
-        Assert.Contains(bows.Blocks, b => b.Reveal == "trafienie" && b.Text.StartsWith("Raz Jaromir trafił w sam środek koła."));
-        Assert.Equal(PageEnding.Continue, bows.Ending);
+        Assert.Equal("Kiedy miecze się nudziły, przychodziła pora na łuki.", bows[0].Blocks[0].Text);
+        Assert.Contains(bows[0].Blocks, b => b.Text.Contains("Franek wybierał z niej gałąź o odpowiedniej długości"));
+        Assert.Contains(bows[0].Blocks, b => b.Reveal == "hanka" && b.Text.StartsWith("Celem był snop słomy"));
+        Assert.Equal("Czy Jaromir zmierzy się z Hanką?", bows[0].Question);
+        Assert.StartsWith(text, bows[1].Blocks[0].Text);
+        Assert.Contains(bows[1].Blocks, b => b.Reveal == "trafienie" && b.Text.StartsWith("Raz Jaromir trafił w sam środek koła."));
+        Assert.Equal("Nożyk", engine.GetInventory().Single(i => i.Id == "nozyk").Name);
+    }
+
+    [Theory]
+    [InlineData(Shell, "Zawinął ją w liść łopianu")]
+    [InlineData(Feather, "żeby świeciło od razu po otwarciu wieka")]
+    [InlineData(Nail, "Owinął go w szmatkę jak relikwię")]
+    public void Chapter_one_treasure_hidden_in_the_base(int treasure, string text)
+    {
+        var baseInTree = On(Play(CreateEngine(), [.. PeacefulPrologue, RunOut, Contest, treasure]), "baza");
+
+        Assert.Equal("Co Jaromir schowa do skrzynki na skarby?", baseInTree[0].Question);
+        Assert.Equal(3, baseInTree[0].Choices.Count);
+        Assert.Contains(text, baseInTree[1].Blocks[0].Text);
+        Assert.Contains(baseInTree[1].Blocks, b => b.Reveal == "burza");
+    }
+
+    [Theory]
+    [InlineData(true, FirstOption, "Czy Jaromir posłucha ojca?", "nie ruszył się z płycizny")]
+    [InlineData(true, SecondOption, "Czy Jaromir posłucha ojca?", "coś śliskiego otarło mu się o łydkę")]
+    [InlineData(false, FirstOption, "Czy Jaromir przyjmie zakład?", "położył dłoń na najwyższym z nich")]
+    [InlineData(false, SecondOption, "Czy Jaromir przyjmie zakład?", "dotknął czarnego drewna czubkiem palca")]
+    public void Chapter_one_courage_at_the_lake(bool cursed, int choice, string question, string text)
+    {
+        var lake = On(Play(CreateEngine(), [.. cursed ? CursedPrologue : PeacefulPrologue, RunOut, Contest, Shell, choice]), "jezioro_lato");
+
+        Assert.Equal(question, lake[0].Question);
+        Assert.Contains(lake[1].Blocks, b => b.Text.Contains(text));
+        Assert.StartsWith("Potem suszyli się na trawie", lake[1].Blocks[1].Text);
+    }
+
+    [Theory]
+    [InlineData(ComeHome, "Chłopiec nie kazał na siebie czekać")]
+    [InlineData(PlayOn, "Chłopiec udawał, że nie słyszy")]
+    public void Chapter_one_mothers_call_in_the_evening(int call, string text)
+    {
+        var evening = On(Play(CreateEngine(), [.. PeacefulPrologue, RunOut, Contest, Shell, FirstOption, call]), "wieczor_lato");
+
+        Assert.Equal("Czy Jaromir wróci od razu?", evening[0].Question);
+        Assert.Contains(evening[1].Blocks, b => b.Reveal == "jaromir" && b.Text.Contains(text) && b.Text.Contains("drewnianym słupku"));
+        Assert.StartsWith("Wracał brudny", evening[1].Blocks[1].Text);
     }
 
     [Theory]
@@ -814,33 +870,29 @@ public sealed class GameStoryTests
     [InlineData(false)]
     public void Chapter_one_summer_day_from_the_base_to_the_evening(bool cursed)
     {
-        int[] choices = cursed
-            ? [.. ToTownWithDogAndFigurine, SellToWitch, TellWife]
-            : [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
-        var pages = Play(CreateEngine(), choices);
+        var pages = Play(CreateEngine(), [.. cursed ? CursedPrologue : PeacefulPrologue, .. Summer]);
 
-        var baseInTree = pages.First(p => p.BackgroundKey == "baza");
-        Assert.Contains(baseInTree.Blocks, b => b.Text.Contains("w koronie starego bzu"));
-        Assert.Contains(baseInTree.Blocks, b => b.Text.Contains(cursed ? "ze stodoły Stasia" : "ze stodoły ojca Jaromira"));
-        Assert.Contains(baseInTree.Blocks, b => b.Text.Contains("czwórce było więc całkiem wygodnie"));
-        Assert.Contains(baseInTree.Blocks, b => b.Reveal == "burza");
+        var baseInTree = On(pages, "baza");
+        Assert.Contains(baseInTree[0].Blocks, b => b.Text.Contains("w koronie starego bzu"));
+        Assert.Contains(baseInTree[0].Blocks, b => b.Text.Contains(cursed ? "ze stodoły Stasia" : "ze stodoły ojca Jaromira"));
+        Assert.Contains(baseInTree[0].Blocks, b => b.Text.Contains("czwórce było więc całkiem wygodnie"));
 
-        var lake = pages.First(p => p.BackgroundKey == "jezioro_lato");
-        Assert.Contains(lake.Blocks, b => b.Reveal == "kapiel");
-        Assert.Equal(cursed, Has([lake], "nigdy nie wchodził głębiej niż po pas"));
-        Assert.Equal(!cursed, Has([lake], "czarne kikuty zwęglonych bali"));
+        var lake = On(pages, "jezioro_lato");
+        Assert.Contains(lake[0].Blocks, b => b.Reveal == "kapiel");
+        Assert.Equal(cursed, Has(lake, "nigdy nie wchodził głębiej niż po pas"));
+        Assert.Equal(!cursed, Has(lake, "czarne kikuty zwęglonych bali"));
 
-        var evening = pages.First(p => p.BackgroundKey == "wieczor_lato");
-        Assert.Contains(evening.Blocks, b => b.Reveal == "matka" && b.Text == "– Jaroooomir! Do doooomu!");
-        Assert.Contains(evening.Blocks, b => b.Reveal == "jaromir" && b.Text.Contains("drewnianym słupku"));
-        Assert.Equal(cursed, Has([evening], "drzwi są dobrze zaryglowane"));
-        Assert.Equal(cursed, Has([evening], "Babka Marianna"));
-        Assert.Equal(!cursed, Has([evening], "morzył sen w połowie"));
+        var evening = On(pages, "wieczor_lato");
+        Assert.Contains(evening[0].Blocks, b => b.Reveal == "matka" && b.Text == "– Jaroooomir! Do doooomu!");
+        Assert.Equal(cursed, Has(evening, "drzwi są dobrze zaryglowane"));
+        Assert.Equal(cursed, Has(evening, "Babka Marianna"));
+        Assert.Equal(!cursed, Has(evening, "morzył sen w połowie"));
 
         var golden = pages[^2];
         Assert.Equal("zapadlina_lato", golden.BackgroundKey);
         Assert.StartsWith("Takich dni było bez liku.", golden.Blocks[0].Text);
         Assert.False(Has(pages, "Józek"));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
         Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
     }
 
