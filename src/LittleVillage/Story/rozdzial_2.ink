@@ -92,11 +92,38 @@ Jaromir podszedł bliżej. Spirala była zbyt równa, zbyt staranna, jakby ktoś
     ~ ekwipunek += kora
     Podniósł korę i obejrzał ją pod światło. Od spodu, na gładkiej stronie, ktoś wyrył drobne znaki – kreski i kółka ułożone w rządki, podobne do liter, a jednak inne niż wszystkie, które znał. # pokaz: kora
     Schował ją ostrożnie do torby, między tabliczkę a kromkę chleba. Tej nocy długo przewracał się z boku na bok, a kiedy wreszcie zasnął, śniło mu się, że ktoś liczy pod jego oknem. # dalej
-    -> rozdzial_drugi_ciag_dalszy
+    -> wstazka
 *   [Zostawić wszystko, jak było, i iść dalej.]
     – Chodźmy już – powiedziała Hanka i pociągnęła go za rękaw.
     Odwrócili się i ruszyli w stronę domu, ale Jaromir jeszcze kilka razy obejrzał się przez ramię. Za którymś razem wydało mu się, że spirala na sośnie jest dłuższa niż przedtem – że ciągnie się już wyżej, niż sięgała, kiedy na nią patrzyli. Uznał, że to tylko zmierzch płata figle. # pokaz: spirala # dalej
+    -> wstazka
+
+= wstazka
+# tlo: wstazka_wiatr
+W październiku przyszły wiatry. Dęły od zachodu, znad jeziora, i wyginały świerki tak, że skrzypiały i jęczały całą noc. Którejś soboty, kiedy wracali z Bukowca, podmuch był tak silny, że zerwał Hance z warkocza wstążkę – tę, którą dostała od ojca na imieniny i nosiła codziennie. Wiatr zakręcił nią w powietrzu, przeniósł nad ich głowami i cisnął między drzewa.
+Zatrzymała się na gałęzi młodej sosny, może dwadzieścia kroków w głąb lasu. Wisiała tam, trzepocząc na wietrze, czerwona jak kropla krwi na tle czarnozielonych igieł.
+Hanka zagryzła wargę. Nie płakała, ale Jaromir widział, jak drżą jej ręce.
+# pytanie: Czy Jaromir pójdzie po wstążkę?
+*   [Pójść po wstążkę.]
+    ~ poszedl_po_wstazke = true
+    # tlo: bor_starzec
+    – Zaraz wrócę – powiedział i zanim ktokolwiek zdążył go zatrzymać, wszedł między drzewa.
+    Pod świerkami było ciemniej, niż się spodziewał, i dziwnie cicho – wiatr, który na otwartej przestrzeni szarpał im ubrania, tutaj zaledwie poruszał czubkami gałęzi. Szedł prosto ku czerwonej plamie. Dwadzieścia kroków. Trzydzieści. Wstążka wciąż wisiała przed nim, tak samo daleko jak na początku. Obejrzał się – ścieżki już nie było widać. Tylko pnie, wszystkie takie same, i szara mgła między nimi.
+    Wtedy go zobaczył.
+    Niedaleko, w półmroku, stał wysoki starzec – tak wysoki, że musiałby się schylić, żeby wejść do ich chaty. Miał na sobie kożuch wywrócony włosiem na wierzch i kapelusz z mchu o szerokim, opadającym rondzie, spod którego nie było widać twarzy. Nie poruszał się, oparty o sękatą laskę, a w jego długich palcach coś czerwonego trzepotało na wietrze. # pokaz: starzec
+    Jaromir chciał krzyknąć, ale głos uwiązł mu w gardle. Zamrugał.
+    Starca nie było. Wstążka wisiała na gałęzi tuż przed nim, na wyciągnięcie ręki, a za jego plecami, kilka kroków dalej, prześwitywała ścieżka i słychać było, jak Hanka woła go po imieniu. # pokaz: zniknal
+    Wyszedł z lasu, ściskając ją w garści. Dziewczynka rzuciła mu się na szyję, a potem, zawstydzona, odskoczyła i przez całą drogę do domu nie spojrzała mu w oczy. Dopiero przy kładce zauważyli, że słońce stoi już nisko nad borem, choć kiedy ruszał po wstążkę, było ledwie po południu. # dalej
     -> rozdzial_drugi_ciag_dalszy
+*   [Przekonać Hankę, żeby ją zostawiła – ojciec kupi jej nową.]
+    – Nie chodź tam – szepnął i złapał ją za rękę. – Ojciec kupi ci nową.
+    Spojrzała na niego, jakby chciała się sprzeciwić, ale tylko skinęła głową. Wstążka została na gałęzi, czerwona i samotna. # dalej
+    -> wstazka_na_plocie
+
+= wstazka_na_plocie
+# tlo: jesien_plot
+Następnego ranka, kiedy chłopiec wyszedł na podwórze, zobaczył ją na płocie przed chatą – zawiązaną starannie, na kokardę, tak jak robiła to Hanka. Nikt w domu nie wiedział, skąd się tam wzięła. # pokaz: kokarda # dalej
+-> rozdzial_drugi_ciag_dalszy
 
 // Kolejne strony rozdziału — do napisania (autor przysyła je po redakcji).
 === rozdzial_drugi_ciag_dalszy ===

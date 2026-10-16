@@ -745,9 +745,10 @@ public sealed class GameStoryTests
     private const int Shout = 0, WalkFaster = 1;                // liczenie we mgle (rozdzial drugi)
     private const int Defend = 0, FetchTeacher = 1, LookAway = 2; // Bartek i tabliczka Antka
     private const int TakeBark = 0, LeaveBark = 1;              // kora ze spirali
+    private const int FetchRibbon = 0, LeaveRibbon = 1;         // wstazka Hanki w lesie
 
     private static readonly int[] Summer = [RunOut, Contest, Shell, FirstOption, PlayOn];
-    private static readonly int[] School = [Shout, Defend, TakeBark];
+    private static readonly int[] School = [Shout, Defend, TakeBark, FetchRibbon];
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1004,7 +1005,38 @@ public sealed class GameStoryTests
         {
             Assert.Equal("Kora ze znakiem", engine.GetInventory().Single(i => i.Id == "kora").Name);
         }
+    }
 
+    [Fact]
+    public void Chapter_two_ribbon_fetched_from_the_forest_meets_the_old_man()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon]);
+
+        var wind = On(pages, "wstazka_wiatr").Single();
+        Assert.StartsWith("W październiku przyszły wiatry.", wind.Blocks[0].Text);
+        Assert.Equal("Czy Jaromir pójdzie po wstążkę?", wind.Question);
+
+        var forest = On(pages, "bor_starzec")[0];
+        Assert.Equal("– Zaraz wrócę – powiedział i zanim ktokolwiek zdążył go zatrzymać, wszedł między drzewa.", forest.Blocks[0].Text);
+        Assert.Contains(forest.Blocks, b => b.Reveal == "starzec" && b.Text.Contains("kożuch wywrócony włosiem na wierzch"));
+        Assert.Contains(forest.Blocks, b => b.Reveal == "zniknal" && b.Text.StartsWith("Starca nie było."));
+        Assert.EndsWith("było ledwie po południu.", forest.Blocks[^1].Text);
+        Assert.True(System.Text.Json.JsonDocument.Parse(engine.SaveState()).RootElement.GetProperty("variablesState").GetProperty("poszedl_po_wstazke").GetBoolean());
+        Assert.DoesNotContain(pages, p => p.BackgroundKey == "jesien_plot");
         Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+    }
+
+    [Fact]
+    public void Chapter_two_ribbon_left_in_the_forest_returns_tied_to_the_fence()
+    {
+        var pages = Play(CreateEngine(), [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, LeaveRibbon]);
+
+        var wind = On(pages, "wstazka_wiatr");
+        Assert.StartsWith("– Nie chodź tam – szepnął", wind[1].Blocks[0].Text);
+        Assert.EndsWith("czerwona i samotna.", wind[1].Blocks[^1].Text);
+        var fence = On(pages, "jesien_plot")[0];
+        Assert.Contains(fence.Blocks, b => b.Reveal == "kokarda" && b.Text.Contains("na kokardę"));
+        Assert.DoesNotContain(pages, p => p.BackgroundKey == "bor_starzec");
     }
 }

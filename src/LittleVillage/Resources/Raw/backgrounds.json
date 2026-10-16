@@ -734,6 +734,62 @@
         {"image": "bg_sosna_jaromir.png", "x": 196, "y": 372, "width": 44, "height": 40, "revealOn": "kora"},
         {"image": "bg_sosna_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
       ]
+    },
+    "wstazka_wiatr": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_wstazka_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_wstazka_swierki_0.png", "x": 96, "y": 150, "width": 120, "height": 186, "animation": {"type": "sway", "amplitude": 2.2, "duration": 2600, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}},
+        {"image": "bg_wstazka_swierki_1.png", "x": 174, "y": 150, "width": 122, "height": 186, "animation": {"type": "sway", "amplitude": 2.2, "duration": 2600, "anchorX": 0.5, "anchorY": 1, "phase": 0.15}},
+        {"image": "bg_wstazka_swierki_2.png", "x": 296, "y": 150, "width": 122, "height": 186, "animation": {"type": "sway", "amplitude": 2.2, "duration": 2600, "anchorX": 0.5, "anchorY": 1, "phase": 0.3}},
+        {"image": "bg_wstazka_sosenka.png", "x": 276, "y": 236, "width": 50, "height": 96, "animation": {"type": "sway", "amplitude": 3, "duration": 1800, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_wstazka_wstazka.png", "x": 310, "y": 248, "width": 34, "height": 30, "animation": {"type": "sway", "amplitude": 14, "duration": 500, "anchorX": 0.1, "anchorY": 0.4}, "noInvert": true},
+        {"image": "bg_wstazka_wiatr.png", "x": 0, "y": 180, "width": 390, "height": 140, "animation": {"type": "drift", "amplitude": 24, "duration": 3000}},
+        {"image": "bg_wstazka_lisc_0.png", "x": 11, "y": 251, "width": 18, "height": 18, "animation": {"type": "float", "amplitude": 8, "dx": 380, "dy": -40, "duration": 4000, "phase": 0.0}},
+        {"image": "bg_wstazka_lisc_1.png", "x": -9, "y": 301, "width": 18, "height": 18, "animation": {"type": "float", "amplitude": 8, "dx": 380, "dy": -10, "duration": 4700, "phase": 0.3}},
+        {"image": "bg_wstazka_lisc_2.png", "x": 31, "y": 211, "width": 18, "height": 18, "animation": {"type": "float", "amplitude": 8, "dx": 380, "dy": 20, "duration": 5400, "phase": 0.6}},
+        {"image": "bg_wstazka_dzieci.png", "x": 40, "y": 326, "width": 150, "height": 82, "depth": 0.7},
+        {"image": "bg_wstazka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
+    },
+    "bor_starzec": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_bor_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_bor_wstazka_daleko.png", "x": 176, "y": 206, "width": 22, "height": 18, "animation": {"type": "sway", "amplitude": 10, "duration": 700, "anchorX": 0.1, "anchorY": 0.3}, "hideOn": "starzec", "noInvert": true},
+        {"image": "bg_bor_starzec_postac.png", "x": 196, "y": 182, "width": 127, "height": 224, "animation": {"type": "sway", "amplitude": 0.6, "duration": 4200, "anchorX": 0.496, "anchorY": 0.758}, "revealOn": "starzec", "hideOn": "zniknal", "fadeDuration": 1600},
+        {"image": "bg_bor_starzec_reka.png", "x": 196, "y": 182, "width": 127, "height": 224, "animation": {"type": "sway", "amplitude": 1.5, "duration": 3400, "anchorX": 0.628, "anchorY": 0.3}, "revealOn": "starzec", "hideOn": "zniknal", "fadeDuration": 1600},
+        {"image": "bg_bor_starzec_glowa.png", "x": 196, "y": 182, "width": 127, "height": 224, "animation": {"type": "sway", "amplitude": 2, "duration": 5200, "anchorX": 0.496, "anchorY": 0.3}, "revealOn": "starzec", "hideOn": "zniknal", "fadeDuration": 1600},
+        {"image": "bg_bor_starzec_oczy.png", "x": 196, "y": 182, "width": 127, "height": 224, "animation": {"type": "blink", "duration": 5200}, "revealOn": "starzec", "hideOn": "zniknal", "fadeDuration": 1600},
+        {"image": "bg_bor_starzec_wstazka.png", "x": 268, "y": 250, "width": 30, "height": 26, "animation": {"type": "sway", "amplitude": 12, "duration": 600, "anchorX": 0.1, "anchorY": 0.3}, "revealOn": "starzec", "hideOn": "zniknal", "fadeDuration": 1600, "noInvert": true},
+        {"image": "bg_bor_mgla.png", "x": -30, "y": 200, "width": 450, "height": 190, "animation": {"type": "drift", "amplitude": 12, "duration": 15000}, "depth": 0.7},
+        {"image": "bg_bor_wstazka_blisko.png", "x": 60, "y": 250, "width": 70, "height": 60, "animation": {"type": "sway", "amplitude": 8, "duration": 700, "anchorX": 0.6, "anchorY": 0.3}, "revealOn": "zniknal", "noInvert": true},
+        {"image": "bg_bor_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
+      ]
+    },
+    "jesien_plot": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_jesien_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_jesien_dym.png", "x": 200, "y": 160, "width": 180, "height": 80, "animation": {"type": "sway", "amplitude": 2, "duration": 6000, "anchorX": 0.3, "anchorY": 1}},
+        {"image": "bg_jesien_zar.png", "x": 254, "y": 222, "width": 70, "height": 28, "animation": {"type": "flicker", "amplitude": 0.3, "duration": 1600}},
+        {"image": "bg_jesien_korona.png", "x": 208, "y": 190, "width": 196, "height": 100, "animation": {"type": "sway", "amplitude": 2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_jesien_lisc_0.png", "x": 235, "y": 237, "width": 18, "height": 18, "animation": {"type": "float", "amplitude": 5, "dx": -50, "dy": 150, "duration": 6000, "phase": 0.0}},
+        {"image": "bg_jesien_lisc_1.png", "x": 335, "y": 227, "width": 18, "height": 18, "animation": {"type": "float", "amplitude": 5, "dx": -60, "dy": 162, "duration": 6900, "phase": 0.21}},
+        {"image": "bg_jesien_lisc_2.png", "x": 285, "y": 211, "width": 18, "height": 18, "animation": {"type": "float", "amplitude": 5, "dx": -70, "dy": 174, "duration": 7800, "phase": 0.42}},
+        {"image": "bg_jesien_lisc_3.png", "x": 371, "y": 249, "width": 18, "height": 18, "animation": {"type": "float", "amplitude": 5, "dx": -80, "dy": 186, "duration": 8700, "phase": 0.63}},
+        {"image": "bg_jesien_lisc_4.png", "x": 215, "y": 253, "width": 18, "height": 18, "animation": {"type": "float", "amplitude": 5, "dx": -90, "dy": 198, "duration": 9600, "phase": 0.84}},
+        {"image": "bg_jesien_przod.png", "x": 0, "y": 400, "width": 390, "height": 444, "depth": 1.0},
+        {"image": "bg_jesien_szron.png", "x": 0, "y": 400, "width": 390, "height": 42, "animation": {"type": "flicker", "amplitude": 0.2, "duration": 2600}, "depth": 1.0},
+        {"image": "bg_jesien_plot.png", "x": 0, "y": 344, "width": 390, "height": 80, "depth": 0.8},
+        {"image": "bg_jesien_kokarda.png", "x": 146, "y": 360, "width": 40, "height": 44, "animation": {"type": "sway", "amplitude": 3, "duration": 2200, "anchorX": 0.5, "anchorY": 0.2}, "revealOn": "kokarda", "noInvert": true, "fadeDuration": 2500}
+      ]
     }
   }
 }

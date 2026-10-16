@@ -48,3 +48,6 @@ VAR zawolal_do_lasu = false
 // Jak Jaromir zachował się, gdy Bartek zniszczył Antkowi tabliczkę: stanął w obronie, pobiegł po nauczyciela albo odwrócił wzrok.
 LIST ObronaAntka = stanal, poskarzyl, odwrocil_wzrok
 VAR obrona_antka = ()
+
+// Czy Jaromir wszedł do boru po wstążkę Hanki (i zobaczył starca w kożuchu).
+VAR poszedl_po_wstazke = false

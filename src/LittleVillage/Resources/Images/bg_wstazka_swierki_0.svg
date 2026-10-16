@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „wichura na skraju boru”: świerki, grupa 1 (gną się na wietrze)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="186" viewBox="96 150 120 186">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<line x1="130" y1="338" x2="130" y2="326" stroke-width="4"/><path d="M102.0 330.0L130.0 288.0L158.0 330.0Z M107.6 300.0L130.0 258.0L152.4 300.0Z M113.2 270.0L130.0 228.0L146.8 270.0Z M118.8 240.0L130.0 198.0L141.2 240.0Z M124.4 210.0L130.0 168.0L135.6 210.0Z" fill="#000000" stroke-width="2.4"/>
+<line x1="156" y1="332" x2="156" y2="320" stroke-width="4"/><path d="M128.0 324.0L156.0 275.3L184.0 324.0Z M133.6 289.2L156.0 240.5L178.4 289.2Z M139.2 254.4L156.0 205.7L172.8 254.4Z M144.8 219.6L156.0 170.9L167.2 219.6Z M150.4 184.8L156.0 136.1L161.6 184.8Z" fill="#000000" stroke-width="2.4"/>
+<line x1="182" y1="338" x2="182" y2="326" stroke-width="4"/><path d="M154.0 330.0L182.0 274.6L210.0 330.0Z M159.6 290.4L182.0 235.0L204.4 290.4Z M165.2 250.8L182.0 195.4L198.8 250.8Z M170.8 211.2L182.0 155.8L193.2 211.2Z M176.4 171.6L182.0 116.2L187.6 171.6Z" fill="#000000" stroke-width="2.4"/>
+</g>
+</svg>

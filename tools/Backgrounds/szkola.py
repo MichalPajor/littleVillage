@@ -7,11 +7,15 @@
 #               w kapeluszu na scianie (# pokaz: cien), nauczyciel przy oknie (# pokaz: okno)
 #   sosna_spirala — zmierzch, sosna z kora zdarta w spirale; kawalek kory znika, Jaromir kuca po nia (# pokaz: kora);
 #               spirala rosnie wyzej (# pokaz: spirala)
+#   wstazka_wiatr — wichura na skraju boru: swierki sie gna, czerwona wstazka trzepocze na mlodej sosnie, czworka dzieci
+#   bor_starzec — w glebi boru, pnie i mgla; wstazka daleko; starzec w kozuchu z wstazka w palcach (# pokaz: starzec,
+#               znika przy # pokaz: zniknal), wstazka na wyciagniecie reki (# pokaz: zniknal)
+#   jesien_plot — ranek: plot przed chata, wstazka zawiazana na kokarde (# pokaz: kokarda)
 #   droga_bor — przed switem sciezka pnie sie pod gore na Bukowy Grzbiet: z lewej pola, z prawej sciana swierkow, mgla;
 #               czworka dzieci w drodze do szkoly; miedzy swierkami jasne oczy z czerwonymi zrenicami (# pokaz: oczy)
 # Uzycie z katalogu glownego repozytorium:
 #   python3 tools/Backgrounds/szkola.py src/LittleVillage/Resources/Images         -> pliki bg_jesien_*.svg, bg_drogabor_*.svg, bg_szkola_*.svg
-#   python3 tools/Backgrounds/szkola.py --master jesien|droga_bor|szkola_izba|szkola_podania|sosna_spirala [wszystko] > podglad.svg
+#   python3 tools/Backgrounds/szkola.py --master jesien|droga_bor|szkola_izba|szkola_podania|sosna_spirala|wstazka_wiatr|bor_starzec|jesien_plot [wszystko] > podglad.svg
 import sys, random, math
 from common import *
 import art, postacie
@@ -373,11 +377,123 @@ K_COMMENTS = {"tlo": "zmierzch na skraju boru: gruba sosna z korą zdartą w spi
               "dzieci": "Hanka wskazuje sosnę, chłopcy przy niej", "jaromir": "Jaromir przykucnięty po korę (# pokaz: kora)",
               "przod": "pierwszy plan: trawa"}
 
+
+# ======================= WSTAZKA: wichura na skraju boru =======================
+W = {}
+rnd = random.Random(206)
+t = ['<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>',
+     '<path d="M0 0H390V90C300 104 200 80 110 96C60 104 30 94 0 100Z" fill="url(#hatchDense)" stroke="none"/>',
+     '<path d="M0 100C30 94 60 104 110 96C200 80 300 104 390 90V170H0Z" fill="url(#hatch)" stroke="none" opacity="0.7"/>']
+t.append('<path d="M-10 330C80 322 200 326 400 318V440H-10Z" fill="#EDEBE6" stroke-width="3"/>')
+t.append('<path d="M-10 388C90 380 200 378 400 386M-10 414C90 406 200 404 400 412" fill="none" stroke-width="2.4"/>')
+W["tlo"] = (0, 0, 390, 440, t[0] + "\n" + group(t[1:]))
+# swierki skraju boru w trzech grupach — kazda gnie sie na wietrze z innym opoznieniem
+for g, xs in enumerate([(130, 156, 182), (208, 234, 262), (330, 356, 384)]):
+    W[f"swierki_{g}"] = (xs[0] - 34, 150, xs[-1] - xs[0] + 68, 186, group([spruce(x, 330 - (i % 2) * 6, 150 + (i % 3) * 24, 56) for i, x in enumerate(xs)]))
+# mloda sosenka w glebi, na galezi czerwona wstazka
+W["sosenka"] = (276, 236, 50, 96, group(['<path d="M300 330V244" fill="none" stroke="#FFFFFF" stroke-width="3"/>',
+                                         '<path d="M300 270L318 258M300 290L282 278M300 304L320 296M300 254L286 246" fill="none" stroke="#FFFFFF" stroke-width="2"/>',
+                                         '<path d="M318 258l6 -4M318 258l7 2M282 278l-6 -3M320 296l6 1" fill="none" stroke="#FFFFFF" stroke-width="1.4"/>']))
+W["wstazka"] = (310, 248, 34, 30, group([f'<path d="M318 258C324 254 330 262 338 256C334 266 326 262 320 270" fill="{RED}" stroke="{RED}" stroke-width="1.6"/>']))
+# smugi wiatru i liscie niesione z zachodu
+W["wiatr"] = (0, 180, 390, 140, group(['<path d="M10 200C60 196 90 206 140 200M40 250C100 244 140 256 200 248M0 300C50 296 80 304 120 300" fill="none" stroke-width="1.4" opacity="0.6"/>']))
+for i, (x, y) in enumerate([(20, 260), (0, 310), (40, 220)]):
+    W[f"lisc_{i}"] = (x - 9, y - 9, 18, 18, group([leaf(x, y, 1.0, 30 * i)]))
+# czworka dzieci na sciezce: Hanka z rozplecionym warkoczem
+W["dzieci"] = (40, 326, 150, 82, group([postacie.child(60, 400, 1.3), postacie.child(92, 398, 1.45),
+                                         postacie.girl(132, 400, 1.3), postacie.child(162, 402, 1.3)]))
+p = ['<path d="M-10 432H400V844H-10Z" fill="#EDEBE6" stroke="none"/>']
+for i in range(22):
+    p.append(grass(rnd.uniform(0, 390), rnd.uniform(440, 840), rnd.uniform(0.9, 1.3)))
+W["przod"] = (0, 422, 390, 422, group(p))
+
+WSTAZKA = ["tlo", "swierki_0", "swierki_1", "swierki_2", "sosenka", "wstazka", "wiatr", "lisc_0", "lisc_1", "lisc_2", "dzieci", "przod"]
+W_ANIM = {f"swierki_{g}": {"type": "sway", "amplitude": 2.2, "duration": 2600, "anchorX": 0.5, "anchorY": 1, "phase": round(g * 0.15, 2)} for g in range(3)}
+W_ANIM.update({"sosenka": {"type": "sway", "amplitude": 3, "duration": 1800, "anchorX": 0.5, "anchorY": 1},
+               "wstazka": {"type": "sway", "amplitude": 14, "duration": 500, "anchorX": 0.1, "anchorY": 0.4},
+               "wiatr": {"type": "drift", "amplitude": 24, "duration": 3000}})
+W_ANIM.update({f"lisc_{i}": {"type": "float", "amplitude": 8, "dx": 380, "dy": -40 + 30 * i, "duration": 4000 + 700 * i, "phase": round(i * 0.3, 2)} for i in range(3)})
+W_EXTRA = {"wstazka": {"noInvert": True}, "przod": {"depth": 1.0}, "dzieci": {"depth": 0.7}}
+W_COMMENTS = {"tlo": "pochmurne popołudnie, ścieżka wzdłuż skraju boru", "sosenka": "młoda sosna (gnie się na wietrze)",
+              "wstazka": "czerwona wstążka Hanki trzepocze na gałęzi", "wiatr": "smugi wiatru", "dzieci": "czwórka dzieci na ścieżce",
+              "przod": "pierwszy plan: trawa"}
+W_COMMENTS.update({f"swierki_{g}": f"świerki, grupa {g + 1} (gną się na wietrze)" for g in range(3)})
+W_COMMENTS.update({f"lisc_{i}": "liść niesiony wiatrem" for i in range(3)})
+
+# ======================= BOR: w glebi lasu, starzec w kozuchu (Leszy w ludzkiej postaci) =======================
+B = {}
+rnd = random.Random(207)
+t = ['<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>',
+     '<rect width="390" height="440" fill="url(#hatch)" stroke="none" opacity="0.5"/>']
+# pnie — wszystkie takie same, w trzech planach
+for row, (k, base, n) in enumerate([(0.5, 300, 12), (0.75, 340, 8), (1.1, 400, 5)]):
+    for i in range(n):
+        x = (i + 0.5) * 390 / n + (row * 11) % 20 - 10
+        w = 10 * k
+        t.append(f'<path d="M{x - w:.0f} 0V{base}H{x + w:.0f}V0Z" fill="{"url(#hatchDense)" if row < 2 else "#000000"}" stroke-width="{1.4 + row}"/>')
+        t.append(f'<path d="M{x - w - 3:.0f} {base}h{2 * w + 6:.0f}" fill="none" stroke-width="2"/>')
+B["tlo"] = (0, 0, 390, 440, t[0] + "\n" + group(t[1:]))
+B["mgla"] = (-30, 200, 450, 190, group([f'<path d="{ribbon(-20, 240, 230, 22, 5)}" fill="#EDEBE6" stroke-width="1.6" opacity="0.85"/>',
+                                        f'<path d="{ribbon(120, 410, 300, 26, 6)}" fill="#EDEBE6" stroke-width="1.6" opacity="0.85"/>',
+                                        f'<path d="{ribbon(-30, 200, 360, 18, 4)}" fill="#EDEBE6" stroke-width="1.6" opacity="0.8"/>']))
+# wstazka daleko przed nim (znika, gdy pojawia sie starzec) i tuz przed nim (po mrugnieciu)
+B["wstazka_daleko"] = (176, 206, 22, 18, group([f'<path d="M180 212C184 209 188 214 194 210C191 217 186 214 182 220" fill="{RED}" stroke="{RED}" stroke-width="1.2"/>',
+                                                 '<path d="M168 214h14" fill="none" stroke-width="1.6"/>']))
+B["wstazka_blisko"] = (60, 250, 70, 60, group(['<path d="M40 262L96 270" fill="none" stroke-width="3.4"/>',
+                                               f'<path d="M92 270C100 262 112 274 124 264C118 282 106 276 96 290" fill="{RED}" stroke="{RED}" stroke-width="2"/>']))
+RIG_B_STARZEC = art.rig("leszy_czlowiek", art.parse_transform("translate(196 182) scale(0.42)"), [
+    ("postac", ["cien", "nogi", "kozuch"], {"type": "sway", "amplitude": 0.6, "duration": 4200}, "kozuch"),
+    ("reka", ["reka_z_laska"], {"type": "sway", "amplitude": 1.5, "duration": 3400}, "reka_z_laska"),
+    ("glowa", ["glowa", "kapelusz"], {"type": "sway", "amplitude": 2, "duration": 5200}, "glowa"),
+    ("oczy", ["oczy"], {"type": "blink", "duration": 5200}, None)], "starzec")
+art.install_rig(B, RIG_B_STARZEC)
+# czerwona wstazka trzepocze w jego dlugich palcach
+B["starzec_wstazka"] = (268, 250, 30, 26, group([f'<path d="M272 258C278 254 284 262 292 256C288 266 280 262 274 270" fill="{RED}" stroke="{RED}" stroke-width="1.4"/>']))
+p = ['<path d="M-10 420H400V844H-10Z" fill="url(#hatch)" stroke="none" opacity="0.5"/>']
+for i in range(18):
+    p.append(grass(rnd.uniform(0, 390), rnd.uniform(436, 840), rnd.uniform(0.9, 1.3)))
+B["przod"] = (0, 410, 390, 434, group(p))
+
+STARZEC = art.rig_names(RIG_B_STARZEC) + ["starzec_wstazka"]
+BOR = ["tlo", "wstazka_daleko"] + STARZEC + ["mgla", "wstazka_blisko", "przod"]
+B_REVEAL = {n: "starzec" for n in STARZEC}
+B_REVEAL["wstazka_blisko"] = "zniknal"
+B_ANIM = {"mgla": {"type": "drift", "amplitude": 12, "duration": 15000},
+          "wstazka_daleko": {"type": "sway", "amplitude": 10, "duration": 700, "anchorX": 0.1, "anchorY": 0.3},
+          "wstazka_blisko": {"type": "sway", "amplitude": 8, "duration": 700, "anchorX": 0.6, "anchorY": 0.3},
+          "starzec_wstazka": {"type": "sway", "amplitude": 12, "duration": 600, "anchorX": 0.1, "anchorY": 0.3}}
+B_ANIM.update(art.rig_anims(RIG_B_STARZEC))
+B_EXTRA = {n: {"hideOn": "zniknal", "fadeDuration": 1600} for n in STARZEC}
+B_EXTRA.update({"wstazka_daleko": {"hideOn": "starzec", "noInvert": True}, "wstazka_blisko": {"noInvert": True},
+                "starzec_wstazka": {"hideOn": "zniknal", "fadeDuration": 1600, "noInvert": True}, "mgla": {"depth": 0.7}, "przod": {"depth": 1.0}})
+B_COMMENTS = {"tlo": "w głębi boru: pnie, wszystkie takie same", "mgla": "szara mgła między pniami (dryfuje)",
+              "wstazka_daleko": "wstążka wciąż tak samo daleko (znika przy # pokaz: starzec)",
+              "wstazka_blisko": "wstążka na gałęzi na wyciągnięcie ręki (# pokaz: zniknal)",
+              "starzec_wstazka": "czerwona wstążka w palcach starca", "przod": "pierwszy plan: ściółka"}
+B_COMMENTS.update({n: f"starzec w kożuchu i kapeluszu z mchu — {n[8:]} (rysunek autora; # pokaz: starzec, znika przy # pokaz: zniknal)" for n in art.rig_names(RIG_B_STARZEC)})
+
+# ----- nastepny ranek: wstazka zawiazana na plocie przed chata (tlo jesieni z plotem na pierwszym planie)
+fence = ['<path d="M-10 372H400M-10 396H400" fill="none" stroke-width="3"/>']
+for x in range(6, 390, 26):
+    fence.append(f'<path d="M{x - 5} 420V356L{x} 348L{x + 5} 356V420Z" fill="#FFFFFF" stroke-width="2"/>')
+J["plot"] = (0, 344, 390, 80, group(fence))
+J["kokarda"] = (146, 360, 40, 44, group([f'<path d="M164 372C156 362 146 366 150 374C146 382 156 384 164 374C172 384 182 382 178 374C182 366 172 362 164 372Z" fill="{RED}" stroke="{RED}" stroke-width="1.4"/>',
+                                          f'<path d="M163 374L156 398M165 374L174 396" fill="none" stroke="{RED}" stroke-width="2.4"/>']))
+PLOT = ["tlo", "dym", "zar", "korona"] + [f"lisc_{i}" for i in range(len(LEAVES))] + ["przod", "szron", "plot", "kokarda"]
+PL_ANIM = {k: v for k, v in J_ANIM.items() if k in PLOT}
+PL_ANIM["kokarda"] = {"type": "sway", "amplitude": 3, "duration": 2200, "anchorX": 0.5, "anchorY": 0.2}
+PL_EXTRA = {"kokarda": {"noInvert": True, "fadeDuration": 2500}, "przod": {"depth": 1.0}, "plot": {"depth": 0.8}, "szron": {"depth": 1.0}}
+PL_COMMENTS = dict(J_COMMENTS)
+PL_COMMENTS.update({"plot": "płot przed chatą", "kokarda": "wstążka Hanki zawiązana na kokardę (# pokaz: kokarda)"})
+
 BACKGROUNDS = {"jesien": ("bg_jesien", J, JESIEN, J_ANIM, J_REVEAL, J_EXTRA, J_COMMENTS, "Zapadlina jesienią"),
                "droga_bor": ("bg_drogabor", D, DROGA, D_ANIM, D_REVEAL, D_EXTRA, D_COMMENTS, "droga pod borem"),
                "szkola_izba": ("bg_szkola", S, IZBA, S_ANIM, S_REVEAL, S_EXTRA, S_COMMENTS, "izba szkolna"),
                "szkola_podania": ("bg_szkola", S, PODANIA, P_ANIM, P_REVEAL, P_EXTRA, P_COMMENTS, "izba szkolna"),
-               "sosna_spirala": ("bg_sosna", K, SOSNA, K_ANIM, K_REVEAL, K_EXTRA, K_COMMENTS, "sosna ze spiralą")}
+               "sosna_spirala": ("bg_sosna", K, SOSNA, K_ANIM, K_REVEAL, K_EXTRA, K_COMMENTS, "sosna ze spiralą"),
+               "wstazka_wiatr": ("bg_wstazka", W, WSTAZKA, W_ANIM, {}, W_EXTRA, W_COMMENTS, "wichura na skraju boru"),
+               "bor_starzec": ("bg_bor", B, BOR, B_ANIM, B_REVEAL, B_EXTRA, B_COMMENTS, "w głębi boru"),
+               "jesien_plot": ("bg_jesien", J, PLOT, PL_ANIM, {"kokarda": "kokarda"}, PL_EXTRA, PL_COMMENTS, "Zapadlina jesienią")}
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":
