@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „noc w śniegu”: noc w śniegu: księżyc, ścieżka skrajem boru, w głębi chałupa Stasiowych
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="440" viewBox="0 0 390 440">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 0H390V240H0Z" fill="url(#hatchNight)" stroke="none"/>
+<circle cx="80" cy="70" r="24" fill="#FFFFFF" stroke-width="2"/>
+<path d="M-10 250C80 240 200 246 400 236V440H-10Z" fill="#FFFFFF" stroke-width="3"/>
+<line x1="200" y1="258" x2="200" y2="246" stroke-width="4"/><path d="M181.1 250.0L200.0 224.8L218.9 250.0Z M184.9 232.0L200.0 206.8L215.1 232.0Z M188.7 214.0L200.0 188.8L211.3 214.0Z M192.4 196.0L200.0 170.8L207.6 196.0Z M196.2 178.0L200.0 152.8L203.8 178.0Z" fill="#000000" stroke-width="2.4"/>
+<line x1="218" y1="264" x2="218" y2="252" stroke-width="4"/><path d="M192.8 256.0L218.0 222.4L243.2 256.0Z M197.8 232.0L218.0 198.4L238.2 232.0Z M202.9 208.0L218.0 174.4L233.1 208.0Z M207.9 184.0L218.0 150.4L228.1 184.0Z M213.0 160.0L218.0 126.4L223.0 160.0Z" fill="#000000" stroke-width="2.4"/>
+<line x1="236" y1="270" x2="236" y2="258" stroke-width="4"/><path d="M204.5 262.0L236.0 220.0L267.5 262.0Z M210.8 232.0L236.0 190.0L261.2 232.0Z M217.1 202.0L236.0 160.0L254.9 202.0Z M223.4 172.0L236.0 130.0L248.6 172.0Z M229.7 142.0L236.0 100.0L242.3 142.0Z" fill="#000000" stroke-width="2.4"/>
+<line x1="254" y1="276" x2="254" y2="264" stroke-width="4"/><path d="M231.3 268.0L254.0 237.8L276.7 268.0Z M235.9 246.4L254.0 216.2L272.1 246.4Z M240.4 224.8L254.0 194.6L267.6 224.8Z M244.9 203.2L254.0 173.0L263.1 203.2Z M249.5 181.6L254.0 151.4L258.5 181.6Z" fill="#000000" stroke-width="2.4"/>
+<line x1="272" y1="282" x2="272" y2="270" stroke-width="4"/><path d="M243.0 274.0L272.0 235.4L301.0 274.0Z M248.8 246.4L272.0 207.8L295.2 246.4Z M254.6 218.8L272.0 180.2L289.4 218.8Z M260.4 191.2L272.0 152.6L283.6 191.2Z M266.2 163.6L272.0 125.0L277.8 163.6Z" fill="#000000" stroke-width="2.4"/>
+<line x1="290" y1="288" x2="290" y2="276" stroke-width="4"/><path d="M254.7 280.0L290.0 233.0L325.3 280.0Z M261.8 246.4L290.0 199.4L318.2 246.4Z M268.8 212.8L290.0 165.8L311.2 212.8Z M275.9 179.2L290.0 132.2L304.1 179.2Z M282.9 145.6L290.0 98.6L297.1 145.6Z" fill="#000000" stroke-width="2.4"/>
+<line x1="308" y1="294" x2="308" y2="282" stroke-width="4"/><path d="M281.5 286.0L308.0 250.7L334.5 286.0Z M286.8 260.8L308.0 225.5L329.2 260.8Z M292.1 235.6L308.0 200.3L323.9 235.6Z M297.4 210.4L308.0 175.1L318.6 210.4Z M302.7 185.2L308.0 149.9L313.3 185.2Z" fill="#000000" stroke-width="2.4"/>
+<line x1="326" y1="300" x2="326" y2="288" stroke-width="4"/><path d="M293.2 292.0L326.0 248.3L358.8 292.0Z M299.8 260.8L326.0 217.1L352.2 260.8Z M306.3 229.6L326.0 185.9L345.7 229.6Z M312.9 198.4L326.0 154.7L339.1 198.4Z M319.4 167.2L326.0 123.5L332.6 167.2Z" fill="#000000" stroke-width="2.4"/>
+<line x1="344" y1="306" x2="344" y2="294" stroke-width="4"/><path d="M304.9 298.0L344.0 245.9L383.1 298.0Z M312.8 260.8L344.0 208.7L375.2 260.8Z M320.6 223.6L344.0 171.5L367.4 223.6Z M328.4 186.4L344.0 134.3L359.6 186.4Z M336.2 149.2L344.0 97.1L351.8 149.2Z" fill="#000000" stroke-width="2.4"/>
+<line x1="362" y1="312" x2="362" y2="300" stroke-width="4"/><path d="M331.8 304.0L362.0 263.7L392.2 304.0Z M337.8 275.2L362.0 234.9L386.2 275.2Z M343.9 246.4L362.0 206.1L380.1 246.4Z M349.9 217.6L362.0 177.3L374.1 217.6Z M356.0 188.8L362.0 148.5L368.0 188.8Z" fill="#000000" stroke-width="2.4"/>
+<line x1="380" y1="318" x2="380" y2="306" stroke-width="4"/><path d="M343.5 310.0L380.0 261.3L416.5 310.0Z M350.8 275.2L380.0 226.5L409.2 275.2Z M358.1 240.4L380.0 191.7L401.9 240.4Z M365.4 205.6L380.0 156.9L394.6 205.6Z M372.7 170.8L380.0 122.1L387.3 170.8Z" fill="#000000" stroke-width="2.4"/>
+<line x1="398" y1="324" x2="398" y2="312" stroke-width="4"/><path d="M355.2 316.0L398.0 258.9L440.8 316.0Z M363.7 275.2L398.0 218.1L432.3 275.2Z M372.3 234.4L398.0 177.3L423.7 234.4Z M380.9 193.6L398.0 136.5L415.1 193.6Z M389.4 152.8L398.0 95.7L406.6 152.8Z" fill="#000000" stroke-width="2.4"/>
+<path d="M120 440C140 390 150 340 130 300C116 274 90 260 60 252" fill="none" stroke-width="2"/>
+<path d="M190 440C200 392 204 344 182 302C166 274 132 258 90 250" fill="none" stroke-width="2"/>
+<path d="M20 252V226L38 212L56 226V252Z" fill="#FFFFFF" stroke-width="2"/><path d="M32 240h8v12h-8z" fill="#000000" stroke-width="1.2"/>
+<path d="M40 382l10 0" fill="none" stroke-width="2.4"/>
+<path d="M60 428l10 0" fill="none" stroke-width="2.4"/>
+<path d="M80 390l10 0" fill="none" stroke-width="2.4"/>
+<path d="M100 430l10 0" fill="none" stroke-width="2.4"/>
+<path d="M120 427l10 0" fill="none" stroke-width="2.4"/>
+<path d="M140 393l10 0" fill="none" stroke-width="2.4"/>
+<path d="M160 406l10 0" fill="none" stroke-width="2.4"/>
+<path d="M180 400l10 0" fill="none" stroke-width="2.4"/>
+</g>
+</svg>

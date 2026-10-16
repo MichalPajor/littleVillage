@@ -56,3 +56,16 @@ VAR poszedl_po_wstazke = false
 // U kogo Jaromir szukał rady na północnicę (z księgi wie też o maku).
 LIST RadyJaromira = hanka, ksiega_rada, ojciec
 VAR rada_jaromira = ()
+
+// Czy Jaromir uprosił ojca, żeby wpuścił dziada na wigilijną wieczerzę (dziad ostrzegł: „nie odzywaj się do niej”).
+VAR wpuscil_dziada = false
+
+// Imię szczeniaka z rodu psa dziadka Maćka (tylko gdy pies przeżył w prologu).
+VAR imie_psa = ""
+
+// Co Jaromir zrobił, gdy z boru zawołał go głos matki.
+LIST GlosyWLesie = odpowiedzial, kozuch, ucieczka
+VAR glos_w_lesie = ()
+
+// Pan Ignacy pozwolił Jaromirowi zatrzymać księgę (zamiast oddać ją na Boże Narodzenie).
+VAR ksiega_zatrzymana = false

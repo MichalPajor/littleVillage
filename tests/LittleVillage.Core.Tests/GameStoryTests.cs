@@ -748,10 +748,12 @@ public sealed class GameStoryTests
     private const int FetchRibbon = 0, LeaveRibbon = 1;         // wstazka Hanki w lesie
     private const int BorrowBook = 0, LeaveBook = 1;            // ksiega pana Ignacego
     private const int AskHanka = 0;                             // rada na polnocnice (z ksiega: 1 = ksiega, 2 = ojciec)
+    private const int LetIn = 0, KeepOut = 1;                   // dziad w Wigilie
+    private const int Answer = 0, TurnCoat = 1, RunAway = 2;    // glos matki z boru
 
     private static readonly int[] Summer = [RunOut, Contest, Shell, FirstOption, PlayOn];
     private static readonly int[] School = [Shout, Defend, TakeBark, FetchRibbon, BorrowBook];
-    private static readonly int[] Winter = [AskHanka];
+    private static readonly int[] Winter = [AskHanka, LetIn, 0, 0];  // imie psa (gdy jest) i glos z boru
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1127,5 +1129,64 @@ public sealed class GameStoryTests
         Assert.True(Has([advice], text));
         Assert.Contains(advice.Blocks, b => b.Reveal == reveal);
         Assert.DoesNotContain(pages.SelectMany(p => p.Blocks), b => System.Text.RegularExpressions.Regex.IsMatch(b.Text, "(?<![Pp]ół)nocnic"));
+    }
+
+    [Theory]
+    [InlineData(LetIn, "lira", "Pachniesz lasem, chłopcze")]
+    [InlineData(KeepOut, "rygiel", "ślady starca urywały się w połowie pola")]
+    public void Chapter_three_beggar_knocks_on_christmas_eve(int choice, string reveal, string text)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, .. School, AskHanka, choice]);
+
+        var eve = On(pages, "wigilia");
+        Assert.StartsWith("W ostatni dzień przed świętami Jaromir przyniósł do szkoły księgę", eve[0].Blocks[0].Text);
+        Assert.Contains(eve[0].Blocks, b => b.Reveal == "gwiazdka");
+        Assert.Contains(eve[0].Blocks, b => b.Reveal == "dziad" && b.Text.StartsWith("Na progu stał dziad –"));
+        Assert.Equal("Czy dziad zostanie na wieczerzy?", eve[0].Question);
+        Assert.Contains(eve[1].Blocks, b => b.Reveal == reveal);
+        Assert.True(Has([eve[1]], text));
+        Assert.Contains("Nauczyciel pozwolił ją zatrzymać", engine.GetInventory().Single(i => i.Id == "ksiega").Description);
+        // bez psa w prologu nie ma szczeniaka — od razu noc w sniegu
+        Assert.DoesNotContain(pages, p => p.BackgroundKey == "wigilia_szczeniak");
+        Assert.Equal("noc_snieg", pages[^1].BackgroundKey);
+    }
+
+    [Theory]
+    [InlineData(0, "Burek")]
+    [InlineData(1, "Łapek")]
+    [InlineData(2, "Grom")]
+    public void Chapter_three_puppy_from_grandfathers_dog_gets_a_name(int name, string expected)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. CursedPrologue, .. Summer, .. School, AskHanka, LetIn, name]);
+
+        var puppy = On(pages, "wigilia_szczeniak");
+        Assert.StartsWith("Po wieczerzy przyszedł stary Staś.", puppy[0].Blocks[0].Text);
+        Assert.Contains(puppy[0].Blocks, b => b.Reveal == "pies" && b.Text.Contains("białą łatę na piersi"));
+        Assert.True(Has([puppy[0]], "Babka Marianna"));
+        Assert.Equal(["Burek.", "Łapek.", "Grom."], puppy[0].Choices.Select(c => c.Text));
+        Assert.StartsWith($"– {expected} – powtórzył Staś", puppy[1].Blocks[0].Text);
+        Assert.Equal(expected, engine.GetInventory().Single(i => i.Id == "szczeniak").Name);
+        Assert.Contains(pages.Last().Blocks, b => b.Text.Contains("Szczeniak uniósł łeb"));
+    }
+
+    [Theory]
+    [InlineData(BorrowBook, 1, Answer, "Znowu ty. Policzę cię", "oczy")]
+    [InlineData(BorrowBook, 1, TurnCoat, "Gdzie jesteś?", "kroki")]
+    [InlineData(LeaveBook, 0, RunAway, "kłuło go jak nożem", "bieg")]
+    public void Chapter_three_mothers_voice_calls_from_the_forest(int book, int advice, int choice, string text, string reveal)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, book, advice, KeepOut, choice]);
+
+        var night = On(pages, "noc_snieg");
+        Assert.StartsWith("Na pasterkę do Bukowca tego roku nikt nie poszedł", night[0].Blocks[0].Text);
+        Assert.Equal(book == BorrowBook, Has([night[0]], "szmatkę z garścią maku"));
+        Assert.Equal(book == BorrowBook, Inventory(engine).Contains("mak"));
+        Assert.Contains(night[0].Blocks, b => b.Text == "– Synku, chodź do mnie. Zimno mi. Zgubiłam się.");
+        Assert.Equal(3, night[0].Choices.Count);
+        Assert.Contains(night[1].Blocks, b => b.Reveal == reveal);
+        Assert.True(Has([night[1]], text));
     }
 }

@@ -5,7 +5,7 @@
 //  Sprawdzenie:          { ekwipunek ? siekiera: ... }
 // ------------------------------------------------------------
 
-LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega
+LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak
 
 // Ekwipunek na początku gry — to, co Maciek przyniósł w tobołku.
 VAR ekwipunek = (siekiera, chleb)
@@ -23,6 +23,8 @@ VAR ekwipunek = (siekiera, chleb)
     - nozyk:     ~ return "Nożyk"
     - kora:      ~ return "Kora ze znakiem"
     - ksiega:    ~ return "Księga opowiadań"
+    - szczeniak: ~ return imie_psa
+    - mak:       ~ return "Garść maku"
 }
 ~ return ""
 
@@ -42,6 +44,12 @@ VAR ekwipunek = (siekiera, chleb)
     - nasiona:   ~ return "Kupione na miejskim rynku. Była wiosna – trzeba je było czym prędzej wysiać."
     - nozyk:     ~ return "Prezent od ojca na imieniny. Mały, z wytartą drewnianą rączką i ostrzem, które ojciec wyostrzył osełką. Jaromir obstrugał nim już niejeden łuk."
     - kora:      ~ return "Zwinięty w trąbkę kawałek sosnowej kory spod drzewa ze spiralą. Na gładkiej stronie ktoś wyrył rządki kresek i kółek – niby litery, a jednak żadnej z nich Jaromir nie zna."
-    - ksiega:    ~ return "Gruby zeszyt pana Ignacego, oprawny w skórę i zapisany starannym, pochyłym pismem – historie z okolic Bukowego Grzbietu. Można ją czytać tylko w dzień, a na Boże Narodzenie trzeba ją oddać."
+    - ksiega:
+        { ksiega_zatrzymana:
+            ~ return "Gruby zeszyt pana Ignacego, oprawny w skórę i zapisany starannym, pochyłym pismem – historie z okolic Bukowego Grzbietu. Nauczyciel pozwolił ją zatrzymać. Można ją czytać tylko w dzień."
+        }
+        ~ return "Gruby zeszyt pana Ignacego, oprawny w skórę i zapisany starannym, pochyłym pismem – historie z okolic Bukowego Grzbietu. Można ją czytać tylko w dzień, a na Boże Narodzenie trzeba ją oddać."
+    - szczeniak: ~ return "Szczeniak z rodu psa dziadka Maćka, prezent od starego Stasia na Wigilię. Spiczaste uszy, biała łata na piersi i łapy za duże do reszty ciała. Śpi w nogach posłania i warczy przez sen w stronę okna."
+    - mak:       ~ return "Szmatka z garścią maku podebranego z wigilijnej misy. Według księgi pana Ignacego północnica musi policzyć każde ziarenko, nim podejdzie bliżej."
 }
 ~ return ""

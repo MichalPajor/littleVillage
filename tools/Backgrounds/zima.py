@@ -3,12 +3,15 @@
 #            (plomyki migocza), Antek wlecze sie z tylu (# pokaz: antek)
 #   przerwa_sniezki — Bukowiec: koscolek i szkola, dzieci rzucaja sniezkami, Antek z Jaromirem pod plotem, Hanka (# pokaz: hanka)
 #   izba_noc — izba Jaromira noca: zar w piecu; Jaromir czyta ksiege (# pokaz: ksiega), ojciec przy stole (# pokaz: ojciec)
+#   wigilia — izba przy wieczerzy: gwiazdka (# pokaz: gwiazdka), dziad w drzwiach (# pokaz: dziad), dziad z lira przy stole
+#             (# pokaz: lira), drzwi na rygiel (# pokaz: rygiel); wigilia_szczeniak — Stas i szczeniak autora (# pokaz: pies)
+#   noc_snieg — noc, ksiezyc, sciezka skrajem boru: oczy (# pokaz: oczy), wielkie slady (# pokaz: kroki), bieg (# pokaz: bieg)
 # Uzycie z katalogu glownego repozytorium:
 #   python3 tools/Backgrounds/zima.py src/LittleVillage/Resources/Images     -> pliki bg_roraty_*.svg
-#   python3 tools/Backgrounds/zima.py --master roraty|przerwa_sniezki|izba_noc [wszystko] > podglad.svg
+#   python3 tools/Backgrounds/zima.py --master roraty|przerwa_sniezki|izba_noc|wigilia|wigilia_szczeniak|noc_snieg [wszystko] > podglad.svg
 import sys, random
 from common import *
-import postacie
+import postacie, art
 
 RED = "#A8101A"
 
@@ -172,9 +175,141 @@ I_COMMENTS = {"tlo": "izba Jaromira nocą: okno z księżycem, piec, siennik, st
               "spi": "Jaromir śpi na sienniku (znika przy # pokaz: ksiega)", "ksiega": "Jaromir czyta księgę przy węglach (# pokaz: ksiega)",
               "ojciec": "ojciec przy stole (# pokaz: ojciec)", "przod": "pierwszy plan"}
 
+
+# ======================= WIGILIA: izba przy wieczerzy =======================
+V = {}
+w = ['<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>',
+     '<rect width="390" height="440" fill="url(#hatch)" stroke="none" opacity="0.45"/>']
+for i in range(10):
+    y = 6 + i * 28
+    w.append(f'<path d="M0 {y}C130 {y + 4} 260 {y - 3} 390 {y + 2}" fill="none" stroke-width="1.4"/>')
+w.append('<path d="M-10 300H400V440H-10Z" fill="url(#hatchDense)" stroke="none" opacity="0.6"/><path d="M-10 300H400" fill="none" stroke-width="3"/>')
+# drzwi z lewej (otwarte na noc: czern i snieg)
+w.append('<path d="M14 300V140H82V300Z" fill="#000000" stroke-width="2.6"/><path d="M14 268C36 262 60 266 82 262V300H14Z" fill="#FFFFFF" stroke-width="1.2"/>')
+w.append('<path d="M82 300V140L102 132V306Z" fill="#FFFFFF" stroke-width="2.4"/><path d="M94 214h4" fill="none" stroke-width="2"/>')
+# okno z gwiazdka nad borem
+w.append('<path d="M196 70H276V150H196Z" fill="url(#hatchNight)" stroke-width="3"/><path d="M196 130C220 122 250 126 276 120V150H196Z" fill="#000000" stroke="none"/>')
+w.append('<path d="M236 70V150M196 110H276" fill="none" stroke-width="3"/><path d="M190 154H282" fill="none" stroke-width="3"/>')
+# snopek zyta w kacie
+w.append('<path d="M344 300L352 214M350 300L356 210M356 300L360 212M362 300L362 214M368 300L366 210M374 300L370 214" fill="none" stroke-width="1.6"/>')
+w.append('<path d="M346 252H376" fill="none" stroke-width="3"/><path d="M344 214l8 -10l8 8l8 -10l8 10" fill="none" stroke-width="1.4"/>')
+# stol nakryty bialym obrusem, spod ktorego wystaje siano; oplatek, swieca, puste nakrycie
+w.append('<path d="M120 252H330V264H120Z" fill="#FFFFFF" stroke-width="2.6"/><path d="M128 264L124 300M322 264L326 300" fill="none" stroke-width="3"/>')
+w.append('<path d="M126 264l-4 10M140 264l2 9M300 264l-3 9M318 264l4 10" fill="none" stroke-width="1.2"/>')
+w.append('<path d="M168 248h18v4h-18z" fill="#FFFFFF" stroke-width="1.2"/><path d="M286 246c0 -4 18 -4 18 0z" fill="#FFFFFF" stroke-width="1.4"/><path d="M290 252h12" fill="none" stroke-width="1"/>')
+w.append('<path d="M224 252V232h6v20z" fill="#FFFFFF" stroke-width="1.6"/>')
+V["tlo"] = (0, 0, 390, 440, w[0] + "\n" + group(w[1:]))
+V["swieca"] = (220, 216, 14, 18, group([f'<path d="M227 232c-3 -3 -2 -8 0 -12c2 4 3 9 0 12z" fill="{RED}" stroke="none"/>']))
+V["gwiazdka"] = (240, 76, 26, 26, group(['<path d="M253 80l2 7l7 2l-7 2l-2 7l-2 -7l-7 -2l7 -2z" fill="#FFFFFF" stroke-width="1"/>']))
+# rodzina przy stole: ojciec, matka, Jaromir (puste miejsce z prawej)
+V["rodzina"] = (140, 160, 140, 96, group([postacie.man(160, 300, 1.4, hat=False), postacie.woman(206, 300, 1.25), postacie.child(252, 280, 1.2)]))
+# dziad w drzwiach: zgarbiony, z lira na plecach i torba
+diad = postacie.man(48, 296, 1.5, hat=False, bundle=True)
+diad += '<g stroke-width="2"><path d="M64 214C78 206 84 222 74 230C70 236 62 232 64 224Z" fill="#FFFFFF"/><path d="M66 212l10 -8" fill="none"/></g>'
+diad += '<path d="M41 202c4 6 10 6 14 0l-2 10c-3 3 -7 3 -10 0z" fill="#FFFFFF" stroke-width="1.4"/>'
+V["dziad"] = (10, 176, 80, 124, group([diad]))
+# dziad przy pustym nakryciu gra na lirze
+grajek = postacie.man(298, 300, 1.35, hat=False)
+grajek += '<g stroke-width="2"><path d="M284 236C294 226 312 230 312 242C312 252 296 256 288 248Z" fill="#FFFFFF"/><path d="M300 238l12 -10" fill="none"/></g>'
+grajek += '<path d="M292 210c4 5 9 5 12 0l-2 9c-3 3 -6 3 -8 0z" fill="#FFFFFF" stroke-width="1.3"/>'
+V["dziad_lira"] = (270, 190, 56, 112, group([grajek]))
+V["nuty"] = (300, 180, 60, 50, group(['<path d="M320 214v-14l8 -2v14M320 214a3 2 0 1 1 -1 -1M328 212a3 2 0 1 1 -1 -1" fill="none" stroke-width="1.4"/>',
+                                      '<path d="M344 196v-12M344 196a3 2 0 1 1 -1 -1" fill="none" stroke-width="1.4"/>']))
+# drzwi zamkniete na rygiel
+V["drzwi"] = (10, 136, 96, 168, group(['<path d="M14 300V140H82V300Z" fill="#FFFFFF" stroke-width="2.6"/>',
+                                       '<path d="M28 148V292M48 148V292M68 148V292M14 200H82" fill="none" stroke-width="1.2"/><path d="M60 208h18v6h-18z" fill="#000000" stroke-width="1.4"/>']))
+p = ['<path d="M-10 432H400V844H-10Z" fill="url(#hatchDense)" stroke="none" opacity="0.6"/>']
+V["przod"] = (0, 422, 390, 422, group(p))
+
+# zawieja w otwartych drzwiach, kiedy dziad znika za progiem
+V["zawieja"] = (10, 150, 120, 140, group([f'<circle cx="{14 + (i * 37) % 100}" cy="{160 + (i * 53) % 120}" r="{1.4 + (i % 3) * 0.5:.1f}" fill="#FFFFFF" stroke-width="0.8"/>' for i in range(16)]))
+WIGILIA = ["tlo", "swieca", "gwiazdka", "rodzina", "dziad", "dziad_lira", "nuty", "zawieja", "drzwi", "przod"]
+V_REVEAL = {"gwiazdka": "gwiazdka", "dziad": "dziad", "dziad_lira": "lira", "nuty": "lira", "zawieja": "odszedl", "drzwi": "rygiel"}
+V_ANIM = {"swieca": {"type": "flame", "amplitude": 0.15, "duration": 800, "anchorX": 0.5, "anchorY": 1},
+          "gwiazdka": {"type": "flicker", "amplitude": 0.5, "duration": 2200},
+          "nuty": {"type": "rise", "amplitude": 30, "duration": 3000},
+          "zawieja": {"type": "float", "amplitude": 6, "dx": 90, "dy": 30, "duration": 2600}}
+V_EXTRA = {"swieca": {"noInvert": True}, "gwiazdka": {"fadeDuration": 3000}, "dziad": {"hideOn": "lira", "fadeDuration": 1000},
+           "dziad_lira": {"hideOn": "odszedl", "fadeDuration": 1500}, "nuty": {"hideOn": "odszedl"}, "drzwi": {"fadeDuration": 800},
+           "zawieja": {"hideAfter": 5200, "fadeDuration": 600}, "przod": {"depth": 1.0}}
+V["dziad"] = V["dziad"]
+V_COMMENTS = {"tlo": "izba w Wigilię: stół z obrusem i sianem, opłatek, puste nakrycie, snopek, okno nad borem, otwarte drzwi",
+              "swieca": "płomień świecy (czerwony)", "gwiazdka": "pierwsza gwiazdka (# pokaz: gwiazdka)", "rodzina": "ojciec, matka i Jaromir przy stole",
+              "dziad": "dziad z lirą w drzwiach (# pokaz: dziad, znika przy # pokaz: lira)",
+              "dziad_lira": "dziad gra na lirze przy pustym nakryciu (# pokaz: lira, znika przy # pokaz: odszedl)", "nuty": "nuty pieśni (unoszą się)",
+              "drzwi": "drzwi zamknięte na rygiel (# pokaz: rygiel)", "zawieja": "zawieja w drzwiach, gdy dziad odchodzi (# pokaz: odszedl)", "przod": "pierwszy plan"}
+# dziad w drzwiach znika tez, gdy drzwi sie zamykaja
+V_EXTRA["dziad"] = {"hideOn": "lira", "fadeDuration": 1000}
+
+# ----- po wieczerzy: stary Stas z szczeniakiem (ta sama izba, bez dziada)
+V["stas"] = (270, 176, 70, 126, group([postacie.man(302, 300, 1.55, hat=False),
+                                      '<path d="M290 240c4 -6 20 -6 24 0" fill="none" stroke="#FFFFFF" stroke-width="1.4"/>']))
+RIG_V_PIES = art.dog_sitting(art.parse_transform("translate(236 212) scale(0.12)"), "pies", shadow=False)
+art.install_rig(V, RIG_V_PIES)
+SZCZENIAK = ["tlo", "swieca", "gwiazdka", "rodzina", "stas"] + art.rig_names(RIG_V_PIES) + ["drzwi", "przod"]
+VS_REVEAL = {n: "pies" for n in art.rig_names(RIG_V_PIES)}
+VS_ANIM = {k: v for k, v in V_ANIM.items() if k in ("swieca", "gwiazdka")}
+VS_ANIM.update(art.rig_anims(RIG_V_PIES))
+VS_EXTRA = {"swieca": {"noInvert": True}, "przod": {"depth": 1.0}}
+VS_EXTRA.update({n: {"fadeDuration": 1500} for n in art.rig_names(RIG_V_PIES)})
+VS_COMMENTS = dict(V_COMMENTS)
+VS_COMMENTS.update({"stas": "stary Staś na ławie"})
+VS_COMMENTS.update({n: f"szczeniak na kolanach Jaromira — {n[5:]} (rysunek autora; # pokaz: pies)" for n in art.rig_names(RIG_V_PIES)})
+
+# ======================= NOC W SNIEGU: ksiezyc, sciezka skrajem boru =======================
+N = {}
+rnd = random.Random(303)
+t = ['<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>',
+     '<path d="M0 0H390V240H0Z" fill="url(#hatchNight)" stroke="none"/>',
+     '<circle cx="80" cy="70" r="24" fill="#FFFFFF" stroke-width="2"/>']
+t.append('<path d="M-10 250C80 240 200 246 400 236V440H-10Z" fill="#FFFFFF" stroke-width="3"/>')
+# bor po prawej stronie sciezki
+for i in range(12):
+    x = 200 + i * 18
+    h = 90 + (i % 3) * 24 + i * 6
+    t.append(spruce(x, 250 + i * 6, h, h * 0.42))
+# sciezka od widza w strone chalup Stasiowych (w glebi z lewej)
+t.append('<path d="M120 440C140 390 150 340 130 300C116 274 90 260 60 252" fill="none" stroke-width="2"/>')
+t.append('<path d="M190 440C200 392 204 344 182 302C166 274 132 258 90 250" fill="none" stroke-width="2"/>')
+t.append('<path d="M20 252V226L38 212L56 226V252Z" fill="#FFFFFF" stroke-width="2"/><path d="M32 240h8v12h-8z" fill="#000000" stroke-width="1.2"/>')
+for i in range(8):
+    x = 40 + i * 20
+    t.append(f'<path d="M{x} {rnd.uniform(380, 430):.0f}l10 0" fill="none" stroke-width="2.4"/>')     # czarne cienie galazek
+N["tlo"] = (0, 0, 390, 440, t[0] + "\n" + group(t[1:]))
+stars = [f'<circle cx="{rnd.uniform(130, 384):.0f}" cy="{rnd.uniform(8, 200):.0f}" r="{rnd.uniform(0.9, 1.6):.1f}" fill="#FFFFFF" stroke="none"/>' for _ in range(22)]
+N["gwiazdy"] = (120, 0, 270, 210, group(stars))
+N["jaromir"] = (136, 316, 36, 64, group([postacie.child(152, 376, 1.3)]))
+N["bieg_0"] = (100, 290, 50, 60, group([postacie.running_child(124, 344, 1.2, facing=-1, pose=0)]))
+N["bieg_1"] = (100, 290, 50, 60, group([postacie.running_child(124, 344, 1.2, facing=-1, pose=1)]))
+N["oczy"] = (290, 186, 40, 16, group(['<ellipse cx="300" cy="194" rx="3.6" ry="2.2" fill="#FFFFFF" stroke="none"/><ellipse cx="316" cy="193" rx="3.8" ry="2.3" fill="#FFFFFF" stroke="none"/>']))
+# dlugie, wielkie slady pojawiaja sie w sniegu jeden po drugim tuz obok sciezki
+STEPS = [(236, 434), (214, 400), (232, 366), (206, 332), (220, 300)]
+for i, (x, y) in enumerate(STEPS):
+    k = 1.4 - i * 0.16
+    N[f"krok_{i}"] = (int(x - 8 * k), int(y - 18 * k), int(16 * k) + 2, int(36 * k) + 2, group([
+        f'<path d="M{x} {y - 16 * k:.1f}C{x + 6 * k:.1f} {y - 16 * k:.1f} {x + 6 * k:.1f} {y + 16 * k:.1f} {x} {y + 16 * k:.1f}C{x - 6 * k:.1f} {y + 16 * k:.1f} {x - 6 * k:.1f} {y - 16 * k:.1f} {x} {y - 16 * k:.1f}Z" fill="url(#hatchDense)" stroke-width="{1.4 * k:.1f}"/>']))
+p = ['<path d="M-10 432H400V844H-10Z" fill="#FFFFFF" stroke="none"/>']
+N["przod"] = (0, 422, 390, 422, group(p))
+
+NOC = ["tlo", "gwiazdy", "oczy"] + [f"krok_{i}" for i in range(len(STEPS))] + ["jaromir", "bieg_0", "przod"]
+N_REVEAL = {"oczy": "oczy", "bieg_0": "bieg"}
+N_REVEAL.update({f"krok_{i}": "kroki" for i in range(len(STEPS))})
+N_ANIM = {"gwiazdy": {"type": "flicker", "amplitude": 0.4, "duration": 3600}, "oczy": {"type": "blink", "duration": 4000},
+          "bieg_0": {"type": "frames", "duration": 360}}
+N_EXTRA = {"bieg_0": {"frames": ["bieg_0", "bieg_1"], "fadeDuration": 300}, "jaromir": {"hideOn": "bieg", "fadeDuration": 300},
+           "oczy": {"fadeDuration": 2000}, "przod": {"depth": 1.0}}
+N_EXTRA.update({f"krok_{i}": {"appearAfter": 400 + i * 700, "fadeDuration": 400} for i in range(len(STEPS))})
+N_COMMENTS = {"tlo": "noc w śniegu: księżyc, ścieżka skrajem boru, w głębi chałupa Stasiowych", "gwiazdy": "gwiazdy (migoczą)",
+              "oczy": "oczy między drzewami (# pokaz: oczy)", "jaromir": "Jaromir na ścieżce (znika przy # pokaz: bieg)",
+              "bieg_0": "Jaromir biegnie, klatka 1 (# pokaz: bieg)", "bieg_1": "Jaromir biegnie, klatka 2", "przod": "pierwszy plan: śnieg"}
+N_COMMENTS.update({f"krok_{i}": f"wielki ślad {i + 1} — ktoś bardzo wysoki przechodzi obok (# pokaz: kroki, po kolei)" for i in range(len(STEPS))})
+
 BACKGROUNDS = {"roraty": ("bg_roraty", R, RORATY, R_ANIM, R_REVEAL, R_EXTRA, R_COMMENTS, "roraty"),
                "przerwa_sniezki": ("bg_przerwa", P, PRZERWA, P_ANIM, P_REVEAL, P_EXTRA, P_COMMENTS, "przerwa pod kościółkiem"),
-               "izba_noc": ("bg_izbanoc", I, IZBA_NOC, I_ANIM, I_REVEAL, I_EXTRA, I_COMMENTS, "izba nocą")}
+               "izba_noc": ("bg_izbanoc", I, IZBA_NOC, I_ANIM, I_REVEAL, I_EXTRA, I_COMMENTS, "izba nocą"),
+               "wigilia": ("bg_wigilia", V, WIGILIA, V_ANIM, V_REVEAL, V_EXTRA, V_COMMENTS, "Wigilia"),
+               "wigilia_szczeniak": ("bg_wigilia", V, SZCZENIAK, VS_ANIM, VS_REVEAL, VS_EXTRA, VS_COMMENTS, "Wigilia"),
+               "noc_snieg": ("bg_nocsnieg", N, NOC, N_ANIM, N_REVEAL, N_EXTRA, N_COMMENTS, "noc w śniegu")}
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":
@@ -184,5 +319,6 @@ if __name__ == "__main__":
     else:
         import bgjson
         for key, (prefix, L, order, anim, reveal, extra, comments, scene) in BACKGROUNDS.items():
-            write_layers(sys.argv[1], prefix, scene, L, order, comments)
+            # wszystkie warstwy slownika (takze klatki animacji, ktorych nie ma w kolejnosci)
+            write_layers(sys.argv[1], prefix, scene, L, [n for n in L if n in comments], comments)
             bgjson.upsert(key, bgjson.entry(prefix, order, L, anim, reveal, extra))
