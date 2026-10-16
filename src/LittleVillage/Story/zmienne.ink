@@ -117,3 +117,7 @@ VAR blizna_sierpa = false
 VAR mak_w_medaliku = false
 // Jaromir powiedział ojcu o Południcy (inaczej sam nocami pilnuje kapliczek).
 VAR powiedzial_ojcu_poludnica = false
+
+// ---------- Rozdział siódmy (Rusałki) ----------
+// Na Zaduszki Jaromir zaniósł chleb dla dziadów pod kapliczkę na skraju boru (pakt z lasem: zielony liść dębu).
+VAR chleb_dla_dziadow = false

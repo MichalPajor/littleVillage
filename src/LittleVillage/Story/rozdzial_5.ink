@@ -8,10 +8,20 @@
 // ------------------------------------------------------------
 
 === rozdzial_piaty ===
-# tlo: tartak
+# tlo: budowa_tartaku
 # rozdzial: Rozdział piąty
 # tytul: Tartak
-Trzy lata później w Zapadlinie nikt już nie zasypiał przy ciszy. Nad strugą, która spływała z boru do jeziora, stanął tartak pana Urbaniaka – wielka drewniana szopa z kołem wodnym, które obracało się dniem i nocą, i z piłą, której zgrzyt niósł się po całej niecce. Od świtu do zmroku drogą pod borem jeździły wozy pełne pni, a na placu obok rosły sterty desek, pachnących żywicą tak mocno, że czuło się je aż w Bukowcu.
+Po tamtej wiośnie czas zaczął płynąć szybciej, jakby ktoś popuścił mu cugli.
+Jeszcze tego samego lata ludzie Urbaniaka przywieźli nad strugę pierwsze wozy belek. Budowali przez całą jesień – stukali młotami od świtu do zmroku, kopali rów dla koła wodnego i klęli na glinę, która oblepiała im buty po kolana. Dzieci z całej wsi przybiegały patrzeć, jak rośnie wielka szopa, a starsi kręcili głowami i mówili, że z tego nic dobrego nie wyjdzie. # pokaz: budowa
+Zimy przychodziły i odchodziły. Jaromir chodził do szkoły w Bukowcu jeszcze dwa lata. Nauczył się pisać tak starannie, że nauczyciel dawał mu do przepisywania kolędy dla organisty, i liczyć tak szybko, że ojciec zaczął go zabierać na jarmarki, żeby pilnował, czy handlarze nie oszukują przy wadze.{ ekwipunek ? ksiega: Księgę pana Ignacego czytał tak często, że znał na pamięć połowę podań, a resztę przepisywał sobie na zapas do zeszytu z grubego, szarego papieru.}
+Każdej wiosny na łąkach zakwitały te same kaczeńce, każdego lata bociany wracały na kuźnię, a co jesień dym z ognisk z łętów snuł się nad polami tak samo jak wtedy, gdy Jaromir szedł do szkoły pierwszy raz. Zmieniało się tylko jedno: z roku na rok mniej było słychać ptaków od strony boru, a więcej – zgrzytu piły. # pokaz: lata
+Antek wyciągnął się w chudego, poważnego chłopaka, który najchętniej przesiadywał w kuźni u ojca Hanki i uczył się kuć podkowy. Zosia, jego siostrzyczka, biegała już po obejściu i plątała się dorosłym pod nogami{ polnocnica == uslyszala_krzyk: – blada i chorowita, z szarą plamką na czole, którą matka chowała pod chustką}. Franek rósł najszybciej z całej czwórki, a kiedy skończył szesnaście lat, pierwszy poszedł do tartaku po zarobek.
+A Hanka… Hanka po prostu była. Codziennie, od rana do wieczora, tuż obok – i Jaromir zaczął to zauważać dopiero wtedy, gdy któregoś dnia jej zabrakło, bo pojechała z ojcem na jarmark do miasta, a on przez cały dzień nie mógł znaleźć sobie miejsca. # pokaz: hanka # dalej
+-> tartak_stoi
+
+= tartak_stoi
+# tlo: tartak
+Odkąd stanął tartak, w Zapadlinie nikt już nie zasypiał przy ciszy. Nad strugą, która spływała z boru do jeziora, stanął tartak pana Urbaniaka – wielka drewniana szopa z kołem wodnym, które obracało się dniem i nocą, i z piłą, której zgrzyt niósł się po całej niecce. Od świtu do zmroku drogą pod borem jeździły wozy pełne pni, a na placu obok rosły sterty desek, pachnących żywicą tak mocno, że czuło się je aż w Bukowcu.
 Wieś podzieliła się na dwa obozy. Jedni chodzili do tartaku do pracy i wracali z zapłatą, jakiej wcześniej w Zapadlinie nie widywano. Drudzy spluwali przez ramię, ilekroć mijał ich wóz z drewnem, i mówili cicho, że las niczego nie daje za darmo.
 { figurka_u_staruchy:
     Ojciec należał do tych drugich. Kiedy Urbaniak przysłał do niego człowieka z propozycją, wyprowadził go za płot bez słowa.

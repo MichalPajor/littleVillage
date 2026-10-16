@@ -1,5 +1,5 @@
 // ------------------------------------------------------------
-//  Rozdział szósty — Południca. Żniwa w upale, Jaromir ma czternaście
+//  Rozdział szósty — Południca. Żniwa w upale, Jaromir ma trzynaście
 //  lat. Południca zadaje w samo południe trzy zagadki; za każdą
 //  pomyłkę tnie sierpem. Księga daje dodatkową odpowiedź. Przy dwóch
 //  i więcej pomyłkach ratuje go Hanka z dzbanem wody (gorączka, blizna),
@@ -11,7 +11,7 @@
 # rozdzial: Rozdział szósty
 # tytul: Południca
 Żniwa przyszły w upale, jakiego najstarsi ludzie nie pamiętali. Od kilku tygodni nie spadła ani kropla deszczu, niebo bielało od żaru już o świcie, a ziemia na miedzach pękała w długie, kręte szczeliny. Zboże dojrzało nagle, w kilka dni, i stało teraz na polach złote i suche, szeleszcząc przy każdym podmuchu jak papier.
-Wychodzili w pole, zanim zapiały koguty. Mężczyźni szli przodem, kobiety za nimi wiązały snopy, a dzieci zbierały pokłosie i nosiły wodę w glinianych dzbankach. Jaromir miał czternaście lat i pierwszy raz kosił razem z dorosłymi – w rzędzie, krok w krok za ojcem, a ostrze w jego rękach świstało prawie tak równo jak u starych żeńców.
+Wychodzili w pole, zanim zapiały koguty. Mężczyźni szli przodem, kobiety za nimi wiązały snopy, a dzieci zbierały pokłosie i nosiły wodę w glinianych dzbankach. Jaromir miał trzynaście lat i pierwszy raz kosił razem z dorosłymi – w rzędzie, krok w krok za ojcem, a ostrze w jego rękach świstało prawie tak równo jak u starych żeńców.
 Hanka pracowała na sąsiednim zagonie. Co jakiś czas prostowała się, ocierała czoło wierzchem dłoni i zerkała w jego stronę, a kiedy ich spojrzenia się spotykały, natychmiast odwracała głowę i z udawanym zapałem wracała do snopów. Jaromir nie wiedział, czemu za każdym razem robi mu się wtedy tak dziwnie gorąco – i to nie od słońca. # pokaz: hanka
 { figurka_u_staruchy:
     Ojciec prawie się nie odzywał. W samo południe zawsze kazał wszystkim zejść z pola, w cień, choćby żyto miało się osypać.
@@ -146,13 +146,8 @@ Hanka nie zrozumiała, ale schowała mak do medalika, który nosiła na szyi, i 
     -> rozdzial_szosty_ciag_dalszy
 
 
-// Koniec rozdziału szóstego — rozdział siódmy (Rusałki) do napisania.
+// Koniec rozdziału szóstego — dalej rozdział siódmy.
 === rozdzial_szosty_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału szóstego._ # dalej
--> rozdzial_siodmy_wkrotce
-
-=== rozdzial_siodmy_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_siodmy

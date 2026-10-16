@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- LittleVillage — tło „budowa chaty”: wrony (unoszą się)
+<!-- LittleVillage — tło „budowa tartaku”: wrony krążą nad lasem
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="110" height="44" viewBox="196 40 110 44">
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="32" viewBox="54 74 84 32">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
 <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
 </filter>
@@ -21,8 +25,8 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<path d="M206 56q6.0 -7.0 12.0 0q6.0 -7.0 12.0 0q-6.0 -3.0 -12.0 5.0q-6.0 -8.0 -12.0 -5.0z" fill="#000000" stroke-width="1"/>
-<path d="M250 70q4.8 -5.6 9.6 0q4.8 -5.6 9.6 0q-4.8 -2.4 -9.6 4.0q-4.8 -6.4 -9.6 -4.0z" fill="#000000" stroke-width="1"/>
-<path d="M282 50q4.2 -4.9 8.4 0q4.2 -4.9 8.4 0q-4.2 -2.1 -8.4 3.5q-4.2 -5.6 -8.4 -3.5z" fill="#000000" stroke-width="1"/>
+<path d="M62.7271573318618 87.96712371324581q2.7 -3.1 5.4 0q2.7 -3.1 5.4 0q-2.7 -1.4 -5.4 2.2q-2.7 -3.6 -5.4 -2.2z" fill="#000000" stroke-width="1"/>
+<path d="M79.92155126133929 86.8807967699852q2.7 -3.1 5.4 0q2.7 -3.1 5.4 0q-2.7 -1.4 -5.4 2.2q-2.7 -3.6 -5.4 -2.2z" fill="#000000" stroke-width="1"/>
+<path d="M95.06859912992716 96.21952106504837q2.7 -3.1 5.4 0q2.7 -3.1 5.4 0q-2.7 -1.4 -5.4 2.2q-2.7 -3.6 -5.4 -2.2z" fill="#000000" stroke-width="1"/>
 </g>
 </svg>

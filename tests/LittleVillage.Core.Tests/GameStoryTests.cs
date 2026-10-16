@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -778,6 +778,7 @@ public sealed class GameStoryTests
     private static readonly int[] Spring = [0, 0, 0, 0];                           // wstazka, obejrzenie, obietnica, kapliczka
     private static readonly int[] Sawmill = [0, 0, 0, 0];                          // tartak, ostrzezenie, zoladz, uboze
     private static readonly int[] Noon = [0, 0, 0, 0];                             // trzy zagadki, czy powiedziec ojcu
+    private static readonly int[] Bridge7 = [0];                                   // Zaduszki: chleb pod kapliczke
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1377,9 +1378,13 @@ public sealed class GameStoryTests
         var engine = CreateEngine();
         var pages = Play(engine, [.. CursedToSawmill, job]);
 
+        var years = On(pages, "budowa_tartaku")[0];
+        Assert.Equal("Rozdział piąty", years.Blocks[0].Text);
+        Assert.Equal("Tartak", years.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.True(Has([years], "Po tamtej wiośnie czas zaczął płynąć szybciej"));
+        Assert.Contains(years.Blocks, b => b.Reveal == "budowa");
         var mill = On(pages, "tartak");
-        Assert.Equal("Rozdział piąty", mill[0].Blocks[0].Text);
-        Assert.Equal("Tartak", mill[0].Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.StartsWith("Odkąd stanął tartak, w Zapadlinie nikt już nie zasypiał przy ciszy.", mill[0].Blocks[0].Text);
         Assert.True(Has([mill[0]], "wracali z zapłatą, jakiej wcześniej w Zapadlinie nie widywano"));
         Assert.True(Has([mill[0]], "wyprowadził go za płot bez słowa"));
         Assert.True(Has([mill[0]], "Burek wyrósł na dużego psa"));
@@ -1481,8 +1486,6 @@ public sealed class GameStoryTests
         var shrines = On(pages, "kapliczki_noc")[0];
         Assert.Contains(shrines.Blocks, b => b.Reveal == "jaromir" && b.Text.Contains("obchodził najbliższe kapliczki"));
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału szóstego._"));
-        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 
     [Fact]
@@ -1494,5 +1497,36 @@ public sealed class GameStoryTests
         Assert.False(Has(noon, "Południca chodzi po polach"));
         Assert.Equal(3, noon.Last().Choices.Count);
         Assert.DoesNotContain(noon.Last().Choices, c => c.Text.StartsWith("Ziarno"));
+    }
+
+    // ----- Rozdzial siodmy: pomosty od zniw do Zielonych Swiatek -----
+
+    [Theory]
+    [InlineData(0, "kapliczki_noc", "zielony liść dębu", true)]
+    [InlineData(1, "izba_noc", "wrzuciła je do pieca", false)]
+    public void Chapter_seven_bridges_autumn_all_souls_winter_and_easter(int bread, string background, string text, bool pact)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToNoon, 0, 0, 0, TellFather, bread]);
+
+        var autumn = On(pages, "wykopki")[0];
+        Assert.Equal("Rozdział siódmy", autumn.Blocks[0].Text);
+        Assert.Equal("Rusałki", autumn.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.True(Has([autumn], "Babie lato snuło się nad ścierniskami"));
+        Assert.Contains(autumn.Blocks, b => b.Reveal == "zmrok");
+        var allSouls = On(pages, "zaduszki")[0];
+        Assert.Contains(allSouls.Blocks, b => b.Reveal == "okruchy");
+        Assert.Equal(2, allSouls.Choices.Count);
+        Assert.True(Has(On(pages, background), text));
+        Assert.Equal(pact, System.Text.Json.JsonDocument.Parse(engine.SaveState()).RootElement.GetProperty("variablesState").TryGetProperty("chleb_dla_dziadow", out var v) && v.GetBoolean());
+        var winter = On(pages, "zima_przedzenie")[0];
+        Assert.True(Has([winter], "przez trzy miesiące we wsi panowała cisza"));
+        Assert.Contains(winter.Blocks, b => b.Reveal == "uboze");
+        var easter = On(pages, "wielkanoc")[0];
+        Assert.Contains(easter.Blocks, b => b.Reveal == "dyngus");
+        Assert.True(Has([easter], "Jaromir skończył czternaście lat"));
+        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.True(Has(On(pages, "zniwa"), "Jaromir miał trzynaście lat"));
     }
 }
