@@ -164,13 +164,8 @@ Chłopak pomyślał, że zostawił je pewnie jakiś jeleń szukający jedzenia. 
 -> rozdzial_drugi_ciag_dalszy
 
 
-// Koniec rozdziału drugiego — rozdział trzeci (Wigilia) do napisania.
+// Koniec rozdziału drugiego — dalej rozdział trzeci.
 === rozdzial_drugi_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału drugiego._ # dalej
--> rozdzial_trzeci_wkrotce
-
-=== rozdzial_trzeci_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_trzeci

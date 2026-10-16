@@ -1081,4 +1081,23 @@ public sealed class GameStoryTests
         Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
         Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
+
+    // ----- Rozdzial trzeci: Wigilia -----
+
+    [Theory]
+    [InlineData(Shout, "ktoś zna teraz jego głos")]
+    [InlineData(WalkFaster, "starał się nie odwracać głowy w stronę drzew")]
+    public void Chapter_three_opens_with_advent_lanterns_on_the_forest_path(int fog, string text)
+    {
+        var pages = Play(CreateEngine(), [.. PeacefulPrologue, .. Summer, fog, Defend, TakeBark, FetchRibbon, BorrowBook]);
+
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału drugiego._"));
+        var advent = On(pages, "roraty")[0];
+        Assert.Equal("Rozdział trzeci", advent.Blocks[0].Text);
+        Assert.Equal("Wigilia", advent.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.Contains(advent.Blocks, b => b.Text.Contains("dzieci szły do Bukowca na roraty"));
+        Assert.True(Has([advent], text));
+        Assert.Contains(advent.Blocks, b => b.Reveal == "antek" && b.Text.StartsWith("Antek coraz częściej zostawał w tyle."));
+        Assert.Equal(PageEnding.Continue, advent.Ending);
+    }
 }
