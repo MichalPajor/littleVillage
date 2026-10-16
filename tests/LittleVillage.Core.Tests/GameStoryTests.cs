@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -776,6 +776,7 @@ public sealed class GameStoryTests
     private static readonly int[] NoDogWinter = [AskHanka, LetIn, Answer, 0];      // bez psa: bez imienia
     private static readonly int[] DogWinter = [AskHanka, LetIn, 0, Answer, 0];     // z psem: imie, glos, kolyska
     private static readonly int[] Spring = [0, 0, 0, 0];                           // wstazka, obejrzenie, obietnica, kapliczka
+    private static readonly int[] Sawmill = [0, 0, 0, 0];                          // tartak, ostrzezenie, zoladz, uboze
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1354,6 +1355,82 @@ public sealed class GameStoryTests
         Assert.Contains(town.Blocks, b => b.Reveal == "odjazd" && b.Text.Contains("Będzie tartak."));
         Assert.Contains(town.Blocks, b => b.Reveal == "noc");
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału czwartego._"));
+        Assert.Equal("tartak", pages[^1].BackgroundKey);
+    }
+
+    // ----- Rozdzial piaty: Tartak -----
+
+    private const int JoinSawmill = 0, RefuseSawmill = 1;      // praca w tartaku
+    private const int WarnFranek = 0, KeepQuietOak = 1;        // ostrzezenie przed scieciem debu
+    private const int TakeAcorn = 0, LeaveAcorn = 1;           // zoladz spod debu
+    private const int FeedSprite = 0, ChaseSprite = 1, IgnoreSprite = 2; // uboze
+
+    private static readonly int[] PeacefulToSawmill = [.. PeacefulToSpring, KeepRibbon, DontLook, Promise, RaiseShrine];
+    private static readonly int[] CursedToSawmill = [.. CursedToSpring, KeepRibbon, DontLook, Promise, RaiseShrine];
+
+    [Theory]
+    [InlineData(JoinSawmill, "ognisko_tartak", "Las się upomni", true)]
+    [InlineData(RefuseSawmill, "pole_orka", "jakby liczył", false)]
+    public void Chapter_five_sawmill_work_or_the_field(int job, string background, string text, bool coins)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. CursedToSawmill, job]);
+
+        var mill = On(pages, "tartak");
+        Assert.Equal("Rozdział piąty", mill[0].Blocks[0].Text);
+        Assert.Equal("Tartak", mill[0].Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.True(Has([mill[0]], "wracali z zapłatą, jakiej wcześniej w Zapadlinie nie widywano"));
+        Assert.True(Has([mill[0]], "wyprowadził go za płot bez słowa"));
+        Assert.True(Has([mill[0]], "Burek wyrósł na dużego psa"));
+        Assert.Equal("Czy Jaromir pójdzie do tartaku?", mill[0].Question);
+        var summer = On(pages, background)[0];
+        Assert.True(Has([summer], text));
+        Assert.True(Has([summer], "trzy długie, świeże pręgi"));
+        Assert.Equal(coins, Inventory(engine).Contains("monety"));
+    }
+
+    [Theory]
+    [InlineData(WarnFranek, "Urbaniak wyrzucił go z roboty", "Dwaj tracze z tartaku", "Franek do niego nie wrócił.")]
+    [InlineData(KeepQuietOak, "widzi go takiego po raz ostatni", "Franek i stary Wawrzyniec", "coś go woła – cienkim, śpiewnym głosem")]
+    public void Chapter_five_old_oak_is_cut_down(int warn, string afterWarn, string cutters, string franek)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToSawmill, RefuseSawmill, warn, TakeAcorn, FeedSprite]);
+
+        var oak = On(pages, "stary_dab");
+        Assert.Contains(oak[0].Blocks, b => b.Reveal == "znak");
+        Assert.True(Has([oak[0]], "Stary Dąb na skraju boru – pisał nauczyciel"));
+        Assert.True(Has([oak[1]], afterWarn));
+
+        var cut = On(pages, "sciecie_debu");
+        Assert.True(Has([cut[0]], cutters));
+        Assert.Contains(cut[0].Blocks, b => b.Reveal == "sok");
+        Assert.Contains(cut[0].Blocks, b => b.Reveal == "upadek");
+        Assert.True(Has([cut[0]], "na sośnie przy ścieżce i na słupie kapliczki"));
+        Assert.Contains(cut[1].Blocks, b => b.Reveal == "zoladz");
+        Assert.Equal("Żołądź ze Starego Dębu", engine.GetInventory().Single(i => i.Id == "zoladz").Name);
+        Assert.True(Has(On(pages, "przed_zniwami"), franek));
+    }
+
+    [Theory]
+    [InlineData(FeedSprite, "mleko", "Pomogę, kiedy przyjdzie pora.")]
+    [InlineData(ChaseSprite, "myszy", "krowa przestała dawać mleko")]
+    [InlineData(IgnoreSprite, "slady", "maleńkie, kurze ślady")]
+    public void Chapter_five_household_sprite_behind_the_stove(int choice, string reveal, string text)
+    {
+        var pages = Play(CreateEngine(), [.. CursedToSawmill, RefuseSawmill, WarnFranek, LeaveAcorn, choice]);
+
+        var stove = On(pages, "uboze_piec");
+        Assert.Contains(stove[0].Blocks, b => b.Reveal == "uboze" && b.Text.Contains("czerwoną czapeczkę z opadającym czubkiem"));
+        Assert.True(Has([stove[0]], "co babka mówiła kiedyś o ubożętach"));
+        Assert.Equal(3, stove[0].Choices.Count);
+        Assert.Contains(stove[1].Blocks, b => b.Reveal != null && b.Reveal.Contains(reveal));
+        Assert.True(Has([stove[1]], text));
+
+        var harvest = On(pages, "przed_zniwami")[0];
+        Assert.Contains(harvest.Blocks, b => b.Reveal == "slady" && b.Text.Contains("ślady wielkich, bosych stóp"));
+        Assert.EndsWith("Zbliżały się żniwa.", harvest.Blocks[^1].Text);
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału piątego._"));
         Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
         Assert.Equal(PageEnding.End, pages[^1].Ending);
     }

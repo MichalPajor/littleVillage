@@ -94,3 +94,12 @@ VAR obejrzal_sie = false
 VAR obietnica_bor = false
 // Jaromir z Antkiem sami postawili przewróconą kapliczkę na skraju lasu (pakt z lasem).
 VAR kapliczka_podniesiona = false
+
+// ---------- Rozdział piąty (Tartak) ----------
+// Jaromir pracował latem w tartaku Urbaniaka (monety).
+VAR pracowal_w_tartaku = false
+// Jaromir nie ostrzegł Franka i to Franek ściął Stary Dąb — „krew” drzewa chlusnęła mu w twarz.
+VAR franek_scial_dab = false
+// Co Jaromir zrobił z ubożęciem za piecem: nakarmił (sojusznik), przegnał (bieda w obejściu) albo udał, że go nie widzi.
+LIST LosUbozecia = nakarmione, przegnane, zignorowane
+VAR uboze = ()

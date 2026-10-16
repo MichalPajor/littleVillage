@@ -133,12 +133,14 @@ public sealed class RevealTests
     // ----- strażnicy prawdziwej fabuły -----
 
     // Rozdzial drugi: kazdy ogon prologu i rozdzialu pierwszego konczy sie innym zestawem wyborow (wszystkie opcje choc raz).
-    private static readonly int[][] ChapterTwoTails = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0], [1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1]];
+    private static readonly int[][] ChapterTwoTails = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 2, 2, 2], [1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1]];
 
     private static readonly int[][] AllPaths =
         [.. new[] { 0, 1, 2 }.SelectMany(place => new[] { new[] { place, 1 }, [place, 0, 0], [place, 0, 1] })
             .SelectMany(path => new[] { new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 1, 1, 0, 0, 0, 0, 2, 1, 0], [1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1] }
-                .Select((tail, i) => path.Concat(tail).Concat(ChapterTwoTails[i]).ToArray()))];
+                .Select((tail, i) => path.Concat(tail).Concat(ChapterTwoTails[i]).ToArray())),
+            // spokojny prolog bez psa az do ubozecia, ktore Jaromir udaje, ze nie widzi (# pokaz: slady)
+            [0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 2]];
 
     private static IEnumerable<StoryPage> PlayAll()
     {
@@ -151,7 +153,8 @@ public sealed class RevealTests
             yield return page;
             while (page.Ending is not (PageEnding.End or PageEnding.Death))
             {
-                page = page.Ending == PageEnding.Choices ? engine.Choose(queue.Dequeue()) : engine.Continue();
+                // Ogon wyborow jest wspolny dla sciezek z psem i bez (inna liczba wyborow), wiec za duzy numer opcji przycinamy.
+                page = page.Ending == PageEnding.Choices ? engine.Choose(Math.Min(queue.Count > 0 ? queue.Dequeue() : 0, page.Choices.Count - 1)) : engine.Continue();
                 yield return page;
             }
         }

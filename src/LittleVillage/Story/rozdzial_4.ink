@@ -160,13 +160,8 @@ Tej nocy po raz pierwszy od lat z boru dobiegło wycie – długie, przeciągłe
 -> rozdzial_czwarty_ciag_dalszy
 
 
-// Koniec rozdziału czwartego — rozdział piąty (Tartak) do napisania.
+// Koniec rozdziału czwartego — dalej rozdział piąty.
 === rozdzial_czwarty_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału czwartego._ # dalej
--> rozdzial_piaty_wkrotce
-
-=== rozdzial_piaty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_piaty

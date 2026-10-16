@@ -492,6 +492,9 @@ public sealed class SceneBackgroundView : ContentView
                     view.TranslationX = animation.Dx * _scale * eased;
                     view.TranslationY = animation.Dy * _scale * eased;
                     break;
+                case LayerAnimationType.Spin:
+                    view.Rotation = animation.Amplitude * t;
+                    break;
                 case LayerAnimationType.Frames:
                     var index = Math.Min((int)(t * entry.Images.Count), entry.Images.Count - 1);
                     for (var i = 0; i < entry.Images.Count; i++)

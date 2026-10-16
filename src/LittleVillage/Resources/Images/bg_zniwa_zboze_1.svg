@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „przed żniwami”: dojrzałe zboże faluje
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="78 330 80 100">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M78 426C76 400 80 380 78 360" fill="none" stroke-width="1.3"/><ellipse cx="78" cy="354" rx="2.4" ry="7" fill="url(#hatchDense)" stroke-width="1"/>
+<path d="M86 426C84 400 88 380 86 360" fill="none" stroke-width="1.3"/><ellipse cx="86" cy="354" rx="2.4" ry="7" fill="url(#hatchDense)" stroke-width="1"/>
+<path d="M94 426C92 400 96 380 94 360" fill="none" stroke-width="1.3"/><ellipse cx="94" cy="354" rx="2.4" ry="7" fill="url(#hatchDense)" stroke-width="1"/>
+<path d="M102 426C100 400 104 380 102 360" fill="none" stroke-width="1.3"/><ellipse cx="102" cy="354" rx="2.4" ry="7" fill="url(#hatchDense)" stroke-width="1"/>
+<path d="M110 426C108 400 112 380 110 360" fill="none" stroke-width="1.3"/><ellipse cx="110" cy="354" rx="2.4" ry="7" fill="url(#hatchDense)" stroke-width="1"/>
+<path d="M118 426C116 400 120 380 118 360" fill="none" stroke-width="1.3"/><ellipse cx="118" cy="354" rx="2.4" ry="7" fill="url(#hatchDense)" stroke-width="1"/>
+<path d="M126 426C124 400 128 380 126 360" fill="none" stroke-width="1.3"/><ellipse cx="126" cy="354" rx="2.4" ry="7" fill="url(#hatchDense)" stroke-width="1"/>
+<path d="M134 426C132 400 136 380 134 360" fill="none" stroke-width="1.3"/><ellipse cx="134" cy="354" rx="2.4" ry="7" fill="url(#hatchDense)" stroke-width="1"/>
+<path d="M142 426C140 400 144 380 142 360" fill="none" stroke-width="1.3"/><ellipse cx="142" cy="354" rx="2.4" ry="7" fill="url(#hatchDense)" stroke-width="1"/>
+<path d="M150 426C148 400 152 380 150 360" fill="none" stroke-width="1.3"/><ellipse cx="150" cy="354" rx="2.4" ry="7" fill="url(#hatchDense)" stroke-width="1"/>
+</g>
+</svg>

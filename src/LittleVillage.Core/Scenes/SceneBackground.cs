@@ -66,6 +66,9 @@ public enum LayerAnimationType
 
     /// <summary>Klatki — warstwa przełącza obrazki z <see cref="BackgroundLayer.Frames"/> (bieg, dziobanie, chlapanie).</summary>
     Frames,
+
+    /// <summary>Obrót ciągły wokół punktu zaczepienia — koło wodne, kołowrotek. Amplituda = stopnie na cykl (360 = pełny obrót, ujemna = w lewo).</summary>
+    Spin,
 }
 
 /// <summary>Parametry animacji warstwy.</summary>

@@ -313,7 +313,7 @@ E_ANIM = {"plomien": {"type": "flame", "amplitude": 0.15, "duration": 800, "anch
           "blask": {"type": "flicker", "amplitude": 0.6, "duration": 1600},
           "ojciec": {"type": "bob", "amplitude": 0.5, "duration": 3000}, "jaromir": {"type": "bob", "amplitude": 0.5, "duration": 2400},
           "matka": {"type": "sway", "amplitude": 1.5, "duration": 1500, "anchorX": 0.5, "anchorY": 1},
-          "kolo": {"type": "arc", "amplitude": 0, "dx": 0, "dy": 0, "spin": 360, "duration": 1200},
+          "kolo": {"type": "spin", "amplitude": 360, "duration": 1200, "anchorX": 0.5, "anchorY": 0.5},
           "cmy": {"type": "wander", "amplitude": 14, "flap": 0.5, "duration": 3400}}
 E_EXTRA = {"plomien": {"noInvert": True}, "przod": {"depth": 1.0}}
 E_COMMENTS = {"tlo": "izba wieczorem: okno w nocy, stół z kagankiem", "plomien": "płomień kaganka (czerwony)", "blask": "blask kaganka (migocze)",

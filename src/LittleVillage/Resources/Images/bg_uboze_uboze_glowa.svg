@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „ubożę przy piecu”: ubożę przy piecu — glowa (rysunek autora; # pokaz: uboze, znika przy # pokaz: zniknal)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="114" viewBox="155 196 65 114">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.25000 0.00000 0.00000 0.25000 150.00000 176.00000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="glowa" data-anim="obrot" data-origin="150,248" data-range="4deg" data-period="2.4">
+<path d="M96 186C86 180 82 196 88 204C92 210 98 208 100 204Z" fill="#EDEBE6" stroke-width="3"/>
+<path d="M204 186C214 180 218 196 212 204C208 210 202 208 200 204Z" fill="#EDEBE6" stroke-width="3"/>
+<path d="M100 196C98 156 120 128 150 128C180 128 202 156 200 196C200 222 186 244 150 248C114 244 100 222 100 196Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M186 160C198 180 198 212 186 232C178 240 168 244 160 246C180 230 188 200 186 160Z" fill="url(#hatch)" stroke="none"/>
+<path d="M116 170C124 166 132 166 138 170M162 170C170 166 178 166 186 170M120 154C130 150 140 150 146 154" fill="none" stroke-width="1.4"/>
+<path d="M114 182C120 172 132 170 140 176M162 176C170 170 182 172 188 182" fill="none" stroke-width="4"/>
+<!-- oczy: wąskie, wesołe (łuki); mruganie = zamiana na kreskę (skala Y 1→0.2) co 3–5 s, origin 152,190; puszczanie oczka = tylko prawe oko -->
+<g id="oczy" data-anim="mruganie" data-origin="152,190" data-range="1-0.2" data-period="3-5">
+<path d="M120 192C124 184 134 184 138 192" fill="none" stroke-width="3.2"/>
+<path d="M164 192C168 184 178 184 182 192" fill="none" stroke-width="3.2"/>
+<circle cx="129" cy="190" r="2" fill="#000000"/><circle cx="173" cy="190" r="2" fill="#000000"/>
+</g>
+<path d="M114 194l-6 2M114 198l-5 5M188 194l6 2M188 198l5 5" fill="none" stroke-width="1.4"/>
+<path d="M150 186C140 190 136 208 140 220C144 230 162 232 168 222C172 212 166 196 158 188Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M158 196C164 204 166 214 162 222" fill="none" stroke-width="1.4"/>
+<path d="M144 222C146 226 150 226 152 224M158 224C160 226 164 226 166 222" fill="none" stroke-width="1.6"/>
+<path d="M118 206C122 210 128 212 134 212M168 212C174 212 180 210 184 206" fill="none" stroke-width="1.4"/>
+<path d="M120 236C128 226 140 224 152 230C164 224 176 226 184 236C176 242 164 242 152 238C140 242 128 242 120 236Z" fill="#FFFFFF" stroke-width="2.6"/>
+<path d="M128 234C136 232 144 232 150 234M154 234C160 232 168 232 176 234" fill="none" stroke-width="1.1"/>
+<path d="M140 240C146 246 158 246 164 240" fill="none" stroke-width="2"/>
+</g>
+</g>
+</g></g>
+</svg>
