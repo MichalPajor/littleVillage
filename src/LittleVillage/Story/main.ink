@@ -10,5 +10,6 @@ INCLUDE prolog_miasto.ink
 INCLUDE rozdzial_1.ink
 INCLUDE rozdzial_2.ink
 INCLUDE rozdzial_3.ink
+INCLUDE rozdzial_4.ink
 
 -> prolog

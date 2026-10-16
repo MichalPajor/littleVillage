@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -754,6 +754,9 @@ public sealed class GameStoryTests
     private static readonly int[] Summer = [RunOut, Contest, Shell, FirstOption, PlayOn];
     private static readonly int[] School = [Shout, Defend, TakeBark, FetchRibbon, BorrowBook];
     private static readonly int[] Winter = [AskHanka, LetIn, 0, 0, 0];  // imie psa (gdy jest), glos z boru, kolyska
+    private static readonly int[] NoDogWinter = [AskHanka, LetIn, Answer, 0];      // bez psa: bez imienia
+    private static readonly int[] DogWinter = [AskHanka, LetIn, 0, Answer, 0];     // z psem: imie, glos, kolyska
+    private static readonly int[] Spring = [0, 0, 0, 0];                           // wstazka, obejrzenie, obietnica, kapliczka
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1229,8 +1232,110 @@ public sealed class GameStoryTests
         Assert.Contains(christmas.Blocks, b => b.Reveal == "hanka");
         Assert.EndsWith("Ktoś musi jej wskazać drogę.", christmas.Blocks[^1].Text);
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału trzeciego._"));
+        Assert.Equal("stodola_marzanna", pages[^1].BackgroundKey);
+        Assert.DoesNotContain("mak", Inventory(engine));
+    }
+
+    // ----- Rozdzial czwarty: Marzanna -----
+
+    private const int TieRibbon = 0, KeepRibbon = 1;     // wstazka Hanki dla Marzanny
+    private const int LookBack = 0, DontLook = 1;        // za topiona Marzanna
+    private const int Promise = 0, StaySilent = 1;       // obietnica: nigdy do boru
+    private const int RaiseShrine = 0, FetchAdults = 1;  // przewrocona kapliczka
+
+    private static readonly int[] PeacefulToSpring = [.. PeacefulPrologue, .. Summer, .. School, .. NoDogWinter];
+    private static readonly int[] CursedToSpring = [.. CursedPrologue, .. Summer, .. School, .. DogWinter];
+    private static readonly int[] OrphanToSpring = [Marsh, Stay, StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToWitch, KeepQuiet, .. Summer, .. School, .. NoDogWinter];
+
+    [Theory]
+    [InlineData(TieRibbon, "wstazka", "Czerwień na szarej słomie wyglądała jak rana.")]
+    [InlineData(KeepRibbon, null, "schowała wstążkę do kieszeni fartucha")]
+    public void Chapter_four_making_marzanna_with_hankas_ribbon(int ribbon, string? reveal, string text)
+    {
+        var pages = Play(CreateEngine(), [.. PeacefulToSpring, ribbon]);
+
+        var barn = On(pages, "stodola_marzanna");
+        Assert.Equal("Rozdział czwarty", barn[0].Blocks[0].Text);
+        Assert.Equal("Marzanna", barn[0].Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.Contains(barn[0].Blocks, b => b.Text.StartsWith("Zima trzymała długo") && b.Text.Contains("kapać z dachów"));
+        Assert.Contains(barn[0].Blocks, b => b.Reveal == "kukla");
+        Assert.True(Has([barn[0]], "długie palce starca w półmroku boru"));
+        Assert.Equal("Czy Hanka odda Marzannie wstążkę?", barn[0].Question);
+        Assert.True(Has([barn[1]], text));
+        Assert.Equal(reveal != null, barn[1].Blocks.Any(b => b.Reveal == "wstazka"));
+    }
+
+    [Theory]
+    [InlineData(TieRibbon, LookBack, "reka", "Pazury powoli nawijały na siebie czerwoną wstążkę.")]
+    [InlineData(KeepRibbon, LookBack, "reka", "Tej nocy dostał gorączki.")]
+    [InlineData(TieRibbon, DontLook, "chichot", "z rozplecionym warkoczem")]
+    [InlineData(KeepRibbon, DontLook, "chichot", "Długo jeszcze żadne z nich nie odezwało się słowem.")]
+    public void Chapter_four_drowning_marzanna_something_pulls_her_under(int ribbon, int look, string reveal, string text)
+    {
+        var pages = Play(CreateEngine(), [.. PeacefulToSpring, ribbon, look]);
+
+        var pond = On(pages, "rozlewisko");
+        Assert.Contains(pond[0].Blocks, b => b.Text == "„Marzanno, Marzanno, zimowa panienko,");
+        Assert.Contains(pond[0].Blocks, b => b.Reveal == "rzut");
+        Assert.Contains(pond[0].Blocks, b => b.Reveal == "tonie" && b.Text.Contains("jakby ktoś szarpnął ją od spodu"));
+        Assert.Contains(pond[0].Blocks, b => b.Reveal == "ucieczka");
+        Assert.True(Has([pond[0]], "W księdze pana Ignacego czytał"));
+        Assert.Contains(pond[1].Blocks, b => b.Reveal == reveal);
+        Assert.True(Has([pond[1]], text));
+        Assert.Equal(ribbon == KeepRibbon || look == DontLook, !Has([pond[1]], "Pazury powoli nawijały"));
+    }
+
+    [Fact]
+    public void Chapter_four_dying_grandmother_tells_the_truth_and_gives_the_flint()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. CursedToSpring, TieRibbon, DontLook, Promise]);
+
+        var bed = On(pages, "babka_lozko");
+        Assert.StartsWith("Tej wiosny babka Marianna już nie wstała.", bed[0].Blocks[0].Text);
+        Assert.Contains(bed[0].Blocks, b => b.Reveal == "siekiera");
+        Assert.Contains(bed[0].Blocks, b => b.Reveal == "krzesiwo" && b.Text.Contains("małe, poczerniałe krzesiwo"));
+        Assert.Equal("Czy Jaromir obieca?", bed[0].Question);
+        Assert.Contains(bed[1].Blocks, b => b.Reveal == "swieca" && b.Text.StartsWith("Marianna zmarła kilka dni później, w Wielki Czwartek."));
+        Assert.Contains("Babka Marianna oddała je Jaromirowi", engine.GetInventory().Single(i => i.Id == "krzesiwo").Description);
+    }
+
+    [Theory]
+    [InlineData(true, "prog_noc", "Dlatego sprawdzam rygiel.", Promise, "jak ciężko przyjdzie mu kiedyś dotrzymać tego słowa")]
+    [InlineData(false, "izba_wieczor", "„Pilnuj kapliczek, Dobruś. To nie były bajki”.", StaySilent, "Ojciec długo patrzył mu w oczy")]
+    public void Chapter_four_father_tells_the_truth(bool orphan, string background, string text, int promise, string answer)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. orphan ? OrphanToSpring : PeacefulToSpring, KeepRibbon, DontLook, promise]);
+
+        var talk = On(pages, background);
+        Assert.True(Has([talk[0]], text));
+        Assert.Contains(talk[0].Blocks, b => b.Text == "– Obiecaj mi jedno – poprosił. – Że nigdy nie wejdziesz do boru. Choćby nie wiem kto cię wołał.");
+        Assert.True(Has([talk[1]], answer));
+        Assert.DoesNotContain(pages, p => p.BackgroundKey == "babka_lozko");
+        Assert.DoesNotContain("krzesiwo", Inventory(engine));
+    }
+
+    [Theory]
+    [InlineData(RaiseShrine, "podniesiona", "Dobrze zrobiliście")]
+    [InlineData(FetchAdults, "latarnia", "Ktoś tu nie chce kapliczek")]
+    public void Chapter_four_overturned_shrine_and_the_men_from_town(int shrine, string reveal, string text)
+    {
+        var pages = Play(CreateEngine(), [.. CursedToSpring, TieRibbon, DontLook, Promise, shrine]);
+
+        var chapel = On(pages, "kapliczka_przewrocona");
+        Assert.StartsWith("Po Wielkanocy ziemia obeschła", chapel[0].Blocks[0].Text);
+        Assert.Contains(chapel[0].Blocks, b => b.Reveal == "spirala");
+        Assert.Contains(chapel[0].Blocks, b => b.Reveal == "pies" && b.Text.StartsWith("Burek zjeżył sierść"));
+        Assert.Contains(chapel[1].Blocks, b => b.Reveal == reveal);
+        Assert.True(Has([chapel[1]], text));
+
+        var town = On(pages, "urbaniak")[0];
+        Assert.Contains(town.Blocks, b => b.Reveal == "znaki" && b.Text.Contains("wycinali na korze dębów białe znaki"));
+        Assert.Contains(town.Blocks, b => b.Reveal == "odjazd" && b.Text.Contains("Będzie tartak."));
+        Assert.Contains(town.Blocks, b => b.Reveal == "noc");
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału czwartego._"));
         Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
         Assert.Equal(PageEnding.End, pages[^1].Ending);
-        Assert.DoesNotContain("mak", Inventory(engine));
     }
 }

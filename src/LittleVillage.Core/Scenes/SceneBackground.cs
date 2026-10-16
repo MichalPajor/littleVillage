@@ -138,7 +138,7 @@ public sealed record BackgroundLayer
 
     /// <summary>
     /// Nazwa odsłonięcia, przy którym warstwa znika (przenikaniem) — np. nauczyciel schodzi z biurka,
-    /// gdy ten sam tekst odsłania go przy oknie.
+    /// gdy ten sam tekst odsłania go przy oknie. Kilka nazw po przecinku — znika przy pierwszej z nich.
     /// </summary>
     public string? HideOn { get; init; }
 

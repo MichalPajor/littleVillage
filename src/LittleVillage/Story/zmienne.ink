@@ -73,3 +73,17 @@ VAR ksiega_zatrzymana = false
 // Jak Jaromir przegonił północnicę znad kołyski Zosi: nożykiem (zostaje w kołysce), makiem z księgi albo krzykiem (wracała).
 LIST KoniecPolnocnicy = przegnana_nozem, policzyla_mak, uslyszala_krzyk
 VAR polnocnica = ()
+
+// ---------- Rozdział czwarty (Marzanna) ----------
+// Czy Maciek miał na końcu prologu krzesiwo (ustawiane na starcie rozdziału 1, zanim ekwipunek zostanie wyczyszczony).
+VAR krzesiwo_dziadka = false
+// Babka Marianna oddała Jaromirowi krzesiwo dziadka.
+VAR krzesiwo_od_babki = false
+// Hanka przywiązała swoją czerwoną wstążkę do Marzanny (zabrało ją to coś z wody).
+VAR wstazka_marzanny = false
+// Jaromir obejrzał się za topioną Marzanną (zobaczył rękę i ślepia, trzy dni gorączki).
+VAR obejrzal_sie = false
+// Jaromir obiecał, że nigdy nie wejdzie do boru.
+VAR obietnica_bor = false
+// Jaromir z Antkiem sami postawili przewróconą kapliczkę na skraju lasu (pakt z lasem).
+VAR kapliczka_podniesiona = false

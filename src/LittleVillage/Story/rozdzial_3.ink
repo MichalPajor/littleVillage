@@ -203,13 +203,8 @@ Kiedy opowiedział o wszystkim Hance, dziewczynka spoważniała i długo milcza�
 -> rozdzial_trzeci_ciag_dalszy
 
 
-// Koniec rozdziału trzeciego — rozdział czwarty (Marzanna) do napisania.
+// Koniec rozdziału trzeciego — dalej rozdział czwarty.
 === rozdzial_trzeci_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału trzeciego._ # dalej
--> rozdzial_czwarty_wkrotce
-
-=== rozdzial_czwarty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_czwarty

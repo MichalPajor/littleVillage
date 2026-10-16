@@ -8,6 +8,8 @@
 // ------------------------------------------------------------
 
 === rozdzial_pierwszy ===
+// Czy Maciek miał krzesiwo — babka Marianna może je oddać wnukowi w rozdziale 4.
+~ krzesiwo_dziadka = ekwipunek ? krzesiwo
 // Nowy bohater — Jaromir zaczyna z pustym tobołkiem (przedmioty Maćka zostają w prologu).
 ~ ekwipunek = ()
 # tlo: zapadlina_lato

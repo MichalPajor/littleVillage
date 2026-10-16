@@ -35,7 +35,11 @@ VAR ekwipunek = (siekiera, chleb)
     - chleb:     ~ return "Twardy, razowy, owinięty w lnianą szmatkę. Musi starczyć na długo."
     - pies_towarzysz: ~ return "Chudy, z długim pyskiem i za dużymi łapami. Obronił Maćka przed stworem z zarośli i od tamtej nocy nie odstępuje go na krok."
     - figurka:   ~ return "Mała drewniana postać z rękami sięgającymi do stóp, nadpalona z jednej strony. Wygrzebana z popiołu po chacie wiedźmy."
-    - krzesiwo:  ~ return "Leżało w popiele obok figurki. Czyżby to nim podpalono chatę wiedźmy?"
+    - krzesiwo:
+        { krzesiwo_od_babki:
+            ~ return "Małe, poczerniałe krzesiwo dziadka Maćka. Babka Marianna oddała je Jaromirowi na łożu śmierci – leżało w popiele razem z figurką, a dziadek nie rozstawał się z nim do końca."
+        }
+        ~ return "Leżało w popiele obok figurki. Czyżby to nim podpalono chatę wiedźmy?"
     - zapasy:
         { figurka_u_staruchy:
             ~ return "Dwa bochenki chleba, worek kaszy, sól, kawałek słoniny i kosz sadzeniaków. Kupione za monety od staruchy."

@@ -133,7 +133,7 @@ public sealed class RevealTests
     // ----- strażnicy prawdziwej fabuły -----
 
     // Rozdzial drugi: kazdy ogon prologu i rozdzialu pierwszego konczy sie innym zestawem wyborow (wszystkie opcje choc raz).
-    private static readonly int[][] ChapterTwoTails = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1]];
+    private static readonly int[][] ChapterTwoTails = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0], [1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1]];
 
     private static readonly int[][] AllPaths =
         [.. new[] { 0, 1, 2 }.SelectMany(place => new[] { new[] { place, 1 }, [place, 0, 0], [place, 0, 1] })
@@ -190,7 +190,7 @@ public sealed class RevealTests
 
             foreach (var layer in catalog.Resolve(key)!.Layers.Where(l => l.HideOn is not null))
             {
-                Assert.True(revealed.Contains(layer.HideOn!),
+                Assert.True(RevealList.Split(layer.HideOn).All(revealed.Contains),
                     $"Warstwa „{layer.Image}” na tle „{key}” znika przy „# pokaz: {layer.HideOn}”, którego fabuła na tym tle nie używa.");
             }
         }

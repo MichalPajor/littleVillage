@@ -1,3 +1,4 @@
+using LittleVillage.Core.Story;
 using LittleVillage.Core.Scenes;
 using Microsoft.Maui.Devices.Sensors;
 
@@ -316,10 +317,11 @@ public sealed class SceneBackgroundView : ContentView
             foreach (var entry in _layers)
             {
                 // Znikające przy odsłonięciu: już doczytane — od razu schowane, inaczej widoczne jak zwykle.
-                if (entry.Layer.HideOn is { } hideOn && entry.Layer.RevealOn is null)
+                var hiddenBy = HiddenBy(entry.Layer, visible);
+                if (entry.Layer.HideOn is not null && entry.Layer.RevealOn is null)
                 {
                     entry.Holder.AbortAnimation(HideName);
-                    entry.Holder.Opacity = visible.Contains(hideOn) ? 0 : StartsHidden(entry.Layer) ? entry.Holder.Opacity : 1;
+                    entry.Holder.Opacity = hiddenBy ? 0 : StartsHidden(entry.Layer) ? entry.Holder.Opacity : 1;
                 }
 
                 if (entry.Layer.RevealOn is not { } name)
@@ -332,7 +334,7 @@ public sealed class SceneBackgroundView : ContentView
                 entry.Shown = revealed;
 
                 // Odsłonięte na wcześniejszej stronie: od razu stan końcowy (to, co miało zniknąć, już zniknęło).
-                entry.Holder.Opacity = revealed && entry.Layer.HideAfter == 0 ? 1 : 0;
+                entry.Holder.Opacity = revealed && entry.Layer.HideAfter == 0 && !hiddenBy ? 1 : 0;
                 if (entry.Layer.Animation is { Once: true } once)
                 {
                     entry.View.AbortAnimation(AnimationName);
@@ -350,7 +352,7 @@ public sealed class SceneBackgroundView : ContentView
                     Show(entry);
                 }
 
-                if (string.Equals(entry.Layer.HideOn, name, StringComparison.OrdinalIgnoreCase) && entry.Holder.Opacity > 0)
+                if (RevealList.Split(entry.Layer.HideOn).Contains(name, StringComparer.OrdinalIgnoreCase) && entry.Holder.Opacity > 0)
                 {
                     var from = entry.Holder.Opacity;
                     entry.Holder.AbortAnimation(TimelineName);
@@ -359,6 +361,10 @@ public sealed class SceneBackgroundView : ContentView
                 }
             }
         }
+
+        /// <summary>Warstwa znika przy którymś z już doczytanych odsłonięć (hideOn może wymieniać kilka nazw po przecinku).</summary>
+        private static bool HiddenBy(BackgroundLayer layer, HashSet<string> visible) =>
+            RevealList.Split(layer.HideOn).Any(visible.Contains);
 
         private static bool StartsHidden(BackgroundLayer layer) => layer.RevealOn is not null || layer.AppearAfter > 0;
 

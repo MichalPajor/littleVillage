@@ -1015,6 +1015,159 @@
         {"image": "bg_koledy_platki_1.png", "x": 0, "y": 40, "width": 390, "height": 260, "animation": {"type": "rise", "amplitude": -140, "duration": 7000, "phase": 0.5}},
         {"image": "bg_koledy_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
       ]
+    },
+    "stodola_marzanna": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_stodola_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_stodola_smuga.png", "x": 150, "y": 90, "width": 222, "height": 210, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 6500}},
+        {"image": "bg_stodola_pylki_0.png", "x": 170, "y": 110, "width": 110, "height": 150, "animation": {"type": "wander", "amplitude": 6, "duration": 7000, "phase": 0.0}},
+        {"image": "bg_stodola_pylki_1.png", "x": 200, "y": 130, "width": 90, "height": 140, "animation": {"type": "wander", "amplitude": 6, "duration": 7000, "phase": 0.5}},
+        {"image": "bg_stodola_krople.png", "x": 290, "y": 100, "width": 76, "height": 30, "animation": {"type": "rise", "amplitude": -150, "duration": 1800, "phase": 0.0}},
+        {"image": "bg_stodola_golab_0.png", "x": 54, "y": 103, "width": 27, "height": 23, "animation": {"type": "sway", "amplitude": 6, "duration": 2600, "anchorX": 0.4, "anchorY": 0.9}},
+        {"image": "bg_stodola_golab_1.png", "x": 224, "y": 104, "width": 25, "height": 22, "animation": {"type": "sway", "amplitude": 6, "duration": 2600, "anchorX": 0.4, "anchorY": 0.9, "phase": 0.5}},
+        {"image": "bg_stodola_kukla.png", "x": 154, "y": 150, "width": 60, "height": 150, "animation": {"type": "sway", "amplitude": 1.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_stodola_stroj.png", "x": 150, "y": 150, "width": 70, "height": 136, "animation": {"type": "sway", "amplitude": 1.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1}, "revealOn": "kukla", "fadeDuration": 2000},
+        {"image": "bg_stodola_wstazka.png", "x": 172, "y": 194, "width": 26, "height": 20, "animation": {"type": "sway", "amplitude": 6, "duration": 900, "anchorX": 0.5, "anchorY": 0.3}, "revealOn": "wstazka", "noInvert": true, "fadeDuration": 1500},
+        {"image": "bg_stodola_dzieci.png", "x": 90, "y": 220, "width": 210, "height": 90, "animation": {"type": "bob", "amplitude": 0.8, "duration": 1500}, "depth": 0.6},
+        {"image": "bg_stodola_kury_0.png", "x": 40, "y": 314, "width": 34, "height": 26, "animation": {"type": "sway", "amplitude": 14, "duration": 1300, "anchorX": 0.3, "anchorY": 1}},
+        {"image": "bg_stodola_kury_1.png", "x": 300, "y": 318, "width": 34, "height": 26, "animation": {"type": "sway", "amplitude": 12, "duration": 1700, "anchorX": 0.7, "anchorY": 1, "phase": 0.3}},
+        {"image": "bg_stodola_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
+    },
+    "rozlewisko": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_rozlewisko_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_rozlewisko_wrony.png", "x": 54, "y": 124, "width": 102, "height": 32, "animation": {"type": "wander", "amplitude": 40, "flap": 0.55, "duration": 6200, "phase": 0.0}},
+        {"image": "bg_rozlewisko_mgla.png", "x": -30, "y": 210, "width": 450, "height": 60, "animation": {"type": "drift", "amplitude": 12, "duration": 14000}},
+        {"image": "bg_rozlewisko_kry.png", "x": 180, "y": 290, "width": 120, "height": 40, "animation": {"type": "drift", "amplitude": 8, "duration": 9000}},
+        {"image": "bg_rozlewisko_ogniki.png", "x": 140, "y": 214, "width": 220, "height": 30, "animation": {"type": "flicker", "amplitude": 0.1, "duration": 1900}, "revealOn": "chichot"},
+        {"image": "bg_rozlewisko_slepia.png", "x": 270, "y": 236, "width": 30, "height": 12, "animation": {"type": "blink", "duration": 3800}, "revealOn": "reka", "noInvert": true, "fadeDuration": 1200, "hideAfter": 5200},
+        {"image": "bg_rozlewisko_reka.png", "x": 226, "y": 230, "width": 60, "height": 80, "animation": {"type": "slide", "dy": -14, "dx": 0, "duration": 1800, "once": true}, "revealOn": "reka", "fadeDuration": 800, "hideAfter": 5200},
+        {"image": "bg_rozlewisko_lot.png", "x": 126, "y": 290, "width": 26, "height": 54, "animation": {"type": "arc", "amplitude": 60, "dx": 112, "dy": -18, "spin": 300, "duration": 1600, "once": true}, "revealOn": "rzut", "fadeDuration": 100, "hideOn": "tonie"},
+        {"image": "bg_rozlewisko_krag_0.png", "x": 230, "y": 283.7, "width": 40, "height": 16.6, "animation": {"type": "ripple", "amplitude": 1.2, "duration": 1600, "anchorX": 0.5, "anchorY": 0.5, "phase": 0.0}, "revealOn": "tonie"},
+        {"image": "bg_rozlewisko_krag_1.png", "x": 218, "y": 279.5, "width": 64, "height": 25.0, "animation": {"type": "ripple", "amplitude": 1.2, "duration": 1900, "anchorX": 0.5, "anchorY": 0.5, "phase": 0.3}, "revealOn": "tonie"},
+        {"image": "bg_rozlewisko_krag_2.png", "x": 204, "y": 274.6, "width": 92, "height": 34.8, "animation": {"type": "ripple", "amplitude": 1.2, "duration": 2200, "anchorX": 0.5, "anchorY": 0.5, "phase": 0.6}, "revealOn": "tonie"},
+        {"image": "bg_rozlewisko_babelki.png", "x": 236, "y": 270, "width": 30, "height": 26, "animation": {"type": "rise", "amplitude": 24, "duration": 1500}, "revealOn": "tonie"},
+        {"image": "bg_rozlewisko_trzciny.png", "x": 90, "y": 260, "width": 60, "height": 50, "animation": {"type": "sway", "amplitude": 4, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 0.7},
+        {"image": "bg_rozlewisko_dzieci.png", "x": 0, "y": 330, "width": 180, "height": 90, "animation": {"type": "bob", "amplitude": 0.8, "duration": 1100}, "hideOn": "ucieczka", "fadeDuration": 400},
+        {"image": "bg_rozlewisko_franek.png", "x": 90, "y": 290, "width": 70, "height": 120, "animation": {"type": "sway", "amplitude": 3, "duration": 1400, "anchorX": 0.4, "anchorY": 1}, "hideOn": "rzut", "fadeDuration": 200},
+        {"image": "bg_rozlewisko_franek_rzuca.png", "x": 90, "y": 330, "width": 50, "height": 80, "revealOn": "rzut", "fadeDuration": 200, "hideOn": "ucieczka"},
+        {"image": "bg_rozlewisko_bieg_0.png", "x": 0, "y": 330, "width": 200, "height": 90, "animation": {"type": "frames", "duration": 320}, "revealOn": "ucieczka", "frames": ["bg_rozlewisko_bieg_0.png", "bg_rozlewisko_bieg_1.png"], "fadeDuration": 400},
+        {"image": "bg_rozlewisko_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
+    },
+    "babka_lozko": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_babka_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_babka_smuga.png", "x": 170, "y": 140, "width": 140, "height": 160, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 6500}},
+        {"image": "bg_babka_pylki.png", "x": 190, "y": 150, "width": 100, "height": 140, "animation": {"type": "wander", "amplitude": 6, "duration": 7000, "phase": 0.0}},
+        {"image": "bg_babka_chmurki.png", "x": 242, "y": 72, "width": 66, "height": 30, "animation": {"type": "drift", "amplitude": 4, "duration": 12000}},
+        {"image": "bg_babka_babka.png", "x": 100, "y": 220, "width": 60, "height": 40, "animation": {"type": "bob", "amplitude": 0.4, "duration": 4200}, "hideOn": "swieca", "fadeDuration": 3000},
+        {"image": "bg_babka_swieczka.png", "x": 212, "y": 226, "width": 14, "height": 26},
+        {"image": "bg_babka_plomyk.png", "x": 214, "y": 224, "width": 10, "height": 16, "animation": {"type": "flame", "amplitude": 0.15, "duration": 800, "anchorX": 0.5, "anchorY": 1}, "noInvert": true, "hideOn": "swieca"},
+        {"image": "bg_babka_siekiera.png", "x": 262, "y": 236, "width": 60, "height": 64, "revealOn": "siekiera", "fadeDuration": 2000},
+        {"image": "bg_babka_blysk.png", "x": 300, "y": 232, "width": 20, "height": 20, "animation": {"type": "flicker", "amplitude": 0.1, "duration": 2200}, "revealOn": "siekiera"},
+        {"image": "bg_babka_krzesiwo.png", "x": 140, "y": 236, "width": 30, "height": 22, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 2600}, "revealOn": "krzesiwo"},
+        {"image": "bg_babka_gromnica.png", "x": 180, "y": 190, "width": 20, "height": 62, "revealOn": "swieca"},
+        {"image": "bg_babka_gromnica_plomien.png", "x": 184, "y": 186, "width": 12, "height": 18, "animation": {"type": "flame", "amplitude": 0.15, "duration": 900, "anchorX": 0.5, "anchorY": 1}, "revealOn": "swieca", "noInvert": true},
+        {"image": "bg_babka_dymek.png", "x": 184, "y": 150, "width": 16, "height": 40, "animation": {"type": "rise", "amplitude": 20, "duration": 3200}, "revealOn": "swieca"},
+        {"image": "bg_babka_jaromir.png", "x": 300, "y": 220, "width": 50, "height": 84, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2400}},
+        {"image": "bg_babka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
+    },
+    "prog_noc": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_prog_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_prog_gwiazdy.png", "x": 180, "y": 10, "width": 200, "height": 150, "animation": {"type": "flicker", "amplitude": 0.15, "duration": 3600}},
+        {"image": "bg_prog_dym.png", "x": 130, "y": 50, "width": 30, "height": 50, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_prog_mgla.png", "x": 180, "y": 236, "width": 230, "height": 30, "animation": {"type": "drift", "amplitude": 10, "duration": 13000}},
+        {"image": "bg_prog_sowa.png", "x": 285, "y": 261, "width": 30, "height": 35},
+        {"image": "bg_prog_sowa_oczy.png", "x": 285, "y": 261, "width": 30, "height": 35, "animation": {"type": "blink", "duration": 4200}},
+        {"image": "bg_prog_nietoperz.png", "x": 200, "y": 120, "width": 40, "height": 20, "animation": {"type": "wander", "amplitude": 60, "flap": 0.6, "duration": 5600}},
+        {"image": "bg_prog_postacie.png", "x": 114, "y": 262, "width": 70, "height": 76, "animation": {"type": "bob", "amplitude": 0.4, "duration": 3600}},
+        {"image": "bg_prog_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
+    },
+    "izba_wieczor": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_wieczor_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_wieczor_gwiazdy.png", "x": 44, "y": 84, "width": 62, "height": 62, "animation": {"type": "flicker", "amplitude": 0.15, "duration": 2600}},
+        {"image": "bg_wieczor_blask.png", "x": 150, "y": 180, "width": 140, "height": 100, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 1600}},
+        {"image": "bg_wieczor_plomien.png", "x": 214, "y": 230, "width": 12, "height": 18, "animation": {"type": "flame", "amplitude": 0.15, "duration": 800, "anchorX": 0.5, "anchorY": 1}, "noInvert": true},
+        {"image": "bg_wieczor_ojciec.png", "x": 150, "y": 176, "width": 70, "height": 124, "animation": {"type": "bob", "amplitude": 0.5, "duration": 3000}},
+        {"image": "bg_wieczor_jaromir.png", "x": 250, "y": 214, "width": 50, "height": 90, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2400}},
+        {"image": "bg_wieczor_matka.png", "x": 300, "y": 186, "width": 60, "height": 116, "animation": {"type": "sway", "amplitude": 1.5, "duration": 1500, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_wieczor_kolo.png", "x": 314, "y": 214, "width": 44, "height": 44, "animation": {"type": "arc", "amplitude": 0, "dx": 0, "dy": 0, "spin": 360, "duration": 1200}},
+        {"image": "bg_wieczor_cmy.png", "x": 196, "y": 210, "width": 50, "height": 30, "animation": {"type": "wander", "amplitude": 14, "flap": 0.5, "duration": 3400}},
+        {"image": "bg_wieczor_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
+    },
+    "kapliczka_przewrocona": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_kapliczka_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_kapliczka_swierki_0.png", "x": -56, "y": 120, "width": 184, "height": 184, "animation": {"type": "sway", "amplitude": 1.2, "duration": 3200, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}},
+        {"image": "bg_kapliczka_swierki_1.png", "x": 60, "y": 120, "width": 160, "height": 184, "animation": {"type": "sway", "amplitude": 1.2, "duration": 3200, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}},
+        {"image": "bg_kapliczka_swierki_2.png", "x": 200, "y": 120, "width": 234, "height": 184, "animation": {"type": "sway", "amplitude": 1.2, "duration": 3200, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}},
+        {"image": "bg_kapliczka_odwrocona.png", "x": 290, "y": 190, "width": 40, "height": 130, "revealOn": "latarnia"},
+        {"image": "bg_kapliczka_podmuch.png", "x": 0, "y": 160, "width": 390, "height": 160, "animation": {"type": "drift", "amplitude": 40, "duration": 1800}, "revealOn": "wiatr", "hideAfter": 3500, "fadeDuration": 500},
+        {"image": "bg_kapliczka_igly.png", "x": 330, "y": 180, "width": 40, "height": 40, "animation": {"type": "float", "amplitude": 6, "dx": -260, "dy": 60, "duration": 2400}, "revealOn": "wiatr", "hideAfter": 3500, "fadeDuration": 500},
+        {"image": "bg_kapliczka_wrony.png", "x": 144, "y": 64, "width": 84, "height": 32, "animation": {"type": "wander", "amplitude": 40, "flap": 0.55, "duration": 6200, "phase": 0.0}},
+        {"image": "bg_kapliczka_lezy.png", "x": 130, "y": 320, "width": 150, "height": 40, "hideOn": "podniesiona, latarnia", "fadeDuration": 800},
+        {"image": "bg_kapliczka_spirala.png", "x": 148, "y": 336, "width": 30, "height": 18, "revealOn": "spirala", "hideOn": "podniesiona, latarnia"},
+        {"image": "bg_kapliczka_stoi.png", "x": 186, "y": 220, "width": 36, "height": 124, "animation": {"type": "sway", "amplitude": 3, "duration": 900, "anchorX": 0.5, "anchorY": 1, "once": true}, "revealOn": "podniesiona", "fadeDuration": 800},
+        {"image": "bg_kapliczka_kaczence.png", "x": 0, "y": 360, "width": 390, "height": 40, "animation": {"type": "sway", "amplitude": 3, "duration": 2400, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_kapliczka_motyl.png", "x": 280, "y": 330, "width": 28, "height": 22, "animation": {"type": "wander", "amplitude": 30, "flap": 0.65, "duration": 6400}},
+        {"image": "bg_kapliczka_chlopcy.png", "x": 40, "y": 330, "width": 90, "height": 100, "animation": {"type": "bob", "amplitude": 0.6, "duration": 1600}, "hideOn": "latarnia", "depth": 0.8},
+        {"image": "bg_kapliczka_pies_ogon.png", "x": 110, "y": 366, "width": 74, "height": 53, "animation": {"type": "sway", "amplitude": 4, "duration": 300, "anchorX": 0.769, "anchorY": 0.584}, "revealOn": "pies", "hideOn": "latarnia"},
+        {"image": "bg_kapliczka_pies_tyl.png", "x": 110, "y": 366, "width": 74, "height": 53, "revealOn": "pies", "hideOn": "latarnia"},
+        {"image": "bg_kapliczka_pies_glowa.png", "x": 110, "y": 366, "width": 74, "height": 53, "animation": {"type": "sway", "amplitude": 3, "duration": 300, "anchorX": 0.404, "anchorY": 0.466}, "revealOn": "pies", "hideOn": "latarnia"},
+        {"image": "bg_kapliczka_pies_przod.png", "x": 110, "y": 366, "width": 74, "height": 53, "revealOn": "pies", "hideOn": "latarnia"},
+        {"image": "bg_kapliczka_pies_szczekanie.png", "x": 110, "y": 366, "width": 74, "height": 53, "animation": {"type": "flicker", "amplitude": 0, "duration": 300}, "revealOn": "pies", "hideOn": "latarnia"},
+        {"image": "bg_kapliczka_pies_drzenie.png", "x": 110, "y": 366, "width": 74, "height": 53, "animation": {"type": "flicker", "amplitude": 0, "duration": 200}, "revealOn": "pies", "hideOn": "latarnia"},
+        {"image": "bg_kapliczka_noc.png", "x": 0, "y": 0, "width": 390, "height": 440, "revealOn": "latarnia", "fadeDuration": 3000},
+        {"image": "bg_kapliczka_latarnia.png", "x": 60, "y": 280, "width": 110, "height": 150, "revealOn": "latarnia"},
+        {"image": "bg_kapliczka_latarnia_blask.png", "x": 134, "y": 340, "width": 46, "height": 46, "animation": {"type": "flicker", "amplitude": 0.5, "duration": 1200}, "revealOn": "latarnia", "noInvert": true},
+        {"image": "bg_kapliczka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
+    },
+    "urbaniak": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_urbaniak_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_urbaniak_bocian.png", "x": 62, "y": 148, "width": 30, "height": 28, "animation": {"type": "sway", "amplitude": 5, "duration": 2200, "anchorX": 0.4, "anchorY": 1}},
+        {"image": "bg_urbaniak_bocian_lot.png", "x": -62, "y": 86, "width": 74, "height": 42, "animation": {"type": "arc", "amplitude": 26, "dx": 140, "dy": 60, "duration": 9000}},
+        {"image": "bg_urbaniak_wrony.png", "x": 234, "y": 54, "width": 84, "height": 32, "animation": {"type": "wander", "amplitude": 40, "flap": 0.55, "duration": 6200, "phase": 0.0}},
+        {"image": "bg_urbaniak_znak_0.png", "x": 204, "y": 236, "width": 12, "height": 16, "revealOn": "znaki", "appearAfter": 600, "fadeDuration": 300},
+        {"image": "bg_urbaniak_znak_1.png", "x": 284, "y": 240, "width": 12, "height": 16, "revealOn": "znaki", "appearAfter": 1700, "fadeDuration": 300},
+        {"image": "bg_urbaniak_znak_2.png", "x": 364, "y": 238, "width": 12, "height": 16, "revealOn": "znaki", "appearAfter": 2800, "fadeDuration": 300},
+        {"image": "bg_urbaniak_ludzie.png", "x": 180, "y": 210, "width": 200, "height": 90, "animation": {"type": "bob", "amplitude": 0.8, "duration": 1000}, "hideOn": "odjazd", "fadeDuration": 1500},
+        {"image": "bg_urbaniak_bryczka.png", "x": 146, "y": 284, "width": 120, "height": 64, "hideOn": "odjazd", "fadeDuration": 100},
+        {"image": "bg_urbaniak_odjazd.png", "x": 146, "y": 284, "width": 120, "height": 64, "animation": {"type": "slide", "dx": -300, "dy": 0, "duration": 4000, "once": true}, "revealOn": "odjazd", "fadeDuration": 100},
+        {"image": "bg_urbaniak_jaromir.png", "x": 40, "y": 334, "width": 40, "height": 60, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2200}},
+        {"image": "bg_urbaniak_noc.png", "x": 0, "y": 0, "width": 390, "height": 440, "revealOn": "noc", "fadeDuration": 4000},
+        {"image": "bg_urbaniak_wycie.png", "x": 190, "y": 140, "width": 120, "height": 50, "animation": {"type": "ripple", "amplitude": 1.3, "duration": 2400, "anchorX": 0.5, "anchorY": 0.7}, "revealOn": "noc", "appearAfter": 2500, "fadeDuration": 1200},
+        {"image": "bg_urbaniak_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
     }
   }
 }
