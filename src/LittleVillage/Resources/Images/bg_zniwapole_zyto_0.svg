@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „żniwa”: żyto faluje
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="60" viewBox="200 220 52 60">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M204 270C202 254 206 240 204 230" fill="none" stroke-width="1.1"/><ellipse cx="204" cy="226" rx="1.8" ry="5" fill="url(#hatchDense)" stroke-width="0.9"/>
+<path d="M210 270C208 254 212 240 210 230" fill="none" stroke-width="1.1"/><ellipse cx="210" cy="226" rx="1.8" ry="5" fill="url(#hatchDense)" stroke-width="0.9"/>
+<path d="M216 270C214 254 218 240 216 230" fill="none" stroke-width="1.1"/><ellipse cx="216" cy="226" rx="1.8" ry="5" fill="url(#hatchDense)" stroke-width="0.9"/>
+<path d="M222 270C220 254 224 240 222 230" fill="none" stroke-width="1.1"/><ellipse cx="222" cy="226" rx="1.8" ry="5" fill="url(#hatchDense)" stroke-width="0.9"/>
+<path d="M228 270C226 254 230 240 228 230" fill="none" stroke-width="1.1"/><ellipse cx="228" cy="226" rx="1.8" ry="5" fill="url(#hatchDense)" stroke-width="0.9"/>
+<path d="M234 270C232 254 236 240 234 230" fill="none" stroke-width="1.1"/><ellipse cx="234" cy="226" rx="1.8" ry="5" fill="url(#hatchDense)" stroke-width="0.9"/>
+<path d="M240 270C238 254 242 240 240 230" fill="none" stroke-width="1.1"/><ellipse cx="240" cy="226" rx="1.8" ry="5" fill="url(#hatchDense)" stroke-width="0.9"/>
+<path d="M246 270C244 254 248 240 246 230" fill="none" stroke-width="1.1"/><ellipse cx="246" cy="226" rx="1.8" ry="5" fill="url(#hatchDense)" stroke-width="0.9"/>
+</g>
+</svg>

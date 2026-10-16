@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „Południca”: Południca — cien (rysunek autora; # pokaz: poludnica, znika przy # pokaz: znika)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="157" height="277" viewBox="180 150 157 277">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.52000 0.00000 0.00000 0.52000 180.00000 150.00000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="cien" data-anim="skala" data-origin="150,514" data-range="0.9-1.0" data-period="4">
+<ellipse cx="150" cy="514" rx="76" ry="9" fill="url(#hatch)" stroke="none"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="zar" data-anim="przesuw" data-origin="150,490" data-range="6px" data-period="2">
+<path d="M90 500C104 494 118 506 132 500C146 494 160 506 174 500C188 494 202 504 212 498" fill="none" stroke-width="2.4"/>
+<path d="M98 488C110 482 122 494 134 488C146 482 158 494 170 488C182 482 194 492 204 486" fill="none" stroke-width="2"/>
+<path d="M106 476C116 470 126 480 136 474C146 468 156 480 166 474C176 468 186 476 196 472" fill="none" stroke-width="1.6"/>
+</g>
+</g>
+</g></g>
+</svg>

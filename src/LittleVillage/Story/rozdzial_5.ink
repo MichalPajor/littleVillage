@@ -132,13 +132,8 @@ Zbliżały się żniwa. # dalej
 -> rozdzial_piaty_ciag_dalszy
 
 
-// Koniec rozdziału piątego — rozdział szósty (Południca) do napisania.
+// Koniec rozdziału piątego — dalej rozdział szósty.
 === rozdzial_piaty_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału piątego._ # dalej
--> rozdzial_szosty_wkrotce
-
-=== rozdzial_szosty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_szosty

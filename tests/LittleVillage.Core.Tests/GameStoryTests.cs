@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -777,6 +777,7 @@ public sealed class GameStoryTests
     private static readonly int[] DogWinter = [AskHanka, LetIn, 0, Answer, 0];     // z psem: imie, glos, kolyska
     private static readonly int[] Spring = [0, 0, 0, 0];                           // wstazka, obejrzenie, obietnica, kapliczka
     private static readonly int[] Sawmill = [0, 0, 0, 0];                          // tartak, ostrzezenie, zoladz, uboze
+    private static readonly int[] Noon = [0, 0, 0, 0];                             // trzy zagadki, czy powiedziec ojcu
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1431,7 +1432,67 @@ public sealed class GameStoryTests
         Assert.Contains(harvest.Blocks, b => b.Reveal == "slady" && b.Text.Contains("ślady wielkich, bosych stóp"));
         Assert.EndsWith("Zbliżały się żniwa.", harvest.Blocks[^1].Text);
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału piątego._"));
+        Assert.Contains(pages, p => p.BackgroundKey == "zniwa");
+    }
+
+    // ----- Rozdzial szosty: Poludnica -----
+
+    private static readonly int[] PeacefulToNoon = [.. PeacefulToSawmill, RefuseSawmill, WarnFranek, TakeAcorn, FeedSprite];
+    private const int TellFather = 0, KeepSecret = 1;
+
+    [Theory]
+    // wiatr, chleb, Pan Lasu — bez pomylki: ostrzezenie i mak dla Hanki
+    [InlineData(new[] { 0, 0, 0 }, 0, "czerwony_ksiezyc", "Pilnuj ich, póki stoją.")]
+    // jedna pomylka
+    [InlineData(new[] { 1, 0, 2 }, 1, "czerwony_ksiezyc", "Mogło być gorzej")]
+    // dwie pomylki: zamach, Hanka z woda, goraczka
+    [InlineData(new[] { 2, 1, 1 }, 3, "goraczka", "Chłopiec zamknął oczy")]
+    public void Chapter_six_three_riddles_of_the_noon_wraith(int[] answers, int mistakes, string after, string text)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToNoon, .. answers, TellFather]);
+
+        var field = On(pages, "zniwa")[0];
+        Assert.Equal("Rozdział szósty", field.Blocks[0].Text);
+        Assert.Equal("Południca", field.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.True(Has([field], "Od kilku tygodni nie spadła ani kropla deszczu"));
+        Assert.Contains(field.Blocks, b => b.Reveal == "sam");
+
+        var noon = On(pages, "poludnica");
+        Assert.Contains(noon[0].Blocks, b => b.Reveal == "poludnica" && b.Text == "Między kłosami stała kobieta.");
+        Assert.True(Has(noon, "Południca chodzi po polach w największy skwar"));
+        Assert.Equal(mistakes, noon.SelectMany(p => p.Blocks).Count(b => b.Reveal == "ciecie"));
+        Assert.True(Has(noon, text));
+        Assert.Contains(noon.SelectMany(p => p.Blocks), b => b.Reveal == "dzban");
+        Assert.Equal(after, pages.First(p => p.BackgroundKey is "goraczka" or "czerwony_ksiezyc").BackgroundKey);
+        Assert.Equal(mistakes >= 2, Has(pages, "a w majakach wciąż widział białe oczy"));
+        Assert.Equal(mistakes >= 2, Has(pages, "blizna w kształcie półksiężyca"));
+        Assert.Equal(mistakes < 2, Has(pages, "schowała mak do medalika"));
+    }
+
+    [Fact]
+    public void Chapter_six_book_answer_makes_the_noon_wraith_bow()
+    {
+        var pages = Play(CreateEngine(), [.. PeacefulToNoon, 0, 3, 0, KeepSecret]);
+
+        var noon = On(pages, "poludnica");
+        Assert.Contains(noon.SelectMany(p => p.Blocks), b => b.Reveal == "uklon" && b.Text.Contains("pochyliła głowę"));
+        Assert.True(Has(noon, "Takiej odpowiedzi nie słyszałam od stu lat"));
+        var shrines = On(pages, "kapliczki_noc")[0];
+        Assert.Contains(shrines.Blocks, b => b.Reveal == "jaromir" && b.Text.Contains("obchodził najbliższe kapliczki"));
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału szóstego._"));
         Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
         Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_six_without_the_book_only_three_answers_to_the_second_riddle()
+    {
+        var pages = Play(CreateEngine(), [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, LeaveBook, .. NoDogWinter, .. Spring, .. Sawmill, 0]);
+
+        var noon = On(pages, "poludnica");
+        Assert.False(Has(noon, "Południca chodzi po polach"));
+        Assert.Equal(3, noon.Last().Choices.Count);
+        Assert.DoesNotContain(noon.Last().Choices, c => c.Text.StartsWith("Ziarno"));
     }
 }

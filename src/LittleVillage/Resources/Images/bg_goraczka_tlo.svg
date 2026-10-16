@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „gorączka”: izba nocą: łóżko, okno, stół z kagankiem
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="440" viewBox="0 0 390 440">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 0V440" fill="none" stroke-width="0.8"/>
+<path d="M16 0V440" fill="none" stroke-width="0.8"/>
+<path d="M32 0V440" fill="none" stroke-width="0.8"/>
+<path d="M48 0V440" fill="none" stroke-width="0.8"/>
+<path d="M64 0V440" fill="none" stroke-width="0.8"/>
+<path d="M80 0V440" fill="none" stroke-width="0.8"/>
+<path d="M96 0V440" fill="none" stroke-width="0.8"/>
+<path d="M112 0V440" fill="none" stroke-width="0.8"/>
+<path d="M128 0V440" fill="none" stroke-width="0.8"/>
+<path d="M144 0V440" fill="none" stroke-width="0.8"/>
+<path d="M160 0V440" fill="none" stroke-width="0.8"/>
+<path d="M176 0V440" fill="none" stroke-width="0.8"/>
+<path d="M192 0V440" fill="none" stroke-width="0.8"/>
+<path d="M208 0V440" fill="none" stroke-width="0.8"/>
+<path d="M224 0V440" fill="none" stroke-width="0.8"/>
+<path d="M240 0V440" fill="none" stroke-width="0.8"/>
+<path d="M256 0V440" fill="none" stroke-width="0.8"/>
+<path d="M272 0V440" fill="none" stroke-width="0.8"/>
+<path d="M288 0V440" fill="none" stroke-width="0.8"/>
+<path d="M304 0V440" fill="none" stroke-width="0.8"/>
+<path d="M320 0V440" fill="none" stroke-width="0.8"/>
+<path d="M336 0V440" fill="none" stroke-width="0.8"/>
+<path d="M352 0V440" fill="none" stroke-width="0.8"/>
+<path d="M368 0V440" fill="none" stroke-width="0.8"/>
+<path d="M384 0V440" fill="none" stroke-width="0.8"/>
+<rect width="390" height="440" fill="url(#hatchNight)" stroke="none" opacity="0.6"/>
+<path d="M-10 300H400V440H-10Z" fill="url(#hatchDense)" stroke="none" opacity="0.8"/><path d="M-10 300H400" fill="none" stroke-width="3"/>
+<path d="M150 70H220V140H150Z" fill="url(#hatchNight)" stroke-width="3"/><path d="M185 70V140M150 105H220" fill="none" stroke-width="3"/>
+<path d="M60 300V250H260V300M60 260H260" fill="#FFFFFF" stroke-width="2.6"/><path d="M60 236V300M260 240V300" fill="none" stroke-width="3"/>
+<path d="M64 260C80 240 150 236 200 240C230 242 250 248 256 260Z" fill="#FFFFFF" stroke-width="1.8"/>
+<path d="M290 260H340V270H290ZM296 270V300M334 270V300" fill="#FFFFFF" stroke-width="2"/><path d="M310 260V250h8v10z" fill="#FFFFFF" stroke-width="1.4"/>
+</g>
+</svg>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „Południca”: Południca — twarz (rysunek autora; # pokaz: poludnica, znika przy # pokaz: znika)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="157" height="277" viewBox="180 150 157 277">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.52000 0.00000 0.00000 0.52000 180.00000 150.00000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="twarz" data-anim="obrot" data-origin="150,160" data-range="2deg" data-period="4">
+<path d="M132 84C126 110 128 136 138 152C144 162 156 162 162 152C172 136 174 110 168 84C160 72 140 72 132 84Z" fill="#FFFFFF" stroke-width="4"/>
+<path d="M130 118C136 124 138 134 142 146M170 118C164 124 162 134 158 146" fill="none" stroke-width="2.2"/>
+<path d="M132 116C134 128 138 140 144 150C140 142 134 130 130 118Z M168 116C166 128 162 140 156 150C160 142 166 130 170 118Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M134 104C138 96 146 96 150 104C146 112 138 112 134 104Z M150 104C154 96 162 96 166 104C162 112 154 112 150 104Z" fill="#000000" stroke-width="2"/>
+<path d="M138 104C140 100 146 100 148 104C146 107 140 107 138 104Z M152 104C154 100 160 100 162 104C160 107 154 107 152 104Z" fill="#FFFFFF" stroke="none"/>
+<path d="M132 96C136 90 146 88 150 92M150 92C154 88 164 90 168 96" fill="none" stroke-width="2.6"/>
+<path d="M150 110L148 126L153 126" fill="none" stroke-width="2"/>
+<path d="M140 138C146 136 154 136 160 138" fill="none" stroke-width="3"/>
+<path d="M142 138l0 3M147 137l0 4M152 137l0 4M157 138l0 3" fill="none" stroke-width="1.5"/>
+<path d="M148 160C140 168 134 180 134 190L166 190C166 180 160 168 152 160Z" fill="#FFFFFF" stroke-width="3.5"/>
+<path d="M142 176C146 182 154 182 158 176" fill="none" stroke-width="2"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wianek" data-anim="obrot" data-origin="150,160" data-range="2deg" data-period="4">
+<path d="M126 86C136 70 164 70 174 86" fill="none" stroke-width="6"/>
+<path d="M126 86C136 70 164 70 174 86" fill="none" stroke="#EDEBE6" stroke-width="2.4"/>
+<path d="M128 80l-8-8M134 72l-6-12M146 68l-2-14M158 68l2-14M168 72l6-12M130 86l-10-2M172 82l10-4" fill="none" stroke-width="3"/>
+<path d="M128 80l-8-8M134 72l-6-12M146 68l-2-14M158 68l2-14M168 72l6-12" fill="none" stroke="#EDEBE6" stroke-width="1"/>
+<circle cx="138" cy="74" r="6" fill="#A8101A" stroke-width="1.8"/><circle cx="138" cy="74" r="1.8" fill="#000000" stroke="none"/>
+<circle cx="164" cy="76" r="5.5" fill="#A8101A" stroke-width="1.8"/><circle cx="164" cy="76" r="1.6" fill="#000000" stroke="none"/>
+<circle cx="152" cy="68" r="4" fill="#A8101A" stroke-width="1.6"/><circle cx="152" cy="68" r="1.2" fill="#000000" stroke="none"/>
+</g>
+</g>
+</g></g>
+</svg>

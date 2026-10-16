@@ -140,7 +140,9 @@ public sealed class RevealTests
             .SelectMany(path => new[] { new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 1, 1, 0, 0, 0, 0, 2, 1, 0], [1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1] }
                 .Select((tail, i) => path.Concat(tail).Concat(ChapterTwoTails[i]).ToArray())),
             // spokojny prolog bez psa az do ubozecia, ktore Jaromir udaje, ze nie widzi (# pokaz: slady)
-            [0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 2]];
+            [0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 2, 2, 1, 1, 1],
+            // ksiega: uklon Poludnicy i Jaromir sam przy kapliczkach
+            [0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 3, 0, 1]];
 
     private static IEnumerable<StoryPage> PlayAll()
     {

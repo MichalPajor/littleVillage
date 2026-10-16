@@ -103,3 +103,17 @@ VAR franek_scial_dab = false
 // Co Jaromir zrobił z ubożęciem za piecem: nakarmił (sojusznik), przegnał (bieda w obejściu) albo udał, że go nie widzi.
 LIST LosUbozecia = nakarmione, przegnane, zignorowane
 VAR uboze = ()
+
+// ---------- Rozdział szósty (Południca) ----------
+// Ile razy Jaromir pomylił się w zagadkach Południcy (każda pomyłka = cięcie sierpem; od dwóch — gorączka i blizna).
+VAR pomylki_poludnica = 0
+// Południca skłoniła się przed odpowiedzią z księgi („Ziarno…”).
+VAR poludnica_uklon = false
+// Południca ostrzegła Jaromira: „Pan Lasu się budzi, pilnuj kapliczek” (najwyżej jedna pomyłka).
+VAR ostrzezenie_poludnicy = false
+// Po gorączce została Jaromirowi na ramieniu blizna w kształcie półksiężyca.
+VAR blizna_sierpa = false
+// Hanka schowała do medalika zasuszony mak z wianka Południcy.
+VAR mak_w_medaliku = false
+// Jaromir powiedział ojcu o Południcy (inaczej sam nocami pilnuje kapliczek).
+VAR powiedzial_ojcu_poludnica = false

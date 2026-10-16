@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „Południca”: Południca — koszula (rysunek autora; # pokaz: poludnica, znika przy # pokaz: znika)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="157" height="277" viewBox="180 150 157 277">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.52000 0.00000 0.00000 0.52000 180.00000 150.00000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="koszula" data-anim="unoszenie" data-origin="150,300" data-range="6px" data-period="4">
+<path d="M128 150C120 200 112 300 104 370C98 430 92 460 86 478L100 470L108 486L122 472L134 488L150 476L166 488L178 472L190 486L198 470L214 478C210 460 204 430 198 370C190 300 182 200 174 150Z" fill="#FFFFFF" stroke-width="4"/>
+<path d="M140 176C136 260 128 360 118 460M160 176C164 260 172 360 182 460M150 290C150 360 150 410 150 470" fill="none" stroke-width="1.8"/>
+<path d="M86 478l-6 8M108 486l-2 8M134 488l0 8M166 488l0 8M190 486l2 8M214 478l6 7" fill="none" stroke-width="2"/>
+<path d="M128 150C112 168 98 194 92 220L96 232L108 222L116 236L128 226C130 200 134 176 138 160Z" fill="#FFFFFF" stroke-width="3.5"/>
+<path d="M174 150C190 168 204 194 210 220L206 232L194 222L186 236L174 226C172 200 168 176 164 160Z" fill="#FFFFFF" stroke-width="3.5"/>
+<path d="M136 156C142 164 158 164 164 156" fill="none" stroke-width="2"/>
+<path d="M128 470C122 480 124 490 132 490C138 490 140 480 136 470ZM174 470C180 480 178 490 170 490C164 490 162 480 166 470Z" fill="#EDEBE6" stroke-width="3"/>
+<path d="M128 486l-5 3M133 490l0 4M174 486l5 3M169 490l0 4" fill="none" stroke-width="2"/>
+</g>
+</g>
+</g></g>
+</svg>
