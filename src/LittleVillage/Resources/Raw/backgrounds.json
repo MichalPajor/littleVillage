@@ -790,6 +790,48 @@
         {"image": "bg_jesien_plot.png", "x": 0, "y": 344, "width": 390, "height": 80, "depth": 0.8},
         {"image": "bg_jesien_kokarda.png", "x": 146, "y": 360, "width": 40, "height": 44, "animation": {"type": "sway", "amplitude": 3, "duration": 2200, "anchorX": 0.5, "anchorY": 0.2}, "revealOn": "kokarda", "noInvert": true, "fadeDuration": 2500}
       ]
+    },
+    "szkola_ksiega": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_szkola_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_szkola_widok.png", "x": 118, "y": 66, "width": 162, "height": 98},
+        {"image": "bg_szkola_ogien.png", "x": 324, "y": 238, "width": 36, "height": 24, "animation": {"type": "flame", "amplitude": 0.12, "duration": 900, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_szkola_ignacy_za_biurkiem.png", "x": 150, "y": 236, "width": 70, "height": 80},
+        {"image": "bg_szkola_biurko.png", "x": 106, "y": 296, "width": 148, "height": 68},
+        {"image": "bg_szkola_kora_biurko.png", "x": 150, "y": 290, "width": 26, "height": 12, "revealOn": "kora"},
+        {"image": "bg_szkola_ksiega_biurko.png", "x": 186, "y": 290, "width": 42, "height": 16, "revealOn": "ksiega", "hideOn": "pozyczka", "fadeDuration": 700},
+        {"image": "bg_szkola_ksiega_jaromir.png", "x": 118, "y": 290, "width": 42, "height": 16, "revealOn": "pozyczka", "fadeDuration": 700},
+        {"image": "bg_szkola_lawki_puste.png", "x": 0, "y": 340, "width": 390, "height": 100, "depth": 0.5},
+        {"image": "bg_szkola_jaromir_biurko.png", "x": 92, "y": 300, "width": 40, "height": 72, "hideOn": "prog", "fadeDuration": 800},
+        {"image": "bg_szkola_jaromir_prog.png", "x": 24, "y": 196, "width": 40, "height": 70, "revealOn": "prog", "fadeDuration": 800},
+        {"image": "bg_szkola_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
+      ]
+    },
+    "pierwszy_snieg": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_snieg_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_snieg_snieg.png", "x": 0, "y": 180, "width": 390, "height": 260, "revealOn": "snieg", "fadeDuration": 5000},
+        {"image": "bg_snieg_slad_0.png", "x": 192, "y": 199, "width": 10, "height": 15, "revealOn": "slady", "appearAfter": 300, "fadeDuration": 500},
+        {"image": "bg_snieg_slad_1.png", "x": 193, "y": 223, "width": 12, "height": 18, "revealOn": "slady", "appearAfter": 750, "fadeDuration": 500},
+        {"image": "bg_snieg_slad_2.png", "x": 176, "y": 247, "width": 14, "height": 22, "revealOn": "slady", "appearAfter": 1200, "fadeDuration": 500},
+        {"image": "bg_snieg_slad_3.png", "x": 179, "y": 271, "width": 16, "height": 25, "revealOn": "slady", "appearAfter": 1650, "fadeDuration": 500},
+        {"image": "bg_snieg_slad_4.png", "x": 160, "y": 295, "width": 18, "height": 29, "revealOn": "slady", "appearAfter": 2100, "fadeDuration": 500},
+        {"image": "bg_snieg_slad_5.png", "x": 166, "y": 319, "width": 21, "height": 32, "revealOn": "slady", "appearAfter": 2550, "fadeDuration": 500},
+        {"image": "bg_snieg_slad_6.png", "x": 143, "y": 343, "width": 23, "height": 36, "revealOn": "slady", "appearAfter": 3000, "fadeDuration": 500},
+        {"image": "bg_snieg_slad_7.png", "x": 153, "y": 367, "width": 25, "height": 40, "revealOn": "slady", "appearAfter": 3450, "fadeDuration": 500},
+        {"image": "bg_snieg_slad_8.png", "x": 127, "y": 391, "width": 27, "height": 43, "revealOn": "slady", "appearAfter": 3900, "fadeDuration": 500},
+        {"image": "bg_snieg_platki_0.png", "x": 0, "y": -4, "width": 390, "height": 208, "animation": {"type": "rise", "amplitude": -120, "duration": 7000, "phase": 0.0}, "revealOn": "snieg", "fadeDuration": 2000, "hideAfter": 14000},
+        {"image": "bg_snieg_platki_1.png", "x": 0, "y": 36, "width": 390, "height": 208, "animation": {"type": "rise", "amplitude": -120, "duration": 8500, "phase": 0.33}, "revealOn": "snieg", "fadeDuration": 2000, "hideAfter": 14000},
+        {"image": "bg_snieg_platki_2.png", "x": 0, "y": 76, "width": 390, "height": 208, "animation": {"type": "rise", "amplitude": -120, "duration": 10000, "phase": 0.66}, "revealOn": "snieg", "fadeDuration": 2000, "hideAfter": 14000},
+        {"image": "bg_snieg_okno.png", "x": 0, "y": 0, "width": 390, "height": 440, "depth": 1.0},
+        {"image": "bg_snieg_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+      ]
     }
   }
 }

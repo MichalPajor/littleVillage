@@ -746,9 +746,10 @@ public sealed class GameStoryTests
     private const int Defend = 0, FetchTeacher = 1, LookAway = 2; // Bartek i tabliczka Antka
     private const int TakeBark = 0, LeaveBark = 1;              // kora ze spirali
     private const int FetchRibbon = 0, LeaveRibbon = 1;         // wstazka Hanki w lesie
+    private const int BorrowBook = 0, LeaveBook = 1;            // ksiega pana Ignacego
 
     private static readonly int[] Summer = [RunOut, Contest, Shell, FirstOption, PlayOn];
-    private static readonly int[] School = [Shout, Defend, TakeBark, FetchRibbon];
+    private static readonly int[] School = [Shout, Defend, TakeBark, FetchRibbon, BorrowBook];
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1024,7 +1025,6 @@ public sealed class GameStoryTests
         Assert.EndsWith("było ledwie po południu.", forest.Blocks[^1].Text);
         Assert.True(System.Text.Json.JsonDocument.Parse(engine.SaveState()).RootElement.GetProperty("variablesState").GetProperty("poszedl_po_wstazke").GetBoolean());
         Assert.DoesNotContain(pages, p => p.BackgroundKey == "jesien_plot");
-        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
     }
 
     [Fact]
@@ -1038,5 +1038,47 @@ public sealed class GameStoryTests
         var fence = On(pages, "jesien_plot")[0];
         Assert.Contains(fence.Blocks, b => b.Reveal == "kokarda" && b.Text.Contains("na kokardę"));
         Assert.DoesNotContain(pages, p => p.BackgroundKey == "bor_starzec");
+    }
+
+    [Theory]
+    [InlineData(TakeBark, FetchRibbon, BorrowBook)]
+    [InlineData(LeaveBark, LeaveRibbon, LeaveBook)]
+    public void Chapter_two_teacher_shows_his_book(int bark, int ribbon, int book)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, bark, ribbon, book]);
+
+        var desk = On(pages, "szkola_ksiega");
+        Assert.StartsWith("Przez kilka dni nosił w sobie to, co się stało.", desk[0].Blocks[0].Text);
+        Assert.True(Has(desk, ribbon == FetchRibbon ? "o starcu w kożuchu wywróconym na lewą stronę" : "o wstążce, która sama wróciła na płot"));
+        Assert.Equal(bark == TakeBark, desk[0].Blocks.Any(b => b.Reveal == "kora" && b.Text.Contains("porównał je z rysunkiem")));
+        Assert.Contains(desk[0].Blocks, b => b.Reveal == "ksiega" && b.Text.Contains("„Opowiadania z okolic Bukowego Grzbietu, spisane przez Ignacego Zawadę”"));
+        Assert.Equal("Czy Jaromir weźmie księgę?", desk[0].Question);
+        Assert.Contains(desk[1].Blocks, b => b.Reveal == (book == BorrowBook ? "pozyczka" : "prog"));
+        Assert.Equal(book == BorrowBook, Inventory(engine).Contains("ksiega"));
+        Assert.Equal(bark == TakeBark, Inventory(engine).Contains("kora"));
+        if (book == BorrowBook)
+        {
+            Assert.Equal("Księga opowiadań", engine.GetInventory().Single(i => i.Id == "ksiega").Name);
+        }
+    }
+
+    [Theory]
+    [InlineData(true, BorrowBook, "sprawdził rygiel w drzwiach")]
+    [InlineData(false, LeaveBook, "dostanie miskę kaszy")]
+    public void Chapter_two_ends_with_tracks_in_the_first_snow(bool cursed, int book, string father)
+    {
+        var pages = Play(CreateEngine(), [.. cursed ? CursedPrologue : PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, book]);
+
+        var snow = On(pages, "pierwszy_snieg")[0];
+        Assert.StartsWith("Przyszedł listopad.", snow.Blocks[0].Text);
+        Assert.Equal(book == BorrowBook, Has([snow], "wyciągał spod siennika księgę pana Ignacego"));
+        Assert.True(Has([snow], father));
+        Assert.Contains(snow.Blocks, b => b.Reveal == "snieg" && b.Text.StartsWith("W nocy z niedzieli na poniedziałek spadł pierwszy śnieg."));
+        Assert.Contains(snow.Blocks, b => b.Reveal == "slady" && b.Text.Contains("Długich, wąskich."));
+        Assert.Equal("Chłopak pomyślał, że zostawił je pewnie jakiś jeleń szukający jedzenia.", snow.Blocks[^1].Text);
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału drugiego._"));
+        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 }

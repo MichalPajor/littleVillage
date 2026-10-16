@@ -11,11 +11,14 @@
 #   bor_starzec — w glebi boru, pnie i mgla; wstazka daleko; starzec w kozuchu z wstazka w palcach (# pokaz: starzec,
 #               znika przy # pokaz: zniknal), wstazka na wyciagniecie reki (# pokaz: zniknal)
 #   jesien_plot — ranek: plot przed chata, wstazka zawiazana na kokarde (# pokaz: kokarda)
+#   szkola_ksiega — izba po lekcjach: pan Ignacy za biurkiem, Jaromir przy nim; kora (# pokaz: kora), ksiega (# pokaz: ksiega),
+#               ksiega przesunieta do Jaromira (# pokaz: pozyczka), Jaromir na progu (# pokaz: prog)
+#   pierwszy_snieg — podworze za oknem: listopadowa noc, potem snieg (# pokaz: snieg), slady od boru pod okno (# pokaz: slady)
 #   droga_bor — przed switem sciezka pnie sie pod gore na Bukowy Grzbiet: z lewej pola, z prawej sciana swierkow, mgla;
 #               czworka dzieci w drodze do szkoly; miedzy swierkami jasne oczy z czerwonymi zrenicami (# pokaz: oczy)
 # Uzycie z katalogu glownego repozytorium:
 #   python3 tools/Backgrounds/szkola.py src/LittleVillage/Resources/Images         -> pliki bg_jesien_*.svg, bg_drogabor_*.svg, bg_szkola_*.svg
-#   python3 tools/Backgrounds/szkola.py --master jesien|droga_bor|szkola_izba|szkola_podania|sosna_spirala|wstazka_wiatr|bor_starzec|jesien_plot [wszystko] > podglad.svg
+#   python3 tools/Backgrounds/szkola.py --master jesien|droga_bor|szkola_izba|szkola_podania|sosna_spirala|wstazka_wiatr|bor_starzec|jesien_plot|szkola_ksiega|pierwszy_snieg [wszystko] > podglad.svg
 import sys, random, math
 from common import *
 import art, postacie
@@ -486,6 +489,113 @@ PL_EXTRA = {"kokarda": {"noInvert": True, "fadeDuration": 2500}, "przod": {"dept
 PL_COMMENTS = dict(J_COMMENTS)
 PL_COMMENTS.update({"plot": "płot przed chatą", "kokarda": "wstążka Hanki zawiązana na kokardę (# pokaz: kokarda)"})
 
+
+# ----- po lekcjach: puste lawki, pan Ignacy za biurkiem, Jaromir przy biurku; ksiega, kora, wyjscie na prog
+def empty_bench(y):
+    return [f'<path d="M10 {y}H120V{y + 8}H10ZM270 {y}H380V{y + 8}H270Z" fill="url(#hatchDense)" stroke-width="2"/>',
+            f'<path d="M16 {y + 8}V{y + 30}M114 {y + 8}V{y + 30}M276 {y + 8}V{y + 30}M374 {y + 8}V{y + 30}" fill="none" stroke-width="2.4"/>']
+
+
+S["lawki_puste"] = (0, 340, 390, 100, group(empty_bench(352) + empty_bench(404)))
+S["ignacy_za_biurkiem"] = (150, 236, 70, 80, group([postacie.man(186, 330, 1.25, hat=False),
+                                                     '<g stroke-width="1.2"><circle cx="182" cy="245" r="2.4" fill="#FFFFFF"/><circle cx="190" cy="245" r="2.4" fill="#FFFFFF"/></g>']))
+S["biurko"] = (106, 296, 148, 68, group(['<path d="M110 300H250V312H110ZM118 312V360M242 312V360M200 312H242V332H200Z" fill="#FFFFFF" stroke-width="2.4"/><path d="M218 322h6" fill="none" stroke-width="2"/>']))
+S["jaromir_biurko"] = (92, 300, 40, 72, group([postacie.child(112, 368, 1.5)]))
+S["kora_biurko"] = (150, 290, 26, 12, group(['<path d="M154 298C152 294 158 292 162 294L170 296C173 298 171 301 167 300L157 300Z" fill="url(#hatchDense)" stroke-width="1.4"/>']))
+book = lambda x, y: (f'<path d="M{x} {y}L{x + 30} {y - 4}L{x + 34} {y + 2}L{x + 4} {y + 6}Z" fill="#000000" stroke-width="1.6"/>'
+                     f'<path d="M{x + 4} {y + 6}L{x + 34} {y + 2}V{y + 5}L{x + 4} {y + 9}Z" fill="#FFFFFF" stroke-width="1.2"/>')
+S["ksiega_biurko"] = (186, 290, 42, 16, group([book(190, 298)]))
+S["ksiega_jaromir"] = (118, 290, 42, 16, group([book(122, 298)]))
+S["jaromir_prog"] = (24, 196, 40, 70, group([postacie.child(44, 262, 1.5)]))
+KSIEGA = ["tlo", "widok", "ogien", "ignacy_za_biurkiem", "biurko", "kora_biurko", "ksiega_biurko", "ksiega_jaromir", "lawki_puste",
+          "jaromir_biurko", "jaromir_prog", "przod"]
+KS_REVEAL = {"kora_biurko": "kora", "ksiega_biurko": "ksiega", "ksiega_jaromir": "pozyczka", "jaromir_prog": "prog"}
+KS_ANIM = {"ogien": S_ANIM["ogien"]}
+KS_EXTRA = {"ksiega_biurko": {"hideOn": "pozyczka", "fadeDuration": 700}, "ksiega_jaromir": {"fadeDuration": 700},
+            "jaromir_biurko": {"hideOn": "prog", "fadeDuration": 800}, "jaromir_prog": {"fadeDuration": 800},
+            "lawki_puste": {"depth": 0.5}, "przod": {"depth": 1.0}}
+KS_COMMENTS = dict(S_COMMENTS)
+KS_COMMENTS.update({"widok": "za oknami Bukowy Grzbiet i ściana boru", "lawki_puste": "puste ławki po lekcjach",
+                    "ignacy_za_biurkiem": "pan Ignacy za biurkiem", "biurko": "front biurka (przed nauczycielem)",
+                    "jaromir_biurko": "Jaromir przy biurku (znika przy # pokaz: prog)", "kora_biurko": "kora ze znakami na biurku (# pokaz: kora)",
+                    "ksiega_biurko": "księga w skórzanej oprawie (# pokaz: ksiega, znika przy # pokaz: pozyczka)",
+                    "ksiega_jaromir": "księga przesunięta do Jaromira (# pokaz: pozyczka)", "jaromir_prog": "Jaromir na progu (# pokaz: prog)"})
+
+# ======================= PIERWSZY SNIEG: podworze za oknem =======================
+N = {}
+rnd = random.Random(208)
+t = ['<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>',
+     '<path d="M0 0H390V150H0Z" fill="url(#hatchDense)" stroke="none"/>']
+t.append('<path d="M-10 200C80 190 200 196 400 188V440H-10Z" fill="url(#hatchNight)" stroke-width="3"/>')
+for i in range(20):
+    t.append(spruce(-4 + i * 21, 196 - (i % 2) * 4, 60 + (i % 3) * 16, 26))
+# stodola, plot i jablon pod oknem
+t.append('<path d="M250 300V230H384V300Z" fill="#FFFFFF" stroke-width="2.6"/><path d="M240 234L270 196H366L392 234Z" fill="url(#hatch)" stroke-width="2.6"/>')
+t.append('<path d="M290 300V256H330V300Z" fill="#000000" stroke-width="2"/>')
+t.append('<path d="M-10 318H236M-10 334H236" fill="none" stroke-width="2.4"/>')
+for x in range(4, 236, 22):
+    t.append(f'<path d="M{x - 4} 344V310L{x} 304L{x + 4} 310V344Z" fill="#FFFFFF" stroke-width="1.8"/>')
+t.append('<path d="M84 380C86 340 80 310 70 290M84 340C96 320 112 304 120 290M76 312C62 300 50 296 40 292M70 290L60 270M70 290L80 268M120 290L130 272" fill="none" stroke-width="3"/>')
+N["tlo"] = (0, 0, 390, 440, t[0] + "\n" + group(t[1:]))
+# snieg okrywa wszystko (pojawia sie powoli przy pierwszym sniegu)
+sn = ['<path d="M-10 196C80 186 200 192 400 184V440H-10Z" fill="#FFFFFF" stroke-width="3"/>',
+      '<path d="M238 236L270 198H366L394 236L370 228H262Z" fill="#FFFFFF" stroke-width="2"/>',
+      '<path d="M-10 316H236" fill="none" stroke="#FFFFFF" stroke-width="5"/>']
+for i in range(20):
+    x = -4 + i * 21
+    sn.append(f'<path d="M{x - 9} {190 - (i % 2) * 4}l9 -6l9 6" fill="#FFFFFF" stroke-width="1.4"/>')
+for x in range(4, 236, 22):
+    sn.append(f'<path d="M{x - 5} 308L{x} 301L{x + 5} 308Z" fill="#FFFFFF" stroke-width="1"/>')
+sn.append('<path d="M66 292c4 -3 8 -3 10 0M112 294c4 -3 8 -2 10 1M50 296c4 -2 8 -2 10 0" fill="none" stroke="#FFFFFF" stroke-width="3"/>')
+sn.append('<path d="M250 300V230H384V300Z" fill="#FFFFFF" stroke-width="2.6"/><path d="M290 300V256H330V300Z" fill="#000000" stroke-width="2"/>')
+sn.append('<path d="M84 380C86 340 80 310 70 290M84 340C96 320 112 304 120 290M76 312C62 300 50 296 40 292M70 290L60 270M70 290L80 268M120 290L130 272" fill="none" stroke-width="3"/>')
+for x in range(4, 236, 22):
+    sn.append(f'<path d="M{x - 4} 344V310L{x} 304L{x + 4} 310V344Z" fill="#FFFFFF" stroke-width="1.8"/>')
+sn.append('<path d="M-10 318H236M-10 334H236" fill="none" stroke-width="2.4"/>')
+N["snieg"] = (0, 180, 390, 260, group(sn))
+# platki sniegu w nocy
+for k in range(3):
+    fl = []
+    for i in range(14):
+        x, y = rnd.uniform(0, 390), rnd.uniform(0 + k * 40, 200 + k * 40)
+        fl.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{rnd.uniform(1.2, 2.2):.1f}" fill="#FFFFFF" stroke-width="0.8"/>')
+    N[f"platki_{k}"] = (0, k * 40 - 4, 390, 208, group(fl))
+# rzad sladow od boru pod samo okno — dlugie, waskie; zawracaja pod parapetem
+STEPS = []
+for i in range(9):
+    f = i / 8
+    x = 200 + (150 - 200) * f + (6 if i % 2 else -6) * (0.6 + f)
+    y = 206 + (414 - 206) * f
+    k = 0.5 + 1.1 * f
+    STEPS.append((x, y, k))
+for i, (x, y, k) in enumerate(STEPS):
+    N[f"slad_{i}"] = (int(x - 8 * k), int(y - 14 * k), int(16 * k) + 2, int(26 * k) + 2, group([
+        f'<path d="M{x:.1f} {y - 12 * k:.1f}C{x + 4 * k:.1f} {y - 12 * k:.1f} {x + 4 * k:.1f} {y + 10 * k:.1f} {x:.1f} {y + 10 * k:.1f}C{x - 4 * k:.1f} {y + 10 * k:.1f} {x - 4 * k:.1f} {y - 12 * k:.1f} {x:.1f} {y - 12 * k:.1f}Z" fill="url(#hatchDense)" stroke-width="{1.2 * k:.1f}"/>']))
+# rama okna, przez ktore patrzy Jaromir (szron w rogach)
+fr = ['<path d="M0 0H390V440H0ZM22 20V420H368V20Z" fill="#000000" fill-rule="evenodd" stroke="none"/>',
+      '<path d="M195 20V420M22 210H368" fill="none" stroke-width="10"/>',
+      '<path d="M22 410H368V440H22Z" fill="#FFFFFF" stroke-width="3"/>']
+for (cx, cy, sx, sy) in [(26, 24, 1, 1), (364, 24, -1, 1), (26, 404, 1, -1), (364, 404, -1, -1), (199, 214, 1, 1), (191, 206, -1, -1)]:
+    for j in range(5):
+        fr.append(f'<path d="M{cx} {cy}l{sx * (14 + j * 7)} {sy * (4 + j * 6)}" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>')
+N["okno"] = (0, 0, 390, 440, group(fr))
+p = ['<path d="M-10 432H400V844H-10Z" fill="#EDEBE6" stroke="none"/>']
+N["przod"] = (0, 430, 390, 414, group(p))
+
+SNIEG = ["tlo", "snieg"] + [f"slad_{i}" for i in range(len(STEPS))] + [f"platki_{k}" for k in range(3)] + ["okno", "przod"]
+N_REVEAL = {"snieg": "snieg"}
+N_REVEAL.update({f"platki_{k}": "snieg" for k in range(3)})
+N_REVEAL.update({f"slad_{i}": "slady" for i in range(len(STEPS))})
+N_ANIM = {f"platki_{k}": {"type": "rise", "amplitude": -120, "duration": 7000 + k * 1500, "phase": round(k * 0.33, 2)} for k in range(3)}
+N_EXTRA = {"snieg": {"fadeDuration": 5000}}
+N_EXTRA.update({f"platki_{k}": {"fadeDuration": 2000, "hideAfter": 14000} for k in range(3)})
+N_EXTRA.update({f"slad_{i}": {"appearAfter": 300 + i * 450, "fadeDuration": 500} for i in range(len(STEPS))})
+N_EXTRA.update({"okno": {"depth": 1.0}})
+N_COMMENTS = {"tlo": "listopadowa noc: podwórze, stodoła, płot i jabłoń, bór w głębi", "snieg": "pierwszy śnieg okrywa podwórze (# pokaz: snieg, powoli)",
+              "okno": "rama okna izby, szron w rogach", "przod": "pierwszy plan"}
+N_COMMENTS.update({f"platki_{k}": "płatki śniegu (# pokaz: snieg, przestają padać)" for k in range(3)})
+N_COMMENTS.update({f"slad_{i}": f"ślad {i + 1} z {len(STEPS)}: długi, wąski, od boru pod okno (# pokaz: slady, po kolei)" for i in range(len(STEPS))})
+
 BACKGROUNDS = {"jesien": ("bg_jesien", J, JESIEN, J_ANIM, J_REVEAL, J_EXTRA, J_COMMENTS, "Zapadlina jesienią"),
                "droga_bor": ("bg_drogabor", D, DROGA, D_ANIM, D_REVEAL, D_EXTRA, D_COMMENTS, "droga pod borem"),
                "szkola_izba": ("bg_szkola", S, IZBA, S_ANIM, S_REVEAL, S_EXTRA, S_COMMENTS, "izba szkolna"),
@@ -493,7 +603,9 @@ BACKGROUNDS = {"jesien": ("bg_jesien", J, JESIEN, J_ANIM, J_REVEAL, J_EXTRA, J_C
                "sosna_spirala": ("bg_sosna", K, SOSNA, K_ANIM, K_REVEAL, K_EXTRA, K_COMMENTS, "sosna ze spiralą"),
                "wstazka_wiatr": ("bg_wstazka", W, WSTAZKA, W_ANIM, {}, W_EXTRA, W_COMMENTS, "wichura na skraju boru"),
                "bor_starzec": ("bg_bor", B, BOR, B_ANIM, B_REVEAL, B_EXTRA, B_COMMENTS, "w głębi boru"),
-               "jesien_plot": ("bg_jesien", J, PLOT, PL_ANIM, {"kokarda": "kokarda"}, PL_EXTRA, PL_COMMENTS, "Zapadlina jesienią")}
+               "jesien_plot": ("bg_jesien", J, PLOT, PL_ANIM, {"kokarda": "kokarda"}, PL_EXTRA, PL_COMMENTS, "Zapadlina jesienią"),
+               "szkola_ksiega": ("bg_szkola", S, KSIEGA, KS_ANIM, KS_REVEAL, KS_EXTRA, KS_COMMENTS, "izba szkolna"),
+               "pierwszy_snieg": ("bg_snieg", N, SNIEG, N_ANIM, N_REVEAL, N_EXTRA, N_COMMENTS, "pierwszy śnieg")}
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":

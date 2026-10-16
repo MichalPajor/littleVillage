@@ -114,7 +114,7 @@ Hanka zagryzła wargę. Nie płakała, ale Jaromir widział, jak drżą jej ręc
     Jaromir chciał krzyknąć, ale głos uwiązł mu w gardle. Zamrugał.
     Starca nie było. Wstążka wisiała na gałęzi tuż przed nim, na wyciągnięcie ręki, a za jego plecami, kilka kroków dalej, prześwitywała ścieżka i słychać było, jak Hanka woła go po imieniu. # pokaz: zniknal
     Wyszedł z lasu, ściskając ją w garści. Dziewczynka rzuciła mu się na szyję, a potem, zawstydzona, odskoczyła i przez całą drogę do domu nie spojrzała mu w oczy. Dopiero przy kładce zauważyli, że słońce stoi już nisko nad borem, choć kiedy ruszał po wstążkę, było ledwie po południu. # dalej
-    -> rozdzial_drugi_ciag_dalszy
+    -> rozmowa_ksiega
 *   [Przekonać Hankę, żeby ją zostawiła – ojciec kupi jej nową.]
     – Nie chodź tam – szepnął i złapał ją za rękę. – Ojciec kupi ci nową.
     Spojrzała na niego, jakby chciała się sprzeciwić, ale tylko skinęła głową. Wstążka została na gałęzi, czerwona i samotna. # dalej
@@ -123,10 +123,54 @@ Hanka zagryzła wargę. Nie płakała, ale Jaromir widział, jak drżą jej ręc
 = wstazka_na_plocie
 # tlo: jesien_plot
 Następnego ranka, kiedy chłopiec wyszedł na podwórze, zobaczył ją na płocie przed chatą – zawiązaną starannie, na kokardę, tak jak robiła to Hanka. Nikt w domu nie wiedział, skąd się tam wzięła. # pokaz: kokarda # dalej
+-> rozmowa_ksiega
+
+= rozmowa_ksiega
+# tlo: szkola_ksiega
+Przez kilka dni nosił w sobie to, co się stało. Uwierało go jak kamień w bucie. W końcu, w piątek po lekcjach, kiedy reszta wybiegła już na podwórze, został w izbie i stanął przy biurku pana Ignacego.
+Opowiedział mu wszystko – o liczeniu we mgle, o spirali na sośnie, { poszedl_po_wstazke: o starcu w kożuchu wywróconym na lewą stronę | o wstążce, która sama wróciła na płot }. Spodziewał się, że nauczyciel się roześmieje, tak jak w piątek cała klasa. Ale on słuchał w milczeniu, a z każdym zdaniem jego twarz stawała się coraz poważniejsza.
+{ ekwipunek ? kora:
+    Kiedy Jaromir wyjął z torby kawałek kory, pan Ignacy długo oglądał wyryte na niej znaki. Potem sięgnął do biurka i porównał je z rysunkiem w swoich notatkach. Ręce mu drżały. # pokaz: kora
+}
+– Nikomu o tym nie mów – powiedział w końcu. – A już na pewno nie dorosłym. Nie uwierzą, wyśmieją cię, a ty nauczysz się, że w takich sprawach lepiej milczeć. A tak być nie powinno.
+Wyjął z szuflady gruby zeszyt oprawny w skórę i położył go na biurku. Na pierwszej stronie, starannym, pochyłym pismem, wypisane było: „Opowiadania z okolic Bukowego Grzbietu, spisane przez Ignacego Zawadę”. Jaromir przyglądał się temu napisowi z zaciekawieniem, ale i z lękiem. # pokaz: ksiega
+– Zamieściłem w tej księdze wszystkie historie usłyszane od mieszkańców tych terenów… Jest w niej wyjaśnione to, co widziałeś. Można ją czytać tylko w dzień.
+# pytanie: Czy Jaromir weźmie księgę?
+*   [Poprosić, żeby pożyczył mu księgę.]
+    ~ ekwipunek += ksiega
+    – Czy mógłbym… ją pożyczyć? – zapytał cicho.
+    Nauczyciel przez chwilę patrzył na niego znad okularów. Potem przesunął zeszyt po blacie. # pokaz: pozyczka
+    – Na Boże Narodzenie mi ją oddasz. # dalej
+    -> pierwszy_snieg
+*   [Podziękować i wyjść – to nie jego sprawa.]
+    Jaromir tylko się ukłonił i wyszedł. Na progu obejrzał się jeszcze. Nauczyciel siedział przy biurku z zeszytem otwartym na kolanach i nie podniósł głowy, kiedy drzwi się zamknęły. # pokaz: prog
+    Dla chłopca było tego już za wiele – nie chciał dokładać sobie strachu. # dalej
+    -> pierwszy_snieg
+
+= pierwszy_snieg
+# tlo: pierwszy_snieg
+Przyszedł listopad. Dni stały się krótkie i szare, a wieczory długie. Chłopiec wracał ze szkoły już po zmroku i całą drogę przez skraj boru szedł z oczami wbitymi w ścieżkę, licząc kroki, żeby nie słyszeć, czy w lesie ktoś liczy razem z nim.
+{ ekwipunek ? ksiega:
+    Nocami, kiedy w domu wszyscy już spali, wyciągał spod siennika księgę pana Ignacego i czytał ją przy blasku żarzących się w piecu węgli, choć wiedział, że wolno po nią sięgać tylko za dnia. Były tam podania o południcach, które w największy skwar zadają zagadki żniwiarzom, o nocnicach, które dręczą niemowlęta, o rusałkach i strzygach. A pośród gęsto zapisanych kartek ktoś narysował starca w ubraniu wywróconym na lewą stronę.
+}
+{ figurka_u_staruchy:
+    Ojciec coraz częściej siadywał wieczorami na progu i patrzył na bór. Kiedy pewnego razu syn zapytał go, czy wierzy w Pana Lasu, ten odwrócił się do niego tak gwałtownie, że chłopak cofnął się o krok. Ale nic nie powiedział. Wstał, sprawdził rygiel w drzwiach i poszedł spać.
+- else:
+    Ojciec, kiedy usłyszał przy kolacji o Panu Lasu, roześmiał się i powiedział, że jak Borowy przyjdzie, to dostanie miskę kaszy i pójdzie spać na piec. Ale potem jakoś długo patrzył w okno, a zanim się położył, czego nigdy wcześniej nie robił, zasunął rygiel.
+}
+W nocy z niedzieli na poniedziałek spadł pierwszy śnieg. Jaromir obudził się przed świtem, bo w izbie zrobiło się dziwnie jasno, i podszedł do okna. # pokaz: snieg
+Świat był biały i cichy. Puch leżał na płocie, na dachu stodoły, na gałęziach jabłoni. Tylko od strony boru, przez całe podwórze, aż pod samo okno, ciągnął się rząd śladów. Długich, wąskich. Dochodziły pod ścianę, zatrzymywały się tuż pod parapetem i zawracały. # pokaz: slady
+Chłopak pomyślał, że zostawił je pewnie jakiś jeleń szukający jedzenia. # dalej
 -> rozdzial_drugi_ciag_dalszy
 
-// Kolejne strony rozdziału — do napisania (autor przysyła je po redakcji).
+
+// Koniec rozdziału drugiego — rozdział trzeci (Wigilia) do napisania.
 === rozdzial_drugi_ciag_dalszy ===
+# ozdobnik
+_Koniec rozdziału drugiego._ # dalej
+-> rozdzial_trzeci_wkrotce
+
+=== rozdzial_trzeci_wkrotce ===
 # ozdobnik
 _Ciąg dalszy nastąpi…_
 -> END
