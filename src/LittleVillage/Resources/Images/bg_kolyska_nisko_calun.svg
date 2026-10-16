@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „kołyska Zosi”: północnica liczy mak przy podłodze — calun (rysunek autora; # pokaz: mak, znika przy # pokaz: kogut)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="109" height="192" viewBox="180 170 109 192">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.36000 0.00000 0.00000 0.36000 180.00000 170.00000)"><g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="calun" data-anim="unoszenie+kolysanie" data-origin="150,200" data-range="6px / 2deg" data-period="4 / 3">
+<path d="M120 150C108 200 100 260 96 320C92 370 80 410 60 450L82 440L92 470L110 446L124 480L140 452L152 486L166 450L184 478L196 444L214 468L224 436L246 450C224 410 210 370 206 320C202 260 194 200 182 150Z" fill="#FFFFFF" stroke-width="4"/>
+<path d="M132 180C124 250 116 330 104 410M170 180C178 250 186 330 198 410M150 240C150 310 148 380 146 440" fill="none" stroke-width="1.8"/>
+<path d="M112 260C108 300 104 340 98 380" fill="none" stroke="url(#hatch)" stroke-width="7"/>
+<path d="M190 262C194 300 198 340 204 380" fill="none" stroke="url(#hatch)" stroke-width="7"/>
+<path d="M60 450l-8 6M92 470l-2 8M124 480l-2 8M152 486l0 8M184 478l2 8M214 468l2 8M246 450l8 6" fill="none" stroke-width="2"/>
+<path d="M120 150C104 166 92 190 86 216L98 224L104 212L112 226L120 216C122 192 126 170 132 156Z" fill="#FFFFFF" stroke-width="3.5"/>
+<path d="M182 150C198 166 210 190 216 216L204 224L198 212L190 226L182 216C180 192 176 170 170 156Z" fill="#FFFFFF" stroke-width="3.5"/>
+</g>
+</g>
+</g></g>
+</svg>

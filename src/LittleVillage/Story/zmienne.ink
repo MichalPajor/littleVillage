@@ -69,3 +69,7 @@ VAR glos_w_lesie = ()
 
 // Pan Ignacy pozwolił Jaromirowi zatrzymać księgę (zamiast oddać ją na Boże Narodzenie).
 VAR ksiega_zatrzymana = false
+
+// Jak Jaromir przegonił północnicę znad kołyski Zosi: nożykiem (zostaje w kołysce), makiem z księgi albo krzykiem (wracała).
+LIST KoniecPolnocnicy = przegnana_nozem, policzyla_mak, uslyszala_krzyk
+VAR polnocnica = ()

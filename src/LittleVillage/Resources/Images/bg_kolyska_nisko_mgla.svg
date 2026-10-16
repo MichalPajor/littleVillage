@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „kołyska Zosi”: północnica liczy mak przy podłodze — mgla (rysunek autora; # pokaz: mak, znika przy # pokaz: kogut)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="109" height="192" viewBox="180 170 109 192">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.36000 0.00000 0.00000 0.36000 180.00000 170.00000)"><g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="cien" data-anim="skala" data-origin="150,514" data-range="0.92-1.0" data-period="4">
+<ellipse cx="150" cy="514" rx="86" ry="8" fill="url(#hatch)" stroke="none"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="mgla" data-anim="przesuw" data-origin="150,470" data-range="12px" data-period="6">
+<path d="M40 470C70 452 100 466 130 456C160 446 190 462 220 452C244 444 266 456 280 470" fill="none" stroke-width="2.2"/>
+<path d="M56 492C84 478 112 490 140 482C170 474 200 488 230 480C250 474 268 484 282 494" fill="none" stroke-width="1.8"/>
+<path d="M30 448C54 438 74 448 96 442" fill="none" stroke-width="1.6"/>
+</g>
+</g>
+</g></g>
+</svg>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „kołyska Zosi”: izba Stasiowych po północy: okno z księżycem, piec ze śpiącym ojcem, kołyska, matka śpi na krześle
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="440" viewBox="0 0 390 440">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<rect width="390" height="440" fill="url(#hatchNight)" stroke="none" opacity="0.7"/>
+<path d="M0 6C130 10 260 3 390 8" fill="none" stroke-width="1.6"/>
+<path d="M0 34C130 38 260 31 390 36" fill="none" stroke-width="1.6"/>
+<path d="M0 62C130 66 260 59 390 64" fill="none" stroke-width="1.6"/>
+<path d="M0 90C130 94 260 87 390 92" fill="none" stroke-width="1.6"/>
+<path d="M0 118C130 122 260 115 390 120" fill="none" stroke-width="1.6"/>
+<path d="M0 146C130 150 260 143 390 148" fill="none" stroke-width="1.6"/>
+<path d="M0 174C130 178 260 171 390 176" fill="none" stroke-width="1.6"/>
+<path d="M0 202C130 206 260 199 390 204" fill="none" stroke-width="1.6"/>
+<path d="M0 230C130 234 260 227 390 232" fill="none" stroke-width="1.6"/>
+<path d="M0 258C130 262 260 255 390 260" fill="none" stroke-width="1.6"/>
+<path d="M-10 300H400V440H-10Z" fill="url(#hatchNight)" stroke="none"/><path d="M-10 300H400" fill="none" stroke-width="3"/>
+<path d="M-10 26H400" fill="none" stroke-width="8"/>
+<path d="M30 80H96V150H30Z" fill="#FFFFFF" stroke-width="3"/><path d="M63 80V150M30 115H96" fill="none" stroke-width="3"/><circle cx="80" cy="96" r="8" fill="#FFFFFF" stroke-width="1.4"/>
+<path d="M300 300V170H390V300Z" fill="#FFFFFF" stroke-width="3"/><path d="M296 174H394" fill="none" stroke-width="3"/>
+<path d="M306 172C310 160 340 156 372 160C384 162 388 168 388 172Z" fill="#000000" stroke-width="2"/><circle cx="312" cy="160" r="8" fill="#000000"/>
+<path d="M10 300C12 288 30 282 60 284C80 286 90 292 90 300Z" fill="#000000" stroke-width="2"/>
+<path d="M160 300C170 306 230 306 240 300M150 296C170 304 230 304 250 296" fill="none" stroke-width="2.6"/>
+<path d="M164 296L158 262H242L236 296Z" fill="#FFFFFF" stroke-width="2.6"/><path d="M170 262C186 254 214 254 230 262" fill="#FFFFFF" stroke-width="1.6"/>
+<circle cx="188" cy="262" r="5" fill="#FFFFFF" stroke-width="1.4"/>
+<path d="M262 300V262H290V300M262 262V230" fill="none" stroke-width="3"/>
+<path d="M262 276C262 254 270 244 278 242L284 266Z" fill="#000000" stroke-width="2"/><circle cx="252" cy="258" r="9" fill="#000000"/><path d="M243 254Q252 240 261 254" fill="#FFFFFF" stroke-width="1.4"/>
+</g>
+</svg>

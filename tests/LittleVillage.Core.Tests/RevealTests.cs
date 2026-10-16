@@ -133,7 +133,7 @@ public sealed class RevealTests
     // ----- strażnicy prawdziwej fabuły -----
 
     // Rozdzial drugi: kazdy ogon prologu i rozdzialu pierwszego konczy sie innym zestawem wyborow (wszystkie opcje choc raz).
-    private static readonly int[][] ChapterTwoTails = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 2, 0, 0, 0, 0, 1, 0, 2, 2, 2, 0], [1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1]];
+    private static readonly int[][] ChapterTwoTails = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1]];
 
     private static readonly int[][] AllPaths =
         [.. new[] { 0, 1, 2 }.SelectMany(place => new[] { new[] { place, 1 }, [place, 0, 0], [place, 0, 1] })

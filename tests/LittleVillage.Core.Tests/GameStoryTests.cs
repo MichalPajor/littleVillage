@@ -753,7 +753,7 @@ public sealed class GameStoryTests
 
     private static readonly int[] Summer = [RunOut, Contest, Shell, FirstOption, PlayOn];
     private static readonly int[] School = [Shout, Defend, TakeBark, FetchRibbon, BorrowBook];
-    private static readonly int[] Winter = [AskHanka, LetIn, 0, 0];  // imie psa (gdy jest) i glos z boru
+    private static readonly int[] Winter = [AskHanka, LetIn, 0, 0, 0];  // imie psa (gdy jest), glos z boru, kolyska
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1188,5 +1188,49 @@ public sealed class GameStoryTests
         Assert.Equal(3, night[0].Choices.Count);
         Assert.Contains(night[1].Blocks, b => b.Reveal == reveal);
         Assert.True(Has([night[1]], text));
+    }
+
+    [Theory]
+    [InlineData(BorrowBook, 1, 0, "noz", "Niech zostanie u niej", false, true)]
+    [InlineData(BorrowBook, 1, 1, "mak", "Jedno – zaszeptała", true, false)]
+    [InlineData(BorrowBook, 1, 2, "krzyk", "przez kolejne noce wracała", true, false)]
+    [InlineData(LeaveBook, 0, 1, "krzyk", "przez kolejne noce wracała", true, false)]
+    public void Chapter_three_midnight_wraith_over_the_cradle(int book, int advice, int choice, string reveal, string text, bool keepsKnife, bool hadPoppy)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, book, advice, LetIn, TurnCoat, choice]);
+
+        var cradle = On(pages, "kolyska");
+        Assert.StartsWith("Antek czekał przy oknie", cradle[0].Blocks[0].Text);
+        Assert.Contains(cradle[0].Blocks, b => b.Reveal == "polnocnica" && b.Text.Contains("w całunie postrzępionym u dołu"));
+        Assert.Equal(book == BorrowBook ? 3 : 2, cradle[0].Choices.Count);
+        Assert.Contains(cradle[1].Blocks, b => b.Reveal != null && b.Reveal.Contains(reveal));
+        Assert.Contains(cradle[1].Blocks, b => b.Reveal == "kogut");
+        Assert.True(Has([cradle[1]], text));
+        Assert.Equal(keepsKnife, Inventory(engine).Contains("nozyk"));
+        Assert.False(Inventory(engine).Contains("mak"));            // mak tylko na te jedna noc
+        Assert.Equal(reveal == "krzyk", Has([cradle[1]], "co szeptał mu dziad"));
+        _ = hadPoppy;
+    }
+
+    [Theory]
+    [InlineData(BorrowBook, 1, 0, "Nikt nie wiedział, skąd w kołysce wziął się nożyk.", "Od tamtej nocy Antek nie zostawał już w tyle.")]
+    [InlineData(BorrowBook, 1, 1, "Po maku nie było śladu", "Od tamtej nocy Antek nie zostawał już w tyle.")]
+    [InlineData(LeaveBook, 0, 1, "drobna, szara plamka", "Antek nie miał do niego żalu.")]
+    public void Chapter_three_ends_with_christmas_and_hankas_warning(int book, int advice, int cradle, string zosia, string antek)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, book, advice, LetIn, TurnCoat, cradle]);
+
+        var christmas = On(pages, "koledy")[0];
+        Assert.True(Has([christmas], zosia));
+        Assert.True(Has([christmas], antek));
+        Assert.Contains(christmas.Blocks, b => b.Reveal == "kulig" && b.Text.StartsWith("Przyszły święta"));
+        Assert.Contains(christmas.Blocks, b => b.Reveal == "hanka");
+        Assert.EndsWith("Ktoś musi jej wskazać drogę.", christmas.Blocks[^1].Text);
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału trzeciego._"));
+        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.DoesNotContain("mak", Inventory(engine));
     }
 }

@@ -6,9 +6,12 @@
 #   wigilia — izba przy wieczerzy: gwiazdka (# pokaz: gwiazdka), dziad w drzwiach (# pokaz: dziad), dziad z lira przy stole
 #             (# pokaz: lira), drzwi na rygiel (# pokaz: rygiel); wigilia_szczeniak — Stas i szczeniak autora (# pokaz: pies)
 #   noc_snieg — noc, ksiezyc, sciezka skrajem boru: oczy (# pokaz: oczy), wielkie slady (# pokaz: kroki), bieg (# pokaz: bieg)
+#   kolyska — izba Stasiowych po polnocy: polnocnica autora nad kolyska (# pokaz: polnocnica, znika przy # pokaz: odlot),
+#             pod powala (# pokaz: noz), nisko nad makiem (# pokaz: mak), luczywo (# pokaz: krzyk), swit (# pokaz: kogut)
+#   koledy — swieta: kolednicy z gwiazda i turoniem, kulig po jeziorze (# pokaz: kulig), Hanka z Jaromirem (# pokaz: hanka)
 # Uzycie z katalogu glownego repozytorium:
 #   python3 tools/Backgrounds/zima.py src/LittleVillage/Resources/Images     -> pliki bg_roraty_*.svg
-#   python3 tools/Backgrounds/zima.py --master roraty|przerwa_sniezki|izba_noc|wigilia|wigilia_szczeniak|noc_snieg [wszystko] > podglad.svg
+#   python3 tools/Backgrounds/zima.py --master roraty|przerwa_sniezki|izba_noc|wigilia|wigilia_szczeniak|noc_snieg|kolyska|koledy [wszystko] > podglad.svg
 import sys, random
 from common import *
 import postacie, art
@@ -304,12 +307,142 @@ N_COMMENTS = {"tlo": "noc w śniegu: księżyc, ścieżka skrajem boru, w głęb
               "bieg_0": "Jaromir biegnie, klatka 1 (# pokaz: bieg)", "bieg_1": "Jaromir biegnie, klatka 2", "przod": "pierwszy plan: śnieg"}
 N_COMMENTS.update({f"krok_{i}": f"wielki ślad {i + 1} — ktoś bardzo wysoki przechodzi obok (# pokaz: kroki, po kolei)" for i in range(len(STEPS))})
 
+
+# ======================= KOLYSKA: izba Stasiowych po polnocy, polnocnica autora =======================
+K = {}
+w = ['<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>',
+     '<rect width="390" height="440" fill="url(#hatchNight)" stroke="none" opacity="0.7"/>']
+for i in range(10):
+    y = 6 + i * 28
+    w.append(f'<path d="M0 {y}C130 {y + 4} 260 {y - 3} 390 {y + 2}" fill="none" stroke-width="1.6"/>')
+w.append('<path d="M-10 300H400V440H-10Z" fill="url(#hatchNight)" stroke="none"/><path d="M-10 300H400" fill="none" stroke-width="3"/>')
+w.append('<path d="M-10 26H400" fill="none" stroke-width="8"/>')                                        # belka pod powala
+# okno z ksiezycem (z lewej)
+w.append('<path d="M30 80H96V150H30Z" fill="#FFFFFF" stroke-width="3"/><path d="M63 80V150M30 115H96" fill="none" stroke-width="3"/><circle cx="80" cy="96" r="8" fill="#FFFFFF" stroke-width="1.4"/>')
+# piec z prawej, na nim spiacy ojciec Antka
+w.append('<path d="M300 300V170H390V300Z" fill="#FFFFFF" stroke-width="3"/><path d="M296 174H394" fill="none" stroke-width="3"/>')
+w.append('<path d="M306 172C310 160 340 156 372 160C384 162 388 168 388 172Z" fill="#000000" stroke-width="2"/><circle cx="312" cy="160" r="8" fill="#000000"/>')
+# Franek spi w kacie (z lewej, pod oknem)
+w.append('<path d="M10 300C12 288 30 282 60 284C80 286 90 292 90 300Z" fill="#000000" stroke-width="2"/>')
+# kolyska na biegunach na srodku, matka spi na krzesle z glowa na kolysce
+w.append('<path d="M160 300C170 306 230 306 240 300M150 296C170 304 230 304 250 296" fill="none" stroke-width="2.6"/>')
+w.append('<path d="M164 296L158 262H242L236 296Z" fill="#FFFFFF" stroke-width="2.6"/><path d="M170 262C186 254 214 254 230 262" fill="#FFFFFF" stroke-width="1.6"/>')
+w.append('<circle cx="188" cy="262" r="5" fill="#FFFFFF" stroke-width="1.4"/>')
+w.append('<path d="M262 300V262H290V300M262 262V230" fill="none" stroke-width="3"/>')
+w.append('<path d="M262 276C262 254 270 244 278 242L284 266Z" fill="#000000" stroke-width="2"/><circle cx="252" cy="258" r="9" fill="#000000"/>'
+         '<path d="M243 254Q252 240 261 254" fill="#FFFFFF" stroke-width="1.4"/>')
+K["tlo"] = (0, 0, 390, 440, w[0] + "\n" + group(w[1:]))
+# pas ksiezycowego swiatla (gasnie, gdy pojawia sie polnocnica)
+K["ksiezyc"] = (60, 150, 230, 290, group(['<path d="M96 150L120 150L290 440L190 440Z" fill="#FFFFFF" stroke="none" opacity="0.55"/>']))
+# chlopcy pod sciana (pierwszy plan)
+K["chlopcy"] = (8, 330, 120, 104, group([postacie.crouching_child(40, 430, 1.8), postacie.crouching_child(96, 430, 1.7)]))
+# swit w oknie i luczywo
+K["swit"] = (30, 80, 66, 70, group(['<path d="M30 80H96V150H30Z" fill="#FFFFFF" stroke-width="3"/><path d="M30 130C50 122 74 126 96 118V150H30Z" fill="url(#hatch)" stroke="none"/><path d="M63 80V150M30 115H96" fill="none" stroke-width="3"/>']))
+K["luczywo"] = (270, 190, 30, 50, group([f'<path d="M286 236L282 210" fill="none" stroke-width="3"/><path d="M282 210c-5 -6 -3 -14 0 -18c3 4 6 12 0 18z" fill="{RED}" stroke="none"/>']))
+# mak rozsypany wokol kolyski
+seeds = [f'<circle cx="{150 + (i * 23) % 110}" cy="{304 + (i * 7) % 14}" r="1.4" fill="#FFFFFF" stroke="none"/>' for i in range(30)]
+K["mak"] = (146, 300, 118, 22, group(seeds))
+
+
+def polnocnica(prefix, tx, ty, k):
+    return art.rig("polnocnica", art.parse_transform(f"translate({tx} {ty}) scale({k})"), [
+        ("mgla", ["cien", "mgla"], {"type": "drift", "amplitude": 6, "duration": 6000}, None),
+        ("calun", ["calun"], None, None),
+        ("wlosy_l", ["wlosy_lewe"], {"type": "sway", "amplitude": 3, "duration": 5000}, "wlosy_lewe"),
+        ("wlosy_p", ["wlosy_prawe"], {"type": "sway", "amplitude": 3, "duration": 5000, "phase": 0.5}, "wlosy_prawe"),
+        ("reka_l", ["reka_lewa"], {"type": "sway", "amplitude": 6, "duration": 3500}, "reka_lewa"),
+        ("reka_p", ["reka_prawa"], {"type": "sway", "amplitude": 6, "duration": 3500, "phase": 0.5}, "reka_prawa"),
+        ("twarz", ["twarz"], {"type": "sway", "amplitude": 2, "duration": 4000}, "twarz")], prefix)
+
+
+RIG_K_NAD = polnocnica("nad", 136, 76, 0.43)          # nad kolyska
+RIG_K_POWALA = polnocnica("powala", 136, 12, 0.36)     # zawieszona pod powala (po nozyku)
+RIG_K_NISKO = polnocnica("nisko", 180, 170, 0.36)      # nisko nad podloga, liczy ziarenka
+for r in (RIG_K_NAD, RIG_K_POWALA, RIG_K_NISKO):
+    art.install_rig(K, r)
+K["wir"] = (150, 200, 100, 100, group([f'<path d="{ribbon(160, 240, 250, 14, 4)}" fill="#EDEBE6" stroke-width="1.4" opacity="0.8"/>',
+                                       f'<path d="{ribbon(170, 230, 272, 10, 3)}" fill="#EDEBE6" stroke-width="1.2" opacity="0.7"/>']))
+p = ['<path d="M-10 432H400V844H-10Z" fill="url(#hatchNight)" stroke="none"/>']
+K["przod"] = (0, 422, 390, 422, group(p))
+
+NAD, POWALA, NISKO = art.rig_names(RIG_K_NAD), art.rig_names(RIG_K_POWALA), art.rig_names(RIG_K_NISKO)
+KOLYSKA = ["tlo", "swit", "ksiezyc", "mak", "luczywo"] + NAD + POWALA + NISKO + ["wir", "chlopcy", "przod"]
+K_REVEAL = {"swit": "kogut", "mak": "mak", "luczywo": "krzyk", "wir": "odlot"}
+K_REVEAL.update({n: "polnocnica" for n in NAD})
+K_REVEAL.update({n: "noz" for n in POWALA})
+K_REVEAL.update({n: "mak" for n in NISKO})
+K_ANIM = {"luczywo": {"type": "flame", "amplitude": 0.15, "duration": 700, "anchorX": 0.5, "anchorY": 1},
+          "wir": {"type": "drift", "amplitude": 14, "duration": 1600}}
+for r in (RIG_K_NAD, RIG_K_POWALA, RIG_K_NISKO):
+    K_ANIM.update(art.rig_anims(r))
+K_EXTRA = {"ksiezyc": {"hideOn": "polnocnica", "fadeDuration": 2500}, "swit": {"fadeDuration": 4000}, "mak": {"fadeDuration": 600},
+           "luczywo": {"noInvert": True}, "wir": {"hideAfter": 2200, "fadeDuration": 700}, "chlopcy": {"depth": 0.8}, "przod": {"depth": 1.0}}
+# nad kolyska: pojawia sie z mgly, znika przy nozyku (wzlatuje pod powale), maku (opada) albo krzyku (rozplywa sie)
+K_EXTRA.update({n: {"fadeDuration": 3000, "hideOn": "odlot"} for n in NAD})
+K_EXTRA.update({n: {"fadeDuration": 1200, "hideOn": "kogut"} for n in POWALA + NISKO})
+K_COMMENTS = {"tlo": "izba Stasiowych po północy: okno z księżycem, piec ze śpiącym ojcem, kołyska, matka śpi na krześle",
+              "swit": "świt w oknie (# pokaz: kogut)", "ksiezyc": "pas księżycowego światła (gaśnie przy # pokaz: polnocnica)",
+              "mak": "mak rozsypany wokół kołyski (# pokaz: mak)", "luczywo": "zapalone łuczywo (# pokaz: krzyk)",
+              "chlopcy": "Antek i Jaromir pod ścianą", "wir": "wir mgły, gdy północnica odlatuje (# pokaz: odlot)", "przod": "pierwszy plan"}
+K_COMMENTS.update({n: f"północnica nad kołyską — {n[4:]} (rysunek autora; # pokaz: polnocnica, znika przy # pokaz: odlot)" for n in NAD})
+K_COMMENTS.update({n: f"północnica pod powałą — {n[7:]} (rysunek autora; # pokaz: noz, znika przy # pokaz: kogut)" for n in POWALA})
+K_COMMENTS.update({n: f"północnica liczy mak przy podłodze — {n[6:]} (rysunek autora; # pokaz: mak, znika przy # pokaz: kogut)" for n in NISKO})
+
+
+# ======================= KOLEDY: swieta w Zapadlinie, kulig po jeziorze =======================
+C = {}
+rnd = random.Random(304)
+t = ['<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>',
+     '<path d="M0 0H390V170H0Z" fill="url(#hatch)" stroke="none" opacity="0.7"/>']
+t.append('<path d="M-10 200C80 190 200 196 400 188V440H-10Z" fill="#FFFFFF" stroke-width="3"/>')
+# zamarzniete jezioro (gladkie, z kreskami lodu), bor na horyzoncie
+t.append('<path d="M20 236C80 222 300 222 370 236C380 256 300 268 190 268C80 268 10 256 20 236Z" fill="#EDEBE6" stroke-width="2.4"/>')
+t.append('<path d="M70 244h40M180 250h56M290 242h30" fill="none" stroke-width="1.2"/>')
+for i in range(18):
+    t.append(spruce(4 + i * 22, 192 - (i % 2) * 4, 50 + (i % 3) * 12, 22))
+    t.append(f'<path d="M{4 + i * 22 - 7} {192 - (i % 2) * 4 - 30 - (i % 3) * 7}l7 -5l7 5" fill="#FFFFFF" stroke-width="1"/>')
+# chalupy w sniegu z dymem
+from kapliczki import hut
+for (x, y, k) in [(40, 300, 1.2), (330, 296, 1.1)]:
+    t.append(hut(x, y, k))
+C["tlo"] = (0, 0, 390, 440, t[0] + "\n" + group(t[1:]))
+# kolednicy: chlopak z gwiazda na kiju, turon (kudlaty, z rogami), trzeci z workiem
+C["kolednicy"] = (120, 290, 170, 110, group([postacie.child(150, 390, 1.5, arm="l8 -40"), postacie.child(260, 392, 1.5),
+    '<path d="M196 392C190 370 196 350 214 346C226 344 236 352 238 364L236 392Z" fill="url(#hatchDense)" stroke-width="2"/>'
+    '<path d="M214 346C212 334 220 326 230 328C238 330 240 340 236 348Z" fill="#000000" stroke-width="2"/>'
+    '<path d="M222 330c-4 -8 -2 -14 2 -16M232 330c4 -8 2 -14 -2 -16" fill="none" stroke-width="2"/>'
+    '<path d="M236 340l8 4l-8 2" fill="#FFFFFF" stroke-width="1.4"/>']))
+C["gwiazda"] = (138, 290, 44, 44, group([f'<path d="M160 296l5 10l11 1l-8 8l2 11l-10 -5l-10 5l2 -11l-8 -8l11 -1z" fill="#FFFFFF" stroke-width="1.6"/>',
+                                         f'<circle cx="160" cy="312" r="3" fill="{RED}" stroke="none"/>']))
+# kulig: sanie z konikiem suna po jeziorze
+C["kulig"] = (30, 226, 120, 34, group(['<path d="M40 254H90L96 246H44Z" fill="#000000" stroke-width="1.6"/><path d="M36 256H98" fill="none" stroke-width="2"/>',
+                                       '<circle cx="56" cy="240" r="4" fill="#000000"/><circle cx="72" cy="240" r="4" fill="#000000"/>',
+                                       '<path d="M104 254L108 240L130 236L136 228L140 236L134 240L128 254M112 254v6M126 254v6" fill="#000000" stroke-width="1.6"/>']))
+C["hanka"] = (300, 330, 90, 104, group([postacie.girl(320, 432, 1.75), postacie.child(366, 432, 1.75)]))
+p = ['<path d="M-10 432H400V844H-10Z" fill="#FFFFFF" stroke="none"/>']
+for i in range(14):
+    x, y = rnd.uniform(0, 390), rnd.uniform(444, 840)
+    p.append(f'<path d="M{x:.0f} {y:.0f}q8 -5 16 0" fill="none" stroke-width="1.1"/>')
+C["przod"] = (0, 422, 390, 422, group(p))
+
+KOLEDY = ["tlo", "kulig", "kolednicy", "gwiazda", "hanka", "przod"]
+C_REVEAL = {"kulig": "kulig", "hanka": "hanka"}
+C_ANIM = {"gwiazda": {"type": "sway", "amplitude": 30, "duration": 3000, "anchorX": 0.5, "anchorY": 0.5},
+          "kolednicy": {"type": "bob", "amplitude": 1, "duration": 800},
+          "kulig": {"type": "drift", "amplitude": 70, "duration": 9000}}
+C_EXTRA = {"gwiazda": {"noInvert": True}, "kulig": {"fadeDuration": 1500}, "hanka": {"fadeDuration": 1500, "depth": 0.8}, "przod": {"depth": 1.0}}
+C_COMMENTS = {"tlo": "święta: Zapadlina w śniegu, zamarznięte jezioro, bór, chałupy", "kolednicy": "kolędnicy z turoniem",
+              "gwiazda": "gwiazda kolędników (obraca się)", "kulig": "kulig — sanie z konikiem na jeziorze (# pokaz: kulig)",
+              "hanka": "Hanka i Jaromir (# pokaz: hanka)", "przod": "pierwszy plan: śnieg"}
+
 BACKGROUNDS = {"roraty": ("bg_roraty", R, RORATY, R_ANIM, R_REVEAL, R_EXTRA, R_COMMENTS, "roraty"),
                "przerwa_sniezki": ("bg_przerwa", P, PRZERWA, P_ANIM, P_REVEAL, P_EXTRA, P_COMMENTS, "przerwa pod kościółkiem"),
                "izba_noc": ("bg_izbanoc", I, IZBA_NOC, I_ANIM, I_REVEAL, I_EXTRA, I_COMMENTS, "izba nocą"),
                "wigilia": ("bg_wigilia", V, WIGILIA, V_ANIM, V_REVEAL, V_EXTRA, V_COMMENTS, "Wigilia"),
                "wigilia_szczeniak": ("bg_wigilia", V, SZCZENIAK, VS_ANIM, VS_REVEAL, VS_EXTRA, VS_COMMENTS, "Wigilia"),
-               "noc_snieg": ("bg_nocsnieg", N, NOC, N_ANIM, N_REVEAL, N_EXTRA, N_COMMENTS, "noc w śniegu")}
+               "noc_snieg": ("bg_nocsnieg", N, NOC, N_ANIM, N_REVEAL, N_EXTRA, N_COMMENTS, "noc w śniegu"),
+               "kolyska": ("bg_kolyska", K, KOLYSKA, K_ANIM, K_REVEAL, K_EXTRA, K_COMMENTS, "kołyska Zosi"),
+               "koledy": ("bg_koledy", C, KOLEDY, C_ANIM, C_REVEAL, C_EXTRA, C_COMMENTS, "święta")}
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":

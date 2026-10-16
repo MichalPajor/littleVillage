@@ -927,6 +927,55 @@
         {"image": "bg_nocsnieg_bieg_0.png", "x": 100, "y": 290, "width": 50, "height": 60, "animation": {"type": "frames", "duration": 360}, "revealOn": "bieg", "frames": ["bg_nocsnieg_bieg_0.png", "bg_nocsnieg_bieg_1.png"], "fadeDuration": 300},
         {"image": "bg_nocsnieg_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
       ]
+    },
+    "kolyska": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_kolyska_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_kolyska_swit.png", "x": 30, "y": 80, "width": 66, "height": 70, "revealOn": "kogut", "fadeDuration": 4000},
+        {"image": "bg_kolyska_ksiezyc.png", "x": 60, "y": 150, "width": 230, "height": 290, "hideOn": "polnocnica", "fadeDuration": 2500},
+        {"image": "bg_kolyska_mak.png", "x": 146, "y": 300, "width": 118, "height": 22, "revealOn": "mak", "fadeDuration": 600},
+        {"image": "bg_kolyska_luczywo.png", "x": 270, "y": 190, "width": 30, "height": 50, "animation": {"type": "flame", "amplitude": 0.15, "duration": 700, "anchorX": 0.5, "anchorY": 1}, "revealOn": "krzyk", "noInvert": true},
+        {"image": "bg_kolyska_nad_mgla.png", "x": 136, "y": 76, "width": 130, "height": 229, "animation": {"type": "drift", "amplitude": 6, "duration": 6000}, "revealOn": "polnocnica", "fadeDuration": 3000, "hideOn": "odlot"},
+        {"image": "bg_kolyska_nad_calun.png", "x": 136, "y": 76, "width": 130, "height": 229, "revealOn": "polnocnica", "fadeDuration": 3000, "hideOn": "odlot"},
+        {"image": "bg_kolyska_nad_wlosy_l.png", "x": 136, "y": 76, "width": 130, "height": 229, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.404, "anchorY": 0.188}, "revealOn": "polnocnica", "fadeDuration": 3000, "hideOn": "odlot"},
+        {"image": "bg_kolyska_nad_wlosy_p.png", "x": 136, "y": 76, "width": 130, "height": 229, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "phase": 0.5, "anchorX": 0.589, "anchorY": 0.188}, "revealOn": "polnocnica", "fadeDuration": 3000, "hideOn": "odlot"},
+        {"image": "bg_kolyska_nad_reka_l.png", "x": 136, "y": 76, "width": 130, "height": 229, "animation": {"type": "sway", "amplitude": 6, "duration": 3500, "anchorX": 0.364, "anchorY": 0.376}, "revealOn": "polnocnica", "fadeDuration": 3000, "hideOn": "odlot"},
+        {"image": "bg_kolyska_nad_reka_p.png", "x": 136, "y": 76, "width": 130, "height": 229, "animation": {"type": "sway", "amplitude": 6, "duration": 3500, "phase": 0.5, "anchorX": 0.635, "anchorY": 0.376}, "revealOn": "polnocnica", "fadeDuration": 3000, "hideOn": "odlot"},
+        {"image": "bg_kolyska_nad_twarz.png", "x": 136, "y": 76, "width": 130, "height": 229, "animation": {"type": "sway", "amplitude": 2, "duration": 4000, "anchorX": 0.496, "anchorY": 0.338}, "revealOn": "polnocnica", "fadeDuration": 3000, "hideOn": "odlot"},
+        {"image": "bg_kolyska_powala_mgla.png", "x": 136, "y": 12, "width": 109, "height": 192, "animation": {"type": "drift", "amplitude": 6, "duration": 6000}, "revealOn": "noz", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_powala_calun.png", "x": 136, "y": 12, "width": 109, "height": 192, "revealOn": "noz", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_powala_wlosy_l.png", "x": 136, "y": 12, "width": 109, "height": 192, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.403, "anchorY": 0.188}, "revealOn": "noz", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_powala_wlosy_p.png", "x": 136, "y": 12, "width": 109, "height": 192, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "phase": 0.5, "anchorX": 0.588, "anchorY": 0.188}, "revealOn": "noz", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_powala_reka_l.png", "x": 136, "y": 12, "width": 109, "height": 192, "animation": {"type": "sway", "amplitude": 6, "duration": 3500, "anchorX": 0.363, "anchorY": 0.375}, "revealOn": "noz", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_powala_reka_p.png", "x": 136, "y": 12, "width": 109, "height": 192, "animation": {"type": "sway", "amplitude": 6, "duration": 3500, "phase": 0.5, "anchorX": 0.634, "anchorY": 0.375}, "revealOn": "noz", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_powala_twarz.png", "x": 136, "y": 12, "width": 109, "height": 192, "animation": {"type": "sway", "amplitude": 2, "duration": 4000, "anchorX": 0.495, "anchorY": 0.337}, "revealOn": "noz", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_nisko_mgla.png", "x": 180, "y": 170, "width": 109, "height": 192, "animation": {"type": "drift", "amplitude": 6, "duration": 6000}, "revealOn": "mak", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_nisko_calun.png", "x": 180, "y": 170, "width": 109, "height": 192, "revealOn": "mak", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_nisko_wlosy_l.png", "x": 180, "y": 170, "width": 109, "height": 192, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.403, "anchorY": 0.188}, "revealOn": "mak", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_nisko_wlosy_p.png", "x": 180, "y": 170, "width": 109, "height": 192, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "phase": 0.5, "anchorX": 0.588, "anchorY": 0.188}, "revealOn": "mak", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_nisko_reka_l.png", "x": 180, "y": 170, "width": 109, "height": 192, "animation": {"type": "sway", "amplitude": 6, "duration": 3500, "anchorX": 0.363, "anchorY": 0.375}, "revealOn": "mak", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_nisko_reka_p.png", "x": 180, "y": 170, "width": 109, "height": 192, "animation": {"type": "sway", "amplitude": 6, "duration": 3500, "phase": 0.5, "anchorX": 0.634, "anchorY": 0.375}, "revealOn": "mak", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_nisko_twarz.png", "x": 180, "y": 170, "width": 109, "height": 192, "animation": {"type": "sway", "amplitude": 2, "duration": 4000, "anchorX": 0.495, "anchorY": 0.338}, "revealOn": "mak", "fadeDuration": 1200, "hideOn": "kogut"},
+        {"image": "bg_kolyska_wir.png", "x": 150, "y": 200, "width": 100, "height": 100, "animation": {"type": "drift", "amplitude": 14, "duration": 1600}, "revealOn": "odlot", "hideAfter": 2200, "fadeDuration": 700},
+        {"image": "bg_kolyska_chlopcy.png", "x": 8, "y": 330, "width": 120, "height": 104, "depth": 0.8},
+        {"image": "bg_kolyska_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
+    },
+    "koledy": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_koledy_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_koledy_kulig.png", "x": 30, "y": 226, "width": 120, "height": 34, "animation": {"type": "drift", "amplitude": 70, "duration": 9000}, "revealOn": "kulig", "fadeDuration": 1500},
+        {"image": "bg_koledy_kolednicy.png", "x": 120, "y": 290, "width": 170, "height": 110, "animation": {"type": "bob", "amplitude": 1, "duration": 800}},
+        {"image": "bg_koledy_gwiazda.png", "x": 138, "y": 290, "width": 44, "height": 44, "animation": {"type": "sway", "amplitude": 30, "duration": 3000, "anchorX": 0.5, "anchorY": 0.5}, "noInvert": true},
+        {"image": "bg_koledy_hanka.png", "x": 300, "y": 330, "width": 90, "height": 104, "revealOn": "hanka", "fadeDuration": 1500, "depth": 0.8},
+        {"image": "bg_koledy_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
     }
   }
 }
