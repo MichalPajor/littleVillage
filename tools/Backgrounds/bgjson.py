@@ -1,7 +1,7 @@
 # Zapis wpisow tel do src/LittleVillage/Resources/Raw/backgrounds.json (jedna warstwa w linii, naglowek z komentarzami zostaje).
 #   entry(prefix, order, L, anim, reveal, extra)  -> lista warstw (slowniki)
 #   upsert(key, layers)                            -> podmienia wpis tla albo dopisuje go na koncu
-# extra[nazwa] moze zawierac: frames (lista nazw warstw L — klatki), appearAfter, hideAfter, fadeDuration, noInvert, depth.
+# extra[nazwa] moze zawierac: frames (lista nazw warstw L — klatki), appearAfter, hideAfter, hideOn, fadeDuration, noInvert, depth.
 import json, os
 
 JSON_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "src", "LittleVillage", "Resources", "Raw", "backgrounds.json")

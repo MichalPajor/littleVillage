@@ -3,11 +3,15 @@
 #               na polach dymia ogniska z letow, szron na trawie; Jaromir w za duzej czapce z lniana torba (# pokaz: jaromir)
 #   szkola_izba — izba szkoly w Bukowcu: piec kaflowy, tablica, lawki; Bartek z tabliczka (# pokaz: bartek), pan Ignacy w drzwiach
 #               (# pokaz: ignacy), obrona Antka (# pokaz: obrona), potrzaskana tabliczka (# pokaz: tabliczka)
+#   szkola_podania — ta sama izba w piatek: za oknami bor, pan Ignacy na brzegu biurka (znika przy # pokaz: okno), cien postaci
+#               w kapeluszu na scianie (# pokaz: cien), nauczyciel przy oknie (# pokaz: okno)
+#   sosna_spirala — zmierzch, sosna z kora zdarta w spirale; kawalek kory znika, Jaromir kuca po nia (# pokaz: kora);
+#               spirala rosnie wyzej (# pokaz: spirala)
 #   droga_bor — przed switem sciezka pnie sie pod gore na Bukowy Grzbiet: z lewej pola, z prawej sciana swierkow, mgla;
 #               czworka dzieci w drodze do szkoly; miedzy swierkami jasne oczy z czerwonymi zrenicami (# pokaz: oczy)
 # Uzycie z katalogu glownego repozytorium:
 #   python3 tools/Backgrounds/szkola.py src/LittleVillage/Resources/Images         -> pliki bg_jesien_*.svg, bg_drogabor_*.svg, bg_szkola_*.svg
-#   python3 tools/Backgrounds/szkola.py --master jesien|droga_bor|szkola_izba [wszystko] > podglad.svg
+#   python3 tools/Backgrounds/szkola.py --master jesien|droga_bor|szkola_izba|szkola_podania|sosna_spirala [wszystko] > podglad.svg
 import sys, random, math
 from common import *
 import art, postacie
@@ -269,9 +273,111 @@ S_COMMENTS = {"tlo": "izba szkolna: ściana z desek, dwa okna, tablica, kaflowy 
               "tabliczka": "potrzaskana tabliczka na podłodze (# pokaz: tabliczka)", "obrona": "Jaromir, Franek i Hanka ze szczapą (# pokaz: obrona)",
               "ignacy": "pan Ignacy w drzwiach (# pokaz: ignacy)", "przod": "pierwszy plan: podłoga"}
 
+
+# ----- piatkowe opowiesci (to samo wnetrze): pan Ignacy na brzegu biurka, cien Borowego na scianie, na koniec nauczyciel przy oknie
+view = []
+for x in (122, 214):
+    view.append(f'<path d="M{x} 138C{x + 20} 132 {x + 40} 130 {x + 62} 126V160H{x}Z" fill="#FFFFFF" stroke-width="1.6"/>')
+    for i in range(8):
+        sx = x + 4 + i * 8
+        view.append(spruce(sx, 134 - i * 1.4, 14 + (i % 3) * 3, 7))
+    view.append(f'<path d="M{x} 146C{x + 20} 144 {x + 40} 142 {x + 62} 140M{x} 154C{x + 24} 152 {x + 40} 150 {x + 62} 148" fill="none" stroke-width="0.9"/>')
+    view.append(f'<path d="M{x} 70H{x + 62}V160H{x}Z" fill="none" stroke-width="3"/><path d="M{x + 31} 70V160M{x} 112H{x + 62}" fill="none" stroke-width="2.4"/>')
+S["widok"] = (118, 66, 162, 98, group(view))
+# pan Ignacy przysiadl na brzegu biurka, okulary w dloni
+sit = postacie.man(150, 350, 1.3, hat=False, arm="l12 10l6 -8")
+sit += '<g stroke-width="1.2"><circle cx="171" cy="273" r="2.6" fill="#FFFFFF"/><circle cx="177" cy="273" r="2.6" fill="#FFFFFF"/></g>'
+S["ignacy_biurko"] = (126, 240, 62, 112, group([sit]))
+# cien wysokiej postaci w kapeluszu, rzucany przez ogien z pieca na sciane (pojawia sie i gasnie)
+S["cien"] = (150, 14, 150, 250, group([
+    '<path d="M214 262L220 190C206 170 200 120 204 84C210 70 222 64 232 66L236 52C210 50 184 42 176 30C200 24 240 20 280 26C278 36 262 46 250 52'
+    'L252 66C264 68 272 80 274 96C278 130 270 176 258 192L266 262H246L240 200H234L230 262Z" fill="url(#hatchNight)" stroke="none" opacity="0.8"/>',
+    '<path d="M206 100C196 140 190 180 184 228M270 104C278 140 286 176 290 220" fill="none" stroke-width="5" opacity="0.6"/>']))
+# nauczyciel przy oknie, plecami do izby
+win = postacie.man(245, 262, 1.5, hat=False)
+S["ignacy_okno"] = (220, 140, 50, 124, group([win]))
+
+PODANIA = ["tlo", "widok", "cien", "ogien", "ignacy_biurko", "ignacy_okno", "lawki", "przod"]
+P_REVEAL = {"cien": "cien", "ignacy_okno": "okno"}
+P_ANIM = {"ogien": S_ANIM["ogien"], "cien": {"type": "sway", "amplitude": 1.5, "duration": 2600, "anchorX": 0.5, "anchorY": 1}}
+P_EXTRA = {"cien": {"fadeDuration": 3000, "hideAfter": 5000}, "ignacy_biurko": {"hideOn": "okno", "fadeDuration": 1200},
+           "ignacy_okno": {"fadeDuration": 1200}, "lawki": {"depth": 0.5}, "przod": {"depth": 1.0}}
+P_COMMENTS = dict(S_COMMENTS)
+P_COMMENTS.update({"widok": "za oknami Bukowy Grzbiet i ściana boru", "ignacy_biurko": "pan Ignacy na brzegu biurka (znika przy # pokaz: okno)",
+                   "cien": "cień wysokiej postaci w kapeluszu na ścianie (# pokaz: cien, gaśnie po chwili)",
+                   "ignacy_okno": "pan Ignacy przy oknie, plecami do izby (# pokaz: okno)"})
+
+
+# ======================= SOSNA ze spirala zdartej kory (zmierzch, skraj boru) =======================
+K = {}
+rnd = random.Random(205)
+t = ['<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>',
+     '<path d="M0 0H390V120C300 134 200 110 110 126C60 134 30 124 0 130Z" fill="url(#hatchDense)" stroke="none"/>',
+     '<path d="M0 130C30 124 60 134 110 126C200 110 300 134 390 120V200H0Z" fill="url(#hatch)" stroke="none"/>']
+t.append('<path d="M-10 300C80 290 200 296 400 288V440H-10Z" fill="#EDEBE6" stroke-width="3"/>')
+# sciana boru w glebi
+for i in range(22):
+    x = -6 + i * 19
+    t.append(spruce(x, 296 - (i % 2) * 4, 110 + (i % 3) * 22, 40))
+# sciezka wzdluz skraju lasu
+t.append('<path d="M-10 404C80 396 160 392 230 394C300 396 350 404 400 410" fill="none" stroke-width="2.4"/>')
+t.append('<path d="M-10 428C80 420 160 416 230 418C300 420 350 428 400 434" fill="none" stroke-width="2.4"/>')
+# gruby pien sosny (korona poza kadrem), lekko rozszerzony u nasady
+TX0, TX1 = 248, 300
+t.append(f'<path d="M{TX0} 0V380C{TX0} 396 {TX0 - 10} 404 {TX0 - 18} 410H{TX1 + 18}C{TX1 + 10} 404 {TX1} 396 {TX1} 380V0Z" fill="#EDEBE6" stroke="none"/>')
+t.append(f'<path d="M{TX0} 0V380C{TX0} 396 {TX0 - 10} 404 {TX0 - 18} 410H{TX1 + 18}C{TX1 + 10} 404 {TX1} 396 {TX1} 380V0Z" fill="url(#hatchDense)" stroke-width="3"/>')
+for y in range(12, 380, 22):
+    t.append(f'<path d="M{TX0 + 4} {y}q12 -4 20 2M{TX0 + 28} {y + 10}q10 -3 18 2" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>')
+
+
+def spiral_band(y_bottom, y_top, pitch=64, width=13):
+    """Pas zdartej kory owiniety wokol pnia: widoczne ukosne odcinki od lewej krawedzi do prawej, co skok `pitch`."""
+    out = []
+    y = y_bottom
+    while y - pitch * 0.5 > y_top:
+        a, b = y, y - pitch * 0.5
+        out.append(f'<path d="M{TX0} {a}C{TX0 + 18} {a - 4} {TX1 - 18} {b + 6} {TX1} {b}V{b - width}C{TX1 - 18} {b - width + 6} {TX0 + 18} {a - width - 4} {TX0} {a - width}Z" fill="#FFFFFF" stroke-width="1.8"/>')
+        out.append(f'<path d="M{TX0 + 8} {a - width * 0.5}C{TX0 + 22} {a - width * 0.5 - 4} {TX1 - 22} {b - width * 0.5 + 5} {TX1 - 6} {b - width * 0.5}" fill="none" stroke-width="0.7"/>')
+        y -= pitch
+    return out
+
+
+t += spiral_band(392, 150)
+K["tlo"] = (0, 0, 390, 440, t[0] + "\n" + group(t[1:]))
+# spirala rosnie wyzej (wariant: odchodza, Jaromir oglada sie przez ramie)
+K["spirala"] = (TX0 - 2, 0, TX1 - TX0 + 4, 160, group(spiral_band(136, -40)))
+# krople zywicy lsnia
+drops = []
+for (x, y) in [(258, 346), (290, 286), (262, 224), (284, 176)]:
+    drops.append(f'<path d="M{x} {y}c-2 4 -3 7 0 9c3 -2 2 -5 0 -9z" fill="#FFFFFF" stroke-width="1.2"/><path d="M{x - 1} {y + 5}h1" fill="none" stroke-width="0.8"/>')
+K["zywica"] = (250, 170, 46, 190, group(drops))
+# zwiniety w trabke kawalek kory u stop sosny
+K["kora"] = (224, 398, 26, 14, group(['<path d="M228 408C226 402 232 400 238 402L246 404C250 406 248 412 242 410L232 410C229 410 228 409 228 408Z" fill="url(#hatchDense)" stroke-width="1.6"/>',
+                                       '<ellipse cx="231" cy="406" rx="2.5" ry="3.4" fill="#FFFFFF" stroke-width="1.2"/>']))
+# dzieci na sciezce: Hanka wskazuje sosne, chlopcy przy niej
+K["dzieci"] = (90, 326, 120, 92, group([postacie.child(112, 414, 1.25), postacie.child(140, 412, 1.4),
+                                         postacie.girl(186, 414, 1.25), '<path d="M190 382L210 370" fill="none" stroke-width="3"/>']))
+# Jaromir przykucniety po kore
+K["jaromir"] = (196, 372, 44, 40, group([postacie.crouching_child(214, 410, 1.15)]))
+p = ['<path d="M-10 432H400V844H-10Z" fill="#EDEBE6" stroke="none"/>']
+for i in range(22):
+    p.append(grass(rnd.uniform(0, 390), rnd.uniform(440, 840), rnd.uniform(0.9, 1.3)))
+K["przod"] = (0, 422, 390, 422, group(p))
+
+SOSNA = ["tlo", "spirala", "zywica", "kora", "dzieci", "jaromir", "przod"]
+K_REVEAL = {"spirala": "spirala", "jaromir": "kora"}
+K_ANIM = {"zywica": {"type": "flicker", "amplitude": 0.4, "duration": 2200}, "dzieci": {"type": "bob", "amplitude": 0.4, "duration": 1600}}
+K_EXTRA = {"spirala": {"fadeDuration": 7000}, "kora": {"hideOn": "kora", "fadeDuration": 600}, "przod": {"depth": 1.0}}
+K_COMMENTS = {"tlo": "zmierzch na skraju boru: gruba sosna z korą zdartą w spiralę", "spirala": "spirala sięga wyżej (# pokaz: spirala, powoli)",
+              "zywica": "krople żywicy lśnią", "kora": "zwinięty kawałek kory u stóp sosny (znika przy # pokaz: kora)",
+              "dzieci": "Hanka wskazuje sosnę, chłopcy przy niej", "jaromir": "Jaromir przykucnięty po korę (# pokaz: kora)",
+              "przod": "pierwszy plan: trawa"}
+
 BACKGROUNDS = {"jesien": ("bg_jesien", J, JESIEN, J_ANIM, J_REVEAL, J_EXTRA, J_COMMENTS, "Zapadlina jesienią"),
                "droga_bor": ("bg_drogabor", D, DROGA, D_ANIM, D_REVEAL, D_EXTRA, D_COMMENTS, "droga pod borem"),
-               "szkola_izba": ("bg_szkola", S, IZBA, S_ANIM, S_REVEAL, S_EXTRA, S_COMMENTS, "izba szkolna")}
+               "szkola_izba": ("bg_szkola", S, IZBA, S_ANIM, S_REVEAL, S_EXTRA, S_COMMENTS, "izba szkolna"),
+               "szkola_podania": ("bg_szkola", S, PODANIA, P_ANIM, P_REVEAL, P_EXTRA, P_COMMENTS, "izba szkolna"),
+               "sosna_spirala": ("bg_sosna", K, SOSNA, K_ANIM, K_REVEAL, K_EXTRA, K_COMMENTS, "sosna ze spiralą")}
 
 if __name__ == "__main__":
     if sys.argv[1] == "--master":

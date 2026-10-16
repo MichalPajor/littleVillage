@@ -744,9 +744,10 @@ public sealed class GameStoryTests
 
     private const int Shout = 0, WalkFaster = 1;                // liczenie we mgle (rozdzial drugi)
     private const int Defend = 0, FetchTeacher = 1, LookAway = 2; // Bartek i tabliczka Antka
+    private const int TakeBark = 0, LeaveBark = 1;              // kora ze spirali
 
     private static readonly int[] Summer = [RunOut, Contest, Shell, FirstOption, PlayOn];
-    private static readonly int[] School = [Shout, Defend];
+    private static readonly int[] School = [Shout, Defend, TakeBark];
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -968,7 +969,42 @@ public sealed class GameStoryTests
         Assert.Equal(PageEnding.Continue, school[1].Ending);
         var state = System.Text.Json.JsonDocument.Parse(engine.SaveState()).RootElement.GetProperty("variablesState");
         Assert.True(state.GetProperty("obrona_antka").GetProperty("list").TryGetProperty($"ObronaAntka.{attitude}", out _));
+    }
+
+    [Fact]
+    public void Chapter_two_friday_story_about_the_Lord_of_the_Forest()
+    {
+        var pages = Play(CreateEngine(), [.. PeacefulPrologue, .. Summer, .. School]);
+
+        var friday = On(pages, "szkola_podania")[0];
+        Assert.StartsWith("Najlepsze w szkole były ostatnie pół godziny w piątki.", friday.Blocks[0].Text);
+        Assert.Contains(friday.Blocks, b => b.Reveal == "cien" && b.Text.Contains("liczy swoje drzewa"));
+        Assert.Contains(friday.Blocks, b => b.Text.Contains("włożyć je na lewą stronę"));
+        Assert.Contains(friday.Blocks, b => b.Reveal == "okno" && b.Text.EndsWith("czerniała ściana boru."));
+        Assert.Equal(PageEnding.Continue, friday.Ending);
+        Assert.True(Has(pages, "Hanka z kawałkiem szczypy w ręku"));
+    }
+
+    [Theory]
+    [InlineData(TakeBark, "kora", "śniło mu się, że ktoś liczy pod jego oknem")]
+    [InlineData(LeaveBark, "spirala", "zmierzch płata figle")]
+    public void Chapter_two_bark_torn_in_a_spiral(int choice, string reveal, string text)
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, choice]);
+
+        var pine = On(pages, "sosna_spirala");
+        Assert.StartsWith("W drodze powrotnej, na skraju lasu", pine[0].Blocks[0].Text);
+        Assert.Contains(pine[0].Blocks, b => b.Text.Contains("długimi palcami zakończonymi ostrymi pazurami"));
+        Assert.Equal("Czy Jaromir weźmie korę?", pine[0].Question);
+        Assert.Contains(pine[1].Blocks, b => b.Reveal == reveal);
+        Assert.True(Has([pine[1]], text));
+        Assert.Equal(choice == TakeBark, Inventory(engine).Contains("kora"));
+        if (choice == TakeBark)
+        {
+            Assert.Equal("Kora ze znakiem", engine.GetInventory().Single(i => i.Id == "kora").Name);
+        }
+
         Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 }

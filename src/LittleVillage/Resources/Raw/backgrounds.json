@@ -705,6 +705,35 @@
         {"image": "bg_szkola_ignacy.png", "x": 14, "y": 130, "width": 60, "height": 136, "revealOn": "ignacy"},
         {"image": "bg_szkola_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
       ]
+    },
+    "szkola_podania": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_szkola_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_szkola_widok.png", "x": 118, "y": 66, "width": 162, "height": 98},
+        {"image": "bg_szkola_cien.png", "x": 150, "y": 14, "width": 150, "height": 250, "animation": {"type": "sway", "amplitude": 1.5, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "revealOn": "cien", "fadeDuration": 3000, "hideAfter": 5000},
+        {"image": "bg_szkola_ogien.png", "x": 324, "y": 238, "width": 36, "height": 24, "animation": {"type": "flame", "amplitude": 0.12, "duration": 900, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_szkola_ignacy_biurko.png", "x": 126, "y": 240, "width": 62, "height": 112, "hideOn": "okno", "fadeDuration": 1200},
+        {"image": "bg_szkola_ignacy_okno.png", "x": 220, "y": 140, "width": 50, "height": 124, "revealOn": "okno", "fadeDuration": 1200},
+        {"image": "bg_szkola_lawki.png", "x": 0, "y": 300, "width": 390, "height": 140, "depth": 0.5},
+        {"image": "bg_szkola_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
+      ]
+    },
+    "sosna_spirala": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_sosna_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_sosna_spirala.png", "x": 246, "y": 0, "width": 56, "height": 160, "revealOn": "spirala", "fadeDuration": 7000},
+        {"image": "bg_sosna_zywica.png", "x": 250, "y": 170, "width": 46, "height": 190, "animation": {"type": "flicker", "amplitude": 0.4, "duration": 2200}},
+        {"image": "bg_sosna_kora.png", "x": 224, "y": 398, "width": 26, "height": 14, "hideOn": "kora", "fadeDuration": 600},
+        {"image": "bg_sosna_dzieci.png", "x": 90, "y": 326, "width": 120, "height": 92, "animation": {"type": "bob", "amplitude": 0.4, "duration": 1600}},
+        {"image": "bg_sosna_jaromir.png", "x": 196, "y": 372, "width": 44, "height": 40, "revealOn": "kora"},
+        {"image": "bg_sosna_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
     }
   }
 }

@@ -136,6 +136,12 @@ public sealed record BackgroundLayer
     /// </summary>
     public string? RevealOn { get; init; }
 
+    /// <summary>
+    /// Nazwa odsłonięcia, przy którym warstwa znika (przenikaniem) — np. nauczyciel schodzi z biurka,
+    /// gdy ten sam tekst odsłania go przy oknie.
+    /// </summary>
+    public string? HideOn { get; init; }
+
     /// <summary>Kolejne obrazki dla animacji <see cref="LayerAnimationType.Frames"/> (pierwszy zastępuje <see cref="Image"/>).</summary>
     public IReadOnlyList<string>? Frames { get; init; }
 

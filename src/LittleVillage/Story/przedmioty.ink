@@ -5,7 +5,7 @@
 //  Sprawdzenie:          { ekwipunek ? siekiera: ... }
 // ------------------------------------------------------------
 
-LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk
+LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora
 
 // Ekwipunek na początku gry — to, co Maciek przyniósł w tobołku.
 VAR ekwipunek = (siekiera, chleb)
@@ -21,6 +21,7 @@ VAR ekwipunek = (siekiera, chleb)
     - zapasy:    ~ return "Zapasy z miasta"
     - nasiona:   ~ return "Nasiona warzyw"
     - nozyk:     ~ return "Nożyk"
+    - kora:      ~ return "Kora ze znakiem"
 }
 ~ return ""
 
@@ -39,5 +40,6 @@ VAR ekwipunek = (siekiera, chleb)
         ~ return "Bochenek chleba, garść soli i woreczek kaszy. Musi starczyć, zanim cokolwiek urośnie."
     - nasiona:   ~ return "Kupione na miejskim rynku. Była wiosna – trzeba je było czym prędzej wysiać."
     - nozyk:     ~ return "Prezent od ojca na imieniny. Mały, z wytartą drewnianą rączką i ostrzem, które ojciec wyostrzył osełką. Jaromir obstrugał nim już niejeden łuk."
+    - kora:      ~ return "Zwinięty w trąbkę kawałek sosnowej kory spod drzewa ze spiralą. Na gładkiej stronie ktoś wyrył rządki kresek i kółek – niby litery, a jednak żadnej z nich Jaromir nie zna."
 }
 ~ return ""

@@ -54,18 +54,48 @@ Pewnego dnia, gdy pan Ignacy wyszedł na chwilę z sali, Bartek wyrwał chłopcu
 *   [Stanąć w obronie Antka.]
     ~ obrona_antka = stanal
     – Oddaj mu – powiedział Jaromir i sam się zdziwił, jak spokojnie to zabrzmiało.
-    Bartek odwrócił się powoli, z niedowierzaniem, jakby przemówiła do niego ławka. Potem się roześmiał i pchnął go tak mocno, że poleciał na piec. On jednak wstał. I znowu. Za trzecim razem obok niego stał już Franek, a za nim – czego nikt się nie spodziewał – Hanka z kawałkiem szczapy w ręku. Syn młynarza oddał tabliczkę, splunął pod nogi i wrócił do swojej ławki. # pokaz: obrona
+    Bartek odwrócił się powoli, z niedowierzaniem, jakby przemówiła do niego ławka. Potem się roześmiał i pchnął go tak mocno, że poleciał na piec. On jednak wstał. I znowu. Za trzecim razem obok niego stał już Franek, a za nim – czego nikt się nie spodziewał – Hanka z kawałkiem szczypy w ręku. Syn młynarza oddał tabliczkę, splunął pod nogi i wrócił do swojej ławki. # pokaz: obrona
     Jaromirowi został po tym guz na czole i rozcięta warga, a pan Ignacy, który zjawił się akurat na koniec, kazał klęczeć w kącie aż do dzwonka i jemu, i Bartkowi. Ale w drodze do domu Antek szedł obok niego, a nie z tyłu jak zwykle, i przez całą drogę nic nie mówił, tylko co jakiś czas zerkał na niego z boku. # pokaz: ignacy # dalej
-    -> rozdzial_drugi_ciag_dalszy
+    -> szkola_podania
 *   [Pobiec po pana Ignacego.]
     ~ obrona_antka = poskarzyl
     Wybiegł na podwórze i niemal wpadł na nauczyciela, który wracał właśnie do środka. Pan Ignacy wysłuchał go w milczeniu, a potem wszedł do izby i stanął w drzwiach. Nie musiał nic mówić. # pokaz: ignacy
     Syn młynarza odłożył tabliczkę i usiadł w ławce, a przez resztę dnia nie podniósł wzroku znad zeszytu. Później jednak syknął do Jaromira, że skarżypyty kończą w młyńskim stawie, i od tamtej pory patrzył na niego spode łba. # dalej
-    -> rozdzial_drugi_ciag_dalszy
+    -> szkola_podania
 *   [Nie wtrącać się – Bartek jest silniejszy od nich wszystkich.]
     ~ obrona_antka = odwrocil_wzrok
     Jaromir spuścił głowę i udawał, że czyta. Słyszał, jak tabliczka trzasnęła o podłogę, jak Bartek się śmieje, a cała klasa mu wtóruje. # pokaz: tabliczka
     Antek nie płakał. Pozbierał kawałki, schował je do torby i do końca lekcji nie powiedział ani słowa. W drodze do domu szedł daleko z tyłu, sam, i Jaromir czuł na plecach jego wzrok aż do samej kładki. # dalej
+    -> szkola_podania
+
+= szkola_podania
+# tlo: szkola_podania
+Najlepsze w szkole były ostatnie pół godziny w piątki. Jeśli przez cały tydzień nikt nie zbroił, pan Ignacy zdejmował okulary, przecierał je chustką, siadał na brzegu biurka i opowiadał. Znał historie z całej okolicy – o skarbach zakopanych pod kapliczkami, o wisielcu, który stawał na rozstajach, o dziewczynie, która zatańczyła się na śmierć z obcym kawalerem. Zapisywał je wszystkie w tym grubym zeszycie, który trzymał w szufladzie.
+Tego piątku mówił o Panu Lasu.
+– Starzy ludzie nazywają go Borowym albo Leszym – zaczął, a w izbie zrobiło się tak cicho, że słychać było trzask drew w piecu. – Mieszka w najgłębszej części boru i pilnuje go, jak gospodarz pilnuje swojej zagrody. Potrafi być wysoki jak najwyższa sosna albo niski jak trawa. Udaje głosy ludzi, których kochamy, i woła nimi, żeby zwabić człowieka w gęstwinę. Zwodzi tak, że chodzi się w kółko, choć idzie się prosto. A kiedy nie ma nic do roboty, liczy swoje drzewa – każde z osobna, od pierwszego do ostatniego. # pokaz: cien
+Ktoś z tyłu zachichotał. Jaromir nie. Spojrzał na Antka, potem na Hankę – oboje byli bladzi.
+– A jak się przed nim obronić? – zapytał Franek.
+Pan Ignacy pokiwał głową, jakby czekał na to pytanie.
+– Trzeba zdjąć ubranie i włożyć je na lewą stronę. Wtedy Borowy się gubi, bo wydaje mu się, że ma przed sobą jednego ze swoich.
+Cała izba ryknęła śmiechem. Nauczyciel zawtórował dzieciom, nasunął okulary i kazał wszystkim iść do domu. Ale kiedy Jaromir wychodził ostatni, zobaczył go przy oknie, wpatrzonego w Bukowy Grzbiet, tam, gdzie nad polami czerniała ściana boru. # pokaz: okno # dalej
+-> sosna_spirala
+
+= sosna_spirala
+# tlo: sosna_spirala
+W drodze powrotnej, na skraju lasu, Hanka nagle się zatrzymała.
+– Patrzcie.
+Na grubej sośnie, tuż przy ścieżce, kora była zdarta. Nie zwyczajnie, jak drą ją jelenie albo dziki, ale równiutko, wąskim pasem, który owijał pień w spiralę od samej ziemi aż po pierwsze gałęzie. Spod niej wyzierało jasne, wilgotne drewno, a w kilku miejscach spływały po nim krople świeżej żywicy, gęste i lśniące jak łzy.
+– Jelenie – powiedział Antek, chcąc uspokoić siebie i swoich kompanów.
+Jaromir podszedł bliżej. Spirala była zbyt równa, zbyt staranna, jakby ktoś zrobił ją bardzo długimi palcami zakończonymi ostrymi pazurami. Na samym dole, przy ziemi, leżał oderwany kawałek kory – zwinięty w trąbkę, jeszcze pachnący borem.
+# pytanie: Czy Jaromir weźmie korę?
+*   [Zabrać kawałek kory i pokazać go panu Ignacemu.]
+    ~ ekwipunek += kora
+    Podniósł korę i obejrzał ją pod światło. Od spodu, na gładkiej stronie, ktoś wyrył drobne znaki – kreski i kółka ułożone w rządki, podobne do liter, a jednak inne niż wszystkie, które znał. # pokaz: kora
+    Schował ją ostrożnie do torby, między tabliczkę a kromkę chleba. Tej nocy długo przewracał się z boku na bok, a kiedy wreszcie zasnął, śniło mu się, że ktoś liczy pod jego oknem. # dalej
+    -> rozdzial_drugi_ciag_dalszy
+*   [Zostawić wszystko, jak było, i iść dalej.]
+    – Chodźmy już – powiedziała Hanka i pociągnęła go za rękaw.
+    Odwrócili się i ruszyli w stronę domu, ale Jaromir jeszcze kilka razy obejrzał się przez ramię. Za którymś razem wydało mu się, że spirala na sośnie jest dłuższa niż przedtem – że ciągnie się już wyżej, niż sięgała, kiedy na nią patrzyli. Uznał, że to tylko zmierzch płata figle. # pokaz: spirala # dalej
     -> rozdzial_drugi_ciag_dalszy
 
 // Kolejne strony rozdziału — do napisania (autor przysyła je po redakcji).

@@ -196,6 +196,7 @@ public sealed class SceneBackgroundView : ContentView
     private sealed class SceneLayerSet : AbsoluteLayout
     {
         private const string TimelineName = "LayerTimeline";
+        private const string HideName = "LayerHide";
 
         private readonly List<LayerEntry> _layers = [];
         private double _scale = 1;
@@ -305,6 +306,7 @@ public sealed class SceneBackgroundView : ContentView
             {
                 entry.View.AbortAnimation(AnimationName);
                 entry.Holder.AbortAnimation(TimelineName);
+                entry.Holder.AbortAnimation(HideName);
             }
         }
 
@@ -313,6 +315,13 @@ public sealed class SceneBackgroundView : ContentView
             var visible = new HashSet<string>(alreadyRevealed, StringComparer.OrdinalIgnoreCase);
             foreach (var entry in _layers)
             {
+                // Znikające przy odsłonięciu: już doczytane — od razu schowane, inaczej widoczne jak zwykle.
+                if (entry.Layer.HideOn is { } hideOn && entry.Layer.RevealOn is null)
+                {
+                    entry.Holder.AbortAnimation(HideName);
+                    entry.Holder.Opacity = visible.Contains(hideOn) ? 0 : StartsHidden(entry.Layer) ? entry.Holder.Opacity : 1;
+                }
+
                 if (entry.Layer.RevealOn is not { } name)
                 {
                     continue;
@@ -339,6 +348,14 @@ public sealed class SceneBackgroundView : ContentView
                 if (!entry.Shown && string.Equals(entry.Layer.RevealOn, name, StringComparison.OrdinalIgnoreCase))
                 {
                     Show(entry);
+                }
+
+                if (string.Equals(entry.Layer.HideOn, name, StringComparison.OrdinalIgnoreCase) && entry.Holder.Opacity > 0)
+                {
+                    var from = entry.Holder.Opacity;
+                    entry.Holder.AbortAnimation(TimelineName);
+                    new Animation(t => entry.Holder.Opacity = from * (1 - t), 0, 1)
+                        .Commit(entry.Holder, HideName, length: Math.Max(entry.Layer.FadeDuration, 1u), easing: Easing.Linear);
                 }
             }
         }

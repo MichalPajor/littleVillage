@@ -51,7 +51,7 @@ public sealed class BackgroundCatalogTests
                     "revealOn": "kapiel", "appearAfter": 15000, "hideAfter": 20000, "fadeDuration": 3000, "noInvert": true, "depth": 0 },
                   { "image": "k1.png", "frames": ["k1.png", "k2.png"], "x": 0, "y": 0, "width": 10, "height": 10,
                     "animation": { "type": "frames", "duration": 500 } },
-                  { "image": "m.png", "x": 0, "y": 0, "width": 10, "height": 10, "animation": { "type": "wander", "amplitude": 26, "flap": 0.6 } }
+                  { "image": "m.png", "x": 0, "y": 0, "width": 10, "height": 10, "animation": { "type": "wander", "amplitude": 26, "flap": 0.6 }, "hideOn": "okno" }
                 ] }
               }
             }
@@ -68,6 +68,7 @@ public sealed class BackgroundCatalogTests
         Assert.Equal(["k1.png", "k2.png"], layers[1].Frames);
         Assert.Equal(LayerAnimationType.Frames, layers[1].Animation!.Type);
         Assert.Equal(0.6, layers[2].Animation!.Flap);
+        Assert.Equal("okno", layers[2].HideOn);
         Assert.Equal((1d, 4000u, 0.5), (layers[2].Animation!.AnchorY, layers[2].Animation!.Duration, layers[2].Animation!.AnchorX));
         Assert.Null(layers[2].Depth);
         Assert.Equal(900u, layers[2].FadeDuration);

@@ -177,6 +177,26 @@ public sealed class RevealTests
     }
 
     [Fact]
+    public void Every_layer_that_hides_on_a_reveal_gets_that_reveal_on_its_background()
+    {
+        var catalog = GameBackgrounds();
+        var pages = PlayAll().ToList();
+
+        foreach (var key in pages.Select(p => p.BackgroundKey).Distinct())
+        {
+            var revealed = pages.Where(p => p.BackgroundKey == key)
+                .SelectMany(p => p.Blocks.SelectMany(b => RevealList.Split(b.Reveal)))
+                .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+            foreach (var layer in catalog.Resolve(key)!.Layers.Where(l => l.HideOn is not null))
+            {
+                Assert.True(revealed.Contains(layer.HideOn!),
+                    $"Warstwa „{layer.Image}” na tle „{key}” znika przy „# pokaz: {layer.HideOn}”, którego fabuła na tym tle nie używa.");
+            }
+        }
+    }
+
+    [Fact]
     public void Every_hidden_layer_used_by_the_story_gets_revealed_somewhere()
     {
         var catalog = GameBackgrounds();
