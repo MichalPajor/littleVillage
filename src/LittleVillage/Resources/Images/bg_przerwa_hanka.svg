@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „przerwa pod kościółkiem”: Hanka (# pokaz: hanka)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="90" viewBox="226 344 50 90">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="2"><path d="M244.8 414.5V432.0M255.2 414.5V432.0" fill="none" stroke-width="5.2"/><path d="M243.0 379.5L230.8 416.2Q250.0 421.5 269.2 416.2L257.0 379.5Z" fill="#000000"/><path d="M239.5 381.2C237.8 372.5 243.0 369.0 250.0 369.0C257.0 369.0 262.2 372.5 260.5 381.2Z" fill="#000000"/><circle cx="250" cy="358.5" r="9.8" fill="#000000"/><path d="M243.0 355.0C232.5 362.0 229.0 376.0 222.0 386.5" fill="none" stroke-width="4.5"/><circle cx="222.0" cy="388.2" r="3.1" fill="#FFFFFF" stroke-width="1"/><path d="M244.8 379.5L234.2 393.5M255.2 379.5L267.5 390.0" fill="none" stroke-width="4.2"/></g>
+</g>
+</svg>

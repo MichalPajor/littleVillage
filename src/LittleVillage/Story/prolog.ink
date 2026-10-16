@@ -192,7 +192,7 @@ Maciek zerwał się na równe nogi. Siekiera sama znalazła się w jego dłoniac
 = zdobycz
 # tlo: zmierzch_zdobycz
 Krzaki rozchyliły się. Z mgły wyłoniła się postać. # pokaz: topielec
-Była wyższa od dorosłego mężczyzny, o dobre trzy głowy. Stała na dwóch nogach, ale zgarbiona, z rękami zwisającymi niemal do ziemi. Miała ludzki kształt – i wcale nie była człowiekiem. W paszczy trzymała coś dużego i bezwładnego, co opadało jej po obu stronach łba.
+Była wyższa od dorosłego mężczyzny, o dobre trzy głowy. Stała na dwóch nogach, ale zgarbiona, z rękami zakończonymi szponami, zwisającymi niemal do ziemi, i z długimi włosami ociekającymi bagnem. Miała ludzki kształt – i wcale nie była człowiekiem. W paszczy trzymała coś dużego i bezwładnego, co opadało jej po obu stronach łba.
 Maciek poznał to po łapach. Za dużych do reszty ciała. # pokaz: cialo
 Postać zacisnęła szczęki. Rozległ się trzask – głośny, mokry, jak łamane suche gałęzie, tyle że to nie były one. Potem stwór odwrócił się i pomknął ku {chata_macka == przy_mokradlach:pobliskim }mokradłom, tak szybko, że mgła zawirowała za nim jak woda.
 Maciek nie mógł się ruszyć. Trząsł się cały, zimny pot spływał mu po plecach, a nogi miał jak z waty. Siekiera ciążyła mu w rękach, bezużyteczna. Stał tak bardzo długo, aż ciemność znów ucichła.
@@ -202,7 +202,7 @@ W końcu wczołgał się do szałasu. Nie zmrużył oka i nasłuchiwał, aż wyc
 
 = obrona
 # tlo: zmierzch_obrona
-Krzaki rozchyliły się. W mroku zapłonęły dwa ślepia – wysoko, za wysoko jak na wilka czy dzika. Postać stała w zaroślach na dwóch nogach, zgarbiona, z rękami zwisającymi niemal do ziemi. Miała ludzki kształt – i wcale nie była człowiekiem. # pokaz: topielec
+Krzaki rozchyliły się. W mroku zapłonęły dwa ślepia – wysoko, za wysoko jak na wilka czy dzika. Postać stała w zaroślach na dwóch nogach, zgarbiona, z rękami zwisającymi niemal do ziemi i z długimi włosami ociekającymi bagnem. Miała ludzki kształt – i wcale nie była człowiekiem. # pokaz: topielec
 Maciek nie mógł się ruszyć. Trząsł się cały, zimny pot spływał mu po plecach. Patrzyły prosto na niego i powoli, bardzo powoli przybliżały się.
 Wtedy z oddali dobiegło szczekanie.
 Pies wypadł z ciemności jak strzała i stanął między Maćkiem a zaroślami. Sierść zjeżyła mu się na karku, zaparł się w miejscu i ujadał – głośno, zajadle, bez chwili przerwy, choć cały drżał. Chudy, młody, z za dużymi łapami – i nie cofnął się ani o krok. # pokaz: pies

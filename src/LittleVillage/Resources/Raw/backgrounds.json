@@ -846,6 +846,35 @@
         {"image": "bg_roraty_antek_plomyk.png", "x": 176, "y": 330, "width": 24, "height": 24, "animation": {"type": "flicker", "amplitude": 0.35, "duration": 800}, "revealOn": "antek", "noInvert": true, "fadeDuration": 2000},
         {"image": "bg_roraty_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
       ]
+    },
+    "przerwa_sniezki": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_przerwa_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_przerwa_dym.png", "x": 324, "y": 96, "width": 40, "height": 56, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_przerwa_dzieci.png", "x": 60, "y": 300, "width": 190, "height": 90, "animation": {"type": "bob", "amplitude": 1.2, "duration": 700}},
+        {"image": "bg_przerwa_sniezka_0.png", "x": 87, "y": 321, "width": 10, "height": 10, "animation": {"type": "arc", "amplitude": 34, "dx": 96, "dy": 6, "duration": 2400}},
+        {"image": "bg_przerwa_sniezka_1.png", "x": 181, "y": 319, "width": 10, "height": 10, "animation": {"type": "arc", "amplitude": 30, "dx": -96, "dy": 8, "duration": 2800, "phase": 0.4}},
+        {"image": "bg_przerwa_sniezka_2.png", "x": 135, "y": 313, "width": 10, "height": 10, "animation": {"type": "arc", "amplitude": 40, "dx": 60, "dy": 4, "duration": 3300, "phase": 0.7}},
+        {"image": "bg_przerwa_hanka.png", "x": 226, "y": 344, "width": 50, "height": 90, "revealOn": "hanka", "depth": 0.8, "fadeDuration": 1500},
+        {"image": "bg_przerwa_chlopcy.png", "x": 270, "y": 330, "width": 110, "height": 104, "depth": 0.8},
+        {"image": "bg_przerwa_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
+    },
+    "izba_noc": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_izbanoc_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_izbanoc_zar.png", "x": 316, "y": 270, "width": 42, "height": 30, "animation": {"type": "flicker", "amplitude": 0.3, "duration": 1500}, "noInvert": true},
+        {"image": "bg_izbanoc_spi.png", "x": 150, "y": 262, "width": 120, "height": 22, "hideOn": "ksiega"},
+        {"image": "bg_izbanoc_ksiega.png", "x": 150, "y": 248, "width": 150, "height": 40, "revealOn": "ksiega"},
+        {"image": "bg_izbanoc_ojciec.png", "x": 30, "y": 176, "width": 70, "height": 124, "revealOn": "ojciec"},
+        {"image": "bg_izbanoc_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+      ]
     }
   }
 }

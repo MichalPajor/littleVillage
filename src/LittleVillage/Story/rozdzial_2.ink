@@ -110,7 +110,7 @@ Hanka zagryzła wargę. Nie płakała, ale Jaromir widział, jak drżą jej ręc
     – Zaraz wrócę – powiedział i zanim ktokolwiek zdążył go zatrzymać, wszedł między drzewa.
     Pod świerkami było ciemniej, niż się spodziewał, i dziwnie cicho – wiatr, który na otwartej przestrzeni szarpał im ubrania, tutaj zaledwie poruszał czubkami gałęzi. Szedł prosto ku czerwonej plamie. Dwadzieścia kroków. Trzydzieści. Wstążka wciąż wisiała przed nim, tak samo daleko jak na początku. Obejrzał się – ścieżki już nie było widać. Tylko pnie, wszystkie takie same, i szara mgła między nimi.
     Wtedy go zobaczył.
-    Niedaleko, w półmroku, stał wysoki starzec – tak wysoki, że musiałby się schylić, żeby wejść do ich chaty. Miał na sobie kożuch wywrócony włosiem na wierzch i kapelusz z mchu o szerokim, opadającym rondzie, spod którego nie było widać twarzy. Nie poruszał się, oparty o sękatą laskę, a w jego długich palcach coś czerwonego trzepotało na wietrze. # pokaz: starzec
+    Niedaleko, w półmroku, stał wysoki starzec – tak wysoki, że musiałby się schylić, żeby wejść do ich chaty. Miał na sobie kożuch wywrócony włosiem na wierzch, przepasany sznurkiem, i kapelusz z mchu o szerokim, opadającym rondzie. Twarzy pod nim nie było widać – tylko dwa jasne punkty oczu i gęstą, skołtunioną brodę. Nie poruszał się, oparty o sękatą laskę, z której wyrastały liście, a w jego długich palcach coś czerwonego trzepotało na wietrze. # pokaz: starzec
     Jaromir chciał krzyknąć, ale głos uwiązł mu w gardle. Zamrugał.
     Starca nie było. Wstążka wisiała na gałęzi tuż przed nim, na wyciągnięcie ręki, a za jego plecami, kilka kroków dalej, prześwitywała ścieżka i słychać było, jak Hanka woła go po imieniu. # pokaz: zniknal
     Wyszedł z lasu, ściskając ją w garści. Dziewczynka rzuciła mu się na szyję, a potem, zawstydzona, odskoczyła i przez całą drogę do domu nie spojrzała mu w oczy. Dopiero przy kładce zauważyli, że słońce stoi już nisko nad borem, choć kiedy ruszał po wstążkę, było ledwie po południu. # dalej
@@ -151,7 +151,7 @@ Wyjął z szuflady gruby zeszyt oprawny w skórę i położył go na biurku. Na 
 # tlo: pierwszy_snieg
 Przyszedł listopad. Dni stały się krótkie i szare, a wieczory długie. Chłopiec wracał ze szkoły już po zmroku i całą drogę przez skraj boru szedł z oczami wbitymi w ścieżkę, licząc kroki, żeby nie słyszeć, czy w lesie ktoś liczy razem z nim.
 { ekwipunek ? ksiega:
-    Nocami, kiedy w domu wszyscy już spali, wyciągał spod siennika księgę pana Ignacego i czytał ją przy blasku żarzących się w piecu węgli, choć wiedział, że wolno po nią sięgać tylko za dnia. Były tam podania o południcach, które w największy skwar zadają zagadki żniwiarzom, o nocnicach, które dręczą niemowlęta, o rusałkach i strzygach. A pośród gęsto zapisanych kartek ktoś narysował starca w ubraniu wywróconym na lewą stronę.
+    Nocami, kiedy w domu wszyscy już spali, wyciągał spod siennika księgę pana Ignacego i czytał ją przy blasku żarzących się w piecu węgli, choć wiedział, że wolno po nią sięgać tylko za dnia. Były tam podania o południcach, które w największy skwar zadają zagadki żniwiarzom, o północnicach, które dręczą niemowlęta, o rusałkach i strzygach. A pośród gęsto zapisanych kartek ktoś narysował starca w ubraniu wywróconym na lewą stronę.
 }
 { figurka_u_staruchy:
     Ojciec coraz częściej siadywał wieczorami na progu i patrzył na bór. Kiedy pewnego razu syn zapytał go, czy wierzy w Pana Lasu, ten odwrócił się do niego tak gwałtownie, że chłopak cofnął się o krok. Ale nic nie powiedział. Wstał, sprawdził rygiel w drzwiach i poszedł spać.

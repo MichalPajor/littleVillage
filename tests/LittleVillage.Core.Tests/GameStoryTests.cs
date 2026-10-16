@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -747,9 +747,11 @@ public sealed class GameStoryTests
     private const int TakeBark = 0, LeaveBark = 1;              // kora ze spirali
     private const int FetchRibbon = 0, LeaveRibbon = 1;         // wstazka Hanki w lesie
     private const int BorrowBook = 0, LeaveBook = 1;            // ksiega pana Ignacego
+    private const int AskHanka = 0;                             // rada na polnocnice (z ksiega: 1 = ksiega, 2 = ojciec)
 
     private static readonly int[] Summer = [RunOut, Contest, Shell, FirstOption, PlayOn];
     private static readonly int[] School = [Shout, Defend, TakeBark, FetchRibbon, BorrowBook];
+    private static readonly int[] Winter = [AskHanka];
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1078,8 +1080,6 @@ public sealed class GameStoryTests
         Assert.Contains(snow.Blocks, b => b.Reveal == "slady" && b.Text.Contains("Długich, wąskich."));
         Assert.Equal("Chłopak pomyślał, że zostawił je pewnie jakiś jeleń szukający jedzenia.", snow.Blocks[^1].Text);
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału drugiego._"));
-        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 
     // ----- Rozdzial trzeci: Wigilia -----
@@ -1099,5 +1099,33 @@ public sealed class GameStoryTests
         Assert.True(Has([advent], text));
         Assert.Contains(advent.Blocks, b => b.Reveal == "antek" && b.Text.StartsWith("Antek coraz częściej zostawał w tyle."));
         Assert.Equal(PageEnding.Continue, advent.Ending);
+    }
+
+    public static TheoryData<int[], bool, string, string, string?> ChapterThreeAdvice() => new()
+    {
+        // bez ksiegi: Hanka albo ojciec (opcja ksiegi ukryta)
+        { [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, LeaveBook, 0], false, "przerwa_sniezki", "Babka mówiła, że to północnica", "hanka" },
+        { [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, LeaveBook, 1], false, "izba_noc", "Ale to bajki, synu.", "ojciec" },
+        { [.. CursedPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, LeaveBook, 1], false, "izba_noc", "I nikomu ani słowa, rozumiesz?", "ojciec" },
+        // z ksiega: trzy rady, ksiega opowiada o maku
+        { [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, BorrowBook, 1], true, "izba_noc", "garść maku, północnica musi policzyć", "ksiega" },
+    };
+
+    [Theory]
+    [MemberData(nameof(ChapterThreeAdvice))]
+    public void Chapter_three_Antek_asks_for_help_against_the_midnight_wraith(int[] choices, bool book, string background, string text, string? reveal)
+    {
+        var pages = Play(CreateEngine(), choices);
+
+        var talk = On(pages, "przerwa_sniezki")[0];
+        Assert.Contains(talk.Blocks, b => b.Text.StartsWith("Na przerwie, gdy reszta obrzucała się śnieżkami pod kościółkiem"));
+        Assert.Contains(talk.Blocks, b => b.Text.Contains("Po północy. Unosi się nad kołyską"));
+        Assert.Equal("U kogo Jaromir będzie szukał rady?", talk.Question);
+        Assert.Equal(book ? 3 : 2, talk.Choices.Count);
+        var advice = pages[pages.IndexOf(talk) + 1];
+        Assert.Equal(background, advice.BackgroundKey);
+        Assert.True(Has([advice], text));
+        Assert.Contains(advice.Blocks, b => b.Reveal == reveal);
+        Assert.DoesNotContain(pages.SelectMany(p => p.Blocks), b => System.Text.RegularExpressions.Regex.IsMatch(b.Text, "(?<![Pp]ół)nocnic"));
     }
 }

@@ -51,3 +51,8 @@ VAR obrona_antka = ()
 
 // Czy Jaromir wszedł do boru po wstążkę Hanki (i zobaczył starca w kożuchu).
 VAR poszedl_po_wstazke = false
+
+// ---------- Rozdział trzeci (Wigilia) ----------
+// U kogo Jaromir szukał rady na północnicę (z księgi wie też o maku).
+LIST RadyJaromira = hanka, ksiega_rada, ojciec
+VAR rada_jaromira = ()

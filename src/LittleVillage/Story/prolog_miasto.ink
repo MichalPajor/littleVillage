@@ -27,7 +27,7 @@ Tyle kosztował bochenek chleba. Jeden. Maciek obiecał, że jeszcze się zastan
 = starucha
 # tlo: zaulek
 Nagle ktoś chwycił go za rękę. Palce były kościste i zimne, wilgotne jak glina wyjęta z rowu.
-Przed nim stała stara kobieta w kapturze, zgarbiona, owinięta w szary, postrzępiony płaszcz. Spod materiału wystawał tylko spiczasty podbródek i zapadnięte wargi. Jedno oko miała zasnute bielmem, drugie – czarne i bystre – wpatrywało się prosto w jego kieszeń. # pokaz: starucha
+Przed nim stała stara kobieta w kapturze, zgarbiona, wsparta na krzywym kosturze i owinięta w połatany, postrzępiony płaszcz. Spod materiału wystawał długi, haczykowaty nos, a pod nim spiczasty podbródek i zapadnięte wargi. Jedno oko miała zasnute bielmem, drugie – czarne i bystre – wpatrywało się prosto w jego kieszeń. # pokaz: starucha
 – Co ty tam nosisz, synku? – wyszeptała. – Czuję popiół. Stary popiół, znad wody.
 { los_psa == oswojony:
     Pies zjeżył sierść i warknął na nią nisko, z głębi gardła. Kobieta nawet na niego nie spojrzała. # pokaz: pies
