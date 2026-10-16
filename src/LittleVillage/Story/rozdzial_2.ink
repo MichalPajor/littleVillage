@@ -15,7 +15,7 @@ Tej jesieni Jaromirowi stuknął dziewiąty rok i po raz pierwszy miał pójść
 { figurka_u_staruchy:
     Ojciec długo się nie zgadzał. – Z liter pole się nie zaorze – mruknął przy kolacji i na tym rozmowa by się urwała, gdyby nie Agnieszka. Siedziała nad nim przez trzy wieczory, aż wreszcie wstał od stołu, zdjął z gwoździa swoją jedyną porządną czapkę i bez słowa włożył ją synowi na głowę. Była za duża, ale chłopiec nosił ją z dumą.
 - else:
-    Ojciec był z tego dumny jak z niczego innego. Sam nigdy nie nauczył się czytać i choć nie mówił tego głośno, chłopiec widział, jak przy każdym kazaniu w mieście wodził palcem po literach w modlitewniku żony, udając, że rozumie. – Ty będziesz czytał za nas obu – powiedział i przybił synowi nowe podeszwy do butów.
+    Ojciec był z tego dumny jak z niczego innego. Sam nigdy nie nauczył się czytać i choć nie mówił tego głośno, chłopiec widział, jak przy każdym kazaniu w kościółku wodził palcem po literach w modlitewniku żony, udając, że rozumie. – Ty będziesz czytał za nas obu – powiedział i przybił synowi nowe podeszwy do butów.
 }
 Matka uszyła mu z lnianego płótna torbę na ramię, a ojciec przywiózł z jarmarku tabliczkę w drewnianej ramce i rysik, który skrzypiał tak, że ciarki przechodziły po plecach. # pokaz: jaromir
 Szkoła była w Bukowcu, po drugiej stronie Bukowego Grzbietu – godzina marszu, jeśli nie robiło się przerw. Chodzili tam we czwórkę: Franek, któremu został ostatni rok nauki, Antek, Hanka i on. # dalej

@@ -13,7 +13,7 @@
 # tlo: zapadlina_lato
 # rozdzial: Rozdział pierwszy
 # tytul: Lato
-Zapadlina, w której dorastał Jaromir, była już inną wsią niż ta, do jakiej przed laty zszedł z tobołkiem jego dziadek. Domów przybyło – było ich teraz dziewięć, rozsianych po niecce jak ziarna rzucone garścią na pole. Las ustąpił trochę siekierom, uprawy sięgały dalej, a przez mokradła prowadziła porządna kładka z dębowych bali. Przy drogach stało mnóstwo kapliczek, zawsze przystrojonych świeżymi kwiatami. Mgła wciąż lubiła tę dolinę i latem zostawała w niej dłużej niż do wschodu słońca.
+Zapadlina, w której dorastał Jaromir, była już inną wsią niż ta, do jakiej przed laty zszedł z tobołkiem jego dziadek. Domów przybyło – było ich teraz dziewięć, rozsianych po niecce jak ziarna rzucone garścią na pole. Las ustąpił trochę siekierom, uprawy sięgały dalej, a przez mokradła prowadziła porządna kładka z dębowych bali. Przy drogach stało mnóstwo kapliczek, zawsze przystrojonych świeżymi kwiatami. Mgła wciąż lubiła tę dolinę i latem zostawała w niej dłużej niż do wschodu słońca. Zmieniła się też okolica: za Bukowym Grzbietem, godzinę marszu od Zapadliny, wyrósł Bukowiec – osada większa i zamożniejsza, z młynem, karczmą i szkołą, a tuż obok niej z drewnianym kościółkiem, przy którym zamieszkał stary ksiądz. Do miasta jeździło się już tylko na jarmarki i wielkie odpusty.
 { figurka_u_staruchy:
     Jaromir mieszkał w chałupie na pagórku, obok zagrody starego Stasia, z którym jego ojciec wychował się jak z bratem. Dom był niewielki, ale ciepły, z bielonymi ścianami i dachem z trzciny, a z progu widać było całą nieckę – pola, łąki, jezioro i ciemną kreskę boru na wschodzie.
 - else:
