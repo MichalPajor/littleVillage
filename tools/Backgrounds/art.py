@@ -125,7 +125,7 @@ def rig(name, transform, groups, prefix):
     out = []
     for suffix, names, anim, pivot in groups:
         body = "\n".join(parts[n][0] for n in names if n in parts)
-        svg = (f'<g transform="{transform.svg()}"><g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">\n'
+        svg = (f'<g transform="{transform.svg()}"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">\n'
                f'{body}\n</g></g>')
         if anim is not None:
             anim = dict(anim)

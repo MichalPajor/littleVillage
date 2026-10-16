@@ -7,6 +7,10 @@
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
 <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
 </filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
 <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
 <line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
 </pattern>
@@ -20,7 +24,7 @@
 <line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
 </pattern>
 </defs>
-<g transform="matrix(0.12000 0.00000 0.00000 0.12000 236.00000 212.00000)"><g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g transform="matrix(0.12000 0.00000 0.00000 0.12000 236.00000 212.00000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
 <g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
 <g id="tulow" data-anim="skala" data-origin="200,394" data-range="0.98-1.02" data-period="2">
 <path d="M140 206C118 248 110 300 116 350C120 382 150 394 200 394C250 394 280 382 284 350C290 300 282 248 260 206Z" fill="#EDEBE6" stroke-width="5"/>
