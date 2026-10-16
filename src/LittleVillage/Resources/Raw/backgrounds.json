@@ -687,6 +687,8 @@
         {"image": "bg_drogabor_mgla_daleka.png", "x": 80, "y": 150, "width": 330, "height": 50, "animation": {"type": "drift", "amplitude": 8, "duration": 16000}},
         {"image": "bg_drogabor_dzieci.png", "x": 196, "y": 166, "width": 76, "height": 160, "animation": {"type": "bob", "amplitude": 0.6, "duration": 900}},
         {"image": "bg_drogabor_oczy.png", "x": 330, "y": 266, "width": 40, "height": 20, "animation": {"type": "blink", "duration": 4800}, "revealOn": "oczy", "fadeDuration": 2500},
+        {"image": "bg_drogabor_wrony.png", "x": 270, "y": 96, "width": 84, "height": 32, "animation": {"type": "wander", "amplitude": 40, "flap": 0.55, "duration": 6200, "phase": 0.0}},
+        {"image": "bg_drogabor_rosa.png", "x": 300, "y": 200, "width": 80, "height": 120, "animation": {"type": "rise", "amplitude": -30, "duration": 2600, "phase": 0.0}},
         {"image": "bg_drogabor_mgla.png", "x": -30, "y": 250, "width": 450, "height": 120, "animation": {"type": "drift", "amplitude": 14, "duration": 12000}, "depth": 0.8},
         {"image": "bg_drogabor_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
       ]
@@ -697,6 +699,11 @@
       "backgroundColor": "#EDEBE6",
       "layers": [
         {"image": "bg_szkola_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_szkola_chmurki_okna.png", "x": 124, "y": 72, "width": 150, "height": 36, "animation": {"type": "drift", "amplitude": 4, "duration": 12000}},
+        {"image": "bg_szkola_smuga_0.png", "x": 122, "y": 160, "width": 114, "height": 140, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 6500}},
+        {"image": "bg_szkola_smuga_1.png", "x": 214, "y": 160, "width": 112, "height": 140, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 6500}},
+        {"image": "bg_szkola_pylki_0.png", "x": 150, "y": 170, "width": 90, "height": 120, "animation": {"type": "wander", "amplitude": 6, "duration": 7000, "phase": 0.0}},
+        {"image": "bg_szkola_pylki_1.png", "x": 240, "y": 170, "width": 90, "height": 120, "animation": {"type": "wander", "amplitude": 6, "duration": 7000, "phase": 0.4}},
         {"image": "bg_szkola_ogien.png", "x": 324, "y": 238, "width": 36, "height": 24, "animation": {"type": "flame", "amplitude": 0.12, "duration": 900, "anchorX": 0.5, "anchorY": 1}},
         {"image": "bg_szkola_lawki.png", "x": 0, "y": 300, "width": 390, "height": 140, "depth": 0.5},
         {"image": "bg_szkola_bartek.png", "x": 150, "y": 270, "width": 100, "height": 86, "animation": {"type": "bob", "amplitude": 0.8, "duration": 700}, "revealOn": "bartek"},
@@ -714,10 +721,14 @@
         {"image": "bg_szkola_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_szkola_widok.png", "x": 118, "y": 66, "width": 162, "height": 98},
         {"image": "bg_szkola_cien.png", "x": 150, "y": 14, "width": 150, "height": 250, "animation": {"type": "sway", "amplitude": 1.5, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "revealOn": "cien", "fadeDuration": 3000, "hideAfter": 5000},
+        {"image": "bg_szkola_smuga_0.png", "x": 122, "y": 160, "width": 114, "height": 140, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 6500}},
+        {"image": "bg_szkola_smuga_1.png", "x": 214, "y": 160, "width": 112, "height": 140, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 6500}},
+        {"image": "bg_szkola_pylki_0.png", "x": 150, "y": 170, "width": 90, "height": 120, "animation": {"type": "wander", "amplitude": 6, "duration": 7000, "phase": 0.0}},
+        {"image": "bg_szkola_pylki_1.png", "x": 240, "y": 170, "width": 90, "height": 120, "animation": {"type": "wander", "amplitude": 6, "duration": 7000, "phase": 0.4}},
         {"image": "bg_szkola_ogien.png", "x": 324, "y": 238, "width": 36, "height": 24, "animation": {"type": "flame", "amplitude": 0.12, "duration": 900, "anchorX": 0.5, "anchorY": 1}},
-        {"image": "bg_szkola_ignacy_biurko.png", "x": 126, "y": 240, "width": 62, "height": 112, "hideOn": "okno", "fadeDuration": 1200},
+        {"image": "bg_szkola_ignacy_biurko.png", "x": 126, "y": 240, "width": 62, "height": 112, "animation": {"type": "sway", "amplitude": 1.2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}, "hideOn": "okno", "fadeDuration": 1200},
         {"image": "bg_szkola_ignacy_okno.png", "x": 220, "y": 140, "width": 50, "height": 124, "revealOn": "okno", "fadeDuration": 1200},
-        {"image": "bg_szkola_lawki.png", "x": 0, "y": 300, "width": 390, "height": 140, "depth": 0.5},
+        {"image": "bg_szkola_lawki.png", "x": 0, "y": 300, "width": 390, "height": 140, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2400}, "depth": 0.5},
         {"image": "bg_szkola_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
       ]
     },
@@ -728,7 +739,10 @@
       "layers": [
         {"image": "bg_sosna_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_sosna_spirala.png", "x": 246, "y": 0, "width": 56, "height": 160, "revealOn": "spirala", "fadeDuration": 7000},
+        {"image": "bg_sosna_wrony.png", "x": 54, "y": 134, "width": 102, "height": 32, "animation": {"type": "wander", "amplitude": 50, "flap": 0.55, "duration": 6200, "phase": 0.0}},
         {"image": "bg_sosna_zywica.png", "x": 250, "y": 170, "width": 46, "height": 190, "animation": {"type": "flicker", "amplitude": 0.4, "duration": 2200}},
+        {"image": "bg_sosna_kropla.png", "x": 258, "y": 228, "width": 10, "height": 14, "animation": {"type": "rise", "amplitude": -60, "duration": 5200}},
+        {"image": "bg_sosna_mgla.png", "x": -30, "y": 270, "width": 300, "height": 40, "animation": {"type": "drift", "amplitude": 12, "duration": 14000}},
         {"image": "bg_sosna_kora.png", "x": 224, "y": 398, "width": 26, "height": 14, "hideOn": "kora", "fadeDuration": 600},
         {"image": "bg_sosna_dzieci.png", "x": 90, "y": 326, "width": 120, "height": 92, "animation": {"type": "bob", "amplitude": 0.4, "duration": 1600}},
         {"image": "bg_sosna_jaromir.png", "x": 196, "y": 372, "width": 44, "height": 40, "revealOn": "kora"},
@@ -798,14 +812,19 @@
       "layers": [
         {"image": "bg_szkola_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_szkola_widok.png", "x": 118, "y": 66, "width": 162, "height": 98},
+        {"image": "bg_szkola_smuga_0.png", "x": 122, "y": 160, "width": 114, "height": 140, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 6500}},
+        {"image": "bg_szkola_smuga_1.png", "x": 214, "y": 160, "width": 112, "height": 140, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 6500}},
+        {"image": "bg_szkola_pylki_0.png", "x": 150, "y": 170, "width": 90, "height": 120, "animation": {"type": "wander", "amplitude": 6, "duration": 7000, "phase": 0.0}},
+        {"image": "bg_szkola_pylki_1.png", "x": 240, "y": 170, "width": 90, "height": 120, "animation": {"type": "wander", "amplitude": 6, "duration": 7000, "phase": 0.4}},
+        {"image": "bg_szkola_chmurki_okna.png", "x": 124, "y": 72, "width": 150, "height": 36, "animation": {"type": "drift", "amplitude": 4, "duration": 12000}},
         {"image": "bg_szkola_ogien.png", "x": 324, "y": 238, "width": 36, "height": 24, "animation": {"type": "flame", "amplitude": 0.12, "duration": 900, "anchorX": 0.5, "anchorY": 1}},
-        {"image": "bg_szkola_ignacy_za_biurkiem.png", "x": 150, "y": 236, "width": 70, "height": 80},
+        {"image": "bg_szkola_ignacy_za_biurkiem.png", "x": 150, "y": 236, "width": 70, "height": 80, "animation": {"type": "bob", "amplitude": 0.6, "duration": 2800}},
         {"image": "bg_szkola_biurko.png", "x": 106, "y": 296, "width": 148, "height": 68},
         {"image": "bg_szkola_kora_biurko.png", "x": 150, "y": 290, "width": 26, "height": 12, "revealOn": "kora"},
         {"image": "bg_szkola_ksiega_biurko.png", "x": 186, "y": 290, "width": 42, "height": 16, "revealOn": "ksiega", "hideOn": "pozyczka", "fadeDuration": 700},
         {"image": "bg_szkola_ksiega_jaromir.png", "x": 118, "y": 290, "width": 42, "height": 16, "revealOn": "pozyczka", "fadeDuration": 700},
         {"image": "bg_szkola_lawki_puste.png", "x": 0, "y": 340, "width": 390, "height": 100, "depth": 0.5},
-        {"image": "bg_szkola_jaromir_biurko.png", "x": 92, "y": 300, "width": 40, "height": 72, "hideOn": "prog", "fadeDuration": 800},
+        {"image": "bg_szkola_jaromir_biurko.png", "x": 92, "y": 300, "width": 40, "height": 72, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2000}, "hideOn": "prog", "fadeDuration": 800},
         {"image": "bg_szkola_jaromir_prog.png", "x": 24, "y": 196, "width": 40, "height": 70, "revealOn": "prog", "fadeDuration": 800},
         {"image": "bg_szkola_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
       ]
@@ -816,6 +835,7 @@
       "backgroundColor": "#EDEBE6",
       "layers": [
         {"image": "bg_snieg_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_snieg_gwiazdy.png", "x": 26, "y": 22, "width": 340, "height": 120, "animation": {"type": "flicker", "amplitude": 0.15, "duration": 3400}, "hideOn": "snieg", "fadeDuration": 3000},
         {"image": "bg_snieg_snieg.png", "x": 0, "y": 180, "width": 390, "height": 260, "revealOn": "snieg", "fadeDuration": 5000},
         {"image": "bg_snieg_slad_0.png", "x": 192, "y": 199, "width": 10, "height": 15, "revealOn": "slady", "appearAfter": 300, "fadeDuration": 500},
         {"image": "bg_snieg_slad_1.png", "x": 193, "y": 223, "width": 12, "height": 18, "revealOn": "slady", "appearAfter": 750, "fadeDuration": 500},
@@ -829,6 +849,9 @@
         {"image": "bg_snieg_platki_0.png", "x": 0, "y": -4, "width": 390, "height": 208, "animation": {"type": "rise", "amplitude": -120, "duration": 7000, "phase": 0.0}, "revealOn": "snieg", "fadeDuration": 2000, "hideAfter": 14000},
         {"image": "bg_snieg_platki_1.png", "x": 0, "y": 36, "width": 390, "height": 208, "animation": {"type": "rise", "amplitude": -120, "duration": 8500, "phase": 0.33}, "revealOn": "snieg", "fadeDuration": 2000, "hideAfter": 14000},
         {"image": "bg_snieg_platki_2.png", "x": 0, "y": 76, "width": 390, "height": 208, "animation": {"type": "rise", "amplitude": -120, "duration": 10000, "phase": 0.66}, "revealOn": "snieg", "fadeDuration": 2000, "hideAfter": 14000},
+        {"image": "bg_snieg_iskry.png", "x": 30, "y": 300, "width": 330, "height": 100, "animation": {"type": "flicker", "amplitude": 0.15, "duration": 2600}, "revealOn": "snieg", "fadeDuration": 4000},
+        {"image": "bg_snieg_sowa.png", "x": 109, "y": 261, "width": 30, "height": 35},
+        {"image": "bg_snieg_sowa_oczy.png", "x": 109, "y": 261, "width": 30, "height": 35, "animation": {"type": "blink", "duration": 4200}},
         {"image": "bg_snieg_okno.png", "x": 0, "y": 0, "width": 390, "height": 440, "depth": 1.0},
         {"image": "bg_snieg_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
       ]
@@ -840,6 +863,9 @@
       "layers": [
         {"image": "bg_roraty_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_roraty_gwiazdy.png", "x": 0, "y": 0, "width": 390, "height": 180, "animation": {"type": "flicker", "amplitude": 0.4, "duration": 3800}},
+        {"image": "bg_roraty_sowa.png", "x": 219, "y": 102, "width": 28, "height": 32},
+        {"image": "bg_roraty_sowa_oczy.png", "x": 219, "y": 102, "width": 28, "height": 32, "animation": {"type": "blink", "duration": 4200}},
+        {"image": "bg_roraty_iskry.png", "x": 10, "y": 300, "width": 200, "height": 120, "animation": {"type": "flicker", "amplitude": 0.15, "duration": 2600}},
         {"image": "bg_roraty_dzieci.png", "x": 220, "y": 200, "width": 120, "height": 112, "animation": {"type": "bob", "amplitude": 0.6, "duration": 900}, "depth": 0.6},
         {"image": "bg_roraty_plomyki.png", "x": 230, "y": 216, "width": 100, "height": 74, "animation": {"type": "flicker", "amplitude": 0.35, "duration": 700}, "noInvert": true},
         {"image": "bg_roraty_antek.png", "x": 148, "y": 316, "width": 50, "height": 64, "animation": {"type": "bob", "amplitude": 0.5, "duration": 1300}, "revealOn": "antek", "fadeDuration": 2000},
@@ -853,6 +879,10 @@
       "backgroundColor": "#EDEBE6",
       "layers": [
         {"image": "bg_przerwa_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_przerwa_dzwon.png", "x": 92, "y": 92, "width": 16, "height": 20, "animation": {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 0.5, "anchorY": 0.1}},
+        {"image": "bg_przerwa_wrona_0.png", "x": 250, "y": 155, "width": 27, "height": 23, "animation": {"type": "sway", "amplitude": 6, "duration": 2600, "anchorX": 0.4, "anchorY": 0.9}},
+        {"image": "bg_przerwa_wrona_1.png", "x": 290, "y": 154, "width": 25, "height": 22, "animation": {"type": "sway", "amplitude": 6, "duration": 2600, "anchorX": 0.4, "anchorY": 0.9, "phase": 0.4}},
+        {"image": "bg_przerwa_wrony.png", "x": 144, "y": 44, "width": 84, "height": 32, "animation": {"type": "wander", "amplitude": 40, "flap": 0.55, "duration": 6200, "phase": 0.0}},
         {"image": "bg_przerwa_dym.png", "x": 324, "y": 96, "width": 40, "height": 56, "animation": {"type": "sway", "amplitude": 3, "duration": 5000, "anchorX": 0.5, "anchorY": 1}},
         {"image": "bg_przerwa_dzieci.png", "x": 60, "y": 300, "width": 190, "height": 90, "animation": {"type": "bob", "amplitude": 1.2, "duration": 700}},
         {"image": "bg_przerwa_sniezka_0.png", "x": 87, "y": 321, "width": 10, "height": 10, "animation": {"type": "arc", "amplitude": 34, "dx": 96, "dy": 6, "duration": 2400}},
@@ -869,10 +899,12 @@
       "backgroundColor": "#EDEBE6",
       "layers": [
         {"image": "bg_izbanoc_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_izbanoc_platki.png", "x": 152, "y": 72, "width": 92, "height": 70, "animation": {"type": "rise", "amplitude": -50, "duration": 5200, "phase": 0.0}},
+        {"image": "bg_izbanoc_blask.png", "x": 150, "y": 170, "width": 150, "height": 130, "animation": {"type": "flicker", "amplitude": 0.75, "duration": 6500}},
         {"image": "bg_izbanoc_zar.png", "x": 316, "y": 270, "width": 42, "height": 30, "animation": {"type": "flicker", "amplitude": 0.3, "duration": 1500}, "noInvert": true},
-        {"image": "bg_izbanoc_spi.png", "x": 150, "y": 262, "width": 120, "height": 22, "hideOn": "ksiega"},
-        {"image": "bg_izbanoc_ksiega.png", "x": 150, "y": 248, "width": 150, "height": 40, "revealOn": "ksiega"},
-        {"image": "bg_izbanoc_ojciec.png", "x": 30, "y": 176, "width": 70, "height": 124, "revealOn": "ojciec"},
+        {"image": "bg_izbanoc_spi.png", "x": 150, "y": 262, "width": 120, "height": 22, "animation": {"type": "bob", "amplitude": 0.6, "duration": 3200}, "hideOn": "ksiega"},
+        {"image": "bg_izbanoc_ksiega.png", "x": 150, "y": 248, "width": 150, "height": 40, "animation": {"type": "bob", "amplitude": 0.4, "duration": 2600}, "revealOn": "ksiega"},
+        {"image": "bg_izbanoc_ojciec.png", "x": 30, "y": 176, "width": 70, "height": 124, "animation": {"type": "bob", "amplitude": 0.5, "duration": 3000}, "revealOn": "ojciec"},
         {"image": "bg_izbanoc_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
       ]
     },
@@ -884,7 +916,8 @@
         {"image": "bg_wigilia_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_wigilia_swieca.png", "x": 220, "y": 216, "width": 14, "height": 18, "animation": {"type": "flame", "amplitude": 0.15, "duration": 800, "anchorX": 0.5, "anchorY": 1}, "noInvert": true},
         {"image": "bg_wigilia_gwiazdka.png", "x": 240, "y": 76, "width": 26, "height": 26, "animation": {"type": "flicker", "amplitude": 0.5, "duration": 2200}, "revealOn": "gwiazdka", "fadeDuration": 3000},
-        {"image": "bg_wigilia_rodzina.png", "x": 140, "y": 160, "width": 140, "height": 96},
+        {"image": "bg_wigilia_platki.png", "x": 198, "y": 72, "width": 76, "height": 56, "animation": {"type": "rise", "amplitude": -40, "duration": 5600, "phase": 0.0}},
+        {"image": "bg_wigilia_rodzina.png", "x": 140, "y": 160, "width": 140, "height": 96, "animation": {"type": "bob", "amplitude": 0.5, "duration": 3000}},
         {"image": "bg_wigilia_dziad.png", "x": 10, "y": 176, "width": 80, "height": 124, "revealOn": "dziad", "hideOn": "lira", "fadeDuration": 1000},
         {"image": "bg_wigilia_dziad_lira.png", "x": 270, "y": 190, "width": 56, "height": 112, "revealOn": "lira", "hideOn": "odszedl", "fadeDuration": 1500},
         {"image": "bg_wigilia_nuty.png", "x": 300, "y": 180, "width": 60, "height": 50, "animation": {"type": "rise", "amplitude": 30, "duration": 3000}, "revealOn": "lira", "hideOn": "odszedl"},
@@ -901,8 +934,9 @@
         {"image": "bg_wigilia_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_wigilia_swieca.png", "x": 220, "y": 216, "width": 14, "height": 18, "animation": {"type": "flame", "amplitude": 0.15, "duration": 800, "anchorX": 0.5, "anchorY": 1}, "noInvert": true},
         {"image": "bg_wigilia_gwiazdka.png", "x": 240, "y": 76, "width": 26, "height": 26, "animation": {"type": "flicker", "amplitude": 0.5, "duration": 2200}},
-        {"image": "bg_wigilia_rodzina.png", "x": 140, "y": 160, "width": 140, "height": 96},
-        {"image": "bg_wigilia_stas.png", "x": 270, "y": 176, "width": 70, "height": 126},
+        {"image": "bg_wigilia_platki.png", "x": 198, "y": 72, "width": 76, "height": 56, "animation": {"type": "rise", "amplitude": -40, "duration": 5600, "phase": 0.0}},
+        {"image": "bg_wigilia_rodzina.png", "x": 140, "y": 160, "width": 140, "height": 96, "animation": {"type": "bob", "amplitude": 0.5, "duration": 3000}},
+        {"image": "bg_wigilia_stas.png", "x": 270, "y": 176, "width": 70, "height": 126, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2700}},
         {"image": "bg_wigilia_pies_ogon.png", "x": 236, "y": 212, "width": 49, "height": 53, "animation": {"type": "sway", "amplitude": 15, "duration": 600, "anchorX": 0.676, "anchorY": 0.842}, "revealOn": "pies", "fadeDuration": 1500},
         {"image": "bg_wigilia_pies_cialo.png", "x": 236, "y": 212, "width": 49, "height": 53, "revealOn": "pies", "fadeDuration": 1500},
         {"image": "bg_wigilia_pies_glowa.png", "x": 236, "y": 212, "width": 49, "height": 53, "animation": {"type": "sway", "amplitude": 5, "duration": 2500, "anchorX": 0.49, "anchorY": 0.512}, "revealOn": "pies", "fadeDuration": 1500},
@@ -917,13 +951,16 @@
       "layers": [
         {"image": "bg_nocsnieg_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_nocsnieg_gwiazdy.png", "x": 120, "y": 0, "width": 270, "height": 210, "animation": {"type": "flicker", "amplitude": 0.4, "duration": 3600}},
+        {"image": "bg_nocsnieg_sowa_oczy.png", "x": 201, "y": 206, "width": 28, "height": 32, "animation": {"type": "blink", "duration": 4200}},
         {"image": "bg_nocsnieg_oczy.png", "x": 290, "y": 186, "width": 40, "height": 16, "animation": {"type": "blink", "duration": 4000}, "revealOn": "oczy", "fadeDuration": 2000},
         {"image": "bg_nocsnieg_krok_0.png", "x": 224, "y": 408, "width": 24, "height": 52, "revealOn": "kroki", "appearAfter": 400, "fadeDuration": 400},
         {"image": "bg_nocsnieg_krok_1.png", "x": 204, "y": 377, "width": 21, "height": 46, "revealOn": "kroki", "appearAfter": 1100, "fadeDuration": 400},
         {"image": "bg_nocsnieg_krok_2.png", "x": 223, "y": 346, "width": 19, "height": 40, "revealOn": "kroki", "appearAfter": 1800, "fadeDuration": 400},
         {"image": "bg_nocsnieg_krok_3.png", "x": 198, "y": 315, "width": 16, "height": 35, "revealOn": "kroki", "appearAfter": 2500, "fadeDuration": 400},
         {"image": "bg_nocsnieg_krok_4.png", "x": 213, "y": 286, "width": 14, "height": 29, "revealOn": "kroki", "appearAfter": 3200, "fadeDuration": 400},
-        {"image": "bg_nocsnieg_jaromir.png", "x": 136, "y": 316, "width": 36, "height": 64, "hideOn": "bieg", "fadeDuration": 300},
+        {"image": "bg_nocsnieg_iskry.png", "x": 10, "y": 300, "width": 180, "height": 120, "animation": {"type": "flicker", "amplitude": 0.15, "duration": 2600}},
+        {"image": "bg_nocsnieg_zamiec.png", "x": 0, "y": 270, "width": 200, "height": 120, "animation": {"type": "float", "amplitude": 4, "dx": 160, "dy": 14, "duration": 6500}},
+        {"image": "bg_nocsnieg_jaromir.png", "x": 136, "y": 316, "width": 36, "height": 64, "animation": {"type": "bob", "amplitude": 0.8, "duration": 900}, "hideOn": "bieg", "fadeDuration": 300},
         {"image": "bg_nocsnieg_bieg_0.png", "x": 100, "y": 290, "width": 50, "height": 60, "animation": {"type": "frames", "duration": 360}, "revealOn": "bieg", "frames": ["bg_nocsnieg_bieg_0.png", "bg_nocsnieg_bieg_1.png"], "fadeDuration": 300},
         {"image": "bg_nocsnieg_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
       ]
@@ -970,10 +1007,12 @@
       "backgroundColor": "#EDEBE6",
       "layers": [
         {"image": "bg_koledy_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
+        {"image": "bg_koledy_platki_0.png", "x": 0, "y": 0, "width": 390, "height": 220, "animation": {"type": "rise", "amplitude": -160, "duration": 9000, "phase": 0.0}},
         {"image": "bg_koledy_kulig.png", "x": 30, "y": 226, "width": 120, "height": 34, "animation": {"type": "drift", "amplitude": 70, "duration": 9000}, "revealOn": "kulig", "fadeDuration": 1500},
         {"image": "bg_koledy_kolednicy.png", "x": 120, "y": 290, "width": 170, "height": 110, "animation": {"type": "bob", "amplitude": 1, "duration": 800}},
         {"image": "bg_koledy_gwiazda.png", "x": 138, "y": 290, "width": 44, "height": 44, "animation": {"type": "sway", "amplitude": 30, "duration": 3000, "anchorX": 0.5, "anchorY": 0.5}, "noInvert": true},
         {"image": "bg_koledy_hanka.png", "x": 300, "y": 330, "width": 90, "height": 104, "revealOn": "hanka", "fadeDuration": 1500, "depth": 0.8},
+        {"image": "bg_koledy_platki_1.png", "x": 0, "y": 40, "width": 390, "height": 260, "animation": {"type": "rise", "amplitude": -140, "duration": 7000, "phase": 0.5}},
         {"image": "bg_koledy_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
       ]
     }

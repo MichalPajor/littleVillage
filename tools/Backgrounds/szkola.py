@@ -596,6 +596,62 @@ N_COMMENTS = {"tlo": "listopadowa noc: podwórze, stodoła, płot i jabłoń, b�
 N_COMMENTS.update({f"platki_{k}": "płatki śniegu (# pokaz: snieg, przestają padać)" for k in range(3)})
 N_COMMENTS.update({f"slad_{i}": f"ślad {i + 1} z {len(STEPS)}: długi, wąski, od boru pod okno (# pokaz: slady, po kolei)" for i in range(len(STEPS))})
 
+
+# ======================= ozywienie tel (wspolne efekty) =======================
+import efekty
+from efekty import add as _add
+
+# droga pod borem: wrony nad swierkami, krople rosy kapia z galezi
+_add(D, DROGA, D_ANIM, D_COMMENTS, "wrony", efekty.wrony(276, 112, n=3, seed=21), before="mgla")
+_add(D, DROGA, D_ANIM, D_COMMENTS, "rosa", efekty.platki(300, 200, 80, 120, n=10, seed=22, fall=30, duration=2600, r=(0.9, 1.4)), before="mgla")
+D_COMMENTS["rosa"] = "krople rosy kapią ze świerków"
+
+# izba szkolna (trzy sceny): smugi swiatla z okien, pylki kurzu, obloczki za szybami
+def _izba(order, anim, comments, extras, prefix):
+    _add(S, order, anim, comments, f"{prefix}smuga_0", efekty.smuga([(122, 160), (184, 160), (236, 300), (150, 300)]), before=order[2])
+    _add(S, order, anim, comments, f"{prefix}smuga_1", efekty.smuga([(214, 160), (276, 160), (326, 300), (240, 300)]), before=order[3])
+    _add(S, order, anim, comments, f"{prefix}pylki_0", efekty.pylki(150, 170, 90, 120, n=9, seed=23), before=order[4])
+    _add(S, order, anim, comments, f"{prefix}pylki_1", efekty.pylki(240, 170, 90, 120, n=9, seed=24, phase=0.4), before=order[5])
+
+
+_add(S, IZBA, S_ANIM, S_COMMENTS, "chmurki_okna", efekty.chmurki(124, 72, 150, 36), before="ogien")
+_izba(IZBA, S_ANIM, S_COMMENTS, S_EXTRA, "")
+for n in ["smuga_0", "smuga_1", "pylki_0", "pylki_1"]:
+    if n not in PODANIA:
+        PODANIA.insert(PODANIA.index("ogien"), n)
+        P_ANIM[n] = S_ANIM[n]
+        P_COMMENTS[n] = S_COMMENTS[n]
+    if n not in KSIEGA:
+        KSIEGA.insert(KSIEGA.index("ogien"), n)
+        KS_ANIM[n] = S_ANIM[n]
+        KS_COMMENTS[n] = S_COMMENTS[n]
+P_ANIM["lawki"] = {"type": "bob", "amplitude": 0.5, "duration": 2400}
+P_ANIM["ignacy_biurko"] = {"type": "sway", "amplitude": 1.2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}
+KS_ANIM["ignacy_za_biurkiem"] = {"type": "bob", "amplitude": 0.6, "duration": 2800}
+KS_ANIM["jaromir_biurko"] = {"type": "bob", "amplitude": 0.5, "duration": 2000}
+KSIEGA.insert(KSIEGA.index("ogien"), "chmurki_okna")
+KS_ANIM["chmurki_okna"] = S_ANIM["chmurki_okna"]
+KS_COMMENTS["chmurki_okna"] = S_COMMENTS["chmurki_okna"]
+
+# sosna ze spirala: wrony krazace nad borem, kropla zywicy splywa, mgla u stop lasu
+_add(K, SOSNA, K_ANIM, K_COMMENTS, "wrony", efekty.wrony(60, 150, n=4, seed=25, amplitude=50), before="zywica")
+_add(K, SOSNA, K_ANIM, K_COMMENTS, "kropla", ((258, 228, 10, 14, group(['<path d="M263 230c-2 4 -3 7 0 9c3 -2 2 -5 0 -9z" fill="#FFFFFF" stroke-width="1.2"/>'])),
+                                              {"type": "rise", "amplitude": -60, "duration": 5200}, "kropla żywicy spływa po pniu"), before="kora")
+_add(K, SOSNA, K_ANIM, K_COMMENTS, "mgla", ((-30, 270, 300, 40, group([f'<path d="{ribbon(-20, 250, 284, 14, 4)}" fill="#EDEBE6" stroke-width="1.4" opacity="0.85"/>'])),
+                                            {"type": "drift", "amplitude": 12, "duration": 14000}, "mgła u stóp boru (dryfuje)"), before="kora")
+
+# pierwszy snieg: gwiazdy w nocy (gasna przy sniegu), sowa na jabloni, iskierki na swiezym sniegu
+_add(N, SNIEG, N_ANIM, N_COMMENTS, "gwiazdy", efekty.iskry(26, 22, 340, 120, n=16, seed=26, duration=3400), before="snieg",
+     extra={"hideOn": "snieg", "fadeDuration": 3000}, extras=N_EXTRA)
+N_COMMENTS["gwiazdy"] = "gwiazdy nad borem (migoczą, gasną przy # pokaz: snieg)"
+_add(N, SNIEG, N_ANIM, N_COMMENTS, "iskry", efekty.iskry(30, 300, 330, 100, n=14, seed=27), before="okno",
+     extra={"fadeDuration": 4000}, extras=N_EXTRA)
+N_REVEAL["iskry"] = "snieg"
+N_COMMENTS["iskry"] = "iskierki na świeżym śniegu (# pokaz: snieg)"
+_sowa, _sowa_oczy = efekty.sowa(124, 290, 1.1)
+_add(N, SNIEG, N_ANIM, N_COMMENTS, "sowa", _sowa, before="okno")
+_add(N, SNIEG, N_ANIM, N_COMMENTS, "sowa_oczy", _sowa_oczy, before="okno")
+
 BACKGROUNDS = {"jesien": ("bg_jesien", J, JESIEN, J_ANIM, J_REVEAL, J_EXTRA, J_COMMENTS, "Zapadlina jesienią"),
                "droga_bor": ("bg_drogabor", D, DROGA, D_ANIM, D_REVEAL, D_EXTRA, D_COMMENTS, "droga pod borem"),
                "szkola_izba": ("bg_szkola", S, IZBA, S_ANIM, S_REVEAL, S_EXTRA, S_COMMENTS, "izba szkolna"),

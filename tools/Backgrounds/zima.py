@@ -435,6 +435,52 @@ C_COMMENTS = {"tlo": "święta: Zapadlina w śniegu, zamarznięte jezioro, bór,
               "gwiazda": "gwiazda kolędników (obraca się)", "kulig": "kulig — sanie z konikiem na jeziorze (# pokaz: kulig)",
               "hanka": "Hanka i Jaromir (# pokaz: hanka)", "przod": "pierwszy plan: śnieg"}
 
+
+# ======================= ozywienie tel (wspolne efekty) =======================
+import efekty
+from efekty import add as _add
+
+# roraty: sowa na czubku swierka, iskierki szronu na sniegu
+_s, _so = efekty.sowa(232, 128, 1.0)
+_add(R, RORATY, R_ANIM, R_COMMENTS, "sowa", _s, before="dzieci")
+_add(R, RORATY, R_ANIM, R_COMMENTS, "sowa_oczy", _so, before="dzieci")
+_add(R, RORATY, R_ANIM, R_COMMENTS, "iskry", efekty.iskry(10, 300, 200, 120, n=14, seed=31), before="dzieci")
+
+# przerwa: dzwon kolysze sie w wiezyczce, wrony na kalenicy szkoly
+_add(P, PRZERWA, P_ANIM, P_COMMENTS, "dzwon", ((92, 92, 16, 20, group(['<path d="M100 94v3M95 108c0 -8 2 -11 5 -11s5 3 5 11z" fill="#FFFFFF" stroke-width="1.4"/>'])),
+                                              {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 0.5, "anchorY": 0.1}, "dzwon w wieżyczce (kołysze się)"), before="dym")
+_add(P, PRZERWA, P_ANIM, P_COMMENTS, "wrona_0", efekty.wrona_siedzi(256, 170, 0.9), before="dym")
+_add(P, PRZERWA, P_ANIM, P_COMMENTS, "wrona_1", efekty.wrona_siedzi(296, 168, 0.85), before="dym")
+P_ANIM["wrona_1"] = dict(P_ANIM["wrona_1"], phase=0.4)
+_add(P, PRZERWA, P_ANIM, P_COMMENTS, "wrony", efekty.wrony(150, 60, n=3, seed=32), before="dym")
+
+# izba noca: snieg za szyba, blask ksiezyca na podlodze, oddech spiacych
+_add(I, IZBA_NOC, I_ANIM, I_COMMENTS, "platki", efekty.platki(152, 72, 92, 70, n=10, seed=33, fall=50, duration=5200, r=(0.9, 1.6)), before="zar")
+_add(I, IZBA_NOC, I_ANIM, I_COMMENTS, "blask", efekty.smuga([(150, 170), (246, 170), (300, 300), (170, 300)], opacity=0.22), before="zar")
+I_COMMENTS["blask"] = "blask księżyca na podłodze (pulsuje)"
+I_ANIM["spi"] = {"type": "bob", "amplitude": 0.6, "duration": 3200}
+I_ANIM["ksiega"] = {"type": "bob", "amplitude": 0.4, "duration": 2600}
+I_ANIM["ojciec"] = {"type": "bob", "amplitude": 0.5, "duration": 3000}
+
+# Wigilia: snieg za oknem, rodzina przy stole oddycha, cienie od swiecy
+for order, anim, comments in [(WIGILIA, V_ANIM, V_COMMENTS), (SZCZENIAK, VS_ANIM, VS_COMMENTS)]:
+    _add(V, order, anim, comments, "platki", efekty.platki(198, 72, 76, 56, n=9, seed=34, fall=40, duration=5600, r=(0.9, 1.5)), before="rodzina")
+    anim["rodzina"] = {"type": "bob", "amplitude": 0.5, "duration": 3000}
+VS_ANIM["stas"] = {"type": "bob", "amplitude": 0.5, "duration": 2700}
+
+# noc w sniegu: oczy sowy w czarnym borze, iskierki na polu, zamiec niesiona wiatrem, Jaromir idzie
+_s, _so = efekty.sowa(214, 232, 1.0)
+_add(N, NOC, N_ANIM, N_COMMENTS, "sowa_oczy", _so, before="oczy")
+_add(N, NOC, N_ANIM, N_COMMENTS, "iskry", efekty.iskry(10, 300, 180, 120, n=14, seed=35), before="jaromir")
+_add(N, NOC, N_ANIM, N_COMMENTS, "zamiec", efekty.platki(0, 270, 200, 120, n=16, seed=36, fall=10, r=(0.8, 1.4)), before="jaromir")
+N_ANIM["zamiec"] = {"type": "float", "amplitude": 4, "dx": 160, "dy": 14, "duration": 6500}
+N_COMMENTS["zamiec"] = "śnieżny pył niesiony wiatrem po polu"
+N_ANIM["jaromir"] = {"type": "bob", "amplitude": 0.8, "duration": 900}
+
+# koledy: padajacy snieg w dwoch warstwach
+_add(C, KOLEDY, C_ANIM, C_COMMENTS, "platki_0", efekty.platki(0, 0, 390, 220, n=22, seed=37, fall=160, duration=9000), before="kulig")
+_add(C, KOLEDY, C_ANIM, C_COMMENTS, "platki_1", efekty.platki(0, 40, 390, 260, n=18, seed=38, fall=140, duration=7000, phase=0.5, r=(1.6, 2.6)), before="przod")
+
 BACKGROUNDS = {"roraty": ("bg_roraty", R, RORATY, R_ANIM, R_REVEAL, R_EXTRA, R_COMMENTS, "roraty"),
                "przerwa_sniezki": ("bg_przerwa", P, PRZERWA, P_ANIM, P_REVEAL, P_EXTRA, P_COMMENTS, "przerwa pod kościółkiem"),
                "izba_noc": ("bg_izbanoc", I, IZBA_NOC, I_ANIM, I_REVEAL, I_EXTRA, I_COMMENTS, "izba nocą"),

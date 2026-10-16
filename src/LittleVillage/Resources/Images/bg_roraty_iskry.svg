@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „roraty”: iskierki na śniegu (migoczą)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="120" viewBox="10 300 200 120">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 316h6M15 313v6" fill="none" stroke-width="1.1"/>
+<path d="M86 381h6M89 378v6" fill="none" stroke-width="1.1"/>
+<path d="M37 316h6M40 313v6" fill="none" stroke-width="1.1"/>
+<path d="M55 389h6M58 386v6" fill="none" stroke-width="1.1"/>
+<path d="M39 387h6M42 384v6" fill="none" stroke-width="1.1"/>
+<path d="M138 319h6M141 316v6" fill="none" stroke-width="1.1"/>
+<path d="M114 354h6M117 351v6" fill="none" stroke-width="1.1"/>
+<path d="M90 417h6M93 414v6" fill="none" stroke-width="1.1"/>
+<path d="M28 305h6M31 302v6" fill="none" stroke-width="1.1"/>
+<path d="M192 349h6M195 346v6" fill="none" stroke-width="1.1"/>
+<path d="M49 341h6M52 338v6" fill="none" stroke-width="1.1"/>
+<path d="M81 412h6M84 409v6" fill="none" stroke-width="1.1"/>
+<path d="M51 328h6M54 325v6" fill="none" stroke-width="1.1"/>
+<path d="M123 365h6M126 362v6" fill="none" stroke-width="1.1"/>
+</g>
+</svg>
