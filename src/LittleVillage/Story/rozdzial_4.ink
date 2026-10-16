@@ -98,7 +98,7 @@ I opowiedział. O figurce, którą dziadek Maciek sprzedał w mieście staruszce
 = prawda_ojca
 # tlo: izba_wieczor
 Ojciec, kiedy usłyszał, co się stało nad rozlewiskiem, nie roześmiał się. Jaromir pierwszy raz widział, żeby historia o stworze nie wywołała na jego twarzy uśmiechu.
-– Twój dziadek opowiadał mi to samo – powiedział cicho, obracając w palcach kubek. – O ręce z wody. O głosie, który woła znad bagien. O zielarce spalonej w chacie nad jeziorem. Śmiałem się. Myślałem, że chce mnie nastraszyć, żebym nie łaził sam nad wodę. – Zamilkł na długo. – A przed śmiercią ścisnął moją dłoń i szepnął: „Pilnuj kapliczek, Dobruś. To nie były bajki”.
+– Twój dziadek opowiadał mi to samo – powiedział cicho, obracając w palcach kubek. – O ręce z wody. O głosie, który woła znad bagien. O zielarce spalonej w chacie nad jeziorem.{ pregi_na_lydkach: Pokazywał mi sine pręgi na łydkach, po pięć z każdej strony. Myślałem, że to od pijawek.} Śmiałem się. Myślałem, że chce mnie nastraszyć, żebym nie łaził sam nad wodę. – Zamilkł na długo. – A przed śmiercią ścisnął moją dłoń i szepnął: „Pilnuj kapliczek, Dobruś. To nie były bajki”.
 – Obiecaj mi jedno – poprosił. – Że nigdy nie wejdziesz do boru. Choćby nie wiem kto cię wołał.
 -> obietnica
 

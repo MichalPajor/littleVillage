@@ -415,14 +415,36 @@ Leżał w błocie, dysząc, a zwierzę stało nad nim i warczało w stronę mokr
 -> na_grzbiecie
 
 = utoniecie
-# tlo: sciezka_smierc
+// Bez psa: Maciek idzie za głosem i tonie — ale przeżywa. Ratuje się krzesiwem albo ratuje go Andrzej;
+// bagno zabiera figurkę (zostaje tylko spokojne zakończenie) i zostawia na łydkach sine pręgi.
+# tlo: sciezka_ratunek
+~ pregi_na_lydkach = true
 Zrobił krok ze ścieżki, potem drugi, minął gęstwinę i przeskoczył przez grząskie błoto. Bagno zachlupotało i chwyciło go za kostki lodowatymi palcami. Poczuł, jak jego nogi wciąga pod powierzchnię. Głos był coraz bliżej – teraz ciepły, znajomy, taki, za którym tęsknił od lat.
 – Maaaciek…
 Stał nieruchomo, zanurzony już po kolana, potem po pas. Nie czuł zimna. Czuł tylko, że ktoś ukochany się do niego zbliża.
 Dopiero gdy czarna woda sięgnęła mu piersi, zrozumiał. Szarpnął się, ale coś trzymało go za łydki – coś, co miało palce. Światełko zamrugało tuż przed jego twarzą i zobaczył, że to nie kaganek. To były oczy. Żarzące się jak węgielki. # pokaz: oczy
-Bagno westchnęło po ludzku i zamknęło się nad nim. # pokaz: bagno
-Nad Zapadliną wstawał dzień. Chata stała pusta, z nowym dachem, pod który nikt już nie wróci. # smierc
--> END
+{ ekwipunek ? krzesiwo:
+    Wtedy przypomniał sobie o krzesiwie, które od tamtego dnia nosił za pazuchą. Zdrętwiałymi rękami wyszarpnął je razem z hubką i uderzył – raz, drugi – tuż nad wodą. Trzecia iskra skoczyła prosto w ślepia. W wodzie coś syknęło jak polano wrzucone do ognia, uchwyt na łydkach zelżał, a światełko zgasło jak zdmuchnięte. Maciek rzucił się w tył, chwytał kępy trawy, wyrywał je garściami, aż w końcu wyczołgał się na ścieżkę. # pokaz: iskry, ratunek
+    { ekwipunek ? figurka:
+        ~ ekwipunek -= figurka
+        ~ figurka_w_bagnie = true
+        Na ścieżce poczuł, że kieszeń jest lekka. Nadpalona figurka musiała mu się wysunąć w bagnie. Przez chwilę wydawało mu się, że jeszcze ją widzi – ciemny kształt z rękami do stóp, powoli opadający w głąb – a potem nie było już nic. # pokaz: figurka
+        Nie wrócił po nią. Za nic w świecie.
+    }
+- else:
+    ~ uratowal_andrzej = true
+    – Maciek! Łap!
+    Tuż obok plasnęła o wodę długa żerdź. Na grobli stał Andrzej, w zabłoconych łapciach, z koszem przewieszonym przez ramię – o świcie sprawdzał więcierze przy rozlewiskach. Maciek uczepił się drąga obiema rękami. Sąsiad zaparł się i stęknął, a bagno ciągnęło w swoją stronę, aż wreszcie puściło z mlaśnięciem, jakby niechętnie oddawało zdobycz. Ognik zamrugał jeszcze raz i zgasł. # pokaz: andrzej, ratunek
+    – Mówiłem ci – wydyszał Andrzej, kiedy obaj leżeli w błocie. – Nie słuchaj głosów znad wody.
+    { ekwipunek ? figurka:
+        ~ ekwipunek -= figurka
+        ~ figurka_w_bagnie = true
+        Na grobli Maciek poczuł, że kieszeń jest lekka. Nadpalona figurka musiała mu się wysunąć w bagnie. Przez chwilę wydawało mu się, że jeszcze ją widzi – ciemny kształt z rękami do stóp, powoli opadający w głąb – a potem nie było już nic. # pokaz: figurka
+        – Wzięło swoje – mruknął Andrzej i splunął przez lewe ramię.
+    }
+}
+Na obu łydkach, tam gdzie trzymało go to coś, zostały mu sine pręgi – długie, wąskie, po pięć z każdej strony. Nie zeszły ani tego dnia, ani do końca jego życia. # dalej
+-> na_grzbiecie
 
 = nie_odwraca_sie
 Zacisnął zęby i szedł dalej, krok za krokiem, nie odwracając głowy. Głos wołał jeszcze dwa razy, coraz ciszej. Potem umilkł. # dalej

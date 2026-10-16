@@ -21,6 +21,13 @@ VAR chcial_odejsc = false
 // Pies wyciągnął Maćka z bagna, gdy ten poszedł za głosem żony.
 VAR pies_uratowal = false
 
+// Bez psa: Maćka wyciągnął z bagna Andrzej (gdy nie miał krzesiwa, którym odpędził ognik).
+VAR uratowal_andrzej = false
+// Bagno zabrało Maćkowi figurkę (może kiedyś wypłynąć z mokradeł — rozdział 13).
+VAR figurka_w_bagnie = false
+// Po bagnie zostały Maćkowi na łydkach sine pręgi od palców — do końca życia.
+VAR pregi_na_lydkach = false
+
 // Czy Maciek przeszukał zgliszcza chaty wiedźmy nad jeziorem.
 VAR przeszukal_zgliszcza = false
 

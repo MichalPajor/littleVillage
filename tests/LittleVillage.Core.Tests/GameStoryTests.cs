@@ -560,18 +560,37 @@ public sealed class GameStoryTests
     }
 
     [Theory]
-    [InlineData(Stay)]
-    [InlineData(GoOut, KeepBread)]
-    public void Following_the_voice_without_the_dog_drowns_Maciek(params int[] dogChoices)
+    [InlineData(TakeFlint, "iskry", "Trzecia iskra skoczyła prosto w ślepia.", "Nie wrócił po nią.")]
+    [InlineData(LeaveFlint, "andrzej", "Nie słuchaj głosów znad wody.", "– Wzięło swoje – mruknął Andrzej")]
+    public void Following_the_voice_without_the_dog_the_bog_takes_the_figurine_but_maciek_survives(int flint, string rescuer, string text, string loss)
     {
-        var pages = Play(CreateEngine(), [Marsh, .. dogChoices, StayHere, TellBoy, Search, TakeFlint, FollowVoice]);
+        var engine = CreateEngine();
+        var pages = Play(engine, [Marsh, Stay, StayHere, TellBoy, Search, flint, FollowVoice]);
 
-        var death = pages[^1];
-        Assert.Equal(PageEnding.Death, death.Ending);
-        Assert.Equal("sciezka_smierc", death.BackgroundKey);
-        Assert.Contains(death.Blocks, b => b.Reveal == "oczy" && b.Text.Contains("Żarzące się jak węgielki"));
-        Assert.Contains(death.Blocks, b => b.Reveal == "bagno");
-        Assert.EndsWith("pod który nikt już nie wróci.", death.Blocks[^1].Text);
+        Assert.DoesNotContain(pages, p => p.Ending == PageEnding.Death);
+        var bog = On(pages, "sciezka_ratunek")[0];
+        Assert.Contains(bog.Blocks, b => b.Reveal == "oczy" && b.Text.Contains("Żarzące się jak węgielki"));
+        Assert.Contains(bog.Blocks, b => b.Reveal != null && b.Reveal.Contains(rescuer) && b.Reveal.Contains("ratunek"));
+        Assert.True(Has([bog], text));
+        Assert.Contains(bog.Blocks, b => b.Reveal == "figurka");
+        Assert.True(Has([bog], loss));
+        Assert.EndsWith("ani do końca jego życia.", bog.Blocks[^1].Text);
+        Assert.DoesNotContain("figurka", Inventory(engine));
+
+        // bez figurki w miescie nie ma staruchy — prolog konczy sie spokojnymi latami
+        Assert.Contains(pages, p => p.BackgroundKey == "zapadlina" && Has([p], "Na Bukowym Grzbiecie"));
+        Assert.DoesNotContain(pages, p => Has([p], "stara kobieta w kapturze"));
+    }
+
+    [Fact]
+    public void Bog_marks_on_grandfathers_legs_come_back_in_chapter_four()
+    {
+        var pages = Play(CreateEngine(), [Marsh, Stay, Leave, SendBoyAway, Avoid, FollowVoice, KeepQuiet, .. Summer, .. School, .. NoDogWinter, KeepRibbon, DontLook]);
+
+        var bog = On(pages, "sciezka_ratunek")[0];
+        Assert.True(Has([bog], "Nie słuchaj głosów znad wody."));
+        Assert.DoesNotContain(bog.Blocks, b => b.Reveal == "figurka");
+        Assert.True(Has(On(pages, "izba_wieczor"), "Pokazywał mi sine pręgi na łydkach, po pięć z każdej strony. Myślałem, że to od pijawek."));
     }
 
     [Fact]
