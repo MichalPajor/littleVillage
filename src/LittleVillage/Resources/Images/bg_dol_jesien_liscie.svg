@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „dolny plan: jesien”: liście opadają
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="120" viewBox="0 440 390 120">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M126 500C129 497 133 497 137 500C133 503 129 503 126 500Z" fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+<path d="M317 535C320 532 324 532 328 535C324 538 320 538 317 535Z" fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+<path d="M28 451C31 448 35 448 39 451C35 454 31 454 28 451Z" fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+<path d="M182 519C185 516 189 516 193 519C189 522 185 522 182 519Z" fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+<path d="M97 547C100 544 104 544 108 547C104 550 100 550 97 547Z" fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+<path d="M230 543C233 540 237 540 241 543C237 546 233 546 230 543Z" fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+</g>
+</svg>

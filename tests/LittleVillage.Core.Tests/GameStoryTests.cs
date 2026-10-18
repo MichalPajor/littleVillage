@@ -290,6 +290,8 @@ public sealed class GameStoryTests
 
         Assert.Equal(PageEnding.End, pages[^1].Ending);
         Assert.All(pages.SelectMany(p => p.Blocks), b => Assert.DoesNotContain("#", b.Text));
+        // spacja przed kropka lub przecinkiem albo podwojna spacja zdradza zle zlozony warunek ink ("{ war: a | b }.")
+        Assert.All(pages.SelectMany(p => p.Blocks), b => Assert.DoesNotMatch(@" [.,;:!?]|  ", b.Text));
         Assert.All(pages, p => Assert.False(string.IsNullOrEmpty(p.BackgroundKey)));
     }
 

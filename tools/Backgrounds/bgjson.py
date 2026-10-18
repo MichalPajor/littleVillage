@@ -1,6 +1,6 @@
 # Zapis wpisow tel do src/LittleVillage/Resources/Raw/backgrounds.json (jedna warstwa w linii, naglowek z komentarzami zostaje).
 #   entry(prefix, order, L, anim, reveal, extra)  -> lista warstw (slowniki)
-#   upsert(key, layers)                            -> podmienia wpis tla albo dopisuje go na koncu
+#   upsert(key, layers)                            -> podmienia wpis tla albo dopisuje go na koncu (z dolnym planem z dolny_plan.py)
 # extra[nazwa] moze zawierac: frames (lista nazw warstw L — klatki), appearAfter, hideAfter, hideOn, fadeDuration, noInvert, depth.
 import json, os
 
@@ -34,6 +34,9 @@ def _fmt(key, layers, width=390, height=844, color="#EDEBE6"):
 
 
 def upsert(key, layers):
+    # dolny plan (to, co widac po schowaniu okna z tekstem) doklejany zawsze na koncu — patrz dolny_plan.py
+    import dolny_plan
+    layers = [l for l in layers if not l["image"].startswith("bg_dol_")] + dolny_plan.layers_for(key)
     s = open(JSON_PATH, encoding="utf-8").read()
     lines = s.split("\n")
     start = next((i for i, l in enumerate(lines) if l.startswith(f'    "{key}": {{')), None)

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „dolny plan: snieg”: płatki śniegu
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="400" viewBox="0 440 390 400">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="544" r="1.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="194" cy="494" r="2.0" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="127" cy="568" r="2.3" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="98" cy="639" r="1.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="231" cy="630" r="1.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="133" cy="532" r="2.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="53" cy="571" r="1.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="383" cy="465" r="1.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="24" cy="495" r="2.2" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="115" cy="576" r="1.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="214" cy="557" r="1.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="254" cy="480" r="1.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="137" cy="626" r="2.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="295" cy="558" r="1.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="198" cy="556" r="1.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="281" cy="511" r="2.0" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="22" cy="445" r="2.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="195" cy="487" r="1.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="254" cy="520" r="1.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+<circle cx="292" cy="601" r="1.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.8"/>
+</g>
+</svg>

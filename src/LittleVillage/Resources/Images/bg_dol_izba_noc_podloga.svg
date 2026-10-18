@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „dolny plan: izba nocą”: podłoga z desek
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="398" viewBox="-10 446 410 398">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M81 446L-260 844" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M109 446L-150 844" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M136 446L-40 844" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M164 446L70 844" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M191 446L180 844" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M219 446L290 844" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M246 446L400 844" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M274 446L510 844" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M301 446L620 844" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M-10 480H400" fill="none" stroke="#FFFFFF" stroke-width="0.7" opacity="0.6"/>
+<path d="M-10 540H400" fill="none" stroke="#FFFFFF" stroke-width="0.7" opacity="0.6"/>
+<path d="M-10 620H400" fill="none" stroke="#FFFFFF" stroke-width="0.7" opacity="0.6"/>
+<path d="M-10 720H400" fill="none" stroke="#FFFFFF" stroke-width="0.7" opacity="0.6"/>
+<path d="M-10 830H400" fill="none" stroke="#FFFFFF" stroke-width="0.7" opacity="0.6"/>
+<path d="M181 604c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M61 782c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M12 651c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M342 499c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M215 692c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M25 606c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M270 633c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M278 527c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M98 510c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M197 803c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M228 749c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M152 739c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M48 575c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+<path d="M259 731c4 -2 8 -2 12 0" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+</g>
+</svg>

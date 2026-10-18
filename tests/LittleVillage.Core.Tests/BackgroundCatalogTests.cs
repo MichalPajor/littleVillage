@@ -105,4 +105,17 @@ public sealed class BackgroundCatalogTests
         Assert.Contains(layers, l => l.AppearAfter > 0);
         Assert.Contains(layers, l => l.HideAfter > 0);
     }
+
+    [Fact]
+    public void Every_game_background_is_drawn_below_the_text_panel_too()
+    {
+        // Po schowaniu okna z tekstem widać cały ekran — każde tło musi mieć rysunek także w dolnej części płótna.
+        var catalog = BackgroundCatalog.Parse(File.ReadAllText(TestPaths.BackgroundsJson));
+        foreach (var key in catalog.Keys)
+        {
+            var layers = catalog.Resolve(key)!.Layers;
+            Assert.True(layers.Count(l => l.Image.StartsWith("bg_dol_") && l.Y + l.Height > 700) >= 2,
+                $"Tło „{key}” nie ma dolnego planu (warstw bg_dol_*) pod oknem z tekstem.");
+        }
+    }
 }

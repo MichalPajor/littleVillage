@@ -128,7 +128,7 @@ Następnego ranka, kiedy chłopiec wyszedł na podwórze, zobaczył ją na płoc
 = rozmowa_ksiega
 # tlo: szkola_ksiega
 Przez kilka dni nosił w sobie to, co się stało. Uwierało go jak kamień w bucie. W końcu, w piątek po lekcjach, kiedy reszta wybiegła już na podwórze, został w izbie i stanął przy biurku pana Ignacego.
-Opowiedział mu wszystko – o liczeniu we mgle, o spirali na sośnie, { poszedl_po_wstazke: o starcu w kożuchu wywróconym na lewą stronę | o wstążce, która sama wróciła na płot }. Spodziewał się, że nauczyciel się roześmieje, tak jak w piątek cała klasa. Ale on słuchał w milczeniu, a z każdym zdaniem jego twarz stawała się coraz poważniejsza.
+Opowiedział mu wszystko – o liczeniu we mgle, o spirali na sośnie, {poszedl_po_wstazke:o starcu w kożuchu wywróconym na lewą stronę|o wstążce, która sama wróciła na płot}. Spodziewał się, że nauczyciel się roześmieje, tak jak w piątek cała klasa. Ale on słuchał w milczeniu, a z każdym zdaniem jego twarz stawała się coraz poważniejsza.
 { ekwipunek ? kora:
     Kiedy Jaromir wyjął z torby kawałek kory, pan Ignacy długo oglądał wyryte na niej znaki. Potem sięgnął do biurka i porównał je z rysunkiem w swoich notatkach. Ręce mu drżały. # pokaz: kora
 }

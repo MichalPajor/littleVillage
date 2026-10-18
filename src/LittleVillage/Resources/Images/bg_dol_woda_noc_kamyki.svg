@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „dolny plan: woda nocą”: kamyki, muszla i wyrzucony konar na piasku
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="220" viewBox="-10 560 410 220">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="148" cy="586" rx="6.5" ry="4.3" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="168" cy="720" rx="10.2" ry="6.8" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="168" cy="595" rx="6.8" ry="4.5" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="44" cy="644" rx="8.1" ry="5.4" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="374" cy="650" rx="8.3" ry="5.5" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="66" cy="646" rx="8.1" ry="5.4" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="118" cy="598" rx="6.9" ry="4.6" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="163" cy="670" rx="8.8" ry="5.9" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="271" cy="730" rx="10.4" ry="7.0" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="172" cy="597" rx="6.8" ry="4.5" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="309" cy="602" rx="6.9" ry="4.6" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="228" cy="719" rx="10.1" ry="6.8" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="133" cy="753" rx="11.1" ry="7.4" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="303" cy="616" rx="7.3" ry="4.9" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="165" cy="637" rx="7.9" ry="5.3" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="203" cy="717" rx="10.1" ry="6.7" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="68" cy="688" rx="9.3" ry="6.2" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="36" cy="650" rx="8.3" ry="5.5" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="29" cy="727" rx="10.4" ry="6.9" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="113" cy="686" rx="9.3" ry="6.2" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="62" cy="688" rx="9.3" ry="6.2" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="124" cy="640" rx="8.0" ry="5.3" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="238" cy="717" rx="10.1" ry="6.7" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<ellipse cx="359" cy="724" rx="10.3" ry="6.9" fill="#000000" stroke="#FFFFFF" stroke-width="1"/>
+<path d="M60 640c4 -8 14 -8 18 0z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/><path d="M64 640l5 -6M69 640v-7M74 640l-3 -6" fill="none" stroke="#FFFFFF" stroke-width="0.7"/>
+<path d="M150 700L290 660L296 676L156 716Z" fill="url(#hatch)" stroke="#FFFFFF" stroke-width="2"/>
+</g>
+</svg>

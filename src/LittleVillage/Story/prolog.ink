@@ -452,7 +452,13 @@ Zacisnął zęby i szedł dalej, krok za krokiem, nie odwracając głowy. Głos 
 
 = na_grzbiecie
 # tlo: zapadlina
-Na Bukowym Grzbiecie Maciek wreszcie odważył się obejrzeć. W dole leżała Zapadlina – cicha, przykryta mgłą jak całunem. Gdzieś tam stała jego chata.
+// Kto poszedł za głosem (pies go wyciągnął albo bagno puściło), już się odwrócił — dla niego inny tekst.
+{ pies_uratowal || pregi_na_lydkach:
+    Resztę drogi pod górę pokonał jak we śnie – mokry do pasa, oblepiony mułem, z {pregi_na_lydkach:łydkami piekącymi tak, jakby wciąż zaciskały się na nich czyjeś palce|kostkami, na których wciąż czuł lodowaty uścisk bagna}.{ los_psa == oswojony: Pies nie odstępował go ani na krok i co chwila oglądał się na wodę.}
+    Na Bukowym Grzbiecie usiadł na kamieniu i dopiero tam przestały mu się trząść ręce. W dole leżała Zapadlina – cicha, przykryta mgłą jak całunem, jakby nic się nie wydarzyło. Gdzieś tam stała jego chata.
+- else:
+    Na Bukowym Grzbiecie Maciek wreszcie odważył się obejrzeć. W dole leżała Zapadlina – cicha, przykryta mgłą jak całunem. Gdzieś tam stała jego chata.
+}
 Potem ruszył gościńcem w stronę miasta. # dalej
 -> miasto
 

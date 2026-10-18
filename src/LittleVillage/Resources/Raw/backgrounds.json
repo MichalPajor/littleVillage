@@ -22,7 +22,18 @@
         {"image": "bg_wies_noc_swierk_lewy.png", "x": -26, "y": 174, "width": 112, "height": 232, "animation": {"type": "sway", "amplitude": 1.6, "duration": 4600, "anchorX": 0.5, "anchorY": 0.974}},
         {"image": "bg_wies_noc_swierk_prawy.png", "x": 324, "y": 188, "width": 102, "height": 218, "animation": {"type": "sway", "amplitude": 1.3, "duration": 5200, "anchorX": 0.5, "anchorY": 0.972, "phase": 0.35}},
         {"image": "bg_wies_noc_oczy.png", "x": 226, "y": 310, "width": 66, "height": 36, "animation": {"type": "blink", "duration": 5600}},
-        {"image": "bg_wies_noc_przod.png", "x": 0, "y": 220, "width": 390, "height": 624}
+        {"image": "bg_wies_noc_przod.png", "x": 0, "y": 220, "width": 390, "height": 624},
+        {"image": "bg_dol_laka_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_swietliki.png", "x": 0, "y": 470, "width": 390, "height": 300, "animation": {"type": "wander", "amplitude": 14, "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_mgla_dol.png", "x": -40, "y": 470, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "zapadlina": {
@@ -39,7 +50,17 @@
         {"image": "bg_zapadlina_ognie.png", "x": 110, "y": 148, "width": 122, "height": 50, "animation": {"type": "flicker", "amplitude": 0.25, "duration": 3000}},
         {"image": "bg_zapadlina_mgla_gora.png", "x": -26, "y": 218, "width": 284, "height": 42, "animation": {"type": "drift", "amplitude": 10, "duration": 13000}},
         {"image": "bg_zapadlina_mgla_dol.png", "x": 88, "y": 326, "width": 236, "height": 42, "animation": {"type": "drift", "amplitude": 12, "duration": 17000, "phase": 0.5}},
-        {"image": "bg_zapadlina_przod.png", "x": 0, "y": 310, "width": 390, "height": 534}
+        {"image": "bg_zapadlina_przod.png", "x": 0, "y": 310, "width": 390, "height": 534},
+        {"image": "bg_dol_laka_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_laka_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "budowa_las": {
@@ -53,7 +74,17 @@
         {"image": "bg_budowa_tlo_las.png", "x": 0, "y": 100, "width": 390, "height": 190},
         {"image": "bg_budowa_las_swierki.png", "x": 300, "y": 120, "width": 90, "height": 170, "animation": {"type": "sway", "amplitude": 1.3, "duration": 5200, "anchorX": 0.5, "anchorY": 0.95}},
         {"image": "bg_budowa_plac.png", "x": 0, "y": 240, "width": 390, "height": 236},
-        {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+        {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
+        {"image": "bg_dol_las_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_las_mech.png", "x": -10, "y": 740, "width": 410, "height": 104, "animation": {"type": "sway", "amplitude": 1, "duration": 4400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_klod.png", "x": -10, "y": 560, "width": 410, "height": 90, "depth": 1.0},
+        {"image": "bg_dol_las_grzyby.png", "x": 120, "y": 620, "width": 220, "height": 140, "depth": 1.0},
+        {"image": "bg_dol_las_paproc_l.png", "x": -20, "y": 600, "width": 170, "height": 250, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3600, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_paproc_p.png", "x": 240, "y": 590, "width": 170, "height": 260, "animation": {"type": "sway", "amplitude": 2.5, "duration": 4000, "anchorX": 0.8, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_las_trawa_0.png", "x": -20, "y": 470, "width": 430, "height": 170, "animation": {"type": "sway", "amplitude": 2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_trawa_1.png", "x": -20, "y": 630, "width": 430, "height": 170, "animation": {"type": "sway", "amplitude": 2, "duration": 3700, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_igly.png", "x": 0, "y": 440, "width": 390, "height": 120, "animation": {"type": "float", "amplitude": 6, "dx": 40, "dy": 300, "duration": 8000}, "depth": 1.0},
+        {"image": "bg_dol_las_zuk.png", "x": 200, "y": 780, "width": 20, "height": 14, "animation": {"type": "drift", "amplitude": 40, "duration": 9000}, "depth": 1.0}
       ]
     },
     "budowa_mokradla": {
@@ -67,7 +98,16 @@
         {"image": "bg_budowa_tlo_mokradla.png", "x": 0, "y": 150, "width": 390, "height": 130},
         {"image": "bg_budowa_mokradla_mgla.png", "x": -30, "y": 216, "width": 330, "height": 34, "animation": {"type": "drift", "amplitude": 12, "duration": 15000}},
         {"image": "bg_budowa_plac.png", "x": 0, "y": 240, "width": 390, "height": 236},
-        {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+        {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
+        {"image": "bg_dol_bagno_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_bagno_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_kepy.png", "x": -10, "y": 460, "width": 410, "height": 300, "depth": 1.0},
+        {"image": "bg_dol_bagno_kregi.png", "x": 60, "y": 510, "width": 40, "height": 20, "animation": {"type": "ripple", "amplitude": 1.4, "duration": 2600, "anchorX": 0.5, "anchorY": 0.5}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_bagno_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_wazka.png", "x": 170, "y": 626, "width": 40, "height": 24, "animation": {"type": "wander", "amplitude": 50, "flap": 0.5, "duration": 6400}, "depth": 1.0},
+        {"image": "bg_dol_bagno_zaba.png", "x": 100, "y": 700, "width": 30, "height": 20, "animation": {"type": "bob", "amplitude": 2, "duration": 1600}, "depth": 1.0}
       ]
     },
     "budowa_jezioro": {
@@ -81,7 +121,16 @@
         {"image": "bg_budowa_tlo_jezioro.png", "x": 0, "y": 140, "width": 390, "height": 140},
         {"image": "bg_budowa_jezioro_blyski.png", "x": 20, "y": 204, "width": 340, "height": 44, "animation": {"type": "drift", "amplitude": 5, "duration": 6000}},
         {"image": "bg_budowa_plac.png", "x": 0, "y": 240, "width": 390, "height": 236},
-        {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+        {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
+        {"image": "bg_dol_woda_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_woda_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_woda_kamyki.png", "x": -10, "y": 560, "width": 410, "height": 220, "depth": 1.0},
+        {"image": "bg_dol_woda_mewa.png", "x": 260, "y": 470, "width": 30, "height": 20, "animation": {"type": "wander", "amplitude": 50, "flap": 0.4, "duration": 8000}, "depth": 1.0},
+        {"image": "bg_dol_woda_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_woda_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_woda_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_woda_wazka.png", "x": 170, "y": 626, "width": 40, "height": 24, "animation": {"type": "wander", "amplitude": 50, "flap": 0.5, "duration": 6400}, "depth": 1.0},
+        {"image": "bg_dol_woda_zaba.png", "x": 100, "y": 700, "width": 30, "height": 20, "animation": {"type": "bob", "amplitude": 2, "duration": 1600}, "depth": 1.0}
       ]
     },
     "zarosla_noc": {
@@ -101,7 +150,18 @@
         {"image": "bg_zarosla_pies_drzenie.png", "x": 190, "y": 326, "width": 153, "height": 109, "animation": {"type": "flicker", "amplitude": 0, "duration": 200}, "revealOn": "pies"},
         {"image": "bg_zarosla_krzak_przod.png", "x": 270, "y": 360, "width": 110, "height": 76},
         {"image": "bg_zarosla_blysk_oka.png", "x": 234, "y": 352, "width": 10, "height": 10, "animation": {"type": "flicker", "amplitude": 0.2, "duration": 2200}, "revealOn": "pies"},
-        {"image": "bg_zarosla_przod.png", "x": 0, "y": 420, "width": 390, "height": 424}
+        {"image": "bg_zarosla_przod.png", "x": 0, "y": 420, "width": 390, "height": 424},
+        {"image": "bg_dol_las_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_las_noc_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_las_noc_mech.png", "x": -10, "y": 740, "width": 410, "height": 104, "animation": {"type": "sway", "amplitude": 1, "duration": 4400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_klod.png", "x": -10, "y": 560, "width": 410, "height": 90, "depth": 1.0},
+        {"image": "bg_dol_las_noc_grzyby.png", "x": 120, "y": 620, "width": 220, "height": 140, "depth": 1.0},
+        {"image": "bg_dol_las_noc_paproc_l.png", "x": -20, "y": 600, "width": 170, "height": 250, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3600, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_paproc_p.png", "x": 240, "y": 590, "width": 170, "height": 260, "animation": {"type": "sway", "amplitude": 2.5, "duration": 4000, "anchorX": 0.8, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_trawa_0.png", "x": -20, "y": 470, "width": 430, "height": 170, "animation": {"type": "sway", "amplitude": 2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_trawa_1.png", "x": -20, "y": 630, "width": 430, "height": 170, "animation": {"type": "sway", "amplitude": 2, "duration": 3700, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_oczy.png", "x": 230, "y": 520, "width": 40, "height": 14, "animation": {"type": "blink", "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_las_noc_mgla_dol.png", "x": -40, "y": 480, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "zmierzch": {
@@ -114,7 +174,18 @@
         {"image": "bg_zmierzch_oczy.png", "x": 330, "y": 344, "width": 30, "height": 14, "animation": {"type": "blink", "duration": 5200}, "revealOn": "oczy"},
         {"image": "bg_zmierzch_mgla_gora.png", "x": -30, "y": 352, "width": 330, "height": 36, "animation": {"type": "drift", "amplitude": 10, "duration": 12000}},
         {"image": "bg_zmierzch_mgla_dol.png", "x": 60, "y": 396, "width": 340, "height": 38, "animation": {"type": "drift", "amplitude": 12, "duration": 15000, "phase": 0.5}},
-        {"image": "bg_zmierzch_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+        {"image": "bg_zmierzch_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
+        {"image": "bg_dol_laka_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_swietliki.png", "x": 0, "y": 470, "width": 390, "height": 300, "animation": {"type": "wander", "amplitude": 14, "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_mgla_dol.png", "x": -40, "y": 470, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "zmierzch_zdobycz": {
@@ -137,7 +208,18 @@
         {"image": "bg_zmierzch_oczy_stwora.png", "x": 258, "y": 302, "width": 10, "height": 10, "animation": {"type": "flicker", "amplitude": 0.4, "duration": 2400}, "revealOn": "topielec"},
         {"image": "bg_zmierzch_maciek.png", "x": 160, "y": 316, "width": 80, "height": 92},
         {"image": "bg_zmierzch_mgla_dol.png", "x": 60, "y": 396, "width": 340, "height": 38, "animation": {"type": "drift", "amplitude": 12, "duration": 15000, "phase": 0.5}},
-        {"image": "bg_zmierzch_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+        {"image": "bg_zmierzch_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
+        {"image": "bg_dol_laka_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_swietliki.png", "x": 0, "y": 470, "width": 390, "height": 300, "animation": {"type": "wander", "amplitude": 14, "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_mgla_dol.png", "x": -40, "y": 470, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "zmierzch_obrona": {
@@ -165,7 +247,18 @@
         {"image": "bg_zmierzch_pies_obrona_szczekanie.png", "x": 184, "y": 359, "width": 97, "height": 69, "animation": {"type": "flicker", "amplitude": 0, "duration": 300}, "revealOn": "pies"},
         {"image": "bg_zmierzch_pies_obrona_drzenie.png", "x": 184, "y": 359, "width": 97, "height": 69, "animation": {"type": "flicker", "amplitude": 0, "duration": 200}, "revealOn": "pies"},
         {"image": "bg_zmierzch_mgla_dol.png", "x": 60, "y": 396, "width": 340, "height": 38, "animation": {"type": "drift", "amplitude": 12, "duration": 15000, "phase": 0.5}},
-        {"image": "bg_zmierzch_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+        {"image": "bg_zmierzch_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
+        {"image": "bg_dol_laka_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_swietliki.png", "x": 0, "y": 470, "width": 390, "height": 300, "animation": {"type": "wander", "amplitude": 14, "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_mgla_dol.png", "x": -40, "y": 470, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "chata_las": {
@@ -182,7 +275,17 @@
         {"image": "bg_chata_strzecha_szczyt.png", "x": 150, "y": 228, "width": 90, "height": 50, "revealOn": "dach"},
         {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
         {"image": "bg_chata_slady.png", "x": 0, "y": 392, "width": 390, "height": 42, "revealOn": "slady"},
-        {"image": "bg_chata_rodzina.png", "x": 120, "y": 330, "width": 140, "height": 80, "revealOn": "rodzina"}
+        {"image": "bg_chata_rodzina.png", "x": 120, "y": 330, "width": 140, "height": 80, "revealOn": "rodzina"},
+        {"image": "bg_dol_las_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_las_mech.png", "x": -10, "y": 740, "width": 410, "height": 104, "animation": {"type": "sway", "amplitude": 1, "duration": 4400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_klod.png", "x": -10, "y": 560, "width": 410, "height": 90, "depth": 1.0},
+        {"image": "bg_dol_las_grzyby.png", "x": 120, "y": 620, "width": 220, "height": 140, "depth": 1.0},
+        {"image": "bg_dol_las_paproc_l.png", "x": -20, "y": 600, "width": 170, "height": 250, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3600, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_paproc_p.png", "x": 240, "y": 590, "width": 170, "height": 260, "animation": {"type": "sway", "amplitude": 2.5, "duration": 4000, "anchorX": 0.8, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_las_trawa_0.png", "x": -20, "y": 470, "width": 430, "height": 170, "animation": {"type": "sway", "amplitude": 2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_trawa_1.png", "x": -20, "y": 630, "width": 430, "height": 170, "animation": {"type": "sway", "amplitude": 2, "duration": 3700, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_igly.png", "x": 0, "y": 440, "width": 390, "height": 120, "animation": {"type": "float", "amplitude": 6, "dx": 40, "dy": 300, "duration": 8000}, "depth": 1.0},
+        {"image": "bg_dol_las_zuk.png", "x": 200, "y": 780, "width": 20, "height": 14, "animation": {"type": "drift", "amplitude": 40, "duration": 9000}, "depth": 1.0}
       ]
     },
     "chata_mokradla": {
@@ -199,7 +302,16 @@
         {"image": "bg_chata_strzecha_szczyt.png", "x": 150, "y": 228, "width": 90, "height": 50, "revealOn": "dach"},
         {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
         {"image": "bg_chata_slady.png", "x": 0, "y": 392, "width": 390, "height": 42, "revealOn": "slady"},
-        {"image": "bg_chata_rodzina.png", "x": 120, "y": 330, "width": 140, "height": 80, "revealOn": "rodzina"}
+        {"image": "bg_chata_rodzina.png", "x": 120, "y": 330, "width": 140, "height": 80, "revealOn": "rodzina"},
+        {"image": "bg_dol_bagno_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_bagno_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_kepy.png", "x": -10, "y": 460, "width": 410, "height": 300, "depth": 1.0},
+        {"image": "bg_dol_bagno_kregi.png", "x": 60, "y": 510, "width": 40, "height": 20, "animation": {"type": "ripple", "amplitude": 1.4, "duration": 2600, "anchorX": 0.5, "anchorY": 0.5}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_bagno_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_wazka.png", "x": 170, "y": 626, "width": 40, "height": 24, "animation": {"type": "wander", "amplitude": 50, "flap": 0.5, "duration": 6400}, "depth": 1.0},
+        {"image": "bg_dol_bagno_zaba.png", "x": 100, "y": 700, "width": 30, "height": 20, "animation": {"type": "bob", "amplitude": 2, "duration": 1600}, "depth": 1.0}
       ]
     },
     "chata_jezioro": {
@@ -216,7 +328,16 @@
         {"image": "bg_chata_strzecha_szczyt.png", "x": 150, "y": 228, "width": 90, "height": 50, "revealOn": "dach"},
         {"image": "bg_budowa_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
         {"image": "bg_chata_slady.png", "x": 0, "y": 392, "width": 390, "height": 42, "revealOn": "slady"},
-        {"image": "bg_chata_rodzina.png", "x": 120, "y": 330, "width": 140, "height": 80, "revealOn": "rodzina"}
+        {"image": "bg_chata_rodzina.png", "x": 120, "y": 330, "width": 140, "height": 80, "revealOn": "rodzina"},
+        {"image": "bg_dol_woda_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_woda_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_woda_kamyki.png", "x": -10, "y": 560, "width": 410, "height": 220, "depth": 1.0},
+        {"image": "bg_dol_woda_mewa.png", "x": 260, "y": 470, "width": 30, "height": 20, "animation": {"type": "wander", "amplitude": 50, "flap": 0.4, "duration": 8000}, "depth": 1.0},
+        {"image": "bg_dol_woda_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_woda_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_woda_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_woda_wazka.png", "x": 170, "y": 626, "width": 40, "height": 24, "animation": {"type": "wander", "amplitude": 50, "flap": 0.5, "duration": 6400}, "depth": 1.0},
+        {"image": "bg_dol_woda_zaba.png", "x": 100, "y": 700, "width": 30, "height": 20, "animation": {"type": "bob", "amplitude": 2, "duration": 1600}, "depth": 1.0}
       ]
     },
     "izba_andrzeja": {
@@ -229,7 +350,14 @@
         {"image": "bg_izba_piec.png", "x": 196, "y": 100, "width": 194, "height": 272},
         {"image": "bg_izba_sprzety.png", "x": 64, "y": 156, "width": 326, "height": 262},
         {"image": "bg_izba_andrzej.png", "x": 0, "y": 216, "width": 92, "height": 172},
-        {"image": "bg_izba_stas.png", "x": 282, "y": 194, "width": 108, "height": 140, "animation": {"type": "bob", "amplitude": 0.6, "duration": 700}}
+        {"image": "bg_izba_stas.png", "x": 282, "y": 194, "width": 108, "height": 140, "animation": {"type": "bob", "amplitude": 0.6, "duration": 700}},
+        {"image": "bg_dol_izba_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_chodnik.png", "x": 20, "y": 590, "width": 350, "height": 200, "depth": 1.0},
+        {"image": "bg_dol_izba_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_kot.png", "x": 170, "y": 516, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 0.8, "duration": 2800}, "depth": 1.0},
+        {"image": "bg_dol_izba_ogon.png", "x": 150, "y": 536, "width": 36, "height": 30, "animation": {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 1, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_izba_pylki.png", "x": 60, "y": 460, "width": 280, "height": 300, "animation": {"type": "wander", "amplitude": 8, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_izba_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0}
       ]
     },
     "legenda": {
@@ -246,7 +374,18 @@
         {"image": "bg_legenda_iskry_a.png", "x": 210, "y": 120, "width": 110, "height": 80, "animation": {"type": "rise", "amplitude": 34, "duration": 2400}, "revealOn": "ogien"},
         {"image": "bg_legenda_iskry_b.png", "x": 210, "y": 120, "width": 110, "height": 80, "animation": {"type": "rise", "amplitude": 30, "duration": 2400, "phase": 0.5}, "revealOn": "ogien"},
         {"image": "bg_legenda_chlopi.png", "x": 100, "y": 264, "width": 290, "height": 146, "revealOn": "chlopi"},
-        {"image": "bg_legenda_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+        {"image": "bg_legenda_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
+        {"image": "bg_dol_laka_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_swietliki.png", "x": 0, "y": 470, "width": 390, "height": 300, "animation": {"type": "wander", "amplitude": 14, "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_mgla_dol.png", "x": -40, "y": 470, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "zgliszcza": {
@@ -259,7 +398,11 @@
         {"image": "bg_zgliszcza_zgliszcza.png", "x": 34, "y": 248, "width": 352, "height": 168},
         {"image": "bg_zgliszcza_maciek.png", "x": 146, "y": 272, "width": 108, "height": 90, "revealOn": "maciek"},
         {"image": "bg_zgliszcza_trzciny.png", "x": -12, "y": 280, "width": 414, "height": 146, "animation": {"type": "sway", "amplitude": 0.6, "duration": 4200, "anchorX": 0.5, "anchorY": 1}},
-        {"image": "bg_zgliszcza_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+        {"image": "bg_zgliszcza_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
+        {"image": "bg_dol_popiol_baza.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_popiol_trawa_0.png", "x": -20, "y": 470, "width": 430, "height": 370, "animation": {"type": "sway", "amplitude": 2, "duration": 3400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_popiol_gruz.png", "x": -10, "y": 560, "width": 410, "height": 284, "animation": {"type": "sway", "amplitude": 1, "duration": 4000, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_popiol_dymek.png", "x": 120, "y": 520, "width": 40, "height": 120, "animation": {"type": "sway", "amplitude": 4, "duration": 4800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0}
       ]
     },
     "wieczor_las": {
@@ -281,7 +424,18 @@
         {"image": "bg_wieczor_pies_ogon.png", "x": 274, "y": 372, "width": 55, "height": 39, "animation": {"type": "sway", "amplitude": 6, "duration": 900, "anchorX": 0.757, "anchorY": 0.58}, "revealOn": "pies"},
         {"image": "bg_wieczor_pies_tyl.png", "x": 274, "y": 372, "width": 55, "height": 39, "revealOn": "pies"},
         {"image": "bg_wieczor_pies_glowa.png", "x": 274, "y": 372, "width": 55, "height": 39, "revealOn": "pies"},
-        {"image": "bg_wieczor_pies_przod.png", "x": 274, "y": 372, "width": 55, "height": 39, "revealOn": "pies"}
+        {"image": "bg_wieczor_pies_przod.png", "x": 274, "y": 372, "width": 55, "height": 39, "revealOn": "pies"},
+        {"image": "bg_dol_las_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_las_noc_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_las_noc_mech.png", "x": -10, "y": 740, "width": 410, "height": 104, "animation": {"type": "sway", "amplitude": 1, "duration": 4400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_klod.png", "x": -10, "y": 560, "width": 410, "height": 90, "depth": 1.0},
+        {"image": "bg_dol_las_noc_grzyby.png", "x": 120, "y": 620, "width": 220, "height": 140, "depth": 1.0},
+        {"image": "bg_dol_las_noc_paproc_l.png", "x": -20, "y": 600, "width": 170, "height": 250, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3600, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_paproc_p.png", "x": 240, "y": 590, "width": 170, "height": 260, "animation": {"type": "sway", "amplitude": 2.5, "duration": 4000, "anchorX": 0.8, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_trawa_0.png", "x": -20, "y": 470, "width": 430, "height": 170, "animation": {"type": "sway", "amplitude": 2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_trawa_1.png", "x": -20, "y": 630, "width": 430, "height": 170, "animation": {"type": "sway", "amplitude": 2, "duration": 3700, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_oczy.png", "x": 230, "y": 520, "width": 40, "height": 14, "animation": {"type": "blink", "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_las_noc_mgla_dol.png", "x": -40, "y": 480, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "wieczor_mokradla": {
@@ -303,7 +457,17 @@
         {"image": "bg_wieczor_pies_ogon.png", "x": 274, "y": 372, "width": 55, "height": 39, "animation": {"type": "sway", "amplitude": 6, "duration": 900, "anchorX": 0.757, "anchorY": 0.58}, "revealOn": "pies"},
         {"image": "bg_wieczor_pies_tyl.png", "x": 274, "y": 372, "width": 55, "height": 39, "revealOn": "pies"},
         {"image": "bg_wieczor_pies_glowa.png", "x": 274, "y": 372, "width": 55, "height": 39, "revealOn": "pies"},
-        {"image": "bg_wieczor_pies_przod.png", "x": 274, "y": 372, "width": 55, "height": 39, "revealOn": "pies"}
+        {"image": "bg_wieczor_pies_przod.png", "x": 274, "y": 372, "width": 55, "height": 39, "revealOn": "pies"},
+        {"image": "bg_dol_bagno_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_bagno_noc_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_bagno_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_noc_kepy.png", "x": -10, "y": 460, "width": 410, "height": 300, "depth": 1.0},
+        {"image": "bg_dol_bagno_noc_kregi.png", "x": 60, "y": 510, "width": 40, "height": 20, "animation": {"type": "ripple", "amplitude": 1.4, "duration": 2600, "anchorX": 0.5, "anchorY": 0.5}, "depth": 1.0},
+        {"image": "bg_dol_bagno_noc_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_noc_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_bagno_noc_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_noc_ogniki.png", "x": 40, "y": 520, "width": 310, "height": 200, "animation": {"type": "flicker", "amplitude": 0.1, "duration": 2200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_bagno_noc_mgla_dol.png", "x": -40, "y": 480, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 15000}, "depth": 1.0}
       ]
     },
     "wieczor_jezioro": {
@@ -325,7 +489,17 @@
         {"image": "bg_wieczor_pies_ogon.png", "x": 274, "y": 372, "width": 55, "height": 39, "animation": {"type": "sway", "amplitude": 6, "duration": 900, "anchorX": 0.757, "anchorY": 0.58}, "revealOn": "pies"},
         {"image": "bg_wieczor_pies_tyl.png", "x": 274, "y": 372, "width": 55, "height": 39, "revealOn": "pies"},
         {"image": "bg_wieczor_pies_glowa.png", "x": 274, "y": 372, "width": 55, "height": 39, "revealOn": "pies"},
-        {"image": "bg_wieczor_pies_przod.png", "x": 274, "y": 372, "width": 55, "height": 39, "revealOn": "pies"}
+        {"image": "bg_wieczor_pies_przod.png", "x": 274, "y": 372, "width": 55, "height": 39, "revealOn": "pies"},
+        {"image": "bg_dol_woda_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_woda_noc_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_woda_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_woda_noc_kamyki.png", "x": -10, "y": 560, "width": 410, "height": 220, "depth": 1.0},
+        {"image": "bg_dol_woda_noc_mewa.png", "x": 260, "y": 470, "width": 30, "height": 20, "animation": {"type": "wander", "amplitude": 50, "flap": 0.4, "duration": 8000}, "depth": 1.0},
+        {"image": "bg_dol_woda_noc_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_woda_noc_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_woda_noc_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_woda_noc_ogniki.png", "x": 40, "y": 520, "width": 310, "height": 200, "animation": {"type": "flicker", "amplitude": 0.1, "duration": 2200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_woda_noc_mgla_dol.png", "x": -40, "y": 480, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 15000}, "depth": 1.0}
       ]
     },
     "sciezka": {
@@ -341,7 +515,16 @@
         {"image": "bg_sciezka_pies_tyl.png", "x": 246, "y": 318, "width": 43, "height": 31, "revealOn": "pies"},
         {"image": "bg_sciezka_pies_glowa.png", "x": 246, "y": 318, "width": 43, "height": 31, "revealOn": "pies"},
         {"image": "bg_sciezka_pies_przod.png", "x": 246, "y": 318, "width": 43, "height": 31, "revealOn": "pies"},
-        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
+        {"image": "bg_dol_bagno_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_bagno_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_kepy.png", "x": -10, "y": 460, "width": 410, "height": 300, "depth": 1.0},
+        {"image": "bg_dol_bagno_kregi.png", "x": 60, "y": 510, "width": 40, "height": 20, "animation": {"type": "ripple", "amplitude": 1.4, "duration": 2600, "anchorX": 0.5, "anchorY": 0.5}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_bagno_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_wazka.png", "x": 170, "y": 626, "width": 40, "height": 24, "animation": {"type": "wander", "amplitude": 50, "flap": 0.5, "duration": 6400}, "depth": 1.0},
+        {"image": "bg_dol_bagno_zaba.png", "x": 100, "y": 700, "width": 30, "height": 20, "animation": {"type": "bob", "amplitude": 2, "duration": 1600}, "depth": 1.0}
       ]
     },
     "sciezka_po": {
@@ -357,7 +540,16 @@
         {"image": "bg_sciezka_pies_warczy_przod.png", "x": 102, "y": 334, "width": 97, "height": 69, "revealOn": "upadek"},
         {"image": "bg_sciezka_pies_warczy_szczekanie.png", "x": 102, "y": 334, "width": 97, "height": 69, "animation": {"type": "flicker", "amplitude": 0, "duration": 300}, "revealOn": "upadek"},
         {"image": "bg_sciezka_maciek_lezy.png", "x": 140, "y": 364, "width": 144, "height": 46, "revealOn": "upadek"},
-        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
+        {"image": "bg_dol_bagno_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_bagno_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_kepy.png", "x": -10, "y": 460, "width": 410, "height": 300, "depth": 1.0},
+        {"image": "bg_dol_bagno_kregi.png", "x": 60, "y": 510, "width": 40, "height": 20, "animation": {"type": "ripple", "amplitude": 1.4, "duration": 2600, "anchorX": 0.5, "anchorY": 0.5}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_bagno_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_wazka.png", "x": 170, "y": 626, "width": 40, "height": 24, "animation": {"type": "wander", "amplitude": 50, "flap": 0.5, "duration": 6400}, "depth": 1.0},
+        {"image": "bg_dol_bagno_zaba.png", "x": 100, "y": 700, "width": 30, "height": 20, "animation": {"type": "bob", "amplitude": 2, "duration": 1600}, "depth": 1.0}
       ]
     },
     "sciezka_smierc": {
@@ -370,7 +562,16 @@
         {"image": "bg_sciezka_swiatelko_blisko.png", "x": 110, "y": 312, "width": 52, "height": 48, "animation": {"type": "flicker", "amplitude": 0.3, "duration": 2200}},
         {"image": "bg_sciezka_kregi.png", "x": 58, "y": 364, "width": 102, "height": 28, "revealOn": "bagno"},
         {"image": "bg_sciezka_oczy.png", "x": 76, "y": 350, "width": 64, "height": 34, "animation": {"type": "flicker", "amplitude": 0.45, "duration": 1800}, "revealOn": "oczy"},
-        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
+        {"image": "bg_dol_bagno_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_bagno_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_kepy.png", "x": -10, "y": 460, "width": 410, "height": 300, "depth": 1.0},
+        {"image": "bg_dol_bagno_kregi.png", "x": 60, "y": 510, "width": 40, "height": 20, "animation": {"type": "ripple", "amplitude": 1.4, "duration": 2600, "anchorX": 0.5, "anchorY": 0.5}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_bagno_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_wazka.png", "x": 170, "y": 626, "width": 40, "height": 24, "animation": {"type": "wander", "amplitude": 50, "flap": 0.5, "duration": 6400}, "depth": 1.0},
+        {"image": "bg_dol_bagno_zaba.png", "x": 100, "y": 700, "width": 30, "height": 20, "animation": {"type": "bob", "amplitude": 2, "duration": 1600}, "depth": 1.0}
       ]
     },
     "gosciniec": {
@@ -383,7 +584,17 @@
         {"image": "bg_miasto_g_woz.png", "x": 240, "y": 228, "width": 70, "height": 44, "animation": {"type": "bob", "amplitude": 0.8, "duration": 700}},
         {"image": "bg_miasto_g_maciek.png", "x": 176, "y": 316, "width": 60, "height": 104, "animation": {"type": "bob", "amplitude": 0.8, "duration": 900}},
         {"image": "bg_miasto_g_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
-        {"image": "bg_miasto_g_zboze.png", "x": 0, "y": 376, "width": 390, "height": 60, "animation": {"type": "sway", "amplitude": 1.6, "duration": 3800, "anchorX": 0.5, "anchorY": 1}}
+        {"image": "bg_miasto_g_zboze.png", "x": 0, "y": 376, "width": 390, "height": 60, "animation": {"type": "sway", "amplitude": 1.6, "duration": 3800, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_dol_droga_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_droga_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_droga_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_droga_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_droga_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_droga_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_droga_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_droga_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_droga_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_droga_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "rynek": {
@@ -395,7 +606,13 @@
         {"image": "bg_miasto_r_stragany.png", "x": 20, "y": 310, "width": 290, "height": 70},
         {"image": "bg_miasto_r_daszki.png", "x": 12, "y": 292, "width": 310, "height": 38, "animation": {"type": "sway", "amplitude": 0.8, "duration": 3000, "anchorX": 0.5, "anchorY": 0}},
         {"image": "bg_miasto_r_tlum.png", "x": 40, "y": 330, "width": 350, "height": 90, "animation": {"type": "bob", "amplitude": 0.6, "duration": 1600}},
-        {"image": "bg_miasto_r_golebie.png", "x": 120, "y": 362, "width": 160, "height": 30, "animation": {"type": "bob", "amplitude": 1.6, "duration": 700}}
+        {"image": "bg_miasto_r_golebie.png", "x": 120, "y": 362, "width": 160, "height": 30, "animation": {"type": "bob", "amplitude": 1.6, "duration": 700}},
+        {"image": "bg_dol_miasto_bruk.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_miasto_rzeczy.png", "x": -10, "y": 480, "width": 410, "height": 360, "depth": 1.0},
+        {"image": "bg_dol_miasto_kaluza.png", "x": 200, "y": 690, "width": 120, "height": 24, "animation": {"type": "drift", "amplitude": 4, "duration": 3000}, "depth": 1.0},
+        {"image": "bg_dol_miasto_golab_0.png", "x": 140, "y": 740, "width": 44, "height": 32, "animation": {"type": "sway", "amplitude": 10, "duration": 1200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_miasto_golab_1.png", "x": 240, "y": 790, "width": 44, "height": 32, "animation": {"type": "sway", "amplitude": 10, "duration": 1500, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_miasto_slomki.png", "x": 0, "y": 460, "width": 390, "height": 380, "depth": 1.0}
       ]
     },
     "zaulek": {
@@ -413,7 +630,13 @@
         {"image": "bg_miasto_z_pies_glowa.png", "x": 80, "y": 364, "width": 85, "height": 61, "animation": {"type": "sway", "amplitude": 3, "duration": 300, "anchorX": 0.582, "anchorY": 0.467}, "revealOn": "pies"},
         {"image": "bg_miasto_z_pies_przod.png", "x": 80, "y": 364, "width": 85, "height": 61, "revealOn": "pies"},
         {"image": "bg_miasto_z_pies_szczekanie.png", "x": 80, "y": 364, "width": 85, "height": 61, "animation": {"type": "flicker", "amplitude": 0, "duration": 300}, "revealOn": "pies"},
-        {"image": "bg_miasto_z_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+        {"image": "bg_miasto_z_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
+        {"image": "bg_dol_miasto_bruk.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_miasto_rzeczy.png", "x": -10, "y": 480, "width": 410, "height": 360, "depth": 1.0},
+        {"image": "bg_dol_miasto_kaluza.png", "x": 200, "y": 690, "width": 120, "height": 24, "animation": {"type": "drift", "amplitude": 4, "duration": 3000}, "depth": 1.0},
+        {"image": "bg_dol_miasto_golab_0.png", "x": 140, "y": 740, "width": 44, "height": 32, "animation": {"type": "sway", "amplitude": 10, "duration": 1200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_miasto_golab_1.png", "x": 240, "y": 790, "width": 44, "height": 32, "animation": {"type": "sway", "amplitude": 10, "duration": 1500, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_miasto_slomki.png", "x": 0, "y": 460, "width": 390, "height": 380, "depth": 1.0}
       ]
     },
     "czworaki": {
@@ -430,7 +653,17 @@
         {"image": "bg_rodzina_c_pies_ogon.png", "x": 96, "y": 384, "width": 35, "height": 38, "animation": {"type": "sway", "amplitude": 15, "duration": 600, "anchorX": 0.67, "anchorY": 0.832}, "revealOn": "pies"},
         {"image": "bg_rodzina_c_pies_cialo.png", "x": 96, "y": 384, "width": 35, "height": 38, "revealOn": "pies"},
         {"image": "bg_rodzina_c_pies_glowa.png", "x": 96, "y": 384, "width": 35, "height": 38, "animation": {"type": "sway", "amplitude": 5, "duration": 2500, "anchorX": 0.486, "anchorY": 0.506}, "revealOn": "pies"},
-        {"image": "bg_rodzina_c_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+        {"image": "bg_rodzina_c_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
+        {"image": "bg_dol_laka_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_laka_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "sciezka_rodzina": {
@@ -445,7 +678,16 @@
         {"image": "bg_rodzina_s_pies_tyl.png", "x": 242, "y": 380, "width": 57, "height": 41, "revealOn": "pies"},
         {"image": "bg_rodzina_s_pies_glowa.png", "x": 242, "y": 380, "width": 57, "height": 41, "revealOn": "pies"},
         {"image": "bg_rodzina_s_pies_przod.png", "x": 242, "y": 380, "width": 57, "height": 41, "revealOn": "pies"},
-        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
+        {"image": "bg_dol_bagno_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_bagno_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_kepy.png", "x": -10, "y": 460, "width": 410, "height": 300, "depth": 1.0},
+        {"image": "bg_dol_bagno_kregi.png", "x": 60, "y": 510, "width": 40, "height": 20, "animation": {"type": "ripple", "amplitude": 1.4, "duration": 2600, "anchorX": 0.5, "anchorY": 0.5}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_bagno_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_wazka.png", "x": 170, "y": 626, "width": 40, "height": 24, "animation": {"type": "wander", "amplitude": 50, "flap": 0.5, "duration": 6400}, "depth": 1.0},
+        {"image": "bg_dol_bagno_zaba.png", "x": 100, "y": 700, "width": 30, "height": 20, "animation": {"type": "bob", "amplitude": 2, "duration": 1600}, "depth": 1.0}
       ]
     },
     "czary": {
@@ -458,7 +700,11 @@
         {"image": "bg_klatwa_c_starucha_postac.png", "x": 228, "y": 142, "width": 196, "height": 286},
         {"image": "bg_klatwa_c_starucha_oczy.png", "x": 228, "y": 142, "width": 196, "height": 286, "animation": {"type": "blink", "duration": 5600}},
         {"image": "bg_klatwa_c_babelki.png", "x": 186, "y": 262, "width": 34, "height": 36, "animation": {"type": "rise", "amplitude": 16, "duration": 2400}},
-        {"image": "bg_klatwa_c_plomien.png", "x": 114, "y": 252, "width": 24, "height": 32, "animation": {"type": "flame", "amplitude": 0.16, "duration": 1300, "anchorX": 0.5, "anchorY": 0.9}}
+        {"image": "bg_klatwa_c_plomien.png", "x": 114, "y": 252, "width": 24, "height": 32, "animation": {"type": "flame", "amplitude": 0.16, "duration": 1300, "anchorX": 0.5, "anchorY": 0.9}},
+        {"image": "bg_dol_izba_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_blask.png", "x": 80, "y": 446, "width": 230, "height": 300, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 6000}, "depth": 1.0}
       ]
     },
     "noc_atak": {
@@ -469,7 +715,18 @@
         {"image": "bg_klatwa_n_tlo.png", "x": 0, "y": 0, "width": 390, "height": 440},
         {"image": "bg_klatwa_n_slepia.png", "x": 204, "y": 226, "width": 86, "height": 166, "animation": {"type": "blink", "duration": 4200}, "revealOn": "slepia"},
         {"image": "bg_klatwa_n_mgla.png", "x": -40, "y": 330, "width": 470, "height": 90, "animation": {"type": "drift", "amplitude": 12, "duration": 13000}},
-        {"image": "bg_klatwa_n_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+        {"image": "bg_klatwa_n_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
+        {"image": "bg_dol_laka_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_swietliki.png", "x": 0, "y": 470, "width": 390, "height": 300, "animation": {"type": "wander", "amplitude": 14, "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_mgla_dol.png", "x": -40, "y": 470, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "walka": {
@@ -492,7 +749,12 @@
         {"image": "bg_klatwa_w_pies_drzenie.png", "x": 104, "y": 247, "width": 138, "height": 125, "animation": {"type": "flicker", "amplitude": 0, "duration": 200}, "revealOn": "pies"},
         {"image": "bg_klatwa_kaluza.png", "x": 226, "y": 404, "width": 110, "height": 30, "revealOn": "kaluza"},
         {"image": "bg_klatwa_maciek.png", "x": 220, "y": 262, "width": 160, "height": 160, "revealOn": "maciek"},
-        {"image": "bg_klatwa_siekiera.png", "x": 184, "y": 240, "width": 100, "height": 110, "animation": {"type": "sway", "amplitude": 22, "duration": 1200, "anchorX": 0.7, "anchorY": 0.91}, "revealOn": "maciek"}
+        {"image": "bg_klatwa_siekiera.png", "x": 184, "y": 240, "width": 100, "height": 110, "animation": {"type": "sway", "amplitude": 22, "duration": 1200, "anchorX": 0.7, "anchorY": 0.91}, "revealOn": "maciek"},
+        {"image": "bg_dol_izba_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_blask.png", "x": 80, "y": 446, "width": 230, "height": 300, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 6000}, "depth": 1.0}
       ]
     },
     "pod_podloga": {
@@ -505,7 +767,12 @@
         {"image": "bg_klatwa_p_plamy.png", "x": 120, "y": 140, "width": 160, "height": 70, "revealOn": "krew"},
         {"image": "bg_klatwa_p_krew_a.png", "x": 120, "y": 140, "width": 160, "height": 30, "animation": {"type": "rise", "amplitude": -120, "duration": 1900}, "revealOn": "krew"},
         {"image": "bg_klatwa_p_krew_b.png", "x": 150, "y": 180, "width": 120, "height": 30, "animation": {"type": "rise", "amplitude": -110, "duration": 1900, "phase": 0.5}, "revealOn": "krew"},
-        {"image": "bg_klatwa_p_dziecko.png", "x": 140, "y": 310, "width": 110, "height": 124}
+        {"image": "bg_klatwa_p_dziecko.png", "x": 140, "y": 310, "width": 110, "height": 124},
+        {"image": "bg_dol_piwnica_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_piwnica_noc_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_piwnica_noc_zapasy.png", "x": -10, "y": 460, "width": 410, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_piwnica_noc_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0},
+        {"image": "bg_dol_piwnica_noc_blask.png", "x": 80, "y": 446, "width": 230, "height": 300, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 6000}, "depth": 1.0}
       ]
     },
     "kapliczki": {
@@ -518,7 +785,17 @@
         {"image": "bg_kapliczki_ptaki.png", "x": 120, "y": 110, "width": 150, "height": 40, "animation": {"type": "bob", "amplitude": 5, "duration": 2400}},
         {"image": "bg_kapliczki_kapliczki.png", "x": 16, "y": 150, "width": 360, "height": 280, "revealOn": "kapliczki"},
         {"image": "bg_kapliczki_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
-        {"image": "bg_kapliczki_kwiaty.png", "x": 222, "y": 396, "width": 168, "height": 40, "animation": {"type": "sway", "amplitude": 2, "duration": 3400, "anchorX": 0.5, "anchorY": 1}}
+        {"image": "bg_kapliczki_kwiaty.png", "x": 222, "y": 396, "width": 168, "height": 40, "animation": {"type": "sway", "amplitude": 2, "duration": 3400, "anchorX": 0.5, "anchorY": 1}},
+        {"image": "bg_dol_laka_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_laka_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "zapadlina_lato": {
@@ -542,7 +819,17 @@
         {"image": "bg_lato_puch_0.png", "x": 12, "y": 316, "width": 16, "height": 18, "animation": {"type": "float", "amplitude": 6, "dx": 300, "dy": -70, "duration": 11000, "phase": 0.0}},
         {"image": "bg_lato_puch_1.png", "x": 52, "y": 366, "width": 16, "height": 18, "animation": {"type": "float", "amplitude": 6, "dx": 300, "dy": -70, "duration": 12300, "phase": 0.25}},
         {"image": "bg_lato_puch_2.png", "x": 2, "y": 256, "width": 16, "height": 18, "animation": {"type": "float", "amplitude": 6, "dx": 300, "dy": -70, "duration": 13600, "phase": 0.5}},
-        {"image": "bg_lato_puch_3.png", "x": 82, "y": 286, "width": 16, "height": 18, "animation": {"type": "float", "amplitude": 6, "dx": 300, "dy": -70, "duration": 14900, "phase": 0.75}}
+        {"image": "bg_lato_puch_3.png", "x": 82, "y": 286, "width": 16, "height": 18, "animation": {"type": "float", "amplitude": 6, "dx": 300, "dy": -70, "duration": 14900, "phase": 0.75}},
+        {"image": "bg_dol_laka_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_laka_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "poranek": {
@@ -559,7 +846,17 @@
         {"image": "bg_poranek_rosa.png", "x": 10, "y": 350, "width": 370, "height": 80, "animation": {"type": "flicker", "amplitude": 0.2, "duration": 1600}},
         {"image": "bg_poranek_dzieci.png", "x": 200, "y": 252, "width": 190, "height": 110, "revealOn": "dzieci"},
         {"image": "bg_poranek_jaromir_a.png", "x": 126, "y": 360, "width": 60, "height": 64, "animation": {"type": "frames", "duration": 380}, "revealOn": "jaromir", "frames": ["bg_poranek_jaromir_a.png", "bg_poranek_jaromir_b.png"]},
-        {"image": "bg_poranek_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+        {"image": "bg_poranek_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
+        {"image": "bg_dol_laka_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_laka_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "laka_bitwa": {
@@ -578,7 +875,17 @@
         {"image": "bg_laka_dzieci_a.png", "x": 20, "y": 280, "width": 240, "height": 146, "animation": {"type": "frames", "duration": 760}, "revealOn": "bitwa", "frames": ["bg_laka_dzieci_a.png", "bg_laka_dzieci_b.png"]},
         {"image": "bg_laka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
         {"image": "bg_laka_rumianki.png", "x": 0, "y": 396, "width": 390, "height": 40, "animation": {"type": "sway", "amplitude": 2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}},
-        {"image": "bg_laka_trzmiel.png", "x": 300, "y": 360, "width": 30, "height": 24, "animation": {"type": "bob", "amplitude": 4, "duration": 800}}
+        {"image": "bg_laka_trzmiel.png", "x": 300, "y": 360, "width": 30, "height": 24, "animation": {"type": "bob", "amplitude": 4, "duration": 800}},
+        {"image": "bg_dol_laka_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_laka_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "luki": {
@@ -592,7 +899,16 @@
         {"image": "bg_luki_trafienie.png", "x": 262, "y": 314, "width": 46, "height": 24, "animation": {"type": "strike", "amplitude": 7, "dx": 110, "duration": 2600, "once": true, "anchorX": 0.83, "anchorY": 0.67}, "revealOn": "trafienie"},
         {"image": "bg_luki_hanka.png", "x": 16, "y": 310, "width": 196, "height": 112, "revealOn": "hanka"},
         {"image": "bg_luki_strzala_hanki.png", "x": 115, "y": 363, "width": 79, "height": 16, "animation": {"type": "arc", "amplitude": 14, "dx": 100, "dy": -41, "tangent": true, "duration": 2800, "anchorX": 0.5, "anchorY": 0.5}, "revealOn": "hanka"},
-        {"image": "bg_luki_przod.png", "x": 0, "y": 410, "width": 390, "height": 434}
+        {"image": "bg_luki_przod.png", "x": 0, "y": 410, "width": 390, "height": 434},
+        {"image": "bg_dol_pole_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_pole_snopy.png", "x": 0, "y": 740, "width": 390, "height": 90, "depth": 1.0},
+        {"image": "bg_dol_pole_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_pole_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_pole_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_pole_wrona.png", "x": 260, "y": 600, "width": 40, "height": 30, "animation": {"type": "sway", "amplitude": 8, "duration": 1400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0}
       ]
     },
     "baza": {
@@ -615,7 +931,17 @@
         {"image": "bg_lato2_b_deszcz_2.png", "x": 0, "y": 96, "width": 396, "height": 250, "animation": {"type": "rise", "amplitude": -46, "duration": 620, "phase": 0.67}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
         {"image": "bg_lato2_b_krople.png", "x": 146, "y": 200, "width": 124, "height": 16, "animation": {"type": "rise", "amplitude": -26, "duration": 800}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
         {"image": "bg_lato2_b_blyskawica.png", "x": 300, "y": 60, "width": 50, "height": 90, "animation": {"type": "flash", "amplitude": 1, "duration": 5200}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 3000},
-        {"image": "bg_lato2_b_rozblysk.png", "x": 0, "y": 0, "width": 390, "height": 440, "animation": {"type": "flash", "amplitude": 0.75, "duration": 5200}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 1000, "noInvert": true, "depth": 0}
+        {"image": "bg_lato2_b_rozblysk.png", "x": 0, "y": 0, "width": 390, "height": 440, "animation": {"type": "flash", "amplitude": 0.75, "duration": 5200}, "revealOn": "burza", "hideAfter": 15000, "fadeDuration": 1000, "noInvert": true, "depth": 0},
+        {"image": "bg_dol_laka_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_laka_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "jezioro_lato": {
@@ -630,7 +956,16 @@
         {"image": "bg_lato2_j_plusk.png", "x": 216, "y": 288, "width": 60, "height": 26, "animation": {"type": "ripple", "amplitude": 1.2, "duration": 3400, "phase": 0.3, "anchorX": 0.5, "anchorY": 0.6}, "revealOn": "kapiel"},
         {"image": "bg_lato2_j_kapiel.png", "x": 130, "y": 270, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 1.4, "duration": 800}, "revealOn": "kapiel"},
         {"image": "bg_lato2_j_antek_a.png", "x": 224, "y": 290, "width": 66, "height": 44, "animation": {"type": "frames", "duration": 500}, "revealOn": "kapiel", "frames": ["bg_lato2_j_antek_a.png", "bg_lato2_j_antek_b.png"]},
-        {"image": "bg_lato2_j_franek.png", "x": 284, "y": 222, "width": 32, "height": 46, "animation": {"type": "arc", "amplitude": 34, "dx": -54, "dy": 54, "spin": -170, "duration": 3400, "anchorX": 0.5, "anchorY": 0.5}, "revealOn": "kapiel"}
+        {"image": "bg_lato2_j_franek.png", "x": 284, "y": 222, "width": 32, "height": 46, "animation": {"type": "arc", "amplitude": 34, "dx": -54, "dy": 54, "spin": -170, "duration": 3400, "anchorX": 0.5, "anchorY": 0.5}, "revealOn": "kapiel"},
+        {"image": "bg_dol_woda_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_woda_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_woda_kamyki.png", "x": -10, "y": 560, "width": 410, "height": 220, "depth": 1.0},
+        {"image": "bg_dol_woda_mewa.png", "x": 260, "y": 470, "width": 30, "height": 20, "animation": {"type": "wander", "amplitude": 50, "flap": 0.4, "duration": 8000}, "depth": 1.0},
+        {"image": "bg_dol_woda_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_woda_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_woda_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_woda_wazka.png", "x": 170, "y": 626, "width": 40, "height": 24, "animation": {"type": "wander", "amplitude": 50, "flap": 0.5, "duration": 6400}, "depth": 1.0},
+        {"image": "bg_dol_woda_zaba.png", "x": 100, "y": 700, "width": 30, "height": 20, "animation": {"type": "bob", "amplitude": 2, "duration": 1600}, "depth": 1.0}
       ]
     },
     "wieczor_lato": {
@@ -654,7 +989,18 @@
         {"image": "bg_lato2_w_swietliki_0.png", "x": 132, "y": 322, "width": 138, "height": 74, "animation": {"type": "wander", "amplitude": 10, "duration": 4200, "phase": 0.0}},
         {"image": "bg_lato2_w_swietliki_1.png", "x": 188, "y": 292, "width": 138, "height": 116, "animation": {"type": "wander", "amplitude": 13, "duration": 5100, "phase": 0.27}},
         {"image": "bg_lato2_w_swietliki_2.png", "x": 152, "y": 344, "width": 156, "height": 68, "animation": {"type": "wander", "amplitude": 16, "duration": 6000, "phase": 0.54}},
-        {"image": "bg_lato2_w_swietliki_3.png", "x": 122, "y": 292, "width": 226, "height": 46, "animation": {"type": "wander", "amplitude": 19, "duration": 6900, "phase": 0.81}}
+        {"image": "bg_lato2_w_swietliki_3.png", "x": 122, "y": 292, "width": 226, "height": 46, "animation": {"type": "wander", "amplitude": 19, "duration": 6900, "phase": 0.81}},
+        {"image": "bg_dol_laka_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_swietliki.png", "x": 0, "y": 470, "width": 390, "height": 300, "animation": {"type": "wander", "amplitude": 14, "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_mgla_dol.png", "x": -40, "y": 470, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "jesien": {
@@ -675,7 +1021,17 @@
         {"image": "bg_jesien_lisc_4.png", "x": 215, "y": 253, "width": 18, "height": 18, "animation": {"type": "float", "amplitude": 5, "dx": -90, "dy": 198, "duration": 9600, "phase": 0.84}},
         {"image": "bg_jesien_jaromir.png", "x": 176, "y": 340, "width": 50, "height": 84, "animation": {"type": "bob", "amplitude": 0.6, "duration": 1400}, "revealOn": "jaromir", "depth": 0.6},
         {"image": "bg_jesien_przod.png", "x": 0, "y": 400, "width": 390, "height": 444, "depth": 1.0},
-        {"image": "bg_jesien_szron.png", "x": 0, "y": 400, "width": 390, "height": 42, "animation": {"type": "flicker", "amplitude": 0.2, "duration": 2600}, "depth": 1.0}
+        {"image": "bg_jesien_szron.png", "x": 0, "y": 400, "width": 390, "height": 42, "animation": {"type": "flicker", "amplitude": 0.2, "duration": 2600}, "depth": 1.0},
+        {"image": "bg_dol_jesien_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_jesien_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_jesien_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_jesien_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_jesien_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_jesien_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_jesien_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_jesien_liscie_lezace.png", "x": -10, "y": 440, "width": 410, "height": 400, "depth": 1.0},
+        {"image": "bg_dol_jesien_liscie.png", "x": 0, "y": 440, "width": 390, "height": 120, "animation": {"type": "float", "amplitude": 8, "dx": -80, "dy": 260, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_jesien_wrona.png", "x": 260, "y": 600, "width": 40, "height": 30, "animation": {"type": "sway", "amplitude": 8, "duration": 1400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0}
       ]
     },
     "droga_bor": {
@@ -690,7 +1046,17 @@
         {"image": "bg_drogabor_wrony.png", "x": 270, "y": 96, "width": 84, "height": 32, "animation": {"type": "wander", "amplitude": 40, "flap": 0.55, "duration": 6200, "phase": 0.0}},
         {"image": "bg_drogabor_rosa.png", "x": 300, "y": 200, "width": 80, "height": 120, "animation": {"type": "rise", "amplitude": -30, "duration": 2600, "phase": 0.0}},
         {"image": "bg_drogabor_mgla.png", "x": -30, "y": 250, "width": 450, "height": 120, "animation": {"type": "drift", "amplitude": 14, "duration": 12000}, "depth": 0.8},
-        {"image": "bg_drogabor_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
+        {"image": "bg_drogabor_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0},
+        {"image": "bg_dol_droga_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_droga_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_droga_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_droga_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_droga_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_droga_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_droga_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_droga_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_droga_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_droga_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "szkola_izba": {
@@ -710,7 +1076,11 @@
         {"image": "bg_szkola_tabliczka.png", "x": 190, "y": 362, "width": 60, "height": 30, "revealOn": "tabliczka"},
         {"image": "bg_szkola_obrona.png", "x": 60, "y": 290, "width": 90, "height": 70, "revealOn": "obrona"},
         {"image": "bg_szkola_ignacy.png", "x": 14, "y": 130, "width": 60, "height": 136, "revealOn": "ignacy"},
-        {"image": "bg_szkola_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
+        {"image": "bg_szkola_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0},
+        {"image": "bg_dol_izba_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_pylki.png", "x": 60, "y": 460, "width": 280, "height": 300, "animation": {"type": "wander", "amplitude": 8, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_izba_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0}
       ]
     },
     "szkola_podania": {
@@ -729,7 +1099,11 @@
         {"image": "bg_szkola_ignacy_biurko.png", "x": 126, "y": 240, "width": 62, "height": 112, "animation": {"type": "sway", "amplitude": 1.2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}, "hideOn": "okno", "fadeDuration": 1200},
         {"image": "bg_szkola_ignacy_okno.png", "x": 220, "y": 140, "width": 50, "height": 124, "revealOn": "okno", "fadeDuration": 1200},
         {"image": "bg_szkola_lawki.png", "x": 0, "y": 300, "width": 390, "height": 140, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2400}, "depth": 0.5},
-        {"image": "bg_szkola_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
+        {"image": "bg_szkola_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0},
+        {"image": "bg_dol_izba_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_pylki.png", "x": 60, "y": 460, "width": 280, "height": 300, "animation": {"type": "wander", "amplitude": 8, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_izba_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0}
       ]
     },
     "sosna_spirala": {
@@ -746,7 +1120,17 @@
         {"image": "bg_sosna_kora.png", "x": 224, "y": 398, "width": 26, "height": 14, "hideOn": "kora", "fadeDuration": 600},
         {"image": "bg_sosna_dzieci.png", "x": 90, "y": 326, "width": 120, "height": 92, "animation": {"type": "bob", "amplitude": 0.4, "duration": 1600}},
         {"image": "bg_sosna_jaromir.png", "x": 196, "y": 372, "width": 44, "height": 40, "revealOn": "kora"},
-        {"image": "bg_sosna_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_sosna_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_las_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_las_mech.png", "x": -10, "y": 740, "width": 410, "height": 104, "animation": {"type": "sway", "amplitude": 1, "duration": 4400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_klod.png", "x": -10, "y": 560, "width": 410, "height": 90, "depth": 1.0},
+        {"image": "bg_dol_las_grzyby.png", "x": 120, "y": 620, "width": 220, "height": 140, "depth": 1.0},
+        {"image": "bg_dol_las_paproc_l.png", "x": -20, "y": 600, "width": 170, "height": 250, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3600, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_paproc_p.png", "x": 240, "y": 590, "width": 170, "height": 260, "animation": {"type": "sway", "amplitude": 2.5, "duration": 4000, "anchorX": 0.8, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_las_trawa_0.png", "x": -20, "y": 470, "width": 430, "height": 170, "animation": {"type": "sway", "amplitude": 2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_trawa_1.png", "x": -20, "y": 630, "width": 430, "height": 170, "animation": {"type": "sway", "amplitude": 2, "duration": 3700, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_igly.png", "x": 0, "y": 440, "width": 390, "height": 120, "animation": {"type": "float", "amplitude": 6, "dx": 40, "dy": 300, "duration": 8000}, "depth": 1.0},
+        {"image": "bg_dol_las_zuk.png", "x": 200, "y": 780, "width": 20, "height": 14, "animation": {"type": "drift", "amplitude": 40, "duration": 9000}, "depth": 1.0}
       ]
     },
     "wstazka_wiatr": {
@@ -765,7 +1149,17 @@
         {"image": "bg_wstazka_lisc_1.png", "x": -9, "y": 301, "width": 18, "height": 18, "animation": {"type": "float", "amplitude": 8, "dx": 380, "dy": -10, "duration": 4700, "phase": 0.3}},
         {"image": "bg_wstazka_lisc_2.png", "x": 31, "y": 211, "width": 18, "height": 18, "animation": {"type": "float", "amplitude": 8, "dx": 380, "dy": 20, "duration": 5400, "phase": 0.6}},
         {"image": "bg_wstazka_dzieci.png", "x": 40, "y": 326, "width": 150, "height": 82, "depth": 0.7},
-        {"image": "bg_wstazka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_wstazka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_jesien_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_jesien_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_jesien_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_jesien_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_jesien_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_jesien_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_jesien_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_jesien_liscie_lezace.png", "x": -10, "y": 440, "width": 410, "height": 400, "depth": 1.0},
+        {"image": "bg_dol_jesien_liscie.png", "x": 0, "y": 440, "width": 390, "height": 120, "animation": {"type": "float", "amplitude": 8, "dx": -80, "dy": 260, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_jesien_wrona.png", "x": 260, "y": 600, "width": 40, "height": 30, "animation": {"type": "sway", "amplitude": 8, "duration": 1400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0}
       ]
     },
     "bor_starzec": {
@@ -782,7 +1176,18 @@
         {"image": "bg_bor_starzec_wstazka.png", "x": 268, "y": 250, "width": 30, "height": 26, "animation": {"type": "sway", "amplitude": 12, "duration": 600, "anchorX": 0.1, "anchorY": 0.3}, "revealOn": "starzec", "hideOn": "zniknal", "fadeDuration": 1600, "noInvert": true},
         {"image": "bg_bor_mgla.png", "x": -30, "y": 200, "width": 450, "height": 190, "animation": {"type": "drift", "amplitude": 12, "duration": 15000}, "depth": 0.7},
         {"image": "bg_bor_wstazka_blisko.png", "x": 60, "y": 250, "width": 70, "height": 60, "animation": {"type": "sway", "amplitude": 8, "duration": 700, "anchorX": 0.6, "anchorY": 0.3}, "revealOn": "zniknal", "noInvert": true},
-        {"image": "bg_bor_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
+        {"image": "bg_bor_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0},
+        {"image": "bg_dol_las_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_las_noc_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_las_noc_mech.png", "x": -10, "y": 740, "width": 410, "height": 104, "animation": {"type": "sway", "amplitude": 1, "duration": 4400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_klod.png", "x": -10, "y": 560, "width": 410, "height": 90, "depth": 1.0},
+        {"image": "bg_dol_las_noc_grzyby.png", "x": 120, "y": 620, "width": 220, "height": 140, "depth": 1.0},
+        {"image": "bg_dol_las_noc_paproc_l.png", "x": -20, "y": 600, "width": 170, "height": 250, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3600, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_paproc_p.png", "x": 240, "y": 590, "width": 170, "height": 260, "animation": {"type": "sway", "amplitude": 2.5, "duration": 4000, "anchorX": 0.8, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_trawa_0.png", "x": -20, "y": 470, "width": 430, "height": 170, "animation": {"type": "sway", "amplitude": 2, "duration": 3200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_trawa_1.png", "x": -20, "y": 630, "width": 430, "height": 170, "animation": {"type": "sway", "amplitude": 2, "duration": 3700, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_las_noc_oczy.png", "x": 230, "y": 520, "width": 40, "height": 14, "animation": {"type": "blink", "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_las_noc_mgla_dol.png", "x": -40, "y": 480, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "jesien_plot": {
@@ -802,7 +1207,17 @@
         {"image": "bg_jesien_przod.png", "x": 0, "y": 400, "width": 390, "height": 444, "depth": 1.0},
         {"image": "bg_jesien_szron.png", "x": 0, "y": 400, "width": 390, "height": 42, "animation": {"type": "flicker", "amplitude": 0.2, "duration": 2600}, "depth": 1.0},
         {"image": "bg_jesien_plot.png", "x": 0, "y": 344, "width": 390, "height": 80, "depth": 0.8},
-        {"image": "bg_jesien_kokarda.png", "x": 146, "y": 360, "width": 40, "height": 44, "animation": {"type": "sway", "amplitude": 3, "duration": 2200, "anchorX": 0.5, "anchorY": 0.2}, "revealOn": "kokarda", "noInvert": true, "fadeDuration": 2500}
+        {"image": "bg_jesien_kokarda.png", "x": 146, "y": 360, "width": 40, "height": 44, "animation": {"type": "sway", "amplitude": 3, "duration": 2200, "anchorX": 0.5, "anchorY": 0.2}, "revealOn": "kokarda", "noInvert": true, "fadeDuration": 2500},
+        {"image": "bg_dol_jesien_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_jesien_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_jesien_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_jesien_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_jesien_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_jesien_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_jesien_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_jesien_liscie_lezace.png", "x": -10, "y": 440, "width": 410, "height": 400, "depth": 1.0},
+        {"image": "bg_dol_jesien_liscie.png", "x": 0, "y": 440, "width": 390, "height": 120, "animation": {"type": "float", "amplitude": 8, "dx": -80, "dy": 260, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_jesien_wrona.png", "x": 260, "y": 600, "width": 40, "height": 30, "animation": {"type": "sway", "amplitude": 8, "duration": 1400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0}
       ]
     },
     "szkola_ksiega": {
@@ -826,7 +1241,11 @@
         {"image": "bg_szkola_lawki_puste.png", "x": 0, "y": 340, "width": 390, "height": 100, "depth": 0.5},
         {"image": "bg_szkola_jaromir_biurko.png", "x": 92, "y": 300, "width": 40, "height": 72, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2000}, "hideOn": "prog", "fadeDuration": 800},
         {"image": "bg_szkola_jaromir_prog.png", "x": 24, "y": 196, "width": 40, "height": 70, "revealOn": "prog", "fadeDuration": 800},
-        {"image": "bg_szkola_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
+        {"image": "bg_szkola_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0},
+        {"image": "bg_dol_izba_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_pylki.png", "x": 60, "y": 460, "width": 280, "height": 300, "animation": {"type": "wander", "amplitude": 8, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_izba_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0}
       ]
     },
     "pierwszy_snieg": {
@@ -853,7 +1272,16 @@
         {"image": "bg_snieg_sowa.png", "x": 109, "y": 261, "width": 30, "height": 35},
         {"image": "bg_snieg_sowa_oczy.png", "x": 109, "y": 261, "width": 30, "height": 35, "animation": {"type": "blink", "duration": 4200}},
         {"image": "bg_snieg_okno.png", "x": 0, "y": 0, "width": 390, "height": 440, "depth": 1.0},
-        {"image": "bg_snieg_przod.png", "x": 0, "y": 430, "width": 390, "height": 414}
+        {"image": "bg_snieg_przod.png", "x": 0, "y": 430, "width": 390, "height": 414},
+        {"image": "bg_dol_izba_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_chodnik.png", "x": 20, "y": 590, "width": 350, "height": 200, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_kot.png", "x": 170, "y": 516, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 0.8, "duration": 2800}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_ogon.png", "x": 150, "y": 536, "width": 36, "height": 30, "animation": {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 1, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_oczy_kota.png", "x": 240, "y": 536, "width": 24, "height": 10, "animation": {"type": "blink", "duration": 4600}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_blask.png", "x": 80, "y": 446, "width": 230, "height": 300, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 6000}, "depth": 1.0}
       ]
     },
     "roraty": {
@@ -870,7 +1298,15 @@
         {"image": "bg_roraty_plomyki.png", "x": 230, "y": 216, "width": 100, "height": 74, "animation": {"type": "flicker", "amplitude": 0.35, "duration": 700}, "noInvert": true},
         {"image": "bg_roraty_antek.png", "x": 148, "y": 316, "width": 50, "height": 64, "animation": {"type": "bob", "amplitude": 0.5, "duration": 1300}, "revealOn": "antek", "fadeDuration": 2000},
         {"image": "bg_roraty_antek_plomyk.png", "x": 176, "y": 330, "width": 24, "height": 24, "animation": {"type": "flicker", "amplitude": 0.35, "duration": 800}, "revealOn": "antek", "noInvert": true, "fadeDuration": 2000},
-        {"image": "bg_roraty_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_roraty_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_plot.png", "x": -10, "y": 520, "width": 410, "height": 100, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_sanki.png", "x": 220, "y": 690, "width": 130, "height": 44, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_osty.png", "x": -10, "y": 660, "width": 410, "height": 184, "animation": {"type": "sway", "amplitude": 1.5, "duration": 4400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_iskry.png", "x": 0, "y": 470, "width": 390, "height": 360, "animation": {"type": "flicker", "amplitude": 0.15, "duration": 2400}, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_platki.png", "x": 0, "y": 440, "width": 390, "height": 400, "animation": {"type": "rise", "amplitude": -200, "duration": 8000}, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_krzak_l.png", "x": -20, "y": 600, "width": 140, "height": 250, "animation": {"type": "sway", "amplitude": 1.5, "duration": 4400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_cien_nocy.png", "x": 0, "y": 446, "width": 390, "height": 398, "depth": 1.0}
       ]
     },
     "przerwa_sniezki": {
@@ -890,7 +1326,14 @@
         {"image": "bg_przerwa_sniezka_2.png", "x": 135, "y": 313, "width": 10, "height": 10, "animation": {"type": "arc", "amplitude": 40, "dx": 60, "dy": 4, "duration": 3300, "phase": 0.7}},
         {"image": "bg_przerwa_hanka.png", "x": 226, "y": 344, "width": 50, "height": 90, "revealOn": "hanka", "depth": 0.8, "fadeDuration": 1500},
         {"image": "bg_przerwa_chlopcy.png", "x": 270, "y": 330, "width": 110, "height": 104, "depth": 0.8},
-        {"image": "bg_przerwa_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_przerwa_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_snieg_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_snieg_plot.png", "x": -10, "y": 520, "width": 410, "height": 100, "depth": 1.0},
+        {"image": "bg_dol_snieg_sanki.png", "x": 220, "y": 690, "width": 130, "height": 44, "depth": 1.0},
+        {"image": "bg_dol_snieg_osty.png", "x": -10, "y": 660, "width": 410, "height": 184, "animation": {"type": "sway", "amplitude": 1.5, "duration": 4400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_snieg_iskry.png", "x": 0, "y": 470, "width": 390, "height": 360, "animation": {"type": "flicker", "amplitude": 0.15, "duration": 2400}, "depth": 1.0},
+        {"image": "bg_dol_snieg_platki.png", "x": 0, "y": 440, "width": 390, "height": 400, "animation": {"type": "rise", "amplitude": -200, "duration": 8000}, "depth": 1.0},
+        {"image": "bg_dol_snieg_krzak_l.png", "x": -20, "y": 600, "width": 140, "height": 250, "animation": {"type": "sway", "amplitude": 1.5, "duration": 4400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0}
       ]
     },
     "izba_noc": {
@@ -905,7 +1348,16 @@
         {"image": "bg_izbanoc_spi.png", "x": 150, "y": 262, "width": 120, "height": 22, "animation": {"type": "bob", "amplitude": 0.6, "duration": 3200}, "hideOn": "ksiega"},
         {"image": "bg_izbanoc_ksiega.png", "x": 150, "y": 248, "width": 150, "height": 40, "animation": {"type": "bob", "amplitude": 0.4, "duration": 2600}, "revealOn": "ksiega"},
         {"image": "bg_izbanoc_ojciec.png", "x": 30, "y": 176, "width": 70, "height": 124, "animation": {"type": "bob", "amplitude": 0.5, "duration": 3000}, "revealOn": "ojciec"},
-        {"image": "bg_izbanoc_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_izbanoc_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_chodnik.png", "x": 20, "y": 590, "width": 350, "height": 200, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_kot.png", "x": 170, "y": 516, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 0.8, "duration": 2800}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_ogon.png", "x": 150, "y": 536, "width": 36, "height": 30, "animation": {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 1, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_oczy_kota.png", "x": 240, "y": 536, "width": 24, "height": 10, "animation": {"type": "blink", "duration": 4600}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_blask.png", "x": 80, "y": 446, "width": 230, "height": 300, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 6000}, "depth": 1.0}
       ]
     },
     "wigilia": {
@@ -923,7 +1375,14 @@
         {"image": "bg_wigilia_nuty.png", "x": 300, "y": 180, "width": 60, "height": 50, "animation": {"type": "rise", "amplitude": 30, "duration": 3000}, "revealOn": "lira", "hideOn": "odszedl"},
         {"image": "bg_wigilia_zawieja.png", "x": 10, "y": 150, "width": 120, "height": 140, "animation": {"type": "float", "amplitude": 6, "dx": 90, "dy": 30, "duration": 2600}, "revealOn": "odszedl", "hideAfter": 5200, "fadeDuration": 600},
         {"image": "bg_wigilia_drzwi.png", "x": 10, "y": 136, "width": 96, "height": 168, "revealOn": "rygiel", "fadeDuration": 800},
-        {"image": "bg_wigilia_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_wigilia_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_izba_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_chodnik.png", "x": 20, "y": 590, "width": 350, "height": 200, "depth": 1.0},
+        {"image": "bg_dol_izba_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_kot.png", "x": 170, "y": 516, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 0.8, "duration": 2800}, "depth": 1.0},
+        {"image": "bg_dol_izba_ogon.png", "x": 150, "y": 536, "width": 36, "height": 30, "animation": {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 1, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_izba_pylki.png", "x": 60, "y": 460, "width": 280, "height": 300, "animation": {"type": "wander", "amplitude": 8, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_izba_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0}
       ]
     },
     "wigilia_szczeniak": {
@@ -941,7 +1400,14 @@
         {"image": "bg_wigilia_pies_cialo.png", "x": 236, "y": 212, "width": 49, "height": 53, "revealOn": "pies", "fadeDuration": 1500},
         {"image": "bg_wigilia_pies_glowa.png", "x": 236, "y": 212, "width": 49, "height": 53, "animation": {"type": "sway", "amplitude": 5, "duration": 2500, "anchorX": 0.49, "anchorY": 0.512}, "revealOn": "pies", "fadeDuration": 1500},
         {"image": "bg_wigilia_drzwi.png", "x": 10, "y": 136, "width": 96, "height": 168},
-        {"image": "bg_wigilia_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_wigilia_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_izba_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_chodnik.png", "x": 20, "y": 590, "width": 350, "height": 200, "depth": 1.0},
+        {"image": "bg_dol_izba_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_kot.png", "x": 170, "y": 516, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 0.8, "duration": 2800}, "depth": 1.0},
+        {"image": "bg_dol_izba_ogon.png", "x": 150, "y": 536, "width": 36, "height": 30, "animation": {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 1, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_izba_pylki.png", "x": 60, "y": 460, "width": 280, "height": 300, "animation": {"type": "wander", "amplitude": 8, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_izba_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0}
       ]
     },
     "noc_snieg": {
@@ -962,7 +1428,15 @@
         {"image": "bg_nocsnieg_zamiec.png", "x": 0, "y": 270, "width": 200, "height": 120, "animation": {"type": "float", "amplitude": 4, "dx": 160, "dy": 14, "duration": 6500}},
         {"image": "bg_nocsnieg_jaromir.png", "x": 136, "y": 316, "width": 36, "height": 64, "animation": {"type": "bob", "amplitude": 0.8, "duration": 900}, "hideOn": "bieg", "fadeDuration": 300},
         {"image": "bg_nocsnieg_bieg_0.png", "x": 100, "y": 290, "width": 50, "height": 60, "animation": {"type": "frames", "duration": 360}, "revealOn": "bieg", "frames": ["bg_nocsnieg_bieg_0.png", "bg_nocsnieg_bieg_1.png"], "fadeDuration": 300},
-        {"image": "bg_nocsnieg_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_nocsnieg_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_plot.png", "x": -10, "y": 520, "width": 410, "height": 100, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_sanki.png", "x": 220, "y": 690, "width": 130, "height": 44, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_osty.png", "x": -10, "y": 660, "width": 410, "height": 184, "animation": {"type": "sway", "amplitude": 1.5, "duration": 4400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_iskry.png", "x": 0, "y": 470, "width": 390, "height": 360, "animation": {"type": "flicker", "amplitude": 0.15, "duration": 2400}, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_platki.png", "x": 0, "y": 440, "width": 390, "height": 400, "animation": {"type": "rise", "amplitude": -200, "duration": 8000}, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_krzak_l.png", "x": -20, "y": 600, "width": 140, "height": 250, "animation": {"type": "sway", "amplitude": 1.5, "duration": 4400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_snieg_noc_cien_nocy.png", "x": 0, "y": 446, "width": 390, "height": 398, "depth": 1.0}
       ]
     },
     "kolyska": {
@@ -998,7 +1472,16 @@
         {"image": "bg_kolyska_nisko_twarz.png", "x": 180, "y": 170, "width": 109, "height": 192, "animation": {"type": "sway", "amplitude": 2, "duration": 4000, "anchorX": 0.495, "anchorY": 0.338}, "revealOn": "mak", "fadeDuration": 1200, "hideOn": "kogut"},
         {"image": "bg_kolyska_wir.png", "x": 150, "y": 200, "width": 100, "height": 100, "animation": {"type": "drift", "amplitude": 14, "duration": 1600}, "revealOn": "odlot", "hideAfter": 2200, "fadeDuration": 700},
         {"image": "bg_kolyska_chlopcy.png", "x": 8, "y": 330, "width": 120, "height": 104, "depth": 0.8},
-        {"image": "bg_kolyska_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_kolyska_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_chodnik.png", "x": 20, "y": 590, "width": 350, "height": 200, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_kot.png", "x": 170, "y": 516, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 0.8, "duration": 2800}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_ogon.png", "x": 150, "y": 536, "width": 36, "height": 30, "animation": {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 1, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_oczy_kota.png", "x": 240, "y": 536, "width": 24, "height": 10, "animation": {"type": "blink", "duration": 4600}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_blask.png", "x": 80, "y": 446, "width": 230, "height": 300, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 6000}, "depth": 1.0}
       ]
     },
     "koledy": {
@@ -1013,7 +1496,14 @@
         {"image": "bg_koledy_gwiazda.png", "x": 138, "y": 290, "width": 44, "height": 44, "animation": {"type": "sway", "amplitude": 30, "duration": 3000, "anchorX": 0.5, "anchorY": 0.5}, "noInvert": true},
         {"image": "bg_koledy_hanka.png", "x": 300, "y": 330, "width": 90, "height": 104, "revealOn": "hanka", "fadeDuration": 1500, "depth": 0.8},
         {"image": "bg_koledy_platki_1.png", "x": 0, "y": 40, "width": 390, "height": 260, "animation": {"type": "rise", "amplitude": -140, "duration": 7000, "phase": 0.5}},
-        {"image": "bg_koledy_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_koledy_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_snieg_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_snieg_plot.png", "x": -10, "y": 520, "width": 410, "height": 100, "depth": 1.0},
+        {"image": "bg_dol_snieg_sanki.png", "x": 220, "y": 690, "width": 130, "height": 44, "depth": 1.0},
+        {"image": "bg_dol_snieg_osty.png", "x": -10, "y": 660, "width": 410, "height": 184, "animation": {"type": "sway", "amplitude": 1.5, "duration": 4400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_snieg_iskry.png", "x": 0, "y": 470, "width": 390, "height": 360, "animation": {"type": "flicker", "amplitude": 0.15, "duration": 2400}, "depth": 1.0},
+        {"image": "bg_dol_snieg_platki.png", "x": 0, "y": 440, "width": 390, "height": 400, "animation": {"type": "rise", "amplitude": -200, "duration": 8000}, "depth": 1.0},
+        {"image": "bg_dol_snieg_krzak_l.png", "x": -20, "y": 600, "width": 140, "height": 250, "animation": {"type": "sway", "amplitude": 1.5, "duration": 4400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0}
       ]
     },
     "stodola_marzanna": {
@@ -1034,7 +1524,11 @@
         {"image": "bg_stodola_dzieci.png", "x": 90, "y": 220, "width": 210, "height": 90, "animation": {"type": "bob", "amplitude": 0.8, "duration": 1500}, "depth": 0.6},
         {"image": "bg_stodola_kury_0.png", "x": 40, "y": 314, "width": 34, "height": 26, "animation": {"type": "sway", "amplitude": 14, "duration": 1300, "anchorX": 0.3, "anchorY": 1}},
         {"image": "bg_stodola_kury_1.png", "x": 300, "y": 318, "width": 34, "height": 26, "animation": {"type": "sway", "amplitude": 12, "duration": 1700, "anchorX": 0.7, "anchorY": 1, "phase": 0.3}},
-        {"image": "bg_stodola_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_stodola_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_izba_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_pylki.png", "x": 60, "y": 460, "width": 280, "height": 300, "animation": {"type": "wander", "amplitude": 8, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_izba_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0}
       ]
     },
     "rozlewisko": {
@@ -1059,7 +1553,16 @@
         {"image": "bg_rozlewisko_franek.png", "x": 90, "y": 290, "width": 70, "height": 120, "animation": {"type": "sway", "amplitude": 3, "duration": 1400, "anchorX": 0.4, "anchorY": 1}, "hideOn": "rzut", "fadeDuration": 200},
         {"image": "bg_rozlewisko_franek_rzuca.png", "x": 90, "y": 330, "width": 50, "height": 80, "revealOn": "rzut", "fadeDuration": 200, "hideOn": "ucieczka"},
         {"image": "bg_rozlewisko_bieg_0.png", "x": 0, "y": 330, "width": 200, "height": 90, "animation": {"type": "frames", "duration": 320}, "revealOn": "ucieczka", "frames": ["bg_rozlewisko_bieg_0.png", "bg_rozlewisko_bieg_1.png"], "fadeDuration": 400},
-        {"image": "bg_rozlewisko_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_rozlewisko_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_bagno_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_bagno_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_kepy.png", "x": -10, "y": 460, "width": 410, "height": 300, "depth": 1.0},
+        {"image": "bg_dol_bagno_kregi.png", "x": 60, "y": 510, "width": 40, "height": 20, "animation": {"type": "ripple", "amplitude": 1.4, "duration": 2600, "anchorX": 0.5, "anchorY": 0.5}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_bagno_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_wazka.png", "x": 170, "y": 626, "width": 40, "height": 24, "animation": {"type": "wander", "amplitude": 50, "flap": 0.5, "duration": 6400}, "depth": 1.0},
+        {"image": "bg_dol_bagno_zaba.png", "x": 100, "y": 700, "width": 30, "height": 20, "animation": {"type": "bob", "amplitude": 2, "duration": 1600}, "depth": 1.0}
       ]
     },
     "babka_lozko": {
@@ -1081,7 +1584,14 @@
         {"image": "bg_babka_gromnica_plomien.png", "x": 184, "y": 186, "width": 12, "height": 18, "animation": {"type": "flame", "amplitude": 0.15, "duration": 900, "anchorX": 0.5, "anchorY": 1}, "revealOn": "swieca", "noInvert": true},
         {"image": "bg_babka_dymek.png", "x": 184, "y": 150, "width": 16, "height": 40, "animation": {"type": "rise", "amplitude": 20, "duration": 3200}, "revealOn": "swieca"},
         {"image": "bg_babka_jaromir.png", "x": 300, "y": 220, "width": 50, "height": 84, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2400}},
-        {"image": "bg_babka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_babka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_izba_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_chodnik.png", "x": 20, "y": 590, "width": 350, "height": 200, "depth": 1.0},
+        {"image": "bg_dol_izba_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_kot.png", "x": 170, "y": 516, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 0.8, "duration": 2800}, "depth": 1.0},
+        {"image": "bg_dol_izba_ogon.png", "x": 150, "y": 536, "width": 36, "height": 30, "animation": {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 1, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_izba_pylki.png", "x": 60, "y": 460, "width": 280, "height": 300, "animation": {"type": "wander", "amplitude": 8, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_izba_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0}
       ]
     },
     "prog_noc": {
@@ -1097,7 +1607,18 @@
         {"image": "bg_prog_sowa_oczy.png", "x": 285, "y": 261, "width": 30, "height": 35, "animation": {"type": "blink", "duration": 4200}},
         {"image": "bg_prog_nietoperz.png", "x": 200, "y": 120, "width": 40, "height": 20, "animation": {"type": "wander", "amplitude": 60, "flap": 0.6, "duration": 5600}},
         {"image": "bg_prog_postacie.png", "x": 114, "y": 262, "width": 70, "height": 76, "animation": {"type": "bob", "amplitude": 0.4, "duration": 3600}},
-        {"image": "bg_prog_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_prog_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_swietliki.png", "x": 0, "y": 470, "width": 390, "height": 300, "animation": {"type": "wander", "amplitude": 14, "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_mgla_dol.png", "x": -40, "y": 470, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "izba_wieczor": {
@@ -1114,7 +1635,16 @@
         {"image": "bg_wieczor_matka.png", "x": 300, "y": 186, "width": 60, "height": 116, "animation": {"type": "sway", "amplitude": 1.5, "duration": 1500, "anchorX": 0.5, "anchorY": 1}},
         {"image": "bg_wieczor_kolo.png", "x": 314, "y": 214, "width": 44, "height": 44, "animation": {"type": "spin", "amplitude": 360, "duration": 1200, "anchorX": 0.5, "anchorY": 0.5}},
         {"image": "bg_wieczor_cmy.png", "x": 196, "y": 210, "width": 50, "height": 30, "animation": {"type": "wander", "amplitude": 14, "flap": 0.5, "duration": 3400}},
-        {"image": "bg_wieczor_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_wieczor_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_chodnik.png", "x": 20, "y": 590, "width": 350, "height": 200, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_kot.png", "x": 170, "y": 516, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 0.8, "duration": 2800}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_ogon.png", "x": 150, "y": 536, "width": 36, "height": 30, "animation": {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 1, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_oczy_kota.png", "x": 240, "y": 536, "width": 24, "height": 10, "animation": {"type": "blink", "duration": 4600}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_blask.png", "x": 80, "y": 446, "width": 230, "height": 300, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 6000}, "depth": 1.0}
       ]
     },
     "kapliczka_przewrocona": {
@@ -1145,7 +1675,17 @@
         {"image": "bg_kapliczka_noc.png", "x": 0, "y": 0, "width": 390, "height": 440, "revealOn": "latarnia", "fadeDuration": 3000},
         {"image": "bg_kapliczka_latarnia.png", "x": 60, "y": 280, "width": 110, "height": 150, "revealOn": "latarnia"},
         {"image": "bg_kapliczka_latarnia_blask.png", "x": 134, "y": 340, "width": 46, "height": 46, "animation": {"type": "flicker", "amplitude": 0.5, "duration": 1200}, "revealOn": "latarnia", "noInvert": true},
-        {"image": "bg_kapliczka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_kapliczka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_laka_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_laka_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "urbaniak": {
@@ -1166,7 +1706,17 @@
         {"image": "bg_urbaniak_jaromir.png", "x": 40, "y": 334, "width": 40, "height": 60, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2200}},
         {"image": "bg_urbaniak_noc.png", "x": 0, "y": 0, "width": 390, "height": 440, "revealOn": "noc", "fadeDuration": 4000},
         {"image": "bg_urbaniak_wycie.png", "x": 190, "y": 140, "width": 120, "height": 50, "animation": {"type": "ripple", "amplitude": 1.3, "duration": 2400, "anchorX": 0.5, "anchorY": 0.7}, "revealOn": "noc", "appearAfter": 2500, "fadeDuration": 1200},
-        {"image": "bg_urbaniak_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_urbaniak_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_laka_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_laka_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "sciezka_ratunek": {
@@ -1189,7 +1739,16 @@
         {"image": "bg_sciezka_maciek_lezy.png", "x": 140, "y": 364, "width": 144, "height": 46, "revealOn": "ratunek", "fadeDuration": 800},
         {"image": "bg_ratunek_andrzej.png", "x": 120, "y": 296, "width": 176, "height": 108, "animation": {"type": "sway", "amplitude": 1.5, "duration": 900, "anchorX": 0.8, "anchorY": 1}, "revealOn": "andrzej", "fadeDuration": 800},
         {"image": "bg_ratunek_trzciny.png", "x": 20, "y": 390, "width": 120, "height": 40, "animation": {"type": "sway", "amplitude": 4, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 0.9},
-        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0}
+        {"image": "bg_sciezka_przod.png", "x": 0, "y": 410, "width": 390, "height": 434, "depth": 1.0},
+        {"image": "bg_dol_bagno_baza.png", "x": -10, "y": 436, "width": 410, "height": 408, "depth": 1.0},
+        {"image": "bg_dol_bagno_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_kepy.png", "x": -10, "y": 460, "width": 410, "height": 300, "depth": 1.0},
+        {"image": "bg_dol_bagno_kregi.png", "x": 60, "y": 510, "width": 40, "height": 20, "animation": {"type": "ripple", "amplitude": 1.4, "duration": 2600, "anchorX": 0.5, "anchorY": 0.5}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_l.png", "x": -20, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_szuwar_p.png", "x": 260, "y": 560, "width": 150, "height": 290, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_bagno_trzciny_mid.png", "x": 60, "y": 600, "width": 270, "height": 230, "animation": {"type": "sway", "amplitude": 3, "duration": 2800, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_bagno_wazka.png", "x": 170, "y": 626, "width": 40, "height": 24, "animation": {"type": "wander", "amplitude": 50, "flap": 0.5, "duration": 6400}, "depth": 1.0},
+        {"image": "bg_dol_bagno_zaba.png", "x": 100, "y": 700, "width": 30, "height": 20, "animation": {"type": "bob", "amplitude": 2, "duration": 1600}, "depth": 1.0}
       ]
     },
     "tartak": {
@@ -1208,7 +1767,17 @@
         {"image": "bg_tartak_franek.png", "x": 300, "y": 330, "width": 60, "height": 100, "animation": {"type": "bob", "amplitude": 0.6, "duration": 1500}, "revealOn": "franek", "hideOn": "urbaniak", "fadeDuration": 800},
         {"image": "bg_tartak_moneta.png", "x": 346, "y": 384, "width": 12, "height": 12, "animation": {"type": "flicker", "amplitude": 0.1, "duration": 1300}, "revealOn": "franek", "hideOn": "urbaniak"},
         {"image": "bg_tartak_urbaniak.png", "x": 290, "y": 300, "width": 100, "height": 130, "revealOn": "urbaniak", "fadeDuration": 1500},
-        {"image": "bg_tartak_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_tartak_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_droga_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_droga_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_droga_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_droga_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_droga_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_droga_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_droga_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_droga_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_droga_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_droga_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "ognisko_tartak": {
@@ -1225,7 +1794,18 @@
         {"image": "bg_ognisko_tracze.png", "x": 100, "y": 320, "width": 200, "height": 70, "animation": {"type": "bob", "amplitude": 0.4, "duration": 2600}},
         {"image": "bg_ognisko_ogien.png", "x": 176, "y": 330, "width": 40, "height": 50, "animation": {"type": "flame", "amplitude": 0.15, "duration": 800, "anchorX": 0.5, "anchorY": 1}, "noInvert": true},
         {"image": "bg_ognisko_iskry.png", "x": 184, "y": 300, "width": 24, "height": 40, "animation": {"type": "rise", "amplitude": 60, "duration": 1800}, "noInvert": true},
-        {"image": "bg_ognisko_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_ognisko_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_swietliki.png", "x": 0, "y": 470, "width": 390, "height": 300, "animation": {"type": "wander", "amplitude": 14, "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_mgla_dol.png", "x": -40, "y": 470, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "pole_orka": {
@@ -1241,7 +1821,16 @@
         {"image": "bg_orka_jaromir.png", "x": 230, "y": 320, "width": 40, "height": 80, "animation": {"type": "bob", "amplitude": 0.6, "duration": 1300}},
         {"image": "bg_orka_franek.png", "x": 310, "y": 320, "width": 60, "height": 100, "animation": {"type": "bob", "amplitude": 0.5, "duration": 1600}, "revealOn": "franek"},
         {"image": "bg_orka_motyl.png", "x": 300, "y": 360, "width": 28, "height": 22, "animation": {"type": "wander", "amplitude": 28, "flap": 0.65, "duration": 6000}},
-        {"image": "bg_orka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_orka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_pole_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_pole_snopy.png", "x": 0, "y": 740, "width": 390, "height": 90, "depth": 1.0},
+        {"image": "bg_dol_pole_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_pole_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_pole_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_pole_wrona.png", "x": 260, "y": 600, "width": 40, "height": 30, "animation": {"type": "sway", "amplitude": 8, "duration": 1400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0}
       ]
     },
     "stary_dab": {
@@ -1259,7 +1848,17 @@
         {"image": "bg_dab_chlopcy.png", "x": 200, "y": 320, "width": 90, "height": 110, "animation": {"type": "bob", "amplitude": 0.6, "duration": 1400}, "revealOn": "chlopcy", "hideOn": "odchodzi", "fadeDuration": 300},
         {"image": "bg_dab_jaromir_sam.png", "x": 200, "y": 320, "width": 50, "height": 110, "revealOn": "odchodzi", "fadeDuration": 300},
         {"image": "bg_dab_franek_idzie.png", "x": 240, "y": 320, "width": 60, "height": 110, "animation": {"type": "slide", "dx": 160, "dy": -10, "duration": 5000, "once": true}, "revealOn": "odchodzi", "fadeDuration": 300, "hideAfter": 4200},
-        {"image": "bg_dab_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_dab_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_laka_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_laka_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "sciecie_debu": {
@@ -1281,7 +1880,17 @@
         {"image": "bg_sciecie_urbaniak.png", "x": 300, "y": 330, "width": 60, "height": 100, "animation": {"type": "sway", "amplitude": 1.5, "duration": 2400, "anchorX": 0.5, "anchorY": 1}},
         {"image": "bg_sciecie_ludzie.png", "x": 0, "y": 330, "width": 290, "height": 100, "animation": {"type": "bob", "amplitude": 0.6, "duration": 1800}},
         {"image": "bg_sciecie_wiwat.png", "x": 90, "y": 300, "width": 200, "height": 60, "animation": {"type": "bob", "amplitude": 2, "duration": 600}, "revealOn": "wiwat"},
-        {"image": "bg_sciecie_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_sciecie_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_laka_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_laka_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "uboze_piec": {
@@ -1302,7 +1911,16 @@
         {"image": "bg_uboze_obloczek.png", "x": 176, "y": 250, "width": 70, "height": 60, "animation": {"type": "ripple", "amplitude": 1.4, "duration": 1400, "anchorX": 0.5, "anchorY": 0.6}, "revealOn": "zniknal", "hideAfter": 1500, "fadeDuration": 500},
         {"image": "bg_uboze_myszy.png", "x": 100, "y": 300, "width": 150, "height": 20, "animation": {"type": "drift", "amplitude": 40, "duration": 2400}, "revealOn": "myszy"},
         {"image": "bg_uboze_slady.png", "x": 150, "y": 300, "width": 60, "height": 16, "revealOn": "slady"},
-        {"image": "bg_uboze_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_uboze_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_chodnik.png", "x": 20, "y": 590, "width": 350, "height": 200, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_kot.png", "x": 170, "y": 516, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 0.8, "duration": 2800}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_ogon.png", "x": 150, "y": 536, "width": 36, "height": 30, "animation": {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 1, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_oczy_kota.png", "x": 240, "y": 536, "width": 24, "height": 10, "animation": {"type": "blink", "duration": 4600}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_blask.png", "x": 80, "y": 446, "width": 230, "height": 300, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 6000}, "depth": 1.0}
       ]
     },
     "przed_zniwami": {
@@ -1325,7 +1943,16 @@
         {"image": "bg_zniwa_zboze_2.png", "x": 156, "y": 330, "width": 80, "height": 100, "animation": {"type": "sway", "amplitude": 3, "duration": 3200, "anchorX": 0.5, "anchorY": 1, "phase": 0.16}},
         {"image": "bg_zniwa_zboze_3.png", "x": 234, "y": 330, "width": 80, "height": 100, "animation": {"type": "sway", "amplitude": 3, "duration": 3200, "anchorX": 0.5, "anchorY": 1, "phase": 0.24}},
         {"image": "bg_zniwa_zboze_4.png", "x": 312, "y": 330, "width": 80, "height": 100, "animation": {"type": "sway", "amplitude": 3, "duration": 3200, "anchorX": 0.5, "anchorY": 1, "phase": 0.32}},
-        {"image": "bg_zniwa_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_zniwa_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_pole_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_pole_snopy.png", "x": 0, "y": 740, "width": 390, "height": 90, "depth": 1.0},
+        {"image": "bg_dol_pole_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_pole_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_pole_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_pole_wrona.png", "x": 260, "y": 600, "width": 40, "height": 30, "animation": {"type": "sway", "amplitude": 8, "duration": 1400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0}
       ]
     },
     "zniwa": {
@@ -1346,7 +1973,16 @@
         {"image": "bg_zniwapole_jaromir.png", "x": 210, "y": 330, "width": 70, "height": 100, "animation": {"type": "sway", "amplitude": 7, "duration": 1300, "anchorX": 0.6, "anchorY": 1, "phase": 0.3}},
         {"image": "bg_zniwapole_hanka.png", "x": 20, "y": 340, "width": 50, "height": 90, "animation": {"type": "bob", "amplitude": 1, "duration": 1800}, "revealOn": "hanka", "hideOn": "sam", "fadeDuration": 1500},
         {"image": "bg_zniwapole_motyl.png", "x": 150, "y": 380, "width": 28, "height": 22, "animation": {"type": "wander", "amplitude": 26, "flap": 0.65, "duration": 6200}},
-        {"image": "bg_zniwapole_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_zniwapole_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_pole_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_pole_snopy.png", "x": 0, "y": 740, "width": 390, "height": 90, "depth": 1.0},
+        {"image": "bg_dol_pole_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_pole_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_pole_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_pole_wrona.png", "x": 260, "y": 600, "width": 40, "height": 30, "animation": {"type": "sway", "amplitude": 8, "duration": 1400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0}
       ]
     },
     "poludnica": {
@@ -1371,7 +2007,16 @@
         {"image": "bg_poludnica_jaromir.png", "x": 40, "y": 320, "width": 80, "height": 110, "animation": {"type": "bob", "amplitude": 0.6, "duration": 1200}},
         {"image": "bg_poludnica_woda.png", "x": 70, "y": 330, "width": 70, "height": 50, "animation": {"type": "rise", "amplitude": -30, "duration": 1000}, "revealOn": "woda", "hideAfter": 2500},
         {"image": "bg_poludnica_hanka.png", "x": 310, "y": 330, "width": 70, "height": 100, "animation": {"type": "bob", "amplitude": 1.4, "duration": 600}, "revealOn": "dzban", "fadeDuration": 600},
-        {"image": "bg_poludnica_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_poludnica_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_pole_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_pole_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_pole_snopy.png", "x": 0, "y": 740, "width": 390, "height": 90, "depth": 1.0},
+        {"image": "bg_dol_pole_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_pole_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_pole_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_pole_wrona.png", "x": 260, "y": 600, "width": 40, "height": 30, "animation": {"type": "sway", "amplitude": 8, "duration": 1400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0}
       ]
     },
     "goraczka": {
@@ -1388,7 +2033,16 @@
         {"image": "bg_goraczka_matka.png", "x": 130, "y": 180, "width": 60, "height": 122, "animation": {"type": "sway", "amplitude": 1.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1}},
         {"image": "bg_goraczka_majaki.png", "x": 40, "y": 30, "width": 300, "height": 180, "animation": {"type": "flicker", "amplitude": 0, "duration": 2400}, "revealOn": "majaki", "fadeDuration": 2000, "hideAfter": 6000},
         {"image": "bg_goraczka_hanka.png", "x": 220, "y": 200, "width": 60, "height": 102, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2200}, "revealOn": "hanka"},
-        {"image": "bg_goraczka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_goraczka_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_chodnik.png", "x": 20, "y": 590, "width": 350, "height": 200, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_kot.png", "x": 170, "y": 516, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 0.8, "duration": 2800}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_ogon.png", "x": 150, "y": 536, "width": 36, "height": 30, "animation": {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 1, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_oczy_kota.png", "x": 240, "y": 536, "width": 24, "height": 10, "animation": {"type": "blink", "duration": 4600}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0},
+        {"image": "bg_dol_izba_noc_blask.png", "x": 80, "y": 446, "width": 230, "height": 300, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 6000}, "depth": 1.0}
       ]
     },
     "czerwony_ksiezyc": {
@@ -1406,7 +2060,18 @@
         {"image": "bg_ksiezyc_swietlik_0.png", "x": 36, "y": 316, "width": 8, "height": 8, "animation": {"type": "wander", "amplitude": 10, "duration": 4200, "phase": 0.0}},
         {"image": "bg_ksiezyc_para.png", "x": 140, "y": 300, "width": 110, "height": 70, "animation": {"type": "bob", "amplitude": 0.5, "duration": 3000}},
         {"image": "bg_ksiezyc_mak.png", "x": 186, "y": 326, "width": 14, "height": 14, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 2000}, "revealOn": "mak", "noInvert": true, "fadeDuration": 1500},
-        {"image": "bg_ksiezyc_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_ksiezyc_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_pole_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_pole_noc_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_pole_noc_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_pole_noc_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_pole_noc_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_pole_noc_snopy.png", "x": 0, "y": 740, "width": 390, "height": 90, "depth": 1.0},
+        {"image": "bg_dol_pole_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_pole_noc_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_pole_noc_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_pole_noc_swietliki.png", "x": 0, "y": 470, "width": 390, "height": 300, "animation": {"type": "wander", "amplitude": 14, "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_pole_noc_mgla_dol.png", "x": -40, "y": 470, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "kapliczki_noc": {
@@ -1421,7 +2086,18 @@
         {"image": "bg_kaplnoc_ojciec.png", "x": 130, "y": 300, "width": 80, "height": 130, "animation": {"type": "bob", "amplitude": 0.8, "duration": 1100}, "revealOn": "ojciec"},
         {"image": "bg_kaplnoc_blask.png", "x": 150, "y": 350, "width": 60, "height": 60, "animation": {"type": "flicker", "amplitude": 0.5, "duration": 1200}, "revealOn": "ojciec", "noInvert": true},
         {"image": "bg_kaplnoc_jaromir.png", "x": 70, "y": 330, "width": 60, "height": 100, "animation": {"type": "sway", "amplitude": 2, "duration": 1600, "anchorX": 0.5, "anchorY": 1}, "revealOn": "jaromir"},
-        {"image": "bg_kaplnoc_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_kaplnoc_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_swietliki.png", "x": 0, "y": 470, "width": 390, "height": 300, "animation": {"type": "wander", "amplitude": 14, "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_mgla_dol.png", "x": -40, "y": 470, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "budowa_tartaku": {
@@ -1441,7 +2117,17 @@
         {"image": "bg_budowa_snieg.png", "x": 0, "y": 0, "width": 390, "height": 300, "animation": {"type": "rise", "amplitude": -160, "duration": 6000}, "revealOn": "lata", "hideAfter": 5000, "fadeDuration": 1500},
         {"image": "bg_budowa_liscie.png", "x": 0, "y": 100, "width": 390, "height": 260, "animation": {"type": "float", "amplitude": 6, "dx": -60, "dy": 140, "duration": 5200}, "revealOn": "lata", "appearAfter": 6500, "hideAfter": 6000, "fadeDuration": 1500},
         {"image": "bg_budowa_hanka.png", "x": 300, "y": 330, "width": 60, "height": 100, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2000}, "revealOn": "hanka", "fadeDuration": 2000},
-        {"image": "bg_budowa_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_budowa_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_droga_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_droga_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_droga_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_droga_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_droga_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_droga_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_droga_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_droga_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_droga_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_droga_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     },
     "wykopki": {
@@ -1459,7 +2145,17 @@
         {"image": "bg_wykopki_gwiazdy.png", "x": 0, "y": 10, "width": 390, "height": 150, "animation": {"type": "flicker", "amplitude": 0.15, "duration": 3600}, "revealOn": "zmrok", "fadeDuration": 5000},
         {"image": "bg_wykopki_ogniska.png", "x": 100, "y": 360, "width": 200, "height": 50, "animation": {"type": "flame", "amplitude": 0.14, "duration": 800, "anchorX": 0.5, "anchorY": 1}, "noInvert": true},
         {"image": "bg_wykopki_iskry.png", "x": 120, "y": 340, "width": 160, "height": 60, "animation": {"type": "rise", "amplitude": 50, "duration": 1800}, "noInvert": true},
-        {"image": "bg_wykopki_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_wykopki_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_jesien_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_jesien_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_jesien_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_jesien_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_jesien_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_jesien_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_jesien_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_jesien_liscie_lezace.png", "x": -10, "y": 440, "width": 410, "height": 400, "depth": 1.0},
+        {"image": "bg_dol_jesien_liscie.png", "x": 0, "y": 440, "width": 390, "height": 120, "animation": {"type": "float", "amplitude": 8, "dx": -80, "dy": 260, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_jesien_wrona.png", "x": 260, "y": 600, "width": 40, "height": 30, "animation": {"type": "sway", "amplitude": 8, "duration": 1400, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0}
       ]
     },
     "zaduszki": {
@@ -1480,7 +2176,18 @@
         {"image": "bg_zaduszki_chleb.png", "x": 120, "y": 280, "width": 70, "height": 24, "revealOn": "parapet", "fadeDuration": 2500, "hideOn": "okruchy"},
         {"image": "bg_zaduszki_kubek.png", "x": 230, "y": 270, "width": 30, "height": 32, "revealOn": "parapet", "fadeDuration": 2500},
         {"image": "bg_zaduszki_okruchy.png", "x": 120, "y": 290, "width": 70, "height": 14, "revealOn": "okruchy", "fadeDuration": 1500},
-        {"image": "bg_zaduszki_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_zaduszki_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_noc_podklad.png", "x": -10, "y": 440, "width": 410, "height": 404, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_swietliki.png", "x": 0, "y": 470, "width": 390, "height": 300, "animation": {"type": "wander", "amplitude": 14, "duration": 5200}, "noInvert": true, "depth": 1.0},
+        {"image": "bg_dol_laka_noc_mgla_dol.png", "x": -40, "y": 470, "width": 470, "height": 60, "animation": {"type": "drift", "amplitude": 14, "duration": 16000}, "depth": 1.0}
       ]
     },
     "zima_przedzenie": {
@@ -1499,7 +2206,14 @@
         {"image": "bg_przedzenie_pierze.png", "x": 130, "y": 150, "width": 140, "height": 110, "animation": {"type": "float", "amplitude": 8, "dx": 40, "dy": -50, "duration": 5000}, "revealOn": "pierze"},
         {"image": "bg_przedzenie_uboze_cialo.png", "x": 358, "y": 234, "width": 35, "height": 60, "animation": {"type": "bob", "amplitude": 0.5, "duration": 2400}, "revealOn": "uboze", "fadeDuration": 2000},
         {"image": "bg_przedzenie_uboze_czapka.png", "x": 358, "y": 234, "width": 35, "height": 60, "animation": {"type": "sway", "amplitude": 6, "duration": 1200, "anchorX": 0.5, "anchorY": 0.193}, "revealOn": "uboze", "fadeDuration": 2000},
-        {"image": "bg_przedzenie_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_przedzenie_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_izba_podloga.png", "x": -10, "y": 446, "width": 410, "height": 398, "depth": 1.0},
+        {"image": "bg_dol_izba_chodnik.png", "x": 20, "y": 590, "width": 350, "height": 200, "depth": 1.0},
+        {"image": "bg_dol_izba_sprzety.png", "x": 10, "y": 460, "width": 380, "height": 380, "depth": 1.0},
+        {"image": "bg_dol_izba_kot.png", "x": 170, "y": 516, "width": 110, "height": 50, "animation": {"type": "bob", "amplitude": 0.8, "duration": 2800}, "depth": 1.0},
+        {"image": "bg_dol_izba_ogon.png", "x": 150, "y": 536, "width": 36, "height": 30, "animation": {"type": "sway", "amplitude": 14, "duration": 1800, "anchorX": 1, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_izba_pylki.png", "x": 60, "y": 460, "width": 280, "height": 300, "animation": {"type": "wander", "amplitude": 8, "duration": 7000}, "depth": 1.0},
+        {"image": "bg_dol_izba_mysz.png", "x": 100, "y": 790, "width": 40, "height": 16, "animation": {"type": "drift", "amplitude": 60, "duration": 9000}, "depth": 1.0}
       ]
     },
     "wielkanoc": {
@@ -1519,7 +2233,17 @@
         {"image": "bg_wielkanoc_bazie_1.png", "x": 100, "y": 330, "width": 50, "height": 80, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1, "phase": 0.15}},
         {"image": "bg_wielkanoc_bazie_2.png", "x": 190, "y": 330, "width": 50, "height": 80, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1, "phase": 0.3}},
         {"image": "bg_wielkanoc_bazie_3.png", "x": 280, "y": 330, "width": 50, "height": 80, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1, "phase": 0.45}},
-        {"image": "bg_wielkanoc_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0}
+        {"image": "bg_wielkanoc_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_laka_baza.png", "x": -10, "y": 416, "width": 410, "height": 428, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_0.png", "x": -30, "y": 400, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_1.png", "x": -30, "y": 500, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_laka_trawa_2.png", "x": -30, "y": 600, "width": 450, "height": 220, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_laka_kwiaty.png", "x": -10, "y": 470, "width": 410, "height": 380, "animation": {"type": "sway", "amplitude": 3, "duration": 2600, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_gaszcz.png", "x": -10, "y": 700, "width": 410, "height": 144, "animation": {"type": "sway", "amplitude": 1, "duration": 4200, "anchorX": 0.5, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_l.png", "x": -20, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_laka_rog_p.png", "x": 270, "y": 540, "width": 140, "height": 310, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1, "phase": 0.3}, "depth": 1.0},
+        {"image": "bg_dol_laka_motyl.png", "x": 200, "y": 560, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0},
+        {"image": "bg_dol_laka_trzmiel.png", "x": 80, "y": 680, "width": 20, "height": 16, "animation": {"type": "wander", "amplitude": 24, "flap": 0.4, "duration": 5200, "phase": 0.4}, "depth": 1.0}
       ]
     }
   }
