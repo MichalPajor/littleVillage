@@ -32,6 +32,7 @@ public partial class GamePage : BasePage
         _messenger.Register<StoryPageShownMessage>(this, (_, message) => _ = OnPageShownAsync(message.Page));
         _messenger.Register<StoryChoiceSelectedMessage>(this, (_, _) => _ = OnChoiceSelectedAsync());
         _messenger.Register<InventoryChangedMessage>(this, (_, message) => _ = ShowInventoryChangeAsync(message.Change));
+        _messenger.Register<JournalChangedMessage>(this, (_, message) => _ = ShowJournalChangeAsync(message.Change));
 
         _revealTimer ??= CreateRevealTimer();
         _revealTimer.Start();
@@ -123,6 +124,51 @@ public partial class GamePage : BasePage
         {
             _toastGate.Release();
         }
+    }
+
+    // Nowy wpis w zapiskach: księga podskakuje, a obok niej wysuwa się karteczka z nazwą istoty.
+    private async Task ShowJournalChangeAsync(JournalChange change)
+    {
+        await _toastGate.WaitAsync();
+        try
+        {
+            await Task.Delay(700);
+            var margin = InventoryToast.Margin;
+            InventoryToast.Margin = new Thickness(margin.Left, 102, margin.Right, margin.Bottom);
+            foreach (var update in change.Updates)
+            {
+                InventoryToastSign.Text = "+";
+                InventoryToastCaption.Text = update.IsNewCard ? "Nowy wpis w zapiskach" : "Zapiski uzupełnione";
+                InventoryToastName.Text = update.Title;
+                InventoryToastName.TextDecorations = TextDecorations.None;
+
+                InventoryToast.TranslationX = 40;
+                InventoryToast.Opacity = 0;
+                InventoryToast.IsVisible = true;
+
+                await Task.WhenAll(
+                    InventoryToast.FadeToAsync(1, 300, Easing.CubicOut),
+                    InventoryToast.TranslateToAsync(0, 0, 350, Easing.CubicOut),
+                    PulseJournalAsync());
+                await Task.Delay(2200);
+                await Task.WhenAll(
+                    InventoryToast.FadeToAsync(0, 400, Easing.CubicIn),
+                    InventoryToast.TranslateToAsync(40, 0, 400, Easing.CubicIn));
+                InventoryToast.IsVisible = false;
+            }
+
+            InventoryToast.Margin = margin;
+        }
+        finally
+        {
+            _toastGate.Release();
+        }
+    }
+
+    private async Task PulseJournalAsync()
+    {
+        await JournalButton.ScaleToAsync(1.25, 160, Easing.CubicOut);
+        await JournalButton.ScaleToAsync(1, 260, Easing.BounceOut);
     }
 
     private async Task PulseBackpackAsync(bool added)

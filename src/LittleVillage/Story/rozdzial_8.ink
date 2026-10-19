@@ -46,6 +46,7 @@ Słońce stało w zenicie i wszystko dookoła kuliło się we własnych cieniach
 
 = przy_stole
 # tlo: izba_sierpien
+~ zapiski += licho_1
 Pierwszego sierpnia ojciec wrócił z pola wcześniej niż zwykle. Usiadł przy stole i długo obracał w palcach kłos – lekki, prawie pusty – nie mówiąc ani słowa. Matka postawiła przed nim miskę kaszy i też milczała. W izbie słychać było tylko bzyczenie much. Było duszno, pachniało kaszą i nagrzanym drewnem ścian, a przez otwarte okno nie wpadał ani jeden powiew.
 – Z tego żyta nie będzie nawet na zasiew – odezwał się w końcu. – Kartofle uschną w ziemi. Do wiosny nie starczy nam ani na chleb.
 Potem spojrzał na syna tak, jak zaczął na niego patrzeć od Wielkanocy – jak na dorosłego.
@@ -114,7 +115,7 @@ Babka obłożyła złamanie żywokostem i obwiązała łubkami z leszczyny. Zapa
 W sieni, kiedy już wychodziła, chwyciła Jaromira za rękaw i przyciągnęła do siebie.
 – Widziałeś ją, prawda? – szepnęła. – Małą, w łachmanach, z jednym okiem.
 Skinął głową.
-– Licho – powiedziała stara i splunęła przez ramię. – Licho, co nie śpi. Chodzi od chałupy do chałupy i siada tam, gdzie mu dobrze. Gdzie kapliczki stoją, a ludzie żyją po bożemu, długo miejsca nie zagrzeje. Ale gdzie las rąbią, a świętości przestawiają z kąta w kąt, tam się zasiedzi i będzie żarło, aż zostaną same kości. – Spojrzała w stronę boru. – Ono nie przyszło samo. Ktoś je tu przysłał. # pokaz: babka
+– Licho – powiedziała stara i splunęła przez ramię. – Licho, co nie śpi. Chodzi od chałupy do chałupy i siada tam, gdzie mu dobrze. Gdzie kapliczki stoją, a ludzie żyją po bożemu, długo miejsca nie zagrzeje. Ale gdzie las rąbią, a świętości przestawiają z kąta w kąt, tam się zasiedzi i będzie żarło, aż zostaną same kości. – Spojrzała w stronę boru. – Ono nie przyszło samo. Ktoś je tu przysłał. – A wiesz, czemu ma jedno oko? – dodała ciszej. – Bo drugie zostało w borze. Mówią, że Licho to oczy, które Pan Lasu wysyła między ludzi. Co zobaczy jedno, to wie drugie. # pokaz: babka
 – Jak je przegnać? – zapytał Jaromir.
 – Licha się nie przegania. Przegonisz od siebie, pójdzie do sąsiada. Można je ugościć, żeby poszło dalej syte. Albo nie otworzyć mu i nie odezwać się do niego ani słowem, choćby prosiło najsłodszym głosem. Do chałupy wejdzie tylko wtedy, kiedy je ktoś zawoła.
 { licho_studnia:
@@ -129,6 +130,7 @@ Hanka wyszła za nimi na próg. Kiedy babka ruszyła w stronę kuźni, przystan�
 
 = pukanie
 # tlo: drzwi_noc
+~ zapiski += licho_2
 W nocy ktoś zapukał.
 Trzy razy, cicho i nisko – jakby ktoś bardzo mały stukał kosturem w dolną deskę drzwi.{ ekwipunek ? szczeniak: {imie_psa} wcisnął się pod ławę i warczał głucho, z sierścią zjeżoną na karku.} Matka spała na zydlu przy ojcu, z głową opartą o ścianę, tak umęczona, że nawet nie drgnęła.
 Jaromir przyłożył oko do szpary w okiennicy. Na progu, w świetle księżyca, stała żebraczka. Jej cień, chudy jak palec, wsuwał się do izby pod drzwiami. # pokaz: cien
@@ -211,5 +213,6 @@ A kilka kroków przed nią, w tę samą stronę, szedł Franek. # pokaz: franek 
 // Koniec rozdziału ósmego — dalej rozdział dziewiąty.
 === rozdzial_osmy_ciag_dalszy ===
 # ozdobnik
+~ zapiski += (licho_3, pan_lasu_4)
 _Koniec rozdziału ósmego._ # dalej
 -> rozdzial_dziewiaty

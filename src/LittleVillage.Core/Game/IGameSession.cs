@@ -27,6 +27,8 @@ public interface IGameSession
 
     IReadOnlyList<InventoryItem> GetInventory();
 
+    IReadOnlyList<JournalEntry> GetJournal();
+
     /// <summary>Kończy grę i usuwa zapis.</summary>
     Task FinishAsync(CancellationToken cancellationToken = default);
 }

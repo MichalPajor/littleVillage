@@ -65,10 +65,25 @@
             Command="{Binding OpenInventoryCommand}"
             SemanticProperties.Description="Otwórz ekwipunek" />
 
+        <!-- Zapiski (bestiariusz): karty istot odsłaniane razem z fabułą -->
+        <controls:SketchIconButton
+            x:Name="JournalButton"
+            Grid.Row="0"
+            Margin="0,100,16,0"
+            HorizontalOptions="End"
+            VerticalOptions="Start"
+            FaceSize="50,50"
+            IconSize="30"
+            Icon="ic_journal.png"
+            StrokeThickness="3.5"
+            CornerRadius="12,14,10,13"
+            Command="{Binding OpenJournalCommand}"
+            SemanticProperties.Description="Otwórz zapiski" />
+
         <!-- Tryb jasny / ciemny okien z tekstem: księżyc = przełącz na ciemny, słońce = na jasny -->
         <controls:SketchIconButton
             Grid.Row="0"
-            Margin="0,104,19,0"
+            Margin="0,164,19,0"
             HorizontalOptions="End"
             VerticalOptions="Start"
             FaceSize="44,44"
@@ -202,6 +217,60 @@
                 </VerticalStackLayout>
             </HorizontalStackLayout>
         </controls:InkFrame>
+
+        <!-- ===== Zapiski (nakładka) ===== -->
+        <Grid Grid.RowSpan="2" IsVisible="{Binding IsJournalOpen}">
+            <BoxView Color="{StaticResource Scrim}">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding CloseJournalCommand}" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+
+            <controls:InkFrame
+                Margin="20,60"
+                FrameBackgroundColor="{DynamicResource PanelSolid}"
+                MaximumWidthRequest="440"
+                VerticalOptions="Center">
+                <Grid Padding="22,26,18,24" RowDefinitions="Auto,Auto,Auto" RowSpacing="0">
+
+                    <Label Text="Zapiski" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
+                    <controls:SketchIconButton
+                        HorizontalOptions="End"
+                        VerticalOptions="Start"
+                        FaceSize="40,40"
+                        IconSize="20"
+                        Icon="ic_close.png"
+                        StrokeThickness="3"
+                        ShadowOffset="3"
+                        Command="{Binding CloseJournalCommand}"
+                        SemanticProperties.Description="Zamknij zapiski" />
+
+                    <controls:ThemedImage Grid.Row="1" Source="decor_underline.png" WidthRequest="150" HeightRequest="8" Aspect="Fill" HorizontalOptions="Start" />
+
+                    <ScrollView Grid.Row="2" Margin="0,18,0,6" MaximumHeightRequest="440">
+                        <VerticalStackLayout Spacing="22">
+                            <Label Text="Jeszcze nic tu nie zapisano." Style="{StaticResource Hint}" IsVisible="{Binding HasJournalEntries, Converter={StaticResource InvertedBool}}" />
+                            <VerticalStackLayout Spacing="22" BindableLayout.ItemsSource="{Binding JournalEntries}">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate x:DataType="story:JournalEntry">
+                                        <VerticalStackLayout Spacing="6">
+                                            <Label Text="{Binding Title}" Style="{StaticResource ItemName}" FontSize="20" />
+                                            <VerticalStackLayout Spacing="8" BindableLayout.ItemsSource="{Binding Notes}">
+                                                <BindableLayout.ItemTemplate>
+                                                    <DataTemplate x:DataType="x:String">
+                                                        <Label Text="{Binding .}" Style="{StaticResource Hint}" LineHeight="1.35" />
+                                                    </DataTemplate>
+                                                </BindableLayout.ItemTemplate>
+                                            </VerticalStackLayout>
+                                        </VerticalStackLayout>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </VerticalStackLayout>
+                        </VerticalStackLayout>
+                    </ScrollView>
+                </Grid>
+            </controls:InkFrame>
+        </Grid>
 
         <!-- ===== Ekwipunek (nakładka) ===== -->
         <Grid Grid.RowSpan="2" IsVisible="{Binding IsInventoryOpen}">

@@ -1845,4 +1845,54 @@ public sealed class GameStoryTests
             Assert.Equal(PageEnding.End, pages[^1].Ending);
         }
     }
+
+    // ----- Zapiski (bestiariusz): karty odslaniane etapami -----
+
+    [Fact]
+    public void Journal_cards_open_step_by_step_and_rename_when_the_creature_is_named()
+    {
+        var engine = CreateEngine();
+        Play(engine, [.. PeacefulToLeanSummer, 0]);
+        var beggar = engine.GetJournal().Single(c => c.Id == "licho");
+        Assert.Equal("Jednooka żebraczka", beggar.Title);
+        Assert.Single(beggar.Notes);
+        Assert.DoesNotContain(engine.GetJournal(), c => c.Id == "mamuny");
+
+        Play(engine, [.. PeacefulToLeanSummer, 0, 0, 0, 0]);
+        var named = engine.GetJournal().Single(c => c.Id == "licho");
+        Assert.Equal("Licho", named.Title);
+        Assert.Equal(2, named.Notes.Count);
+        Assert.Contains("oczy, które Pan Lasu wysyła", named.Notes[1]);
+    }
+
+    [Fact]
+    public void Journal_notes_follow_the_players_choices()
+    {
+        var engine = CreateEngine();
+        Play(engine, [.. PeacefulToBirth, 0, 1, 0, 1, 1]);
+        var journal = engine.GetJournal();
+
+        Assert.Equal(["stwor", "zielarka", "pan_lasu", "starzec", "polnocnica", "dziad", "uboze", "poludnica", "rusalki", "licho", "tropy", "mamuny", "odmieniec"],
+            journal.Select(c => c.Id).Where(id => id != "ogniki"));
+        Assert.Equal("Topielec", journal.Single(c => c.Id == "stwor").Title);
+        Assert.Equal(4, journal.Single(c => c.Id == "pan_lasu").Notes.Count);
+        Assert.Contains("chleb i wianek na kamieniu", journal.Single(c => c.Id == "mamuny").Notes[^1]);
+        Assert.Contains("pękła piła", journal.Single(c => c.Id == "licho").Notes[^1]);
+    }
+
+    [Theory]
+    [MemberData(nameof(AllProloguePaths))]
+    public void Every_journal_note_is_clean_text(int[] choices)
+    {
+        var engine = CreateEngine();
+        Play(engine, choices);
+
+        foreach (var card in engine.GetJournal())
+        {
+            Assert.False(string.IsNullOrWhiteSpace(card.Title));
+            Assert.Equal(card.NoteIds.Count, card.Notes.Count);
+            Assert.All(card.Notes, note => Assert.DoesNotMatch(@"[{}#|]| [.,;:!?]|  |\p{Ll}[.!?…]\p{Lu}", note));
+        }
+    }
 }
+

@@ -22,12 +22,15 @@ public sealed partial class GameViewModel(
 {
     private StoryPage? _shownPage;
     private IReadOnlyList<InventoryItem>? _knownInventory;
+    private IReadOnlyList<JournalEntry>? _knownJournal;
 
     public ObservableCollection<StoryBlock> Blocks { get; } = [];
 
     public ObservableCollection<ChoiceViewModel> Choices { get; } = [];
 
     public ObservableCollection<InventoryItem> InventoryItems { get; } = [];
+
+    public ObservableCollection<JournalEntry> JournalEntries { get; } = [];
 
     [ObservableProperty]
     public partial SceneBackground? Scene { get; set; }
@@ -55,6 +58,12 @@ public sealed partial class GameViewModel(
     [ObservableProperty]
     public partial bool HasInventoryItems { get; set; }
 
+    [ObservableProperty]
+    public partial bool IsJournalOpen { get; set; }
+
+    [ObservableProperty]
+    public partial bool HasJournalEntries { get; set; }
+
     /// <summary>Tryb ciemny okien z tekstem (czarne tło, jasne litery).</summary>
     [ObservableProperty]
     public partial bool IsDarkMode { get; set; }
@@ -77,6 +86,7 @@ public sealed partial class GameViewModel(
         {
             Show(page);
             _knownInventory = session.GetInventory();
+            _knownJournal = session.GetJournal();
         }
 
         return Task.CompletedTask;
@@ -112,6 +122,7 @@ public sealed partial class GameViewModel(
         {
             Show(await session.ContinueSavedGameAsync());
             _knownInventory = session.GetInventory();
+            _knownJournal = session.GetJournal();
         }
         catch (Exception exception)
         {
@@ -145,6 +156,22 @@ public sealed partial class GameViewModel(
 
     [RelayCommand]
     private void CloseInventory() => IsInventoryOpen = false;
+
+    [RelayCommand]
+    private void OpenJournal()
+    {
+        JournalEntries.Clear();
+        foreach (var entry in session.GetJournal())
+        {
+            JournalEntries.Add(entry);
+        }
+
+        HasJournalEntries = JournalEntries.Count > 0;
+        IsJournalOpen = true;
+    }
+
+    [RelayCommand]
+    private void CloseJournal() => IsJournalOpen = false;
 
     private void Show(StoryPage page)
     {
@@ -185,6 +212,18 @@ public sealed partial class GameViewModel(
         }
 
         _knownInventory = now;
+
+        var journal = session.GetJournal();
+        if (_knownJournal is not null)
+        {
+            var notes = JournalChange.Between(_knownJournal, journal);
+            if (!notes.IsEmpty)
+            {
+                messenger.Send(new JournalChangedMessage(notes));
+            }
+        }
+
+        _knownJournal = journal;
     }
 
     private void Select(ChoiceViewModel choice)

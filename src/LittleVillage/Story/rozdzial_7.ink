@@ -37,6 +37,7 @@ Od strony lasu, daleko, ktoś zawołał przeciągle, a z drugiego krańca niecki
 
 = zima
 # tlo: zima_przedzenie
+~ zapiski += uboze_2
 Zima przyszła w połowie listopada i została na długo. Śnieg zasypał drogę przez grzbiet po kolana, jezioro zamarzło tak, że chłopcy ślizgali się po nim aż pod sam bór, a tartak Urbaniaka stanął – wielkie koło obrosło lodem i przez trzy miesiące we wsi panowała cisza, jakiej Jaromir nie pamiętał od dzieciństwa.
 Wieczory spędzało się w chałupach. Kobiety przędły len przy kołowrotkach, aż furkot niósł się po izbie, a w lutym schodziły się na darcie pierza – po kilka sąsiadek przy jednym stole, nad koszem gęsiego puchu, który przy każdym otwarciu drzwi fruwał po kątach. Przy tej robocie opowiadało się historie – o strzygach, o płanetnikach, o pannie, która zatańczyła się na śmierć – a dziewczęta piszczały ze strachu i śmiały się na zmianę. Hanka przychodziła z matką i siadała zawsze tak, żeby widzieć Jaromira przez stół. # pokaz: pierze
 { uboze:
@@ -128,7 +129,7 @@ Franek długo kaszlał wodą. Trząsł się cały, zęby szczękały mu z zimna,
 }
 Chłopak pobladł jak ściana i odwrócił się do nich plecami.
 – Wiedziałem – powiedział głucho. – Od roku mi się śniła. Mokra, w tych koralach. Prosiła, żebym przyszedł zatańczyć.
-Do rana o wszystkim słyszała już cała wieś. Starzy kiwali głowami i powtarzali jedno słowo: rusałki. Dusze utopionych dziewcząt, które w Zielone Świątki wychodzą z wody, tańczą w księżycowym świetle i wciągają w toń tego, kto da się skusić.
+Do rana o wszystkim słyszała już cała wieś. Starzy kiwali głowami i powtarzali jedno słowo: rusałki. Dusze utopionych dziewcząt, które w Zielone Świątki wychodzą z wody, tańczą w księżycowym świetle i wciągają w toń tego, kto da się skusić. Z wody wychodzą tylko od Zielonych Świątek do świętego Jana, a przez resztę roku śpią w mule na dnie – dlatego w te tygodnie nikt rozsądny nie kąpie się po zmroku ani nie gwiżdże nad wodą.
 { ratunek_franka:
 - piolunem:
     Od tamtej nocy był nie swój. Wydawało się, że najgorsze minęło – znów pracował w polu, znów się śmiał – ale czasem, w środku rozmowy, milkł i nasłuchiwał czegoś, czego nikt inny nie słyszał.
@@ -145,6 +146,7 @@ Stary Staś martwił się o wnuka, ale Franek nie chciał rozmawiać ani z dziad
 
 = korale_rano
 # tlo: pomost_rano
+~ zapiski += rusalki_1
 Następnego ranka, kiedy mgła zeszła z jeziora, Jaromir znalazł na pomoście sznur korali z jarzębiny – mokrych, choć noc była ciepła, i czerwonych jak świeża krew. # pokaz: korale
 # pytanie: Co zrobi z koralami?
 *   [Zanieść je Wójcikowej.]

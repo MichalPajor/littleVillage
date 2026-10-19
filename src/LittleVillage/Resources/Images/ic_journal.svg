@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — zapiski / bestiariusz: otwarta księga z zakładką -->
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<g fill="none" stroke="#000000" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 13C19 9 12 9 6 11V38C12 36 19 36 24 40C29 36 36 36 42 38V11C36 9 29 9 24 13Z"/>
+<path d="M24 13V40"/>
+<path d="M11 18C14 17 17 17 20 18M11 24C14 23 17 23 20 24M28 18C31 17 34 17 37 18M28 24C31 23 34 23 37 24"/>
+<path d="M33 10V20L35.5 18L38 20V10"/>
+</g>
+</svg>

@@ -84,6 +84,9 @@ public sealed class GameSession(
     public IReadOnlyList<InventoryItem> GetInventory() =>
         IsInitialized && CurrentPage is not null ? engine.GetInventory() : [];
 
+    public IReadOnlyList<JournalEntry> GetJournal() =>
+        IsInitialized && CurrentPage is not null ? engine.GetJournal() : [];
+
     public async Task FinishAsync(CancellationToken cancellationToken = default)
     {
         CurrentPage = null;

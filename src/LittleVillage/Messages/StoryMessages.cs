@@ -10,3 +10,6 @@ public sealed record StoryChoiceSelectedMessage;
 
 /// <summary>Ekwipunek zmienił się po przejściu dalej — widok pokazuje „+ przedmiot” / „− przedmiot” przy tobołku.</summary>
 public sealed record InventoryChangedMessage(InventoryChange Change);
+
+/// <summary>W zapiskach pojawiła się nowa karta albo nowy wpis na istniejącej.</summary>
+public sealed record JournalChangedMessage(JournalChange Change);

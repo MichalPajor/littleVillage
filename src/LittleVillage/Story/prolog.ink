@@ -229,6 +229,7 @@ Tej nocy weszli do szałasu razem. Zwinął się w kłębek przy boku człowieka
 //  rozmowa z Andrzejem.
 // ------------------------------------------------------------
 === zgliszcza ===
+~ zapiski += stwor_1
 { chata_macka:
     - przy_lesie: # tlo: chata_las
     - przy_mokradlach: # tlo: chata_mokradla
@@ -306,6 +307,7 @@ Wtedy Maciek jeszcze raz, krok po kroku, odtworzył całą tamtą noc. # dalej
 // ------------------------------------------------------------
 === legenda ===
 # tlo: legenda
+~ zapiski += zielarka_1
 – Podobno wszystko zaczęło się tam, nad jeziorem, gdzie leżą te zwęglone bale. – Andrzej ściszył głos. – Mieszkała tam kiedyś kobieta. Zielarka. Ludzie chodzili do niej z bólem, chorobami i gorączką – była pomocna. Ale z czasem coś w nią weszło. Nie wiadomo dlaczego. Gadała po nocach, ale nie do siebie – do kogoś, kogo nikt nie widział. Mówiła, że umarli przychodzą do niej znad wody i opowiadają o strasznej przyszłości. Wkrótce wszyscy jej unikali, bo się bali.
 Potem we wsi działo się coraz gorzej. Mleko kwaśniało w wiadrach, małe dzieci budziły się z krzykiem, warzywa gniły w ziemi. Ginęły też zwierzęta – najpierw cielę, potem krowa, potem cały kurnik w jedną noc – ludzie powiedzieli, że to jej sprawka – zaczęli nazywać ją wiedźmą.
 Pewnej nocy kilku chłopów zebrało się pod jej chatą. Zabili drzwi deskami, kiedy spała, obłożyli ściany słomą i podpalili. # pokaz: chlopi, ogien

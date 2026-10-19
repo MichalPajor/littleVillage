@@ -57,7 +57,8 @@ Wszyscy rzucili się do ucieczki. Za plecami Jaromira coś chlupnęło – gło�
     Tej nocy dostał gorączki. Leżał trzy dni, a matka okładała mu czoło mokrymi szmatami i nie mogła zrozumieć, czemu w malignie woła o kapliczkę przy kładce. # dalej
     -> prawda
 *   [Biec dalej i nie oglądać się.]
-    Nie obejrzał się. Biegł, ściskając Hankę za rękę, aż do pierwszych płotów, a za nimi, od strony mokradeł, niósł się cichy chichot – taki, jakim śmieje się ktoś, kto dostał prezent. # pokaz: chichot
+    Nie obejrzał się. Biegł, ściskając Hankę za rękę, aż do pierwszych płotów, a za nimi, od strony mokradeł, niósł się cichy chichot – taki, jakim śmieje się ktoś, kto dostał prezent. Nad mokradłami zapaliło się kilka bladych ogników. – To ci, co spalili wiedźmę – wysapała któraś z bab. – Kto pójdzie za takim ognikiem, ten już nie wróci. # pokaz: chichot
+    ~ zapiski += ogniki_1
     { wstazka_marzanny:
         Następnego dnia Hanka chodziła z rozplecionym warkoczem i co chwila sięgała do niego dłonią, jakby czegoś szukała. # dalej
     - else:
@@ -75,7 +76,7 @@ Wszyscy rzucili się do ucieczki. Za plecami Jaromira coś chlupnęło – gło�
 Tej wiosny babka Marianna już nie wstała. Od Gromnicznej leżała na łóżku za piecem, coraz drobniejsza i lżejsza, jakby ziemia zabierała ją sobie po kawałku. Kiedy usłyszała o Marzannie, kazała zawołać wnuka.
 – Siądź – szepnęła. Ręka, którą chwyciła go za nadgarstek, była sucha i zimna jak liść. – Twój ojciec ci nie powie. On nie umie. Więc ja powiem, póki jeszcze mogę.
 I opowiedziała mu wszystko. O tym, jak dziadek Maciek znalazł w zgliszczach nad jeziorem nadpaloną figurkę i sprzedał ją w mieście staruszce w kapturze. O stworze, który kilka nocy później wyłamał drzwi ich chaty. O psie, który rzucił się na niego pierwszy, i o siekierze, która weszła w długie, kościste ramię. O tym, jak dziadek skonał na klepisku z głową na jej kolanach, a mały Dobrosław przesiedział całą noc pod podłogą, zaciskając dłonie na uszach.
-– To, co było w wodzie, to był on – powiedziała. – Nie umarł. Takie jak on nie umierają. Czekają.
+– To, co było w wodzie, to był on – powiedziała. – Nie umarł. Takie jak on nie umierają. Czekają. Kto utonie bez księdza, ten nie idzie ani do nieba, ani do piekła, tylko zostaje w wodzie. Starzy mówili, że na dnie trzyma dusze topielców pod glinianymi garnkami, odwróconymi do góry dnem, i liczy je co noc. A jak który garnek pęknie, dusza ulatuje bąblem na powierzchnię.
 Potem wskazała kąt za łóżkiem. Pod starą kapotą leżała siekiera o wytartym, ciemnym trzonku. Na ostrzu, choć wyczyszczonym do połysku, wciąż było widać rdzawe zacieki, jakby żelazo samo nie chciało zapomnieć. # pokaz: siekiera
 { krzesiwo_dziadka:
     ~ ekwipunek += krzesiwo
@@ -100,11 +101,13 @@ I opowiedział. O figurce, którą dziadek Maciek sprzedał w mieście staruszce
 # tlo: izba_wieczor
 Ojciec, kiedy usłyszał, co się stało nad rozlewiskiem, nie roześmiał się. Jaromir pierwszy raz widział, żeby historia o stworze nie wywołała na jego twarzy uśmiechu.
 – Twój dziadek opowiadał mi to samo – powiedział cicho, obracając w palcach kubek. – O ręce z wody. O głosie, który woła znad bagien. O zielarce spalonej w chacie nad jeziorem.{ pregi_na_lydkach: Pokazywał mi sine pręgi na łydkach, po pięć z każdej strony. Myślałem, że to od pijawek.} Śmiałem się. Myślałem, że chce mnie nastraszyć, żebym nie łaził sam nad wodę. – Zamilkł na długo. – A przed śmiercią ścisnął moją dłoń i szepnął: „Pilnuj kapliczek, Dobruś. To nie były bajki”.
+– Mówił też, że kto utonie bez księdza, zostaje w wodzie i trzyma tam dusze innych topielców pod glinianymi garnkami. Jak który garnek pęknie, dusza ulatuje bąblem na powierzchnię. – Ojciec odstawił kubek. – Pamiętasz te bąble przy kładce?
 – Obiecaj mi jedno – poprosił. – Że nigdy nie wejdziesz do boru. Choćby nie wiem kto cię wołał.
 -> obietnica
 
 = obietnica
 # pytanie: Czy Jaromir obieca?
+~ zapiski += (stwor_2, zielarka_2)
 *   [Obiecać.]
     ~ obietnica_bor = true
     – Obiecuję – powiedział Jaromir.

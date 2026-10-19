@@ -162,6 +162,7 @@ Wysoki starzec, o głowę wyższy od każdego z weselników, w kożuchu wywróco
 
 = pierwszy_ranek
 # tlo: pierwszy_ranek
+~ zapiski += starzec_2
 Obudził się o świcie, w nowej izbie, którą przez lato dobudował do ojcowskiej chałupy. Hanka spała obok, z rozrzuconymi na poduszce włosami{ ekwipunek ? krzyzyk: i z żelaznym krzyżykiem na szyi}. Przez szyby wpadało szare, zimne światło.
 Wyszedł przed dom. W nocy chwycił pierwszy przymrozek i całe podwórze było białe od szronu.
 Od strony boru szły przez pole ślady. Wielkie, szerokie jak dłoń dorosłego mężczyzny {szukanie_franka == na_skraju_boru:– te same, które widział tydzień temu pod kapotą Franka|{szukanie_franka == antek_sam:– takie, o jakich opowiadał mu Antek|– takich nie zostawia żaden zwykły wilk}}. Okrążały chałupę trzy razy i zatrzymywały się pod oknem nowej izby. W tym miejscu szron był stopiony do gołej ziemi, jakby coś ciepłego leżało tam przez całą noc i patrzyło w szybę. Potem ślady wracały prosto do lasu. # pokaz: tropy
@@ -174,5 +175,6 @@ Kiedy wrócił do środka, Hanka siedziała na łóżku, otulona pierzyną.
 // Koniec rozdziału dziewiątego — dalej rozdział dziesiąty.
 === rozdzial_dziewiaty_ciag_dalszy ===
 # ozdobnik
+~ zapiski += tropy_1
 _Koniec rozdziału dziewiątego._ # dalej
 -> rozdzial_dziesiaty

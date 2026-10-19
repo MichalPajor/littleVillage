@@ -42,7 +42,7 @@ Jaromirowi przypomniały się piątkowe opowieści pana Ignacego i zrobiło mu s
 *   [Zapytać Hankę – zna babcine sposoby na wszystko.]
     ~ rada_jaromira = hanka
     Hanka wysłuchała go, marszcząc brwi, i długo milczała. # pokaz: hanka
-    – Babka mówiła, że to północnica – odezwała się w końcu. – Przychodzi do maleńkich, bo te nie umieją się bronić. Boi się żelaza. Pod poduszkę w kołysce wsuwa się nóż, nożyce, choćby gwóźdź. – Zawahała się. – Tylko podobno robi się to dopiero wtedy, kiedy ona już pochyla się nad dzieckiem. Wcześniej nie podejdzie. # dalej
+    – Babka mówiła, że to północnica – odezwała się w końcu. – Dusza matki, która umarła przy porodzie, zanim ksiądz zdążył ją wywieść. Swojego dziecka nie utuliła, więc chodzi do cudzych. Przychodzi do maleńkich, bo te nie umieją się bronić. Boi się żelaza. Pod poduszkę w kołysce wsuwa się nóż, nożyce, choćby gwóźdź. – Zawahała się. – Tylko podobno robi się to dopiero wtedy, kiedy ona już pochyla się nad dzieckiem. Wcześniej nie podejdzie. # dalej
     -> wigilia
 *   { ekwipunek ? ksiega } [Zajrzeć do księgi pana Ignacego.]
     ~ rada_jaromira = ksiega_rada
@@ -62,6 +62,7 @@ Jaromirowi przypomniały się piątkowe opowieści pana Ignacego i zrobiło mu s
 
 = wigilia
 # tlo: wigilia
+~ zapiski += polnocnica_1
 { ekwipunek ? ksiega:
     ~ ksiega_zatrzymana = true
     W ostatni dzień przed świętami Jaromir przyniósł do szkoły księgę, owiniętą w lnianą chustkę. Pan Ignacy wziął ją, zważył w dłoniach i oddał. – Zatrzymaj ją – powiedział. – Coś mi mówi, że tobie przyda się bardziej niż mnie. Tylko pamiętaj: nie po zmroku.
@@ -83,7 +84,7 @@ Na progu stał dziad – zgarbiony, w łachmanach przewiązanych sznurkiem, z to
     Dziad usiadł przy pustym nakryciu i jadł niewiele, za to powoli, jakby każdą łyżkę chciał zapamiętać. Potem zdjął z pleców lirę i zaśpiewał starą pieśń o duszach, które w tę jedną noc wracają do swoich chałup i grzeją ręce przy cudzym ogniu. Matka ocierała oczy fartuchem. # pokaz: lira
     Wychodząc, przystanął obok Jaromira i pochylił się nad nim tak nisko, że w nos uderzył go zapach dymu i mrozu.
     – Pachniesz lasem, chłopcze – szepnął. – Jak przyjdzie do maleńkiej, nie odzywaj się do niej. Ani słowem.
-    Zanim ktokolwiek zdążył zapytać, o co mu chodzi, był już za progiem. Noc była jasna od śniegu, a jednak nikt nie zobaczył, w którą stronę odszedł. # pokaz: odszedl # dalej
+    Zanim ktokolwiek zdążył zapytać, o co mu chodzi, był już za progiem. Noc była jasna od śniegu, a jednak nikt nie zobaczył, w którą stronę odszedł. – W Wigilię nie odprawia się dziadów od progu – szepnęła matka, zasuwając rygiel. – Nigdy nie wiadomo, kto przyszedł. Czasem to dusza kogoś z rodziny wraca w przebraniu, żeby zobaczyć, czy jeszcze ją pamiętają. # pokaz: odszedl # dalej
     -> po_wieczerzy
 *   [Nic nie mówić – starzec budzi w nim lęk.]
     Jaromir spuścił wzrok. Drzwi zamknęły się powoli i szczęknął rygiel. Dziad nie zapukał drugi raz. # pokaz: rygiel
@@ -91,6 +92,7 @@ Na progu stał dziad – zgarbiony, w łachmanach przewiązanych sznurkiem, z to
     -> po_wieczerzy
 
 = po_wieczerzy
+~ zapiski += dziad_1
 { los_psa == oswojony: -> wigilijny_szczeniak | -> noc_w_sniegu }
 
 = wigilijny_szczeniak
@@ -182,6 +184,7 @@ Antek wbił Jaromirowi paznokcie w ramię tak mocno, że ten omal nie krzyknął
     -> boze_narodzenie
 
 = boze_narodzenie
+~ zapiski += polnocnica_2
 // Mak był potrzebny tylko na tę jedną noc.
 ~ ekwipunek -= mak
 # tlo: koledy

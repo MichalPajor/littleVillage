@@ -68,3 +68,18 @@ public sealed record StoryPage(
 /// <param name="Name">Nazwa wyświetlana.</param>
 /// <param name="Description">Opis (opcjonalny).</param>
 public sealed record InventoryItem(string Id, string Name, string? Description);
+
+/// <summary>Karta w zapiskach (bestiariuszu): jedna istota i odsłonięte dotąd wpisy o niej.</summary>
+/// <param name="Id">Klucz istoty, np. <c>licho</c> (z elementów listy ink <c>licho_1</c>, <c>licho_2</c>…).</param>
+/// <param name="Title">Tytuł z najnowszego wpisu — karta może zmienić nazwę, gdy bohater dowie się więcej.</param>
+/// <param name="Notes">Treść kolejnych wpisów, od najstarszego.</param>
+/// <param name="NoteIds">Elementy listy ink odpowiadające wpisom.</param>
+public sealed record JournalEntry(string Id, string Title, IReadOnlyList<string> Notes, IReadOnlyList<string> NoteIds)
+{
+    /// <summary>Klucz istoty z nazwy wpisu: <c>licho_2</c> → <c>licho</c>.</summary>
+    public static string CardOf(string noteId)
+    {
+        var cut = noteId.LastIndexOf('_');
+        return cut > 0 && cut < noteId.Length - 1 && noteId[(cut + 1)..].All(char.IsDigit) ? noteId[..cut] : noteId;
+    }
+}

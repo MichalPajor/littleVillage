@@ -27,4 +27,7 @@ public interface IStoryEngine
 
     /// <summary>Zwraca bieżący ekwipunek gracza.</summary>
     IReadOnlyList<InventoryItem> GetInventory();
+
+    /// <summary>Zwraca karty zapisków (bestiariusza) z wpisami odsłoniętymi dotąd przez fabułę.</summary>
+    IReadOnlyList<JournalEntry> GetJournal();
 }

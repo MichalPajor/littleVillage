@@ -27,7 +27,7 @@ Hanka zaczerwieniła się po same uszy, a Jaromir dopiero w drodze powrotnej zro
 Od tamtej pory cała Zapadlina wiedziała, że u Jaromira będzie dziecko, i każda kobieta we wsi miała dla Hanki dobrą radę. Nie wolno jej było patrzeć na pożar, bo maleństwo urodzi się z czerwonym znamieniem. Nie wolno przechodzić pod sznurem do bielizny, bo pępowina owinie się wokół szyi. Nie wolno siadać na progu ani pożyczać nikomu ognia.
 Hanka śmiała się z tego wszystkiego, ale słuchała.
 Najwięcej jednak mówiła jej babka. Zawsze ta sama, w kółko, aż Jaromir znał ją na pamięć:
-– Jak się dziecko urodzi, nie zostawiajcie go samego ani na chwilę. Ani w dzień, ani w nocy. Póki nie będzie ochrzczone, to nie wasze jeszcze, tylko niczyje. Nad jeziorem mieszkają mamuny. Rodzą dzieci brzydkie i chorowite, więc kradną ludziom zdrowe, a w kołysce podrzucają swoje.
+– Jak się dziecko urodzi, nie zostawiajcie go samego ani na chwilę. Ani w dzień, ani w nocy. Póki nie będzie ochrzczone, to nie wasze jeszcze, tylko niczyje. Nad jeziorem mieszkają mamuny. Rodzą dzieci brzydkie i chorowite, więc kradną ludziom zdrowe, a w kołysce podrzucają swoje. – Wiesz, co one piorą po nocach? – dodawała zawsze na koniec. – Całuny. Dla tych, którzy umrą we wsi przed następną wiosną. Kto policzy uderzenia, ten będzie wiedział, ile będzie pogrzebów – ale lepiej nie liczyć.
 { korale_kaski == zatrzymane:
     ~ ekwipunek -= korale
     Tej wiosny Hanka znalazła pod siennikiem szmatkę z koralami Kaśki. Była tak mokra, że ociekała wodą. Jaromir bez słowa zaniósł korale nad jezioro i cisnął je jak najdalej od brzegu. Tej nocy pierwszy raz od lat spał spokojnie. # pokaz: korale
@@ -47,6 +47,7 @@ Dali jej na imię Maria – Marysia – po prababce Mariannie, żonie dziadka Ma
 
 = kolyska
 # tlo: izba_kolyska
+~ zapiski += mamuny_1
 Chrzest wyznaczono na niedzielę. Do tego czasu zostały trzy noce.
 Jaromir sam zbił kołyskę z jesionowych desek i postawił ją przy łóżku, tak blisko, żeby Hanka mogła sięgnąć ręką. Pachniała jeszcze świeżym drewnem, a Marysia cmokała przez sen i zaciskała piąstki na rąbku pieluszki. Babka obeszła izbę dokoła, mamrocząc pod nosem, posypała próg solą i kazała zabezpieczyć dziecko.
 – Jednym sposobem, a porządnie – powiedziała. – Mamuny są sprytne. Jak tylko będzie możliwość, to znajdą szparę.
@@ -117,6 +118,7 @@ W niedzielę ochrzcili Marysię w kościółku w Bukowcu. W środku pachniało k
 
 = odmieniec
 # tlo: odmieniec
+~ zapiski += odmieniec_1
 Dziecko w kołysce wyglądało jak Marysia, ale nie było nią.
 Było cięższe, niż powinno, i zimne w dotyku, choć było przykryte pierzyną. Skóra na plecach marszczyła się i łuszczyła jak kora. Nie płakało – tylko bez ustanku jadło. Hanka karmiła je, aż słaniała się ze zmęczenia, a ono potem leżało cicho i patrzyło w powałę oczami ciemniejszymi niż oczy jakiegokolwiek dziecka. Czasem, kiedy myślało, że nikt nie patrzy, uśmiechało się jak stara kobieta. # pokaz: oczy
 Babka obejrzała je tylko raz i odsunęła się od kołyski.
@@ -212,6 +214,7 @@ A kiedy spadł pierwszy śnieg, od boru zaczęło dochodzić wycie. Tym razem wy
 // Koniec rozdziału dziesiątego — rozdział jedenasty (Obława) do napisania.
 === rozdzial_dziesiaty_ciag_dalszy ===
 # ozdobnik
+~ zapiski += mamuny_2
 _Koniec rozdziału dziesiątego._ # dalej
 -> rozdzial_jedenasty_wkrotce
 

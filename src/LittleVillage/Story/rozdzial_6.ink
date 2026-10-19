@@ -16,7 +16,7 @@ Hanka pracowała na sąsiednim zagonie. Co jakiś czas prostowała się, ociera�
 { figurka_u_staruchy:
     Ojciec prawie się nie odzywał. W samo południe zawsze kazał wszystkim zejść z pola, w cień, choćby żyto miało się osypać.
 - else:
-    Ojciec żartował i śpiewał przy robocie, ale w samo południe zawsze kazał wszystkim zejść z pola, w cień. – Dziadek tak robił – mówił – i jego dziadek też. Nie ja to wymyśliłem.
+    Ojciec żartował i śpiewał przy robocie, ale w samo południe zawsze kazał wszystkim zejść z pola, w cień. – Dziadek tak robił – mówił – i jego dziadek też. Nie ja to wymyśliłem. – A kiedy dzieci dopytywały, opowiadał o dziewusze, najlepszej żniwiarce w okolicy, która założyła się z parobkami, że sama zeżnie cały łan do południa. Nie zeszła z pola w największy skwar. Znaleźli ją wieczorem z sierpem w ręku i z kłosami we włosach.
 }
 Któregoś dnia Jaromir został sam na końcu zagonu. Chciał dokończyć pokos, zanim zejdzie do cienia, i nie zauważył, kiedy reszta odeszła pod gruszę na miedzy. Słońce stanęło dokładnie nad jego głową, a jego cień skurczył się i zniknął pod stopami. # pokaz: sam # dalej
 -> poludnica_przychodzi
@@ -122,6 +122,7 @@ Kiedy wreszcie wstał, na ramieniu została mu cienka, biała blizna w kształci
 
 = po_poludniu
 # tlo: czerwony_ksiezyc
+~ zapiski += poludnica_1
 ~ mak_w_medaliku = true
 Żeńcom nie powiedział, co się stało w samo południe. Tylko wieczorem, kiedy siedzieli z Hanką na płocie i patrzyli, jak nad ścierniskiem wschodzi wielki, czerwony księżyc, wyjął z kieszeni zasuszony mak z wianka i położył jej na dłoni. # pokaz: mak
 Od ścierniska ciągnęło kurzem i wypalonym słońcem, świerszcze grały jak oszalałe, a Hanka siedziała tak blisko, że czuł przez koszulę ciepło jej ramienia.
@@ -150,5 +151,6 @@ Hanka nie zrozumiała, ale schowała mak do medalika, który nosiła na szyi, i 
 // Koniec rozdziału szóstego — dalej rozdział siódmy.
 === rozdzial_szosty_ciag_dalszy ===
 # ozdobnik
+~ zapiski += pan_lasu_3
 _Koniec rozdziału szóstego._ # dalej
 -> rozdzial_siodmy

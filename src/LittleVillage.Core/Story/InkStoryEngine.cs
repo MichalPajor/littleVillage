@@ -79,6 +79,31 @@ public sealed class InkStoryEngine(InkStoryOptions options) : IStoryEngine
             .ToArray();
     }
 
+    public IReadOnlyList<JournalEntry> GetJournal()
+    {
+        if (Story.variablesState[options.JournalVariable] is not InkList notes)
+        {
+            return [];
+        }
+
+        return notes
+            .OrderBy(entry => entry.Value)
+            .ThenBy(entry => entry.Key.itemName, StringComparer.Ordinal)
+            .GroupBy(entry => JournalEntry.CardOf(entry.Key.itemName))
+            .Select(card =>
+            {
+                var items = card.ToArray();
+                var latest = items[^1];
+                var title = EvaluateText(options.JournalTitleFunction, new InkList { [latest.Key] = latest.Value }) ?? card.Key.Replace('_', ' ');
+                var texts = items
+                    .Select(item => EvaluateText(options.JournalTextFunction, new InkList { [item.Key] = item.Value }))
+                    .OfType<string>()
+                    .ToArray();
+                return new JournalEntry(card.Key, title, texts, items.Select(item => item.Key.itemName).ToArray());
+            })
+            .ToArray();
+    }
+
     private StoryPage BuildPage()
     {
         var startBackground = _currentBackground;

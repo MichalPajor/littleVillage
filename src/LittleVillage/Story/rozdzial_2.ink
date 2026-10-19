@@ -82,6 +82,7 @@ Cała izba ryknęła śmiechem. Nauczyciel zawtórował dzieciom, nasunął okul
 
 = sosna_spirala
 # tlo: sosna_spirala
+~ zapiski += pan_lasu_1
 W drodze powrotnej, na skraju lasu, Hanka nagle się zatrzymała.
 – Patrzcie.
 Na grubej sośnie, tuż przy ścieżce, kora była zdarta. Nie zwyczajnie, jak drą ją jelenie albo dziki, ale równiutko, wąskim pasem, który owijał pień w spiralę od samej ziemi aż po pierwsze gałęzie. Spod niej wyzierało jasne, wilgotne drewno, a w kilku miejscach spływały po nim krople świeżej żywicy, gęste i lśniące jak łzy.
@@ -150,9 +151,12 @@ Wyjął z szuflady gruby zeszyt oprawny w skórę i położył go na biurku. Na 
 
 = pierwszy_snieg
 # tlo: pierwszy_snieg
-Przyszedł listopad. Dni stały się krótkie i szare, a wieczory długie. Pod butami chlupotało błoto zmieszane z liśćmi, wiatr szarpał gołe gałęzie, a z lasu ciągnęło wilgocią i zgnilizną. Chłopiec wracał ze szkoły już po zmroku i całą drogę przez skraj boru szedł z oczami wbitymi w ścieżkę, licząc kroki, żeby nie słyszeć, czy w lesie ktoś liczy razem z nim.
+{ poszedl_po_wstazke || (ekwipunek ? ksiega):
+    ~ zapiski += starzec_1
+}
+Przyszedł listopad. Dni stały się krótkie i szare, a wieczory długie. Pod butami chlupotało błoto zmieszane z liśćmi, wiatr szarpał gołe gałęzie, a wszystko dookoła pachniało wilgocią i zgnilizną. Chłopiec wracał ze szkoły już po zmroku i całą drogę przez skraj boru szedł z oczami wbitymi w ścieżkę, licząc kroki, żeby nie słyszeć, czy w lesie ktoś liczy razem z nim.
 { ekwipunek ? ksiega:
-    Nocami, kiedy w domu wszyscy już spali, wyciągał spod siennika księgę pana Ignacego i czytał ją przy blasku żarzących się w piecu węgli, choć wiedział, że wolno po nią sięgać tylko za dnia. Były tam podania o południcach, które w największy skwar zadają zagadki żniwiarzom, o północnicach, które dręczą niemowlęta, o rusałkach i strzygach. A pośród gęsto zapisanych kartek ktoś narysował starca w ubraniu wywróconym na lewą stronę.
+    Nocami, kiedy w domu wszyscy już spali, wyciągał spod siennika księgę pana Ignacego i czytał ją przy blasku żarzących się w piecu węgli, choć wiedział, że wolno po nią sięgać tylko za dnia. Były tam podania o południcach, które w największy skwar zadają zagadki żniwiarzom, o północnicach, które dręczą niemowlęta, o rusałkach i strzygach. A pośród gęsto zapisanych kartek ktoś narysował starca w ubraniu wywróconym na lewą stronę. Pod rysunkiem stało: „Kto go spotka, niech zrobi tak samo jak on. Tamten przychodzi z drugiej strony, gdzie wszystko jest odwrotnie”.
 }
 { figurka_u_staruchy:
     Ojciec coraz częściej siadywał wieczorami na progu i patrzył na bór. Kiedy pewnego razu syn zapytał go, czy wierzy w Pana Lasu, ten odwrócił się do niego tak gwałtownie, że chłopak cofnął się o krok. Ale nic nie powiedział. Wstał, sprawdził rygiel w drzwiach i poszedł spać.
