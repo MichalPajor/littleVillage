@@ -159,7 +159,7 @@ Na stole, pod lnianą ściereczką, leżał bochenek. Ostatni – następny matk
 = kapliczki_pod_borem
 # tlo: kapliczki_wykop
 Pod koniec sierpnia Urbaniak postanowił, że nie będzie czekał na deszcz. Skoro piła stoi, a struga nie spławi drewna, pnie trzeba wozić wozami do Bukowca – a wozy z długimi kłodami nie mieściły się na zakrętach drogi pod borem. Tam, na każdym z nich, stała kapliczka.
-Jego ludzie przyszli z łopatami w poniedziałek rano. Wykopywali słupy, ściągali daszki, a święte figurki wrzucali na wóz jak kłody. Kobiety wyglądały zza płotów i płakały, starzy pomstowali – ale kiedy Urbaniak zawołał, że za dzień roboty płaci srebrem, od ręki, kilku chłopów z Zapadliny wzięło łopaty i przyłączyło się do jego ludzi. Głód był silniejszy niż strach. # pokaz: kopacze
+Jego ludzie przyszli z łopatami w poniedziałek rano. Wykopywali słupy, ściągali daszki, a święte figurki wrzucali na wóz jak drewno na opał. Kobiety wyglądały zza płotów i płakały, starzy pomstowali – ale kiedy Urbaniak zawołał, że za dzień roboty płaci srebrem, od ręki, kilku chłopów z Zapadliny wzięło łopaty i przyłączyło się do jego ludzi. Głód był silniejszy niż strach. # pokaz: kopacze
 { kapliczka_podniesiona:
     Na samym skraju boru stała ta, którą Jaromir z Antkiem podnieśli dwa lata temu z błota.
 }
