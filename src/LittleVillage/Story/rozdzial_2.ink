@@ -127,11 +127,12 @@ Następnego ranka, kiedy chłopiec wyszedł na podwórze, zobaczył ją na płoc
 
 = rozmowa_ksiega
 # tlo: szkola_ksiega
-Przez kilka dni nosił w sobie to, co się stało. Uwierało go jak kamień w bucie. W końcu, w piątek po lekcjach, kiedy reszta wybiegła już na podwórze, został w izbie i stanął przy biurku pana Ignacego.
+Przez kilka dni nosił w sobie to, co się stało. Uwierało go jak kamień w bucie. W końcu, w piątek po lekcjach, kiedy reszta wybiegła już na podwórze, został w izbie i stanął przy biurku pana Ignacego. Pachniało tu kredą, mokrymi kożuchami i dymem z żelaznego piecyka, który pykał cicho w kącie.
 Opowiedział mu wszystko – o liczeniu we mgle, o spirali na sośnie, {poszedl_po_wstazke:o starcu w kożuchu wywróconym na lewą stronę|o wstążce, która sama wróciła na płot}. Spodziewał się, że nauczyciel się roześmieje, tak jak w piątek cała klasa. Ale on słuchał w milczeniu, a z każdym zdaniem jego twarz stawała się coraz poważniejsza.
 { ekwipunek ? kora:
     Kiedy Jaromir wyjął z torby kawałek kory, pan Ignacy długo oglądał wyryte na niej znaki. Potem sięgnął do biurka i porównał je z rysunkiem w swoich notatkach. Ręce mu drżały. # pokaz: kora
 }
+Pan Ignacy zdjął okulary i przetarł je powoli rąbkiem kamizelki – zawsze tak robił, kiedy coś go poruszyło.
 – Nikomu o tym nie mów – powiedział w końcu. – A już na pewno nie dorosłym. Nie uwierzą, wyśmieją cię, a ty nauczysz się, że w takich sprawach lepiej milczeć. A tak być nie powinno.
 Wyjął z szuflady gruby zeszyt oprawny w skórę i położył go na biurku. Na pierwszej stronie, starannym, pochyłym pismem, wypisane było: „Opowiadania z okolic Bukowego Grzbietu, spisane przez Ignacego Zawadę”. Jaromir przyglądał się temu napisowi z zaciekawieniem, ale i z lękiem. # pokaz: ksiega
 – Zamieściłem w tej księdze wszystkie historie usłyszane od mieszkańców tych terenów… Jest w niej wyjaśnione to, co widziałeś. Można ją czytać tylko w dzień.
@@ -149,7 +150,7 @@ Wyjął z szuflady gruby zeszyt oprawny w skórę i położył go na biurku. Na 
 
 = pierwszy_snieg
 # tlo: pierwszy_snieg
-Przyszedł listopad. Dni stały się krótkie i szare, a wieczory długie. Chłopiec wracał ze szkoły już po zmroku i całą drogę przez skraj boru szedł z oczami wbitymi w ścieżkę, licząc kroki, żeby nie słyszeć, czy w lesie ktoś liczy razem z nim.
+Przyszedł listopad. Dni stały się krótkie i szare, a wieczory długie. Pod butami chlupotało błoto zmieszane z liśćmi, wiatr szarpał gołe gałęzie, a z lasu ciągnęło wilgocią i zgnilizną. Chłopiec wracał ze szkoły już po zmroku i całą drogę przez skraj boru szedł z oczami wbitymi w ścieżkę, licząc kroki, żeby nie słyszeć, czy w lesie ktoś liczy razem z nim.
 { ekwipunek ? ksiega:
     Nocami, kiedy w domu wszyscy już spali, wyciągał spod siennika księgę pana Ignacego i czytał ją przy blasku żarzących się w piecu węgli, choć wiedział, że wolno po nią sięgać tylko za dnia. Były tam podania o południcach, które w największy skwar zadają zagadki żniwiarzom, o północnicach, które dręczą niemowlęta, o rusałkach i strzygach. A pośród gęsto zapisanych kartek ktoś narysował starca w ubraniu wywróconym na lewą stronę.
 }
@@ -160,7 +161,7 @@ Przyszedł listopad. Dni stały się krótkie i szare, a wieczory długie. Chło
 }
 W nocy z niedzieli na poniedziałek spadł pierwszy śnieg. Jaromir obudził się przed świtem, bo w izbie zrobiło się dziwnie jasno, i podszedł do okna. # pokaz: snieg
 Świat był biały i cichy. Puch leżał na płocie, na dachu stodoły, na gałęziach jabłoni. Tylko od strony boru, przez całe podwórze, aż pod samo okno, ciągnął się rząd śladów. Długich, wąskich. Dochodziły pod ścianę, zatrzymywały się tuż pod parapetem i zawracały. # pokaz: slady
-Chłopak pomyślał, że zostawił je pewnie jakiś jeleń szukający jedzenia. # dalej
+Chłopak pomyślał, że zostawił je pewnie jakiś jeleń szukający jedzenia. Długo jednak stał przy zimnej szybie, aż palce zdrętwiały mu na parapecie, i nie umiał się zmusić, żeby wrócić pod pierzynę. # dalej
 -> rozdzial_drugi_ciag_dalszy
 
 

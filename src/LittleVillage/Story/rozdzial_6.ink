@@ -11,7 +11,7 @@
 # rozdzial: Rozdział szósty
 # tytul: Samo południe
 Żniwa przyszły w upale, jakiego najstarsi ludzie nie pamiętali. Od kilku tygodni nie spadła ani kropla deszczu, niebo bielało od żaru już o świcie, a ziemia na miedzach pękała w długie, kręte szczeliny. Zboże dojrzało nagle, w kilka dni, i stało teraz na polach złote i suche, szeleszcząc przy każdym podmuchu jak papier.
-Wychodzili w pole, zanim zapiały koguty. Mężczyźni szli przodem, kobiety za nimi wiązały snopy, a dzieci zbierały pokłosie i nosiły wodę w glinianych dzbankach. Jaromir miał trzynaście lat i pierwszy raz kosił razem z dorosłymi – w rzędzie, krok w krok za ojcem, a ostrze w jego rękach świstało prawie tak równo jak u starych żeńców.
+Wychodzili w pole, zanim zapiały koguty. Mężczyźni szli przodem, kobiety za nimi wiązały snopy, a dzieci zbierały pokłosie i nosiły wodę w glinianych dzbankach. Jaromir miał trzynaście lat i pierwszy raz kosił razem z dorosłymi – w rzędzie, krok w krok za ojcem, a ostrze w jego rękach świstało prawie tak równo jak u starych żeńców. Powietrze pachniało rozgrzaną słomą i potem, kosy dzwoniły o osełki, a spod nóg co chwila wyfruwały spłoszone przepiórki.
 Hanka pracowała na sąsiednim zagonie. Co jakiś czas prostowała się, ocierała czoło wierzchem dłoni i zerkała w jego stronę, a kiedy ich spojrzenia się spotykały, natychmiast odwracała głowę i z udawanym zapałem wracała do snopów. Jaromir nie wiedział, czemu za każdym razem robi mu się wtedy tak dziwnie gorąco – i to nie od słońca. # pokaz: hanka
 { figurka_u_staruchy:
     Ojciec prawie się nie odzywał. W samo południe zawsze kazał wszystkim zejść z pola, w cień, choćby żyto miało się osypać.
@@ -124,6 +124,7 @@ Kiedy wreszcie wstał, na ramieniu została mu cienka, biała blizna w kształci
 # tlo: czerwony_ksiezyc
 ~ mak_w_medaliku = true
 Żeńcom nie powiedział, co się stało w samo południe. Tylko wieczorem, kiedy siedzieli z Hanką na płocie i patrzyli, jak nad ścierniskiem wschodzi wielki, czerwony księżyc, wyjął z kieszeni zasuszony mak z wianka i położył jej na dłoni. # pokaz: mak
+Od ścierniska ciągnęło kurzem i wypalonym słońcem, świerszcze grały jak oszalałe, a Hanka siedziała tak blisko, że czuł przez koszulę ciepło jej ramienia.
 – Od kogo to? – zapytała.
 – Od kogoś, kto kazał pilnować kapliczek – powiedział.
 Hanka nie zrozumiała, ale schowała mak do medalika, który nosiła na szyi, i nie wyjęła go już nigdy.
@@ -142,7 +143,7 @@ Hanka nie zrozumiała, ale schowała mak do medalika, który nosiła na szyi, i 
     -> rozdzial_szosty_ciag_dalszy
 *   [Zachować to dla siebie.]
     # tlo: kapliczki_noc
-    Jaromir nie powiedział nikomu. Każdej nocy, gdy wszyscy zasnęli, wymykał się z chałupy i obchodził najbliższe kapliczki. Poprawiał przekrzywione daszki, wyrywał chwasty, które oplatały słupy, i zawsze miał wrażenie, że z ciemnego boru ktoś na niego patrzy – cierpliwie, bez pośpiechu, jakby czekał. # pokaz: jaromir # dalej
+    Jaromir nie powiedział nikomu. Każdej nocy, gdy wszyscy zasnęli, wymykał się z chałupy i obchodził najbliższe kapliczki. Poprawiał przekrzywione daszki, wyrywał chwasty, które oplatały słupy, i zawsze miał wrażenie, że z ciemnego boru ktoś na niego patrzy – cierpliwie, bez pośpiechu, jakby czekał. Wracał przemarznięty, z nogawkami mokrymi od rosy, i długo nie mógł zasnąć, wsłuchany w każdy szelest za oknem. # pokaz: jaromir # dalej
     -> rozdzial_szosty_ciag_dalszy
 
 

@@ -33,6 +33,7 @@ Antek coraz częściej zostawał w tyle. W październiku urodziła mu się siost
     Na przerwie, gdy reszta obrzucała się śnieżkami pod kościółkiem, Hanka przyprowadziła do Jaromira Antka niemal siłą. Chłopiec nie odzywał się do niego od dnia, w którym Bartek roztrzaskał mu tabliczkę, i teraz też patrzył gdzieś w bok. # pokaz: hanka
 }
 – Coś przychodzi do Zosi – powiedział cicho. – Po północy. Unosi się nad kołyską, wysokie, owinięte w coś jak całun, a czarne włosy sięgają mu do samej podłogi. Twarz ma jak trupia czaszka, a palce długie i cienkie jak patyki. Pochyla się nad nią i… i wtedy ona nie płacze. Tylko świszcze, jakby nie mogła złapać tchu. A rano jest biała jak ściana i nie chce jeść.
+Mówił szybko, połykając słowa, i co chwilę oglądał się przez ramię. Śnieżka, którą przez cały czas ugniatał w dłoniach, rozsypała mu się między palcami.
 – Mówiłeś mamie?
 – Mówi, że mi się śni. Że jestem zmęczony. – Antek przełknął ślinę. – Ale ja nie śpię. Ja to widzę co noc.
 Jaromirowi przypomniały się piątkowe opowieści pana Ignacego i zrobiło mu się zimno, choć słońce odbijało się od śniegu tak jasno, że bolały oczy.
@@ -197,7 +198,7 @@ Antek wbił Jaromirowi paznokcie w ramię tak mocno, że ten omal nie krzyknął
 - else:
     Od tamtej nocy Antek nie zostawał już w tyle. Do szkoły chodził odtąd obok Jaromira, a kiedy ktoś pytał, czemu tak się go trzyma, wzruszał tylko ramionami i uśmiechał się pod nosem.
 }
-Przyszły święta, kolędnicy z gwiazdą i turoniem, kulig po zamarzniętym jeziorze. Jaromir śmiał się razem z innymi, ale nocami, zanim zasnął, wsłuchiwał się w ciszę za oknem. # pokaz: kulig
+Przyszły święta. Kolędnicy chodzili od chałupy do chałupy z papierową gwiazdą, która kręciła się na kiju, a turoń kłapał drewnianą paszczą, aż dziewczęta piszczały. Na kulig po zamarzniętym jeziorze Staś zaprzągł dwa konie; sanie sunęły tak szybko, że mróz szczypał w policzki, dzwonki brzęczały, a spod płóz pryskał śnieg. Jaromir śmiał się razem z innymi, ale nocami, zanim zasnął, wsłuchiwał się w ciszę za oknem. # pokaz: kulig
 Kiedy opowiedział o wszystkim Hance, dziewczynka spoważniała i długo milczała. # pokaz: hanka
 – Babka mówi, że północnica nigdy nie przychodzi sama z siebie – powiedziała w końcu. – Ktoś musi jej wskazać drogę. # dalej
 -> rozdzial_trzeci_ciag_dalszy

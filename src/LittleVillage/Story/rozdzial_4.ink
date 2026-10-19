@@ -37,8 +37,9 @@ Potem dziewczynka sięgnęła do warkocza i zaczęła rozwiązywać czerwoną ws
 Ruszyli po południu. Na przedzie Franek niósł Marzannę na kiju, wysoko, żeby wszyscy widzieli, za nim szły dzieci z całej wsi, a na końcu kilka bab, które udawały, że idą tylko popatrzeć. Śpiewali, ile sił w płucach:
 „Marzanno, Marzanno, zimowa panienko,
 idź w wodę głęboką, nie wracaj nam prędko!”
+Śnieg chlupał pod łapciami, z dachów kapało, a w powietrzu, pierwszy raz od miesięcy, pachniało mokrą ziemią.
 Po drodze co chwila ktoś szarpał kukłę za słomę albo smagał ją rózgą, bo tak trzeba było – zima nie mogła odejść w spokoju.
-Przyszli nad rozlewisko przy kładce. Lód stopniał tam już niemal całkiem, tylko przy brzegach trzymała się szara, dziurawa skorupa, a pośrodku stała czarna woda, gładka jak szkło. Franek zamachnął się i z całej siły cisnął Marzannę daleko przed siebie. # pokaz: rzut
+Przyszli nad rozlewisko przy kładce. Lód stopniał tam już niemal całkiem, tylko przy brzegach trzymała się szara, dziurawa skorupa, a pośrodku stała czarna woda, gładka jak szkło. Hanka trzymała Jaromira za rękaw lodowatymi palcami, a on czuł, jak serce tłucze mu się aż w gardle. Franek zamachnął się i z całej siły cisnął Marzannę daleko przed siebie. # pokaz: rzut
 Kukła plasnęła o taflę i zakołysała się. Przez chwilę unosiła się na powierzchni, a słomiana spódnica rozłożyła się wokół niej jak kwiat. Potem – nagle, jednym ruchem – poszła pod wodę. Nie tak, jak tonie rzecz, która nasiąkła. Tak, jakby ktoś szarpnął ją od spodu. # pokaz: tonie
 Dzieci ucichły. W miejscu, gdzie zniknęła, pękło kilka wielkich, leniwych bąbli i rozeszły się kręgi.
 – Teraz w nogi – szepnęła Hanka. – I nie oglądać się!
@@ -128,7 +129,7 @@ Marianna zmarła kilka dni później, w Wielki Czwartek. Prosiła, żeby pochowa
 
 = kapliczka
 # tlo: kapliczka_przewrocona
-Po Wielkanocy ziemia obeschła, a na miedzach zażółciły się pierwsze kaczeńce. Któregoś popołudnia, wracając ze szkoły ścieżką pod borem, Jaromir i Antek{ ekwipunek ? szczeniak: – i {imie_psa}, który odtąd wszędzie za nim chodził –} zobaczyli, że kapliczka na skraju lasu leży w trawie.
+Po Wielkanocy ziemia obeschła, a na miedzach zażółciły się pierwsze kaczeńce. Któregoś popołudnia, wracając ze szkoły ścieżką pod borem, Jaromir i Antek{ ekwipunek ? szczeniak: – i {imie_psa}, który odtąd wszędzie za nim chodził –} zobaczyli, że kapliczka na skraju lasu leży w trawie. Obaj stanęli jak wryci. W ciszy, która nagle zapadła, słychać było tylko, jak krople kapią z gałęzi na leżący w błocie daszek.
 Była to jedna z najstarszych w Zapadlinie, postawiona jeszcze za młodości ojca. Drewniany słup wyrwano z ziemi razem z darnią, daszek odłamał się i leżał kilka kroków dalej, a figurka świętego – szara od deszczów, z obliczem wytartym przez pół wieku – tkwiła w błocie twarzą w dół. Trawa dookoła była zryta, jakby ktoś ciągnął go w stronę drzew i porzucił w pół drogi.
 { ekwipunek ? kora:
     U podstawy ktoś wydrapał na drewnie spiralę – taką samą jak na sośnie przy ścieżce. Jaromir nie musiał wyjmować z torby swojego kawałka kory, żeby wiedzieć, że znaki są te same. # pokaz: spirala

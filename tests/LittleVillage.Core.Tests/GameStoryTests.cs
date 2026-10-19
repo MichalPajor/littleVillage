@@ -1113,7 +1113,7 @@ public sealed class GameStoryTests
         Assert.True(Has([snow], father));
         Assert.Contains(snow.Blocks, b => b.Reveal == "snieg" && b.Text.StartsWith("W nocy z niedzieli na poniedziałek spadł pierwszy śnieg."));
         Assert.Contains(snow.Blocks, b => b.Reveal == "slady" && b.Text.Contains("Długich, wąskich."));
-        Assert.Equal("Chłopak pomyślał, że zostawił je pewnie jakiś jeleń szukający jedzenia.", snow.Blocks[^1].Text);
+        Assert.StartsWith("Chłopak pomyślał, że zostawił je pewnie jakiś jeleń szukający jedzenia.", snow.Blocks[^1].Text);
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału drugiego._"));
     }
 

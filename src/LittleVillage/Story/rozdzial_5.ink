@@ -49,8 +49,8 @@ Franek, który skończył już siedemnaście lat i miał bary jak drwal, od wios
 = przy_pile
 # tlo: ognisko_tartak
 ~ ekwipunek += monety
-Praca była ciężka. Od świtu nosił deski, aż ręce miał pokłute drzazgami, a włosy pełne trocin. Koło wodne skrzypiało, ostrze wyło, a woda w strudze płynęła brunatna od kory.
-Wieczorami, przy ognisku, traczom rozwiązywały się języki. Stary Wawrzyniec, który całe życie przepracował przy traku, mówił, że w tym tartaku jest coś nie tak. Piła pękła już dwa razy, choć była nowa. Rano sterty desek bywały poprzestawiane, jakby ktoś w nocy je przeliczał. A raz, kiedy został na noc pilnować drewna, słyszał, jak w ciemności ktoś chodzi między pniami i stuka w każdy po kolei – raz, dwa, trzy – jakby sprawdzał, czy wszystkie są. # pokaz: stukanie
+Praca była ciężka. Od świtu nosił deski, aż ręce miał pokłute drzazgami, a włosy pełne trocin. Koło wodne skrzypiało, ostrze wyło, a woda w strudze płynęła brunatna od kory. Wszystko pachniało świeżą żywicą i mokrym drewnem, a w gardle drapał pył z trocin, którego nie dało się wykaszleć nawet w nocy.
+Wieczorami, przy ognisku, traczom rozwiązywały się języki. Iskry strzelały w ciemność, a twarze ludzi w czerwonym świetle wyglądały na starsze, niż były. Stary Wawrzyniec, który całe życie przepracował przy traku, mówił, że w tym tartaku jest coś nie tak. Piła pękła już dwa razy, choć była nowa. Rano sterty desek bywały poprzestawiane, jakby ktoś w nocy je przeliczał. A raz, kiedy został na noc pilnować drewna, słyszał, jak w ciemności ktoś chodzi między pniami i stuka w każdy po kolei – raz, dwa, trzy – jakby sprawdzał, czy wszystkie są. # pokaz: stukanie
 – Las się upomni – powtarzał, rzucając szczapę w ogień. – Zawsze się upomina.
 W pierwszą sobotę Jaromir dostał od Urbaniaka garść monet – ciężkich, zimnych, z orłem po jednej stronie. Nigdy jeszcze nie trzymał w ręku tylu pieniędzy naraz.
 -> pregi_franka
@@ -69,7 +69,7 @@ Tylko raz, kiedy Franek myślał, że nikt nie patrzy, Jaromir zobaczył, jak dr
 = stary_dab
 # tlo: stary_dab
 W połowie czerwca ludzie Urbaniaka doszli do Starego Dębu.
-Rósł na skraju boru, tam gdzie ścieżka z Zapadliny skręcała ku Bukowemu Grzbietowi – tak gruby, że czterech chłopów nie objęłoby go ramionami, z koroną, pod którą w upał chowały się całe stada. Mówiło się, że stał tu już wtedy, kiedy w niecce nie było jeszcze żadnej chałupy. Nikt nigdy nie złamał na nim nawet gałązki.
+Rósł na skraju boru, tam gdzie ścieżka z Zapadliny skręcała ku Bukowemu Grzbietowi – tak gruby, że czterech chłopów nie objęłoby go ramionami, z koroną, pod którą w upał chowały się całe stada. Mówiło się, że stał tu już wtedy, kiedy w niecce nie było jeszcze żadnej chałupy. Nikt nigdy nie złamał na nim nawet gałązki. Kora była szorstka i ciepła jak skóra śpiącego zwierzęcia, a w koronie bez przerwy szumiało, nawet gdy na łące nie drgnęło ani jedno źdźbło.
 Teraz na korze bielał świeży znak. # pokaz: znak
 { ekwipunek ? ksiega:
     Jaromir pamiętał ten dąb z księgi pana Ignacego. „Stary Dąb na skraju boru – pisał nauczyciel – jest drzewem, którego Pan Lasu pilnuje jak własnego serca. Póki stoi, las kończy się tam, gdzie się kończy. Kto go zetnie, otworzy mu drogę do wsi”.
@@ -108,7 +108,7 @@ Został tylko pień – szeroki jak stół, z setkami słojów, które zwijały 
 = uboze_za_piecem
 # tlo: uboze_piec
 Tej nocy w chałupie nikt nie spał spokojnie.{ ekwipunek ? szczeniak: {imie_psa} warczał pod drzwiami aż do świtu.} Garnki dzwoniły na półce, choć nikt ich nie dotykał, a w kominie coś szurało i popiskiwało jak mysz.
-Jaromir zszedł do izby po wodę. Przy piecu, w smudze księżycowego światła, siedział maleńki staruszek – nie większy od kury, w połatanej kapocie przewiązanej sznurkiem. Siwa broda sięgała mu do samej ziemi, a jej koniec owijał się wokół cienkich, kurzych nóżek. Miał duży nos, krzaczaste brwi i wąskie oczka, które pewnie zwykle się śmiały, a na głowie czerwoną czapeczkę z opadającym czubkiem i pomponikiem. W rączkach ściskał okruch chleba i trząsł się cały, choć w palenisku jeszcze żarzyły się węgle. # pokaz: uboze
+Jaromir zszedł do izby po wodę. Pachniało zakwasem z dzieży, a gliniana polepa ziębiła bose stopy. Przy piecu, w smudze księżycowego światła, siedział maleńki staruszek – nie większy od kury, w połatanej kapocie przewiązanej sznurkiem. Siwa broda sięgała mu do samej ziemi, a jej koniec owijał się wokół cienkich, kurzych nóżek. Miał duży nos, krzaczaste brwi i wąskie oczka, które pewnie zwykle się śmiały, a na głowie czerwoną czapeczkę z opadającym czubkiem i pomponikiem. W rączkach ściskał okruch chleba i trząsł się cały, choć w palenisku jeszcze żarzyły się węgle. # pokaz: uboze
 – Boję się – pisnął cieniutko, zanim chłopiec zdążył krzyknąć. – On idzie. Dąb był drzwiami, a teraz drzwi nie ma.
 Jaromir przypomniał sobie, co { figurka_u_staruchy: babka | matka } mówiła kiedyś o ubożętach: że mieszkają za piecem w starych chałupach, że kto je karmi, temu darzy się w obejściu, a kto przegoni, ten ściąga na dom biedę.
 # pytanie: Co zrobi Jaromir?

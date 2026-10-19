@@ -48,7 +48,7 @@ Dali jej na imię Maria – Marysia – po prababce Mariannie, żonie dziadka Ma
 = kolyska
 # tlo: izba_kolyska
 Chrzest wyznaczono na niedzielę. Do tego czasu zostały trzy noce.
-Jaromir sam zbił kołyskę z jesionowych desek i postawił ją przy łóżku, tak blisko, żeby Hanka mogła sięgnąć ręką. Babka obeszła izbę dokoła, mamrocząc pod nosem, posypała próg solą i kazała zabezpieczyć dziecko.
+Jaromir sam zbił kołyskę z jesionowych desek i postawił ją przy łóżku, tak blisko, żeby Hanka mogła sięgnąć ręką. Pachniała jeszcze świeżym drewnem, a Marysia cmokała przez sen i zaciskała piąstki na rąbku pieluszki. Babka obeszła izbę dokoła, mamrocząc pod nosem, posypała próg solą i kazała zabezpieczyć dziecko.
 – Jednym sposobem, a porządnie – powiedziała. – Mamuny są sprytne. Jak tylko będzie możliwość, to znajdą szparę.
 # pytanie: Jak zabezpieczyć kołyskę?
 *   [Zawiązać Marysi na rączce czerwoną wstążkę.]
@@ -112,7 +112,7 @@ Wtedy jedna z nich zaczęła nucić – cicho, kołysząco, tak podobnie do matk
 # tlo: chrzest
 Rano na parapecie znaleźli zawiniątko w brudnej chuście, porzucone przez mamuny w ucieczce. Kiedy babka je odwinęła, w środku był tylko kawałek brzozowego pnia, w którym ktoś wystrugał ludzką twarz.
 Babka splunęła i kazała spalić go w piecu. Drewno syczało i piszczało, zanim się zajęło.
-W niedzielę ochrzcili Marysię w kościółku w Bukowcu. Chrzestnym był Antek, a matką chrzestną stara Wójcikowa, która trzymała dziecko tak ostrożnie, jakby było ze szkła.{ korale_kaski == oddane: Na szyi Wójcikowej Jaromir zobaczył znajome korale z jarzębiny – suche i matowe, takie jak wszystkie inne.} Kiedy ksiądz polał główkę wodą, Marysia nie zapłakała, tylko zmarszczyła czoło i popatrzyła na niego tak surowo, że Antek parsknął śmiechem i musiał udawać, że kaszle. # pokaz: woda # dalej
+W niedzielę ochrzcili Marysię w kościółku w Bukowcu. W środku pachniało kadzidłem i wilgotnymi deskami, a przez małe okienka wpadały smugi jesiennego słońca. Chrzestnym był Antek, a matką chrzestną stara Wójcikowa, która trzymała dziecko tak ostrożnie, jakby było ze szkła.{ korale_kaski == oddane: Na szyi Wójcikowej Jaromir zobaczył znajome korale z jarzębiny – suche i matowe, takie jak wszystkie inne.} Kiedy ksiądz polał główkę wodą, Marysia nie zapłakała, tylko zmarszczyła czoło i popatrzyła na niego tak surowo, że Antek parsknął śmiechem i musiał udawać, że kaszle. # pokaz: woda # dalej
 -> skarb_z_bazy
 
 = odmieniec
@@ -184,7 +184,7 @@ Na płaskich kamieniach przy brzegu klęczały mamuny – pięć, może sześć 
     W niedzielę Jaromir poszedł do starego bzu i otworzył skrzynkę w bazie. Była pusta. Długo trzymał ją w rękach i myślał o tym, co leży teraz na dnie jeziora. Potem odłożył ją na miejsce. Marysia będzie musiała znaleźć sobie własne skarby. # pokaz: pusta # dalej
     -> jesien_z_marysia
 }
-W niedzielę, kiedy w chałupie było już spokojnie, Jaromir poszedł na skraj łąki, do starego bzu. Baza w jego koronie była już prawie ruiną, ale skrzynka na skarby wciąż tkwiła pod luźną deską, tam gdzie ją schowali jako dzieci. W środku, pod zbutwiałym liściem łopianu, leżał {skarb_jaromira == muszelka:biały jak mleko kawałek muszelki z jeziora|{skarb_jaromira == pioro:sójcze pióro, wciąż błękitne jak niebo po burzy|zardzewiały gwóźdź z rycerskiej zbroi – a przynajmniej tak się kiedyś wydawało}}. # pokaz: skrzynka
+W niedzielę, kiedy w chałupie było już spokojnie, Jaromir poszedł na skraj łąki, do starego bzu. Baza w jego koronie była już prawie ruiną, ale skrzynka na skarby wciąż tkwiła pod luźną deską, tam gdzie ją schowali jako dzieci. Drabinka trzeszczała pod jego ciężarem, a w koronie bzu pachniało dokładnie tak samo jak wtedy, gdy miał osiem lat. Na chwilę ścisnęło go w gardle. Na dnie, pod zbutwiałym liściem łopianu, leżał {skarb_jaromira == muszelka:biały jak mleko kawałek muszelki z jeziora|{skarb_jaromira == pioro:sójcze pióro, wciąż błękitne jak niebo po burzy|zardzewiały gwóźdź z rycerskiej zbroi – a przynajmniej tak się kiedyś wydawało}}. # pokaz: skrzynka
 # pytanie: Co zrobi Jaromir?
 *   [Przywiązać skarb do kołyski Marysi.]
     ~ skarb_dla_corki = true

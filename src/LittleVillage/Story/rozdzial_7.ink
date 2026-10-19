@@ -15,7 +15,7 @@ W październiku kisiło się kapustę. Kobiety szatkowały ją w wielkich kopach
 
 = zaduszki
 # tlo: zaduszki
-Na Zaduszki cała Zapadlina poszła do Bukowca. Na przykościelnym cmentarzu paliły się setki łojowych świeczek, a między grobami chodzili ludzie z kagankami i szeptali modlitwy za tych, którzy odeszli. Po zmroku wracali do domów w milczeniu, gęsiego, a za plecami zostawało im morze drżących ogników.
+Na Zaduszki cała Zapadlina poszła do Bukowca. Pachniało dymem i zmarzniętą ziemią, a pod butami chrzęściły opadłe liście. Na przykościelnym cmentarzu paliły się setki łojowych świeczek, a między grobami chodzili ludzie z kagankami i szeptali modlitwy za tych, którzy odeszli. Po zmroku wracali do domów w milczeniu, gęsiego, a za plecami zostawało im morze drżących ogników.
 W domu matka nakryła stół jak na święto, z jednym nakryciem więcej. Na parapecie zostawiła kromkę chleba i kubek wody – dla dziadów, jak mówiła, dla dusz, które tej jednej nocy wracają do swoich chałup. # pokaz: parapet
 { figurka_u_staruchy:
     Ojciec dołożył obok drugą miskę. Nie powiedział dla kogo, ale syn wiedział: dla Maćka i Marianny.
@@ -76,7 +76,7 @@ Zarumieniła się, jakby powiedziała coś głupiego, i spuściła wzrok.
 
 = wieczor_nad_jeziorem
 # tlo: jezioro_swiatki
-Wieczorem młodzież zebrała się nad jeziorem. Tak robiło się co roku: chłopcy rozpalali ognisko na piaszczystym cyplu, dziewczęta puszczały na wodę wianki z zapalonymi łuczywkami, a kto znalazł wianek wyrzucony na brzeg, ten wiedział, z kim pójdzie do ołtarza. # pokaz: wianki
+Wieczorem młodzież zebrała się nad jeziorem. Tak robiło się co roku: chłopcy rozpalali ognisko na piaszczystym cyplu, dziewczęta puszczały na wodę wianki z zapalonymi łuczywkami, a kto znalazł wianek wyrzucony na brzeg, ten wiedział, z kim pójdzie do ołtarza. Ognisko trzaskało i sypało iskrami, pachniało dymem i mokrym sitowiem, a nad wodą niósł się śmiech dziewcząt. # pokaz: wianki
 Z dala od młodzieży, na pomoście przy trzcinach, stała stara Wójcikowa. Jak co roku od trzech wiosen położyła na jeziorze koronę z białych grzybieni – bez żadnego światła – i długo patrzyła, jak odpływa. Dla Kaśki, mówili ludzie. Dla córki, której woda nie oddała. # pokaz: wojcikowa
 Franek siedział z boku, z dala od płomieni. Od roku był nie ten sam – { franek_scial_dab: odkąd ściął Stary Dąb, | odkąd Urbaniak wyrzucił go z tartaku,} chodził ponury, nocami nie spał, a za dnia zasypiał na stojąco. Teraz przycupnął nad samą wodą i wpatrywał się w sitowie tak uparcie, jakby czegoś w nim szukał.
 Kiedy zapadł zmrok i ognisko przygasło, z trzcin popłynął śpiew. # pokaz: spiew
@@ -120,7 +120,7 @@ Nawet się nie obejrzał.
 
 = nie_swoj
 # tlo: brzeg_noc
-Franek długo kaszlał wodą. Potem usiadł, otarł twarz i spojrzał na nich, jakby widział ich pierwszy raz. # pokaz: franek
+Franek długo kaszlał wodą. Trząsł się cały, zęby szczękały mu z zimna, a z włosów ciekła woda, ale zdawał się tego nie czuć. Potem usiadł, otarł twarz i spojrzał na nich, jakby widział ich pierwszy raz. # pokaz: franek
 – Po co mnie wyciągnęliście? – zapytał cicho. – Tam było tak dobrze. Czułem się kochany, one dałyby mi szczęście.
 { ratunek_franka != sila:
     – To była Kaśka – szepnęła Hanka, kiedy odzyskała głos. – Ta z koralami. Kaśka Wójcikówna.

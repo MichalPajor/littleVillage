@@ -46,7 +46,7 @@ Słońce stało w zenicie i wszystko dookoła kuliło się we własnych cieniach
 
 = przy_stole
 # tlo: izba_sierpien
-Pierwszego sierpnia ojciec wrócił z pola wcześniej niż zwykle. Usiadł przy stole i długo obracał w palcach kłos – lekki, prawie pusty – nie mówiąc ani słowa. Matka postawiła przed nim miskę kaszy i też milczała. W izbie słychać było tylko bzyczenie much.
+Pierwszego sierpnia ojciec wrócił z pola wcześniej niż zwykle. Usiadł przy stole i długo obracał w palcach kłos – lekki, prawie pusty – nie mówiąc ani słowa. Matka postawiła przed nim miskę kaszy i też milczała. W izbie słychać było tylko bzyczenie much. Było duszno, pachniało kaszą i nagrzanym drewnem ścian, a przez otwarte okno nie wpadał ani jeden powiew.
 – Z tego żyta nie będzie nawet na zasiew – odezwał się w końcu. – Kartofle uschną w ziemi. Do wiosny nie starczy nam ani na chleb.
 Potem spojrzał na syna tak, jak zaczął na niego patrzeć od Wielkanocy – jak na dorosłego.
 – Urbaniak szuka ludzi do wyrębu. Piła stoi, to chce przez lato naciąć jak najwięcej pni, a jak przyjdą deszcze i woda ruszy koło, przetnie wszystko naraz. Płaci od każdego drzewa. – Zacisnął szczęki. – Przysięgałem sobie, że u niego nie przepracuję ani jednego dnia.
@@ -105,7 +105,7 @@ Godzinę później usłyszał turkot. Drogą od strugi jechał wóz Urbaniaka, a
 = babka_hanki
 # tlo: izba_ranny
 Ojca położyli na ławie w izbie. Matka posłała po babkę Hanki, która znała się na złamaniach lepiej niż doktor z Bukowca. Stara przyszła z koszem ziół, obejrzała nogę, mruknęła coś pod nosem i kazała trzymać. Jaromir trzymał. Kiedy nastawiała kość, ojciec zemdlał, i dobrze, bo krzyk, który zdążył z siebie wydać, Jaromir słyszał potem w snach przez wiele nocy.
-Babka obłożyła złamanie żywokostem i obwiązała łubkami z leszczyny. Hanka nosiła wodę z jeziora, bo w studni zostało już tylko błoto, i chłodziła rannemu czoło mokrą szmatką.
+Babka obłożyła złamanie żywokostem i obwiązała łubkami z leszczyny. Zapachniało żywokostem i rumiankiem, gorzko i czysto, jak w polu po deszczu. Hanka nosiła wodę z jeziora, bo w studni zostało już tylko błoto, i chłodziła rannemu czoło mokrą szmatką.
 { noga_ojca == zlamana:
     – Zrośnie się – powiedziała stara. – Krzywo, ale się zrośnie. Przez miesiąc nie wstanie, a potem będzie chodził o kiju.
 - else:
@@ -163,8 +163,8 @@ Na stole, pod lnianą ściereczką, leżał bochenek. Ostatni – następny matk
 
 = kapliczki_pod_borem
 # tlo: kapliczki_wykop
-Pod koniec sierpnia Urbaniak postanowił, że nie będzie czekał na deszcz. Skoro piła stoi, a struga nie spławi drewna, pnie trzeba wozić wozami do Bukowca – a wozy z długimi kłodami nie mieściły się na zakrętach drogi pod borem. Tam, na każdym z nich, stała kapliczka.
-Jego ludzie przyszli z łopatami w poniedziałek rano. Wykopywali słupy, ściągali daszki, a święte figurki wrzucali na wóz jak drewno na opał. Kobiety wyglądały zza płotów i płakały, starzy pomstowali – ale kiedy Urbaniak zawołał, że za dzień roboty płaci srebrem, od ręki, kilku chłopów z Zapadliny wzięło łopaty i przyłączyło się do jego ludzi. Głód był silniejszy niż strach. # pokaz: kopacze
+Pod koniec sierpnia Urbaniak postanowił, że nie będzie czekał na deszcz. Skoro piła stoi, a struga nie uniesie tratwy, pnie trzeba wozić wozami do Bukowca – a wozy z długimi kłodami nie mieściły się na zakrętach drogi pod borem. Tam, na każdym z nich, stała kapliczka.
+Jego ludzie przyszli z łopatami w poniedziałek rano. Wykopywali słupy, ściągali daszki, a święte figurki wrzucali na wóz jak drewno na opał. Kobiety wyglądały zza płotów i płakały, starzy pomstowali – ale kiedy Urbaniak zawołał, że za dzień roboty płaci srebrem, od ręki, kilku chłopów z Zapadliny wzięło łopaty i przyłączyło się do jego ludzi. Głód był silniejszy niż strach. Łopaty zgrzytały o kamienie, a każdy słup wychodził z ziemi z mlaśnięciem, jakby nie chciała go puścić. Jaromir czuł, jak coś ściska go w gardle – nie wiedział, czy to złość, czy wstyd za tych, którzy kopali. # pokaz: kopacze
 { kapliczka_podniesiona:
     Na samym skraju boru stała ta, którą Jaromir z Antkiem podnieśli dwa lata temu z błota.
 }

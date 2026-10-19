@@ -12,7 +12,7 @@
 # rozdzial: Rozdział dziewiąty
 # tytul: Wesele
 Po chudym lecie przyszła głodna zima, tak jak przepowiadali starzy.
-W Wigilię w całej Zapadlinie nie było stołu, na którym stanęłoby dwanaście potraw. Chleb pieczono z otrębami i suszoną lebiodą, a pod koniec zimy także z mieloną korą brzozową – gorzki i twardy, aż bolały od niego zęby. Kilka rodzin spakowało dobytek na sanie i wyjechało do miasta. Żadna nie wróciła. # pokaz: sanie
+W Wigilię w całej Zapadlinie nie było stołu, na którym stanęłoby dwanaście potraw. Chleb pieczono z otrębami i suszoną lebiodą, a pod koniec zimy także z mieloną korą brzozową – gorzki i twardy, aż bolały od niego zęby. Głód miał swój zapach – kwaśny, jak zepsuta kapusta na dnie beczki – i swój dźwięk: płacz dzieci za ścianą, który nie ustawał nawet w nocy. Kilka rodzin spakowało dobytek na sanie i wyjechało do miasta. Żadna nie wróciła. # pokaz: sanie
 Tartak Urbaniaka pracował przez całą zimę, a za robotę płacił mąką. Kto miał w chałupie głodne dzieci, ten szedł – i nikt już nie pytał, które drzewa idą pod piłę.
 Jaromir łowił ryby w przeręblach i zastawiał sidła na zające wzdłuż skraju lasu, ale nigdy nie zapuszczał się w głąb boru. {noga_ojca == zlamana:Ojciec siadywał przy oknie z kijem opartym o kolano|Ojciec siadywał przy oknie z kulami opartymi o ławę} i naprawiał uprzęże, a przy okazji uczył syna wszystkiego, czego sam już nie mógł zrobić: jak ostrzyć lemiesz, jak poznać po niebie, że idzie odwilż, jak targować się z kupcami w Bukowcu, żeby obie strony odeszły zadowolone. # pokaz: przerebel
 { uboze == nakarmione:
@@ -43,6 +43,7 @@ Stary Staś, choć zgięty już wpół i ledwie widzący na oczy, uparł się, �
     ~ swaty = po_staremu
     Wieczorem stanęli w progu chałupy kowala. Staś zdjął czapkę i zaczął tak, jak od wieków mówili swaci: # pokaz: w_izbie
     – Słyszeliśmy, gospodarzu, że macie w oborze jałóweczkę na sprzedaż. Przyszliśmy zobaczyć, czy nie byłaby w sam raz dla naszego kawalera.
+    Jaromir stał za nim, mnąc czapkę w spoconych dłoniach, i czuł, że uszy palą go jak w gorączce. W izbie pachniało świeżym chlebem, a matka Hanki co chwila poprawiała chustkę, jakby to ją swatano.
     Kowal udał, że się namyśla, matka Hanki postawiła na stole kieliszki, a Staś nalał gorzałki – najpierw ojcu Hanki, potem sobie. Hanka siedziała w kącie, z oczami spuszczonymi na robótkę, i tylko raz podniosła wzrok na Jaromira. Kiedy kowal wypił, wstała, odpięła z warkocza wstążkę i przewiązała nią butelkę – na znak, że się zgadza. # pokaz: wstazka # dalej
     -> zniknal_franek
 *   [Pójść samemu, prosto do kowala.]
@@ -63,7 +64,7 @@ Na tydzień przed ślubem do chałupy przyszedł Antek, blady jak płótno. # po
 *   [Pójść z Antkiem na skraj boru i szukać śladów.]
     ~ szukanie_franka = na_skraju_boru
     # tlo: skraj_kapota
-    Szli po śladach aż do ostatniego rzędu świerków. Jaromir nie przekroczył granicy lasu, ale nie musiał. Na najniższej gałęzi wisiała kapota Franka – rozdarta na plecach, jakby coś rozsadziło ją od środka. Ślady bosych stóp urywały się tuż pod nią. # pokaz: kapota
+    Szli po śladach aż do ostatniego rzędu świerków. Jaromir nie przekroczył granicy lasu, ale nie musiał. Na najniższej gałęzi wisiała kapota Franka – rozdarta na plecach, jakby coś rozsadziło ją od środka. Ślady bosych stóp urywały się tuż pod nią. W lesie panowała cisza tak głęboka, że słyszeli własne oddechy, a z ziemi biła ostra, dzika woń, jak z psiej budy. # pokaz: kapota
     Dalej, w miękkiej ziemi, ciągnęły się tropy wilka. Tylko że żaden wilk nie mógł mieć tak wielkich łap – każdy odcisk był szeroki jak dłoń dorosłego mężczyzny. Na ciernistym krzaku obok zaczepiło się kilka długich, białych włosów. # pokaz: tropy
     – Krwi nie ma – szepnął Antek, ale nie zabrzmiało to jak pociecha. # dalej
     -> kuznia_przed_slubem
@@ -82,9 +83,9 @@ Na tydzień przed ślubem do chałupy przyszedł Antek, blady jak płótno. # po
 
 = kuznia_przed_slubem
 # tlo: kuznia_wieczor
-Wieczorem przed ślubem kowal zawołał Jaromira do kuźni.
+Wieczorem przed ślubem kowal zawołał Jaromira do kuźni. W środku pachniało żelazem i węglem drzewnym, miech sapał jak zmęczony koń, a żar w palenisku pulsował czerwienią przy każdym jego oddechu.
 { licho_noc == odpedzone:
-    Odbudował ją sam, belka po belce, po pożarze w tamto chude lato, ale ręce zostały mu poparzone na zawsze – skóra na nich była błyszcząca i ściągnięta, a młot trzymał teraz tak, jakby ważył dwa razy więcej niż kiedyś.
+    Kuźnię odbudował sam, belka po belce, po pożarze w tamto chude lato, ale ręce zostały mu poparzone na zawsze – skóra na nich była błyszcząca i ściągnięta, a młot trzymał teraz tak, jakby ważył dwa razy więcej niż kiedyś.
 }
 Na kowadle leżały dwie rzeczy: podkowa, jeszcze ciepła, i mały żelazny krzyżyk na rzemyku. # pokaz: kowadlo
 – Żelazo z kuźni odstrasza to, co przychodzi nocą – powiedział kowal. – Tak mówił mój dziad i jego dziad przed nim. Posagu, jakiego Hanka by chciała, nie dam, bo po tych chudych latach nie mam z czego. Ale to mogę. – Wskazał kowadło. – Starczyło mi tylko na jedno. Wybieraj. Podkowa nad próg – żeby nic złego nie weszło do waszej chałupy. Albo krzyżyk dla Hanki – żeby nic złego jej nie dotknęło, dokądkolwiek pójdzie.
@@ -103,6 +104,7 @@ Na kowadle leżały dwie rzeczy: podkowa, jeszcze ciepła, i mały żelazny krzy
 = slub
 # tlo: slub_droga
 W sobotę o świcie druhny rozplotły Hance warkocz – po raz ostatni jako pannie – i ubrały ją w białą koszulę, wyszywany gorset i wianek z ruty.{ mak_w_medaliku: Na szyi zawiesiła medalik z zasuszonym makiem.}{ ekwipunek ? krzyzyk: {mak_w_medaliku:Obok niego – żelazny krzyżyk od ojca.|Na szyi zawiesiła żelazny krzyżyk od ojca.}}
+Kiedy stanęła w progu, Jaromirowi zaschło w gardle. Wydała mu się jednocześnie obca i bardziej jego niż kiedykolwiek.
 ~ ekwipunek += siekiera
 ~ siekiera_dziadka = true
 Przed wyjazdem do kościoła młodzi uklękli na progu, a rodzice pobłogosławili ich znakiem krzyża i pokropili wodą święconą. Potem ojciec Jaromira podniósł się z ławy, {noga_ojca == zlamana:wsparty na kiju|wsparty na kulach}, i podał synowi siekierę o wytartym, ciemnym trzonku.
@@ -120,7 +122,7 @@ Przed wyjazdem do kościoła młodzi uklękli na progu, a rodzice pobłogosławi
     ~ krzesiwo_na_slubie = true
     Do siekiery dołożył małe, poczerniałe krzesiwo. – I to też jego. Nosił je przy sobie do końca.
 }
-Do Bukowca jechali trzema wozami, przystrojonymi zielonymi gałązkami i wstążkami. Skrzypek i basista grali przez całą drogę, a chłopcy strzelali z batów tak, że konie płoszyły się co chwilę. Tylko na drodze pod borem muzyka na moment ucichła sama z siebie, bez niczyjego polecenia, i zagrała znów dopiero wtedy, gdy ostatnie świerki zostały w tyle. # pokaz: wozy
+Do Bukowca jechali trzema wozami, przystrojonymi zielonymi gałązkami i wstążkami. Skrzypek i basista grali przez całą drogę, a chłopcy strzelali z batów tak, że konie płoszyły się co chwilę. Tylko na drodze pod borem muzyka na moment ucichła sama z siebie, bez niczyjego polecenia, i zagrała znów dopiero wtedy, gdy ostatnie świerki zostały w tyle. Pachniało rutą z wianków, końskim potem i jesiennymi liśćmi, a dzwonki przy uprzęży brzęczały do taktu z basami. # pokaz: wozy
 { kapliczki_drogi == obronil_kapliczke:
     Przy ocalałej kapliczce Hanka kazała stanąć i położyła pod nią gałązkę ruty ze swojego wianka.
 }

@@ -71,7 +71,7 @@ Kiedy miecze się nudziły, przychodziła pora na łuki.
 ~ ekwipunek += nozyk
 Najlepsze były z leszczyny, która rosła gęsto na skraju lasu – prosta, giętka i mocna. Franek wybierał z niej gałąź o odpowiedniej długości – równej jego wzrostowi – a Jaromir obstrugiwał ją nożykiem, który dostał od ojca na imieniny. Trzeba było uważać, żeby nie zebrać za dużo drewna w jednym miejscu, bo wtedy łuk pękał przy pierwszym naciągnięciu. Na cięciwę szedł gruby sznurek, wykradziony matce z kosza, albo – w lepsze dni – kawałek żyłki.
 Strzały robili również z leszczyny, ale zdecydowanie cieńszej. Grotów nie było – za to czubek zaostrzali tak, że kłuł jak cierń, a na drugim końcu – lotki z papieru albo z piór zbieranych na podwórzach po całej wsi.
-Celem był snop słomy postawiony na miedzy, z kołem namalowanym sadzą. Pociski leciały dość prosto, wbijały się w ziemię albo w cel, a czasem szybowały wysoko w niebo. Najlepiej szło to Hance. Mrużyła jedno oko, wysuwała koniuszek języka i nie chybiała ani razu – a chłopcy, choć za nic by się do tego nie przyznali, podziwiali ją za to bardziej niż za cokolwiek innego. # pokaz: hanka
+Celem był snop słomy postawiony na miedzy, z kołem namalowanym sadzą. Cięciwa brzęczała przy uchu jak trzmiel, strzała świstała krótko, a potem rozlegało się głuche „puk”, kiedy zaostrzony czubek wbijał się w słomę. Pociski leciały dość prosto, wbijały się w ziemię albo w cel, a czasem szybowały wysoko w niebo. Najlepiej szło to Hance. Mrużyła jedno oko, wysuwała koniuszek języka i nie chybiała ani razu – a chłopcy, choć za nic by się do tego nie przyznali, podziwiali ją za to bardziej niż za cokolwiek innego. # pokaz: hanka
 # pytanie: Czy Jaromir zmierzy się z Hanką?
 *   [Tak – wyzwie ją na zawody.]
     Przegrywał, oczywiście. Hanka trafiała bez pudła, a jego strzały lądowały najczęściej w zbożu. Ale następnego dnia przychodził na miedzę jeszcze przed nią i ćwiczył, aż drętwiały mu palce.
@@ -87,7 +87,7 @@ Raz Jaromir trafił w sam środek koła. Przez resztę dnia chodził tak dumny, 
 = lato_baza
 # tlo: baza
 Najważniejszym miejscem na świecie była jednak baza.
-Stała – a raczej wisiała – w koronie starego bzu, który rósł na skraju łąki, tak rozłożysty, że w jego cieniu mogłoby się schować kilka krów. Budowali ją przez jedno długie lato. Deski znosili, skąd się dało: z rozwalonego chlewika, z płotu, którego nikt już nie naprawiał, {figurka_u_staruchy:ze stodoły Stasia, który kręcił głową, ale nie bronił|ze stodoły ojca Jaromira, który udawał, że niczego nie widzi}. Przybijali je gwoździami wyprostowanymi kamieniem na kamieniu, a tam, gdzie ich zabrakło, wiązali sznurkiem. Na górę prowadziła drabinka ze szczebli przywiązanych do pnia.
+Stała – a raczej wisiała – w koronie starego bzu, który rósł na skraju łąki, tak rozłożysty, że w jego cieniu mogłoby się schować kilka krów. Budowali ją przez jedno długie lato. Deski znosili, skąd się dało: z rozwalonego chlewika, z płotu, którego nikt już nie naprawiał, {figurka_u_staruchy:ze stodoły Stasia, który kręcił głową, ale nie bronił|ze stodoły ojca Jaromira, który udawał, że niczego nie widzi}. Przybijali je gwoździami wyprostowanymi kamieniem na kamieniu, a tam, gdzie ich zabrakło, wiązali sznurkiem. Na górę prowadziła drabinka ze szczebli przywiązanych do pnia. W bazie zawsze pachniało rozgrzanym drewnem i kwiatem bzu, tak słodko, że po godzinie kręciło się w głowie. Przez szpary między deskami wpadały cienkie smugi słońca, w których tańczył kurz, a kiedy wiał wiatr, cała korona kołysała się i skrzypiała, jakby baza była łodzią na wzburzonej wodzie.
 W środku mieściło się pięcioro, jeśli siedzieli ciasno – czwórce było więc całkiem wygodnie. Mieli tam wszystko, czego potrzeba: skrzynkę na skarby, w której leżały kolorowe kamyki, pióra i muszelki, a na wypadek napaści – kołczan ze strzałami, łuk i „miecze”.
 # pytanie: Co Jaromir schowa do skrzynki na skarby?
 *   [Muszelkę z jeziora, białą jak mleko.]
@@ -109,7 +109,7 @@ Najpiękniej było tam w czasie ulewy. Letnia burza przychodziła nagle, ciemnym
 
 = lato_jezioro
 # tlo: jezioro_lato
-Kiedy słońce wspinało się w zenit, a nad polami zaczynał drgać żar, cała gromada ruszała nad jezioro. Biegli na wyścigi przez łąkę, zrzucając po drodze koszule, i z wrzaskiem wpadali do wody, aż bryzgi leciały pod niebo. Przy brzegu było płytko i piaszczyście, woda nagrzana słońcem jak w cebrze, a stopy łaskotały drobne rybki. Franek popisywał się, skacząc na głowę z przewróconego pnia, a Antek siedział na płyciźnie i łapał w dłonie kijanki. # pokaz: kapiel
+Kiedy słońce wspinało się w zenit, a nad polami zaczynał drgać żar, cała gromada ruszała nad jezioro. Biegli na wyścigi przez łąkę, zrzucając po drodze koszule, i z wrzaskiem wpadali do wody, aż bryzgi leciały pod niebo. Przy brzegu było płytko i piaszczyście, woda nagrzana słońcem jak w cebrze, a stopy łaskotały drobne rybki. Franek popisywał się, skacząc na głowę z przewróconego pnia, a Antek siedział na płyciźnie i łapał w dłonie kijanki. Pachniało sitowiem i rozgrzanym mułem, nad wodą bzyczały ważki, a z pól dobiegało nieustanne cykanie świerszczy. # pokaz: kapiel
 { figurka_u_staruchy: Jaromir nigdy nie wchodził głębiej niż po pas. Ojciec zakazał mu tego raz, krótko i tak surowo, że chłopak nie śmiał zapytać dlaczego. Równie stanowczo zabronił zbliżać się do mokradeł i do trzcin po zachodniej stronie, gdzie podobno stała kiedyś jakaś chata. | Na zachodnim brzegu, w szuwarach, sterczały jeszcze z ziemi czarne kikuty zwęglonych bali. Dzieci straszyły się nimi nawzajem, opowiadając sobie historię o spalonej zielarce – tę samą, którą wieczorami snuł ojciec Jaromira – ale w pełnym słońcu nikt się nie bał. }
 { figurka_u_staruchy:
     Tego dnia Franek wypłynął na głęboką wodę i zawołał, żeby Jaromir do niego dołączył.
@@ -140,7 +140,7 @@ Upał kładł się na wszystkim jak ciepła pierzyna. Świerszcze cykały tak g�
 
 = lato_wieczor
 # tlo: wieczor_lato
-A jednak kończył się zawsze. Słońce zsuwało się za las, cienie wydłużały się na łące, aż sięgały od jednego jej skraju do drugiego, a niebo nad jeziorem nabierało koloru dojrzałych malin. Wtedy z kolejnych podwórek zaczynały dobiegać wołania.
+A jednak kończył się zawsze. Słońce zsuwało się za las, cienie wydłużały się na łące, aż sięgały od jednego jej skraju do drugiego, a niebo nad jeziorem nabierało koloru dojrzałych malin. Powietrze stygło i pachniało skoszoną trawą i dymem z kominów, a z mokradeł odzywały się pierwsze żaby – najpierw jedna, potem dziesiątki, aż cała niecka rechotała jak jeden wielki chór. Wtedy z kolejnych podwórek zaczynały dobiegać wołania.
 – Jaroooomir! Do doooomu! # pokaz: matka
 # pytanie: Czy Jaromir wróci od razu?
 *   [Pobiegnie do domu od razu.]
