@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „dolny plan: glodna_zima”: suche osty spod śniegu
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="421" viewBox="-10 423 410 421">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M369 603L371 542M370 567l-7 -8M370 555l6 -6" fill="none" stroke="#000000" stroke-width="1.7"/>
+<path d="M63 503L65 466M64 481l-7 -8M64 474l6 -6" fill="none" stroke="#000000" stroke-width="1.5"/>
+<path d="M32 605L34 544M33 568l-7 -8M33 556l6 -6" fill="none" stroke="#000000" stroke-width="1.7"/>
+<path d="M297 607L299 546M298 570l-7 -8M298 558l6 -6" fill="none" stroke="#000000" stroke-width="1.7"/>
+<path d="M211 782L213 679M212 720l-7 -8M212 700l6 -6" fill="none" stroke="#000000" stroke-width="2.0"/>
+<path d="M380 731L382 640M381 677l-7 -8M381 658l6 -6" fill="none" stroke="#000000" stroke-width="1.9"/>
+<path d="M67 611L69 549M68 574l-7 -8M68 561l6 -6" fill="none" stroke="#000000" stroke-width="1.7"/>
+<path d="M120 647L122 576M121 604l-7 -8M121 590l6 -6" fill="none" stroke="#000000" stroke-width="1.7"/>
+</g>
+</svg>

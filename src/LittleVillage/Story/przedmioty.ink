@@ -5,7 +5,7 @@
 //  Sprawdzenie:          { ekwipunek ? siekiera: ... }
 // ------------------------------------------------------------
 
-LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak, monety, zoladz, piolun, korale, swiatek
+LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak, monety, zoladz, piolun, korale, swiatek, podkowa, krzyzyk
 
 // Ekwipunek na początku gry — to, co Maciek przyniósł w tobołku.
 VAR ekwipunek = (siekiera, chleb)
@@ -13,7 +13,11 @@ VAR ekwipunek = (siekiera, chleb)
 // Nazwa wyświetlana w oknie ekwipunku.
 === function nazwa_przedmiotu(p)
 { p:
-    - siekiera:  ~ return "Siekiera"
+    - siekiera:
+        { siekiera_dziadka:
+            ~ return "Siekiera dziadka Maćka"
+        }
+        ~ return "Siekiera"
     - chleb:     ~ return "Bochenek chleba"
     - pies_towarzysz: ~ return "Pies – towarzysz"
     - figurka:   ~ return "Nadpalona figurka"
@@ -30,19 +34,28 @@ VAR ekwipunek = (siekiera, chleb)
     - piolun:    ~ return "Piołun"
     - korale:    ~ return "Korale z jarzębiny"
     - swiatek:   ~ return "Świątek z kapliczki"
+    - podkowa:   ~ return "Podkowa kowala"
+    - krzyzyk:   ~ return "Krzyżyk kowala"
 }
 ~ return ""
 
 // Opis wyświetlany pod nazwą.
 === function opis_przedmiotu(p)
 { p:
-    - siekiera:  ~ return "Kupiona w mieście za pieniądze z czterech lat pracy na cudzym polu. Na niej opiera się cała przyszłość."
+    - siekiera:
+        { siekiera_dziadka:
+            ~ return "Siekiera o wytartym, ciemnym trzonku. Dziadek Maciek kupił ją kiedyś w mieście za pieniądze z czterech lat pracy na cudzym polu. Ojciec dał ją Jaromirowi w dniu ślubu – teraz to on jest gospodarzem."
+        }
+        ~ return "Kupiona w mieście za pieniądze z czterech lat pracy na cudzym polu. Na niej opiera się cała przyszłość."
     - chleb:     ~ return "Twardy, razowy, owinięty w lnianą szmatkę. Musi starczyć na długo."
     - pies_towarzysz: ~ return "Chudy, z długim pyskiem i za dużymi łapami. Obronił Maćka przed stworem z zarośli i od tamtej nocy nie odstępuje go na krok."
     - figurka:   ~ return "Mała drewniana postać z rękami sięgającymi do stóp, nadpalona z jednej strony. Wygrzebana z popiołu po chacie wiedźmy."
     - krzesiwo:
         { krzesiwo_od_babki:
             ~ return "Małe, poczerniałe krzesiwo dziadka Maćka. Babka Marianna oddała je Jaromirowi na łożu śmierci – leżało w popiele razem z figurką, a dziadek nie rozstawał się z nim do końca."
+        }
+        { krzesiwo_na_slubie:
+            ~ return "Małe, poczerniałe krzesiwo dziadka Maćka. Ojciec dał je Jaromirowi w dniu ślubu razem z siekierą – dziadek nosił je przy sobie do końca."
         }
         ~ return "Leżało w popiele obok figurki. Czyżby to nim podpalono chatę wiedźmy?"
     - zapasy:
@@ -65,5 +78,7 @@ VAR ekwipunek = (siekiera, chleb)
     - piolun:    ~ return "Wiązka szarozielonych łodyg o gorzkim, ostrym zapachu. Dała mu ją Hanka na Zielone Świątki – podobno to, co wychodzi wtedy z wody, boi się piołunu bardziej niż ognia."
     - korale:    ~ return "Sznur korali z jarzębiny znaleziony na pomoście po nocy z rusałkami. Należały do Kaśki Wójcikówny. Wciąż są mokre i czerwone jak świeża krew."
     - swiatek:   ~ return "Drewniana Matka Boża z dzieciątkiem, wyciągnięta nocą z wozu Urbaniaka, kiedy jego ludzie wykopywali kapliczki spod boru. Twarz ma wytartą przez deszcze tak, że ledwie ją widać. Schowana pod deskami w bazie na starym bzie."
+    - podkowa:   ~ return "Żelazna podkowa wykuta przez ojca Hanki na wesele. Wisi nad progiem chałupy ramionami do góry, żeby nic złego nie weszło do środka i żeby szczęście się nie wysypało."
+    - krzyzyk:   ~ return "Mały żelazny krzyżyk na rzemyku, wykuty przez ojca Hanki na wesele. Hanka nosi go na szyi i nie zdejmuje – kowal przykazał, żeby nigdy."
 }
 ~ return ""

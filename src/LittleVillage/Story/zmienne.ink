@@ -145,3 +145,17 @@ VAR licho_noc = ()
 // Kapliczki spod boru: obronił tę na skraju lasu, ocalił świątka z wozu albo się nie wtrącał.
 LIST KapliczkiDrogi = obronil_kapliczke, ocalil_swiatka, nie_wtracal
 VAR kapliczki_drogi = ()
+
+// ---------- Rozdział dziewiąty (Wesele) ----------
+// Jak Jaromir poszedł w swaty: po staremu ze Stasiem i gorzałką albo sam, prosto do kowala.
+LIST Swaty = po_staremu, bez_swata
+VAR swaty = ()
+// Zniknięcie Franka przed weselem: szukał z Antkiem na skraju boru, zostawił to Antkowi (Antek urażony) albo poszedł po radę do babki Hanki.
+LIST SzukanieFranka = na_skraju_boru, antek_sam, rada_babki
+VAR szukanie_franka = ()
+// Starzec w kapeluszu z mchu na skraju lasu w noc oczepin: ugoszczony kołaczem (pakt z lasem), zapytany („Pilnuj jej”) albo zaryglowane drzwi.
+LIST WeselnyGosc = ugoszczony_kolaczem, zapytany, zaryglowany
+VAR weselny_gosc = ()
+// Ojciec dał Jaromirowi w dniu ślubu siekierę dziadka Maćka (i krzesiwo, jeśli babka go nie oddała).
+VAR siekiera_dziadka = false
+VAR krzesiwo_na_slubie = false

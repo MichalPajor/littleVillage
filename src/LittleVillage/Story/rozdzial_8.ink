@@ -208,13 +208,8 @@ A kilka kroków przed nią, w tę samą stronę, szedł Franek. # pokaz: franek 
 -> rozdzial_osmy_ciag_dalszy
 
 
-// Koniec rozdziału ósmego — rozdział dziewiąty (Wesele) do napisania.
+// Koniec rozdziału ósmego — dalej rozdział dziewiąty.
 === rozdzial_osmy_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału ósmego._ # dalej
--> rozdzial_dziewiaty_wkrotce
-
-=== rozdzial_dziewiaty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_dziewiaty

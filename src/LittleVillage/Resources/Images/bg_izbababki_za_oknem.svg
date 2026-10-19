@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „izba babki Hanki”: bór za oknem
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="250 120 80 80">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<line x1="252" y1="203.5271281146945" x2="252" y2="191.5271281146945" stroke-width="4"/><path d="M242.0 195.5L252.0 181.1L262.0 195.5Z M244.0 185.2L252.0 170.8L260.0 185.2Z M246.0 174.9L252.0 160.5L258.0 174.9Z M248.0 164.7L252.0 150.2L256.0 164.7Z M250.0 154.4L252.0 140.0L254.0 154.4Z" fill="#000000" stroke-width="2.4"/>
+<line x1="261" y1="200.28824752072495" x2="261" y2="188.28824752072495" stroke-width="4"/><path d="M251.0 192.3L261.0 174.4L271.0 192.3Z M253.0 179.5L261.0 161.6L269.0 179.5Z M255.0 166.7L261.0 148.8L267.0 166.7Z M257.0 154.0L261.0 136.1L265.0 154.0Z M259.0 141.2L261.0 123.3L263.0 141.2Z" fill="#000000" stroke-width="2.4"/>
+<line x1="270" y1="200.60522888118828" x2="270" y2="188.60522888118828" stroke-width="4"/><path d="M260.0 192.6L270.0 179.2L280.0 192.6Z M262.0 183.0L270.0 169.6L278.0 183.0Z M264.0 173.4L270.0 160.0L276.0 173.4Z M266.0 163.8L270.0 150.4L274.0 163.8Z M268.0 154.2L270.0 140.7L272.0 154.2Z" fill="#000000" stroke-width="2.4"/>
+<line x1="279" y1="199.324683323854" x2="279" y2="187.324683323854" stroke-width="4"/><path d="M269.0 191.3L279.0 177.5L289.0 191.3Z M271.0 181.5L279.0 167.7L287.0 181.5Z M273.0 171.6L279.0 157.8L285.0 171.6Z M275.0 161.8L279.0 148.0L283.0 161.8Z M277.0 151.9L279.0 138.1L281.0 151.9Z" fill="#000000" stroke-width="2.4"/>
+<line x1="288" y1="200.58125084469157" x2="288" y2="188.58125084469157" stroke-width="4"/><path d="M278.0 192.6L288.0 176.4L298.0 192.6Z M280.0 181.0L288.0 164.8L296.0 181.0Z M282.0 169.4L288.0 153.3L294.0 169.4Z M284.0 157.9L288.0 141.7L292.0 157.9Z M286.0 146.3L288.0 130.1L290.0 146.3Z" fill="#000000" stroke-width="2.4"/>
+<line x1="297" y1="203.10780602177536" x2="297" y2="191.10780602177536" stroke-width="4"/><path d="M287.0 195.1L297.0 178.8L307.0 195.1Z M289.0 183.5L297.0 167.1L305.0 183.5Z M291.0 171.8L297.0 155.5L303.0 171.8Z M293.0 160.2L297.0 143.8L301.0 160.2Z M295.0 148.5L297.0 132.2L299.0 148.5Z" fill="#000000" stroke-width="2.4"/>
+<line x1="306" y1="199.37086127620844" x2="306" y2="187.37086127620844" stroke-width="4"/><path d="M296.0 191.4L306.0 180.0L316.0 191.4Z M298.0 183.2L306.0 171.8L314.0 183.2Z M300.0 175.1L306.0 163.7L312.0 175.1Z M302.0 166.9L306.0 155.5L310.0 166.9Z M304.0 158.8L306.0 147.4L308.0 158.8Z" fill="#000000" stroke-width="2.4"/>
+<line x1="315" y1="201.43538470610997" x2="315" y2="189.43538470610997" stroke-width="4"/><path d="M305.0 193.4L315.0 177.2L325.0 193.4Z M307.0 181.9L315.0 165.7L323.0 181.9Z M309.0 170.3L315.0 154.1L321.0 170.3Z M311.0 158.7L315.0 142.5L319.0 158.7Z M313.0 147.1L315.0 130.9L317.0 147.1Z" fill="#000000" stroke-width="2.4"/>
+<line x1="324" y1="203.02202343744744" x2="324" y2="191.02202343744744" stroke-width="4"/><path d="M314.0 195.0L324.0 183.3L334.0 195.0Z M316.0 186.6L324.0 174.9L332.0 186.6Z M318.0 178.2L324.0 166.5L330.0 178.2Z M320.0 169.9L324.0 158.1L328.0 169.9Z M322.0 161.5L324.0 149.7L326.0 161.5Z" fill="#000000" stroke-width="2.4"/>
+</g>
+</svg>

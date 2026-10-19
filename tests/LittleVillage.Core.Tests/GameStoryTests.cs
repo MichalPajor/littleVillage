@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -292,6 +292,8 @@ public sealed class GameStoryTests
         Assert.All(pages.SelectMany(p => p.Blocks), b => Assert.DoesNotContain("#", b.Text));
         // spacja przed kropka lub przecinkiem albo podwojna spacja zdradza zle zlozony warunek ink ("{ war: a | b }.")
         Assert.All(pages.SelectMany(p => p.Blocks), b => Assert.DoesNotMatch(@" [.,;:!?]|  ", b.Text));
+        // brak spacji po kropce zdradza warunek doklejony bez spacji ("makiem.{ war: Obok…}" -> "makiem.Obok")
+        Assert.All(pages.SelectMany(p => p.Blocks), b => Assert.DoesNotMatch(@"\p{Ll}[.!?…]\p{Lu}", b.Text));
         Assert.All(pages, p => Assert.False(string.IsNullOrEmpty(p.BackgroundKey)));
     }
 
@@ -783,6 +785,7 @@ public sealed class GameStoryTests
     private static readonly int[] Bridge7 = [0];                                   // Zaduszki: chleb pod kapliczke
     private static readonly int[] Pentecost = [0, 0, 0, 0];                        // piolun, ratunek Franka, korale, pod bzem
     private static readonly int[] LeanSummer = [0, 0, 0, 0, 0];                    // licho przy studni, wyrab z ojcem, drag, pukanie, kapliczki
+    private static readonly int[] Wedding = [0, 0, 0, 0];                          // swaty, Franek, podarunek kowala, starzec na skraju lasu
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1627,8 +1630,7 @@ public sealed class GameStoryTests
         Assert.True(Has(forest, "szedł Franek"));
         Assert.True(Variable(engine, "licho_noc", "ugoszczone"));
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału ósmego._"));
-        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal("swaty", pages[^1].BackgroundKey);
     }
 
     [Fact]
@@ -1646,7 +1648,7 @@ public sealed class GameStoryTests
         Assert.Equal("Świątek z kapliczki", engine.GetInventory().Single(i => i.Id == "swiatek").Name);
         Assert.False(Has(On(pages, "bor_blizej"), "Tylko przy tej jednej"));
         Assert.True(Has(On(pages, "bor_blizej"), "chodził już tylko o kulach"));
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal("swaty", pages[^1].BackgroundKey);
     }
 
     [Fact]
@@ -1661,7 +1663,7 @@ public sealed class GameStoryTests
         Assert.False(Has(On(pages, "drzwi_noc"), "babki Marianny"));
         Assert.True(Has(On(pages, "kapliczki_wykop"), "garść miedziaków"));
         Assert.DoesNotContain("swiatek", Inventory(engine));
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal("swaty", pages[^1].BackgroundKey);
     }
 
     [Fact]
@@ -1679,5 +1681,69 @@ public sealed class GameStoryTests
             Play(engine, [.. PeacefulToLeanSummer, 0, 2]);
             Assert.DoesNotContain("monety", Inventory(engine));
         }
+    }
+
+    // ----- Rozdzial dziewiaty: Wesele -----
+
+    private static readonly int[] PeacefulToWedding = [.. PeacefulToLeanSummer, 0, 0, 0, 0, 0];
+
+    [Fact]
+    public void Chapter_nine_old_ways_horseshoe_and_cake_for_the_old_man()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToWedding, 0, 0, 0, 0]);
+
+        var winter = On(pages, "glodna_zima")[0];
+        Assert.Equal("Rozdział dziewiąty", winter.Blocks[0].Text);
+        Assert.Equal("Wesele", winter.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.True(Has([winter], "W Wigilię w całej Zapadlinie"));
+        Assert.True(Has(On(pages, "piec_lat"), "Jaromir skończył dziewiętnaście lat"));
+        Assert.True(Has(On(pages, "swaty"), "przewiązała nią butelkę"));
+        Assert.True(Has(On(pages, "skraj_kapota"), "Krwi nie ma"));
+        var wedding = On(pages, "slub_droga");
+        Assert.True(Has(wedding, "Mnie dał ją mój ojciec, kiedy się żeniłem"));
+        Assert.True(Has(wedding, "położyła pod nią gałązkę ruty"));
+        Assert.True(Has(wedding, "Nad drzwiami, ramionami do góry"));
+        Assert.Equal("Podkowa kowala", engine.GetInventory().Single(i => i.Id == "podkowa").Name);
+        Assert.Equal("Siekiera dziadka Maćka", engine.GetInventory().Single(i => i.Id == "siekiera").Name);
+        Assert.Contains(On(pages, "wesele_noc")[0].Blocks, b => b.Reveal == "starzec");
+        Assert.True(Has(On(pages, "wesele_noc"), "jak gospodarz gospodarzowi"));
+        Assert.True(Has(On(pages, "pierwszy_ranek"), "pod kapotą Franka"));
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału dziewiątego._"));
+        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_nine_alone_to_the_smith_cross_for_hanka_and_the_old_man_speaks()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToWedding, 1, 1, 1, 1]);
+
+        Assert.True(Has(On(pages, "swaty"), "Bez swata? Bez gorzałki?"));
+        Assert.True(Has(On(pages, "wesele_noc"), "nie bawił się z innymi"));
+        Assert.Equal("Krzyżyk kowala", engine.GetInventory().Single(i => i.Id == "krzyzyk").Name);
+        Assert.DoesNotContain("podkowa", Inventory(engine));
+        Assert.True(Has(On(pages, "slub_droga"), "żelazny krzyżyk od ojca"));
+        Assert.True(Has(On(pages, "wesele_noc"), "Dobrze się żenisz, wnuku Maćka. Pilnuj jej."));
+        var morning = On(pages, "pierwszy_ranek");
+        Assert.True(Has(morning, "o jakich opowiadał mu Antek"));
+        Assert.True(Has(morning, "z żelaznym krzyżykiem na szyi"));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_nine_grandmothers_advice_and_the_barred_door()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToWedding, 0, 2, 0, 2]);
+
+        Assert.True(Has(On(pages, "izba_babki"), "Módl się za niego"));
+        Assert.False(Has(pages, "głód wygoni z boru wilki"));
+        Assert.True(Has(On(pages, "wesele_noc"), "aż do pierwszego kura"));
+        Assert.False(Has(On(pages, "wesele_noc"), "sprawdził zasuwę"));
+        Assert.True(Has(On(pages, "pierwszy_ranek"), "takich nie zostawia żaden zwykły wilk"));
+        Assert.True(Variable(engine, "weselny_gosc", "zaryglowany"));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 }

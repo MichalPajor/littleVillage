@@ -34,12 +34,15 @@ RODZAJE = {
     "pole_orka": ("pole", False), "stary_dab": ("laka", False), "sciecie_debu": ("laka", False), "uboze_piec": ("izba", True),
     "przed_zniwami": ("pole", False), "zniwa": ("pole", False), "poludnica": ("pole", False), "goraczka": ("izba", True),
     "czerwony_ksiezyc": ("pole", True), "kapliczki_noc": ("laka", True), "budowa_tartaku": ("droga", False), "wykopki": ("jesien", False),
-    "zaduszki": ("laka", True), "zima_przedzenie": ("izba", False), "wielkanoc": ("laka", False),
+    "zaduszki": ("jesien", True), "zima_przedzenie": ("izba", False), "wielkanoc": ("laka", False),
     "swiatki": ("laka", False), "jezioro_swiatki": ("woda", True), "rusalki": ("woda", True), "brzeg_noc": ("woda", True),
     "pomost_rano": ("woda", False), "bez_zachod": ("laka", False),
     "susza": ("susza", False), "studnia": ("susza", False), "izba_sierpien": ("izba", False), "wyreb": ("susza", False),
     "droga_wyreb": ("susza", False), "izba_ranny": ("izba", True), "drzwi_noc": ("izba", True), "kapliczki_wykop": ("susza", False),
     "bor_blizej": ("susza", False),
+    "glodna_zima": ("snieg", False), "piec_lat": ("laka", False), "swaty": ("jesien", True), "antek_wiesc": ("jesien", False),
+    "skraj_kapota": ("las", False), "izba_babki": ("izba", False), "kuznia_wieczor": ("izba", True), "slub_droga": ("jesien", False),
+    "wesele_noc": ("jesien", True), "pierwszy_ranek": ("jesien", False),
 }
 
 
@@ -255,7 +258,9 @@ def build_for(key, layers):
                 corner = [wysoka_trawa(x, 850, h, lean * l, ink_for(k), 3.0) for x, h, l in zip(xs, (240, 200, 170, 280), (30, 50, 10, 60))]
                 add(nm, -20 if side == "l" else 270, 560, 140, 290, corner,
                     {"type": "sway", "amplitude": 2, "duration": 3800 if side == "l" else 4200, "anchorX": 0.2 if side == "l" else 0.8, "anchorY": 1}, "wysokie źdźbła w rogu")
-        if noc:
+        if noc and rodzaj == "jesien":
+            pass    # jesienna noc (Zaduszki, listopadowe wesele) — bez swietlikow
+        elif noc:
             fl = [f'<circle cx="{x}" cy="{y}" r="2" fill="#FFFFFF" stroke="none"/>' for x, y, k in spots(7, ys + 20, 760, {"light", "dark", "hatch", "water"})]
             add("swietliki", 0, y0, 390, 844 - y0, fl, {"type": "wander", "amplitude": 14, "duration": 5200}, "świetliki", {"noInvert": True})
         elif rodzaj in ("laka", "droga", "pole"):
