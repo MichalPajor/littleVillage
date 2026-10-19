@@ -87,7 +87,7 @@ def ribbon(x0, x1, y, thick, wav):
     return top + bot + f" C{x0 - 12} {y + thick} {x0 - 12} {y} {x0} {y}Z"
 
 
-def write_layers(out_dir, prefix, scene, layers, order, comments):
+def write_layers(out_dir, prefix, scene, layers, order, comments, quiet=False):
     """Zapisuje kazda warstwe jako osobne SVG z viewBox = polozenie warstwy na plotnie 390x844."""
     for name in order:
         x, y, w, h, body = layers[name]
@@ -96,7 +96,8 @@ def write_layers(out_dir, prefix, scene, layers, order, comments):
                f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="{x} {y} {w} {h}">\n<defs>\n{DEFS}\n</defs>\n{body}\n</svg>\n')
         with open(os.path.join(out_dir, f"{prefix}_{name}.svg"), "w", encoding="utf-8") as f:
             f.write(doc)
-        print(f"{prefix}_{name}", (x, y, w, h))
+        if not quiet:
+            print(f"{prefix}_{name}", (x, y, w, h))
 
 
 def master(layers, order, background=PAPER):

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „dolny plan: jesien”: opadłe liście
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="410" height="400" viewBox="-10 440 410 400">
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="443" viewBox="-10 401 410 443">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
@@ -25,21 +25,19 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<g transform="rotate(20 222 517)"><path d="M216 517C219 513 225 513 229 517C225 521 219 521 216 517Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(97 81 654)"><path d="M75 654C78 650 84 650 88 654C84 658 78 658 75 654Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(51 83 646)"><path d="M77 646C80 642 86 642 90 646C86 650 80 650 77 646Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(346 387 751)"><path d="M381 751C384 747 390 747 394 751C390 755 384 755 381 751Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(314 385 743)"><path d="M379 743C382 739 388 739 392 743C388 747 382 747 379 743Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(164 337 650)"><path d="M331 650C334 646 340 646 344 650C340 654 334 654 331 650Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(56 305 801)"><path d="M299 801C302 797 308 797 312 801C308 805 302 805 299 801Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(282 91 482)"><path d="M85 482C88 478 94 478 98 482C94 486 88 486 85 482Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(358 107 715)"><path d="M101 715C104 711 110 711 114 715C110 719 104 719 101 715Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(320 383 528)"><path d="M377 528C380 524 386 524 390 528C386 532 380 532 377 528Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(142 166 471)"><path d="M160 471C163 467 169 467 173 471C169 475 163 475 160 471Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(77 290 486)"><path d="M284 486C287 482 293 482 297 486C293 490 287 490 284 486Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(131 221 505)"><path d="M215 505C218 501 224 501 228 505C224 509 218 509 215 505Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(355 200 815)"><path d="M194 815C197 811 203 811 207 815C203 819 197 819 194 815Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(319 319 476)"><path d="M313 476C316 472 322 472 326 476C322 480 316 480 313 476Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(352 67 578)"><path d="M61 578C64 574 70 574 74 578C70 582 64 582 61 578Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(134 64 591)"><path d="M58 591C61 587 67 587 71 591C67 595 61 595 58 591Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(66 25 719)"><path d="M19 719C22 715 28 715 32 719C28 723 22 723 19 719Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(204 358 778)"><path d="M352 778C355 774 361 774 365 778C361 782 355 782 352 778Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(71 181 817)"><path d="M175 817C178 813 184 813 188 817C184 821 178 821 175 817Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(230 41 799)"><path d="M35 799C38 795 44 795 48 799C44 803 38 803 35 799Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(280 265 486)"><path d="M259 486C262 482 268 482 272 486C268 490 262 490 259 486Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(47 211 757)"><path d="M205 757C208 753 214 753 218 757C214 761 208 761 205 757Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(285 241 619)"><path d="M235 619C238 615 244 615 248 619C244 623 238 623 235 619Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(220 52 540)"><path d="M46 540C49 536 55 536 59 540C55 544 49 544 46 540Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(210 230 732)"><path d="M224 732C227 728 233 728 237 732C233 736 227 736 224 732Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(20 31 739)"><path d="M25 739C28 735 34 735 38 739C34 743 28 743 25 739Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(241 181 780)"><path d="M175 780C178 776 184 776 188 780C184 784 178 784 175 780Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(190 26 601)"><path d="M20 601C23 597 29 597 33 601C29 605 23 605 20 601Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(143 202 623)"><path d="M196 623C199 619 205 619 209 623C205 627 199 627 196 623Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
 </g>
 </svg>

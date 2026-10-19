@@ -36,7 +36,13 @@ def _fmt(key, layers, width=390, height=844, color="#EDEBE6"):
 def upsert(key, layers):
     # dolny plan (to, co widac po schowaniu okna z tekstem) doklejany zawsze na koncu — patrz dolny_plan.py
     import dolny_plan
-    layers = [l for l in layers if not l["image"].startswith("bg_dol_")] + dolny_plan.layers_for(key)
+    layers = [l for l in layers if not l["image"].startswith("bg_dol_")]
+    dol = dolny_plan.layers_for(key, layers)
+    # dolny plan zaraz za pierwszym planem (*_przod), zeby postacie i klosy dalej byly na wierzchu; bez przodu — za tlem
+    import ciaglosc
+    pi = ciaglosc.przod_index(layers)
+    at = pi + 1 if pi is not None else 1
+    layers = layers[:at] + dol + layers[at:]
     s = open(JSON_PATH, encoding="utf-8").read()
     lines = s.split("\n")
     start = next((i for i, l in enumerate(lines) if l.startswith(f'    "{key}": {{')), None)

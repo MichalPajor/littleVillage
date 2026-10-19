@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „dolny plan: zgliszcza”: kamienie
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="433" viewBox="-10 411 410 433">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M56.43636363636364 506C56.43636363636364 498.77272727272725 65 497 70 498C79.56363636363636 498.77272727272725 81 504 79.56363636363636 506Z" fill="#EDEBE6" stroke="#000000" stroke-width="2"/><path d="M62 501c3 -1 7 -1 9 0" fill="none" stroke="#000000" stroke-width="1"/>
+<path d="M253.76363636363635 584C253.76363636363635 573.2272727272727 266 571 274 572C288.23636363636365 573.2272727272727 290 581 288.23636363636365 584Z" fill="#EDEBE6" stroke="#000000" stroke-width="2"/><path d="M262 576c5 -2 10 -2 14 0" fill="none" stroke="#000000" stroke-width="1"/>
+<path d="M114.89090909090909 486C114.89090909090909 479.6818181818182 122 478 127 479C135.10909090909092 479.6818181818182 136 484 135.10909090909092 486Z" fill="#EDEBE6" stroke="#000000" stroke-width="2"/><path d="M120 482c3 -1 6 -1 8 0" fill="none" stroke="#000000" stroke-width="1"/>
+<path d="M15.418181818181818 630C15.418181818181818 617.1363636363636 30 615 40 616C56.58181818181818 617.1363636363636 59 626 56.58181818181818 630Z" fill="#EDEBE6" stroke="#000000" stroke-width="2"/><path d="M26 621c6 -3 12 -3 16 0" fill="none" stroke="#000000" stroke-width="1"/>
+<path d="M152.70909090909092 681C152.70909090909092 665.8181818181819 170 663 182 664C201.29090909090908 665.8181818181819 204 676 201.29090909090908 681Z" fill="#EDEBE6" stroke="#000000" stroke-width="2"/><path d="M165 670c7 -3 15 -3 19 0" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+</svg>

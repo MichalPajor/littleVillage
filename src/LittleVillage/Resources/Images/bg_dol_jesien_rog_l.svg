@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- LittleVillage — tło „dolny plan: jesien”: wysokie źdźbła w lewym rogu
+<!-- LittleVillage — tło „dolny plan: jesien”: wysokie źdźbła w rogu
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="140" height="310" viewBox="-20 540 140 310">
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="290" viewBox="-20 560 140 290">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
@@ -25,9 +25,9 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<path d="M4 850C13 746 25 642 34 590" fill="none" stroke="#000000" stroke-width="3.2"/>
-<path d="M16 850C31 762 51 674 66 630" fill="none" stroke="#000000" stroke-width="3.2"/>
-<path d="M26 850C29 778 33 706 36 670" fill="none" stroke="#000000" stroke-width="3.2"/>
-<path d="M-6 850C12 730 36 610 54 550" fill="none" stroke="#000000" stroke-width="3.2"/>
+<path d="M4 850C13 754 25 658 34 610" fill="none" stroke="#000000" stroke-width="3.0"/>
+<path d="M16 850C31 770 51 690 66 650" fill="none" stroke="#000000" stroke-width="3.0"/>
+<path d="M26 850C29 782 33 714 36 680" fill="none" stroke="#000000" stroke-width="3.0"/>
+<path d="M-6 850C12 738 36 626 54 570" fill="none" stroke="#000000" stroke-width="3.0"/>
 </g>
 </svg>

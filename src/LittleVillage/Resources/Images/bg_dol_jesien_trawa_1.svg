@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „dolny plan: jesien”: kępy trawy kołyszą się
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="450" height="220" viewBox="-30 500 450 220">
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="203" viewBox="-30 513 450 203">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
@@ -25,27 +25,19 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<path d="M54 595l-10.0 -35.2M54 595l-2.5 -45.2M54 595l7.5 -40.2M54 595l17.6 -30.1M54 595l-20.1 -22.6" fill="none" stroke="#000000" stroke-width="2.2"/>
-<path d="M275 607l-10.2 -35.8M275 607l-2.6 -46.0M275 607l7.7 -40.9M275 607l17.9 -30.7M275 607l-20.5 -23.0" fill="none" stroke="#000000" stroke-width="2.2"/>
-<path d="M338 644l-11.0 -38.4M338 644l-2.7 -49.3M338 644l8.2 -43.9M338 644l19.2 -32.9M338 644l-21.9 -24.7" fill="none" stroke="#000000" stroke-width="2.2"/>
-<path d="M238 598l-9.0 -31.6M238 598l-2.3 -40.7M238 598l6.8 -36.1M238 598l15.8 -27.1M238 598l-18.1 -20.3" fill="none" stroke="#000000" stroke-width="2.1"/>
-<path d="M162 664l-12.7 -44.6M162 664l-3.2 -57.3M162 664l9.6 -50.9M162 664l22.3 -38.2M162 664l-25.5 -28.7" fill="none" stroke="#000000" stroke-width="2.4"/>
-<path d="M198 626l-12.0 -41.8M198 626l-3.0 -53.8M198 626l9.0 -47.8M198 626l20.9 -35.9M198 626l-23.9 -26.9" fill="none" stroke="#000000" stroke-width="2.3"/>
-<path d="M76 616l-10.1 -35.2M76 616l-2.5 -45.2M76 616l7.5 -40.2M76 616l17.6 -30.2M76 616l-20.1 -22.6" fill="none" stroke="#000000" stroke-width="2.2"/>
-<path d="M340 676l-11.8 -41.3M340 676l-3.0 -53.1M340 676l8.9 -47.2M340 676l20.7 -35.4M340 676l-23.6 -26.6" fill="none" stroke="#000000" stroke-width="2.3"/>
-<path d="M270 589l-8.6 -30.1M270 589l-2.1 -38.7M270 589l6.4 -34.4M270 589l15.0 -25.8M270 589l-17.2 -19.3" fill="none" stroke="#000000" stroke-width="2.0"/>
-<path d="M277 589l-9.3 -32.4M277 589l-2.3 -41.7M277 589l6.9 -37.1M277 589l16.2 -27.8M277 589l-18.5 -20.8" fill="none" stroke="#000000" stroke-width="2.1"/>
-<path d="M23 640l-10.0 -34.9M23 640l-2.5 -44.9M23 640l7.5 -39.9M23 640l17.4 -29.9M23 640l-19.9 -22.4" fill="none" stroke="#000000" stroke-width="2.1"/>
-<path d="M48 643l-10.8 -37.7M48 643l-2.7 -48.5M48 643l8.1 -43.1M48 643l18.9 -32.3M48 643l-21.5 -24.2" fill="none" stroke="#000000" stroke-width="2.2"/>
-<path d="M111 590l-8.2 -28.5M111 590l-2.0 -36.7M111 590l6.1 -32.6M111 590l14.3 -24.5M111 590l-16.3 -18.3" fill="none" stroke="#000000" stroke-width="2.0"/>
-<path d="M306 657l-14.1 -49.3M306 657l-3.5 -63.4M306 657l10.6 -56.3M306 657l24.6 -42.2M306 657l-28.2 -31.7" fill="none" stroke="#000000" stroke-width="2.5"/>
-<path d="M341 604l-11.2 -39.1M341 604l-2.8 -50.3M341 604l8.4 -44.7M341 604l19.6 -33.5M341 604l-22.4 -25.2" fill="none" stroke="#000000" stroke-width="2.2"/>
-<path d="M102 635l-11.4 -40.0M102 635l-2.9 -51.4M102 635l8.6 -45.7M102 635l20.0 -34.3M102 635l-22.8 -25.7" fill="none" stroke="#000000" stroke-width="2.3"/>
-<path d="M394 571l-7.4 -25.8M394 571l-1.8 -33.1M394 571l5.5 -29.4M394 571l12.9 -22.1M394 571l-14.7 -16.6" fill="none" stroke="#000000" stroke-width="2.0"/>
-<path d="M388 589l-9.3 -32.4M388 589l-2.3 -41.6M388 589l6.9 -37.0M388 589l16.2 -27.8M388 589l-18.5 -20.8" fill="none" stroke="#000000" stroke-width="2.1"/>
-<path d="M49 589l-8.0 -28.1M49 589l-2.0 -36.1M49 589l6.0 -32.1M49 589l14.1 -24.1M49 589l-16.1 -18.1" fill="none" stroke="#000000" stroke-width="2.0"/>
-<path d="M322 573l-8.9 -31.2M322 573l-2.2 -40.1M322 573l6.7 -35.6M322 573l15.6 -26.7M322 573l-17.8 -20.0" fill="none" stroke="#000000" stroke-width="2.1"/>
-<path d="M162 615l-12.5 -43.7M162 615l-3.1 -56.2M162 615l9.4 -50.0M162 615l21.9 -37.5M162 615l-25.0 -28.1" fill="none" stroke="#000000" stroke-width="2.3"/>
-<path d="M235 612l-9.5 -33.2M235 612l-2.4 -42.6M235 612l7.1 -37.9M235 612l16.6 -28.4M235 612l-19.0 -21.3" fill="none" stroke="#000000" stroke-width="2.1"/>
+<path d="M197 694l-11.3 -39.7M197 694l-2.8 -51.0M197 694l8.5 -45.3M197 694l19.8 -34.0M197 694l-22.7 -25.5" fill="none" stroke="#000000" stroke-width="2.3"/>
+<path d="M337 575l-9.2 -32.3M337 575l-2.3 -41.6M337 575l6.9 -36.9M337 575l16.2 -27.7M337 575l-18.5 -20.8" fill="none" stroke="#000000" stroke-width="2.1"/>
+<path d="M361 682l-13.2 -46.4M361 682l-3.3 -59.6M361 682l9.9 -53.0M361 682l23.2 -39.7M361 682l-26.5 -29.8" fill="none" stroke="#000000" stroke-width="2.4"/>
+<path d="M328 651l-13.2 -46.3M328 651l-3.3 -59.6M328 651l9.9 -53.0M328 651l23.2 -39.7M328 651l-26.5 -29.8" fill="none" stroke="#000000" stroke-width="2.4"/>
+<path d="M158 575l-9.6 -33.6M158 575l-2.4 -43.2M158 575l7.2 -38.4M158 575l16.8 -28.8M158 575l-19.2 -21.6" fill="none" stroke="#000000" stroke-width="2.1"/>
+<path d="M348 577l-7.9 -27.5M348 577l-2.0 -35.4M348 577l5.9 -31.5M348 577l13.8 -23.6M348 577l-15.7 -17.7" fill="none" stroke="#000000" stroke-width="2.0"/>
+<path d="M8 631l-12.3 -42.9M8 631l-3.1 -55.2M8 631l9.2 -49.1M8 631l21.5 -36.8M8 631l-24.5 -27.6" fill="none" stroke="#000000" stroke-width="2.3"/>
+<path d="M90 654l-10.2 -35.9M90 654l-2.6 -46.1M90 654l7.7 -41.0M90 654l17.9 -30.7M90 654l-20.5 -23.1" fill="none" stroke="#000000" stroke-width="2.2"/>
+<path d="M234 651l-11.2 -39.1M234 651l-2.8 -50.2M234 651l8.4 -44.7M234 651l19.5 -33.5M234 651l-22.3 -25.1" fill="none" stroke="#000000" stroke-width="2.2"/>
+<path d="M9 666l-13.6 -47.4M9 666l-3.4 -61.0M9 666l10.2 -54.2M9 666l23.7 -40.7M9 666l-27.1 -30.5" fill="none" stroke="#000000" stroke-width="2.4"/>
+<path d="M124 586l-7.6 -26.6M124 586l-1.9 -34.2M124 586l5.7 -30.4M124 586l13.3 -22.8M124 586l-15.2 -17.1" fill="none" stroke="#000000" stroke-width="2.0"/>
+<path d="M117 619l-8.1 -28.3M117 619l-2.0 -36.4M117 619l6.1 -32.3M117 619l14.1 -24.2M117 619l-16.2 -18.2" fill="none" stroke="#000000" stroke-width="2.0"/>
+<path d="M291 678l-12.8 -44.9M291 678l-3.2 -57.8M291 678l9.6 -51.4M291 678l22.5 -38.5M291 678l-25.7 -28.9" fill="none" stroke="#000000" stroke-width="2.4"/>
+<path d="M277 611l-10.9 -38.0M277 611l-2.7 -48.8M277 611l8.1 -43.4M277 611l19.0 -32.6M277 611l-21.7 -24.4" fill="none" stroke="#000000" stroke-width="2.2"/>
 </g>
 </svg>
