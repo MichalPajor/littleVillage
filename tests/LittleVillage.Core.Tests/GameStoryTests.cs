@@ -1513,7 +1513,7 @@ public sealed class GameStoryTests
 
         var autumn = On(pages, "wykopki")[0];
         Assert.Equal("Rozdział siódmy", autumn.Blocks[0].Text);
-        Assert.Equal("Rusałki", autumn.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.Equal("Zielone Świątki", autumn.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
         Assert.True(Has([autumn], "Babie lato snuło się nad ścierniskami"));
         Assert.Contains(autumn.Blocks, b => b.Reveal == "zmrok");
         var allSouls = On(pages, "zaduszki")[0];

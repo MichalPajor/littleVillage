@@ -144,7 +144,7 @@ Mały oczywiście natychmiast tam wskoczył i skulił się tak, że nie było go
 === czary ===
 # tlo: czary
 # rozdzial: Prolog
-# tytul: Klątwa
+# tytul: Jedna świeca
 Tej samej nocy, daleko stąd, w ciasnej izbie za miejskim rynkiem paliła się jedna świeca.
 Starucha zsunęła kaptur. Rzadkie siwe włosy opadały jej na plecy. Na stole przed nią stała miska z czarną, mętną wodą, a obok – nadpalona figurka z rękami do stóp.
 Kobieta nakłuła palec igłą i pozwoliła trzem kroplom krwi spaść na drewno. Potem zanurzyła ją w misce i zaczęła mruczeć – nisko, monotonnie, w mowie, której nikt w mieście by nie zrozumiał. Płomień świecy przygasł i pochylił się, choć w izbie nie było przeciągu.
