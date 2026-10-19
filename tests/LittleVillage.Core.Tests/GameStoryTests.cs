@@ -1461,7 +1461,7 @@ public sealed class GameStoryTests
 
         var field = On(pages, "zniwa")[0];
         Assert.Equal("Rozdział szósty", field.Blocks[0].Text);
-        Assert.Equal("Południca", field.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.Equal("Samo południe", field.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
         Assert.True(Has([field], "Od kilku tygodni nie spadła ani kropla deszczu"));
         Assert.Contains(field.Blocks, b => b.Reveal == "sam");
 
