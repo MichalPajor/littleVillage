@@ -35,6 +35,8 @@ RODZAJE = {
     "przed_zniwami": ("pole", False), "zniwa": ("pole", False), "poludnica": ("pole", False), "goraczka": ("izba", True),
     "czerwony_ksiezyc": ("pole", True), "kapliczki_noc": ("laka", True), "budowa_tartaku": ("droga", False), "wykopki": ("jesien", False),
     "zaduszki": ("laka", True), "zima_przedzenie": ("izba", False), "wielkanoc": ("laka", False),
+    "swiatki": ("laka", False), "jezioro_swiatki": ("woda", True), "rusalki": ("woda", True), "brzeg_noc": ("woda", True),
+    "pomost_rano": ("woda", False), "bez_zachod": ("laka", False),
 }
 
 

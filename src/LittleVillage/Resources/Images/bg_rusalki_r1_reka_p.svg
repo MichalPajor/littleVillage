@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „rusałki”: rusałka 1 — reka_p (rysunek autora; # pokaz: rusalki, znika przy # pokaz: znikaja)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="115" height="203" viewBox="21 190 115 203">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.38000 0.00000 0.00000 0.38000 21.00000 190.40000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="reka_prawa" data-anim="obrot" data-origin="112,158" data-range="8deg" data-period="2.4">
+<path d="M117.9 155.4 L117.0 153.3 L115.7 150.6 L114.1 147.3 L112.5 143.6 L110.7 139.8 L108.9 135.9 L107.1 132.1 L105.5 128.6 L103.8 125.0 L102.0 121.3 L100.2 117.4 L98.4 113.5 L96.7 109.9 L95.1 106.6 L93.8 103.9 L92.8 101.9 L83.2 106.1 L84.0 108.3 L85.2 111.1 L86.6 114.4 L88.1 118.1 L89.7 122.0 L91.4 126.0 L93.0 129.8 L94.5 133.4 L96.0 137.0 L97.7 140.9 L99.4 144.8 L101.0 148.7 L102.6 152.4 L104.0 155.7 L105.2 158.5 L106.1 160.6Z" fill="#FFFFFF" stroke-width="3"/>
+<path d="M92.6 106.6 L93.6 104.6 L94.9 102.0 L96.6 98.9 L98.4 95.4 L100.3 91.8 L102.3 88.1 L104.2 84.5 L105.9 81.2 L107.7 77.9 L109.6 74.3 L111.5 70.6 L113.5 67.0 L115.3 63.5 L116.9 60.4 L118.3 57.8 L119.3 55.8 L112.7 52.2 L111.6 54.1 L110.0 56.6 L108.3 59.6 L106.3 62.9 L104.2 66.5 L102.1 70.1 L100.0 73.6 L98.1 76.8 L96.1 80.1 L94.1 83.5 L92.0 87.1 L89.9 90.7 L87.9 94.0 L86.1 97.0 L84.6 99.6 L83.4 101.4Z" fill="#FFFFFF" stroke-width="3"/>
+<path d="M92.6 106.6 L93.6 104.6 L94.9 102.0 L96.6 98.9 L98.4 95.4 L100.3 91.8 L102.3 88.1 L104.2 84.5 L105.9 81.2 L107.7 77.9 L109.6 74.3 L111.5 70.6 L113.5 67.0 L115.3 63.5 L116.9 60.4 L118.3 57.8 L119.3 55.8 L117.3 54.7 L116.3 56.7 L114.9 59.3 L113.2 62.3 L111.3 65.7 L109.3 69.4 L107.3 73.0 L105.4 76.6 L103.6 79.9 L101.8 83.2 L99.8 86.8 L97.8 90.4 L95.8 94.0 L94.0 97.4 L92.3 100.5 L90.9 103.1 L89.8 105.0Z" fill="url(#hatch)" stroke="none"/>
+<circle cx="88" cy="104" r="5" fill="#FFFFFF" stroke="none"/>
+<ellipse cx="106.7" cy="146.1" rx="17.7" ry="14" fill="#EDEBE6" stroke-width="3" transform="rotate(-114 106.7 146.1)"/>
+<path d="M106.7 132.1A17.7 14 0 0 1 106.7 160.1Z" fill="url(#hatch)" stroke="none" transform="rotate(-114 106.7 146.1)"/>
+<path d="M92.2 133.2l-2.0 -4.6" fill="none" stroke-width="1.5"/>
+<path d="M99.5 129.9l-2.0 -4.6" fill="none" stroke-width="1.5"/>
+<path d="M105.9 127.1l-2.0 -4.6" fill="none" stroke-width="1.5"/>
+<path d="M118.3 147.5Q105.9 144.3 100.0 155.7" fill="none" stroke-width="1.4"/>
+<ellipse cx="122" cy="48" rx="9" ry="7" fill="#FFFFFF" stroke-width="3" transform="rotate(-30 122 48)"/>
+<path d="M130.0 41.5 L130.6 40.6 L131.5 39.4 L132.6 37.9 L133.7 36.3 L134.8 34.7 L135.7 33.1 L136.6 31.5 L137.3 29.9 L138.0 28.3 L138.6 26.8 L139.1 25.6 L139.5 24.7 L136.5 23.3 L136.0 24.2 L135.4 25.3 L134.7 26.7 L133.9 28.2 L133.1 29.6 L132.3 30.9 L131.3 32.2 L130.2 33.6 L128.9 35.1 L127.8 36.5 L126.8 37.6 L126.0 38.5Z" fill="#FFFFFF" stroke-width="2.4"/>
+<circle cx="138" cy="24" r="1.6" fill="#FFFFFF" stroke-width="2"/>
+<path d="M124.5 38.5 L124.6 37.4 L124.8 35.8 L125.1 33.9 L125.4 32.0 L125.7 30.1 L126.0 28.4 L126.3 26.9 L126.6 25.4 L126.9 23.8 L127.2 22.4 L127.4 21.3 L127.6 20.4 L124.4 19.6 L124.1 20.4 L123.8 21.6 L123.3 22.9 L122.9 24.4 L122.4 26.0 L122.0 27.6 L121.6 29.2 L121.1 31.1 L120.6 33.1 L120.2 34.9 L119.8 36.4 L119.5 37.5Z" fill="#FFFFFF" stroke-width="2.4"/>
+<circle cx="126" cy="20" r="1.6" fill="#FFFFFF" stroke-width="2"/>
+<path d="M118.3 39.0 L117.8 38.0 L117.1 36.4 L116.2 34.6 L115.4 32.7 L114.6 30.9 L114.0 29.3 L113.4 27.9 L113.0 26.4 L112.5 25.0 L112.2 23.6 L111.9 22.5 L111.6 21.6 L108.4 22.4 L108.5 23.2 L108.7 24.4 L109.0 25.8 L109.3 27.4 L109.6 29.0 L110.0 30.7 L110.6 32.4 L111.3 34.4 L112.0 36.4 L112.7 38.2 L113.3 39.8 L113.7 41.0Z" fill="#FFFFFF" stroke-width="2.4"/>
+<circle cx="110" cy="22" r="1.6" fill="#FFFFFF" stroke-width="2"/>
+<path d="M130.4 52.2 L131.5 52.0 L133.1 51.6 L135.0 51.3 L137.0 50.8 L138.9 50.3 L140.7 49.7 L142.1 49.0 L143.5 48.1 L144.6 47.2 L145.6 46.4 L146.3 45.7 L146.9 45.2 L145.1 42.8 L144.4 43.3 L143.6 43.9 L142.6 44.5 L141.6 45.2 L140.5 45.8 L139.3 46.3 L138.0 46.6 L136.2 46.9 L134.3 47.2 L132.4 47.5 L130.8 47.6 L129.6 47.8Z" fill="#FFFFFF" stroke-width="2.4"/>
+<circle cx="146" cy="44" r="1.5" fill="#FFFFFF" stroke-width="2"/>
+</g>
+</g>
+</g></g>
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „rusałki”: trzciny (kołyszą się)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="110" viewBox="300 330 96 110">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<line x1="306" y1="426" x2="307" y2="387.6" stroke-width="1.4"/><rect x="304.7" y="392.4" width="2.6" height="14.4" rx="1.3" fill="#000000" stroke-width="0.8"/><path d="M312 432l-5.2 -23.4M312 432l2.6 -28.6M312 432l10.4 -20.8" fill="none" stroke-width="1.6"/>
+<line x1="316" y1="432" x2="317" y2="393.6" stroke-width="1.4"/><rect x="314.7" y="398.4" width="2.6" height="14.4" rx="1.3" fill="#000000" stroke-width="0.8"/><path d="M322 432l-5.2 -23.4M322 432l2.6 -28.6M322 432l10.4 -20.8" fill="none" stroke-width="1.6"/>
+<line x1="326" y1="426" x2="327" y2="387.6" stroke-width="1.4"/><rect x="324.7" y="392.4" width="2.6" height="14.4" rx="1.3" fill="#000000" stroke-width="0.8"/><path d="M332 432l-5.2 -23.4M332 432l2.6 -28.6M332 432l10.4 -20.8" fill="none" stroke-width="1.6"/>
+<line x1="336" y1="432" x2="337" y2="393.6" stroke-width="1.4"/><rect x="334.7" y="398.4" width="2.6" height="14.4" rx="1.3" fill="#000000" stroke-width="0.8"/><path d="M342 432l-5.2 -23.4M342 432l2.6 -28.6M342 432l10.4 -20.8" fill="none" stroke-width="1.6"/>
+<line x1="346" y1="426" x2="347" y2="387.6" stroke-width="1.4"/><rect x="344.7" y="392.4" width="2.6" height="14.4" rx="1.3" fill="#000000" stroke-width="0.8"/><path d="M352 432l-5.2 -23.4M352 432l2.6 -28.6M352 432l10.4 -20.8" fill="none" stroke-width="1.6"/>
+<line x1="356" y1="432" x2="357" y2="393.6" stroke-width="1.4"/><rect x="354.7" y="398.4" width="2.6" height="14.4" rx="1.3" fill="#000000" stroke-width="0.8"/><path d="M362 432l-5.2 -23.4M362 432l2.6 -28.6M362 432l10.4 -20.8" fill="none" stroke-width="1.6"/>
+<line x1="366" y1="426" x2="367" y2="387.6" stroke-width="1.4"/><rect x="364.7" y="392.4" width="2.6" height="14.4" rx="1.3" fill="#000000" stroke-width="0.8"/><path d="M372 432l-5.2 -23.4M372 432l2.6 -28.6M372 432l10.4 -20.8" fill="none" stroke-width="1.6"/>
+<line x1="376" y1="432" x2="377" y2="393.6" stroke-width="1.4"/><rect x="374.7" y="398.4" width="2.6" height="14.4" rx="1.3" fill="#000000" stroke-width="0.8"/><path d="M382 432l-5.2 -23.4M382 432l2.6 -28.6M382 432l10.4 -20.8" fill="none" stroke-width="1.6"/>
+<line x1="386" y1="426" x2="387" y2="387.6" stroke-width="1.4"/><rect x="384.7" y="392.4" width="2.6" height="14.4" rx="1.3" fill="#000000" stroke-width="0.8"/><path d="M392 432l-5.2 -23.4M392 432l2.6 -28.6M392 432l10.4 -20.8" fill="none" stroke-width="1.6"/>
+</g>
+</svg>

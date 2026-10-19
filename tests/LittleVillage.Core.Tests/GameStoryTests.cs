@@ -30,7 +30,7 @@ public sealed class GameStoryTests
         var pages = new List<StoryPage> { engine.StartNew() };
         var queue = new Queue<int>(choices);
 
-        for (var guard = 0; guard < 120; guard++)
+        for (var guard = 0; guard < 200; guard++)
         {
             var page = pages[^1];
             switch (page.Ending)
@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -781,6 +781,7 @@ public sealed class GameStoryTests
     private static readonly int[] Sawmill = [0, 0, 0, 0];                          // tartak, ostrzezenie, zoladz, uboze
     private static readonly int[] Noon = [0, 0, 0, 0];                             // trzy zagadki, czy powiedziec ojcu
     private static readonly int[] Bridge7 = [0];                                   // Zaduszki: chleb pod kapliczke
+    private static readonly int[] Pentecost = [0, 0, 0, 0];                        // piolun, ratunek Franka, korale, pod bzem
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1527,8 +1528,75 @@ public sealed class GameStoryTests
         var easter = On(pages, "wielkanoc")[0];
         Assert.Contains(easter.Blocks, b => b.Reveal == "dyngus");
         Assert.True(Has([easter], "Jaromir skończył czternaście lat"));
+        Assert.Equal("swiatki", pages[^1].BackgroundKey);
+        Assert.Equal(PageEnding.Choices, pages[^1].Ending);
+        Assert.True(Has(On(pages, "zniwa"), "Jaromir miał trzynaście lat"));
+    }
+
+    // ----- Rozdzial siodmy: Zielone Swiatki i rusalki -----
+
+    private const int TakeWormwood = 0, LaughAtWormwood = 1;
+    private static readonly int[] PeacefulToPentecost = [.. PeacefulToNoon, 0, 0, 0, TellFather, 0];
+
+    private static bool Variable(InkStoryEngine engine, string name, string value) =>
+        System.Text.Json.JsonDocument.Parse(engine.SaveState()).RootElement.GetProperty("variablesState").GetProperty(name).ToString().Contains(value);
+
+    [Fact]
+    public void Chapter_seven_wormwood_drives_the_rusalki_away_and_the_village_names_them()
+    {
+        var engine = CreateEngine();
+        Play(engine, [.. PeacefulToPentecost, TakeWormwood]);
+        Assert.Contains("piolun", Inventory(engine));
+
+        var pages = Play(engine, [.. PeacefulToPentecost, TakeWormwood, 0, 0, 0]);
+        var shallows = On(pages, "rusalki")[0];
+        Assert.Equal(3, shallows.Choices.Count);
+        Assert.Contains(shallows.Blocks, b => b.Reveal == "rusalki");
+        Assert.True(Has([shallows], "na jej szyi czerwieniały korale z jarzębiny"));
+        Assert.DoesNotContain("piolun", Inventory(engine));
+        Assert.DoesNotContain("korale", Inventory(engine));
+        Assert.True(Has(On(pages, "rusalki"), "Rusałki zawyły"));
+        var shore = On(pages, "brzeg_noc");
+        Assert.True(Has(shore, "To była Kaśka – szepnęła Hanka"));
+        Assert.True(Has(shore, "powtarzali jedno słowo: rusałki"));
+        Assert.True(Has(On(pages, "pomost_rano"), "przycisnęła do piersi"));
+        Assert.True(Has(On(pages, "bez_zachod"), "Nie rusałek – tylko tego, że ciebie też wciągną"));
+        Assert.True(Variable(engine, "pocalunek", "true") || Variable(engine, "pocalunek", "True"));
+        Assert.True(Variable(engine, "ratunek_franka", "piolunem"));
         Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
         Assert.Equal(PageEnding.End, pages[^1].Ending);
-        Assert.True(Has(On(pages, "zniwa"), "Jaromir miał trzynaście lat"));
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału siódmego._"));
+    }
+
+    [Fact]
+    public void Chapter_seven_without_wormwood_hanka_calls_kaska_by_name_and_the_beads_stay_wet()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToPentecost, LaughAtWormwood, 1, 2, 1]);
+        Assert.True(Has(pages, "Twoja babka jeszcze w strzygi wierzy?"));
+        var shallows = On(pages, "rusalki")[0];
+        Assert.Equal(2, shallows.Choices.Count);
+        Assert.DoesNotContain(shallows.Choices, c => c.Text.Contains("piołun"));
+        Assert.True(Has(On(pages, "rusalki"), "Kaśka! Kaśka Wójcikówna! Puść go!"));
+        Assert.False(Has(On(pages, "brzeg_noc"), "To była Kaśka – szepnęła Hanka"));
+        Assert.True(Has(On(pages, "brzeg_noc"), "siniaki w kształcie drobnych, dziewczęcych palców"));
+        Assert.Contains("korale", Inventory(engine));
+        Assert.Equal("Korale z jarzębiny", engine.GetInventory().Single(i => i.Id == "korale").Name);
+        Assert.True(Has(On(pages, "bez_zachod"), "Wziął ją tylko za rękę"));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_seven_the_cross_does_not_burn_them_and_the_beads_go_back_to_the_lake()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToPentecost, TakeWormwood, 1, 1, 0]);
+
+        Assert.Contains("piolun", Inventory(engine));
+        Assert.True(Has(On(pages, "rusalki"), "Krzyż nas nie pali, chłopcze"));
+        Assert.True(Has(On(pages, "brzeg_noc"), "Chodził nad jezioro każdego wieczoru"));
+        Assert.True(Has(On(pages, "pomost_rano"), "Korale plusnęły cicho"));
+        Assert.DoesNotContain("korale", Inventory(engine));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 }

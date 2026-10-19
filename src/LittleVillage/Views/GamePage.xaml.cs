@@ -31,6 +31,7 @@ public partial class GamePage : BasePage
         // Rejestracja przed base.OnAppearing — ViewModel wyświetla stronę właśnie tam.
         _messenger.Register<StoryPageShownMessage>(this, (_, message) => _ = OnPageShownAsync(message.Page));
         _messenger.Register<StoryChoiceSelectedMessage>(this, (_, _) => _ = OnChoiceSelectedAsync());
+        _messenger.Register<InventoryChangedMessage>(this, (_, message) => _ = ShowInventoryChangeAsync(message.Change));
 
         _revealTimer ??= CreateRevealTimer();
         _revealTimer.Start();
@@ -85,6 +86,63 @@ public partial class GamePage : BasePage
 
         // Bez await: przed pierwszym układem ScrollToAsync potrafi się nigdy nie zakończyć.
         _ = StoryScroll.ScrollToAsync(0, 0, animated: false);
+    }
+
+    // Zmiana ekwipunku: tobołek podskakuje, a spod niego wysuwa się karteczka z każdym przedmiotem po kolei.
+    private readonly SemaphoreSlim _toastGate = new(1, 1);
+
+    private async Task ShowInventoryChangeAsync(InventoryChange change)
+    {
+        await _toastGate.WaitAsync();
+        try
+        {
+            await Task.Delay(700);      // najpierw niech pojawi się tekst strony
+            foreach (var (item, added) in change.Added.Select(i => (i, true)).Concat(change.Removed.Select(i => (i, false))))
+            {
+                InventoryToastSign.Text = added ? "+" : "−";
+                InventoryToastCaption.Text = added ? "Do tobołka trafia" : "Z tobołka znika";
+                InventoryToastName.Text = item.Name;
+                InventoryToastName.TextDecorations = added ? TextDecorations.None : TextDecorations.Strikethrough;
+
+                InventoryToast.TranslationX = 40;
+                InventoryToast.Opacity = 0;
+                InventoryToast.IsVisible = true;
+
+                await Task.WhenAll(
+                    InventoryToast.FadeToAsync(1, 300, Easing.CubicOut),
+                    InventoryToast.TranslateToAsync(0, 0, 350, Easing.CubicOut),
+                    PulseBackpackAsync(added));
+                await Task.Delay(2200);
+                await Task.WhenAll(
+                    InventoryToast.FadeToAsync(0, 400, Easing.CubicIn),
+                    InventoryToast.TranslateToAsync(added ? 40 : -20, 0, 400, Easing.CubicIn));
+                InventoryToast.IsVisible = false;
+            }
+        }
+        finally
+        {
+            _toastGate.Release();
+        }
+    }
+
+    private async Task PulseBackpackAsync(bool added)
+    {
+        // Przybywa: tobołek „łapie” przedmiot — puchnie i opada; ubywa: drży na boki.
+        if (added)
+        {
+            await BackpackButton.ScaleToAsync(1.25, 160, Easing.CubicOut);
+            await BackpackButton.ScaleToAsync(1, 260, Easing.BounceOut);
+        }
+        else
+        {
+            for (var i = 0; i < 3; i++)
+            {
+                await BackpackButton.RotateToAsync(-9, 60);
+                await BackpackButton.RotateToAsync(9, 60);
+            }
+
+            await BackpackButton.RotateToAsync(0, 60);
+        }
     }
 
     // Po wyborze opcji pokazujemy przycisk „Dalej” pod opcjami.

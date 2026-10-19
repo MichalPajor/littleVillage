@@ -5,7 +5,7 @@
 //  Sprawdzenie:          { ekwipunek ? siekiera: ... }
 // ------------------------------------------------------------
 
-LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak, monety, zoladz
+LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak, monety, zoladz, piolun, korale
 
 // Ekwipunek na początku gry — to, co Maciek przyniósł w tobołku.
 VAR ekwipunek = (siekiera, chleb)
@@ -27,6 +27,8 @@ VAR ekwipunek = (siekiera, chleb)
     - mak:       ~ return "Garść maku"
     - monety:    ~ return "Monety z tartaku"
     - zoladz:    ~ return "Żołądź ze Starego Dębu"
+    - piolun:    ~ return "Piołun"
+    - korale:    ~ return "Korale z jarzębiny"
 }
 ~ return ""
 
@@ -59,5 +61,7 @@ VAR ekwipunek = (siekiera, chleb)
     - mak:       ~ return "Szmatka z garścią maku podebranego z wigilijnej misy. Według księgi pana Ignacego północnica musi policzyć każde ziarenko, nim podejdzie bliżej."
     - monety:    ~ return "Ciężkie, zimne srebrne monety z orłem po jednej stronie – zapłata od pana Urbaniaka za lato przy układaniu desek."
     - zoladz:    ~ return "Duży, gładki żołądź spod korzeni ściętego Starego Dębu. Wciąż jest ciepły, jakby w środku coś żyło."
+    - piolun:    ~ return "Wiązka szarozielonych łodyg o gorzkim, ostrym zapachu. Dała mu ją Hanka na Zielone Świątki – podobno to, co wychodzi wtedy z wody, boi się piołunu bardziej niż ognia."
+    - korale:    ~ return "Sznur korali z jarzębiny znaleziony na pomoście po nocy z rusałkami. Należały do Kaśki Wójcikówny. Wciąż są mokre i czerwone jak świeża krew."
 }
 ~ return ""

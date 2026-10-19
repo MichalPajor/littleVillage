@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „rusałki”: rusałka 2 — koszula (rysunek autora; # pokaz: rusalki, znika przy # pokaz: znikaja)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="115" height="203" viewBox="139 190 115 203">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.38000 0.00000 0.00000 0.38000 139.00000 190.40000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="koszula" data-anim="skala" data-origin="150,300" data-range="0.99-1.0" data-period="3">
+<path d="M142 124L142 156L158 156L158 124Z" fill="#FFFFFF" stroke-width="3"/>
+<path d="M142 140C146 144 154 144 158 140" fill="none" stroke-width="1.4"/>
+<path d="M114 152C104 172 108 202 120 222C126 240 124 256 128 268C118 290 112 320 112 350C110 380 106 410 102 446L198 446C194 410 190 380 188 350C188 320 182 290 172 268C176 256 174 240 180 222C192 202 196 172 186 152C172 160 160 164 150 164C140 164 128 160 114 152Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M110 380L102 446L198 446L190 380C170 394 130 394 110 380Z" fill="url(#hatch)" stroke="none"/>
+<path d="M120 200C116 220 120 236 128 248M180 200C184 220 180 236 172 248" fill="url(#hatch)" stroke="none"/>
+<path d="M128 176C134 192 146 196 150 196M172 176C166 192 154 196 150 196" fill="none" stroke-width="2"/>
+<path d="M130 272C138 278 162 278 170 272" fill="none" stroke-width="1.8"/>
+<path d="M136 290C134 330 132 380 132 440M164 290C166 330 168 380 168 440M150 300C150 340 150 390 150 440" fill="none" stroke-width="1.8"/>
+<path d="M128 272C120 300 118 330 120 356M172 272C180 300 182 330 180 356M126 360C136 366 164 366 174 360" fill="none" stroke-width="1.4"/>
+<path d="M132 156C138 168 162 168 168 156" fill="none" stroke-width="2.4"/>
+<path d="M150 166V182M146 172l8 0M146 178l8 0" fill="none" stroke-width="1.4"/>
+<!-- korale z jarzębiny (jedyny czerwony akcent): kołyszą się razem z tułowiem -->
+<circle cx="136.0" cy="150.0" r="3.3" fill="#A8101A" stroke-width="1.4"/>
+<circle cx="138.8" cy="153.1" r="3.3" fill="#A8101A" stroke-width="1.4"/>
+<circle cx="141.6" cy="155.9" r="3.3" fill="#A8101A" stroke-width="1.4"/>
+<circle cx="144.4" cy="158.1" r="3.3" fill="#A8101A" stroke-width="1.4"/>
+<circle cx="147.2" cy="159.5" r="3.3" fill="#A8101A" stroke-width="1.4"/>
+<circle cx="150.0" cy="160.0" r="3.3" fill="#A8101A" stroke-width="1.4"/>
+<circle cx="152.8" cy="159.5" r="3.3" fill="#A8101A" stroke-width="1.4"/>
+<circle cx="155.6" cy="158.1" r="3.3" fill="#A8101A" stroke-width="1.4"/>
+<circle cx="158.4" cy="155.9" r="3.3" fill="#A8101A" stroke-width="1.4"/>
+<circle cx="161.2" cy="153.1" r="3.3" fill="#A8101A" stroke-width="1.4"/>
+<circle cx="164.0" cy="150.0" r="3.3" fill="#A8101A" stroke-width="1.4"/>
+<circle cx="150" cy="166" r="4" fill="#A8101A" stroke-width="1.4"/>
+<circle cx="146" cy="172" r="3.2" fill="#A8101A" stroke-width="1.4"/><circle cx="154" cy="172" r="3.2" fill="#A8101A" stroke-width="1.4"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wlosy_przod" data-anim="kolysanie" data-origin="150,120" data-range="3deg" data-period="3.5">
+<path d="M118 118C112 150 112 186 116 220C118 240 114 256 110 270L120 264L122 278L128 258C130 226 128 190 128 160C128 140 126 128 124 120Z" fill="#000000" stroke-width="2.6"/>
+<path d="M182 118C188 150 188 186 184 220C182 240 186 256 190 270L180 264L178 278L172 258C170 226 172 190 172 160C172 140 174 128 176 120Z" fill="#000000" stroke-width="2.6"/>
+<path d="M118 140C116 176 116 210 116 240M182 140C184 176 184 210 184 240" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<g transform="translate(120 216) rotate(0) scale(0.7)"><path d="M0 0Q4 -6 0 -14Q-4 -6 0 0Z" fill="#FFFFFF" stroke-width="1.6" transform="rotate(0)"/><path d="M0 0Q4 -6 0 -14Q-4 -6 0 0Z" fill="#FFFFFF" stroke-width="1.6" transform="rotate(45)"/><path d="M0 0Q4 -6 0 -14Q-4 -6 0 0Z" fill="#FFFFFF" stroke-width="1.6" transform="rotate(90)"/><path d="M0 0Q4 -6 0 -14Q-4 -6 0 0Z" fill="#FFFFFF" stroke-width="1.6" transform="rotate(135)"/><path d="M0 0Q4 -6 0 -14Q-4 -6 0 0Z" fill="#FFFFFF" stroke-width="1.6" transform="rotate(180)"/><path d="M0 0Q4 -6 0 -14Q-4 -6 0 0Z" fill="#FFFFFF" stroke-width="1.6" transform="rotate(225)"/><path d="M0 0Q4 -6 0 -14Q-4 -6 0 0Z" fill="#FFFFFF" stroke-width="1.6" transform="rotate(270)"/><path d="M0 0Q4 -6 0 -14Q-4 -6 0 0Z" fill="#FFFFFF" stroke-width="1.6" transform="rotate(315)"/><path d="M0 0Q3 -5 0 -10Q-3 -5 0 0Z" fill="#FFFFFF" stroke-width="1.4" transform="rotate(22)"/><path d="M0 0Q3 -5 0 -10Q-3 -5 0 0Z" fill="#FFFFFF" stroke-width="1.4" transform="rotate(67)"/><path d="M0 0Q3 -5 0 -10Q-3 -5 0 0Z" fill="#FFFFFF" stroke-width="1.4" transform="rotate(112)"/><path d="M0 0Q3 -5 0 -10Q-3 -5 0 0Z" fill="#FFFFFF" stroke-width="1.4" transform="rotate(157)"/><path d="M0 0Q3 -5 0 -10Q-3 -5 0 0Z" fill="#FFFFFF" stroke-width="1.4" transform="rotate(202)"/><path d="M0 0Q3 -5 0 -10Q-3 -5 0 0Z" fill="#FFFFFF" stroke-width="1.4" transform="rotate(247)"/><path d="M0 0Q3 -5 0 -10Q-3 -5 0 0Z" fill="#FFFFFF" stroke-width="1.4" transform="rotate(292)"/><path d="M0 0Q3 -5 0 -10Q-3 -5 0 0Z" fill="#FFFFFF" stroke-width="1.4" transform="rotate(337)"/><circle cx="0" cy="0" r="3" fill="#EDEBE6" stroke-width="1.4"/></g>
+</g>
+</g>
+</g></g>
+</svg>

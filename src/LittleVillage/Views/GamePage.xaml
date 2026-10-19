@@ -52,6 +52,7 @@
 
         <!-- Ekwipunek -->
         <controls:SketchIconButton
+            x:Name="BackpackButton"
             Grid.Row="0"
             Margin="0,28,12,0"
             HorizontalOptions="End"
@@ -180,6 +181,27 @@
                 </Style>
             </controls:SketchIconButton.Style>
         </controls:SketchIconButton>
+
+        <!-- ===== Zmiana ekwipunku: karteczka „+ przedmiot” / „− przedmiot” wysuwa się spod tobołka ===== -->
+        <controls:InkFrame
+            x:Name="InventoryToast"
+            Grid.Row="0"
+            Margin="0,30,82,0"
+            HorizontalOptions="End"
+            VerticalOptions="Start"
+            ShowBlood="False"
+            FrameBackgroundColor="{DynamicResource PanelSolid}"
+            Opacity="0"
+            IsVisible="False"
+            InputTransparent="True">
+            <HorizontalStackLayout Padding="14,8,16,8" Spacing="8">
+                <Label x:Name="InventoryToastSign" FontFamily="AlegreyaBold" FontSize="24" TextColor="{StaticResource Blood}" VerticalOptions="Center" />
+                <VerticalStackLayout Spacing="0" VerticalOptions="Center">
+                    <Label x:Name="InventoryToastCaption" Style="{StaticResource Hint}" FontSize="12" />
+                    <Label x:Name="InventoryToastName" Style="{StaticResource ItemName}" FontSize="17" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </controls:InkFrame>
 
         <!-- ===== Ekwipunek (nakładka) ===== -->
         <Grid Grid.RowSpan="2" IsVisible="{Binding IsInventoryOpen}">

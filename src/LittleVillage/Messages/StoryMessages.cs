@@ -7,3 +7,6 @@ public sealed record StoryPageShownMessage(StoryPage Page);
 
 /// <summary>Gracz wybrał opcję — widok przewija na dół, do przycisku „Dalej”.</summary>
 public sealed record StoryChoiceSelectedMessage;
+
+/// <summary>Ekwipunek zmienił się po przejściu dalej — widok pokazuje „+ przedmiot” / „− przedmiot” przy tobołku.</summary>
+public sealed record InventoryChangedMessage(InventoryChange Change);

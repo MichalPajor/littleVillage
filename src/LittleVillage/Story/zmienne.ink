@@ -121,3 +121,11 @@ VAR powiedzial_ojcu_poludnica = false
 // ---------- Rozdział siódmy (Rusałki) ----------
 // Na Zaduszki Jaromir zaniósł chleb dla dziadów pod kapliczkę na skraju boru (pakt z lasem: zielony liść dębu).
 VAR chleb_dla_dziadow = false
+// Jak Jaromir wyrwał Franka rusałkom: piołunem, krzyżem albo siłą (Hanka zawołała Kaśkę po imieniu).
+LIST RatunekFranka = piolunem, krzyzem, sila
+VAR ratunek_franka = ()
+// Co Jaromir zrobił z koralami Kaśki znalezionymi na pomoście.
+LIST KoraleKaski = oddane, w_jeziorze, zatrzymane
+VAR korale_kaski = ()
+// Pierwszy pocałunek pod bzem.
+VAR pocalunek = false

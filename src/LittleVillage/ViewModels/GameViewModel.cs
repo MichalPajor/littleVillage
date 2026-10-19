@@ -21,6 +21,7 @@ public sealed partial class GameViewModel(
     ILogger<GameViewModel> logger) : ViewModelBase
 {
     private StoryPage? _shownPage;
+    private IReadOnlyList<InventoryItem>? _knownInventory;
 
     public ObservableCollection<StoryBlock> Blocks { get; } = [];
 
@@ -75,6 +76,7 @@ public sealed partial class GameViewModel(
         if (session.CurrentPage is { } page && !ReferenceEquals(page, _shownPage))
         {
             Show(page);
+            _knownInventory = session.GetInventory();
         }
 
         return Task.CompletedTask;
@@ -93,6 +95,7 @@ public sealed partial class GameViewModel(
             }
 
             Show(await session.AdvanceAsync(SelectedChoice?.Choice.Index));
+            AnnounceInventoryChange();
         }
         catch (Exception exception)
         {
@@ -108,6 +111,7 @@ public sealed partial class GameViewModel(
         try
         {
             Show(await session.ContinueSavedGameAsync());
+            _knownInventory = session.GetInventory();
         }
         catch (Exception exception)
         {
@@ -165,6 +169,22 @@ public sealed partial class GameViewModel(
         IsPanelCollapsed = false;
 
         messenger.Send(new StoryPageShownMessage(page));
+    }
+
+    /// <summary>Po przejściu dalej: jeśli coś trafiło do tobołka albo z niego zniknęło, widok to pokaże.</summary>
+    private void AnnounceInventoryChange()
+    {
+        var now = session.GetInventory();
+        if (_knownInventory is not null)
+        {
+            var change = InventoryChange.Between(_knownInventory, now);
+            if (!change.IsEmpty)
+            {
+                messenger.Send(new InventoryChangedMessage(change));
+            }
+        }
+
+        _knownInventory = now;
     }
 
     private void Select(ChoiceViewModel choice)

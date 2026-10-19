@@ -144,9 +144,46 @@ public sealed class RevealTests
             // ksiega: uklon Poludnicy i Jaromir sam przy kapliczkach
             [0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 3, 0, 1, 1]];
 
+    // Rozdzial siodmy (Zielone Swiatki): ogony z wyborami innymi niz domyslne — smiech z piolunu, krzyz albo sila, los korali, dlonie.
+    private static readonly int[][] ChapterSevenTails = [[1, 0, 1, 1], [0, 2, 2, 0], [0, 1, 0, 1]];
+
+    private static readonly int[][] ChapterSevenPaths = [.. ChapterSevenTails.Select(tail => ToChapterSeven().Concat(tail).ToArray())];
+
+    /// <summary>Wybory pierwszej sciezki, ktora dochodzi do strony z piolunem (tlo „swiatki”), az do tego wyboru.</summary>
+    private static int[] ToChapterSeven()
+    {
+        foreach (var path in AllPaths.Reverse())
+        {
+            var engine = new InkStoryEngine();
+            engine.Load(InkTestStory.Game);
+            var page = engine.StartNew();
+            var queue = new Queue<int>(path);
+            var chosen = new List<int>();
+            while (page.Ending is not (PageEnding.End or PageEnding.Death))
+            {
+                if (page.Ending == PageEnding.Choices && page.BackgroundKey == "swiatki")
+                {
+                    return [.. chosen];
+                }
+
+                if (page.Ending == PageEnding.Choices)
+                {
+                    chosen.Add(Math.Min(queue.Count > 0 ? queue.Dequeue() : 0, page.Choices.Count - 1));
+                    page = engine.Choose(chosen[^1]);
+                }
+                else
+                {
+                    page = engine.Continue();
+                }
+            }
+        }
+
+        throw new InvalidOperationException("Żadna ścieżka nie dochodzi do rozdziału siódmego.");
+    }
+
     private static IEnumerable<StoryPage> PlayAll()
     {
-        foreach (var choices in AllPaths)
+        foreach (var choices in AllPaths.Concat(ChapterSevenPaths))
         {
             var engine = new InkStoryEngine();
             engine.Load(InkTestStory.Game);
