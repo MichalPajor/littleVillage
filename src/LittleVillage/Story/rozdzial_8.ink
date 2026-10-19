@@ -151,7 +151,12 @@ Na stole, pod lnianą ściereczką, leżał bochenek. Ostatni – następny matk
     ~ licho_noc = przemilczane
     Jaromir zacisnął zęby i nie odpowiedział.
     Żebraczka pukała długo. Potem przestała skrzeczeć i zaczęła mówić inaczej – ciepło, znajomo.
-    – Jaromirku… – westchnęło zza drzwi głosem babki Marianny. – Otwórz, dziecko, zimno mi… # pokaz: glos
+    { figurka_u_staruchy && los_psa == oswojony:
+        – Jaromirku… – westchnęło zza drzwi głosem babki Marianny, choć babka od dwóch lat leżała na cmentarzu w Bukowcu. – Otwórz, dziecko, zimno mi… # pokaz: glos
+    - else:
+        – Jaromirku… – westchnęło zza drzwi głosem matki. – Otwórz, synku, zimno mi… # pokaz: glos
+        A matka spała przecież dwa kroki od niego, na zydlu przy ojcu.
+    }
     Łzy pociekły mu po policzkach, ale nie otworzył. Siedział tak do świtu, z rękami zaciśniętymi na kolanach, aż zapiał kogut i na dworze zrobiło się cicho.
     Rano na progu znalazł tylko świeże rysy – jakby ktoś długo drapał w deski paznokciami. # pokaz: rysy # dalej
     -> kapliczki_pod_borem
