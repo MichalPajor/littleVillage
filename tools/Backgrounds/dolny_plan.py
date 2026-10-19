@@ -37,6 +37,9 @@ RODZAJE = {
     "zaduszki": ("laka", True), "zima_przedzenie": ("izba", False), "wielkanoc": ("laka", False),
     "swiatki": ("laka", False), "jezioro_swiatki": ("woda", True), "rusalki": ("woda", True), "brzeg_noc": ("woda", True),
     "pomost_rano": ("woda", False), "bez_zachod": ("laka", False),
+    "susza": ("susza", False), "studnia": ("susza", False), "izba_sierpien": ("izba", False), "wyreb": ("susza", False),
+    "droga_wyreb": ("susza", False), "izba_ranny": ("izba", True), "drzwi_noc": ("izba", True), "kapliczki_wykop": ("susza", False),
+    "bor_blizej": ("susza", False),
 }
 
 
@@ -158,7 +161,7 @@ def gaszcz(ink, fill, y_top=760, seed=1):
 # ---------------- rodzaje ----------------
 
 IMG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "src", "LittleVillage", "Resources", "Images")
-OUTDOOR = {"laka", "pole", "jesien", "droga", "las", "woda", "bagno", "snieg", "popiol"}
+OUTDOOR = {"laka", "pole", "jesien", "droga", "las", "woda", "bagno", "snieg", "popiol", "susza"}
 
 
 def build_for(key, layers):
@@ -216,7 +219,7 @@ def build_for(key, layers):
         for s in range(3):
             lo = ys + 10 + s * (840 - ys) / 3
             hi = lo + (840 - ys) / 3
-            tufts = [kepa(x, y, pk(y) * rnd.uniform(0.8, 1.2), ink_for(k)) for x, y, k in spots(14 if rodzaj != "pole" else 9, lo, hi, ground)]
+            tufts = [kepa(x, y, pk(y) * rnd.uniform(0.8, 1.2), ink_for(k)) for x, y, k in spots({"pole": 9, "susza": 4}.get(rodzaj, 14), lo, hi, ground)]
             add(f"trawa_{s}", -30, int(lo) - 50, 450, int(hi - lo) + 60, tufts,
                 {"type": "sway", "amplitude": 2.5, "duration": 3000 + s * 400, "anchorX": 0.5, "anchorY": 1, "phase": round(s * 0.2, 2)}, "kępy trawy kołyszą się")
         if rodzaj in ("laka", "droga", "popiol"):
@@ -230,6 +233,16 @@ def build_for(key, layers):
             add("paprocie", -30, y0 - 120, 450, 844 - y0 + 120, fn, {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.5, "anchorY": 1}, "paprocie")
             mu = [grzyb(x, y, pk(y) * 0.7, ink_for(k), fill_for(k), red=(i % 2 == 0)) for i, (x, y, k) in enumerate(spots(3, ys + 40, 780, {"light", "dark"}, 30))]
             add("grzyby", -10, y0, 410, 844 - y0, mu, None, "grzyby")
+        if rodzaj == "susza":
+            cr = []
+            for x, y, k in spots(14, ys + 20, 830, {"light"}, 20):
+                w = 22 * pk(y)
+                pts = [(x - w, y + rnd.uniform(-2, 2)), (x - w * 0.3, y + rnd.uniform(-3, 3)), (x + w * 0.4, y + rnd.uniform(-3, 3)), (x + w, y + rnd.uniform(-2, 2))]
+                d = "M" + "L".join(f"{px:.0f} {py:.0f}" for px, py in pts) + f"M{pts[1][0]:.0f} {pts[1][1]:.0f}l{rnd.uniform(-4, 4):.0f} {6 * pk(y) / 2:.0f}"
+                cr.append(f'<path d="{d}" fill="none" stroke="{ink_for(k)}" stroke-width="{0.8 + 0.2 * pk(y):.1f}"/>')
+            add("spekania", -10, y0, 410, 844 - y0, cr, None, "spękana, sucha ziemia")
+            add("kurz", 0, y0 + 40, 390, 120, [f'<path d="{ribbon(20, 370, y0 + 80, 10, 4)}" fill="{PAPER}" stroke="#000000" stroke-width="0.8" opacity="0.5"/>'],
+                {"type": "drift", "amplitude": 40, "duration": 9000}, "kurz niesiony gorącym wiatrem")
         if rodzaj == "jesien":
             lv = [f'<g transform="rotate({rnd.uniform(0, 360):.0f} {x} {y})"><path d="M{x - 6} {y}C{x - 3} {y - 4} {x + 3} {y - 4} {x + 7} {y}C{x + 3} {y + 4} {x - 3} {y + 4} {x - 6} {y}Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>'
                   for x, y, k in spots(14, ys + 10, 830, {"light", "hatch"})]

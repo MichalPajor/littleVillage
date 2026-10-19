@@ -179,13 +179,8 @@ Przez chwilę milczeli.{ mak_w_medaliku: Hanka bawiła się medalikiem na szyi, 
     -> rozdzial_siodmy_ciag_dalszy
 
 
-// Koniec rozdziału siódmego — rozdział ósmy (Chude lato) do napisania.
+// Koniec rozdziału siódmego — dalej rozdział ósmy.
 === rozdzial_siodmy_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału siódmego._ # dalej
--> rozdzial_osmy_wkrotce
-
-=== rozdzial_osmy_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_osmy

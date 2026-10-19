@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „drzwi nocą”: izba nocą od strony drzwi: drzwi z desek, okiennica, stół z bochenkiem pod ściereczką, ojciec na ławie
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="440" viewBox="0 0 390 440">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 0V440" fill="none" stroke-width="0.8"/>
+<path d="M16 0V440" fill="none" stroke-width="0.8"/>
+<path d="M32 0V440" fill="none" stroke-width="0.8"/>
+<path d="M48 0V440" fill="none" stroke-width="0.8"/>
+<path d="M64 0V440" fill="none" stroke-width="0.8"/>
+<path d="M80 0V440" fill="none" stroke-width="0.8"/>
+<path d="M96 0V440" fill="none" stroke-width="0.8"/>
+<path d="M112 0V440" fill="none" stroke-width="0.8"/>
+<path d="M128 0V440" fill="none" stroke-width="0.8"/>
+<path d="M144 0V440" fill="none" stroke-width="0.8"/>
+<path d="M160 0V440" fill="none" stroke-width="0.8"/>
+<path d="M176 0V440" fill="none" stroke-width="0.8"/>
+<path d="M192 0V440" fill="none" stroke-width="0.8"/>
+<path d="M208 0V440" fill="none" stroke-width="0.8"/>
+<path d="M224 0V440" fill="none" stroke-width="0.8"/>
+<path d="M240 0V440" fill="none" stroke-width="0.8"/>
+<path d="M256 0V440" fill="none" stroke-width="0.8"/>
+<path d="M272 0V440" fill="none" stroke-width="0.8"/>
+<path d="M288 0V440" fill="none" stroke-width="0.8"/>
+<path d="M304 0V440" fill="none" stroke-width="0.8"/>
+<path d="M320 0V440" fill="none" stroke-width="0.8"/>
+<path d="M336 0V440" fill="none" stroke-width="0.8"/>
+<path d="M352 0V440" fill="none" stroke-width="0.8"/>
+<path d="M368 0V440" fill="none" stroke-width="0.8"/>
+<path d="M384 0V440" fill="none" stroke-width="0.8"/>
+<rect width="390" height="440" fill="url(#hatchNight)" stroke="none" opacity="0.7"/>
+<path d="M-10 330H400V440H-10Z" fill="url(#hatchDense)" stroke="none" opacity="0.6"/><path d="M-10 330H400" fill="none" stroke-width="3"/>
+<path d="M150 330V120H250V330Z" fill="#EDEBE6" stroke-width="3"/>
+<path d="M166 122V328" fill="none" stroke-width="1.4"/>
+<path d="M182 122V328" fill="none" stroke-width="1.4"/>
+<path d="M198 122V328" fill="none" stroke-width="1.4"/>
+<path d="M214 122V328" fill="none" stroke-width="1.4"/>
+<path d="M230 122V328" fill="none" stroke-width="1.4"/>
+<path d="M246 122V328" fill="none" stroke-width="1.4"/>
+<path d="M156 160H244M156 290H244M156 290L244 160" fill="none" stroke-width="3"/>
+<path d="M30 140H110V220H30Z" fill="#000000" stroke-width="3"/><path d="M70 140V220" fill="none" stroke-width="2.4"/>
+<path d="M20 300.0H120V306.0H20Z" fill="#FFFFFF" stroke-width="2"/><path d="M26 306.0V330M114 306.0V330" fill="none" stroke-width="3"/>
+<path d="M40 300C40 288 80 286 90 300Z" fill="#FFFFFF" stroke-width="1.6"/><path d="M36 300C50 292 80 292 96 300L92 304H40Z" fill="url(#hatch)" stroke-width="1.2"/>
+<path d="M272.0 300.0H368.0V304.8H272.0Z" fill="#FFFFFF" stroke-width="2"/><path d="M276.8 304.8v16.0M363.2 304.8v16.0" fill="none" stroke-width="3"/><circle cx="281.6" cy="293.6" r="5.6" fill="#000000"/><path d="M288.0 288.8C304.0 287.2 320.0 288.8 328.0 293.6L328.0 300.0H286.4Z" fill="#000000"/><path d="M328.0 293.6H361.6V300.0H328.0Z" fill="#000000"/><path d="M334.4 292.8v10M344.0 292.8v10M353.6 292.8v10M331.2 292.0H360.0" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
+</g>
+</svg>

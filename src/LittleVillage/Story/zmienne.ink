@@ -129,3 +129,19 @@ LIST KoraleKaski = oddane, w_jeziorze, zatrzymane
 VAR korale_kaski = ()
 // Pierwszy pocałunek pod bzem.
 VAR pocalunek = false
+
+// ---------- Rozdział ósmy (Chude lato) ----------
+// Co Jaromir zrobił, gdy jednooka żebraczka (licho) poprosiła przy studni o chleb.
+LIST LichoPrzyStudni = chleb_przy_studni, przegnal, nie_patrzyl
+VAR licho_studnia = ()
+// Jaromir poszedł z ojcem do wyrębu Urbaniaka (był przy wypadku).
+VAR wyreb_z_ojcem = false
+// Noga ojca przygniecionego sosną: złamana (chodzi o kiju) albo strzaskana (o kulach).
+LIST NogaOjca = zlamana, strzaskana
+VAR noga_ojca = ()
+// Nocne pukanie licha: ugościł chlebem (poszło do tartaku), odpędził głownią (spaliło kuźnię kowala) albo przemilczał do świtu.
+LIST NocLicha = ugoszczone, odpedzone, przemilczane
+VAR licho_noc = ()
+// Kapliczki spod boru: obronił tę na skraju lasu, ocalił świątka z wozu albo się nie wtrącał.
+LIST KapliczkiDrogi = obronil_kapliczke, ocalil_swiatka, nie_wtracal
+VAR kapliczki_drogi = ()

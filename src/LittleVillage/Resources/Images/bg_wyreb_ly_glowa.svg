@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „wyrąb”: licho na pniaku — glowa (rysunek autora; # pokaz: licho, znika przy # pokaz: upadek)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="65" viewBox="348 228 37 65">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.12000 0.00000 0.00000 0.12000 348.00000 228.30000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+'
+<g id="glowa_z_kapturem" data-anim="obrot" data-origin="150,196" data-range="3deg" data-period="5">
+<path d="M150 170C136 174 120 182 100 200L120 214L150 206L180 214L200 200C180 182 164 174 150 170Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M150 170C136 174 120 182 100 200L120 214L150 206L180 214L200 200C180 182 164 174 150 170Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M110 184C104 150 110 96 128 66C138 50 162 50 172 66C190 96 196 150 190 184C178 176 164 172 150 172C136 172 122 176 110 184Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M110 184C104 150 110 96 128 66C138 50 162 50 172 66C190 96 196 150 190 184C178 176 164 172 150 172C136 172 122 176 110 184Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M120 92C112 120 114 152 122 178C132 174 142 172 150 172C158 172 168 174 178 178C186 152 188 120 180 92C170 74 130 74 120 92Z" fill="#000000" stroke-width="3"/>
+<path d="M124 100C118 126 122 150 136 166C142 172 158 172 164 166C178 150 182 126 176 100C170 84 130 84 124 100Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M126 128C132 136 136 148 140 160C134 150 128 138 126 128ZM174 128C168 136 164 148 160 160C166 150 172 138 174 128Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M126 112C132 108 142 110 146 116" fill="none" stroke-width="2.6"/>
+<path d="M130 118C134 120 140 120 144 118M132 115l1 5M137 114l0 6M142 116l-1 5" fill="none" stroke-width="1.6"/>
+<path d="M150 120L146 138L152 140" fill="none" stroke-width="2"/>
+<path d="M154 110C158 106 168 106 174 112" fill="none" stroke-width="2.6"/>
+<!-- usta: bezwargie, otwieranie = skala Y 1.0→1.6 przy origin 150,150 (syk); zamknięte 0.5 -->
+<g id="usta" data-anim="skala" data-origin="150,150" data-range="0.5-1.6" data-period="-">
+<path d="M132 146C140 142 160 142 168 146C162 156 138 156 132 146Z" fill="#000000" stroke-width="2"/>
+<path d="M137 146l1 5M143 145l0 7M149 144l0 8M155 145l0 7M161 146l-1 5" fill="none" stroke="#FFFFFF" stroke-width="1.4"/>
+<path d="M140 154l0-4M150 156l0-4M160 154l0-4" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+</g>
+<path d="M138 162C144 166 156 166 162 162" fill="none" stroke-width="2"/>
+<path d="M112 150l-6 4M112 170l-6 6M188 150l6 4M188 170l6 6" fill="none" stroke-width="2.2"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+'
+<g id="wlosy" data-anim="kolysanie" data-origin="150,160" data-range="4deg" data-period="3.5">
+<path d="M120 150C116 176 112 200 112 226L124 222C124 200 126 178 128 160Z" fill="#FFFFFF" stroke-width="2.8"/>
+<path d="M180 150C184 176 188 200 188 226L176 222C176 200 174 178 172 160Z" fill="#FFFFFF" stroke-width="2.8"/>
+<path d="M118 170C116 190 114 206 114 220M124 166C122 186 122 204 122 218M182 170C184 190 186 206 186 220M176 166C178 186 178 204 178 218" fill="none" stroke-width="1.4"/>
+<path d="M112 226l-4 8M118 224l-2 10M188 226l4 8M182 224l2 10" fill="none" stroke-width="2"/>
+</g>
+</g>
+</g></g>
+</svg>

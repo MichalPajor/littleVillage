@@ -144,13 +144,18 @@ public sealed class RevealTests
             // ksiega: uklon Poludnicy i Jaromir sam przy kapliczkach
             [0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 3, 0, 1, 1]];
 
-    // Rozdzial siodmy (Zielone Swiatki): ogony z wyborami innymi niz domyslne — smiech z piolunu, krzyz albo sila, los korali, dlonie.
-    private static readonly int[][] ChapterSevenTails = [[1, 0, 1, 1], [0, 2, 2, 0], [0, 1, 0, 1]];
+    // Rozdzialy siodmy i osmy: ogony z wyborami innymi niz domyslne — smiech z piolunu, krzyz albo sila, los korali, dlonie;
+    // licho przy studni, wyrab albo dom, pomoc, nocne pukanie, kapliczki.
+    private static readonly int[][] ChapterSevenTails = [[1, 0, 1, 1, 1, 1, 1, 1], [0, 2, 2, 0, 2, 2, 2, 2], [0, 1, 0, 1, 0, 0, 1, 2, 1]];
 
-    private static readonly int[][] ChapterSevenPaths = [.. ChapterSevenTails.Select(tail => ToChapterSeven().Concat(tail).ToArray())];
+    private static readonly int[][] ChapterSevenPaths =
+        [.. ChapterSevenTails.Select(tail => ToChapterSeven().Concat(tail).ToArray()),
+            // z monetami z tartaku: oddac je ojcu (# pokaz: monety)
+            [.. ToChapterSeven(withCoins: true), 0, 0, 0, 0, 0, 2]];
 
-    /// <summary>Wybory pierwszej sciezki, ktora dochodzi do strony z piolunem (tlo „swiatki”), az do tego wyboru.</summary>
-    private static int[] ToChapterSeven()
+    /// <summary>Wybory pierwszej sciezki, ktora dochodzi do strony z piolunem (tlo „swiatki”), az do tego wyboru
+    /// (z <paramref name="withCoins"/> — tylko takiej, na ktorej Jaromir ma monety z tartaku).</summary>
+    private static int[] ToChapterSeven(bool withCoins = false)
     {
         foreach (var path in AllPaths.Reverse())
         {
@@ -163,7 +168,12 @@ public sealed class RevealTests
             {
                 if (page.Ending == PageEnding.Choices && page.BackgroundKey == "swiatki")
                 {
-                    return [.. chosen];
+                    if (!withCoins || engine.GetInventory().Any(i => i.Id == "monety"))
+                    {
+                        return [.. chosen];
+                    }
+
+                    break;
                 }
 
                 if (page.Ending == PageEnding.Choices)

@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -782,6 +782,7 @@ public sealed class GameStoryTests
     private static readonly int[] Noon = [0, 0, 0, 0];                             // trzy zagadki, czy powiedziec ojcu
     private static readonly int[] Bridge7 = [0];                                   // Zaduszki: chleb pod kapliczke
     private static readonly int[] Pentecost = [0, 0, 0, 0];                        // piolun, ratunek Franka, korale, pod bzem
+    private static readonly int[] LeanSummer = [0, 0, 0, 0, 0];                    // licho przy studni, wyrab z ojcem, drag, pukanie, kapliczki
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1563,9 +1564,8 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "bez_zachod"), "Nie rusałek – tylko tego, że ciebie też wciągną"));
         Assert.True(Variable(engine, "pocalunek", "true") || Variable(engine, "pocalunek", "True"));
         Assert.True(Variable(engine, "ratunek_franka", "piolunem"));
-        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału siódmego._"));
+        Assert.Equal("studnia", pages[^1].BackgroundKey);
     }
 
     [Fact]
@@ -1583,7 +1583,7 @@ public sealed class GameStoryTests
         Assert.Contains("korale", Inventory(engine));
         Assert.Equal("Korale z jarzębiny", engine.GetInventory().Single(i => i.Id == "korale").Name);
         Assert.True(Has(On(pages, "bez_zachod"), "Wziął ją tylko za rękę"));
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal("studnia", pages[^1].BackgroundKey);
     }
 
     [Fact]
@@ -1597,6 +1597,86 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "brzeg_noc"), "Chodził nad jezioro każdego wieczoru"));
         Assert.True(Has(On(pages, "pomost_rano"), "Korale plusnęły cicho"));
         Assert.DoesNotContain("korale", Inventory(engine));
+        Assert.Equal("studnia", pages[^1].BackgroundKey);
+    }
+
+    // ----- Rozdzial osmy: Chude lato (licho) -----
+
+    private static readonly int[] PeacefulToLeanSummer = [.. PeacefulToPentecost, 0, 0, 0, 0];
+
+    [Fact]
+    public void Chapter_eight_bread_for_the_beggar_sends_the_misfortune_to_the_sawmill()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToLeanSummer, 0, 0, 0, 0, 0]);
+
+        var drought = On(pages, "susza")[0];
+        Assert.Equal("Rozdział ósmy", drought.Blocks[0].Text);
+        Assert.Equal("Chude lato", drought.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        var well = On(pages, "studnia")[0];
+        Assert.Contains(well.Blocks, b => b.Reveal == "zebraczka");
+        Assert.True(Has(On(pages, "wyreb"), "przygniótł go od kolan w dół"));
+        var wounded = On(pages, "izba_ranny");
+        Assert.True(Has(wounded, "– Licho – powiedziała stara"));
+        Assert.True(Has(wounded, "Mądry chłopak"));
+        Assert.True(Has(wounded, "Krzywo, ale się zrośnie"));
+        Assert.True(Has(On(pages, "drzwi_noc"), "u Urbaniaka pękła na pół wielka piła"));
+        var forest = On(pages, "bor_blizej");
+        Assert.True(Has(forest, "Tylko przy tej jednej, której Jaromir nie dał ruszyć"));
+        Assert.True(Has(forest, "Ojciec wstał po miesiącu"));
+        Assert.True(Has(forest, "szedł Franek"));
+        Assert.True(Variable(engine, "licho_noc", "ugoszczone"));
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału ósmego._"));
+        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
         Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_eight_staying_home_driving_it_away_burns_the_forge_and_the_saint_is_saved()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToLeanSummer, 1, 1, 1, 1]);
+
+        Assert.True(Has(On(pages, "studnia"), "Zapamiętam cię, synku"));
+        Assert.Empty(On(pages, "wyreb"));
+        Assert.True(Has(On(pages, "droga_wyreb"), "jakby ją kto pchnął"));
+        Assert.True(Has(On(pages, "izba_ranny"), "To teraz cię zapamiętało"));
+        Assert.True(Has(On(pages, "izba_ranny"), "Zrośnie się albo nie"));
+        Assert.True(Has(On(pages, "drzwi_noc"), "spłonęła kuźnia"));
+        Assert.Equal("Świątek z kapliczki", engine.GetInventory().Single(i => i.Id == "swiatek").Name);
+        Assert.False(Has(On(pages, "bor_blizej"), "Tylko przy tej jednej"));
+        Assert.True(Has(On(pages, "bor_blizej"), "chodził już tylko o kulach"));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_eight_silence_at_the_door_and_running_for_help()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToLeanSummer, 2, 0, 1, 2, 2]);
+
+        Assert.True(Has(On(pages, "studnia"), "jedyny mokry ślad w całej wsi"));
+        Assert.True(Has(On(pages, "wyreb"), "zwymiotował w paprocie"));
+        Assert.True(Has(On(pages, "drzwi_noc"), "głosem babki Marianny"));
+        Assert.True(Has(On(pages, "kapliczki_wykop"), "garść miedziaków"));
+        Assert.DoesNotContain("swiatek", Inventory(engine));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_eight_coins_from_the_sawmill_can_be_given_to_father()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToLeanSummer, 0]);
+        var hasCoins = Inventory(engine).Contains("monety");
+
+        var table = pages[^1];
+        Assert.Equal("izba_sierpien", table.BackgroundKey);
+        Assert.Equal(hasCoins ? 3 : 2, table.Choices.Count);
+        if (hasCoins)
+        {
+            Play(engine, [.. PeacefulToLeanSummer, 0, 2]);
+            Assert.DoesNotContain("monety", Inventory(engine));
+        }
     }
 }

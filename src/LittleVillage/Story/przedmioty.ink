@@ -5,7 +5,7 @@
 //  Sprawdzenie:          { ekwipunek ? siekiera: ... }
 // ------------------------------------------------------------
 
-LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak, monety, zoladz, piolun, korale
+LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak, monety, zoladz, piolun, korale, swiatek
 
 // Ekwipunek na początku gry — to, co Maciek przyniósł w tobołku.
 VAR ekwipunek = (siekiera, chleb)
@@ -29,6 +29,7 @@ VAR ekwipunek = (siekiera, chleb)
     - zoladz:    ~ return "Żołądź ze Starego Dębu"
     - piolun:    ~ return "Piołun"
     - korale:    ~ return "Korale z jarzębiny"
+    - swiatek:   ~ return "Świątek z kapliczki"
 }
 ~ return ""
 
@@ -63,5 +64,6 @@ VAR ekwipunek = (siekiera, chleb)
     - zoladz:    ~ return "Duży, gładki żołądź spod korzeni ściętego Starego Dębu. Wciąż jest ciepły, jakby w środku coś żyło."
     - piolun:    ~ return "Wiązka szarozielonych łodyg o gorzkim, ostrym zapachu. Dała mu ją Hanka na Zielone Świątki – podobno to, co wychodzi wtedy z wody, boi się piołunu bardziej niż ognia."
     - korale:    ~ return "Sznur korali z jarzębiny znaleziony na pomoście po nocy z rusałkami. Należały do Kaśki Wójcikówny. Wciąż są mokre i czerwone jak świeża krew."
+    - swiatek:   ~ return "Drewniana Matka Boża z dzieciątkiem, wyciągnięta nocą z wozu Urbaniaka, kiedy jego ludzie wykopywali kapliczki spod boru. Twarz ma wytartą przez deszcze tak, że ledwie ją widać. Schowana pod deskami w bazie na starym bzie."
 }
 ~ return ""
