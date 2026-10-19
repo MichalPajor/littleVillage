@@ -5,7 +5,7 @@
 //  Sprawdzenie:          { ekwipunek ? siekiera: ... }
 // ------------------------------------------------------------
 
-LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak, monety, zoladz, piolun, korale, swiatek, podkowa, krzyzyk
+LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak, monety, zoladz, piolun, korale, swiatek, podkowa, krzyzyk, gromnica
 
 // Ekwipunek na początku gry — to, co Maciek przyniósł w tobołku.
 VAR ekwipunek = (siekiera, chleb)
@@ -36,6 +36,7 @@ VAR ekwipunek = (siekiera, chleb)
     - swiatek:   ~ return "Świątek z kapliczki"
     - podkowa:   ~ return "Podkowa kowala"
     - krzyzyk:   ~ return "Krzyżyk kowala"
+    - gromnica:  ~ return "Gromnica"
 }
 ~ return ""
 
@@ -80,5 +81,6 @@ VAR ekwipunek = (siekiera, chleb)
     - swiatek:   ~ return "Drewniana Matka Boża z dzieciątkiem, wyciągnięta nocą z wozu Urbaniaka, kiedy jego ludzie wykopywali kapliczki spod boru. Twarz ma wytartą przez deszcze tak, że ledwie ją widać. Schowana pod deskami w bazie na starym bzie."
     - podkowa:   ~ return "Żelazna podkowa wykuta przez ojca Hanki na wesele. Wisi nad progiem chałupy ramionami do góry, żeby nic złego nie weszło do środka i żeby szczęście się nie wysypało."
     - krzyzyk:   ~ return "Mały żelazny krzyżyk na rzemyku, wykuty przez ojca Hanki na wesele. Hanka nosi go na szyi i nie zdejmuje – kowal przykazał, żeby nigdy."
+    - gromnica:  ~ return "Gruba woskowa świeca poświęcona w Bukowcu na Gromniczną. W każdym domu musi być – na burzę, na poród i na śmierć."
 }
 ~ return ""

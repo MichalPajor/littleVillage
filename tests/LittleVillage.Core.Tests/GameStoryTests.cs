@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -786,6 +786,7 @@ public sealed class GameStoryTests
     private static readonly int[] Pentecost = [0, 0, 0, 0];                        // piolun, ratunek Franka, korale, pod bzem
     private static readonly int[] LeanSummer = [0, 0, 0, 0, 0];                    // licho przy studni, wyrab z ojcem, drag, pukanie, kapliczki
     private static readonly int[] Wedding = [0, 0, 0, 0];                          // swaty, Franek, podarunek kowala, starzec na skraju lasu
+    private static readonly int[] Births = [0, 0, 0];                              // kolyska, trzecia noc, skarb dla corki
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1710,8 +1711,7 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "wesele_noc"), "jak gospodarz gospodarzowi"));
         Assert.True(Has(On(pages, "pierwszy_ranek"), "pod kapotą Franka"));
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału dziewiątego._"));
-        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal("izba_kolyska", pages[^1].BackgroundKey);
     }
 
     [Fact]
@@ -1729,7 +1729,7 @@ public sealed class GameStoryTests
         var morning = On(pages, "pierwszy_ranek");
         Assert.True(Has(morning, "o jakich opowiadał mu Antek"));
         Assert.True(Has(morning, "z żelaznym krzyżykiem na szyi"));
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal("izba_kolyska", pages[^1].BackgroundKey);
     }
 
     [Fact]
@@ -1744,6 +1744,105 @@ public sealed class GameStoryTests
         Assert.False(Has(On(pages, "wesele_noc"), "sprawdził zasuwę"));
         Assert.True(Has(On(pages, "pierwszy_ranek"), "takich nie zostawia żaden zwykły wilk"));
         Assert.True(Variable(engine, "weselny_gosc", "zaryglowany"));
+        Assert.Equal("izba_kolyska", pages[^1].BackgroundKey);
+    }
+
+    // ----- Rozdzial dziesiaty: Narodziny (mamuny) -----
+
+    private static readonly int[] PeacefulToBirth = [.. PeacefulToWedding, 0, 0, 0, 0];
+
+    [Fact]
+    public void Chapter_ten_shielding_the_cradle_keeps_marysia_and_the_treasure_goes_to_her()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToBirth, 0, 0, 0]);
+
+        var winter = On(pages, "izba_zimowa")[0];
+        Assert.Equal("Rozdział dziesiąty", winter.Blocks[0].Text);
+        Assert.Equal("Narodziny", winter.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.Equal("Gromnica", engine.GetInventory().Single(i => i.Id == "gromnica").Name);
+        Assert.True(Has(On(pages, "przyzba_swit"), "po prababce Mariannie"));
+        Assert.Contains(On(pages, "noc_mamun")[0].Blocks, b => b.Reveal == "mamuny");
+        Assert.True(Has(On(pages, "chrzest"), "Chrzestnym był Antek"));
+        Assert.Empty(On(pages, "odmieniec"));
+        Assert.True(Has(On(pages, "baza_wrzesien"), "Żebyś zawsze wiedział, że jest twoja"));
+        Assert.True(Variable(engine, "skarb_dla_corki", "true") || Variable(engine, "skarb_dla_corki", "True"));
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału dziesiątego._"));
+        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
         Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_ten_calling_hanka_without_the_cross_lets_them_swap_and_the_crossroads_needs_a_pact()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToBirth, 0, 1, 0, 1, 1]);
+
+        Assert.True(Has(On(pages, "noc_mamun"), "ciche, zbyt ciche"));
+        Assert.True(Has(On(pages, "odmieniec"), "To nie wasze"));
+        Assert.True(Has(On(pages, "rozstaje"), "Za darmo nic nie oddajemy"));
+        var lake = On(pages, "jezioro_mamun");
+        Assert.True(Has(lake, "A jak choć raz zapomnisz, przyjdziemy po swoje."));
+        Assert.True(Has(lake, "trzy sine pręgi"));
+        Assert.True(Has(On(pages, "jesien_okno"), "w czerwcu będzie musiał zanieść na kamień chleb i wianek"));
+        Assert.True(Variable(engine, "uklad_z_mamunami", "dar_swietojanski"));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_ten_christening_the_changeling_costs_the_childhood_treasure_twice_over()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToBirth, 2, 2, 1, 0]);
+
+        Assert.True(Has(On(pages, "chrzest"), "kawałek brzozowego pnia"));
+        Assert.True(Has(pages, "Zabiliście im dziecko"));
+        Assert.True(Has(On(pages, "jezioro_mamun"), "A za nasze…"));
+        Assert.True(Has(On(pages, "baza_wrzesien"), "Była pusta"));
+        Assert.Single(On(pages, "baza_wrzesien"));
+        Assert.True(Has(On(pages, "jesien_okno"), "garść mokrego mchu"));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_ten_giving_away_years_greys_his_temples()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToBirth, 1, 2, 0, 2, 0]);
+
+        Assert.True(Has(On(pages, "noc_mamun"), "Omijały kołyskę od strony, z której wystawało ostrze siekiery."));
+        Assert.True(Has(On(pages, "jezioro_mamun"), "– Siedem – powiedziała"));
+        Assert.True(Has(On(pages, "jesien_okno"), "skronie posiwiały mu jak u starego"));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_ten_the_smiths_cross_wakes_hanka()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToWedding, 0, 0, 1, 0, 0, 1, 0]);
+
+        Assert.True(Has(On(pages, "noc_mamun"), "Żelazny krzyżyk na jej szyi zrobił się nagle zimny jak lód"));
+        Assert.Empty(On(pages, "odmieniec"));
+        Assert.False(Has(pages, "ciche, zbyt ciche"));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_ten_the_book_teaches_the_eggshell_trick()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToBirth, 0, 1]);
+        var changeling = pages[^1];
+        Assert.Equal("odmieniec", changeling.BackgroundKey);
+        var hasBook = Inventory(engine).Contains("ksiega");
+        Assert.Equal(hasBook ? 3 : 2, changeling.Choices.Count);
+        if (hasBook)
+        {
+            pages = Play(engine, [.. PeacefulToBirth, 0, 1, 2, 0]);
+            Assert.True(Has(On(pages, "odmieniec"), "Stara jestem jak ten bór"));
+            Assert.Empty(On(pages, "jezioro_mamun"));
+            Assert.Equal(PageEnding.End, pages[^1].Ending);
+        }
     }
 }

@@ -43,6 +43,9 @@ RODZAJE = {
     "glodna_zima": ("snieg", False), "piec_lat": ("laka", False), "swaty": ("jesien", True), "antek_wiesc": ("jesien", False),
     "skraj_kapota": ("las", False), "izba_babki": ("izba", False), "kuznia_wieczor": ("izba", True), "slub_droga": ("jesien", False),
     "wesele_noc": ("jesien", True), "pierwszy_ranek": ("jesien", False),
+    "izba_zimowa": ("izba", True), "przestrogi": ("woda", True), "przyzba_swit": ("pole", False), "izba_kolyska": ("izba", False),
+    "noc_mamun": ("izba", True), "chrzest": ("izba", False), "odmieniec": ("izba", False), "rozstaje": ("droga", False),
+    "jezioro_mamun": ("woda", True), "baza_wrzesien": ("laka", False), "jesien_okno": ("jesien", False),
 }
 
 

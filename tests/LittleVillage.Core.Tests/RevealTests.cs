@@ -145,8 +145,10 @@ public sealed class RevealTests
             [0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 3, 0, 1, 1]];
 
     // Rozdzialy siodmy i osmy: ogony z wyborami innymi niz domyslne — smiech z piolunu, krzyz albo sila, los korali, dlonie;
-    // licho przy studni, wyrab albo dom, pomoc, nocne pukanie, kapliczki; swaty, Franek, kowal, starzec na weselu.
-    private static readonly int[][] ChapterSevenTails = [[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 2, 2, 0, 2, 2, 2, 2, 0, 2, 0, 2], [0, 1, 0, 1, 0, 0, 1, 2, 1, 0, 0, 0, 0]];
+    // licho przy studni, wyrab albo dom, pomoc, nocne pukanie, kapliczki; swaty, Franek, kowal, starzec na weselu; kolyska, noc mamun, odmieniec, uklad nad jeziorem, skarb.
+    private static readonly int[][] ChapterSevenTails =
+        [[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0], [0, 2, 2, 0, 2, 2, 2, 2, 0, 2, 0, 2, 2, 1, 1, 1, 1], [0, 1, 0, 1, 0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 2, 0, 0],
+         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2]];
 
     private static readonly int[][] ChapterSevenPaths =
         [.. ChapterSevenTails.Select(tail => ToChapterSeven().Concat(tail).ToArray()),

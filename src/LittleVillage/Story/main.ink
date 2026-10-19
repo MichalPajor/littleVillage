@@ -16,5 +16,6 @@ INCLUDE rozdzial_6.ink
 INCLUDE rozdzial_7.ink
 INCLUDE rozdzial_8.ink
 INCLUDE rozdzial_9.ink
+INCLUDE rozdzial_10.ink
 
 -> prolog

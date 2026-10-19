@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „jezioro mamun”: najstarsza mamuna z zawiniątkiem — glowa (rysunek autora; # pokaz: najstarsza)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="67" height="118" viewBox="207 231 67 118">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.22000 0.00000 0.00000 0.22000 207.00000 231.40000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="glowa_z_wlosami" data-anim="obrot" data-origin="136,166" data-range="4deg" data-period="1.6">
+<g transform="translate(136 170) scale(1.22) translate(-136 -170)">
+<path d="M68.1 97.0Q48.9 96.1 38.1 91.7" fill="none" stroke-width="3.2"/>
+<path d="M55.3 94.7l-9.3 4.8" fill="none" stroke-width="2"/>
+<path d="M50.0 93.8l-12.5 4.7" fill="none" stroke-width="2"/>
+<path d="M38.1 91.7Q33.5 85.4 26.5 88.9Q31.1 95.1 38.1 91.7Z" fill="#EDEBE6" stroke-width="1.8"/>
+<path d="M38.1 91.7L26.5 88.9" fill="none" stroke-width="1"/>
+<path d="M72.9 83.8Q62.8 82.8 51.1 71.2" fill="none" stroke-width="3.2"/>
+<path d="M58.7 75.5l-12.9 2.7" fill="none" stroke-width="2"/>
+<path d="M55.7 73.8l-10.8 2.2" fill="none" stroke-width="2"/>
+<path d="M51.1 71.2Q48.8 63.7 41.0 64.7Q43.4 72.1 51.1 71.2Z" fill="#EDEBE6" stroke-width="1.8"/>
+<path d="M51.1 71.2L41.0 64.7" fill="none" stroke-width="1"/>
+<path d="M82.0 73.0Q71.3 61.6 59.2 45.9" fill="none" stroke-width="3.2"/>
+<path d="M71.9 61.0l-14.0 -3.2" fill="none" stroke-width="2"/>
+<path d="M72.3 61.5l-13.9 -1.7" fill="none" stroke-width="2"/>
+<path d="M94.2 66.0Q87.0 52.5 80.6 28.8" fill="none" stroke-width="3.2"/>
+<path d="M86.8 45.7l-14.3 -6.1" fill="none" stroke-width="2"/>
+<path d="M87.4 47.5l6.0 -15.9" fill="none" stroke-width="2"/>
+<path d="M108.0 63.5Q113.8 44.1 108.0 33.8" fill="none" stroke-width="3.2"/>
+<path d="M108.0 46.6l7.4 -11.8" fill="none" stroke-width="2"/>
+<path d="M108.0 51.1l-10.5 -10.1" fill="none" stroke-width="2"/>
+<path d="M121.8 66.0Q129.4 52.9 132.2 37.5" fill="none" stroke-width="3.2"/>
+<path d="M128.4 48.0l8.3 -6.9" fill="none" stroke-width="2"/>
+<path d="M127.1 51.5l-2.7 -15.4" fill="none" stroke-width="2"/>
+<path d="M134.0 73.0Q152.0 53.6 162.2 39.4" fill="none" stroke-width="3.2"/>
+<path d="M149.6 54.4l12.8 -4.9" fill="none" stroke-width="2"/>
+<path d="M147.2 57.3l0.0 -11.7" fill="none" stroke-width="2"/>
+<path d="M162.2 39.4Q170.0 40.2 172.2 32.7Q164.4 31.9 162.2 39.4Z" fill="#EDEBE6" stroke-width="1.8"/>
+<path d="M162.2 39.4L172.2 32.7" fill="none" stroke-width="1"/>
+<path d="M143.1 83.8Q161.9 75.7 170.7 67.8" fill="none" stroke-width="3.2"/>
+<path d="M156.0 76.3l16.7 3.3" fill="none" stroke-width="2"/>
+<path d="M163.2 72.1l17.3 4.6" fill="none" stroke-width="2"/>
+<path d="M147.9 97.0Q160.2 89.2 179.0 91.5" fill="none" stroke-width="3.2"/>
+<path d="M162.2 94.4l13.0 -10.5" fill="none" stroke-width="2"/>
+<path d="M162.6 94.4l12.6 4.3" fill="none" stroke-width="2"/>
+<path d="M179.0 91.5Q185.4 95.9 190.9 90.3Q184.5 85.9 179.0 91.5Z" fill="#EDEBE6" stroke-width="1.8"/>
+<path d="M179.0 91.5L190.9 90.3" fill="none" stroke-width="1"/>
+<path d="M147.9 111.0Q171.4 115.0 190.3 118.5" fill="none" stroke-width="3.2"/>
+<path d="M175.3 115.9l14.8 -8.3" fill="none" stroke-width="2"/>
+<path d="M181.0 116.9l8.8 9.7" fill="none" stroke-width="2"/>
+<path d="M143.1 124.2Q153.2 138.1 170.8 140.2" fill="none" stroke-width="3.2"/>
+<path d="M159.0 133.5l10.4 -1.2" fill="none" stroke-width="2"/>
+<path d="M154.1 130.6l17.3 -3.3" fill="none" stroke-width="2"/>
+<path d="M134.0 135.0Q138.7 143.3 150.4 154.5" fill="none" stroke-width="3.2"/>
+<path d="M144.7 147.7l-0.6 13.8" fill="none" stroke-width="2"/>
+<path d="M141.3 143.7l-2.7 13.5" fill="none" stroke-width="2"/>
+<path d="M150 112C150 84 128 66 102 68C80 70 66 84 64 100C62 110 60 118 58 126C54 132 50 138 46 146C42 154 36 164 38 170C42 172 48 168 52 164C54 170 56 174 54 178C56 182 58 186 62 188C70 196 84 198 96 192C112 186 126 178 136 168C146 156 150 134 150 112Z" fill="#EDEBE6" stroke-width="4.5"/>
+<path d="M150 112C150 84 128 66 102 68C126 76 140 96 140 120C140 144 130 162 116 176C128 172 138 164 144 154C148 142 150 128 150 112Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M150 112C150 84 128 66 102 68C80 70 66 84 64 100C62 110 60 118 58 126C54 132 50 138 46 146C42 154 36 164 38 170C42 172 48 168 52 164C54 170 56 174 54 178C56 182 58 186 62 188C70 196 84 198 96 192C112 186 126 178 136 168C146 156 150 134 150 112Z" fill="url(#hatch)" stroke="none"/>
+<path d="M64 100C70 82 90 70 112 70C134 72 150 92 150 116C150 136 146 152 138 164C134 146 128 128 116 116C104 104 86 98 64 100Z" fill="#000000" stroke-width="3"/>
+<path d="M72 92L66 104L76 98L72 110M90 84L86 98M108 80L112 96M126 88L120 102M140 104L132 112M146 126L136 130" fill="none" stroke="#000000" stroke-width="4"/>
+<path d="M84 80C100 78 118 84 130 96M96 88C110 90 122 100 130 112M118 76C132 82 142 96 146 112" fill="none" stroke="#FFFFFF" stroke-width="1.3"/>
+<path d="M72 88C82 84 94 84 104 88M68 98C78 94 92 94 102 98M76 108C84 106 92 106 98 108" fill="none" stroke-width="1.8"/>
+<path d="M60 164C66 168 72 172 80 172M58 178C66 180 72 180 78 178M88 160C92 168 94 176 92 184M100 156C106 164 108 174 106 184" fill="none" stroke-width="1.8"/>
+<path d="M54 176C62 176 70 178 76 182" fill="none" stroke-width="2.8"/>
+<path d="M120 124C130 118 138 124 136 134C134 142 126 144 122 138" fill="none" stroke-width="2.4"/>
+<ellipse cx="82" cy="126" rx="20" ry="18" fill="#000000" stroke-width="2"/>
+<path d="M58 112C70 100 92 98 106 110L100 114C90 106 72 106 62 116Z" fill="#000000" stroke-width="2.6"/>
+<circle cx="80" cy="127" r="13" fill="#FFFFFF" stroke-width="2.2"/>
+<path d="M70 120C74 118 80 118 86 120M70 134C76 137 84 137 90 134" fill="none" stroke-width="1.2"/>
+<path d="M66 140C74 146 88 148 98 142M68 146C76 152 88 154 96 150" fill="none" stroke-width="1.8"/>
+<!-- oczy: źrenica patrzy w lewo; mruganie = skala Y 1→0 na 0.12 s co 4–8 s, origin 82,126 (w układzie głowy; po skali głowy ×1.22 wokół 136,170 na ekranie to ok. 70,116); źrenica może się rozszerzać skalą 1.0→1.8 -->
+<g id="oczy" data-anim="mruganie" data-origin="82,126" data-range="1-0" data-period="4-8">
+<circle cx="73" cy="128" r="2.4" fill="#000000" stroke="none"/>
+</g>
+</g>
+</g>
+</g>
+</g></g>
+</svg>

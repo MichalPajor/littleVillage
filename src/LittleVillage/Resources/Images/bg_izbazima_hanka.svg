@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „izba zimą”: Hanka przędzie przy kołowrotku
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="92" viewBox="200 240 100 92">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="2"><path d="M208.0 330.0C202.4 313.2 208.0 293.6 219.2 288.0C230.4 288.0 236.0 304.8 241.6 316.0L247.2 330.0Z" fill="#000000"/><circle cx="223.4" cy="279.6" r="9.0" fill="#000000"/></g>
+<circle cx="270" cy="300" r="18" fill="none" stroke-width="2.4"/><path d="M270 300L288.0 300.0" fill="none" stroke-width="1.6"/><path d="M270 300L282.7 312.7" fill="none" stroke-width="1.6"/><path d="M270 300L270.0 318.0" fill="none" stroke-width="1.6"/><path d="M270 300L257.3 312.7" fill="none" stroke-width="1.6"/><path d="M270 300L252.0 300.0" fill="none" stroke-width="1.6"/><path d="M270 300L257.3 287.3" fill="none" stroke-width="1.6"/><path d="M270 300L270.0 282.0" fill="none" stroke-width="1.6"/><path d="M270 300L282.7 287.3" fill="none" stroke-width="1.6"/>
+<path d="M270 318V330M254 330H290" fill="none" stroke-width="2"/>
+</g>
+</svg>

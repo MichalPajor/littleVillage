@@ -159,3 +159,21 @@ VAR weselny_gosc = ()
 // Ojciec dał Jaromirowi w dniu ślubu siekierę dziadka Maćka (i krzesiwo, jeśli babka go nie oddała).
 VAR siekiera_dziadka = false
 VAR krzesiwo_na_slubie = false
+
+// ---------- Rozdział dziesiąty (Narodziny) ----------
+// Jak zabezpieczono kołyskę Marysi przed mamunami.
+LIST OchronaKolyski = wstazka_na_raczce, siekiera_pod_kolyska, gromnica_przy_kolysce
+VAR ochrona_kolyski = ()
+// Trzecia noc: Jaromir zasłonił kołyskę, zawołał Hankę (z krzyżykiem kowala budzi się) albo pogonił mamuny siekierą.
+LIST NocMamun = zaslonil, zawolal, pogonil
+VAR noc_mamun = ()
+// Mamuny podmieniły Marysię na odmieńca.
+VAR podmiana = false
+// Jak próbowano odwrócić podmianę: rozstaje (mamuna nie oddaje), chrzest odmieńca (mamuny urażone), skorupki z księgi (udało się).
+LIST SposobNaOdmienca = rozstaje, chrzest_odmienca, skorupki
+VAR sposob_na_odmienca = ()
+// Cena układu z mamunami nad jeziorem: skarb z dzieciństwa (na dnie jeziora), dar co roku w noc świętojańską albo własne lata (siwe skronie).
+LIST UkladZMamunami = oddany_skarb, dar_swietojanski, oddane_lata
+VAR uklad_z_mamunami = ()
+// Skarb z dzieciństwa przywiązany do kołyski Marysi (będzie go nosiła na szyi).
+VAR skarb_dla_corki = false

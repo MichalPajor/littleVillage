@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „jezioro mamun”: trzciny
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="30" viewBox="0 330 390 30">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 356l-3.2 -14.4M4 356l1.6 -17.6M4 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M18 356l-3.2 -14.4M18 356l1.6 -17.6M18 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M32 356l-3.2 -14.4M32 356l1.6 -17.6M32 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M46 356l-3.2 -14.4M46 356l1.6 -17.6M46 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M60 356l-3.2 -14.4M60 356l1.6 -17.6M60 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M74 356l-3.2 -14.4M74 356l1.6 -17.6M74 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M88 356l-3.2 -14.4M88 356l1.6 -17.6M88 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M102 356l-3.2 -14.4M102 356l1.6 -17.6M102 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M116 356l-3.2 -14.4M116 356l1.6 -17.6M116 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M130 356l-3.2 -14.4M130 356l1.6 -17.6M130 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M144 356l-3.2 -14.4M144 356l1.6 -17.6M144 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M158 356l-3.2 -14.4M158 356l1.6 -17.6M158 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M172 356l-3.2 -14.4M172 356l1.6 -17.6M172 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M186 356l-3.2 -14.4M186 356l1.6 -17.6M186 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M200 356l-3.2 -14.4M200 356l1.6 -17.6M200 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M214 356l-3.2 -14.4M214 356l1.6 -17.6M214 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M228 356l-3.2 -14.4M228 356l1.6 -17.6M228 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M242 356l-3.2 -14.4M242 356l1.6 -17.6M242 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M256 356l-3.2 -14.4M256 356l1.6 -17.6M256 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M270 356l-3.2 -14.4M270 356l1.6 -17.6M270 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M284 356l-3.2 -14.4M284 356l1.6 -17.6M284 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M298 356l-3.2 -14.4M298 356l1.6 -17.6M298 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M312 356l-3.2 -14.4M312 356l1.6 -17.6M312 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M326 356l-3.2 -14.4M326 356l1.6 -17.6M326 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M340 356l-3.2 -14.4M340 356l1.6 -17.6M340 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M354 356l-3.2 -14.4M354 356l1.6 -17.6M354 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M368 356l-3.2 -14.4M368 356l1.6 -17.6M368 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+<path d="M382 356l-3.2 -14.4M382 356l1.6 -17.6M382 356l6.4 -12.8" fill="none" stroke-width="1.6"/>
+</g>
+</svg>

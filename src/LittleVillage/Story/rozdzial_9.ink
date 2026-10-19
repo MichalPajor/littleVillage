@@ -169,13 +169,8 @@ Kiedy wrócił do środka, Hanka siedziała na łóżku, otulona pierzyną.
 -> rozdzial_dziewiaty_ciag_dalszy
 
 
-// Koniec rozdziału dziewiątego — rozdział dziesiąty (Narodziny) do napisania.
+// Koniec rozdziału dziewiątego — dalej rozdział dziesiąty.
 === rozdzial_dziewiaty_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału dziewiątego._ # dalej
--> rozdzial_dziesiaty_wkrotce
-
-=== rozdzial_dziesiaty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_dziesiaty

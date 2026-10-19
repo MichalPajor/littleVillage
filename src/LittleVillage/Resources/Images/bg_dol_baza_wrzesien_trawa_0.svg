@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „dolny plan: baza_wrzesien”: kępy trawy kołyszą się
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="196" viewBox="-30 392 450 196">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M29 501l-5.2 -18.2M29 501l-1.3 -23.4M29 501l3.9 -20.8M29 501l9.1 -15.6M29 501l-10.4 -11.7" fill="none" stroke="#000000" stroke-width="1.8"/>
+<path d="M30 531l-5.9 -20.6M30 531l-1.5 -26.4M30 531l4.4 -23.5M30 531l10.3 -17.6M30 531l-11.7 -13.2" fill="none" stroke="#000000" stroke-width="1.8"/>
+<path d="M260 480l-4.7 -16.5M260 480l-1.2 -21.2M260 480l3.5 -18.8M260 480l8.2 -14.1M260 480l-9.4 -10.6" fill="none" stroke="#000000" stroke-width="1.8"/>
+<path d="M68 485l-4.2 -14.8M68 485l-1.1 -19.0M68 485l3.2 -16.9M68 485l7.4 -12.6M68 485l-8.4 -9.5" fill="none" stroke="#000000" stroke-width="1.7"/>
+<path d="M254 502l-5.0 -17.6M254 502l-1.3 -22.6M254 502l3.8 -20.1M254 502l8.8 -15.1M254 502l-10.0 -11.3" fill="none" stroke="#000000" stroke-width="1.8"/>
+<path d="M181 567l-8.5 -29.9M181 567l-2.1 -38.4M181 567l6.4 -34.2M181 567l15.0 -25.6M181 567l-17.1 -19.2" fill="none" stroke="#000000" stroke-width="2.0"/>
+<path d="M382 460l-4.3 -15.1M382 460l-1.1 -19.5M382 460l3.2 -17.3M382 460l7.6 -13.0M382 460l-8.7 -9.7" fill="none" stroke="#000000" stroke-width="1.7"/>
+<path d="M297 461l-3.4 -11.8M297 461l-0.8 -15.1M297 461l2.5 -13.5M297 461l5.9 -10.1M297 461l-6.7 -7.6" fill="none" stroke="#000000" stroke-width="1.7"/>
+<path d="M265 574l-8.6 -29.9M265 574l-2.1 -38.5M265 574l6.4 -34.2M265 574l15.0 -25.7M265 574l-17.1 -19.2" fill="none" stroke="#000000" stroke-width="2.0"/>
+<path d="M258 477l-5.7 -19.8M258 477l-1.4 -25.5M258 477l4.2 -22.6M258 477l9.9 -17.0M258 477l-11.3 -12.7" fill="none" stroke="#000000" stroke-width="1.8"/>
+<path d="M215 540l-6.6 -23.0M215 540l-1.6 -29.6M215 540l4.9 -26.3M215 540l11.5 -19.7M215 540l-13.2 -14.8" fill="none" stroke="#000000" stroke-width="1.9"/>
+<path d="M318 570l-7.5 -26.3M318 570l-1.9 -33.8M318 570l5.6 -30.0M318 570l13.1 -22.5M318 570l-15.0 -16.9" fill="none" stroke="#000000" stroke-width="2.0"/>
+<path d="M317 507l-5.0 -17.5M317 507l-1.3 -22.5M317 507l3.8 -20.0M317 507l8.8 -15.0M317 507l-10.0 -11.3" fill="none" stroke="#000000" stroke-width="1.8"/>
+<path d="M27 519l-6.4 -22.3M27 519l-1.6 -28.7M27 519l4.8 -25.5M27 519l11.2 -19.1M27 519l-12.7 -14.3" fill="none" stroke="#000000" stroke-width="1.9"/>
+</g>
+</svg>
