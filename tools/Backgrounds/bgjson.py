@@ -3,6 +3,7 @@
 #   upsert(key, layers)                            -> podmienia wpis tla albo dopisuje go na koncu (z dolnym planem z dolny_plan.py)
 # extra[nazwa] moze zawierac: frames (lista nazw warstw L — klatki), appearAfter, hideAfter, hideOn, fadeDuration, noInvert, depth.
 import json, os
+import ramki
 
 JSON_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "src", "LittleVillage", "Resources", "Raw", "backgrounds.json")
 
@@ -15,9 +16,10 @@ def entry(prefix, order, L, anim=None, reveal=None, extra=None):
         frames = ex.pop("frames", None)
         first = frames[0] if frames else name
         x, y, w, h, _ = L[first]
-        d = {"image": f"{prefix}_{first}.png", "x": x, "y": y, "width": w, "height": h}
+        fit = ramki.box(f"{prefix}_{first}", x, y, w, h) if not frames else (x, y, w, h)
+        d = {"image": f"{prefix}_{first}.png", "x": fit[0], "y": fit[1], "width": fit[2], "height": fit[3]}
         if name in anim:
-            d["animation"] = anim[name]
+            d["animation"] = ramki.anim_for(anim[name], (x, y, w, h), fit)
         if name in reveal:
             d["revealOn"] = reveal[name]
         if frames:

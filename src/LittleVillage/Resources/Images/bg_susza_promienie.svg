@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „susza”: promienie słońca (obracają się powoli)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="260 24 80 80">
+<svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="259 23 82 82">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>

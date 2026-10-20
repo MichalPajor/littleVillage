@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „ratunek na mokradłach”: iskry z krzesiwa nad wodą (# pokaz: iskry)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="44" height="34" viewBox="104 326 44 34">
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="37" viewBox="104 323 44 37">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>

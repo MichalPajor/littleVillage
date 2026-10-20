@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „Południca”: Południca — reka (rysunek autora; # pokaz: poludnica, znika przy # pokaz: znika)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="157" height="277" viewBox="180 150 157 277">
+<svg xmlns="http://www.w3.org/2000/svg" width="163" height="277" viewBox="180 150 163 277">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>

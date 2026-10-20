@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „gajowy przed karczmą”: dym z komina karczmy
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="60" viewBox="180 160 30 60">
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="63" viewBox="180 157 30 63">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>

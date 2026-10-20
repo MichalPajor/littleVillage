@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „Zapadlina jesienią”: Jaromir w za dużej czapce, z lnianą torbą (# pokaz: jaromir)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="84" viewBox="176 340 50 84">
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="88" viewBox="176 336 51 88">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „zima przy kołowrotkach”: sąsiadki i Hanka przy darciu pierza (# pokaz: pierze)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="140" height="60" viewBox="130 200 140 60">
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="75" viewBox="130 190 140 75">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>

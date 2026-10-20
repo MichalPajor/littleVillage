@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „obława w młodniku”: kamień trafia w lufę, strzał w zaspę (# pokaz: kamien)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="80" viewBox="220 270 100 80">
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="85" viewBox="220 270 100 85">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>

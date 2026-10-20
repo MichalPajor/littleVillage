@@ -1,0 +1,4664 @@
+{
+"bg_antek_antek": [
+149,
+297,
+41,
+94
+],
+"bg_antek_brzoza": [
+40,
+200,
+60,
+163
+],
+"bg_antek_dym": [
+324,
+175,
+30,
+65
+],
+"bg_antek_odchodzi": [
+149,
+297,
+41,
+94
+],
+"bg_antek_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_babka_blysk": [
+300,
+232,
+20,
+21
+],
+"bg_babka_dymek": [
+184,
+145,
+16,
+45
+],
+"bg_babka_gromnica": [
+180,
+190,
+20,
+65
+],
+"bg_babka_gromnica_plomien": [
+184,
+185,
+12,
+20
+],
+"bg_babka_jaromir": [
+300,
+220,
+55,
+84
+],
+"bg_babka_krzesiwo": [
+139,
+236,
+31,
+22
+],
+"bg_babka_plomyk": [
+214,
+223,
+10,
+18
+],
+"bg_babka_siekiera": [
+262,
+233,
+60,
+70
+],
+"bg_babka_smuga": [
+167,
+137,
+146,
+166
+],
+"bg_babka_swieczka": [
+212,
+226,
+14,
+29
+],
+"bg_babka_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_bazawrz_jaromir": [
+150,
+300,
+60,
+113
+],
+"bg_bazawrz_liscie": [
+90,
+120,
+283,
+150
+],
+"bg_bazawrz_pusta": [
+190,
+327,
+40,
+27
+],
+"bg_bazawrz_rzemyk": [
+196,
+320,
+24,
+36
+],
+"bg_bazawrz_skrzynka": [
+190,
+327,
+40,
+27
+],
+"bg_bazawrz_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_bazawrz_trawa": [
+0,
+380,
+390,
+53
+],
+"bg_bezzachod_dlonie": [
+214,
+218,
+24,
+12
+],
+"bg_bezzachod_gwiazda_0": [
+33,
+23,
+14,
+14
+],
+"bg_bezzachod_gwiazda_1": [
+113,
+13,
+14,
+14
+],
+"bg_bezzachod_gwiazda_2": [
+193,
+33,
+14,
+14
+],
+"bg_bezzachod_gwiazda_3": [
+273,
+17,
+14,
+14
+],
+"bg_bezzachod_gwiazda_4": [
+353,
+43,
+14,
+14
+],
+"bg_bezzachod_hanka": [
+196,
+204,
+54,
+23
+],
+"bg_bezzachod_para": [
+196,
+204,
+54,
+23
+],
+"bg_bezzachod_pocalunek": [
+196,
+204,
+54,
+23
+],
+"bg_bezzachod_postac": [
+33,
+230,
+38,
+66
+],
+"bg_bezzachod_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_bor_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_bor_wstazka_blisko": [
+37,
+250,
+93,
+60
+],
+"bg_bor_wstazka_daleko": [
+165,
+206,
+33,
+18
+],
+"bg_borblizej_blyskawica": [
+0,
+0,
+390,
+443
+],
+"bg_borblizej_franek": [
+180,
+218,
+30,
+46
+],
+"bg_borblizej_kapliczka": [
+358,
+190,
+32,
+90
+],
+"bg_borblizej_noc": [
+0,
+0,
+390,
+443
+],
+"bg_borblizej_swierki": [
+30,
+253,
+320,
+92
+],
+"bg_borblizej_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_borblizej_zebraczka": [
+200,
+235,
+120,
+31
+],
+"bg_brzegnoc_dym": [
+292,
+270,
+24,
+57
+],
+"bg_brzegnoc_franek_lezy": [
+103,
+380,
+103,
+32
+],
+"bg_brzegnoc_hanka": [
+237,
+321,
+59,
+93
+],
+"bg_brzegnoc_krag_0": [
+66,
+233,
+48,
+14
+],
+"bg_brzegnoc_krag_1": [
+226,
+253,
+48,
+14
+],
+"bg_brzegnoc_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_brzegnoc_zar": [
+290,
+318,
+28,
+18
+],
+"bg_budowa_chmura": [
+190,
+90,
+150,
+42
+],
+"bg_budowa_dzieci": [
+220,
+359,
+110,
+72
+],
+"bg_budowa_hanka": [
+293,
+330,
+67,
+101
+],
+"bg_budowa_las_swierki": [
+295,
+119,
+95,
+176
+],
+"bg_budowa_niebo": [
+0,
+0,
+390,
+273
+],
+"bg_budowa_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_budowa_tlo_mokradla": [
+0,
+147,
+390,
+133
+],
+"bg_budowa_woz": [
+40,
+371,
+111,
+49
+],
+"bg_chata_strzecha_szczyt": [
+150,
+228,
+90,
+51
+],
+"bg_chrzest_chrzestni": [
+98,
+220,
+91,
+114
+],
+"bg_chrzest_dym": [
+180,
+157,
+30,
+63
+],
+"bg_chrzest_ksiadz": [
+209,
+219,
+51,
+114
+],
+"bg_chrzest_smuga": [
+107,
+37,
+196,
+296
+],
+"bg_chrzest_swiece": [
+20,
+217,
+360,
+23
+],
+"bg_chrzest_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_cmentarz_dzwon": [
+131,
+119,
+16,
+18
+],
+"bg_cmentarz_ksiadz": [
+130,
+298,
+40,
+92
+],
+"bg_cmentarz_latarnia": [
+107,
+330,
+54,
+63
+],
+"bg_cmentarz_mak": [
+110,
+370,
+40,
+31
+],
+"bg_cmentarz_rozkop": [
+0,
+0,
+390,
+443
+],
+"bg_cmentarz_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_cmentarz_wdowa": [
+270,
+330,
+80,
+83
+],
+"bg_cmentarz_wrona": [
+327,
+225,
+24,
+21
+],
+"bg_czuwanie_blask": [
+20,
+180,
+203,
+163
+],
+"bg_czuwanie_dym": [
+96,
+200,
+30,
+61
+],
+"bg_czuwanie_mezczyzni": [
+273,
+321,
+117,
+109
+],
+"bg_czuwanie_okiennica": [
+281,
+97,
+22,
+84
+],
+"bg_czuwanie_platki": [
+299,
+99,
+63,
+69
+],
+"bg_czuwanie_plomienie": [
+110,
+253,
+26,
+27
+],
+"bg_czuwanie_rozaniec": [
+270,
+340,
+22,
+31
+],
+"bg_czuwanie_swiece": [
+100,
+240,
+34,
+63
+],
+"bg_czuwanie_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_czuwanie_wargi": [
+140,
+282,
+15,
+11
+],
+"bg_czuwanie_zmarly": [
+120,
+250,
+230,
+83
+],
+"bg_dab_chlopcy": [
+200,
+320,
+90,
+111
+],
+"bg_dab_franek_idzie": [
+240,
+320,
+60,
+111
+],
+"bg_dab_krowy": [
+10,
+280,
+90,
+51
+],
+"bg_dab_liscie": [
+39,
+120,
+201,
+103
+],
+"bg_dab_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_drogabor_rosa": [
+300,
+200,
+84,
+120
+],
+"bg_drogabor_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_drogawyreb_jaromir": [
+5,
+246,
+75,
+94
+],
+"bg_drogawyreb_promienie": [
+283,
+23,
+74,
+74
+],
+"bg_drogawyreb_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_drogawyreb_trawa": [
+159,
+380,
+231,
+53
+],
+"bg_drogawyreb_woz": [
+215,
+216,
+146,
+64
+],
+"bg_drogawyreb_zebraczka": [
+200,
+226,
+160,
+44
+],
+"bg_drzwinoc_matka": [
+247,
+245,
+53,
+95
+],
+"bg_drzwinoc_pukanie": [
+167,
+300,
+66,
+30
+],
+"bg_drzwinoc_szpara_okna": [
+66,
+139,
+8,
+82
+],
+"bg_drzwinoc_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_gajowy_antek": [
+0,
+0,
+390,
+443
+],
+"bg_gajowy_dym": [
+180,
+157,
+30,
+63
+],
+"bg_gajowy_gajowy": [
+200,
+283,
+60,
+118
+],
+"bg_gajowy_kon": [
+316,
+300,
+30,
+41
+],
+"bg_gajowy_ludzie": [
+20,
+320,
+210,
+84
+],
+"bg_gajowy_sanie": [
+230,
+289,
+120,
+61
+],
+"bg_gajowy_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_glodnazima_dachy": [
+100,
+165,
+223,
+91
+],
+"bg_glodnazima_dym_0": [
+170,
+147,
+30,
+63
+],
+"bg_glodnazima_przerebel": [
+60,
+250,
+90,
+60
+],
+"bg_glodnazima_sanie": [
+220,
+289,
+120,
+61
+],
+"bg_glodnazima_snieg": [
+-10,
+196,
+410,
+247
+],
+"bg_glodnazima_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_glodnazima_wiosna": [
+-10,
+283,
+410,
+157
+],
+"bg_goraczka_hanka": [
+219,
+200,
+61,
+103
+],
+"bg_goraczka_matka": [
+128,
+180,
+64,
+124
+],
+"bg_goraczka_plomien": [
+308,
+235,
+12,
+18
+],
+"bg_goraczka_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_izba_piec": [
+196,
+99,
+194,
+273
+],
+"bg_izbababki_babka": [
+148,
+220,
+62,
+113
+],
+"bg_izbababki_plomien": [
+50,
+299,
+20,
+26
+],
+"bg_izbababki_smuga": [
+187,
+117,
+146,
+216
+],
+"bg_izbababki_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_izbababki_za_oknem": [
+239,
+120,
+98,
+87
+],
+"bg_izbababki_ziola_0": [
+88,
+57,
+92,
+53
+],
+"bg_izbababki_ziola_1": [
+199,
+57,
+91,
+53
+],
+"bg_izbakol_babka": [
+281,
+230,
+58,
+104
+],
+"bg_izbakol_gromnica": [
+169,
+267,
+31,
+66
+],
+"bg_izbakol_plomien": [
+342,
+299,
+20,
+26
+],
+"bg_izbakol_siekiera": [
+96,
+323,
+65,
+16
+],
+"bg_izbakol_smuga": [
+37,
+107,
+166,
+226
+],
+"bg_izbakol_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_izbakol_wstazka": [
+100,
+295,
+20,
+15
+],
+"bg_izbanoc_blask": [
+147,
+167,
+156,
+136
+],
+"bg_izbanoc_ojciec": [
+30,
+176,
+70,
+127
+],
+"bg_izbanoc_platki": [
+152,
+71,
+92,
+71
+],
+"bg_izbanoc_spi": [
+149,
+262,
+121,
+25
+],
+"bg_izbanoc_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_izbanoc_zar": [
+316,
+270,
+42,
+31
+],
+"bg_izbaranny_babka": [
+165,
+218,
+60,
+104
+],
+"bg_izbaranny_blask": [
+180,
+250,
+110,
+83
+],
+"bg_izbaranny_gwiazdy": [
+252,
+110,
+66,
+42
+],
+"bg_izbaranny_hanka": [
+315,
+217,
+72,
+116
+],
+"bg_izbaranny_kaganek": [
+225,
+284,
+18,
+25
+],
+"bg_izbaranny_matka": [
+95,
+223,
+46,
+97
+],
+"bg_izbaranny_ojciec": [
+60,
+280,
+140,
+65
+],
+"bg_izbaranny_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_izbaranny_za_oknem": [
+239,
+110,
+86,
+77
+],
+"bg_izbaranny_zar_w_piecu": [
+26,
+300,
+40,
+22
+],
+"bg_izbasierp_matka": [
+247,
+230,
+58,
+104
+],
+"bg_izbasierp_matka_drzy": [
+247,
+230,
+58,
+104
+],
+"bg_izbasierp_monety": [
+130,
+288,
+40,
+16
+],
+"bg_izbasierp_ojciec": [
+150,
+229,
+70,
+110
+],
+"bg_izbasierp_para": [
+214,
+267,
+20,
+33
+],
+"bg_izbasierp_plomien": [
+318,
+299,
+20,
+26
+],
+"bg_izbasierp_smuga": [
+37,
+127,
+176,
+206
+],
+"bg_izbasierp_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_izbasierp_zar_za_oknem": [
+44,
+134,
+63,
+62
+],
+"bg_izbazima_dym": [
+30,
+147,
+30,
+63
+],
+"bg_izbazima_gromnica": [
+150,
+269,
+20,
+37
+],
+"bg_izbazima_hanka": [
+200,
+240,
+100,
+93
+],
+"bg_izbazima_kolo": [
+249,
+279,
+42,
+42
+],
+"bg_izbazima_platki": [
+241,
+112,
+77,
+76
+],
+"bg_izbazima_plomien": [
+40,
+299,
+20,
+26
+],
+"bg_izbazima_pole": [
+231,
+87,
+98,
+103
+],
+"bg_izbazima_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_jesien_dym": [
+200,
+160,
+183,
+87
+],
+"bg_jesien_jaromir": [
+176,
+336,
+51,
+88
+],
+"bg_jesien_jaskolki": [
+10,
+128,
+162,
+34
+],
+"bg_jesien_korona": [
+208,
+190,
+196,
+106
+],
+"bg_jesien_lisc_0": [
+233,
+237,
+21,
+18
+],
+"bg_jesien_lisc_1": [
+332,
+227,
+23,
+18
+],
+"bg_jesien_lisc_2": [
+282,
+209,
+23,
+21
+],
+"bg_jesien_lisc_3": [
+370,
+246,
+20,
+23
+],
+"bg_jesien_lisc_4": [
+215,
+250,
+18,
+23
+],
+"bg_jesien_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_jesien_zar": [
+254,
+222,
+71,
+29
+],
+"bg_jesokno_dym": [
+150,
+177,
+30,
+63
+],
+"bg_jesokno_mgla": [
+-30,
+216,
+450,
+31
+],
+"bg_jesokno_okno": [
+48,
+303,
+51,
+38
+],
+"bg_jesokno_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_jezmamun_gwiazdy": [
+100,
+10,
+290,
+151
+],
+"bg_jezmamun_jaromir": [
+300,
+299,
+60,
+114
+],
+"bg_jezmamun_krag": [
+190,
+249,
+70,
+18
+],
+"bg_jezmamun_mj_glowa": [
+204,
+227,
+70,
+122
+],
+"bg_jezmamun_praczki": [
+20,
+296,
+360,
+54
+],
+"bg_jezmamun_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_jezswiatki_franek": [
+167,
+320,
+53,
+54
+],
+"bg_jezswiatki_gwiazdy": [
+120,
+9,
+260,
+141
+],
+"bg_jezswiatki_korona": [
+275,
+312,
+31,
+17
+],
+"bg_jezswiatki_ksiezyc": [
+58,
+58,
+42,
+48
+],
+"bg_jezswiatki_mlodziez": [
+14,
+263,
+150,
+67
+],
+"bg_jezswiatki_nietoperz": [
+179,
+100,
+42,
+24
+],
+"bg_jezswiatki_plomien": [
+70,
+287,
+20,
+28
+],
+"bg_jezswiatki_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_jezswiatki_wianek_0": [
+136,
+215,
+28,
+28
+],
+"bg_jezswiatki_wianek_1": [
+186,
+239,
+28,
+28
+],
+"bg_jezswiatki_wianek_2": [
+226,
+208,
+28,
+26
+],
+"bg_jezswiatki_wianek_3": [
+106,
+255,
+28,
+28
+],
+"bg_jezswiatki_wojcikowa": [
+293,
+223,
+46,
+81
+],
+"bg_kapliczka_chlopcy": [
+40,
+330,
+90,
+101
+],
+"bg_kapliczka_igly": [
+330,
+180,
+42,
+40
+],
+"bg_kapliczka_latarnia_blask": [
+134,
+340,
+46,
+50
+],
+"bg_kapliczka_lezy": [
+130,
+319,
+150,
+41
+],
+"bg_kapliczka_motyl": [
+278,
+329,
+32,
+23
+],
+"bg_kapliczka_noc": [
+0,
+0,
+390,
+443
+],
+"bg_kapliczka_odwrocona": [
+290,
+190,
+40,
+132
+],
+"bg_kapliczka_pies_drzenie": [
+110,
+366,
+76,
+53
+],
+"bg_kapliczka_stoi": [
+183,
+218,
+42,
+129
+],
+"bg_kapliczka_swierki_0": [
+-56,
+87,
+184,
+224
+],
+"bg_kapliczka_swierki_1": [
+60,
+87,
+160,
+224
+],
+"bg_kapliczka_swierki_2": [
+200,
+87,
+234,
+224
+],
+"bg_kapliczka_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_kapliczki_chmury": [
+58,
+70,
+232,
+41
+],
+"bg_kapliczki_kwiaty": [
+222,
+389,
+168,
+47
+],
+"bg_kapliczki_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_kaplnoc_blask": [
+150,
+350,
+60,
+68
+],
+"bg_kaplnoc_jaromir": [
+64,
+330,
+86,
+113
+],
+"bg_kaplnoc_ojciec": [
+130,
+300,
+80,
+131
+],
+"bg_kaplnoc_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_kaplwykop_kobiety": [
+20,
+290,
+90,
+64
+],
+"bg_kaplwykop_konik": [
+326,
+300,
+30,
+41
+],
+"bg_kaplwykop_kopacze": [
+90,
+212,
+170,
+111
+],
+"bg_kaplwykop_kurz": [
+78,
+280,
+202,
+40
+],
+"bg_kaplwykop_noc": [
+0,
+0,
+390,
+443
+],
+"bg_kaplwykop_promienie": [
+263,
+19,
+74,
+74
+],
+"bg_kaplwykop_swiatek": [
+240,
+290,
+40,
+53
+],
+"bg_kaplwykop_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_kaplwykop_woz_figurek": [
+240,
+292,
+140,
+68
+],
+"bg_kaplwykop_wozy": [
+240,
+292,
+140,
+68
+],
+"bg_kapota_chlopcy": [
+10,
+300,
+94,
+133
+],
+"bg_kapota_liscie": [
+40,
+189,
+300,
+151
+],
+"bg_kapota_tlo": [
+0,
+0,
+390,
+444
+],
+"bg_kapota_wrona": [
+144,
+193,
+30,
+27
+],
+"bg_klatwa_c_cien": [
+150,
+20,
+250,
+351
+],
+"bg_klatwa_c_plomien": [
+114,
+251,
+24,
+33
+],
+"bg_klatwa_c_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_klatwa_kaluza": [
+209,
+404,
+127,
+30
+],
+"bg_klatwa_n_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_klatwa_p_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_klatwa_w_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_koledy_hanka": [
+285,
+330,
+105,
+105
+],
+"bg_koledy_kulig": [
+30,
+225,
+120,
+38
+],
+"bg_koledy_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_kolyska_chlopcy": [
+8,
+330,
+143,
+114
+],
+"bg_kolyska_ksiezyc": [
+60,
+147,
+233,
+296
+],
+"bg_kolyska_luczywo": [
+270,
+189,
+30,
+51
+],
+"bg_kolyska_nad_wlosy_l": [
+133,
+76,
+133,
+229
+],
+"bg_kolyska_nad_wlosy_p": [
+136,
+76,
+132,
+229
+],
+"bg_kolyska_nisko_wlosy_l": [
+177,
+170,
+112,
+192
+],
+"bg_kolyska_nisko_wlosy_p": [
+180,
+170,
+111,
+192
+],
+"bg_kolyska_powala_wlosy_l": [
+133,
+12,
+112,
+192
+],
+"bg_kolyska_powala_wlosy_p": [
+136,
+12,
+111,
+192
+],
+"bg_kolyska_swit": [
+27,
+77,
+72,
+76
+],
+"bg_kolyska_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_kolyska_wir": [
+148,
+200,
+102,
+100
+],
+"bg_ksiezyc_gwiazdy": [
+0,
+10,
+390,
+151
+],
+"bg_ksiezyc_ksiezyc": [
+240,
+180,
+80,
+51
+],
+"bg_ksiezyc_para": [
+140,
+295,
+110,
+75
+],
+"bg_ksiezyc_swietlik_0": [
+35,
+315,
+10,
+10
+],
+"bg_ksiezyc_swietlik_1": [
+105,
+265,
+10,
+10
+],
+"bg_ksiezyc_swietlik_2": [
+255,
+275,
+10,
+10
+],
+"bg_ksiezyc_swietlik_3": [
+325,
+325,
+10,
+10
+],
+"bg_ksiezyc_swietlik_4": [
+175,
+255,
+10,
+10
+],
+"bg_ksiezyc_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_kuznia_dym": [
+50,
+77,
+40,
+63
+],
+"bg_kuznia_jaromir": [
+280,
+210,
+50,
+123
+],
+"bg_kuznia_kowadlo": [
+180,
+279,
+70,
+25
+],
+"bg_kuznia_kowal": [
+110,
+210,
+62,
+123
+],
+"bg_kuznia_ogien": [
+40,
+259,
+60,
+42
+],
+"bg_kuznia_podkowa": [
+180,
+269,
+133,
+41
+],
+"bg_kuznia_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_kuznia_zar": [
+28,
+299,
+84,
+11
+],
+"bg_laka_lby_0": [
+268,
+326,
+16,
+17
+],
+"bg_laka_lby_1": [
+328,
+320,
+16,
+17
+],
+"bg_laka_lby_2": [
+288,
+308,
+16,
+17
+],
+"bg_laka_motyl": [
+285,
+260,
+34,
+25
+],
+"bg_laka_rumianki": [
+0,
+389,
+390,
+47
+],
+"bg_laka_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_lato2_b_kaluze": [
+30,
+360,
+313,
+70
+],
+"bg_lato2_b_krag_0": [
+47,
+366,
+26,
+12
+],
+"bg_lato2_b_krag_1": [
+71,
+368,
+26,
+12
+],
+"bg_lato2_b_krag_2": [
+277,
+374,
+26,
+12
+],
+"bg_lato2_b_krag_3": [
+301,
+376,
+26,
+12
+],
+"bg_lato2_b_krag_4": [
+157,
+414,
+26,
+12
+],
+"bg_lato2_b_krople": [
+145,
+199,
+125,
+17
+],
+"bg_lato2_b_liscie": [
+60,
+148,
+293,
+112
+],
+"bg_lato2_b_rozblysk": [
+0,
+0,
+390,
+443
+],
+"bg_lato2_b_tecza": [
+-60,
+90,
+166,
+140
+],
+"bg_lato2_b_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_lato2_j_franek": [
+284,
+214,
+32,
+54
+],
+"bg_lato2_j_plusk": [
+216,
+286,
+60,
+28
+],
+"bg_lato2_j_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_lato2_w_dym": [
+54,
+130,
+30,
+51
+],
+"bg_lato2_w_gwiazda_0": [
+33,
+33,
+14,
+14
+],
+"bg_lato2_w_gwiazda_1": [
+113,
+17,
+14,
+14
+],
+"bg_lato2_w_gwiazda_2": [
+189,
+47,
+14,
+14
+],
+"bg_lato2_w_gwiazda_3": [
+255,
+23,
+14,
+14
+],
+"bg_lato2_w_gwiazda_4": [
+343,
+53,
+14,
+14
+],
+"bg_lato2_w_gwiazda_5": [
+83,
+89,
+14,
+14
+],
+"bg_lato2_w_matka": [
+66,
+270,
+54,
+74
+],
+"bg_lato2_w_niebo": [
+0,
+0,
+390,
+443
+],
+"bg_lato2_w_nietoperz": [
+179,
+96,
+42,
+24
+],
+"bg_lato2_w_slonce": [
+287,
+153,
+74,
+74
+],
+"bg_lato2_w_swietliki_0": [
+131,
+321,
+140,
+76
+],
+"bg_lato2_w_swietliki_1": [
+187,
+291,
+140,
+118
+],
+"bg_lato2_w_swietliki_2": [
+151,
+343,
+158,
+70
+],
+"bg_lato2_w_swietliki_3": [
+121,
+291,
+228,
+48
+],
+"bg_lato2_w_tlo": [
+-10,
+142,
+410,
+301
+],
+"bg_lato_bocian": [
+-62,
+84,
+77,
+44
+],
+"bg_lato_chmury": [
+108,
+74,
+232,
+41
+],
+"bg_lato_dym": [
+80,
+189,
+200,
+91
+],
+"bg_lato_kwiaty_0": [
+0,
+391,
+66,
+49
+],
+"bg_lato_kwiaty_1": [
+65,
+391,
+66,
+49
+],
+"bg_lato_kwiaty_2": [
+130,
+391,
+66,
+49
+],
+"bg_lato_kwiaty_3": [
+195,
+391,
+66,
+49
+],
+"bg_lato_kwiaty_4": [
+260,
+391,
+66,
+49
+],
+"bg_lato_kwiaty_5": [
+325,
+391,
+66,
+49
+],
+"bg_lato_puch_0": [
+10,
+312,
+20,
+23
+],
+"bg_lato_puch_1": [
+50,
+362,
+20,
+23
+],
+"bg_lato_puch_2": [
+0,
+252,
+20,
+23
+],
+"bg_lato_puch_3": [
+80,
+282,
+20,
+23
+],
+"bg_lato_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_latopodworze_bocian": [
+316,
+228,
+53,
+39
+],
+"bg_latopodworze_chmury": [
+40,
+40,
+300,
+43
+],
+"bg_latopodworze_dym": [
+100,
+197,
+30,
+63
+],
+"bg_latopodworze_hanka": [
+57,
+313,
+53,
+67
+],
+"bg_latopodworze_jaromir": [
+230,
+300,
+80,
+113
+],
+"bg_latopodworze_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_latopodworze_trawa": [
+0,
+384,
+390,
+49
+],
+"bg_latopodworze_wieczor": [
+0,
+0,
+390,
+443
+],
+"bg_latopodworze_wojcik": [
+200,
+186,
+30,
+35
+],
+"bg_latopodworze_zmarszczki": [
+150,
+214,
+140,
+11
+],
+"bg_legenda_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_luki_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_luki_trafienie": [
+254,
+311,
+54,
+27
+],
+"bg_miasto_g_chmury": [
+108,
+96,
+232,
+44
+],
+"bg_miasto_g_maciek": [
+176,
+313,
+69,
+107
+],
+"bg_miasto_g_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_miasto_g_zboze": [
+0,
+366,
+390,
+70
+],
+"bg_miasto_r_daszki": [
+12,
+292,
+310,
+41
+],
+"bg_miasto_r_golebie": [
+120,
+362,
+160,
+32
+],
+"bg_miasto_r_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_miasto_z_pies_tyl": [
+79,
+364,
+86,
+61
+],
+"bg_miasto_z_starucha_kostur": [
+143,
+228,
+133,
+200
+],
+"bg_miasto_z_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_mrozizba_dym": [
+30,
+147,
+30,
+63
+],
+"bg_mrozizba_hanka": [
+190,
+230,
+66,
+103
+],
+"bg_mrozizba_jaromir": [
+89,
+230,
+51,
+103
+],
+"bg_mrozizba_platki": [
+252,
+112,
+76,
+81
+],
+"bg_mrozizba_plomien": [
+50,
+299,
+20,
+26
+],
+"bg_mrozizba_szron": [
+249,
+109,
+82,
+82
+],
+"bg_mrozizba_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_mrozizba_zar": [
+30,
+314,
+50,
+11
+],
+"bg_nocmamun_gwiazdy": [
+42,
+112,
+69,
+66
+],
+"bg_nocmamun_hanka": [
+137,
+240,
+63,
+70
+],
+"bg_nocmamun_ksiezyc": [
+37,
+107,
+166,
+233
+],
+"bg_nocmamun_m1_glowa": [
+260,
+198,
+78,
+138
+],
+"bg_nocmamun_m2_glowa": [
+180,
+191,
+80,
+145
+],
+"bg_nocmamun_m2_reka": [
+182,
+202,
+78,
+134
+],
+"bg_nocmamun_okno": [
+17,
+97,
+103,
+96
+],
+"bg_nocmamun_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_nocmamun_zar": [
+334,
+314,
+40,
+11
+],
+"bg_nocmamun_zaslonil": [
+90,
+230,
+70,
+103
+],
+"bg_nocsnieg_iskry": [
+10,
+298,
+180,
+122
+],
+"bg_nocsnieg_jaromir": [
+136,
+312,
+36,
+68
+],
+"bg_nocsnieg_krok_3": [
+198,
+314,
+16,
+36
+],
+"bg_nocsnieg_krok_4": [
+213,
+284,
+14,
+32
+],
+"bg_nocsnieg_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_nocsnieg_zamiec": [
+0,
+270,
+205,
+123
+],
+"bg_oblawa_kamien": [
+220,
+270,
+100,
+85
+],
+"bg_oblawa_mgla": [
+-30,
+166,
+450,
+31
+],
+"bg_oblawa_strzal": [
+150,
+220,
+200,
+143
+],
+"bg_oblawa_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_oblawa_wm_cialo": [
+181,
+230,
+78,
+129
+],
+"bg_oblawa_wm_ogon": [
+184,
+230,
+78,
+129
+],
+"bg_odmieniec_babka": [
+281,
+230,
+58,
+104
+],
+"bg_odmieniec_hanka": [
+143,
+230,
+58,
+104
+],
+"bg_odmieniec_plomien": [
+342,
+299,
+20,
+26
+],
+"bg_odmieniec_skorupki": [
+326,
+250,
+63,
+14
+],
+"bg_odmieniec_smuga": [
+37,
+107,
+166,
+226
+],
+"bg_odmieniec_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_odwilz_chmury": [
+40,
+50,
+300,
+43
+],
+"bg_odwilz_dym": [
+140,
+177,
+30,
+63
+],
+"bg_odwilz_strumienie": [
+0,
+280,
+390,
+153
+],
+"bg_odwilz_szczenie": [
+120,
+349,
+40,
+26
+],
+"bg_odwilz_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_odwilz_trawa": [
+0,
+380,
+390,
+53
+],
+"bg_odwilz_ww_cialo": [
+301,
+129,
+41,
+70
+],
+"bg_odwilz_ww_glowa": [
+301,
+128,
+39,
+69
+],
+"bg_odwilz_ww_ogon": [
+301,
+129,
+42,
+70
+],
+"bg_ognisko_blask": [
+120,
+290,
+150,
+123
+],
+"bg_ognisko_gwiazdy": [
+120,
+8,
+260,
+125
+],
+"bg_ognisko_ogien": [
+175,
+330,
+46,
+53
+],
+"bg_ognisko_stukacz": [
+40,
+200,
+59,
+110
+],
+"bg_ognisko_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_ognisko_tracze": [
+100,
+310,
+200,
+81
+],
+"bg_orka_drzewo": [
+210,
+115,
+40,
+92
+],
+"bg_orka_jaromir": [
+230,
+309,
+65,
+91
+],
+"bg_orka_kurz": [
+184,
+170,
+87,
+30
+],
+"bg_orka_motyl": [
+298,
+359,
+32,
+23
+],
+"bg_orka_orka": [
+30,
+283,
+150,
+108
+],
+"bg_orka_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_owczarnia_gwiazdy": [
+0,
+10,
+290,
+152
+],
+"bg_owczarnia_szpara": [
+88,
+295,
+34,
+46
+],
+"bg_owczarnia_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_owczarnia_wilki": [
+138,
+300,
+212,
+60
+],
+"bg_owczarnia_wo_cialo": [
+307,
+185,
+45,
+71
+],
+"bg_owczarnia_wo_ogon": [
+311,
+185,
+43,
+69
+],
+"bg_pieclat_chmury": [
+40,
+60,
+300,
+41
+],
+"bg_pieclat_motyl": [
+59,
+329,
+30,
+23
+],
+"bg_pieclat_przyzba": [
+230,
+298,
+80,
+92
+],
+"bg_pieclat_swierki": [
+148,
+196,
+252,
+41
+],
+"bg_pieclat_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_polnoc_dym": [
+96,
+200,
+30,
+61
+],
+"bg_polnoc_gromnica": [
+110,
+200,
+240,
+133
+],
+"bg_polnoc_kur": [
+299,
+99,
+66,
+72
+],
+"bg_polnoc_kur_gromnica": [
+299,
+99,
+66,
+72
+],
+"bg_polnoc_kur_sierp": [
+299,
+99,
+66,
+72
+],
+"bg_polnoc_mezczyzni": [
+273,
+321,
+117,
+109
+],
+"bg_polnoc_okiennica": [
+281,
+97,
+22,
+84
+],
+"bg_polnoc_palce": [
+209,
+236,
+36,
+26
+],
+"bg_polnoc_platki": [
+298,
+99,
+64,
+69
+],
+"bg_polnoc_plomienie": [
+110,
+253,
+26,
+27
+],
+"bg_polnoc_sierp": [
+110,
+230,
+240,
+103
+],
+"bg_polnoc_sn_cien": [
+163,
+128,
+126,
+204
+],
+"bg_polnoc_sn_reka": [
+169,
+128,
+119,
+204
+],
+"bg_polnoc_swiece": [
+100,
+240,
+34,
+63
+],
+"bg_polnoc_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_polnoc_twarz": [
+100,
+210,
+260,
+129
+],
+"bg_polnoc_uciekajaca": [
+17,
+250,
+63,
+90
+],
+"bg_polnoc_zmarly": [
+120,
+250,
+230,
+83
+],
+"bg_poludnica_hanka": [
+309,
+330,
+71,
+101
+],
+"bg_poludnica_jaromir": [
+40,
+320,
+83,
+111
+],
+"bg_poludnica_pol_reka": [
+180,
+150,
+163,
+277
+],
+"bg_poludnica_pol_sierp": [
+177,
+150,
+160,
+277
+],
+"bg_poludnica_pol_wlosy": [
+180,
+150,
+159,
+277
+],
+"bg_poludnica_rozwiewa": [
+148,
+140,
+122,
+280
+],
+"bg_poludnica_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_pomost_slad": [
+248,
+332,
+52,
+19
+],
+"bg_pomost_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_pooblawie_dym": [
+130,
+177,
+30,
+63
+],
+"bg_pooblawie_mgla": [
+-30,
+216,
+450,
+31
+],
+"bg_pooblawie_noc": [
+0,
+0,
+390,
+443
+],
+"bg_pooblawie_sikorka": [
+293,
+370,
+22,
+20
+],
+"bg_pooblawie_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_pooblawie_wp_cialo": [
+315,
+213,
+30,
+46
+],
+"bg_pooblawie_wp_glowa": [
+316,
+213,
+27,
+44
+],
+"bg_pooblawie_wp_grzywa": [
+316,
+213,
+27,
+44
+],
+"bg_pooblawie_wp_ogon": [
+318,
+213,
+28,
+44
+],
+"bg_pooblawie_zajac": [
+220,
+344,
+41,
+20
+],
+"bg_poranek_dzieci": [
+196,
+252,
+194,
+110
+],
+"bg_poranek_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_prog_dym": [
+130,
+47,
+30,
+54
+],
+"bg_prog_mgla": [
+178,
+236,
+232,
+30
+],
+"bg_prog_postacie": [
+109,
+262,
+75,
+77
+],
+"bg_prog_sowa": [
+283,
+260,
+34,
+36
+],
+"bg_prog_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_przedzenie_kolo_0": [
+16,
+210,
+65,
+59
+],
+"bg_przedzenie_kolo_1": [
+226,
+210,
+65,
+59
+],
+"bg_przedzenie_pierze": [
+126,
+147,
+144,
+113
+],
+"bg_przedzenie_platki": [
+42,
+70,
+66,
+52
+],
+"bg_przedzenie_przadki": [
+30,
+180,
+260,
+124
+],
+"bg_przedzenie_stol_kobiety": [
+130,
+190,
+140,
+75
+],
+"bg_przedzenie_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_przedzenie_uboze_cialo": [
+358,
+234,
+35,
+61
+],
+"bg_przerwa_chlopcy": [
+270,
+330,
+110,
+105
+],
+"bg_przerwa_dym": [
+324,
+95,
+40,
+57
+],
+"bg_przerwa_dzwon": [
+92,
+91,
+16,
+21
+],
+"bg_przerwa_hanka": [
+215,
+344,
+61,
+91
+],
+"bg_przerwa_sniezka_0": [
+85,
+319,
+14,
+14
+],
+"bg_przerwa_sniezka_1": [
+179,
+317,
+14,
+14
+],
+"bg_przerwa_sniezka_2": [
+133,
+311,
+14,
+14
+],
+"bg_przerwa_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_przerwa_wrona_0": [
+249,
+154,
+28,
+24
+],
+"bg_przerwa_wrona_1": [
+289,
+153,
+27,
+23
+],
+"bg_przestrogi_gwiazdy": [
+0,
+10,
+390,
+152
+],
+"bg_przestrogi_krag_2": [
+50,
+299,
+50,
+15
+],
+"bg_przestrogi_ksiezyc": [
+286,
+39,
+44,
+46
+],
+"bg_przestrogi_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_przyzbaswit_babka": [
+291,
+295,
+50,
+89
+],
+"bg_przyzbaswit_dym": [
+320,
+175,
+30,
+65
+],
+"bg_przyzbaswit_mgla": [
+-30,
+206,
+450,
+31
+],
+"bg_przyzbaswit_slonce": [
+60,
+183,
+70,
+47
+],
+"bg_przyzbaswit_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_ranek_dym": [
+260,
+177,
+30,
+63
+],
+"bg_ranek_mgla": [
+-30,
+226,
+450,
+31
+],
+"bg_ranek_plama": [
+175,
+354,
+51,
+16
+],
+"bg_ranek_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_ranek_wrona": [
+64,
+349,
+30,
+27
+],
+"bg_ratunek_andrzej": [
+120,
+291,
+176,
+113
+],
+"bg_ratunek_babelki": [
+147,
+352,
+23,
+28
+],
+"bg_ratunek_figurka": [
+149,
+351,
+18,
+32
+],
+"bg_ratunek_iskry": [
+104,
+323,
+44,
+37
+],
+"bg_ratunek_krag_0": [
+143,
+374,
+30,
+12
+],
+"bg_ratunek_krag_1": [
+133,
+371,
+50,
+18
+],
+"bg_ratunek_krag_2": [
+121,
+367,
+74,
+26
+],
+"bg_ratunek_trzciny": [
+20,
+390,
+123,
+41
+],
+"bg_ratunek_w_wodzie": [
+88,
+330,
+60,
+53
+],
+"bg_rodzina_c_dym": [
+254,
+109,
+40,
+73
+],
+"bg_rodzina_c_dziecko": [
+180,
+356,
+70,
+58
+],
+"bg_rodzina_c_maciek": [
+13,
+315,
+81,
+113
+],
+"bg_rodzina_c_marianna": [
+204,
+274,
+50,
+60
+],
+"bg_rodzina_c_pies_cialo": [
+96,
+384,
+35,
+39
+],
+"bg_rodzina_c_pies_glowa": [
+96,
+382,
+35,
+40
+],
+"bg_rodzina_c_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_roraty_dzieci": [
+218,
+200,
+122,
+112
+],
+"bg_roraty_iskry": [
+9,
+299,
+201,
+124
+],
+"bg_roraty_sowa": [
+217,
+101,
+30,
+33
+],
+"bg_roraty_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_rozlewisko_babelki": [
+235,
+270,
+31,
+26
+],
+"bg_rozlewisko_franek": [
+90,
+290,
+70,
+121
+],
+"bg_rozlewisko_franek_rzuca": [
+90,
+330,
+61,
+81
+],
+"bg_rozlewisko_krag_0": [
+229,
+283,
+42,
+18
+],
+"bg_rozlewisko_krag_1": [
+217,
+279,
+66,
+26
+],
+"bg_rozlewisko_krag_2": [
+203,
+274,
+94,
+36
+],
+"bg_rozlewisko_lot": [
+123,
+289,
+30,
+58
+],
+"bg_rozlewisko_reka": [
+226,
+225,
+60,
+85
+],
+"bg_rozlewisko_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_rozlewisko_trzciny": [
+86,
+260,
+64,
+50
+],
+"bg_rozstaje_jaromir": [
+210,
+287,
+60,
+106
+],
+"bg_rozstaje_mr_glowa": [
+267,
+224,
+64,
+111
+],
+"bg_rozstaje_nietoperz": [
+199,
+120,
+42,
+24
+],
+"bg_rozstaje_rozga": [
+215,
+300,
+55,
+60
+],
+"bg_rozstaje_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_rozstaje_trawa": [
+0,
+380,
+390,
+53
+],
+"bg_rusalki_blysk": [
+130,
+220,
+130,
+123
+],
+"bg_rusalki_franek": [
+137,
+290,
+86,
+127
+],
+"bg_rusalki_mgla_po": [
+0,
+250,
+390,
+112
+],
+"bg_rusalki_piolun": [
+300,
+299,
+30,
+27
+],
+"bg_rusalki_r1_krople": [
+21,
+190,
+117,
+203
+],
+"bg_rusalki_r1_reka_l": [
+21,
+190,
+118,
+203
+],
+"bg_rusalki_smuga": [
+148,
+190,
+96,
+240
+],
+"bg_rusalki_szarpanie": [
+139,
+330,
+91,
+50
+],
+"bg_rusalki_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_rusalki_trzciny_l": [
+-6,
+330,
+96,
+110
+],
+"bg_sciecie_kurz": [
+138,
+270,
+242,
+80
+],
+"bg_sciecie_ludzie": [
+0,
+327,
+290,
+108
+],
+"bg_sciecie_pien": [
+93,
+176,
+121,
+152
+],
+"bg_sciecie_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_sciecie_tracze": [
+70,
+219,
+165,
+111
+],
+"bg_sciecie_urbaniak": [
+300,
+307,
+60,
+124
+],
+"bg_sciecie_zoladz": [
+140,
+319,
+24,
+21
+],
+"bg_sciezka_maciek": [
+184,
+252,
+58,
+92
+],
+"bg_sciezka_pies_przod": [
+245,
+318,
+44,
+32
+],
+"bg_sciezka_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_slubdroga_chmury": [
+40,
+50,
+300,
+43
+],
+"bg_slubdroga_mgla": [
+-30,
+226,
+300,
+31
+],
+"bg_slubdroga_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_slubdroga_trawa": [
+0,
+380,
+390,
+53
+],
+"bg_slubdroga_wozy": [
+-160,
+290,
+220,
+74
+],
+"bg_snieg_iskry": [
+30,
+298,
+331,
+102
+],
+"bg_snieg_okno": [
+0,
+0,
+390,
+443
+],
+"bg_snieg_przod": [
+0,
+429,
+390,
+415
+],
+"bg_snieg_slad_0": [
+191,
+197,
+11,
+17
+],
+"bg_snieg_slad_1": [
+193,
+221,
+12,
+21
+],
+"bg_snieg_slad_2": [
+176,
+245,
+14,
+24
+],
+"bg_snieg_slad_3": [
+179,
+270,
+16,
+27
+],
+"bg_snieg_slad_4": [
+160,
+294,
+18,
+30
+],
+"bg_snieg_snieg": [
+0,
+177,
+390,
+266
+],
+"bg_snieg_sowa": [
+107,
+260,
+34,
+36
+],
+"bg_snieg_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_sosna_dzieci": [
+90,
+326,
+123,
+92
+],
+"bg_sosna_jaromir": [
+196,
+362,
+56,
+58
+],
+"bg_sosna_kora": [
+224,
+398,
+28,
+16
+],
+"bg_sosna_kropla": [
+258,
+227,
+10,
+15
+],
+"bg_sosna_spirala": [
+245,
+0,
+58,
+160
+],
+"bg_sosna_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_stodola_golab_0": [
+53,
+102,
+28,
+24
+],
+"bg_stodola_golab_1": [
+223,
+103,
+27,
+23
+],
+"bg_stodola_krople": [
+288,
+100,
+78,
+31
+],
+"bg_stodola_kukla": [
+153,
+150,
+62,
+153
+],
+"bg_stodola_kury_0": [
+40,
+310,
+34,
+33
+],
+"bg_stodola_kury_1": [
+300,
+316,
+34,
+31
+],
+"bg_stodola_smuga": [
+147,
+87,
+228,
+216
+],
+"bg_stodola_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_stodola_wstazka": [
+172,
+193,
+26,
+24
+],
+"bg_strzygaokno_jaromir": [
+27,
+220,
+116,
+117
+],
+"bg_strzygaokno_platki": [
+134,
+72,
+124,
+150
+],
+"bg_strzygaokno_rama": [
+117,
+60,
+156,
+273
+],
+"bg_strzygaokno_swit": [
+129,
+69,
+132,
+158
+],
+"bg_strzygaokno_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_strzygaokno_wstal": [
+100,
+166,
+100,
+174
+],
+"bg_studnia_lw_cialo": [
+94,
+263,
+61,
+108
+],
+"bg_studnia_odchodzi": [
+58,
+337,
+68,
+47
+],
+"bg_studnia_promienie": [
+159,
+7,
+74,
+74
+],
+"bg_studnia_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_studnia_wrona": [
+350,
+197,
+30,
+27
+],
+"bg_studnia_zuraw": [
+0,
+230,
+286,
+180
+],
+"bg_susza_kurz": [
+40,
+359,
+50,
+51
+],
+"bg_susza_promienie": [
+259,
+23,
+82,
+82
+],
+"bg_susza_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_susza_trawa_0": [
+0,
+396,
+206,
+41
+],
+"bg_susza_trawa_1": [
+199,
+396,
+191,
+41
+],
+"bg_swaty_dym": [
+344,
+175,
+30,
+65
+],
+"bg_swaty_gwiazdy": [
+0,
+10,
+390,
+142
+],
+"bg_swaty_hanka": [
+295,
+275,
+45,
+69
+],
+"bg_swaty_kuznia": [
+250,
+275,
+80,
+69
+],
+"bg_swaty_nietoperz": [
+179,
+120,
+42,
+24
+],
+"bg_swaty_okno": [
+40,
+280,
+41,
+30
+],
+"bg_swaty_stas": [
+130,
+312,
+90,
+88
+],
+"bg_swaty_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_swaty_wstazka": [
+52,
+284,
+20,
+23
+],
+"bg_swiatki_brzozka_0": [
+12,
+220,
+42,
+84
+],
+"bg_swiatki_brzozka_2": [
+130,
+249,
+30,
+61
+],
+"bg_swiatki_hanka": [
+191,
+291,
+70,
+102
+],
+"bg_swiatki_hanka_biegnie": [
+195,
+291,
+73,
+102
+],
+"bg_swiatki_hanka_odchodzi": [
+207,
+291,
+64,
+102
+],
+"bg_swiatki_jaromir": [
+150,
+268,
+40,
+92
+],
+"bg_swiatki_kaczence": [
+276,
+296,
+50,
+19
+],
+"bg_swiatki_motyl": [
+249,
+309,
+30,
+23
+],
+"bg_swiatki_piolun_plot": [
+226,
+383,
+40,
+20
+],
+"bg_swiatki_piolun_serce": [
+170,
+297,
+23,
+24
+],
+"bg_swiatki_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_szkola_cien": [
+150,
+14,
+150,
+252
+],
+"bg_szkola_ignacy_biurko": [
+126,
+240,
+62,
+113
+],
+"bg_szkola_ignacy_okno": [
+220,
+140,
+50,
+125
+],
+"bg_szkola_ignacy_za_biurkiem": [
+150,
+231,
+70,
+102
+],
+"bg_szkola_jaromir_biurko": [
+92,
+295,
+40,
+77
+],
+"bg_szkola_jaromir_prog": [
+24,
+189,
+40,
+77
+],
+"bg_szkola_kora_biurko": [
+150,
+290,
+26,
+14
+],
+"bg_szkola_ksiega_biurko": [
+186,
+290,
+42,
+20
+],
+"bg_szkola_ksiega_jaromir": [
+118,
+290,
+42,
+20
+],
+"bg_szkola_obrona": [
+56,
+283,
+94,
+78
+],
+"bg_szkola_ogien": [
+324,
+238,
+36,
+25
+],
+"bg_szkola_smuga_0": [
+119,
+157,
+120,
+146
+],
+"bg_szkola_smuga_1": [
+211,
+157,
+118,
+146
+],
+"bg_szkola_tabliczka": [
+190,
+362,
+60,
+33
+],
+"bg_szkola_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_tartak_iskry": [
+200,
+298,
+190,
+72
+],
+"bg_tartak_moneta": [
+344,
+383,
+16,
+15
+],
+"bg_tartak_pila": [
+197,
+240,
+56,
+60
+],
+"bg_tartak_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_tartak_urbaniak": [
+290,
+299,
+100,
+132
+],
+"bg_tartak_woz": [
+40,
+371,
+111,
+49
+],
+"bg_uboze_garnki": [
+24,
+170,
+150,
+33
+],
+"bg_uboze_obloczek": [
+170,
+250,
+76,
+60
+],
+"bg_uboze_slady": [
+150,
+299,
+60,
+17
+],
+"bg_uboze_smuga": [
+37,
+147,
+206,
+156
+],
+"bg_uboze_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_urbaniak_bocian": [
+62,
+146,
+31,
+30
+],
+"bg_urbaniak_bocian_lot": [
+-62,
+84,
+77,
+44
+],
+"bg_urbaniak_bryczka": [
+146,
+284,
+120,
+65
+],
+"bg_urbaniak_jaromir": [
+40,
+328,
+40,
+67
+],
+"bg_urbaniak_ludzie": [
+175,
+193,
+205,
+110
+],
+"bg_urbaniak_noc": [
+0,
+0,
+390,
+443
+],
+"bg_urbaniak_odjazd": [
+146,
+284,
+120,
+65
+],
+"bg_urbaniak_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_urbaniak_znak_0": [
+204,
+235,
+12,
+18
+],
+"bg_urbaniak_znak_1": [
+284,
+239,
+12,
+18
+],
+"bg_urbaniak_znak_2": [
+364,
+237,
+12,
+18
+],
+"bg_weselenoc_drzwi": [
+129,
+300,
+41,
+63
+],
+"bg_weselenoc_dym": [
+134,
+177,
+30,
+63
+],
+"bg_weselenoc_kolacz": [
+240,
+251,
+24,
+15
+],
+"bg_weselenoc_mgla_gesta": [
+168,
+200,
+232,
+90
+],
+"bg_weselenoc_okna": [
+40,
+290,
+47,
+47
+],
+"bg_weselenoc_rygiel": [
+129,
+300,
+41,
+63
+],
+"bg_weselenoc_skinienie": [
+270,
+200,
+65,
+70
+],
+"bg_weselenoc_st_postac": [
+280,
+205,
+40,
+72
+],
+"bg_weselenoc_swiatlo": [
+17,
+357,
+203,
+66
+],
+"bg_weselenoc_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_wieczor_blask": [
+150,
+180,
+140,
+107
+],
+"bg_wieczor_dym": [
+204,
+289,
+40,
+65
+],
+"bg_wieczor_gwiazdy": [
+44,
+84,
+63,
+62
+],
+"bg_wieczor_matka": [
+299,
+186,
+62,
+118
+],
+"bg_wieczor_niebo": [
+0,
+0,
+390,
+273
+],
+"bg_wieczor_ojciec": [
+150,
+176,
+70,
+127
+],
+"bg_wieczor_palenisko": [
+150,
+394,
+128,
+34
+],
+"bg_wieczor_plomien": [
+214,
+230,
+12,
+19
+],
+"bg_wieczor_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_wielkanoc_bazie_0": [
+10,
+330,
+50,
+83
+],
+"bg_wielkanoc_bazie_1": [
+100,
+330,
+50,
+83
+],
+"bg_wielkanoc_bazie_2": [
+190,
+330,
+50,
+83
+],
+"bg_wielkanoc_bazie_3": [
+280,
+330,
+50,
+83
+],
+"bg_wielkanoc_bociany": [
+-62,
+84,
+77,
+44
+],
+"bg_wielkanoc_chlopak": [
+90,
+340,
+55,
+91
+],
+"bg_wielkanoc_hanka": [
+180,
+339,
+65,
+92
+],
+"bg_wielkanoc_iskry": [
+150,
+288,
+210,
+54
+],
+"bg_wielkanoc_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_wielkanoc_woda": [
+135,
+350,
+71,
+40
+],
+"bg_wies_noc_tlo": [
+0,
+0,
+390,
+403
+],
+"bg_wigilia_dziad": [
+0,
+176,
+90,
+124
+],
+"bg_wigilia_dziad_lira": [
+270,
+190,
+56,
+113
+],
+"bg_wigilia_pies_glowa": [
+236,
+211,
+49,
+54
+],
+"bg_wigilia_rodzina": [
+137,
+160,
+143,
+144
+],
+"bg_wigilia_stas": [
+270,
+176,
+70,
+127
+],
+"bg_wigilia_swieca": [
+220,
+216,
+14,
+19
+],
+"bg_wigilia_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_wigiliastol_gwiazda": [
+275,
+95,
+18,
+18
+],
+"bg_wigiliastol_oplatek": [
+205,
+290,
+22,
+10
+],
+"bg_wigiliastol_platki": [
+262,
+91,
+86,
+87
+],
+"bg_wigiliastol_plomien": [
+148,
+258,
+16,
+19
+],
+"bg_wigiliastol_swieca_okno": [
+303,
+145,
+12,
+12
+],
+"bg_wigiliastol_talerz": [
+196,
+290,
+40,
+15
+],
+"bg_wigiliastol_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_wigiliastol_vs_cialo": [
+299,
+286,
+38,
+41
+],
+"bg_wigiliastol_vs_glowa": [
+300,
+284,
+37,
+42
+],
+"bg_wiosnaorka_chmury": [
+40,
+50,
+300,
+43
+],
+"bg_wiosnaorka_noc": [
+0,
+0,
+390,
+443
+],
+"bg_wiosnaorka_ognie": [
+230,
+176,
+160,
+31
+],
+"bg_wiosnaorka_oracz": [
+146,
+259,
+204,
+91
+],
+"bg_wiosnaorka_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_wiosnaorka_trawa": [
+0,
+390,
+390,
+43
+],
+"bg_wiosnaorka_wrona": [
+113,
+285,
+26,
+23
+],
+"bg_wiosnaorka_wrona2": [
+33,
+257,
+24,
+21
+],
+"bg_wstazka_lisc_0": [
+9,
+251,
+21,
+18
+],
+"bg_wstazka_lisc_1": [
+-9,
+300,
+20,
+20
+],
+"bg_wstazka_lisc_2": [
+30,
+208,
+20,
+23
+],
+"bg_wstazka_sosenka": [
+273,
+236,
+56,
+97
+],
+"bg_wstazka_swierki_0": [
+96,
+113,
+120,
+228
+],
+"bg_wstazka_swierki_1": [
+174,
+113,
+122,
+228
+],
+"bg_wstazka_swierki_2": [
+296,
+113,
+122,
+228
+],
+"bg_wstazka_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_wykopki_dym": [
+110,
+290,
+190,
+83
+],
+"bg_wykopki_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_wykopki_wrony": [
+213,
+74,
+103,
+32
+],
+"bg_wykopki_zmrok": [
+0,
+0,
+390,
+443
+],
+"bg_wyreb_biegnie": [
+57,
+277,
+53,
+73
+],
+"bg_wyreb_drag": [
+141,
+245,
+132,
+88
+],
+"bg_wyreb_jaromir": [
+80,
+270,
+49,
+80
+],
+"bg_wyreb_lezaca": [
+117,
+260,
+243,
+80
+],
+"bg_wyreb_ly_cialo": [
+348,
+228,
+37,
+67
+],
+"bg_wyreb_ojciec": [
+209,
+246,
+42,
+84
+],
+"bg_wyreb_pniak_licha": [
+346,
+275,
+40,
+25
+],
+"bg_wyreb_promienie": [
+33,
+23,
+74,
+74
+],
+"bg_wyreb_pyl": [
+98,
+280,
+162,
+60
+],
+"bg_wyreb_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_wyreb_tracze": [
+253,
+245,
+73,
+85
+],
+"bg_zaduszki_gwiazdy": [
+119,
+10,
+271,
+122
+],
+"bg_zaduszki_ksiezyc_smuga": [
+107,
+37,
+196,
+266
+],
+"bg_zaduszki_kubek": [
+230,
+270,
+32,
+33
+],
+"bg_zaduszki_ludzie": [
+140,
+332,
+160,
+78
+],
+"bg_zaduszki_okno": [
+0,
+0,
+390,
+443
+],
+"bg_zaduszki_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_zapadlina_dym": [
+108,
+236,
+104,
+121
+],
+"bg_zapadlina_swierk_a": [
+227,
+231,
+46,
+181
+],
+"bg_zapadlina_swierk_b": [
+254,
+187,
+40,
+151
+],
+"bg_zapadlina_tlo": [
+0,
+0,
+390,
+433
+],
+"bg_zarosla_krzak_przod": [
+266,
+359,
+122,
+84
+],
+"bg_zarosla_krzaki": [
+0,
+257,
+400,
+203
+],
+"bg_zarosla_niebo": [
+0,
+0,
+390,
+323
+],
+"bg_zarosla_pies_drzenie": [
+190,
+326,
+155,
+109
+],
+"bg_zgliszcza_chmura": [
+60,
+90,
+150,
+42
+],
+"bg_zgliszcza_maciek": [
+146,
+272,
+113,
+90
+],
+"bg_zgliszcza_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_zgliszcza_zgliszcza": [
+28,
+248,
+362,
+168
+],
+"bg_zmierzch_krzaki": [
+205,
+300,
+195,
+136
+],
+"bg_zmierzch_krzaki_przod": [
+207,
+330,
+193,
+113
+],
+"bg_zmierzch_pies_obrona_drzenie": [
+181,
+359,
+100,
+69
+],
+"bg_zmierzch_przod": [
+0,
+427,
+390,
+417
+],
+"bg_zmierzch_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_zniwa_franek": [
+90,
+223,
+30,
+53
+],
+"bg_zniwa_slad_0": [
+52,
+389,
+16,
+29
+],
+"bg_zniwa_slad_1": [
+80,
+371,
+16,
+29
+],
+"bg_zniwa_slad_2": [
+102,
+353,
+16,
+29
+],
+"bg_zniwa_slad_3": [
+126,
+337,
+16,
+29
+],
+"bg_zniwa_slad_4": [
+152,
+323,
+16,
+29
+],
+"bg_zniwa_swierczki": [
+200,
+220,
+60,
+87
+],
+"bg_zniwa_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_zniwa_zboze_1": [
+72,
+330,
+86,
+100
+],
+"bg_zniwa_zboze_2": [
+150,
+330,
+86,
+100
+],
+"bg_zniwa_zboze_3": [
+228,
+330,
+86,
+100
+],
+"bg_zniwa_zboze_4": [
+306,
+330,
+86,
+100
+],
+"bg_zniwapole_hanka": [
+6,
+340,
+64,
+91
+],
+"bg_zniwapole_jaromir": [
+179,
+321,
+101,
+109
+],
+"bg_zniwapole_kobiety": [
+60,
+298,
+140,
+82
+],
+"bg_zniwapole_motyl": [
+148,
+379,
+32,
+23
+],
+"bg_zniwapole_sam": [
+270,
+258,
+120,
+52
+],
+"bg_zniwapole_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_zniwapole_zar": [
+0,
+187,
+390,
+52
+],
+"bg_zniwapole_zency": [
+195,
+269,
+195,
+91
+],
+"bg_zniwapole_zyto_0": [
+199,
+218,
+53,
+62
+],
+"bg_zniwapole_zyto_1": [
+247,
+218,
+53,
+62
+],
+"bg_zniwapole_zyto_2": [
+295,
+218,
+53,
+62
+],
+"bg_zniwapole_zyto_3": [
+343,
+218,
+53,
+62
+]
+}

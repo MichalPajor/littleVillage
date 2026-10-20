@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „zapadlina”: niebo, słońce, Bukowy Grzbiet, mokradła, jezioro, chałupy, bór
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="390" height="430" viewBox="0 0 390 430">
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="433" viewBox="0 0 390 433">
 <defs>
 <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>

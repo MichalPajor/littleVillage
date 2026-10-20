@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „przed żniwami”: wielki, bosy ślad w ogrodzie (# pokaz: slady, po kolei)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="80 372 16 28">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="29" viewBox="80 371 16 29">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>

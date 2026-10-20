@@ -230,7 +230,7 @@ def build_for(key, layers):
             lo = ys + 10 + s * (840 - ys) / 3
             hi = lo + (840 - ys) / 3
             tufts = [kepa(x, y, pk(y) * rnd.uniform(0.8, 1.2), ink_for(k)) for x, y, k in spots({"pole": 9, "susza": 4}.get(rodzaj, 14), lo, hi, ground)]
-            add(f"trawa_{s}", -30, int(lo) - 50, 450, int(hi - lo) + 60, tufts,
+            add(f"trawa_{s}", -30, int(lo) - 90, 450, int(hi - lo) + 100, tufts,
                 {"type": "sway", "amplitude": 2.5, "duration": 3000 + s * 400, "anchorX": 0.5, "anchorY": 1, "phase": round(s * 0.2, 2)}, "kępy trawy kołyszą się")
         if rodzaj in ("laka", "droga", "popiol"):
             fl = [kwiat(x, y, pk(y) * 0.8, ink_for(k), rnd.choice(["rumianek", "rumianek", "mak", "dzwonek"])) for x, y, k in spots(12, ys + 20, 800, {"light"})]

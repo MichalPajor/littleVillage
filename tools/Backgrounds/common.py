@@ -89,8 +89,10 @@ def ribbon(x0, x1, y, thick, wav):
 
 def write_layers(out_dir, prefix, scene, layers, order, comments, quiet=False):
     """Zapisuje kazda warstwe jako osobne SVG z viewBox = polozenie warstwy na plotnie 390x844."""
+    import ramki
     for name in order:
         x, y, w, h, body = layers[name]
+        x, y, w, h = ramki.box(f"{prefix}_{name}", x, y, w, h)
         doc = (f'<?xml version="1.0" encoding="UTF-8"?>\n<!-- LittleVillage — tło „{scene}”: {comments[name]}\n'
                f'     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->\n'
                f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="{x} {y} {w} {h}">\n<defs>\n{DEFS}\n</defs>\n{body}\n</svg>\n')
