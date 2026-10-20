@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave, .. Dream],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave, .. Dream],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave, .. Dream],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -789,6 +789,7 @@ public sealed class GameStoryTests
     private static readonly int[] Births = [0, 0, 0];                              // kolyska, trzecia noc, skarb dla corki
     private static readonly int[] Hunt = [0, 0, 0];                                // noc wilkow, obietnica Antkowi, oblawa
     private static readonly int[] Grave = [0, 0, 0];                               // zeby zmarlego, polnoc, pochowek
+    private static readonly int[] Dream = [0, 0, 0, 0];                            // figurka, Jagna, noc na kladce, co z figurka
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1979,8 +1980,7 @@ public sealed class GameStoryTests
         Assert.DoesNotContain("Pomyliła się", journal.Single(c => c.Id == "mamuny").Notes[^1]);
         Assert.Contains("zielonego mchu", journal.Single(c => c.Id == "starzec").Notes[^1]);
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału dwunastego._"));
-        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Contains(pages[^1].BackgroundKey, ChapterThirteenFigurinePages);
     }
 
     [Fact]
@@ -2003,7 +2003,7 @@ public sealed class GameStoryTests
         Assert.Contains("imię córki", strzyga.Notes[^1]);
         Assert.Contains("rozkopali jego grób", strzyga.Notes[^1]);
         Assert.True(Has(On(pages, "wigilia_stol"), "przetrwała do wiosny"));
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Contains(pages[^1].BackgroundKey, ChapterThirteenFigurinePages);
     }
 
     [Fact]
@@ -2019,6 +2019,70 @@ public sealed class GameStoryTests
         var journal = engine.GetJournal();
         Assert.Contains("martwą Wójcikową", journal.Single(c => c.Id == "strzyga").Notes[^1]);
         Assert.Contains("Pomyliła się", journal.Single(c => c.Id == "mamuny").Notes[^1]);
+        Assert.Contains(pages[^1].BackgroundKey, ChapterThirteenFigurinePages);
+    }
+
+    // ----- Rozdzial trzynasty: Wspolny sen (figurka) -----
+
+    private static readonly string[] ChapterThirteenFigurinePages = ["jagna_izba", "jarmark", "zgliszcza_kra", "kladka_naprawa"];
+    private static readonly int[] PeacefulToDream = [.. PeacefulToGrave, 0, 0, 0];
+
+    [Fact]
+    public void Chapter_thirteen_the_figurine_from_the_ashes_will_not_burn_and_ends_up_chained()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToDream, 0, 0, 0, 0]);
+
+        var thaw = On(pages, "przednowek")[0];
+        Assert.Equal("Rozdział trzynasty", thaw.Blocks[0].Text);
+        Assert.Equal("Wspólny sen", thaw.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.True(Has(On(pages, "zgliszcza_kra"), "wystrugam ci konia z wozem"));
+        Assert.True(Has(On(pages, "sen_kladka"), "Jednego brakuje"));
+        Assert.True(Has(On(pages, "sen_kladka"), "To lalka"));
+        Assert.True(Has(On(pages, "noc_kladka"), "przeorał Jaromirowi pazurami bark"));
+        Assert.True(Has(On(pages, "skrzynia_izba"), "okręcił skrzynię łańcuchem"));
+        Assert.True(Has(On(pages, "wiosna_paliki"), "będzie miał na imię Franek"));
+        Assert.True(Has(On(pages, "wiosna_paliki"), "drogę do lasu"));
+        Assert.Contains("figurka", Inventory(engine));
+        var journal = engine.GetJournal();
+        Assert.Contains("łańcuchem", journal.Single(c => c.Id == "zielarka").Notes[^1]);
+        Assert.Contains("za kładką", journal.Single(c => c.Id == "ogniki").Notes[^1]);
+        Assert.Contains("rozorał mu bark", journal.Single(c => c.Id == "stwor").Notes[^1]);
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału trzynastego._"));
+        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_thirteen_giving_the_figurine_to_the_drowner_puts_out_the_lights_at_once()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToDream, 1, 1, 1]);
+
+        Assert.True(Has(On(pages, "zgliszcza_kra"), "Ty jesteś wnukiem Maćka"));
+        Assert.True(Has(On(pages, "sen_kladka"), "Jak ognie dojdą do progu"));
+        Assert.True(Has(On(pages, "noc_kladka"), "jak matka dziecko"));
+        Assert.Empty(On(pages, "skrzynia_izba"));
+        Assert.True(Has(On(pages, "wiosna_paliki"), "nie zapaliły się już ani razu"));
+        Assert.DoesNotContain("figurka", Inventory(engine));
+        Assert.Contains("ten, kto mieszka pod kładką", engine.GetJournal().Single(c => c.Id == "zielarka").Notes[^1]);
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_thirteen_the_lantern_burns_the_chapel_and_jagna_takes_the_figurine_only_if_trusted()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToDream, 0, 1, 2]);
+        Assert.Equal("skrzynia_izba", pages[^1].BackgroundKey);
+        Assert.Equal(2, pages[^1].Choices.Count);
+
+        pages = Play(engine, [.. PeacefulToDream, 0, 0, 2, 2]);
+        Assert.True(Has(On(pages, "noc_kladka"), "spłonęła połowa szuwarów i kapliczka przy kładce"));
+        Assert.True(Has(On(pages, "skrzynia_izba"), "Już nie wróci."));
+        Assert.True(Has(On(pages, "wiosna_paliki"), "brzozowy krzyż"));
+        Assert.DoesNotContain("figurka", Inventory(engine));
+        Assert.Contains("Jagna zabrała", engine.GetJournal().Single(c => c.Id == "zielarka").Notes[^1]);
         Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 

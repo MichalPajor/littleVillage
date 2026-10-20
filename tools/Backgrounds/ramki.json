@@ -1007,6 +1007,96 @@
 390,
 443
 ],
+"bg_jagna_figurka": [
+160,
+250,
+50,
+56
+],
+"bg_jagna_jagna": [
+52,
+235,
+98,
+118
+],
+"bg_jagna_jaromir": [
+196,
+220,
+60,
+113
+],
+"bg_jagna_plomien": [
+328,
+300,
+34,
+25
+],
+"bg_jagna_prog": [
+0,
+0,
+390,
+443
+],
+"bg_jagna_smuga": [
+37,
+107,
+166,
+226
+],
+"bg_jagna_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_jagna_ziola": [
+56,
+289,
+30,
+25
+],
+"bg_jarmark_chmury": [
+40,
+30,
+300,
+43
+],
+"bg_jarmark_dym": [
+240,
+67,
+30,
+63
+],
+"bg_jarmark_figurka": [
+293,
+294,
+38,
+37
+],
+"bg_jarmark_handlarz": [
+300,
+256,
+50,
+77
+],
+"bg_jarmark_jaromir": [
+227,
+300,
+53,
+123
+],
+"bg_jarmark_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_jarmark_woz": [
+0,
+0,
+390,
+443
+],
 "bg_jesien_dym": [
 200,
 160,
@@ -1414,6 +1504,24 @@
 193,
 30,
 27
+],
+"bg_kladkanapr_chmury": [
+40,
+40,
+300,
+41
+],
+"bg_kladkanapr_figurka": [
+196,
+288,
+50,
+42
+],
+"bg_kladkanapr_tlo": [
+0,
+0,
+390,
+443
 ],
 "bg_klatwa_c_cien": [
 150,
@@ -2135,6 +2243,48 @@
 50,
 11
 ],
+"bg_nockladka_dym": [
+150,
+150,
+220,
+123
+],
+"bg_nockladka_jozek": [
+150,
+217,
+50,
+73
+],
+"bg_nockladka_kapliczka": [
+17,
+200,
+43,
+90
+],
+"bg_nockladka_pozar": [
+0,
+0,
+390,
+443
+],
+"bg_nockladka_siekiera": [
+60,
+124,
+173,
+176
+],
+"bg_nockladka_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_nockladka_woda": [
+-10,
+290,
+410,
+153
+],
 "bg_nocmamun_gwiazdy": [
 42,
 112,
@@ -2759,6 +2909,48 @@
 390,
 443
 ],
+"bg_przednowek_chmury": [
+40,
+50,
+300,
+43
+],
+"bg_przednowek_dym": [
+90,
+157,
+30,
+63
+],
+"bg_przednowek_kra": [
+190,
+291,
+200,
+65
+],
+"bg_przednowek_noc": [
+0,
+0,
+390,
+443
+],
+"bg_przednowek_ogniki": [
+180,
+284,
+210,
+126
+],
+"bg_przednowek_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_przednowek_trzciny": [
+180,
+280,
+210,
+143
+],
 "bg_przedzenie_kolo_0": [
 16,
 210,
@@ -3286,6 +3478,72 @@
 0,
 390,
 443
+],
+"bg_senkladka_dziecko": [
+180,
+231,
+40,
+73
+],
+"bg_senkladka_gwiazdy": [
+0,
+9,
+390,
+101
+],
+"bg_senkladka_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_senkladka_woda": [
+-10,
+300,
+410,
+143
+],
+"bg_skrzynia_dym": [
+300,
+117,
+40,
+63
+],
+"bg_skrzynia_jaromir": [
+27,
+230,
+86,
+106
+],
+"bg_skrzynia_lopata": [
+0,
+0,
+390,
+443
+],
+"bg_skrzynia_piec": [
+292,
+260,
+98,
+83
+],
+"bg_skrzynia_plomien": [
+318,
+296,
+34,
+29
+],
+"bg_skrzynia_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_skrzynia_wiadra": [
+240,
+300,
+67,
+33
 ],
 "bg_slubdroga_chmury": [
 40,
@@ -4241,6 +4499,48 @@
 24,
 21
 ],
+"bg_wiosnapaliki_antek": [
+149,
+299,
+80,
+111
+],
+"bg_wiosnapaliki_chmury": [
+40,
+40,
+300,
+41
+],
+"bg_wiosnapaliki_dym": [
+60,
+87,
+30,
+63
+],
+"bg_wiosnapaliki_krzyz": [
+193,
+250,
+34,
+60
+],
+"bg_wiosnapaliki_paliki": [
+57,
+196,
+303,
+60
+],
+"bg_wiosnapaliki_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_wiosnapaliki_trawa": [
+0,
+384,
+390,
+49
+],
 "bg_wstazka_lisc_0": [
 9,
 251,
@@ -4486,6 +4786,42 @@
 248,
 362,
 168
+],
+"bg_zgliszczakra_chmury": [
+40,
+40,
+300,
+41
+],
+"bg_zgliszczakra_figurka": [
+263,
+330,
+41,
+45
+],
+"bg_zgliszczakra_jozek": [
+230,
+323,
+65,
+69
+],
+"bg_zgliszczakra_matka": [
+0,
+0,
+390,
+443
+],
+"bg_zgliszczakra_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_zgliszczakra_trawa": [
+0,
+390,
+390,
+43
 ],
 "bg_zmierzch_krzaki": [
 205,

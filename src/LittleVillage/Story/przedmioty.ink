@@ -51,7 +51,11 @@ VAR ekwipunek = (siekiera, chleb)
         ~ return "Kupiona w mieście za pieniądze z czterech lat pracy na cudzym polu. Na niej opiera się cała przyszłość."
     - chleb:     ~ return "Twardy, razowy, owinięty w lnianą szmatkę. Musi starczyć na długo."
     - pies_towarzysz: ~ return "Chudy, z długim pyskiem i za dużymi łapami. Obronił Maćka przed stworem z zarośli i od tamtej nocy nie odstępuje go na krok."
-    - figurka:   ~ return "Mała drewniana postać z rękami sięgającymi do stóp, nadpalona z jednej strony. Wygrzebana z popiołu po chacie wiedźmy."
+    - figurka:
+        { rozdzial_trzynasty:
+            ~ return "Mała drewniana postać z rękami sięgającymi do stóp, nadpalona z jednej strony. Wróciła do Zapadliny po ponad sześćdziesięciu latach. Drewno jest zawsze zimne i wilgotne, nawet w suchy dzień."
+        }
+        ~ return "Mała drewniana postać z rękami sięgającymi do stóp, nadpalona z jednej strony. Wygrzebana z popiołu po chacie wiedźmy."
     - krzesiwo:
         { krzesiwo_od_babki:
             ~ return "Małe, poczerniałe krzesiwo dziadka Maćka. Babka Marianna oddała je Jaromirowi na łożu śmierci – leżało w popiele razem z figurką, a dziadek nie rozstawał się z nim do końca."

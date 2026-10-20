@@ -169,13 +169,8 @@ W Wigilię Hanka, jak co roku, nakryła stół o jeden talerz więcej – dla zb
 -> rozdzial_dwunasty_ciag_dalszy
 
 
-// Koniec rozdziału dwunastego — rozdział trzynasty do napisania.
+// Koniec rozdziału dwunastego — dalej rozdział trzynasty.
 === rozdzial_dwunasty_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału dwunastego._ # dalej
--> rozdzial_trzynasty_wkrotce
-
-=== rozdzial_trzynasty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_trzynasty

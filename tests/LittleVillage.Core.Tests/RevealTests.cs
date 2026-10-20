@@ -165,11 +165,17 @@ public sealed class RevealTests
             // ze szczeniem i z darem swietojanskim (# pokaz: szczenie, noc), z makiem w medaliku (# pokaz: mak, swieczka)
             [.. ToChapterTwelve(e => e.GetInventory().Any(i => i.Id == "szczenie_psa")), 1, 0, 0],
             [.. ToChapterTwelve(e => e.SaveState().Contains("dar_swietojanski")), 0, 1, 0],
-            [.. ToChapterTwelve(e => e.SaveState().Contains("\"mak_w_medaliku\":true")), 0, 0, 2]];
+            [.. ToChapterTwelve(e => e.SaveState().Contains("\"mak_w_medaliku\":true")), 0, 0, 2],
+            // rozdzial trzynasty: kazdy powrot figurki (Jagna, jarmark, zgliszcza, bagno) i kazde wyjscie z kladki i ze skrzyni
+            [.. ToChapterTwelve(background: "jagna_izba"), 1, 0, 1],
+            [.. ToChapterTwelve(background: "jarmark"), 0, 1, 0, 0],
+            [.. ToChapterTwelve(background: "jarmark"), 1, 0, 2, 2],
+            [.. ToChapterTwelve(background: "zgliszcza_kra"), 1, 1, 0, 1],
+            [.. ToChapterTwelve(background: "kladka_naprawa"), 1, 0, 2, 1]];
 
-    /// <summary>Wybory pierwszej sciezki (z ogonami rozdzialow 7–11), ktora dochodzi do czuwania przy zmarlym (tlo „czuwanie_izba”)
+    /// <summary>Wybory pierwszej sciezki (z ogonami rozdzialow 7–11), ktora dochodzi do wyboru na tle <paramref name="background"/> (domyslnie czuwanie przy zmarlym)
     /// i spelnia <paramref name="accept"/> — az do tego wyboru.</summary>
-    private static int[] ToChapterTwelve(Func<InkStoryEngine, bool>? accept = null)
+    private static int[] ToChapterTwelve(Func<InkStoryEngine, bool>? accept = null, string background = "czuwanie_izba")
     {
         var tails = ChapterSevenTails.Concat([[.. new int[16], 1, 0, 0]]);
         foreach (var path in tails.Select(tail => ToChapterSeven().Concat(tail).ToArray())
@@ -182,7 +188,7 @@ public sealed class RevealTests
             var chosen = new List<int>();
             while (page.Ending is not (PageEnding.End or PageEnding.Death))
             {
-                if (page.Ending == PageEnding.Choices && page.BackgroundKey == "czuwanie_izba")
+                if (page.Ending == PageEnding.Choices && page.BackgroundKey == background)
                 {
                     if (accept is null || accept(engine))
                     {
@@ -204,7 +210,7 @@ public sealed class RevealTests
             }
         }
 
-        throw new InvalidOperationException("Żadna ścieżka nie dochodzi do rozdziału dwunastego.");
+        throw new InvalidOperationException($"Żadna ścieżka nie dochodzi do wyboru na tle „{background}”.");
     }
 
     /// <summary>Wybory pierwszej sciezki, ktora dochodzi do strony z piolunem (tlo „swiatki”), az do tego wyboru

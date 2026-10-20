@@ -205,3 +205,17 @@ VAR pochowek_wojcika = ()
 // Po pochówku po księdzowsku strzyga wróciła: rozkopali grób albo Jaromir czuwał przy kołysce (zmarła Wójcikowa).
 LIST TrzyNoce = rozkopany_grob, czuwanie_przy_kolysce
 VAR trzy_noce = ()
+
+// ---------- Rozdział trzynasty (Wspólny sen) ----------
+// Figurka wróciła (Jagna, jarmark, zgliszcza albo bagno), a Jaromir ją odrzucił — i tak sama wróciła do chałupy.
+VAR odrzucil_figurke = false
+// Józek trzymał figurkę przez noc (zgliszcza: Jaromir pozwolił mu ją zatrzymać).
+VAR jozek_mial_figurke = false
+// Jaromir pokazał Jagnie figurkę i opowiedział o snach (Jagna wie, czym jest lalka).
+VAR zaufal_jagnie = false
+// Noc na kładce: siekiera (stwór rozorał Jaromirowi bark), figurka rzucona stworowi albo latarnia (spłonęła kapliczka przy kładce).
+LIST NocNaKladce = siekiera_na_kladce, figurka_dla_stwora, latarnia_na_wodzie
+VAR noc_na_kladce = ()
+// Co się stało z figurką: zamknięta w skrzyni (ogień jej nie wziął), zakopana pod kapliczką, oddana Jagnie albo u stwora.
+LIST LosFigurki = figurka_w_skrzyni, figurka_pod_kapliczka, figurka_u_jagny, figurka_u_stwora
+VAR los_figurki = ()

@@ -7,7 +7,7 @@
 //  Wpisy nie mówią więcej, niż w tej chwili wiedzą postacie.
 // ------------------------------------------------------------
 
-LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3
+LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3
 VAR zapiski = ()
 
 === function tytul_zapisku(z)
@@ -43,6 +43,9 @@ VAR zapiski = ()
     - strzyga_2:    ~ return "Strzyga"
     - mamuny_3:     ~ return "Mamuny"
     - starzec_3:    ~ return "Starzec w kapeluszu z mchu"
+    - ogniki_2:     ~ return "Błędne ogniki"
+    - stwor_3:      ~ return "Topielec"
+    - zielarka_3:   ~ return "Zielarka znad jeziora"
 }
 ~ return ""
 
@@ -110,4 +113,10 @@ VAR zapiski = ()
     Wójcikowa policzyła w czerwcu uderzenia ich kijanek. Usłyszała tylko jedno. W listopadzie umarł jej mąż.{trzy_noce == czuwanie_przy_kolysce: Pomyliła się – albo nie chciała usłyszeć drugiego.}
 - starzec_3:
     W Wigilię Hanka zostawiła na stole nakrycie dla wędrowca. Rano na talerzu, w miejscu opłatka, leżała garść świeżego, zielonego mchu – w samym środku zimy.
+- ogniki_2:
+    Kiedy figurka wróciła do Zapadliny, ogniki zaczęły podchodzić pod płoty – co noc bliżej, jakby czekały, aż ktoś otworzy drzwi.{los_figurki == figurka_w_skrzyni: Palą się dalej, ale za kładką, daleko od płotów.}{los_figurki == figurka_pod_kapliczka || los_figurki == figurka_u_jagny || los_figurki == figurka_u_stwora: Zgasły wszystkie naraz tej samej nocy, kiedy figurka przestała wołać.}
+- stwor_3:
+    Wrócił na mokradła razem z figurką. Dzieci we wsi śniły o nim ten sam sen: stoi pod kładką w czarnej wodzie, przewraca gliniane garnki i liczy, a potem mówi, że jednego brakuje.{figurka_u_staruchy: Na ramieniu ma głęboką, starą bliznę po siekierze dziadka Maćka.}{noc_na_kladce == siekiera_na_kladce: Jaromir zranił go siekierą, a on rozorał mu bark.}{noc_na_kladce == figurka_dla_stwora: Kiedy dostał figurkę, puścił chłopca i przycisnął ją do piersi jak matka dziecko.}{noc_na_kladce == latarnia_na_wodzie: Ognia boi się bardziej niż żelaza – uciekł przed płonącym olejem.}
+- zielarka_3:
+    {zaufal_jagnie:Jagna mówi, że figurka to lalka: zielarka wystrugała ją z korzenia wyciągniętego z bagna i nadała jej imię tego, który mieszka w wodzie. Kto ma lalkę, za tym on idzie. Ognia lalka się nie boi – uciszy ją tylko poświęcona ziemia.|Nadpalona figurka z rękami do stóp wróciła do Zapadliny po ponad sześćdziesięciu latach – a razem z nią wróciły sny.}{los_figurki == figurka_pod_kapliczka: Leży teraz pod kapliczką, a gdzie – wie tylko Jaromir.}{los_figurki == figurka_u_jagny: Jagna zabrała ją ze sobą, tak daleko, żeby nie dosłyszał.}{los_figurki == figurka_w_skrzyni: Ogień jej nie wziął. Leży w skrzyni pod łóżkiem, okręconej łańcuchem.}{los_figurki == figurka_u_stwora: Ma ją teraz ten, kto mieszka pod kładką.}
 }

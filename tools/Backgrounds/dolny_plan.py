@@ -50,6 +50,9 @@ RODZAJE = {
     "po_oblawie": ("snieg", False), "odwilz": ("pole", False),
     "wiosna_orka": ("pole", False), "lato_podworze": ("laka", False), "czuwanie_izba": ("izba", True), "polnoc_strzyga": ("izba", True),
     "cmentarz_bukowiec": ("snieg", False), "strzyga_okno": ("izba", True), "wigilia_stol": ("izba", True),
+    "przednowek": ("bagno", False), "jagna_izba": ("izba", False), "jarmark": ("miasto", False), "zgliszcza_kra": ("woda", False),
+    "kladka_naprawa": ("bagno", False), "sen_kladka": ("woda", True), "noc_kladka": ("bagno", True), "skrzynia_izba": ("izba", True),
+    "wiosna_paliki": ("laka", False),
 }
 
 
