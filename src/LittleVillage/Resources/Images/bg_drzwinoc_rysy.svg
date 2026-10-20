@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- LittleVillage — tło „drzwi nocą”: świeże rysy na drzwiach (# pokaz: rysy)
+<!-- LittleVillage — tło „drzwi nocą”: zbutwiała, czarna deska drzwi (# pokaz: rysy)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="160 290 80 40">
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="30" viewBox="160 300 80 30">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
@@ -25,11 +25,10 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<path d="M170 296l6 26" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
-<path d="M180 300l6 26" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
-<path d="M190 296l6 26" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
-<path d="M200 300l6 26" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
-<path d="M210 296l6 26" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
-<path d="M220 300l6 26" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
+<path d="M164 304H236V326H164Z" fill="url(#hatchDense)" stroke="none" opacity="0.9"/>
+<circle cx="176" cy="312" r="1.6" fill="#FFFFFF" stroke="none"/>
+<circle cx="190" cy="318" r="1.6" fill="#FFFFFF" stroke="none"/>
+<circle cx="204" cy="310" r="1.6" fill="#FFFFFF" stroke="none"/>
+<circle cx="220" cy="320" r="1.6" fill="#FFFFFF" stroke="none"/>
 </g>
 </svg>

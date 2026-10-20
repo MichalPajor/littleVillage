@@ -26,32 +26,32 @@ Tyle kosztował bochenek chleba. Jeden. Maciek obiecał, że jeszcze się zastan
 
 = starucha
 # tlo: zaulek
-Nagle ktoś chwycił go za rękę. Palce były kościste i zimne, wilgotne jak glina wyjęta z rowu.
-Przed nim stała stara kobieta w kapturze, zgarbiona, wsparta na krzywym kosturze i owinięta w połatany, postrzępiony płaszcz. Spod materiału wystawał długi, haczykowaty nos, a pod nim spiczasty podbródek i zapadnięte wargi. Jedno oko miała zasnute bielmem, drugie – czarne i bystre – wpatrywało się prosto w jego kieszeń. # pokaz: starucha
+Nagle ktoś przytrzymał go za rękaw. Dłoń była mała i sucha, pachniała miętą i dymem.
+Przed nim stała drobna, stara kobieta w ciemnym kapturze, wsparta na kosturze, z koszykiem suszonych ziół na ramieniu. Płaszcz nosiła połatany, ale czysty, a pod kapturem bielał rąbek czepca. Jedno oko miała zasnute bielmem, drugie – czarne i bystre – wpatrywało się prosto w jego kieszeń. # pokaz: starucha
 – Co ty tam nosisz, synku? – wyszeptała. – Czuję popiół. Stary popiół, znad wody.
 { los_psa == oswojony:
-    Pies zjeżył sierść i warknął na nią nisko, z głębi gardła. Kobieta nawet na niego nie spojrzała. # pokaz: pies
+    Pies obwąchał jej koszyk, kichnął od ziół, a potem zjeżył sierść i zawarczał nisko – nie na nią, tylko na kieszeń Maćka. # pokaz: pies
 }
-Maciek chciał się wyrwać, ale trzymała mocno.
-– To nie twoje. Wygrzebałeś to tam, gdzie nie trzeba było grzebać. Ta rzecz woła. Woła tych, co mają długie ręce, a oni przychodzą, synku, zawsze przychodzą. Pozbądź się jej, póki nie jest za późno, bo ściągniesz klątwę na siebie i na tych, których kochasz.
-Puściła go i uśmiechnęła się bezzębnymi ustami.
-– Wezmę ją od ciebie. Dam dziesięć groszy. Pięć razy więcej, niż chciał dać tamten dziad przy wózku.
-Nie pamiętał, żeby komukolwiek mówił, ile mu zaproponowano.
+Maciek chciał odejść, ale nie puszczała rękawa.
+– To nie twoje. Wygrzebałeś to tam, gdzie nie trzeba było grzebać – mówiła cicho, żeby nikt obok nie słyszał. – Ta rzecz woła, synku. Póki ją nosisz, to, co mieszka w wodzie, wie, gdzie cię szukać. Ciebie i tych, których kochasz. Nie pal jej i nie wrzucaj do wody, bo wróci. Ktoś musi wiedzieć, co z nią zrobić – a ja wiem.
+Dopiero teraz puściła rękaw.
+– Wezmę ją od ciebie. Ale nie za darmo, bo co dane darmo, to do dawcy wraca. Dam dziesięć groszy. Pięć razy więcej, niż chciał dać ten przy wózku.
+Musiała stać gdzieś blisko, kiedy targował się z handlarzem. Tylko że nie pamiętał, żeby ją tam widział.
 # pytanie: Komu Maciek sprzeda figurkę?
-*   [Staruszce – za taką sumę kupi jedzenia na dłużej i pozbędzie się kłopotu.]
+*   [Staruszce – zna się na takich rzeczach, a za dziesięć groszy rodzina przetrwa do pierwszych plonów.]
     ~ figurka_u_staruchy = true
     ~ ekwipunek -= figurka
     # tlo: rynek
-    Maciek wyjął figurkę i położył ją na wyciągniętej dłoni. Starucha zamknęła na niej palce szybko, łapczywie, jak kot przyduszający mysz. Monety, które mu odliczyła, były zimne i lepkie.
-    – Dobrze zrobiłeś, synku – powiedziała cicho. – Teraz już nie musisz się bać.
-    Odwróciła się i zniknęła w tłumie, zanim zdążył cokolwiek odpowiedzieć.{ los_psa == oswojony: Pies jeszcze długo warczał w tamtą stronę.}
+    Maciek wyjął figurkę i położył ją na wyciągniętej dłoni. Starucha nie chwyciła jej od razu. Najpierw owinęła ją w lnianą szmatkę i dopiero tak, przez płótno, wzięła do ręki. Monety odliczyła z węzełka u pasa, jedną po drugiej, co do grosza.
+    – Teraz to już moja sprawa – powiedziała. – Idź z Bogiem, synku. I nie oglądaj się za nią.
+    Odwróciła się i zniknęła w tłumie, zanim zdążył cokolwiek odpowiedzieć.{ los_psa == oswojony: Pies przestał warczeć, ledwie kieszeń zrobiła się lekka.}
     -> zakupy
-*   [Handlarzowi za marne grosze – ta baba wydaje mu się podejrzana.]
+*   [Handlarzowi za marne grosze – lepiej, żeby trafiła między garnki, do kogoś, kto nie wie, czym jest.]
     ~ ekwipunek -= figurka
     # tlo: rynek
     – Dziękuję, matko, ale nie trzeba – odpowiedział Maciek i cofnął się o krok.
-    Starucha syknęła coś pod nosem i odwróciła się.{ los_psa == oswojony: Pies przestał warczeć dopiero wtedy, gdy kaptur zniknął w tłumie.}
-    Handlarz wzruszył ramionami, wrzucił figurkę między garnki i odliczył dwa grosze. – Mówiłem, że więcej nikt nie da.
+    Starucha długo patrzyła na niego zdrowym okiem. – Twoja wola – powiedziała tylko i wróciła do swoich ziół.
+    Handlarz wzruszył ramionami, wrzucił figurkę między garnki i odliczył dwa grosze. – Mówiłem, że więcej nikt nie da.{ los_psa == oswojony: Pies przestał warczeć dopiero wtedy, gdy figurka zniknęła pod stertą skorup.}
     -> zakupy
 
 = zakupy
@@ -90,7 +90,7 @@ Marianna słuchała, uśmiechając się do siebie. Ale gdy syn zasnął, przysun
 # pytanie: Czy Maciek opowie żonie o tamtej nocy?
 *   [Tak – opowie jej o stworze, o legendzie i o głosie znad bagien. Musi wiedzieć, dokąd idzie.]
     ~ zona_wie = true
-    Nie przemilczał niczego. O wyciu w zaroślach, o ciszy, która go obudziła, o postaci wyższej od człowieka o trzy głowy. O spalonej zielarce i jej klątwie. O bagnie, które wołało go jej głosem.{ figurka_u_staruchy: I o nadpalonej figurce z popiołu, którą tego dnia sprzedał na rynku staruszce w kapturze.}
+    Nie przemilczał niczego. O wyciu w zaroślach, o ciszy, która go obudziła, o postaci, która wyszła z mgły. O spalonej zielarce i jej klątwie. O bagnie, które wołało go jej głosem.{ figurka_u_staruchy: I o nadpalonej figurce z popiołu, którą tego dnia sprzedał na rynku staruszce w kapturze.}
     Marianna słuchała w milczeniu, bledsza z każdym zdaniem. Kiedy skończył, długo patrzyła w ciemne okno.
     – Wrócimy tam? – zapytała w końcu cicho.
     – Wrócimy. To nasz dom.
@@ -114,7 +114,7 @@ Wyruszyli o świcie. Marianna niosła węzełek z dobytkiem, Maciek – tobołek
 { los_psa == oswojony:
     Pies biegał od jednego do drugiego, jakby pilnował, żeby nikt nie został w tyle. # pokaz: pies
 }
-Było już dobrze po południu, gdy stanęli na Bukowym Grzbiecie. W dole leżała Zapadlina.
+Było już dobrze po południu, gdy stanęli na Bukowym Grzbiecie. W dole leżała Zapadlina.{ chcial_odejsc: W tym samym miejscu kilka dni wcześniej Maciek stał z tobołkiem na ramieniu i chciał odejść na zawsze. Teraz na jego plecach spał syn.}
 Tam przystanął i spojrzał na żonę.
 – Teraz uważaj – powiedział. – Idź zaraz za mną, krok w krok. Nie schodź ze ścieżki, choćby nie wiem co. Nie patrz w czarną wodę. I nie słuchaj głosów znad bagien. Cokolwiek usłyszysz – nie odpowiadaj i się nie odwracaj.
 { zona_wie: Marianna wzięła syna za rękę i kiwnęła głową. Wiedziała, o czym mówi. | Marianna uniosła brwi, jakby chciała się roześmiać, ale coś w jego twarzy ją powstrzymało. Kiwnęła głową bez słowa. }
@@ -146,7 +146,7 @@ Mały oczywiście natychmiast tam wskoczył i skulił się tak, że nie było go
 # rozdzial: Prolog
 # tytul: Jedna świeca
 Tej samej nocy, daleko stąd, w ciasnej izbie za miejskim rynkiem paliła się jedna świeca.
-Starucha zsunęła kaptur. Rzadkie siwe włosy opadały jej na plecy. Na stole przed nią stała miska z czarną, mętną wodą, a obok – nadpalona figurka z rękami do stóp.
+Starucha zsunęła kaptur. Rzadkie siwe włosy opadały jej na plecy. Na stole przed nią stała miska z czarną, mętną wodą, a obok – nadpalona figurka, odwinięta z lnianej szmatki.
 Kobieta nakłuła palec igłą i pozwoliła trzem kroplom krwi spaść na drewno. Potem zanurzyła ją w misce i zaczęła mruczeć – nisko, monotonnie, w mowie, której nikt w mieście by nie zrozumiał. Płomień świecy przygasł i pochylił się, choć w izbie nie było przeciągu.
 – Długo czekałam, matko – szepnęła. – Ale ktoś w końcu przyszedł. I sam mi cię przyniósł.
 Woda zabulgotała, jakby ktoś głęboko w niej odetchnął. Z mruczenia wyłoniły się słowa, wypowiadane coraz głośniej:
@@ -156,7 +156,7 @@ Wtedy starucha pochyliła się nad miską. – Idź. Znasz drogę. Chata {chata_
 
 = noc
 # tlo: noc_atak
-Minęło kilka dni. Maciek kopał grządki pod ziemniaki, Marianna lepiła z gliny piec, a Dobrosław {los_psa == oswojony:biegał z psem po łące|zbierał kaczeńce na łące}. Wieczorami siadali razem na progu i patrzyli, jak mgła wlewa się do niecki.
+Minęło kilka dni. Maciek kopał grządki pod ziemniaki, Marianna lepiła z gliny piec, a Dobrosław {los_psa == oswojony:biegał z psem po łące|zbierał kaczeńce na łące}. Wieczorami siadali razem na progu i patrzyli, jak mgła wlewa się w dolinę.
 { los_psa == oswojony: Którejś nocy obudził ich pies. Stał przy drzwiach z sierścią zjeżoną na grzbiecie i warczał tak nisko, że ledwie było to słychać. Potem zaczął szczekać – głośno, zajadle, bez przerwy. | Którejś nocy obudził ich huk. Coś uderzyło w drzwi z taką siłą, że jęknęły zawiasy. Potem drugi raz. Trzeci. Drewno pękło z trzaskiem. }
 Maciek zerwał się z posłania. Przez szparę w drzwiach zobaczył we mgle dwa żarzące się ślepia. # pokaz: slepia
 Nie myślał. Chwycił Dobrosława na ręce, odsunął deski w kącie i wsadził go do piwniczki.
@@ -166,11 +166,11 @@ Ułożył je z powrotem nad jego głową. # dalej
 
 = walka
 # tlo: walka
-Drzwi wpadły do środka razem z futryną. Stwór musiał się schylić, żeby przecisnąć się pod nadprożem – ogromny, mokry, cuchnący bagnem. Długie ręce zamiatały klepisko. # pokaz: stwor
+Drzwi wpadły do środka razem z futryną. Stwór musiał się schylić, żeby przecisnąć się pod nadprożem – ogromny, mokry, cuchnący bagnem. Woda ciekła z niego strugami na klepisko. # pokaz: stwor
 Pies rzucił się na niego pierwszy. Wbił zęby w przedramię i wisiał na nim, szarpiąc, dopóki potwór nie cisnął nim o ścianę. Zaskowyczał i upadł. # pokaz: pies
 Maciek stanął przed Marianną z uniesioną siekierą. # pokaz: maciek
 – Stań za mną!
-Bestia sięgnęła po niego. Szpony przeorały mu bark i bok, ale ustał w miejscu. Zamachnął się z całej siły i ostrze weszło głęboko w długie, kościste ramię. Stwór zawył – tym samym przeciągłym, gardłowym jękiem, który słyszał już tamtej nocy przy szałasie. Uderzył jeszcze raz. I jeszcze.
+Bestia sięgnęła po niego. Szpony przeorały mu bark i bok, ale ustał w miejscu. Zamachnął się z całej siły i ostrze weszło głęboko w kościste ramię. Stwór zawył – tym samym przeciągłym, gardłowym jękiem, który słyszał już tamtej nocy przy szałasie. Uderzył jeszcze raz. I jeszcze.
 Potwór cofnął się, przewracając ławę, i z rykiem wybiegł w mgłę. Przez chwilę słychać było, jak coś ciężkiego przedziera się przez zarośla, a potem chlupot – coraz dalej, w stronę bagna.
 Siekiera wypadła Maćkowi z rąk. Osunął się na kolana, potem na bok. Pod nim rosła ciemna kałuża. # pokaz: kaluza
 Marianna klęczała przy nim i przyciskała dłonie do jego ran, ale krew przeciekała jej przez palce.
@@ -201,10 +201,10 @@ Przesiedział w piwniczce do rana. Tak, jak obiecał ojcu. # dalej
     Rano zajrzał do nich Andrzej. Zastał Mariannę na klepisku, z głową męża na kolanach. Nie płakała już. Pies leżał obok i nie pozwalał nikomu podejść.
     Maćka pochowali na cmentarzu przy kościele w mieście. Wdowa do chaty już nie wróciła – zamieszkała z chłopcem u gospodarza z pagórka, który przyjął ich pod swój dach jak rodzinę.
 - else:
-    Rano zajrzał do nich Andrzej. Drzwi chaty leżały w trawie, wyrwane razem z futryną. W izbie nie było nikogo – tylko ślady, które ciągnęły się w stronę bagna, i ciemne plamy na klepisku. Długo stał w progu, zanim usłyszał spod podłogi ciche pochlipywanie.
+    Rano zajrzał do nich Andrzej. Drzwi chaty leżały w trawie, wyrwane razem z futryną. W izbie nie było nikogo – tylko smuga mułu, która ciągnęła się od progu w stronę bagna, i ciemne plamy na klepisku. Długo stał w progu, zanim usłyszał spod podłogi ciche pochlipywanie.
     Chłopiec nie powiedział ani słowa – ani tego dnia, ani przez wiele następnych. Andrzej zabrał go do siebie i wychował razem ze Stasiem jak własne dziecko.
 }
-Po tamtej nocy wieś zaczęła stawiać kapliczki – przy drogach, na rozstajach, na skraju lasu i przy kładce nad mokradłami. Z każdym rokiem przybywało ich więcej, aż w całej niecce nie zostało miejsce, z którego nie byłoby widać choć jednej.
+Po tamtej nocy wieś zaczęła stawiać kapliczki – przy drogach, na rozstajach, na skraju lasu i przy kładce nad mokradłami. Z każdym rokiem przybywało ich więcej, aż w całej Zapadlinie nie zostało miejsca, z którego nie byłoby widać choć jednej.
 Dobrosław wyrósł na milczącego, silnego mężczyznę. Nigdy nie chodził nad bagna i nigdy nie zszedł do żadnej piwnicy. Ożenił się z dziewczyną z sąsiedniej wsi i wkrótce urodził mu się syn.
 Dali mu na imię Jaromir. # dalej
 -> prolog_ciag_dalszy
@@ -219,7 +219,7 @@ Dali mu na imię Jaromir. # dalej
 # tytul: Lata spokoju
 Topielec nie przyszedł. Ani tego roku, ani następnego.
 Maciek i Marianna orali pole, które z każdym rokiem było trochę większe. Dobrosław rósł szybko – najpierw pasał gęsi, potem chodził za pługiem, aż w końcu sam prowadził konia.{ los_psa == oswojony: Pies zestarzał się przy progu i pewnej zimy po prostu nie wstał. Pochowali go pod lasem.}
-Czasem, w długie zimowe wieczory, Maciek opowiadał chłopcu o pierwszej wiośnie w Zapadlinie. O wyciu w zaroślach, o postaci z rękami do ziemi, o głosie, który wołał go znad bagien. O zielarce spalonej w chacie nad jeziorem. Syn słuchał z wypiekami na twarzy, ale traktował to jak bajki – takie, jakie opowiada się dzieciom, żeby nie chodziły same nad wodę.
+Czasem, w długie zimowe wieczory, Maciek opowiadał chłopcu o pierwszej wiośnie w Zapadlinie. O wyciu w zaroślach, o tym, co wyszło z mgły przy szałasie, o głosie, który wołał go znad bagien. O zielarce spalonej w chacie nad jeziorem. Syn słuchał z wypiekami na twarzy, ale traktował to jak bajki – takie, jakie opowiada się dzieciom, żeby nie chodziły same nad wodę.
 Kiedy był już dorosły, wieś zaczęła stawiać kapliczki. Jedną przy drodze z Bukowego Grzbietu, drugą na skraju lasu, trzecią przy kładce nad mokradłami. Potem przybywały kolejne, aż stały niemal przy każdej miedzy. Ludzie mówili, że od tamtej pory światełka nad bagnami mrugają rzadziej. Dobrosław w to nie wierzył, ale co roku w maju przystrajał je kwiatami razem z innymi. # pokaz: kapliczki
 Rodzice Dobrosława zmarli ze starości, jedno po drugim, w tej samej chacie, którą Maciek kiedyś zbudował od pierwszego bala. On sam ożenił się z dziewczyną z sąsiedniej wsi i wkrótce urodził mu się syn.
 Dali mu na imię Jaromir. # dalej

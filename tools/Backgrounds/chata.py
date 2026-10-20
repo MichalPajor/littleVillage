@@ -67,16 +67,10 @@ L["strzecha_szczyt"] = (150, 228, 90, 50, group([
     *[f'<path d="M{xa} 273L{APEX[0] + (xa - APEX[0]) * 0.35:.0f} {APEX[1] + 10}" fill="none" stroke-width="1.2"/>' for xa in range(162, 232, 12)],
     f'<path d="M{APEX[0] - 10} {APEX[1] + 4}L{APEX[0]} {APEX[1] - 4}L{APEX[0] + 10} {APEX[1] + 4}" fill="none" stroke-width="3.4"/>']))
 
-# dlugie, waskie slady (za dlugie jak na zwierze) i krew — pas trawy miedzy chata a oknem z tekstem
+# pas trawy polozonej i oblepionej mulem, krople krwi — miedzy chata a oknem z tekstem
 # (okno zaslania plotno ponizej y~430), od zarosli przy szalasie w strone mokradel (w prawo)
-TRACK = 0.72
-s = []
-for k, (x, y) in enumerate([(26, 424), (58, 416), (90, 426), (122, 418), (154, 427), (186, 419), (290, 418), (322, 427), (354, 419), (384, 428)]):
-    rot = -8 if k % 2 else 8
-    t = f"rotate({rot} {x} {y}) translate({x} {y}) scale({TRACK}) translate({-x} {-y})"
-    s.append(f'<path d="M{x} {y}c-2-8 0-20 4-22c4 2 6 14 4 22c-2 3-6 3-8 0z" fill="#000000" stroke="none" transform="{t}"/>')
-    for dx in (-3, 1, 5):
-        s.append(f'<path d="M{x + dx} {y - 22}l{dx * 0.3:.1f} -7" fill="none" stroke-width="2" transform="{t}"/>')
+s = ['<path d="M-10 420C40 414 120 416 200 422C260 426 330 418 400 422V434C330 430 260 436 200 432C120 428 40 428 -10 432Z" fill="url(#hatchDense)" stroke-width="1.2" opacity="0.8"/>']
+s += [f'<path d="M{x} 428l{dx} -9" fill="none" stroke-width="1.4"/>' for x, dx in [(20, 6), (60, -5), (110, 7), (160, -6), (230, 5), (280, -7), (330, 6), (372, -5)]]
 blood = '<g fill="#A8101A" filter="url(#ink)">' + "".join(
     f'<ellipse cx="{x}" cy="{y}" rx="{r}" ry="{r * 0.6:.1f}"/>' for (x, y, r) in
     [(42, 426, 2.8), (74, 420, 2.2), (106, 428, 3.2), (138, 421, 2.4), (170, 428, 2.8), (306, 421, 2.6), (338, 428, 3), (370, 422, 2.2)]) + '</g>'
@@ -91,7 +85,7 @@ COMMENTS = {
     "rodzina": "Maciek, Marianna i Dobrosław przed progiem (odsłaniane: # pokaz: rodzina)",
     "chata": "chata z prawie gotową strzechą, drabina, szałas, sterta trzciny, pień",
     "strzecha_szczyt": "ostatni pas strzechy (odsłaniany: # pokaz: dach)",
-    "slady": "długie ślady topielca i krew (odsłaniane: # pokaz: slady)",
+    "slady": "pas trawy zmiętej i oblepionej mułem, krople krwi (odsłaniane: # pokaz: slady)",
 }
 COMMON_TOP = ["niebo", "chmura", "wrony"]
 VARIANTS = {

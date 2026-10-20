@@ -299,17 +299,15 @@ t.append('<path d="M290 360C280 330 330 320 340 350C350 330 380 340 372 366Z" fi
 K["tlo"] = (0, 0, 390, 440, t[0] + "\n" + group(t[1:]))
 K["kapota"] = (180, 220, 50, 80, group(['<path d="M204 226L188 236L184 290H226L222 236Z" fill="#FFFFFF" stroke-width="2"/><path d="M188 240L184 290H196L198 250Z" fill="url(#hatch)" stroke-width="1"/>'
                                         '<path d="M204 240L200 288" fill="none" stroke-width="2.4"/><path d="M206 244L212 286" fill="none" stroke-width="1"/>']))
-K["tropy"] = (60, 330, 300, 100, group([tropy([(80, 410), (110, 396), (140, 384), (170, 372), (200, 362), (230, 352), (260, 344)], 1.6)]))
-K["wlosy"] = (300, 330, 60, 30, group(['<path d="M312 346c8 -4 16 4 26 -2M318 352c8 -2 14 4 22 0" fill="none" stroke="#FFFFFF" stroke-width="1.4"/>']))
 K["chlopcy"] = (10, 300, 90, 130, group([postacie.man(40, 430, 1.4, hat=False), postacie.man(80, 430, 1.5, hat=False)]))
 K["przod"] = (0, 422, 390, 422, group(PRZOD))
-KAPOTA = ["tlo", "kapota", "tropy", "wlosy", "chlopcy", "przod"]
-K_REVEAL = {"kapota": "kapota", "tropy": "tropy", "wlosy": "tropy"}
-K_ANIM = {"kapota": {"type": "sway", "amplitude": 4, "duration": 3600, "anchorX": 0.5, "anchorY": 0}, "wlosy": {"type": "flicker", "amplitude": 0.5, "duration": 1600},
+KAPOTA = ["tlo", "kapota", "chlopcy", "przod"]
+K_REVEAL = {"kapota": "kapota"}
+K_ANIM = {"kapota": {"type": "sway", "amplitude": 4, "duration": 3600, "anchorX": 0.5, "anchorY": 0},
           "chlopcy": {"type": "bob", "amplitude": 0.4, "duration": 2400}}
-K_EXTRA = {"kapota": {"fadeDuration": 2000}, "tropy": {"fadeDuration": 3000}, "wlosy": {"fadeDuration": 2000, "noInvert": True}, "przod": {"depth": 1.0}}
-K_COMMENTS = {"tlo": "skraj boru: wielkie świerki, niska gałąź, ciernisty krzak", "kapota": "rozdarta kapota Franka na gałęzi (# pokaz: kapota)",
-              "tropy": "ogromne wilcze tropy (# pokaz: tropy)", "wlosy": "białe włosy na cierniach (# pokaz: tropy)", "chlopcy": "Jaromir i Antek", "przod": "pierwszy plan"}
+K_EXTRA = {"kapota": {"fadeDuration": 2000}, "przod": {"depth": 1.0}}
+K_COMMENTS = {"tlo": "skraj boru: wielkie świerki, niska gałąź, ciernisty krzak", "kapota": "kapota Franka wywrócona na lewą stronę, powieszona na gałęzi (# pokaz: kapota)",
+              "chlopcy": "Jaromir i Antek", "przod": "pierwszy plan"}
 _add(K, KAPOTA, K_ANIM, K_COMMENTS, "mgla", ((-30, 300, 450, 40, group([f'<path d="{ribbon(-20, 410, 318, 14, 5)}" fill="#EDEBE6" stroke-width="1.2" opacity="0.7"/>'])),
                                              {"type": "drift", "amplitude": 14, "duration": 12000}, "mgła między pniami"), before="kapota")
 _add(K, KAPOTA, K_ANIM, K_COMMENTS, "galezie", ((0, 0, 390, 120, group([f'<path d="M{x} 0l-20 {60 + (x % 3) * 20}M{x} 30l26 30" fill="none" stroke-width="3"/>' for x in (60, 180, 300)])),
@@ -479,25 +477,21 @@ for x in range(-4, 110, 22):
     t.append(f'<path d="M{x - 3} 404V372L{x} 366L{x + 3} 372V404Z" fill="#FFFFFF" stroke-width="1.4"/>')
 R["tlo"] = (0, 0, 390, 440, t[0] + "\n" + group(t[1:]))
 R["slonce"] = (40, 200, 60, 40, group(['<path d="M46 232A24 24 0 0 1 94 232Z" fill="#FFFFFF" stroke-width="2"/>']))
-TRACK = [(60, 260), (90, 270), (120, 282), (150, 296), (110, 380), (150, 392), (200, 396), (250, 392), (300, 386), (340, 372), (350, 340), (330, 300), (300, 280), (260, 270)]
-R["tropy"] = (40, 250, 330, 160, group([tropy(TRACK, 1.1)]))
-R["plama"] = (176, 356, 50, 14, group(['<ellipse cx="200" cy="362" rx="22" ry="5" fill="url(#hatch)" stroke="none" opacity="0.6"/>']))
-R["wlosy"] = (40, 364, 40, 20, group(['<path d="M46 374c8 -4 14 4 24 -2M50 378c6 -2 12 3 18 0" fill="none" stroke-width="1.2"/>']))
+R["plama"] = (166, 350, 70, 24, group(['<ellipse cx="200" cy="362" rx="32" ry="8" fill="url(#hatchDense)" stroke-width="1.2" opacity="0.75"/>']))
 R["przod"] = (0, 422, 390, 422, group(PRZOD))
-RANEK = ["tlo", "slonce", "tropy", "plama", "wlosy", "przod"]
-R_REVEAL = {"tropy": "tropy", "plama": "tropy", "wlosy": "wlosy"}
-R_ANIM = {"slonce": {"type": "slide", "dx": 0, "dy": -30, "duration": 40000, "once": True}, "wlosy": {"type": "sway", "amplitude": 4, "duration": 2200, "anchorX": 0, "anchorY": 0.5}}
-R_EXTRA = {"tropy": {"fadeDuration": 4000}, "plama": {"fadeDuration": 4000}, "wlosy": {"fadeDuration": 2000}, "przod": {"depth": 1.0}}
+RANEK = ["tlo", "slonce", "plama", "przod"]
+R_REVEAL = {"plama": "tropy"}
+R_ANIM = {"slonce": {"type": "slide", "dx": 0, "dy": -30, "duration": 40000, "once": True}}
+R_EXTRA = {"plama": {"fadeDuration": 4000}, "przod": {"depth": 1.0}}
 R_COMMENTS = {"tlo": "świt po weselu: szron, nowa izba dobudowana do chałupy, płot, bór", "slonce": "słońce wschodzi",
-              "tropy": "wilcze tropy okrążają chałupę i staja pod oknem (# pokaz: tropy)", "plama": "stopiony szron pod oknem (# pokaz: tropy)",
-              "wlosy": "białe włosy na sztachecie (# pokaz: wlosy)", "przod": "pierwszy plan"}
-_add(R, RANEK, R_ANIM, R_COMMENTS, "szron", efekty.iskry(0, 240, 390, 180, n=20, seed=922, duration=2600), before="tropy")
+              "plama": "stopiony szron pod oknem (# pokaz: tropy)", "przod": "pierwszy plan"}
+_add(R, RANEK, R_ANIM, R_COMMENTS, "szron", efekty.iskry(0, 240, 390, 180, n=20, seed=922, duration=2600), before="plama")
 R_COMMENTS["szron"] = "szron skrzy się w słońcu"
-_add(R, RANEK, R_ANIM, R_COMMENTS, "dym", ((260, 180, 30, 60, group([dym(274, 230, 50)])), {"type": "sway", "amplitude": 3, "duration": 4600, "anchorX": 0.5, "anchorY": 1}, "dym z komina"), before="tropy")
-_add(R, RANEK, R_ANIM, R_COMMENTS, "wrony", efekty.wrony(160, 120, n=3, k=0.4, seed=923, amplitude=50), before="tropy")
+_add(R, RANEK, R_ANIM, R_COMMENTS, "dym", ((260, 180, 30, 60, group([dym(274, 230, 50)])), {"type": "sway", "amplitude": 3, "duration": 4600, "anchorX": 0.5, "anchorY": 1}, "dym z komina"), before="plama")
+_add(R, RANEK, R_ANIM, R_COMMENTS, "wrony", efekty.wrony(160, 120, n=3, k=0.4, seed=923, amplitude=50), before="plama")
 _add(R, RANEK, R_ANIM, R_COMMENTS, "mgla", ((-30, 226, 450, 30, group([f'<path d="{ribbon(-20, 410, 240, 12, 4)}" fill="#EDEBE6" stroke-width="1.2" opacity="0.7"/>'])),
-                                            {"type": "drift", "amplitude": 12, "duration": 14000}, "poranna mgła pod borem"), before="tropy")
-_add(R, RANEK, R_ANIM, R_COMMENTS, "wrona", efekty.wrona_siedzi(70, 366, 1.0), before="wlosy")
+                                            {"type": "drift", "amplitude": 12, "duration": 14000}, "poranna mgła pod borem"), before="plama")
+_add(R, RANEK, R_ANIM, R_COMMENTS, "wrona", efekty.wrona_siedzi(70, 366, 1.0), before="przod")
 
 BACKGROUNDS = {"glodna_zima": ("bg_glodnazima", G, ZIMA, G_ANIM, G_REVEAL, G_EXTRA, G_COMMENTS, "głodna zima"),
                "piec_lat": ("bg_pieclat", P, PIEC, P_ANIM, P_REVEAL, P_EXTRA, P_COMMENTS, "pięć lat"),

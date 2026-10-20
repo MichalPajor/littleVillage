@@ -9,13 +9,13 @@
 # rozdzial: Prolog
 # tytul: Zapadlina
 Zapadlina – wieś leżąca tam, gdzie ziemia, zmęczona byciem równiną, osunęła się w dół. Chcąc do niej dotrzeć, zawsze trzeba było schodzić z pagórków, brzegów i zboczy – czy to od gościńca przez Bukowy Grzbiet, czy od boru udeptaną ścieżką. Z miasta wracało się sześć godzin, a ostatni odcinek drogi wił się wśród bagien, wciąż w dół. Mgła lubiła tę nieckę. Wlewała się w nią o zmierzchu jak mleko do miski i bywało, że nawet do południa nie chciała z niej wyjść.
-Od wschodu napierał las – stary, iglasty i tak gęsty, że i za dnia drzewa rzucały głęboki, chłodny cień. Na północy miękka ziemia przechodziła w mokradła porośnięte pałkami, turzycą i karłowatymi krzewami. Woda stała tam czarna, mętna i nieruchoma. Niektórzy powiadali, że nie wolno zbyt długo się w nią wpatrywać, bo można tym wywołać topielce uwięzione pod warstwą mułu. Po nocach często latały nad nią błędne ognie. Na zachodzie, w najniższym miejscu niecki, leżało jezioro, okrągłe, jakby ktoś wycisnął je kolanem. Mówiono, że nikt nie widział jego dna.
+Od wschodu napierał las – stary, iglasty i tak gęsty, że i za dnia drzewa rzucały głęboki, chłodny cień. Na północy miękka ziemia przechodziła w mokradła porośnięte pałkami, turzycą i karłowatymi krzewami. Woda stała tam czarna, mętna i nieruchoma. Niektórzy powiadali, że nie wolno zbyt długo się w nią wpatrywać, bo można tym wywołać topielce uwięzione pod warstwą mułu. Po nocach często latały nad nią błędne ognie. Na zachodzie, w najniższym miejscu doliny, leżało jezioro, okrągłe, jakby ktoś wycisnął je kolanem. Mówiono, że nikt nie widział jego dna.
 Wieś była mała, ale nie młoda. Pięć chałup stało daleko od siebie, bo każdy miał tyle pola, ile jego przodkowie zdołali wykarczować i obronić. Mieszkało w niej około trzydziestu osób, licząc z dziećmi. Wszyscy dobrze się znali. Kościół był dopiero w mieście; chodziło się do niego kilka razy w roku, na najważniejsze święta, o ile pozwalały na to warunki. Wtedy we wsi nie zostawała ani jedna żywa dusza.
-Jakieś siedemdziesiąt lat przed tym, nim Jaromir pierwszy raz spojrzał w stronę lasu, jego dziadek zszedł do Zapadliny z tobołkiem na ramieniu. Maciek nie miał nic poza siekierą, chlebem, parą rąk i uporem. Obie rzeczy kupił w mieście za pieniądze zarobione przez cztery lata pracy na cudzym polu. Chciał wreszcie mieć coś swojego – kąt, w którym zamieszka i da rodzinie dach nad głową. Tutaj każdy skrawek ziemi, który oczyści, będzie jego. Była wiosna, pola parowały, a gdzieniegdzie w cieniu zalegał jeszcze brudny śnieg. Od kilku dni krążył po okolicy, szukając, gdzie postawić chatę. Trzy miejsca najczęściej wracały w jego myślach.
+Jakieś siedemdziesiąt lat przed tym, nim Jaromir pierwszy raz spojrzał w stronę lasu, jego dziadek zszedł do Zapadliny z tobołkiem na ramieniu. Maciek nie miał nic poza siekierą, chlebem, parą rąk i uporem. Siekierę i chleb kupił w mieście za pieniądze zarobione przez cztery lata pracy na cudzym polu. Chciał wreszcie mieć coś swojego – kąt, w którym zamieszka i da rodzinie dach nad głową. Tutaj każdy skrawek ziemi, który oczyści, będzie jego. Była wiosna, pola parowały, a gdzieniegdzie w cieniu zalegał jeszcze brudny śnieg. Od kilku dni krążył po okolicy, szukając, gdzie postawić chatę. Trzy miejsca najczęściej wracały w jego myślach.
 # ozdobnik
-Pierwsze leżało na wschodnim skraju wsi, pod samym lasem. Ziemia była żyzna, drewno miał na wyciągnięcie ręki, a i zwierzyny nie brakowało. Tylko że od boru zawsze ciągnął chłód, nawet w upalne dni, a nocą dochodziły stamtąd tajemnicze, przerażające dźwięki.
+Pierwsze leżało na wschodnim skraju wsi, pod samym lasem. Ziemia była żyzna, drewno miał na wyciągnięcie ręki, a i zwierzyny nie brakowało. Tylko że od boru zawsze ciągnął chłód, nawet w upalne dni, a nocą dochodziły stamtąd dźwięki, których nie umiał nazwać.
 Drugie było na północy, przy mokradłach. Znajdowały się tam rozległe łąki, na których można by wypasać bydło, a torfu do palenia nigdy by nie zabrakło. Za to po zmroku nad bagnami podobno coś mrugało. Ludzie spotkani przy studni mówili tylko: – Tam się nie chodzi i nie buduje. Tam się tylko topi.
-Trzecie, nad jeziorem, wydawało się najbardziej malownicze. Woda była czysta, ryby same wskakiwały do ręki, a brzeg łagodny – wystarczyło przedrzeć się przez gęste trzciny. Został tam też ślad po chałupie, która kiedyś tu stała: stare, spróchniałe i zwęglone bale. Nikt we wsi nie chciał powiedzieć, kto w niej mieszkał ani jaki spotkał go los, a ludzie żegnali się za każdym razem, gdy ktoś o niej wspomniał.
+Trzecie, nad jeziorem, wydawało się najbardziej malownicze. Woda była czysta, ryby same wskakiwały do ręki, a brzeg łagodny – wystarczyło przedrzeć się przez gęste trzciny. Zostały tam też resztki chałupy, która kiedyś tu stała: stare, spróchniałe i zwęglone bale. Nikt we wsi nie chciał powiedzieć, kto w niej mieszkał ani jaki spotkał go los, a ludzie żegnali się za każdym razem, gdy ktoś o niej wspomniał.
 # pytanie: Gdzie Maciek postawi chatę?
 *   [Na skraju lasu, od wschodu.]
     ~ chata_macka = przy_lesie
@@ -42,27 +42,27 @@ Trzecie, nad jeziorem, wydawało się najbardziej malownicze. Woda była czysta,
 # tlo: budowa_las
 # rozdzial: Prolog
 # tytul: Chata
-Maciek wybrał skraj lasu. Uznał, że drewno pod ręką pozwoli mu szybciej postawić chatę, a na tym zależało mu najbardziej. Żyzna ziemia przyda się pod warzywa – w końcu coś trzeba jeść. A sen? Jakoś to będzie. Już pierwszego ranka zabrał się do pracy i wbił siekierę w najbliższy świerk. Echo uderzenia potoczyło się w stronę boru i wróciło do niego dziwnie przeciągłe, jakby las powtórzył je po swojemu, dodając nutę czegoś tajemniczego.
+Maciek wybrał skraj lasu. Uznał, że drewno pod ręką pozwoli mu szybciej postawić chatę, a na tym zależało mu najbardziej. Żyzna ziemia przyda się pod warzywa – w końcu coś trzeba jeść. A sen? Jakoś to będzie. Już pierwszego ranka zabrał się do pracy i wbił siekierę w najbliższy świerk. Echo uderzenia poszło między drzewa i wróciło po dziwnie długiej chwili – przeciągłe, niskie i nie całkiem podobne do stuku siekiery.
 -> praca
 
 = mokradla
 # tlo: budowa_mokradla
 # rozdzial: Prolog
 # tytul: Chata
-Maciek wybrał łąki przy mokradłach. Gdy zaczął pracę, ludzie, którzy go widzieli, kręcili głowami z dezaprobatą i zdziwieniem. Dla nich było to ostatnie miejsce, w którym postawiliby chałupę. Ziemia uginała się tu pod stopami, ale dawała torf, którego starczyłoby nawet na sto zim. Żeby chata nie zapadła się w błoto, Maciek musiał przygotować podmurówkę. Przez cały pierwszy dzień znosił z pagórków kamienie i sumiennie je układał.
-Po drewno chodził daleko, pod bór. Zdarzało mu się wpaść w płytkie bajoro – w końcu nie znał jeszcze dobrze terenu – i buty miał wiecznie przemoczone. Na myśl o opowieściach mieszkańców czuł niepokój, ale i ciekawość. Nie dawało mu spokoju, co takiego mogło mrugać nad bagnami. Starał się omijać czarną wodę i wziął sobie do serca przestrogę o topielcach. Jeśli istniały, na pewno nie chciał ich spotkać.
+Maciek wybrał łąki przy mokradłach. Gdy zaczął pracę, ludzie, którzy go widzieli, kręcili głowami. Dla nich było to ostatnie miejsce, w którym postawiliby chałupę. Ziemia uginała się tu pod stopami, ale dawała torf, którego starczyłoby nawet na sto zim. Żeby chata nie zapadła się w błoto, Maciek musiał przygotować podmurówkę. Przez cały pierwszy dzień znosił z pagórków kamienie i sumiennie je układał.
+Po drewno chodził daleko, pod bór. Zdarzało mu się wpaść w płytkie bajoro – nie znał jeszcze tutejszych ścieżek – i buty miał wiecznie przemoczone. Na myśl o opowieściach mieszkańców czuł niepokój, ale i ciekawość. Nie dawało mu spokoju, co takiego mogło mrugać nad bagnami. Starał się omijać czarną wodę i wziął sobie do serca przestrogę o topielcach. Jeśli istniały, na pewno nie chciał ich spotkać.
 -> praca
 
 = jezioro
 # tlo: budowa_jezioro
 # rozdzial: Prolog
 # tytul: Chata
-Maciek wybrał brzeg jeziora. Coś w głębi serca mówiło mu, że to miejsce jest dla niego. Może to wizualny urok tego zbiornika tak go przyciągał. Spróchniałe, zwęglone bale po dawnej chałupie zepchnął w wysokie szuwary, by się nimi nie przejmować. Było, minęło – powtarzał sobie podczas karczowania zarośli, gdy przypominały mu się opowieści mieszkańców. Drzewa ścinał na zboczach, a pnie staczał w dół. Do pokrycia dachu zbierał trzcinę, której tu nie brakowało – sięgała mu powyżej głowy.
+Maciek wybrał brzeg jeziora. Coś w głębi serca mówiło mu, że to miejsce jest dla niego. Może przyciągała go sama woda – gładka i jasna, z całym niebem w środku. Spróchniałe, zwęglone bale po dawnej chałupie zepchnął w wysokie szuwary, żeby nie kłuły go w oczy. Było, minęło – powtarzał sobie podczas karczowania zarośli, gdy przypominały mu się opowieści mieszkańców. Drzewa ścinał na zboczach, a pnie staczał w dół. Do pokrycia dachu zbierał trzcinę, której tu nie brakowało – sięgała mu powyżej głowy.
 -> praca
 
 = praca
 Budowa trwała ponad miesiąc. Niekiedy ktoś z mieszkańców przychodził pomóc Maćkowi. Najczęściej był to Andrzej, z którym zawsze rozmawiało mu się najlepiej. Sam nie opływał w dostatki, ale widząc, w jakiej biedzie żyje przybysz, czasem przynosił mu coś do zjedzenia. Lubił też opowiadać o swoim synu, który był jego dumą. Chłopak miał jedenaście lat, a już był dla ojca ogromnym wsparciem.
-Samo stawianie chaty nie było skomplikowane: ściąć drzewa, okorować je, pociąć na bale odpowiedniej długości i wyciąć na ich końcach zamki, żeby po złożeniu dobrze się trzymały. Dzięki temu ściany stały bez jednego gwoździa. Szczeliny zatykał mchem i gliną. Od ciężkiej, codziennej pracy dłonie pokryły mu się pęcherzami, które pękały i zrastały się, aż skóra stwardniała jak kora.
+Samo stawianie chaty nie było trudne: ściąć drzewa, okorować je, pociąć na bale odpowiedniej długości i wyciąć na ich końcach zamki, żeby po złożeniu dobrze się trzymały. Dzięki temu ściany stały bez jednego gwoździa. Szczeliny zatykał mchem i gliną. Od ciężkiej, codziennej pracy dłonie pokryły mu się pęcherzami, które pękały i zrastały się, aż skóra stwardniała jak kora.
 Swój chleb jadł bardzo oszczędnie – kromkę na śniadanie, drugą na kolację, popijając je wodą. Obiecywał sobie, że po nowy zapas pójdzie do miasta, jak tylko skończy dach. Bochenek wysychał, kurczył się i z każdym dniem ważył coraz mniej – a Maciek razem z nim.
 Sypiał w szałasie, który naprędce sklecił pierwszego wieczoru: kilka konarów opartych o pień, przykrytych gałęziami z liśćmi i darnią, a w środku posłanie z mchu. Mieścił się w nim tylko na leżąco. Siekierę zawsze trzymał u boku. # dalej
 -> noce
@@ -70,11 +70,11 @@ Sypiał w szałasie, który naprędce sklecił pierwszego wieczoru: kilka konar�
 = noce
 Noce były najgorsze. Wiosenny chłód i wilgoć wchodziły pod ubranie, kąsając przenikliwie do kości. Ciężko było zasnąć. Maciek leżał z otwartymi oczami i słuchał.
 { chata_macka:
-    - przy_lesie: Las nigdy nie milkł. Nie było wiatru, a gałęzie trzaskały tak, jakby ktoś – albo coś – leniwie po nich chodziło. Często wstrzymywał oddech i nasłuchiwał, choć od niektórych dźwięków przechodziły go ciarki.
-    - przy_mokradlach: Bagna nigdy nie spały. Bulgotały, mlaskały, a czasem – miał wrażenie – wzdychały po ludzku. Gdy usłyszał to pierwszy raz, wzdrygnął się, złapał za siekierę i wyjrzał z szałasu. Opowieści spod studni okazały się prawdziwe. Po północy, daleko nad czarną wodą, zapalało się małe światełko i mrugało – jakby ktoś stał tam z kagankiem i wabił do siebie.
-    - else: Jezioro nocą oddychało. Każdy powiew był ciepły i przyjemny. Choć nie było wiatru ani fal, na płyciźnie co jakiś czas coś pluskało. Raz Maciek usłyszał, jakby coś ciężkiego wychodziło z wody i szło brzegiem przez trzciny w jego stronę. Rano sprawdził, ale w błocie nie było żadnych śladów.
+    - przy_lesie: Las nigdy nie milkł. Nie było wiatru, a gałęzie trzaskały – powoli, leniwie, raz bliżej, raz dalej. Często wstrzymywał oddech i nasłuchiwał, choć od niektórych dźwięków przechodziły go ciarki.
+    - przy_mokradlach: Bagna nigdy nie spały. Bulgotały, mlaskały, a czasem – miał wrażenie – wzdychały po ludzku. Gdy usłyszał to pierwszy raz, wzdrygnął się, złapał za siekierę i wyjrzał z szałasu. Opowieści spod studni okazały się prawdziwe. Po północy, daleko nad czarną wodą, zapalało się małe światełko i mrugało. Gasło, kiedy na nie patrzył, i rozbłyskiwało znowu, kiedy odwracał wzrok.
+    - else: Jezioro nocą oddychało. Każdy powiew był ciepły i przyjemny. Choć nie było wiatru ani fal, na płyciźnie co jakiś czas coś pluskało. Raz Maciek usłyszał, jak coś ciężkiego wychodzi z wody i idzie brzegiem przez trzciny w jego stronę. Rano poszedł sprawdzić. Trzciny stały nietknięte, a na płyciźnie drzemały kaczki, spokojne jak co dzień.
 }
-Którejś nocy, gdy z bochenka została mu już tylko piętka, dobiegł go dźwięk, jakiego dotąd tu nie znał. Ciche, urywane wycie – cienkie, jakby wilcze, ale słabe. Dochodziło z zarośli nieopodal. Maciek próbował nie zwracać na nie uwagi, ale ono wciąż wracało.
+Którejś nocy, gdy z bochenka została mu już tylko piętka, dobiegł go dźwięk, jakiego dotąd tu nie znał. Ciche, urywane wycie – cienkie, podobne do wilczego, ale słabe. Dochodziło z zarośli nieopodal. Maciek próbował nie zwracać na nie uwagi, ale ono wciąż wracało.
 # pytanie: Co powinien zrobić Maciek?
 *   [Wziąć siekierę – choć po ciemku łatwo ją zgubić w błocie – wyjść z szałasu i sprawdzić, co to.]
     -> pies
@@ -93,7 +93,7 @@ Maciek zacisnął palce na toporze i nie ruszył się z miejsca. Wycie trwało j
 === pies ===
 # tlo: zarosla_noc
 Maciek wyczołgał się na zewnątrz z siekierą w ręku. Noc była jasna od księżyca, a trawa mokra od rosy. Szedł powoli za dźwiękiem, krok po kroku, czując, że serce chce mu się wyrwać z piersi. Wycie raz cichło, a raz wybrzmiewało coraz bliżej.
-W gęstych krzakach usłyszał szelest. Rozgarnął gałęzie trzonkiem siekiery i zamarł. Z ciemności wyłoniły się dwa błyszczące ślepia. W świetle księżyca dostrzegł, że to młody pies. Był tak chudy, że można było policzyć mu żebra, a łapy wydawały się nieproporcjonalnie duże w stosunku do reszty ciała. Pysk miał długi i wąski, a uszy postawione sztywno. Nie uciekał przed człowiekiem. Warczał cicho, trzęsąc się cały. # pokaz: pies
+W gęstych krzakach usłyszał szelest. Rozgarnął gałęzie trzonkiem siekiery i zamarł. Z ciemności wyłoniły się dwa błyszczące ślepia. W świetle księżyca dostrzegł, że to młody pies. Był tak chudy, że można było policzyć mu żebra, a łapy miał za duże do reszty ciała. Pysk miał długi i wąski, a uszy postawione sztywno. Nie uciekał przed człowiekiem. Warczał cicho, trzęsąc się cały. # pokaz: pies
 Maciek sięgnął do kieszeni. Było w niej małe zawiniątko z ostatnim kawałkiem chleba – twardym jak kamień, ale przecież to był jego jutrzejszy posiłek.
 # pytanie: Co zrobi Maciek?
 *   [Da psu kawałek chleba.]
@@ -105,7 +105,7 @@ Maciek sięgnął do kieszeni. Było w niej małe zawiniątko z ostatnim kawałk
 ~ ekwipunek -= chleb
 ~ los_psa = nakarmiony
 Maciek rozwinął szmatkę i rzucił chleb pod krzak. Pies cofnął się i warknął, ale po chwili zaczął wąchać to, co spadło. Nagle porwał zdobycz w pysk i zniknął w ciemności, zanim człowiek zdążył mrugnąć.
-Mężczyzna wpełzł z powrotem pod gałęzie swojego szałasu i zasnął ze świadomością, że jutro śniadania nie będzie. # dalej
+Mężczyzna wpełzł z powrotem pod gałęzie swojego szałasu i zasnął głodny, wiedząc, że jutro śniadania nie będzie. # dalej
 -> dach
 
 = nie_dal_chleba
@@ -131,7 +131,7 @@ Wycofał się powoli i schował pod gałęziami. Wycie odezwało się jeszcze ra
 
 = z_chlebem
 ~ ekwipunek -= chleb
-Rano Maciek rozwinął zawiniątko i zjadł ostatni kawałek chleba. Gryzł go powoli, długo, jakby chciał, żeby dał mu sił na cały dzień. Popił wodą, otrzepał dłonie i poszedł do pracy.
+Rano Maciek rozwinął zawiniątko i zjadł ostatni kawałek chleba. Gryzł go powoli, kęs po kęsie, żeby starczył na cały dzień. Popił wodą, otrzepał dłonie i poszedł do pracy.
 -> trzcina ->
 Ciął gęstwinę siekierą przy samej ziemi, wiązał w snopy i znosił pod chatę. Raz za razem, aż przestał liczyć. Plecy paliły go żywym ogniem, ale sterta przy ścianie rosła.
 Po południu trzciny w tym miejscu już nie było, więc ruszył dalej. Wracał inną drogą – od tej strony, z której minionej nocy dochodziło wycie. Szedł, aż nagle noga zawisła mu w powietrzu.
@@ -184,7 +184,7 @@ Tego dnia Maciek układał snopy już przy samej kalenicy. Brakowało już tylko
 Zszedł z dachu i usiadł przy szałasie. Chciał odpocząć tylko chwilę, póki jeszcze było jasno. Oparł głowę o pień, zamknął oczy…
 …i zasnął.
 Obudziła go cisza.
-Nie było słychać świerszczy, żab ani wiatru. Nad niecką wisiała mgła, gęsta i biała, sięgająca kolan. Maciek nie wiedział, ile spał. Wiedział tylko, że coś jest nie tak – czuł to ciałem i duszą, zanim zrozumiał umysłem.
+Nie było słychać świerszczy, żab ani wiatru. Wszystko dookoła tonęło we mgle, gęstej i białej, sięgającej kolan. Maciek nie wiedział, ile spał. Wiedział tylko, że coś jest nie tak – czuł to ciałem i duszą, zanim zrozumiał umysłem.
 Wtedy rozległ się dźwięk. Nie wycie ani krzyk, lecz coś pośrodku: przeciągły, gardłowy jęk, który przeszedł w trzask łamanych gałęzi. Coś wskoczyło z łoskotem w zarośla – tuż obok, niedaleko szałasu. # pokaz: oczy
 Maciek zerwał się na równe nogi. Siekiera sama znalazła się w jego dłoniach. Ściskał topór tak mocno, że zbielały mu kostki, i patrzył w ciemność, skąd dochodziły kroki – powolne, ciężkie, coraz bliższe. # dalej
 { los_psa == nakarmiony: -> obrona | -> zdobycz }
@@ -210,7 +210,7 @@ Pies wypadł z ciemności jak strzała i stanął między Maćkiem a zaroślami.
 -> strach_o_chate ->
 ~ los_psa = oswojony
 ~ ekwipunek += pies_towarzysz
-Długo trwało, zanim Maciek doszedł do siebie. W końcu osunął się na ziemię przy szałasie i oddychał ciężko, jakby przebiegł pół niecki. Pies przestał ujadać. Podszedł do niego niepewnie, z opuszczonym łbem – i zamerdał ogonem, dumny z siebie jak nikt na świecie.
+Długo trwało, zanim Maciek doszedł do siebie. W końcu osunął się na ziemię przy szałasie i oddychał ciężko jak po długim biegu. Pies przestał ujadać. Podszedł do niego niepewnie, z opuszczonym łbem – i zamerdał ogonem, dumny z siebie jak nikt na świecie.
 Wyciągnął drżącą rękę. Zwierzę obwąchało ją, a potem pozwoliło się pogłaskać.
 – Dobry pies – szepnął. – Dobry – odetchnął.
 Tej nocy weszli do szałasu razem. Zwinął się w kłębek przy boku człowieka i zasnął pierwszy. Maciek czuwał jeszcze, wsłuchany w ciemność. Ale nie był już sam. # dalej
@@ -241,7 +241,7 @@ Zaczęło świtać. Obudził się zesztywniały i zziębnięty. Przez chwilę ni
 { los_psa == oswojony:
     Pies leżał przy wejściu do szałasu z łbem na łapach i patrzył w stronę mokradeł. Już nie spał. Maciek miał wrażenie, że czuwał tak aż do świtu.
 - else:
-    W szałasie było cicho. Maciek wyjrzał na zewnątrz. W trawie przy zaroślach odbijały się wąskie, długie ślady, za długie jak na zwierzę, i ciągnęły się w stronę mokradeł. Między nimi ciemniały plamy krwi. # pokaz: slady
+    W szałasie było cicho. Maciek wyjrzał na zewnątrz. Trawa przy zaroślach była położona szerokim pasem, oblepiona mułem, i cuchnęła bagnem, choć do mokradeł było daleko. Pas ciągnął się w ich stronę, a na źdźbłach ciemniały krople krwi. # pokaz: slady
 }
 Podszedł do swojej niedokończonej chaty i usiadł na jej progu. Siedział i patrzył przed siebie. Myśli kłębiły się w nim jak mgła nad wsią. Uciekać. Zostawić wszystko, póki jeszcze żyje, i nigdy nie wracać. A z drugiej strony – ponad miesiąc pracy, pęcherze na dłoniach, ostatnie kromki chleba. Każdy bal w tych ścianach ociosał sam. I dokąd miałby pójść? Na cudze pole, znowu za miskę kaszy? Obiecał przecież, że sprowadzi tu rodzinę. Że będą mieli swój dach.
 # pytanie: Co postanowi Maciek?
@@ -252,32 +252,32 @@ Podszedł do swojej niedokończonej chaty i usiadł na jej progu. Siedział i pa
 
 = zostaje
 Wstał, otrzepał spodnie i spojrzał na dach. Został jeden pas trzciny, może dwa.
-– Nie po to budowałem, żeby teraz uciekać – powiedział głośno, jakby chciał, żeby usłyszało go coś więcej niż las. # dalej
+– Nie po to budowałem, żeby teraz uciekać – powiedział głośno, żeby usłyszało go coś więcej niż las. # dalej
 -> dach_gotowy
 
 = odchodzi
 ~ chcial_odejsc = true
-Zarzucił tobołek na ramię i ruszył pod górę, w stronę gościńca. Maszerował szybko, nie oglądając się za siebie. Dopiero na grzbiecie niecki przystanął i spojrzał w dół.
+Zarzucił tobołek na ramię i ruszył pod górę, w stronę gościńca. Maszerował szybko, nie oglądając się za siebie. Dopiero na Bukowym Grzbiecie przystanął i spojrzał w dół.
 Chata stała tam, mała i niedokończona, z dachem jak niedopowiedziane zdanie. Jego chata.
 { los_psa == oswojony: Pies szedł za nim kawałek, a potem usiadł w połowie zbocza i patrzył – raz na niego, raz za siebie – jakby czekał, aż Maciek sam zrozumie. }
 Nie ruszał się, dopóki słońce nie wzeszło nad borem. Potem zawrócił. Nie dlatego, że przestał się bać. Po prostu nie miał dokąd pójść. # dalej
 -> dach_gotowy
 
 = dach_gotowy
-Ostatnie snopy trzciny ułożył do południa. Związał je łykiem, docisnął żerdziami i zszedł z drabiny. Pierwszy raz od przyjścia do Zapadliny stał przed chatą, której dach wyglądał tak dobrze. # pokaz: dach
+Ostatnie snopy trzciny ułożył do południa. Związał je łykiem, docisnął żerdziami i zszedł z drabiny. Pierwszy raz od przyjścia do Zapadliny stał przed skończoną chatą – własną, od podwaliny po kalenicę. # pokaz: dach
 Tej nocy wreszcie zasnął pod nim. Ściany pachniały żywicą i wilgotną gliną, a przez szparę w drzwiach przeciskało się światło księżyca.
-Nie było jeszcze łóżka, ale przynajmniej nie spał pod gołym niebem. Tu, u siebie, czuł ciepło i bezpieczeństwo.
-{ los_psa == oswojony: Pies ułożył się na progu, tak jakby to miejsce od zawsze było jego. }
+Nie było jeszcze łóżka, ale przynajmniej nie spał pod gołym niebem. Tu, u siebie, pierwszy raz od tygodni przespał noc bez budzenia się.
+{ los_psa == oswojony: Pies ułożył się na progu i od tej nocy nikomu go nie ustępował. }
 Rano poszedł do jedynego człowieka, któremu ufał. Musiał komuś powiedzieć. # dalej
 -> u_andrzeja
 
 = u_andrzeja
 # tlo: izba_andrzeja
-Chałupa Andrzeja stała na pagórku, z dala od wody. W izbie pachniało dymem i było ciasno. Staś, syn gospodarza, siedział przy stole na szerokim podłokietniku drewnianego krzesła i strugał nożykiem patyk. Na widok gościa uśmiechnął się od ucha do ucha.
-Maciek zaczął od samego początku: od ciszy, od kroków i… od postaci wyższej od człowieka o trzy głowy, z rękami do ziemi.
+Chałupa Andrzeja stała na pagórku, z dala od wody. W izbie pachniało dymem i było ciasno. Staś, syn gospodarza, siedział przy stole na ławie i strugał nożykiem patyk. Na widok gościa uśmiechnął się od ucha do ucha.
+Maciek zaczął od samego początku: od ciszy, od kroków i… od postaci wyższej od człowieka o trzy głowy, z włosami ociekającymi bagnem.
 Andrzej słuchał, aż nagle parsknął śmiechem.
 – Z głodu ci się przywidziało, człowieku. Otrząśnij się. Miesiąc o chlebie i wodzie – to i archanioła Michała można zobaczyć.
-Staś przestał strugać. Wpatrywał się w przybysza z otwartymi ustami i zauważalnym strachem w oczach.
+Staś przestał strugać. Wpatrywał się w przybysza z otwartymi ustami i strachem w oczach.
 – Czy to prawda? – zapytał.
 # pytanie: Co zrobi Maciek?
 *   [Potwierdzi stanowczo, że to prawda, i powie wszystko do końca, przy chłopcu. Niech wie, przed czym ma się strzec.]
@@ -297,7 +297,7 @@ Poprosił jednak przyjaciela o rozmowę w cztery oczy. Ten wysłał Stasia po wo
 -> dziad_opowiadal
 
 = dziad_opowiadal
-– Ręce do ziemi, mówisz – odezwał się w końcu Andrzej, już bez śmiechu. – Wyższa o trzy głowy. – Podszedł do okna i długo patrzył w stronę jeziora. – Mój dziad opowiadał o czymś takim. Myślałem, że dzieci straszył.
+– Wyższa o trzy głowy, mówisz – odezwał się w końcu Andrzej, już bez śmiechu. – I włosy mokre od bagna. – Przez dłuższą chwilę obracał w palcach pustą miskę. – Mój dziad opowiadał o czymś takim. Myślałem, że dzieci straszył.
 Wtedy Maciek jeszcze raz, krok po kroku, odtworzył całą tamtą noc. # dalej
 -> legenda
 
@@ -308,8 +308,8 @@ Wtedy Maciek jeszcze raz, krok po kroku, odtworzył całą tamtą noc. # dalej
 === legenda ===
 # tlo: legenda
 ~ zapiski += zielarka_1
-– Podobno wszystko zaczęło się tam, nad jeziorem, gdzie leżą te zwęglone bale. – Andrzej ściszył głos. – Mieszkała tam kiedyś kobieta. Zielarka. Ludzie chodzili do niej z bólem, chorobami i gorączką – była pomocna. Ale z czasem coś w nią weszło. Nie wiadomo dlaczego. Gadała po nocach, ale nie do siebie – do kogoś, kogo nikt nie widział. Mówiła, że umarli przychodzą do niej znad wody i opowiadają o strasznej przyszłości. Wkrótce wszyscy jej unikali, bo się bali.
-Potem we wsi działo się coraz gorzej. Mleko kwaśniało w wiadrach, małe dzieci budziły się z krzykiem, warzywa gniły w ziemi. Ginęły też zwierzęta – najpierw cielę, potem krowa, potem cały kurnik w jedną noc – ludzie powiedzieli, że to jej sprawka – zaczęli nazywać ją wiedźmą.
+– Podobno wszystko zaczęło się tam, nad jeziorem, gdzie leżą te zwęglone bale. – Andrzej ściszył głos. – Mieszkała tam kiedyś kobieta. Zielarka. Ludzie chodzili do niej z bólem, chorobami i gorączką – i nikomu nie odmówiła. Ale z czasem coś w nią weszło. Nie wiadomo dlaczego. Gadała po nocach, ale nie do siebie – do kogoś, kogo nikt nie widział. Mówiła, że umarli przychodzą do niej znad wody i opowiadają o strasznej przyszłości. Wkrótce wszyscy jej unikali, bo się bali.
+Potem we wsi działo się coraz gorzej. Mleko kwaśniało w wiadrach, małe dzieci budziły się z krzykiem, warzywa gniły w ziemi. Ginęły też zwierzęta – najpierw cielę, potem krowa, potem cały kurnik w jedną noc. Ludzie mówili, że to jej sprawka, i zaczęli nazywać ją wiedźmą.
 Pewnej nocy kilku chłopów zebrało się pod jej chatą. Zabili drzwi deskami, kiedy spała, obłożyli ściany słomą i podpalili. # pokaz: chlopi, ogien
 Andrzej zamilkł na chwilę.
 – Dziad mówił, że krzyczała do samego końca. Nie z bólu, Maćku. Przeklinała. Wieś, ziemię, każdego, kto tu mieszka i kto kiedyś zamieszka. Że nikt nie zazna spokoju, dopóki ci, którzy ją odwiedzają, nie wymordują tu wszystkich do nogi. Słychać było też, jak jęczała, rzucając słowa klątwy: „Kości dzieci waszych będą połamane, a krew ich wypita…”.
@@ -346,12 +346,12 @@ Coś w środku kusiło go, by dokładnie je zbadać, choć czuł lęk.
 = przeszukuje
 ~ przeszukal_zgliszcza = true
 ~ ekwipunek += figurka
-Rozgarnął trzciny siekierą i ukląkł przy poczerniałych belach. Popiół był zimny, zbity i wilgotny. Grzebał w nim długo, sam nie wiedząc, czego szuka, aż palce trafiły na coś twardego. # pokaz: maciek
+Rozgarnął trzciny siekierą i ukląkł przy poczerniałych belach. Popiół był zimny, zbity i wilgotny. Grzebał w nim długo, aż palce trafiły na coś twardego. # pokaz: maciek
 Mała figurka z drewna, nadpalona z jednej strony. Ludzka postać z rękami za długimi, sięgającymi do stóp.
 Maciek obracał ją w dłoniach. Pomyślał, że może wymieni ją w mieście na coś do jedzenia, więc ją zatrzymał.
 { los_psa == oswojony: Pies, który dotąd węszył przy brzegu, cofnął się i warknął cicho na jego kieszeń. }
 Wtedy dostrzegł w popiele coś jeszcze.
-– Niemożliwe – szepnął i wyciągnął przedmiot przypominający krzesiwo. – Czyżby nim podpalono chatę wiedźmy?
+– Niemożliwe – szepnął i wyciągnął z popiołu poczerniałe krzesiwo. – Czyżby nim podpalono chatę wiedźmy?
 # pytanie: Czy Maciek weźmie krzesiwo?
 *   [Tak – przeklęte czy nie, da mu to możliwość rozpalania ognia i przygotowania ciepłych posiłków.]
     ~ ekwipunek += krzesiwo
@@ -393,7 +393,7 @@ A potem, gdy tylko zbierze siły, przyprowadzi tu rodzinę. Do domu, który zbud
 // ------------------------------------------------------------
 === droga_do_miasta ===
 # tlo: sciezka
-Wyruszył o świcie. Do miasta było sześć godzin drogi, a pierwszy jej odcinek prowadził krętą ścieżką między mokradłami, pod górę, aż na Bukowy Grzbiet. Był gotowy i zmotywowany, by czym prędzej zrealizować swój plan. Nie mógł się doczekać, aż zamieszka w nowej chacie razem ze swoją żoną i dzieckiem. Myślał o nich teraz i czuł, że bardzo za nimi tęskni.
+Wyruszył o świcie. Do miasta było sześć godzin drogi, a pierwszy jej odcinek prowadził krętą ścieżką między mokradłami, pod górę, aż na Bukowy Grzbiet. Szedł raźno, choć w brzuchu burczało mu z głodu. Myślał o żonie i synku – o tym, jak pierwszy raz staną w progu nowej chaty – i tęsknota ściskała go za gardło.
 { los_psa == oswojony:
     Pies szedł tuż przy jego boku i wesoło poruszał ogonem. # pokaz: pies
 }
@@ -402,7 +402,7 @@ W połowie drogi coś kazało mu jednak podnieść wzrok. W głębi mokradeł tl
 Wtedy usłyszał swoje imię.
 – Maaaciek…
 Cicho, przeciągle, znad wody. Głosem, który brzmiał jak głos jego żony.
-Zawsze tak go przywoływała, gdy była w kłopocie. Przecież miała na niego czekać… nie ruszać się z dotychczasowego miejsca… A może to tylko mu się zdawało… A może to bagno woła go do siebie.
+Zawsze tak go wołała, kiedy coś się działo. Ale przecież została na folwarku za miastem i miała tam na niego czekać… Może tylko mu się zdawało. A może to bagno wołało go do siebie.
 # pytanie: Co zrobi Maciek?
 *   [Pójdzie w stronę głosu – być może jego żona potrzebuje pomocy.]
     { los_psa == oswojony: -> ratunek | -> utoniecie }
@@ -424,24 +424,24 @@ Leżał w błocie, dysząc, a zwierzę stało nad nim i warczało w stronę mokr
 Zrobił krok ze ścieżki, potem drugi, minął gęstwinę i przeskoczył przez grząskie błoto. Bagno zachlupotało i chwyciło go za kostki lodowatymi palcami. Poczuł, jak jego nogi wciąga pod powierzchnię. Głos był coraz bliżej – teraz ciepły, znajomy, taki, za którym tęsknił od lat.
 – Maaaciek…
 Stał nieruchomo, zanurzony już po kolana, potem po pas. Nie czuł zimna. Czuł tylko, że ktoś ukochany się do niego zbliża.
-Dopiero gdy czarna woda sięgnęła mu piersi, zrozumiał. Szarpnął się, ale coś trzymało go za łydki – coś, co miało palce. Światełko zamrugało tuż przed jego twarzą i zobaczył, że to nie kaganek. To były oczy. Żarzące się jak węgielki. # pokaz: oczy
+Dopiero gdy czarna woda sięgnęła mu piersi, zrozumiał. Szarpnął się, ale coś trzymało go za łydki – coś, co miało palce. Światełko zamrugało tuż przed jego twarzą i zobaczył, że to nie kaganek. To były oczy – takie, o jakich mówił Andrzej. # pokaz: oczy
 { ekwipunek ? krzesiwo:
     Wtedy przypomniał sobie o krzesiwie, które od tamtego dnia nosił za pazuchą. Zdrętwiałymi rękami wyszarpnął je razem z hubką i uderzył – raz, drugi – tuż nad wodą. Trzecia iskra skoczyła prosto w ślepia. W wodzie coś syknęło jak polano wrzucone do ognia, uchwyt na łydkach zelżał, a światełko zgasło jak zdmuchnięte. Maciek rzucił się w tył, chwytał kępy trawy, wyrywał je garściami, aż w końcu wyczołgał się na ścieżkę. # pokaz: iskry, ratunek
     { ekwipunek ? figurka:
         ~ ekwipunek -= figurka
         ~ figurka_w_bagnie = true
-        Na ścieżce poczuł, że kieszeń jest lekka. Nadpalona figurka musiała mu się wysunąć w bagnie. Przez chwilę wydawało mu się, że jeszcze ją widzi – ciemny kształt z rękami do stóp, powoli opadający w głąb – a potem nie było już nic. # pokaz: figurka
+        Na ścieżce poczuł, że kieszeń jest lekka. Nadpalona figurka musiała mu się wysunąć w bagnie. Przez chwilę wydawało mu się, że jeszcze ją widzi – mały, ciemny kształt, powoli opadający w głąb – a potem nie było już nic. # pokaz: figurka
         Nie wrócił po nią. Za nic w świecie.
     }
 - else:
     ~ uratowal_andrzej = true
     – Maciek! Łap!
-    Tuż obok plasnęła o wodę długa żerdź. Na grobli stał Andrzej, w zabłoconych łapciach, z koszem przewieszonym przez ramię – o świcie sprawdzał więcierze przy rozlewiskach. Maciek uczepił się drąga obiema rękami. Sąsiad zaparł się i stęknął, a bagno ciągnęło w swoją stronę, aż wreszcie puściło z mlaśnięciem, jakby niechętnie oddawało zdobycz. Ognik zamrugał jeszcze raz i zgasł. # pokaz: andrzej, ratunek
+    Tuż obok plasnęła o wodę długa żerdź. Na grobli stał Andrzej, w zabłoconych łapciach, z koszem przewieszonym przez ramię – o świcie sprawdzał więcierze przy rozlewiskach. Maciek uczepił się drąga obiema rękami. Sąsiad zaparł się i stęknął, a bagno ciągnęło w swoją stronę, aż wreszcie puściło z niechętnym mlaśnięciem. Ognik zamrugał jeszcze raz i zgasł. # pokaz: andrzej, ratunek
     – Mówiłem ci – wydyszał Andrzej, kiedy obaj leżeli w błocie. – Nie słuchaj głosów znad wody.
     { ekwipunek ? figurka:
         ~ ekwipunek -= figurka
         ~ figurka_w_bagnie = true
-        Na grobli Maciek poczuł, że kieszeń jest lekka. Nadpalona figurka musiała mu się wysunąć w bagnie. Przez chwilę wydawało mu się, że jeszcze ją widzi – ciemny kształt z rękami do stóp, powoli opadający w głąb – a potem nie było już nic. # pokaz: figurka
+        Na grobli Maciek poczuł, że kieszeń jest lekka. Nadpalona figurka musiała mu się wysunąć w bagnie. Przez chwilę wydawało mu się, że jeszcze ją widzi – mały, ciemny kształt, powoli opadający w głąb – a potem nie było już nic. # pokaz: figurka
         – Wzięło swoje – mruknął Andrzej i splunął przez lewe ramię.
     }
 }
@@ -456,8 +456,8 @@ Zacisnął zęby i szedł dalej, krok za krokiem, nie odwracając głowy. Głos 
 # tlo: zapadlina
 // Kto poszedł za głosem (pies go wyciągnął albo bagno puściło), już się odwrócił — dla niego inny tekst.
 { pies_uratowal || pregi_na_lydkach:
-    Resztę drogi pod górę pokonał jak we śnie – mokry do pasa, oblepiony mułem, z {pregi_na_lydkach:łydkami piekącymi tak, jakby wciąż zaciskały się na nich czyjeś palce|kostkami, na których wciąż czuł lodowaty uścisk bagna}.{ los_psa == oswojony: Pies nie odstępował go ani na krok i co chwila oglądał się na wodę.}
-    Na Bukowym Grzbiecie usiadł na kamieniu i dopiero tam przestały mu się trząść ręce. W dole leżała Zapadlina – cicha, przykryta mgłą jak całunem, jakby nic się nie wydarzyło. Gdzieś tam stała jego chata.
+    Resztę drogi pod górę pokonał jak we śnie – mokry do pasa, oblepiony mułem, z {pregi_na_lydkach:łydkami, na których wciąż czuł cudze palce|kostkami, na których wciąż czuł lodowaty uścisk bagna}.{ los_psa == oswojony: Pies nie odstępował go ani na krok i co chwila oglądał się na wodę.}
+    Na Bukowym Grzbiecie usiadł na kamieniu i dopiero tam przestały mu się trząść ręce. W dole leżała Zapadlina – cicha, przykryta mgłą jak całunem. Gdzieś tam stała jego chata.
 - else:
     Na Bukowym Grzbiecie Maciek wreszcie odważył się obejrzeć. W dole leżała Zapadlina – cicha, przykryta mgłą jak całunem. Gdzieś tam stała jego chata.
 }

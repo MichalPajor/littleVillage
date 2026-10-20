@@ -8,8 +8,8 @@
 # tlo: wykopki
 # rozdzial: Rozdział siódmy
 # tytul: Zielone Świątki
-Po żniwach przyszła długa, ciepła jesień. Babie lato snuło się nad ścierniskami srebrnymi nitkami, a pajęczyny na płotach co rano obwieszone były kroplami rosy jak paciorkami.
-We wrześniu wykopywano ziemniaki. Cała wieś wychodziła wtedy w pole z motykami i koszami, a po zmroku na miedzach paliły się ogniska z suchych łętów. Dzieci piekły w żarze kartofle i jadły je prosto z popiołu, parząc sobie palce, a dorośli siadali przy ogniu i opowiadali, jak to bywało za ich młodości. Jaromir lubił te wieczory bardziej niż wszystkie inne. Dym gryzł w oczy, ziemia pachniała chłodem, a kiedy podnosił głowę, nad borem świeciły już gwiazdy – ostre i zimne, jakby ktoś je wyszlifował. # pokaz: zmrok
+Jesień po żniwach była długa i ciepła. Babie lato snuło się nad ścierniskami srebrnymi nitkami, a pajęczyny na płotach co rano obwieszone były kroplami rosy jak paciorkami.
+We wrześniu wykopywano ziemniaki. Cała wieś wychodziła wtedy w pole z motykami i koszami, a po zmroku na miedzach paliły się ogniska z suchych łętów. Dzieci piekły w żarze kartofle i jadły je prosto z popiołu, parząc sobie palce, a dorośli siadali przy ogniu i opowiadali, jak to bywało za ich młodości. Jaromir lubił te wieczory bardziej niż wszystkie inne. Dym gryzł w oczy, ziemia pachniała chłodem, a kiedy podnosił głowę, nad borem świeciły już gwiazdy – ostre i zimne jak okruchy lodu. # pokaz: zmrok
 W październiku kisiło się kapustę. Kobiety szatkowały ją w wielkich kopach na stole przed chałupą, a mężczyźni udeptywali w beczkach bosymi stopami, aż sok sięgał im do kostek. Matka sypała do każdej warstwy kminek i rzucała garść żurawin, „żeby się kiszonka nie bała zimy”.{ blizna_sierpa: Kiedy przyszły pierwsze przymrozki, blizna na ramieniu Jaromira zaczęła rwać – tępo, uporczywie, zawsze o tej samej porze, w samo południe.} # dalej
 -> zaduszki
 
@@ -18,48 +18,51 @@ W październiku kisiło się kapustę. Kobiety szatkowały ją w wielkich kopach
 Na Zaduszki cała Zapadlina poszła do Bukowca. Pachniało dymem i zmarzniętą ziemią, a pod butami chrzęściły opadłe liście. Na przykościelnym cmentarzu paliły się setki łojowych świeczek, a między grobami chodzili ludzie z kagankami i szeptali modlitwy za tych, którzy odeszli. Po zmroku wracali do domów w milczeniu, gęsiego, a za plecami zostawało im morze drżących ogników.
 W domu matka nakryła stół jak na święto, z jednym nakryciem więcej. Na parapecie zostawiła kromkę chleba i kubek wody – dla dziadów, jak mówiła, dla dusz, które tej jednej nocy wracają do swoich chałup. # pokaz: parapet
 { figurka_u_staruchy:
-    Ojciec dołożył obok drugą miskę. Nie powiedział dla kogo, ale syn wiedział: dla Maćka i Marianny.
+    Ojciec dołożył obok drugą miskę. Nie powiedział dla kogo, ale Jaromir wiedział: dla Maćka i Marianny.
 - else:
     – Dla twojego dziadka – mruknął ojciec i dolał do kubka mleka. – Zawsze lubił, jak było co zjeść.
 }
 W nocy Jaromir obudził się, bo w izbie zrobiło się zimno. Przez szparę w okiennicy wpadało światło księżyca i kładło się na parapecie. Kubek z wodą stał nietknięty. Ale kromka zniknęła – zostały po niej tylko okruchy. # pokaz: okruchy
-Od strony lasu, daleko, ktoś zawołał przeciągle, a z drugiego krańca niecki, od mokradeł, coś mu odpowiedziało.
+Od strony lasu, daleko, ktoś zawołał przeciągle, a z drugiego krańca doliny, od mokradeł, coś mu odpowiedziało.
 # pytanie: Co zrobi Jaromir?
-*   [Zanieść kromkę chleba także pod kapliczkę na skraju boru.]
+*   [Zanieść pod kapliczkę na skraju boru zapalony kaganek – dla tych, co błądzą po ciemku.]
     ~ chleb_dla_dziadow = true
     # tlo: kapliczki_noc
-    Wymknął się z chałupy i położył pajdę pod kapliczką na skraju lasu, tak jak kiedyś robili starzy ludzie. Kiedy się odwrócił, gałęzie zaszumiały, choć nie wiało. Rano pajdy nie było, a na daszku kapliczki leżał świeży, zielony liść dębu – w listopadzie, kiedy wszystkie dęby były już nagie. # pokaz: jaromir # dalej
+    Zdjął z półki kaganek, wymknął się z chałupy i postawił go pod kapliczką na skraju lasu – tak, jak kiedyś robili starzy ludzie, żeby i dusze spod boru trafiły do swoich. Kiedy się odwrócił, gałęzie zaszumiały, choć nie wiało, a płomyk położył się płasko, w stronę wsi. # pokaz: jaromir
+    O świcie poszedł po niego. Kaganek stał pusty, wylizany z łoju do czysta, a na daszku kapliczki leżał świeży, zielony liść dębu – w listopadzie, kiedy wszystkie dęby były już nagie. W progu czekał na niego ojciec. Nie zapytał, gdzie był – spojrzał tylko na to, co syn trzymał w ręku, i chwycił go za kark, pierwszy raz od lat.
+    – W Zaduszki nikt nie chodzi pod bór – powiedział cicho. – Nie wiadomo, kto potem za nim wróci do chałupy. # dalej
     -> zima
 *   [Zostać w łóżku – to tylko wiatr.]
     # tlo: izba_noc
-    Naciągnął pierzynę na głowę i leżał tak, dopóki nawoływania nie umilkły. O świcie matka zebrała okruchy z parapetu i bez słowa wrzuciła je do pieca. # dalej
+    Naciągnął pierzynę na głowę i leżał tak, dopóki nawoływania nie umilkły. Raz jeszcze, nad ranem, zawołało od strony sadu – bliżej, prawie pod oknem – i tym razem nic mu nie odpowiedziało. O świcie matka zebrała okruchy z parapetu i bez słowa wrzuciła je do pieca. # dalej
     -> zima
 
 = zima
 # tlo: zima_przedzenie
 ~ zapiski += uboze_2
-Zima przyszła w połowie listopada i została na długo. Śnieg zasypał drogę przez grzbiet po kolana, jezioro zamarzło tak, że chłopcy ślizgali się po nim aż pod sam bór, a tartak Urbaniaka stanął – wielkie koło obrosło lodem i przez trzy miesiące we wsi panowała cisza, jakiej Jaromir nie pamiętał od dzieciństwa.
+W połowie listopada spadł śnieg i długo nie chciał zejść. Drogę przez grzbiet zasypało po kolana, jezioro zamarzło tak, że chłopcy ślizgali się po nim aż pod sam bór, a tartak Urbaniaka stanął – wielkie koło obrosło lodem i przez trzy miesiące we wsi panowała cisza, jakiej Jaromir nie pamiętał od dzieciństwa.
 Wieczory spędzało się w chałupach. Kobiety przędły len przy kołowrotkach, aż furkot niósł się po izbie, a w lutym schodziły się na darcie pierza – po kilka sąsiadek przy jednym stole, nad koszem gęsiego puchu, który przy każdym otwarciu drzwi fruwał po kątach. Przy tej robocie opowiadało się historie – o strzygach, o płanetnikach, o pannie, która zatańczyła się na śmierć – a dziewczęta piszczały ze strachu i śmiały się na zmianę. Hanka przychodziła z matką i siadała zawsze tak, żeby widzieć Jaromira przez stół. # pokaz: pierze
 { uboze:
 - nakarmione:
     Matka dziwiła się tej zimy, że w spiżarni ani razu nie zalęgły się myszy, a w dzbanie zawsze było więcej mleka, niż się do niego nalało. Jaromir wiedział, komu za to dziękować, i co wieczór stawiał za piecem naparstek pełen śmietany. # pokaz: uboze
+    U Stasiowych za to przez całą zimę mleko kwaśniało w garnkach, a stara Stasiowa przysięgała, że ktoś jej nocami zbiera śmietanę. Nie powiedział jej, kto.
 - przegnane:
     Ta zima była dla nich ciężka. Kury przestały się nieść, w spiżarni co chwila coś się psuło, a matka narzekała, że chałupa jakby ich nie lubiła.
 }
-Franek przez całą zimę prawie nie wychodził z domu. Stary Staś mówił, że wnuk całymi dniami siedzi przy oknie od strony jeziora i patrzy na lód, jakby czekał, aż stopnieje. # dalej
+Franek przez całą zimę prawie nie wychodził z domu. Antek mówił, że brat całymi dniami siedzi przy oknie od strony jeziora i patrzy na lód, jakby czekał, aż stopnieje. – Nocą też – dodawał ciszej. – Budzę się, a on wciąż tam. # dalej
 -> wielkanoc
 
 = wielkanoc
 # tlo: wielkanoc
-Wiosna przyszła z wiatrem halnym, który w jedną noc stopił śnieg na polach. Mokradła wezbrały, kładka przy kapliczce znalazła się pod wodą, a jezioro ruszyło z hukiem tak głośnym, że ludzie wybiegali przed chałupy. # pokaz: lod
-Na Wielkanoc matka upiekła baby drożdżowe tak wysokie, że ledwie mieściły się w piecu, a syn zaniósł do święcenia koszyk z jajkami pomalowanymi w łupinach cebuli, z kawałkiem kiełbasy, chleba i chrzanu. W poniedziałek chłopcy oblewali dziewczęta wodą ze studni – Jaromir zmoczył Hankę od stóp do głów, a ona goniła go z wiadrem aż do samego jeziora i oblała tak, że przez tydzień kichał. # pokaz: dyngus
+W marcu powiał ciepły wiatr od południa i w jedną noc zlizał śnieg z pól. Mokradła wezbrały, kładka przy kapliczce znalazła się pod wodą, a jezioro ruszyło z hukiem tak głośnym, że ludzie wybiegali przed chałupy. # pokaz: lod
+Na Wielkanoc matka upiekła baby drożdżowe tak wysokie, że ledwie mieściły się w piecu, a Jaromir zaniósł do święcenia koszyk z jajkami pomalowanymi w łupinach cebuli, z kawałkiem kiełbasy, chleba i chrzanu. W poniedziałek chłopcy oblewali dziewczęta wodą ze studni – on zmoczył Hankę od stóp do głów, a ona goniła go z wiadrem aż do samego jeziora i oblała tak, że przez tydzień kichał. # pokaz: dyngus
 Po świętach tartak ruszył znowu. Zgrzyt piły wrócił, a razem z nim wozy z pniami. Jaromir miał już czternaście lat i pierwszy raz zauważył, że ojciec zaczyna pytać go o zdanie. # dalej
 -> zielone_swiatki
 
 
 = zielone_swiatki
 # tlo: swiatki
-Na Zielone Świątki cała Zapadlina pachniała tatarakiem – kobiety znosiły znad jeziora naręcza tej wysokiej, szuwarowej rośliny i rozsypywały jej długie liście po klepiskach, mężczyźni mocowali młode, brzozowe gałązki za węgły chałup i wbijali je przy progach, a dzieci przystrajały kapliczki wiankami z kaczeńców, aż słupy ginęły pod żółtymi kwiatami.
+Na Zielone Świątki cała Zapadlina pachniała tatarakiem – kobiety znosiły go znad jeziora naręczami i rozsypywały długie liście po klepiskach, mężczyźni mocowali młode, brzozowe gałązki za węgły chałup i wbijali je przy progach, a dzieci przystrajały kapliczki wiankami z kaczeńców, aż słupy ginęły pod żółtymi kwiatami.
 Przez zimę Jaromir urósł tak, że matka musiała uszyć mu nowe koszule i portki – dotychczasowe zrobiły się za małe i krępowały ruchy. Głos łamał mu się w najmniej odpowiednich chwilach – zwłaszcza wtedy, gdy w pobliżu była Hanka.
 Ona też się zmieniła. Warkocz miała teraz dłuższy niż kiedykolwiek, a kiedy szła przez wieś, chłopcy z Bukowca oglądali się za nią, aż czasem potykali się o własne nogi.
 Przed wieczorem przyszła pod płot z naręczem świeżo zerwanych ziół. # pokaz: hanka
@@ -78,8 +81,10 @@ Zarumieniła się, jakby powiedziała coś głupiego, i spuściła wzrok.
 = wieczor_nad_jeziorem
 # tlo: jezioro_swiatki
 Wieczorem młodzież zebrała się nad jeziorem. Tak robiło się co roku: chłopcy rozpalali ognisko na piaszczystym cyplu, dziewczęta puszczały na wodę wianki z zapalonymi łuczywkami, a kto znalazł wianek wyrzucony na brzeg, ten wiedział, z kim pójdzie do ołtarza. Ognisko trzaskało i sypało iskrami, pachniało dymem i mokrym sitowiem, a nad wodą niósł się śmiech dziewcząt. # pokaz: wianki
+Przyszli nawet chłopcy z Bukowca, z Bartkiem młynarzów na czele – rosłym i hałaśliwym jak dawniej – i zakładali się, kto przeskoczy przez ogień, nie przypalając portek.
 Z dala od młodzieży, na pomoście przy trzcinach, stała stara Wójcikowa. Jak co roku od trzech wiosen położyła na jeziorze koronę z białych grzybieni – bez żadnego światła – i długo patrzyła, jak odpływa. Dla Kaśki, mówili ludzie. Dla córki, której woda nie oddała. # pokaz: wojcikowa
 Franek siedział z boku, z dala od płomieni. Od roku był nie ten sam – { franek_scial_dab: odkąd ściął Stary Dąb, | odkąd Urbaniak wyrzucił go z tartaku,} chodził ponury, nocami nie spał, a za dnia zasypiał na stojąco. Teraz przycupnął nad samą wodą i wpatrywał się w sitowie tak uparcie, jakby czegoś w nim szukał.
+Antek nie odstępował go na krok. Siedział dwa łokcie dalej, niby to strugając patyk, a co chwila podnosił głowę i sprawdzał, czy brat jest na miejscu.
 Kiedy zapadł zmrok i ognisko przygasło, z trzcin popłynął śpiew. # pokaz: spiew
 Był cichy i cienki, jak dziewczęta przy praniu, ale nie było w nim słów – tylko melodia, smutna i słodka, która wchodziła pod skórę i ciągnęła w stronę wody jak sznurek. Wianki na jeziorze zakołysały się, choć nie wiał wiatr.
 Franek wstał.
@@ -89,26 +94,29 @@ I zanim ktokolwiek zdążył go zatrzymać, wszedł do wody. # pokaz: franek # d
 
 = na_plyciznie
 # tlo: rusalki
-Jaromir, widząc, co się dzieje, pobiegł za nim. Hanka biegła tuż obok, w podkasanej spódnicy, z warkoczem podskakującym na plecach. Przedarli się przez trzciny, zapadając się w muł po kostki, i stanęli jak wryci.
+Jaromir pobiegł za nim. Hanka biegła tuż obok, w podkasanej spódnicy, a za nimi Antek – potykał się w ciemności i wołał brata coraz wyżej, łamiącym się głosem. Przedarli się przez trzciny, zapadając się w muł po kostki, i stanęli jak wryci.
 Na płyciźnie, w srebrnym blasku księżyca, tańczyły trzy dziewczyny. # pokaz: rusalki
 Były młode i bardzo blade, w lnianych koszulach, które przylegały do ciała, mokre i ciężkie od wody. Długie, rozpuszczone włosy sięgały im do pasa, poprzetykane wodorostami i białymi kwiatami grzybieni, a na głowach miały wianki z sitowia. Jedna wirowała w kółko, rozpryskując wodę. Druga wyciągała dłoń prosto do Franka – na jej szyi czerwieniały korale z jarzębiny. Trzecia odgarniała mokre pasma z czoła i patrzyła na Jaromira.
 Twarze miały ładne – zbyt ładne – i uśmiechały się odrobinę za szeroko. A oczy… oczy były całe czarne, bez białek, jak dwie studnie. Z palców i z włosów kapała im woda, kropla za kroplą, bez końca.
 Franek stał już po pas w jeziorze. Rusałka z wyciągniętą dłonią chwyciła go za rękę i pociągnęła – łagodnie, czule, w stronę głębiny.
 – Franek! – krzyknęła Hanka.
 Nawet się nie obejrzał.
+Antek rzucił się za bratem. Po trzech krokach dno urwało mu się spod nóg – nigdy nie nauczył się pływać – i poszedł pod wodę z otwartymi ustami. Hanka skoczyła za nim, złapała go za kołnierz i wywlokła na płyciznę. Kaszlał, plując wodą, i wyrywał się jej z całych sił.
+– Puść! To mój brat! Puść mnie!
+– Nie puszczę – wysapała i przygniotła go do mułu własnym ciężarem. – Jaromir, ratuj go!
 # pytanie: Co zrobi Jaromir?
 *   { ekwipunek ? piolun } [Rzucić w nie piołunem.]
     ~ ekwipunek -= piolun
     ~ ratunek_franka = piolunem
     Jaromir wyszarpnął piołun zza pazuchy i cisnął nim w wodę, prosto między tańczące postacie. # pokaz: piolun
-    Rusałki zawyły – nie po ludzku, przeraźliwie, jak koty w nocy – i cofnęły się, zasłaniając twarze. Ta z koralami syknęła coś w języku, który brzmiał jak plusk wody o kamienie, i wszystkie trzy rozpłynęły się w ciemności, jakby nigdy ich nie było. Franek osunął się w wodę, a Jaromir chwycił go pod pachy i z pomocą Hanki wywlókł na brzeg. # pokaz: znikaja # dalej
+    Rusałki zawyły – nie po ludzku, przeraźliwie, jak koty w nocy – i cofnęły się, zasłaniając twarze. Ta z koralami syknęła coś w języku, który brzmiał jak plusk wody o kamienie – nie do Jaromira, tylko do Hanki – i wszystkie trzy rozpłynęły się w ciemności. Na wodzie zostały tylko szare łodygi piołunu. Franek osunął się w toń, a Jaromir chwycił go pod pachy i razem z Antkiem, który wyrwał się w końcu Hance, wywlókł na brzeg. # pokaz: znikaja # dalej
     -> nie_swoj
 *   [Przeżegnać się i zawołać imię Boże.]
     ~ ratunek_franka = krzyzem
     Jaromir uczynił znak krzyża i zawołał w głos, aż poniosło się po jeziorze.
     Rusałki zastygły. Przez długą chwilę stały bez ruchu, a potem ta z koralami roześmiała się – cicho, dźwięcznie, zupełnie się nie bojąc. # pokaz: smiech
     – Krzyż nas nie pali, chłopcze – powiedziała. – My byłyśmy tu przed nim.
-    Puściły jednak Franka. Odpłynęły powoli, tyłem, nie spuszczając z niego czarnych oczu, i zanurzyły się jedna po drugiej, aż na wodzie zostały tylko kręgi. Ostatnia, zanim zniknęła, szepnęła: – Wróci do nas. # pokaz: znikaja # dalej
+    Puściły jednak Franka. – Bierz go sobie – powiedziała jeszcze ta z koralami. – Woda i tak nie pójdzie dziś spać głodna. Odpłynęły powoli, tyłem, nie spuszczając z niego czarnych oczu, i zanurzyły się jedna po drugiej, aż na wodzie zostały tylko kręgi. Ostatnia, zanim zniknęła, szepnęła: – Wróci do nas. # pokaz: znikaja # dalej
     -> nie_swoj
 *   [Wskoczyć do wody i wyciągnąć Franka siłą.]
     ~ ratunek_franka = sila
@@ -122,7 +130,10 @@ Nawet się nie obejrzał.
 = nie_swoj
 # tlo: brzeg_noc
 Franek długo kaszlał wodą. Trząsł się cały, zęby szczękały mu z zimna, a z włosów ciekła woda, ale zdawał się tego nie czuć. Potem usiadł, otarł twarz i spojrzał na nich, jakby widział ich pierwszy raz. # pokaz: franek
-– Po co mnie wyciągnęliście? – zapytał cicho. – Tam było tak dobrze. Czułem się kochany, one dałyby mi szczęście.
+– Po co mnie wyciągnęliście? – zapytał cicho. – Tam było tak dobrze. Ciepło, spokojnie… i nikt niczego ode mnie nie chciał.
+Antek, ubłocony po szyję, złapał go za mokrą koszulę i potrząsnął nim jak workiem.
+– A matka? – wychrypiał. – A dziadek? O nich pomyślałeś?
+Potem puścił go nagle, usiadł w mule obok i rozpłakał się – pierwszy raz od lat, nie udając, że to pot ani woda.
 { ratunek_franka != sila:
     – To była Kaśka – szepnęła Hanka, kiedy odzyskała głos. – Ta z koralami. Kaśka Wójcikówna.
     Dziewczyna przez całe lato chodziła za Frankiem jak cień, a on śmiał się z niej przy kolegach i tańczył na dożynkach z innymi. W noc świętojańską, trzy wiosny temu, poszła nad jezioro i już nie wróciła. Szukali jej przez tydzień, ale woda jej nie oddała.
@@ -130,6 +141,14 @@ Franek długo kaszlał wodą. Trząsł się cały, zęby szczękały mu z zimna,
 Chłopak pobladł jak ściana i odwrócił się do nich plecami.
 – Wiedziałem – powiedział głucho. – Od roku mi się śniła. Mokra, w tych koralach. Prosiła, żebym przyszedł zatańczyć.
 Do rana o wszystkim słyszała już cała wieś. Starzy kiwali głowami i powtarzali jedno słowo: rusałki. Dusze utopionych dziewcząt, które w Zielone Świątki wychodzą z wody, tańczą w księżycowym świetle i wciągają w toń tego, kto da się skusić. Z wody wychodzą tylko od Zielonych Świątek do świętego Jana, a przez resztę roku śpią w mule na dnie – dlatego w te tygodnie nikt rozsądny nie kąpie się po zmroku ani nie gwiżdże nad wodą.
+{ ratunek_franka:
+- piolunem:
+    Rano dziewczęta szukały na brzegu swoich wianków. Woda oddała wszystkie – oprócz wianka Hanki. Do świętego Jana nie zbliżyła się do jeziora ani na krok, a nocami budziła się z krzykiem, bo śniło jej się, że ktoś mokrymi rękami zaplata jej warkocz.
+- krzyzem:
+    O świcie parobcy młynarza z Bukowca znaleźli w sitowiu, po drugiej stronie cypla, Bartka. Leżał na wznak w płytkiej wodzie, z białymi grzybieniami we włosach i z uśmiechem, którego młynarzowa nie mogła potem zapomnieć. Nikt nie widział, kiedy odszedł od ognia. Jaromir przypomniał sobie, co powiedziała ta z koralami, i przez cały dzień nie mógł przełknąć ani kęsa.
+- else:
+    Na policzku, tam gdzie musnęła go rusałka, została Jaromirowi biała plama, jak po odmrożeniu – zimna w dotyku nawet w największy upał. Matka nacierała ją maślanką i ziołami, ale nic nie pomogło.
+}
 { ratunek_franka:
 - piolunem:
     Od tamtej nocy był nie swój. Wydawało się, że najgorsze minęło – znów pracował w polu, znów się śmiał – ale czasem, w środku rozmowy, milkł i nasłuchiwał czegoś, czego nikt inny nie słyszał.
@@ -151,16 +170,16 @@ Następnego ranka, kiedy mgła zeszła z jeziora, Jaromir znalazł na pomoście 
 # pytanie: Co zrobi z koralami?
 *   [Zanieść je Wójcikowej.]
     ~ korale_kaski = oddane
-    Matka Kaśki długo obracała je w palcach, a potem przycisnęła do piersi i zaczęła się kołysać w przód i w tył, bez jednego słowa. Jej mąż nie wyszedł nawet z izby. Ludzie mówili, że od tamtego dnia co wieczór siada na brzegu i patrzy na wodę, aż zrobi się ciemno. # pokaz: zabrane # dalej
+    Matka Kaśki długo obracała je w palcach, a potem przycisnęła do piersi i zaczęła się kołysać w przód i w tył, bez jednego słowa. Jej mąż nie wyszedł nawet z izby. Od tamtego dnia Wójcikowa nosiła korale na szyi, pod chustką, i nie zdejmowała ich nawet do snu. # pokaz: zabrane # dalej
     -> pod_bzem
 *   [Wrzucić je z powrotem do jeziora – niech wrócą do Kaśki.]
     ~ korale_kaski = w_jeziorze
-    Korale plusnęły cicho i poszły na dno, jakby ktoś pociągnął je od spodu. Po wodzie rozeszły się kręgi, a od trzcin przyszło westchnienie – długie, lekkie, prawie wdzięczne. Tej nocy Franek po raz pierwszy od roku przespał całą noc. # pokaz: plusk # dalej
+    Korale plusnęły cicho i poszły na dno, jakby ktoś pociągnął je od spodu. Po wodzie rozeszły się kręgi, a od trzcin przyszło westchnienie – długie, lekkie, prawie wdzięczne. Tej nocy Franek pierwszy raz od roku spał do rana. # pokaz: plusk # dalej
     -> pod_bzem
 *   [Zatrzymać je.]
     ~ korale_kaski = zatrzymane
     ~ ekwipunek += korale
-    Schował je do kieszeni, choć sam nie wiedział po co. W domu zawinął je w szmatkę i wsunął pod siennik. Rano płótno było mokre, a na deskach pod posłaniem stała kałuża wody, a przecież nikt niczego nie rozlał. # pokaz: zabrane # dalej
+    Schował je do kieszeni. W domu zawinął je w szmatkę i wsunął pod siennik. Rano płótno było mokre, a pod posłaniem stała kałuża wody, choć nikt niczego nie rozlał. # pokaz: zabrane # dalej
     -> pod_bzem
 
 = pod_bzem
@@ -177,7 +196,7 @@ Przez chwilę milczeli.{ mak_w_medaliku: Hanka bawiła się medalikiem na szyi, 
     Nie odpowiedział. Pochylił się i pocałował ją – niezgrabnie, szybko, ledwie muskając jej usta. Hanka znieruchomiała, a potem zaśmiała się krótko, oparła mu głowę na ramieniu i tak już zostali, aż na niebie zapaliły się pierwsze gwiazdy, a z łąki dobiegło wołanie jej matki. # pokaz: pocalunek
 *   [Wziąć ją za rękę i nic nie mówić.]
     Nie umiał znaleźć słów. Wziął ją tylko za rękę – szorstką od pracy, ciepłą – i trzymał tak długo, aż słońce zgasło za borem, a w trawie zaczęły grać świerszcze. Hanka nie cofnęła dłoni. # pokaz: dlonie
--   Kiedy schodzili z bazy, Jaromir spojrzał w stronę jeziora. Nad wodą unosiła się mgła, a w niej – może mu się tylko zdawało – stała wysoka, ciemna postać i patrzyła prosto na nich. # pokaz: postac # dalej
+-   Kiedy schodzili z bazy, od jeziora podnosiła się mgła. Sięgała już do połowy łąki, a w niej, brzegiem wody, szło coś wysokiego i ciemnego – powoli, bez pośpiechu, jak gospodarz, który wieczorem obchodzi miedze. Hanka ścisnęła Jaromirowi palce tak mocno, że zabolało, i żadne z nich nie odezwało się ani słowem, póki nie doszli do płotów. # pokaz: postac # dalej
     -> rozdzial_siodmy_ciag_dalszy
 
 

@@ -456,12 +456,12 @@ N["zar"] = (330, 316, 40, 16, group([f'<circle cx="{x}" cy="{y}" r="1.8" fill="{
 N["pukanie"] = (170, 300, 60, 30, group(['<path d="M178 318l-6 -4M178 324l-8 0M222 318l6 -4M222 324l8 0" fill="none" stroke="#FFFFFF" stroke-width="1.4"/>']))
 N["cien"] = (190, 324, 30, 80, group(['<path d="M196 328L202 400L210 400L216 328Z" fill="#000000" stroke="none" opacity="0.85"/>']))
 N["pajda"] = (20, 130, 110, 100, group(['<path d="M30 140H110V220H30Z" fill="#FFFFFF" stroke-width="2" opacity="0.8"/>',
-                                        '<path d="M70 196h24v8h-24z" fill="#FFFFFF" stroke-width="1.4"/><path d="M60 200h12" fill="none" stroke-width="4"/>']))
+                                        '<path d="M68 194h28l-3 12h-24z" fill="#FFFFFF" stroke-width="1.4"/><path d="M68 198h27" fill="none" stroke="#A8101A" stroke-width="1"/><path d="M58 200h12" fill="none" stroke-width="4"/>']))
 N["glownia"] = (140, 110, 120, 230, group([f'<path d="M150 330V120H250V330Z" fill="{RED}" stroke="none" opacity="0.35"/>',
                                             f'<path d="M196 260l12 -30" fill="none" stroke-width="4"/><path d="M208 232c-4 -6 0 -14 4 -16c2 6 2 12 -4 16z" fill="{RED}" stroke="none"/>']))
 N["iskry"] = (180, 190, 60, 50, group([f'<circle cx="{x}" cy="{y}" r="1.4" fill="#FFFFFF" stroke="{RED}" stroke-width="0.6"/>' for x, y in [(200, 220), (212, 208), (220, 224), (206, 200)]]))
 N["glos"] = (150, 160, 100, 100, group([f'<path d="M{160 + i * 12} {200 + i * 10}c8 -8 16 8 24 0s16 8 24 0" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-dasharray="3 3"/>' for i in range(3)]))
-N["rysy"] = (160, 290, 80, 40, group([f'<path d="M{170 + i * 10} {296 + (i % 2) * 4}l6 26" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>' for i in range(6)]))
+N["rysy"] = (160, 300, 80, 30, group(['<path d="M164 304H236V326H164Z" fill="url(#hatchDense)" stroke="none" opacity="0.9"/>'] + [f'<circle cx="{x}" cy="{y}" r="1.6" fill="#FFFFFF" stroke="none"/>' for x, y in [(176, 312), (190, 318), (204, 310), (220, 320)]]))
 N["przod"] = (0, 422, 390, 422, group(PRZOD_IZBA))
 DRZWI = ["tlo", "szpary", "szpara_okna", "zar", "matka", "pukanie", "cien", "pajda", "glownia", "iskry", "glos", "rysy", "przod"]
 N_REVEAL = {"cien": "cien", "pajda": "pajda", "glownia": "glownia", "iskry": "glownia", "glos": "glos", "rysy": "rysy"}
@@ -476,8 +476,8 @@ N_EXTRA = {"zar": {"noInvert": True}, "pukanie": {"hideOn": "pajda,glownia,glos"
 N_COMMENTS = {"tlo": "izba nocą od strony drzwi: drzwi z desek, okiennica, stół z bochenkiem pod ściereczką, ojciec na ławie",
               "szpary": "księżyc w szparach drzwi (migocze)", "szpara_okna": "księżyc w szparze okiennicy", "zar": "żar w piecu (czerwony)",
               "matka": "matka śpi na zydlu", "pukanie": "pukanie w dolną deskę drzwi", "cien": "chudy cień wsuwa się pod drzwiami (# pokaz: cien)",
-              "pajda": "okiennica uchylona, ręka z chlebem (# pokaz: pajda)", "glownia": "drzwi otwarte, głownia — czerwony blask (# pokaz: glownia)",
-              "iskry": "iskry z głowni (# pokaz: glownia)", "glos": "głos zza drzwi (# pokaz: glos)", "rysy": "świeże rysy na drzwiach (# pokaz: rysy)",
+              "pajda": "okiennica uchylona, ręka ze słoniną (# pokaz: pajda)", "glownia": "drzwi otwarte, głownia — czerwony blask (# pokaz: glownia)",
+              "iskry": "iskry z głowni (# pokaz: glownia)", "glos": "głos zza drzwi (# pokaz: glos)", "rysy": "zbutwiała, czarna deska drzwi (# pokaz: rysy)",
               "przod": "pierwszy plan"}
 _add(N, DRZWI, N_ANIM, N_COMMENTS, "cmy", ((40, 260, 60, 30, group(['<path d="M50 272l4 -3l4 3l-4 2z" fill="#FFFFFF" stroke-width="1"/>'])),
                                            {"type": "wander", "amplitude": 16, "flap": 0.5, "duration": 4400}, "ćma"), before="matka")

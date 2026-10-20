@@ -169,7 +169,8 @@ public sealed class RevealTests
             // rozdzial trzynasty: kazdy powrot figurki (Jagna, jarmark, zgliszcza, bagno) i kazde wyjscie z kladki i ze skrzyni
             [.. ToChapterTwelve(background: "jagna_izba"), 1, 0, 1],
             [.. ToChapterTwelve(background: "jarmark"), 0, 1, 0, 0],
-            [.. ToChapterTwelve(background: "jarmark"), 1, 0, 2, 2],
+            [.. ToChapterTwelve(background: "jarmark"), 1, 0, 2, 1],
+            [.. ToChapterTwelve(background: "jarmark"), 0, 0, 2, 2],
             [.. ToChapterTwelve(background: "zgliszcza_kra"), 1, 1, 0, 1],
             [.. ToChapterTwelve(background: "kladka_naprawa"), 1, 0, 2, 1]];
 

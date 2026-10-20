@@ -11,7 +11,7 @@
 # tlo: roraty
 # rozdzial: Rozdział trzeci
 # tytul: Wigilia
-Zima przyszła na dobre w pierwszym tygodniu grudnia. Mróz ściął jezioro tak mocno, że chłopi wyjeżdżali na lód saniami, a mokradła, przez które latem nikt przy zdrowych zmysłach nie chodził na skróty, zamieniły się w białą, równą płachtę. Śnieg skrzypiał pod butami, nocami trzaskały belki w ścianach, a rano szyby pokrywały się szronem w kształcie paproci.
+W pierwszym tygodniu grudnia mróz ściął jezioro tak mocno, że chłopi wyjeżdżali na lód saniami, a mokradła, przez które latem nikt przy zdrowych zmysłach nie chodził na skróty, zamieniły się w białą, równą płachtę. Śnieg skrzypiał pod butami, nocami trzaskały belki w ścianach, a rano szyby pokrywały się szronem w kształcie paproci.
 Był adwent. Co dzień, jeszcze po ciemku, dzieci szły do Bukowca na roraty, a z kościółka prosto do szkoły, która stała tuż obok. Każde niosło własny lampion – Jaromirowi ojciec skleił go z drewnianych listewek i natłuszczonego papieru, a wewnątrz tlił się łojowy ogarek. Na ścieżce pod borem ich płomyki kołysały się jak błędne ognie, a między świerkami panowała czerń tak gęsta, że światło grzęzło w niej po kilku krokach.
 { zawolal_do_lasu:
     Jaromir szedł zawsze w środku i nie odwracał głowy w stronę drzew. Od tamtego ranka we mgle nie mógł się pozbyć wrażenia, że ktoś zna teraz jego głos.
@@ -32,10 +32,10 @@ Antek coraz częściej zostawał w tyle. W październiku urodziła mu się siost
 - else:
     Na przerwie, gdy reszta obrzucała się śnieżkami pod kościółkiem, Hanka przyprowadziła do Jaromira Antka niemal siłą. Chłopiec nie odzywał się do niego od dnia, w którym Bartek roztrzaskał mu tabliczkę, i teraz też patrzył gdzieś w bok. # pokaz: hanka
 }
-– Coś przychodzi do Zosi – powiedział cicho. – Po północy. Unosi się nad kołyską, wysokie, owinięte w coś jak całun, a czarne włosy sięgają mu do samej podłogi. Twarz ma jak trupia czaszka, a palce długie i cienkie jak patyki. Pochyla się nad nią i… i wtedy ona nie płacze. Tylko świszcze, jakby nie mogła złapać tchu. A rano jest biała jak ściana i nie chce jeść.
+– Coś przychodzi do Zosi – powiedział cicho. – Po północy. Najpierw robi się zimno, a potem w izbie coś szeleści, jak suche liście. Raz otworzyłem oczy i zobaczyłem nad kołyską coś jasnego, wysokiego… i włosy, czarne, aż do podłogi. Więcej nie patrzyłem. – Przełknął ślinę. – A Zosia wtedy nie płacze. Tylko świszcze, jakby nie mogła złapać tchu. Rano jest biała jak ściana i nie chce jeść.
 Mówił szybko, połykając słowa, i co chwilę oglądał się przez ramię. Śnieżka, którą przez cały czas ugniatał w dłoniach, rozsypała mu się między palcami.
 – Mówiłeś mamie?
-– Mówi, że mi się śni. Że jestem zmęczony. – Antek przełknął ślinę. – Ale ja nie śpię. Ja to widzę co noc.
+– Mówi, że mi się śni. Że jestem zmęczony. – Antek przełknął ślinę. – Ale ja nie śpię. Ja to słyszę co noc.
 Jaromirowi przypomniały się piątkowe opowieści pana Ignacego i zrobiło mu się zimno, choć słońce odbijało się od śniegu tak jasno, że bolały oczy.
 – Przyjdę w Wigilię – obiecał. – Kiedy wszyscy zasną. Ale najpierw muszę się dowiedzieć, jak to przegonić.
 # pytanie: U kogo Jaromir będzie szukał rady?
@@ -48,7 +48,9 @@ Jaromirowi przypomniały się piątkowe opowieści pana Ignacego i zrobiło mu s
     ~ rada_jaromira = ksiega_rada
     # tlo: izba_noc
     Tej nocy, przy żarzących się węglach, odszukał w księdze właściwą kartę. „Północnica – pisał pan Ignacy swoim pochyłym pismem – nawiedza niemowlęta po północy, pochyla się nad nimi i wysysa z nich sen i siły. Boi się żelaza, które trzeba położyć pod poduszką dziecka. Starzy ludzie powiadają też, że gdy rozsypać wokół kołyski garść maku, północnica musi policzyć każde ziarenko, nim podejdzie bliżej – a liczyć potrafi tylko do świtu”. # pokaz: ksiega
-    Jaromir przeczytał to zdanie trzy razy. Potem długo leżał z otwartymi oczami i myślał o kimś, kto w głębi lasu liczy drzewa. # dalej
+    ~ czytal_po_zmroku = true
+    Jaromir przeczytał to zdanie trzy razy. Potem długo leżał z otwartymi oczami i myślał o głosie, który we mgle pod borem liczył coś, czego nie było widać.
+    Rano, kiedy otworzył księgę przy oknie, na karcie o północnicy znalazł długi, czarny włos. Wieczorem go tam nie było. # dalej
     -> wigilia
 *   [Zapytać ojca.]
     ~ rada_jaromira = ojciec
@@ -65,7 +67,7 @@ Jaromirowi przypomniały się piątkowe opowieści pana Ignacego i zrobiło mu s
 ~ zapiski += polnocnica_1
 { ekwipunek ? ksiega:
     ~ ksiega_zatrzymana = true
-    W ostatni dzień przed świętami Jaromir przyniósł do szkoły księgę, owiniętą w lnianą chustkę. Pan Ignacy wziął ją, zważył w dłoniach i oddał. – Zatrzymaj ją – powiedział. – Coś mi mówi, że tobie przyda się bardziej niż mnie. Tylko pamiętaj: nie po zmroku.
+    W ostatni dzień przed świętami Jaromir przyniósł do szkoły księgę, owiniętą w lnianą chustkę. Pan Ignacy wziął ją, zważył w dłoniach i oddał. – Zatrzymaj ją – powiedział. – Coś mi mówi, że tobie przyda się bardziej niż mnie. Tylko pamiętaj: nie po zmroku.{ czytal_po_zmroku: Jaromir spuścił oczy. Pan Ignacy przyglądał mu się chwilę dłużej, niż trzeba, ale o nic nie zapytał.}
 - else:
     W ostatni dzień przed świętami pan Ignacy rozdał dzieciom po kawałku piernika i życzył wszystkim zdrowych świąt. Na Jaromira patrzył przy tym dłużej niż na innych, jakby chciał o coś zapytać, ale w końcu tylko skinął mu głową.
 }
@@ -84,11 +86,11 @@ Na progu stał dziad – zgarbiony, w łachmanach przewiązanych sznurkiem, z to
     Dziad usiadł przy pustym nakryciu i jadł niewiele, za to powoli, jakby każdą łyżkę chciał zapamiętać. Potem zdjął z pleców lirę i zaśpiewał starą pieśń o duszach, które w tę jedną noc wracają do swoich chałup i grzeją ręce przy cudzym ogniu. Matka ocierała oczy fartuchem. # pokaz: lira
     Wychodząc, przystanął obok Jaromira i pochylił się nad nim tak nisko, że w nos uderzył go zapach dymu i mrozu.
     – Pachniesz lasem, chłopcze – szepnął. – Jak przyjdzie do maleńkiej, nie odzywaj się do niej. Ani słowem.
-    Zanim ktokolwiek zdążył zapytać, o co mu chodzi, był już za progiem. Noc była jasna od śniegu, a jednak nikt nie zobaczył, w którą stronę odszedł. – W Wigilię nie odprawia się dziadów od progu – szepnęła matka, zasuwając rygiel. – Nigdy nie wiadomo, kto przyszedł. Czasem to dusza kogoś z rodziny wraca w przebraniu, żeby zobaczyć, czy jeszcze ją pamiętają. # pokaz: odszedl # dalej
+    Zanim ktokolwiek zdążył zapytać, o co mu chodzi, był już za progiem. Noc była jasna od śniegu, a jednak nikt nie zobaczył, w którą stronę odszedł. – W Wigilię nie odprawia się dziadów od progu – szepnęła matka, zbierając ze stołu jego miskę. – Nigdy nie wiadomo, kto przyszedł. Czasem to dusza kogoś z rodziny wraca w przebraniu, żeby zobaczyć, czy jeszcze ją pamiętają. # pokaz: odszedl # dalej
     -> po_wieczerzy
 *   [Nic nie mówić – starzec budzi w nim lęk.]
     Jaromir spuścił wzrok. Drzwi zamknęły się powoli i szczęknął rygiel. Dziad nie zapukał drugi raz. # pokaz: rygiel
-    Przez szparę w okiennicy chłopiec widział, jak przybysz brnie przez śnieg – nie w stronę wsi, lecz prosto ku borowi. Rano, kiedy ojciec wyszedł do obory, przyniósł dziwną wiadomość: ślady starca urywały się w połowie pola, jakby ten rozpłynął się w powietrzu. # dalej
+    Przez szparę w okiennicy chłopiec widział, jak przybysz brnie przez śnieg – nie w stronę wsi, lecz prosto ku borowi. W połowie pola zawiał wiatr i podniósł z zasp białą kurzawę. Kiedy opadła, na polu nie było nikogo. # dalej
     -> po_wieczerzy
 
 = po_wieczerzy
@@ -98,7 +100,7 @@ Na progu stał dziad – zgarbiony, w łachmanach przewiązanych sznurkiem, z to
 = wigilijny_szczeniak
 # tlo: wigilia_szczeniak
 Po wieczerzy przyszedł stary Staś. Usiadł ciężko na ławie i rozchylił kożuch, pod którym coś się wierciło i popiskiwało.
-– Twój dziadek miał psa, jakiego drugiego nie było w okolicy – powiedział do Jaromira. – Kiedy przyszła na niego pora, po wsi rozeszły się jego szczenięta, a jedno trafiło do mojego ojca. Od tamtej pory w naszej zagrodzie zawsze biegał któryś z jego wnuków albo prawnuków. – Wyciągnął spod kożucha kłębek sierści. – A suka oszczeniła się w adwencie. Ten jest najodważniejszy z miotu. Należy ci się.
+– Twój dziadek miał psa, jakiego drugiego nie było w okolicy – powiedział do Jaromira. – {pies_uratowal:Wyciągnął dziadka z bagna za sukmanę, kiedy coś wołało go znad wody – sam mi to mówił. }Kiedy przyszła na niego pora, po wsi rozeszły się jego szczenięta, a jedno trafiło do mojego ojca. Od tamtej pory w naszej zagrodzie zawsze biegał któryś z jego wnuków albo prawnuków. – Wyciągnął spod kożucha kłębek sierści. – A suka oszczeniła się w adwencie. Ten jest najodważniejszy z miotu. Należy ci się.
 Szczeniak miał sterczące, spiczaste uszy, białą łatę na piersi i łapy za duże do reszty ciała. Obwąchał chłopcu palce, kichnął i bez namysłu wgramolił mu się na kolana, jakby od zawsze było to jego miejsce. # pokaz: pies
 { figurka_u_staruchy:
     Babka Marianna wyciągnęła ku niemu drżącą rękę i długo nie mogła wydobyć z siebie głosu.
@@ -152,7 +154,7 @@ Jaromir stanął jak wryty. Matka spała przecież w domu, przykryta pierzyną a
 
 = kolyska
 # tlo: kolyska
-Antek czekał przy oknie i otworzył je, zanim Jaromir zdążył zastukać. W izbie było ciepło i ciemno. Na piecu chrapał jego ojciec, w kącie spał Franek, a matka, wyczerpana kolejnymi nieprzespanymi nocami, zasnęła na krześle z głową opartą o kołyskę. Zosia oddychała szybko i płytko.
+Antek czekał przy oknie i otworzył je, zanim Jaromir zdążył zastukać. W izbie było ciepło i ciemno. Na piecu chrapał jego ojciec, w kącie spał Franek, a matka, wyczerpana kolejnymi nieprzespanymi nocami, zasnęła na zydlu z głową opartą o kołyskę. Zosia oddychała szybko i płytko.
 Usiedli na podłodze pod ścianą, skąd mieli wszystko na oku. Księżyc wpadał do izby długim, srebrnym pasem. Długo nic się nie działo. Minęła północ, Jaromirowi kleiły się powieki, a Antek dwa razy przysnął mu na ramieniu.
 Potem zrobiło się zimno.
 Pas światła przygasł, jakby ktoś zasłonił okno. Nad podłogą zaczęła się snuć mgła, a z niej wyrosła postać – wysoka, w całunie postrzępionym u dołu, z czarnymi włosami spływającymi aż do ziemi. Unosiła się nad deskami, nie dotykając ich stopami. Twarz miała chudą jak trupia czaszka, oczy wielkie i okrągłe, a w rozchylonych ustach błyszczały drobne, ostre zęby. Pochyliła się nad Zosią i wyciągnęła w dół długie, patykowate palce zakończone pazurami. # pokaz: polnocnica

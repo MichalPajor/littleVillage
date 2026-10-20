@@ -304,7 +304,7 @@ RIG_NAPARSTEK = art.rig("uboze", TR, [("naparstek", ["rece_z_naparstkiem"], {"ty
 art.install_rig(U, RIG_UBOZE)
 art.install_rig(U, RIG_NAPARSTEK)
 U["myszy"] = (100, 300, 150, 20, group(['<path d="M110 312c2 -6 10 -6 12 0zM110 312l-6 2M160 314c2 -6 10 -6 12 0zM172 314l6 2" fill="#000000" stroke-width="1"/>']))
-U["slady"] = (150, 300, 60, 16, group([f'<path d="M{158 + i * 12} {310 - (i % 2) * 3}l-3 -4M{158 + i * 12} {310 - (i % 2) * 3}l0 -5M{158 + i * 12} {310 - (i % 2) * 3}l3 -4" fill="none" stroke="#FFFFFF" stroke-width="1"/>' for i in range(4)]))
+U["slady"] = (146, 298, 70, 20, group(['<path d="M150 312c6 -4 14 -6 22 -2c6 -4 14 -4 20 0c6 -2 12 0 16 4" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>'] + [f'<path d="M{x} {y}l{dx} -3" fill="none" stroke="#FFFFFF" stroke-width="1"/>' for x, y, dx in [(156, 308, 3), (166, 304, -2), (176, 309, 4), (188, 303, -3), (198, 308, 2), (206, 305, 3)]]))
 p = ['<path d="M-10 432H400V844H-10Z" fill="url(#hatchDense)" stroke="none" opacity="0.8"/>']
 U["przod"] = (0, 422, 390, 422, group(p))
 UB = art.rig_names(RIG_UBOZE)
@@ -324,7 +324,7 @@ U_EXTRA["uboze_naparstek"] = {"hideOn": "zniknal", "fadeDuration": 600}
 U_EXTRA.update({"zar": {"noInvert": True}, "garnki": {"hideOn": "zniknal"}, "obloczek": {"hideAfter": 1500, "fadeDuration": 500}, "przod": {"depth": 1.0}})
 U_COMMENTS = {"tlo": "izba nocą: okno z księżycem, piec, półka", "garnki": "garnki dzwonią na półce (drżą; cichną przy # pokaz: zniknal)",
               "zar": "żar w piecu (czerwony)", "smuga": "smuga księżyca (pulsuje)", "myszy": "myszy w izbie (# pokaz: myszy)",
-              "slady": "kurze ślady w popiele (# pokaz: slady)", "obloczek": "obłoczek popiołu, gdy ubożę znika (# pokaz: zniknal)", "przod": "pierwszy plan"}
+              "slady": "rozgrzebany popiół na przypiecku (# pokaz: slady)", "obloczek": "obłoczek popiołu, gdy ubożę znika (# pokaz: zniknal)", "przod": "pierwszy plan"}
 U_COMMENTS.update({n: f"ubożę przy piecu — {n[6:]} (rysunek autora; # pokaz: uboze, znika przy # pokaz: zniknal)" for n in UB})
 U_COMMENTS["uboze_naparstek"] = "ubożę pije mleko z naparstka (rysunek autora; # pokaz: mleko)"
 
@@ -351,12 +351,12 @@ for k in range(STRIPS):
 Z["franek"] = (90, 236, 30, 40, group([postacie.child(104, 268, 0.9)]))
 STEPS = [(60, 404), (88, 386), (110, 368), (134, 352), (160, 338)]
 for i, (x, y) in enumerate(STEPS):
-    Z[f"slad_{i}"] = (x - 8, y - 14, 16, 28, group([f'<path d="M{x} {y - 12}c5 0 6 22 0 22c-6 0 -5 -22 0 -22z" fill="url(#hatchDense)" stroke-width="1.4"/>']))
+    Z[f"slad_{i}"] = (x - 12, y - 10, 24, 18, group([f'<path d="M{x - 9} {y + 4}c0 -6 4 -9 7 -7c2 -4 7 -4 9 0c3 -2 6 1 5 5c2 1 2 3 0 4z" fill="url(#hatchDense)" stroke-width="1.2"/>']))
 p = ['<path d="M-10 432H400V844H-10Z" fill="#EDEBE6" stroke="none"/>']
 Z["przod"] = (0, 422, 390, 422, group(p))
 ZNIWA = ["tlo", "slonce", "swierczki", "franek"] + [f"slad_{i}" for i in range(len(STEPS))] + [f"zboze_{k}" for k in range(STRIPS)] + ["przod"]
 Z_REVEAL = {"franek": "franek_noc"}
-Z_REVEAL.update({f"slad_{i}": "slady" for i in range(len(STEPS))})
+Z_REVEAL.update({f"slad_{i}": "slady" for i in range(len(STEPS))})  # kepy mchu wyrosle przez noc
 Z_ANIM = {"slonce": {"type": "slide", "dx": 0, "dy": 20, "duration": 30000, "once": True},
           "swierczki": {"type": "sway", "amplitude": 2, "duration": 3400, "anchorX": 0.5, "anchorY": 1},
           "franek": {"type": "bob", "amplitude": 0.4, "duration": 2400}}
@@ -366,7 +366,7 @@ Z_EXTRA.update({f"slad_{i}": {"appearAfter": 400 + i * 600, "fadeDuration": 400}
 Z_COMMENTS = {"tlo": "wieczór przed żniwami: jezioro, chałupy, kapliczka, bór", "slonce": "słońce zachodzi (powoli)", "swierczki": "młode świerki podchodzą pod płoty",
               "franek": "Franek nad jeziorem (# pokaz: franek_noc)", "przod": "pierwszy plan"}
 Z_COMMENTS.update({f"zboze_{k}": "dojrzałe zboże faluje" for k in range(STRIPS)})
-Z_COMMENTS.update({f"slad_{i}": "wielki, bosy ślad w ogrodzie (# pokaz: slady, po kolei)" for i in range(len(STEPS))})
+Z_COMMENTS.update({f"slad_{i}": "kępa mchu wyrosła przez noc między grządkami (# pokaz: slady, po kolei)" for i in range(len(STEPS))})
 _add(Z, ZNIWA, Z_ANIM, Z_COMMENTS, "jaskolki", efekty.wrony(100, 180, n=3, k=0.35, seed=59, amplitude=50), before="swierczki")
 Z_COMMENTS["jaskolki"] = "jaskółki śmigają nad polem"
 

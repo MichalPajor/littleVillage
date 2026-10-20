@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „pierwszy ranek”: stopiony szron pod oknem (# pokaz: tropy)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="175 354 51 16">
+<svg xmlns="http://www.w3.org/2000/svg" width="71" height="24" viewBox="165 350 71 24">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
@@ -25,6 +25,6 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<ellipse cx="200" cy="362" rx="22" ry="5" fill="url(#hatch)" stroke="none" opacity="0.6"/>
+<ellipse cx="200" cy="362" rx="32" ry="8" fill="url(#hatchDense)" stroke-width="1.2" opacity="0.75"/>
 </g>
 </svg>

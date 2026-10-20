@@ -81,6 +81,8 @@ VAR glos_w_lesie = ()
 VAR ksiega_zatrzymana = false
 // Jaromir pożyczył księgę pana Ignacego (widział rysunek starca i podania).
 VAR czytal_ksiege = false
+// Jaromir czytał księgę pana Ignacego po zmroku, choć wolno tylko za dnia („kto czyta, ten woła”) — coś go wtedy zauważyło.
+VAR czytal_po_zmroku = false
 
 // Jak Jaromir przegonił północnicę znad kołyski Zosi: nożykiem (zostaje w kołysce), makiem z księgi albo krzykiem (wracała).
 LIST KoniecPolnocnicy = przegnana_nozem, policzyla_mak, uslyszala_krzyk
@@ -105,7 +107,7 @@ VAR kapliczka_podniesiona = false
 VAR pracowal_w_tartaku = false
 // Jaromir nie ostrzegł Franka i to Franek ściął Stary Dąb — „krew” drzewa chlusnęła mu w twarz.
 VAR franek_scial_dab = false
-// Co Jaromir zrobił z ubożęciem za piecem: nakarmił (sojusznik), przegnał (bieda w obejściu) albo udał, że go nie widzi.
+// Co Jaromir zrobił z ubożęciem za piecem: nakarmił mlekiem (sojusznik, ale podbiera mleko Stasiowym), przegnał (bieda w obejściu) albo udał, że go nie widzi.
 LIST LosUbozecia = nakarmione, przegnane, zignorowane
 VAR uboze = ()
 
@@ -122,11 +124,13 @@ VAR blizna_sierpa = false
 VAR mak_w_medaliku = false
 // Jaromir powiedział ojcu o Południcy (inaczej sam nocami pilnuje kapliczek).
 VAR powiedzial_ojcu_poludnica = false
+// Południca darowała Jaromirowi jedną pomyłkę, bo nie cofnął się przed sierpem (odwaga_jaromira z rozdz. 1).
+VAR poludnica_darowala = false
 
 // ---------- Rozdział siódmy (Rusałki) ----------
-// Na Zaduszki Jaromir zaniósł chleb dla dziadów pod kapliczkę na skraju boru (pakt z lasem: zielony liść dębu).
+// Na Zaduszki Jaromir zaniósł zapalony kaganek pod kapliczkę na skraju boru (pakt z lasem: zielony liść dębu; ojciec zły, że chodził pod bór). Nazwa zmiennej historyczna.
 VAR chleb_dla_dziadow = false
-// Jak Jaromir wyrwał Franka rusałkom: piołunem, krzyżem albo siłą (Hanka zawołała Kaśkę po imieniu).
+// Jak Jaromir wyrwał Franka rusałkom: piołunem (woda nie oddała wianka Hanki, do św. Jana śni jej się Kaśka), krzyżem (w zamian utonął Bartek, syn młynarza z Bukowca) albo siłą (Hanka zawołała Kaśkę po imieniu; Jaromirowi została na policzku biała, zimna plama).
 LIST RatunekFranka = piolunem, krzyzem, sila
 VAR ratunek_franka = ()
 // Co Jaromir zrobił z koralami Kaśki znalezionymi na pomoście.
@@ -144,7 +148,7 @@ VAR wyreb_z_ojcem = false
 // Noga ojca przygniecionego sosną: złamana (chodzi o kiju) albo strzaskana (o kulach).
 LIST NogaOjca = zlamana, strzaskana
 VAR noga_ojca = ()
-// Nocne pukanie licha: ugościł chlebem (poszło do tartaku), odpędził głownią (spaliło kuźnię kowala) albo przemilczał do świtu.
+// Nocne pukanie licha: ugościł ostatnią słoniną (poszło do tartaku; ojciec jadł bez okrasy), odpędził głownią (spaliło kuźnię kowala) albo przemilczał do świtu (zbutwiała deska drzwi).
 LIST NocLicha = ugoszczone, odpedzone, przemilczane
 VAR licho_noc = ()
 // Kapliczki spod boru: obronił tę na skraju lasu, ocalił świątka z wozu albo się nie wtrącał.

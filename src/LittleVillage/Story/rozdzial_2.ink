@@ -10,7 +10,7 @@
 # tlo: jesien
 # rozdzial: Rozdział drugi
 # tytul: Szkoła
-Lato skończyło się tak, jak kończy się każde lato – niepostrzeżenie. Pewnego ranka trawę ściął przymrozek, a jaskółki, które przez całe wakacje śmigały nad podwórzem, siedziały rzędem na kalenicy stodoły, jakby się nad czymś naradzały. Następnego dnia już ich nie było. Liście bzu nad bazą pożółkły i opadały przy każdym podmuchu, a z pól ciągnął zapach dymu, w którym chłopi palili zeschłe łęty ziemniaków.
+Lato skończyło się tak, jak kończy się każde lato – niepostrzeżenie. Pewnego ranka trawę ściął przymrozek, a jaskółki, które przez całe lato śmigały nad podwórzem, siedziały rzędem na kalenicy stodoły, jakby się nad czymś naradzały. Następnego dnia już ich nie było. Liście bzu nad bazą pożółkły i opadały przy każdym podmuchu, a z pól ciągnął zapach dymu, w którym chłopi palili zeschłe łęty ziemniaków.
 Tej jesieni Jaromir skończył dziewięć lat i po raz pierwszy miał pójść do szkoły.
 { figurka_u_staruchy:
     Ojciec długo się nie zgadzał. – Z liter pole się nie zaorze – mruknął przy kolacji i na tym rozmowa by się urwała, gdyby nie Agnieszka. Siedziała nad nim przez trzy wieczory, aż wreszcie wstał od stołu, zdjął z gwoździa swoją jedyną porządną czapkę i bez słowa włożył ją synowi na głowę. Była za duża, ale chłopiec nosił ją z dumą.
@@ -23,7 +23,7 @@ Szkoła była w Bukowcu, po drugiej stronie Bukowego Grzbietu – godzina marszu
 
 = szkola_mgla
 # tlo: droga_bor
-Pierwszego dnia wyszli jeszcze przed świtem. Nad całą wsią leżała mgła tak gęsta, że kapliczka przy kładce wyłaniała się z niej dopiero wtedy, gdy stało się tuż przy niej. Franek szedł przodem i nucił coś pod nosem, Hanka trzymała się blisko Jaromira, a Antek, jak zawsze, zostawał trochę w tyle, bo co chwila coś go zaciekawiało – a to pajęczyna pełna rosy, a to ślad zajęczych łap na miedzy.
+Pierwszego dnia wyszli jeszcze przed świtem. Nad całą wsią leżała mgła tak gęsta, że kapliczka przy kładce wyłaniała się z niej dopiero wtedy, gdy stało się tuż przy niej. Franek szedł przodem i nucił coś pod nosem, Hanka trzymała się blisko Jaromira, a Antek, jak zawsze, zostawał trochę w tyle, bo co chwila coś go zaciekawiało – a to pajęczyna pełna rosy, a to zając, który wyskoczył spod miedzy.
 Ścieżka pięła się pod górę wzdłuż skraju boru. Z lewej strony ciągnęły się pola, z prawej wznosiła się ściana świerków, czarna i mokra od mgły. Kiedy byli mniej więcej w połowie zbocza, Antek nagle przystanął.
 – Słyszycie?
 Z głębi lasu dobiegał głos. Niski, spokojny, monotonny, jakby ktoś stał między drzewami i coś liczył.
@@ -71,13 +71,13 @@ Pewnego dnia, gdy pan Ignacy wyszedł na chwilę z sali, Bartek wyrwał chłopcu
 = szkola_podania
 # tlo: szkola_podania
 Najlepsze w szkole były ostatnie pół godziny w piątki. Jeśli przez cały tydzień nikt nie zbroił, pan Ignacy zdejmował okulary, przecierał je chustką, siadał na brzegu biurka i opowiadał. Znał historie z całej okolicy – o skarbach zakopanych pod kapliczkami, o wisielcu, który stawał na rozstajach, o dziewczynie, która zatańczyła się na śmierć z obcym kawalerem. Zapisywał je wszystkie w tym grubym zeszycie, który trzymał w szufladzie.
-Tego piątku mówił o Panu Lasu.
-– Starzy ludzie nazywają go Borowym albo Leszym – zaczął, a w izbie zrobiło się tak cicho, że słychać było trzask drew w piecu. – Mieszka w najgłębszej części boru i pilnuje go, jak gospodarz pilnuje swojej zagrody. Potrafi być wysoki jak najwyższa sosna albo niski jak trawa. Udaje głosy ludzi, których kochamy, i woła nimi, żeby zwabić człowieka w gęstwinę. Zwodzi tak, że chodzi się w kółko, choć idzie się prosto. A kiedy nie ma nic do roboty, liczy swoje drzewa – każde z osobna, od pierwszego do ostatniego. # pokaz: cien
+Tego piątku mówił o tym, kto pilnuje boru.
+– Starzy ludzie różnie go nazywają – zaczął, a w izbie zrobiło się tak cicho, że słychać było trzask drew w piecu. – Jedni Borowym, inni Panem Lasu, a najstarsi wcale, bo po imieniu lepiej go nie wołać. Mieszka podobno w najgłębszej części boru i pilnuje go, jak gospodarz pilnuje swojej zagrody. Kto wejdzie tam bez pytania, tego zwodzi: człowiek idzie prosto, a chodzi w kółko, aż zapadnie noc. # pokaz: cien
 Ktoś z tyłu zachichotał. Jaromir nie. Spojrzał na Antka, potem na Hankę – oboje byli bladzi.
 – A jak się przed nim obronić? – zapytał Franek.
 Pan Ignacy pokiwał głową, jakby czekał na to pytanie.
 – Trzeba zdjąć ubranie i włożyć je na lewą stronę. Wtedy Borowy się gubi, bo wydaje mu się, że ma przed sobą jednego ze swoich.
-Cała izba ryknęła śmiechem. Nauczyciel zawtórował dzieciom, nasunął okulary i kazał wszystkim iść do domu. Ale kiedy Jaromir wychodził ostatni, zobaczył go przy oknie, wpatrzonego w Bukowy Grzbiet, tam, gdzie nad polami czerniała ściana boru. # pokaz: okno # dalej
+Cała izba ryknęła śmiechem. Nauczyciel zawtórował dzieciom, nasunął okulary i kazał wszystkim iść do domu. Ale kiedy Jaromir wychodził ostatni, zobaczył, że nauczyciel stoi przy oknie i zaciąga płócienną zasłonkę, choć do zmroku było jeszcze daleko. # pokaz: okno # dalej
 -> sosna_spirala
 
 = sosna_spirala
@@ -86,8 +86,8 @@ Cała izba ryknęła śmiechem. Nauczyciel zawtórował dzieciom, nasunął okul
 W drodze powrotnej, na skraju lasu, Hanka nagle się zatrzymała.
 – Patrzcie.
 Na grubej sośnie, tuż przy ścieżce, kora była zdarta. Nie zwyczajnie, jak drą ją jelenie albo dziki, ale równiutko, wąskim pasem, który owijał pień w spiralę od samej ziemi aż po pierwsze gałęzie. Spod niej wyzierało jasne, wilgotne drewno, a w kilku miejscach spływały po nim krople świeżej żywicy, gęste i lśniące jak łzy.
-– Jelenie – powiedział Antek, chcąc uspokoić siebie i swoich kompanów.
-Jaromir podszedł bliżej. Spirala była zbyt równa, zbyt staranna, jakby ktoś zrobił ją bardzo długimi palcami zakończonymi ostrymi pazurami. Na samym dole, przy ziemi, leżał oderwany kawałek kory – zwinięty w trąbkę, jeszcze pachnący borem.
+– Jelenie – powiedział Antek, bardziej do siebie niż do innych.
+Jaromir podszedł bliżej. Spirala była zbyt równa i zbyt staranna, żeby zrobiło ją zwierzę. Na samym dole, przy ziemi, leżał oderwany kawałek kory – zwinięty w trąbkę, jeszcze pachnący borem.
 # pytanie: Czy Jaromir weźmie korę?
 *   [Zabrać kawałek kory i pokazać go panu Ignacemu.]
     ~ ekwipunek += kora
@@ -136,7 +136,7 @@ Opowiedział mu wszystko – o liczeniu we mgle, o spirali na sośnie, {poszedl_
 Pan Ignacy zdjął okulary i przetarł je powoli rąbkiem kamizelki – zawsze tak robił, kiedy coś go poruszyło.
 – Nikomu o tym nie mów – powiedział w końcu. – A już na pewno nie dorosłym. Nie uwierzą, wyśmieją cię, a ty nauczysz się, że w takich sprawach lepiej milczeć. A tak być nie powinno.
 Wyjął z szuflady gruby zeszyt oprawny w skórę i położył go na biurku. Na pierwszej stronie, starannym, pochyłym pismem, wypisane było: „Opowiadania z okolic Bukowego Grzbietu, spisane przez Ignacego Zawadę”. Jaromir przyglądał się temu napisowi z zaciekawieniem, ale i z lękiem. # pokaz: ksiega
-– Zamieściłem w tej księdze wszystkie historie usłyszane od mieszkańców tych terenów… Jest w niej wyjaśnione to, co widziałeś. Można ją czytać tylko w dzień.
+– Trzydzieści lat spisuję tu, co ludzie gadają po wsiach. Może znajdziesz w niej coś o tym, co widziałeś. Tylko otwieraj ją za dnia. Po zmroku takich rzeczy się nie czyta, bo kto czyta, ten woła.
 # pytanie: Czy Jaromir weźmie księgę?
 *   [Poprosić, żeby pożyczył mu księgę.]
     ~ ekwipunek += ksiega
@@ -155,14 +155,14 @@ Wyjął z szuflady gruby zeszyt oprawny w skórę i położył go na biurku. Na 
 { poszedl_po_wstazke || (ekwipunek ? ksiega):
     ~ zapiski += starzec_1
 }
-Przyszedł listopad. Dni stały się krótkie i szare, a wieczory długie. Pod butami chlupotało błoto zmieszane z liśćmi, wiatr szarpał gołe gałęzie, a wszystko dookoła pachniało wilgocią i zgnilizną. Chłopiec wracał ze szkoły już po zmroku i całą drogę przez skraj boru szedł z oczami wbitymi w ścieżkę, licząc kroki, żeby nie słyszeć, czy w lesie ktoś liczy razem z nim.
+W listopadzie dni zrobiły się krótkie i szare, a wieczory długie. Pod butami chlupotało błoto zmieszane z liśćmi, wiatr szarpał gołe gałęzie, a wszystko dookoła pachniało wilgocią i zgnilizną. Chłopiec wracał ze szkoły już po zmroku i całą drogę przez skraj boru szedł z oczami wbitymi w ścieżkę, licząc kroki, żeby nie słyszeć, czy w lesie ktoś liczy razem z nim.
 { ekwipunek ? ksiega:
     Nocami, kiedy w domu wszyscy już spali, wyciągał spod siennika księgę pana Ignacego i czytał ją przy blasku żarzących się w piecu węgli, choć wiedział, że wolno po nią sięgać tylko za dnia. Były tam podania o południcach, które w największy skwar zadają zagadki żniwiarzom, o północnicach, które dręczą niemowlęta, o rusałkach i strzygach. A pośród gęsto zapisanych kartek ktoś narysował starca w ubraniu wywróconym na lewą stronę. Pod rysunkiem stało: „Kto go spotka, niech zrobi tak samo jak on. Tamten przychodzi z drugiej strony, gdzie wszystko jest odwrotnie”.
 }
 { figurka_u_staruchy:
-    Ojciec coraz częściej siadywał wieczorami na progu i patrzył na bór. Kiedy pewnego razu syn zapytał go, czy wierzy w Pana Lasu, ten odwrócił się do niego tak gwałtownie, że chłopak cofnął się o krok. Ale nic nie powiedział. Wstał, sprawdził rygiel w drzwiach i poszedł spać.
+    Ojciec coraz częściej siadywał wieczorami na progu z fajką, która dawno mu zgasła. Kiedy pewnego razu syn zapytał go, czy wierzy w Pana Lasu, ten odwrócił się do niego tak gwałtownie, że chłopak cofnął się o krok. Ale nic nie powiedział. Wstał i poszedł spać, a w nocy Jaromir słyszał, jak długo chodzi po izbie.
 - else:
-    Ojciec, kiedy usłyszał przy kolacji o Panu Lasu, roześmiał się i powiedział, że jak Borowy przyjdzie, to dostanie miskę kaszy i pójdzie spać na piec. Ale potem jakoś długo patrzył w okno, a zanim się położył, czego nigdy wcześniej nie robił, zasunął rygiel.
+    Ojciec, kiedy usłyszał przy kolacji o Panu Lasu, roześmiał się i powiedział, że jak Borowy przyjdzie, to dostanie miskę kaszy i pójdzie spać na piec. Ale potem jakoś długo patrzył w okno, a zanim się położył, czego nigdy wcześniej nie robił, postawił w sieni przy drzwiach siekierę.
 }
 W nocy z niedzieli na poniedziałek spadł pierwszy śnieg. Jaromir obudził się przed świtem, bo w izbie zrobiło się dziwnie jasno, i podszedł do okna. # pokaz: snieg
 Świat był biały i cichy. Puch leżał na płocie, na dachu stodoły, na gałęziach jabłoni. Tylko od strony boru, przez całe podwórze, aż pod samo okno, ciągnął się rząd śladów. Długich, wąskich. Dochodziły pod ścianę, zatrzymywały się tuż pod parapetem i zawracały. # pokaz: slady

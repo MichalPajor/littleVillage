@@ -33,17 +33,18 @@
 = lato_w_zapadlinie
 # tlo: lato_podworze
 W lipcu, w dniu, w którym Jaromir kosił łąkę za stodołą, Marysia postawiła pierwsze kroki – puściła się matczynej spódnicy, przeszła przez całe podwórze, chwiejąc się jak pijany kogut, i z piskiem wpadła mu w ramiona. Hanka śmiała się tak, że musiała usiąść na progu. # pokaz: kroki
-{ obietnica_antkowi && oblawa_wilk == wydal_wilka:Antek przez całą wiosnę omijał ich chałupę. Przyszedł dopiero po żniwach, z czapką w garści, i powiedział, że żeni się z Jadwisią z Bukowca i chce mieć Jaromira za drużbę. O białym wilku żaden z nich nie wspomniał.|Po żniwach Antek oznajmił, że żeni się z Jadwisią z Bukowca, i od razu poprosił Jaromira na drużbę.} Jadwisia była łagodną, piegowatą dziewczyną, która śmiała się z każdego jego słowa, nawet kiedy wcale nie żartował. Na weselu Antek tańczył z Hanką i z Marysią na rękach, aż mała zasnęła mu na ramieniu.
-Tylko stary Wójcik gasł z każdym miesiącem. Od tamtych Zielonych Świątek, kiedy z wody wychodziły rusałki, prawie się nie odzywał. Wieczorami przesiadywał na pomoście i mówił coś cicho do wody, aż żona przychodziła go zabrać. Wójcikowa wyznała Hance, że w czerwcu, choć babka przestrzegała, żeby tego nie robić, policzyła uderzenia kijanek od strony brzegu. Usłyszała tylko jedno. # pokaz: wieczor # dalej
+{ obietnica_antkowi && oblawa_wilk == wydal_wilka:Antek przez całą wiosnę omijał ich chałupę. Przyszedł dopiero po żniwach, z czapką w garści, i powiedział, że żeni się z Jadwisią z Bukowca i chce mieć Jaromira za drużbę. O białym wilku żaden z nich nie wspomniał.|Po żniwach Antek oznajmił, że żeni się z Jadwisią z Bukowca, i od razu poprosił Jaromira na drużbę.} Jadwisia była łagodną, piegowatą dziewczyną, która śmiała się z każdego jego słowa, nawet kiedy wcale nie żartował. Na weselu Antek tańczył z Hanką i z Marysią na rękach, aż mała zasnęła mu na ramieniu.{ uklad_z_mamunami == oddane_lata: Jakaś ciotka Jadwisi przyjrzała się siwym skroniom Jaromira i zapytała Hankę szeptem, czy jej mąż był wdowcem, kiedy ją brał.}
+Tego lata młodnik pod borem podszedł o kolejną miedzę. Świerczki wschodziły w życie Stasiowych gęściej niż kąkol; dzieci wyrywały je co rano, a nazajutrz w tych samych miejscach stały nowe, już po kolana.
+A stary Wójcik gasł z każdym miesiącem. Od tamtych Zielonych Świątek, kiedy z wody wychodziły rusałki, prawie się nie odzywał. Wieczorami przesiadywał na pomoście i mówił coś cicho do wody, aż żona przychodziła go zabrać. Wójcikowa wyznała Hance, że w czerwcu, choć babka przestrzegała, żeby tego nie robić, przyczaiła się nocą w trzcinach i słuchała, jak mamuny piorą. Nad każdym całunem wołały czyjeś imię. Usłyszała tylko jedno. Nie chciała powiedzieć czyje, ale od tamtej pory nie odstępowała męża na krok. # pokaz: wieczor # dalej
 -> czuwanie_u_wojcikow
 
 = czuwanie_u_wojcikow
 # tlo: czuwanie_izba
 Stary Wójcik umarł w listopadzie, w noc po pierwszym śniegu.
-Rano Wójcikowa zastukała do chałupy Jaromira. Stała w progu w czarnej chustce, z twarzą szarą jak popiół, i ściskała w rękach różaniec.
+Rano, kiedy Jaromir wyszedł do obory, Wójcikowa już czekała przy płocie – w czarnej chustce, z oczami spuchniętymi od płaczu, z różańcem zaciśniętym w garści.
 – Jaromirku – powiedziała – posiedź przy nim tej nocy. Nikt nie chce przyjść. Gadają po wsi… – urwała i nie dokończyła.
 Gadali, i to dużo. Że Wójcik urodził się z zębami, jak opowiadała jeszcze matka Stasia, która pomagała przy jego narodzinach sześćdziesiąt lat temu. Że nigdy nie chorował, nawet w głodne zimy. Że zaraza omijała jego oborę, kiedy u sąsiadów krowy padały jedna po drugiej. I że ciało, choć leżało już od świtu, wcale nie stygło.
-Wieczorem w chałupie Wójcików zebrało się kilku mężczyzn – Jaromir, Antek, stary Staś, który uparł się, że przyjdzie, mimo że ledwie trzymał się na nogach – i parę kobiet do śpiewania. Lustro zasłonięto płótnem, zegar zatrzymano, a okno uchylono na szerokość dłoni, żeby dusza mogła wyjść. W izbie pachniało woskiem, wilgotną wełną i czymś słodkawym, od czego ściskało się w gardle.
+Wieczorem w chałupie Wójcików zebrało się kilku mężczyzn – Jaromir, Antek, stary Staś, który uparł się, że przyjdzie, mimo że ledwie trzymał się na nogach – i parę kobiet do śpiewania. Lustro zasłonięto płótnem, wodę z cebrów wylano za próg, a okno uchylono na szerokość dłoni, żeby dusza mogła wyjść. W izbie pachniało woskiem, wilgotną wełną i czymś słodkawym, od czego ściskało się w gardle.
 Wójcik leżał na desce przy ścianie, w lnianej koszuli śmiertelnej, z rękami złożonymi na piersi. Policzki miał zaróżowione jak żywy człowiek. Powieki nie chciały się domknąć i spod rzęs połyskiwały białka. A wargi… wargi rozchylały się lekko, jakby coś je rozpierało od środka. # pokaz: wargi
 # pytanie: Co zrobi Jaromir?
 *   [Podnieść zmarłemu wargę i sprawdzić, co pod nią jest.]
@@ -61,7 +62,7 @@ Wójcik leżał na desce przy ścianie, w lnianej koszuli śmiertelnej, z rękam
 # tlo: polnoc_strzyga
 Około północy świece zaczęły dymić. Płomienie kładły się na bok, choć w izbie nie było przeciągu, i paliły się niebieskawo jak ogniki nad bagnem. Kobiety śpiewały coraz ciszej, aż w końcu umilkły.
 Wtedy palce zmarłego drgnęły. # pokaz: palce
-Najpierw jeden, potem drugi. Paznokcie zaskrobały cicho o deskę. Powieki uniosły się powoli, odsłaniając oczy całe białe, bez źrenic. Usta rozwarły się szerzej i z gardła wydobył się dźwięk – nie głos, tylko długie, świszczące westchnienie, jakby ktoś po głębokim nurkowaniu łapał powietrze.
+Najpierw jeden, potem drugi. Paznokcie zaskrobały cicho o deskę. Powieki uniosły się powoli, odsłaniając oczy całe białe, bez źrenic. Usta rozwarły się szerzej i z gardła wydobył się dźwięk – nie głos, tylko długie, świszczące westchnienie, jakby ktoś wyciągnięty spod lodu łapał pierwszy oddech.
 Stary Wójcik zaczął się podnosić. # pokaz: wstaje
 Jedna z kobiet krzyknęła i rzuciła się do drzwi. Staś stał jak wmurowany, a Antek złapał Jaromira za ramię tak mocno, że zabolało.
 ~ zapiski += strzyga_1
@@ -91,7 +92,7 @@ Jedna z kobiet krzyknęła i rzuciła się do drzwi. Staś stał jak wmurowany, 
 # tlo: cmentarz_bukowiec
 Rano przyjechał ksiądz z Bukowca. Wysłuchał wszystkiego w milczeniu, z coraz bardziej zaciśniętymi ustami, a kiedy Staś zaczął mówić o tym, jak dawniej chowało się takich jak Wójcik – twarzą do ziemi, z sierpem nad gardłem, z makiem w trumnie – przerwał mu w pół zdania.
 – W poświęconej ziemi pogańskich obrzędów nie będzie – powiedział twardo. – Albo pochowacie go jak chrześcijanina, albo pochowacie go sami. Za cmentarnym murem. # pokaz: ksiadz
-Wójcikowa spojrzała na Jaromira. Była matką chrzestną jego córki i pierwszy raz w życiu o coś go prosiła – nie słowami, tylko oczami.
+Wójcikowa spojrzała na Jaromira. Była matką chrzestną jego córki i drugi raz od wczoraj o coś go prosiła – tym razem nie słowami, tylko oczami.
 # pytanie: Jak pochowają Wójcika?
 *   [Pochować go po staremu – za cmentarnym murem.]
     ~ pochowek_wojcika = pochowany_za_murem
@@ -108,30 +109,30 @@ Wójcikowa spojrzała na Jaromira. Była matką chrzestną jego córki i pierwsz
 *   { mak_w_medaliku } [Pochować go po księdzowsku – ale z makiem Hanki w trumnie.]
     ~ pochowek_wojcika = pochowany_z_makiem
     Kiedy trumnę wynosili z chałupy, Hanka podeszła do niej i otworzyła medalik, który nosiła na szyi od tamtego lata z Południcą. Wysypała na pierś zmarłego zasuszony mak – ten sam, który Jaromir położył jej kiedyś na dłoni, siedząc na płocie pod czerwonym księżycem.
-    – Niech liczy – szepnęła. – Ma czas. # pokaz: mak
+    – Śpij – szepnęła. – Mak usypia nawet takich jak ty. # pokaz: mak
     ~ mak_w_medaliku = false
-    Ksiądz niczego nie zauważył. Wójcik spoczął w poświęconej ziemi, twarzą do nieba, z różańcem w palcach i z garstką maku na piersi. A Hanka zamknęła pusty medalik i już nigdy go nie otworzyła. # pokaz: poswiecona # dalej
+    Wójcik spoczął w poświęconej ziemi, twarzą do nieba, z różańcem w palcach i z garstką maku na piersi. Ale na progu Wójcików, którędy wynosili trumnę, zostało kilka ziarenek, i ksiądz je zobaczył. Po pogrzebie wezwał Hankę do zakrystii. Wyszła stamtąd blada i nie powiedziała Jaromirowi, co usłyszała – tylko tyle, że do Wielkanocy nie może przystąpić do komunii. Baby z Bukowca odsuwały się od niej w ławce. A Hanka zamknęła pusty medalik i już nigdy go nie otworzyła. # pokaz: poswiecona # dalej
     -> spokojna_zima
 
 = spokojna_zima
 # tlo: cmentarz_bukowiec
 ~ zapiski += strzyga_2
 { pochowek_wojcika == pochowany_za_murem:
-    Zima przyszła cicha i łagodna. Grób za cmentarnym murem zarósł do wiosny trawą i nikt, poza Wójcikową, do niego nie zaglądał. Ona przychodziła co niedzielę, sama, i siadała na kamieniu przy rozstajach – póki w lutym nie zległa w gorączce. # pokaz: wdowa
+    Po pogrzebie spadł śnieg i leżał miękko aż do lutego. Grób za cmentarnym murem zarósł do wiosny trawą i nikt, poza Wójcikową, do niego nie zaglądał. Ona przychodziła co niedzielę, sama, i siadała na kamieniu przy rozstajach – póki w lutym nie zległa w gorączce. # pokaz: wdowa
 - else:
-    Zima przyszła cicha i łagodna. Na grobie w Bukowcu Wójcikowa co niedzielę stawiała świeczkę, póki w lutym nie zległa w gorączce, a Hanka położyła na nim wianek z suchych maków. # pokaz: swieczka
+    Po pogrzebie spadł śnieg i leżał miękko aż do lutego. Na grobie w Bukowcu Wójcikowa co niedzielę stawiała świeczkę, póki w lutym nie zległa w gorączce, a Hanka położyła na nim wianek z suchych maków. # pokaz: swieczka
 }
-Od tamtej pory nikt w Zapadlinie nie widział starego Wójcika. Tylko psy, kiedy przechodziły obok jego chałupy, przez długie miesiące podkulały ogony. # dalej
+Stary Wójcik już nie wstał. Tylko psy, kiedy przechodziły obok jego chałupy, przez długie miesiące podkulały ogony. # dalej
 -> boze_narodzenie
 
 = trzecia_noc
 # tlo: strzyga_okno
-Trzeciej nocy po pogrzebie Wójcikowa przybiegła do chałupy Jaromira w samej koszuli, boso po śniegu.
+Trzeciej nocy po pogrzebie, jeszcze przed północą, Hanka usłyszała na podwórzu skrzypienie śniegu. Wyszła, zanim Jaromir zdążył wstać, i wróciła z Wójcikową. Stara miała kożuch narzucony byle jak na gołe ramiona i różaniec okręcony wokół dłoni tak ciasno, że paciorki wpiły się w skórę.
 – On wrócił – szlochała. – Stał pod oknem. Przyciskał twarz do szyby i wołał mnie po imieniu. Dwie noce wołał. A dzisiaj… dzisiaj pytał o małą.
-Hanka zbladła i odruchowo spojrzała na kołyskę, w której spała Marysia. Chciała zatrzymać Wójcikową na noc, ale ta pokręciła głową.
-– Jak mnie nie znajdzie w domu, przyjdzie tutaj – szepnęła i wróciła do siebie, boso, tą samą drogą.
-Tej nocy Jaromir nie zmrużył oka. Siedział przy kołysce z siekierą{ siekiera_dziadka: dziadka} na kolanach. Nad ranem, kiedy za oknem zaczęło świtać, usłyszał cichy dźwięk – jakby ktoś oddychał tuż za szybą. Na szkle, od zewnątrz, wykwitła mglista plama oddechu. Podniósł głowę. # pokaz: oddech
-Za szkłem stał stary Wójcik. W całunie, szary jak popiół, z białymi oczami bez źrenic. Usta miał rozwarte i Jaromir widział dwa rzędy zębów, a po brodzie spływała mu ciemna strużka. # pokaz: strzyga
+Hanka zbladła i odruchowo spojrzała na kołyskę, w której spała Marysia. Potem bez słowa zaczęła ścielić Wójcikowej na ławie przy piecu, ale stara chwyciła ją za rękę.
+– Jak mnie nie znajdzie w domu, przyjdzie tutaj – szepnęła i wyszła z powrotem w noc, zanim ktokolwiek zdążył ją zatrzymać.
+Tej nocy Jaromir nie zmrużył oka. Siedział przy kołysce z siekierą{ siekiera_dziadka: dziadka} na kolanach. Nad ranem, tuż przed pianiem kurów, usłyszał cichy dźwięk – jakby ktoś oddychał tuż za szybą. Na szkle, od zewnątrz, wykwitła mglista plama oddechu. Podniósł głowę. # pokaz: oddech
+Za szkłem stał stary Wójcik. W całunie oblepionym gliną, z białymi oczami bez źrenic. Usta miał rozwarte i Jaromir widział dwa rzędy zębów, a po brodzie spływała mu ciemna strużka. # pokaz: strzyga
 Patrzył na kołyskę.
 # pytanie: Co zrobi Jaromir?
 *   [Rozkopać jego grób i pochować go po staremu.]
@@ -140,9 +141,9 @@ Patrzył na kołyskę.
 *   [Czuwać przy kołysce do świtu – niech przyjdzie, jeśli się odważy.]
     ~ trzy_noce = czuwanie_przy_kolysce
     Jaromir wstał, stanął między oknem a kołyską i podniósł siekierę. Wójcik patrzył na niego długo, przekrzywiając głowę jak ptak. Potem uśmiechnął się – szeroko, aż wszystkie zęby błysnęły w szarym świetle – i odszedł od okna. # pokaz: odszedl
-    Nie przyszedł do nich już nigdy. Ale tego samego ranka znaleźli Wójcikową. Leżała w swojej izbie, na łóżku, z rękami złożonymi na piersi i spokojną twarzą. Na szyi miała dwa drobne, sine ślady.
+    Nie przyszedł do nich już nigdy. Ale ledwie się rozwidniło, Hanka pobiegła do Wójcikowej – i wróciła po pacierzu, bez chustki, z dłońmi przyciśniętymi do ust. Wdowa leżała w swojej izbie, na łóżku, z rękami złożonymi na piersi i spokojną twarzą. Na szyi miała dwa drobne, czerwone nakłucia, jak po szydle.
     ~ zapiski += strzyga_2
-    Pochowali ją obok męża. Tym razem po staremu – ksiądz, kiedy zobaczył ślady na jej szyi, nie zaprotestował ani słowem. # dalej
+    Pochowali ją obok męża. Tym razem po staremu – ksiądz, kiedy zobaczył jej szyję, nie zaprotestował ani słowem. # dalej
     -> boze_narodzenie
 
 = rozkopany_grob_wojcika
@@ -162,10 +163,11 @@ Wójcik więcej nie przyszedł. Ale ksiądz, kiedy zobaczył świeżo poruszoną
     Wójcikowa zachorowała tej zimy na płuca, ale przetrwała do wiosny. W jej chałupie zawsze paliła się świeca w oknie od strony jeziora. # pokaz: swieca
 }
 { ekwipunek ? szczenie_psa:
-    Marysia rosła. Mówiła już kilka słów, a najgłośniej „tata”. Rude szczenię nie odstępowało jej na krok i spało pod kołyską, z nosem przy szczebelkach. # pokaz: szczenie
+    Marysia mówiła już kilka słów, a najgłośniej „tata”. Rude szczenię nie odstępowało jej na krok i spało pod kołyską, z nosem przy szczebelkach. # pokaz: szczenie
 - else:
-    Marysia rosła. Mówiła już kilka słów, a najgłośniej „tata”.
+    Marysia mówiła już kilka słów, a najgłośniej „tata”.
 }
+Zasypiając, nuciła czasem sama do siebie kilka dźwięków – w górę i w dół, jak woda przelewana z dzbana do dzbana. Takiej melodii nie znała ani Hanka, ani jej matka.
 W Wigilię Hanka, jak co roku, nakryła stół o jeden talerz więcej – dla zbłąkanego wędrowca – i położyła na nim opłatek. Nikt nie zapukał. Ale rano, kiedy sprzątała ze stołu, na tym talerzu zamiast opłatka leżała garść mchu. Wilgotnego i zielonego jak w maju. # pokaz: mech # dalej
 -> rozdzial_dwunasty_ciag_dalszy
 

@@ -13,22 +13,23 @@
 # tlo: mroz_izba
 # rozdzial: Rozdział jedenasty
 # tytul: Obława
-Zima po narodzinach Marysi przyszła sroga, jakiej nie pamiętali nawet starzy. Po Trzech Królach mróz ścisnął tak, że w nocy pękały pnie drzew z hukiem jak wystrzał, wróble spadały z gałęzi zmarznięte na kamień, a lód na jeziorze trzeszczał i jęczał do samego rana. Woda w wiadrze zamarzała w sieni, zanim ktokolwiek zdążył jej użyć.
+Pierwsza zima Marysi była sroga, jakiej nie pamiętali nawet starzy. Po Trzech Królach mróz ścisnął tak, że w nocy pękały pnie drzew z hukiem jak wystrzał, wróble spadały z gałęzi zmarznięte na kamień, a lód na jeziorze trzeszczał i jęczał do samego rana. Woda w wiadrze zamarzała w sieni, zanim ktokolwiek zdążył jej użyć.
 W chałupie palili od świtu do nocy. Hanka spała z Marysią przy samym piecu, owinięta w dwie pierzyny, a Jaromir co kilka godzin wstawał, żeby dorzucić drewna. {noga_ojca == zlamana:Ojciec kulał w mróz bardziej niż zwykle|Ojciec w ogóle nie schodził już z ławy}, a matka parzyła mu na kolano gorące okłady z otrębów.{ uklad_z_mamunami == oddane_lata: Jaromira też bolały kości – tępo, uporczywie, jakby zima zagnieździła się w nim samym.}
-Marysia rosła. Zaczęła się śmiać na widok ojca, łapała go za palce i ciągnęła do buzi wszystko, co znalazła w zasięgu rąk. Wieczorami, kiedy za oknem trzaskał mróz, Hanka śpiewała jej przy kołysce, a Jaromir siedział obok i myślał, że nigdy w życiu nie był tak szczęśliwy.
-Tylko od boru, z każdą nocą bliżej, dochodziło wycie. # pokaz: wycie # dalej
+Marysia zaczęła się śmiać na widok ojca, łapała go za palce i ciągnęła do buzi wszystko, co znalazła w zasięgu rąk. Wieczorami, kiedy za oknem trzaskał mróz, Hanka śpiewała jej przy kołysce, a Jaromir siedział obok i myślał, że nigdy w życiu nie był tak szczęśliwy.
+Tylko od boru, coraz śmielej, dochodziło wycie. # pokaz: wycie # dalej
 -> owczarnia
 
 = owczarnia
 # tlo: owczarnia_noc
 W połowie stycznia wilki przyszły do wsi.
-Najpierw u Wójcików znaleźli rano rozkopaną zaspę i krew na śniegu. Potem u Stasiowych w jedną noc zginęły trzy owce – te same owce, które przez tyle lat omijały wilcze kły. Ludzie zaczęli wnosić drób do sieni i ryglować drzwi na dwie belki.
-Trzeciej nocy Jaromira obudził krzyk owiec. Wypadł na sień w samej koszuli. Przez szparę w drzwiach zobaczył w księżycowym świetle szare cienie, które krążyły wokół obory – pięć, może sześć – i jeden biały, większy od pozostałych, który stał nieruchomo na skraju pola.{ ekwipunek ? szczeniak: {imie_psa} – stary już, z siwym pyskiem – warczał przy drzwiach, aż mu się trzęsły boki, i drapał pazurami w deski.} # pokaz: wilki
+Najpierw u Wójcików znaleźli rano rozkopaną zaspę i krew na śniegu. Potem u Stasiowych w jedną noc zginęły trzy owce – choć ich owczarnia stała w samym środku wsi, gdzie wilka nie widziano za pamięci najstarszych. Ludzie zaczęli wnosić drób do izb i podpierać wrota drągami.
+W niedzielę nad ranem Jaromira obudził krzyk owiec. Zerwał się z posłania i boso dopadł progu. Przez szparę w drzwiach zobaczył w księżycowym świetle szare cienie, które krążyły wokół obory – pięć, może sześć – i jeden biały, większy od pozostałych, który stał nieruchomo na skraju pola.{ ekwipunek ? szczeniak: {imie_psa} – stary już, z siwym pyskiem – warczał przy drzwiach, aż mu się trzęsły boki, i drapał pazurami w deski.} # pokaz: wilki
 # pytanie: Co zrobi Jaromir?
 *   [Wybiec z siekierą i bronić obory.]
     ~ noc_wilkow = bronil_obory
-    Chwycił siekierę dziadka i wypadł na podwórze. Mróz uderzył go w twarz jak pięść. Wilki odwróciły się do niego – jeden, drugi, trzeci – z łbami nisko przy ziemi i błyskiem kłów w pyskach.{ ekwipunek ? szczeniak: {imie_psa} skoczył za nim i rzucił się na najbliższego, choć był od niego o połowę mniejszy.}
-    Wtedy biały wilk zawył – krótko, ostro, jak rozkaz. I cała wataha cofnęła się od obory, jakby ktoś szarpnął ją na sznurze. Przez jedną chwilę patrzyli na siebie przez pół pola – człowiek i wilk. Potem biały odwrócił się i odszedł w stronę boru, a za nim reszta.{ ekwipunek ? szczeniak: {imie_psa} wrócił z rozdartym uchem i zakrwawionym barkiem, ale żywy. Jaromir opatrywał go w sieni do świtu.} # pokaz: rozkaz # dalej
+    Chwycił siekierę dziadka i wypadł na podwórze. Mróz ściął mu oddech w gardle. Wilki odwróciły się do niego – jeden, drugi, trzeci – z łbami nisko przy ziemi i błyskiem kłów w pyskach.{ ekwipunek ? szczeniak: {imie_psa} skoczył za nim i rzucił się na najbliższego, choć był od niego o połowę mniejszy.}
+    Za jego plecami krzyknęła Hanka. Drzwi sieni zostały otwarte na oścież i jeden z szarych prześlizgnął się do środka, prosto ku izbie, w której spała Marysia. Zanim Jaromir zdążył zawrócić, żona wypchnęła go za próg głownią wyrwaną z pieca – ale wilk dosięgnął jeszcze zębami jej przedramienia.
+    Wtedy biały wilk zawył – krótko, ostro, jak rozkaz. I cała wataha cofnęła się od obory, jakby ktoś szarpnął ją na sznurze. Basior przepuścił obok siebie ostatni cień i dopiero wtedy zniknął w mroku za stodołą Stasiowych.{ ekwipunek ? szczeniak: {imie_psa} wrócił z rozdartym uchem i zakrwawionym barkiem, ale żywy.} Do świtu Jaromir opatrywał w sieni {ekwipunek ? szczeniak:psa i Hankę|Hankę}. Rana na jej przedramieniu była głęboka; blizna po kłach została jej na całe życie. # pokaz: rozkaz # dalej
     -> gajowy
 *   [Zostać przy Hance i dziecku – drzwi trzeba utrzymać.]
     ~ noc_wilkow = pilnowal_drzwi
@@ -79,13 +80,14 @@ Za plecami usłyszał chrzęst kroków. Gajowy Pawlik przedzierał się przez ś
     { obietnica_antkowi:
         Antek stał bez ruchu. Potem podszedł do Jaromira i uderzył go w twarz – raz, z całej siły – i odszedł, nie oglądając się za siebie. # dalej
     - else:
-        Wieczorem ludzie z dworu szukali białego po krwawym śladzie aż do pierwszych wielkich sosen, ale dalej nie odważył się wejść nikt, nawet gajowy. # dalej
+        Wieczorem ludzie z dworu szli za krwią białego aż do pierwszych wielkich sosen, ale dalej nie odważył się wejść nikt, nawet gajowy. # dalej
     }
     -> po_oblawie
 *   [Krzyknąć, że wilk uciekł w stronę mokradeł.]
     ~ oblawa_wilk = zmylil_oblawe
     – Na mokradła! – krzyknął Jaromir, odwracając się. – Poszedł na mokradła!
-    Gajowy zaklął i pobiegł w dół, przez trzciny, a za nim kilku naganiaczy.{ obietnica_antkowi: – Tam! Widziałem go! – zawołał Antek i ruszył za nimi, wymachując kołatką, żeby nikt nie miał wątpliwości.} Kiedy Jaromir obejrzał się na kotlinkę, pod pniem nie było już nikogo. Tylko z gałęzi świerka sypał się jeszcze śnieg, strącony w biegu. # pokaz: zmylka # dalej
+    Gajowy zaklął i pobiegł w dół, przez trzciny, a za nim kilku naganiaczy.{ obietnica_antkowi: – Tam! Widziałem go! – zawołał Antek i ruszył za nimi, wymachując kołatką, żeby nikt nie miał wątpliwości.} Kiedy Jaromir obejrzał się na kotlinkę, pod pniem nie było już nikogo. Tylko z gałęzi świerka sypał się jeszcze śnieg, strącony w biegu. # pokaz: zmylka
+    Z dołu, od mokradeł, dobiegł trzask i krzyk. Lód pod zaspami był tam cienki jak opłatek: młody Kuba od kołodzieja z Bukowca zapadł się po pierś w czarną wodę. Wyciągnęli go drągami, sztywnego od mrozu, i ponieśli do sań na kożuchach. # dalej
     -> po_oblawie
 *   { celny_strzal } [Rzucić kamieniem w lufę gajowego, kiedy ten złoży się do strzału.]
     ~ oblawa_wilk = rzucil_kamieniem
@@ -104,10 +106,10 @@ Do wieczora strzelcy ubili pięć wilków. Ich skóry gajowy kazał przybić na 
 }
 { oblawa_wilk == wydal_wilka:
     W nocy od boru dobiegło wycie – nie takie jak zawsze, tylko długie, zachrypnięte, pełne bólu. Jaromir leżał z otwartymi oczami i słuchał, jak głos przybliża się do wsi, cichnie i wraca. Nad ranem w oborze zaczęły rzucać się krowy, jakby coś krążyło wokół ścian, a kiedy wyszedł z latarnią, nie było już nikogo – tylko w mroźnym powietrzu wisiał ciężki zapach mokrej sierści i krwi. # pokaz: wycie
-    Hanka nie spała do świtu. Siedziała przy kołysce, z gromnicą w rękach, i pierwszy raz od dnia ślubu bała się czegoś bardziej niż on. # dalej
+    Hanka nie spała do świtu. Siedziała przy kołysce z gromnicą w rękach, a kiedy Jaromir chciał wziąć od niej świecę, odsunęła jego dłoń. – Nie ty – powiedziała cicho. – Dzisiaj nie ty. # dalej
     -> odwilz
 }
-Następnego ranka, kiedy Jaromir wyszedł rąbać drwa, na pniaku przy płocie leżał zając – świeży, jeszcze ciepły, z karkiem przegryzionym jednym, czystym kłapnięciem. A od skraju młodnika, z daleka, patrzył na niego biały kształt. Kiedy Jaromir podniósł rękę, biel odwróciła się i zniknęła między świerkami. # pokaz: zajac
+Następnego ranka, kiedy Jaromir wyszedł rąbać drwa, na pniaku przy płocie leżał zając – świeży, jeszcze ciepły, z karkiem przegryzionym jednym, czystym kłapnięciem. Z młodnika, kiedy Jaromir się nad nim schylił, dobiegło jedno krótkie szczeknięcie – ciche, prawie psie – i więcej nic. # pokaz: zajac
 Hanka długo milczała, kiedy jej to opowiedział. Potem wzięła zająca i zaczęła go oprawiać.
 {obietnica_antkowi:– Głupi – szepnęła, nie wiadomo, do kogo. – Głupi, dobry Franek.|– Głupi – szepnęła, nie wiadomo, do kogo. – Głupi, dobry…} # dalej
 -> odwilz

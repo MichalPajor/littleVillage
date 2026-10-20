@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- LittleVillage — tło „skraj boru — kapota”: rozdarta kapota Franka na gałęzi (# pokaz: kapota)
+<!-- LittleVillage — tło „skraj boru — kapota”: kapota Franka wywrócona na lewą stronę, powieszona na gałęzi (# pokaz: kapota)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="80" viewBox="180 220 50 80">
 <defs>

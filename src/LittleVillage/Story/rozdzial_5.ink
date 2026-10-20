@@ -21,14 +21,14 @@ A Hanka… Hanka po prostu była. Codziennie, od rana do wieczora, tuż obok –
 
 = tartak_stoi
 # tlo: tartak
-Odkąd stanął tartak, w Zapadlinie nikt już nie zasypiał przy ciszy. Nad strugą, która spływała z boru do jeziora, stanął tartak pana Urbaniaka – wielka drewniana szopa z kołem wodnym, które obracało się dniem i nocą, i z piłą, której zgrzyt niósł się po całej niecce. Od świtu do zmroku drogą pod borem jeździły wozy pełne pni, a na placu obok rosły sterty desek, pachnących żywicą tak mocno, że czuło się je aż w Bukowcu.
+Odkąd nad strugą, która spływała z boru do jeziora, stanął tartak pana Urbaniaka, w Zapadlinie nikt już nie zasypiał przy ciszy. Wielka drewniana szopa miała koło wodne, które obracało się dniem i nocą, i piłę, której zgrzyt niósł się po całej dolinie. Od świtu do zmroku drogą pod borem jeździły wozy pełne pni, a na placu obok rosły sterty desek, pachnących żywicą tak mocno, że czuło się je aż w Bukowcu.
 Wieś podzieliła się na dwa obozy. Jedni chodzili do tartaku do pracy i wracali z zapłatą, jakiej wcześniej w Zapadlinie nie widywano. Drudzy spluwali przez ramię, ilekroć mijał ich wóz z drewnem, i mówili cicho, że las niczego nie daje za darmo.
 { figurka_u_staruchy:
     Ojciec należał do tych drugich. Kiedy Urbaniak przysłał do niego człowieka z propozycją, wyprowadził go za płot bez słowa.
 - else:
     Ojciec długo się wahał. Pieniądze by się przydały – nowy pług, krowa, dach nad stodołą – ale co wieczór siadał na progu i słuchał zgrzytu piły, a twarz miał coraz bardziej ponurą.
 }
-Jaromirowi stuknęło trzynaście lat. Skończył szkołę, wyciągnął się jak młody świerk i z każdym miesiącem częściej chodził z ojcem w pole.{ ekwipunek ? szczeniak: {imie_psa} wyrósł na dużego psa o spiczastych uszach i nie odstępował go ani na krok – tylko w stronę boru nie dawał się zaciągnąć za żadne skarby.}
+Jaromirowi stuknęło trzynaście lat. Skończył szkołę, wystrzelił w górę jak młody świerk i z każdym miesiącem częściej chodził z ojcem w pole.{ ekwipunek ? szczeniak: {imie_psa} wyrósł na dużego psa o spiczastych uszach i nie odstępował go ani na krok – tylko w stronę boru nie dawał się zaciągnąć za żadne skarby.}
 Franek, który skończył już siedemnaście lat i miał bary jak drwal, od roku pracował w tartaku. Pewnego wieczoru przyszedł pod płot Jaromira, pobrzękując monetami w kieszeni. # pokaz: franek
 – Urbaniak szuka chłopaków do układania desek – powiedział. – Płaci srebrem, co sobota. Chodź ze mną. Przez lato zarobisz więcej niż twój ojciec przez rok.
 # pytanie: Czy Jaromir pójdzie do tartaku?
@@ -50,27 +50,31 @@ Franek, który skończył już siedemnaście lat i miał bary jak drwal, od roku
 # tlo: ognisko_tartak
 ~ ekwipunek += monety
 Praca była ciężka. Od świtu nosił deski, aż ręce miał pokłute drzazgami, a włosy pełne trocin. Koło wodne skrzypiało, ostrze wyło, a woda w strudze płynęła brunatna od kory. Wszystko pachniało świeżą żywicą i mokrym drewnem, a w gardle drapał pył z trocin, którego nie dało się wykaszleć nawet w nocy.
-Wieczorami, przy ognisku, traczom rozwiązywały się języki. Iskry strzelały w ciemność, a twarze ludzi w czerwonym świetle wyglądały na starsze, niż były. Stary Wawrzyniec, który całe życie przepracował przy traku, mówił, że w tym tartaku jest coś nie tak. Piła pękła już dwa razy, choć była nowa. Rano sterty desek bywały poprzestawiane, jakby ktoś w nocy je przeliczał. A raz, kiedy został na noc pilnować drewna, słyszał, jak w ciemności ktoś chodzi między pniami i stuka w każdy po kolei – raz, dwa, trzy – jakby sprawdzał, czy wszystkie są. # pokaz: stukanie
+Wieczorami, przy ognisku, traczom rozwiązywały się języki. Iskry strzelały w ciemność, a twarze ludzi w czerwonym świetle wyglądały na starsze, niż były. Stary Wawrzyniec, który całe życie przepracował przy traku, mówił, że w tym tartaku jest coś nie tak. Piła pękła już dwa razy, choć była nowa. Rano sterty desek bywały rozrzucone po placu, choć w nocy nie wiało. A raz, kiedy został na noc pilnować drewna, słyszał, jak w ciemności ktoś chodzi między pniami, przy każdym przystaje, puka knykciem w korę i wzdycha – długo, ciężko, jak baba nad grobem w Zaduszki. # pokaz: stukanie
 – Las się upomni – powtarzał, rzucając szczapę w ogień. – Zawsze się upomina.
-Opowiadał, że kiedy pierwsi ludzie zeszli do tej niecki, las ich nie chciał. Dopiero gdy postawili kapliczki wzdłuż boru i obiecali, że za Stary Dąb nie przejdą z siekierą, bór się cofnął. – Kapliczki są jak gwoździe w płocie – mówił. – Wyrwiesz jeden, płot jeszcze stoi. Wyrwiesz wszystkie…
+Opowiadał, że kiedy pierwsi ludzie zeszli w tę dolinę, las ich nie chciał. Dopiero gdy postawili kapliczki wzdłuż boru i obiecali, że za Stary Dąb nie przejdą z siekierą, bór się cofnął. – Kapliczki są jak gwoździe w płocie – mówił. – Wyrwiesz jeden, płot jeszcze stoi. Wyrwiesz wszystkie…
 W pierwszą sobotę Jaromir dostał od Urbaniaka garść monet – ciężkich, zimnych, z orłem po jednej stronie. Nigdy jeszcze nie trzymał w ręku tylu pieniędzy naraz.
+Hanka, kiedy jej je pokazał, nawet ich nie dotknęła. – Babka mówi, że srebro z lasu oddaje się z nawiązką – powiedziała i do końca lata mijała go na drodze bez słowa, z zadartą głową.
 -> pregi_franka
 
 = w_polu
 # tlo: pole_orka
-Lato płynęło mu przy kosie i pługu. Z pola widział, jak drogą pod borem jadą kolejne wozy z pniami, a z głębi lasu co jakiś czas dobiegał trzask – długi, rozdzierający, a potem głuchy łoskot, od którego drżała ziemia. Za każdym razem ojciec prostował się nad pługiem i patrzył w stronę boru, a jego usta poruszały się bezgłośnie, jakby liczył. # pokaz: drzewo
-Franek zachodził czasem wieczorem. Opowiadał, że w tartaku dzieją się dziwne rzeczy – że piła pękła już dwa razy, choć była nowa, a rano sterty desek bywają poprzestawiane, jakby ktoś w nocy je przeliczał – ale mówił o tym ze śmiechem i potrząsał sakiewką. # pokaz: franek
+Lato płynęło mu przy kosie i pługu. Z pola widział, jak drogą pod borem jadą kolejne wozy z pniami, a z głębi lasu co jakiś czas dobiegał trzask – długi, rozdzierający, a potem głuchy łoskot, od którego drżała ziemia. Za każdym razem ojciec prostował się nad pługiem, zdejmował czapkę i żegnał się – tak samo jak wtedy, gdy drogą przez wieś nieśli trumnę. # pokaz: drzewo
+Franek zachodził coraz rzadziej – przy ognisku traczy miał teraz nowych kompanów, a kiedy już przyszedł, gadał tylko o srebrze. Wieści z tartaku przynosił Antek, który co dzień nosił bratu obiad w węzełku: że piła pękła już dwa razy, choć była nowa, a rano sterty desek leżą rozrzucone po całym placu, a stróż przysięga, że nikogo nie widział. – Franek się z tego śmieje – mówił Antek. – Tylko że śmieje się za głośno. # pokaz: franek
+Jeszcze przed sianokosami ojciec poprowadził do Bukowca prosiaka, którego matka tuczyła na zimę – na podatek nie było z czego. Wrócił z pustym postronkiem i do wieczora nie odezwał się ani słowem. Jaromir wiedział, że gdyby nosił deski u Urbaniaka, prosiak dalej kwiczałby w chlewiku.
 -> pregi_franka
 
 = pregi_franka
 Tylko raz, kiedy Franek myślał, że nikt nie patrzy, Jaromir zobaczył, jak drapie się po przedramieniu. Biegły po nim trzy długie, świeże pręgi, jakby od pazurów.
-– Zahaczyłem o gwóźdź – burknął, kiedy złapał jego spojrzenie, i obciągnął rękaw. # dalej
+– Zahaczyłem o gwóźdź – burknął, kiedy złapał jego spojrzenie, i obciągnął rękaw.
+Wieczorem pod płot przyszedł Antek. Długo stał bez słowa i skubał korę ze sztachety.
+– On w nocy nie śpi – odezwał się w końcu. – Siedzi na przyzbie do świtu i nasłuchuje. Pytam czego, to mówi, że piły. A piła w nocy stoi. – Podniósł na Jaromira oczy. – Mnie nie posłucha, dla niego jestem smarkacz. Ciebie może. # dalej
 -> stary_dab
 
 = stary_dab
 # tlo: stary_dab
 W połowie czerwca ludzie Urbaniaka doszli do Starego Dębu.
-Rósł na skraju boru, tam gdzie ścieżka z Zapadliny skręcała ku Bukowemu Grzbietowi – tak gruby, że czterech chłopów nie objęłoby go ramionami, z koroną, pod którą w upał chowały się całe stada. Mówiło się, że stał tu już wtedy, kiedy w niecce nie było jeszcze żadnej chałupy. Nikt nigdy nie złamał na nim nawet gałązki. Kora była szorstka i ciepła jak skóra śpiącego zwierzęcia, a w koronie bez przerwy szumiało, nawet gdy na łące nie drgnęło ani jedno źdźbło.
+Rósł na skraju boru, tam gdzie ścieżka z Zapadliny skręcała ku Bukowemu Grzbietowi – tak gruby, że czterech chłopów nie objęłoby go ramionami, z koroną, pod którą w upał chowały się całe stada. Mówiło się, że stał tu już wtedy, kiedy w dolinie nie było jeszcze żadnej chałupy. Nikt nigdy nie złamał na nim nawet gałązki. Kora była szorstka i ciepła jak skóra śpiącego zwierzęcia, a w koronie bez przerwy szumiało, nawet gdy na łące nie drgnęło ani jedno źdźbło.
 Teraz na korze bielał świeży znak. # pokaz: znak
 { ekwipunek ? ksiega:
     Jaromir pamiętał ten dąb z księgi pana Ignacego. „Stary Dąb na skraju boru – pisał nauczyciel – jest drzewem, którego Pan Lasu pilnuje jak własnego serca. Póki stoi, las kończy się tam, gdzie się kończy. Kto go zetnie, otworzy mu drogę do wsi”.
@@ -94,7 +98,9 @@ Teraz na korze bielał świeży znak. # pokaz: znak
 = sciecie
 # tlo: sciecie_debu
 ~ zapiski += pan_lasu_2
-W poniedziałek pod Starym Dębem zebrała się połowa wsi. { franek_scial_dab: Franek i drugi tracz | Dwaj tracze z tartaku } stanęli z siekierami po obu stronach pnia, a pan Urbaniak, z zegarkiem na złotym łańcuszku, odliczał czas.
+W poniedziałek pod Starym Dębem zebrała się połowa wsi. { franek_scial_dab: Franek i drugi tracz | Dwaj tracze z tartaku } stanęli z siekierami po obu stronach pnia, a pan Urbaniak stał z boku i co chwila zerkał na zegarek na złotym łańcuszku.
+Zanim padło pierwsze uderzenie, z tłumu wysunęła się Hanka. Podeszła do pnia, przyłożyła do kory obie dłonie i coś do niego szepnęła – krótko, z zamkniętymi oczami. Urbaniak kazał ją odciągnąć, ale nikt się nie ruszył, dopóki sama nie wróciła między ludzi.
+– Babka mówi, że drzewu trzeba powiedzieć, za czyje grzechy pada – wytłumaczyła potem Jaromirowi, czerwona po uszy. – Żeby nie musiało samo szukać winnego.
 Pierwsze uderzenie odbiło się od kory jak od kamienia. Drugie też. Dopiero za trzecim ostrze weszło w drewno – i z rany trysnął sok, gęsty i ciemnoczerwony jak krew.{ franek_scial_dab: Chlusnął Frankowi prosto w twarz. Chłopak cofnął się, otarł oczy rękawem i zaśmiał się nerwowo, ale Jaromir widział, że ręce mu się trzęsą.| Chlusnął na buty traczy, a jeden z nich odskoczył z przekleństwem.} # pokaz: sok
 Ścinali do zmierzchu. Dąb jęczał przy każdym uderzeniu, tak że baby zatykały uszy, a psy po zagrodach wyły jak na pogrzebie. Kiedy wreszcie runął, ziemia zadrżała aż pod chałupami, a od strony boru dobiegł krzyk – długi, przeciągły, jakby las stracił coś, czego nigdy nie odzyska. Potem zapadła cisza. Nawet ptaki umilkły. # pokaz: upadek
 Został tylko pień – szeroki jak stół, z setkami słojów, które zwijały się do środka w ciasną spiralę.{ ekwipunek ? kora: Taką samą jak na sośnie przy ścieżce i na słupie kapliczki.} Spod wyrwanych korzeni wysypała się garść zeszłorocznych żołędzi – zdrowych i lśniących, jakby ktoś je tam przechował.
@@ -110,15 +116,16 @@ Został tylko pień – szeroki jak stół, z setkami słojów, które zwijały 
 = uboze_za_piecem
 # tlo: uboze_piec
 Tej nocy w chałupie nikt nie spał spokojnie.{ ekwipunek ? szczeniak: {imie_psa} warczał pod drzwiami aż do świtu.} Garnki dzwoniły na półce, choć nikt ich nie dotykał, a w kominie coś szurało i popiskiwało jak mysz.
-Jaromir zszedł do izby po wodę. Pachniało zakwasem z dzieży, a gliniana polepa ziębiła bose stopy. Przy piecu, w smudze księżycowego światła, siedział maleńki staruszek – nie większy od kury, w połatanej kapocie przewiązanej sznurkiem. Siwa broda sięgała mu do samej ziemi, a jej koniec owijał się wokół cienkich, kurzych nóżek. Miał duży nos, krzaczaste brwi i wąskie oczka, które pewnie zwykle się śmiały, a na głowie czerwoną czapeczkę z opadającym czubkiem i pomponikiem. W rączkach ściskał okruch chleba i trząsł się cały, choć w palenisku jeszcze żarzyły się węgle. # pokaz: uboze
+Jaromir zszedł do izby po wodę. Pachniało zakwasem z dzieży, a gliniana polepa ziębiła bose stopy. Przy piecu, w smudze księżycowego światła, siedział maleńki staruszek – nie większy od kury, w połatanej kapocie przewiązanej sznurkiem. Siwa broda sięgała mu do samej ziemi, a jej koniec owijał się wokół cienkich, kurzych nóżek. Miał duży nos, krzaczaste brwi i wąskie oczka, które pewnie zwykle się śmiały, a na głowie czerwoną, spiczastą czapeczkę z opadającym czubkiem. W rączkach ściskał źdźbło słomy wyciągnięte z siennika i trząsł się cały, choć w palenisku jeszcze żarzyły się węgle. # pokaz: uboze
 – Boję się – pisnął cieniutko, zanim chłopiec zdążył krzyknąć. – On idzie. Dąb był drzwiami, a teraz drzwi nie ma.
 Jaromir przypomniał sobie, co { figurka_u_staruchy && los_psa == oswojony: babka | matka } mówiła kiedyś o ubożętach: że mieszkają za piecem w starych chałupach, że kto je karmi, temu darzy się w obejściu, a kto przegoni, ten ściąga na dom biedę. Mówiła też, że ubożę przychodzi razem z pierwszym gospodarzem i zostaje w chałupie, dopóki ta stoi – a kiedy spłonie, odchodzi razem z dymem i już nie wraca.
 # pytanie: Co zrobi Jaromir?
-*   [Postawić mu naparstek mleka i skórkę chleba.]
+*   [Postawić mu naparstek mleka.]
     ~ uboze = nakarmione
-    Jaromir nalał mleka do naparstka matki i ułamał skórkę z bochenka. Staruszek pił łapczywie, mlaskając, a potem otarł brodę rękawem i spojrzał na niego bystrymi oczkami. # pokaz: mleko
+    Jaromir nalał mleka do naparstka matki i postawił go przy piecu, w ciepłym popiele. Staruszek pił łapczywie, mlaskając, a potem otarł brodę rękawem i spojrzał na niego bystrymi oczkami. # pokaz: mleko
     – Dobry z ciebie gospodarz – powiedział. – Zapamiętam. Pomogę, kiedy przyjdzie pora.
-    I zniknął za piecem, jakby go nigdy nie było. # pokaz: zniknal # dalej
+    I już go nie było – tylko za piecem coś zaszurało i ucichło. # pokaz: zniknal
+    Rano w dzbanie stało mleka po brzegi, choć matka przysięgała, że wieczorem zostało na dnie. Za to u Stasiowych krowa po raz pierwszy od lat dała ledwie pół udoju, a stara Stasiowa chodziła po wsi i pytała, kto jej rzucił urok. # dalej
     -> przed_zniwami
 *   [Przegnać go z izby.]
     ~ uboze = przegnane
@@ -127,7 +134,7 @@ Jaromir przypomniał sobie, co { figurka_u_staruchy && los_psa == oswojony: babk
     -> przed_zniwami
 *   [Udać, że niczego nie widzi, i wrócić do łóżka.]
     ~ uboze = zignorowane
-    Jaromir odwrócił wzrok, wrócił na posłanie i naciągnął pierzynę na głowę. Kiedy rano zszedł do izby, przy piecu leżało kilka okruchów chleba, a w popiele odcisnęły się maleńkie, kurze ślady. # pokaz: zniknal, slady # dalej
+    Jaromir odwrócił wzrok, wrócił na posłanie i naciągnął pierzynę na głowę. Kiedy rano zszedł do izby, popiół na przypiecku był rozgrzebany jak przez kurę, która szuka miejsca na noc i nie może znaleźć. Zza pieca nie dobiegł już potem ani jeden szmer. # pokaz: zniknal, slady # dalej
     -> przed_zniwami
 
 = przed_zniwami
@@ -139,7 +146,7 @@ Tartak pracował dalej, jakby nic się nie stało.
 - else:
     Franek do niego nie wrócił. Najmował się do ludzi w polu, ale chodził ponury i rozdrażniony, jakby żałował tamtych pieniędzy.
 }
-Po wsi zaczęły się dziać dziwne rzeczy. Rano ludzie znajdowali w ogrodach ślady wielkich, bosych stóp, mleko kwaśniało w dzbankach, zanim zdążyło ostygnąć, a zieleń od strony boru podchodziła coraz bliżej pod płoty, jakby las robił krok co noc, kiedy nikt nie patrzył. # pokaz: slady
+Po wsi zaczęły się dziać dziwne rzeczy. Rano ludzie znajdowali między grządkami kępy mchu, który wyrósł przez noc – miękkiego i mokrego, jak spod najstarszych świerków w borze. Mleko kwaśniało w dzbankach, zanim zdążyło ostygnąć, a zieleń od strony boru co rano stała odrobinę bliżej płotów, choć nikt nie widział, kiedy podeszła. # pokaz: slady
 Pan Urbaniak chwalił się w karczmie w Bukowcu, że za rok przetnie bór drogą na wylot, a kapliczki, które stoją przy niej, każe przestawić, bo przeszkadzają wozom.
 Zbliżały się żniwa. # dalej
 -> rozdzial_piaty_ciag_dalszy

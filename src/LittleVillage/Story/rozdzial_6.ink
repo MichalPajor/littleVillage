@@ -25,67 +25,79 @@ Któregoś dnia Jaromir został sam na końcu zagonu. Chciał dokończyć pokos,
 # tlo: poludnica
 Nagle zrobiło się cicho. Ucichły świerszcze, przestało szeleścić zboże, a powietrze nad polem zgęstniało i zafalowało jak woda nad rozgrzanym kamieniem.
 Między kłosami stała kobieta. # pokaz: poludnica
-Była wysoka i chuda, wyprostowana jak struna, w długiej białej koszuli do kostek, która falowała, choć nie wiał najlżejszy wiatr. Jasne włosy sięgały jej do kolan i rozwiewały się na boki, a na głowie miała wianek z kłosów i czerwonych maków. Twarz była blada i wąska, z wysokimi kośćmi policzkowymi, oczy białe jak migdały, bez źrenic, a usta zaciśnięte w cienką kreskę. Bose stopy nie dotykały ziemi – unosiła się kilka cali nad ściernią, a pod nią drgał żar. W prawej ręce trzymała sierp. Na jego czubku wisiała czerwona kropla.
+Była wysoka i chuda, wyprostowana jak struna, w długiej białej koszuli do kostek, która falowała, choć nie wiał najlżejszy wiatr. Jasne włosy sięgały jej do kolan i rozwiewały się na boki, a na głowie miała wianek z kłosów i czerwonych maków. Twarz była blada i wąska, z wysokimi kośćmi policzkowymi, oczy białe jak płótno bielone na słońcu, bez źrenic, a usta zaciśnięte w cienką kreskę. Bose stopy nie dotykały ziemi – unosiła się kilka cali nad ściernią, a pod nią drgał żar. W prawej ręce trzymała sierp. Na jego czubku wisiała czerwona kropla.
 Lewą dłoń wyciągnęła ku niemu, otwartą, jakby o coś prosiła.
 – Kto w moją godzinę pracuje – powiedziała głosem suchym jak trzask słomy – ten musi mi odpowiedzieć. Trzy zagadki. Za każdą pomyłkę – jedno cięcie.
 { ekwipunek ? ksiega:
-    Jaromirowi stanęła przed oczami strona z księgi pana Ignacego: „Południca chodzi po polach w największy skwar i wypytuje żniwiarzy. Kto odpowie na wszystkie – ten wolny. Kto się zmyli albo ucieknie – tego ścina sierpem albo zsyła na niego gorączkę”. Pod spodem nauczyciel dopisał drobniej kilka rozwiązań, które przed laty usłyszał od starej kobiety z Bukowca.
+    Jaromirowi stanęła przed oczami strona z księgi pana Ignacego: „Południca chodzi po polach w największy skwar i wypytuje żniwiarzy. Kto odpowie na wszystkie – ten wolny. Kto się zmyli albo ucieknie – tego ścina sierpem albo zsyła na niego gorączkę”. Pod spodem nauczyciel dopisał drobniej jedno rozwiązanie, które przed laty usłyszał od starej kobiety z Bukowca, i podkreślił je podwójną kreską: „Ziarno trzy razy umiera i trzy razy wraca”.
 }
 # dalej
 -> zagadka_1
 
 = zagadka_1
 Przechyliła głowę na bok, jak ptak.
-– Co bez nóg biega, bez rąk żyto zgina, a nikt go jeszcze nie zobaczył?
+– Bez nóg biega po zbożu, bez rąk kłosy czesze, bez gęby w kominie zawodzi. Każdy go słyszał, a nikt jeszcze nie widział. Co to?
 # pytanie: Co odpowie Jaromir?
+*   [Ogień.]
+    -> zle_1
 *   [Wiatr.]
     Południca milczała przez chwilę. Potem jej usta drgnęły – nie był to uśmiech, raczej coś, co go przypominało.
     – Wiatr – powtórzyła. – Mój brat. Dobrze. # dalej
     -> zagadka_2
-*   [Woda.]
-    -> zle_1
-*   [Cień.]
+*   [Dym.]
     -> zle_1
 
 = zle_1
+{ odwaga_jaromira && not poludnica_darowala:
+    ~ poludnica_darowala = true
+    Sierp świsnął – i zatrzymał się na włos od jego ramienia. Jaromir nie drgnął. {figurka_u_staruchy:Kiedyś, na głębokiej wodzie, coś otarło mu się o łydkę, a on uciekł do brzegu. Teraz nie uciekł.|Kiedyś, w trzcinach nad jeziorem, położył dłoń na zwęglonym balu, choć inni nie mieli odwagi. Teraz się nie cofnął.}
+    – Nie uciekasz – powiedziała Południca i odsunęła ostrze. – Tę jedną ci daruję. Ale to był wiatr. Ogień i dym każdy widział, a wiatru jeszcze nikt. # dalej
+    -> zagadka_2
+}
 ~ pomylki_poludnica += 1
 Sierp świsnął, zanim Jaromir zdążył mrugnąć. Poczuł piekący ból na ramieniu, a kiedy spojrzał w dół, przez rozdartą koszulę sączyła się krew. # pokaz: ciecie
-– Źle – powiedziała Południca. – Wiatr. Wiatr biega bez nóg. # dalej
+– Źle – powiedziała Południca. – Wiatr. Ogień i dym każdy widział, a wiatru jeszcze nikt. # dalej
 -> zagadka_2
 
 = zagadka_2
-– Co się rodzi z ziemi, umiera pod kosą, a potem jeszcze raz rodzi się w piecu?
+– Chowają go w ziemi jak nieboszczyka, a on wstaje. Ścinają go jak złoczyńcę, a on nie krwawi. Biją go, a on się nie skarży. A kiedy go wsadzą w żar – dopiero wtedy wszyscy go chcą. Co to?
 # pytanie: Co odpowie Jaromir?
-*   [Chleb.]
-    – Chleb – szepnęła, a jej biała twarz na moment złagodniała, jakby przypomniała sobie coś bardzo dawnego. – Mądry chłopak. # dalej
+*   [Len.]
+    -> zle_2
+*   [Żyto.]
+    – Żyto – szepnęła, a jej biała twarz na moment złagodniała, jakby przypomniała sobie własne żniwa, dawno temu. – Mądry chłopak. # dalej
     -> zagadka_3
-*   [Siano.]
+*   [Kartofel.]
     -> zle_2
-*   [Ogień.]
-    -> zle_2
-*   { ekwipunek ? ksiega } [Ziarno – co raz umrze w ziemi, wraca kłosem, a w piecu chlebem.]
+*   { ekwipunek ? ksiega } [Ziarno – w ziemi umiera, spod kosy i cepa wraca, a w piecu rodzi się chlebem.]
     ~ poludnica_uklon = true
     Południca otworzyła usta i zamknęła je bez słowa. Długo patrzyła na niego tymi białymi oczami, a potem pochyliła głowę – lekko, ledwie widocznie, jak przed kimś, kogo się szanuje. # pokaz: uklon
     – Takiej odpowiedzi nie słyszałam od stu lat – powiedziała. – Ktoś cię dobrze uczył. # dalej
     -> zagadka_3
 
 = zle_2
+{ odwaga_jaromira && not poludnica_darowala:
+    ~ poludnica_darowala = true
+    Sierp świsnął – i zatrzymał się na włos od jego dłoni. Jaromir nie drgnął. {figurka_u_staruchy:Kiedyś, na głębokiej wodzie, coś otarło mu się o łydkę, a on uciekł do brzegu. Teraz nie uciekł.|Kiedyś, w trzcinach nad jeziorem, położył dłoń na zwęglonym balu, choć inni nie mieli odwagi. Teraz się nie cofnął.}
+    – Nie uciekasz – powiedziała Południca i odsunęła ostrze. – Tę jedną ci daruję. Ale to było żyto. Lnu się nie piecze, a kartofla nikt nie młóci. # dalej
+    -> zagadka_3
+}
 ~ pomylki_poludnica += 1
 Sierp znów świsnął. Tym razem cięcie przeszło przez wierzch dłoni, płytko, ale krew trysnęła na ściernisko. # pokaz: ciecie
-– Chleb – syknęła. – Każde dziecko to wie. # dalej
+– Żyto – syknęła. – Lnu się nie piecze, a kartofla nikt nie młóci. # dalej
 -> zagadka_3
 
 = zagadka_3
 Powietrze zafalowało mocniej. Żar podchodził Jaromirowi pod gardło, w uszach mu dzwoniło, a pole zaczęło się kołysać, jakby stał na łódce.
-– A teraz powiedz mi – Południca zniżyła głos – kto liczy drzewa w lesie, choć nikt mu tego nie kazał?
+– A teraz powiedz mi – Południca zniżyła głos – kto ma dom starszy niż wszystkie chałupy w okolicy, a nie ma w nim ani jednych drzwi? Kto pasie wilki, jak wy pasiecie owce? I komu tego lata wyrwali z płotu najgrubszy kół, dębowy?
 # pytanie: Co odpowie Jaromir?
+*   [Święty Jerzy.]
+    ~ pomylki_poludnica += 1
+    – Święty? – Południca roześmiała się, sucho i nieprzyjemnie, jak trzeszczące ściernisko. – Święci siedzą w kapliczkach, chłopcze. A tamten czeka, aż ktoś mu je powyrywa.
+    Sierp świsnął. Jaromir poczuł na policzku cienką, piekącą kreskę, a po brodzie pociekło mu coś ciepłego. # pokaz: ciecie
 *   [Pan Lasu.]
     Wszystko ucichło jeszcze bardziej, choć wydawało się, że ciszej już być nie może. Cofnęła wyciągniętą rękę.
     – Znasz go – powiedziała, i po raz pierwszy w jej głosie zabrzmiało coś na kształt lęku. – To źle. Bo on też zna ciebie.
-*   [Drwal.]
-    ~ pomylki_poludnica += 1
-    – Drwal? – Południca roześmiała się, sucho i nieprzyjemnie, jak trzeszczące ściernisko. – Drwale liczą pieniądze. On liczy drzewa. I ludzi.
-    Sierp świsnął po raz trzeci. Jaromir poczuł na policzku cienką, piekącą kreskę, a po brodzie pociekło mu coś ciepłego. # pokaz: ciecie
 *   [Nie wiem.]
     Południca długo milczała.
     – Wiesz – odezwała się w końcu. – Tylko boisz się powiedzieć. To rozsądne. Nie mów jego imienia w południe.
@@ -109,7 +121,9 @@ Ktoś wbiegał na zagon, potykając się o snopy. Hanka. W rękach niosła glini
     Kiedy znów spojrzał przed siebie, między kłosami nie było nikogo. Tylko na ściernisku leżał wianek z kłosów i maków, które już zaczynały więdnąć. # pokaz: znika, wianek # dalej
     -> po_poludniu
 - else:
-    Zawahała się z uniesionym sierpem. Spojrzała na dziewczynę, potem na wodę lejącą się z dzbana na ściernisko – i rozwiała się w drżącym powietrzu jak para. Hanka dobiegła i wylała mu resztę wody na głowę. # pokaz: znika, woda # dalej
+    Hanka nie zwolniła. Dopadła do niego i chlusnęła wodą z dzbana – nie na niego, tylko przed siebie, tam, gdzie falował żar.
+    – Masz, pij! – krzyknęła w pustkę łamiącym się głosem, tak jak uczyła ją babka. – Pij i puść go!
+    Południca zawahała się z uniesionym sierpem. Spojrzała na dziewczynę, potem na ciemną plamę, która znikała w spękanej ziemi – i rozwiała się w drżącym powietrzu jak para. Hanka wylała mu resztę wody na głowę. # pokaz: znika, woda # dalej
     -> goraczka
 }
 
@@ -118,7 +132,7 @@ Ktoś wbiegał na zagon, potykając się o snopy. Hanka. W rękach niosła glini
 ~ blizna_sierpa = true
 ~ zapiski += poludnica_1
 Przez trzy dni trawiła go gorączka. Leżał w chałupie pod mokrymi szmatami, rany na ramieniu i dłoni piekły jak przypalone żelazem, a w majakach wciąż widział białe oczy bez źrenic i słyszał suchy szept: „Za każdą pomyłkę – jedno cięcie”. # pokaz: majaki
-Matka czuwała przy nim trzy noce. Hanka przychodziła codziennie z ziołami od babki i siadywała przy łóżku, dopóki nie odesłano jej do domu. # pokaz: hanka
+Matka nie odchodziła od niego ani na krok. Hanka przynosiła zioła od babki, a drugiego dnia, nikomu nic nie mówiąc, poszła w samo południe na tamten zagon i postawiła na miedzy dzban świeżej wody. Wróciła roztrzęsiona i nie chciała powiedzieć, co tam widziała. Tej nocy gorączka zaczęła spadać. # pokaz: hanka
 Kiedy wreszcie wstał, na ramieniu została mu cienka, biała blizna w kształcie półksiężyca, jakby od czubka sierpa.
 -> czy_powiedziec
 
@@ -130,10 +144,12 @@ Kiedy wreszcie wstał, na ramieniu została mu cienka, biała blizna w kształci
 Od ścierniska ciągnęło kurzem i wypalonym słońcem, świerszcze grały jak oszalałe, a Hanka siedziała tak blisko, że czuł przez koszulę ciepło jej ramienia.
 – Od kogo to? – zapytała.
 – Od kogoś, kto kazał pilnować kapliczek – powiedział.
-Hanka nie zrozumiała, ale schowała mak do medalika, który nosiła na szyi, i nosiła go odtąd zawsze.
+Hanka nie zrozumiała, ale schowała mak do medalika, który nosiła na szyi, i odtąd się z nim nie rozstawała.
 -> czy_powiedziec
 
 = czy_powiedziec
+Antek dopadł go, kiedy tylko zostali sami.
+– Widziałem cię spod gruszy – powiedział cicho. – Stałeś sam na końcu zagonu i gadałeś do powietrza, a powietrze nad tobą drgało jak nad paleniskiem w kuźni. – Przełknął ślinę. – Jak będziesz mówił dorosłym, to i ja powiem, co widziałem. We dwóch prędzej nam uwierzą.
 # pytanie: Czy Jaromir powie ojcu?
 *   [{ostrzezenie_poludnicy:Powiedzieć ojcu o ostrzeżeniu Południcy.|Powiedzieć ojcu o Południcy.}]
     ~ powiedzial_ojcu_poludnica = true
@@ -146,7 +162,7 @@ Hanka nie zrozumiała, ale schowała mak do medalika, który nosiła na szyi, i 
     -> rozdzial_szosty_ciag_dalszy
 *   [Zachować to dla siebie.]
     # tlo: kapliczki_noc
-    Jaromir nie powiedział nikomu. Każdej nocy, gdy wszyscy zasnęli, wymykał się z chałupy i obchodził najbliższe kapliczki. Poprawiał przekrzywione daszki, wyrywał chwasty, które oplatały słupy, i zawsze miał wrażenie, że z ciemnego boru ktoś na niego patrzy – cierpliwie, bez pośpiechu, jakby czekał. Wracał przemarznięty, z nogawkami mokrymi od rosy, i długo nie mógł zasnąć, wsłuchany w każdy szelest za oknem. # pokaz: jaromir # dalej
+    Jaromir nie powiedział nikomu – poza Antkiem, który i tak wiedział. Każdej nocy, gdy wszyscy zasnęli, wymykali się we dwóch i obchodzili najbliższe kapliczki. Poprawiali przekrzywione daszki i wyrywali chwasty, które oplatały słupy. Czasem w pół roboty milkły świerszcze – najpierw pod borem, potem coraz bliżej – i wtedy stali bez ruchu, wstrzymując oddech, póki nie zaczęły grać na nowo. Jaromir wracał przed świtem zlany zimnym potem, z nogawkami mokrymi od rosy, i długo nie mógł zasnąć, wsłuchany w każdy szelest za oknem. # pokaz: jaromir # dalej
     -> rozdzial_szosty_ciag_dalszy
 
 
