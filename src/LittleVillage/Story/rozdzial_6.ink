@@ -84,7 +84,8 @@ Powietrze zafalowało mocniej. Żar podchodził Jaromirowi pod gardło, w uszach
     – Znasz go – powiedziała, i po raz pierwszy w jej głosie zabrzmiało coś na kształt lęku. – To źle. Bo on też zna ciebie.
 *   [Drwal.]
     ~ pomylki_poludnica += 1
-    – Drwal? – Południca roześmiała się, sucho i nieprzyjemnie, jak trzeszczące ściernisko. – Drwale liczą pieniądze. On liczy drzewa. I ludzi. # pokaz: ciecie
+    – Drwal? – Południca roześmiała się, sucho i nieprzyjemnie, jak trzeszczące ściernisko. – Drwale liczą pieniądze. On liczy drzewa. I ludzi.
+    Sierp świsnął po raz trzeci. Jaromir poczuł na policzku cienką, piekącą kreskę, a po brodzie pociekło mu coś ciepłego. # pokaz: ciecie
 *   [Nie wiem.]
     Południca długo milczała.
     – Wiesz – odezwała się w końcu. – Tylko boisz się powiedzieć. To rozsądne. Nie mów jego imienia w południe.
@@ -115,7 +116,8 @@ Ktoś wbiegał na zagon, potykając się o snopy. Hanka. W rękach niosła glini
 = goraczka
 # tlo: goraczka
 ~ blizna_sierpa = true
-Do wieczora trawiła go gorączka. Leżał w chałupie pod mokrymi szmatami, rany na ramieniu i dłoni piekły jak przypalone żelazem, a w majakach wciąż widział białe oczy bez źrenic i słyszał suchy szept: „Za każdą pomyłkę – jedno cięcie”. # pokaz: majaki
+~ zapiski += poludnica_1
+Przez trzy dni trawiła go gorączka. Leżał w chałupie pod mokrymi szmatami, rany na ramieniu i dłoni piekły jak przypalone żelazem, a w majakach wciąż widział białe oczy bez źrenic i słyszał suchy szept: „Za każdą pomyłkę – jedno cięcie”. # pokaz: majaki
 Matka czuwała przy nim trzy noce. Hanka przychodziła codziennie z ziołami od babki i siadywała przy łóżku, dopóki nie odesłano jej do domu. # pokaz: hanka
 Kiedy wreszcie wstał, na ramieniu została mu cienka, biała blizna w kształcie półksiężyca, jakby od czubka sierpa.
 -> czy_powiedziec
@@ -128,12 +130,12 @@ Kiedy wreszcie wstał, na ramieniu została mu cienka, biała blizna w kształci
 Od ścierniska ciągnęło kurzem i wypalonym słońcem, świerszcze grały jak oszalałe, a Hanka siedziała tak blisko, że czuł przez koszulę ciepło jej ramienia.
 – Od kogo to? – zapytała.
 – Od kogoś, kto kazał pilnować kapliczek – powiedział.
-Hanka nie zrozumiała, ale schowała mak do medalika, który nosiła na szyi, i nie wyjęła go już nigdy.
+Hanka nie zrozumiała, ale schowała mak do medalika, który nosiła na szyi, i nosiła go odtąd zawsze.
 -> czy_powiedziec
 
 = czy_powiedziec
 # pytanie: Czy Jaromir powie ojcu?
-*   [Powiedzieć ojcu o ostrzeżeniu Południcy.]
+*   [{ostrzezenie_poludnicy:Powiedzieć ojcu o ostrzeżeniu Południcy.|Powiedzieć ojcu o Południcy.}]
     ~ powiedzial_ojcu_poludnica = true
     # tlo: kapliczki_noc
     { figurka_u_staruchy:

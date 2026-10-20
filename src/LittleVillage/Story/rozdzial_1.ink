@@ -170,7 +170,7 @@ Zasypiał z uśmiechem, myśląc o jutrze. Jutro będzie znów lato. Jutro będz
 
 = zloty_dzien
 # tlo: zapadlina_lato
-Takich dni było bez liku. Zlewały mu się potem w pamięci w jeden długi, złoty dzień, pachnący sianem i rozgrzaną ziemią, pełen słońca, śmiechu i brzęczenia pszczół. Mijały kolejne wiosny i zimy, a Jaromir rósł – coraz wyżej sięgał do gałęzi bzu, coraz dalej dolatywała jego strzała, coraz rzadziej potrzebował drabinki, żeby wspiąć się do bazy. # dalej
+Takich dni było bez liku. Zlewały mu się potem w pamięci w jeden długi, złoty dzień, pachnący sianem i rozgrzaną ziemią, pełen słońca, śmiechu i brzęczenia pszczół. Lato mijało, a Jaromir rósł – coraz wyżej sięgał do gałęzi bzu, coraz dalej dolatywała jego strzała, coraz rzadziej potrzebował drabinki, żeby wspiąć się do bazy. # dalej
 -> rozdzial_pierwszy_ciag_dalszy
 
 

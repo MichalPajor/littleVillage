@@ -117,9 +117,9 @@ Wójcikowa spojrzała na Jaromira. Była matką chrzestną jego córki i pierwsz
 # tlo: cmentarz_bukowiec
 ~ zapiski += strzyga_2
 { pochowek_wojcika == pochowany_za_murem:
-    Zima przyszła cicha i łagodna. Grób za cmentarnym murem zarósł do wiosny trawą i nikt, poza Wójcikową, do niego nie zaglądał. Ona przychodziła co niedzielę, sama, i siadała na kamieniu przy rozstajach. # pokaz: wdowa
+    Zima przyszła cicha i łagodna. Grób za cmentarnym murem zarósł do wiosny trawą i nikt, poza Wójcikową, do niego nie zaglądał. Ona przychodziła co niedzielę, sama, i siadała na kamieniu przy rozstajach – póki w lutym nie zległa w gorączce. # pokaz: wdowa
 - else:
-    Zima przyszła cicha i łagodna. Na grobie w Bukowcu Wójcikowa co niedzielę stawiała świeczkę, a w Zaduszki Hanka położyła na nim wianek z suchych maków. # pokaz: swieczka
+    Zima przyszła cicha i łagodna. Na grobie w Bukowcu Wójcikowa co niedzielę stawiała świeczkę, póki w lutym nie zległa w gorączce, a Hanka położyła na nim wianek z suchych maków. # pokaz: swieczka
 }
 Od tamtej pory nikt w Zapadlinie nie widział starego Wójcika. Tylko psy, kiedy przechodziły obok jego chałupy, przez długie miesiące podkulały ogony. # dalej
 -> boze_narodzenie
@@ -128,7 +128,8 @@ Od tamtej pory nikt w Zapadlinie nie widział starego Wójcika. Tylko psy, kiedy
 # tlo: strzyga_okno
 Trzeciej nocy po pogrzebie Wójcikowa przybiegła do chałupy Jaromira w samej koszuli, boso po śniegu.
 – On wrócił – szlochała. – Stał pod oknem. Przyciskał twarz do szyby i wołał mnie po imieniu. Dwie noce wołał. A dzisiaj… dzisiaj pytał o małą.
-Hanka zbladła i odruchowo spojrzała na kołyskę, w której spała Marysia.
+Hanka zbladła i odruchowo spojrzała na kołyskę, w której spała Marysia. Chciała zatrzymać Wójcikową na noc, ale ta pokręciła głową.
+– Jak mnie nie znajdzie w domu, przyjdzie tutaj – szepnęła i wróciła do siebie, boso, tą samą drogą.
 Tej nocy Jaromir nie zmrużył oka. Siedział przy kołysce z siekierą{ siekiera_dziadka: dziadka} na kolanach. Nad ranem, kiedy za oknem zaczęło świtać, usłyszał cichy dźwięk – jakby ktoś oddychał tuż za szybą. Na szkle, od zewnątrz, wykwitła mglista plama oddechu. Podniósł głowę. # pokaz: oddech
 Za szkłem stał stary Wójcik. W całunie, szary jak popiół, z białymi oczami bez źrenic. Usta miał rozwarte i Jaromir widział dwa rzędy zębów, a po brodzie spływała mu ciemna strużka. # pokaz: strzyga
 Patrzył na kołyskę.
@@ -141,7 +142,7 @@ Patrzył na kołyskę.
     Jaromir wstał, stanął między oknem a kołyską i podniósł siekierę. Wójcik patrzył na niego długo, przekrzywiając głowę jak ptak. Potem uśmiechnął się – szeroko, aż wszystkie zęby błysnęły w szarym świetle – i odszedł od okna. # pokaz: odszedl
     Nie przyszedł do nich już nigdy. Ale tego samego ranka znaleźli Wójcikową. Leżała w swojej izbie, na łóżku, z rękami złożonymi na piersi i spokojną twarzą. Na szyi miała dwa drobne, sine ślady.
     ~ zapiski += strzyga_2
-    Pochowali ją obok męża. Tym razem po staremu – ksiądz nie zaprotestował ani słowem. # dalej
+    Pochowali ją obok męża. Tym razem po staremu – ksiądz, kiedy zobaczył ślady na jej szyi, nie zaprotestował ani słowem. # dalej
     -> boze_narodzenie
 
 = rozkopany_grob_wojcika

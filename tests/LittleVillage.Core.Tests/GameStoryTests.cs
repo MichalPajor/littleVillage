@@ -1408,7 +1408,7 @@ public sealed class GameStoryTests
 
     [Theory]
     [InlineData(WarnFranek, "Urbaniak wyrzucił go z roboty", "Dwaj tracze z tartaku", "Franek do niego nie wrócił.")]
-    [InlineData(KeepQuietOak, "widzi go takiego po raz ostatni", "Franek i stary Wawrzyniec", "coś go woła – cienkim, śpiewnym głosem")]
+    [InlineData(KeepQuietOak, "widzi go takiego po raz ostatni", "Franek i drugi tracz", "coś go woła – cienkim, śpiewnym głosem")]
     public void Chapter_five_old_oak_is_cut_down(int warn, string afterWarn, string cutters, string franek)
     {
         var engine = CreateEngine();
@@ -1535,7 +1535,7 @@ public sealed class GameStoryTests
         Assert.Contains(winter.Blocks, b => b.Reveal == "uboze");
         var easter = On(pages, "wielkanoc")[0];
         Assert.Contains(easter.Blocks, b => b.Reveal == "dyngus");
-        Assert.True(Has([easter], "Jaromir skończył czternaście lat"));
+        Assert.True(Has([easter], "Jaromir miał już czternaście lat"));
         Assert.Equal("swiatki", pages[^1].BackgroundKey);
         Assert.Equal(PageEnding.Choices, pages[^1].Ending);
         Assert.True(Has(On(pages, "zniwa"), "Jaromir miał trzynaście lat"));
@@ -1705,7 +1705,7 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "swaty"), "przewiązała nią butelkę"));
         Assert.True(Has(On(pages, "skraj_kapota"), "Krwi nie ma"));
         var wedding = On(pages, "slub_droga");
-        Assert.True(Has(wedding, "Mnie dał ją mój ojciec, kiedy się żeniłem"));
+        Assert.True(Has(wedding, "Mnie zostawił ją mój ojciec, kiedy umierał"));
         Assert.True(Has(wedding, "położyła pod nią gałązkę ruty"));
         Assert.True(Has(wedding, "Nad drzwiami, ramionami do góry"));
         Assert.Equal("Podkowa kowala", engine.GetInventory().Single(i => i.Id == "podkowa").Name);
@@ -1897,7 +1897,7 @@ public sealed class GameStoryTests
 
         Assert.True(Has(On(pages, "owczarnia_noc"), "Dwie owce zagryzione"));
         Assert.True(Has(On(pages, "gajowy_karczma"), "Franka nie ma od ponad roku."));
-        Assert.True(Has(On(pages, "odwilz"), "Antek przychodził teraz częściej"));
+        Assert.True(Has(On(pages, "odwilz"), "Przyszedł dopiero na Wielkanoc"));
         Assert.Equal("czuwanie_izba", pages[^1].BackgroundKey);
     }
 

@@ -199,6 +199,9 @@ W niedzielę, kiedy w chałupie było już spokojnie, Jaromir poszedł na skraj 
 
 = jesien_z_marysia
 # tlo: jesien_okno
+{ podmiana:
+    W pierwszą niedzielę po powrocie Marysi ochrzcili ją w kościółku w Bukowcu. Chrzestnym był Antek, a matką chrzestną stara Wójcikowa. Hanka nie wypuściła córki z rąk przez całą drogę tam i z powrotem.
+}
 Jesień przyszła złota i spokojna. Marysia rosła jak na drożdżach, pod oknem kwitły astry, a Hanka śpiewała jej kołysankę, której nauczyła się od swojej matki. # pokaz: kolysanka
 Tylko nocami czasem, gdy Jaromir wstawał, żeby dołożyć do pieca, słyszał od strony jeziora klaskanie kijanek.{ sposob_na_odmienca == chrzest_odmienca: Nie ustawało aż do świtu, a raz rano Hanka znalazła w kołysce, obok śpiącej Marysi, garść mokrego mchu.}
 { uklad_z_mamunami == dar_swietojanski:

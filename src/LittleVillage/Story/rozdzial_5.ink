@@ -1,5 +1,5 @@
 // ------------------------------------------------------------
-//  Rozdział piąty — Tartak. Trzy lata po Marzannie: Jaromir ma
+//  Rozdział piąty — Tartak. Cztery lata po Marzannie: Jaromir ma
 //  trzynaście lat, Franek siedemnaście. Tartak pana Urbaniaka,
 //  ścięcie Starego Dębu (granicy boru), ubożę za piecem.
 //  Ojciec jak w poprzednich rozdziałach:
@@ -29,7 +29,7 @@ Wieś podzieliła się na dwa obozy. Jedni chodzili do tartaku do pracy i wracal
     Ojciec długo się wahał. Pieniądze by się przydały – nowy pług, krowa, dach nad stodołą – ale co wieczór siadał na progu i słuchał zgrzytu piły, a twarz miał coraz bardziej ponurą.
 }
 Jaromirowi stuknęło trzynaście lat. Skończył szkołę, wyciągnął się jak młody świerk i z każdym miesiącem częściej chodził z ojcem w pole.{ ekwipunek ? szczeniak: {imie_psa} wyrósł na dużego psa o spiczastych uszach i nie odstępował go ani na krok – tylko w stronę boru nie dawał się zaciągnąć za żadne skarby.}
-Franek, który skończył już siedemnaście lat i miał bary jak drwal, od wiosny pracował w tartaku. Pewnego wieczoru przyszedł pod płot Jaromira, pobrzękując monetami w kieszeni. # pokaz: franek
+Franek, który skończył już siedemnaście lat i miał bary jak drwal, od roku pracował w tartaku. Pewnego wieczoru przyszedł pod płot Jaromira, pobrzękując monetami w kieszeni. # pokaz: franek
 – Urbaniak szuka chłopaków do układania desek – powiedział. – Płaci srebrem, co sobota. Chodź ze mną. Przez lato zarobisz więcej niż twój ojciec przez rok.
 # pytanie: Czy Jaromir pójdzie do tartaku?
 *   [Pójść do pracy w tartaku.]
@@ -94,7 +94,7 @@ Teraz na korze bielał świeży znak. # pokaz: znak
 = sciecie
 # tlo: sciecie_debu
 ~ zapiski += pan_lasu_2
-W poniedziałek pod Starym Dębem zebrała się połowa wsi. { franek_scial_dab: Franek i stary Wawrzyniec | Dwaj tracze z tartaku } stanęli z siekierami po obu stronach pnia, a pan Urbaniak, z zegarkiem na złotym łańcuszku, odliczał czas.
+W poniedziałek pod Starym Dębem zebrała się połowa wsi. { franek_scial_dab: Franek i drugi tracz | Dwaj tracze z tartaku } stanęli z siekierami po obu stronach pnia, a pan Urbaniak, z zegarkiem na złotym łańcuszku, odliczał czas.
 Pierwsze uderzenie odbiło się od kory jak od kamienia. Drugie też. Dopiero za trzecim ostrze weszło w drewno – i z rany trysnął sok, gęsty i ciemnoczerwony jak krew.{ franek_scial_dab: Chlusnął Frankowi prosto w twarz. Chłopak cofnął się, otarł oczy rękawem i zaśmiał się nerwowo, ale Jaromir widział, że ręce mu się trzęsą.| Chlusnął na buty traczy, a jeden z nich odskoczył z przekleństwem.} # pokaz: sok
 Ścinali do zmierzchu. Dąb jęczał przy każdym uderzeniu, tak że baby zatykały uszy, a psy po zagrodach wyły jak na pogrzebie. Kiedy wreszcie runął, ziemia zadrżała aż pod chałupami, a od strony boru dobiegł krzyk – długi, przeciągły, jakby las stracił coś, czego nigdy nie odzyska. Potem zapadła cisza. Nawet ptaki umilkły. # pokaz: upadek
 Został tylko pień – szeroki jak stół, z setkami słojów, które zwijały się do środka w ciasną spiralę.{ ekwipunek ? kora: Taką samą jak na sośnie przy ścieżce i na słupie kapliczki.} Spod wyrwanych korzeni wysypała się garść zeszłorocznych żołędzi – zdrowych i lśniących, jakby ktoś je tam przechował.
@@ -112,7 +112,7 @@ Został tylko pień – szeroki jak stół, z setkami słojów, które zwijały 
 Tej nocy w chałupie nikt nie spał spokojnie.{ ekwipunek ? szczeniak: {imie_psa} warczał pod drzwiami aż do świtu.} Garnki dzwoniły na półce, choć nikt ich nie dotykał, a w kominie coś szurało i popiskiwało jak mysz.
 Jaromir zszedł do izby po wodę. Pachniało zakwasem z dzieży, a gliniana polepa ziębiła bose stopy. Przy piecu, w smudze księżycowego światła, siedział maleńki staruszek – nie większy od kury, w połatanej kapocie przewiązanej sznurkiem. Siwa broda sięgała mu do samej ziemi, a jej koniec owijał się wokół cienkich, kurzych nóżek. Miał duży nos, krzaczaste brwi i wąskie oczka, które pewnie zwykle się śmiały, a na głowie czerwoną czapeczkę z opadającym czubkiem i pomponikiem. W rączkach ściskał okruch chleba i trząsł się cały, choć w palenisku jeszcze żarzyły się węgle. # pokaz: uboze
 – Boję się – pisnął cieniutko, zanim chłopiec zdążył krzyknąć. – On idzie. Dąb był drzwiami, a teraz drzwi nie ma.
-Jaromir przypomniał sobie, co { figurka_u_staruchy: babka | matka } mówiła kiedyś o ubożętach: że mieszkają za piecem w starych chałupach, że kto je karmi, temu darzy się w obejściu, a kto przegoni, ten ściąga na dom biedę. Mówiła też, że ubożę przychodzi razem z pierwszym gospodarzem i zostaje w chałupie, dopóki ta stoi – a kiedy spłonie, odchodzi razem z dymem i już nie wraca.
+Jaromir przypomniał sobie, co { figurka_u_staruchy && los_psa == oswojony: babka | matka } mówiła kiedyś o ubożętach: że mieszkają za piecem w starych chałupach, że kto je karmi, temu darzy się w obejściu, a kto przegoni, ten ściąga na dom biedę. Mówiła też, że ubożę przychodzi razem z pierwszym gospodarzem i zostaje w chałupie, dopóki ta stoi – a kiedy spłonie, odchodzi razem z dymem i już nie wraca.
 # pytanie: Co zrobi Jaromir?
 *   [Postawić mu naparstek mleka i skórkę chleba.]
     ~ uboze = nakarmione

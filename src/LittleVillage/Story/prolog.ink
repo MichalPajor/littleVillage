@@ -134,7 +134,7 @@ Wycofał się powoli i schował pod gałęziami. Wycie odezwało się jeszcze ra
 Rano Maciek rozwinął zawiniątko i zjadł ostatni kawałek chleba. Gryzł go powoli, długo, jakby chciał, żeby dał mu sił na cały dzień. Popił wodą, otrzepał dłonie i poszedł do pracy.
 -> trzcina ->
 Ciął gęstwinę siekierą przy samej ziemi, wiązał w snopy i znosił pod chatę. Raz za razem, aż przestał liczyć. Plecy paliły go żywym ogniem, ale sterta przy ścianie rosła.
-Po południu trzciny w tym miejscu już nie było, więc ruszył dalej. Wracał inną drogą – od tej strony, z której kilka nocy temu dochodziło wycie. Szedł, aż nagle noga zawisła mu w powietrzu.
+Po południu trzciny w tym miejscu już nie było, więc ruszył dalej. Wracał inną drogą – od tej strony, z której minionej nocy dochodziło wycie. Szedł, aż nagle noga zawisła mu w powietrzu.
 W trawie pod krzakiem leżał pies. Chudy, z długim pyskiem i za dużymi łapami. Był sztywny, przewrócony na bok, z na wpół otwartymi oczami. Muchy już go obsiadły.
 { los_psa == niespotkany:
     Maciek długo stał nad nim bez ruchu. Dopiero teraz zrozumiał, co wyło tamtej nocy. Nie dzikie zwierzę, nie żadna zmora – tylko głodne, zziębnięte szczenię, które wołało, aż przestało.

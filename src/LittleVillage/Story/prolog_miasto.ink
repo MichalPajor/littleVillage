@@ -90,7 +90,7 @@ Marianna słuchała, uśmiechając się do siebie. Ale gdy syn zasnął, przysun
 # pytanie: Czy Maciek opowie żonie o tamtej nocy?
 *   [Tak – opowie jej o stworze, o legendzie i o głosie znad bagien. Musi wiedzieć, dokąd idzie.]
     ~ zona_wie = true
-    Nie przemilczał niczego. O wyciu w zaroślach, o ciszy, która go obudziła, o postaci wyższej od człowieka o trzy głowy. O spalonej zielarce i jej klątwie. O bagnie, które wołało go jej głosem.
+    Nie przemilczał niczego. O wyciu w zaroślach, o ciszy, która go obudziła, o postaci wyższej od człowieka o trzy głowy. O spalonej zielarce i jej klątwie. O bagnie, które wołało go jej głosem.{ figurka_u_staruchy: I o nadpalonej figurce z popiołu, którą tego dnia sprzedał na rynku staruszce w kapturze.}
     Marianna słuchała w milczeniu, bledsza z każdym zdaniem. Kiedy skończył, długo patrzyła w ciemne okno.
     – Wrócimy tam? – zapytała w końcu cicho.
     – Wrócimy. To nasz dom.

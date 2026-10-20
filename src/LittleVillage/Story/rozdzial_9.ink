@@ -114,7 +114,7 @@ Przed wyjazdem do kościoła młodzi uklękli na progu, a rodzice pobłogosławi
     { figurka_u_staruchy:
         – Siekiera dziadka Maćka – powiedział. – Tylko tyle mi po nim zostało, kiedy… – urwał i odchrząknął. – Teraz ty jesteś gospodarzem.
     - else:
-        – Siekiera dziadka Maćka – powiedział. – Mnie dał ją mój ojciec, kiedy się żeniłem. Teraz ty jesteś gospodarzem.
+        – Siekiera dziadka Maćka – powiedział. – Mnie zostawił ją mój ojciec, kiedy umierał. Teraz ty jesteś gospodarzem.
     }
 }
 { krzesiwo_dziadka && not krzesiwo_od_babki:

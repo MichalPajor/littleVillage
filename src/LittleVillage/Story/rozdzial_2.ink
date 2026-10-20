@@ -11,7 +11,7 @@
 # rozdzial: Rozdział drugi
 # tytul: Szkoła
 Lato skończyło się tak, jak kończy się każde lato – niepostrzeżenie. Pewnego ranka trawę ściął przymrozek, a jaskółki, które przez całe wakacje śmigały nad podwórzem, siedziały rzędem na kalenicy stodoły, jakby się nad czymś naradzały. Następnego dnia już ich nie było. Liście bzu nad bazą pożółkły i opadały przy każdym podmuchu, a z pól ciągnął zapach dymu, w którym chłopi palili zeschłe łęty ziemniaków.
-Tej jesieni Jaromirowi stuknął dziewiąty rok i po raz pierwszy miał pójść do szkoły.
+Tej jesieni Jaromir skończył dziewięć lat i po raz pierwszy miał pójść do szkoły.
 { figurka_u_staruchy:
     Ojciec długo się nie zgadzał. – Z liter pole się nie zaorze – mruknął przy kolacji i na tym rozmowa by się urwała, gdyby nie Agnieszka. Siedziała nad nim przez trzy wieczory, aż wreszcie wstał od stołu, zdjął z gwoździa swoją jedyną porządną czapkę i bez słowa włożył ją synowi na głowę. Była za duża, ale chłopiec nosił ją z dumą.
 - else:
@@ -128,7 +128,7 @@ Następnego ranka, kiedy chłopiec wyszedł na podwórze, zobaczył ją na płoc
 
 = rozmowa_ksiega
 # tlo: szkola_ksiega
-Przez kilka dni nosił w sobie to, co się stało. Uwierało go jak kamień w bucie. W końcu, w piątek po lekcjach, kiedy reszta wybiegła już na podwórze, został w izbie i stanął przy biurku pana Ignacego. Pachniało tu kredą, mokrymi kożuchami i dymem z żelaznego piecyka, który pykał cicho w kącie.
+Przez kilka dni nosił w sobie to, co się stało. Uwierało go jak kamień w bucie. W końcu, w piątek po lekcjach, kiedy reszta wybiegła już na podwórze, został w izbie i stanął przy biurku pana Ignacego. Pachniało tu kredą, mokrymi kożuchami i dymem z kaflowego pieca, który trzaskał cicho w kącie.
 Opowiedział mu wszystko – o liczeniu we mgle, o spirali na sośnie, {poszedl_po_wstazke:o starcu w kożuchu wywróconym na lewą stronę|o wstążce, która sama wróciła na płot}. Spodziewał się, że nauczyciel się roześmieje, tak jak w piątek cała klasa. Ale on słuchał w milczeniu, a z każdym zdaniem jego twarz stawała się coraz poważniejsza.
 { ekwipunek ? kora:
     Kiedy Jaromir wyjął z torby kawałek kory, pan Ignacy długo oglądał wyryte na niej znaki. Potem sięgnął do biurka i porównał je z rysunkiem w swoich notatkach. Ręce mu drżały. # pokaz: kora
@@ -140,6 +140,7 @@ Wyjął z szuflady gruby zeszyt oprawny w skórę i położył go na biurku. Na 
 # pytanie: Czy Jaromir weźmie księgę?
 *   [Poprosić, żeby pożyczył mu księgę.]
     ~ ekwipunek += ksiega
+    ~ czytal_ksiege = true
     – Czy mógłbym… ją pożyczyć? – zapytał cicho.
     Nauczyciel przez chwilę patrzył na niego znad okularów. Potem przesunął zeszyt po blacie. # pokaz: pozyczka
     – Na Boże Narodzenie mi ją oddasz. # dalej

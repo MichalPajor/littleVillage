@@ -58,7 +58,7 @@ VAR ekwipunek = (siekiera, chleb)
         ~ return "Mała drewniana postać z rękami sięgającymi do stóp, nadpalona z jednej strony. Wygrzebana z popiołu po chacie wiedźmy."
     - krzesiwo:
         { krzesiwo_od_babki:
-            ~ return "Małe, poczerniałe krzesiwo dziadka Maćka. Babka Marianna oddała je Jaromirowi na łożu śmierci – leżało w popiele razem z figurką, a dziadek nie rozstawał się z nim do końca."
+            ~ return "Małe, poczerniałe krzesiwo dziadka Maćka. Babka Marianna oddała je Jaromirowi na łożu śmierci. Dziadek znalazł je w popiele po chacie wiedźmy i nie rozstawał się z nim do końca."
         }
         { krzesiwo_na_slubie:
             ~ return "Małe, poczerniałe krzesiwo dziadka Maćka. Ojciec dał je Jaromirowi w dniu ślubu razem z siekierą – dziadek nosił je przy sobie do końca."

@@ -154,7 +154,7 @@ Na stole, pod lnianą ściereczką, leżał bochenek. Ostatni – następny matk
     Jaromir zacisnął zęby i nie odpowiedział.
     Żebraczka pukała długo. Potem przestała skrzeczeć i zaczęła mówić inaczej – ciepło, znajomo.
     { figurka_u_staruchy && los_psa == oswojony:
-        – Jaromirku… – westchnęło zza drzwi głosem babki Marianny, choć babka od dwóch lat leżała na cmentarzu w Bukowcu. – Otwórz, dziecko, zimno mi… # pokaz: glos
+        – Jaromirku… – westchnęło zza drzwi głosem babki Marianny, choć babka od pięciu lat leżała na cmentarzu w mieście. – Otwórz, dziecko, zimno mi… # pokaz: glos
     - else:
         – Jaromirku… – westchnęło zza drzwi głosem matki. – Otwórz, synku, zimno mi… # pokaz: glos
         A matka spała przecież dwa kroki od niego, na zydlu przy ojcu.
@@ -168,9 +168,9 @@ Na stole, pod lnianą ściereczką, leżał bochenek. Ostatni – następny matk
 Pod koniec sierpnia Urbaniak postanowił, że nie będzie czekał na deszcz. Skoro piła stoi, a struga nie uniesie tratwy, pnie trzeba wozić wozami do Bukowca – a wozy z długimi kłodami nie mieściły się na zakrętach drogi pod borem. Tam, na każdym z nich, stała kapliczka.
 Jego ludzie przyszli z łopatami w poniedziałek rano. Wykopywali słupy, ściągali daszki, a święte figurki wrzucali na wóz jak drewno na opał. Kobiety wyglądały zza płotów i płakały, starzy pomstowali – ale kiedy Urbaniak zawołał, że za dzień roboty płaci srebrem, od ręki, kilku chłopów z Zapadliny wzięło łopaty i przyłączyło się do jego ludzi. Głód był silniejszy niż strach. Łopaty zgrzytały o kamienie, a każdy słup wychodził z ziemi z mlaśnięciem, jakby nie chciała go puścić. Jaromir czuł, jak coś ściska go w gardle – nie wiedział, czy to złość, czy wstyd za tych, którzy kopali. # pokaz: kopacze
 { kapliczka_podniesiona:
-    Na samym skraju boru stała ta, którą Jaromir z Antkiem podnieśli dwa lata temu z błota.
+    Na samym skraju boru stała ta, którą Jaromir z Antkiem podnieśli pięć lat temu z błota.
 }
-{ powiedzial_ojcu_poludnica:
+{ powiedzial_ojcu_poludnica && not figurka_u_staruchy:
     Ojciec, który rok temu przysięgał, że Urbaniak kapliczek nie ruszy, leżał teraz na ławie z nogą w łubkach i mógł tylko zaciskać pięści.
 }
 { ostrzezenie_poludnicy:

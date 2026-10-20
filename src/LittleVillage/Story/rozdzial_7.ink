@@ -53,7 +53,7 @@ Franek przez całą zimę prawie nie wychodził z domu. Stary Staś mówił, że
 # tlo: wielkanoc
 Wiosna przyszła z wiatrem halnym, który w jedną noc stopił śnieg na polach. Mokradła wezbrały, kładka przy kapliczce znalazła się pod wodą, a jezioro ruszyło z hukiem tak głośnym, że ludzie wybiegali przed chałupy. # pokaz: lod
 Na Wielkanoc matka upiekła baby drożdżowe tak wysokie, że ledwie mieściły się w piecu, a syn zaniósł do święcenia koszyk z jajkami pomalowanymi w łupinach cebuli, z kawałkiem kiełbasy, chleba i chrzanu. W poniedziałek chłopcy oblewali dziewczęta wodą ze studni – Jaromir zmoczył Hankę od stóp do głów, a ona goniła go z wiadrem aż do samego jeziora i oblała tak, że przez tydzień kichał. # pokaz: dyngus
-Po świętach tartak ruszył znowu. Zgrzyt piły wrócił, a razem z nim wozy z pniami. Jaromir skończył czternaście lat i pierwszy raz zauważył, że ojciec zaczyna pytać go o zdanie. # dalej
+Po świętach tartak ruszył znowu. Zgrzyt piły wrócił, a razem z nim wozy z pniami. Jaromir miał już czternaście lat i pierwszy raz zauważył, że ojciec zaczyna pytać go o zdanie. # dalej
 -> zielone_swiatki
 
 

@@ -29,10 +29,10 @@ Odwilż przyszła naraz. W jedną noc ciepły wiatr zdmuchnął śnieg z pól, a
 
 = figurka_od_jagny
 # tlo: jagna_izba
-W połowie marca do Zapadliny przyjechała wozem obca kobieta – chuda, w szarej chuście, z jednym okiem zasnutym bielmem. Pytała o wnuka Maćka, tego, który ponad sześćdziesiąt lat temu przyszedł tu pierwszy. Ludzie wskazali jej chałupę Jaromira.
+W połowie marca do Zapadliny przyjechała wozem obca kobieta – chuda, w szarej chuście, z jednym okiem zasnutym bielmem. Pytała o wnuka Maćka, tego, który ponad sześćdziesiąt lat temu postawił chatę w Zapadlinie. Ludzie wskazali jej chałupę Jaromira.
 – Mam na imię Jagna – powiedziała, kiedy usiadła na ławie. – Moja babka mieszkała w mieście, za rynkiem. Przed śmiercią kazała mi przyrzec, że to oddam.
-Wyjęła z kosza zawiniątko w czarnej szmacie i rozwinęła je na stole. Figurka z drewna, nadpalona z jednej strony. Ludzka postać z rękami za długimi, sięgającymi do stóp. Jaromir nigdy jej nie widział, a mimo to poznał ją od razu – z tego, co kiedyś opowiedział mu {los_psa == oswojony:babka Marianna|ojciec}. # pokaz: figurka
-– Babka kupiła ją od waszego dziadka na rynku – mówiła Jagna cicho, nie podnosząc wzroku. – I zrobiła z nią coś, za co płaciła do końca życia. Nie wiem dokładnie co. Wiem tylko, że umierała źle. I że ostatnie, co powiedziała, to: „Oddaj ją tam, skąd przyszła”.
+Wyjęła z kosza zawiniątko w czarnej szmacie i rozwinęła je na stole. Figurka z drewna, nadpalona z jednej strony. Ludzka postać z rękami za długimi, sięgającymi do stóp. {los_psa == oswojony && zona_wie:Jaromir nigdy jej nie widział, a mimo to poznał ją od razu – z tego, co kiedyś opowiedziała mu babka Marianna.|Jaromir nigdy jej nie widział i nigdy o niej nie słyszał, a mimo to na jej widok zrobiło mu się zimno, jakby ktoś otworzył drzwi na mróz.} # pokaz: figurka
+– Babka kupiła ją od waszego dziadka na rynku – mówiła Jagna cicho, nie podnosząc wzroku. – I zrobiła z nią coś, za co płaciła do końca życia. Nie wiem dokładnie co – w gorączce bredziła o lalce i o wodzie. Wiem tylko, że umierała źle. I że ostatnie, co powiedziała, to: „Oddaj ją tam, skąd przyszła”.
 # pytanie: Co zrobi Jaromir?
 *   [Wziąć figurkę.]
     ~ ekwipunek += figurka
@@ -105,7 +105,7 @@ A światełka nad mokradłami z każdą nocą paliły się bliżej. Najpierw tyl
     W tym samym tygodniu Hanka kupiła na targu w Bukowcu piołun od obcej zielarki – chudej kobiety w szarej chuście, z jednym okiem zasnutym bielmem. Kiedy zielarka wydawała resztę, chwyciła ją nagle za rękę i powąchała jej palce.
     – Czuję popiół – szepnęła. – Stary popiół, znad wody. Macie go w domu, prawda?
     { przeszukal_zgliszcza && not figurka_w_bagnie:
-        – Moja babka szukała takiej rzeczy przez całe życie – dodała ciszej. – Ale jakiś chłopak nie chciał jej sprzedać.
+        – Moja babka chciała kiedyś kupić taką rzecz od jakiegoś chłopaka na rynku – dodała ciszej. – Nie sprzedał jej. Do śmierci nie wiedziała, komu ją w końcu oddał.
     }
     Powiedziała, że ma na imię Jagna i że do Zielonych Świątek zostanie w Bukowcu.
 }
@@ -113,7 +113,7 @@ A światełka nad mokradłami z każdą nocą paliły się bliżej. Najpierw tyl
 *   [Pokazać Jagnie figurkę i opowiedzieć o snach.]
     ~ zaufal_jagnie = true
     Jagna długo obracała figurkę w palcach, przysunięta do okna, bo zdrowe oko miała słabe.
-    – To lalka – powiedziała w końcu. – Zielarka znad jeziora wystrugała ją z korzenia, który wyciągnęła z bagna, i nadała jej imię tego, co tam mieszka. Kto ma lalkę, za tym on idzie. Póki leżała daleko, spał. Teraz wróciła – więc ją woła. A dzieci słyszą, bo dzieci słyszą wszystko.
+    – To lalka – powiedziała w końcu. – Babka mi o takich opowiadała. Zielarka znad jeziora wystrugała ją z korzenia, który wyciągnęła z bagna, i nadała jej imię tego, co tam mieszka. Kto ma lalkę, za tym on idzie. Póki leżała daleko, spał. Teraz wróciła – więc ją woła. A dzieci słyszą, bo dzieci słyszą wszystko.
     Zawinęła figurkę w szmatę i oddała Jaromirowi.
     – Ogień jej nie weźmie, już raz w nim była. Uciszy ją tylko poświęcona ziemia. Albo… – zawahała się – albo oddajcie mi ją. Zabiorę ją tak daleko, że jej nie dosłyszy. # dalej
 *   [Nie mówić jej nic.]
@@ -151,7 +151,7 @@ Zanim Jaromir dobiegł, chłopiec wszedł na kładkę i zatrzymał się na środ
 *   [Rozbić latarnię o wodę.]
     ~ noc_na_kladce = latarnia_na_wodzie
     Jaromir cisnął latarnią pod nogi stwora. Szkło pękło, olej rozlał się po wodzie i buchnął płomieniem. Stwór puścił chłopca i z wyciem cofnął się w ciemność, a Jaromir chwycił Józka, nim ten osunął się do wody. # pokaz: latarnia
-    Ale ogień poszedł po suchych, zeszłorocznych trzcinach jak po prochu. Zanim chłopi przybiegli z wiadrami, spłonęła połowa szuwarów i kapliczka przy kładce – ta, którą postawiono jeszcze za życia dziadka Maćka. Rano zostały z niej czarne kikuty i świątek z nadpaloną twarzą. # pokaz: pozar # dalej
+    Ale ogień poszedł po suchych, zeszłorocznych trzcinach jak po prochu. Zanim chłopi przybiegli z wiadrami, spłonęła połowa szuwarów i kapliczka przy kładce – jedna z najstarszych we wsi. Rano zostały z niej czarne kikuty i świątek z nadpaloną twarzą. # pokaz: pozar # dalej
     -> co_z_figurka
 
 = co_z_figurka

@@ -109,7 +109,7 @@ Do wieczora strzelcy ubili pięć wilków. Ich skóry gajowy kazał przybić na 
 }
 Następnego ranka, kiedy Jaromir wyszedł rąbać drwa, na pniaku przy płocie leżał zając – świeży, jeszcze ciepły, z karkiem przegryzionym jednym, czystym kłapnięciem. A od skraju młodnika, z daleka, patrzył na niego biały kształt. Kiedy Jaromir podniósł rękę, biel odwróciła się i zniknęła między świerkami. # pokaz: zajac
 Hanka długo milczała, kiedy jej to opowiedział. Potem wzięła zająca i zaczęła go oprawiać.
-– Głupi – szepnęła, nie wiadomo, do kogo. – Głupi, dobry Franek. # dalej
+{obietnica_antkowi:– Głupi – szepnęła, nie wiadomo, do kogo. – Głupi, dobry Franek.|– Głupi – szepnęła, nie wiadomo, do kogo. – Głupi, dobry…} # dalej
 -> odwilz
 
 = odwilz
@@ -124,8 +124,11 @@ W marcu mróz puścił. Śnieg spłynął z pól brudnymi strumieniami, a z mło
     Wiosną suka od Stasiowych oszczeniła się. Jedno ze szczeniąt – rude, z białą łatą na piersi – było wypisz wymaluj {imie_psa} sprzed lat. Stary Staś przyniósł je w czapce i postawił na progu bez słowa. # pokaz: szczenie
 }
 Wilków więcej nie widziano. Tylko czasem, w księżycowe noce, z głębi boru dochodziło samotne wycie – i Jaromir nie umiał powiedzieć, czy brzmi w nim skarga, czy ostrzeżenie. # pokaz: wilk
-{ obietnica_antkowi && oblawa_wilk == wydal_wilka:
+{
+- obietnica_antkowi && oblawa_wilk == wydal_wilka:
     Antek nie odezwał się do niego aż do żniw. # dalej
+- not obietnica_antkowi:
+    Antek długo nie zaglądał do ich chałupy. Przyszedł dopiero na Wielkanoc, usiadł przy kołysce Marysi, jakby nic się nie stało – ale o białym wilku przy Jaromirze już nigdy nie wspomniał. # dalej
 - else:
     Antek przychodził teraz częściej niż kiedyś. Siadał przy kołysce Marysi, kołysał ją i milczał – a Jaromir wiedział, o kim obaj myślą. # dalej
 }

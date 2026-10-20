@@ -14,7 +14,7 @@
 # tytul: Marzanna
 Zima trzymała długo, ale w marcu wreszcie puściła. Najpierw zaczęło kapać z dachów, potem po polach popłynęły brudne strumyki, a nocami lód na jeziorze trzeszczał i jęczał tak, że psy wyły po zagrodach. Mokradła obudziły się pierwsze – czarna woda przebijała przez śnieg, o świcie unosiła się nad nią para, a z rozlewisk przy kładce znów dochodziło bulgotanie, którego przez długie miesiące nie było słychać.
 W piątą niedzielę Wielkiego Postu dzieci z całej Zapadliny zbierały się, żeby utopić Marzannę. Tak robiło się od zawsze: kto wyniesie zimę ze wsi i wrzuci ją do wody, ten sprowadzi wiosnę i przegoni choroby, głód i wszelkie zło.
-Kukłę szykowali w stodole u Stasiowych. Franek, który od jesieni nie chodził już do szkoły i pomagał dziadkowi w polu, skręcił ze słomy tułów i przywiązał go do kija. Antek przyniósł stare łachy po matce – spódnicę i chustę – a Jaromir wcisnął jej w głowę dwa węgielki zamiast oczu i sadzą narysował usta. Hanka nawlekła na nitkę skorupki po jajkach, żeby Marzanna miała korale. Wyglądała strasznie – i o to właśnie chodziło. # pokaz: kukla
+Kukłę szykowali w stodole u Stasiowych. Franek, który od Bożego Narodzenia nie chodził już do szkoły i pomagał dziadkowi w polu, skręcił ze słomy tułów i przywiązał go do kija. Antek przyniósł stare łachy po matce – spódnicę i chustę – a Jaromir wcisnął jej w głowę dwa węgielki zamiast oczu i sadzą narysował usta. Hanka nawlekła na nitkę skorupki po jajkach, żeby Marzanna miała korale. Wyglądała strasznie – i o to właśnie chodziło. # pokaz: kukla
 Potem dziewczynka sięgnęła do warkocza i zaczęła rozwiązywać czerwoną wstążkę.
 – Dam jej moją – powiedziała. – Niech zabierze ze sobą wszystko, co złe.
 { poszedl_po_wstazke:
@@ -75,13 +75,13 @@ Wszyscy rzucili się do ucieczki. Za plecami Jaromira coś chlupnęło – gło�
 # tlo: babka_lozko
 Tej wiosny babka Marianna już nie wstała. Od Gromnicznej leżała na łóżku za piecem, coraz drobniejsza i lżejsza, jakby ziemia zabierała ją sobie po kawałku. Kiedy usłyszała o Marzannie, kazała zawołać wnuka.
 – Siądź – szepnęła. Ręka, którą chwyciła go za nadgarstek, była sucha i zimna jak liść. – Twój ojciec ci nie powie. On nie umie. Więc ja powiem, póki jeszcze mogę.
-I opowiedziała mu wszystko. O tym, jak dziadek Maciek znalazł w zgliszczach nad jeziorem nadpaloną figurkę i sprzedał ją w mieście staruszce w kapturze. O stworze, który kilka nocy później wyłamał drzwi ich chaty. O psie, który rzucił się na niego pierwszy, i o siekierze, która weszła w długie, kościste ramię. O tym, jak dziadek skonał na klepisku z głową na jej kolanach, a mały Dobrosław przesiedział całą noc pod podłogą, zaciskając dłonie na uszach.
+I opowiedziała mu wszystko. {zona_wie:O tym, jak dziadek Maciek znalazł w zgliszczach nad jeziorem nadpaloną figurkę i sprzedał ją w mieście staruszce w kapturze.|O tym, jak dziadek Maciek wrócił z miasta odmieniony i nie chciał powiedzieć, co go gryzie.} O stworze, który kilka nocy później wyłamał drzwi ich chaty. O psie, który rzucił się na niego pierwszy, i o siekierze, która weszła w długie, kościste ramię. O tym, jak dziadek skonał na klepisku z głową na jej kolanach, a mały Dobrosław przesiedział całą noc pod podłogą, zaciskając dłonie na uszach.
 – To, co było w wodzie, to był on – powiedziała. – Nie umarł. Takie jak on nie umierają. Czekają. Kto utonie bez księdza, ten nie idzie ani do nieba, ani do piekła, tylko zostaje w wodzie. Starzy mówili, że na dnie trzyma dusze topielców pod glinianymi garnkami, odwróconymi do góry dnem, i liczy je co noc. A jak który garnek pęknie, dusza ulatuje bąblem na powierzchnię.
 Potem wskazała kąt za łóżkiem. Pod starą kapotą leżała siekiera o wytartym, ciemnym trzonku. Na ostrzu, choć wyczyszczonym do połysku, wciąż było widać rdzawe zacieki, jakby żelazo samo nie chciało zapomnieć. # pokaz: siekiera
 { krzesiwo_dziadka:
     ~ ekwipunek += krzesiwo
     ~ krzesiwo_od_babki = true
-    – Jego. Weźmiesz ją, kiedy dorośniesz. – Spod poduszki wyjęła małe, poczerniałe krzesiwo. – A to weź już teraz. Leżało w popiele razem z tamtą figurką. Dziadek nie rozstawał się z nim do końca. # pokaz: krzesiwo
+    – Jego. Weźmiesz ją, kiedy dorośniesz. – Spod poduszki wyjęła małe, poczerniałe krzesiwo. – A to weź już teraz. {zona_wie:Leżało w popiele razem z tamtą figurką|Dziadek przyniósł je ze zgliszcz nad jeziorem}. Dziadek nie rozstawał się z nim do końca. # pokaz: krzesiwo
 - else:
     – Jego. Weźmiesz ją, kiedy dorośniesz.
 }
@@ -90,9 +90,9 @@ Potem wskazała kąt za łóżkiem. Pod starą kapotą leżała siekiera o wytar
 
 = prawda_ojca_sieroty
 # tlo: prog_noc
-Kiedy Jaromir wrócił znad rozlewiska, ojciec nie zapytał o nic. Milczał przez cały wieczór. Dopiero gdy matka zasnęła, wziął syna za ramię, wyprowadził na próg i usiadł obok niego w ciemności.
+{obejrzal_sie:Kiedy Jaromir wstał po gorączce|Kiedy Jaromir wrócił znad rozlewiska}, ojciec nie zapytał o nic. Milczał przez cały wieczór. Dopiero gdy matka zasnęła, wziął syna za ramię, wyprowadził na próg i usiadł obok niego w ciemności.
 – Miałem tyle lat co ty – zaczął, a głos mu się łamał, jakby od bardzo dawna go nie używał. – Może mniej.
-I opowiedział. O figurce, którą dziadek Maciek sprzedał w mieście staruszce w kapturze. O nocy, kiedy coś wyłamało drzwi ich chaty. O deskach nad głową, przez które sączył się księżyc, o krzykach – najpierw ojca, potem matki – i o czymś ciepłym, co kapało mu na włosy. O węszeniu tuż nad nim, chrapliwym jak u psa przy norze.
+I opowiedział. O nocy, kiedy coś wyłamało drzwi ich chaty. O deskach nad głową, przez które sączył się księżyc, o krzykach – najpierw ojca, potem matki – i o czymś ciepłym, co kapało mu na włosy. O węszeniu tuż nad nim, chrapliwym jak u psa przy norze.
 – To, co było w wodzie, to był on – powiedział. – Dlatego sprawdzam rygiel. Każdej nocy, od pięćdziesięciu lat.
 – Obiecaj mi jedno – poprosił. – Że nigdy nie wejdziesz do boru. Choćby nie wiem kto cię wołał.
 -> obietnica
@@ -118,7 +118,7 @@ Ojciec, kiedy usłyszał, co się stało nad rozlewiskiem, nie roześmiał się.
     Nie wiedział jeszcze, jak ciężko przyjdzie mu kiedyś dotrzymać tego słowa. # dalej
     -> kapliczka
 *   [Milczeć.]
-    Jaromir nie odpowiedział. Pomyślał o Hance i o czerwonej wstążce, o starcu z długimi palcami, o głosie, który wołał go zimą spomiędzy drzew, i nie potrafił wydusić z siebie tego jednego słowa.
+    Jaromir nie odpowiedział. Pomyślał o Hance i o czerwonej wstążce,{ poszedl_po_wstazke: o starcu z długimi palcami,} o głosie, który wołał go zimą spomiędzy drzew, i nie potrafił wydusić z siebie tego jednego słowa.
     { figurka_u_staruchy && los_psa == oswojony:
         Babka długo patrzyła mu w oczy, a potem westchnęła, jakby właśnie tego się spodziewała.
         -> smierc_babki
@@ -133,7 +133,7 @@ Marianna zmarła kilka dni później, w Wielki Czwartek. Prosiła, żeby pochowa
 = kapliczka
 # tlo: kapliczka_przewrocona
 Po Wielkanocy ziemia obeschła, a na miedzach zażółciły się pierwsze kaczeńce. Któregoś popołudnia, wracając ze szkoły ścieżką pod borem, Jaromir i Antek{ ekwipunek ? szczeniak: – i {imie_psa}, który odtąd wszędzie za nim chodził –} zobaczyli, że kapliczka na skraju lasu leży w trawie. Obaj stanęli jak wryci. W ciszy, która nagle zapadła, słychać było tylko, jak krople kapią z gałęzi na leżący w błocie daszek.
-Była to jedna z najstarszych w Zapadlinie, postawiona jeszcze za młodości ojca. Drewniany słup wyrwano z ziemi razem z darnią, daszek odłamał się i leżał kilka kroków dalej, a figurka świętego – szara od deszczów, z obliczem wytartym przez pół wieku – tkwiła w błocie twarzą w dół. Trawa dookoła była zryta, jakby ktoś ciągnął go w stronę drzew i porzucił w pół drogi.
+Była to jedna z najstarszych w Zapadlinie, postawiona jeszcze za młodości ojca. Drewniany słup wyrwano z ziemi razem z darnią, daszek odłamał się i leżał kilka kroków dalej, a figurka świętego – szara od deszczów, z obliczem wytartym przez {figurka_u_staruchy:pół wieku|dziesiątki lat} – tkwiła w błocie twarzą w dół. Trawa dookoła była zryta, jakby ktoś ciągnął go w stronę drzew i porzucił w pół drogi.
 { ekwipunek ? kora:
     U podstawy ktoś wydrapał na drewnie spiralę – taką samą jak na sośnie przy ścieżce. Jaromir nie musiał wyjmować z torby swojego kawałka kory, żeby wiedzieć, że znaki są te same. # pokaz: spirala
 }
