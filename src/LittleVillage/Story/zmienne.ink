@@ -192,3 +192,16 @@ VAR obietnica_antkowi = false
 // Obława w młodniku: wydał białego wilka (ranny uszedł do boru), zmylił obławę albo rzucił kamieniem w lufę gajowego.
 LIST OblawaWilk = wydal_wilka, zmylil_oblawe, rzucil_kamieniem
 VAR oblawa_wilk = ()
+
+// ---------- Rozdział dwunasty (Czuwanie przy zmarłym) ----------
+// Jaromir podniósł zmarłemu Wójcikowi wargę i zobaczył dwa rzędy zębów.
+VAR sprawdzil_zeby = false
+// O północy zmarły wstał: przewrócony twarzą do deski (ugryzł Antka), sierp przy szyi (czarna krew) albo gromnica w dłoniach (wypaliła się).
+LIST PolnocStrzygi = na_twarz, sierp_przy_szyi, gromnica_w_dloniach
+VAR polnoc_strzygi = ()
+// Pochówek Wójcika: po staremu za cmentarnym murem, po księdzowsku albo po księdzowsku z makiem Hanki z medalika.
+LIST PochowekWojcika = pochowany_za_murem, pochowany_po_ksiedzowsku, pochowany_z_makiem
+VAR pochowek_wojcika = ()
+// Po pochówku po księdzowsku strzyga wróciła: rozkopali grób albo Jaromir czuwał przy kołysce (zmarła Wójcikowa).
+LIST TrzyNoce = rozkopany_grob, czuwanie_przy_kolysce
+VAR trzy_noce = ()

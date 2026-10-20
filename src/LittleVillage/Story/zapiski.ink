@@ -7,7 +7,7 @@
 //  Wpisy nie mówią więcej, niż w tej chwili wiedzą postacie.
 // ------------------------------------------------------------
 
-LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5
+LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3
 VAR zapiski = ()
 
 === function tytul_zapisku(z)
@@ -39,6 +39,10 @@ VAR zapiski = ()
     - mamuny_1:     ~ return "Mamuny"
     - mamuny_2:     ~ return "Mamuny"
     - odmieniec_1:  ~ return "Odmieniec"
+    - strzyga_1:    ~ return "Zmarły, który nie stygnie"
+    - strzyga_2:    ~ return "Strzyga"
+    - mamuny_3:     ~ return "Mamuny"
+    - starzec_3:    ~ return "Starzec w kapeluszu z mchu"
 }
 ~ return ""
 
@@ -98,4 +102,12 @@ VAR zapiski = ()
     Ogromny basior, większy od każdego wilka we wsi, chudy tak, że pod białą sierścią widać wszystkie żebra. Prowadzi watahę, ale sam nie zabija – jednym wyciem potrafi odwołać ją od obory. Na przedniej łapie ma obręcz wytartej, jaśniejszej sierści, w tym samym miejscu, gdzie Franek miał trzy pręgi od pazurów. Oczy ma ludzkie: jasne, smutne, z wyraźną źrenicą. Antek mówi, że nie pomyliłby ich z żadnymi innymi.{oblawa_wilk == wydal_wilka: Dostał kulę od gajowego Pawlika i uszedł do boru, zostawiając krwawą smugę na śniegu. Od tamtej pory jego wycie brzmi inaczej.| Przeżył obławę. Następnego ranka na pniaku przy płocie leżał zając z przegryzionym karkiem.}
 - pan_lasu_5:
     Młodnik, który przez kilka lat podszedł od boru pod same opłotki, stał się kryjówką dla wilków. Starzy mówią, że las nie rośnie w stronę wsi bez powodu: najpierw przychodzą drzewa, potem zwierzęta, a na końcu ten, kto nimi rządzi.
+- strzyga_1:
+    {sprawdzil_zeby:Stary Wójcik miał dwa rzędy zębów – jeden za drugim, drobnych i ostrych jak u szczupaka.|Ludzie mówili, że stary Wójcik urodził się z zębami.} Kto rodzi się z zębami albo z dwoma sercami, ma dwie dusze. Po śmierci jedna idzie do Boga, a druga zostaje w ciele i nie daje mu spokoju: ciało nie stygnie, policzki są różowe, powieki się nie domykają. Około północy taki zmarły wstaje. Dawniej chowano go twarzą do ziemi, z sierpem nad gardłem i z makiem w trumnie – żeby nie mógł się odwrócić, żeby się poranił, jeśli spróbuje wstać, i żeby miał co liczyć aż do Sądu.
+- strzyga_2:
+    {polnoc_strzygi == na_twarz:Przewrócony twarzą do deski, szarpał się aż do pierwszego kura i ugryzł Antka w dłoń. Rana długo nie chciała się zagoić.|{polnoc_strzygi == sierp_przy_szyi:Kiedy sierp dotknął jego szyi, popłynęła z niej czarna, gęsta krew.|Uspokoiła go dopiero gromnica w dłoniach; wypowiedział wtedy imię córki.}} {pochowek_wojcika == pochowany_za_murem:Pochowano go za cmentarnym murem, twarzą do ziemi, i więcej nie wrócił.|{pochowek_wojcika == pochowany_z_makiem:Spoczął w poświęconej ziemi z makiem Hanki na piersi i więcej nie wrócił.|{trzy_noce == rozkopany_grob:Wrócił po trzech nocach i stał pod oknem nad kołyską Marysi, aż Jaromir z Antkiem rozkopali jego grób.|Wrócił po trzech nocach. Odszedł od okna, za którym spała Marysia – ale tego ranka znaleziono martwą Wójcikową.}}}
+- mamuny_3:
+    Wójcikowa policzyła w czerwcu uderzenia ich kijanek. Usłyszała tylko jedno. W listopadzie umarł jej mąż.{trzy_noce == czuwanie_przy_kolysce: Pomyliła się – albo nie chciała usłyszeć drugiego.}
+- starzec_3:
+    W Wigilię Hanka zostawiła na stole nakrycie dla wędrowca. Rano na talerzu, w miejscu opłatka, leżała garść świeżego, zielonego mchu – w samym środku zimy.
 }

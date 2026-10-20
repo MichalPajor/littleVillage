@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -788,6 +788,7 @@ public sealed class GameStoryTests
     private static readonly int[] Wedding = [0, 0, 0, 0];                          // swaty, Franek, podarunek kowala, starzec na skraju lasu
     private static readonly int[] Births = [0, 0, 0];                              // kolyska, trzecia noc, skarb dla corki
     private static readonly int[] Hunt = [0, 0, 0];                                // noc wilkow, obietnica Antkowi, oblawa
+    private static readonly int[] Grave = [0, 0, 0];                               // zeby zmarlego, polnoc, pochowek
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -1869,8 +1870,7 @@ public sealed class GameStoryTests
         Assert.Equal("Biały wilk", wolf.Title);
         Assert.Contains("zając z przegryzionym karkiem", wolf.Notes[^1]);
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału jedenastego._"));
-        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal("czuwanie_izba", pages[^1].BackgroundKey);
     }
 
     [Fact]
@@ -1885,7 +1885,7 @@ public sealed class GameStoryTests
         Assert.False(Has(pages, "Głupi, dobry Franek."));
         Assert.True(Has(On(pages, "odwilz"), "nie odezwał się do niego aż do żniw"));
         Assert.Contains("kulę od gajowego", engine.GetJournal().Single(c => c.Id == "tropy").Notes[^1]);
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal("czuwanie_izba", pages[^1].BackgroundKey);
     }
 
     [Fact]
@@ -1897,7 +1897,7 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "owczarnia_noc"), "Dwie owce zagryzione"));
         Assert.True(Has(On(pages, "gajowy_karczma"), "Franka nie ma od ponad roku."));
         Assert.True(Has(On(pages, "odwilz"), "Antek przychodził teraz częściej"));
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal("czuwanie_izba", pages[^1].BackgroundKey);
     }
 
     [Fact]
@@ -1911,7 +1911,7 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "oblawa_mlodnik"), "Kamień trafił w lufę."));
         Assert.True(Has(On(pages, "po_oblawie"), "trzy tygodnie przy zwózce drewna"));
         Assert.True(Has(On(pages, "po_oblawie"), "Głupi, dobry Franek."));
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal("czuwanie_izba", pages[^1].BackgroundKey);
     }
 
     [Fact]
@@ -1941,6 +1941,85 @@ public sealed class GameStoryTests
         Assert.DoesNotContain("szczeniak", Inventory(engine));
         Assert.Equal("Rude szczenię", engine.GetInventory().Single(i => i.Id == "szczenie_psa").Name);
         Assert.True(Has(pages, "Stary Staś przyniósł je w czapce"));
+    }
+
+    // ----- Rozdzial dwunasty: Czuwanie przy zmarlym (strzyga) -----
+
+    private static readonly int[] PeacefulToGrave = [.. PeacefulToHunt, 0, 0, 0];
+
+    [Fact]
+    public void Chapter_twelve_old_burial_behind_the_wall_puts_the_strzyga_to_rest()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToGrave, 0, 0]);
+        var withPoppy = engine.SaveState().Contains("\"mak_w_medaliku\":true");
+        Assert.Equal("cmentarz_bukowiec", pages[^1].BackgroundKey);
+        Assert.Equal(withPoppy ? 3 : 2, pages[^1].Choices.Count);
+        var unnamed = engine.GetJournal().Single(c => c.Id == "strzyga");
+        Assert.Equal("Zmarły, który nie stygnie", unnamed.Title);
+        Assert.StartsWith("Stary Wójcik miał dwa rzędy zębów", unnamed.Notes[0]);
+
+        pages = Play(engine, [.. PeacefulToGrave, 0, 0, 0]);
+        var spring = On(pages, "wiosna_orka")[0];
+        Assert.Equal("Rozdział dwunasty", spring.Blocks[0].Text);
+        Assert.Equal("Czuwanie przy zmarłym", spring.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.True(Has(On(pages, "lato_podworze"), "Usłyszała tylko jedno."));
+        Assert.True(Has(On(pages, "czuwanie_izba"), "Dwa rzędy zębów"));
+        Assert.True(Has(On(pages, "polnoc_strzyga"), "Na twarz go!"));
+        Assert.True(Has(On(pages, "cmentarz_bukowiec"), "Dziękuję ci, synku"));
+        Assert.True(Has(On(pages, "cmentarz_bukowiec"), "siadała na kamieniu przy rozstajach"));
+        Assert.Empty(On(pages, "strzyga_okno"));
+        Assert.True(Has(On(pages, "wigilia_stol"), "W jej chałupie zawsze paliła się świeca"));
+        Assert.True(Has(On(pages, "wigilia_stol"), "garść mchu"));
+        var journal = engine.GetJournal();
+        var strzyga = journal.Single(c => c.Id == "strzyga");
+        Assert.Equal("Strzyga", strzyga.Title);
+        Assert.Contains("ugryzł Antka", strzyga.Notes[^1]);
+        Assert.Contains("więcej nie wrócił", strzyga.Notes[^1]);
+        Assert.DoesNotContain("Pomyliła się", journal.Single(c => c.Id == "mamuny").Notes[^1]);
+        Assert.Contains("zielonego mchu", journal.Single(c => c.Id == "starzec").Notes[^1]);
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału dwunastego._"));
+        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_twelve_the_candle_burns_out_and_a_priestly_burial_brings_him_back_to_the_window()
+    {
+        var engine = CreateEngine();
+        Play(engine, [.. PeacefulToGrave, 1]);
+        Assert.Contains("gromnica", Inventory(engine));
+        var pages = Play(engine, [.. PeacefulToGrave, 1, 2, 1, 0]);
+
+        Assert.True(Has(On(pages, "czuwanie_izba"), "Nie godzi się."));
+        Assert.True(Has(On(pages, "polnoc_strzyga"), "Kaśka…"));
+        Assert.DoesNotContain("gromnica", Inventory(engine));
+        Assert.True(Has(On(pages, "cmentarz_bukowiec"), "On tam nie wytrzyma."));
+        Assert.True(Has(On(pages, "strzyga_okno"), "dzisiaj pytał o małą"));
+        Assert.Contains(On(pages, "strzyga_okno").SelectMany(p => p.Blocks), b => b.Reveal == "strzyga");
+        Assert.True(Has(On(pages, "cmentarz_bukowiec"), "zbezcześcili grób"));
+        var strzyga = engine.GetJournal().Single(c => c.Id == "strzyga");
+        Assert.StartsWith("Ludzie mówili, że stary Wójcik urodził się z zębami.", strzyga.Notes[0]);
+        Assert.Contains("imię córki", strzyga.Notes[^1]);
+        Assert.Contains("rozkopali jego grób", strzyga.Notes[^1]);
+        Assert.True(Has(On(pages, "wigilia_stol"), "przetrwała do wiosny"));
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_twelve_keeping_watch_at_the_cradle_costs_the_widow_her_life()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToGrave, 0, 1, 1, 1]);
+
+        Assert.True(Has(On(pages, "polnoc_strzyga"), "Czarnej i gęstej jak smoła."));
+        Assert.True(Has(On(pages, "strzyga_okno"), "dwa drobne, sine ślady"));
+        Assert.True(Has(On(pages, "wigilia_stol"), "Chałupa Wójcików stała pusta"));
+        Assert.False(Has(pages, "W jej chałupie zawsze paliła się świeca"));
+        var journal = engine.GetJournal();
+        Assert.Contains("martwą Wójcikową", journal.Single(c => c.Id == "strzyga").Notes[^1]);
+        Assert.Contains("Pomyliła się", journal.Single(c => c.Id == "mamuny").Notes[^1]);
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
 
     // ----- Zapiski (bestiariusz): karty odslaniane etapami -----

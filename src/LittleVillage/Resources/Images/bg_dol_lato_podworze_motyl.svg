@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „dolny plan: lato_podworze”: motyl
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="225 584 30 24">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.2"><path d="M239.0 596.0C232.4 585.0 223.6 587.2 225.8 594.9C228.0 598.2 234.6 598.2 239.0 596.0ZM239.0 596.0C245.6 585.0 254.4 587.2 252.2 594.9C250.0 598.2 243.4 598.2 239.0 596.0Z" fill="#FFFFFF"/><path d="M239.0 597.1C233.5 599.3 229.1 605.9 234.6 605.9C237.9 604.8 239.0 600.4 239.0 597.1ZM239.0 597.1C244.5 599.3 248.9 605.9 243.4 605.9C240.1 604.8 239.0 600.4 239.0 597.1Z" fill="#FFFFFF"/><circle cx="230.2" cy="590.5" r="1.8" fill="#000000" stroke="none"/><circle cx="247.8" cy="590.5" r="1.8" fill="#000000" stroke="none"/><path d="M239.0 592.7V602.6M239.0 592.7l-3 -5M239.0 592.7l3 -5" fill="none" stroke-width="1.6"/></g>
+</g>
+</svg>

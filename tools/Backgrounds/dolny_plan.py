@@ -48,6 +48,8 @@ RODZAJE = {
     "jezioro_mamun": ("woda", True), "baza_wrzesien": ("laka", False), "jesien_okno": ("jesien", False),
     "mroz_izba": ("izba", True), "owczarnia_noc": ("snieg", True), "gajowy_karczma": ("snieg", False), "oblawa_mlodnik": ("snieg", False),
     "po_oblawie": ("snieg", False), "odwilz": ("pole", False),
+    "wiosna_orka": ("pole", False), "lato_podworze": ("laka", False), "czuwanie_izba": ("izba", True), "polnoc_strzyga": ("izba", True),
+    "cmentarz_bukowiec": ("snieg", False), "strzyga_okno": ("izba", True), "wigilia_stol": ("izba", True),
 }
 
 

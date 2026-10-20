@@ -157,7 +157,55 @@ public sealed class RevealTests
             // ze starym psem: obrona drzwi, pies ginie przy oborze, wiosna szczenie (# pokaz: pies, szczenie)
             [.. ToChapterSeven(accept: e => e.GetInventory().Any(i => i.Id == "szczeniak")), .. new int[16], 1, 0, 0],
             // z celnoscia z dziecinstwa: kamien w lufe gajowego (# pokaz: kamien)
-            [.. ToChapterSeven(accept: e => e.SaveState().Contains("\"celny_strzal\":true")), .. new int[16], 0, 0, 2]];
+            [.. ToChapterSeven(accept: e => e.SaveState().Contains("\"celny_strzal\":true")), .. new int[16], 0, 0, 2],
+            // rozdzial dwunasty: zeby, polnoc (twarz, sierp, gromnica), pochowek (za murem, po ksiedzowsku, z makiem), trzecia noc (rozkop, czuwanie)
+            [.. ToChapterTwelve(), 0, 0, 0],
+            [.. ToChapterTwelve(), 1, 1, 1, 0],
+            [.. ToChapterTwelve(), 0, 2, 1, 1],
+            // ze szczeniem i z darem swietojanskim (# pokaz: szczenie, noc), z makiem w medaliku (# pokaz: mak, swieczka)
+            [.. ToChapterTwelve(e => e.GetInventory().Any(i => i.Id == "szczenie_psa")), 1, 0, 0],
+            [.. ToChapterTwelve(e => e.SaveState().Contains("dar_swietojanski")), 0, 1, 0],
+            [.. ToChapterTwelve(e => e.SaveState().Contains("\"mak_w_medaliku\":true")), 0, 0, 2]];
+
+    /// <summary>Wybory pierwszej sciezki (z ogonami rozdzialow 7–11), ktora dochodzi do czuwania przy zmarlym (tlo „czuwanie_izba”)
+    /// i spelnia <paramref name="accept"/> — az do tego wyboru.</summary>
+    private static int[] ToChapterTwelve(Func<InkStoryEngine, bool>? accept = null)
+    {
+        var tails = ChapterSevenTails.Concat([[.. new int[16], 1, 0, 0]]);
+        foreach (var path in tails.Select(tail => ToChapterSeven().Concat(tail).ToArray())
+                     .Concat(AllPaths.Reverse()).Append([.. ToChapterSeven(accept: e => e.GetInventory().Any(i => i.Id == "szczeniak")), .. new int[16], 1, 0, 0]))
+        {
+            var engine = new InkStoryEngine();
+            engine.Load(InkTestStory.Game);
+            var page = engine.StartNew();
+            var queue = new Queue<int>(path);
+            var chosen = new List<int>();
+            while (page.Ending is not (PageEnding.End or PageEnding.Death))
+            {
+                if (page.Ending == PageEnding.Choices && page.BackgroundKey == "czuwanie_izba")
+                {
+                    if (accept is null || accept(engine))
+                    {
+                        return [.. chosen];
+                    }
+
+                    break;
+                }
+
+                if (page.Ending == PageEnding.Choices)
+                {
+                    chosen.Add(Math.Min(queue.Count > 0 ? queue.Dequeue() : 0, page.Choices.Count - 1));
+                    page = engine.Choose(chosen[^1]);
+                }
+                else
+                {
+                    page = engine.Continue();
+                }
+            }
+        }
+
+        throw new InvalidOperationException("Żadna ścieżka nie dochodzi do rozdziału dwunastego.");
+    }
 
     /// <summary>Wybory pierwszej sciezki, ktora dochodzi do strony z piolunem (tlo „swiatki”), az do tego wyboru
     /// (z <paramref name="withCoins"/> — tylko takiej, na ktorej Jaromir ma monety z tartaku).</summary>

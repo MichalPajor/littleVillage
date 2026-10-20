@@ -132,14 +132,9 @@ Wilków więcej nie widziano. Tylko czasem, w księżycowe noce, z głębi boru 
 -> rozdzial_jedenasty_ciag_dalszy
 
 
-// Koniec rozdziału jedenastego — rozdział dwunasty (Czuwanie przy zmarłym) do napisania.
+// Koniec rozdziału jedenastego — dalej rozdział dwunasty.
 === rozdzial_jedenasty_ciag_dalszy ===
 # ozdobnik
 ~ zapiski += pan_lasu_5
 _Koniec rozdziału jedenastego._ # dalej
--> rozdzial_dwunasty_wkrotce
-
-=== rozdzial_dwunasty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_dwunasty

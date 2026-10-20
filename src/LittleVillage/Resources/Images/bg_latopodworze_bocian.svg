@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „lato na podwórzu”: bocian na dachu stodoły
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="326 228 40 30">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.6"><path d="M331.2 254.0C337.2 252.2 346.8 252.2 351.6 253.4L358.8 251.6L360.0 252.8L351.6 255.2C345.6 256.4 337.2 255.8 331.2 254.0Z" fill="#FFFFFF"/><path d="M339.6 253.4C336.0 245.6 330.0 243.2 324.0 244.4L328.8 249.2C333.6 250.4 337.2 252.2 339.6 253.4Z" fill="#FFFFFF"/><path d="M324.0 244.4L328.8 249.2L326.4 245.6Z" fill="#000000"/><path d="M343.2 254.6C339.6 261.2 333.6 263.6 327.6 263.6L332.4 258.8C337.2 257.6 340.8 255.8 343.2 254.6Z" fill="#FFFFFF"/><path d="M327.6 263.6L332.4 258.8L330.0 262.4Z" fill="#000000"/><path d="M358.8 251.6l7 1M331.2 254.0l-12 2M331.2 254.6l-12 4" fill="none" stroke="#A8101A" stroke-width="1.6"/></g>
+</g>
+</svg>

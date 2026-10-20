@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „dolny plan: strzyga_okno”: przedłużenie sceny w dół (drogi, grunt, podłoga) — bez przerwy
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="425" viewBox="-10 423 410 425">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M-10 425.0H400V848H-10Z" fill="#EDEBE6" stroke="none"/>
+<path d="M0.0 425.0L390.0 425.0L390.0 848L0.0 848Z" fill="#EDEBE6" stroke="none"/>
+<path d="M0.0 424.0L0.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M16.0 424.0L16.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M32.0 424.0L32.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M48.0 424.0L48.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M64.0 424.0L64.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M80.0 424.0L80.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M96.0 424.0L96.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M112.0 424.0L112.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M128.0 424.0L128.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M144.0 424.0L144.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M160.0 424.0L160.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M176.0 424.0L176.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M192.0 424.0L192.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M208.0 424.0L208.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M224.0 424.0L224.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M240.0 424.0L240.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M256.0 424.0L256.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M272.0 424.0L272.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M288.0 424.0L288.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M304.0 424.0L304.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M320.0 424.0L320.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M336.0 424.0L336.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M352.0 424.0L352.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M368.0 424.0L368.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M384.0 424.0L384.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M0.0 425.0L390.0 425.0L390.0 848L0.0 848Z" fill="url(#hatchNight)" stroke="none" opacity="0.70"/>
+<path d="M-10.0 425.0L400.0 425.0L400.0 848L-10.0 848Z" fill="url(#hatchDense)" stroke="none" opacity="0.60"/>
+</g>
+</svg>

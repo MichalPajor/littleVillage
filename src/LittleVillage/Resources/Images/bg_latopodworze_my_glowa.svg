@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „lato na podwórzu”: Marysia stawia pierwsze kroki — glowa (rysunek autora; # pokaz: kroki)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="81" viewBox="132 330 46 81">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.15000 0.00000 0.00000 0.15000 132.00000 330.00000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="glowa" data-anim="obrot" data-origin="150,206" data-range="3deg" data-period="4">
+<path d="M142 198L142 216L158 216L158 198Z" fill="#FFFFFF" stroke-width="3"/>
+<path d="M106 150C106 112 126 96 150 96C174 96 194 112 194 150C194 182 176 204 150 206C124 204 106 182 106 150Z" fill="#FFFFFF" stroke-width="4"/>
+<path d="M180 160C184 176 178 192 166 200C176 190 180 176 180 160Z" fill="url(#hatch)" stroke="none"/>
+<!-- oczy: duże, jasne; mruganie = skala Y 1→0 na 0.12 s co 3–5 s, origin 150,152; źrenice mogą patrzeć na boki przesuwem ±2 px -->
+<g id="oczy" data-anim="mruganie" data-origin="150,152" data-range="1-0" data-period="3-5">
+<ellipse cx="134" cy="152" rx="10" ry="11" fill="#FFFFFF" stroke-width="2.4"/>
+<circle cx="134" cy="153" r="6.5" fill="#FFFFFF" stroke-width="1.6"/>
+<circle cx="134" cy="153" r="6.5" fill="url(#hatch)" stroke="none"/>
+<circle cx="134" cy="153" r="3" fill="#000000" stroke="none"/>
+<circle cx="131.5" cy="150" r="1.6" fill="#FFFFFF" stroke="none"/>
+<path d="M124 147l-3 -3M144 147l3 -3M141 142l2 -4" fill="none" stroke-width="1.4"/>
+<ellipse cx="166" cy="152" rx="10" ry="11" fill="#FFFFFF" stroke-width="2.4"/>
+<circle cx="166" cy="153" r="6.5" fill="#FFFFFF" stroke-width="1.6"/>
+<circle cx="166" cy="153" r="6.5" fill="url(#hatch)" stroke="none"/>
+<circle cx="166" cy="153" r="3" fill="#000000" stroke="none"/>
+<circle cx="163.5" cy="150" r="1.6" fill="#FFFFFF" stroke="none"/>
+<path d="M156 147l-3 -3M176 147l3 -3M173 142l2 -4" fill="none" stroke-width="1.4"/>
+</g>
+<path d="M124 136C130 133 138 133 142 136M158 136C162 133 170 133 176 136" fill="none" stroke-width="1.8"/>
+<path d="M150 162C148 168 148 172 152 173" fill="none" stroke-width="1.6"/>
+<circle cx="140" cy="166" r="1.1" fill="#000000" stroke="none"/>
+<circle cx="144" cy="170" r="1.1" fill="#000000" stroke="none"/>
+<circle cx="137" cy="170" r="1.1" fill="#000000" stroke="none"/>
+<circle cx="160" cy="166" r="1.1" fill="#000000" stroke="none"/>
+<circle cx="156" cy="170" r="1.1" fill="#000000" stroke="none"/>
+<circle cx="163" cy="170" r="1.1" fill="#000000" stroke="none"/>
+<circle cx="150" cy="164" r="1.1" fill="#000000" stroke="none"/>
+<!-- usta: uśmiech; przy rozmowie otwieranie = skala Y 1→1.6 przy origin 150,184 -->
+<g id="usta" data-anim="skala" data-origin="150,184" data-range="1-1.6" data-period="-">
+<path d="M140 182C144 188 156 188 160 182" fill="none" stroke-width="2.4"/>
+</g>
+<path d="M120 174c3 0 5 2 5 4M180 174c-3 0 -5 2 -5 4" fill="none" stroke-width="1.2"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wlosy" data-anim="kolysanie" data-origin="150,110" data-range="2deg" data-period="3">
+<path d="M104 152C96 120 112 86 150 84C188 86 204 120 196 152C200 170 198 186 192 198C188 180 186 162 184 146C176 128 162 120 150 120C138 120 124 128 116 146C114 162 112 180 108 198C102 186 100 170 104 152Z" fill="#FFFFFF" stroke-width="3.5"/>
+<path d="M106 108c0 -6 8 -8 10 -2c2 6 -4 8 -6 4" fill="none" stroke-width="1.8"/>
+<path d="M120 94c0 -6 8 -8 10 -2c2 6 -4 8 -6 4" fill="none" stroke-width="1.8"/>
+<path d="M138 88c0 -6 8 -8 10 -2c2 6 -4 8 -6 4" fill="none" stroke-width="1.8"/>
+<path d="M156 90c0 -6 8 -8 10 -2c2 6 -4 8 -6 4" fill="none" stroke-width="1.8"/>
+<path d="M174 98c0 -6 8 -8 10 -2c2 6 -4 8 -6 4" fill="none" stroke-width="1.8"/>
+<path d="M186 116c0 -6 8 -8 10 -2c2 6 -4 8 -6 4" fill="none" stroke-width="1.8"/>
+<path d="M192 138c0 -6 8 -8 10 -2c2 6 -4 8 -6 4" fill="none" stroke-width="1.8"/>
+<path d="M98 128c0 -6 8 -8 10 -2c2 6 -4 8 -6 4" fill="none" stroke-width="1.8"/>
+<path d="M94 170c0 -6 8 -8 10 -2c2 6 -4 8 -6 4" fill="none" stroke-width="1.8"/>
+<path d="M192 170c0 -6 8 -8 10 -2c2 6 -4 8 -6 4" fill="none" stroke-width="1.8"/>
+<path d="M106 196c0 -6 8 -8 10 -2c2 6 -4 8 -6 4" fill="none" stroke-width="1.8"/>
+<path d="M184 196c0 -6 8 -8 10 -2c2 6 -4 8 -6 4" fill="none" stroke-width="1.8"/>
+<path d="M112 140C114 116 130 100 150 100C170 100 186 116 188 140C182 134 176 130 172 132C170 124 164 120 160 126C156 118 146 118 142 126C138 120 130 122 128 130C122 128 116 132 112 140Z" fill="#FFFFFF" stroke-width="3"/>
+<path d="M130 108C136 114 140 120 142 126M150 104C152 112 154 118 156 122M170 108C168 116 166 122 166 128" fill="none" stroke-width="1.4"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="wstazka" data-anim="obrot" data-origin="178,104" data-range="4deg" data-period="3">
+<path d="M178 104C188 90 202 92 200 104C198 114 186 110 178 104Z" fill="#A8101A" stroke-width="2.2"/>
+<path d="M178 104C166 92 154 98 158 110C162 118 172 112 178 104Z" fill="#A8101A" stroke-width="2.2"/>
+<path d="M178 104L188 134L194 130L182 104ZM178 104L174 136L180 136L180 104Z" fill="#A8101A" stroke-width="2"/>
+<circle cx="178" cy="104" r="4" fill="#A8101A" stroke-width="2"/>
+</g>
+</g>
+</g></g>
+</svg>
