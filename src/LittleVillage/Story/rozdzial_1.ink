@@ -74,6 +74,7 @@ Strzały robili również z leszczyny, ale zdecydowanie cieńszej. Grotów nie b
 Celem był snop słomy postawiony na miedzy, z kołem namalowanym sadzą. Cięciwa brzęczała przy uchu jak trzmiel, strzała świstała krótko, a potem rozlegało się głuche „puk”, kiedy zaostrzony czubek wbijał się w słomę. Pociski leciały dość prosto, wbijały się w ziemię albo w cel, a czasem szybowały wysoko w niebo. Najlepiej szło to Hance. Mrużyła jedno oko, wysuwała koniuszek języka i nie chybiała ani razu – a chłopcy, choć za nic by się do tego nie przyznali, podziwiali ją za to bardziej niż za cokolwiek innego. # pokaz: hanka
 # pytanie: Czy Jaromir zmierzy się z Hanką?
 *   [Tak – wyzwie ją na zawody.]
+    ~ celny_strzal = true
     Przegrywał, oczywiście. Hanka trafiała bez pudła, a jego strzały lądowały najczęściej w zbożu. Ale następnego dnia przychodził na miedzę jeszcze przed nią i ćwiczył, aż drętwiały mu palce.
     -> luki_dalej
 *   [Nie – poćwiczy sam, z dala od reszty.]

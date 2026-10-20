@@ -5,7 +5,7 @@
 //  Sprawdzenie:          { ekwipunek ? siekiera: ... }
 // ------------------------------------------------------------
 
-LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak, monety, zoladz, piolun, korale, swiatek, podkowa, krzyzyk, gromnica
+LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak, monety, zoladz, piolun, korale, swiatek, podkowa, krzyzyk, gromnica, szczenie_psa
 
 // Ekwipunek na początku gry — to, co Maciek przyniósł w tobołku.
 VAR ekwipunek = (siekiera, chleb)
@@ -37,6 +37,7 @@ VAR ekwipunek = (siekiera, chleb)
     - podkowa:   ~ return "Podkowa kowala"
     - krzyzyk:   ~ return "Krzyżyk kowala"
     - gromnica:  ~ return "Gromnica"
+    - szczenie_psa: ~ return "Rude szczenię"
 }
 ~ return ""
 
@@ -72,7 +73,11 @@ VAR ekwipunek = (siekiera, chleb)
             ~ return "Gruby zeszyt pana Ignacego, oprawny w skórę i zapisany starannym, pochyłym pismem – historie z okolic Bukowego Grzbietu. Nauczyciel pozwolił ją zatrzymać. Można ją czytać tylko w dzień."
         }
         ~ return "Gruby zeszyt pana Ignacego, oprawny w skórę i zapisany starannym, pochyłym pismem – historie z okolic Bukowego Grzbietu. Można ją czytać tylko w dzień, a na Boże Narodzenie trzeba ją oddać."
-    - szczeniak: ~ return "Szczeniak z rodu psa dziadka Maćka, prezent od starego Stasia na Wigilię. Spiczaste uszy, biała łata na piersi i łapy za duże do reszty ciała. Śpi w nogach posłania i warczy przez sen w stronę okna."
+    - szczeniak:
+        { rozdzial_jedenasty:
+            ~ return "Pies z rodu psa dziadka Maćka – kiedyś szczeniak od starego Stasia, dziś stary, z siwym pyskiem. Wciąż śpi w nogach posłania i wciąż warczy przez sen w stronę boru."
+        }
+        ~ return "Szczeniak z rodu psa dziadka Maćka, prezent od starego Stasia na Wigilię. Spiczaste uszy, biała łata na piersi i łapy za duże do reszty ciała. Śpi w nogach posłania i warczy przez sen w stronę okna."
     - mak:       ~ return "Szmatka z garścią maku podebranego z wigilijnej misy. Według księgi pana Ignacego północnica musi policzyć każde ziarenko, nim podejdzie bliżej."
     - monety:    ~ return "Ciężkie, zimne srebrne monety z orłem po jednej stronie – zapłata od pana Urbaniaka za lato przy układaniu desek."
     - zoladz:    ~ return "Duży, gładki żołądź spod korzeni ściętego Starego Dębu. Wciąż jest ciepły, jakby w środku coś żyło."
@@ -82,5 +87,6 @@ VAR ekwipunek = (siekiera, chleb)
     - podkowa:   ~ return "Żelazna podkowa wykuta przez ojca Hanki na wesele. Wisi nad progiem chałupy ramionami do góry, żeby nic złego nie weszło do środka i żeby szczęście się nie wysypało."
     - krzyzyk:   ~ return "Mały żelazny krzyżyk na rzemyku, wykuty przez ojca Hanki na wesele. Hanka nosi go na szyi i nie zdejmuje – kowal przykazał, żeby nigdy."
     - gromnica:  ~ return "Gruba woskowa świeca poświęcona w Bukowcu na Gromniczną. W każdym domu musi być – na burzę, na poród i na śmierć."
+    - szczenie_psa: ~ return "Rude szczenię z białą łatą na piersi, z rodu psa dziadka Maćka. Gryzie wszystko, co znajdzie, śpi przy kołysce Marysi i nie odstępuje jej na krok."
 }
 ~ return ""

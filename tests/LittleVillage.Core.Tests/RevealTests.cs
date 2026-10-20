@@ -147,17 +147,21 @@ public sealed class RevealTests
     // Rozdzialy siodmy i osmy: ogony z wyborami innymi niz domyslne — smiech z piolunu, krzyz albo sila, los korali, dlonie;
     // licho przy studni, wyrab albo dom, pomoc, nocne pukanie, kapliczki; swaty, Franek, kowal, starzec na weselu; kolyska, noc mamun, odmieniec, uklad nad jeziorem, skarb.
     private static readonly int[][] ChapterSevenTails =
-        [[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0], [0, 2, 2, 0, 2, 2, 2, 2, 0, 2, 0, 2, 2, 1, 1, 1, 1], [0, 1, 0, 1, 0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 2, 0, 0],
-         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2]];
+        [[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1], [0, 2, 2, 0, 2, 2, 2, 2, 0, 2, 0, 2, 2, 1, 1, 1, 1, 1, 1, 0], [0, 1, 0, 1, 0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 0],
+         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 0, 0, 0]];
 
     private static readonly int[][] ChapterSevenPaths =
         [.. ChapterSevenTails.Select(tail => ToChapterSeven().Concat(tail).ToArray()),
             // z monetami z tartaku: oddac je ojcu (# pokaz: monety)
-            [.. ToChapterSeven(withCoins: true), 0, 0, 0, 0, 0, 2]];
+            [.. ToChapterSeven(withCoins: true), 0, 0, 0, 0, 0, 2],
+            // ze starym psem: obrona drzwi, pies ginie przy oborze, wiosna szczenie (# pokaz: pies, szczenie)
+            [.. ToChapterSeven(accept: e => e.GetInventory().Any(i => i.Id == "szczeniak")), .. new int[16], 1, 0, 0],
+            // z celnoscia z dziecinstwa: kamien w lufe gajowego (# pokaz: kamien)
+            [.. ToChapterSeven(accept: e => e.SaveState().Contains("\"celny_strzal\":true")), .. new int[16], 0, 0, 2]];
 
     /// <summary>Wybory pierwszej sciezki, ktora dochodzi do strony z piolunem (tlo „swiatki”), az do tego wyboru
     /// (z <paramref name="withCoins"/> — tylko takiej, na ktorej Jaromir ma monety z tartaku).</summary>
-    private static int[] ToChapterSeven(bool withCoins = false)
+    private static int[] ToChapterSeven(bool withCoins = false, Func<InkStoryEngine, bool>? accept = null)
     {
         foreach (var path in AllPaths.Reverse())
         {
@@ -170,7 +174,7 @@ public sealed class RevealTests
             {
                 if (page.Ending == PageEnding.Choices && page.BackgroundKey == "swiatki")
                 {
-                    if (!withCoins || engine.GetInventory().Any(i => i.Id == "monety"))
+                    if ((!withCoins || engine.GetInventory().Any(i => i.Id == "monety")) && (accept is null || accept(engine)))
                     {
                         return [.. chosen];
                     }

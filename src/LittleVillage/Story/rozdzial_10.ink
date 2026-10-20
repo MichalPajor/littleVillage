@@ -211,14 +211,9 @@ A kiedy spadł pierwszy śnieg, od boru zaczęło dochodzić wycie. Tym razem wy
 -> rozdzial_dziesiaty_ciag_dalszy
 
 
-// Koniec rozdziału dziesiątego — rozdział jedenasty (Obława) do napisania.
+// Koniec rozdziału dziesiątego — dalej rozdział jedenasty.
 === rozdzial_dziesiaty_ciag_dalszy ===
 # ozdobnik
 ~ zapiski += mamuny_2
 _Koniec rozdziału dziesiątego._ # dalej
--> rozdzial_jedenasty_wkrotce
-
-=== rozdzial_jedenasty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_jedenasty

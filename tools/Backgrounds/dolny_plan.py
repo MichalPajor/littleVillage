@@ -46,6 +46,8 @@ RODZAJE = {
     "izba_zimowa": ("izba", True), "przestrogi": ("woda", True), "przyzba_swit": ("pole", False), "izba_kolyska": ("izba", False),
     "noc_mamun": ("izba", True), "chrzest": ("izba", False), "odmieniec": ("izba", False), "rozstaje": ("droga", False),
     "jezioro_mamun": ("woda", True), "baza_wrzesien": ("laka", False), "jesien_okno": ("jesien", False),
+    "mroz_izba": ("izba", True), "owczarnia_noc": ("snieg", True), "gajowy_karczma": ("snieg", False), "oblawa_mlodnik": ("snieg", False),
+    "po_oblawie": ("snieg", False), "odwilz": ("pole", False),
 }
 
 

@@ -7,7 +7,7 @@
 //  Wpisy nie mówią więcej, niż w tej chwili wiedzą postacie.
 // ------------------------------------------------------------
 
-LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2
+LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5
 VAR zapiski = ()
 
 === function tytul_zapisku(z)
@@ -34,6 +34,8 @@ VAR zapiski = ()
     - licho_2:      ~ return "Licho"
     - licho_3:      ~ return "Licho"
     - tropy_1:      ~ return "Ślady pod oknem"
+    - tropy_2:      ~ return "Biały wilk"
+    - pan_lasu_5:   ~ return "Pan Lasu"
     - mamuny_1:     ~ return "Mamuny"
     - mamuny_2:     ~ return "Mamuny"
     - odmieniec_1:  ~ return "Odmieniec"
@@ -92,4 +94,8 @@ VAR zapiski = ()
     Wysokie i garbate, z głowami zbyt dużymi na wątłe szyje i włosami jak zeschłe gałązki, w łachmanach z mchu i kory. Ich dotyk jest zimny i mokry. Potrafią nucić głosem kogoś bliskiego i zmusić śpiącego, żeby sam zdjął ochronę z kołyski.{podmiana:{uklad_z_mamunami == oddany_skarb: Za Marysię wzięły dziecięcy skarb Jaromira i cisnęły go w jezioro.|{uklad_z_mamunami == dar_swietojanski: Za Marysię Jaromir obiecał im co roku, w noc świętojańską, chleb i wianek na kamieniu przy brzegu. Jeśli zapomni, przyjdą po swoje.|{uklad_z_mamunami == oddane_lata: Za Marysię wzięły Jaromirowi lata życia – jego skronie posiwiały jak u starego.| Podmianę odwróciła dopiero woda gotowana w skorupkach jajek.}}}}{sposob_na_odmienca == chrzest_odmienca: Nie zapomną, że ich dziecko obrócono w drzazgi.}
 - odmieniec_1:
     Dziecko mamun, podrzucone w miejsce ludzkiego. Z daleka wygląda jak tamto, ale jest cięższe i zimne, skórę ma jak korę, a oczy ciemniejsze niż oczy jakiegokolwiek dziecka. Nie płacze, tylko bez ustanku je, a kiedy myśli, że nikt nie patrzy, uśmiecha się jak stara kobieta. Podmianę da się odwrócić tylko przez siedem dni.
+- tropy_2:
+    Ogromny basior, większy od każdego wilka we wsi, chudy tak, że pod białą sierścią widać wszystkie żebra. Prowadzi watahę, ale sam nie zabija – jednym wyciem potrafi odwołać ją od obory. Na przedniej łapie ma obręcz wytartej, jaśniejszej sierści, w tym samym miejscu, gdzie Franek miał trzy pręgi od pazurów. Oczy ma ludzkie: jasne, smutne, z wyraźną źrenicą. Antek mówi, że nie pomyliłby ich z żadnymi innymi.{oblawa_wilk == wydal_wilka: Dostał kulę od gajowego Pawlika i uszedł do boru, zostawiając krwawą smugę na śniegu. Od tamtej pory jego wycie brzmi inaczej.| Przeżył obławę. Następnego ranka na pniaku przy płocie leżał zając z przegryzionym karkiem.}
+- pan_lasu_5:
+    Młodnik, który przez kilka lat podszedł od boru pod same opłotki, stał się kryjówką dla wilków. Starzy mówią, że las nie rośnie w stronę wsi bez powodu: najpierw przychodzą drzewa, potem zwierzęta, a na końcu ten, kto nimi rządzi.
 }

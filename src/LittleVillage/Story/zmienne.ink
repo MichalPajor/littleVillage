@@ -41,6 +41,9 @@ VAR figurka_u_staruchy = false
 VAR zona_wie = false
 
 // ---------- Rozdział pierwszy (Jaromir) ----------
+// Jaromir stawał w zawodach łuczniczych z Hanką i ćwiczył do upadłego (celność przyda się w obławie, rozdz. 11).
+VAR celny_strzal = false
+
 // Co Jaromir schował do skrzynki na skarby w bazie na bzie.
 LIST SkarbyJaromira = muszelka, pioro, gwozdz
 VAR skarb_jaromira = ()
@@ -177,3 +180,15 @@ LIST UkladZMamunami = oddany_skarb, dar_swietojanski, oddane_lata
 VAR uklad_z_mamunami = ()
 // Skarb z dzieciństwa przywiązany do kołyski Marysi (będzie go nosiła na szyi).
 VAR skarb_dla_corki = false
+
+// ---------- Rozdział jedenasty (Obława) ----------
+// Noc wilków we wsi: obronił oborę z siekierą (biały wilk odwołał watahę) albo pilnował drzwi chałupy.
+LIST NocWilkow = bronil_obory, pilnowal_drzwi
+VAR noc_wilkow = ()
+// Stary pies zginął przy oborze, zagryzając wilka.
+VAR pies_zginal = false
+// Jaromir obiecał Antkowi, że jeśli biały wilk to Franek, nie dadzą go zabić.
+VAR obietnica_antkowi = false
+// Obława w młodniku: wydał białego wilka (ranny uszedł do boru), zmylił obławę albo rzucił kamieniem w lufę gajowego.
+LIST OblawaWilk = wydal_wilka, zmylil_oblawe, rzucil_kamieniem
+VAR oblawa_wilk = ()
