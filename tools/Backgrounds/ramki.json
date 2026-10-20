@@ -521,6 +521,12 @@
 90,
 111
 ],
+"bg_dab_chlopi": [
+20,
+330,
+220,
+105
+],
 "bg_dab_franek_idzie": [
 240,
 320,
@@ -533,6 +539,12 @@
 90,
 51
 ],
+"bg_dab_lancuszek": [
+299,
+359,
+16,
+13
+],
 "bg_dab_liscie": [
 39,
 120,
@@ -544,6 +556,18 @@
 0,
 390,
 443
+],
+"bg_dab_urbaniak": [
+267,
+297,
+63,
+133
+],
+"bg_dab_wrony": [
+63,
+64,
+85,
+32
 ],
 "bg_drogabor_rosa": [
 300,
@@ -4084,6 +4108,36 @@
 371,
 111,
 49
+],
+"bg_tartaksusza_chlopi": [
+20,
+330,
+220,
+105
+],
+"bg_tartaksusza_lancuszek": [
+299,
+359,
+16,
+13
+],
+"bg_tartaksusza_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_tartaksusza_urbaniak": [
+267,
+297,
+63,
+133
+],
+"bg_tartaksusza_wrony": [
+63,
+64,
+85,
+32
 ],
 "bg_uboze_garnki": [
 24,

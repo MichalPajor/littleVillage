@@ -171,7 +171,7 @@ Pod koniec sierpnia Urbaniak postanowił, że nie będzie czekał na deszcz. Sko
 -> u_urbaniaka
 
 = u_urbaniaka
-# tlo: tartak
+# tlo: tartak_susza
 W niedzielę po sumie pod tartakiem zebrało się kilkunastu chłopów z Zapadliny. Przyszedł stary Staś, wsparty na lasce, kowal{licho_noc == odpedzone: z dłońmi owiniętymi w szmaty po pożarze}, Wójcik, który od śmierci córki rzadko wychodził z chałupy, Antek – i Jaromir, bo ktoś musiał stanąć za ojca.
 {
 - powiedzial_ojcu_poludnica && not figurka_u_staruchy:

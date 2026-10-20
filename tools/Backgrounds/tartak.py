@@ -370,7 +370,48 @@ Z_COMMENTS.update({f"slad_{i}": "kępa mchu wyrosła przez noc między grządkam
 _add(Z, ZNIWA, Z_ANIM, Z_COMMENTS, "jaskolki", efekty.wrony(100, 180, n=3, k=0.35, seed=59, amplitude=50), before="swierczki")
 Z_COMMENTS["jaskolki"] = "jaskółki śmigają nad polem"
 
+# ======================= TARTAK W SUSZY (rozdz. 8: Urbaniak i chlopi) =======================
+TS = {}
+rnd = random.Random(511)
+t = ['<rect width="390" height="440" fill="#EDEBE6" stroke="none"/>',
+     '<circle cx="320" cy="62" r="22" fill="#FFFFFF" stroke-width="2.6"/>',
+     '<path d="M0 0H390V100C300 114 200 90 110 106C60 114 30 104 0 110Z" fill="url(#hatch)" stroke="none" opacity="0.25"/>']
+t.append('<path d="M-10 190C80 180 200 186 400 178V440H-10Z" fill="#EDEBE6" stroke-width="3"/>')
+for i in range(16):
+    t.append(spruce(-4 + i * 18, 186 - (i % 2) * 4, 60 + (i % 3) * 14, 26))
+# wyschnieta struga: popekany mul zamiast wody
+t.append('<path d="M70 196C110 230 150 250 200 290C240 322 290 344 400 360V384C290 370 236 350 190 316C140 280 100 250 56 200Z" fill="url(#hatch)" stroke-width="2" opacity="0.8"/>')
+for (x, y) in [(90, 214), (130, 246), (170, 276), (214, 306), (260, 334), (310, 352), (356, 364)]:
+    t.append(f'<path d="M{x} {y}l8 6l-4 8M{x + 8} {y + 6}l9 -2" fill="none" stroke-width="1.2"/>')
+t.append('<path d="M150 300V200H300V300Z" fill="#FFFFFF" stroke-width="3"/><path d="M136 204L180 160H286L314 204Z" fill="url(#hatch)" stroke-width="3"/>')
+for x in range(160, 300, 12):
+    t.append(f'<path d="M{x} 202V300" fill="none" stroke-width="0.8"/>')
+t.append('<path d="M186 300V236H262V300Z" fill="#000000" stroke-width="2.4"/>')
+t.append('<path d="M222 244V296" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M200 290H250V296H200Z" fill="#FFFFFF" stroke-width="1.2"/>')
+t.append(kolo(134, 258, 24))
+t.append(deski(20, 300, 70, 6) + deski(310, 330, 60, 5) + pnie(30, 386, 10))
+t.append('<path d="M-10 404C90 396 200 396 400 402" fill="none" stroke-width="2"/>')
+TS["tlo"] = (0, 0, 390, 440, t[0] + "\n" + group(t[1:]))
+TS["urbaniak"] = (270, 300, 60, 130, group([tlusty(296, 426, 1.5)]))
+TS["chlopi"] = (20, 330, 220, 100, group([postacie.man(x, 428, 1.1, hat=True) for x in (50, 110, 170)] + [postacie.man(80, 432, 1.15, hat=False), postacie.man(140, 432, 1.2, hat=False), postacie.man(214, 430, 1.05, hat=True)]))
+p = ['<path d="M-10 432H400V844H-10Z" fill="#EDEBE6" stroke="none"/>']
+TS["przod"] = (0, 422, 390, 422, group(p))
+SUSZA_T = ["tlo", "chlopi", "urbaniak", "przod"]
+TS_REVEAL = {}
+TS_ANIM = {"chlopi": {"type": "bob", "amplitude": 0.4, "duration": 2600}, "urbaniak": {"type": "sway", "amplitude": 1.2, "duration": 3000, "anchorX": 0.5, "anchorY": 1}}
+TS_EXTRA = {"przod": {"depth": 1.0}}
+TS_COMMENTS = {"tlo": "tartak w suszy: wyschnięta, popękana struga, nieruchome koło i piła", "chlopi": "chłopi z Zapadliny pod tartakiem",
+              "urbaniak": "pan Urbaniak na ganku (kołysze się na piętach)", "przod": "pierwszy plan"}
+_add(TS, SUSZA_T, TS_ANIM, TS_COMMENTS, "zar", ((0, 120, 390, 60, group([f'<path d="{ribbon(-20, 410, 150, 8, 3)}" fill="#FFFFFF" stroke="none" opacity="0.35"/>'])),
+                                         {"type": "drift", "amplitude": 10, "duration": 5000}, "drżące od upału powietrze"), before="chlopi")
+_add(TS, SUSZA_T, TS_ANIM, TS_COMMENTS, "kurz", efekty.pylki(20, 340, 350, 80, n=10, seed=512, duration=6000), before="przod")
+TS_COMMENTS["kurz"] = "kurz nad wyschniętą drogą"
+_add(TS, SUSZA_T, TS_ANIM, TS_COMMENTS, "wrony", efekty.wrony(70, 80, n=3, seed=513), before="chlopi")
+_add(TS, SUSZA_T, TS_ANIM, TS_COMMENTS, "lancuszek", ((300, 360, 14, 12, group(['<path d="M302 362c4 6 8 6 10 0" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>'])),
+                                               {"type": "sway", "amplitude": 10, "duration": 1200, "anchorX": 0, "anchorY": 0}, "łańcuszek od zegarka w palcach Urbaniaka"), before="przod")
+
 BACKGROUNDS = {"tartak": ("bg_tartak", T, TARTAK, T_ANIM, T_REVEAL, T_EXTRA, T_COMMENTS, "tartak"),
+               "tartak_susza": ("bg_tartaksusza", TS, SUSZA_T, TS_ANIM, TS_REVEAL, TS_EXTRA, TS_COMMENTS, "tartak w suszy"),
                "ognisko_tartak": ("bg_ognisko", O, OGNISKO, O_ANIM, O_REVEAL, O_EXTRA, O_COMMENTS, "ognisko w tartaku"),
                "pole_orka": ("bg_orka", F, POLE, F_ANIM, F_REVEAL, F_EXTRA, F_COMMENTS, "orka"),
                "stary_dab": ("bg_dab", D, DAB, D_ANIM, D_REVEAL, D_EXTRA, D_COMMENTS, "Stary Dąb"),

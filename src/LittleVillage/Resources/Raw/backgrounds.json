@@ -3788,6 +3788,31 @@
         {"image": "bg_dol_wiosna_paliki_rog_p.png", "x": 270, "y": 560, "width": 140, "height": 290, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1}, "depth": 1.0},
         {"image": "bg_dol_wiosna_paliki_motyl.png", "x": 343, "y": 618, "width": 30, "height": 24, "animation": {"type": "wander", "amplitude": 40, "flap": 0.65, "duration": 7400}, "depth": 1.0}
       ]
+    },
+    "tartak_susza": {
+      "width": 390,
+      "height": 844,
+      "backgroundColor": "#EDEBE6",
+      "layers": [
+        {"image": "bg_tartaksusza_tlo.png", "x": 0, "y": 0, "width": 390, "height": 443},
+        {"image": "bg_tartaksusza_zar.png", "x": 0, "y": 120, "width": 390, "height": 60, "animation": {"type": "drift", "amplitude": 10, "duration": 5000}},
+        {"image": "bg_tartaksusza_wrony.png", "x": 63, "y": 64, "width": 85, "height": 32, "animation": {"type": "wander", "amplitude": 40, "flap": 0.55, "duration": 6200, "phase": 0.0, "anchorX": 0.506, "anchorY": 1.0}},
+        {"image": "bg_tartaksusza_chlopi.png", "x": 20, "y": 330, "width": 220, "height": 105, "animation": {"type": "bob", "amplitude": 0.4, "duration": 2600, "anchorX": 0.5, "anchorY": 0.952}},
+        {"image": "bg_tartaksusza_urbaniak.png", "x": 267, "y": 297, "width": 63, "height": 133, "animation": {"type": "sway", "amplitude": 1.2, "duration": 3000, "anchorX": 0.524, "anchorY": 1.0}},
+        {"image": "bg_tartaksusza_kurz.png", "x": 20, "y": 340, "width": 350, "height": 80, "animation": {"type": "wander", "amplitude": 6, "duration": 6000, "phase": 0.0}},
+        {"image": "bg_tartaksusza_lancuszek.png", "x": 299, "y": 359, "width": 16, "height": 13, "animation": {"type": "sway", "amplitude": 10, "duration": 1200, "anchorX": 0.062, "anchorY": 0.077}},
+        {"image": "bg_tartaksusza_przod.png", "x": 0, "y": 422, "width": 390, "height": 422, "depth": 1.0},
+        {"image": "bg_dol_tartak_susza_ciag.png", "x": -10, "y": 423, "width": 410, "height": 425, "depth": 1.0},
+        {"image": "bg_dol_tartak_susza_faktura.png", "x": -10, "y": 423, "width": 410, "height": 421, "depth": 1.0},
+        {"image": "bg_dol_tartak_susza_kamienie.png", "x": -10, "y": 423, "width": 410, "height": 421, "depth": 1.0},
+        {"image": "bg_dol_tartak_susza_trawa_0.png", "x": -30, "y": 352, "width": 450, "height": 236, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3000, "anchorX": 0.5, "anchorY": 1, "phase": 0.0}, "depth": 1.0},
+        {"image": "bg_dol_tartak_susza_trawa_1.png", "x": -30, "y": 488, "width": 450, "height": 236, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3400, "anchorX": 0.5, "anchorY": 1, "phase": 0.2}, "depth": 1.0},
+        {"image": "bg_dol_tartak_susza_trawa_2.png", "x": -30, "y": 624, "width": 450, "height": 236, "animation": {"type": "sway", "amplitude": 2.5, "duration": 3800, "anchorX": 0.5, "anchorY": 1, "phase": 0.4}, "depth": 1.0},
+        {"image": "bg_dol_tartak_susza_spekania.png", "x": -10, "y": 423, "width": 410, "height": 421, "depth": 1.0},
+        {"image": "bg_dol_tartak_susza_kurz.png", "x": 0, "y": 463, "width": 390, "height": 120, "animation": {"type": "drift", "amplitude": 40, "duration": 9000}, "depth": 1.0},
+        {"image": "bg_dol_tartak_susza_rog_l.png", "x": -20, "y": 560, "width": 140, "height": 290, "animation": {"type": "sway", "amplitude": 2, "duration": 3800, "anchorX": 0.2, "anchorY": 1}, "depth": 1.0},
+        {"image": "bg_dol_tartak_susza_rog_p.png", "x": 270, "y": 560, "width": 140, "height": 290, "animation": {"type": "sway", "amplitude": 2, "duration": 4200, "anchorX": 0.8, "anchorY": 1}, "depth": 1.0}
+      ]
     }
   }
 }

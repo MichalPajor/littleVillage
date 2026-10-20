@@ -30,7 +30,7 @@ RODZAJE = {
     "przerwa_sniezki": ("snieg", False), "izba_noc": ("izba", True), "wigilia": ("izba", False), "wigilia_szczeniak": ("izba", False),
     "noc_snieg": ("snieg", True), "kolyska": ("izba", True), "koledy": ("snieg", False), "stodola_marzanna": ("izba", False),
     "rozlewisko": ("bagno", False), "babka_lozko": ("izba", False), "prog_noc": ("laka", True), "izba_wieczor": ("izba", True),
-    "kapliczka_przewrocona": ("laka", False), "urbaniak": ("laka", False), "tartak": ("droga", False), "ognisko_tartak": ("laka", True),
+    "kapliczka_przewrocona": ("laka", False), "urbaniak": ("laka", False), "tartak": ("droga", False), "tartak_susza": ("susza", False), "ognisko_tartak": ("laka", True),
     "pole_orka": ("pole", False), "stary_dab": ("laka", False), "sciecie_debu": ("laka", False), "uboze_piec": ("izba", True),
     "przed_zniwami": ("pole", False), "zniwa": ("pole", False), "poludnica": ("pole", False), "goraczka": ("izba", True),
     "czerwony_ksiezyc": ("pole", True), "kapliczki_noc": ("laka", True), "budowa_tartaku": ("droga", False), "wykopki": ("jesien", False),
