@@ -13,6 +13,9 @@ RED = "#A8101A"
 PAPER = "#EDEBE6"
 TOP = 446
 
+# tla, na ktorych dolny plan ma sie kolysac spokojniej (mnoznik amplitudy) — np. ekran startowy
+SPOKOJ = {"wies_noc": 0.35}
+
 # klucz tla -> (rodzaj, noc)
 RODZAJE = {
     "wies_noc": ("laka", True), "zapadlina": ("laka", False), "budowa_las": ("las", False), "budowa_mokradla": ("bagno", False),
@@ -191,6 +194,8 @@ def build_for(key, layers):
         L[name] = (x, y, w, h, group(items))
         order.append(name)
         if a:
+            if key in SPOKOJ and a.get("type") in ("sway", "wander"):
+                a = dict(a, amplitude=round(a["amplitude"] * SPOKOJ[key], 2))
             anim[name] = a
         ex = dict(ex or {})
         ex.setdefault("depth", 1.0)

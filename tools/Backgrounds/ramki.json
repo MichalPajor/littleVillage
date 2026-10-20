@@ -3707,6 +3707,60 @@
 390,
 443
 ],
+"bg_start_dym": [
+120,
+200,
+153,
+70
+],
+"bg_start_grzbiet": [
+-10,
+352,
+410,
+93
+],
+"bg_start_gwiazdy": [
+0,
+5,
+250,
+151
+],
+"bg_start_lampka": [
+320,
+184,
+12,
+16
+],
+"bg_start_oczy": [
+175,
+196,
+25,
+11
+],
+"bg_start_okna": [
+60,
+260,
+210,
+40
+],
+"bg_start_swierk_l": [
+-40,
+103,
+110,
+329
+],
+"bg_start_swierk_p": [
+330,
+147,
+90,
+284
+],
+"bg_start_tlo": [
+0,
+0,
+390,
+443
+],
 "bg_stodola_golab_0": [
 53,
 102,

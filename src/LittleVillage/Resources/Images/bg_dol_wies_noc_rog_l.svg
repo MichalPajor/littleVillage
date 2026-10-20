@@ -25,9 +25,9 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<path d="M4 850C13 754 25 658 34 610" fill="none" stroke="#000000" stroke-width="3.0"/>
-<path d="M16 850C31 770 51 690 66 650" fill="none" stroke="#000000" stroke-width="3.0"/>
-<path d="M26 850C29 782 33 714 36 680" fill="none" stroke="#000000" stroke-width="3.0"/>
-<path d="M-6 850C12 738 36 626 54 570" fill="none" stroke="#000000" stroke-width="3.0"/>
+<path d="M4 850C13 754 25 658 34 610" fill="none" stroke="#FFFFFF" stroke-width="3.0"/>
+<path d="M16 850C31 770 51 690 66 650" fill="none" stroke="#FFFFFF" stroke-width="3.0"/>
+<path d="M26 850C29 782 33 714 36 680" fill="none" stroke="#FFFFFF" stroke-width="3.0"/>
+<path d="M-6 850C12 738 36 626 54 570" fill="none" stroke="#FFFFFF" stroke-width="3.0"/>
 </g>
 </svg>

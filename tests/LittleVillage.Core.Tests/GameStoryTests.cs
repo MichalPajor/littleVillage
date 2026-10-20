@@ -328,6 +328,17 @@ public sealed class GameStoryTests
     }
 
     [Fact]
+    public void Dog_joins_the_bundle_only_when_the_player_reads_that_they_slept_together()
+    {
+        var pages = Play(CreateEngine(), Forest, GoOut, FeedDog);
+
+        var night = pages.Single(p => p.Blocks.Any(b => b.Text.StartsWith("Tej nocy weszli do szałasu razem.")));
+        Assert.Single(night.Blocks, b => b.AnnouncesChanges);
+        Assert.StartsWith("Tej nocy weszli do szałasu razem.", night.Blocks.Single(b => b.AnnouncesChanges).Text);
+        Assert.All(pages.Where(p => p != night).SelectMany(p => p.Blocks), b => Assert.False(b.AnnouncesChanges));
+    }
+
+    [Fact]
     public void Morning_shows_the_creature_tracks_only_when_the_dog_is_dead()
     {
         var dead = Play(CreateEngine(), Forest, GoOut, KeepBread)[^1];

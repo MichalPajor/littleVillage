@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „ekran startowy”: świerk z lewej (kołysze się)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="329" viewBox="-40 103 110 329">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<line x1="14" y1="428" x2="14" y2="416" stroke-width="4"/><path d="M-34.0 420.0L14.0 338.8L62.0 420.0Z M-24.4 362.0L14.0 280.8L52.4 362.0Z M-14.8 304.0L14.0 222.8L42.8 304.0Z M-5.2 246.0L14.0 164.8L33.2 246.0Z M4.4 188.0L14.0 106.8L23.6 188.0Z" fill="#000000" stroke-width="2.4"/>
+</g>
+</svg>

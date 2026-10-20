@@ -104,8 +104,13 @@ public sealed partial class GameViewModel(
                 return;
             }
 
-            Show(await session.AdvanceAsync(SelectedChoice?.Choice.Index));
-            AnnounceInventoryChange();
+            var next = await session.AdvanceAsync(SelectedChoice?.Choice.Index);
+            Show(next);
+            // Akapit z tagiem # tobolek: zmiana w tobołku i zapiskach pokaże się dopiero, gdy gracz do niego doczyta.
+            if (!next.Blocks.Any(b => b.AnnouncesChanges))
+            {
+                AnnounceInventoryChange();
+            }
         }
         catch (Exception exception)
         {
@@ -197,6 +202,9 @@ public sealed partial class GameViewModel(
 
         messenger.Send(new StoryPageShownMessage(page));
     }
+
+    /// <summary>Widok doczytał akapit z tagiem <c># tobolek</c> — teraz pokazujemy zmiany w tobołku i zapiskach.</summary>
+    public void AnnounceDeferredChanges() => AnnounceInventoryChange();
 
     /// <summary>Po przejściu dalej: jeśli coś trafiło do tobołka albo z niego zniknęło, widok to pokaże.</summary>
     private void AnnounceInventoryChange()

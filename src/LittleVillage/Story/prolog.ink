@@ -213,7 +213,7 @@ Pies wypadł z ciemności jak strzała i stanął między Maćkiem a zaroślami.
 Długo trwało, zanim Maciek doszedł do siebie. W końcu osunął się na ziemię przy szałasie i oddychał ciężko jak po długim biegu. Pies przestał ujadać. Podszedł do niego niepewnie, z opuszczonym łbem – i zamerdał ogonem, dumny z siebie jak nikt na świecie.
 Wyciągnął drżącą rękę. Zwierzę obwąchało ją, a potem pozwoliło się pogłaskać.
 – Dobry pies – szepnął. – Dobry – odetchnął.
-Tej nocy weszli do szałasu razem. Zwinął się w kłębek przy boku człowieka i zasnął pierwszy. Maciek czuwał jeszcze, wsłuchany w ciemność. Ale nie był już sam. # dalej
+Tej nocy weszli do szałasu razem. Zwinął się w kłębek przy boku człowieka i zasnął pierwszy. Maciek czuwał jeszcze, wsłuchany w ciemność. Ale nie był już sam. # tobolek # dalej
 -> zgliszcza
 
 // Tylko gdy chata stoi przy mokradłach — stwór uciekł właśnie tam.

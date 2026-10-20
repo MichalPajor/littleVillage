@@ -231,7 +231,7 @@ public partial class GamePage : BasePage
                 continue;
             }
 
-            if (block.Reveal is not null && !_revealedBlocks.Contains(block))
+            if ((block.Reveal is not null || block.AnnouncesChanges) && !_revealedBlocks.Contains(block))
             {
                 var top = StoryBlocks.Y + child.Y;
                 var readingTime = TimeSpan.FromSeconds(Math.Max(MinimumReadingTime.TotalSeconds, charactersBefore / CharactersPerSecond));
@@ -242,6 +242,11 @@ public partial class GamePage : BasePage
                     foreach (var name in RevealList.Split(block.Reveal))
                     {
                         SceneView.Reveal(name);
+                    }
+
+                    if (block.AnnouncesChanges)
+                    {
+                        _viewModel.AnnounceDeferredChanges();
                     }
                 }
             }

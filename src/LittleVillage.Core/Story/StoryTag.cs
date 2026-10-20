@@ -17,6 +17,8 @@ public readonly record struct StoryTag(string Name, string? Value)
     public const string Continue = "dalej";
     public const string Reveal = "pokaz";
     public const string Death = "smierc";
+    /// <summary>Zmiana w tobołku i w zapiskach ma się pokazać dopiero przy tym akapicie (<c># tobolek</c>).</summary>
+    public const string Inventory = "tobolek";
 
     public static StoryTag Parse(string rawTag)
     {

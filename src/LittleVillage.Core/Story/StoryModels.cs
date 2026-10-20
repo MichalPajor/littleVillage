@@ -24,7 +24,7 @@ public enum StoryBlockKind
 /// Warstwy tła odsłaniane, gdy gracz doczyta do tego akapitu (tag <c># pokaz: nazwa</c>),
 /// zapisane jako lista rozdzielona przecinkami — patrz <see cref="RevealList"/>.
 /// </param>
-public sealed record StoryBlock(StoryBlockKind Kind, string Text, bool HasDropCap = false, string? Reveal = null);
+public sealed record StoryBlock(StoryBlockKind Kind, string Text, bool HasDropCap = false, string? Reveal = null, bool AnnouncesChanges = false);
 
 /// <summary>Opcja wyboru dostępna na końcu strony.</summary>
 /// <param name="Index">Indeks wyboru w silniku ink.</param>

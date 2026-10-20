@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- LittleVillage — tło „dolny plan: wies_noc”: kępy trawy kołyszą się
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="450" height="253" viewBox="-30 606 450 253">
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="233" viewBox="-30 626 450 233">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
@@ -25,19 +25,19 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<path d="M209 800l-13.4 -46.9M209 800l-3.4 -60.3M209 800l10.1 -53.6M209 800l23.5 -40.2M209 800l-26.8 -30.2" fill="none" stroke="#000000" stroke-width="2.4"/>
-<path d="M264 837l-17.1 -59.8M264 837l-4.3 -76.9M264 837l12.8 -68.4M264 837l29.9 -51.3M264 837l-34.2 -38.4" fill="none" stroke="#000000" stroke-width="2.7"/>
-<path d="M97 762l-17.8 -62.2M97 762l-4.4 -80.0M97 762l13.3 -71.1M97 762l31.1 -53.4M97 762l-35.6 -40.0" fill="none" stroke="#000000" stroke-width="2.7"/>
-<path d="M51 831l-18.8 -65.7M51 831l-4.7 -84.4M51 831l14.1 -75.1M51 831l32.8 -56.3M51 831l-37.5 -42.2" fill="none" stroke="#000000" stroke-width="2.8"/>
-<path d="M42 836l-18.9 -66.0M42 836l-4.7 -84.9M42 836l14.1 -75.4M42 836l33.0 -56.6M42 836l-37.7 -42.4" fill="none" stroke="#000000" stroke-width="2.8"/>
-<path d="M209 737l-15.8 -55.4M209 737l-4.0 -71.3M209 737l11.9 -63.3M209 737l27.7 -47.5M209 737l-31.7 -35.6" fill="none" stroke="#000000" stroke-width="2.6"/>
-<path d="M333 765l-16.4 -57.2M333 765l-4.1 -73.6M333 765l12.3 -65.4M333 765l28.6 -49.1M333 765l-32.7 -36.8" fill="none" stroke="#000000" stroke-width="2.6"/>
-<path d="M157 759l-16.8 -58.7M157 759l-4.2 -75.5M157 759l12.6 -67.1M157 759l29.4 -50.3M157 759l-33.5 -37.7" fill="none" stroke="#000000" stroke-width="2.7"/>
-<path d="M128 773l-18.5 -64.7M128 773l-4.6 -83.2M128 773l13.9 -74.0M128 773l32.4 -55.5M128 773l-37.0 -41.6" fill="none" stroke="#000000" stroke-width="2.8"/>
-<path d="M370 765l-16.3 -57.1M370 765l-4.1 -73.4M370 765l12.2 -65.2M370 765l28.5 -48.9M370 765l-32.6 -36.7" fill="none" stroke="#000000" stroke-width="2.6"/>
-<path d="M254 845l-15.5 -54.3M254 845l-3.9 -69.8M254 845l11.6 -62.1M254 845l27.2 -46.5M254 845l-31.0 -34.9" fill="none" stroke="#000000" stroke-width="2.6"/>
-<path d="M37 776l-16.4 -57.2M37 776l-4.1 -73.6M37 776l12.3 -65.4M37 776l28.6 -49.1M37 776l-32.7 -36.8" fill="none" stroke="#000000" stroke-width="2.6"/>
-<path d="M24 848l-20.3 -71.1M24 848l-5.1 -91.4M24 848l15.2 -81.2M24 848l35.5 -60.9M24 848l-40.6 -45.7" fill="none" stroke="#000000" stroke-width="2.9"/>
-<path d="M82 815l-19.1 -66.8M82 815l-4.8 -85.8M82 815l14.3 -76.3M82 815l33.4 -57.2M82 815l-38.1 -42.9" fill="none" stroke="#000000" stroke-width="2.8"/>
+<path d="M41 804l-18.9 -66.0M41 804l-4.7 -84.9M41 804l14.1 -75.5M41 804l33.0 -56.6M41 804l-37.7 -42.4" fill="none" stroke="#FFFFFF" stroke-width="2.8"/>
+<path d="M91 733l-13.3 -46.7M91 733l-3.3 -60.1M91 733l10.0 -53.4M91 733l23.4 -40.0M91 733l-26.7 -30.0" fill="none" stroke="#FFFFFF" stroke-width="2.4"/>
+<path d="M315 750l-17.2 -60.2M315 750l-4.3 -77.3M315 750l12.9 -68.8M315 750l30.1 -51.6M315 750l-34.4 -38.7" fill="none" stroke="#FFFFFF" stroke-width="2.7"/>
+<path d="M69 774l-14.7 -51.3M69 774l-3.7 -66.0M69 774l11.0 -58.7M69 774l25.7 -44.0M69 774l-29.3 -33.0" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+<path d="M106 813l-19.2 -67.1M106 813l-4.8 -86.2M106 813l14.4 -76.7M106 813l33.5 -57.5M106 813l-38.3 -43.1" fill="none" stroke="#FFFFFF" stroke-width="2.8"/>
+<path d="M32 821l-17.7 -61.9M32 821l-4.4 -79.6M32 821l13.3 -70.7M32 821l30.9 -53.0M32 821l-35.4 -39.8" fill="none" stroke="#FFFFFF" stroke-width="2.7"/>
+<path d="M111 826l-15.3 -53.5M111 826l-3.8 -68.8M111 826l11.5 -61.1M111 826l26.7 -45.8M111 826l-30.6 -34.4" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+<path d="M98 719l-12.3 -42.9M98 719l-3.1 -55.1M98 719l9.2 -49.0M98 719l21.4 -36.8M98 719l-24.5 -27.6" fill="none" stroke="#FFFFFF" stroke-width="2.3"/>
+<path d="M51 745l-14.1 -49.3M51 745l-3.5 -63.4M51 745l10.6 -56.3M51 745l24.6 -42.3M51 745l-28.2 -31.7" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+<path d="M378 808l-18.7 -65.5M378 808l-4.7 -84.3M378 808l14.0 -74.9M378 808l32.8 -56.2M378 808l-37.5 -42.1" fill="none" stroke="#FFFFFF" stroke-width="2.8"/>
+<path d="M94 758l-13.1 -45.7M94 758l-3.3 -58.8M94 758l9.8 -52.2M94 758l22.9 -39.2M94 758l-26.1 -29.4" fill="none" stroke="#FFFFFF" stroke-width="2.4"/>
+<path d="M105 758l-15.8 -55.1M105 758l-3.9 -70.9M105 758l11.8 -63.0M105 758l27.6 -47.3M105 758l-31.5 -35.4" fill="none" stroke="#FFFFFF" stroke-width="2.6"/>
+<path d="M183 834l-18.7 -65.6M183 834l-4.7 -84.3M183 834l14.1 -75.0M183 834l32.8 -56.2M183 834l-37.5 -42.2" fill="none" stroke="#FFFFFF" stroke-width="2.8"/>
+<path d="M8 786l-16.5 -57.7M8 786l-4.1 -74.2M8 786l12.4 -66.0M8 786l28.9 -49.5M8 786l-33.0 -37.1" fill="none" stroke="#FFFFFF" stroke-width="2.6"/>
 </g>
 </svg>

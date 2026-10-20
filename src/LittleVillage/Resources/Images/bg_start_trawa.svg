@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „ekran startowy”: trawa na grzbiecie (kołysze się spokojnie)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="70" viewBox="-10 330 410 70">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M288.10966074994053 379.72317832501477l1 -26" fill="none" stroke-width="2"/>
+<path d="M11.575130455565244 373.52005343847065l-0 -27" fill="none" stroke-width="2"/>
+<path d="M164.43653502064012 382.53589284188286l1 -29" fill="none" stroke-width="2"/>
+<path d="M62.63234908734988 376.12487613797254l4 -20" fill="none" stroke-width="2"/>
+<path d="M139.61631671841207 376.10946795582845l-1 -26" fill="none" stroke-width="2"/>
+<path d="M329.0944252428785 388.9128797030765l4 -25" fill="none" stroke-width="2"/>
+<path d="M33.416813178889754 375.10755682891875l1 -17" fill="none" stroke-width="2"/>
+<path d="M304.60782274120845 381.6071907590319l4 -17" fill="none" stroke-width="2"/>
+<path d="M254.06573999344886 379.4981087261496l-6 -19" fill="none" stroke-width="2"/>
+<path d="M300.3275244506516 373.2025156869486l-5 -29" fill="none" stroke-width="2"/>
+<path d="M143.81532503081104 371.5243101976345l5 -14" fill="none" stroke-width="2"/>
+<path d="M264.3909564157786 371.8965840098246l-3 -18" fill="none" stroke-width="2"/>
+<path d="M165.28274589330823 381.86303546165584l5 -19" fill="none" stroke-width="2"/>
+<path d="M138.26842268390243 380.06093954693745l-5 -15" fill="none" stroke-width="2"/>
+<path d="M34.85452047043232 378.8840180613164l-2 -15" fill="none" stroke-width="2"/>
+<path d="M164.52061050147694 386.58595440079705l-1 -22" fill="none" stroke-width="2"/>
+<path d="M313.51105470895783 371.142109379163l4 -21" fill="none" stroke-width="2"/>
+<path d="M361.69384109942877 374.07027078408595l2 -22" fill="none" stroke-width="2"/>
+<path d="M68.63920026362196 382.10187301789466l-5 -16" fill="none" stroke-width="2"/>
+<path d="M257.1447320044951 379.63591181934845l4 -16" fill="none" stroke-width="2"/>
+<path d="M252.2297767784828 390.97270790646246l1 -25" fill="none" stroke-width="2"/>
+<path d="M57.565003934822215 385.3305509286932l-5 -21" fill="none" stroke-width="2"/>
+<path d="M383.87844697138394 378.7186601266983l-0 -28" fill="none" stroke-width="2"/>
+<path d="M18.978832103805352 385.75468911660647l-4 -26" fill="none" stroke-width="2"/>
+<path d="M311.2048827527766 391.35831730536444l-2 -28" fill="none" stroke-width="2"/>
+<path d="M363.5766146762413 371.53351817205424l1 -15" fill="none" stroke-width="2"/>
+<path d="M221.50764898607355 372.44448182497075l-4 -27" fill="none" stroke-width="2"/>
+<path d="M356.2154914736685 374.0457289498715l-2 -20" fill="none" stroke-width="2"/>
+<path d="M389.7719210861307 381.6243391349327l-3 -26" fill="none" stroke-width="2"/>
+<path d="M228.51757972235248 388.5058406593619l-1 -27" fill="none" stroke-width="2"/>
+<path d="M54.12187852205207 386.8382191686468l1 -15" fill="none" stroke-width="2"/>
+<path d="M53.47366599581679 390.1197390412298l-4 -16" fill="none" stroke-width="2"/>
+<path d="M14.896933142148772 372.9847783858198l2 -25" fill="none" stroke-width="2"/>
+<path d="M250.7740197494296 372.6883471182475l-4 -26" fill="none" stroke-width="2"/>
+<path d="M342.89899708544334 374.8403160051644l-2 -26" fill="none" stroke-width="2"/>
+<path d="M254.84149321840914 374.58732662304493l-0 -19" fill="none" stroke-width="2"/>
+<path d="M391.18271962371705 390.164907779724l2 -21" fill="none" stroke-width="2"/>
+<path d="M99.18916008941535 389.60715655049415l-4 -23" fill="none" stroke-width="2"/>
+<path d="M98.84076089048061 371.7416174722862l4 -19" fill="none" stroke-width="2"/>
+<path d="M3.9325405365185233 385.1100837451818l2 -18" fill="none" stroke-width="2"/>
+<path d="M353.25639613052687 374.9484060048447l-2 -15" fill="none" stroke-width="2"/>
+<path d="M125.67173459259453 391.77081599922633l2 -27" fill="none" stroke-width="2"/>
+<path d="M386.79073363853524 391.96521521002023l5 -25" fill="none" stroke-width="2"/>
+<path d="M62.145374689919706 370.4759468582292l2 -27" fill="none" stroke-width="2"/>
+<path d="M227.5893015139454 385.55516082067055l2 -25" fill="none" stroke-width="2"/>
+<path d="M136.99490329416025 370.28802312366486l-1 -26" fill="none" stroke-width="2"/>
+<path d="M259.0926646840135 376.7784101780637l-1 -22" fill="none" stroke-width="2"/>
+<path d="M284.126093819365 388.8673104185571l3 -18" fill="none" stroke-width="2"/>
+<path d="M58.225275947798934 383.5461734414603l1 -23" fill="none" stroke-width="2"/>
+<path d="M99.79102051528247 385.7537901866748l-3 -23" fill="none" stroke-width="2"/>
+<path d="M66.29788769656427 378.4858970528125l0 -16" fill="none" stroke-width="2"/>
+<path d="M379.6947418938249 388.6006712490347l-4 -28" fill="none" stroke-width="2"/>
+<path d="M61.70394526691341 376.532906050411l-4 -30" fill="none" stroke-width="2"/>
+<path d="M294.27636638549734 386.79678695653035l5 -19" fill="none" stroke-width="2"/>
+<path d="M27.295738268357887 377.77770968393907l4 -21" fill="none" stroke-width="2"/>
+</g>
+</svg>
