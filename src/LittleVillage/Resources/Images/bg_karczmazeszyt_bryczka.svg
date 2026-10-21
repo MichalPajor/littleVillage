@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „zeszyt Urbaniaka”: bryczka: Urbaniak, majster, gajowy z dubeltówką
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="108" viewBox="220 252 170 108">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="2"><path d="M326.0 324.0C324.0 310.0 338.0 306.0 356.0 308.0C366.0 308.0 372.0 306.0 376.0 300.0L386.0 288.0L394.0 290.0L392.0 298.0L384.0 304.0C382.0 314.0 378.0 322.0 370.0 324.0Z" fill="#000000"/><path d="M330.0 322.0L328.0 346.0M338.0 322.0L340.0 346.0M364.0 322.0L362.0 346.0M370.0 322.0L372.0 346.0" fill="none" stroke-width="3.4"/><path d="M326.0 314.0C318.0 318.0 318.0 328.0 320.0 334.0" fill="none" stroke-width="2.4"/><path d="M378.0 298.0l-2.0 -8.0" fill="none" stroke-width="1.6"/><circle cx="388.0" cy="293.0" r="1.0" fill="#FFFFFF" stroke="none"/></g>
+<path d="M236 330H306L300 312H244Z" fill="#FFFFFF" stroke-width="2"/>
+<circle cx="252" cy="338" r="12" fill="none" stroke-width="2.2"/><circle cx="296" cy="338" r="12" fill="none" stroke-width="2.2"/>
+<path d="M306 320L330 326" fill="none" stroke-width="2"/>
+<g stroke-width="2"><path d="M265.5 318.0V298.5H269.2V318.0ZM274.5 318.0V298.5H270.8V318.0Z" fill="#000000"/><path d="M258.0 301.5C255.0 282.0 261.0 271.5 270.0 271.5C279.0 271.5 285.0 282.0 282.0 301.5Z" fill="#000000"/><path d="M265.5 285.0C268.5 288.0 273.0 288.0 276.0 285.0" fill="none" stroke="#FFFFFF" stroke-width="1.4"/><circle cx="270" cy="266.2" r="5.2" fill="#000000"/><path d="M261.0 262.5H279.0L275.2 255.0H264.8Z" fill="#000000"/></g>
+<g stroke-width="2.2"><path d="M239.7 316.0L241.5 297.4L244.6 297.4L244.0 316.0ZM248.3 316.0L245.2 297.4L242.1 297.4L244.0 316.0Z" fill="#000000"/><path d="M235.9 298.6C234.7 288.7 236.6 280.0 240.3 277.6H247.7C251.4 280.0 253.3 288.7 252.1 298.6Z" fill="#000000"/><circle cx="244" cy="273.2" r="4.7" fill="#000000"/><path d="M236.6 271.4L251.4 271.4L248.3 267.6L239.7 267.6Z" fill="#000000"/></g>
+<g stroke-width="2.2"><path d="M287.7 316.0L289.5 297.4L292.6 297.4L292.0 316.0ZM296.3 316.0L293.2 297.4L290.1 297.4L292.0 316.0Z" fill="#000000"/><path d="M283.9 298.6C282.7 288.7 284.6 280.0 288.3 277.6H295.7C299.4 280.0 301.3 288.7 300.1 298.6Z" fill="#000000"/><circle cx="292" cy="273.2" r="4.7" fill="#000000"/><path d="M284.6 271.4L299.4 271.4L296.3 267.6L287.7 267.6Z" fill="#000000"/></g>
+<path d="M284 288L304 272" fill="none" stroke-width="2"/>
+</g>
+</svg>

@@ -213,13 +213,8 @@ Na początku czerwca ludzie Urbaniaka zaczęli wbijać w ziemię paliki: od tart
 -> rozdzial_trzynasty_ciag_dalszy
 
 
-// Koniec rozdziału trzynastego — rozdział czternasty (Kapliczki płoną) do napisania.
+// Koniec rozdziału trzynastego — dalej rozdział czternasty.
 === rozdzial_trzynasty_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału trzynastego._ # dalej
--> rozdzial_czternasty_wkrotce
-
-=== rozdzial_czternasty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_czternasty

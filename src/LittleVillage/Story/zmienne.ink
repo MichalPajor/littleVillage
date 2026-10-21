@@ -225,3 +225,13 @@ VAR noc_na_kladce = ()
 // Co się stało z figurką: zamknięta w skrzyni (ogień jej nie wziął), zakopana pod kapliczką, oddana Jagnie albo u stwora.
 LIST LosFigurki = figurka_w_skrzyni, figurka_pod_kapliczka, figurka_u_jagny, figurka_u_stwora
 VAR los_figurki = ()
+
+// ---------- Rozdział czternasty (Kapliczki płoną) ----------
+// Szarwark z zeszytu Urbaniaka: sprzeciw pod karczmą (zabrana krowa), robota na przesiece (srebro, żywica na dłoni) albo paliki wyrwane z Antkiem (areszt Antka, korale Jadwisi).
+LIST Szarwark = sprzeciw_przy_karczmie, robota_na_przesiece, paliki_w_bagnie
+VAR szarwark = ()
+// Noc pożaru: ratował kapliczkę przy przesiece (Szymon okaleczony), Szymona (kapliczki spłonęły) albo — gdy ubożę ostrzegło — zbudził wieś (oba ocalały, spalone dłonie Jaromira).
+LIST NocOgnia = ratowal_kapliczke, ratowal_szymona, zbudzil_wies
+VAR noc_ognia = ()
+// Wieś przyjęła układ Urbaniaka: zeszyt spalony, droga wyrąbana do pierwszych wielkich sosen boru.
+VAR droga_do_boru = false

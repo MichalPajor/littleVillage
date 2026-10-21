@@ -56,6 +56,8 @@ RODZAJE = {
     "przednowek": ("bagno", False), "jagna_izba": ("izba", False), "jarmark": ("miasto", False), "zgliszcza_kra": ("woda", False),
     "kladka_naprawa": ("bagno", False), "sen_kladka": ("woda", True), "noc_kladka": ("bagno", True), "skrzynia_izba": ("izba", True),
     "wiosna_paliki": ("laka", False),
+    "paliki_pedy": ("susza", False), "karczma_zeszyt": ("droga", False), "noc_ognia": ("pole", True), "pogorzelisko": ("popiol", False),
+    "zima_mlodnik": ("snieg", False),
 }
 
 

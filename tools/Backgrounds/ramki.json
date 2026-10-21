@@ -1535,6 +1535,60 @@
 30,
 27
 ],
+"bg_karczmazeszyt_bryczka": [
+220,
+252,
+170,
+108
+],
+"bg_karczmazeszyt_chlopi": [
+10,
+320,
+220,
+105
+],
+"bg_karczmazeszyt_dym": [
+150,
+127,
+30,
+63
+],
+"bg_karczmazeszyt_krowa": [
+0,
+0,
+390,
+443
+],
+"bg_karczmazeszyt_noc": [
+0,
+0,
+390,
+443
+],
+"bg_karczmazeszyt_ogon": [
+372,
+316,
+20,
+31
+],
+"bg_karczmazeszyt_swierk": [
+0,
+0,
+390,
+443
+],
+"bg_karczmazeszyt_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_karczmazeszyt_zeszyt": [
+261,
+294,
+21,
+15
+],
 "bg_kladkanapr_chmury": [
 40,
 40,
@@ -2375,6 +2429,48 @@
 70,
 103
 ],
+"bg_nocognia_blysk": [
+0,
+0,
+390,
+213
+],
+"bg_nocognia_dym": [
+230,
+37,
+160,
+166
+],
+"bg_nocognia_luna": [
+180,
+120,
+210,
+203
+],
+"bg_nocognia_szymon": [
+180,
+232,
+90,
+98
+],
+"bg_nocognia_tartak": [
+230,
+157,
+160,
+143
+],
+"bg_nocognia_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_nocognia_wiadra": [
+20,
+190,
+230,
+133
+],
 "bg_nocsnieg_iskry": [
 10,
 298,
@@ -2645,6 +2741,24 @@
 43,
 69
 ],
+"bg_paliki_swierki": [
+230,
+231,
+160,
+58
+],
+"bg_paliki_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_paliki_trawa": [
+0,
+384,
+390,
+49
+],
 "bg_pieclat_chmury": [
 40,
 60,
@@ -2670,6 +2784,30 @@
 41
 ],
 "bg_pieclat_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_pogorzelisko_komornik": [
+0,
+0,
+390,
+443
+],
+"bg_pogorzelisko_las": [
+0,
+163,
+390,
+127
+],
+"bg_pogorzelisko_ludzie": [
+130,
+316,
+204,
+114
+],
+"bg_pogorzelisko_tlo": [
 0,
 0,
 390,
@@ -4936,6 +5074,48 @@
 390,
 390,
 43
+],
+"bg_zimamlodnik_dym": [
+100,
+187,
+30,
+63
+],
+"bg_zimamlodnik_iskierki": [
+0,
+300,
+390,
+121
+],
+"bg_zimamlodnik_krzyzyk": [
+298,
+290,
+24,
+40
+],
+"bg_zimamlodnik_luczywo": [
+30,
+317,
+30,
+26
+],
+"bg_zimamlodnik_swiatek": [
+238,
+265,
+24,
+35
+],
+"bg_zimamlodnik_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_zimamlodnik_wrony": [
+163,
+84,
+85,
+32
 ],
 "bg_zmierzch_krzaki": [
 205,

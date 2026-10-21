@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „zeszyt Urbaniaka”: noc: Jaromir i Antek z palikami (# pokaz: noc)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="443" viewBox="0 0 390 443">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<rect width="390" height="440" fill="url(#hatchNight)" stroke="none" opacity="0.8"/>
+<g stroke-width="2.2"><path d="M141.6 404.0L145.2 368.0L151.2 368.0L150.0 404.0ZM158.4 404.0L152.4 368.0L146.4 368.0L150.0 404.0Z" fill="#000000"/><path d="M134.4 370.4C132.0 351.2 135.6 334.4 142.8 329.6H157.2C164.4 334.4 168.0 351.2 165.6 370.4Z" fill="#000000"/><circle cx="150" cy="321.2" r="9.0" fill="#000000"/></g>
+<g stroke-width="2.2"><path d="M191.6 404.0L195.2 368.0L201.2 368.0L200.0 404.0ZM208.4 404.0L202.4 368.0L196.4 368.0L200.0 404.0Z" fill="#000000"/><path d="M184.4 370.4C182.0 351.2 185.6 334.4 192.8 329.6H207.2C214.4 334.4 218.0 351.2 215.6 370.4Z" fill="#000000"/><circle cx="200" cy="321.2" r="9.0" fill="#000000"/><path d="M185.6 317.6L214.4 317.6L208.4 310.4L191.6 310.4Z" fill="#000000"/></g>
+<path d="M164 360l20 -40M216 360l16 -36" fill="none" stroke-width="2.4"/>
+<circle cx="330" cy="60" r="14" fill="#FFFFFF" stroke-width="2"/>
+</g>
+</svg>

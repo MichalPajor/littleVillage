@@ -172,7 +172,11 @@ public sealed class RevealTests
             [.. ToChapterTwelve(background: "jarmark"), 1, 0, 2, 1],
             [.. ToChapterTwelve(background: "jarmark"), 0, 0, 2, 2],
             [.. ToChapterTwelve(background: "zgliszcza_kra"), 1, 1, 0, 1],
-            [.. ToChapterTwelve(background: "kladka_naprawa"), 1, 0, 2, 1]];
+            [.. ToChapterTwelve(background: "kladka_naprawa"), 1, 0, 2, 1],
+            // rozdzial czternasty: szarwark, noc ognia (kapliczka, Szymon, cala wies z ubozeciem), uklad z Urbaniakiem
+            [.. ToChapterTwelve(background: "karczma_zeszyt"), 0, 0, 0],
+            [.. ToChapterTwelve(background: "karczma_zeszyt"), 1, 1, 1],
+            [.. ToChapterTwelve(e => e.SaveState().Contains("LosUbozecia.nakarmione"), "karczma_zeszyt"), 2, 2, 0]];
 
     /// <summary>Wybory pierwszej sciezki (z ogonami rozdzialow 7–11), ktora dochodzi do wyboru na tle <paramref name="background"/> (domyslnie czuwanie przy zmarlym)
     /// i spelnia <paramref name="accept"/> — az do tego wyboru.</summary>

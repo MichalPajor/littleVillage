@@ -7,7 +7,7 @@
 //  Wpisy nie mówią więcej, niż w tej chwili wiedzą postacie.
 // ------------------------------------------------------------
 
-LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3
+LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3
 VAR zapiski = ()
 
 === function tytul_zapisku(z)
@@ -46,6 +46,8 @@ VAR zapiski = ()
     - ogniki_2:     ~ return "Błędne ogniki"
     - stwor_3:      ~ return "Topielec"
     - zielarka_3:   ~ return "Zielarka znad jeziora"
+    - pan_lasu_6:   ~ return "Pan Lasu"
+    - uboze_3:      ~ return "Ubożę"
 }
 ~ return ""
 
@@ -119,4 +121,8 @@ VAR zapiski = ()
     Wrócił na mokradła razem z figurką. Dzieci we wsi śniły o nim ten sam sen: stoi pod kładką w czarnej wodzie, przewraca gliniane garnki, zagląda pod każdy, a potem mówi, że jednego brakuje.{figurka_u_staruchy: Na ramieniu ma głęboką, starą bliznę po siekierze dziadka Maćka.}{noc_na_kladce == siekiera_na_kladce: Jaromir zranił go siekierą, a on rozorał mu bark.}{noc_na_kladce == figurka_dla_stwora: Kiedy dostał figurkę, puścił chłopca i przycisnął ją do piersi jak matka dziecko. Schodząc pod wodę, pociągnął za sobą starą kładkę.}{noc_na_kladce == latarnia_na_wodzie: Ognia boi się bardziej niż żelaza – uciekł przed płonącym olejem.}
 - zielarka_3:
     {zaufal_jagnie:Jagna mówi, że figurka to lalka: zielarka wystrugała ją z korzenia wyciągniętego z bagna i nadała jej imię tego, który mieszka w wodzie. Kto ma lalkę, za tym on idzie. Ognia lalka się nie boi – uciszy ją tylko poświęcona ziemia.{odrzucil_figurke: Odepchniętej nie da się już nikomu oddać.}|Nadpalona figurka znad jeziora wróciła do Zapadliny po ponad sześćdziesięciu latach – a razem z nią wróciły sny.}{los_figurki == figurka_pod_kapliczka: Leży teraz pod kapliczką, a gdzie – wie tylko Jaromir.}{los_figurki == figurka_u_jagny: Jagna zabrała ją ze sobą, tak daleko, żeby nie dosłyszał.}{los_figurki == figurka_w_skrzyni: Ogień jej nie wziął. Leży w skrzyni pod łóżkiem, okręconej łańcuchem.}{los_figurki == figurka_u_stwora: Ma ją teraz ten, kto mieszka pod kładką.}
+- pan_lasu_6:
+    W noc, kiedy spłonęły kapliczki, bór przyszedł pod wieś o całe pole. Drzewa, które stały rano w miejscu ścierniska, wyglądały, jakby rosły tam od lat. Paliki pod drogę Urbaniaka puszczały pędy, a z pieńków na przesiece co rano wyrastały nowe gałązki.{droga_do_boru: Droga doszła do pierwszych wielkich sosen i tam się urwała – nikt nie chciał rąbać dalej.}{szarwark && not droga_do_boru && rozdzial_czternasty.pierwszy_snieg_czternasty: Młodnik stanął na granicy spalonych kapliczek i więcej nie urósł.}
+- uboze_3:
+    Obudziło gospodarza szarpaniem za włosy, kiedy od lasu szedł ogień. Bało się tak, że trzęsła mu się broda. Ubożę pamięta, kto je karmił.
 }
