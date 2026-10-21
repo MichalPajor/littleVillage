@@ -284,3 +284,10 @@ VAR drugi_drewniak = false
 // Zastaw zostawiony Panu Lasu do świtu: siekiera dziadka, krzesiwo albo własny cień.
 LIST ZastawDlaLeszego = zastaw_siekiera, zastaw_krzesiwo, zastaw_cien
 VAR zastaw_u_leszego = ()
+
+// ---------- Rozdział osiemnasty (Wybór) ----------
+// Po czym Jaromir poznał (albo nie poznał) córkę wśród dzieci spod dębu.
+LIST ZnakRozpoznania = po_imieniu, po_melodii, po_buzi, po_drewniaku, po_skarbie, po_cieniu, po_psie, po_wilku
+VAR znak_rozpoznania = ()
+// Dobry wybór — Marysia wraca do domu; zły — dziecko spod dębu stygnie na skraju młodnika, a prawdziwa milknie w borze.
+VAR marysia_odzyskana = false

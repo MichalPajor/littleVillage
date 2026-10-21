@@ -198,13 +198,8 @@ Kiedy niebo nad koronami poszarzało, Pan Lasu już na niego czekał. # pokaz: s
 -> rozdzial_siedemnasty_ciag_dalszy
 
 
-// Koniec rozdziału siedemnastego — rozdział osiemnasty (Wybór) do napisania.
+// Koniec rozdziału siedemnastego — dalej rozdział osiemnasty.
 === rozdzial_siedemnasty_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału siedemnastego._ # dalej
--> rozdzial_osiemnasty_wkrotce
-
-=== rozdzial_osiemnasty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_osiemnasty

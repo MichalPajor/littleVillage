@@ -268,9 +268,9 @@ public sealed class GameStoryTests
         {
             foreach (var tail in new int[][]
             {
-                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave, .. Dream, .. Fire, .. Kupala, .. DeepForest, .. OakTalk],
-                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave, .. Dream, .. Fire, .. Kupala, .. DeepForest, .. OakTalk],
-                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave, .. Dream, .. Fire, .. Kupala, .. DeepForest, .. OakTalk],
+                [StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave, .. Dream, .. Fire, .. Kupala, .. DeepForest, .. OakTalk, .. Choice],
+                [StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToDealer, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave, .. Dream, .. Fire, .. Kupala, .. DeepForest, .. OakTalk, .. Choice],
+                [Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave, .. Dream, .. Fire, .. Kupala, .. DeepForest, .. OakTalk, .. Choice],
             })
             {
                 data.Add([place, Stay, .. tail]);
@@ -805,6 +805,7 @@ public sealed class GameStoryTests
     private static readonly int[] Kupala = [0, 0, 0];                              // noc swietojanska, zytnia baba, rada przed borem
     private static readonly int[] DeepForest = [0, 0, 0, 0];                       // sciezki w borze, glosy, bagno, starzec
     private static readonly int[] OakTalk = [0, 0, 0];                             // pytanie do Pana Lasu, wilk, zastaw
+    private static readonly int[] Choice = [0];                                    // po czym Jaromir pozna corke
     private static readonly int[] CursedPrologue = [.. ToTownWithDogAndFigurine, SellToWitch, TellWife];
     private static readonly int[] PeacefulPrologue = [Forest, Stay, Leave, SendBoyAway, Avoid, WalkOn, KeepQuiet];
 
@@ -2370,8 +2371,8 @@ public sealed class GameStoryTests
         Assert.Contains("Jego dzieci nie mają cienia", journal.Single(c => c.Id == "pan_lasu").Notes[^1]);
         Assert.Contains("Oddał go Panu Lasu", journal.Single(c => c.Id == "tropy").Notes[^1]);
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału siedemnastego._"));
-        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
-        Assert.Equal(PageEnding.End, pages[^1].Ending);
+        Assert.Equal("dzieci_debu", pages[^1].BackgroundKey);
+        Assert.Equal(PageEnding.Choices, pages[^1].Ending);
     }
 
     [Fact]
@@ -2408,7 +2409,89 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "pod_debem"), "Jesteś w tym podobny do mnie"));
         Assert.DoesNotContain("krzesiwo", Inventory(engine));
         Assert.Contains("ten sam żar", engine.GetJournal().Single(c => c.Id == "zielarka").Notes[^1]);
+        Assert.Equal("dzieci_debu", pages[^1].BackgroundKey);
+    }
+
+    // ----- Rozdzial osiemnasty: Wybor -----
+
+    private static readonly string[] PeacefulForestToOak = ["Wywrócić ubranie", "Odpowiedzieć Marysi", "Iść za światłami", "Zdjąć czapkę", "Gdzie jest Marysia", "Nazwać go po imieniu", "Siekierę dziadka"];
+
+    [Fact]
+    public void Chapter_eighteen_the_melody_finds_marysia_and_the_lord_of_the_forest_announces_all_souls()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToKupala, 0, 0, 0]);
+        pages.AddRange(PlayByText(engine, pages[^1], [.. PeacefulForestToOak, "Zanucić jej melodię"]));
+
+        var room = On(pages, "izba_swit")[0];
+        Assert.Equal("Rozdział osiemnasty", room.Blocks[0].Text);
+        Assert.Equal("Wybór", room.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
+        Assert.True(Has([room], "zapalił nową szczypkę"));
+        Assert.True(Has(On(pages, "dzieci_debu"), "Te we włosach dziewczynek były nowe"));
+        Assert.True(Has(On(pages, "dzieci_debu"), "Patrzył, która zamknie usta"));
+        Assert.True(Has(On(pages, "dzieci_debu"), "Ta płakała za wszystkie"));
+        Assert.True(Has(On(pages, "dzieci_debu"), "Nikt mu jej nie oddał"));
+        Assert.True(Has(On(pages, "dzieci_debu"), "W Zaduszki przyjdę do wsi"));
+        var children = engine.GetJournal().Single(c => c.Id == "dzieci");
+        Assert.Equal("Dzieci spod dębu", children.Title);
+        Assert.Contains("Śpiewają melodię do samego końca", children.Notes[^1]);
+        Assert.Contains("Nie rzucają cienia", children.Notes[^1]);
+        Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału osiemnastego._"));
+        Assert.Equal("_Ciąg dalszy nastąpi…_", pages[^1].Blocks[^1].Text);
         Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_eighteen_inside_out_eyes_pick_the_wrong_child_who_goes_cold_at_the_forest_edge()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToKupala, 0, 0, 0]);
+        pages.AddRange(PlayByText(engine, pages[^1], [.. PeacefulForestToOak, "Przyjrzeć się buziom"]));
+
+        Assert.True(Has(On(pages, "dzieci_debu"), "patrzy na świat na opak"));
+        Assert.True(Has(On(pages, "skraj_powrot"), "Więcej nie zaczął"));
+        Assert.True(Has(On(pages, "skraj_powrot"), "Pochowasz je jak swoje"));
+        Assert.Contains("chowa je jak swoje", engine.GetJournal().Single(c => c.Id == "pan_lasu").Notes[^1]);
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_eighteen_the_treasure_from_the_hideout_shows_which_child_is_real()
+    {
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. PeacefulToKupala, 0, 0, 0]);
+        pages.AddRange(PlayByText(engine, pages[^1], [.. PeacefulForestToOak, "Szukać skarbu z bazy"]));
+
+        Assert.True(Has(On(pages, "dzieci_debu"), "Pochylał się nad każdą szyją"));
+        Assert.True(Has(On(pages, "dzieci_debu"), "Palce wplątała w rzemyk"));
+        Assert.Contains("gładkie i nowe", engine.GetJournal().Single(c => c.Id == "dzieci").Notes[^1]);
+    }
+
+    [Fact]
+    public void Chapter_eighteen_franek_finds_her_and_stays_under_the_oak()
+    {
+        var engine = CreateEngine();
+        var pages = PlayTo(engine, "skraj_bor", [.. PeacefulToHunt, 0, 0, 1]);
+        pages.AddRange(PlayByText(engine, pages[^1], "Wywrócić ubranie", "Pójść za głosem Franka", "białym wilkiem", "Zdjąć czapkę",
+            "Kim jest", "Opowiedzieć mu o Antku", "Swój cień", "Poprosić Franka o pomoc"));
+
+        Assert.True(Has(On(pages, "dzieci_debu"), "zbyt duży jak na dziecko"));
+        Assert.True(Has(On(pages, "dzieci_debu"), "Moi nie pomagają ludziom"));
+        Assert.True(Has(On(pages, "dzieci_debu"), "nic za nim nie szło"));
+        Assert.Contains("Został pod dębem", engine.GetJournal().Single(c => c.Id == "tropy").Notes[^1]);
+        Assert.Equal(PageEnding.End, pages[^1].Ending);
+    }
+
+    [Fact]
+    public void Chapter_eighteen_the_pledged_shadow_lies_under_a_false_child()
+    {
+        var engine = CreateEngine();
+        var pages = PlayTo(engine, "skraj_bor", [.. PeacefulToHunt, 0, 0, 1]);
+        pages.AddRange(PlayByText(engine, pages[^1], "Wywrócić ubranie", "Pójść za głosem Franka", "białym wilkiem", "Zdjąć czapkę",
+            "Kim jest", "Opowiedzieć mu o Antku", "Swój cień", "Wziąć tę, która rzuca cień"));
+
+        Assert.True(Has(On(pages, "dzieci_debu"), "szeroki w ramionach, długi, jego własny"));
+        Assert.True(Has(On(pages, "skraj_powrot"), "Pochowasz je jak swoje"));
     }
 
     // ----- Zapiski (bestiariusz): karty odslaniane etapami -----

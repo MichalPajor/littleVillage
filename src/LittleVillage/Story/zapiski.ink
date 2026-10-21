@@ -7,7 +7,7 @@
 //  Wpisy nie mówią więcej, niż w tej chwili wiedzą postacie.
 // ------------------------------------------------------------
 
-LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3, zytnia_baba_1, zytnia_baba_2, pan_lasu_7, planetnik_1, tropy_3, blednice_1, starzec_4, pan_lasu_8, pan_lasu_9, zielarka_4, tropy_4
+LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3, zytnia_baba_1, zytnia_baba_2, pan_lasu_7, planetnik_1, tropy_3, blednice_1, starzec_4, pan_lasu_8, pan_lasu_9, zielarka_4, tropy_4, dzieci_1, pan_lasu_10, tropy_5
 VAR zapiski = ()
 
 === function tytul_zapisku(z)
@@ -59,6 +59,9 @@ VAR zapiski = ()
     - pan_lasu_9:   ~ return "Pan Lasu"
     - zielarka_4:   ~ return "Zielarka znad jeziora"
     - tropy_4:      ~ return "Biały wilk"
+    - dzieci_1:     ~ return "Dzieci spod dębu"
+    - pan_lasu_10:  ~ return "Pan Lasu"
+    - tropy_5:      ~ return "Biały wilk"
 }
 ~ return ""
 
@@ -158,4 +161,10 @@ VAR zapiski = ()
     Przychodzili do niej ci znad wody – i Pan Lasu. Pokazał jej kiedyś w wodzie chatę w ogniu – jej własną – ale nie uwierzyła. Płonąc, przeklęła wieś cudzymi rękami: „Kości dzieci waszych będą połamane, a krew ich wypita”. Póki stał Stary Dąb, słowo było silniejsze od przekleństwa.{pytanie_do_leszego == o_klatwe: Zdejmie klątwę ten, kto zwróci Panu Lasu granicę, albo ten, kto zajmie jego miejsce. Albo ogień, który ją zaczął – ale po nim nie zostanie ani bór, ani wieś.}{zastaw_u_leszego == zastaw_krzesiwo: Krzesiwo, które Maciek znalazł w jej popiele, nosi w sobie ten sam żar, który ją spalił.}
 - tropy_4:
     Przyniósł pod dąb drugi drewniak Marysi – ten, który został w zbożu. {wilk_przy_jaromirze:Położył go Jaromirowi u stóp i przez całą noc leżał przy nim.|Oddał go Panu Lasu i siedzi przy nim, obojętny jak drzewa.}{wilk_pod_debem != nie_ruszal_sie: Każde ludzkie słowo, które mu się przypomni, zabiera mu kawałek wilczego życia.}
+- dzieci_1:
+    O świcie wychodzą ze szczeliny w dębie i siadają w kręgu: kilkanaście dziewczynek z jedną twarzą, w tych samych koszulkach i z nowymi wstążkami we włosach. Uśmiechają się grzecznie i cierpliwie, mówią jednym głosem, pachną próchnem. Kiedy ojciec wybierze, reszta rozsypuje się w suche liście i korę.{znak_rozpoznania == po_melodii: Śpiewają melodię do samego końca.}{znak_rozpoznania == po_buzi || znak_rozpoznania == po_skarbie: Wszystko, co u dziecka jest po lewej, u nich jest po prawej, a to, co nosi na szyi, mają gładkie i nowe.}{pytanie_do_leszego == gdzie_marysia: Nie rzucają cienia i nigdy nie płaczą.}
+- pan_lasu_10:
+    {marysia_odzyskana:Dotrzymał słowa: kto pozna swoje dziecko, ten je zabiera i nikt go nie zatrzyma.|Dotrzymał słowa: kto wybierze źle, zabiera do domu to, co wybrał – i chowa je jak swoje.} Zapowiedział, że w Zaduszki przyjdzie do wsi, żeby rozliczyć się do końca.
+- tropy_5:
+    Pomógł znaleźć prawdziwe dziecko, choć słudzy Pana Lasu nie pomagają ludziom. Został pod dębem, z dłonią Pana Lasu na karku.
 }
