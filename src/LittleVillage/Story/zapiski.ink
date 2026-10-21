@@ -7,7 +7,7 @@
 //  Wpisy nie mówią więcej, niż w tej chwili wiedzą postacie.
 // ------------------------------------------------------------
 
-LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3, zytnia_baba_1, zytnia_baba_2, pan_lasu_7, planetnik_1
+LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3, zytnia_baba_1, zytnia_baba_2, pan_lasu_7, planetnik_1, tropy_3, blednice_1, starzec_4, pan_lasu_8
 VAR zapiski = ()
 
 === function tytul_zapisku(z)
@@ -52,6 +52,10 @@ VAR zapiski = ()
     - zytnia_baba_2: ~ return "Żytnia baba"
     - pan_lasu_7:   ~ return "Pan Lasu"
     - planetnik_1:  ~ return "Płanetnik"
+    - tropy_3:      ~ return "Biały wilk"
+    - blednice_1:   ~ return "Błędnice"
+    - starzec_4:    ~ return "Starzec w kapeluszu z mchu"
+    - pan_lasu_8:   ~ return "Pan Lasu"
 }
 ~ return ""
 
@@ -137,4 +141,12 @@ VAR zapiski = ()
     {rada_przed_borem == rada_ksiedza:W księgach parafialnych zapisano, że raz na kilkadziesiąt lat z wsi pod borem znika dziecko, zawsze w noc świętojańską. Te, które wracają, nie pamiętają niczego.|{rada_przed_borem == rada_jagny:Jagna mówi, że las bierze dzieci, kiedy jego pan się budzi – nie zabija, tylko trzyma.|Płanetnik mówi, że nad borem chmury się rozstępują i odkąd ludzie pamiętają, nie spadła tam ani kropla deszczu.}}
 - planetnik_1:
     Wysoki starzec w łachmanach, z brodą rozwianą wiatrem i z workiem na plecach. Chodzi przed burzą i prowadzi chmury na powrozie. Kto da mu chleba, nad tego polem chmury nie pękną – a kto go o coś zapyta, zapłaci polem.
+- tropy_3:
+    {oblawa_wilk == wydal_wilka:Rana po kuli źle się zagoiła. W borze szedł za Jaromirem przez całą noc – nie po to, żeby go strzec.|Odnalazł Jaromira w borze, kiedy ten poszedł za głosem Franka.{przejscie_bagna == za_wilkiem: Przeprowadził go przez bagno. Kiedy Jaromir wyciągnął do niego rękę i nazwał go Frankiem, kłapnął zębami – ostrzegawczo, ale do krwi.}}
+- blednice_1:
+    Blade kule światła nad bagnem w głębi boru, wielkości głowy dziecka. W każdej kuli siedzi skulona mała postać o oczach jak czarne ziarenka. To nie ogniki spod wsi: nie mrugają z daleka, tylko podpływają blisko, popiskują jak pisklęta i zapraszają.{przejscie_bagna == za_blednicami: Wodzą w kółko wokół jednej kępy aż do świtu i zabierają, co kto ma w torbie.}{przejscie_bagna == krag_z_soli: Nie przechodzą przez sól, choćby miały twarz kogoś najbliższego.}{przejscie_bagna == za_wilkiem: Trzymają się z daleka od białego wilka.}{przejscie_bagna == z_rozancem: Od modlitwy gasną z wyciem – ale biorą coś w zamian.}{przejscie_bagna == z_krzesiwem: Boją się iskier.}
+- starzec_4:
+    W sercu boru zdjął kapelusz.
+- pan_lasu_8:
+    W sercu boru, gdzie nigdy nie pada, stoi dąb większy, niż był kiedyś Stary Dąb. Tam starzec w kapeluszu z mchu zdjął kapelusz. Pod nim była kora. Urósł ponad korony drzew i nie rzucał cienia. Czekał siedemdziesiąt lat, aż ktoś z rodu Maćka przyjdzie do niego sam.
 }

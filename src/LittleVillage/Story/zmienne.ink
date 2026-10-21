@@ -254,3 +254,19 @@ VAR dlug_u_jagny = false
 VAR przysiega_ksiedzu = false
 // Płanetnik zabrał gradem pole Jaromira w zapłacie za wiadomość.
 VAR pole_zbite_gradem = false
+
+// ---------- Rozdział szesnasty (W głąb boru) ----------
+// Jak Jaromir przeszedł przez zawracające ścieżki: ubranie na lewą stronę (las wyjmuje mu z pamięci twarz Marysi), nacięcia na pniach (las jęczy), za psem (poziomki, pies poraniony) albo pod dziurą w chmurach (rada płanetnika).
+LIST WejscieDoBoru = ubranie_na_lewo, naciete_pnie, za_psem, pod_czystym_niebem
+VAR wejscie_do_boru = ()
+// Pies nie poznał Jaromira w wywróconym ubraniu i pobiegł sam za zapachem Marysi.
+VAR pies_pobiegl_sam = false
+// Głosy o zmierzchu: odpowiedział Marysi (Leszy go policzył — osiemset), milczał całą noc albo poszedł za głosem Franka (biały wilk).
+LIST GlosyBoru = odpowiedzial_marysi, milczal, za_frankiem
+VAR glosy_boru = ()
+// Bagno z błędnicami: za światłami (rozpruta torba, przepadł wełniak i księga), krąg z soli, za białym wilkiem (rana dłoni), różaniec (spalony) albo krzesiwo (pożar porostu).
+LIST PrzejscieBagna = za_blednicami, krag_z_soli, za_wilkiem, z_rozancem, z_krzesiwem
+VAR przejscie_bagna = ()
+// Przed starcem w sercu boru: ukłon, uniesiona siekiera albo zawołał Marysię (śmiech z bagna).
+LIST PrzedPanemLasu = uklon, uniosl_siekiere, zawolal_marysie
+VAR przed_panem_lasu = ()

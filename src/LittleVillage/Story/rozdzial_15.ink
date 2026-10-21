@@ -165,13 +165,8 @@ Jaromir skinął głową i ruszył przez mokrą od rosy łąkę, przez żyto, w 
 -> rozdzial_pietnasty_ciag_dalszy
 
 
-// Koniec rozdziału piętnastego — rozdział szesnasty (W głąb boru) do napisania.
+// Koniec rozdziału piętnastego — dalej rozdział szesnasty.
 === rozdzial_pietnasty_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału piętnastego._ # dalej
--> rozdzial_szesnasty_wkrotce
-
-=== rozdzial_szesnasty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_szesnasty

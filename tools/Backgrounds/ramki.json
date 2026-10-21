@@ -203,6 +203,54 @@
 390,
 443
 ],
+"bg_blednice_ciemnosc": [
+0,
+0,
+390,
+443
+],
+"bg_blednice_grobla": [
+0,
+0,
+390,
+443
+],
+"bg_blednice_krag": [
+150,
+311,
+110,
+89
+],
+"bg_blednice_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_blednice_wb_poswiata": [
+102,
+92,
+219,
+383
+],
+"bg_blednice_welniak": [
+0,
+0,
+390,
+443
+],
+"bg_blednice_ww_cialo": [
+83,
+288,
+54,
+88
+],
+"bg_blednice_ww_ogon": [
+86,
+288,
+53,
+86
+],
 "bg_bor_tlo": [
 0,
 0,
@@ -262,6 +310,54 @@
 235,
 120,
 31
+],
+"bg_borsuchy_bt_przod": [
+126,
+355,
+69,
+50
+],
+"bg_borsuchy_bt_tyl": [
+126,
+355,
+69,
+50
+],
+"bg_borsuchy_bu_przod": [
+283,
+359,
+58,
+42
+],
+"bg_borsuchy_bu_tyl": [
+282,
+359,
+59,
+43
+],
+"bg_borsuchy_chmury": [
+37,
+0,
+323,
+60
+],
+"bg_borsuchy_niebo": [
+110,
+0,
+180,
+112
+],
+"bg_borsuchy_pajak": [
+59,
+229,
+42,
+54
+],
+"bg_borsuchy_tlo": [
+0,
+0,
+390,
+443
 ],
 "bg_brzegnoc_dym": [
 292,
@@ -724,6 +820,30 @@
 283,
 410,
 157
+],
+"bg_glosynoc_gw_cialo": [
+195,
+278,
+69,
+113
+],
+"bg_glosynoc_gw_ogon": [
+199,
+278,
+68,
+112
+],
+"bg_glosynoc_swit": [
+0,
+0,
+390,
+443
+],
+"bg_glosynoc_tlo": [
+0,
+0,
+390,
+443
 ],
 "bg_goraczka_hanka": [
 219,
@@ -3778,6 +3898,66 @@
 300,
 410,
 143
+],
+"bg_sercebor_hs_postac": [
+251,
+229,
+91,
+161
+],
+"bg_sercebor_jaromir": [
+40,
+313,
+50,
+117
+],
+"bg_sercebor_swiatlo": [
+90,
+0,
+220,
+333
+],
+"bg_sercebor_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_skrajbor_jalowiec": [
+176,
+229,
+48,
+77
+],
+"bg_skrajbor_jaromir": [
+89,
+285,
+58,
+115
+],
+"bg_skrajbor_rosa": [
+0,
+298,
+240,
+102
+],
+"bg_skrajbor_sp_przod": [
+130,
+355,
+63,
+46
+],
+"bg_skrajbor_sp_tyl": [
+128,
+355,
+65,
+47
+],
+"bg_skrajbor_tlo": [
+0,
+0,
+390,
+443
 ],
 "bg_skrzynia_dym": [
 300,

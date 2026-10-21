@@ -180,14 +180,24 @@ public sealed class RevealTests
             // rozdzial pietnasty: sobotka / chalupa / dar u mamun, zytnia baba, rada (Jagna, ksiadz, planetnik)
             [.. ToChapterTwelve(background: "sobotka"), 0, 0, 0],
             [.. ToChapterTwelve(background: "sobotka"), 1, 1, 1],
-            [.. ToChapterTwelve(e => e.SaveState().Contains("dar_swietojanski"), "sobotka"), 2, 2, 2]];
+            [.. ToChapterTwelve(e => e.SaveState().Contains("dar_swietojanski"), "sobotka"), 2, 2, 2],
+            // rozdzial szesnasty: sciezki w borze (ubranie, naciecia, pies, niebo), glosy, bagno (swiatla, sol, wilk, rozaniec, krzesiwo), starzec
+            [.. ToChapterTwelve(e => HasItem(e, "szczenie_psa"), "skraj_bor"), 0, 0, 0, 0],
+            [.. ToChapterTwelve(e => HasItem(e, "szczenie_psa"), "skraj_bor"), 2, 1, 1, 1],
+            [.. ToChapterTwelve(e => !HasItem(e, "szczenie_psa"), "sobotka"), 0, 0, 2, 2, 0, 0, 2],
+            [.. ToChapterTwelve(e => !HasItem(e, "szczenie_psa"), "sobotka"), 0, 0, 1, 1, 0, 2, 0],
+            [.. ToChapterTwelve(e => e.SaveState().Contains("OblawaWilk.wydal_wilka"), "skraj_bor"), 1, 2, 0, 0],
+            [.. ToChapterTwelve(e => HasItem(e, "krzesiwo") && !HasItem(e, "rozaniec"), "skraj_bor"), 1, 0, 2, 0],
+            [.. ToChapterTwelve(background: "skraj_bor", candidates: [[.. ToChapterSeven(accept: e => e.SaveState().Contains("\"celny_strzal\":true")), .. new int[16], 0, 0, 2]]), 1, 2, 2, 0]];
+
+    private static bool HasItem(InkStoryEngine engine, string id) => engine.GetInventory().Any(i => i.Id == id);
 
     /// <summary>Wybory pierwszej sciezki (z ogonami rozdzialow 7–11), ktora dochodzi do wyboru na tle <paramref name="background"/> (domyslnie czuwanie przy zmarlym)
-    /// i spelnia <paramref name="accept"/> — az do tego wyboru.</summary>
-    private static int[] ToChapterTwelve(Func<InkStoryEngine, bool>? accept = null, string background = "czuwanie_izba")
+    /// i spelnia <paramref name="accept"/> — az do tego wyboru. <paramref name="candidates"/> zastepuje domyslny zestaw sciezek.</summary>
+    private static int[] ToChapterTwelve(Func<InkStoryEngine, bool>? accept = null, string background = "czuwanie_izba", IEnumerable<int[]>? candidates = null)
     {
         var tails = ChapterSevenTails.Concat([[.. new int[16], 1, 0, 0]]);
-        foreach (var path in tails.Select(tail => ToChapterSeven().Concat(tail).ToArray())
+        foreach (var path in candidates ?? tails.Select(tail => ToChapterSeven().Concat(tail).ToArray())
                      .Concat(AllPaths.Reverse()).Append([.. ToChapterSeven(accept: e => e.GetInventory().Any(i => i.Id == "szczeniak")), .. new int[16], 1, 0, 0]))
         {
             var engine = new InkStoryEngine();
