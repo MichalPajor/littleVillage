@@ -104,13 +104,10 @@ public sealed partial class GameViewModel(
                 return;
             }
 
-            var next = await session.AdvanceAsync(SelectedChoice?.Choice.Index);
-            Show(next);
-            // Akapit z tagiem # tobolek: zmiana w tobołku i zapiskach pokaże się dopiero, gdy gracz do niego doczyta.
-            if (!next.Blocks.Any(b => b.AnnouncesChanges))
-            {
-                AnnounceInventoryChange();
-            }
+            // Zmiany z poprzedniej strony, do których gracz nie zdążył doczytać, pokazujemy teraz — na nowej stronie.
+            AnnounceInventoryChange();
+            // Zmiany z nowej strony pokaże widok, gdy gracz doczyta do końca strony (albo do akapitu z tagiem # tobolek).
+            Show(await session.AdvanceAsync(SelectedChoice?.Choice.Index));
         }
         catch (Exception exception)
         {
@@ -203,7 +200,7 @@ public sealed partial class GameViewModel(
         messenger.Send(new StoryPageShownMessage(page));
     }
 
-    /// <summary>Widok doczytał akapit z tagiem <c># tobolek</c> — teraz pokazujemy zmiany w tobołku i zapiskach.</summary>
+    /// <summary>Gracz doczytał stronę (albo akapit z tagiem <c># tobolek</c>) — teraz pokazujemy zmiany w tobołku i zapiskach.</summary>
     public void AnnounceDeferredChanges() => AnnounceInventoryChange();
 
     /// <summary>Po przejściu dalej: jeśli coś trafiło do tobołka albo z niego zniknęło, widok to pokaże.</summary>

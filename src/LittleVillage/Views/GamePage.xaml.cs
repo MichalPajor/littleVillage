@@ -223,6 +223,9 @@ public partial class GamePage : BasePage
         var elapsed = DateTime.UtcNow - _pageShownAt;
         var readLine = StoryScroll.ScrollY + StoryScroll.Height * ReadLineFraction;
         var charactersBefore = 0;
+        // Powiadomienia o tobołku i zapiskach: przy akapicie z tagiem # tobolek, a bez niego — przy ostatnim akapicie strony.
+        var blocks = StoryBlocks.Children.OfType<View>().Select(c => c.BindingContext).OfType<StoryBlock>().ToList();
+        var announceAt = blocks.FirstOrDefault(b => b.AnnouncesChanges) ?? blocks.LastOrDefault(b => b.Kind == StoryBlockKind.Paragraph);
 
         foreach (var child in StoryBlocks.Children.OfType<View>())
         {
@@ -231,7 +234,8 @@ public partial class GamePage : BasePage
                 continue;
             }
 
-            if ((block.Reveal is not null || block.AnnouncesChanges) && !_revealedBlocks.Contains(block))
+            var announces = ReferenceEquals(block, announceAt);
+            if ((block.Reveal is not null || announces) && !_revealedBlocks.Contains(block))
             {
                 var top = StoryBlocks.Y + child.Y;
                 var readingTime = TimeSpan.FromSeconds(Math.Max(MinimumReadingTime.TotalSeconds, charactersBefore / CharactersPerSecond));
@@ -244,7 +248,7 @@ public partial class GamePage : BasePage
                         SceneView.Reveal(name);
                     }
 
-                    if (block.AnnouncesChanges)
+                    if (announces)
                     {
                         _viewModel.AnnounceDeferredChanges();
                     }
