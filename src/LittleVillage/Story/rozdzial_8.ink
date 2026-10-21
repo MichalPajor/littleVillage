@@ -203,7 +203,6 @@ W poniedziałek rano ludzie Urbaniaka przyszli z łopatami. Wykopywali słupy, �
 { kapliczka_podniesiona:
     Na samym skraju boru stała ta, którą Jaromir z Antkiem podnieśli pięć lat temu z błota.
 }
-(usunąć cały blok – trzy linie)
 { ostrzezenie_poludnicy:
     W głowie zadźwięczały mu słowa, które usłyszał na ściernisku w samo południe: „Pan Lasu się budzi… Pilnuj kapliczek, chłopcze”.
 }

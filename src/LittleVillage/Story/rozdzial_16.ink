@@ -98,7 +98,7 @@ A na końcu, cienko, z głębi boru, zapłakało dziecko.
     { oblawa_wilk == wydal_wilka:
         Na boku miał starą, źle zagojoną ranę po kuli – gruby, nagi pręt skóry wśród białej sierści. Kiedy zobaczył Jaromira, położył uszy po sobie i obnażył kły. Nie zaatakował. Ale przez całą noc Jaromir słyszał za sobą jego kroki – i wiedział, że wilk nie idzie za nim po to, żeby go strzec. # pokaz: rana # dalej
     - else:
-        Był chudszy niż wtedy w młodniku, a na pysku przybyło mu siwizny – jak u starego psa, choć od obławy nie minęły nawet dwa lata. Patrzył na Jaromira bez złości. Potem zeskoczył z pnia, odwrócił łeb, sprawdzając, czy Jaromir idzie za nim, i ruszył w ciemność. # dalej
+        Był chudszy niż wtedy w młodniku, a na pysku przybyło mu siwizny – jak u starego psa, choć od obławy minęły ledwie dwie zimy. Patrzył na Jaromira bez złości. Potem zeskoczył z pnia, odwrócił łeb, sprawdzając, czy Jaromir idzie za nim, i ruszył w ciemność. # dalej
     }
 -   -> bagno_w_borze
 
@@ -158,7 +158,7 @@ Jaromir poznał go od razu – to on stał na skraju lasu w noc jego wesela{ pos
     ~ przed_panem_lasu = uniosl_siekiere
     – Oddaj mi ją – powiedział Jaromir i uniósł siekierę. – Oddaj mi córkę.
     Starzec spojrzał na siekierę, a liście na jego lasce poczerniały i zwinęły się. # pokaz: liscie
-    – {siekiera_dziadka:Znam to żelazo|Znam takie żelazo} – powiedział cicho.{ wejscie_do_boru == naciete_pnie: – A ty zraniłeś dziś setkę moich drzew. Pamiętam każde.} # dalej
+    – {siekiera_dziadka:Znam to żelazo|Znam takie żelazo} – powiedział cicho.{ wejscie_do_boru == naciete_pnie: – A ty zraniłeś setkę moich drzew. Pamiętam każde.} # dalej
 *   [Zawołać Marysię.]
     ~ przed_panem_lasu = zawolal_marysie
     – Marysiu! – krzyknął Jaromir. – Marysiu, to tata!

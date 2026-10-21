@@ -2298,7 +2298,7 @@ public sealed class GameStoryTests
         Assert.DoesNotContain(pages.Single(p => p.BackgroundKey == "bagno_blednice" && p.Ending == PageEnding.Choices).Choices, c => c.Text.Contains("białym wilkiem"));
         Assert.True(Has(On(pages, "bagno_blednice"), "różaniec w jego dłoni był zwęglony"));
         Assert.DoesNotContain("rozaniec", Inventory(engine));
-        Assert.True(Has(On(pages, "serce_boru"), "zraniłeś dziś setkę moich drzew"));
+        Assert.True(Has(On(pages, "serce_boru"), "zraniłeś setkę moich drzew"));
         Assert.Contains("nie po to, żeby go strzec", engine.GetJournal().Single(c => c.Id == "tropy").Notes[^1]);
         Assert.Contains("Od modlitwy gasną", engine.GetJournal().Single(c => c.Id == "blednice").Notes[^1]);
     }
