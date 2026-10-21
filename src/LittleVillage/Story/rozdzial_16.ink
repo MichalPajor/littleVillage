@@ -165,7 +165,7 @@ Jaromir poznał go od razu – to on stał na skraju lasu w noc jego wesela{ pos
     Śpiew urwał się. Przez jedną straszną chwilę panowała cisza. A potem odpowiedział mu śmiech – dziecięcy, beztroski, szczęśliwy, śmiech Marysi. Tylko że dobiegł zza jego pleców, z bagna, przez które dopiero co przeszedł.
     Starzec pokręcił głową nad kimś, kto popełnił oczywisty błąd. # dalej
 -   ~ zapiski += (starzec_4, pan_lasu_8)
-Starzec zdjął kapelusz z mchu. Pod nim nie było twarzy, tylko kora – i dwoje jasnych, nieruchomych oczu, osadzonych w niej głęboko jak sęki. A potem zaczął rosnąć. Kożuch rozpadł się w mech i porosty, laska wrosła w ziemię, a broda spłynęła mu do kolan, potem do ziemi, szara i miękka jak mech na północnej stronie pni. Rósł, aż jego głowa znalazła się wśród koron i zaszumiały wokół niej liście. Na polanie nadal nie było ani jednego cienia oprócz cienia dębu. # pokaz: pan_lasu
+Starzec zdjął kapelusz z mchu. Pod nim nie było twarzy, tylko kora – i dwoje jasnych, nieruchomych oczu, osadzonych w niej głęboko jak sęki. A potem zaczął rosnąć. Kożuch rozpadł się w mech i porosty, laska wrosła w ziemię, a broda spłynęła mu do kolan, potem do ziemi, szara i miękka jak mech na północnej stronie pni. Z czoła wystrzeliło mu poroże, rozłożyste i splątane jak gałęzie wiatrołomu. Rósł, aż jego głowa znalazła się wśród koron i zaszumiały wokół niej liście. Na polanie nadal nie było ani jednego cienia oprócz cienia dębu. # pokaz: pan_lasu
 Pan Lasu pochylił się nad Jaromirem.
 – Usiądź, wnuku Maćka – powiedział, a od jego głosu zadrżały liście w całym borze. – Porozmawiamy. # dalej
 -> rozdzial_szesnasty_ciag_dalszy

@@ -27,6 +27,8 @@ public static class MauiProgram
                 fonts.AddFont("PirataOne-Regular.ttf", ThemeFonts.Display);
             });
 
+        JustifyStoryText();
+
         builder.Services
             .AddGameCore()
             .AddAppServices()
@@ -37,6 +39,22 @@ public static class MauiProgram
 #endif
 
         return builder.Build();
+    }
+
+    /// <summary>Akapity fabuły wyjustowane jak w książce (Android 8+).</summary>
+    private static void JustifyStoryText()
+    {
+#if ANDROID
+        Microsoft.Maui.Handlers.LabelHandler.Mapper.AppendToMapping("JustifyStoryText", (handler, label) =>
+        {
+            if (label is not Controls.StoryTextLabel || !OperatingSystem.IsAndroidVersionAtLeast(26))
+            {
+                return;
+            }
+
+            handler.PlatformView.JustificationMode = Android.Text.JustificationMode.InterWord;
+        });
+#endif
     }
 
     /// <summary>Logika gry (LittleVillage.Core): silnik ink, zapis, sesja.</summary>

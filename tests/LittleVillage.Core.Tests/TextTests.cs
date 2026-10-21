@@ -13,6 +13,14 @@ public sealed class TextTests
     [InlineData(14, "XIV")]
     public void Roman_numerals(int number, string expected) => Assert.Equal(expected, RomanNumeral.From(number));
 
+    [Theory]
+    [InlineData("ziemia była sucha i szara", "ziemia była sucha i\u00A0szara")]
+    [InlineData("Z czoła wystrzeliło, a w borze", "Z\u00A0czoła wystrzeliło, a\u00A0w\u00A0borze")]
+    [InlineData("stała woda – brunatna", "stała woda\u00A0– brunatna")]
+    [InlineData("Marysia i tata", "Marysia i\u00A0tata")]
+    [InlineData("bór i", "bór i")]
+    public void Short_words_and_dashes_stay_with_their_neighbours(string text, string expected) => Assert.Equal(expected, BookTypography.KeepTogether(text));
+
     [Fact]
     public void Italic_markup_is_split_into_runs()
     {

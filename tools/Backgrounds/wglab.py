@@ -86,13 +86,13 @@ def blednice_rig(cx, cy, k, prefix):
 
 
 def leszy_rig(cx, feet, k, prefix):
-    """Pan Lasu z rysunku autora — bez poroza (tekst mowi tylko o brodzie z mchu i wzroscie ponad korony)."""
+    """Pan Lasu z rysunku autora: poroze i mech na nim kolysza sie razem z glowa."""
     tr = art.parse_transform(f"translate({cx - 150 * k:.1f} {feet - 514 * k:.1f}) scale({k})")
     return art.rig("leszy", tr, [
         ("cialo", ["cien", "korzenie", "nogi", "tulow"], {"type": "sway", "amplitude": 0.4, "duration": 6000}, (150, 470)),
         ("ramie_l", ["ramie_lewe"], {"type": "sway", "amplitude": 3, "duration": 5000}, "ramie_lewe"),
         ("ramie_p", ["ramie_prawe"], {"type": "sway", "amplitude": 4, "duration": 4400, "phase": 0.3}, "ramie_prawe"),
-        ("glowa", ["glowa", "broda"], {"type": "sway", "amplitude": 2, "duration": 6000, "phase": 0.2}, "glowa"),
+        ("glowa", ["glowa", "poroze", "mech_na_porozu", "broda"], {"type": "sway", "amplitude": 2, "duration": 6000, "phase": 0.2}, "glowa"),
         ("oczy", ["oczy"], {"type": "blink", "duration": 7000}, None)], prefix)
 
 
@@ -260,7 +260,7 @@ W_COMMENTS = {"tlo": "bagno między zgniłymi olchami, kępy turzycy, suchy szar
 _add(W, BAG, W_ANIM, W_COMMENTS, "turzyca", ((40, 300, 320, 120, group([kepa(x, y, 1.1) for x, y in [(70, 384), (180, 356), (300, 376)]])), {"type": "sway", "amplitude": 2, "duration": 3000, "anchorX": 0.5, "anchorY": 1}, "turzyca kołysze się"), before="garnki")
 _add(W, BAG, W_ANIM, W_COMMENTS, "bable", ((60, 320, 260, 100, group([f'<circle cx="{x}" cy="{y}" r="1.6" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>' for x, y in [(80, 410), (150, 390), (240, 400), (300, 380)]])),
                                             {"type": "rise", "amplitude": 20, "duration": 3000}, "bąble z dna"), before="garnki")
-_add(W, BAG, W_ANIM, W_COMMENTS, "mgla", ((-20, 200, 430, 50, group(['<path d="M-20 226C40 212 100 230 160 218C220 208 300 226 410 214V246H-20Z" fill="#FFFFFF" stroke="none" opacity="0.3"/>'])),
+_add(W, BAG, W_ANIM, W_COMMENTS, "mgla", ((-20, 200, 430, 50, group(['<path d="M-20 226C40 212 100 230 160 218C220 208 300 226 410 214V246H-20Z" fill="#000000" stroke="none" opacity="0.14"/>'])),
                                            {"type": "drift", "amplitude": 16, "duration": 12000}, "opary nad bagnem"), before="kozuch")
 _add(W, BAG, W_ANIM, W_COMMENTS, "komary", efekty.pylki(220, 250, 120, 60, n=7, seed=1730, duration=2600), before="garnki")
 W_COMMENTS["komary"] = "komary nad wodą"
@@ -304,7 +304,7 @@ H_COMMENTS = {"tlo": "polana w sercu boru: ogromny dąb ze szczeliną, korzenie 
               "spiew": "śpiew zza dębu, melodia Marysi dośpiewana do końca (# pokaz: spiew)", "liscie": "liście na lasce czernieją i zwijają się (# pokaz: liscie)",
               "szum": "korony szumią wokół głowy Pana Lasu (# pokaz: pan_lasu)", "przod": "pierwszy plan",
               **{n: f"starzec w kapeluszu z mchu — {n[3:]} (rysunek autora; # pokaz: starzec)" for n in HS},
-              **{n: f"Pan Lasu ponad koronami — {n[3:]} (rysunek autora bez poroża; # pokaz: pan_lasu)" for n in HL}}
+              **{n: f"Pan Lasu ponad koronami — {n[3:]} (rysunek autora; # pokaz: pan_lasu)" for n in HL}}
 _add(H, SER, H_ANIM, H_COMMENTS, "pylki", efekty.pylki(80, 160, 240, 160, n=12, seed=1750, duration=9000), before="spiew")
 H_COMMENTS["pylki"] = "pył wisi w nieruchomym powietrzu"
 _add(H, SER, H_ANIM, H_COMMENTS, "porosty", ((0, 80, 390, 90, group(['<path d="M20 90v30M26 92v22M372 96v34M378 92v26M80 100v20M320 104v24" fill="none" stroke-width="1.2" stroke-dasharray="2 2"/>'])),

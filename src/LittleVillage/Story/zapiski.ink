@@ -148,5 +148,5 @@ VAR zapiski = ()
 - starzec_4:
     W sercu boru zdjął kapelusz.
 - pan_lasu_8:
-    W sercu boru, gdzie nigdy nie pada, stoi dąb większy, niż był kiedyś Stary Dąb. Tam starzec w kapeluszu z mchu zdjął kapelusz. Pod nim była kora. Urósł ponad korony drzew i nie rzucał cienia. Czekał siedemdziesiąt lat, aż ktoś z rodu Maćka przyjdzie do niego sam.
+    W sercu boru, gdzie nigdy nie pada, stoi dąb większy, niż był kiedyś Stary Dąb. Tam starzec w kapeluszu z mchu zdjął kapelusz. Pod nim była kora. Z czoła wystrzeliło mu poroże, a on sam urósł ponad korony drzew i nie rzucał cienia. Czekał siedemdziesiąt lat, aż ktoś z rodu Maćka przyjdzie do niego sam.
 }
