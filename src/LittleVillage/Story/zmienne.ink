@@ -270,3 +270,17 @@ VAR przejscie_bagna = ()
 // Przed starcem w sercu boru: ukłon, uniesiona siekiera albo zawołał Marysię (śmiech z bagna).
 LIST PrzedPanemLasu = uklon, uniosl_siekiere, zawolal_marysie
 VAR przed_panem_lasu = ()
+
+// ---------- Rozdział siedemnasty (Rozmowa w borze) ----------
+// Jedyne pytanie do Pana Lasu: gdzie jest Marysia (jego dzieci nie mają cienia), kim jest (liczy do tysiąca, potem ktoś inny) albo za co klątwa (trzy sposoby, żeby ją zdjąć).
+LIST PytanieDoLeszego = gdzie_marysia, kim_jest, o_klatwe
+VAR pytanie_do_leszego = ()
+// Biały wilk pod dębem: nazwany po imieniu (rok wilczego życia; ranny nie podchodzi), opowieść o Antku (wilk przy Jaromirze, ale krócej pożyje) albo bezruch (wilk przy Panu Lasu).
+LIST WilkPodDebem = nazwal_wilka, opowiedzial_o_antku, nie_ruszal_sie
+VAR wilk_pod_debem = ()
+VAR wilk_przy_jaromirze = false
+// Wilk oddał Jaromirowi drugi drewniak Marysi (ten z żyta).
+VAR drugi_drewniak = false
+// Zastaw zostawiony Panu Lasu do świtu: siekiera dziadka, krzesiwo albo własny cień.
+LIST ZastawDlaLeszego = zastaw_siekiera, zastaw_krzesiwo, zastaw_cien
+VAR zastaw_u_leszego = ()

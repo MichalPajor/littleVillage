@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „rozmowa pod dębem”: Pan Lasu siedzi, twarz na wysokości strzechy — glowa (rysunek autora)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="223" height="397" viewBox="169 66 223 397">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.74000 0.00000 0.00000 0.74000 169.00000 69.60000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="glowa" data-anim="obrot" data-origin="150,176" data-range="3deg" data-period="6">
+<path d="M118 172C110 140 112 96 124 72C134 56 166 56 176 72C188 96 190 140 182 172C170 180 130 180 118 172Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M118 172C110 140 112 96 124 72C134 56 166 56 176 72C188 96 190 140 182 172C170 180 130 180 118 172Z" fill="url(#hatch)" stroke="none"/>
+<path d="M122 80L124 120L120 160L126 160L128 120L128 80ZM176 82L176 120L180 160L174 160L172 120L170 82ZM150 60L148 80L152 92L154 80Z" fill="#000000" stroke="none"/>
+<path d="M114 100l-8 2M112 140l-8 2M186 100l8 2M188 140l8 2" fill="none" stroke-width="2.6"/>
+<path d="M124 148L136 152L142 146L150 156L158 146L166 152L178 148L172 164L160 160L150 170L140 160L128 164Z" fill="#000000" stroke-width="2.5"/>
+<path d="M132 152l2 6M142 150l1 8M150 156l0 8M158 150l-1 8M168 152l-2 6" fill="none" stroke="#EDEBE6" stroke-width="1.6"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="poroze" data-anim="obrot" data-origin="150,70" data-range="1.5deg" data-period="6">
+<path d="M130 70C114 52 96 44 66 40C44 36 30 26 20 12M130 70C122 44 118 20 124 4M170 70C186 52 206 44 236 40C258 36 272 26 282 12M170 70C178 44 182 20 176 4" fill="none" stroke-width="7"/>
+<path d="M66 40L52 24M96 44L92 26M110 56L96 50M236 40L250 24M206 44L210 26M190 56L204 50M122 40L108 34M178 40L192 34M124 20L136 16M176 20L164 16M44 36L44 22M256 36L256 22" fill="none" stroke-width="5"/>
+<path d="M20 12l-8-4M124 4l4-4M282 12l8-4M176 4l-4-4M52 24l-4-8M250 24l4-8M92 26l-2-8M210 26l2-8M44 22l-2-8M256 22l2-8" fill="none" stroke-width="3"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="mech_na_porozu" data-anim="kolysanie" data-origin="150,40" data-range="4deg" data-period="4">
+<path d="M66 40L62 70L70 98L62 130L70 150L76 128L80 100L74 70Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M66 40L62 70L70 98L62 130L70 150L76 128L80 100L74 70Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M236 40L240 70L232 100L240 136L232 156L226 130L222 100L228 70Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M236 40L240 70L232 100L240 136L232 156L226 130L222 100L228 70Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M98 46L94 70L100 90L94 108M204 46L208 70L202 90L208 108M30 28L28 50L34 66M272 28L274 50L268 66" fill="none" stroke-width="4"/>
+<path d="M98 46L94 70L100 90L94 108M204 46L208 70L202 90L208 108M30 28L28 50L34 66M272 28L274 50L268 66" fill="none" stroke="url(#hatchDense)" stroke-width="2"/>
+<path d="M70 150l-2 12M232 156l2 12M94 108l-2 10M208 108l2 10M34 66l-1 10M268 66l1 10" fill="none" stroke-width="2"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="broda" data-anim="kolysanie" data-origin="150,170" data-range="3deg" data-period="5">
+<path d="M122 170L132 210L124 260L136 300L130 340L146 350L150 326L156 356L170 340L166 300L178 260L170 210L180 170Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M122 170L132 210L124 260L136 300L130 340L146 350L150 326L156 356L170 340L166 300L178 260L170 210L180 170Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M138 190C136 230 136 270 140 310M162 192C164 234 162 274 160 316M150 200C150 250 152 300 150 330" fill="none" stroke-width="2.2"/>
+<path d="M130 342l-6 16M156 356l2 16M146 350l-2 14M170 340l6 12" fill="none" stroke-width="2.4"/>
+<path d="M170 246C176 242 182 246 180 252C176 254 170 252 170 246ZM128 282C134 278 138 282 136 288C132 290 128 288 128 282Z" fill="#000000" stroke="none"/>
+</g>
+</g>
+</g></g>
+</svg>

@@ -7,7 +7,7 @@
 //  Wpisy nie mówią więcej, niż w tej chwili wiedzą postacie.
 // ------------------------------------------------------------
 
-LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3, zytnia_baba_1, zytnia_baba_2, pan_lasu_7, planetnik_1, tropy_3, blednice_1, starzec_4, pan_lasu_8
+LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3, zytnia_baba_1, zytnia_baba_2, pan_lasu_7, planetnik_1, tropy_3, blednice_1, starzec_4, pan_lasu_8, pan_lasu_9, zielarka_4, tropy_4
 VAR zapiski = ()
 
 === function tytul_zapisku(z)
@@ -56,6 +56,9 @@ VAR zapiski = ()
     - blednice_1:   ~ return "Błędnice"
     - starzec_4:    ~ return "Starzec w kapeluszu z mchu"
     - pan_lasu_8:   ~ return "Pan Lasu"
+    - pan_lasu_9:   ~ return "Pan Lasu"
+    - zielarka_4:   ~ return "Zielarka znad jeziora"
+    - tropy_4:      ~ return "Biały wilk"
 }
 ~ return ""
 
@@ -149,4 +152,10 @@ VAR zapiski = ()
     W sercu boru zdjął kapelusz.
 - pan_lasu_8:
     W sercu boru, gdzie nigdy nie pada, stoi dąb większy, niż był kiedyś Stary Dąb. Tam starzec w kapeluszu z mchu zdjął kapelusz. Pod nim była kora. Z czoła wystrzeliło mu poroże, a on sam urósł ponad korony drzew i nie rzucał cienia. Czekał siedemdziesiąt lat, aż ktoś z rodu Maćka przyjdzie do niego sam.
+- pan_lasu_9:
+    Dolina była kiedyś jego, od grzbietu po jezioro. Cofnął się, kiedy pierwszy z ludzi przyszedł pod Stary Dąb bez siekiery i powiedział: dalej nie pójdziemy. W zamian Pan Lasu bierze jedno dziecko na pokolenie, w noc świętojańską, i oddaje je, zanim zapomni dom. Dąb był granicą, umowa płotem, a kapliczki gwoździami.{chata_macka == przy_lesie: Maciek, który o niczym nie wiedział, postawił chałupę po stronie boru i pierwszego ranka wbił siekierę w świerk. Od niego zaczęło się liczenie.} Marysię wziął, żeby nie zabrały jej te znad wody; żytnią babę posłał po nią sam. Tym razem każe za nią zapłacić, bo umowę zerwała wieś, nie on.{pytanie_do_leszego == kim_jest: Był w dolinie, zanim zeszli do niej pierwsi ludzie. Liczy stare drzewa ścięte za granicą i ludzi, którzy sami mu się oddali. Kiedy doliczy do tysiąca, zaśnie na dobre, a ktoś inny będzie liczył za niego. On też kiedyś przyszedł do boru sam.}{pytanie_do_leszego == gdzie_marysia: Jego dzieci nie mają cienia.}
+- zielarka_4:
+    Przychodzili do niej ci znad wody – i Pan Lasu. Pokazał jej kiedyś w wodzie chatę w ogniu – jej własną – ale nie uwierzyła. Płonąc, przeklęła wieś cudzymi rękami: „Kości dzieci waszych będą połamane, a krew ich wypita”. Póki stał Stary Dąb, słowo było silniejsze od przekleństwa.{pytanie_do_leszego == o_klatwe: Zdejmie klątwę ten, kto zwróci Panu Lasu granicę, albo ten, kto zajmie jego miejsce. Albo ogień, który ją zaczął – ale po nim nie zostanie ani bór, ani wieś.}{zastaw_u_leszego == zastaw_krzesiwo: Krzesiwo, które Maciek znalazł w jej popiele, nosi w sobie ten sam żar, który ją spalił.}
+- tropy_4:
+    Przyniósł pod dąb drugi drewniak Marysi – ten, który został w zbożu. {wilk_przy_jaromirze:Położył go Jaromirowi u stóp i przez całą noc leżał przy nim.|Oddał go Panu Lasu i siedzi przy nim, obojętny jak drzewa.}{wilk_pod_debem != nie_ruszal_sie: Każde ludzkie słowo, które mu się przypomni, zabiera mu kawałek wilczego życia.}
 }

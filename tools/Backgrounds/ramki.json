@@ -2471,6 +2471,54 @@
 50,
 11
 ],
+"bg_nocdeb_gwiazdy": [
+120,
+0,
+160,
+53
+],
+"bg_nocdeb_korona": [
+-60,
+0,
+393,
+170
+],
+"bg_nocdeb_mgla": [
+-20,
+300,
+430,
+53
+],
+"bg_nocdeb_nl_glowa": [
+187,
+118,
+187,
+333
+],
+"bg_nocdeb_nw_cialo": [
+123,
+310,
+54,
+88
+],
+"bg_nocdeb_nw_ogon": [
+126,
+310,
+53,
+86
+],
+"bg_nocdeb_swit": [
+0,
+0,
+390,
+443
+],
+"bg_nocdeb_tlo": [
+0,
+0,
+390,
+443
+],
 "bg_nockladka_dym": [
 150,
 150,
@@ -2992,6 +3040,126 @@
 330,
 260,
 93
+],
+"bg_poddebem_bez_cienia": [
+27,
+277,
+83,
+83
+],
+"bg_poddebem_dl_glowa": [
+169,
+66,
+223,
+397
+],
+"bg_poddebem_dp_cialo": [
+7,
+315,
+38,
+42
+],
+"bg_poddebem_dp_glowa": [
+8,
+314,
+37,
+41
+],
+"bg_poddebem_dp_ogon": [
+8,
+315,
+37,
+42
+],
+"bg_poddebem_ds_cialo": [
+123,
+327,
+34,
+38
+],
+"bg_poddebem_ds_glowa": [
+124,
+326,
+33,
+37
+],
+"bg_poddebem_ds_ogon": [
+124,
+327,
+33,
+37
+],
+"bg_poddebem_dw_cialo": [
+108,
+292,
+64,
+105
+],
+"bg_poddebem_dw_ogon": [
+111,
+292,
+63,
+103
+],
+"bg_poddebem_dwj_cialo": [
+83,
+314,
+54,
+88
+],
+"bg_poddebem_dwj_ogon": [
+86,
+314,
+53,
+86
+],
+"bg_poddebem_dwl_cialo": [
+173,
+298,
+54,
+88
+],
+"bg_poddebem_dwl_ogon": [
+176,
+298,
+53,
+86
+],
+"bg_poddebem_jaromir": [
+40,
+296,
+50,
+54
+],
+"bg_poddebem_kopiec": [
+140,
+270,
+260,
+173
+],
+"bg_poddebem_korona": [
+-60,
+0,
+393,
+170
+],
+"bg_poddebem_siekiera": [
+110,
+319,
+50,
+31
+],
+"bg_poddebem_swiatlo": [
+20,
+0,
+220,
+333
+],
+"bg_poddebem_tlo": [
+0,
+0,
+390,
+443
 ],
 "bg_pogorzelisko_komornik": [
 0,
@@ -3922,6 +4090,36 @@
 0,
 390,
 443
+],
+"bg_sianokosy_derkacz": [
+150,
+384,
+31,
+21
+],
+"bg_sianokosy_ludzie": [
+0,
+242,
+240,
+172
+],
+"bg_sianokosy_rosa": [
+0,
+289,
+240,
+132
+],
+"bg_sianokosy_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_sianokosy_trawa": [
+0,
+400,
+390,
+27
 ],
 "bg_skrajbor_jalowiec": [
 176,
