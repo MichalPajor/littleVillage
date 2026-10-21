@@ -183,6 +183,8 @@ public sealed class RevealTests
             [.. ToChapterTwelve(e => e.SaveState().Contains("dar_swietojanski"), "sobotka"), 2, 2, 2],
             // rozdzialy 16-18: sciezki w borze (ubranie, naciecia, pies, niebo), glosy, bagno (swiatla, sol, wilk, rozaniec, krzesiwo), starzec
             [.. ToChapterTwelve(e => HasItem(e, "szczenie_psa"), "skraj_bor"), 0, 0, 0, 0, 0, 0, 0, 1],
+            [.. ToChapterTwelve(e => HasItem(e, "szczenie_psa"), "skraj_bor"), 0, 0, 0, 0, 0, 0, 0, 1, 0, 1],
+            [.. ToChapterTwelve(e => HasItem(e, "szczenie_psa"), "skraj_bor"), 0, 0, 0, 0, 0, 0, 0, 1, 1],
             [.. ToChapterTwelve(e => HasItem(e, "szczenie_psa"), "skraj_bor"), 0, 0, 0, 0, 0, 0, 0, 4],
             [.. ToChapterTwelve(e => HasItem(e, "szczenie_psa"), "skraj_bor"), 0, 0, 0, 0, 0, 0, 0, 5],
             [.. ToChapterTwelve(e => HasItem(e, "szczenie_psa"), "skraj_bor"), 2, 1, 1, 1, 1, 1, 2, 0],
@@ -190,7 +192,11 @@ public sealed class RevealTests
             [.. ToChapterTwelve(e => !HasItem(e, "szczenie_psa"), "sobotka"), 0, 0, 1, 1, 0, 2, 0],
             [.. ToChapterTwelve(e => e.SaveState().Contains("OblawaWilk.wydal_wilka"), "skraj_bor"), 1, 2, 0, 0],
             [.. ToChapterTwelve(e => HasItem(e, "krzesiwo") && !HasItem(e, "rozaniec"), "skraj_bor"), 1, 0, 2, 0, 2, 2, 1, 3],
-            [.. ToChapterTwelve(background: "skraj_bor", candidates: [[.. ToChapterSeven(accept: e => e.SaveState().Contains("\"celny_strzal\":true")), .. new int[16], 0, 0, 2]]), 1, 2, 2, 0, 1, 0, 2, 0]];
+            [.. ToChapterTwelve(background: "skraj_bor", candidates: [[.. ToChapterSeven(accept: e => e.SaveState().Contains("\"celny_strzal\":true")), .. new int[16], 0, 0, 2]]), 1, 2, 2, 0, 1, 0, 2, 0],
+            // rozdzial dziewietnasty: wilk rozdziera calun, umowa z mamunami przedluzona na corke, dziecko pod mlodnikiem
+            [.. ToChapterTwelve(background: "skraj_bor", candidates: [[.. ToChapterSeven(accept: e => e.SaveState().Contains("\"celny_strzal\":true")), .. new int[16], 0, 0, 2]]), 1, 2, 2, 0, 1, 0, 2, 1, 2, 2],
+            [.. ToChapterTwelve(e => e.SaveState().Contains("dar_swietojanski"), "sobotka"), 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 1, 3],
+            [.. ToChapterTwelve(background: "sobotka"), 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 3]];
 
     private static bool HasItem(InkStoryEngine engine, string id) => engine.GetInventory().Any(i => i.Id == id);
 

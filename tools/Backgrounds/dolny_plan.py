@@ -63,6 +63,7 @@ RODZAJE = {
     "skraj_bor": ("laka", False), "bor_suchy": ("susza", False), "glosy_noc": ("las", True), "bagno_blednice": ("bagno", True), "serce_boru": ("susza", False),
     "wies_sianokosy": ("laka", False), "pod_debem": ("susza", False), "noc_pod_debem": ("susza", True),
     "izba_swit": ("izba", False), "dzieci_debu": ("susza", False), "skraj_powrot": ("laka", False),
+    "laka_swit": ("laka", False), "calun_noc": ("woda", True), "pogrzeb": ("laka", False), "jesien_zaduszki": ("jesien", True),
 }
 
 

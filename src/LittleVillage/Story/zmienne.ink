@@ -291,3 +291,14 @@ LIST ZnakRozpoznania = po_imieniu, po_melodii, po_buzi, po_drewniaku, po_skarbie
 VAR znak_rozpoznania = ()
 // Dobry wybór — Marysia wraca do domu; zły — dziecko spod dębu stygnie na skraju młodnika, a prawdziwa milknie w borze.
 VAR marysia_odzyskana = false
+
+// ---------- Rozdział dziewiętnasty (Świt) ----------
+// Czym Jaromir spłacił dług u Jagny po powrocie z Marysią: wstążką, drewniakiem albo odmówił (dług czeka).
+LIST DlugJagny = oddana_wstazka, oddany_drewniak, dlug_odmowiony
+VAR dlug_jagny = ()
+// Kto zapłacił za zmyty z całunu imię Marysi: zdrowie Jaromira, ręka Antka, biały wilk (zginął) albo umowa z mamunami przedłużona na córkę.
+LIST CenaCaluna = cena_zdrowie, cena_antek, cena_franek, cena_umowa
+VAR cena_caluna = ()
+// Co Jaromir zrobił z dzieckiem spod dębu po złym wyborze: pochował na cmentarzu, oddał Jagnie, spalił albo zakopał pod młodnikiem.
+LIST CialoKopii = pochowane, oddane_jagnie, spalone, pod_mlodnikiem
+VAR cialo_kopii = ()

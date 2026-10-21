@@ -144,14 +144,17 @@ P["tlo"] = (0, 0, 390, 440, t[0] + "\n" + group(t[1:]))
 P["zboze"] = (130, 220, 160, 80, group(zyto(140, 280, 300, 40, 1920, 26)))
 P["jaromir"] = (160, 300, 80, 120, group([z_dzieckiem(196, 410, 1.7)]))
 P["zimne"] = (176, 320, 50, 40, group(['<ellipse cx="204" cy="340" rx="18" ry="12" fill="#FFFFFF" stroke="none" opacity="0.6"/>']))
+P["trumienka"] = (40, 380, 90, 30, group(['<path d="M50 404L56 390H116L122 404Z" fill="url(#hatchDense)" stroke-width="1.6"/><path d="M86 386v-24" fill="none" stroke-width="2"/>', f'<path d="M86 366c4 -3 8 -3 10 0c-3 1 -3 6 -1 10" fill="none" stroke="{RED}" stroke-width="1.6"/>']))
+P["wianki"] = (56, 382, 64, 14, group([f'<ellipse cx="{x}" cy="390" rx="7" ry="2.6" fill="none" stroke-width="1.4"/>' for x in (70, 88, 106)]))
 P["przod"] = (0, 422, 390, 422, group(PRZOD))
-POW = ["tlo", "zboze", "jaromir", "zimne", "przod"]
-P_REVEAL = {"zimne": "zimne"}
+POW = ["tlo", "zboze", "trumienka", "wianki", "jaromir", "zimne", "przod"]
+P_REVEAL = {"zimne": "zimne", "trumienka": "trumienka", "wianki": "wianki"}
 P_ANIM = {"zboze": {"type": "sway", "amplitude": 2.5, "duration": 2200, "anchorX": 0.5, "anchorY": 1}, "jaromir": {"type": "bob", "amplitude": 1.0, "duration": 1300},
           "zimne": {"type": "flicker", "amplitude": 0.4, "duration": 4000}}
-P_EXTRA = {"zimne": {"fadeDuration": 4000}, "przod": {"depth": 1.0}}
+P_EXTRA = {"zimne": {"fadeDuration": 4000}, "trumienka": {"fadeDuration": 2500}, "wianki": {"fadeDuration": 2500}, "przod": {"depth": 1.0}}
 P_COMMENTS = {"tlo": "skraj młodnika rano, pola za nim", "zboze": "żyto faluje na wietrze znad pól", "jaromir": "Jaromir wychodzi z boru z dzieckiem na rękach",
-              "zimne": "dziecko blednie i stygnie (# pokaz: zimne)", "przod": "pierwszy plan"}
+              "zimne": "dziecko blednie i stygnie (# pokaz: zimne)", "trumienka": "trumienka z bzu w grobie pod młodnikiem, kij z czerwoną wstążką (# pokaz: trumienka)",
+              "wianki": "wianki z chabrów i rumianku (# pokaz: wianki)", "przod": "pierwszy plan"}
 _add(P, POW, P_ANIM, P_COMMENTS, "wiatr", ((0, 230, 390, 80, group(['<path d="M20 250c20 -6 40 6 60 0M160 270c20 -6 40 6 60 0M280 246c20 -6 40 6 60 0" fill="none" stroke-width="1" stroke-dasharray="3 4"/>'])),
                                            {"type": "drift", "amplitude": 30, "duration": 3000}, "wiatr znad pól"), before="jaromir")
 _add(P, POW, P_ANIM, P_COMMENTS, "chmury", ((30, 30, 330, 50, group(['<path d="M60 62c8 -14 28 -14 34 0c8 -8 24 -2 22 8h-56z" fill="#FFFFFF" stroke-width="1.6"/>', '<path d="M250 48c6 -10 22 -10 26 0c6 -6 18 -2 16 6h-42z" fill="#FFFFFF" stroke-width="1.4"/>'])),

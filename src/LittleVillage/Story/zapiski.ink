@@ -7,7 +7,7 @@
 //  Wpisy nie mówią więcej, niż w tej chwili wiedzą postacie.
 // ------------------------------------------------------------
 
-LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3, zytnia_baba_1, zytnia_baba_2, pan_lasu_7, planetnik_1, tropy_3, blednice_1, starzec_4, pan_lasu_8, pan_lasu_9, zielarka_4, tropy_4, dzieci_1, pan_lasu_10, tropy_5
+LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3, zytnia_baba_1, zytnia_baba_2, pan_lasu_7, planetnik_1, tropy_3, blednice_1, starzec_4, pan_lasu_8, pan_lasu_9, zielarka_4, tropy_4, dzieci_1, pan_lasu_10, tropy_5, mamuny_4, tropy_6, dzieci_2, pan_lasu_11
 VAR zapiski = ()
 
 === function tytul_zapisku(z)
@@ -62,6 +62,10 @@ VAR zapiski = ()
     - dzieci_1:     ~ return "Dzieci spod dębu"
     - pan_lasu_10:  ~ return "Pan Lasu"
     - tropy_5:      ~ return "Biały wilk"
+    - mamuny_4:     ~ return "Mamuny"
+    - tropy_6:      ~ return "Biały wilk"
+    - dzieci_2:     ~ return "Dzieci spod dębu"
+    - pan_lasu_11:  ~ return "Pan Lasu"
 }
 ~ return ""
 
@@ -167,4 +171,12 @@ VAR zapiski = ()
     {marysia_odzyskana:Dotrzymał słowa: kto pozna swoje dziecko, ten je zabiera i nikt go nie zatrzyma.|Dotrzymał słowa: kto wybierze źle, zabiera do domu to, co wybrał – i chowa je jak swoje.} Zapowiedział, że w Zaduszki przyjdzie do wsi, żeby rozliczyć się do końca.
 - tropy_5:
     Pomógł znaleźć prawdziwe dziecko, choć słudzy Pana Lasu nie pomagają ludziom. Został pod dębem, z dłonią Pana Lasu na karku.
+- mamuny_4:
+    Pod koniec sierpnia prały na kamieniach przy pomoście mały całun i wołały nad nim „Marysia”. Same nie wybierają – piorą to, co przynosi im woda. Póki całun nie wyschnie do świtu, imię da się z niego zmyć, ale ktoś musi za to zapłacić.{cena_caluna == cena_umowa: Dar świętojański będzie teraz nosiła także Marysia, do końca życia.}
+- tropy_6:
+    Rozdarł mamunom całun z imieniem Marysi i wciągnęły go pod wodę. Antek poznał go po obręczy wytartej sierści na przedniej łapie i pochował pod młodnikiem.
+- dzieci_2:
+    To, które się wybierze, umiera na skraju boru.{cialo_kopii == spalone: W ogniu trzaska jak smolne drewno, a dym pachnie igliwiem.}{cialo_kopii == oddane_jagnie: Jagna mówi, że to drewno, i wie, co się z takim robi.}{cialo_kopii == pochowane || cialo_kopii == pod_mlodnikiem: Leży w ziemi jak dziecko, choć nie pachnie niczym.}
+- pan_lasu_11:
+    Dotrzymuje słowa co do joty – i tego samego żąda od innych. Przed Zaduszkami mgła od boru co wieczór podchodzi pod płoty, a pierwszego listopada, w drodze z cmentarza w Bukowcu, zgasły jednym tchem wszystkie gromnice, choć powietrze stało.
 }

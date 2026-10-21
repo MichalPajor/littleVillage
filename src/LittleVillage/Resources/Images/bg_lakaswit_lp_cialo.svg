@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „świt na łące”: rudy pies — cialo (rysunek autora; # pokaz: pies)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="23 371 34 38">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.08000 0.00000 0.00000 0.08000 24.00000 371.70000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="cien" data-anim="skala" data-origin="200,404" data-range="0.97-1.0" data-period="2">
+<ellipse cx="200" cy="404" rx="172" ry="18" fill="url(#hatch)" stroke="none"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="tulow" data-anim="skala" data-origin="200,394" data-range="0.98-1.02" data-period="2">
+<path d="M140 206C118 248 110 300 116 350C120 382 150 394 200 394C250 394 280 382 284 350C290 300 282 248 260 206Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M262 222C278 262 284 302 282 342C272 318 266 280 250 242Z" fill="url(#hatch)" stroke="none"/>
+<path d="M138 222C122 262 116 302 118 342C128 318 134 280 150 242Z" fill="url(#hatch)" stroke="none" opacity="0.5"/>
+<path d="M92 352C90 318 112 300 136 304C158 308 166 334 160 362C156 384 140 396 118 394C100 392 92 376 92 352Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M308 352C310 318 288 300 264 304C242 308 234 334 240 362C244 384 260 396 282 394C300 392 308 376 308 352Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M300 336C306 356 302 378 288 390C296 372 298 352 290 334Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M106 322l-4-8M114 314l-2-9M286 314l2-9M294 322l4-8" fill="none" stroke-width="2.4"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="lapy_tylne" data-anim="brak" data-origin="200,400" data-range="0" data-period="-">
+<path d="M76 394C74 382 88 376 106 378C124 380 132 388 128 398C124 406 108 408 92 406C80 404 76 400 76 394Z" fill="#FFFFFF" stroke-width="4.5"/>
+<path d="M92 392V405M106 392V407" fill="none" stroke-width="2.6"/>
+<path d="M324 394C326 382 312 376 294 378C276 380 268 388 272 398C276 406 292 408 308 406C320 404 324 400 324 394Z" fill="#FFFFFF" stroke-width="4.5"/>
+<path d="M308 392V405M294 392V407" fill="none" stroke-width="2.6"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="lapy_przednie" data-anim="przesuw" data-origin="200,404" data-range="2px" data-period="-">
+<path d="M164 276C158 318 150 348 144 376H200C198 348 196 318 194 286Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M236 276C242 318 250 348 256 376H200C202 348 204 318 206 286Z" fill="#EDEBE6" stroke-width="5"/>
+<path d="M232 300C238 326 244 350 250 372H238C236 346 232 324 226 304Z" fill="url(#hatch)" stroke="none"/>
+<g transform="translate(160 384) scale(1.32) translate(-172 -384)">
+<path d="M136 382C134 362 154 354 178 356C202 356 212 368 208 386C206 400 190 404 170 404C150 404 138 396 136 382Z" fill="#FFFFFF" stroke-width="5"/>
+<path d="M158 384C158 392 160 398 162 403M174 386V404M190 384C190 392 188 398 186 403" fill="none" stroke-width="3"/>
+<path d="M160 404l-1 5M174 405v5M188 404l1 5" fill="none" stroke-width="3"/>
+</g>
+<g transform="translate(240 384) scale(1.32) translate(-228 -384)">
+<path d="M264 382C266 362 246 354 222 356C198 356 188 368 192 386C194 400 210 404 230 404C250 404 262 396 264 382Z" fill="#FFFFFF" stroke-width="5"/>
+<path d="M242 384C242 392 240 398 238 403M226 386V404M210 384C210 392 212 398 214 403" fill="none" stroke-width="3"/>
+<path d="M240 404l1 5M226 405v5M212 404l-1 5" fill="none" stroke-width="3"/>
+</g>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="futro_na_piersi" data-anim="kolysanie" data-origin="200,214" data-range="2deg" data-period="2">
+<path d="M166 212L176 230L168 246L182 258L174 276L190 286L200 302L210 286L226 276L218 258L232 246L224 230L234 212Z" fill="#FFFFFF" stroke-width="3.5"/>
+</g>
+</g>
+</g></g>
+</svg>

@@ -449,6 +449,54 @@
 111,
 49
 ],
+"bg_calun_antek": [
+176,
+313,
+70,
+107
+],
+"bg_calun_c1_glowa": [
+35,
+225,
+76,
+133
+],
+"bg_calun_c2_glowa": [
+116,
+226,
+77,
+140
+],
+"bg_calun_c2_reka": [
+117,
+237,
+76,
+129
+],
+"bg_calun_cw_cialo": [
+105,
+315,
+42,
+66
+],
+"bg_calun_cw_ogon": [
+108,
+315,
+41,
+65
+],
+"bg_calun_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_calun_wyrwany": [
+147,
+315,
+86,
+105
+],
 "bg_chata_slady": [
 0,
 392,
@@ -2171,6 +2219,90 @@
 390,
 443
 ],
+"bg_lakaswit_antek": [
+140,
+307,
+50,
+103
+],
+"bg_lakaswit_jagna": [
+300,
+323,
+70,
+87
+],
+"bg_lakaswit_jaromir_sam": [
+60,
+301,
+50,
+109
+],
+"bg_lakaswit_kolysze": [
+90,
+346,
+60,
+64
+],
+"bg_lakaswit_lp_cialo": [
+23,
+371,
+34,
+38
+],
+"bg_lakaswit_lp_glowa": [
+24,
+370,
+33,
+37
+],
+"bg_lakaswit_lp_ogon": [
+24,
+371,
+33,
+37
+],
+"bg_lakaswit_lw_cialo": [
+91,
+183,
+38,
+58
+],
+"bg_lakaswit_lw_ogon": [
+94,
+183,
+36,
+57
+],
+"bg_lakaswit_promienie": [
+109,
+130,
+102,
+80
+],
+"bg_lakaswit_stas": [
+300,
+315,
+60,
+95
+],
+"bg_lakaswit_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_lakaswit_trawa": [
+0,
+400,
+390,
+27
+],
+"bg_lakaswit_uscisk": [
+60,
+301,
+90,
+109
+],
 "bg_lato2_b_kaluze": [
 30,
 360,
@@ -3335,6 +3467,30 @@
 390,
 443
 ],
+"bg_pogrzeb_dzwon": [
+246,
+127,
+16,
+18
+],
+"bg_pogrzeb_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_pogrzeb_trawa": [
+0,
+400,
+390,
+27
+],
+"bg_pogrzeb_trumienka": [
+134,
+349,
+84,
+41
+],
 "bg_polnoc_dym": [
 96,
 200,
@@ -4324,6 +4480,12 @@
 400,
 390,
 27
+],
+"bg_skrajpowrot_trumienka": [
+40,
+359,
+90,
+51
 ],
 "bg_skrajpowrot_zboze": [
 130,
@@ -5688,10 +5850,16 @@
 33
 ],
 "bg_zaduszki_ludzie": [
-140,
-332,
-160,
-78
+70,
+329,
+252,
+91
+],
+"bg_zaduszki_mgla": [
+-20,
+200,
+430,
+143
 ],
 "bg_zaduszki_okno": [
 0,

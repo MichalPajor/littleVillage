@@ -25,19 +25,19 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<g transform="rotate(305 146 525)"><path d="M140 525C143 521 149 521 153 525C149 529 143 529 140 525Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(227 41 768)"><path d="M35 768C38 764 44 764 48 768C44 772 38 772 35 768Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(177 59 622)"><path d="M53 622C56 618 62 618 66 622C62 626 56 626 53 622Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(265 365 480)"><path d="M359 480C362 476 368 476 372 480C368 484 362 484 359 480Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(315 278 750)"><path d="M272 750C275 746 281 746 285 750C281 754 275 754 272 750Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(194 36 631)"><path d="M30 631C33 627 39 627 43 631C39 635 33 635 30 631Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(279 198 829)"><path d="M192 829C195 825 201 825 205 829C201 833 195 833 192 829Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(211 148 681)"><path d="M142 681C145 677 151 677 155 681C151 685 145 685 142 681Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(81 84 530)"><path d="M78 530C81 526 87 526 91 530C87 534 81 534 78 530Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(107 200 761)"><path d="M194 761C197 757 203 757 207 761C203 765 197 765 194 761Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(347 185 457)"><path d="M179 457C182 453 188 453 192 457C188 461 182 461 179 457Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(253 186 612)"><path d="M180 612C183 608 189 608 193 612C189 616 183 616 180 612Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(199 350 679)"><path d="M344 679C347 675 353 675 357 679C353 683 347 683 344 679Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
-<g transform="rotate(233 132 711)"><path d="M126 711C129 707 135 707 139 711C135 715 129 715 126 711Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(148 265 614)"><path d="M259 614C262 610 268 610 272 614C268 618 262 618 259 614Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(105 322 667)"><path d="M316 667C319 663 325 663 329 667C325 671 319 671 316 667Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(135 281 698)"><path d="M275 698C278 694 284 694 288 698C284 702 278 702 275 698Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(247 221 491)"><path d="M215 491C218 487 224 487 228 491C224 495 218 495 215 491Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(121 341 481)"><path d="M335 481C338 477 344 477 348 481C344 485 338 485 335 481Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(133 227 613)"><path d="M221 613C224 609 230 609 234 613C230 617 224 617 221 613Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(312 72 463)"><path d="M66 463C69 459 75 459 79 463C75 467 69 467 66 463Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(245 353 581)"><path d="M347 581C350 577 356 577 360 581C356 585 350 585 347 581Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(234 166 796)"><path d="M160 796C163 792 169 792 173 796C169 800 163 800 160 796Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(27 381 724)"><path d="M375 724C378 720 384 720 388 724C384 728 378 728 375 724Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(75 101 688)"><path d="M95 688C98 684 104 684 108 688C104 692 98 692 95 688Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(190 332 685)"><path d="M326 685C329 681 335 681 339 685C335 689 329 689 326 685Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(144 91 499)"><path d="M85 499C88 495 94 495 98 499C94 503 88 503 85 499Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
+<g transform="rotate(262 127 670)"><path d="M121 670C124 666 130 666 134 670C130 674 124 674 121 670Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/></g>
 </g>
 </svg>

@@ -172,13 +172,8 @@ Kiedy wyszedł na skraj młodnika i poczuł na twarzy wiatr znad pól, dziecko n
 -> rozdzial_osiemnasty_ciag_dalszy
 
 
-// Koniec rozdziału osiemnastego — rozdział dziewiętnasty (Świt) do napisania.
+// Koniec rozdziału osiemnastego — dalej rozdział dziewiętnasty.
 === rozdzial_osiemnasty_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału osiemnastego._ # dalej
--> rozdzial_dziewietnasty_wkrotce
-
-=== rozdzial_dziewietnasty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_dziewietnasty
