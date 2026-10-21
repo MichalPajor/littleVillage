@@ -5,7 +5,7 @@
 //  Sprawdzenie:          { ekwipunek ? siekiera: ... }
 // ------------------------------------------------------------
 
-LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak, monety, zoladz, piolun, korale, swiatek, podkowa, krzyzyk, gromnica, szczenie_psa
+LIST Przedmioty = siekiera, chleb, pies_towarzysz, figurka, krzesiwo, zapasy, nasiona, nozyk, kora, ksiega, szczeniak, mak, monety, zoladz, piolun, korale, swiatek, podkowa, krzyzyk, gromnica, szczenie_psa, bucik_marysi, wstazka_marysi, rozaniec
 
 // Ekwipunek na początku gry — to, co Maciek przyniósł w tobołku.
 VAR ekwipunek = (siekiera, chleb)
@@ -38,6 +38,9 @@ VAR ekwipunek = (siekiera, chleb)
     - krzyzyk:   ~ return "Krzyżyk kowala"
     - gromnica:  ~ return "Gromnica"
     - szczenie_psa: ~ return "Rude szczenię"
+    - bucik_marysi: ~ return "Drewniak Marysi"
+    - wstazka_marysi: ~ return "Wstążka Marysi"
+    - rozaniec: ~ return "Poświęcony różaniec"
 }
 ~ return ""
 
@@ -91,6 +94,9 @@ VAR ekwipunek = (siekiera, chleb)
     - podkowa:   ~ return "Żelazna podkowa wykuta przez ojca Hanki na wesele. Wisi nad progiem chałupy ramionami do góry, żeby nic złego nie weszło do środka i żeby szczęście się nie wysypało."
     - krzyzyk:   ~ return "Mały żelazny krzyżyk na rzemyku, wykuty przez ojca Hanki na wesele. Hanka nosi go na szyi i nie zdejmuje – kowal przykazał, żeby nigdy."
     - gromnica:  ~ return "Gruba woskowa świeca poświęcona w Bukowcu na Gromniczną. W każdym domu musi być – na burzę, na poród i na śmierć."
+    - bucik_marysi: ~ return "Mały drewniak z lipy, pomalowany na czerwono i wyłożony filcem ze starego kapelusza dziadka Dobrosława. Drugi został w życie, u tej, która go trzymała."
+    - wstazka_marysi: ~ return "Czerwona wstążka, którą Hanka wplotła Marysi we włosy w wigilię świętego Jana. Wisiała na jałowcu na skraju młodnika, na wysokości dziecięcej rączki."
+    - rozaniec: ~ return "Drewniany różaniec poświęcony przez księdza z Bukowca. Przysiągł na niego, że skończy z pogaństwem."
     - szczenie_psa: ~ return "Rude szczenię z białą łatą na piersi, z rodu psa dziadka Maćka. Gryzie wszystko, co znajdzie, śpi przy kołysce Marysi i nie odstępuje jej na krok."
 }
 ~ return ""

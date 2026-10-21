@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „sobótka”: żyto faluje
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="80" viewBox="-10 330 410 80">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M64 404C65 378 63 363 66 353" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="66" cy="349" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M216 404C217 381 215 367 218 358" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="218" cy="354" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M122 404C123 378 121 362 124 351" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="124" cy="347" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M165 404C166 381 164 367 167 357" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="167" cy="353" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M368 404C369 382 367 368 370 360" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="370" cy="356" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M143 404C144 377 142 361 145 350" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="145" cy="346" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M244 404C245 378 243 362 246 351" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="246" cy="347" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M8 404C9 382 7 368 10 360" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="10" cy="356" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M126 404C127 381 125 368 128 359" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="128" cy="355" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M51 404C52 377 50 361 53 350" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="53" cy="346" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M383 404C384 378 382 362 385 351" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="385" cy="347" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M328 404C329 379 327 363 330 353" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="330" cy="349" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M376 404C377 377 375 361 378 351" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="378" cy="347" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M36 404C37 377 35 360 38 349" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="38" cy="345" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M313 404C314 378 312 362 315 351" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="315" cy="347" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M161 404C162 380 160 365 163 356" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="163" cy="352" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M258 404C259 377 257 361 260 350" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="260" cy="346" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M123 404C124 376 122 360 125 349" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="125" cy="345" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M15 404C16 377 14 361 17 350" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="17" cy="346" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M272 404C273 378 271 362 274 352" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="274" cy="348" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M325 404C326 378 324 362 327 351" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="327" cy="347" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M192 404C193 378 191 362 194 352" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="194" cy="348" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M320 404C321 377 319 360 322 349" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="322" cy="345" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M32 404C33 376 31 359 34 348" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="34" cy="344" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M298 404C299 378 297 362 300 352" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="300" cy="348" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M187 404C188 381 186 367 189 358" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="189" cy="354" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M12 404C13 377 11 361 14 351" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="14" cy="347" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M373 404C374 379 372 363 375 353" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="375" cy="349" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M268 404C269 381 267 367 270 358" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="270" cy="354" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M187 404C188 378 186 363 189 353" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="189" cy="349" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M2 404C3 380 1 365 4 356" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="4" cy="352" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M297 404C298 381 296 367 299 358" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="299" cy="354" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M31 404C32 378 30 362 33 351" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="33" cy="347" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M60 404C61 377 59 361 62 351" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="62" cy="347" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M93 404C94 381 92 368 95 359" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="95" cy="355" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M61 404C62 378 60 363 63 352" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="63" cy="348" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M56 404C57 376 55 360 58 349" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="58" cy="345" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M-1 404C-0 378 -2 363 1 353" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="1" cy="349" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M143 404C144 377 142 361 145 351" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="145" cy="347" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+<path d="M371 404C372 380 370 365 373 355" fill="none" stroke="#000000" stroke-width="1"/><ellipse cx="373" cy="351" rx="1.6" ry="5" fill="url(#hatchDense)" stroke="#000000" stroke-width="0.8"/>
+</g>
+</svg>

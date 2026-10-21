@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „wiosna z okruszkami”: Marysia przy życie — cialo (rysunek autora)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="86" viewBox="216 298 49 86">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.16000 0.00000 0.00000 0.16000 216.00000 298.10000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="cien" data-anim="skala" data-origin="150,512" data-range="0.98-1.0" data-period="3">
+<ellipse cx="150" cy="512" rx="70" ry="8" fill="url(#hatch)" stroke="none"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="nogi" data-anim="brak" data-origin="150,494" data-range="0" data-period="-">
+<path d="M122.0 395.8 L122.2 400.1 L122.3 405.8 L122.4 412.6 L122.6 420.1 L122.7 427.9 L122.8 435.8 L122.9 443.2 L123.0 449.8 L123.0 456.1 L123.0 462.6 L123.0 469.0 L122.9 475.2 L122.9 481.0 L122.9 486.2 L123.0 490.5 L123.0 493.8 L137.0 494.2 L137.2 490.8 L137.4 486.5 L137.7 481.3 L137.9 475.5 L138.2 469.3 L138.5 462.9 L138.7 456.4 L139.0 450.2 L139.4 443.5 L139.8 436.1 L140.2 428.3 L140.6 420.4 L140.9 412.9 L141.3 406.1 L141.7 400.4 L142.0 396.2Z" fill="#FFFFFF" stroke-width="3.5"/>
+<path d="M122.0 395.8 L122.2 400.1 L122.3 405.8 L122.4 412.6 L122.6 420.1 L122.7 427.9 L122.8 435.8 L122.9 443.2 L123.0 449.8 L123.0 456.1 L123.0 462.6 L123.0 469.0 L122.9 475.2 L122.9 481.0 L122.9 486.2 L123.0 490.5 L123.0 493.8 L127.9 494.0 L127.9 490.6 L128.0 486.3 L128.1 481.1 L128.2 475.3 L128.3 469.1 L128.4 462.7 L128.5 456.2 L128.6 450.0 L128.7 443.3 L128.7 435.9 L128.8 428.1 L128.9 420.2 L128.9 412.7 L129.0 405.9 L129.0 400.2 L129.0 395.9Z" fill="url(#hatch)" stroke="none"/>
+<path d="M121 490C116 500 118 510 130 512C142 510 144 500 139 490Z" fill="#FFFFFF" stroke-width="3.2"/>
+<path d="M124 506v5" fill="none" stroke-width="1.4"/>
+<path d="M128 506v5" fill="none" stroke-width="1.4"/>
+<path d="M132 506v5" fill="none" stroke-width="1.4"/>
+<path d="M136 506v5" fill="none" stroke-width="1.4"/>
+<path d="M125 440C129 442 133 442 136 440" fill="none" stroke-width="1.4"/>
+<path d="M158.0 396.2 L158.3 400.4 L158.7 406.1 L159.1 412.9 L159.4 420.4 L159.8 428.3 L160.2 436.1 L160.6 443.5 L161.0 450.2 L161.3 456.4 L161.5 462.9 L161.8 469.3 L162.1 475.5 L162.3 481.3 L162.6 486.5 L162.8 490.8 L163.0 494.2 L177.0 493.8 L177.0 490.5 L177.1 486.2 L177.1 481.0 L177.1 475.2 L177.0 469.0 L177.0 462.6 L177.0 456.1 L177.0 449.8 L177.1 443.2 L177.2 435.8 L177.3 427.9 L177.4 420.1 L177.6 412.6 L177.7 405.8 L177.8 400.1 L178.0 395.8Z" fill="#FFFFFF" stroke-width="3.5"/>
+<path d="M178.0 395.8 L177.8 400.1 L177.7 405.8 L177.6 412.6 L177.4 420.1 L177.3 427.9 L177.2 435.8 L177.1 443.2 L177.0 449.8 L177.0 456.1 L177.0 462.6 L177.0 469.0 L177.1 475.2 L177.1 481.0 L177.1 486.2 L177.0 490.5 L177.0 493.8 L172.1 494.0 L172.1 490.6 L172.0 486.3 L171.9 481.1 L171.8 475.3 L171.7 469.1 L171.6 462.7 L171.5 456.2 L171.4 450.0 L171.3 443.3 L171.3 435.9 L171.2 428.1 L171.1 420.2 L171.1 412.7 L171.0 405.9 L171.0 400.2 L171.0 395.9Z" fill="url(#hatch)" stroke="none"/>
+<path d="M161 490C156 500 158 510 170 512C182 510 184 500 179 490Z" fill="#FFFFFF" stroke-width="3.2"/>
+<path d="M164 506v5" fill="none" stroke-width="1.4"/>
+<path d="M168 506v5" fill="none" stroke-width="1.4"/>
+<path d="M172 506v5" fill="none" stroke-width="1.4"/>
+<path d="M176 506v5" fill="none" stroke-width="1.4"/>
+<path d="M165 440C169 442 173 442 176 440" fill="none" stroke-width="1.4"/>
+</g>
+</g>
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="koszulka" data-anim="skala" data-origin="150,400" data-range="0.99-1.0" data-period="3">
+<path d="M112 220C100 260 96 320 92 400L104 394L118 402L134 394L150 404L166 394L182 402L196 394L208 400C204 320 200 260 188 220C176 214 162 212 150 212C138 212 124 214 112 220Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M188 220C200 260 204 320 208 400L196 394C192 330 186 270 176 226Z" fill="url(#hatch)" stroke="none"/>
+<path d="M134 218C138 230 162 230 166 218" fill="none" stroke-width="2.4"/>
+<path d="M150 226V246M146 232h8M146 240h8" fill="none" stroke-width="1.4"/>
+<path d="M126 260C122 300 118 350 114 392M150 270C150 310 150 360 150 400M174 260C178 300 182 350 186 392" fill="none" stroke-width="1.6"/>
+<path d="M98 360C120 368 180 368 202 360" fill="none" stroke-width="1.4" stroke-dasharray="4 4"/>
+</g>
+</g>
+</g></g>
+</svg>

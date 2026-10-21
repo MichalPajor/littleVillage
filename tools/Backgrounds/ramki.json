@@ -839,6 +839,30 @@
 20,
 15
 ],
+"bg_izbakupala_bylica": [
+282,
+146,
+46,
+26
+],
+"bg_izbakupala_jaromir": [
+150,
+230,
+60,
+104
+],
+"bg_izbakupala_szpary": [
+40,
+109,
+70,
+72
+],
+"bg_izbakupala_tlo": [
+0,
+0,
+390,
+443
+],
 "bg_izbanoc_blask": [
 147,
 167,
@@ -2669,6 +2693,30 @@
 200,
 81
 ],
+"bg_okruszki_chmury": [
+40,
+40,
+300,
+43
+],
+"bg_okruszki_dym": [
+100,
+167,
+30,
+63
+],
+"bg_okruszki_jaskolki": [
+143,
+94,
+85,
+32
+],
+"bg_okruszki_tlo": [
+0,
+0,
+390,
+443
+],
 "bg_orka_drzewo": [
 210,
 115,
@@ -2788,6 +2836,42 @@
 0,
 390,
 443
+],
+"bg_planetnik_blysk": [
+0,
+0,
+390,
+233
+],
+"bg_planetnik_chmura": [
+148,
+20,
+242,
+123
+],
+"bg_planetnik_grad": [
+0,
+0,
+390,
+443
+],
+"bg_planetnik_pl_reka": [
+174,
+194,
+130,
+225
+],
+"bg_planetnik_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_planetnik_zboze": [
+140,
+330,
+260,
+93
 ],
 "bg_pogorzelisko_komornik": [
 0,
@@ -3311,6 +3395,30 @@
 30,
 27
 ],
+"bg_ranokupala_bylica": [
+40,
+296,
+50,
+34
+],
+"bg_ranokupala_stas": [
+250,
+307,
+63,
+83
+],
+"bg_ranokupala_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_ranokupala_trawa": [
+0,
+384,
+390,
+49
+],
 "bg_ratunek_andrzej": [
 120,
 291,
@@ -3809,6 +3917,24 @@
 390,
 443
 ],
+"bg_sobotka_gwiazdy": [
+0,
+7,
+390,
+143
+],
+"bg_sobotka_rodzina": [
+120,
+235,
+160,
+75
+],
+"bg_sobotka_tlo": [
+0,
+0,
+390,
+443
+],
 "bg_sosna_dzieci": [
 90,
 326,
@@ -4265,6 +4391,30 @@
 390,
 443
 ],
+"bg_targjagna_chmury": [
+40,
+40,
+300,
+43
+],
+"bg_targjagna_dzwon": [
+246,
+127,
+16,
+18
+],
+"bg_targjagna_jagna": [
+130,
+300,
+138,
+110
+],
+"bg_targjagna_tlo": [
+0,
+0,
+390,
+443
+],
 "bg_tartak_iskry": [
 200,
 298,
@@ -4330,6 +4480,42 @@
 64,
 85,
 32
+],
+"bg_torba_blask": [
+0,
+77,
+260,
+263
+],
+"bg_torba_drewniak": [
+195,
+286,
+24,
+17
+],
+"bg_torba_hanka": [
+110,
+230,
+60,
+102
+],
+"bg_torba_luczywo": [
+60,
+120,
+30,
+51
+],
+"bg_torba_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_torba_welniak": [
+219,
+284,
+41,
+17
 ],
 "bg_uboze_garnki": [
 24,
@@ -5290,5 +5476,47 @@
 218,
 53,
 62
+],
+"bg_zytonoc_gonitwa": [
+225,
+280,
+125,
+130
+],
+"bg_zytonoc_gwiazdy": [
+0,
+10,
+301,
+141
+],
+"bg_zytonoc_mlodnik": [
+0,
+0,
+390,
+443
+],
+"bg_zytonoc_stratowane": [
+0,
+0,
+390,
+443
+],
+"bg_zytonoc_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_zytonoc_zb_zboze": [
+28,
+164,
+176,
+268
+],
+"bg_zytonoc_zboze_przod": [
+-10,
+300,
+410,
+143
 ]
 }

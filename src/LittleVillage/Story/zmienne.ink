@@ -235,3 +235,22 @@ LIST NocOgnia = ratowal_kapliczke, ratowal_szymona, zbudzil_wies
 VAR noc_ognia = ()
 // Wieś przyjęła układ Urbaniaka: zeszyt spalony, droga wyrąbana do pierwszych wielkich sosen boru.
 VAR droga_do_boru = false
+
+// ---------- Rozdział piętnasty (Noc Kupały) ----------
+// Gdzie Jaromir był w wigilię świętego Jana: na sobótce z rodziną, w zaryglowanej chałupie albo z darem na kamieniach mamun.
+LIST NocKupaly = na_sobotce, w_chalupie, przy_kamieniach
+VAR noc_kupaly = ()
+// Jaromir miał dar świętojański, ale tej nocy nie zaniósł go mamunom (układ zerwany — „przyjdziemy po swoje”).
+VAR dar_pominiety = false
+// Żytnia baba w zbożu: gonił ją do świtu (ości w rękach), poszedł za śpiewem (Hanka straciła głos) albo zawołał wieś z głowniami (stratowane pole).
+LIST PaniWZbozu = gonil_babe, za_spiewem, z_pochodniami
+VAR pani_w_zbozu_noc = ()
+// Kogo Jaromir zapytał o radę przed wejściem do boru: Jagnę, księdza z Bukowca albo płanetnika.
+LIST RadaPrzedBorem = rada_jagny, rada_ksiedza, rada_planetnika
+VAR rada_przed_borem = ()
+// Jagnie obiecał pierwszą rzecz, którą wyniesie z boru.
+VAR dlug_u_jagny = false
+// Księdzu przysiągł na różaniec, że skończy z pogaństwem (także z darami dla mamun).
+VAR przysiega_ksiedzu = false
+// Płanetnik zabrał gradem pole Jaromira w zapłacie za wiadomość.
+VAR pole_zbite_gradem = false

@@ -7,7 +7,7 @@
 //  Wpisy nie mówią więcej, niż w tej chwili wiedzą postacie.
 // ------------------------------------------------------------
 
-LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3
+LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3, zytnia_baba_1, zytnia_baba_2, pan_lasu_7, planetnik_1
 VAR zapiski = ()
 
 === function tytul_zapisku(z)
@@ -48,6 +48,10 @@ VAR zapiski = ()
     - zielarka_3:   ~ return "Zielarka znad jeziora"
     - pan_lasu_6:   ~ return "Pan Lasu"
     - uboze_3:      ~ return "Ubożę"
+    - zytnia_baba_1: ~ return "Kobieta w życie"
+    - zytnia_baba_2: ~ return "Żytnia baba"
+    - pan_lasu_7:   ~ return "Pan Lasu"
+    - planetnik_1:  ~ return "Płanetnik"
 }
 ~ return ""
 
@@ -125,4 +129,12 @@ VAR zapiski = ()
     W noc, kiedy spłonęły kapliczki, bór przyszedł pod wieś o całe pole. Drzewa, które stały rano w miejscu ścierniska, wyglądały, jakby rosły tam od lat. Paliki pod drogę Urbaniaka puszczały pędy, a z pieńków na przesiece co rano wyrastały nowe gałązki.{droga_do_boru: Droga doszła do pierwszych wielkich sosen i tam się urwała – nikt nie chciał rąbać dalej.}{szarwark && not droga_do_boru && rozdzial_czternasty.pierwszy_snieg_czternasty: Młodnik stanął na granicy spalonych kapliczek i więcej nie urósł.}
 - uboze_3:
     Obudziło gospodarza szarpaniem za włosy, kiedy od lasu szedł ogień. Bało się tak, że trzęsła mu się broda. Ubożę pamięta, kto je karmił.
+- zytnia_baba_1:
+    Niska, przygarbiona, szeroka w biodrach jak snop, z twarzą pomarszczoną jak spieczona skórka chleba i z włosami z kłosów. Pachnie ciepłym ziarnem. Przykuca między kłosami i kołysze przed dziećmi tym, co do nich należy, jak grzechotką.
+- zytnia_baba_2:
+    Stary Staś mówi, że żytnia baba łapie dzieci w zbożu i tam je zostawia – ale Marysi nie zostawiła. Przeprowadziła ją przez pole aż pod las, jakby komuś ją niosła.{pani_w_zbozu_noc == gonil_babe: Kto ją goni, ten krąży po polu do świtu, a w ranach od źdźbeł zostają mu ości, które wrastają coraz głębiej.}{pani_w_zbozu_noc == za_spiewem: Śpiewa głosem matki – a matce zostaje potem głos pęknięty na pół.}{pani_w_zbozu_noc == z_pochodniami: Kiedy szuka jej cała wieś, ucieka – ale zostawia za sobą stratowane pole.}
+- pan_lasu_7:
+    {rada_przed_borem == rada_ksiedza:W księgach parafialnych zapisano, że raz na kilkadziesiąt lat z wsi pod borem znika dziecko, zawsze w noc świętojańską. Te, które wracają, nie pamiętają niczego.|{rada_przed_borem == rada_jagny:Jagna mówi, że las bierze dzieci, kiedy jego pan się budzi – nie zabija, tylko trzyma.|Płanetnik mówi, że nad borem chmury się rozstępują i odkąd ludzie pamiętają, nie spadła tam ani kropla deszczu.}}
+- planetnik_1:
+    Wysoki starzec w łachmanach, z brodą rozwianą wiatrem i z workiem na plecach. Chodzi przed burzą i prowadzi chmury na powrozie. Kto da mu chleba, nad tego polem chmury nie pękną – a kto go o coś zapyta, zapłaci polem.
 }

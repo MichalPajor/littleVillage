@@ -58,6 +58,8 @@ RODZAJE = {
     "wiosna_paliki": ("laka", False),
     "paliki_pedy": ("susza", False), "karczma_zeszyt": ("droga", False), "noc_ognia": ("pole", True), "pogorzelisko": ("popiol", False),
     "zima_mlodnik": ("snieg", False),
+    "wiosna_okruszki": ("laka", False), "sobotka": ("pole", True), "izba_kupala": ("izba", True), "zyto_noc": ("pole", True),
+    "rano_kupala": ("laka", False), "targ_jagna": ("droga", False), "planetnik_burza": ("pole", False), "torba_noc": ("izba", True),
 }
 
 

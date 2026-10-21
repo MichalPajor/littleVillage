@@ -115,13 +115,8 @@ A w Wigilię, kiedy wracali z pasterki, cała Zapadlina widziała, jak nad młod
 -> rozdzial_czternasty_ciag_dalszy
 
 
-// Koniec rozdziału czternastego — rozdział piętnasty (Noc Kupały) do napisania.
+// Koniec rozdziału czternastego — dalej rozdział piętnasty.
 === rozdzial_czternasty_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału czternastego._ # dalej
--> rozdzial_pietnasty_wkrotce
-
-=== rozdzial_pietnasty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_pietnasty
