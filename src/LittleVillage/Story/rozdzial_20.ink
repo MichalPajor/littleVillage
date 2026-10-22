@@ -130,11 +130,11 @@ Pan Lasu odwrócił się i poszedł w bór. Świta weszła za nim, jedno za drug
 { not marysia_odzyskana:
     { zoladz_zasadzony:
         Ta jedna, w białej koszulce, nie weszła za nimi. Pan Lasu obejrzał się na nią ze skraju boru.
-        – Żywej wam jej nie oddam – powiedział. – Ale moja już nie jest.
+        – Za długo była u mnie. Zapomniała dom – powiedział. – Żywej wam jej nie oddam. Ale moja już nie jest.
         { ekwipunek ? wstazka_marysi:
             Jaromir podszedł do niej, odwinął z przegubu spłowiałą wstążkę i zawiązał jej we włosach na kokardę, jak robiła to Hanka.
         }
-        Mała podbiegła do matki i dotknęła jej ręki, tak jak robiła to co wieczór przed snem. Potem dziadek Maciek wyciągnął do niej dłoń, a ona chwyciła ją bez lęku. Umarli z Zapadliny poszli drogą na Bukowy Grzbiet, każdy ku swojemu grobowi, nie w bór – i ona razem z nimi, ani razu się nie oglądając. Gromnica w ręce Hanki zgasła sama, spokojnie, jak się gasi świecę przed snem. # pokaz: marysia
+        Mała stała chwilę bez ruchu, nie wiedząc, dokąd iść. Potem podbiegła do matki i dotknęła jej ręki, tak jak robiła to co wieczór przed snem. Potem dziadek Maciek wyciągnął do niej dłoń, a ona chwyciła ją bez lęku. Umarli z Zapadliny poszli drogą na Bukowy Grzbiet, każdy ku swojemu grobowi, nie w bór – i ona razem z nimi, ani razu się nie oglądając. Gromnica w ręce Hanki zgasła sama, spokojnie, jak się gasi świecę przed snem. # pokaz: marysia
     - else:
         Ta jedna, w białej koszulce, zatrzymała się jeszcze na skraju.{ ekwipunek ? wstazka_marysi: Jaromir podszedł do niej, odwinął z przegubu spłowiałą wstążkę i zawiązał jej we włosach na kokardę, jak robiła to Hanka.} Mała odwróciła się i pomachała matce rączką. Hanka podniosła swoją. Gromnica w jej drugiej ręce zgasła sama, spokojnie, jak się gasi świecę przed snem. # pokaz: marysia
     }
