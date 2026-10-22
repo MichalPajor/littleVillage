@@ -2646,6 +2646,7 @@ public sealed class GameStoryTests
         pages.AddRange(PlayByText(engine, pages[^1], [.. RibbonDawn, "Zwrócić mu granicę"]));
 
         Assert.True(Has(On(pages, "granica"), "jedno dziecko na pokolenie, w noc świętojańską"));
+        Assert.True(Has(On(pages, "granica"), "Umarli nie poszli za nim"));
         Assert.False(Has(pages, "kiełek"));
         Assert.True(Has(On(pages, "epilog_dab"), "mała od Kowalczyków"));
         Assert.Equal(PageEnding.End, pages[^1].Ending);
@@ -2680,6 +2681,19 @@ public sealed class GameStoryTests
     }
 
     private static readonly int[] FlintPath = [Forest, Stay, StayHere, TellBoy, Search, TakeFlint, WalkOn, SellToWitch, TellWife, .. Summer, .. School, .. Winter, .. Spring, .. Sawmill, .. Noon, .. Bridge7, .. Pentecost, .. LeanSummer, .. Wedding, .. Births, .. Hunt, .. Grave, .. Dream, .. Fire, .. Kupala, .. DeepForest, .. OakTalk, .. Choice, .. Dawn];
+
+    [Fact]
+    public void Chapter_twenty_the_acorn_lets_the_dead_daughter_go_with_the_dead()
+    {
+        var engine = CreateEngine();
+        var pages = PlayTo(engine, "swita", FlintPath);
+        pages.AddRange(PlayByText(engine, pages[^1], "Zwrócić mu granicę"));
+
+        Assert.True(Has(On(pages, "granica"), "Żywej wam jej nie oddam"));
+        Assert.True(Has(On(pages, "granica"), "dziadek Maciek wyciągnął do niej dłoń"));
+        Assert.False(Has(On(pages, "granica"), "Umarli nie poszli za nim"));
+        Assert.True(Has(On(pages, "epilog_dab"), "wnuki Antka"));
+    }
 
     [Theory]
     [InlineData("Biec do własnej chałupy", "Franka mi pilnuj", "grób Antka")]
