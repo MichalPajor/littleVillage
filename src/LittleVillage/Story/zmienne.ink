@@ -118,7 +118,11 @@ VAR pomylki_poludnica = 0
 VAR poludnica_uklon = false
 // Południca ostrzegła Jaromira: „Pan Lasu się budzi, pilnuj kapliczek” (najwyżej jedna pomyłka).
 VAR ostrzezenie_poludnicy = false
-// Po gorączce została Jaromirowi na ramieniu blizna w kształcie półksiężyca.
+// Gdzie Południca cięła: zagadka 1 – ramię, zagadka 2 – dłoń, zagadka 3 – policzek.
+VAR ciecie_ramie = false
+VAR ciecie_dlon = false
+VAR ciecie_policzek = false
+// Po gorączce została Jaromirowi blizna w kształcie półksiężyca (miejsce: miejsce_blizny()).
 VAR blizna_sierpa = false
 // Hanka schowała do medalika zasuszony mak z wianka Południcy.
 VAR mak_w_medaliku = false
@@ -168,6 +172,8 @@ VAR weselny_gosc = ()
 // Ojciec dał Jaromirowi w dniu ślubu siekierę dziadka Maćka (i krzesiwo, jeśli babka go nie oddała).
 VAR siekiera_dziadka = false
 VAR krzesiwo_na_slubie = false
+// Srebro z tartaku poszło w głodną zimę na mąkę.
+VAR monety_na_make = false
 
 // ---------- Rozdział dziesiąty (Narodziny) ----------
 // Jak zabezpieczono kołyskę Marysi przed mamunami.
@@ -302,3 +308,16 @@ VAR cena_caluna = ()
 // Co Jaromir zrobił z dzieckiem spod dębu po złym wyborze: pochował na cmentarzu, oddał Jagnie, spalił albo zakopał pod młodnikiem.
 LIST CialoKopii = pochowane, oddane_jagnie, spalone, pod_mlodnikiem
 VAR cialo_kopii = ()
+
+// ---------- Rozdział dwudziesty (Ostatnia noc) ----------
+// Co Jaromir zrobił, gdy świta Pana Lasu stanęła pod jego chałupą: zwrócił granicę, zajął jego miejsce albo skrzesał ogień.
+LIST OstatniaNoc = zwrocil_granice, zajal_miejsce, skrzesal_ogien
+VAR ostatnia_noc = ()
+// Przy granicy Jaromir zasadził żołądź ze Starego Dębu — Pan Lasu nie bierze już dzieci.
+VAR zoladz_zasadzony = false
+// Odchodząc w bór: pożegnał się z Hanką albo zostawił czapkę na parapecie.
+LIST Pozegnanie = pozegnal_sie, odszedl_bez_slowa
+VAR pozegnanie = ()
+// Pożar boru doszedł do wsi: Antek zwalił stodołę i zginął, Jaromir gasił sam i oślepł albo pół wsi spłonęło przy przesiece.
+LIST NocPozaru = antek_pod_stodola, oslepl, pol_wsi
+VAR noc_pozaru = ()

@@ -64,6 +64,8 @@ RODZAJE = {
     "wies_sianokosy": ("laka", False), "pod_debem": ("susza", False), "noc_pod_debem": ("susza", True),
     "izba_swit": ("izba", False), "dzieci_debu": ("susza", False), "skraj_powrot": ("laka", False),
     "laka_swit": ("laka", False), "calun_noc": ("woda", True), "pogrzeb": ("laka", False), "jesien_zaduszki": ("jesien", True),
+    "dziady": ("jesien", True), "swita": ("jesien", True), "granica": ("susza", True), "miejsce": ("susza", True), "pozar_boru": ("popiol", True),
+    "epilog_dab": ("jesien", False), "epilog_bor": ("laka", False), "epilog_wrzosy": ("susza", False),
 }
 
 

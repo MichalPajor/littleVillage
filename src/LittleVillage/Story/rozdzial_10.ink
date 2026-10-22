@@ -14,7 +14,7 @@
 # tlo: izba_zimowa
 # rozdzial: Rozdział dziesiąty
 # tytul: Narodziny
-Hanka wprowadziła się do nowej izby z jednym kufrem, dwiema pierzynami i kołowrotkiem po matce. Już po tygodniu matka Jaromira mówiła o niej „nasza Hanka”, a po miesiącu przestała sprawdzać, czy synowa dobrze zaczyniła chleb.
+Hanka wprowadziła się do nowej izby z jednym kufrem, dwiema pierzynami i kołowrotkiem od matki. Już po tygodniu matka Jaromira mówiła o niej „nasza Hanka”, a po miesiącu przestała sprawdzać, czy synowa dobrze zaczyniła chleb.
 Śnieg spadł jeszcze przed Andrzejkami i leżał aż do marca. Wieczorami Hanka przędła przy piecu, ojciec łatał uprząż, a Jaromir strugał z lipowego klocka łyżki na jarmark. Czasem w nocy budził go odległy skowyt. Żona, nie otwierając oczu, szukała wtedy po omacku jego ręki i trzymała ją, dopóki znowu nie zasnął. # pokaz: skowyt
 Na Gromniczną, drugiego lutego, pojechali saniami do Bukowca. Matka uparła się, żeby kupili gromnicę – grubą, woskową świecę, którą ksiądz święcił tego dnia przed ołtarzem.
 ~ ekwipunek += gromnica
@@ -56,7 +56,7 @@ Jaromir sam zbił kołyskę z jesionowych desek i postawił ją przy łóżku, t
 *   [Zawiązać Marysi na rączce czerwoną wstążkę.]
     ~ ochrona_kolyski = wstazka_na_raczce
     { not wstazka_marzanny:
-        Hanka rozplotła warkocz i wyjęła z niego wstążkę – tę samą, którą nosiła od dziecka.
+        Hanka rozplotła warkocz i wyjęła z niego wstążkę – {swaty == po_staremu:tę, którą odwiązała z butelki swata po zrękowinach i od tamtej pory znów nosiła we włosach|tę samą, którą nosiła od dziecka}.
     - else:
         Babka wyciągnęła z kieszeni fartucha motek czerwonej wełny.
     }

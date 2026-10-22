@@ -55,13 +55,15 @@ public enum PageEnding
 /// Warstwy tła odsłonięte już na wcześniejszych stronach z tym samym tłem — widoczne od razu
 /// (lista rozdzielona przecinkami, <see cref="RevealList"/>).
 /// </param>
+/// <param name="ResetsInventory">Tobołek zmienił się na tej stronie po cichu — bez „+ / − przedmiot”.</param>
 public sealed record StoryPage(
     IReadOnlyList<StoryBlock> Blocks,
     IReadOnlyList<StoryChoice> Choices,
     PageEnding Ending,
     string? BackgroundKey,
     string? Question,
-    string? AlreadyRevealed = null);
+    string? AlreadyRevealed = null,
+    bool ResetsInventory = false);
 
 /// <summary>Przedmiot w ekwipunku gracza.</summary>
 /// <param name="Id">Nazwa elementu listy ink, np. <c>kaganek</c>.</param>

@@ -241,7 +241,7 @@ Zaczęło świtać. Obudził się zesztywniały i zziębnięty. Przez chwilę ni
 { los_psa == oswojony:
     Pies leżał przy wejściu do szałasu z łbem na łapach i patrzył w stronę mokradeł. Już nie spał. Maciek miał wrażenie, że czuwał tak aż do świtu.
 - else:
-    W szałasie było cicho. Maciek wyjrzał na zewnątrz. Trawa przy zaroślach była położona szerokim pasem, oblepiona mułem, i cuchnęła bagnem, choć do mokradeł było daleko. Pas ciągnął się w ich stronę, a na źdźbłach ciemniały krople krwi. # pokaz: slady
+    W szałasie było cicho. Maciek wyjrzał na zewnątrz. Trawa przy zaroślach była położona szerokim pasem, oblepiona mułem, i cuchnęła bagnem{chata_macka != przy_mokradlach:, choć do mokradeł było daleko}. Pas ciągnął się {chata_macka == przy_mokradlach:ku czarnej wodzie|w ich stronę}, a na źdźbłach ciemniały krople krwi. # pokaz: slady
 }
 Podszedł do swojej niedokończonej chaty i usiadł na jej progu. Siedział i patrzył przed siebie. Myśli kłębiły się w nim jak mgła nad wsią. Uciekać. Zostawić wszystko, póki jeszcze żyje, i nigdy nie wracać. A z drugiej strony – ponad miesiąc pracy, pęcherze na dłoniach, ostatnie kromki chleba. Każdy bal w tych ścianach ociosał sam. I dokąd miałby pójść? Na cudze pole, znowu za miskę kaszy? Obiecał przecież, że sprowadzi tu rodzinę. Że będą mieli swój dach.
 # pytanie: Co postanowi Maciek?
@@ -252,7 +252,7 @@ Podszedł do swojej niedokończonej chaty i usiadł na jej progu. Siedział i pa
 
 = zostaje
 Wstał, otrzepał spodnie i spojrzał na dach. Został jeden pas trzciny, może dwa.
-– Nie po to budowałem, żeby teraz uciekać – powiedział głośno, żeby usłyszało go coś więcej niż las. # dalej
+– Nie po to budowałem, żeby teraz uciekać – powiedział głośno, żeby usłyszało go coś więcej niż {chata_macka == przy_lesie:las|trzciny}. # dalej
 -> dach_gotowy
 
 = odchodzi
@@ -360,7 +360,7 @@ Wtedy dostrzegł w popiele coś jeszcze.
     -> wieczor_przy_chacie
 
 = omija
-Ominął jezioro szerokim łukiem i ani razu nie spojrzał w stronę trzcin. Niektórych rzeczy lepiej nie ruszać. # dalej
+{chata_macka == nad_jeziorem:Trzcin przy własnym progu nie mógł ominąć, ale odtąd, wychodząc z chaty, odwracał od nich wzrok.|Ominął jezioro szerokim łukiem i ani razu nie spojrzał w stronę trzcin.} Niektórych rzeczy lepiej nie ruszać. # dalej
 -> wieczor_przy_chacie
 
 
@@ -456,7 +456,7 @@ Zacisnął zęby i szedł dalej, krok za krokiem, nie odwracając głowy. Głos 
 # tlo: zapadlina
 // Kto poszedł za głosem (pies go wyciągnął albo bagno puściło), już się odwrócił — dla niego inny tekst.
 { pies_uratowal || pregi_na_lydkach:
-    Resztę drogi pod górę pokonał jak we śnie – mokry do pasa, oblepiony mułem, z {pregi_na_lydkach:łydkami, na których wciąż czuł cudze palce|kostkami, na których wciąż czuł lodowaty uścisk bagna}.{ los_psa == oswojony: Pies nie odstępował go ani na krok i co chwila oglądał się na wodę.}
+    Resztę drogi pod górę pokonał jak we śnie – {pregi_na_lydkach:mokry po pierś|mokry do pasa}, oblepiony mułem, z {pregi_na_lydkach:łydkami, na których wciąż czuł cudze palce|kostkami, na których wciąż czuł lodowaty uścisk bagna}.{ los_psa == oswojony: Pies nie odstępował go ani na krok i co chwila oglądał się na wodę.}
     Na Bukowym Grzbiecie usiadł na kamieniu i dopiero tam przestały mu się trząść ręce. W dole leżała Zapadlina – cicha, przykryta mgłą jak całunem. Gdzieś tam stała jego chata.
 - else:
     Na Bukowym Grzbiecie Maciek wreszcie odważył się obejrzeć. W dole leżała Zapadlina – cicha, przykryta mgłą jak całunem. Gdzieś tam stała jego chata.

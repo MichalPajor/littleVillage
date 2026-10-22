@@ -17,9 +17,9 @@
 Siedemdziesiąt lat po tym, jak dziadek Maciek zszedł do Zapadliny z tobołkiem na ramieniu, Jaromir pierwszy raz spojrzał w stronę lasu – nie tak, jak patrzy się na bór z pola, z bezpiecznej strony płotu, tylko tak, jak patrzy się na drogę, którą trzeba przejść.
 Stał na skraju młodnika, z siekierą w ręku i z torbą na ramieniu. Wstążkę Marysi okręcił sobie wokół nadgarstka, żeby czuć ją przy każdym ruchu.
 { obietnica_bor:
-    Kiedyś obiecał ojcu, że nigdy nie wejdzie do boru, choćby nie wiem kto go wołał. Dotrzymywał tego słowa przez trzynaście lat. Pierwszy krok między sosnami postawił ostrożnie, z sercem w gardle, i czuł, że łamie coś, czego już nie da się poskładać.
+    Kiedyś obiecał {figurka_u_staruchy && los_psa == oswojony:babce na łożu śmierci|ojcu}, że nigdy nie wejdzie do boru, choćby nie wiem kto go wołał. Dotrzymywał tego słowa przez trzynaście lat. Pierwszy krok między sosnami postawił ostrożnie, z sercem w gardle, i czuł, że łamie coś, czego już nie da się poskładać.
 - else:
-    Nigdy nie wszedł głębiej niż na skraj. Nikt mu nie zabraniał – po prostu nogi same zawracały, kiedy świerki zaczynały stać za gęsto.
+    {poszedl_po_wstazke:Odkąd jako chłopiec wszedł między świerki po wstążkę Hanki, nigdy nie zapuścił się głębiej niż na kilkadziesiąt kroków.|Nigdy nie wszedł głębiej niż na skraj.} Nikomu tego nie obiecał – po prostu nogi same zawracały, kiedy świerki zaczynały stać za gęsto.
 }
 { droga_do_boru:
     Na przesiece Urbaniaka z każdego pieńka sterczały jasne pędy, a koleiny zarosły mchem, choć jesienią jeździły nimi wozy. Przy pierwszych wielkich sosnach droga się kończyła i dalej nie było już nic poza borem.
@@ -35,7 +35,7 @@ Szedł prosto przed siebie, aż słońce stanęło wysoko. A potem świerki rozs
 *   [Wywrócić ubranie na lewą stronę, jak uczył pan Ignacy.]
     ~ wejscie_do_boru = ubranie_na_lewo
     # tlo: bor_suchy
-    Zdjął kapotę z koszulą i włożył je z powrotem szwami na wierzch.{ glos_w_lesie == kozuch: Dokładnie tak, jak tamtej zimowej nocy, kiedy miał dziewięć lat i stał w śniegu pod borem.} Kiedy ruszył znowu, ścieżka przestała zawracać. Las przyjął go jak swojego – gałęzie same odchylały się na boki, a mech prowadził stopy.
+    Zdjął kapotę z koszulą i włożył je z powrotem szwami na wierzch.{ glos_w_lesie == kozuch: Dokładnie tak, jak tamtej zimowej nocy, kiedy miał dziewięć lat i stał {figurka_u_staruchy:na polu we mgle|w śniegu pod borem}.} Kiedy ruszył znowu, ścieżka przestała zawracać. Las przyjął go jak swojego – gałęzie same odchylały się na boki, a mech prowadził stopy.
     { ekwipunek ? szczenie_psa:
         ~ ekwipunek -= szczenie_psa
         ~ pies_pobiegl_sam = true
@@ -71,7 +71,7 @@ Najpierw Hanka. Z lewej strony, zza gęstych świerków.
     Głos był jej, w każdym zachrypnięciu. Jaromir zrobił krok w tamtą stronę, zanim przypomniał sobie, że Hanka stała w progu, kiedy wychodził, i nie miała zamiaru ruszać się z domu.
 }
 Potem matka, z prawej, ciepło i łagodnie, tak jak mówiła do niego, kiedy był mały:
-– Synku, zimno mi. Zgubiłam się.{ glos_w_lesie == odpowiedzial: Te same słowa, co tamtej zimy, kiedy miał dziewięć lat i odpowiedział. Co do jednego.}
+– Synku, chodź do mnie. Zimno mi. Zgubiłam się.{ glos_w_lesie == odpowiedzial: Te same słowa, co tamtej zimy, kiedy miał dziewięć lat i odpowiedział. Co do jednego.}
 Potem Franek – tamten Franek, brat Antka – wesoło, z daleka, tak samo jak wołał go kiedyś nad jezioro:
 – Jaromir! Tędy! Chodź, coś ci pokażę!
 A na końcu, cienko, z głębi boru, zapłakało dziecko.
@@ -114,7 +114,7 @@ Najpierw jedno, potem drugie, potem kilkanaście – blade kule wielkości głow
 *   [Iść za światłami.]
     ~ przejscie_bagna = za_blednicami
     Szedł za nimi z kępy na kępę, a światła wiły się przed nim, popiskiwały, czekały. Przez chwilę zdawało mu się, że naprawdę prowadzą go przez bagno.
-    Kiedy zrobiło się szaro, zobaczył, że przez całą noc obchodził w kółko jedną i tę samą kępę – wydeptaną do gołej ziemi. Torba wisiała mu na ramieniu rozpruta od dołu do góry. Chleb, ser, sól i wełniak Marysi zniknęły.{ ekwipunek ? ksiega: Razem z nimi księga pana Ignacego.} Ocalał tylko drewniak, który nosił za pazuchą. Kawałek dalej, na turzycy, leżał rozpostarty wełniak, jakby ktoś go przymierzał – i zanim Jaromir zdążył zrobić krok, woda wciągnęła go pod siebie. # pokaz: welniak # tobolek
+    Kiedy zrobiło się szaro, zobaczył, że przez całą noc obchodził w kółko jedną i tę samą kępę – wydeptaną do gołej ziemi. Torba wisiała mu na ramieniu rozpruta od dołu do góry. Chleb, ser, sól i wełniak Marysi zniknęły.{ ekwipunek ? ksiega: Razem z nimi księga pana Ignacego.} Ocalało tylko to, co nosił za pazuchą: drewniak{ ekwipunek ? zoladz: i żołądź}. Kawałek dalej, na turzycy, leżał rozpostarty wełniak, jakby ktoś go przymierzał – i zanim Jaromir zdążył zrobić krok, woda wciągnęła go pod siebie. # pokaz: welniak # tobolek
     ~ ekwipunek -= ksiega
     Przeszedł na drugi brzeg o świcie, po kępach, które w świetle dnia były dobrze widoczne. Trząsł się – nie z zimna. # dalej
 *   [Usypać krąg z soli i czekać do świtu.]

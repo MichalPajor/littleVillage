@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „dolny plan: miejsce”: kępy trawy kołyszą się
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="236" viewBox="-30 624 450 236">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M162 719l-15.5 -54.2M162 719l-3.9 -69.7M162 719l11.6 -62.0M162 719l27.1 -46.5M162 719l-31.0 -34.9" fill="none" stroke="#000000" stroke-width="2.6"/>
+<path d="M49 830l-20.6 -72.2M49 830l-5.2 -92.8M49 830l15.5 -82.5M49 830l36.1 -61.9M49 830l-41.3 -46.4" fill="none" stroke="#000000" stroke-width="2.9"/>
+<path d="M41 741l-16.1 -56.4M41 741l-4.0 -72.5M41 741l12.1 -64.4M41 741l28.2 -48.3M41 741l-32.2 -36.2" fill="none" stroke="#000000" stroke-width="2.6"/>
+<path d="M251 794l-17.2 -60.2M251 794l-4.3 -77.3M251 794l12.9 -68.8M251 794l30.1 -51.6M251 794l-34.4 -38.7" fill="none" stroke="#000000" stroke-width="2.7"/>
+</g>
+</svg>

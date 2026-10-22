@@ -19,6 +19,8 @@ public readonly record struct StoryTag(string Name, string? Value)
     public const string Death = "smierc";
     /// <summary>Zmiana w tobołku i w zapiskach ma się pokazać dopiero przy tym akapicie (<c># tobolek</c>).</summary>
     public const string Inventory = "tobolek";
+    /// <summary>Tobołek zmienia się bez powiadomień (<c># nowy_tobolek</c>) — np. nowy bohater zaczyna z pustymi rękami.</summary>
+    public const string NewInventory = "nowy_tobolek";
 
     public static StoryTag Parse(string rawTag)
     {

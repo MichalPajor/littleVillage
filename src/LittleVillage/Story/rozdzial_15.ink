@@ -84,7 +84,7 @@ Ledwie wystawała nad żyto – niska, przygarbiona, szeroka w biodrach jak snop
     ~ pani_w_zbozu_noc = za_spiewem
     Jaromir nie patrzył już na nią. Szedł za głosem – przez żyto, przez ugór, przez rów z pokrzywami – a śpiew nie oddalał się ani nie przybliżał, zawsze tuż za następnym rzędem kłosów. Hanka szła za nim i trzymała go za pas.
     ~ ekwipunek += wstazka_marysi
-    Na skraju młodnika śpiew urwał się – w tym samym miejscu, w którym zawsze urywała się melodia Marysi. Na gałęzi jałowca, na wysokości dziecięcej rączki, wisiała czerwona wstążka.{ poszedl_po_wstazke: Zawiązana na kokardę – tak samo starannie jak tamta wstążka Hanki, którą przed laty ktoś zostawił mu na płocie.} # pokaz: mlodnik
+    Na skraju młodnika śpiew urwał się – w tym samym miejscu, w którym zawsze urywała się melodia Marysi. Na gałęzi jałowca, na wysokości dziecięcej rączki, wisiała czerwona wstążka.{ not poszedl_po_wstazke: Zawiązana na kokardę – tak samo starannie jak tamta wstążka Hanki, którą przed laty ktoś zostawił mu na płocie.} # pokaz: mlodnik
     Jaromir ruszył w stronę drzew. Hanka szarpnęła go za pas tak mocno, że się zachwiał.
     – Nie po ciemku – wychrypiała. – Nie po ciemku, słyszysz? Nie oddam im was obojga.
     Dopiero wtedy usłyszał, jak brzmi jej głos. Był chrapliwy, pęknięty, jakby ktoś go z niej wydarł i zwrócił tylko połowę. Hanka już nigdy nie zaśpiewała ani jednej kołysanki. # dalej
@@ -113,7 +113,7 @@ Hanka wyszła przed chałupę. Miała suche oczy i włosy zaplecione ciasno, jak
     ~ rada_przed_borem = rada_jagny
     ~ dlug_u_jagny = true
     # tlo: targ_jagna
-    Jagna, jak co roku, przyjechała na świętojański targ z ziołami i siedziała przy kościele, za koszami pełnymi dziurawca. Kiedy zobaczyła Jaromira, odstawiła kosz i przyjrzała mu się zdrowym okiem. {zaufal_jagnie:– Wiedziałam, że przyjdziesz – powiedziała cicho.|– Teraz przyszedłeś – powiedziała bez złości. – A rok temu nie chciałeś mnie słuchać.}{ los_figurki == figurka_u_jagny: – Tamta lalka leży daleko stąd, w ziemi pod progiem kościoła – dodała. – To nie jej sprawka.} Wysłuchała go bez słowa. # pokaz: jagna
+    Jagna znowu przyjechała na świętojański targ z ziołami i siedziała przy kościele, za koszami pełnymi dziurawca. Kiedy zobaczyła Jaromira, odstawiła kosz i przyjrzała mu się zdrowym okiem. {zaufal_jagnie:– Wiedziałam, że przyjdziesz – powiedziała cicho.|– Teraz przyszedłeś – powiedziała bez złości. – A rok temu nie chciałeś mnie słuchać.}{ los_figurki == figurka_u_jagny: – Tamta lalka leży daleko stąd, w ziemi pod progiem kościoła – dodała. – To nie jej sprawka.} Wysłuchała go bez słowa. # pokaz: jagna
     Potem przysunęła się bliżej.
     – Las bierze dzieci, kiedy jego pan się budzi – szepnęła. – Nie zabija. Trzyma. Wejdziesz tam, to ścieżki będą udawać, że prowadzą, a zawracać będą. Co znajdziesz w borze, nie jedz i nie pij, choćbyś padał z głodu. – Zawahała się. – A jak wrócisz, przyniesiesz mi pierwszą rzecz, którą wyniesiesz z boru. Cokolwiek to będzie. Taka jest cena.
     Jaromir się zgodził. Dopiero w drodze powrotnej pomyślał, że z boru może wynieść tylko jedno, na czym mu zależy. # dalej
@@ -123,11 +123,11 @@ Hanka wyszła przed chałupę. Miała suche oczy i włosy zaplecione ciasno, jak
     # tlo: chrzest
     {
     - trzy_noce == rozkopany_grob:
-        Ksiądz przyjął go w zakrystii, nie podając ręki. Wysłuchał, a potem powiedział, że pomoże – ale najpierw Jaromir przeprosi przy całej parafii za zbezczeszczenie grobu starego Wójcika. W niedzielę klęczał przed ołtarzem na gołej posadzce przez całą sumę, a ludzie z Bukowca szeptali za jego plecami.
+        Ksiądz przyjął go w zakrystii, nie podając ręki. Wysłuchał, a potem powiedział, że pomoże – ale najpierw Jaromir przeprosi przy całej parafii za zbezczeszczenie grobu starego Wójcika. Jeszcze tego dnia, na nieszporach w dzień świętego Jana, klęczał przed ołtarzem na gołej posadzce, a ludzie z Bukowca szeptali za jego plecami.
     - pochowek_wojcika == pochowany_za_murem:
-        Ksiądz przyjął go w zakrystii, nie podając ręki. Pomoże – ale najpierw Jaromir wyzna przy całej parafii, że pochował chrześcijanina po pogańsku, za murem. W niedzielę klęczał przed ołtarzem na gołej posadzce przez całą sumę, a ludzie z Bukowca szeptali za jego plecami.
+        Ksiądz przyjął go w zakrystii, nie podając ręki. Pomoże – ale najpierw Jaromir wyzna przy całej parafii, że pochował chrześcijanina po pogańsku, za murem. Jeszcze tego dnia, na nieszporach w dzień świętego Jana, klęczał przed ołtarzem na gołej posadzce, a ludzie z Bukowca szeptali za jego plecami.
     - pochowek_wojcika == pochowany_z_makiem:
-        Ksiądz przyjął go chłodno. Pomoże – jeśli Hanka, której od Wielkanocy nie dopuścił do komunii, wyspowiada się z maku przy całej parafii. Hanka poszła. Klęczała przed ołtarzem przez całą sumę i ani razu nie podniosła głowy.
+        Ksiądz przyjął go chłodno. Pomoże – jeśli Hanka, którą półtora roku temu, po pogrzebie starego Wójcika, odsunął od komunii, wyspowiada się z maku przy całej parafii. Hanka poszła jeszcze tego dnia, na nieszpory w dzień świętego Jana. Klęczała przed ołtarzem przez całe nabożeństwo i ani razu nie podniosła głowy.
     - else:
         Ksiądz przyjął go od razu, w kuchni plebanii, przy misce zupy, której Jaromir nie tknął.
     }
@@ -156,9 +156,10 @@ Hanka wyszła przed chałupę. Miała suche oczy i włosy zaplecione ciasno, jak
 W nocy Hanka szyła Jaromirowi torbę z płótna. Igła dwa razy wypadła jej z palców. Za trzecim razem przebiła sobie kciuk i nawet tego nie zauważyła – na płótnie została rdzawa kropka. Do torby włożyła chleb, ser, sól zawiązaną w szmatkę i pęk świeżej bylicy. Na wierzch położyła ciepły wełniak Marysi, złożony starannie, jak do skrzyni. # pokaz: welniak
 – Żeby nie zmarzła – powiedziała. – Jak ją znajdziesz.
 { ekwipunek ? ksiega:
-    Jaromir przez całe popołudnie, przy otwartym oknie, czytał księgę pana Ignacego – o Borowym, o zawracających ścieżkach, o ludziach, którzy wrócili z lasu po latach i nie poznawali własnych dzieci. Kiedy zaczęło zmierzchać, zamknął ją i schował na dno torby.
+    Po powrocie, póki było jasno, Jaromir czytał przy otwartym oknie księgę pana Ignacego – o Borowym, o zawracających ścieżkach, o ludziach, którzy wrócili z lasu po latach i nie poznawali własnych dzieci. Kiedy zaczęło zmierzchać, zamknął ją i schował na dno torby.
 }
 Na stole stał jeden drewniak. Jaromir nie mógł oderwać od niego oczu. Myślał tylko o tym, że Marysia jest boso, a rosa w borze jest zimna nawet w czerwcu.{ skarb_dla_corki: I o tym, że miała na szyi jego {skarb_jaromira == muszelka:muszelkę|{skarb_jaromira == pioro:pióro|gwóźdź}} – że w lesie, wśród obcych, ma przy sobie choć tyle z domu.}
+{ ekwipunek ? zoladz: Spod belki nad piecem wyjął żołądź spod Starego Dębu, przechowany od chłopięcych lat – wciąż ciepły – i schował go za pazuchę.}
 Przed świtem wstał, wziął z kołka siekierę{ siekiera_dziadka: dziadka}{ ekwipunek ? krzesiwo: i krzesiwo do kieszeni} i wyszedł przed chałupę. Hanka stanęła w progu.{ ekwipunek ? szczenie_psa: Pies siedział u jej stóp i drżał, ale nie odstępował drzwi.} # pokaz: swit
 – Łuczywo będzie się paliło co noc – powiedziała. – Aż wrócicie.
 Jaromir skinął głową i ruszył przez mokrą od rosy łąkę, przez żyto, w stronę młodnika. # dalej

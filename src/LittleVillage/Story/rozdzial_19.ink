@@ -116,7 +116,7 @@ Rozłożyła całun na kamieniu i wygładziła go dłonią. – Do świtu wyschn
     Najstarsza przyglądała mu się bez ruchu. Potem odłożyła kijankę. – Zgoda – zaskrzeczała. – Ale ona też będzie musiała pamiętać. Każdego roku. Do końca.
     O świcie mamun już nie było. Całun leżał na kamieniu, wciąż mokry, a kiedy Jaromir po niego sięgnął, rozpłynął się w wodzie jak piana. # pokaz: piana
     { przysiega_ksiedzu:
-        Wracając, czuł na piersi ciężar przysięgi złożonej w zakrystii – że skończy z darami dla tego, co siedzi w wodzie. Złamał ją, zanim minął rok. # dalej
+        Wracając, czuł na piersi ciężar przysięgi złożonej w Bukowcu – że skończy z darami dla tego, co siedzi w wodzie. Złamał ją, zanim minął rok. # dalej
     - else:
         Wracał przez ściernisko powoli, z mokrymi stopami, i nie oglądał się za siebie. # dalej
     }
@@ -148,6 +148,9 @@ Słońce wyszło zza boru akurat wtedy, kiedy Jaromir stanął na skraju młodni
 Hanka biegła od chałupy, boso, przez mokrą trawę, z rękami wyciągniętymi przed siebie. W pół drogi zwolniła. Potem stanęła.
 Nie krzyczała.{ pani_w_zbozu_noc == za_spiewem: Nie mogła.} Wzięła dziecko z jego rąk, ostrożnie, jak się bierze śpiące, i wtuliła twarz w jego włosy, tak jak robiła co wieczór. Wąchała długo. Włosy nie pachniały niczym – ani mlekiem, ani dymem, ani nią. I wtedy zrozumiała. # pokaz: kolysze
 Usiadła z dzieckiem w trawie i zaczęła je kołysać. Ludzie z grabiami stali na pokosach i nikt się nie ruszał. Pierwszy podszedł Antek. Zdjął czapkę. # pokaz: antek
+{ wilk_przy_jaromirze && znak_rozpoznania != po_wilku:
+    Biały wilk, który szedł za Jaromirem przez cały młodnik, został przy ostatnich świerkach. Kiedy ktoś spojrzał w tamtą stronę, już go nie było. # pokaz: wilk
+}
 { ekwipunek ? szczenie_psa:
     Pies położył się u stóp Hanki i zaskomlał, cicho, bez przerwy, aż ktoś go odciągnął. # pokaz: pies
 }
@@ -203,10 +206,10 @@ Dziewczynki ze wsi uwiły wianki z chabrów i rumianku, prosto z miedzy, i poło
     Zanim zabili wieko, Jaromir położył w trumience skarb z bazy – {skarb_jaromira == muszelka:muszelkę z rysą po krzywym ząbku|{skarb_jaromira == pioro:wymemłane pióro z przygryzioną dutką|gwóźdź z brązową rdzą}}.
 - else:
     ~ ekwipunek -= bucik_marysi
-    Zanim zabili wieko, Jaromir położył w trumience {drugi_drewniak:oba czerwone drewniaki|czerwony drewniak – ten jeden, który mu został}. # tobolek
+    Zanim zabili wieko, Jaromir położył w trumience {drugi_drewniak:oba czerwone drewniaki|czerwony drewniak – ten jeden, który mu został}{uklad_z_mamunami != oddany_skarb:, a obok {drugi_drewniak:nich|niego} skarb ze skrzynki w bazie – {skarb_jaromira == muszelka:białą muszelkę|{skarb_jaromira == pioro:sójcze pióro|zardzewiały gwóźdź}}. Miał jej go kiedyś pokazać}. # tobolek
 }
 { cialo_kopii == pod_mlodnikiem:
-    Grób pod młodnikiem przykryli darnią, a Antek wbił w głowach kij z zawiązaną czerwoną wstążką, żeby było wiadomo, gdzie. # dalej
+    Grób pod młodnikiem przykryli darnią, a Antek wbił w głowach kij z zawiązaną czerwoną wstążką, którą Hanka wyplotła z włosów dziecka, żeby było wiadomo, gdzie. # dalej
 - else:
     Pochowali trumienkę na cmentarzu w Bukowcu, pod brzozą. Ksiądz{ przysiega_ksiedzu:, który przyjął przysięgę Jaromira na różaniec,} odprawił wszystko jak trzeba i nie zapytał o nic.{ cialo_kopii == oddane_jagnie || cialo_kopii == spalone: Kiedy grabarz zasypywał dół, ziemia stukała o wieko tak głucho, że Jaromir słyszał to potem po nocach.} # dalej
 }
@@ -218,7 +221,7 @@ Pod koniec sierpnia, w noc, kiedy mijały trzy lata, odkąd Marysia przyszła na
 Jesień przyszła wcześnie. Młócka w stodołach, siew żyta pod zimę, międlenie lnu – wieś robiła swoje jak co roku, a Hanka razem z nią, sprawnie i bez słowa. Jaromir co noc słyszał, jak wstaje i chodzi po izbie, od pieca do okna i z powrotem.
 { pies_pobiegl_sam:
     ~ ekwipunek += szczenie_psa
-    Pies wrócił z boru po tygodniu, chudy jak patyk, i położył się pod ławą, na której spała Marysia. Nie dał się stamtąd wywabić. # tobolek
+    Pies wrócił z boru jeszcze w lipcu, tydzień po Janie, chudy jak patyk, i położył się pod ławą, na której spała Marysia. Nie dał się stamtąd wywabić. # tobolek
 }
 { dlug_u_jagny && cialo_kopii != oddane_jagnie:
     Jagna nie przyjechała już ani razu. Dług nie był spłacony i Jaromir wiedział, że ona też o tym wie.
@@ -230,13 +233,8 @@ Pierwszego listopada wieś szła na cmentarz do Bukowca. Tego roku zamiast kagan
 -> rozdzial_dziewietnasty_ciag_dalszy
 
 
-// Koniec rozdziału dziewiętnastego — rozdział dwudziesty (Ostatnia noc) do napisania.
+// Koniec rozdziału dziewiętnastego — dalej rozdział dwudziesty (Ostatnia noc).
 === rozdzial_dziewietnasty_ciag_dalszy ===
 # ozdobnik
 _Koniec rozdziału dziewiętnastego._ # dalej
--> rozdzial_dwudziesty_wkrotce
-
-=== rozdzial_dwudziesty_wkrotce ===
-# ozdobnik
-_Ciąg dalszy nastąpi…_
--> END
+-> rozdzial_dwudziesty

@@ -118,9 +118,9 @@ Wójcikowa spojrzała na Jaromira. Była matką chrzestną jego córki i drugi r
 # tlo: cmentarz_bukowiec
 ~ zapiski += strzyga_2
 { pochowek_wojcika == pochowany_za_murem:
-    Po pogrzebie spadł śnieg i leżał miękko aż do lutego. Grób za cmentarnym murem zarósł do wiosny trawą i nikt, poza Wójcikową, do niego nie zaglądał. Ona przychodziła co niedzielę, sama, i siadała na kamieniu przy rozstajach – póki w lutym nie zległa w gorączce. # pokaz: wdowa
+    Po pogrzebie spadł śnieg i leżał miękko aż do lutego. Grób za cmentarnym murem zarósł do wiosny trawą i nikt, poza Wójcikową, do niego nie zaglądał. Ona przychodziła co niedzielę, sama, i siadała na kamieniu przy rozstajach – dopóki zimą nie zległa. # pokaz: wdowa
 - else:
-    Po pogrzebie spadł śnieg i leżał miękko aż do lutego. Na grobie w Bukowcu Wójcikowa co niedzielę stawiała świeczkę, póki w lutym nie zległa w gorączce, a Hanka położyła na nim wianek z suchych maków. # pokaz: swieczka
+    Po pogrzebie spadł śnieg i leżał miękko aż do lutego. Na grobie w Bukowcu Wójcikowa co niedzielę stawiała świeczkę, dopóki nie zachorowała, a Hanka położyła na nim wianek z suchych maków. # pokaz: swieczka
 }
 Stary Wójcik już nie wstał. Tylko psy, kiedy przechodziły obok jego chałupy, przez długie miesiące podkulały ogony. # dalej
 -> boze_narodzenie

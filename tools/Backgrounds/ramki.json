@@ -785,6 +785,54 @@
 390,
 443
 ],
+"bg_dziady_ksiadz": [
+103,
+300,
+127,
+100
+],
+"bg_dziady_mgla": [
+-30,
+300,
+450,
+63
+],
+"bg_dziady_mgla_dal": [
+-30,
+180,
+450,
+73
+],
+"bg_dziady_miski": [
+30,
+269,
+330,
+21
+],
+"bg_dziady_prog": [
+330,
+278,
+53,
+82
+],
+"bg_dziady_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_dziady_wrona": [
+243,
+310,
+28,
+24
+],
+"bg_dziady_wrony": [
+113,
+74,
+85,
+32
+],
 "bg_dziecidebu_cien_maly": [
 196,
 397,
@@ -892,6 +940,120 @@
 0,
 390,
 443
+],
+"bg_epilogbor_czapka": [
+183,
+300,
+26,
+15
+],
+"bg_epilogbor_dzieci": [
+20,
+350,
+120,
+71
+],
+"bg_epilogbor_es_postac": [
+290,
+177,
+61,
+108
+],
+"bg_epilogbor_miski": [
+164,
+349,
+64,
+18
+],
+"bg_epilogbor_prawnuczka": [
+266,
+270,
+34,
+60
+],
+"bg_epilogbor_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_epilogbor_trawa": [
+0,
+400,
+390,
+27
+],
+"bg_epilogdab_dzieci": [
+20,
+350,
+220,
+71
+],
+"bg_epilogdab_starzy": [
+40,
+320,
+90,
+61
+],
+"bg_epilogdab_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_epilogdab_trawa": [
+0,
+400,
+390,
+27
+],
+"bg_epilogdab_zoledzie": [
+200,
+330,
+102,
+20
+],
+"bg_epilogwrzosy_dym": [
+236,
+251,
+30,
+69
+],
+"bg_epilogwrzosy_kielek": [
+202,
+335,
+18,
+25
+],
+"bg_epilogwrzosy_pokrzywy": [
+40,
+270,
+311,
+40
+],
+"bg_epilogwrzosy_staruszek": [
+218,
+340,
+52,
+65
+],
+"bg_epilogwrzosy_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_epilogwrzosy_trawa": [
+0,
+400,
+390,
+27
+],
+"bg_epilogwrzosy_wnuczka": [
+185,
+340,
+35,
+60
 ],
 "bg_gajowy_antek": [
 0,
@@ -1024,6 +1186,72 @@
 0,
 390,
 443
+],
+"bg_granica_drewniak": [
+245,
+352,
+24,
+17
+],
+"bg_granica_gl_glowa": [
+234,
+130,
+133,
+238
+],
+"bg_granica_gwiazdy": [
+0,
+10,
+390,
+111
+],
+"bg_granica_jaromir": [
+127,
+300,
+43,
+103
+],
+"bg_granica_kielek": [
+222,
+349,
+32,
+42
+],
+"bg_granica_mgla": [
+-30,
+240,
+450,
+53
+],
+"bg_granica_siekiera": [
+160,
+281,
+61,
+69
+],
+"bg_granica_swit": [
+0,
+0,
+390,
+253
+],
+"bg_granica_szron": [
+150,
+369,
+120,
+41
+],
+"bg_granica_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_granica_wstazka": [
+172,
+284,
+17,
+30
 ],
 "bg_izba_piec": [
 196,
@@ -2705,6 +2933,72 @@
 390,
 443
 ],
+"bg_miejsce_czapka": [
+19,
+262,
+21,
+12
+],
+"bg_miejsce_gwiazdy": [
+0,
+8,
+390,
+123
+],
+"bg_miejsce_hanka": [
+65,
+260,
+26,
+44
+],
+"bg_miejsce_jaromir": [
+185,
+300,
+41,
+100
+],
+"bg_miejsce_marysia": [
+214,
+356,
+30,
+46
+],
+"bg_miejsce_mgla": [
+-30,
+236,
+450,
+53
+],
+"bg_miejsce_mw_cialo": [
+312,
+221,
+36,
+54
+],
+"bg_miejsce_mw_ogon": [
+315,
+221,
+34,
+52
+],
+"bg_miejsce_okno": [
+19,
+267,
+20,
+18
+],
+"bg_miejsce_pagorek": [
+260,
+370,
+90,
+31
+],
+"bg_miejsce_tlo": [
+0,
+0,
+390,
+443
+],
 "bg_mrozizba_dym": [
 30,
 147,
@@ -3720,6 +4014,90 @@
 110
 ],
 "bg_poranek_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_pozarboru_dym": [
+0,
+0,
+390,
+203
+],
+"bg_pozarboru_gaszenie": [
+100,
+324,
+80,
+79
+],
+"bg_pozarboru_jaromir": [
+30,
+300,
+50,
+107
+],
+"bg_pozarboru_luna": [
+0,
+0,
+390,
+263
+],
+"bg_pozarboru_ogien_leszy": [
+130,
+151,
+140,
+189
+],
+"bg_pozarboru_pl_glowa": [
+133,
+111,
+127,
+227
+],
+"bg_pozarboru_popiol": [
+0,
+0,
+390,
+303
+],
+"bg_pozarboru_przesieka": [
+97,
+330,
+186,
+77
+],
+"bg_pozarboru_pw_cialo": [
+56,
+334,
+48,
+76
+],
+"bg_pozarboru_pw_ogon": [
+59,
+334,
+46,
+74
+],
+"bg_pozarboru_runal": [
+130,
+279,
+140,
+62
+],
+"bg_pozarboru_stodola": [
+230,
+269,
+100,
+111
+],
+"bg_pozarboru_stodola_runela": [
+230,
+328,
+100,
+52
+],
+"bg_pozarboru_tlo": [
 0,
 0,
 390,
@@ -5014,6 +5392,126 @@
 0,
 390,
 443
+],
+"bg_swita_franek": [
+270,
+316,
+40,
+74
+],
+"bg_swita_jaromir": [
+317,
+326,
+35,
+84
+],
+"bg_swita_mgla": [
+-30,
+196,
+450,
+63
+],
+"bg_swita_mgla_niska": [
+-30,
+380,
+450,
+47
+],
+"bg_swita_szron": [
+119,
+287,
+161,
+46
+],
+"bg_swita_tlo": [
+0,
+0,
+390,
+443
+],
+"bg_swita_umarli": [
+146,
+327,
+114,
+73
+],
+"bg_swita_wb_poswiata": [
+142,
+56,
+111,
+192
+],
+"bg_swita_wl_glowa": [
+124,
+50,
+145,
+259
+],
+"bg_swita_wm1_glowa": [
+127,
+224,
+64,
+111
+],
+"bg_swita_wm2_glowa": [
+206,
+222,
+65,
+117
+],
+"bg_swita_wm2_reka": [
+207,
+231,
+64,
+108
+],
+"bg_swita_wp_wlosy_l": [
+101,
+186,
+82,
+139
+],
+"bg_swita_wp_wlosy_p": [
+104,
+186,
+81,
+139
+],
+"bg_swita_ww_cialo": [
+266,
+330,
+48,
+76
+],
+"bg_swita_ww_ogon": [
+269,
+330,
+46,
+74
+],
+"bg_swita_wwp_cialo": [
+201,
+265,
+30,
+46
+],
+"bg_swita_wwp_glowa": [
+202,
+265,
+27,
+44
+],
+"bg_swita_wwp_grzywa": [
+202,
+265,
+27,
+44
+],
+"bg_swita_wwp_ogon": [
+204,
+265,
+28,
+44
 ],
 "bg_szkola_cien": [
 150,

@@ -121,7 +121,7 @@ Kolana mu zmiękły. Czuł, że serce rwie mu się na tyle kawałków, ile dziew
 ~ marysia_odzyskana = true
 ~ zapiski += (dzieci_1, pan_lasu_10)
 Dotknął jej ramienia.
-Była zimna, jakby dopiero teraz, po czterech nocach, dosięgnął jej chłód boru – i drżała. Zanim zdążył ją objąć, rozpłakała się na cały głos, z czerwoną, pomarszczoną buzią, z gilem pod nosem, tak brzydko i tak prawdziwie, że Jaromir roześmiał się przez łzy.{ pytanie_do_leszego == gdzie_marysia: „Moje dzieci nigdy nie płaczą” – przypomniał sobie. Ta płakała za wszystkie.}
+Była zimna, jakby dopiero teraz, po pięciu nocach, dosięgnął jej chłód boru – i drżała. Zanim zdążył ją objąć, rozpłakała się na cały głos, z czerwoną, pomarszczoną buzią, z gilem pod nosem, tak brzydko i tak prawdziwie, że Jaromir roześmiał się przez łzy.{ pytanie_do_leszego == gdzie_marysia: „Moje dzieci nigdy nie płaczą” – przypomniał sobie. Ta płakała za wszystkie.}
 Pozostałe dziewczynki nie wstały. Po prostu przestały być: skurczyły się, poszarzały i opadły na porosty garściami suchych liści, kory i igliwia. Wiatr, którego nie było, zwiał je w szczelinę pnia. # pokaz: rozsypane
 – Poznałeś – powiedział Pan Lasu. Nie było w tym ani gniewu, ani radości. – Zabieraj ją. Nikt was nie zatrzyma. Słowo za słowo.
 Jaromir podniósł Marysię. Była lżejsza niż w dniu, kiedy ostatni raz niósł ją z pola, i ściskała go za szyję tak mocno, że ledwie mógł oddychać. Pachniała kwaśnym mlekiem, dymem i mokrą wełną – domem. # pokaz: na_rekach

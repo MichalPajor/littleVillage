@@ -10,7 +10,7 @@
 # tytul: Zielone Świątki
 Jesień po żniwach była długa i ciepła. Babie lato snuło się nad ścierniskami srebrnymi nitkami, a pajęczyny na płotach co rano obwieszone były kroplami rosy jak paciorkami.
 We wrześniu wykopywano ziemniaki. Cała wieś wychodziła wtedy w pole z motykami i koszami, a po zmroku na miedzach paliły się ogniska z suchych łętów. Dzieci piekły w żarze kartofle i jadły je prosto z popiołu, parząc sobie palce, a dorośli siadali przy ogniu i opowiadali, jak to bywało za ich młodości. Jaromir lubił te wieczory bardziej niż wszystkie inne. Dym gryzł w oczy, ziemia pachniała chłodem, a kiedy podnosił głowę, nad borem świeciły już gwiazdy – ostre i zimne jak okruchy lodu. # pokaz: zmrok
-W październiku kisiło się kapustę. Kobiety szatkowały ją w wielkich kopach na stole przed chałupą, a mężczyźni udeptywali w beczkach bosymi stopami, aż sok sięgał im do kostek. Matka sypała do każdej warstwy kminek i rzucała garść żurawin, „żeby się kiszonka nie bała zimy”.{ blizna_sierpa: Kiedy przyszły pierwsze przymrozki, blizna na ramieniu Jaromira zaczęła rwać – tępo, uporczywie, zawsze o tej samej porze, w samo południe.} # dalej
+W październiku kisiło się kapustę. Kobiety szatkowały ją w wielkich kopach na stole przed chałupą, a mężczyźni udeptywali w beczkach bosymi stopami, aż sok sięgał im do kostek. Matka sypała do każdej warstwy kminek i rzucała garść żurawin, „żeby się kiszonka nie bała zimy”.{ blizna_sierpa: Kiedy przyszły pierwsze przymrozki, blizna na {miejsce_blizny()} Jaromira zaczęła rwać – tępo, uporczywie, zawsze o tej samej porze, w samo południe.} # dalej
 -> zaduszki
 
 = zaduszki

@@ -7,7 +7,7 @@
 //  Wpisy nie mówią więcej, niż w tej chwili wiedzą postacie.
 // ------------------------------------------------------------
 
-LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3, zytnia_baba_1, zytnia_baba_2, pan_lasu_7, planetnik_1, tropy_3, blednice_1, starzec_4, pan_lasu_8, pan_lasu_9, zielarka_4, tropy_4, dzieci_1, pan_lasu_10, tropy_5, mamuny_4, tropy_6, dzieci_2, pan_lasu_11
+LIST Zapiski = stwor_1, zielarka_1, pan_lasu_1, starzec_1, polnocnica_1, polnocnica_2, dziad_1, stwor_2, zielarka_2, ogniki_1, uboze_1, pan_lasu_2, poludnica_1, pan_lasu_3, rusalki_1, uboze_2, licho_1, licho_2, licho_3, pan_lasu_4, starzec_2, tropy_1, mamuny_1, odmieniec_1, mamuny_2, tropy_2, pan_lasu_5, strzyga_1, strzyga_2, mamuny_3, starzec_3, ogniki_2, stwor_3, zielarka_3, pan_lasu_6, uboze_3, zytnia_baba_1, zytnia_baba_2, pan_lasu_7, planetnik_1, tropy_3, blednice_1, starzec_4, pan_lasu_8, pan_lasu_9, zielarka_4, tropy_4, dzieci_1, pan_lasu_10, tropy_5, mamuny_4, tropy_6, dzieci_2, pan_lasu_11, pan_lasu_12, zielarka_5, tropy_7, dzieci_3
 VAR zapiski = ()
 
 === function tytul_zapisku(z)
@@ -66,6 +66,10 @@ VAR zapiski = ()
     - tropy_6:      ~ return "Biały wilk"
     - dzieci_2:     ~ return "Dzieci spod dębu"
     - pan_lasu_11:  ~ return "Pan Lasu"
+    - pan_lasu_12:  ~ return "Pan Lasu"
+    - zielarka_5:   ~ return "Zielarka znad jeziora"
+    - tropy_7:      ~ return "Biały wilk"
+    - dzieci_3:     ~ return "Dzieci spod dębu"
 }
 ~ return ""
 
@@ -74,7 +78,7 @@ VAR zapiski = ()
 - stwor_1:
     Wyższy od człowieka o trzy głowy, zgarbiony, z rękami zwisającymi niemal do ziemi i długimi, mokrymi włosami. Cuchnie bagnem. Przyszedł z mgły, kiedy ucichły świerszcze i żaby, i odszedł w stronę mokradeł. {czary.noc:Maciek zobaczył go jeszcze raz – w progu własnej chaty.|Maciek widział go tylko raz – i nie zapomniał nigdy.}
 - stwor_2:
-    Po pół wieku wrócił, kiedy dzieci topiły Marzannę – {obejrzal_sie:szara ręka wciągnęła kukłę pod wodę|coś szarpnęło kukłę od spodu i wciągnęło pod wodę}.{figurka_u_staruchy && los_psa == oswojony: „Takie jak on nie umierają. Czekają”.} Starzy mówią, że kto utonie bez księdza, nie idzie ani do nieba, ani do piekła, tylko zostaje w wodzie. Na dnie trzyma dusze topielców pod glinianymi garnkami, odwróconymi do góry dnem, i nocami przewraca je jeden po drugim. Kiedy który garnek pęknie, dusza ulatuje bąblem na powierzchnię.
+    Po pół wieku wrócił, kiedy dzieci topiły Marzannę – {obejrzal_sie:szara ręka wciągnęła kukłę pod wodę|coś szarpnęło kukłę od spodu i wciągnęło pod wodę}.{figurka_u_staruchy && los_psa == oswojony: „Takie jak on nie umierają. Czekają”.}{not figurka_u_staruchy || los_psa == oswojony: Starzy mówią, że kto utonie bez księdza, nie idzie ani do nieba, ani do piekła, tylko zostaje w wodzie. Na dnie trzyma dusze topielców pod glinianymi garnkami, odwróconymi do góry dnem, i nocami przewraca je jeden po drugim. Kiedy który garnek pęknie, dusza ulatuje bąblem na powierzchnię.}
 - zielarka_1:
     Mieszkała nad jeziorem, tam gdzie w trzcinach sterczą zwęglone bale. Leczyła ludzi ziołami, dopóki nie zaczęła gadać po nocach z kimś, kogo nikt nie widział. Kiedy we wsi zaczęło się psuć mleko i padać bydło, chłopi zabili jej drzwi deskami i podpalili chatę. Umierając, przeklęła wieś i każdego, kto w niej kiedyś zamieszka. Ci, którzy ją spalili, nie dożyli zimy – jeden po drugim weszli w bagno.
 - zielarka_2:
@@ -84,7 +88,7 @@ VAR zapiski = ()
 - pan_lasu_2:
     Są drzewa, których pilnuje jak własnego serca. Stary Dąb na skraju boru był granicą – póki stał, las kończył się tam, gdzie się kończył.{ franek_scial_dab: Pierwsze cięcie zadał mu Franek.}{pracowal_w_tartaku: Stary Wawrzyniec z tartaku bajał, że kiedy pierwsi ludzie zeszli w tę dolinę, musieli obiecać, że za Stary Dąb nie przejdą z siekierą – i dopiero wtedy las się cofnął. „Kapliczki są jak gwoździe w płocie. Wyrwiesz jeden, płot jeszcze stoi. Wyrwiesz wszystkie…”}
 - pan_lasu_3:
-    {ostrzezenie_poludnicy:Południca powiedziała to wprost: Pan Lasu się budzi. Z każdym ściętym drzewem jego sen jest płytszy, a kiedy się obudzi, przyjdzie po swoje.|Coś się zmieniło po ścięciu Starego Dębu. W ogrodach, między grządkami, w jedną noc wyrastał mech jak spod najstarszych świerków, a zieleń od strony boru co rano stała bliżej płotów.}
+    {ostrzezenie_poludnicy:Południca powiedziała to wprost: Pan Lasu się budzi.{pomylki_poludnica == 0: Z każdym ściętym drzewem jego sen jest płytszy, a kiedy się obudzi, przyjdzie po swoje.}|Coś się zmieniło po ścięciu Starego Dębu. W ogrodach, między grządkami, w jedną noc wyrastał mech jak spod najstarszych świerków, a zieleń od strony boru co rano stała bliżej płotów.}
 - pan_lasu_4:
     Kiedy ludzie Urbaniaka wykopali kapliczki spod boru, w dołach po nich w jedną noc wyrosły młode świerki. Bór jakby z każdym dniem stał bliżej wsi.{ kapliczki_drogi == obronil_kapliczke: Ostała się tylko jedna kapliczka – ta, której Jaromir bronił.}
 - starzec_1:
@@ -102,7 +106,7 @@ VAR zapiski = ()
 - uboze_1:
     Maleńki staruszek nie większy od kury, w połatanej kapocie i czerwonej czapeczce, z siwą brodą owiniętą wokół kurzych nóżek. Mieszka za piecem w starych chałupach. Kto je karmi, temu darzy się w obejściu; kto przegoni, ten ściąga na dom biedę. Ubożę przychodzi razem z pierwszym gospodarzem i zostaje, dopóki chałupa stoi. Kiedy spłonie, odchodzi razem z dymem i już nie wraca.
 - uboze_2:
-    {uboze == nakarmione:Odwdzięcza się po cichu: w spiżarni nie lęgną się myszy, w dzbanie zawsze jest więcej mleka, niż się nalało, a w głodną zimę mąka jakoś nie chce się skończyć. Tylko że co przybędzie w jednej chałupie, ubywa w drugiej – u Stasiowych przez te same miesiące kwaśniało mleko.|{uboze == przegnane:Odkąd je przegoniono, chałupa jakby ich nie lubiła: kury przestały się nieść, a w spiżarni co chwila coś się psuło.|Nikt go już potem nie widział. Czasem tylko rano popiół na przypiecku bywał rozgrzebany, jak przez kurę, która szuka miejsca na noc.}}
+    {uboze == nakarmione:Odwdzięcza się po cichu: w spiżarni nie lęgną się myszy, w dzbanie zawsze jest więcej mleka, niż się nalało{rozdzial_dziewiaty:, a w głodną zimę mąka jakoś nie chce się skończyć}. Tylko że co przybędzie w jednej chałupie, ubywa w drugiej – u Stasiowych przez te same miesiące kwaśniało mleko.|{uboze == przegnane:Odkąd je przegoniono, chałupa jakby ich nie lubiła: kury przestały się nieść, a w spiżarni co chwila coś się psuło.|Nikt go już potem nie widział. Czasem tylko rano popiół na przypiecku bywał rozgrzebany, jak przez kurę, która szuka miejsca na noc.}}
 - poludnica_1:
     Wysoka, biała kobieta w długiej koszuli, która w samo południe przychodzi na pola. Nie dotyka stopami ziemi, oczy ma białe, bez źrenic, a w ręce sierp. Kto pracuje w największy skwar, temu zadaje zagadki – za każdą pomyłkę tnie sierpem.{ not figurka_u_staruchy: Podobno była kiedyś najlepszą żniwiarką w okolicy: założyła się z parobkami, że sama zeżnie cały łan do południa, i nie zeszła z pola w największy upał. Znaleźli ją wieczorem z sierpem w ręku i z kłosami we włosach.}{ poludnica_uklon: Przed odpowiedzią z księgi skłoniła głowę.}{ poludnica_darowala: Jedną pomyłkę Jaromirowi darowała, bo nie cofnął się przed sierpem.}{ blizna_sierpa: Jaromirowi została po niej blizna w kształcie półksiężyca.}
 - rusalki_1:
@@ -134,11 +138,11 @@ VAR zapiski = ()
 - starzec_3:
     W Wigilię Hanka zostawiła na stole nakrycie dla wędrowca. Rano na talerzu, w miejscu opłatka, leżała garść świeżego, zielonego mchu – w samym środku zimy.
 - ogniki_2:
-    Kiedy figurka wróciła do Zapadliny, ogniki zaczęły podchodzić pod płoty – co noc bliżej, jakby czekały, aż ktoś otworzy drzwi.{los_figurki == figurka_w_skrzyni: Palą się dalej, ale za kładką, daleko od płotów.}{los_figurki == figurka_pod_kapliczka || los_figurki == figurka_u_jagny || los_figurki == figurka_u_stwora: Zgasły wszystkie naraz tej samej nocy, kiedy figurka przestała wołać.}
+    Kiedy figurka {przeszukal_zgliszcza && not figurka_w_bagnie:wróciła do Zapadliny|wyszła na wierzch}, ogniki zaczęły podchodzić pod płoty – co noc bliżej, jakby czekały, aż ktoś otworzy drzwi.{los_figurki == figurka_w_skrzyni: Palą się dalej, ale za kładką, daleko od płotów.}{los_figurki == figurka_pod_kapliczka || los_figurki == figurka_u_jagny || los_figurki == figurka_u_stwora: Zgasły wszystkie naraz tej samej nocy, kiedy figurka przestała wołać.}
 - stwor_3:
     Wrócił na mokradła razem z figurką. Dzieci we wsi śniły o nim ten sam sen: stoi pod kładką w czarnej wodzie, przewraca gliniane garnki, zagląda pod każdy, a potem mówi, że jednego brakuje.{figurka_u_staruchy: Na ramieniu ma głęboką, starą bliznę po siekierze dziadka Maćka.}{noc_na_kladce == siekiera_na_kladce: Jaromir zranił go siekierą, a on rozorał mu bark.}{noc_na_kladce == figurka_dla_stwora: Kiedy dostał figurkę, puścił chłopca i przycisnął ją do piersi jak matka dziecko. Schodząc pod wodę, pociągnął za sobą starą kładkę.}{noc_na_kladce == latarnia_na_wodzie: Ognia boi się bardziej niż żelaza – uciekł przed płonącym olejem.}
 - zielarka_3:
-    {zaufal_jagnie:Jagna mówi, że figurka to lalka: zielarka wystrugała ją z korzenia wyciągniętego z bagna i nadała jej imię tego, który mieszka w wodzie. Kto ma lalkę, za tym on idzie. Ognia lalka się nie boi – uciszy ją tylko poświęcona ziemia.{odrzucil_figurke: Odepchniętej nie da się już nikomu oddać.}|Nadpalona figurka znad jeziora wróciła do Zapadliny po ponad sześćdziesięciu latach – a razem z nią wróciły sny.}{los_figurki == figurka_pod_kapliczka: Leży teraz pod kapliczką, a gdzie – wie tylko Jaromir.}{los_figurki == figurka_u_jagny: Jagna zabrała ją ze sobą, tak daleko, żeby nie dosłyszał.}{los_figurki == figurka_w_skrzyni: Ogień jej nie wziął. Leży w skrzyni pod łóżkiem, okręconej łańcuchem.}{los_figurki == figurka_u_stwora: Ma ją teraz ten, kto mieszka pod kładką.}
+    {zaufal_jagnie:Jagna mówi, że figurka to lalka: zielarka wystrugała ją z korzenia wyciągniętego z bagna i nadała jej imię tego, który mieszka w wodzie. Kto ma lalkę, za tym on idzie. Ognia lalka się nie boi – uciszy ją tylko poświęcona ziemia.{odrzucil_figurke: Odepchniętej nie da się już nikomu oddać.}|Nadpalona figurka znad jeziora {przeszukal_zgliszcza && not figurka_w_bagnie:wróciła do Zapadliny|wyszła na wierzch} po ponad sześćdziesięciu latach – a razem z nią wróciły sny.}{los_figurki == figurka_pod_kapliczka: Leży teraz pod kapliczką, a gdzie – wie tylko Jaromir.}{los_figurki == figurka_u_jagny: Jagna zabrała ją ze sobą, tak daleko, żeby nie dosłyszał.}{los_figurki == figurka_w_skrzyni: Ogień jej nie wziął. Leży w skrzyni pod łóżkiem, okręconej łańcuchem.}{los_figurki == figurka_u_stwora: Ma ją teraz ten, kto mieszka pod kładką.}
 - pan_lasu_6:
     W noc, kiedy spłonęły kapliczki, bór przyszedł pod wieś o całe pole. Drzewa, które stały rano w miejscu ścierniska, wyglądały, jakby rosły tam od lat. Paliki pod drogę Urbaniaka puszczały pędy, a z pieńków na przesiece co rano wyrastały nowe gałązki.{droga_do_boru: Droga doszła do pierwszych wielkich sosen i tam się urwała – nikt nie chciał rąbać dalej.}{szarwark && not droga_do_boru && rozdzial_czternasty.pierwszy_snieg_czternasty: Młodnik stanął na granicy spalonych kapliczek i więcej nie urósł.}
 - uboze_3:
@@ -166,7 +170,7 @@ VAR zapiski = ()
 - tropy_4:
     Przyniósł pod dąb drugi drewniak Marysi – ten, który został w zbożu. {wilk_przy_jaromirze:Położył go Jaromirowi u stóp i przez całą noc leżał przy nim.|Oddał go Panu Lasu i siedzi przy nim, obojętny jak drzewa.}{wilk_pod_debem != nie_ruszal_sie: Każde ludzkie słowo, które mu się przypomni, zabiera mu kawałek wilczego życia.}
 - dzieci_1:
-    O świcie wychodzą ze szczeliny w dębie i siadają w kręgu: kilkanaście dziewczynek z jedną twarzą, w tych samych koszulkach i z nowymi wstążkami we włosach. Uśmiechają się grzecznie i cierpliwie, mówią jednym głosem, pachną próchnem. Kiedy ojciec wybierze, reszta rozsypuje się w suche liście i korę.{znak_rozpoznania == po_melodii: Śpiewają melodię do samego końca.}{znak_rozpoznania == po_buzi || znak_rozpoznania == po_skarbie: Wszystko, co u dziecka jest po lewej, u nich jest po prawej, a to, co nosi na szyi, mają gładkie i nowe.}{pytanie_do_leszego == gdzie_marysia: Nie rzucają cienia i nigdy nie płaczą.}
+    O świcie wychodzą ze szczeliny w dębie i siadają w kręgu: kilkanaście dziewczynek z jedną twarzą, w tych samych koszulkach i z nowymi wstążkami we włosach. Uśmiechają się grzecznie i cierpliwie, mówią jednym głosem, pachną próchnem. Kiedy ojciec wybierze, reszta rozsypuje się w suche liście i korę.{znak_rozpoznania == po_melodii: Śpiewają melodię do samego końca.}{znak_rozpoznania == po_buzi || znak_rozpoznania == po_skarbie: Wszystko, co u dziecka jest po lewej, u nich jest po prawej{skarb_dla_corki:, a to, co nosi na szyi, mają gładkie i nowe}.}{pytanie_do_leszego == gdzie_marysia: Nie rzucają cienia i nigdy nie płaczą.}
 - pan_lasu_10:
     {marysia_odzyskana:Dotrzymał słowa: kto pozna swoje dziecko, ten je zabiera i nikt go nie zatrzyma.|Dotrzymał słowa: kto wybierze źle, zabiera do domu to, co wybrał – i chowa je jak swoje.} Zapowiedział, że w Zaduszki przyjdzie do wsi, żeby rozliczyć się do końca.
 - tropy_5:
@@ -178,5 +182,13 @@ VAR zapiski = ()
 - dzieci_2:
     To, które się wybierze, umiera na skraju boru.{cialo_kopii == spalone: W ogniu trzaska jak smolne drewno, a dym pachnie igliwiem.}{cialo_kopii == oddane_jagnie: Jagna mówi, że to drewno, i wie, co się z takim robi.}{cialo_kopii == pochowane || cialo_kopii == pod_mlodnikiem: Leży w ziemi jak dziecko, choć nie pachnie niczym.}
 - pan_lasu_11:
-    Dotrzymuje słowa co do joty – i tego samego żąda od innych. Przed Zaduszkami mgła od boru co wieczór podchodzi pod płoty, a pierwszego listopada, w drodze z cmentarza w Bukowcu, zgasły jednym tchem wszystkie gromnice, choć powietrze stało.
+    Dotrzymuje słowa co do joty – i tego samego żąda od innych. Przed Zaduszkami mgła od boru co wieczór podchodzi pod płoty, a pierwszego listopada, w drodze z cmentarza w Bukowcu, zgasły jednym tchem wszystkie gromnice{not marysia_odzyskana: oprócz gromnicy Hanki}, choć powietrze stało.
+- pan_lasu_12:
+    {ostatnia_noc == zwrocil_granice:W Zaduszki przyszedł do wsi ze świtą i dostał z powrotem granicę: siekierę Maćka wbitą w pniak Starego Dębu i słowo całej wsi. Słowo za słowo.{zoladz_zasadzony: Przy pniaku wykiełkował żołądź ze Starego Dębu, posadzony ludzką ręką. Póki dąb rośnie, Pan Lasu nie bierze już dzieci.}|{ostatnia_noc == zajal_miejsce:Oddał Jaromirowi kapelusz z mchu i położył się pod pniakiem Starego Dębu. „Teraz ty licz”.|Spłonął razem z borem. Ostatnie, co powiedział, brzmiało: „Policzone”.}}
+- zielarka_5:
+    {ostatnia_noc == zwrocil_granice:Słudzy Pana Lasu wrócili do siebie; jej klątwa znów trzyma się za płotem.|{ostatnia_noc == zajal_miejsce:Jej klątwa wiązała ręce dawnego Pana Lasu. Rąk nowego nie znała.|Jej klątwa zaczęła się od ognia i od ognia się skończyła.}}
+- tropy_7:
+    {ostatnia_noc == zwrocil_granice:Odszedł ze świtą do boru.|{ostatnia_noc == zajal_miejsce:Nowy Pan Lasu puścił go wolno.|{wilk_przy_mnie():Stał przy Jaromirze, gdy płonął bór.|Skoczył w ogień za swoim panem.}}}
+- dzieci_3:
+    W Zaduszki szły w świcie Pana Lasu, trzymając się za ręce. Żadne nie rzucało cienia.{ostatnia_noc == skrzesal_ogien: Ich nucenie urwało się w płonącym borze w połowie i więcej nie zaczęło.}
 }

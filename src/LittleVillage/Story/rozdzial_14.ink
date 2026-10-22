@@ -14,7 +14,7 @@
 # rozdzial: Rozdział czternasty
 # tytul: Kapliczki płoną
 Ludzie Urbaniaka o świcie wyrywali zielone pędy z palików, a nazajutrz w tym samym miejscu sterczały nowe. Po tygodniu majster z tartaku kazał powbijać w ziemię świeże kołki, z dębiny, okorowanej i wysuszonej przy piecu. Przetrwały trzy dni. Czwartego ranka z każdego wyrastała gałązka, cienka i lepka od żywicy, choć dąb żywicy nie ma. # pokaz: pedy
-Lato przyszło upalne i suche. Siano schło na pokosach w jeden dzień, a w studniach trzeba było spuszczać wiadra coraz niżej. Marysia biegała już po całym obejściu i gadała bez przerwy, mieszając słowa po swojemu{ ekwipunek ? szczenie_psa:, a rude psisko spało w cieniu pod wozem, zawsze tak, żeby widzieć, dokąd poszła}. {trzy_noce == czuwanie_przy_kolysce:Z chałupy Wójcików zostały już tylko ściany; dach rozebrali sąsiedzi na podpałkę.|Wójcikowa przychodziła do niej co niedzielę z suszonymi jabłkami i siadała na progu, żeby popatrzeć, jak mała goni kury.} Antek nosił swojego Franka na barana po całej wsi i każdemu pokazywał, że chłopak ma już dwa zęby.
+Lato przyszło upalne i suche. Siano schło na pokosach w jeden dzień, a w studniach trzeba było spuszczać wiadra coraz niżej. Marysia biegała już po całym obejściu i gadała bez przerwy, mieszając słowa po swojemu{ ekwipunek ? szczenie_psa:, a rude psisko spało w cieniu pod wozem, zawsze tak, żeby widzieć, dokąd poszła}. {trzy_noce == czuwanie_przy_kolysce:Z chałupy Wójcików zostały już tylko ściany; dach rozebrali sąsiedzi na podpałkę.|Wójcikowa przychodziła do niej co niedzielę z suszonymi jabłkami i siadała na progu, żeby popatrzeć, jak mała goni kury.} Antek nosił swojego Franka na ręku po całej wsi i każdemu pokazywał, że chłopak już sam trzyma główkę.
 Tylko las nie dawał spokoju. Najpierw zauważyła to {trzy_noce == czuwanie_przy_kolysce:matka Józka|Wójcikowa}: miedza między jej zagonem a borem, szeroka zawsze na dwa wozy, któregoś ranka zwęziła się o połowę. Wzdłuż niej stał rząd młodych świerków, po pas człowiekowi, równy, jak posadzony pod sznurek. Nikt ich nie sadził. Chłopi wyrąbali je jeszcze tego dnia, a po tygodniu na ich miejscu stały następne – wyższe. # pokaz: swierki # dalej
 -> zeszyt_urbaniaka
 
@@ -22,7 +22,7 @@ Tylko las nie dawał spokoju. Najpierw zauważyła to {trzy_noce == czuwanie_prz
 # tlo: karczma_zeszyt
 W lipcu, przed samymi żniwami, Urbaniak zwołał ludzi pod karczmę. Przyjechał bryczką, w lnianym płaszczu, a obok niego siedział majster i gajowy Pawlik z dubeltówką na kolanach.{ oblawa_wilk == rzucil_kamieniem: Pawlik od razu wypatrzył Jaromira w tłumie i dotknął palcem blizny pod jego okiem, jakby przypominał, że też pamięta.}
 – Droga do lasu musi być gotowa przed zimą – powiedział Urbaniak, nie wysiadając. – Bez niej tartak stanie, a jak stanie tartak, nie będzie ani zarobku, ani mąki na przednówek. Dlatego każda chałupa da jednego chłopa na tydzień szarwarku. Kto ma u mnie dług, ten go odrobi. – Wyjął z kieszeni zeszyt w ceratowej okładce i położył go na kolanie. – Kto nie ma, temu zapłacę srebrem. A kapliczka przy przesiece pójdzie na bok. Za bardzo się wpycha w drogę. # pokaz: zeszyt
-Przez tłum przeszedł szmer. Kapliczka przy przesiece była {kapliczki_drogi == obronil_kapliczke:tą samą, której Jaromir bronił przed laty, kiedy ludzie Urbaniaka kopali pod borem – ostatnią|ostatnią} z tych, co stały pod lasem.
+Przez tłum przeszedł szmer. Kapliczka przy przesiece była {kapliczki_drogi == obronil_kapliczke:tą samą, której Jaromir bronił przed laty, kiedy ludzie Urbaniaka kopali pod borem – ostatnią z tych, co stały pod lasem.|jedyną, jaka stała jeszcze pod lasem – stary Staś kazał wnukom postawić ją na nowo ze szczątków wykopanych słupów, kiedy zaczęto kłaść przesiekę.}
 Stary Staś wysunął się przed ludzi, wsparty na lasce. Za nim stanął kowal, a obok Antek, z Frankiem na ręku, bo Jadwisia była w polu. Szymon, ojciec Józka, który od wiosny stróżował nocami w tartaku, spuścił głowę i odsunął się na bok.
 # pytanie: Co zrobi Jaromir?
 *   [Wystąpić przeciw Urbaniakowi przy wszystkich.]
@@ -68,7 +68,7 @@ Szymon. Ojciec Józka.
     Szymon, kiedy go cucili, powtarzał w kółko jedno: że ktoś zaparł mu drzwi. Nie chciał powiedzieć kto. # dalej
 *   { uboze == nakarmione } [Zbudzić wieś i posłać ludzi do kapliczki, a samemu biec do tartaku.]
     ~ noc_ognia = zbudzil_wies
-    Jaromir walił w każde okno po drodze, krzycząc, aż ochrypł. Zanim ogień doszedł do ostatniej kapliczki, był przy niej już kowal z Antkiem i z wiadrami. On sam pobiegł do tartaku, wybił drąg, którym ktoś zaparł drzwi stróżówki, i wywlókł Szymona z dymu. # pokaz: wiadra
+    Jaromir walił w każde okno po drodze, krzycząc, aż ochrypł. Zanim ogień strawił kapliczkę przy przesiece, był przy niej już kowal z Antkiem i z wiadrami. On sam pobiegł do tartaku, wybił drąg, którym ktoś zaparł drzwi stróżówki, i wywlókł Szymona z dymu. # pokaz: wiadra
     Kapliczka przy przesiece się ostała. Szymon żył. Ale kiedy Jaromir wracał do domu, nie mógł zgiąć palców – oba wnętrza dłoni miał spalone do żywego mięsa od rozżarzonej klamki. Hanka opatrywała mu je co dzień do Wszystkich Świętych, a przez całą jesień nie utrzymał w ręku ani cepa, ani siekiery. # dalej
 -   -> rano_po_pozarze
 
@@ -78,7 +78,7 @@ Szymon. Ojciec Józka.
 Rano ogień przygasł, a ludzie stali na pogorzelisku tartaku w milczeniu.
 Bór podszedł pod wieś. Nie o krok czy dwa – o całe pole. Tam, gdzie wczoraj ciągnęło się ściernisko Wójcików i pastwisko Stasiowych, szumiał gęsty las, zroszony i ciemny, z jasnymi pędami na czubkach drzew, jakby stał tu od pokoleń. Spalone kapliczki zostały w środku tego młodnika jak nagrobki. # pokaz: las
 { los_figurki == figurka_pod_kapliczka:
-    Jaromir poszedł do kapliczki, pod którą przed rokiem zakopał figurkę. Spłonęła razem z innymi. Ziemia pod nią była pęknięta i mokra, jak po ulewie, choć nie spadła ani kropla deszczu.
+    Jaromir poszedł do kapliczki, pod którą wiosną zakopał figurkę. Spłonęła razem z innymi. Ziemia pod nią była pęknięta i mokra, jak po ulewie, choć nie spadła ani kropla deszczu.
 }
 Urbaniak przyjechał przed południem, blady, z zeszytem w ręku. Obszedł pogorzelisko, a potem stanął przed ludźmi.
 – Ktoś mi tu podłożył ogień – powiedział cicho. – I ktoś z waszych zaparł drzwi stróżówki. – Rozejrzał się po twarzach. – Nie będę szukał kto. Dam wam wybór. Do zimy prowadzicie drogę aż do boru, tak jak była wytyczona, i drzewo, które z niej spadnie, zwozicie mi do Bukowca. Wtedy spalę ten zeszyt na waszych oczach. Każdy dług, co do grosza. A jak nie – przyślę komornika i zabierze z obór, co się da.
@@ -99,8 +99,11 @@ Ludzie spojrzeli na Jaromira. {noc_ognia == ratowal_kapliczke:Odkąd w noc poża
 = pierwszy_snieg_czternasty
 # tlo: zima_mlodnik
 Pierwszy śnieg spadł w połowie listopada, cicho, w nocy.
-{ noc_ognia == ratowal_szymona:
+{ noc_ognia:
+- ratowal_szymona:
     Na miejscu spalonych kapliczek nie stanęło nic. Tylko stary Staś zaniósł raz pod młodnik brzozowy krzyżyk, wbił go w ziemię i wrócił, nie oglądając się za siebie. # pokaz: krzyzyk
+- zbudzil_wies:
+    Kapliczka przy przesiece stała osmalona, ale cała. Ktoś zatknął za jej daszek gałązkę jedliny.
 - else:
     Przy kapliczce przy przesiece, na zwęglonym jeszcze słupie, ktoś postawił nowego świątka – wystruganego z lipy, nieporadnie, ale z sercem. Jaromir wiedział, że to Józek, choć chłopak nigdy się do tego nie przyznał. # pokaz: swiatek
 }

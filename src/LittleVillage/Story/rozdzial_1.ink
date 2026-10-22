@@ -12,6 +12,7 @@
 ~ krzesiwo_dziadka = ekwipunek ? krzesiwo
 // Nowy bohater — Jaromir zaczyna z pustym tobołkiem (przedmioty Maćka zostają w prologu).
 ~ ekwipunek = ()
+# nowy_tobolek
 # tlo: zapadlina_lato
 # rozdzial: Rozdział pierwszy
 # tytul: Lato

@@ -13,8 +13,12 @@
 # tytul: Wesele
 Starzy się nie pomylili. W październiku głodu jeszcze nie było widać, ale w grudniu siedział już przy każdym stole.
 W Wigilię w całej Zapadlinie nie było stołu, na którym stanęłoby dwanaście potraw. Chleb pieczono z otrębami i suszoną lebiodą, a pod koniec zimy także z mieloną korą brzozową – gorzki i twardy, aż bolały od niego zęby. Głód miał swój zapach – kwaśny, jak zepsuta kapusta na dnie beczki – i swój dźwięk: płacz dzieci za ścianą, który nie ustawał nawet w nocy. Kilka rodzin spakowało dobytek na sanie i wyjechało do miasta. Żadna nie wróciła. # pokaz: sanie
-Tartak Urbaniaka pracował przez całą zimę, a za robotę płacił mąką. Kto miał w chałupie głodne dzieci, ten szedł – i nikt już nie pytał, które drzewa idą pod piłę.
-Jaromir łowił ryby w przeręblach i zastawiał sidła wzdłuż skraju lasu{obietnica_bor:, ale między świerki nie wchodził – obiecał to kiedyś ojcu i słowa dotrzymywał, nawet kiedy zając z wnykiem na szyi uciekał mu w gąszcz|. Czasem, kiedy zając zerwał się z wnyków, szedł za nim kilkadziesiąt kroków między świerki – nigdy dalej niż tam, gdzie milkły ptaki}. {noga_ojca == zlamana:Ojciec siadywał przy oknie z kijem opartym o kolano|Ojciec siadywał przy oknie z kulami opartymi o ławę} i naprawiał uprzęże, a przy okazji uczył syna wszystkiego, czego sam już nie mógł zrobić: jak ostrzyć lemiesz, jak poznać po niebie, że idzie odwilż, jak targować się z kupcami w Bukowcu, żeby obie strony odeszły zadowolone. # pokaz: przerebel
+{ ekwipunek ? monety:
+    ~ ekwipunek -= monety
+    ~ monety_na_make = true
+}
+Tartak Urbaniaka pracował przez całą zimę, a za robotę płacił mąką. Kto miał w chałupie głodne dzieci, ten szedł – i nikt już nie pytał, które drzewa idą pod piłę.{ monety_na_make: Srebro, które Jaromir przyniósł kiedyś z tartaku i trzymał pod siennikiem, poszło w grudniu na mąkę.}
+Jaromir łowił ryby w przeręblach i zastawiał sidła wzdłuż skraju lasu{obietnica_bor:, ale między świerki nie wchodził – obiecał to kiedyś {figurka_u_staruchy && los_psa == oswojony:babce|ojcu} i słowa dotrzymywał, nawet kiedy zając z wnykiem na szyi uciekał mu w gąszcz|. Czasem, kiedy zając zerwał się z wnyków, szedł za nim kilkadziesiąt kroków między świerki – nigdy dalej niż tam, gdzie milkły ptaki}. {noga_ojca == zlamana:Ojciec siadywał przy oknie z kijem opartym o kolano|Ojciec siadywał przy oknie z kulami opartymi o ławę} i naprawiał uprzęże, a przy okazji uczył syna wszystkiego, czego sam już nie mógł zrobić: jak ostrzyć lemiesz, jak poznać po niebie, że idzie odwilż, jak targować się z kupcami w Bukowcu, żeby obie strony odeszły zadowolone. # pokaz: przerebel
 { uboze == nakarmione:
     Tylko w ich spiżarni mąka jakoś nie chciała się skończyć. Matka przesiewała ją co tydzień i za każdym razem dziwiła się, że dna skrzyni jeszcze nie widać.
 }
@@ -42,7 +46,7 @@ Antek wysłuchał wszystkiego, pokiwał głową – a następnego wieczoru znowu
 Na Matki Boskiej Siewnej, kiedy wracali z Bukowca z poświęconym ziarnem w węzełkach, Hanka zrównała się z Jaromirem na drodze i przez dłuższą chwilę szła obok w milczeniu.
 – Wojtek od sołtysa przysłał wczoraj swata – odezwała się w końcu, nie patrząc na niego. – Ojciec go ugościł, wypytał i odprawił. Powiedział, że czeka na kogoś innego. – Poprawiła węzełek na ramieniu. – Tylko ten ktoś coś długo się zbiera. Do Wszystkich Świętych poczekam. Dłużej nie.
 Jaromir chciał coś odpowiedzieć, ale słowa uwięzły mu w gardle. Złapał ją więc za rękę i nie puścił aż do pierwszych chałup Zapadliny, choć z wozów oglądali się za nimi sąsiedzi.
-Jesienią, kiedy Jaromir skończył dziewiętnaście lat, ojciec zawołał go na przyzbę. # pokaz: przyzba
+Jesienią, kiedy Jaromir miał już dziewiętnaście lat, ojciec zawołał go na przyzbę. # pokaz: przyzba
 – Czas, żebyś się żenił – powiedział. – Gospodarstwo bez gospodyni to pół gospodarstwa. A ty i tak od dawna wiesz, do której chałupy posłać swata. # dalej
 -> swaty_u_kowala
 
@@ -84,7 +88,7 @@ Na tydzień przed ślubem do chałupy przyszedł Antek, blady jak płótno. # po
     Szli wzdłuż ostatniego rzędu świerków i wołali na zmianę, aż ochrypli. Las nie odpowiadał. Na najniższej gałęzi pierwszego świerka wisiała kapota Franka – powieszona starannie, jak na kołku w sieni, tylko wywrócona na lewą stronę, podszewką na wierzch. # pokaz: kapota
     – Na lewą stronę – powiedział Antek głucho. – Tak się robi, żeby las wziął cię za swojego.
     { obietnica_bor:
-        Antek chciał iść dalej. Jaromir został na granicy – obiecał kiedyś ojcu, że nie wejdzie do boru – i słuchał, jak wołanie przyjaciela oddala się między pniami, cichnie i wraca. Antek wyszedł dopiero o zmroku, podrapany, z pustymi rękami. Nie powiedział ani słowa wyrzutu – i to było gorsze niż wyrzut.
+        Antek chciał iść dalej. Jaromir został na granicy – obiecał kiedyś {figurka_u_staruchy && los_psa == oswojony:babce|ojcu}, że nie wejdzie do boru – i słuchał, jak wołanie przyjaciela oddala się między pniami, cichnie i wraca. Antek wyszedł dopiero o zmroku, podrapany, z pustymi rękami. Nie powiedział ani słowa wyrzutu – i to było gorsze niż wyrzut.
     - else:
         Weszli między drzewa razem. Kilkadziesiąt kroków dalej umilkły sikory, ucichł nawet szum w koronach, i obaj zrozumieli bez słowa, że dalej iść nie wolno. Wycofali się tyłem, jak z cudzej izby.
     }
@@ -104,7 +108,7 @@ Na tydzień przed ślubem do chałupy przyszedł Antek, blady jak płótno. # po
     Stara wysłuchała go w milczeniu, przesuwając w palcach zeschłe ziele. # pokaz: babka
     – Kogo bór zawoła, tego nie zatrzymasz – powiedziała w końcu. – Ja ci mówię: nie szukaj go teraz między drzewami, bo sam przepadniesz. – Wstała i zamknęła okiennicę od strony boru, choć był jasny dzień. – Módl się za niego. I nie wychodź po zmroku na skraj lasu, choćby cię wołał po imieniu. # pokaz: okno
     { glos_w_lesie:
-        Jaromir przypomniał sobie głos matki zza pierwszych świerków, tamtej wigilijnej nocy, i nie próbował się spierać.
+        Jaromir przypomniał sobie głos matki {figurka_u_staruchy:z mgły nad polem|zza pierwszych świerków}, tamtej wigilijnej nocy, i nie próbował się spierać.
     }
     Hanka, która przędła przy piecu, odłożyła kądziel.
     – Dobrze, że jego nie puszczasz, babko – powiedziała. – Ale Antek sam chodzić nie będzie. Pójdę z nim wzdłuż wody, tam, gdzie szuka dziadek Staś. Mnie nikt nie woła.
@@ -142,7 +146,7 @@ Przed wyjazdem do kościoła młodzi uklękli na progu, a rodzice pobłogosławi
     – Siekiera dziadka Maćka – powiedział. – Babka kazała ci ją dać, kiedy dorośniesz. Dorosłeś. Teraz ty jesteś gospodarzem.
 - else:
     { figurka_u_staruchy:
-        – Siekiera dziadka Maćka – powiedział. – Tylko tyle mi po nim zostało, kiedy… – urwał i odchrząknął. – Teraz ty jesteś gospodarzem.
+        – Siekiera dziadka Maćka – powiedział. – Tylko tyle mi po nim zostało{krzesiwo_dziadka && not krzesiwo_od_babki: – to i krzesiwo –|,} kiedy… – urwał i odchrząknął. – Teraz ty jesteś gospodarzem.
     - else:
         – Siekiera dziadka Maćka – powiedział. – Mnie zostawił ją mój ojciec, kiedy umierał. Teraz ty jesteś gospodarzem.
     }

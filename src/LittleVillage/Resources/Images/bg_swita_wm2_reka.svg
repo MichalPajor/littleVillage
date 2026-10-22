@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „świta Pana Lasu”: mamuna — reka (rysunek autora; # pokaz: swita)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="108" viewBox="207 231 64 108">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.20000 0.00000 0.00000 0.20000 210.00000 231.60000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="reka_siegajaca" data-anim="obrot" data-origin="150,166" data-range="-6..10deg" data-period="2.4">
+<path d="M144.1 159.2 L140.5 162.5 L135.6 167.0 L129.9 172.3 L123.5 178.1 L116.8 184.1 L110.0 189.9 L103.6 195.3 L97.7 199.9 L91.9 203.9 L85.7 208.0 L79.2 211.9 L72.8 215.6 L66.8 219.0 L61.3 222.0 L56.6 224.6 L53.1 226.7 L58.9 237.3 L62.4 235.6 L67.2 233.3 L72.8 230.6 L79.2 227.4 L86.0 224.0 L92.9 220.2 L99.8 216.3 L106.3 212.1 L112.9 207.5 L119.9 202.2 L127.1 196.4 L134.3 190.6 L141.0 185.0 L147.0 180.0 L152.1 175.8 L155.9 172.8Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M144.1 159.2 L140.5 162.5 L135.6 167.0 L129.9 172.3 L123.5 178.1 L116.8 184.1 L110.0 189.9 L103.6 195.3 L97.7 199.9 L91.9 203.9 L85.7 208.0 L79.2 211.9 L72.8 215.6 L66.8 219.0 L61.3 222.0 L56.6 224.6 L53.1 226.7 L58.9 237.3 L62.4 235.6 L67.2 233.3 L72.8 230.6 L79.2 227.4 L86.0 224.0 L92.9 220.2 L99.8 216.3 L106.3 212.1 L112.9 207.5 L119.9 202.2 L127.1 196.4 L134.3 190.6 L141.0 185.0 L147.0 180.0 L152.1 175.8 L155.9 172.8Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M155.9 172.8 L152.1 175.8 L147.0 180.0 L141.0 185.0 L134.3 190.6 L127.1 196.4 L119.9 202.2 L112.9 207.5 L106.3 212.1 L99.8 216.3 L92.9 220.2 L86.0 224.0 L79.2 227.4 L72.8 230.6 L67.2 233.3 L62.4 235.6 L58.9 237.3 L56.6 233.1 L60.1 231.2 L64.8 228.8 L70.4 225.9 L76.6 222.7 L83.3 219.1 L90.0 215.3 L96.6 211.3 L102.9 207.2 L109.2 202.6 L116.0 197.3 L123.0 191.5 L130.0 185.6 L136.5 180.0 L142.5 174.8 L147.4 170.5 L151.2 167.4Z" fill="#000000" stroke="none"/>
+<path d="M53.3 226.6 L52.8 227.1 L52.0 227.6 L51.1 228.2 L50.0 228.8 L48.9 229.5 L47.8 230.2 L46.8 230.9 L45.8 231.5 L44.7 232.1 L43.6 232.7 L42.5 233.4 L41.4 234.0 L40.3 234.6 L39.4 235.1 L38.6 235.6 L38.0 236.0 L42.0 244.0 L42.7 243.8 L43.5 243.4 L44.5 243.0 L45.6 242.5 L46.8 242.0 L48.0 241.5 L49.2 240.9 L50.2 240.5 L51.3 240.1 L52.5 239.6 L53.8 239.1 L55.0 238.7 L56.1 238.2 L57.1 237.9 L58.0 237.6 L58.7 237.4Z" fill="#EDEBE6" stroke-width="3.5"/>
+<path d="M53.3 226.6 L52.8 227.1 L52.0 227.6 L51.1 228.2 L50.0 228.8 L48.9 229.5 L47.8 230.2 L46.8 230.9 L45.8 231.5 L44.7 232.1 L43.6 232.7 L42.5 233.4 L41.4 234.0 L40.3 234.6 L39.4 235.1 L38.6 235.6 L38.0 236.0 L42.0 244.0 L42.7 243.8 L43.5 243.4 L44.5 243.0 L45.6 242.5 L46.8 242.0 L48.0 241.5 L49.2 240.9 L50.2 240.5 L51.3 240.1 L52.5 239.6 L53.8 239.1 L55.0 238.7 L56.1 238.2 L57.1 237.9 L58.0 237.6 L58.7 237.4Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M58.7 237.4 L58.0 237.6 L57.1 237.9 L56.1 238.2 L55.0 238.7 L53.8 239.1 L52.5 239.6 L51.3 240.1 L50.2 240.5 L49.2 240.9 L48.0 241.5 L46.8 242.0 L45.6 242.5 L44.5 243.0 L43.5 243.4 L42.7 243.8 L42.0 244.0 L40.4 240.8 L41.0 240.5 L41.9 240.1 L42.8 239.6 L43.9 239.1 L45.1 238.5 L46.2 238.0 L47.4 237.4 L48.4 236.9 L49.5 236.4 L50.7 235.8 L51.8 235.3 L53.0 234.7 L54.1 234.2 L55.1 233.7 L55.9 233.4 L56.5 233.1Z" fill="#000000" stroke="none"/>
+<ellipse cx="102" cy="206" rx="9" ry="8" fill="#EDEBE6" stroke-width="3"/>
+<ellipse cx="102" cy="206" rx="9" ry="8" fill="url(#hatchDense)" stroke="none"/>
+<ellipse cx="26.0" cy="240.0" rx="13" ry="10" fill="#EDEBE6" stroke-width="3.2" transform="rotate(180 26.0 240.0)"/>
+<ellipse cx="26.0" cy="240.0" rx="13" ry="10" fill="url(#hatchDense)" stroke="none" transform="rotate(180 26.0 240.0)"/>
+<path d="M29.6 231.4 L28.4 230.8 L26.9 229.9 L25.0 228.8 L23.0 227.6 L21.1 226.5 L19.3 225.6 L17.6 224.9 L16.0 224.2 L14.3 223.7 L12.9 223.1 L11.6 222.8 L10.7 222.5 L9.3 225.5 L10.1 226.1 L11.1 226.8 L12.4 227.6 L13.8 228.5 L15.3 229.4 L16.7 230.4 L18.3 231.4 L20.1 232.5 L22.0 233.7 L23.8 234.9 L25.3 235.8 L26.4 236.6Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M29.6 231.4 L28.4 230.8 L26.9 229.9 L25.0 228.8 L23.0 227.6 L21.1 226.5 L19.3 225.6 L17.6 224.9 L16.0 224.2 L14.3 223.7 L12.9 223.1 L11.6 222.8 L10.7 222.5 L10.1 223.9 L10.9 224.2 L12.1 224.8 L13.5 225.4 L15.0 226.2 L16.6 226.9 L18.1 227.8 L19.8 228.7 L21.7 229.8 L23.6 231.0 L25.5 232.1 L27.0 233.1 L28.2 233.7Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M16.4 227.2l3.3 1.6" fill="none" stroke-width="1.4"/>
+<path d="M12.5 223.4Q2.4 219.6 3.2 227.8Q6.6 223.6 11.1 226.4Z" fill="#000000" stroke-width="1.6"/>
+<path d="M25.4 239.1 L24.3 239.3 L22.8 239.7 L20.9 240.1 L19.0 240.5 L17.1 240.9 L15.4 241.3 L13.9 241.9 L12.3 242.4 L10.8 243.0 L9.5 243.5 L8.4 244.0 L7.6 244.4 L8.4 247.6 L9.3 247.6 L10.5 247.4 L11.9 247.3 L13.5 247.0 L15.1 246.8 L16.6 246.7 L18.2 246.4 L20.1 246.0 L22.1 245.7 L23.9 245.4 L25.5 245.1 L26.6 244.9Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M25.4 239.1 L24.3 239.3 L22.8 239.7 L20.9 240.1 L19.0 240.5 L17.1 240.9 L15.4 241.3 L13.9 241.9 L12.3 242.4 L10.8 243.0 L9.5 243.5 L8.4 244.0 L7.6 244.4 L8.0 245.8 L8.8 245.6 L9.9 245.3 L11.3 244.9 L12.8 244.5 L14.4 244.1 L15.9 243.7 L17.6 243.4 L19.5 243.0 L21.4 242.6 L23.3 242.2 L24.8 241.9 L25.9 241.7Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M14.4 243.2l3.3 1.6" fill="none" stroke-width="1.4"/>
+<path d="M9.5 243.9Q-1.7 247.9 4.9 254.2Q4.8 248.0 10.3 247.1Z" fill="#000000" stroke-width="1.6"/>
+<path d="M26.1 247.6 L25.0 248.6 L23.5 249.9 L21.6 251.4 L19.6 253.0 L17.8 254.5 L16.2 255.9 L14.9 257.3 L13.8 258.7 L12.8 260.0 L11.9 261.1 L11.3 262.1 L10.8 262.9 L13.2 265.1 L13.9 264.6 L14.9 263.9 L16.0 263.0 L17.2 262.1 L18.5 261.1 L19.8 260.1 L21.3 258.8 L23.2 257.4 L25.2 255.9 L27.1 254.4 L28.7 253.2 L29.9 252.4Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M26.1 247.6 L25.0 248.6 L23.5 249.9 L21.6 251.4 L19.6 253.0 L17.8 254.5 L16.2 255.9 L14.9 257.3 L13.8 258.7 L12.8 260.0 L11.9 261.1 L11.3 262.1 L10.8 262.9 L11.9 263.9 L12.5 263.2 L13.3 262.4 L14.2 261.3 L15.3 260.2 L16.5 259.0 L17.8 257.8 L19.4 256.5 L21.2 255.0 L23.2 253.4 L25.1 251.9 L26.7 250.7 L27.8 249.8Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M16.4 257.2l3.3 1.6" fill="none" stroke-width="1.4"/>
+<path d="M12.2 261.4Q5.4 269.9 13.4 271.6Q10.6 267.1 14.6 263.8Z" fill="#000000" stroke-width="1.6"/>
+<path d="M38.4 231.2 L37.9 229.9 L37.2 228.0 L36.4 225.8 L35.6 223.6 L34.8 221.3 L34.2 219.4 L33.6 217.6 L33.1 215.8 L32.6 213.9 L32.1 212.2 L31.7 210.8 L31.4 209.8 L28.6 210.2 L28.7 211.3 L28.8 212.8 L28.9 214.6 L29.2 216.5 L29.4 218.6 L29.8 220.6 L30.4 222.7 L31.1 225.0 L31.9 227.4 L32.6 229.6 L33.2 231.5 L33.6 232.8Z" fill="#EDEBE6" stroke-width="2.6"/>
+<path d="M38.4 231.2 L37.9 229.9 L37.2 228.0 L36.4 225.8 L35.6 223.6 L34.8 221.3 L34.2 219.4 L33.6 217.6 L33.1 215.8 L32.6 213.9 L32.1 212.2 L31.7 210.8 L31.4 209.8 L30.1 210.0 L30.3 211.0 L30.6 212.5 L30.9 214.2 L31.3 216.1 L31.7 218.1 L32.2 219.9 L32.8 222.0 L33.6 224.2 L34.4 226.5 L35.1 228.7 L35.8 230.6 L36.2 231.9Z" fill="url(#hatchDense)" stroke="none"/>
+<path d="M30.6 219.3l2.7 1.4" fill="none" stroke-width="1.4"/>
+<path d="M31.7 211.7Q28.9 202.4 23.8 207.3Q28.5 207.4 29.0 212.2Z" fill="#000000" stroke-width="1.6"/>
+</g>
+</g>
+</g></g>
+</svg>

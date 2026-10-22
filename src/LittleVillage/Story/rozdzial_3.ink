@@ -124,10 +124,10 @@ Na pasterkę do Bukowca tego roku nikt nie poszedł – mróz był zbyt siarczys
     ~ ekwipunek += mak
 }
 Jaromir leżał bez ruchu, dopóki z izby nie dobiegło równe chrapanie ojca. Potem ubrał się po ciemku, wsunął za pazuchę nożyk{ ekwipunek ? mak:, a do kieszeni szmatkę z garścią maku, którą wieczorem podebrał z misy, pamiętając, co wyczytał w księdze pana Ignacego,} i wymknął się do sieni.{ ekwipunek ? szczeniak: Szczeniak uniósł łeb, ale nie zaskomlał, jakby rozumiał, że teraz trzeba być cicho.}
-Świat był srebrny od księżyca. Śnieg skrzył się na polach, każda gałąź rzucała ostry, czarny cień, a mróz szczypał w policzki tak, że łzawiły oczy. { figurka_u_staruchy: Do zagrody Stasiowych było ledwie kilkadziesiąt kroków, ale ścieżka wiodła na przełaj przez pole, a stamtąd ciemna kreska boru wydawała się nocą bliższa niż za dnia. | Do chałupy Stasiowych było niedaleko, ale ścieżka biegła skrajem boru, a bór o tej porze stał głuchy i nieruchomy. }
+Świat był srebrny od księżyca. Śnieg skrzył się na polach, każda gałąź rzucała ostry, czarny cień, a mróz szczypał w policzki tak, że łzawiły oczy. { figurka_u_staruchy: Do zagrody Stasiowych było ledwie kilkadziesiąt kroków, ale ścieżka wiodła na przełaj przez pole, nad którym snuła się nisko mgła, choć niebo było czyste, a ciemna kreska boru wydawała się nocą bliższa niż za dnia. | Do chałupy Stasiowych było niedaleko, ale ścieżka biegła skrajem boru, a bór o tej porze stał głuchy i nieruchomy. }
 W połowie drogi ktoś go zawołał.
 – Jaromir!
-Głos dobiegał spomiędzy drzew. Ciepły, łagodny, znajomy – głos matki.
+Głos dobiegał {figurka_u_staruchy:z mgły nad polem|spomiędzy drzew}. Ciepły, łagodny, znajomy – głos matki.
 – Synku, chodź do mnie. Zimno mi. Zgubiłam się.
 Jaromir stanął jak wryty. Matka spała przecież w domu, przykryta pierzyną aż po brodę. Widział ją, kiedy wychodził.
 # pytanie: Co zrobi Jaromir?
@@ -135,9 +135,9 @@ Jaromir stanął jak wryty. Matka spała przecież w domu, przykryta pierzyną a
     ~ glos_w_lesie = odpowiedzial
     – Mamo? – wyrwało mu się, zanim zdążył pomyśleć.
     { zawolal_do_lasu:
-        Między drzewami coś się zaśmiało – nisko, cicho, wcale nie głosem matki. A potem ten sam spokojny głos, który słyszał kiedyś we mgle, powiedział: – Znowu ty. Policzę cię, kiedy przyjdzie pora. # pokaz: oczy
+        {figurka_u_staruchy:We mgle|Między drzewami} coś się zaśmiało – nisko, cicho, wcale nie głosem matki. A potem ten sam spokojny głos, który słyszał kiedyś we mgle, powiedział: – Znowu ty. Policzę cię, kiedy przyjdzie pora. # pokaz: oczy
     - else:
-        Między drzewami coś się zaśmiało – nisko, cicho, wcale nie głosem matki. A potem, gdzieś w głębi, ktoś zaczął spokojnie liczyć: – …pięćset jeden… pięćset dwa… # pokaz: oczy
+        {figurka_u_staruchy:We mgle|Między drzewami} coś się zaśmiało – nisko, cicho, wcale nie głosem matki. A potem, gdzieś w głębi, ktoś zaczął spokojnie liczyć: – …pięćset jeden… pięćset dwa… # pokaz: oczy
     }
     Jaromir puścił się biegiem i nie zatrzymał się aż pod oknem Stasiowych. # pokaz: bieg # dalej
     -> kolyska

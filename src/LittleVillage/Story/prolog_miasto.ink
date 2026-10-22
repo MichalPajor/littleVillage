@@ -58,7 +58,7 @@ Musiała stać gdzieś blisko, kiedy targował się z handlarzem. Tylko że nie 
 ~ ekwipunek += (zapasy, nasiona)
 {
 - figurka_u_staruchy: Za monety od staruchy i resztę swoich miedziaków kupił dwa bochenki chleba, worek kaszy, sól, kawałek słoniny, nasiona warzyw, a nawet kosz sadzeniaków. Tobołek ciążył mu na plecach, ale był to najprzyjemniejszy ciężar od dawna.
-- przeszukal_zgliszcza: Za ostatnie miedziaki i dwa grosze od handlarza kupił bochenek chleba, garść soli, woreczek kaszy i trochę nasion warzyw. Niewiele, ale przez kilka dni da się przeżyć.
+- przeszukal_zgliszcza && not figurka_w_bagnie: Za ostatnie miedziaki i dwa grosze od handlarza kupił bochenek chleba, garść soli, woreczek kaszy i trochę nasion warzyw. Niewiele, ale przez kilka dni da się przeżyć.
 - else: Za ostatnie miedziaki, które zostały mu po kupnie siekiery, kupił bochenek chleba, garść soli, woreczek kaszy i nasiona różnych warzyw.
 }
 Była wiosna, więc trzeba było jak najszybciej siać, żeby zdążyć z plonami.

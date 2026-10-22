@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LittleVillage — tło „skraj boru”: starzec w kapeluszu z mchu — reka (rysunek autora; # pokaz: starzec)
+     Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="61" height="107" viewBox="290 177 61 107">
+<defs>
+<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="inkWide" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1200" height="1200">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="7" stroke="#000000" stroke-width="1.5"/>
+</pattern>
+<pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1.7"/>
+</pattern>
+<pattern id="hatchNight" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+<line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1.9"/>
+</pattern>
+<pattern id="water" width="9" height="5" patternUnits="userSpaceOnUse">
+<line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#000000" stroke-width="1.3"/>
+</pattern>
+</defs>
+<g transform="matrix(0.20000 0.00000 0.00000 0.20000 290.00000 177.20000)"><g filter="url(#inkWide)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+<g id="reka_z_laska" data-anim="obrot" data-origin="190,160" data-range="1.5deg" data-period="5">
+<path d="M190 160C206 200 220 250 226 300" fill="none" stroke-width="18"/>
+<path d="M190 160C206 200 220 250 226 300" fill="none" stroke="#EDEBE6" stroke-width="11"/>
+<path d="M190 160C206 200 220 250 226 300" fill="none" stroke="url(#hatch)" stroke-width="11"/>
+<path d="M218 298C212 304 212 320 220 324C228 328 238 322 240 312C242 302 234 294 218 298Z" fill="#EDEBE6" stroke-width="4"/>
+<path d="M216 306H236M216 314H236M240 306l6 2M240 314l6 2" fill="none" stroke-width="2.2"/>
+<path d="M246 512L232 60" fill="none" stroke-width="12"/>
+<path d="M246 512L232 60" fill="none" stroke="#EDEBE6" stroke-width="6"/>
+<path d="M236 200C246 192 256 194 258 204C250 208 240 206 236 200Z M238 150C250 144 258 150 254 160C246 160 240 156 238 150Z M234 100C224 94 220 100 226 108C232 108 234 104 234 100Z" fill="#EDEBE6" stroke-width="2.4"/>
+<path d="M236 200L258 204M238 150L254 160M234 100L226 108" fill="none" stroke-width="1.6"/>
+<ellipse cx="240" cy="380" rx="6" ry="3.5" fill="#000000" stroke="none" transform="rotate(-85 240 380)"/>
+</g>
+</g>
+</g></g>
+</svg>

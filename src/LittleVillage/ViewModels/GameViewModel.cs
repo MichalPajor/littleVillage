@@ -178,6 +178,10 @@ public sealed partial class GameViewModel(
     private void Show(StoryPage page)
     {
         _shownPage = page;
+        if (page.ResetsInventory)
+        {
+            _knownInventory = session.GetInventory();
+        }
 
         Blocks.Clear();
         foreach (var block in page.Blocks)

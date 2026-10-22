@@ -11,7 +11,7 @@
 # rozdzial: Rozdział szósty
 # tytul: Samo południe
 Żniwa przyszły w upale, jakiego najstarsi ludzie nie pamiętali. Od kilku tygodni nie spadła ani kropla deszczu, niebo bielało od żaru już o świcie, a ziemia na miedzach pękała w długie, kręte szczeliny. Zboże dojrzało nagle, w kilka dni, i stało teraz na polach złote i suche, szeleszcząc przy każdym podmuchu jak papier.
-Wychodzili w pole, zanim zapiały koguty. Mężczyźni szli przodem, kobiety za nimi wiązały snopy, a dzieci zbierały pokłosie i nosiły wodę w glinianych dzbankach. Jaromir miał trzynaście lat i pierwszy raz kosił razem z dorosłymi – w rzędzie, krok w krok za ojcem, a ostrze w jego rękach świstało prawie tak równo jak u starych żeńców. Powietrze pachniało rozgrzaną słomą i potem, kosy dzwoniły o osełki, a spod nóg co chwila wyfruwały spłoszone przepiórki.
+Wychodzili w pole, zanim zapiały koguty. Mężczyźni szli przodem, kobiety za nimi wiązały snopy, a dzieci zbierały pokłosie i nosiły wodę w glinianych dzbankach. Jaromir miał trzynaście lat i pierwszy raz kosił zboże razem z dorosłymi – w rzędzie, krok w krok za ojcem, a ostrze w jego rękach świstało prawie tak równo jak u starych żeńców. Powietrze pachniało rozgrzaną słomą i potem, kosy dzwoniły o osełki, a spod nóg co chwila wyfruwały spłoszone przepiórki.
 Hanka pracowała na sąsiednim zagonie. Co jakiś czas prostowała się, ocierała czoło wierzchem dłoni i zerkała w jego stronę, a kiedy ich spojrzenia się spotykały, natychmiast odwracała głowę i z udawanym zapałem wracała do snopów. Jaromir nie wiedział, czemu za każdym razem robi mu się wtedy tak dziwnie gorąco – i to nie od słońca. # pokaz: hanka
 { figurka_u_staruchy:
     Ojciec prawie się nie odzywał. W samo południe zawsze kazał wszystkim zejść z pola, w cień, choćby żyto miało się osypać.
@@ -55,6 +55,7 @@ Przechyliła głowę na bok, jak ptak.
     -> zagadka_2
 }
 ~ pomylki_poludnica += 1
+~ ciecie_ramie = true
 Sierp świsnął, zanim Jaromir zdążył mrugnąć. Poczuł piekący ból na ramieniu, a kiedy spojrzał w dół, przez rozdartą koszulę sączyła się krew. # pokaz: ciecie
 – Źle – powiedziała Południca. – Wiatr. Ogień i dym każdy widział, a wiatru jeszcze nikt. # dalej
 -> zagadka_2
@@ -83,6 +84,7 @@ Sierp świsnął, zanim Jaromir zdążył mrugnąć. Poczuł piekący ból na ra
     -> zagadka_3
 }
 ~ pomylki_poludnica += 1
+~ ciecie_dlon = true
 Sierp znów świsnął. Tym razem cięcie przeszło przez wierzch dłoni, płytko, ale krew trysnęła na ściernisko. # pokaz: ciecie
 – Żyto – syknęła. – Lnu się nie piecze, a kartofla nikt nie młóci. # dalej
 -> zagadka_3
@@ -93,6 +95,7 @@ Powietrze zafalowało mocniej. Żar podchodził Jaromirowi pod gardło, w uszach
 # pytanie: Co odpowie Jaromir?
 *   [Święty Jerzy.]
     ~ pomylki_poludnica += 1
+    ~ ciecie_policzek = true
     – Święty? – Południca roześmiała się, sucho i nieprzyjemnie, jak trzeszczące ściernisko. – Święci siedzą w kapliczkach, chłopcze. A tamten czeka, aż ktoś mu je powyrywa.
     Sierp świsnął. Jaromir poczuł na policzku cienką, piekącą kreskę, a po brodzie pociekło mu coś ciepłego. # pokaz: ciecie
 *   [Pan Lasu.]
@@ -131,9 +134,9 @@ Ktoś wbiegał na zagon, potykając się o snopy. Hanka. W rękach niosła glini
 # tlo: goraczka
 ~ blizna_sierpa = true
 ~ zapiski += poludnica_1
-Przez trzy dni trawiła go gorączka. Leżał w chałupie pod mokrymi szmatami, rany na ramieniu i dłoni piekły jak przypalone żelazem, a w majakach wciąż widział białe oczy bez źrenic i słyszał suchy szept: „Za każdą pomyłkę – jedno cięcie”. # pokaz: majaki
+Przez trzy dni trawiła go gorączka. Leżał w chałupie pod mokrymi szmatami, {rany_sierpa()} piekły jak przypalone żelazem, a w majakach wciąż widział białe oczy bez źrenic i słyszał suchy szept: „Za każdą pomyłkę – jedno cięcie”. # pokaz: majaki
 Matka nie odchodziła od niego ani na krok. Hanka przynosiła zioła od babki, a drugiego dnia, nikomu nic nie mówiąc, poszła w samo południe na tamten zagon i postawiła na miedzy dzban świeżej wody. Wróciła roztrzęsiona i nie chciała powiedzieć, co tam widziała. Tej nocy gorączka zaczęła spadać. # pokaz: hanka
-Kiedy wreszcie wstał, na ramieniu została mu cienka, biała blizna w kształcie półksiężyca, jakby od czubka sierpa.
+Kiedy wreszcie wstał, na {miejsce_blizny()} została mu cienka, biała blizna w kształcie półksiężyca, jakby od czubka sierpa.
 -> czy_powiedziec
 
 = po_poludniu
@@ -172,3 +175,18 @@ Antek dopadł go, kiedy tylko zostali sami.
 ~ zapiski += pan_lasu_3
 _Koniec rozdziału szóstego._ # dalej
 -> rozdzial_siodmy
+
+=== function rany_sierpa()
+{
+- ciecie_ramie && ciecie_dlon && ciecie_policzek: ~ return "rany na ramieniu, dłoni i policzku"
+- ciecie_ramie && ciecie_dlon: ~ return "rany na ramieniu i dłoni"
+- ciecie_ramie: ~ return "rany na ramieniu i policzku"
+- else: ~ return "rany na dłoni i policzku"
+}
+
+=== function miejsce_blizny()
+{
+- ciecie_ramie: ~ return "ramieniu"
+- ciecie_dlon: ~ return "dłoni"
+- else: ~ return "policzku"
+}

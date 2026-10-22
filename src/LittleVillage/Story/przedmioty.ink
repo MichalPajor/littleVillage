@@ -37,7 +37,11 @@ VAR ekwipunek = (siekiera, chleb)
     - podkowa:   ~ return "Podkowa kowala"
     - krzyzyk:   ~ return "Krzyżyk kowala"
     - gromnica:  ~ return "Gromnica"
-    - szczenie_psa: ~ return "Rude szczenię"
+    - szczenie_psa:
+        { rozdzial_trzynasty:
+            ~ return "Rudy pies"
+        }
+        ~ return "Rude szczenię"
     - bucik_marysi:
         { drugi_drewniak:
             ~ return "Drewniaki Marysi"
@@ -59,13 +63,16 @@ VAR ekwipunek = (siekiera, chleb)
     - chleb:     ~ return "Twardy, razowy, owinięty w lnianą szmatkę. Musi starczyć na długo."
     - pies_towarzysz: ~ return "Chudy, z długim pyskiem i za dużymi łapami. Obronił Maćka przed stworem z zarośli i od tamtej nocy nie odstępuje go na krok."
     - figurka:
-        { rozdzial_trzynasty:
+        { rozdzial_trzynasty && przeszukal_zgliszcza && not figurka_w_bagnie:
             ~ return "Mała drewniana postać z rękami sięgającymi do stóp, nadpalona z jednej strony. Wróciła do Zapadliny po ponad sześćdziesięciu latach. Drewno jest zawsze zimne i wilgotne, nawet w suchy dzień."
+        }
+        { rozdzial_trzynasty:
+            ~ return "Mała drewniana postać z rękami sięgającymi do stóp, nadpalona z jednej strony. Po ponad sześćdziesięciu latach wyszła na wierzch. Drewno jest zawsze zimne i wilgotne, nawet w suchy dzień."
         }
         ~ return "Mała drewniana postać z rękami sięgającymi do stóp, nadpalona z jednej strony. Wygrzebana z popiołu po chacie wiedźmy."
     - krzesiwo:
         { krzesiwo_od_babki:
-            ~ return "Małe, poczerniałe krzesiwo dziadka Maćka. Babka Marianna oddała je Jaromirowi na łożu śmierci. Dziadek znalazł je w popiele po chacie wiedźmy i nie rozstawał się z nim do końca."
+            ~ return "Małe, poczerniałe krzesiwo dziadka Maćka. Babka Marianna oddała je Jaromirowi na łożu śmierci. Dziadek nie rozstawał się z nim do końca."
         }
         { krzesiwo_na_slubie:
             ~ return "Małe, poczerniałe krzesiwo dziadka Maćka. Ojciec dał je Jaromirowi w dniu ślubu razem z siekierą – dziadek nosił je przy sobie do końca."
@@ -88,6 +95,9 @@ VAR ekwipunek = (siekiera, chleb)
         { rozdzial_jedenasty:
             ~ return "Pies z rodu psa dziadka Maćka – kiedyś szczeniak od starego Stasia, dziś stary, z siwym pyskiem. Wciąż śpi w nogach posłania i wciąż warczy przez sen w stronę boru."
         }
+        { rozdzial_piaty:
+            ~ return "Pies z rodu psa dziadka Maćka, kiedyś szczeniak od starego Stasia na Wigilię. Wyrósł na dużego psa ze spiczastymi uszami i białą łatą na piersi. Śpi w nogach posłania i warczy przez sen w stronę okna."
+        }
         ~ return "Szczeniak z rodu psa dziadka Maćka, prezent od starego Stasia na Wigilię. Spiczaste uszy, biała łata na piersi i łapy za duże do reszty ciała. Śpi w nogach posłania i warczy przez sen w stronę okna."
     - mak:       ~ return "Szmatka z garścią maku podebranego z wigilijnej misy. Według księgi pana Ignacego północnica musi policzyć każde ziarenko, nim podejdzie bliżej."
     - monety:    ~ return "Ciężkie, zimne srebrne monety z orłem po jednej stronie – zapłata od pana Urbaniaka za lato przy układaniu desek."
@@ -102,9 +112,26 @@ VAR ekwipunek = (siekiera, chleb)
         { drugi_drewniak:
             ~ return "Para małych drewniaków z lipy, pomalowanych na czerwono i wyłożonych filcem ze starego kapelusza dziadka Dobrosława. Drugi przyniósł spod dębu biały wilk."
         }
+        { dlug_jagny == oddany_drewniak:
+            ~ return "Mały drewniak z lipy, pomalowany na czerwono i wyłożony filcem ze starego kapelusza dziadka Dobrosława. Drugi wziął Jagna."
+        }
+        { rozdzial_siedemnasty:
+            ~ return "Mały drewniak z lipy, pomalowany na czerwono i wyłożony filcem ze starego kapelusza dziadka Dobrosława. Drugi został w borze."
+        }
         ~ return "Mały drewniak z lipy, pomalowany na czerwono i wyłożony filcem ze starego kapelusza dziadka Dobrosława. Drugi został w życie, u tej, która go trzymała."
-    - wstazka_marysi: ~ return "Czerwona wstążka, którą Hanka wplotła Marysi we włosy w wigilię świętego Jana. Wisiała na jałowcu na skraju młodnika, na wysokości dziecięcej rączki."
+    - wstazka_marysi:
+        { pani_w_zbozu_noc == gonil_babe:
+            ~ return "Czerwona wstążka, którą Hanka wplotła Marysi we włosy w wigilię świętego Jana. Wisiała na ostach przy miedzy."
+        }
+        ~ return "Czerwona wstążka, którą Hanka wplotła Marysi we włosy w wigilię świętego Jana. Wisiała na jałowcu na skraju młodnika, na wysokości dziecięcej rączki."
     - rozaniec: ~ return "Drewniany różaniec poświęcony przez księdza z Bukowca. Przysiągł na niego, że skończy z pogaństwem."
-    - szczenie_psa: ~ return "Rude szczenię z białą łatą na piersi, z rodu psa dziadka Maćka. Gryzie wszystko, co znajdzie, śpi przy kołysce Marysi i nie odstępuje jej na krok."
+    - szczenie_psa:
+        { rozdzial_dziewietnasty && not marysia_odzyskana:
+            ~ return "Rudy pies z białą łatą na piersi, z rodu psa dziadka Maćka. Śpi pod ławą, na której spała Marysia, i nie daje się stamtąd wywabić."
+        }
+        { rozdzial_trzynasty:
+            ~ return "Rudy pies z białą łatą na piersi, z rodu psa dziadka Maćka. Wyrósł na długonogiego psiaka, chodzi za Marysią krok w krok i warczy na każdego, kto podniesie na nią głos."
+        }
+        ~ return "Rude szczenię z białą łatą na piersi, z rodu psa dziadka Maćka. Gryzie wszystko, co znajdzie, śpi przy kołysce Marysi i nie odstępuje jej na krok."
 }
 ~ return ""

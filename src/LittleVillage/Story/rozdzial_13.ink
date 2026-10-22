@@ -40,7 +40,7 @@ Wyjęła z kosza zawiniątko w czarnej szmacie i rozwinęła je na stole. Figurk
 *   [Kazać jej odejść razem z figurką.]
     ~ odrzucil_figurke = true
     – Zabierz to – powiedział Jaromir. – I nie wracaj.
-    Jagna popatrzyła na niego długo zdrowym okiem, zawinęła figurkę i wyszła bez słowa.
+    Jagna popatrzyła na niego długo zdrowym okiem i zawinęła figurkę. Od progu rzuciła tylko, że do Zielonych Świątek będzie w Bukowcu u siostry.
     ~ ekwipunek += figurka
     Ale rano, kiedy Hanka otworzyła drzwi, figurka leżała na progu. Szmata była mokra i cuchnęła bagnem. Jaromir schował ją do skrzyni, zanim zobaczyła ją Marysia. # pokaz: prog # dalej
 -   -> wspolny_sen
@@ -112,16 +112,16 @@ A światełka nad mokradłami z każdą nocą paliły się bliżej. Najpierw tyl
     }
     Powiedziała, że ma na imię Jagna i że do Zielonych Świątek zostanie w Bukowcu. Hanka przyprowadziła ją do chałupy jeszcze tego samego popołudnia, nie pytając męża o zdanie.
 }
-– Jeśli coś schowałeś, nie kryj tego przed nią – odezwała się żona, zanim Jaromir zdążył otworzyć usta. – Widziałam, jak zaglądasz pod łóżko.
+{figurka_u_staruchy:– Powiedz jej o snach – odezwała się żona, zanim Jaromir zdążył otworzyć usta. – Sama to przyniosła, niech wie, co z tego wyrosło.|– Jeśli coś schowałeś, nie kryj tego przed nią – odezwała się żona, zanim Jaromir zdążył otworzyć usta. – Widziałam, jak zaglądasz pod łóżko.}
 # pytanie: Co zrobi Jaromir?
 *   [Pokazać Jagnie figurkę i opowiedzieć o snach.]
     ~ zaufal_jagnie = true
     Jagna długo obracała figurkę w palcach, przysunięta do okna, bo zdrowe oko miała słabe.
     – To lalka – powiedziała w końcu. – Babka mi o takich opowiadała. Zielarka znad jeziora wystrugała ją z korzenia, który wyciągnęła z bagna, i nadała jej imię tego, co tam mieszka. Kto ma lalkę, za tym on idzie. Póki leżała daleko, spał. Teraz wróciła – więc ją woła. A dzieci słyszą, bo dzieci słyszą wszystko.
     Zawinęła figurkę w szmatę i oddała Jaromirowi.
-    – Ogień jej nie weźmie, już raz w nim była. Uciszy ją tylko poświęcona ziemia. {odrzucil_figurke:Albo… – urwała i pokręciła głową. – Nie. Mnie już nie posłucha. Odepchnęliście ją, a ona i tak wróciła na wasz próg. Teraz jest wasza.|Albo… – zawahała się – albo oddajcie mi ją. Zabiorę ją tak daleko, że jej nie dosłyszy.} # dalej
+    – Ogień jej nie weźmie, już raz w nim była. Uciszy ją tylko poświęcona ziemia. {odrzucil_figurke:Albo… – urwała i pokręciła głową. – Nie. Mnie już nie posłucha. Odepchnęliście ją, a ona i tak wróciła na wasz próg. Teraz jest wasza.|{figurka_u_staruchy:Babka kazała mi ją oddać tam, skąd przyszła, i oddałam. Z powrotem jej nie wezmę.|Albo… – zawahała się – albo oddajcie mi ją. Zabiorę ją tak daleko, że jej nie dosłyszy.}} # dalej
 *   [Nie mówić jej nic.]
-    – Nie wiem, o czym mówicie – odpowiedział Jaromir.
+    {figurka_u_staruchy:– Dzieci śpią spokojnie – skłamał Jaromir.|– Nie wiem, o czym mówicie – odpowiedział Jaromir.}
     Jagna pokiwała głową, jakby właśnie tego się spodziewała.
     – Jak ognie dojdą do progu – powiedziała – przyjdźcie do mnie. Do Zielonych Świątek jestem w Bukowcu.
     Hanka odprowadziła ją aż za płot i długo tam z nią szeptała. Do wieczora nie odezwała się do Jaromira ani słowem. # dalej
@@ -181,7 +181,7 @@ Po Wielkanocy Jaromir długo siedział wieczorami nad skrzynią. Światełka nad
     ~ ekwipunek -= figurka
     Po zmroku Jaromir poszedł z łopatą do kapliczki {noc_na_kladce == latarnia_na_wodzie:przy drodze do Bukowca|przy kładce}. Wykopał dół głęboki na łokieć, owinął figurkę w czyste płótno i zasypał, a ziemię ubił stopami. Tej samej nocy światełka nad mokradłami zgasły, a dzieci przestały śnić. # pokaz: lopata
     Nikomu nie powiedział, gdzie ją zakopał. Nawet Hance. # dalej
-*   { zaufal_jagnie } { not odrzucil_figurke } [Oddać ją Jagnie.]
+*   { zaufal_jagnie } { not odrzucil_figurke } { not figurka_u_staruchy } [Oddać ją Jagnie.]
     ~ los_figurki = figurka_u_jagny
     ~ ekwipunek -= figurka
     Jaromir zaniósł zawiniątko do Bukowca. Jagna wzięła je obiema rękami, ostrożnie, jak coś bardzo kruchego, i od razu schowała na dno kosza, pod pęki suszonego ziela. # pokaz: kosz
@@ -207,7 +207,7 @@ W maju Jadwisia urodziła Antkowi syna. Antek uparł się, że chłopak będzie 
 Pod koniec maja Hanka szukała Marysi po całym obejściu. Znalazła ją dopiero za stodołą, w życie po pachy. Mała stała bez ruchu, z przekrzywioną główką, jak ktoś, kto nasłuchuje.
 – Mama śpiewa – powiedziała i pokazała rączką w zboże, w drugą stronę niż chałupa.
 { glos_w_lesie:
-    Kiedy Hanka opowiedziała o tym wieczorem, Jaromirowi przypomniała się wigilijna noc sprzed lat i głos matki spomiędzy drzew{glos_w_lesie == odpowiedzial: – a potem śmiech, wcale nie jej|{glos_w_lesie == kozuch: – a potem ciężkie kroki, które przeszły tuż obok| – i to, jak gonił go po śniegu aż pod płot Stasiowych}}. Nic nie powiedział. Tylko tej nocy dwa razy wstawał zajrzeć, czy Marysia śpi.
+    Kiedy Hanka opowiedziała o tym wieczorem, Jaromirowi przypomniała się wigilijna noc sprzed lat i głos matki {figurka_u_staruchy:z mgły nad polem|spomiędzy drzew}{glos_w_lesie == odpowiedzial: – a potem śmiech, wcale nie jej|{glos_w_lesie == kozuch: – a potem ciężkie kroki, które przeszły tuż obok| – i to, jak gonił go po śniegu aż pod płot Stasiowych}}. Nic nie powiedział. Tylko tej nocy dwa razy wstawał zajrzeć, czy Marysia śpi.
 }
 Na początku czerwca ludzie Urbaniaka zaczęli wbijać w ziemię paliki: od tartaku, przez łąki i mokradła, prosto pod bór. Pan Urbaniak chciał mieć drogę do lasu. Po tygodniu te wbite najbliżej boru puściły zielone pędy – z suchego, okorowanego drewna. # pokaz: paliki # dalej
 -> rozdzial_trzynasty_ciag_dalszy

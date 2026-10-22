@@ -81,7 +81,7 @@ Potem wskazała kąt za łóżkiem. Pod starą kapotą leżała siekiera o wytar
 { krzesiwo_dziadka:
     ~ ekwipunek += krzesiwo
     ~ krzesiwo_od_babki = true
-    – Jego. Weźmiesz ją, kiedy dorośniesz. – Spod poduszki wyjęła małe, poczerniałe krzesiwo. – A to weź już teraz. {zona_wie:Leżało w popiele razem z tamtą figurką|Dziadek przyniósł je ze zgliszcz nad jeziorem}. Dziadek nie rozstawał się z nim do końca. # pokaz: krzesiwo
+    – Jego. Weźmiesz ją, kiedy dorośniesz. – Spod poduszki wyjęła małe, poczerniałe krzesiwo. – A to weź już teraz. {zona_wie:Leżało w popiele razem z tamtą figurką. Dziadek nie rozstawał się z nim do końca.|Skąd je miał, nigdy mi nie powiedział. Ale nie rozstawał się z nim do końca.} # pokaz: krzesiwo
 - else:
     – Jego. Weźmiesz ją, kiedy dorośniesz.
 }
@@ -100,7 +100,7 @@ I opowiedział. O nocy, kiedy coś wyłamało drzwi ich chaty. O deskach nad gł
 = prawda_ojca
 # tlo: izba_wieczor
 Ojciec, kiedy usłyszał, co się stało nad rozlewiskiem, nie roześmiał się. Jaromir pierwszy raz widział, żeby historia o stworze nie wywołała na jego twarzy uśmiechu.
-– Twój dziadek opowiadał mi to samo – powiedział cicho, obracając w palcach kubek. – O ręce z wody. O głosie, który woła znad bagien. O zielarce spalonej w chacie nad jeziorem.{ pregi_na_lydkach: Pokazywał mi pręgi na łydkach, po pięć z każdej strony{ uratowal_andrzej: – i mówił, że gdyby nie stary Andrzej z żerdzią, nie byłoby ani jego, ani mnie}. Myślałem, że to od pijawek.} Śmiałem się. Myślałem, że chce mnie nastraszyć, żebym nie łaził sam nad wodę. – Zamilkł na długo. – A przed śmiercią ścisnął moją dłoń i szepnął: „Pilnuj kapliczek, Dobruś. To nie były bajki”.
+– Twój dziadek opowiadał mi to samo – powiedział cicho, obracając w palcach kubek. – {obejrzal_sie:O ręce z wody.|O czymś, co ciągnie pod wodę od spodu.} O głosie, który woła znad bagien. O zielarce spalonej w chacie nad jeziorem.{ pregi_na_lydkach: Pokazywał mi pręgi na łydkach, po pięć z każdej strony{ uratowal_andrzej: – i mówił, że gdyby nie stary Andrzej z żerdzią, nie byłoby ani jego, ani mnie}. Myślałem, że to od pijawek.} Śmiałem się. Myślałem, że chce mnie nastraszyć, żebym nie łaził sam nad wodę. – Zamilkł na długo. – A przed śmiercią ścisnął moją dłoń i szepnął: „Pilnuj kapliczek, Dobruś. To nie były bajki”.
 – Mówił też, że kto utonie bez księdza, zostaje w wodzie i trzyma tam dusze innych topielców pod glinianymi garnkami. Jak który garnek pęknie, dusza ulatuje bąblem na powierzchnię. – Ojciec odstawił kubek. – Pamiętasz te bąble przy kładce?
 – Obiecaj mi jedno – poprosił. – Że nigdy nie wejdziesz do boru. Choćby nie wiem kto cię wołał.
 -> obietnica
@@ -118,7 +118,7 @@ Ojciec, kiedy usłyszał, co się stało nad rozlewiskiem, nie roześmiał się.
     Nie wiedział jeszcze, jak ciężko przyjdzie mu kiedyś dotrzymać tego słowa. # dalej
     -> kapliczka
 *   [Milczeć.]
-    Jaromir nie odpowiedział. Pomyślał o Hance i o czerwonej wstążce,{ poszedl_po_wstazke: o starcu w kapeluszu z mchu,} o głosie, który wołał go zimą spomiędzy drzew, i nie potrafił wydusić z siebie tego jednego słowa.
+    Jaromir nie odpowiedział. Pomyślał o Hance i o czerwonej wstążce,{ poszedl_po_wstazke: o starcu w kapeluszu z mchu,} o głosie, który wołał go zimą {figurka_u_staruchy:z mgły nad polem|spomiędzy drzew}, i nie potrafił wydusić z siebie tego jednego słowa.
     { figurka_u_staruchy && los_psa == oswojony:
         Babka długo patrzyła mu w oczy, a potem westchnęła, jakby właśnie tego się spodziewała.
         -> smierc_babki

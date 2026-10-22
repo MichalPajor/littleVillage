@@ -13,7 +13,7 @@
 # tytul: Tartak
 Po tamtej wiośnie czas zaczął płynąć szybciej, jakby ktoś popuścił mu cugli.
 Jeszcze tego samego lata ludzie Urbaniaka przywieźli nad strugę pierwsze wozy belek. Budowali przez całą jesień – stukali młotami od świtu do zmroku, kopali rów dla koła wodnego i klęli na glinę, która oblepiała im buty po kolana. Dzieci z całej wsi przybiegały patrzeć, jak rośnie wielka szopa, a starsi kręcili głowami i mówili, że z tego nic dobrego nie wyjdzie. # pokaz: budowa
-Zimy przychodziły i odchodziły. Jaromir chodził do szkoły w Bukowcu jeszcze dwa lata. Nauczył się pisać tak starannie, że nauczyciel dawał mu do przepisywania kolędy dla organisty, i liczyć tak szybko, że ojciec zaczął go zabierać na jarmarki, żeby pilnował, czy handlarze nie oszukują przy wadze.{ ekwipunek ? ksiega: Księgę pana Ignacego czytał tak często, że znał na pamięć połowę podań, a resztę przepisywał sobie na zapas do zeszytu z grubego, szarego papieru.}
+Zimy przychodziły i odchodziły. Jaromir chodził do szkoły w Bukowcu jeszcze trzy lata. Nauczył się pisać tak starannie, że nauczyciel dawał mu do przepisywania kolędy dla organisty, i liczyć tak szybko, że ojciec zaczął go zabierać na jarmarki, żeby pilnował, czy handlarze nie oszukują przy wadze.{ ekwipunek ? ksiega: Księgę pana Ignacego czytał tak często, że znał na pamięć połowę podań, a resztę przepisywał sobie na zapas do zeszytu z grubego, szarego papieru.}
 Każdej wiosny na łąkach zakwitały te same kaczeńce, każdego lata bociany wracały na kuźnię, a co jesień dym z ognisk z łętów snuł się nad polami tak samo jak wtedy, gdy Jaromir szedł do szkoły pierwszy raz. Zmieniało się tylko jedno: z roku na rok mniej było słychać ptaków od strony boru, a więcej – zgrzytu piły. # pokaz: lata
 Antek wyciągnął się w chudego, poważnego chłopaka, który najchętniej przesiadywał w kuźni u ojca Hanki i uczył się kuć podkowy. Zosia, jego siostrzyczka, biegała już po obejściu i plątała się dorosłym pod nogami{ polnocnica == uslyszala_krzyk: – blada i chorowita, z szarą plamką na czole, którą matka chowała pod chustką}. Franek rósł najszybciej z całej czwórki, a kiedy skończył szesnaście lat, pierwszy poszedł do tartaku po zarobek.
 A Hanka… Hanka po prostu była. Codziennie, od rana do wieczora, tuż obok – i Jaromir zaczął to zauważać dopiero wtedy, gdy któregoś dnia jej zabrakło, bo pojechała z ojcem na jarmark do miasta, a on przez cały dzień nie mógł znaleźć sobie miejsca. # pokaz: hanka # dalej
@@ -54,7 +54,7 @@ Wieczorami, przy ognisku, traczom rozwiązywały się języki. Iskry strzelały 
 – Las się upomni – powtarzał, rzucając szczapę w ogień. – Zawsze się upomina.
 Opowiadał, że kiedy pierwsi ludzie zeszli w tę dolinę, las ich nie chciał. Dopiero gdy postawili kapliczki wzdłuż boru i obiecali, że za Stary Dąb nie przejdą z siekierą, bór się cofnął. – Kapliczki są jak gwoździe w płocie – mówił. – Wyrwiesz jeden, płot jeszcze stoi. Wyrwiesz wszystkie…
 W pierwszą sobotę Jaromir dostał od Urbaniaka garść monet – ciężkich, zimnych, z orłem po jednej stronie. Nigdy jeszcze nie trzymał w ręku tylu pieniędzy naraz.
-Hanka, kiedy jej je pokazał, nawet ich nie dotknęła. – Babka mówi, że srebro z lasu oddaje się z nawiązką – powiedziała i do końca lata mijała go na drodze bez słowa, z zadartą głową.
+Hanka, kiedy jej je pokazał, nawet ich nie dotknęła. – Babka mówi, że srebro z lasu oddaje się z nawiązką – powiedziała i przez kilka tygodni mijała go na drodze bez słowa, z zadartą głową.
 -> pregi_franka
 
 = w_polu
