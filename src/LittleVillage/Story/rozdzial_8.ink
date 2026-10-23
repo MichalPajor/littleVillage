@@ -118,7 +118,7 @@ W sieni, kiedy już wychodziła, chwyciła Jaromira za rękaw i przyciągnęła 
 Skinął głową.
 – Licho – rzekła stara i splunęła przez ramię. – Licho, co nie śpi. Chodzi od chałupy do chałupy i siada tam, gdzie mu dobrze. Gdzie kapliczki stoją, a ludzie żyją po bożemu, długo miejsca nie zagrzeje. Ale gdzie las rąbią, a świętości przestawiają z kąta w kąt, tam się zasiedzi i będzie żarło, aż zostaną same kości. Ono nie przyszło z własnej woli. Ktoś je tu przysłał. – A wiesz, czemu ma jedno oko? – dodała ciszej. – Bo drugie zostało w borze. Mówią, że Licho to oczy, które Pan Lasu wysyła między ludzi. Co zobaczy jedno, to wie drugie. # pokaz: babka
 – Jak je przegnać? – zapytał Jaromir.
-– Licha się nie przegania. Przegonisz od siebie, pójdzie do sąsiada. Można je ugościć, żeby poszło dalej syte. Albo nie otworzyć mu i nie odezwać się do niego ani słowem, choćby prosiło najsłodszym głosem. Do chałupy wejdzie tylko wtedy, kiedy je ktoś zawoła.
+– Licha się nie przegania. Przegonisz od siebie, pójdzie do sąsiada. Można je ugościć, żeby poszło dalej syte. Albo nie otworzyć mu i nie odezwać się do niego ani słowem, choćby prosiło i kusiło, czym tylko umie. Do chałupy wejdzie tylko wtedy, kiedy je ktoś zawoła.
 { licho_studnia:
 - chleb_przy_studni:
     – Dałeś mu już raz chleba? – Stara pokiwała głową. – Mądry chłopak. Licho pamięta i dobre, i złe.
@@ -154,14 +154,14 @@ Pod powałą, na haku, wisiał płat słoniny. Ostatni – a babka Hanki przykaz
 *   [Nie otwierać i nie odezwać się ani słowem.]
     ~ licho_noc = przemilczane
     Jaromir zacisnął zęby i nie odpowiedział.
-    Żebraczka pukała długo. Potem przestała skrzeczeć i zaczęła mówić inaczej – ciepło, znajomo.
+    Żebraczka pukała długo. Potem przestała skrzeczeć i ucichła. Za to spod drzwi zaczął się sączyć zapach chleba – ciepłego, prosto z pieca, z przypieczoną skórką – a po dolnej desce coś skrobało, cierpliwie, raz po raz, jak kot, który prosi, żeby go wpuścić.
     { figurka_u_staruchy && los_psa == oswojony:
-        – Jaromirku… – westchnęło zza drzwi głosem babki Marianny, choć babka od pięciu lat leżała na cmentarzu w mieście. – Otwórz, dziecko, wpuść starą… # pokaz: glos
+        Pachniało tak samo jak w sobotę u babki Marianny, kiedy wyjmowała bochny z pieca, choć babka od pięciu lat leżała na cmentarzu w mieście. # pokaz: glos
     - else:
-        – Jaromirku… – westchnęło zza drzwi głosem matki. – Otwórz, synku, wpuść matkę… # pokaz: glos
-        A matka spała przecież dwa kroki od niego, na zydlu przy ojcu.
+        Pachniało tak samo jak w sobotę, kiedy matka wyjmowała bochny z pieca. # pokaz: glos
+        A matka spała przecież dwa kroki od niego, na zydlu przy ojcu, a w dzieży od tygodnia nie było ani garści mąki.
     }
-    Łzy pociekły mu po policzkach, ale nie otworzył. Siedział tak do świtu, z rękami zaciśniętymi na kolanach, aż zapiał kogut i na dworze zrobiło się cicho.
+    Ślina napłynęła mu do ust, a łzy do oczu, ale nie otworzył. Siedział tak do świtu, z rękami zaciśniętymi na kolanach, aż zapiał kogut i na dworze zrobiło się cicho.
     Rano dolna deska drzwi, w którą stukało, była czarna i miękka jak zbutwiała, choć ojciec heblował ją ledwie trzy lata temu. # pokaz: rysy # dalej
     -> kapliczki_pod_borem
 

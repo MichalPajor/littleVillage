@@ -1683,7 +1683,7 @@ public sealed class GameStoryTests
 
         Assert.True(Has(On(pages, "studnia"), "cuchnie mułem"));
         Assert.True(Has(On(pages, "wyreb"), "zwymiotował w paprocie"));
-        Assert.True(Has(On(pages, "drzwi_noc"), "westchnęło zza drzwi głosem matki"));
+        Assert.True(Has(On(pages, "drzwi_noc"), "Pachniało tak samo jak w sobotę, kiedy matka wyjmowała bochny z pieca."));
         Assert.False(Has(On(pages, "drzwi_noc"), "babki Marianny"));
         Assert.True(Has(On(pages, "kapliczki_wykop"), "garść miedziaków"));
         Assert.DoesNotContain("swiatek", Inventory(engine));

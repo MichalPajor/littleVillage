@@ -102,7 +102,7 @@ Za plecami usłyszał chrzęst kroków. Gajowy Pawlik przedzierał się przez ś
 ~ zapiski += tropy_2
 Do wieczora strzelcy ubili pięć wilków. Ich skóry gajowy kazał przybić do wrót dworskiej stodoły w Bukowcu, żeby wszyscy widzieli. Białego nie było wśród nich.
 { oblawa_wilk == rzucil_kamieniem:
-    Za rzut kamieniem dziedzic kazał Jaromirowi odrobić na pańskim trzy tygodnie przy zwózce drewna. Blizna pod okiem została mu na zawsze – wąska i jasna jak ślad po pazurze.
+    Za rzut kamieniem sąd gminny w Bukowcu skazał Jaromira na tydzień aresztu i zapłatę za proch. Na grzywnę nie było z czego, więc odrabiał ją dworowi trzy tygodnie przy zwózce drewna. Blizna pod okiem została mu na zawsze – wąska i jasna jak ślad po pazurze.
 }
 { oblawa_wilk == wydal_wilka:
     W nocy od boru dobiegło wycie – nie takie jak zawsze, tylko długie, zachrypnięte, pełne bólu. Jaromir leżał z otwartymi oczami i słuchał, jak głos przybliża się do wsi, cichnie i wraca. Nad ranem w oborze zaczęły rzucać się krowy, jakby coś krążyło wokół ścian, a kiedy wyszedł z latarnią, w mroźnym powietrzu wisiał już tylko ciężki zapach mokrej sierści i krwi. # pokaz: wycie

@@ -21,16 +21,16 @@ Tylko las nie dawał spokoju. Najpierw zauważyła to {trzy_noce == czuwanie_prz
 = zeszyt_urbaniaka
 # tlo: karczma_zeszyt
 W lipcu, przed samymi żniwami, Urbaniak zwołał ludzi pod karczmę. Przyjechał bryczką, w lnianym płaszczu, a obok niego siedział majster i gajowy Pawlik z dubeltówką na kolanach.{ oblawa_wilk == rzucil_kamieniem: Pawlik od razu wypatrzył Jaromira w tłumie i dotknął palcem własnego policzka tam, gdzie Jaromir miał bliznę, jakby dawał znać, że też pamięta.}
-– Droga do lasu musi być gotowa przed zimą – powiedział Urbaniak, nie wysiadając. – Bez niej tartak stanie, a jak stanie tartak, nie będzie ani zarobku, ani mąki na przednówek. Dlatego każda chałupa da jednego chłopa na tydzień szarwarku. Kto ma u mnie dług, ten go odrobi. – Wyjął z kieszeni zeszyt w ceratowej okładce i położył go na kolanie. – Kto nie ma, temu zapłacę srebrem. A kapliczka przy przesiece pójdzie na bok. Za bardzo się wpycha w drogę. # pokaz: zeszyt
+– Droga do lasu musi być gotowa przed zimą – powiedział Urbaniak, nie wysiadając. – Bez niej tartak stanie, a jak stanie tartak, nie będzie ani zarobku, ani mąki na przednówek. Dlatego każda chałupa da jednego chłopa na tydzień do roboty przy drodze. Kto ma u mnie dług, ten go odrobi. – Wyjął z kieszeni zeszyt w ceratowej okładce i położył go na kolanie. – Kto nie ma, temu zapłacę srebrem. A kapliczka przy przesiece pójdzie na bok. Za bardzo się wpycha w drogę. # pokaz: zeszyt
 Przez tłum przeszedł szmer. Kapliczka przy przesiece była {kapliczki_drogi == obronil_kapliczke:tą samą, której Jaromir bronił przed laty, kiedy ludzie Urbaniaka kopali pod borem – ostatnią z tych, co stały pod lasem.|jedyną, jaka stała jeszcze pod lasem – stary Staś kazał wnukom postawić ją na nowo ze szczątków wykopanych słupów, kiedy zaczęto wycinać przesiekę.}
 Stary Staś wysunął się przed ludzi, wsparty na lasce. Za nim stanął kowal, a obok Antek, z Frankiem na ręku, bo Jadwisia była w polu. Szymon, ojciec Józka, który od wiosny stróżował nocami w tartaku, spuścił głowę i odsunął się na bok.
 # pytanie: Co zrobi Jaromir?
 *   [Wystąpić przeciw Urbaniakowi przy wszystkich.]
     ~ szarwark = sprzeciw_przy_karczmie
-    – Kapliczek nie ruszycie – powiedział Jaromir głośno. – Ani tej, ani żadnej. A szarwarku nikt z nas odrabiać nie będzie.
+    – Kapliczek nie ruszycie – powiedział Jaromir głośno. – Ani tej, ani żadnej. A drogi do boru nikt z nas rąbać nie będzie.
     Kilku chłopów zamruczało przychylnie. Urbaniak przyglądał mu się przez chwilę, a potem otworzył zeszyt, poślinił palec i przewrócił kilka kartek.
     – Twój ojciec – przeczytał – pożyczył ode mnie na doktora, kiedy go przygniotło w lesie. I drugi raz na zboże. Dobrze, że mi przypomniałeś.
-    W poniedziałek majster wyprowadził Jaromirowi krowę z obory. Matka stała w progu i płakała bez głosu, a ojciec trzymał się framugi tak mocno, że pobielały mu palce. Ale kiedy przyszedł dzień szarwarku, na przesiekę nie poszedł z Zapadliny ani jeden chłop. # pokaz: krowa # dalej
+    W poniedziałek majster wyprowadził Jaromirowi krowę z obory. Matka stała w progu i płakała bez głosu, a ojciec trzymał się framugi tak mocno, że pobielały mu palce. Ale kiedy przyszedł pierwszy dzień roboty, na przesiekę nie poszedł z Zapadliny ani jeden chłop. # pokaz: krowa # dalej
 *   [Zapisać się do roboty przy drodze – rodzinę trzeba wyżywić.]
     ~ szarwark = robota_na_przesiece
     Jaromir podszedł do bryczki i podał majstrowi rękę. Ktoś w tłumie syknął „Judasz”, a stary Staś splunął Jaromirowi pod nogi.
@@ -112,6 +112,9 @@ Pierwszy śnieg spadł w połowie listopada, cicho, w nocy.
 }
 { szarwark == robota_na_przesiece:
     Plama żywicy na dłoni Jaromira zniknęła dopiero z pierwszym mrozem – zeszła w jedną noc, jakby ktoś ją zdjął.
+}
+{ ekwipunek ? zoladz:
+    Żołądź spod Starego Dębu wciąż leżał za belką nad piecem, gdzie Jaromir schował go jeszcze jako chłopak. W noc pożaru parzył w palce, kiedy Jaromir go dotknął; rano znów był tylko ciepły, tak samo jak przez wszystkie te lata.
 }
 Marysia skończyła w sierpniu dwa lata. Wieczorami, kiedy Hanka kładła ją spać, mała nuciła pod nosem wciąż tę samą melodię – krótką, smutną, z jednym dźwiękiem, który zawsze urywał się wpół. Hanka nie pytała już, skąd ją zna. Tylko zaczęła zostawiać w izbie na noc zapalone łuczywo. # pokaz: luczywo
 W noc wigilijną, kiedy wracali z pasterki, cała Zapadlina widziała, jak nad młodnikiem pod borem przez chwilę unosiła się chmura iskier – choć nikt tam nie rozpalał ognia, a pod śniegiem nie miało się co zająć. Zgasła, zanim ktokolwiek zdążył się przeżegnać. # pokaz: iskry # dalej

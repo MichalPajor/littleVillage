@@ -42,6 +42,7 @@ Gadali długo, o byle czym – o tartaku, o rybach, o tym, że Wojtek od sołtys
 – Powiedz Antkowi, żeby przestał nosić mi chleb. Ja już nie jestem głodny. – Uśmiechnął się krzywo. – Sam mu tego nie powiem. Nie umiem, kiedy tak na mnie patrzy.
 Potem sięgnął pod posłanie i wcisnął Jaromirowi w ręce coś zawiniętego w liść łopianu – plaster dzikiego miodu, ciężki i lepki, pachnący wrzosem.
 – Dla Hanki, na kołacze. Weselne, jak się w końcu odważysz – powiedział. – Gdybym nie przyszedł.
+Przy drzwiach Jaromir obejrzał się jeszcze. Franek nie patrzył na jezioro, tylko w ciemną stronę, gdzie zaczynał się bór. – Woda woła mnie co noc – powiedział cicho. – Las przynajmniej nie śpiewa.
 Antek wysłuchał wszystkiego, pokiwał głową – a następnego wieczoru znowu poszedł nad jezioro z chlebem w chustce.
 Na Matki Boskiej Siewnej, kiedy wracali z Bukowca z poświęconym ziarnem w węzełkach, Hanka zrównała się z Jaromirem na drodze i przez dłuższą chwilę szła obok w milczeniu.
 – Wojtek od sołtysa przysłał wczoraj swata – odezwała się w końcu, nie patrząc na niego. – Ojciec go ugościł, wypytał i odprawił. Powiedział, że czeka na kogoś innego. – Poprawiła węzełek na ramieniu. – Tylko ten ktoś coś długo się zbiera. Do Wszystkich Świętych poczekam. Dłużej nie.

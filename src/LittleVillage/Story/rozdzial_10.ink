@@ -86,7 +86,7 @@ Leżał bez ruchu i patrzył. Księżyc świecił wysoko, a w jego blasku po izb
 - else:
     Płomień gromnicy drżał i chylił się ku nim, ale nie gasł.
 }
-Jedna z nich zaczęła nucić – cicho, kołysząco, tak podobnie do matki Hanki, że Jaromirowi ścisnęło się serce. Hanka usiadła na łóżku. Oczy miała otwarte, ale patrzyła przez niego, jakby był z powietrza. Powoli wyciągnęła rękę – {ochrona_kolyski == wstazka_na_raczce:do supła na rączce Marysi|{ochrona_kolyski == siekiera_pod_kolyska:do trzonka siekiery|do płomienia, żeby go zdusić}}. # pokaz: hanka
+Jedna z nich zaczęła nucić – cicho, kołysząco, bez słów, melodię, której nikt we wsi nie śpiewał, a od której Jaromirowi same kleiły się powieki. Hanka usiadła na łóżku. Oczy miała otwarte, ale patrzyła przez niego, jakby był z powietrza. Powoli wyciągnęła rękę – {ochrona_kolyski == wstazka_na_raczce:do supła na rączce Marysi|{ochrona_kolyski == siekiera_pod_kolyska:do trzonka siekiery|do płomienia, żeby go zdusić}}. # pokaz: hanka
 # pytanie: Co zrobi Jaromir?
 *   [Rzucić się między Hankę a kołyskę.]
     ~ noc_mamun = zaslonil

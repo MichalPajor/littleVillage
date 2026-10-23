@@ -98,13 +98,16 @@ Jaromir miał ich setki. Układał je sobie przez dwa dni drogi, po kolei, a ter
 { chleb_dla_dziadow:
     – I ktoś mi w Zaduszki zapalił {kapliczka_podniesiona:pod nią|pod kapliczką na skraju boru} światło.
 }
+{ czytal_po_zmroku:
+    – I czytałeś o mnie po zmroku, chłopcze, choć ci mówiono, że nie wolno. Kto czyta, ten woła. Tamta przy kołysce też przyszła na twoje wołanie.
+}
 – Potem była ona. Spaliliście ją w zabitej deskami chacie, a ona w ogniu przeklęła was cudzymi rękami: moimi i tych znad wody. „Kości dzieci waszych będą połamane, a krew ich wypita.” Nikt nie pytał o moją zgodę. Dopóki stał Dąb, słowo trzymało mocniej niż klątwa i mogłem jej nie słuchać.
 Liście dębu zwinęły się nad nimi, jakby ktoś przytknął do nich głownię. # pokaz: liscie
 { chata_macka == przy_lesie:
     – Potem przyszedł twój dziadek. Słowa nie znał. Postawił chałupę po mojej stronie, pod samym borem, i pierwszego ranka wbił siekierę w najbliższy świerk. Odpowiedziałem mu, ale nie zrozumiał. Od tamtego drzewa liczę.
     {figurka_u_staruchy:Jaromir przypomniał sobie zarośnięte pokrzywą podwaliny pod borem, o które ojciec nigdy nie pozwalał pytać.|Jaromir przypomniał sobie tylną ścianę ojcowskiej izby, za którą od zawsze szumiał bór, i zrobiło mu się wstyd za cudzą winę.}
 }
-– A potem przyszedł ten z miasta. Dąb padł{ franek_scial_dab: – i pierwsze cięcie zadała mu ręka Franka}. Kapliczki wykopali jego ludzie, a resztę wziął ogień. Wyście patrzyli.{ noc_ognia != ratowal_szymona: Ostała się jedna – za mało, żeby utrzymać płot.} A klątwa nie śpi. Budzi moje – te, które coraz rzadziej mnie słuchają: te znad wody, mamuny, błędnice. Ciągnie je do waszych chałup jak ćmy do łuczywa.
+– A potem przyszedł ten z miasta. Dąb padł{ franek_scial_dab: – i pierwsze cięcie zadała mu ręka Franka}. Kapliczki wykopali jego ludzie, a resztę wziął ogień – nie mój. Tartak podpaliła ludzka ręka i ta sama zaparła drzwi stróżówki: ktoś od was, komu zeszyt ciążył bardziej niż cudze życie. Wyście patrzyli.{ noc_ognia != ratowal_szymona: Ostała się jedna – za mało, żeby utrzymać płot.} A klątwa nie śpi. Budzi moje – te, które coraz rzadziej mnie słuchają: te znad wody, mamuny, błędnice. Ciągnie je do waszych chałup jak ćmy do łuczywa.
 – Dlatego wziąłem dziecko – powiedział Pan Lasu. – Noc świętojańska była moja. A gdybym jej nie wziął, wzięłyby ją one. Tamtą w życie posłałem ja, żeby przeprowadziła małą przez pole, zanim znajdą ją te znad wody.
 – To oddaj ją – wychrypiał Jaromir. – Skoro ją chroniłeś. Oddaj, jak oddawałeś tamte.
 – Do chałupy bez płotu? – Pan Lasu przechylił głowę. – Wy pierwsi złamaliście słowo. Tym razem nie oddam jej za darmo.
