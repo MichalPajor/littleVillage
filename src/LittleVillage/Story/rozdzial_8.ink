@@ -116,7 +116,7 @@ Babka obłożyła złamanie rozgniecionym korzeniem i obwiązała łubkami z les
 W sieni, kiedy już wychodziła, chwyciła Jaromira za rękaw i przyciągnęła do siebie.
 – Widziałeś ją, prawda? – szepnęła. – Małą, w łachmanach, z jednym okiem.
 Skinął głową.
-– Licho – rzekła stara i splunęła przez ramię. – Licho, co nie śpi. Chodzi od chałupy do chałupy i siada tam, gdzie mu dobrze. Gdzie kapliczki stoją, a ludzie żyją po bożemu, długo miejsca nie zagrzeje. Ale gdzie las rąbią, a świętości przestawiają z kąta w kąt, tam się zasiedzi i będzie żarło, aż zostaną same kości. Ono nie przyszło z własnej woli. Ktoś je tu przysłał. – A wiesz, czemu ma jedno oko? – dodała ciszej. – Bo drugie zostało w borze. Mówią, że Licho to oczy, które Pan Lasu wysyła między ludzi. Co zobaczy jedno, to wie drugie. # pokaz: babka
+– Licho – rzekła stara i splunęła przez ramię. – Licho, co nie śpi. Chodzi od chałupy do chałupy i siada tam, gdzie mu dobrze. Gdzie kapliczki stoją, a ludzie żyją po bożemu, długo miejsca nie zagrzeje. Ale gdzie las rąbią, a świętości przestawiają z kąta w kąt, tam się zasiedzi i będzie żarło, aż zostaną same kości. Ono nie przyszło z własnej woli. Ktoś je tu przysłał. – A czemu ma jedno oko, tego nikt nie wie – dodała ciszej. – Moja matka mówiła, że drugie zostało w borze, że Licho to oczy, które Pan Lasu wysyła między ludzi. Ja tam nie wiem. Wiem, że patrzy. # pokaz: babka
 – Jak je przegnać? – zapytał Jaromir.
 – Licha się nie przegania. Przegonisz od siebie, pójdzie do sąsiada. Można je ugościć, żeby poszło dalej syte. Albo nie otworzyć mu i nie odezwać się do niego ani słowem, choćby prosiło i kusiło, czym tylko umie. Do chałupy wejdzie tylko wtedy, kiedy je ktoś zawoła.
 { licho_studnia:
@@ -180,19 +180,19 @@ W niedzielę po sumie pod tartakiem zebrało się kilkunastu chłopów z Zapadli
     Ojciec nie powiedział nic. Dopiero kiedy syn stał już w progu, kiwnął mu głową z ławy – raz, krótko, jak dorosłemu.
 }
 Urbaniak wyszedł do nich na ganek w samej kamizelce, z serwetką jeszcze za kołnierzem. Wysłuchał starego Stasia do końca, nie przerywając, i bawił się przy tym łańcuszkiem od zegarka.
-– Kapliczki stawiali nasi ojcowie – mówił Staś. – Póki stoją, bór siedzi tam, gdzie siedział. Niech pan wozi krótsze kłody, a świętości zostawi w spokoju.
-– Krótsze kłody, krótszy zarobek – odparł Urbaniak. – I to nie mój, tylko wasz. – Wyjął z kieszeni zeszycik w ceratowej okładce, polizał palec i zaczął przewracać kartki. – Wójcik: dwa korce mąki od Wielkanocy. Staś: na podatek, jeszcze z zimy. Kowal: żelazo na nowe kowadło. Czytać dalej? – Zamknął zeszycik. – Ja nikogo nie zmuszam. Kto nie chce mojego srebra, niech nie bierze. Ale niech mi wtedy odda, co już wziął.
+– Kapliczki stawiali nasi ojcowie – mówił Staś. – Mój ojciec, Andrzej, sam dźwigał słup pod lasem, jak ja byłem chłopakiem, i ziemię pod nim ubijał boso, bo mówił, że w butach się nie godzi… – Zgubił wątek i pomilczał chwilę. – Póki stoją, bór siedzi tam, gdzie siedział. Niech pan wozi krótsze kłody.
+– Krótsze kłody, gorszy interes – odparł Urbaniak. – I nie mój, tylko wasz. Ja swój rachunek domknę tak czy owak. – Wyjął z kieszeni zeszycik w ceratowej okładce, polizał palec i zaczął przewracać kartki. – Wójcik: dwa korce mąki od Wielkanocy. Staś: na podatek, jeszcze z zimy. Kowal: żelazo na nowe kowadło. Czytać dalej? – Zamknął zeszycik. – Ja nikogo nie zmuszam. Kto nie chce mojego srebra, niech nie bierze. Ale niech mi wtedy odda, co już wziął.
 Chłopi spuścili głowy. Tylko Antek wysunął się przed starszych.
 – Ja panu nic nie jestem winien – powiedział. Głos mu drżał, ale chłopak się nie cofnął. – I nie będę.
 – Ty od kowala? – Urbaniak przyjrzał mu się z rozbawieniem. – To kowal mi będzie winien, jak nie podkuje moich koni. – Antek poczerwieniał po uszy, a kowal bez słowa chwycił go za kołnierz i odciągnął do tyłu.
 { pracowal_w_tartaku: – A ty nosiłeś u mnie deski. – Urbaniak spojrzał na Jaromira. – Dobrze nosiłeś. Szkoda by było, żebyś w zimie nosił ojcu same obierki. }
-{ powiedzial_ojcu_poludnica && not figurka_u_staruchy:– Rok temu dał pan mojemu ojcu słowo, że kapliczek nikt nie ruszy – powiedział Jaromir spokojnie, choć w środku cały się trząsł. – Ojciec leży z nogą w łubkach, to ja przyszedłem przypomnieć. – Rok temu padało – odparł Urbaniak.|– Kapliczek niech pan nie rusza – powiedział Jaromir spokojnie, choć w środku cały się trząsł. – Nie dla nas. Dla pana też.}
+{ powiedzial_ojcu_poludnica && not figurka_u_staruchy:– Rok temu dał pan mojemu ojcu słowo, że kapliczek nikt nie ruszy – powiedział Jaromir spokojnie, choć w środku cały się trząsł. – Ojciec leży z nogą w łubkach, to ja przyszedłem przypomnieć. – Rok temu padało – odparł Urbaniak. – A teraz piła stoi, a weksle w mieście nie stoją.|– Kapliczek niech pan nie rusza – powiedział Jaromir spokojnie, choć w środku cały się trząsł. – Nie dla nas. Dla pana też.}
 { wyreb_z_ojcem:
     – Byłem na zrębie, kiedy ojca przygniotło – dodał Jaromir. – Ta sosna nie padła od wiatru. Wiatru nie było.
     – A od czego? – Urbaniak uniósł brwi. – Od licha? – Kilku chłopów przeżegnało się ukradkiem, a on się roześmiał.
 }
 { licho_noc == ugoszczone: – A piłę mi ktoś w nocy przepołowił i konia struł – dorzucił Urbaniak i na chwilę spoważniał. – Jak się dowiem, kto z waszych, to i święci go nie obronią. }
-– Kapliczki pójdą w poniedziałek – oznajmił na koniec Urbaniak. – Kto chce, niech przyjdzie z łopatą, zapłacę jeszcze tego samego wieczora. A kto nie chce, niech pilnuje swojego chleba, bo ode mnie go już nie dostanie. – Wyjął serwetkę zza kołnierza, strzepnął ją i wrócił do środka.
+– Kapliczki pójdą w poniedziałek – oznajmił na koniec Urbaniak. – Kto chce, niech przyjdzie z łopatą, zapłacę gotówką, tego samego wieczora, bez kredytu. A kto nie chce, niech pilnuje swojego chleba, bo ode mnie go już nie dostanie. – Wyjął serwetkę zza kołnierza, strzepnął ją i wrócił do środka.
 Wracali w milczeniu. Przy wyschniętej strudze stary Staś przystanął, splunął w popękany muł i powiedział, nie patrząc na nikogo:
 – Bór pamięta dłużej niż ten jego zeszyt. # dalej
 -> kopanie

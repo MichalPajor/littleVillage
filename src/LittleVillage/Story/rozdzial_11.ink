@@ -49,7 +49,7 @@ Pod koniec stycznia do Zapadliny przyjechał saniami gajowy z dworu, Pawlik – 
 – Jaśnie pan dziedzic zarządza obławę – ogłosił. – W sobotę o świcie. Z każdej chałupy jeden chłop z kołatką albo z widłami. Strzelcy z dworu staną przy przesmyku pod borem, a wy pognacie wilki z młodnika prosto na nich. – Powiódł wzrokiem po zebranych i dorzucił ciszej: – Za skórę tego białego dziedzic płaci dziesięć rubli srebrem. Pan Urbaniak dokłada drugie tyle.
 Przez tłum przeszedł szmer. Dwadzieścia rubli to było więcej, niż niejeden gospodarz w Zapadlinie widział przez całe życie.
 Wieczorem do chałupy Jaromira przyszedł Antek. Usiadł na ławie, długo obracał czapkę w dłoniach i nie mógł zacząć. # pokaz: antek
-– Widziałem go – powiedział w końcu. – Tego białego. Przedwczoraj, o zmierzchu, przy starej kapliczce. Patrzył na mnie… – Głos mu się złamał. – Jaromir, on ma oczy Franka. Ja wiem, że to głupie. Ale ja bym tych oczu nie pomylił z żadnymi innymi.
+– Widziałem go – powiedział w końcu. – Tego białego. Przy starej kapliczce. Patrzył. – Głos mu się złamał. – Ma oczy Franka. Wiem. Głupie. Ale ja bym tych oczu nie pomylił.
 # pytanie: Co powie Jaromir?
 *   [Obiecać Antkowi, że jeśli to Franek, nie dadzą go zabić.]
     ~ obietnica_antkowi = true

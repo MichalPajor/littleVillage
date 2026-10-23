@@ -15,7 +15,7 @@ Drugiego listopada Zapadlina obudziła się we mgle tak gęstej, że z progu nie
 { przysiega_ksiedzu:
     Przed południem przyjechał z Bukowca ksiądz, z kropidłem i wiadrem święconej wody, żeby pokropić płoty. Przy chałupie Jaromira zatrzymał konia.
     – Dotrzymujesz, coś przysiągł na różaniec? – zapytał. # pokaz: ksiadz
-    { cena_caluna == cena_umowa || cialo_kopii == spalone || cialo_kopii == pod_mlodnikiem:
+    { cialo_kopii == spalone || cialo_kopii == pod_mlodnikiem:
         Jaromir milczał. Ksiądz zawrócił; ich płotu nie pokropił.
     - else:
         – Dotrzymuję – odparł Jaromir. Ksiądz pokropił płot dwa razy.
@@ -37,7 +37,7 @@ Pod wieczór mgła zgęstniała pod opłotkami i stanęła. Nie ruszała się, c
 { not marysia_odzyskana:
     Tylko gromnica Hanki paliła się na stole, równo, tak samo jak wczoraj. # pokaz: gromnica_hanki
 }
-Jaromir usiadł na progu. Siekierę {zastaw_u_leszego == zastaw_siekiera:teścia|dziadka} oparł o futrynę, trzonkiem pod rękę.{ ekwipunek ? krzesiwo: W kieszeni czuł chłód krzesiwa.}{ cena_caluna == cena_zdrowie: Nogi owinął kożuchem, ale zimno jeziora i tak wchodziło w nie od dołu.} Czekał. # pokaz: prog # dalej
+Jaromir usiadł na progu. Siekierę {zastaw_u_leszego == zastaw_siekiera:teścia|dziadka} oparł o futrynę, trzonkiem pod rękę.{ ekwipunek ? krzesiwo: W kieszeni czuł chłód krzesiwa.} Czekał. # pokaz: prog # dalej
 -> swita_pana_lasu
 
 = swita_pana_lasu
@@ -49,22 +49,75 @@ Szli powoli, bez najmniejszego dźwięku. Od pierwszych szeregów ciągnęło mu
     Wśród nich była jedna, która nie trzymała nikogo za rękę. Bosa, w białej koszulce, bez wstążki we włosach. Szła wolniej niż inne i oglądała się na chałupy, jakby szukała drogi do domu. Hanka zobaczyła ją przez okno. Nie krzyknęła. Przytuliła tylko gromnicę, tak mocno, że wosk popłynął jej po palcach, a płomień nie drgnął. # pokaz: marysia
 }
 Szli też umarli z Zapadliny. Stary Wójcik{ pochowek_wojcika == pochowany_za_murem || trzy_noce == rozkopany_grob: – z twarzą zwróconą w ziemię, choć szedł prosto}.{ trzy_noce == czuwanie_przy_kolysce: Wójcikowa, z rękami złożonymi na piersi{ korale_kaski == oddane: i z koralami córki pod chustką}.} Babka Marianna. Przed nimi wszystkimi – dziadek Maciek, z siekierą za pasem i z tobołkiem na ramieniu, tak jak siedemdziesiąt lat temu, kiedy pierwszy raz zszedł do Zapadliny. Przechodząc obok chałupy, spojrzał na wnuka i skinął mu głową. # pokaz: umarli
+Na końcu, pochylony, żeby nie zaczepić porożem o niebo, szedł Pan Lasu. Każdy jego krok był długi jak zagon. Mech wyrastał wszędzie, gdzie przeszedł, i od razu siwiał od szronu. # pokaz: leszy
+Stanął przed chałupą Jaromira. Świta zatrzymała się za nim. # dalej
+{ marysia_odzyskana: -> calun_nad_jeziorem }
+-> po_calunie
+
+= calun_nad_jeziorem
+Z szeregu wystąpiły mamuny. Najstarsza uniosła na wyciągniętych rękach małe, mokre płótno, pokazała je Jaromirowi i bez słowa ruszyła z innymi w stronę jeziora.
+– Idź – powiedział Pan Lasu, nie odwracając głowy. – Poczekam. Noc jest długa. # dalej
+# tlo: calun_noc
+Na płaskich kamieniach przy pomoście mamuny rozłożyły płótno i wygładziły je dłońmi. Było wciąż mokre, choć od sierpnia minęły dwa miesiące. Akurat na dziecko. Jezioro stało czarne i gładkie, a od wsi nie dochodził żaden dźwięk. # pokaz: mamuny
+– Marysia – powiedziała najstarsza nad całunem, czule, i plasnęła kijanką o kamień. – Marysia.
+{
+- dar_pominiety:
+    – Raz zapomniałeś – zaskrzeczała. – Teraz przyszłyśmy po swoje.
+- uklad_z_mamunami:
+    – Nie patrz tak, gospodarzu – zaskrzeczała. – Dotrzymałyśmy. To nie od nas. Pierzemy, co nam przynosi woda, a teraz woda niesie dzieci z waszej wsi.
+- else:
+    – Nie my wybieramy – zaskrzeczała. – Pierzemy, co nam przynosi woda, a teraz woda niesie dzieci z waszej wsi.
+}
+– Do świtu wyschnie – powiedziała. – Wtedy imienia już nikt nie zmyje, nawet my. Póki mokry, jeszcze można. – Uśmiechnęła się czarnymi dziąsłami. – Tylko że za darmo nic z płótna nie schodzi. # pokaz: calun
+# pytanie: Co zrobi Jaromir?
+*   [Wyrwać im całun samemu.]
+    ~ cena_caluna = cena_zdrowie
+    Wszedł w wodę po kolana i zerwał całun z kamienia. Mamuny rzuciły się na niego – zimne, mokre dłonie oplotły mu ręce i łydki, kijanki spadały na plecy jak cepy na klepisku. Nie puścił. Kiedy wygramolił się na brzeg, płótno ociekało mu w garściach, a z wody chichotało za nim jeszcze długo. # pokaz: wyrwany
+    Imię się zmyło. Ale chłód jeziora został w nim: od kolan w dół nogi miał zimne jak kamienie z dna i nic ich już nie rozgrzało – ani piec, ani kożuch. Do kosy już nie stanął.
+*   [Zawołać Antka.]
+    ~ cena_caluna = cena_antek
+    – Antek! – krzyknął Jaromir w stronę wsi. Antek, który tej nocy nie spał, przybiegł nad jezioro, zanim echo ucichło nad wodą. Nie zapytał o nic. Wszedł między mamuny, jakby wchodził do kuźni, i wyrwał całun z kamienia – całun dziewczynki, którą trzymał do chrztu. # pokaz: antek
+    Najstarsza zamachnęła się kijanką. W ciszy trzasnęło jak łamana gałąź. Antek nie krzyknął. Wyszedł na brzeg z całunem w lewej ręce, a prawa zwisała mu wykręcona w łokciu tak, jak żadna ręka się nie wykręca. Kowal obejrzał ją potem i tylko pokręcił głową. Do kuźni Antek już nie wrócił.
+*   { wilk_przy_jaromirze && znak_rozpoznania != po_wilku } [Zawołać białego wilka.]
+    ~ cena_caluna = cena_franek
+    ~ zapiski += tropy_6
+    – Franek! – zawołał Jaromir w stronę wsi, nie wiedząc nawet, czy wilk go usłyszy. Imię, najcięższe ze słów, poszło nad wodą.
+    Wilk usłyszał. Biały cień przemknął brzegiem, wpadł między mamuny i rozdarł całun zębami na strzępy. Zawyły przeraźliwie i rzuciły się na niego wszystkie naraz. Woda przy kamieniach zawrzała jak w kotle na pranie – a potem się wygładziła. # pokaz: wilk
+    Przy brzegu, w trzcinach, leżało białe, ciężkie od wody cielsko. Antek, który przybiegł na wycie, ukląkł przy nim i położył dłoń na obręczy wytartej sierści na przedniej łapie. – To on – powiedział tylko. – Mówiłem ci.{ wilk_pod_debem == opowiedzial_o_antku: Jaromir przypomniał sobie słowa spod dębu: z twoją pamięcią w głowie nie pożyje długo.}
+*   { uklad_z_mamunami == dar_swietojanski && not dar_pominiety } [Przypomnieć im umowę i przedłużyć ją na córkę.]
+    ~ cena_caluna = cena_umowa
+    – Obiecałem wam dar, póki żyję – powiedział Jaromir. – Niech będzie: póki żyje ona. Kiedy mnie zabraknie, będzie go nosiła sama.
+    Najstarsza przyglądała mu się bez ruchu. Potem odłożyła kijankę. – Zgoda – zaskrzeczała. – Ale ona też będzie musiała pamiętać. Każdego roku. Do końca.
+    Kiedy Jaromir sięgnął po całun, płótno rozpłynęło się w wodzie jak piana. # pokaz: piana
+    { przysiega_ksiedzu:
+        Przysięgę złożoną w Bukowcu – że skończy z darami dla tego, co siedzi w wodzie – złamał tej samej nocy, w której ksiądz pokropił mu płot.
+    }
+-   ~ zapiski += mamuny_4
+    Mamuny zebrały kijanki i jedna po drugiej weszły w wodę. Jaromir ruszył z powrotem do wsi. # dalej
+    -> powrot_do_swity
+
+= powrot_do_swity
+# tlo: swita
+Kiedy wrócił pod chałupę, świta stała tam, gdzie ją zostawił. Pan Lasu nie ruszył się ani o krok.{ cena_caluna == cena_zdrowie: Jaromir szedł powoli; zimno jeziora wchodziło mu w nogi od dołu.}{ cena_caluna == cena_antek: Antek szedł obok niego, z prawą ręką wsuniętą za pas.}
+-> po_calunie
+
+= po_calunie
 { cena_caluna == cena_franek:
-    I Franek – nie wilk, tylko Franek, chudy, z włosami do ramion, taki, jakim Jaromir widział go ostatni raz w szałasie nad jeziorem. Pod oknem Antka przystanął i położył dłoń na framudze, tak jak kładzie się dłoń na końskim karku. # pokaz: franek
+    Wtedy w szeregu umarłych Jaromir zobaczył Franka – nie wilka, tylko Franka, chudego, z włosami do ramion, takiego, jakim widział go ostatni raz w szałasie nad jeziorem. Franek podszedł pod okno Antka i położył dłoń na framudze, tak jak kładzie się dłoń na końskim karku. # pokaz: franek
 - else:
     { wilk_przy_mnie():
         Biały wilk wyszedł zza stodoły i stanął przy progu, przy nodze Jaromira. Sierść miał zjeżoną. # pokaz: wilk
     - else:
-        Tuż przed Panem Lasu szedł biały wilk. Nie spojrzał na Jaromira. # pokaz: wilk_pan
+        U boku Pana Lasu stał biały wilk. Nie spojrzał na Jaromira. # pokaz: wilk_pan
     }
 }
-Na końcu, pochylony, żeby nie zaczepić porożem o niebo, szedł Pan Lasu. Każdy jego krok był długi jak zagon. Mech wyrastał wszędzie, gdzie przeszedł, i od razu siwiał od szronu. # pokaz: leszy
-Stanął przed chałupą Jaromira. Świta zatrzymała się za nim. # dalej
-{ dlug_u_jagny && (dlug_jagny == dlug_odmowiony || (not marysia_odzyskana && cialo_kopii != oddane_jagnie)):
+{ bielmo():
     Jagna wysunęła się z mgły od strony płotu i stanęła przed Panem Lasu, nie spuszczając oczu.
     – Ten człowiek winien mi jest pierwszą rzecz z boru – powiedziała. # pokaz: jagna
-    – Co wyszło z boru, wyszło za moim słowem – odparł Pan Lasu. – Twój dług jest u mnie.
-    Jagna długo stała bez ruchu, a potem skłoniła się i odeszła we mgłę.
+    – Co wyszło z boru, wyszło za moim słowem – odparł Pan Lasu.
+    – Słowo twoje, dług mój. – Jagna odwróciła się do Jaromira. – Babka moja kupowała i brała na siebie to, czego inni bali się dotknąć, i płaciła za to okiem. Ja po niej odbieram, co komu winni. – Podeszła tak blisko, że poczuł na twarzy zapach dziurawca. – Ty też wyszedłeś z boru, Jaromirze. Pierwszy, zanim wyniosłeś {marysia_odzyskana:córkę|tamto}.
+    Położyła mu palec na lewej powiece. Był suchy i ciepły. Kiedy go cofnęła, lewym okiem Jaromir widział już tylko mleczną mgłę, taką samą, jaka siedziała w jej oku.
+    – Teraz jesteśmy kwita – powiedziała i odeszła we mgłę.
 }
 { cialo_kopii == oddane_jagnie:
     Jagna wyszła z mgły z lnianym zawiniątkiem i położyła je Panu Lasu u stóp. – Oddaję, co nie moje – powiedziała. Płachta opadła płasko; zostały pod nią tylko suche liście i kora. # pokaz: jagna
@@ -233,7 +286,7 @@ Klątwa zielarki zaczęła się od ognia i od ognia się skończyła. Ale wiatr 
 = epilog_granica
 # tlo: epilog_dab
 # ozdobnik
-Pół wieku później, w Zaduszki, stary Jaromir siedział na ławce pod krzyżem na skraju boru.{ cena_caluna == cena_zdrowie: Nogi miał owinięte kożuchem, jak od pięćdziesięciu lat.} Wzdłuż lasu znowu stały kapliczki – postawili je pierwszej wiosny, wszyscy razem, i odtąd każde pokolenie odnawiało je przed Zielonymi Świątkami.
+Pół wieku później, w Zaduszki, stary Jaromir siedział na ławce pod krzyżem na skraju boru.{ cena_caluna == cena_zdrowie: Nogi miał owinięte kożuchem, jak od pięćdziesięciu lat.}{ bielmo(): Na lewe oko od pół wieku widział tylko mgłę.} Wzdłuż lasu znowu stały kapliczki – postawili je pierwszej wiosny, wszyscy razem, i odtąd każde pokolenie odnawiało je przed Zielonymi Świątkami.
 { zoladz_zasadzony:
     Tuż przy pniaku po Starym Dębie rósł młody dąb, wyższy już niż strzecha. Przez pół wieku wrósł w stare drewno i wchłonął siekierę; z kory, na wysokości kolan, wystawało tylko zardzewiałe ostrze, którego nikt nie odważył się ruszyć. # pokaz: dab
 }
@@ -297,6 +350,9 @@ Jaromir trzymał kiełek w palcach.{ noc_pozaru == oslepl: Nie widział go, ale 
 # ozdobnik
 _Koniec._
 -> END
+
+=== function bielmo()
+~ return dlug_u_jagny && (dlug_jagny == dlug_odmowiony || (not marysia_odzyskana && cialo_kopii != oddane_jagnie))
 
 === function wilk_zywy()
 ~ return cena_caluna != cena_franek

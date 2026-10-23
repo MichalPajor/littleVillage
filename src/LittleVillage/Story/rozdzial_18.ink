@@ -13,13 +13,13 @@
 # tlo: izba_swit
 # rozdzial: Rozdział osiemnasty
 # tytul: Wybór
-Trzecie łuczywo z kolei dopalało się w oknie. Hanka zasnęła nad nim po raz pierwszy od nocy świętojańskiej – z głową na stole, z igłą wciąż wbitą w płótno – i nie poczuła, kiedy płomień zgasł, a do izby wsączyła się szarość świtu. Obudził ją kogut Stasiowych. Zerwała się, spojrzała na zimny, zwęglony koniuszek i krzyknęła tak, że Antek, który od trzech nocy spał w sieni na sianie, wpadł do środka boso. # pokaz: antek
-– Zgasło – powtarzała, grzebiąc palcami w popiele, jakby szukała w nim iskry. – Zgasło, kiedy spałam.
-Za oknem mgła leżała na pokosach jak zmięta płachta. Na łąki szli już pierwsi z grabiami – i przystawali, widząc ciemne okno Jaromira.
+Trzecie łuczywo z kolei dopalało się w oknie od strony boru. Hanka wróciła ze skraju młodnika przed świtem i zasnęła przy nim po raz pierwszy od nocy świętojańskiej – z głową na parapecie – i nie poczuła, kiedy płomień zgasł, a do izby wsączyła się szarość świtu. Obudził ją kogut Stasiowych. Zerwała się, spojrzała na zimny, zwęglony koniuszek i krzyknęła tak, że Antek, który od trzech nocy spał w sieni na sianie, wpadł do środka boso. # pokaz: antek
+– Zgasło – powtarzała, grzebiąc palcami w popiele. – Zgasło, kiedy spałam. – A potem otworzyła okno na oścież, wychyliła się w stronę boru i zaczęła kołysankę od nowa, od pierwszego słowa, głośniej niż przez wszystkie trzy noce, {pani_w_zbozu_noc == za_spiewem:tym swoim pękniętym szeptem, który darł jej gardło|aż głos niósł się nad młodnikiem}.
+Za oknem mgła leżała na pokosach jak zmięta płachta. Na łąki szli już pierwsi z grabiami – i przystawali, słysząc z okna Jaromira kołysankę, którą Hanka posyłała w stronę boru.
 { dlug_u_jagny:
     Jagna, która przenocowała na wozie pod płotem, wstała, otrzepała spódnicę z suchych listków dziurawca i powiedziała tylko: „Dzisiaj”. Nie wyjaśniła, co ma na myśli.
 }
-Antek krzesał ogień do nowej szczypki. Iskra długo nie chciała chwycić hubki. Kiedy wreszcie zajęła się płomieniem, Hanka trzymała nad nim dłoń, aż ją parzyło – tak się osłania coś, czego nie wolno już stracić. # pokaz: luczywo # dalej
+Antek krzesał ogień do nowej szczypki. Iskra długo nie chciała chwycić hubki. Kiedy wreszcie zajęła się płomieniem, Hanka nie przerwała kołysanki, tylko trzymała nad nim dłoń, aż ją parzyło – tak się osłania coś, czego nie wolno już stracić. # pokaz: luczywo # dalej
 -> dzieci_spod_debu
 
 = dzieci_spod_debu
@@ -42,6 +42,7 @@ Jaromir spojrzał na własny nadgarstek. Wstążka Marysi była tam, gdzie ją o
 }
 Kolana mu zmiękły. Czuł, że serce rwie mu się na tyle kawałków, ile dziewczynek patrzyło na niego z porostów.
 – Tata – powiedziały wszystkie naraz, cicho, jednym głosem. Potem zapadła taka cisza, że nie było słychać nawet, jak któraś przełyka ślinę.
+Wtedy bardzo daleko, za borem, za wszystkimi drzewami, ktoś zaczął kołysankę. Ledwie ją było słychać, {pani_w_zbozu_noc == za_spiewem:chrapliwą, bez melodii, same słowa|cienką jak nitka}, ale Jaromir poznałby ją przez sto ścian. Kilka dziewczynek drgnęło i obejrzało się przez ramię w tamtą stronę. Inne siedziały bez ruchu i uśmiechały się dalej. Kołysanka niczego nie rozstrzygała.
 {
 - ekwipunek ? szczenie_psa:
     Pies zaskomlał, zaczął obwąchiwać powietrze i dreptać w miejscu, raz w jedną, raz w drugą stronę, nie wiedząc, do której pobiec. # pokaz: pies

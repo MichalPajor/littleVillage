@@ -34,7 +34,7 @@ Franek, który miał już siedemnaście lat i miał bary jak drwal, od roku prac
 # pytanie: Czy Jaromir pójdzie do tartaku?
 *   [Pójść do pracy w tartaku.]
     ~ pracowal_w_tartaku = true
-    Następnego ranka Jaromir stanął przed Urbaniakiem. Pan w miejskim płaszczu obejrzał go od stóp do głów jak konia na jarmarku, poklepał po ramieniu i rzucił tylko: – Nada się. # pokaz: urbaniak
+    Następnego ranka Jaromir stanął przed Urbaniakiem. Pan w miejskim płaszczu obejrzał go od stóp do głów jak konia na jarmarku, poklepał po ramieniu i rzucił tylko: – Nada się. Byle mi nie próżnował na mój rachunek. # pokaz: urbaniak
     { figurka_u_staruchy:
         Ojciec nie odezwał się do syna przez tydzień. # dalej
     - else:
@@ -54,7 +54,7 @@ Wieczorami, przy ognisku, traczom rozwiązywały się języki. Iskry strzelały 
 – Las się upomni – powtarzał, rzucając szczapę w ogień. – Zawsze się upomina.
 Opowiadał, że kiedy pierwsi ludzie zeszli w tę dolinę, las ich nie chciał. Dopiero gdy postawili kapliczki wzdłuż boru i obiecali, że za Stary Dąb nie przejdą z siekierą, bór się cofnął. Ale coś za coś: raz na pokolenie las bierze sobie dziecko na kilka nocy. O tym Wawrzyniec powiedział tylko raz, ściszonym głosem, i zaraz splunął przez ramię. – Tego się nie rozpowiada. Kto gada, ten prosi. – Kapliczki są jak gwoździe w płocie – mówił. – Wyrwiesz jeden, płot jeszcze stoi. Wyrwiesz wszystkie…
 W pierwszą sobotę Jaromir dostał od Urbaniaka garść monet – ciężkich, zimnych, z orłem po jednej stronie. Nigdy jeszcze nie trzymał w ręku tylu pieniędzy naraz.
-Hanka, kiedy pokazał jej monety, nawet ich nie dotknęła. – Babka mówi, że srebro z lasu oddaje się z nawiązką – powiedziała i przez kilka tygodni mijała go na drodze bez słowa, z zadartą głową.
+Hanka, kiedy pokazał jej monety, nawet ich nie dotknęła. – Ładnie się świecą. Ciekawe, ile drzew za nie poszło – powiedziała i przez kilka tygodni mijała go na drodze bez słowa, z zadartą głową.
 -> pregi_franka
 
 = w_polu
@@ -68,7 +68,7 @@ Jeszcze przed sianokosami ojciec poprowadził do Bukowca prosiaka, którego matk
 Raz, kiedy Franek myślał, że nikt nie patrzy, Jaromir zobaczył, jak drapie się po przedramieniu. Biegły po nim trzy długie, świeże pręgi, jakby od pazurów.
 – Zahaczyłem o gwóźdź – burknął, kiedy pochwycił jego spojrzenie, i obciągnął rękaw.
 Wieczorem pod płot przyszedł Antek. Długo stał bez słowa i skubał korę ze sztachety.
-– On w nocy nie śpi – odezwał się w końcu. – Siedzi na przyzbie do świtu i nasłuchuje. Pytam czego, to mówi, że piły. A piła w nocy stoi. – Podniósł na Jaromira oczy. – Mnie nie posłucha, dla niego jestem smarkacz. Ciebie może. # dalej
+– On w nocy nie śpi – odezwał się w końcu. – Siedzi na przyzbie. Do świtu. Pytam czego – piły, mówi. A piła w nocy stoi. – Podniósł na Jaromira oczy. – Mnie nie posłucha. Smarkacz jestem. Ciebie może. # dalej
 -> stary_dab
 
 = stary_dab
@@ -100,7 +100,7 @@ Teraz na korze bielał świeży znak. # pokaz: znak
 ~ zapiski += pan_lasu_2
 W poniedziałek pod Starym Dębem zebrała się połowa wsi. { franek_scial_dab: Franek i drugi tracz | Dwaj tracze z tartaku } stanęli z siekierami po obu stronach pnia, a pan Urbaniak stał z boku i co chwila zerkał na zegarek na złotym łańcuszku.
 Zanim tracze się zamachnęli, z tłumu wysunęła się Hanka. Podeszła do pnia, przyłożyła do kory obie dłonie i coś do niego szepnęła – krótko, z zamkniętymi oczami. Urbaniak kazał ją odciągnąć, ale nikt się nie ruszył, dopóki sama nie wróciła między ludzi.
-– Babka mówi, że drzewu trzeba powiedzieć, za czyje grzechy pada – wytłumaczyła potem Jaromirowi, czerwona po uszy. – Żeby nie musiało samo szukać winnego.
+– Powiedziałam mu, że to nie ja – wytłumaczyła potem Jaromirowi, czerwona po uszy. – Niech wie, kogo ma szukać.
 Pierwsze uderzenie odbiło się od kory jak od kamienia. Drugie też. Dopiero za trzecim ostrze weszło w drewno – i z rany trysnął sok, gęsty i ciemnoczerwony jak krew.{ franek_scial_dab: Chlusnął Frankowi prosto w twarz. Chłopak cofnął się, otarł oczy rękawem i zaśmiał się nerwowo, ale Jaromir widział, że ręce mu się trzęsą.| Chlusnął na buty traczy, a jeden z nich odskoczył z przekleństwem.} # pokaz: sok
 Ścinali do zmierzchu. Dąb jęczał przy każdym ciosie, tak że baby zatykały uszy, a psy we wsi wyły jak na pogrzebie. Kiedy wreszcie runął, ziemia zadrżała aż pod chałupami, a od strony boru dobiegł krzyk – przeciągły, żałosny, jakby las stracił coś, czego nigdy nie odzyska. Potem zapadła cisza. Nawet ptaki umilkły. # pokaz: upadek
 Został tylko pień – szeroki jak stół, z setkami słojów, które zwijały się do środka w ciasną spiralę.{ ekwipunek ? kora: Taką samą jak na sośnie przy ścieżce i na słupie kapliczki.} Spomiędzy korzeni wysypała się garść zeszłorocznych żołędzi – zdrowych i lśniących, jakby ktoś je tam przechował. – Co spod Dębu weźmiesz, to Dębowi winien – szepnęła Hanka, która stała tuż obok. – Tak się mówi. Na całe życie.
@@ -117,8 +117,8 @@ Został tylko pień – szeroki jak stół, z setkami słojów, które zwijały 
 # tlo: uboze_piec
 Tej nocy w chałupie nikt nie spał spokojnie.{ ekwipunek ? szczeniak: {imie_psa} warczał pod drzwiami aż do świtu.} Garnki same dzwoniły na półce, a w kominie coś szurało i popiskiwało jak mysz.
 Jaromir zszedł do izby po wodę. Pachniało zakwasem z dzieży, a gliniana polepa ziębiła bose stopy. Przy piecu, w smudze księżycowego światła, siedział maleńki staruszek – nie większy od kota, w połatanej kapocie przewiązanej sznurkiem. Siwa broda sięgała mu do samej ziemi, a jej koniec owijał się wokół cienkich, kurzych nóżek. Miał duży nos, krzaczaste brwi i wąskie oczka, które pewnie zwykle się śmiały, a na głowie czerwoną, spiczastą czapeczkę z opadającym czubkiem. W rączkach ściskał źdźbło słomy wyciągnięte z siennika i trząsł się cały, choć w palenisku jeszcze żarzyły się węgle. # pokaz: uboze
-– Boję się – pisnął cieniutko, zanim chłopiec zdążył krzyknąć. – On idzie. Dąb był drzwiami, a teraz drzwi nie ma.
-Jaromir przypomniał sobie, co { figurka_u_staruchy && los_psa == oswojony: babka | matka } mówiła kiedyś o ubożętach: że mieszkają za piecem w starych chałupach, że kto je karmi, temu darzy się w obejściu, a kto przegoni, ten ściąga na dom biedę. Mówiła też, że ubożę przychodzi razem z pierwszym gospodarzem i zostaje w chałupie, dopóki ta stoi – a kiedy spłonie, odchodzi z dymem i już nie wraca.
+– Boję się – pisnął cieniutko, zanim chłopiec zdążył krzyknąć. – Idzie. Nie słyszysz? Idzie.
+Jaromir przypomniał sobie, co { figurka_u_staruchy && los_psa == oswojony: babka | matka } mówiła kiedyś o ubożętach: że mieszkają za piecem w starych chałupach, że kto je karmi, temu darzy się w obejściu, a kto przegoni, ten ściąga na dom biedę. Ale mówiła też, śmiejąc się, że to bajka na dzieci, żeby nie grzebały w popiele – i Jaromir nigdy nie wiedział, w które z tego wierzyła.
 # pytanie: Co zrobi Jaromir?
 *   [Postawić mu naparstek mleka.]
     ~ uboze = nakarmione

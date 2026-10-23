@@ -52,7 +52,7 @@ Wójcik leżał na desce przy ścianie, w lnianej koszuli śmiertelnej, z rękam
     Jaromir podszedł do deski i ostrożnie, dwoma palcami, uniósł zmarłemu górną wargę.
     Zęby. Dwa rzędy zębów – jeden za drugim, drobnych i ostrych jak u szczupaka. # pokaz: zeby
     Ktoś za nim jęknął. Stary Staś przeżegnał się trzy razy, a kobiety urwały pieśń w połowie słowa.
-    – Dwie dusze – wyszeptał Staś. – Jedna poszła do Boga. A druga… druga jeszcze tu jest. # dalej
+    – Dwie dusze – wyszeptał Staś. – Moja matka, świeć Panie nad nią, go odbierała, jak się rodził. Mówiła, że chłopak zęby miał jak szczupaczek, a ona potem do rana na kolanach przesiedziała, bo jej się zdawało, że… – urwał. – Jedna poszła do Boga. A druga… druga jeszcze tu jest. # dalej
 *   [Nie ruszać zmarłego – nie godzi się.]
     – Zostawcie go – powiedział Jaromir, kiedy Antek sięgnął do twarzy zmarłego. – Nie godzi się.
     Antek cofnął rękę. Kobiety śpiewały dalej, a mężczyźni usiedli pod ścianą i nikt już nie spoglądał na deskę. Ale Jaromir czuł przez cały wieczór, że zmarły patrzy na nich spod niedomkniętych powiek. # pokaz: powieki # dalej

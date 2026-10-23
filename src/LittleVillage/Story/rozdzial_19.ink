@@ -27,7 +27,7 @@ Słońce wyszło zza boru akurat wtedy, kiedy Jaromir stanął na skraju młodni
 { wilk_przy_jaromirze && znak_rozpoznania != po_wilku:
     Biały wilk odprowadził ich do ostatnich świerków i tam usiadł. Kiedy Jaromir obejrzał się po chwili, już go nie było. # pokaz: wilk
 }
-Hanka biegła od chałupy, boso, przez mokrą trawę, z rękami wyciągniętymi przed siebie – jakby bała się, że jeśli je opuści, obudzi się przy zgasłym łuczywie. Nie krzyczała.{ pani_w_zbozu_noc == za_spiewem: Nie mogła. Z gardła wydobywał jej się tylko suchy, urywany świst.} Dopadła ich w pół drogi i objęła oboje, z całej siły, aż Marysia pisnęła z oburzenia. Wtuliła twarz we włosy córki i przez chwilę tylko oddychała, a potem zaczęła się śmiać i płakać naraz, całowała małą po brudnych stopach, po rękach, po głowie. Dopiero wtedy spojrzała na Jaromira, na policzki pocięte gałęziami, i dotknęła ich palcami, ostrożnie, jakby sprawdzała, czy to on. # pokaz: uscisk
+Hanka biegła od chałupy, z kołysanką urwaną w pół słowa, boso, przez mokrą trawę, z rękami wyciągniętymi przed siebie – jakby bała się, że jeśli je opuści, obudzi się przy zgasłym łuczywie. Nie krzyczała.{ pani_w_zbozu_noc == za_spiewem: Nie mogła. Z gardła wydobywał jej się tylko suchy, urywany świst.} Dopadła ich w pół drogi i objęła oboje, z całej siły, aż Marysia pisnęła z oburzenia. Wtuliła twarz we włosy córki i przez chwilę tylko oddychała, a potem zaczęła się śmiać i płakać naraz, całowała małą po brudnych stopach, po rękach, po głowie. Dopiero wtedy spojrzała na Jaromira, na policzki pocięte gałęziami, i dotknęła ich palcami, ostrożnie, jakby sprawdzała, czy to on. # pokaz: uscisk
 Jaromir poczuł, że nogi już go nie niosą. Usiadł w trawie. Siedzieli tak we troje, a ludzie z grabiami stali na pokosach i nikt się nie ruszał.
 Pierwszy podszedł Antek. Nie powiedział nic – zdjął kapotę i okrył nią małą.{ zastaw_u_leszego == zastaw_cien: Dopiero w południe, kiedy wyszli na podwórze, Hanka spojrzała pod nogi męża i nie mogła oderwać wzroku od miejsca, gdzie powinien leżeć jego cień. Nie zapytała. Jaromir był jej za to wdzięczny bardziej niż za cokolwiek innego.} # pokaz: antek # dalej
 { dlug_u_jagny:
@@ -76,66 +76,26 @@ Marysia niczego nie pamiętała.{ rada_przed_borem == rada_ksiedza: Ksiądz z Bu
     Antek wieczorami stawał na skraju pola i nasłuchiwał. Od tamtego ranka znad boru nie dochodziło już żadne wycie.
 }
 Ale woda nie dawała im spokoju. Marysia nie chciała chodzić nad jezioro, a kiedy Hanka prała w strudze, mała chowała się za jej spódnicę, sztywniała cała i nie odrywała oczu od nurtu.{ dar_pominiety: W lipcu Hanka znalazła na progu mokry wianek z ruty – taki sam, jaki Jaromir co roku zanosił na kamienie po drugiej stronie jeziora. Leżał w kałuży, choć nie padało od tygodnia.} # dalej
--> calun
+-> kijanki
 
-= calun
+= kijanki
 # tlo: calun_noc
-Pod koniec sierpnia, w noc, kiedy mijały trzy lata, odkąd Marysia przyszła na świat, Jaromira obudziło plaskanie. Miarowe, mokre, znad jeziora – jakby ktoś po ciemku tłukł kijanką bieliznę o kamień. Pamiętał ten dźwięk z czasów, gdy Marysia leżała jeszcze w kołysce.
+Pod koniec sierpnia, w noc, kiedy mijały trzy lata, odkąd Marysia przyszła na świat, Jaromira obudziło plaskanie. Miarowe, mokre, znad jeziora – kijanka o kamień. Pamiętał ten dźwięk z czasów, gdy Marysia leżała jeszcze w kołysce.
 Spojrzał na ławę przy piecu. Mała spała, zwinięta w kłębek, z piąstką pod policzkiem. Hanka oddychała równo.
-Wyszedł cicho, boso. Ścierń kłuła go w stopy, od jeziora ciągnęło mułem i tatarakiem. Przyczaił się w trzcinach. Na płaskich kamieniach przy pomoście klęczały mamuny – garbate, mokre, w łachmanach z mchu – i prały w wodzie coś małego, jasnego. Kiedy uniosły płótno wyżej, zobaczył, że to całun. Akurat na dziecko. # pokaz: mamuny
-– Marysia – powiedziała najstarsza nad całunem, czule, i plasnęła kijanką o kamień. – Marysia.
-Przypomniał sobie babkę Hanki: kto podsłucha, ten będzie wiedział, kogo pochowają.
-Musiał się poruszyć, bo trzcina zaszeleściła. Najstarsza podniosła głowę.
-{
-- dar_pominiety:
-    – Raz zapomniałeś – zaskrzeczała. – Nie będziemy prać wolniej.
-- uklad_z_mamunami:
-    – Nie patrz tak, gospodarzu – zaskrzeczała. – Dotrzymałyśmy. To nie od nas. Pierzemy, co nam przynosi woda, a teraz woda niesie dzieci z waszej wsi.
+Wyszedł cicho, boso, i przyczaił się w trzcinach. Na płaskich kamieniach przy pomoście klęczały mamuny – garbate, mokre, w łachmanach z mchu – i prały w wodzie coś małego, jasnego. Akurat na dziecko. Imienia nie wołały. Kiedy trzcina zaszeleściła, najstarsza nawet nie podniosła głowy. # pokaz: mamuny
+{ dar_pominiety:
+    – Raz zapomniałeś, gospodarzu – zaskrzeczała w wodę. – Nie będziemy prać wolniej.
 - else:
-    – Nie my wybieramy – zaskrzeczała. – Pierzemy, co nam przynosi woda, a teraz woda niesie dzieci z waszej wsi.
+    – Nie dziś, gospodarzu – zaskrzeczała w wodę. – Pierzemy, co nam przynosi woda.
 }
-Rozłożyła całun na kamieniu i wygładziła go dłonią. – Do świtu wyschnie – powiedziała. – Wtedy imienia już nikt nie zmyje, nawet my. Póki mokry, jeszcze można. – Uśmiechnęła się czarnymi dziąsłami. – Tylko że za darmo nic z płótna nie schodzi. # pokaz: calun
-# pytanie: Co zrobi Jaromir?
-*   [Wyrwać im całun samemu.]
-    ~ cena_caluna = cena_zdrowie
-    Wszedł w wodę po kolana i zerwał całun z kamienia. Mamuny rzuciły się na niego – zimne, mokre dłonie oplotły mu ręce i łydki, kijanki spadały na plecy jak cepy na klepisku. Nie puścił. Kiedy wygramolił się na brzeg, płótno ociekało mu w garściach, a z wody chichotało za nim aż do świtu. # pokaz: wyrwany
-    Imię się zmyło. Ale chłód jeziora został w nim: przez całą jesień kaszlał tak, że budził dom, a od kolan w dół nogi miał zimne jak kamienie z dna i nic ich nie rozgrzewało – ani piec, ani kożuch. Do kosy już nie stanął. # dalej
-*   [Pobiec po Antka.]
-    ~ cena_caluna = cena_antek
-    Antek, który od nocy świętojańskiej sypiał czujnie jak pies, wyskoczył z chałupy za Jaromirem, zanim ten skończył mówić. Nad jeziorem nie zapytał o nic. Wszedł między mamuny, jakby wchodził do kuźni, i wyrwał całun z kamienia – całun dziewczynki, którą trzymał do chrztu. # pokaz: antek
-    Najstarsza zamachnęła się kijanką. W ciszy trzasnęło jak łamana gałąź. Antek nie krzyknął. Wyszedł na brzeg z całunem w lewej ręce, a prawa zwisała mu wykręcona w łokciu tak, jak żadna ręka się nie wykręca. Kowal obejrzał ją rano i tylko pokręcił głową. Do kuźni Antek już nie wrócił. # dalej
-*   { wilk_przy_jaromirze && znak_rozpoznania != po_wilku } [Zawołać białego wilka.]
-    ~ cena_caluna = cena_franek
-    ~ zapiski += tropy_6
-    – Franek! – zawołał Jaromir w stronę boru, nie wiedząc nawet, czy wilk go usłyszy. Imię, najcięższe ze słów, poszło między świerki.
-    Wilk usłyszał. Biały cień przemknął przez ściernisko, wpadł między mamuny i rozdarł całun zębami na strzępy. Zawyły przeraźliwie i rzuciły się na niego wszystkie naraz. Woda przy kamieniach zawrzała jak w kotle na pranie – a potem się wygładziła. # pokaz: wilk
-    Rano, kiedy wiatr przegnał mgłę, przy brzegu leżało w trzcinach białe, ciężkie od wody cielsko. Antek zszedł do niego pierwszy, ukląkł i położył dłoń na obręczy wytartej sierści na przedniej łapie. – To on – powiedział tylko. – Mówiłem ci.{ wilk_pod_debem == opowiedzial_o_antku: Jaromir przypomniał sobie słowa spod dębu: z twoją pamięcią w głowie nie pożyje długo.} # dalej
-*   { uklad_z_mamunami == dar_swietojanski && not dar_pominiety } [Przypomnieć im umowę i przedłużyć ją na córkę.]
-    ~ cena_caluna = cena_umowa
-    – Obiecałem wam dar, póki żyję – powiedział Jaromir, wychodząc z trzcin. – Niech będzie: póki żyje ona. Kiedy mnie zabraknie, będzie go nosiła sama.
-    Najstarsza przyglądała mu się bez ruchu. Potem odłożyła kijankę. – Zgoda – zaskrzeczała. – Ale ona też będzie musiała pamiętać. Każdego roku. Do końca.
-    O świcie mamun już nie było. Całun leżał na kamieniu, wciąż mokry, a kiedy Jaromir po niego sięgnął, płótno rozpłynęło się w wodzie jak piana. # pokaz: piana
-    { przysiega_ksiedzu:
-        Wracając, czuł na piersi ciężar przysięgi złożonej w Bukowcu – że skończy z darami dla tego, co siedzi w wodzie. Złamał ją, zanim minął rok. # dalej
-    - else:
-        Wracał przez ściernisko powoli, z mokrymi stopami, i nie oglądał się za siebie. # dalej
-    }
--   -> jesien_przed_zaduszkami
+– W Zaduszki przyniesiemy, co uprane – dodała druga. # dalej
+-> jesien_przed_zaduszkami
 
 = jesien_przed_zaduszkami
 # tlo: jesien_zaduszki
-~ zapiski += (pan_lasu_11, mamuny_4)
-Jesień przyszła wcześnie. Młócka w stodołach, siew żyta pod zimę, międlenie lnu – wieś robiła swoje jak co roku, a Jaromir chwytał się każdej roboty{ cena_caluna == cena_zdrowie:, na jaką starczało mu tchu}, byle nie zostać sam z myślami. Marysia rosła. W październiku pierwszy raz od powrotu zaśmiała się na głos przy stole i Hanka wyszła do sieni, i długo nie wracała.
-{ cena_caluna:
-- cena_zdrowie:
-    Jaromir siedział przy małej wieczorami, z nogami owiniętymi w kożuch, i kaszlał w rękaw, żeby jej nie budzić.
-- cena_antek:
-    Antek przychodził w niedziele i bawił się z Marysią lewą ręką. Prawą trzymał w kieszeni.
-- cena_franek:
-    Antek pochował wilka pod młodnikiem i postawił na kopczyku kamień z jeziora. Nikt we wsi o nic nie pytał.
-- cena_umowa:
-    Przy wieczerzy Jaromir patrzył na Marysię, jak macza chleb w mleku, i myślał o tym, że kiedyś to ona będzie nosiła bochen na płaskie kamienie. Sama, w noc świętojańską, do końca życia.
-}
+~ zapiski += pan_lasu_11
+Jesień przyszła wcześnie. Młócka w stodołach, siew żyta pod zimę, międlenie lnu – wieś robiła swoje jak co roku, a Jaromir chwytał się każdej roboty, byle nie zostać sam z myślami. Marysia rosła. W październiku pierwszy raz od powrotu zaśmiała się na głos przy stole i Hanka wyszła do sieni, i długo nie wracała.
+Jaromir nie mówił Hance o kamieniach przy pomoście. Ale co wieczór, zanim zasnął, myślał o tym, ile jeszcze zostało do Zaduszek, i za każdym razem wydawało mu się, że mniej niż poprzedniej nocy.
 Ale im bliżej było Zaduszek, tym ciszej robiło się w Zapadlinie. Ludzie wracali z pól przed zmrokiem, ryglowali drzwi, a od boru co wieczór podchodziła łąkami mgła, ciężka i mokra, pod same płoty. Jaromir pamiętał każde słowo: „W Zaduszki przyjdę do wsi. Policzymy się wtedy do końca”. # pokaz: mgla
 Pierwszego listopada wieś szła na cmentarz do Bukowca. Tego roku zamiast kaganków ludzie nieśli z domów gromnice. W drodze powrotnej zgasły jednym tchem, wszystkie, choć powietrze stało. # pokaz: zgasly # dalej
 -> rozdzial_dziewietnasty_ciag_dalszy
@@ -145,7 +105,7 @@ Pierwszego listopada wieś szła na cmentarz do Bukowca. Tego roku zamiast kagan
 # rozdzial: Rozdział dziewiętnasty
 # tytul: Świt
 Słońce wyszło zza boru akurat wtedy, kiedy Jaromir stanął na skraju młodnika. Na pokosach zaszkliła się rosa, a w zbożu odezwał się skowronek. Jaromir nie słyszał go wcale.
-Hanka biegła od chałupy, boso, przez mokrą trawę, z rękami wyciągniętymi przed siebie. W pół drogi zwolniła. Potem stanęła.
+Hanka biegła od chałupy, wciąż z kołysanką na ustach, boso, przez mokrą trawę, z rękami wyciągniętymi przed siebie. W pół drogi zwolniła. Potem stanęła.
 Nie krzyczała.{ pani_w_zbozu_noc == za_spiewem: Nie mogła.} Wzięła dziecko z rąk Jaromira, ostrożnie, jak się bierze śpiące, i wtuliła twarz we włoski, tak jak robiła co wieczór. Wąchała długo. Włosy nie pachniały niczym – ani mlekiem, ani dymem, ani nią. Zrozumiała. # pokaz: kolysze
 Usiadła z dzieckiem w trawie i zaczęła je kołysać. Ludzie z grabiami stali na pokosach i nikt się nie ruszał. Pierwszy podszedł Antek. Zdjął czapkę. # pokaz: antek
 { wilk_przy_jaromirze && znak_rozpoznania != po_wilku:
@@ -160,7 +120,7 @@ Usiadła z dzieckiem w trawie i zaczęła je kołysać. Ludzie z grabiami stali 
 { dlug_u_jagny:
     Jagna podeszła od strony płotu i pochyliła się nad dzieckiem w ramionach Hanki. Przyglądała się sztywnym stópkom i grzecznemu, zastygłemu uśmiechowi. Potem wyprostowała się i powiedziała do Jaromira cicho, tak żeby Hanka nie słyszała: – To nie jest twoje dziecko. To jest drewno. Pierwsza rzecz z boru. Mogę ją wziąć. Wiem, co się z takim robi. # pokaz: jagna
 - else:
-    Stary Staś przykuśtykał z kijem, popatrzył na dziecko i przeżegnał się. – Dzieci z boru nie chowa się w poświęconej ziemi – mruknął. – Tak mówiono za mojego dziadka. Albo ogień, albo pod lasem. # pokaz: stas
+    Stary Staś przykuśtykał z kijem, popatrzył na dziecko i przeżegnał się. – Dzieci z boru nie chowa się w poświęconej ziemi – mruknął. – Za mojego dziadka, jak jeszcze kościoła w Bukowcu nie było i na każdy pogrzeb do miasta się szło, to i tak wszyscy wiedzieli… Albo ogień, albo pod lasem. # pokaz: stas
 }
 Jaromir pamiętał głos spod dębu: „Pochowasz je jak swoje”.
 # pytanie: Co Jaromir zrobi z ciałem?

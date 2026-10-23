@@ -42,7 +42,7 @@ Jaromirowi przypomniały się piątkowe opowieści pana Ignacego i zrobiło mu s
 *   [Zapytać Hankę – zna babcine sposoby na wszystko.]
     ~ rada_jaromira = hanka
     Hanka wysłuchała go, marszcząc brwi, i długo milczała. # pokaz: hanka
-    – Babka mówiła, że to północnica – odezwała się w końcu. – Dusza matki, która umarła przy porodzie, zanim ksiądz zdążył ją wywieść. Swojego dziecka nie utuliła, więc chodzi do cudzych, do maleńkich, bo te nie umieją się bronić. Boi się żelaza. Pod poduszkę w kołysce wsuwa się nóż, nożyce, choćby gwóźdź. – Zawahała się. – Tylko podobno robi się to dopiero wtedy, kiedy ona już pochyla się nad dzieckiem. Wcześniej nie podejdzie. # dalej
+    – Babka mówiła, że to północnica – odezwała się w końcu. – Taka umarła mama, co swojego dzidziusia nie zdążyła utulić, to chodzi do cudzych. Boi się żelaza. Trzeba wsunąć pod poduszkę nóż albo choć gwóźdź. – Zawahała się. – Tylko babka mówi, że dopiero jak ona się już nachyla, bo inaczej nie podejdzie. A mama mówi, że babka wszystko plącze. # dalej
     -> wigilia
 *   { ekwipunek ? ksiega } [Zajrzeć do księgi pana Ignacego.]
     ~ rada_jaromira = ksiega_rada

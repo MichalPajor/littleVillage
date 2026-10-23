@@ -81,7 +81,7 @@ Stary Staś, choć zgięty już wpół i ledwie widzący na oczy, uparł się, �
 # tlo: antek_wiesc
 Ksiądz w Bukowcu ogłosił zapowiedzi trzy niedziele z rzędu. Wesele wyznaczono na pierwszą sobotę po Wszystkich Świętych, kiedy zboże było już w stodołach, a do Adwentu zostawało jeszcze trochę czasu.
 Na tydzień przed ślubem do chałupy przyszedł Antek, blady jak płótno. # pokaz: antek
-– Franka nie ma – powiedział od progu. – Trzeci dzień. Nosiłem mu chleb jak co wieczór – wiem, że kazał przestać, ale nosiłem. Wczorajszy leży nieruszony. Przedwczorajszy też. Palenisko zimne, a na stole nóż i czapka. On bez noża nawet po wodę nie wychodził. – Antek przełknął ślinę. – Matka siedzi na progu i nie płacze. Dziadek łazi z bosakiem po trzcinach, bo myśli, że go woda wzięła. A ja wiem, że nie woda. – Podniósł na Jaromira oczy. – Pójdziesz ze mną pod bór?
+– Franka nie ma – powiedział od progu. – Trzeci dzień. Chleb nieruszony. Wczorajszy, przedwczorajszy. Palenisko zimne. Nóż na stole, czapka. – Przełknął ślinę. – On bez noża po wodę nie chodził. Matka siedzi na progu, nie płacze. Dziadek łazi z bosakiem po trzcinach. To nie woda. – Podniósł na Jaromira oczy. – Pójdziesz pod bór?
 # pytanie: Co zrobi Jaromir?
 *   [Pójść z Antkiem pod bór.]
     ~ szukanie_franka = na_skraju_boru
@@ -202,7 +202,7 @@ Obudził się o świcie, w nowej izbie, którą przez lato dobudował do ojcowsk
 Wyszedł przed dom. W nocy ścisnął mróz i całe podwórze było białe od szronu.
 Tylko pod oknem nowej izby ziemia była goła i ciemna. Biel stopniała tam w szeroki owal, jakby coś dużego i ciepłego przeleżało pod ścianą całą noc, zwinięte w kłębek. Kiedy Jaromir przyłożył do ziemi dłoń, była jeszcze letnia. # pokaz: tropy
 Hanka wyszła za nim, z chustą narzuconą na ramiona. Długo stała nad tym miejscem i nic nie mówiła. Potem przyniosła z izby garść popiołu z paleniska i zasypała odtajałe miejsce, aż zatarł się jego kształt.
-– Nikomu ani słowa – powiedziała. – Bo zaraz pół wsi przyleci się gapić. # dalej
+– Nikomu ani słowa – powiedziała. – Bo zaraz pół wsi przyleci się gapić, a druga połowa powie, że to ty spałeś pod oknem, bo cię z izby wygoniłam. # dalej
 -> rozdzial_dziewiaty_ciag_dalszy
 
 

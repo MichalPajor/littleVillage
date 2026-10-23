@@ -30,7 +30,7 @@ Miała też nowy zwyczaj. Po śniadaniu brała z miski garść okruszków, szła
 # tlo: sobotka
 Dwudziestego trzeciego czerwca od rana pachniało w całej wsi ziołami i dymem. Kobiety wtykały za okna i nad drzwi pęki dziurawca i bylicy, żeby w najkrótszą noc roku nic złego nie przeszło przez próg. Chłopcy znosili chrust na pagórek za wsią, tuż przy polach, bo tam co roku palono sobótkę: kiedy ogień buchnął, porywali z niego płonące głownie i obiegali z nimi miedze, okadzając zboże, żeby nie zżarła go śnieć i żeby żadna zła moc nie zagnieździła się w kłosach.
 Hanka wplotła Marysi we włosy czerwoną wstążkę i założyła jej drewniaki – pierwszy raz nie od święta.{ skarb_dla_corki: Na szyi, na rzemyku, {skarb_jaromira == muszelka:kołysał się biały kawałek muszelki|{skarb_jaromira == pioro:kołysało się sójcze piórko|kołysał się stary gwóźdź}} z bazy w bzie.} Mała chodziła po izbie jak bocian, wysoko podnosząc kolana, i stukała tak, że słychać ją było aż na podwórzu.
-– Dziś wszystko jest święto – powiedziała Hanka, kiedy Jaromir uniósł brwi. – Niech ma.
+– Dziś wszystko jest święto – powiedziała Hanka, kiedy Jaromir uniósł brwi. – Nawet ty się raz uśmiechniesz. Niech ma.
 O zmierzchu na pagórku zapłonął ogień, a po chwili wzdłuż miedz zaczęły biegać czerwone punkty głowni, jakby ktoś obrysowywał pola żarem. # pokaz: ogien
 { uklad_z_mamunami == dar_swietojanski:
     Jaromir siedział na progu z {sposob_na_odmienca == chrzest_odmienca:dwoma bochnami|bochnem} chleba i wiankiem z ruty na kolanach. Co roku tej nocy szedł na drugi brzeg jeziora, do płaskich kamieni, i co roku wracał, nie oglądając się za siebie, z zimnem między łopatkami, które nie schodziło do rana.

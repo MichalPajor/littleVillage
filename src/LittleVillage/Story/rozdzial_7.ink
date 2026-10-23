@@ -66,7 +66,7 @@ Na Zielone Świątki cała Zapadlina pachniała tatarakiem – kobiety znosiły 
 Przez zimę Jaromir urósł tak, że matka musiała uszyć mu nowe koszule i portki – dotychczasowe zrobiły się za małe i krępowały ruchy. Głos łamał mu się w najmniej odpowiednich chwilach – zwłaszcza gdy w pobliżu była Hanka.
 Ona też się zmieniła. Warkocz miała teraz dłuższy niż kiedykolwiek, a kiedy szła przez wieś, chłopcy z Bukowca oglądali się za nią, aż czasem potykali się o własne nogi.
 Przed wieczorem przyszła pod płot z pękiem świeżo zerwanych ziół. # pokaz: hanka
-– Babka kazała – powiedziała i wcisnęła mu w dłoń wiązkę szarozielonych łodyg o gorzkim, ostrym zapachu. – Piołun. Podobno w Zielone Świątki trzeba go mieć przy sobie. Mówi, że stwory wychodzą wtedy z wody i tańczą, wabiąc ludzi do siebie… a piołunu boją się bardziej niż ognia.
+– Babka kazała – powiedziała i wcisnęła mu w dłoń wiązkę szarozielonych łodyg o gorzkim, ostrym zapachu. – Piołun. W Zielone Świątki stwory wychodzą z wody i tańczą, a piołunu boją się bardziej niż ognia. Tak mówi babka. Babka mówi też, że od gwizdania przy stole bieda przychodzi, więc sam wybieraj, w co wierzysz.
 Zarumieniła się, jakby powiedziała coś głupiego, i spuściła wzrok.
 # pytanie: Co zrobi Jaromir?
 *   [Wziąć piołun i schować za pazuchę.]
@@ -140,7 +140,7 @@ Wreszcie puścił go, usiadł w mule obok i rozpłakał się na dobre, nie udaj�
 }
 Franek pobladł i odwrócił się do nich plecami.
 – Wiedziałem – powiedział głucho. – Od roku mi się śniła. Mokra, w tych koralach. Prosiła, żebym przyszedł zatańczyć.
-Do rana o wszystkim słyszała już cała wieś. Starzy kiwali głowami i powtarzali jedno słowo: rusałki. Dusze utopionych dziewcząt, które w Zielone Świątki wychodzą z wody, tańczą w księżycowym świetle i wciągają w toń tego, kto da się skusić. Na brzeg wychodzą tylko od Zielonych Świątek do świętego Jana, a przez resztę roku śpią w mule na dnie – dlatego w tych tygodniach nikt rozsądny nie kąpie się po zmroku ani nie gwiżdże nad wodą.
+Do rana o wszystkim słyszała już cała wieś. Starzy kiwali głowami i powtarzali jedno słowo: rusałki. Jedni mówili, że wychodzą z wody do świętego Jana, inni, że do żniw, a stara Stasiowa upierała się, że przez cały rok, tylko latem je widać. Zgadzali się w jednym: po zmroku nikt rozsądny nie gwiżdże nad wodą.
 { ratunek_franka:
 - piolunem:
     Rano dziewczęta szukały na brzegu swoich wianków. Woda oddała wszystkie – oprócz wianka Hanki. Do świętego Jana Hanka nie zbliżyła się do jeziora ani na krok, a nocami budziła się z krzykiem, bo śniło jej się, że ktoś mokrymi rękami zaplata jej warkocz.

@@ -110,7 +110,7 @@ Powietrze zafalowało mocniej. Żar podchodził Jaromirowi pod gardło, w uszach
 { pomylki_poludnica:
 - 0:
     Południca opuściła sierp.
-    – Jesteś wolny – powiedziała. – Ale słuchaj, bo nie powtórzę. Pan Lasu się budzi. Dąb, który go trzymał, leży na placu u tego tłustego człowieka z miasta, a z każdym ściętym drzewem śpi płycej. Kiedy się obudzi, przyjdzie po swoje. Pilnuj kapliczek, chłopcze. Pilnuj ich, póki stoją.
+    – Jesteś wolny – powiedziała. – Ale słuchaj, bo nie powtórzę. Pan Lasu się budzi. Z każdym ściętym drzewem śpi płycej. Pilnuj kapliczek, chłopcze. Pilnuj ich, póki stoją.
 - 1:
     Południca przyglądała mu się długo, a potem opuściła sierp.
     – Mogło być gorzej – powiedziała. – Idź. Ale zapamiętaj: Pan Lasu się budzi. Pilnuj kapliczek.

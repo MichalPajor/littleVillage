@@ -302,7 +302,7 @@ VAR marysia_odzyskana = false
 // Czym Jaromir spłacił dług u Jagny po powrocie z Marysią: wstążką, drewniakiem albo odmówił (dług czeka).
 LIST DlugJagny = oddana_wstazka, oddany_drewniak, dlug_odmowiony
 VAR dlug_jagny = ()
-// Kto zapłacił za zmyty z całunu imię Marysi: zdrowie Jaromira, ręka Antka, biały wilk (zginął) albo umowa z mamunami przedłużona na córkę.
+// Kto zapłacił w noc Zaduszek (rozdz. 20, nad jeziorem) za zmyte z całunu imię Marysi: zdrowie Jaromira, ręka Antka, biały wilk (zginął) albo umowa z mamunami przedłużona na córkę.
 LIST CenaCaluna = cena_zdrowie, cena_antek, cena_franek, cena_umowa
 VAR cena_caluna = ()
 // Co Jaromir zrobił z dzieckiem spod dębu po złym wyborze: pochował na cmentarzu, oddał Jagnie, spalił albo zakopał pod młodnikiem.
