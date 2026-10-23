@@ -44,7 +44,7 @@ Jaromir usiadł na progu. Siekierę {zastaw_u_leszego == zastaw_siekiera:teścia
 # tlo: swita
 Przyszli przed północą.
 Najpierw zrobiło się cicho – tak cicho, że Jaromir słyszał, jak w izbie trzaska żar w piecu. Potem mgła się rozstąpiła i drogą od boru weszła do wsi świta.
-Szli powoli, bez najmniejszego dźwięku. Od pierwszych szeregów ciągnęło mułem i wilgocią, od ostatnich – słodkim próchnem. Jednooka żebraczka z workiem na plecach. Północnica, wysoka, płaska jak cień na ścianie{ polnocnica == policzyla_mak:, z makiem w zaciśniętej garści}. Rusałki w mokrych koszulach, wywołane z mułu nie w swoją porę – z włosów kapała im woda, a pośród nich szła Kaśka Wójcikówna{ ratunek_franka == krzyzem: i Bartek, syn młynarza, z wodorostem na szyi}. Mamuny z kijankami. Żytnia baba, przygarbiona, z kłosami we włosach{ not wilk_przy_jaromirze: i z czerwonym drewniakiem w ręku}. Błędnice, które kołysały się nad głowami jak latarnie.{ los_figurki == figurka_u_stwora: Stwór z mokradeł, zgarbiony, z figurką przyciśniętą do piersi jak matka dziecko.}{ poludnica_uklon: Południca w białej koszuli; przechodząc, skłoniła się Jaromirowi – tak samo jak wtedy, na ściernisku.} Dzieci spod dębu, trzymające się za ręce. Żadne nie rzucało cienia. # pokaz: swita, dzieci # dalej
+Szli powoli, bez najmniejszego dźwięku. Od pierwszych szeregów ciągnęło mułem i wilgocią, od ostatnich – słodkim próchnem. Jednooka żebraczka w łachmanach, z kosturem. Północnica, wysoka, płaska jak cień na ścianie{ polnocnica == policzyla_mak:, z makiem w zaciśniętej garści}. Rusałki w mokrych koszulach, wywołane z mułu nie w swoją porę – z włosów kapała im woda, a pośród nich szła Kaśka Wójcikówna{ ratunek_franka == krzyzem: i Bartek, syn młynarza, z wodorostem na szyi}. Mamuny z kijankami. Żytnia baba, przygarbiona, z kłosami we włosach{ not wilk_przy_jaromirze: i z czerwonym drewniakiem w ręku}. Błędnice, które kołysały się nad głowami jak latarnie.{ los_figurki == figurka_u_stwora: Stwór z mokradeł, zgarbiony, z figurką przyciśniętą do piersi jak matka dziecko.}{ poludnica_uklon: Południca w białej koszuli; przechodząc, skłoniła się Jaromirowi – tak samo jak wtedy, na ściernisku.} Dzieci spod dębu, trzymające się za ręce. Żadne nie rzucało cienia. # pokaz: swita, dzieci # dalej
 { not marysia_odzyskana:
     Wśród nich była jedna, która nie trzymała nikogo za rękę. Bosa, w białej koszulce, bez wstążki we włosach. Szła wolniej niż inne i oglądała się na chałupy, jakby szukała drogi do domu. Hanka zobaczyła ją przez okno. Nie krzyknęła. Przytuliła tylko gromnicę, tak mocno, że wosk popłynął jej po palcach, a płomień nie drgnął. # pokaz: marysia
 }
@@ -240,7 +240,7 @@ Pół wieku później, w Zaduszki, stary Jaromir siedział na ławce pod krzyże
 { marysia_odzyskana:
     Wokół Jaromira siedziały dzieci Marysi – troje, piegowate, z dołkami w policzkach – i dzieci jej dzieci.{ cena_caluna == cena_umowa: Marysia, już siwiejąca, co roku w noc świętojańską niosła bochen na płaskie kamienie. Nikomu nie mówiła, po co.}
 - else:
-    Wokół Jaromira siedziały wnuki Antka; on sam swoich nie doczekał.
+    Wokół Jaromira siedziały wnuki Antka – własnych Jaromir nie doczekał.
 }
 Hanka siedziała obok, z najmłodszym na kolanach, i obierała mu jabłko.
 – Dziadku, a opowiedz o Panu Lasu – poprosiło najmłodsze.

@@ -16,16 +16,16 @@
 # tytul: Czuwanie przy zmarłym
 { uklad_z_mamunami == dar_swietojanski:
     { ekwipunek ? szczenie_psa:
-        Ledwie zeszły śniegi, wieś rzuciła się do roboty, jakby chciała nadrobić tamtą długą zimę. Po mrozach połowa sadów nie zakwitła, ale żyto wzeszło gęste i równe. Jaromir orał od świtu do zmierzchu, a rude szczenię plątało mu się pod nogami w bruzdach i ujadało na wrony, które obsiadały świeże skiby. # pokaz: szczenie
+        Tej wiosny wieś rzuciła się do roboty, żeby nadrobić tamtą długą zimę. Po mrozach połowa sadów nie zakwitła, ale żyto wzeszło gęste i równe. Jaromir orał od świtu do zmierzchu, a rude szczenię plątało mu się pod nogami w bruzdach i ujadało na wrony, które obsiadały świeże skiby. # pokaz: szczenie
     - else:
-        Ledwie zeszły śniegi, wieś rzuciła się do roboty, jakby chciała nadrobić tamtą długą zimę. Po mrozach połowa sadów nie zakwitła, ale żyto wzeszło gęste i równe. Jaromir orał od świtu do zmierzchu.
+        Tej wiosny wieś rzuciła się do roboty, żeby nadrobić tamtą długą zimę. Po mrozach połowa sadów nie zakwitła, ale żyto wzeszło gęste i równe. Jaromir orał od świtu do zmierzchu.
     }
     W noc świętojańską, kiedy młodzież paliła ogniska nad jeziorem, Jaromir poszedł sam na drugi brzeg, do płaskich kamieni. Położył na największym {sposob_na_odmienca == chrzest_odmienca:dwa bochny chleba|bochen chleba} i wianek z ruty, tak jak obiecał. Nie oglądał się za siebie. Ale kiedy był już przy trzcinach, usłyszał za plecami cichy plusk, a potem coś jakby westchnienie. # pokaz: noc # dalej
 - else:
     { ekwipunek ? szczenie_psa:
-        Ledwie zeszły śniegi, wieś rzuciła się do roboty, jakby chciała nadrobić tamtą długą zimę. Po mrozach połowa sadów nie zakwitła, ale żyto wzeszło gęste i równe. Jaromir orał od świtu do zmierzchu, a rude szczenię plątało mu się pod nogami w bruzdach i ujadało na wrony, które obsiadały świeże skiby. # pokaz: szczenie # dalej
+        Tej wiosny wieś rzuciła się do roboty, żeby nadrobić tamtą długą zimę. Po mrozach połowa sadów nie zakwitła, ale żyto wzeszło gęste i równe. Jaromir orał od świtu do zmierzchu, a rude szczenię plątało mu się pod nogami w bruzdach i ujadało na wrony, które obsiadały świeże skiby. # pokaz: szczenie # dalej
     - else:
-        Ledwie zeszły śniegi, wieś rzuciła się do roboty, jakby chciała nadrobić tamtą długą zimę. Po mrozach połowa sadów nie zakwitła, ale żyto wzeszło gęste i równe. Jaromir orał od świtu do zmierzchu. # dalej
+        Tej wiosny wieś rzuciła się do roboty, żeby nadrobić tamtą długą zimę. Po mrozach połowa sadów nie zakwitła, ale żyto wzeszło gęste i równe. Jaromir orał od świtu do zmierzchu. # dalej
     }
 }
 -> lato_w_zapadlinie
@@ -44,12 +44,12 @@ Stary Wójcik umarł w listopadzie, w noc po pierwszym śniegu.
 Rano, kiedy Jaromir wyszedł do obory, Wójcikowa już czekała przy płocie – w czarnej chustce, z oczami spuchniętymi od płaczu, z różańcem zaciśniętym w garści.
 – Jaromirku – powiedziała – posiedź przy nim tej nocy. Nikt nie chce przyjść. Gadają po wsi… – urwała.
 Gadali, i to dużo. Że Wójcik urodził się z zębami, jak opowiadała jeszcze matka Stasia, która pomagała przy tamtym porodzie sześćdziesiąt lat temu. Że nigdy nie chorował, nawet w głodne zimy. Że zaraza omijała jego oborę, kiedy u sąsiadów krowy padały jedna po drugiej. I że ciało, choć leżało już od świtu, wcale nie stygło.
-Wieczorem w chałupie Wójcików zebrało się kilku mężczyzn – Jaromir, Antek, stary Staś, który uparł się przyjść, choć ledwie trzymał się na nogach – i parę kobiet do śpiewania. Lustro zasłonięto płótnem, wodę z cebrów wylano za próg, a okno uchylono na szerokość dłoni, żeby dusza mogła wyjść. W izbie pachniało woskiem, wilgotną wełną i czymś słodkawym, od czego ściskało się w gardle.
+Wieczorem w chałupie Wójcików zebrało się kilku mężczyzn – Jaromir, Antek, stary Staś, który uparł się przyjść, choć ledwie trzymał się na nogach – i parę kobiet do śpiewania. Lustro zasłonięto płótnem, wodę z cebrów wylano za próg, a okno uchylono na szerokość dłoni, żeby dusza mogła wyjść. W izbie pachniało woskiem, wilgotną wełną i czymś słodkawym, od czego robiło się mdło.
 Wójcik leżał na desce przy ścianie, w lnianej koszuli śmiertelnej, z rękami złożonymi na piersi. Policzki miał zaróżowione jak u żywego człowieka. Powieki nie chciały się domknąć i spod rzęs połyskiwały białka. A wargi… wargi rozchylały się lekko, jakby coś je rozpierało od środka. # pokaz: wargi
 # pytanie: Co zrobi Jaromir?
 *   [Podnieść zmarłemu wargę i sprawdzić, co pod nią jest.]
     ~ sprawdzil_zeby = true
-    Jaromir podszedł do deski, zanim ktokolwiek zdążył go zatrzymać, i ostrożnie, dwoma palcami, uniósł zmarłemu górną wargę.
+    Jaromir podszedł do deski i ostrożnie, dwoma palcami, uniósł zmarłemu górną wargę.
     Zęby. Dwa rzędy zębów – jeden za drugim, drobnych i ostrych jak u szczupaka. # pokaz: zeby
     Ktoś za nim jęknął. Stary Staś przeżegnał się trzy razy, a kobiety urwały pieśń w połowie słowa.
     – Dwie dusze – wyszeptał Staś. – Jedna poszła do Boga. A druga… druga jeszcze tu jest. # dalej
@@ -60,11 +60,11 @@ Wójcik leżał na desce przy ścianie, w lnianej koszuli śmiertelnej, z rękam
 
 = o_polnocy
 # tlo: polnoc_strzyga
-Około północy świece zaczęły dymić. Płomienie kładły się na bok, choć powietrze stało nieruchomo, i paliły się niebieskawo jak ogniki nad bagnem. Kobiety śpiewały coraz ciszej, aż w końcu umilkły.
+Około północy świece zaczęły dymić. Płomienie zmalały i paliły się niebieskawo jak ogniki nad bagnem. Kobiety śpiewały coraz ciszej, aż w końcu umilkły.
 Wtedy palce zmarłego drgnęły. # pokaz: palce
-Najpierw jeden, potem drugi. Paznokcie zaskrobały cicho o deskę. Powieki uniosły się powoli, odsłaniając oczy całe białe, bez źrenic. Usta rozwarły się szerzej i z gardła wydobył się dźwięk – nie głos, tylko długie, świszczące westchnienie, jakby ktoś wyciągnięty spod lodu łapał pierwszy oddech.
+Najpierw jeden, potem drugi. Paznokcie zaskrobały cicho o deskę. Powieki uniosły się powoli, odsłaniając oczy mętne jak u śniętej ryby. Usta rozwarły się szerzej i z gardła wydobył się dźwięk – nie głos, tylko długie, świszczące westchnienie, jakby ktoś wyciągnięty spod lodu łapał pierwszy oddech.
 Stary Wójcik zaczął się podnosić. # pokaz: wstaje
-Jedna z kobiet krzyknęła i rzuciła się do drzwi. Staś stał jak wmurowany, a Antek złapał Jaromira za ramię tak mocno, że zabolało.
+Jedna z kobiet krzyknęła i rzuciła się do drzwi. Staś stał jak wmurowany, a Antek chwycił Jaromira za ramię.
 ~ zapiski += strzyga_1
 # pytanie: Co zrobi Jaromir?
 *   [Przewrócić go twarzą do deski.]
@@ -130,9 +130,9 @@ Stary Wójcik już nie wstał. Tylko psy, kiedy przechodziły obok jego chałupy
 Trzeciej nocy po pogrzebie, jeszcze przed północą, Hanka usłyszała na podwórzu skrzypienie śniegu. Wyszła, zanim Jaromir zdążył wstać, i wróciła z Wójcikową. Stara miała kożuch narzucony byle jak na gołe ramiona i różaniec okręcony wokół dłoni tak ciasno, że paciorki wpiły się w skórę.
 – On wrócił – szlochała. – Stał pod oknem. Przyciskał twarz do szyby i wołał mnie po imieniu. Dwie noce wołał. A dzisiaj… dzisiaj pytał o małą.
 Hanka zbladła i odruchowo spojrzała na kołyskę, w której spała Marysia. Potem bez słowa zaczęła ścielić Wójcikowej na ławie przy piecu, ale stara chwyciła ją za rękę.
-– Jak mnie nie znajdzie w domu, przyjdzie tutaj – szepnęła i wyszła z powrotem w noc, zanim ktokolwiek zdążył ją zatrzymać.
-Tej nocy Jaromir nie zmrużył oka. Siedział przy kołysce z siekierą{ siekiera_dziadka: dziadka} na kolanach. Nad ranem, tuż przed pianiem kurów, usłyszał cichy dźwięk – jakby ktoś oddychał tuż za szybą. Podniósł głowę. Na szkle, od zewnątrz, wykwitła mglista plama. # pokaz: oddech
-Za oknem stał stary Wójcik. W koszuli śmiertelnej oblepionej gliną, z białymi oczami bez źrenic. Usta miał rozwarte i Jaromir widział dwa rzędy zębów, a po brodzie spływała mu ciemna strużka. # pokaz: strzyga
+– Jak mnie nie znajdzie w domu, przyjdzie tutaj – szepnęła i wyszła z powrotem w noc.
+Tej nocy Jaromir nie zmrużył oka. Siedział przy kołysce z siekierą{ siekiera_dziadka: dziadka} na kolanach. Nad ranem, tuż przed pianiem kurów, usłyszał cichy dźwięk, podobny do oddechu tuż za szybą. Podniósł głowę. Na szkle, od zewnątrz, wykwitła mglista plama. # pokaz: oddech
+Za oknem stał stary Wójcik. W koszuli śmiertelnej oblepionej gliną, z mętnymi oczami śniętej ryby. Usta miał rozwarte i Jaromir widział dwa rzędy zębów, a po brodzie spływała mu ciemna strużka. # pokaz: strzyga
 Patrzył na kołyskę.
 # pytanie: Co zrobi Jaromir?
 *   [Rozkopać jego grób i pochować go po staremu.]
@@ -140,7 +140,7 @@ Patrzył na kołyskę.
     -> rozkopany_grob_wojcika
 *   [Czuwać przy kołysce do świtu – niech przyjdzie, jeśli się odważy.]
     ~ trzy_noce = czuwanie_przy_kolysce
-    Jaromir wstał, stanął między oknem a kołyską i podniósł siekierę. Wójcik patrzył na niego długo, przekrzywiając głowę jak ptak. Potem uśmiechnął się – szeroko, aż wszystkie zęby błysnęły w szarym świetle – i odszedł od okna. # pokaz: odszedl
+    Jaromir wstał, stanął między oknem a kołyską i podniósł siekierę. Wójcik patrzył na niego długo, nie mrugając. Potem uśmiechnął się – szeroko, aż wszystkie zęby błysnęły w szarym świetle – i odszedł od okna. # pokaz: odszedl
     Nie przyszedł do nich już nigdy. Ale ledwie się rozwidniło, Hanka pobiegła do Wójcikowej – i wróciła po pacierzu, bez chustki, z dłońmi przyciśniętymi do ust. Wdowa leżała w swojej izbie, na łóżku, z rękami złożonymi na piersi i spokojną twarzą. Na szyi miała dwa drobne, czerwone nakłucia, jak po szydle.
     ~ zapiski += strzyga_2
     Pochowali ją obok męża. Tym razem po staremu – ksiądz, kiedy zobaczył jej szyję, nie zaprotestował ani słowem. # dalej

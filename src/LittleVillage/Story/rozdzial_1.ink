@@ -165,7 +165,7 @@ Wracał brudny, z trawą we włosach, z ziemią pod paznokciami i z kolanami w s
 - else:
     Ojciec, jeśli wieczór był ciepły, wynosił ławę przed chatę i opowiadał. O dziadku Maćku, który zszedł do Zapadliny z samą siekierą, o stworze z bagien, o głosie, co wołał znad wody. Jaromir zwykle zaczynał przysypiać w połowie, z głową na kolanach ojca, i nigdy nie słyszał zakończenia.
 }
-Leżał potem na sienniku pod oknem i słuchał nocy. Żaby rechotały w rozlewiskach, w stajni parsknął koń, gdzieś daleko zaszczekał pies. Przez szparę w okiennicy widać było gwiazdy – tyle, że nie dało się ich policzyć, choć nigdy nie przestawał próbować.
+Leżał potem na sienniku pod oknem i słuchał nocy. Żaby rechotały w rozlewiskach, w stajni parsknął koń, gdzieś daleko zaszczekał pies. Przez szparę w okiennicy widać było gwiazdy – gęste jak rosa na łące.
 Zasypiał z uśmiechem, myśląc o jutrze. Jutro będzie znów lato. Jutro będzie znów cały dzień. # dalej
 -> zloty_dzien
 

@@ -155,7 +155,7 @@ Wyjął z szuflady gruby zeszyt oprawny w skórę i położył go na biurku. Na 
 { poszedl_po_wstazke || (ekwipunek ? ksiega):
     ~ zapiski += starzec_1
 }
-W listopadzie dni zrobiły się krótkie i szare, a wieczory długie. Pod butami chlupotało błoto zmieszane z liśćmi, wiatr szarpał gołe gałęzie, a wszystko dookoła pachniało wilgocią i zgnilizną. Chłopiec wracał ze szkoły już po zmroku i całą drogę skrajem boru szedł z oczami wbitymi w ścieżkę, licząc kroki, żeby nie słyszeć, czy w lesie ktoś liczy razem z nim.
+W listopadzie dni zrobiły się krótkie i szare, a wieczory długie. Pod butami chlupotało błoto zmieszane z liśćmi, wiatr szarpał gołe gałęzie, a wszystko dookoła pachniało wilgocią i zgnilizną. Chłopiec wracał ze szkoły już po zmroku i całą drogę skrajem boru szedł z oczami wbitymi w ścieżkę i odmawiał w myślach Zdrowaś Maryjo, żeby nie słyszeć, czy w lesie ktoś liczy.
 { ekwipunek ? ksiega:
     ~ czytal_po_zmroku = true
     Nocami, kiedy w domu wszyscy już spali, wyciągał spod siennika księgę pana Ignacego i czytał ją przy blasku żarzących się w piecu węgli, choć wiedział, że wolno po nią sięgać tylko za dnia. Były tam podania o południcach, które w największy skwar zadają zagadki żniwiarzom, o północnicach, które dręczą niemowlęta, o rusałkach i strzygach. Pośród gęsto zapisanych kartek ktoś narysował starca w ubraniu wywróconym na lewą stronę i w kapeluszu z mchu. Pod rysunkiem stało: „Kto go spotka, niech zrobi tak samo jak on. Tamten przychodzi z drugiej strony, gdzie wszystko jest odwrotnie”.

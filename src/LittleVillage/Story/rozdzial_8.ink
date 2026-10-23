@@ -26,7 +26,7 @@ Starzy kręcili głowami i mówili, że takiego roku nie pamiętają.
 Pod koniec lipca u Wójcików wyschła studnia, a następnego dnia padła im krowa – położyła się w oborze i już nie wstała. W tym samym tygodniu u Stasiowych od jednej iskry z fajki zajęła się stodoła i spłonęła razem z sianem, zanim ktokolwiek zdążył przybiec z wiadrem. Ojcu Hanki pękło kowadło – grube, żelazne, na którym kuł jeszcze jego dziad.
 We wsi zaczęto szeptać. Każdy, komu przytrafiło się nieszczęście, przypominał sobie potem, że dzień wcześniej widział pod swoim płotem żebraczkę. Małą, przygarbioną, ledwie do pasa dorosłemu, owiniętą w tyle łachmanów, że nie sposób było poznać, gdzie kończy się jeden, a zaczyna drugi. Nikt nie wiedział, skąd przyszła ani gdzie nocuje. Płachtę na głowie nosiła nasuniętą tak nisko, że widać było tylko spiczasty, szary podbródek.
 Jaromir zobaczył ją pierwszy raz przy studni na środku wsi, kiedy niósł ojcu obiad w pole. Siedziała na cembrowinie, pochylona nad czarną głębią, i coś do niej mamrotała. Kiedy podszedł z wiadrem, powoli odwróciła głowę. # pokaz: zebraczka
-Miała tylko jedno oko – duże, okrągłe, z czarną źrenicą i czerwoną obwódką, jakby od płaczu. W miejscu drugiego była gładka, szara skóra, bez powieki i rzęs.
+Miała tylko jedno oko – duże, okrągłe, z czarną źrenicą i czerwoną, zapłakaną obwódką. W miejscu drugiego była gładka, szara skóra, bez powieki i rzęs.
 – Chlebka – zaskrzeczała i wyciągnęła kościstą dłoń o ciemnych, zakrzywionych paznokciach. – Chlebka dla starej…
 Wszystkie cienie we wsi kładły się w jedną stronę, krótkie i czarne. Tylko jej cień padał w drugą – pod słońce – długi i chudy jak tyka, i wskazywał prosto na chałupę Jaromira. # pokaz: cien
 # pytanie: Co zrobi Jaromir?
@@ -37,7 +37,7 @@ Wszystkie cienie we wsi kładły się w jedną stronę, krótkie i czarne. Tylko
     -> przy_stole
 *   [Przegnać ją od studni.]
     ~ licho_studnia = przegnal
-    – Idź stąd! – krzyknął Jaromir i zamachnął się wiadrem. Żebraczka wcale się nie przestraszyła. Zsunęła się z cembrowiny i odeszła powoli, a przy płocie obejrzała się i zachichotała – cicho, sucho, jak szelest zeschłych liści. # pokaz: chichot
+    – Idź stąd! – krzyknął Jaromir i zamachnął się wiadrem. Żebraczka wcale się nie przestraszyła. Zsunęła się z cembrowiny i odeszła powoli, a przy płocie obejrzała się i zachichotała – krótko i skrzekliwie. # pokaz: chichot
     – Zapamiętam cię, synku – powiedziała. # dalej
     -> przy_stole
 *   [Nabrać wody i odejść, nie patrząc na nią.]
@@ -49,7 +49,7 @@ Wszystkie cienie we wsi kładły się w jedną stronę, krótkie i czarne. Tylko
 # tlo: izba_sierpien
 ~ zapiski += licho_1
 Pierwszego sierpnia ojciec wrócił z pola wcześniej niż zwykle. Usiadł przy stole i długo obracał w palcach kłos – lekki, prawie pusty – nie mówiąc ani słowa. Matka postawiła przed nim miskę kaszy i też milczała. W izbie słychać było tylko bzyczenie much. Było duszno, pachniało kaszą i nagrzanym drewnem ścian, a przez otwarte okno nie wpadał ani jeden powiew.
-– Z tego żyta nie będzie nawet na zasiew – odezwał się w końcu. – Kartofle uschną w ziemi. Do wiosny nie starczy nam ani na chleb.
+– Z tego żyta nie będzie nawet na zasiew – odezwał się. – Kartofle uschną w ziemi. Do wiosny nie starczy nam ani na chleb.
 Potem spojrzał na syna tak, jak zaczął na niego patrzeć od Wielkanocy – jak na dorosłego.
 – Urbaniak szuka ludzi do wyrębu. Piła stoi, to chce przez lato naciąć jak najwięcej pni, a jak przyjdą deszcze i woda ruszy koło, przerobi wszystko naraz. Płaci od każdego drzewa. – Zacisnął szczęki. – Przysięgałem sobie, że u niego nie przepracuję ani jednego dnia.
 { pracowal_w_tartaku:
@@ -156,9 +156,9 @@ Pod powałą, na haku, wisiał płat słoniny. Ostatni – a babka Hanki przykaz
     Jaromir zacisnął zęby i nie odpowiedział.
     Żebraczka pukała długo. Potem przestała skrzeczeć i zaczęła mówić inaczej – ciepło, znajomo.
     { figurka_u_staruchy && los_psa == oswojony:
-        – Jaromirku… – westchnęło zza drzwi głosem babki Marianny, choć babka od pięciu lat leżała na cmentarzu w mieście. – Otwórz, dziecko, zimno mi… # pokaz: glos
+        – Jaromirku… – westchnęło zza drzwi głosem babki Marianny, choć babka od pięciu lat leżała na cmentarzu w mieście. – Otwórz, dziecko, wpuść starą… # pokaz: glos
     - else:
-        – Jaromirku… – westchnęło zza drzwi głosem matki. – Otwórz, synku, zimno mi… # pokaz: glos
+        – Jaromirku… – westchnęło zza drzwi głosem matki. – Otwórz, synku, wpuść matkę… # pokaz: glos
         A matka spała przecież dwa kroki od niego, na zydlu przy ojcu.
     }
     Łzy pociekły mu po policzkach, ale nie otworzył. Siedział tak do świtu, z rękami zaciśniętymi na kolanach, aż zapiał kogut i na dworze zrobiło się cicho.
@@ -228,7 +228,7 @@ W poniedziałek rano ludzie Urbaniaka przyszli z łopatami. Wykopywali słupy, �
 = blizej
 # tlo: bor_blizej
 Tej nocy od boru przyszedł wiatr.
-Wiał gorący i suchy, bez jednej kropli deszczu, i szumiał w koronach tak, że w całej Zapadlinie nikt nie zmrużył oka. Nad lasem błyskało bez grzmotów, a w tym świetle drzewa wyglądały, jakby się poruszały – nie kołysały, tylko szły. # pokaz: burza
+Wiał gorący i suchy, bez jednej kropli deszczu, i szumiał w koronach tak, że w całej Zapadlinie nikt nie zmrużył oka. Nad lasem błyskało bez grzmotów, a w tym świetle drzewa zdawały się poruszać – nie kołysać, tylko iść. # pokaz: burza
 Rano drogę pod borem zobaczyła cała wieś. W dołach po kapliczkach rosły młode świerki – po kilka w każdym, zielone, pachnące żywicą, na łokieć wysokie – choć wieczorem nic tam jeszcze nie rosło. # pokaz: swierki
 { kapliczki_drogi == obronil_kapliczke:
     Tylko przy tej jednej, której Jaromir nie dał ruszyć, ziemia była goła i spokojna. # pokaz: kapliczka

@@ -42,7 +42,7 @@ Musiała stać gdzieś blisko, kiedy targował się z handlarzem. Tylko że nie 
     ~ figurka_u_staruchy = true
     ~ ekwipunek -= figurka
     # tlo: rynek
-    Maciek wyjął figurkę i położył ją na wyciągniętej dłoni. Starucha nie chwyciła jej od razu. Najpierw owinęła ją w lnianą szmatkę i dopiero tak, przez płótno, wzięła do ręki. Monety odliczyła z węzełka u pasa, jedną po drugiej, co do grosza.
+    Maciek wyjął figurkę i położył ją na wyciągniętej dłoni. Starucha nie chwyciła jej od razu. Najpierw owinęła ją w lnianą szmatkę i dopiero tak, przez płótno, wzięła do ręki. Monety wyjęła z węzełka u pasa.
     – Teraz to już moja sprawa – powiedziała. – Idź z Bogiem, synku. I nie oglądaj się za nią.
     Odwróciła się i zniknęła w tłumie, zanim zdążył cokolwiek odpowiedzieć.{ los_psa == oswojony: Pies przestał warczeć, ledwie kieszeń zrobiła się lekka.}
     -> zakupy
@@ -157,7 +157,7 @@ Starucha pochyliła się niżej nad miską. – Idź. Znasz drogę. Chata {chata
 = noc
 # tlo: noc_atak
 Minęło kilka dni. Maciek kopał grządki pod ziemniaki, Marianna lepiła z gliny piec, a Dobrosław {los_psa == oswojony:biegał z psem po łące|zbierał kaczeńce na łące}. Wieczorami siadali razem na progu i patrzyli, jak mgła wlewa się w dolinę.
-{ los_psa == oswojony: Którejś nocy obudził ich pies. Stał przy drzwiach z sierścią zjeżoną na grzbiecie i warczał tak nisko, że ledwie było to słychać. Potem zaczął szczekać – głośno, zajadle, bez przerwy. | Którejś nocy obudził ich huk. Coś uderzyło w drzwi z taką siłą, że jęknęły zawiasy. Potem drugi raz. Trzeci. Drewno pękło z trzaskiem. }
+{ los_psa == oswojony: Którejś nocy obudził ich pies. Stał przy drzwiach z sierścią zjeżoną na grzbiecie i warczał tak nisko, że ledwie było to słychać. Potem zaczął szczekać – głośno, zajadle, bez przerwy. | Którejś nocy obudził ich huk. Coś uderzyło w drzwi z taką siłą, że jęknęły zawiasy, i biło dalej, aż drewno pękło z trzaskiem. }
 Maciek zerwał się z posłania. Przez szparę w drzwiach zobaczył we mgle dwa żarzące się ślepia. # pokaz: slepia
 Nie myślał. Chwycił Dobrosława na ręce, odsunął deski w kącie i wsadził go do piwniczki.
 – Siedź cicho – szepnął. – Cokolwiek się stanie, nie wychodź. Słyszysz? Nie wychodź, dopóki nie przyjdzie dzień.

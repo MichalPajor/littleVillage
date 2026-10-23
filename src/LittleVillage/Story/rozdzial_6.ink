@@ -10,7 +10,7 @@
 # tlo: zniwa
 # rozdzial: Rozdział szósty
 # tytul: Samo południe
-Żniwa przyszły w upale, jakiego najstarsi ludzie nie pamiętali. Od kilku tygodni nie spadła ani kropla deszczu, niebo bielało od żaru już o świcie, a ziemia na miedzach pękała w długie, kręte szczeliny. Zboże dojrzało nagle, w kilka dni, i stało teraz na polach złote i suche, szeleszcząc przy każdym podmuchu jak papier.
+Żniwa przyszły w wielkim upale. Od kilku tygodni nie spadła ani kropla deszczu, niebo bielało od żaru już o świcie, a ziemia na miedzach pękała w długie, kręte szczeliny. Zboże dojrzało nagle, w kilka dni, i stało teraz na polach złote i suche, szeleszcząc przy każdym podmuchu jak papier.
 Wychodzili w pole, zanim zapiały koguty. Mężczyźni szli przodem, kobiety za nimi wiązały snopy, a dzieci zbierały pokłosie i nosiły wodę w glinianych dzbankach. Jaromir miał trzynaście lat i pierwszy raz kosił zboże razem z dorosłymi – w rzędzie, krok w krok za ojcem, a ostrze w jego rękach świstało prawie tak równo jak u starych żeńców. Powietrze pachniało rozgrzaną słomą i potem, kosy dzwoniły o osełki, a spod nóg co chwila wyfruwały spłoszone przepiórki.
 Hanka pracowała na sąsiednim zagonie. Co jakiś czas prostowała się, ocierała czoło wierzchem dłoni i zerkała w stronę Jaromira, a kiedy ich spojrzenia się spotykały, natychmiast odwracała głowę i z udawanym zapałem wracała do snopów. Jaromir nie wiedział, czemu za każdym razem robi mu się wtedy tak dziwnie gorąco – i to nie od słońca. # pokaz: hanka
 { figurka_u_staruchy:
@@ -103,7 +103,7 @@ Powietrze zafalowało mocniej. Żar podchodził Jaromirowi pod gardło, w uszach
     – Znasz go – powiedziała i po raz pierwszy w jej głosie zabrzmiało coś na kształt lęku. – To źle. Bo on też zna ciebie.
 *   [Nie wiem.]
     Południca długo milczała.
-    – Wiesz – odezwała się w końcu. – Tylko boisz się powiedzieć. To rozsądne. Nie mów jego imienia w południe.
+    – Wiesz – powiedziała. – Tylko boisz się powiedzieć. To rozsądne. Nie mów jego imienia w południe.
 -   -> wynik
 
 = wynik

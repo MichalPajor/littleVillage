@@ -12,7 +12,7 @@
 # tlo: stodola_marzanna
 # rozdzial: Rozdział czwarty
 # tytul: Marzanna
-Zima trzymała długo, ale w marcu wreszcie puściła. Zaczęło kapać z dachów, po polach popłynęły brudne strumyki, a nocami lód na jeziorze trzeszczał i jęczał tak, że psy wyły po zagrodach. Mokradła obudziły się pierwsze – czarna woda przebijała przez śnieg, o świcie unosiła się nad nią para, a z rozlewisk przy kładce znów dochodziło bulgotanie, którego przez długie miesiące nie było słychać.
+W marcu zaczęło wreszcie kapać z dachów, po polach popłynęły brudne strumyki, a nocami lód na jeziorze trzeszczał i jęczał tak, że psy wyły po zagrodach. Mokradła obudziły się pierwsze – czarna woda przebijała przez śnieg, o świcie unosiła się nad nią para, a z rozlewisk przy kładce znów dochodziło bulgotanie, którego przez długie miesiące nie było słychać.
 W piątą niedzielę Wielkiego Postu dzieci z całej Zapadliny zbierały się, żeby utopić Marzannę. Tak robiło się od zawsze: kto wyniesie zimę ze wsi i wrzuci ją do wody, ten sprowadzi wiosnę i przegoni choroby, głód i wszelkie zło.
 Kukłę szykowali w stodole u Stasiowych. Franek, który od Bożego Narodzenia nie chodził już do szkoły i pomagał dziadkowi w polu, skręcił ze słomy tułów i przywiązał go do kija. Antek przyniósł stare łachy po matce – spódnicę i chustę – a Jaromir wcisnął kukle w głowę dwie grudki węgla zamiast oczu i sadzą narysował usta. Hanka nawlekła na nitkę skorupki po jajkach, żeby Marzanna miała korale. Kukła wyglądała strasznie – i o to właśnie chodziło. # pokaz: kukla
 Dziewczynka sięgnęła do warkocza i zaczęła rozwiązywać czerwoną wstążkę.
@@ -53,7 +53,7 @@ Wszyscy rzucili się do ucieczki. Za plecami Jaromira chlupnęło – głośno, 
 *   [Obejrzeć się.]
     ~ obejrzal_sie = true
     Obejrzał się. Tylko na mgnienie.
-    Przy kładce, w czarnej wodzie, coś trzymało Marzannę – szara ręka zakończona szponami, oblepiona wodorostami. Nad powierzchnią, wyżej niż sięgnąłby dorosły mężczyzna, żarzyły się dwa ślepia, żółtawe i mętne jak światełka nad bagnem.{ wstazka_marzanny: Pazury powoli nawijały na siebie czerwoną wstążkę.} Potem ramię cofnęło się i woda zamknęła się bez śladu. # pokaz: reka
+    Przy kładce, w czarnej wodzie, coś trzymało Marzannę – szara ręka zakończona szponami, oblepiona wodorostami. Nad powierzchnią, wyżej niż sięgnąłby dorosły mężczyzna, żarzyły się dwa ślepia, zielonkawe i mętne jak światełka nad bagnem.{ wstazka_marzanny: Pazury powoli nawijały na siebie czerwoną wstążkę.} Potem ramię cofnęło się i woda zamknęła się bez śladu. # pokaz: reka
     Tej nocy Jaromir dostał gorączki. Leżał trzy dni, a matka okładała mu czoło mokrymi szmatami i nie mogła zrozumieć, czemu w malignie woła o kapliczkę przy kładce. # dalej
     -> prawda
 *   [Biec dalej i nie oglądać się.]
@@ -76,8 +76,8 @@ Wszyscy rzucili się do ucieczki. Za plecami Jaromira chlupnęło – głośno, 
 Tej wiosny babka Marianna już nie wstała. Od Gromnicznej leżała na łóżku za piecem, coraz drobniejsza i lżejsza, jakby ziemia zabierała ją sobie po kawałku. Kiedy usłyszała o Marzannie, kazała zawołać wnuka.
 – Siądź – szepnęła. Ręka, którą chwyciła go za nadgarstek, była sucha i zimna jak liść. – Twój ojciec ci nie powie. On nie umie. Więc ja powiem, póki jeszcze mogę.
 Opowiedziała mu wszystko. {zona_wie:O tym, jak dziadek Maciek znalazł w zgliszczach nad jeziorem nadpaloną figurkę i sprzedał ją w mieście staruszce w kapturze.|O tym, jak dziadek Maciek wrócił z miasta odmieniony i nie chciał powiedzieć, co go gryzie.} O stworze, który kilka nocy później wyłamał drzwi ich chaty. O psie, który rzucił się na niego pierwszy, i o siekierze, która weszła stworowi głęboko w ramię. O tym, jak dziadek skonał na klepisku z głową na jej kolanach, a mały Dobrosław przesiedział całą noc pod podłogą, zaciskając dłonie na uszach.
-– To, co było w wodzie, to był on – powiedziała. – Nie umarł. Takie jak on nie umierają. Czekają. Kto utonie bez księdza, ten nie idzie ani do nieba, ani do piekła, tylko zostaje w wodzie. Starzy mówili, że taki trzyma na dnie dusze innych topielców pod odwróconymi glinianymi garnkami i nocami przewraca je jeden po drugim, jak gospodarz, który dogląda dobytku. A jak który garnek pęknie, dusza ulatuje bąblem na powierzchnię.
-Babka wskazała kąt za łóżkiem. Pod starą kapotą leżała siekiera o wytartym, ciemnym trzonku. Na ostrzu, choć wyczyszczonym do połysku, wciąż było widać rdzawe zacieki, jakby żelazo samo nie chciało zapomnieć. # pokaz: siekiera
+– To, co było w wodzie, to był on – powiedziała. – Nie umarł. Takie jak on nie umierają. Czekają. Kto utonie bez księdza, ten nie idzie ani do nieba, ani do piekła, tylko zostaje w wodzie. Starzy mówili, że taki trzyma na dnie dusze innych topielców pod odwróconymi glinianymi garnkami i nocami przewraca je jeden po drugim, doglądając swojego dobytku. A jak który garnek pęknie, dusza ulatuje bąblem na powierzchnię.
+Babka wskazała kąt za łóżkiem. Pod starą kapotą leżała siekiera o wytartym, ciemnym trzonku. Na ostrzu, choć wyczyszczonym do połysku, wciąż było widać rdzawe zacieki. # pokaz: siekiera
 { krzesiwo_dziadka:
     ~ ekwipunek += krzesiwo
     ~ krzesiwo_od_babki = true
@@ -91,7 +91,7 @@ Babka wskazała kąt za łóżkiem. Pod starą kapotą leżała siekiera o wytar
 = prawda_ojca_sieroty
 # tlo: prog_noc
 {obejrzal_sie:Kiedy Jaromir wstał po gorączce|Kiedy Jaromir wrócił znad rozlewiska}, ojciec nie zapytał o nic. Milczał przez cały wieczór. Dopiero gdy matka zasnęła, wziął syna za ramię, wyprowadził na próg i usiadł obok niego w ciemności.
-– Miałem tyle lat co ty – zaczął, a głos mu się łamał, jakby od bardzo dawna go nie używał. – Może mniej.
+– Miałem tyle lat co ty – zaczął, a głos mu się łamał, nieużywany od bardzo dawna. – Może mniej.
 Opowiedział wszystko. O nocy, kiedy coś wyłamało drzwi ich chaty. O deskach nad głową, przez które sączył się księżyc, o krzykach – najpierw ojca, potem matki – i o czymś ciepłym, co kapało mu na włosy. O węszeniu tuż nad nim, chrapliwym jak u psa przy norze.
 – To, co było w wodzie, to był on – powiedział. – Dlatego sprawdzam rygiel. Każdej nocy, od pięćdziesięciu lat.
 – Obiecaj mi jedno – poprosił. – Że nigdy nie wejdziesz do boru. Choćby nie wiem kto cię wołał.
@@ -133,7 +133,7 @@ Marianna zmarła kilka dni później, w Wielki Czwartek. Prosiła, żeby pochowa
 = kapliczka
 # tlo: kapliczka_przewrocona
 Po Wielkanocy ziemia zaczęła obsychać, a na miedzach zażółciły się pierwsze kaczeńce. Któregoś popołudnia, wracając ze szkoły ścieżką pod borem, Jaromir i Antek{ ekwipunek ? szczeniak: – i {imie_psa}, który wszędzie chodził teraz za Jaromirem –} zobaczyli, że kapliczka na skraju lasu leży w trawie. Obaj stanęli jak wryci. W ciszy, która nagle zapadła, słychać było tylko, jak krople kapią z gałęzi na leżący w błocie daszek.
-Była to jedna z najstarszych w Zapadlinie, postawiona jeszcze za młodości ojca. Drewniany słup wyrwano z ziemi razem z darnią, daszek odłamał się i leżał kilka kroków dalej, a świątek – szary od deszczów, z obliczem wytartym przez {figurka_u_staruchy:pół wieku|dziesiątki lat} – tkwił w błocie twarzą w dół. Trawa dookoła była zryta, jakby ktoś ciągnął kapliczkę w stronę drzew i porzucił w pół drogi.
+Była to jedna z najstarszych w Zapadlinie, postawiona jeszcze {figurka_u_staruchy:za dzieciństwa|za młodości} ojca. Drewniany słup wyrwano z ziemi razem z darnią, daszek odłamał się i leżał kilka kroków dalej, a świątek – szary od deszczów, z obliczem wytartym przez {figurka_u_staruchy:pół wieku|dziesiątki lat} – tkwił w błocie twarzą w dół. Trawa dookoła była zryta, jakby ktoś ciągnął kapliczkę w stronę drzew i porzucił w pół drogi.
 { ekwipunek ? kora:
     U podstawy ktoś wydrapał na drewnie spiralę – taką samą jak na sośnie przy ścieżce. Jaromir nie musiał wyjmować z torby swojego kawałka kory, żeby to wiedzieć. # pokaz: spirala
 }
@@ -144,8 +144,8 @@ Była to jedna z najstarszych w Zapadlinie, postawiona jeszcze za młodości ojc
 # pytanie: Co zrobią chłopcy?
 *   [Postawić kapliczkę z Antkiem, bez dorosłych.]
     ~ kapliczka_podniesiona = true
-    Słup był ciężki, mokry i śliski od błota. Zaparli się we dwóch – raz, drugi, trzeci – aż w końcu stanął w wyrwanym dole, chwiejąc się jak pijany. Jaromir obłożył go kamieniami i ubił ziemię butami, a Antek wytarł świątka rękawem, wstawił pod daszek i przybił na nowo, stukając płaskim otoczakiem. # pokaz: podniesiona
-    Kiedy skończyli, od strony boru powiał wiatr – zimny, choć dzień był ciepły – i przez chwilę wszystkie drzewa na skraju lasu szumiały naraz, jakby ktoś głęboko odetchnął. Potem ucichło. # pokaz: wiatr
+    Słup był ciężki, mokry i śliski od błota. Zaparli się we dwóch, aż w końcu stanął w wyrwanym dole, chwiejąc się jak pijany. Jaromir obłożył go kamieniami i ubił ziemię butami, a Antek wytarł świątka rękawem, wstawił pod daszek i przybił na nowo, stukając płaskim otoczakiem. # pokaz: podniesiona
+    Kiedy skończyli, od strony boru powiał wiatr – zimny, choć dzień był ciepły – i przez chwilę wszystkie drzewa na skraju lasu szumiały naraz. Potem ucichło. # pokaz: wiatr
     Ojciec, kiedy się dowiedział, poszedł obejrzeć kapliczkę i wrócił z twarzą, której Jaromir nie umiał odczytać.
     – Dobrze zrobiliście – powiedział tylko. # dalej
     -> urbaniak

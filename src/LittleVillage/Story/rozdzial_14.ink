@@ -27,7 +27,7 @@ Stary Staś wysunął się przed ludzi, wsparty na lasce. Za nim stanął kowal,
 # pytanie: Co zrobi Jaromir?
 *   [Wystąpić przeciw Urbaniakowi przy wszystkich.]
     ~ szarwark = sprzeciw_przy_karczmie
-    – Kapliczek nie ruszycie – powiedział Jaromir, zanim zdążył pomyśleć. – Ani tej, ani żadnej. A szarwarku nikt z nas odrabiać nie będzie.
+    – Kapliczek nie ruszycie – powiedział Jaromir głośno. – Ani tej, ani żadnej. A szarwarku nikt z nas odrabiać nie będzie.
     Kilku chłopów zamruczało przychylnie. Urbaniak przyglądał mu się przez chwilę, a potem otworzył zeszyt, poślinił palec i przewrócił kilka kartek.
     – Twój ojciec – przeczytał – pożyczył ode mnie na doktora, kiedy go przygniotło w lesie. I drugi raz na zboże. Dobrze, że mi przypomniałeś.
     W poniedziałek majster wyprowadził Jaromirowi krowę z obory. Matka stała w progu i płakała bez głosu, a ojciec trzymał się framugi tak mocno, że pobielały mu palce. Ale kiedy przyszedł dzień szarwarku, na przesiekę nie poszedł z Zapadliny ani jeden chłop. # pokaz: krowa # dalej
@@ -59,7 +59,7 @@ Szymon. Ojciec Józka.
 # pytanie: Co zrobi Jaromir?
 *   [Biec do kapliczki przy przesiece – jeszcze da się ją uratować.]
     ~ noc_ognia = ratowal_kapliczke
-    Biegł przez ściernisko, aż płuca paliły go żywym ogniem. Daszek kapliczki już się zajmował, ale słup jeszcze stał. Jaromir zdarł z siebie koszulę, zmoczył ją w korycie przy studni i tłukł nią płomienie, a kiedy nie pomagało, sypał gołymi rękami piach. Wyniósł z ognia świątka – osmalonego, z pękniętą głową – i położył go na trawie. Słup się ostał. # pokaz: kapliczka
+    Biegł przez ściernisko, dysząc jak miech. Daszek kapliczki już się zajmował, ale słup jeszcze stał. Jaromir zdarł z siebie koszulę, zmoczył ją w korycie przy studni i tłukł nią płomienie, a kiedy nie pomagało, sypał gołymi rękami piach. Wyniósł z ognia świątka – osmalonego, z pękniętą głową – i położył go na trawie. Słup się ostał. # pokaz: kapliczka
     Tartak spłonął do gołej ziemi. Szymona wyciągnęli chłopi z Bukowca, kiedy dach już się walił. Żył, ale ogień zjadł mu połowę twarzy i obie dłonie. Zimą Józek stał z czapką w ręku pod kościołem w Bukowcu, bo ojciec nie mógł już utrzymać nawet łyżki, a w chałupie było pięć gąb do wykarmienia. # dalej
 *   [Biec do tartaku – w stróżówce jest człowiek.]
     ~ noc_ognia = ratowal_szymona
@@ -93,7 +93,7 @@ Ludzie spojrzeli na Jaromira. {noc_ognia == ratowal_kapliczke:Po tym, jak w noc 
 *   [Odmówić – boru ruszać nie wolno.]
     – Nie – powiedział Jaromir. – Ani kroku dalej. Niech pan przysyła komornika.
     Chłopi długo milczeli. W końcu stary Staś zdjął czapkę, przeżegnał się i stanął obok niego. Za nim kowal, za kowalem Antek, a za nimi reszta.
-    Komornik przyjechał w październiku. Wyprowadził krowy z sześciu obór, a z dziesięciu wywiózł zboże. Tej zimy w Zapadlinie znowu mielono korę brzozową do chleba. Ale młodnik pod borem, który przyszedł w noc pożaru, więcej nie urósł ani o piędź – stanął tam, gdzie stał, na granicy spalonych kapliczek. # pokaz: komornik # dalej
+    Komornik przyjechał w październiku. Wyprowadził krowy z sześciu obór, a z pozostałych chałup wywiózł zboże. Tej zimy w Zapadlinie znowu mielono korę brzozową do chleba. Ale młodnik pod borem, który przyszedł w noc pożaru, więcej nie urósł ani o piędź – stanął tam, gdzie stał, na granicy spalonych kapliczek. # pokaz: komornik # dalej
 -   -> pierwszy_snieg_czternasty
 
 = pierwszy_snieg_czternasty

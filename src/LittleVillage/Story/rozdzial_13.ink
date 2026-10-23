@@ -15,13 +15,13 @@
 # tlo: przednowek
 # rozdzial: Rozdział trzynasty
 # tytul: Wspólny sen
-Na Gromniczną zima zelżała, ale nie ustąpiła. Śnieg leżał na polach do połowy marca, szary i zbity, a w chałupach jadło się już kaszę bez okrasy i wydzielało ziemniaki z kopca po garści.{ polnoc_strzygi == na_twarz: Ręka Antka zagoiła się dopiero na przednówku – zostały na niej dwa półkola drobnych, białych blizn, które Jadwisia całowała, kiedy myślała, że nikt nie widzi.} {trzy_noce == czuwanie_przy_kolysce:Do chałupy Wójcików nikt się nie wprowadził. W lutym przegniły dach zapadł się w nocy pod śniegiem z hukiem, który obudził pół wsi.|Wójcikowa przeleżała zimę w gorączce, ale w marcu wyszła przed chałupę o kiju i pierwsze, co zrobiła, to przyniosła Marysi garść suszonych jabłek.}
+Śnieg leżał na polach do połowy marca, szary i zbity, a w chałupach jadło się już kaszę bez okrasy i wydzielało ziemniaki z kopca po garści.{ polnoc_strzygi == na_twarz: Ręka Antka zagoiła się dopiero na przednówku – zostały na niej dwa półkola drobnych, białych blizn, które Jadwisia całowała, kiedy myślała, że nikt nie widzi.} {trzy_noce == czuwanie_przy_kolysce:Do chałupy Wójcików nikt się nie wprowadził. W lutym przegniły dach zapadł się w nocy pod śniegiem z hukiem, który obudził pół wsi.|Wójcikowa przeleżała zimę w gorączce, ale w marcu wyszła przed chałupę o kiju i pierwsze, co zrobiła, to przyniosła Marysi garść suszonych jabłek.}
 { ekwipunek ? szczenie_psa:
-    Marysia skończyła półtora roku. Biegała po izbie, przewracała się, wstawała i biegła dalej, a słowa łapała w lot, jak wróbel okruchy. Rude szczenię wyrosło przez zimę na długonogiego psiaka, który chodził za nią krok w krok i warczał na każdego, kto podniósł na nią głos – nawet na matkę. # pokaz: szczenie
+    Marysia skończyła półtora roku. Biegała po izbie, przewracała się, wstawała i biegła dalej, a słowa łapała w lot. Rude szczenię wyrosło przez zimę na długonogiego psiaka, który chodził za nią krok w krok i warczał na każdego, kto podniósł na nią głos – nawet na matkę. # pokaz: szczenie
 - else:
-    Marysia skończyła półtora roku. Biegała po izbie, przewracała się, wstawała i biegła dalej, a słów znała już tyle, że Hanka liczyła je na palcach.
+    Marysia skończyła półtora roku. Biegała po izbie, przewracała się, wstawała i biegła dalej, a słów znała już więcej, niż Hanka zdążyła ją nauczyć.
 }
-Odwilż przyszła naraz. W jedną noc ciepły wiatr zdmuchnął śnieg z pól, a rano mokradła za kładką wezbrały tak, że woda podeszła pod same opłotki. Lód na jeziorze pękał z trzaskiem przez trzy dni. Czwartej nocy nad mokradłami po raz pierwszy od lat zapaliły się światełka. # pokaz: ogniki # dalej
+Odwilż przyszła naraz. Śnieg spłynął z pól w dwa dni, a mokradła za kładką wezbrały tak, że woda podeszła pod same opłotki. Lód na jeziorze pękał z trzaskiem przez trzy dni. Czwartej nocy nad mokradłami po raz pierwszy od lat zapaliły się światełka. # pokaz: ogniki # dalej
 { figurka_u_staruchy: -> figurka_od_jagny }
 { not przeszukal_zgliszcza: -> figurka_ze_zgliszcz }
 { figurka_w_bagnie: -> figurka_z_bagna }
@@ -29,10 +29,10 @@ Odwilż przyszła naraz. W jedną noc ciepły wiatr zdmuchnął śnieg z pól, a
 
 = figurka_od_jagny
 # tlo: jagna_izba
-W połowie marca do Zapadliny przyjechała wozem obca kobieta – chuda, w szarej chuście, z jednym okiem zasnutym bielmem. Pytała o wnuka tego Maćka, który ponad sześćdziesiąt lat temu postawił tu chatę. Ludzie wskazali jej chałupę Jaromira.
+W połowie marca do Zapadliny przyjechała wozem obca kobieta – chuda, w szarej chuście, z jednym okiem zasnutym bielmem. Pytała o wnuka tego Maćka, który przed laty postawił tu chatę. Ludzie wskazali jej chałupę Jaromira.
 – Mam na imię Jagna – powiedziała, kiedy usiadła na ławie. – Moja babka mieszkała w mieście, za rynkiem. Przed śmiercią kazała mi przyrzec, że to oddam.
 Wyjęła z kosza zawiniątko w czarnej szmacie i rozwinęła je na stole. Figurka z drewna, nadpalona z jednej strony, z kosmykiem siwych włosów okręconym wokół szyi. {los_psa == oswojony && zona_wie:Jaromir nigdy figurki nie widział, a mimo to poznał ją od razu – z tego, co kiedyś opowiedziała mu babka Marianna.|Jaromir nigdy figurki nie widział i nigdy o niej nie słyszał, a mimo to na jej widok zrobiło mu się zimno, jakby ktoś otworzył drzwi na mróz.} # pokaz: figurka
-– Babka kupiła ją od waszego dziadka na rynku – mówiła Jagna cicho, nie podnosząc wzroku. – I zrobiła z nią coś, za co płaciła do końca życia. Nie wiem dokładnie co – w gorączce bredziła o lalce i o wodzie. Wiem tylko, że umierała źle. I że ostatnie, co powiedziała, to: „Oddaj ją tam, skąd przyszła”.
+– Babka kupiła ją od twojego dziadka na rynku – mówiła Jagna cicho, nie podnosząc wzroku. – I zrobiła z nią coś, za co płaciła do końca życia. Nie wiem dokładnie co – w gorączce bredziła o lalce i o wodzie. Wiem tylko, że umierała źle. I że ostatnie, co powiedziała, to: „Oddaj ją tam, skąd przyszła”.
 # pytanie: Co zrobi Jaromir?
 *   [Wziąć figurkę.]
     ~ ekwipunek += figurka
@@ -121,7 +121,7 @@ Ogniki nad mokradłami z każdą nocą paliły się bliżej. Najpierw tylko za k
     Zawinęła figurkę w szmatę i oddała Jaromirowi.
     – Ogień jej nie weźmie, już raz w nim była. Uciszy ją tylko poświęcona ziemia. {odrzucil_figurke:Albo… – urwała i pokręciła głową. – Nie. Mnie już nie posłucha. Odepchnęliście ją, a ona i tak do was wróciła. Teraz jest wasza.|{figurka_u_staruchy:Babka kazała mi ją oddać tam, skąd przyszła, i oddałam. Z powrotem jej nie wezmę.|Albo… – zawahała się – albo oddajcie mi ją. Zabiorę ją tak daleko, że jej nie dosłyszy.}} # dalej
 *   [Nie mówić jej nic.]
-    {figurka_u_staruchy:– Dzieci śpią spokojnie – skłamał Jaromir.|– Nie wiem, o czym mówicie – odpowiedział Jaromir.}
+    {figurka_u_staruchy:– Dzieci śpią spokojnie – skłamał Jaromir.|– Nie wiem, o czym mówisz – odpowiedział Jaromir.}
     Jagna pokiwała głową, jakby właśnie tego się spodziewała.
     – Jak ognie dojdą do progu – powiedziała – przyjdźcie do mnie. Do Zielonych Świątek jestem w Bukowcu.
     Hanka odprowadziła ją aż za płot i długo tam z nią szeptała. Do wieczora nie odezwała się do Jaromira ani słowem. # dalej
@@ -185,7 +185,7 @@ Po Wielkanocy Jaromir długo siedział wieczorami nad skrzynią. Światełka nad
     ~ los_figurki = figurka_u_jagny
     ~ ekwipunek -= figurka
     Jaromir zaniósł zawiniątko do Bukowca. Jagna wzięła je obiema rękami, ostrożnie, jak coś bardzo kruchego, i od razu schowała na dno kosza, pod pęki suszonego ziela. # pokaz: kosz
-    – Nie bójcie się – powiedziała. – Już nie wróci.
+    – Nie bój się – powiedziała. – Już nie wróci.
     Nazajutrz wyjechała. Tej nocy światełka nad mokradłami zgasły, a dzieci przestały śnić. # dalej
 -   -> paliki_pod_droge
 

@@ -50,7 +50,7 @@ O zmierzchu na pagórku zapłonął ogień, a po chwili wzdłuż miedz zaczęły
     ~ noc_kupaly = przy_kamieniach
     – Zaraz wrócę – powiedział Jaromir i pocałował Marysię w czubek głowy. Pachniała dymem i mlekiem.
     # tlo: jezioro_mamun
-    Na drugim brzegu jeziora było ciemno i zimno, jakby ognie znad pól tu nie sięgały. Położył chleb i wianek na największym kamieniu. Przy kamieniach chlupnęła woda – raz, cicho, jak przy płukaniu bielizny – i z trzcin dobiegł szept, suchy jak szelest zeszłorocznych liści. # pokaz: dar
+    Na drugim brzegu jeziora było ciemno i zimno, jakby ognie znad pól tu nie sięgały. Położył chleb i wianek na największym kamieniu. Przy kamieniach chlupnęła woda – raz, cicho, jak przy płukaniu bielizny – i z trzcin dobiegł suchy szept. # pokaz: dar
     – Nie tu powinieneś dziś być, gospodarzu – powiedziała najstarsza mamuna, nie wychodząc z ciemności. – Ale słowa dotrzymałeś. My też dotrzymamy.
     Biegł z powrotem całą drogę, aż krew dudniła mu w uszach. Drzwi chałupy stały otworem. Hanka stała na skraju żyta, z pięściami wbitymi w fartuch. Później przysięgała, że nie spuściła małej z oczu dłużej, niż trwa jedno mrugnięcie – że odwróciła się tylko do pieca, bo z żaru wyskoczyła iskra. # dalej
 -   -> pani_w_zbozu
@@ -153,7 +153,7 @@ Hanka wyszła przed chałupę. Miała suche oczy i włosy zaplecione ciasno, jak
 = przed_wyprawa
 # tlo: torba_noc
 ~ zapiski += pan_lasu_7
-W nocy Hanka szyła Jaromirowi torbę z płótna. Igła dwa razy wypadła jej z palców. Za trzecim razem przebiła sobie kciuk i nawet tego nie zauważyła – na płótnie została rdzawa kropka. Do torby włożyła chleb, ser, sól zawiązaną w szmatkę i pęk świeżej bylicy. Na wierzch położyła ciepły wełniak Marysi, złożony starannie, jak do skrzyni. # pokaz: welniak
+W nocy Hanka szyła Jaromirowi torbę z płótna. Igła wypadała jej z palców, raz przebiła nią sobie kciuk i nawet tego nie zauważyła – na płótnie została rdzawa kropka. Do torby włożyła chleb, ser, sól zawiązaną w szmatkę i pęk świeżej bylicy. Na wierzch położyła ciepły wełniak Marysi, złożony starannie, jak do skrzyni. # pokaz: welniak
 – Żeby nie zmarzła – powiedziała. – Jak ją znajdziesz.
 { ekwipunek ? ksiega:
     Tego dnia, póki było jasno, Jaromir czytał przy otwartym oknie księgę pana Ignacego – o Borowym, o zawracających ścieżkach, o ludziach, którzy wrócili z lasu po latach i nie poznawali własnych dzieci. Kiedy zaczęło zmierzchać, zamknął ją i odłożył na drogę.

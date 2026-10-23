@@ -12,7 +12,7 @@
 # rozdzial: Rozdział dziewiąty
 # tytul: Wesele
 Starzy się nie pomylili. W październiku głodu jeszcze nie było widać, ale w grudniu siedział już przy każdym stole.
-W Wigilię w całej Zapadlinie nikt nie miał dwunastu potraw. Chleb pieczono z otrębami i suszoną lebiodą, a pod koniec zimy także z mieloną korą brzozową – gorzki i twardy, aż bolały od niego zęby. Głód miał swój zapach – kwaśny, jak zepsuta kapusta na dnie beczki – i swój dźwięk: płacz dzieci za ścianą, który nie ustawał nawet w nocy. Kilka rodzin spakowało dobytek na sanie i wyjechało do miasta. Żadna nie wróciła. # pokaz: sanie
+W Wigilię w żadnej chałupie nie było dwunastu potraw. Chleb pieczono z otrębami i suszoną lebiodą, a pod koniec zimy także z mieloną korą brzozową – gorzki i twardy, aż bolały od niego zęby. Głód miał swój zapach – kwaśny, jak zepsuta kapusta na dnie beczki – i swój dźwięk: płacz dzieci za ścianą, który nie ustawał nawet w nocy. Kilka rodzin spakowało dobytek na sanie i wyjechało do miasta. Żadna nie wróciła. # pokaz: sanie
 { ekwipunek ? monety:
     ~ ekwipunek -= monety
     ~ monety_na_make = true
@@ -27,7 +27,7 @@ Wiosną, kiedy z pól zszedł śnieg, okazało się, że przeżyli. Nie wszyscy 
 
 = piec_lat
 # tlo: piec_lat
-Odtąd lata zaczęły płynąć szybciej. Każdej wiosny Jaromir siał, każdej jesieni zwoził zboże do stodoły, a zimą dorabiał przy zwózce drewna. Ramiona miał już szersze od ojcowskich, a w Bukowcu nikt nie śmiał oszukać go przy wadze.
+Przez następne lata Jaromir wiosną siał, jesienią zwoził zboże do stodoły, a zimą dorabiał przy zwózce drewna. Ramiona miał już szersze od ojcowskich, a w Bukowcu nikt nie śmiał oszukać go przy wadze.
 Bór z roku na rok pełzł w stronę wsi. Nikt nie widział, żeby ktokolwiek sadził drzewa, a jednak po roztopach na brzegu pól wyrastał nowy rząd świerków – kilka kroków bliżej niż poprzedni. Kapliczek pod borem nikt nie odbudował. # pokaz: swierki
 { kapliczki_drogi == obronil_kapliczke:
     Została tylko jedna, na samym skraju lasu – ta, której Jaromir kiedyś bronił. Co rano ktoś kładł pod nią świeże kwiaty, choć nikt we wsi się do tego nie przyznawał.
@@ -98,7 +98,7 @@ Na tydzień przed ślubem do chałupy przyszedł Antek, blady jak płótno. # po
     ~ szukanie_franka = antek_sam
     – Za tydzień ślub – powiedział Jaromir. – Nie mogę teraz…
     Antek długo nic nie mówił.
-    – Ty się żenisz – odezwał się w końcu cicho. – A mój brat siedzi gdzieś w tym lesie i nikt poza mną go nie szuka.
+    – Ty się żenisz – powiedział cicho. – A mój brat siedzi gdzieś w tym lesie i nikt poza mną go nie szuka.
     Odwrócił się i odszedł, nie czekając na odpowiedź. # pokaz: odchodzi
     Wrócił po dwóch dniach, z kapotą Franka pod pachą. Powiedział tylko, że wisiała na najniższej gałęzi pierwszego świerka, starannie, jak na kołku w sieni – wywrócona na lewą stronę, podszewką na wierzch. Potem aż do wesela nie odezwał się do Jaromira ani słowem. Jaromir zwiózł w tym czasie kapustę z pola, na dzień przed pierwszym przymrozkiem – i nigdy jeszcze nie wstydził się tak dobrej roboty. # dalej
     -> kuznia_przed_slubem
@@ -181,7 +181,7 @@ Starzec o głowę wyższy od każdego z weselników, w kożuchu wywróconym wło
     ~ weselny_gosc = zapytany
     Jaromir ruszył przez pole. Mgła gęstniała, a starzec wcale się nie przybliżał – jakby z każdym krokiem Jaromira cofał się o tyle samo. W końcu Jaromir stanął. # pokaz: mgla
     – Czego chcesz? – zawołał.
-    Głos, który mu odpowiedział, zaszumiał jak wiatr w koronach drzew, choć noc była bezwietrzna.
+    Głos, który mu odpowiedział, zaszumiał jak wiatr w koronach drzew.
     – Dobrze się żenisz, wnuku Maćka. Pilnuj jej.
     Kiedy mgła się rozwiała, na skraju lasu nie było nikogo. # pokaz: odszedl # dalej
     -> pierwszy_ranek
@@ -200,7 +200,7 @@ Starzec o głowę wyższy od każdego z weselników, w kożuchu wywróconym wło
 Obudził się o świcie, w nowej izbie, którą przez lato dobudował do ojcowskiej chałupy. Hanka spała obok, z rozrzuconymi na poduszce włosami{ ekwipunek ? krzyzyk: i z żelaznym krzyżykiem na szyi}. Przez szyby wpadało szare, zimne światło.
 Wyszedł przed dom. W nocy ścisnął mróz i całe podwórze było białe od szronu.
 Tylko pod oknem nowej izby ziemia była goła i ciemna. Biel stopniała tam w szeroki owal, jakby coś dużego i ciepłego przeleżało pod ścianą całą noc, zwinięte w kłębek. Kiedy Jaromir przyłożył do ziemi dłoń, była jeszcze letnia. # pokaz: tropy
-Hanka wyszła za nim, z chustą narzuconą na ramiona. Długo stała nad tym miejscem i nic nie mówiła. Potem przyniosła z izby garść popiołu z paleniska i zasypała odtajałe miejsce, aż zatarł się jej kształt.
+Hanka wyszła za nim, z chustą narzuconą na ramiona. Długo stała nad tym miejscem i nic nie mówiła. Potem przyniosła z izby garść popiołu z paleniska i zasypała odtajałe miejsce, aż zatarł się jego kształt.
 – Nikomu ani słowa – powiedziała. – Bo zaraz pół wsi przyleci się gapić. # dalej
 -> rozdzial_dziewiaty_ciag_dalszy
 

@@ -102,7 +102,7 @@ W poniedziałek pod Starym Dębem zebrała się połowa wsi. { franek_scial_dab:
 Zanim tracze się zamachnęli, z tłumu wysunęła się Hanka. Podeszła do pnia, przyłożyła do kory obie dłonie i coś do niego szepnęła – krótko, z zamkniętymi oczami. Urbaniak kazał ją odciągnąć, ale nikt się nie ruszył, dopóki sama nie wróciła między ludzi.
 – Babka mówi, że drzewu trzeba powiedzieć, za czyje grzechy pada – wytłumaczyła potem Jaromirowi, czerwona po uszy. – Żeby nie musiało samo szukać winnego.
 Pierwsze uderzenie odbiło się od kory jak od kamienia. Drugie też. Dopiero za trzecim ostrze weszło w drewno – i z rany trysnął sok, gęsty i ciemnoczerwony jak krew.{ franek_scial_dab: Chlusnął Frankowi prosto w twarz. Chłopak cofnął się, otarł oczy rękawem i zaśmiał się nerwowo, ale Jaromir widział, że ręce mu się trzęsą.| Chlusnął na buty traczy, a jeden z nich odskoczył z przekleństwem.} # pokaz: sok
-Ścinali do zmierzchu. Dąb jęczał przy każdym ciosie, tak że baby zatykały uszy, a psy po zagrodach wyły jak na pogrzebie. Kiedy wreszcie runął, ziemia zadrżała aż pod chałupami, a od strony boru dobiegł krzyk – przeciągły, żałosny, jakby las stracił coś, czego nigdy nie odzyska. Potem zapadła cisza. Nawet ptaki umilkły. # pokaz: upadek
+Ścinali do zmierzchu. Dąb jęczał przy każdym ciosie, tak że baby zatykały uszy, a psy we wsi wyły jak na pogrzebie. Kiedy wreszcie runął, ziemia zadrżała aż pod chałupami, a od strony boru dobiegł krzyk – przeciągły, żałosny, jakby las stracił coś, czego nigdy nie odzyska. Potem zapadła cisza. Nawet ptaki umilkły. # pokaz: upadek
 Został tylko pień – szeroki jak stół, z setkami słojów, które zwijały się do środka w ciasną spiralę.{ ekwipunek ? kora: Taką samą jak na sośnie przy ścieżce i na słupie kapliczki.} Spomiędzy korzeni wysypała się garść zeszłorocznych żołędzi – zdrowych i lśniących, jakby ktoś je tam przechował.
 # pytanie: Co zrobi Jaromir?
 *   [Podnieść żołądź spod Starego Dębu.]
@@ -125,7 +125,7 @@ Jaromir przypomniał sobie, co { figurka_u_staruchy && los_psa == oswojony: babk
     Jaromir nalał mleka do naparstka matki i postawił go przy piecu, w ciepłym popiele. Staruszek pił łapczywie, mlaskając, a potem otarł brodę rękawem i spojrzał na niego bystrymi oczkami. # pokaz: mleko
     – Dobry z ciebie gospodarz – powiedział. – Zapamiętam. Pomogę, kiedy przyjdzie pora.
     I już go nie było – tylko za piecem coś zaszurało i ucichło. # pokaz: zniknal
-    Rano w dzbanie stało mleka po brzegi, choć matka przysięgała, że wieczorem zostało na dnie. Za to u Stasiowych krowa po raz pierwszy od lat dała ledwie pół udoju, a stara Stasiowa chodziła po wsi i pytała, kto jej rzucił urok. # dalej
+    Rano w dzbanie stało mleka po brzegi, choć matka przysięgała, że wieczorem zostało na dnie. Za to u Stasiowych krowa nagle dała ledwie pół udoju, a stara Stasiowa chodziła po wsi i pytała, kto jej rzucił urok. # dalej
     -> przed_zniwami
 *   [Przegnać go z izby.]
     ~ uboze = przegnane

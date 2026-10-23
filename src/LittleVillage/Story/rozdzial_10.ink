@@ -31,14 +31,14 @@ Najwięcej jednak mówiła jej babka – za każdym razem to samo, słowo w sło
 – Jak się dziecko urodzi, nie zostawiajcie go samego ani na chwilę. Ani w dzień, ani w nocy. Póki nie będzie ochrzczone, to nie wasze jeszcze, tylko niczyje. Nad jeziorem mieszkają mamuny. Rodzą dzieci brzydkie i chorowite, więc kradną ludziom zdrowe, a w kołysce podrzucają swoje. Wiesz, co one piorą po nocach? – dodawała zawsze na koniec. – Całuny. Dla tych, którzy umrą we wsi przed następną wiosną. Nad każdym całunem wołają czyjeś imię. Kto podsłucha, ten będzie wiedział, kogo pochowają – ale lepiej nie słuchać.
 { korale_kaski == zatrzymane:
     ~ ekwipunek -= korale
-    Tej wiosny Hanka znalazła pod siennikiem szmatkę z koralami Kaśki. Była tak mokra, że ociekała wodą. Jaromir bez słowa zaniósł korale nad jezioro i cisnął je jak najdalej od brzegu. Tamtej nocy pierwszy raz od lat spał spokojnie. # pokaz: korale
+    Tej wiosny Hanka znalazła pod siennikiem szmatkę z koralami Kaśki. Była tak mokra, że ociekała wodą. Jaromir bez słowa zaniósł korale nad jezioro i cisnął je jak najdalej od brzegu. Tamtej nocy spał wreszcie spokojnie. # pokaz: korale
 }
 Latem, kiedy noce zrobiły się krótkie i ciepłe, znad jeziora zaczęło dochodzić miarowe klaskanie – jakby ktoś po ciemku prał bieliznę i tłukł ją kijanką o kamień. Kobiety we wsi żegnały się, słysząc ten odgłos, i zamykały okiennice. # pokaz: kijanki # dalej
 -> narodziny
 
 = narodziny
 # tlo: przyzba_swit
-Hanka zaczęła rodzić pod koniec sierpnia, w nocy, kiedy na polach stały jeszcze snopy. Babka przyszła, zanim ktokolwiek po nią posłał, jakby wiedziała. Jaromira wygnała z izby razem z ojcem i kazała im czekać na przyzbie.
+Hanka zaczęła rodzić pod koniec sierpnia, w nocy, kiedy na polach stały jeszcze snopy. Babka przyszła, zanim ktokolwiek po nią posłał. Jaromira wygnała z izby razem z ojcem i kazała im czekać na przyzbie.
 Czekali całą noc. Jaromir słyszał krzyki Hanki, a każdy wbijał mu się w pierś jak gwóźdź. Ojciec siedział obok, {noga_ojca == zlamana:oparty na kiju|z kulami opartymi o ścianę}, i milczał. Tylko raz, przed samym świtem, położył synowi rękę na karku i powiedział:
 – Twoja matka krzyczała tak samo. A potem byłeś ty.
 Kiedy nad borem pojaśniało niebo, z izby dobiegł płacz – cienki, gniewny, zupełnie nowy. # pokaz: swit
@@ -99,7 +99,7 @@ Jedna z nich zaczęła nucić – cicho, kołysząco, tak podobnie do matki Hank
     ~ noc_mamun = zawolal
     – Hanka! – krzyknął Jaromir. – Hanka, obudź się!
     { ekwipunek ? krzyzyk:
-        Hanka drgnęła. Żelazny krzyżyk na jej szyi zrobił się nagle zimny jak lód – złapała go odruchowo i oprzytomniała w jednej chwili. Zobaczyła mamuny i krzyknęła tak, że zbudziła cały dom. Uciekły przez okno, zanim ojciec zdążył dokuśtykać z drugiej izby. # pokaz: obudzona # dalej
+        Hanka drgnęła. Żelazny krzyżyk na jej szyi zrobił się nagle lodowaty – złapała go odruchowo i oprzytomniała w jednej chwili. Zobaczyła mamuny i krzyknęła tak, że zbudziła cały dom. Uciekły przez okno, zanim ojciec zdążył dokuśtykać z drugiej izby. # pokaz: obudzona # dalej
         -> chrzest
     }
     ~ podmiana = true
@@ -169,7 +169,7 @@ Na płaskich kamieniach przy brzegu klęczały mamuny – było ich kilka – i 
     ~ uklad_z_mamunami = oddany_skarb
     Jaromir sięgnął za pazuchę. Przed wyjściem zabrał ze skrzynki w bazie {skarb_jaromira == muszelka:białą muszelkę|{skarb_jaromira == pioro:sójcze pióro|zardzewiały gwóźdź}} – dla otuchy, jak kiedyś na każdą dziecięcą wyprawę. Nie przypuszczał, że przyda się do czegoś innego.
     Mamuna obwąchała skarb jak pies, uśmiechnęła się czarnymi dziąsłami i cisnęła go w jezioro. Krąg na wodzie rozchodził się długo, aż dobiegł do jego butów. # pokaz: skarb
-    – Dziecięce szczęście – zaskrzeczała z zadowoleniem. – Pierwsze, najsłodsze. Dobra zapłata.{ sposob_na_odmienca == chrzest_odmienca: – A za nasze… – dodała druga i przeciągnęła lodowatym palcem po jego policzku. Został na nim cienki, biały ślad jak po oparzeniu mrozem.}
+    – Dziecięce szczęście – zaskrzeczała z zadowoleniem. – Pierwsze, najsłodsze. Dobra zapłata.{ sposob_na_odmienca == chrzest_odmienca: – A za nasze… – dodała druga i przeciągnęła lodowatym palcem po jego policzku. Został na nim cienki, siny ślad jak po smagnięciu witką.}
 *   [Obiecać im dar co roku, w noc świętojańską.]
     ~ uklad_z_mamunami = dar_swietojanski
     – Co roku, w noc świętojańską, zostawię wam na tym kamieniu bochen chleba i wianek z ruty – powiedział Jaromir. # pokaz: dar
@@ -182,7 +182,7 @@ Na płaskich kamieniach przy brzegu klęczały mamuny – było ich kilka – i 
     – {sposob_na_odmienca == chrzest_odmienca:Czternaście|Siedem} – powiedziała, cofając rękę. – Wystarczy.
     Kiedy, łapiąc powietrze, pochylił się nad wodą, zobaczył w niej twarz mężczyzny z posiwiałymi skroniami.
 -   Najstarsza mamuna podała mu zawiniątko. W chuście leżała Marysia – ciepła, zdrowa, zapłakana. Pachniała mułem i tatarakiem, a w zaciśniętej piąstce trzymała źdźbło sitowia i nie dała go sobie odebrać. # pokaz: oddana
-    Kiedy podniósł głowę, na kamieniach nie było już nikogo. Tylko woda przy brzegu kołysała się jeszcze przez chwilę, jakby ktoś dopiero co w nią wszedł. # dalej
+    Kiedy podniósł głowę, kamienie były puste, tylko woda przy brzegu kołysała się jeszcze przez chwilę, jakby ktoś dopiero co w nią wszedł. # dalej
     -> skarb_z_bazy
 
 = skarb_z_bazy
@@ -191,7 +191,7 @@ Na płaskich kamieniach przy brzegu klęczały mamuny – było ich kilka – i 
     W niedzielę Jaromir poszedł do starego bzu i otworzył skrzynkę w bazie. Była pusta. Długo trzymał ją w rękach i myślał o tym, co leży teraz na dnie jeziora. Potem odłożył ją na miejsce. Marysia będzie musiała znaleźć sobie własne skarby. # pokaz: pusta # dalej
     -> jesien_z_marysia
 }
-W niedzielę, kiedy w chałupie było już spokojnie, Jaromir poszedł na skraj łąki, do starego bzu. Baza w jego koronie była już prawie ruiną, ale skrzynka na skarby wciąż tkwiła pod luźną deską, tam, gdzie ją schowali jako dzieci. Drabinka trzeszczała pod jego ciężarem, a w koronie bzu pachniało dokładnie tak samo jak wtedy, gdy miał osiem lat. Na chwilę ścisnęło go w gardle. Na dnie, pod zbutwiałym liściem łopianu, leżał {skarb_jaromira == muszelka:biały jak mleko kawałek muszelki z jeziora|{skarb_jaromira == pioro:sójcze pióro, wciąż błękitne jak niebo po burzy|zardzewiały gwóźdź z rycerskiej zbroi – a przynajmniej tak się kiedyś wydawało}}. # pokaz: skrzynka
+W niedzielę, kiedy w chałupie było już spokojnie, Jaromir poszedł na skraj łąki, do starego bzu. Baza w jego koronie była już prawie ruiną, ale skrzynka na skarby wciąż tkwiła pod luźną deską, tam, gdzie ją schowali jako dzieci. Drabinka trzeszczała pod jego ciężarem, a w koronie bzu pachniało dokładnie tak samo jak wtedy, gdy miał osiem lat. Na dnie, pod zbutwiałym liściem łopianu, leżał {skarb_jaromira == muszelka:biały jak mleko kawałek muszelki z jeziora|{skarb_jaromira == pioro:sójcze pióro, wciąż błękitne jak niebo po burzy|zardzewiały gwóźdź z rycerskiej zbroi – a przynajmniej tak się kiedyś wydawało}}. # pokaz: skrzynka
 # pytanie: Co zrobi Jaromir?
 *   [Przywiązać skarb do kołyski Marysi.]
     ~ skarb_dla_corki = true

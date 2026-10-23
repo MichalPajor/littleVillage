@@ -82,7 +82,7 @@ Ale woda nie dawała im spokoju. Marysia nie chciała chodzić nad jezioro, a ki
 # tlo: calun_noc
 Pod koniec sierpnia, w noc, kiedy mijały trzy lata, odkąd Marysia przyszła na świat, Jaromira obudziło plaskanie. Miarowe, mokre, znad jeziora – jakby ktoś po ciemku tłukł kijanką bieliznę o kamień. Pamiętał ten dźwięk z czasów, gdy Marysia leżała jeszcze w kołysce.
 Spojrzał na ławę przy piecu. Mała spała, zwinięta w kłębek, z piąstką pod policzkiem. Hanka oddychała równo.
-Wyszedł cicho, boso. Ścierń kłuła go w stopy, od jeziora ciągnęło mułem i tatarakiem. Przyczaił się w trzcinach. Na płaskich kamieniach przy pomoście klęczały mamuny – chude, mokre, z włosami do ziemi – i prały w wodzie coś małego, jasnego. Kiedy uniosły płótno wyżej, zobaczył, że to całun. Akurat na dziecko. # pokaz: mamuny
+Wyszedł cicho, boso. Ścierń kłuła go w stopy, od jeziora ciągnęło mułem i tatarakiem. Przyczaił się w trzcinach. Na płaskich kamieniach przy pomoście klęczały mamuny – garbate, mokre, w łachmanach z mchu – i prały w wodzie coś małego, jasnego. Kiedy uniosły płótno wyżej, zobaczył, że to całun. Akurat na dziecko. # pokaz: mamuny
 – Marysia – powiedziała najstarsza nad całunem, czule, i plasnęła kijanką o kamień. – Marysia.
 Przypomniał sobie babkę Hanki: kto podsłucha, ten będzie wiedział, kogo pochowają.
 Musiał się poruszyć, bo trzcina zaszeleściła. Najstarsza podniosła głowę.
@@ -103,7 +103,7 @@ Rozłożyła całun na kamieniu i wygładziła go dłonią. – Do świtu wyschn
 *   [Pobiec po Antka.]
     ~ cena_caluna = cena_antek
     Antek, który od nocy świętojańskiej sypiał czujnie jak pies, wyskoczył z chałupy za Jaromirem, zanim ten skończył mówić. Nad jeziorem nie zapytał o nic. Wszedł między mamuny, jakby wchodził do kuźni, i wyrwał całun z kamienia – całun dziewczynki, którą trzymał do chrztu. # pokaz: antek
-    Najstarsza zamachnęła się kijanką. W ciszy trzasnęło jak łamana gałąź. Antek nie krzyknął. Wyszedł na brzeg z całunem w lewej ręce, a prawa zwisała mu wykręcona w łokciu tak, jak żadna ręka się nie wykręca. Teść obejrzał ją rano i tylko pokręcił głową. Do kuźni Antek już nie wrócił. # dalej
+    Najstarsza zamachnęła się kijanką. W ciszy trzasnęło jak łamana gałąź. Antek nie krzyknął. Wyszedł na brzeg z całunem w lewej ręce, a prawa zwisała mu wykręcona w łokciu tak, jak żadna ręka się nie wykręca. Kowal obejrzał ją rano i tylko pokręcił głową. Do kuźni Antek już nie wrócił. # dalej
 *   { wilk_przy_jaromirze && znak_rozpoznania != po_wilku } [Zawołać białego wilka.]
     ~ cena_caluna = cena_franek
     ~ zapiski += tropy_6

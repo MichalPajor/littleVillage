@@ -49,7 +49,7 @@ Jaromirowi przypomniały się piątkowe opowieści pana Ignacego i zrobiło mu s
     # tlo: izba_noc
     Tej nocy, przy żarzących się węglach, odszukał w księdze właściwą kartę. „Północnica – pisał pan Ignacy swoim pochyłym pismem – nawiedza niemowlęta po północy, pochyla się nad nimi i wysysa z nich sen i siły. Boi się żelaza, które trzeba położyć pod poduszką dziecka. Starzy ludzie powiadają też, że gdy rozsypać wokół kołyski garść maku, północnica musi policzyć każde ziarenko, nim podejdzie bliżej – a liczyć potrafi tylko do świtu”. # pokaz: ksiega
     ~ czytal_po_zmroku = true
-    Jaromir przeczytał ostatnie zdanie trzy razy. Potem długo leżał z otwartymi oczami i myślał o głosie, który we mgle pod borem liczył coś, czego nie było widać.
+    Jaromir przeczytał ostatnie zdanie trzy razy. Potem do świtu myślał o głosie, który we mgle pod borem liczył coś, czego nie było widać.
     Rano, kiedy otworzył księgę przy oknie, na karcie o północnicy znalazł długi, czarny włos. Wieczorem go tam nie było. # dalej
     -> wigilia
 *   [Zapytać ojca.]
@@ -83,7 +83,7 @@ Na progu stał dziad – zgarbiony, w łachmanach przewiązanych sznurkiem, z to
 # pytanie: Czy dziad zostanie na wieczerzy?
 *   [Poprosić ojca, żeby go wpuścił.]
     ~ wpuscil_dziada = true
-    Dziad usiadł przy pustym nakryciu i jadł niewiele, za to powoli, jakby każdą łyżkę chciał zapamiętać. Potem zdjął z pleców lirę i zaśpiewał starą pieśń o duszach, które w tę jedną noc wracają do swoich chałup i grzeją ręce przy cudzym ogniu. Matka ocierała oczy fartuchem. # pokaz: lira
+    Dziad usiadł przy pustym nakryciu i jadł niewiele, za to powoli i z namaszczeniem. Potem zdjął z pleców lirę i zaśpiewał starą pieśń o duszach, które w tę jedną noc wracają do swoich chałup i grzeją ręce przy cudzym ogniu. Matka ocierała oczy fartuchem. # pokaz: lira
     Wychodząc, dziad przystanął obok Jaromira i pochylił się nad nim tak nisko, że chłopca uderzył w nos zapach dymu i mrozu.
     – Pachniesz lasem, chłopcze – szepnął. – Jak przyjdzie do maleńkiej, nie odzywaj się do niej. Ani słowem.
     Zanim ktokolwiek zdążył zapytać, o co mu chodzi, był już za progiem. Noc była jasna od śniegu, a jednak nikt nie zobaczył, w którą stronę odszedł. – Dobrze, żeśmy go nie odprawili – szepnęła matka, zbierając ze stołu jego miskę. – Nigdy nie wiadomo, kto przyszedł. Czasem to dusza kogoś z rodziny wraca w przebraniu, żeby zobaczyć, czy jeszcze ją pamiętają. # pokaz: odszedl # dalej
@@ -101,7 +101,7 @@ Na progu stał dziad – zgarbiony, w łachmanach przewiązanych sznurkiem, z to
 # tlo: wigilia_szczeniak
 Po wieczerzy przyszedł stary Staś. Usiadł ciężko na ławie i rozchylił kożuch, pod którym coś się wierciło i popiskiwało.
 – Twój dziadek miał psa, jakiego drugiego nie było w okolicy – powiedział do Jaromira. – {pies_uratowal:Wyciągnął dziadka z bagna za sukmanę, kiedy coś wołało go znad wody – Maciek sam mi to mówił. }Kiedy przyszła na psa pora, po wsi rozeszły się jego szczenięta, a jedno trafiło do mojego ojca. Od tamtej pory w naszej zagrodzie zawsze biegał któryś z jego wnuków albo prawnuków. – Wyciągnął spod kożucha kłębek sierści. – A suka oszczeniła się jesienią. Ten jest najodważniejszy z miotu. Należy ci się.
-Szczeniak miał sterczące, spiczaste uszy, białą łatę na piersi i łapy za duże do reszty ciała. Obwąchał chłopcu palce, kichnął i bez namysłu wgramolił mu się na kolana, jakby od zawsze było to jego miejsce. # pokaz: pies
+Szczeniak miał sterczące, spiczaste uszy, białą łatę na piersi i łapy za duże do reszty ciała. Obwąchał chłopcu palce, kichnął i bez namysłu wgramolił mu się na kolana. # pokaz: pies
 { figurka_u_staruchy:
     Babka Marianna wyciągnęła ku szczeniakowi drżącą rękę i długo nie mogła wydobyć z siebie głosu.
 }
@@ -165,7 +165,7 @@ Antek wbił Jaromirowi paznokcie w ramię tak mocno, że ten omal nie krzyknął
     ~ polnocnica = przegnana_nozem
     ~ ekwipunek -= nozyk
     Jaromir podpełzł do kołyski na czworakach. Północnica odwróciła ku niemu głowę – oczy miała jak dwie czarne studnie z jasnym punktem na dnie – i syknęła. Chłopiec przełknął strach, wsunął rękę pod poduszkę tuż pod jej szponami i zostawił tam nożyk.
-    Północnica szarpnęła się, jakby dotknęła rozżarzonego żelaza. Bezgłośnie rozwarła usta, uniosła się pod samą powałę i zawisła tam, wpatrzona w nich obu, a jej włosy falowały, choć w izbie nie było przeciągu. # pokaz: odlot, noz
+    Północnica szarpnęła się, jakby dotknęła rozżarzonego żelaza. Bezgłośnie rozwarła usta, uniosła się pod samą powałę i zawisła tam, wpatrzona w nich obu, a jej włosy falowały jak wodorosty w nurcie. # pokaz: odlot, noz
     Trwała tak do pierwszego kura. Kiedy w obórce zapiał kogut, już jej nie było. # pokaz: kogut
     Nad ranem Jaromir sięgnął po nożyk, ale się rozmyślił.
     – Niech zostanie u Zosi – szepnął do Antka. – Na wszelki wypadek. # dalej
@@ -176,7 +176,7 @@ Antek wbił Jaromirowi paznokcie w ramię tak mocno, że ten omal nie krzyknął
     Jaromir wyjął z kieszeni szmatkę i drżącą ręką rozsypał mak dookoła kołyski. Ziarenka zastukały o podłogę jak drobny deszcz.
     Północnica zamarła. Powoli, bardzo powoli opadła niżej, aż jej całun rozlał się po deskach jak mgła. Zawisła nad najbliższym ziarenkiem i dotknęła go pazurem. # pokaz: odlot, mak
     – Jedno – zaszeptała głosem jak szelest zeschłych liści. – Dwa… trzy…
-    Liczyła całą noc. Chłopcy siedzieli pod ścianą, nie śmiejąc się poruszyć, a ona sunęła po izbie, ziarenko po ziarenku, i szeptała coraz szybciej, coraz bardziej gniewnie. Doszła do kilku tysięcy, kiedy w obórce zapiał kogut. Wtedy wrzasnęła tak przenikliwie, że Jaromirowi zadzwoniło w uszach – i zniknęła, jakby nigdy jej tu nie było. Nikt poza nimi dwoma tego krzyku nie usłyszał. # pokaz: kogut # dalej
+    Liczyła całą noc. Chłopcy siedzieli pod ścianą, nie śmiejąc się poruszyć, a ona sunęła po izbie, ziarenko po ziarenku, i szeptała coraz szybciej, coraz bardziej gniewnie. Doszła do kilku tysięcy, kiedy w obórce zapiał kogut. Wtedy wrzasnęła tak przenikliwie, że Jaromirowi zadzwoniło w uszach – i zniknęła. Nikt poza nimi dwoma tego krzyku nie usłyszał. # pokaz: kogut # dalej
     -> boze_narodzenie
 *   [Krzyknąć i obudzić dorosłych.]
     ~ polnocnica = uslyszala_krzyk

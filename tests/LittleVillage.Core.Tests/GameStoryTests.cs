@@ -354,7 +354,7 @@ public sealed class GameStoryTests
     {
         var pages = Play(CreateEngine(), Lake, GoOut, FeedDog, Leave);
 
-        Assert.True(Has(pages, "Po prostu nie miał dokąd pójść."));
+        Assert.True(Has(pages, "Nie miał dokąd pójść, i tyle."));
         Assert.True(Has(pages, "Pies szedł za nim kawałek"));
         Assert.False(Has(pages, "Nie po to budowałem"));
     }
@@ -404,7 +404,7 @@ public sealed class GameStoryTests
         var legend = pages.Single(p => p.BackgroundKey == "legenda");
         Assert.Contains(legend.Blocks, b => b.Text.Contains("Zielarka.") && b.Reveal is null);
         Assert.Contains(legend.Blocks, b => b.Reveal == "chlopi, ogien" && b.Text.StartsWith("Pewnej nocy kilku chłopów"));
-        Assert.Contains(legend.Blocks, b => b.Reveal == "wegielki" && b.Text.Contains("żarzące się węgielki"));
+        Assert.Contains(legend.Blocks, b => b.Reveal == "wegielki" && b.Text.Contains("tlił się kaganek"));
         Assert.True(Has(pages, present));
         Assert.False(Has(pages, absent));
     }
@@ -1310,7 +1310,7 @@ public sealed class GameStoryTests
         var barn = On(pages, "stodola_marzanna");
         Assert.Equal("Rozdział czwarty", barn[0].Blocks[0].Text);
         Assert.Equal("Marzanna", barn[0].Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
-        Assert.Contains(barn[0].Blocks, b => b.Text.StartsWith("Zima trzymała długo") && b.Text.Contains("kapać z dachów"));
+        Assert.Contains(barn[0].Blocks, b => b.Text.StartsWith("W marcu zaczęło wreszcie kapać z dachów") && b.Text.Contains("kapać z dachów"));
         Assert.Contains(barn[0].Blocks, b => b.Reveal == "kukla");
         Assert.True(Has([barn[0]], "starca w kapeluszu z mchu i czerwień"));
         Assert.Equal("Czy Hanka odda Marzannie wstążkę?", barn[0].Question);
@@ -1543,7 +1543,7 @@ public sealed class GameStoryTests
         var autumn = On(pages, "wykopki")[0];
         Assert.Equal("Rozdział siódmy", autumn.Blocks[0].Text);
         Assert.Equal("Zielone Świątki", autumn.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
-        Assert.True(Has([autumn], "Babie lato snuło się nad ścierniskami"));
+        Assert.True(Has([autumn], "babie lato długo snuło się nad ścierniskami"));
         Assert.Contains(autumn.Blocks, b => b.Reveal == "zmrok");
         var allSouls = On(pages, "zaduszki")[0];
         Assert.Contains(allSouls.Blocks, b => b.Reveal == "okruchy");
@@ -1720,7 +1720,7 @@ public sealed class GameStoryTests
         var winter = On(pages, "glodna_zima")[0];
         Assert.Equal("Rozdział dziewiąty", winter.Blocks[0].Text);
         Assert.Equal("Wesele", winter.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
-        Assert.True(Has([winter], "W Wigilię w całej Zapadlinie"));
+        Assert.True(Has([winter], "W Wigilię w żadnej chałupie"));
         Assert.True(Has(On(pages, "piec_lat"), "Jaromir miał już dziewiętnaście lat"));
         Assert.True(Has(On(pages, "swaty"), "przewiązała nią butelkę"));
         Assert.True(Has(On(pages, "skraj_kapota"), "wywrócona na lewą stronę"));
@@ -1844,7 +1844,7 @@ public sealed class GameStoryTests
         var engine = CreateEngine();
         var pages = Play(engine, [.. PeacefulToWedding, 0, 0, 1, 0, 0, 1, 0]);
 
-        Assert.True(Has(On(pages, "noc_mamun"), "Żelazny krzyżyk na jej szyi zrobił się nagle zimny jak lód"));
+        Assert.True(Has(On(pages, "noc_mamun"), "Żelazny krzyżyk na jej szyi zrobił się nagle lodowaty"));
         Assert.Empty(On(pages, "odmieniec"));
         Assert.False(Has(pages, "nie zapłakało, choć matka szlochała"));
         Assert.Equal("owczarnia_noc", pages[^1].BackgroundKey);

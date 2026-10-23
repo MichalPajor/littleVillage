@@ -93,7 +93,7 @@ Maciek zacisnął palce na toporze i nie ruszył się z miejsca. Wycie trwało j
 === pies ===
 # tlo: zarosla_noc
 Maciek wyczołgał się na zewnątrz z siekierą w ręku. Noc była jasna od księżyca, a trawa mokra od rosy. Szedł powoli za dźwiękiem, krok po kroku, czując, że serce chce mu się wyrwać z piersi. Wycie raz cichło, a raz odzywało się coraz bliżej.
-W gęstych krzakach usłyszał szelest. Rozgarnął gałęzie trzonkiem siekiery i zamarł. Z ciemności wyłoniły się dwa błyszczące ślepia. W świetle księżyca dostrzegł, że to młody pies. Był tak chudy, że można było policzyć mu żebra, a łapy miał za duże do reszty ciała. Pysk miał długi i wąski, a uszy postawione sztywno. Nie uciekał przed człowiekiem. Warczał cicho, trzęsąc się cały. # pokaz: pies
+W gęstych krzakach usłyszał szelest. Rozgarnął gałęzie trzonkiem siekiery i zamarł. Z ciemności wyłoniły się dwa błyszczące ślepia. W świetle księżyca dostrzegł, że to młody pies. Był tak chudy, że żebra sterczały mu pod skórą, a łapy miał za duże do reszty ciała. Pysk miał długi i wąski, a uszy postawione sztywno. Nie uciekał przed człowiekiem. Warczał cicho, trzęsąc się cały. # pokaz: pies
 Maciek sięgnął do kieszeni. Było w niej małe zawiniątko z ostatnim kawałkiem chleba – twardym jak kamień, ale przecież to był jego jutrzejszy posiłek.
 # pytanie: Co zrobi Maciek?
 *   [Da psu kawałek chleba.]
@@ -133,7 +133,7 @@ Wycofał się powoli i schował pod gałęziami. Wycie odezwało się jeszcze ra
 ~ ekwipunek -= chleb
 Rano Maciek rozwinął zawiniątko i zjadł ostatni kawałek chleba. Gryzł go powoli, kęs po kęsie, żeby starczył na cały dzień. Popił wodą, otrzepał dłonie i poszedł do pracy.
 -> trzcina ->
-Ciął gęstwinę siekierą przy samej ziemi, wiązał w snopy i znosił pod chatę. Raz za razem, aż przestał liczyć. Plecy paliły go żywym ogniem, ale sterta przy ścianie rosła.
+Ciął gęstwinę siekierą przy samej ziemi, wiązał w snopy i znosił pod chatę. Raz za razem, bez wytchnienia. Plecy paliły go żywym ogniem, ale sterta przy ścianie rosła.
 Po południu trzciny w tym miejscu już nie było, więc ruszył dalej. Wracał inną drogą – od tej strony, z której minionej nocy dochodziło wycie. Szedł, aż nagle noga zawisła mu w powietrzu.
 W trawie pod krzakiem leżał pies. Chudy, z długim pyskiem i za dużymi łapami. Był sztywny, przewrócony na bok, z na wpół otwartymi oczami. Muchy już go obsiadły.
 { los_psa == niespotkany:
@@ -151,7 +151,7 @@ W trawie pod krzakiem leżał pies. Chudy, z długim pyskiem i za dużymi łapam
 = bez_chleba
 Rano Maciek obudził się głodny. Sięgnął odruchowo do kieszeni i przypomniał sobie, że zawiniątko jest puste. Westchnął, napił się wody i poszedł do pracy.
 -> trzcina ->
-Ciął gęstwinę siekierą przy samej ziemi, wiązał w snopy i znosił pod chatę. Raz za razem, aż przestał liczyć.
+Ciął gęstwinę siekierą przy samej ziemi, wiązał w snopy i znosił pod chatę. Raz za razem, bez wytchnienia.
 Koło południa, prostując obolałe plecy, zauważył w oddali ruch. Na skraju łąki, między kępami trawy, kręcił się pies – ten sam, chudy, z długim pyskiem. Węszył, przystawał i patrzył w jego stronę, gotów w każdej chwili czmychnąć.
 Maciek uśmiechnął się, pierwszy raz od wielu dni.
 – Żyjesz – mruknął.
@@ -260,7 +260,7 @@ Wstał, otrzepał spodnie i spojrzał na dach. Został jeden pas trzciny, może 
 Zarzucił tobołek na ramię i ruszył pod górę, w stronę gościńca. Maszerował szybko, nie oglądając się za siebie. Dopiero na Bukowym Grzbiecie przystanął i spojrzał w dół.
 Chata stała tam, mała i niedokończona, z dachem jak niedopowiedziane zdanie. Jego chata.
 { los_psa == oswojony: Pies szedł za nim kawałek, a potem usiadł w połowie zbocza i patrzył – raz na niego, raz za siebie – jakby czekał, aż Maciek sam zrozumie. }
-Maciek nie ruszał się, dopóki słońce nie wzeszło nad borem. Potem zawrócił. Nie dlatego, że przestał się bać. Po prostu nie miał dokąd pójść. # dalej
+Maciek nie ruszał się, dopóki słońce nie wzeszło nad borem. Potem zawrócił. Nie dlatego, że przestał się bać. Nie miał dokąd pójść, i tyle. # dalej
 -> dach_gotowy
 
 = dach_gotowy
@@ -313,7 +313,7 @@ Pewnej nocy kilku chłopów zebrało się pod jej chatą. Zabili drzwi deskami, 
 Andrzej zamilkł na chwilę.
 – Dziad mówił, że krzyczała do samego końca. Nie z bólu, Maćku. Przeklinała. Wieś, ziemię, każdego, kto tu mieszka i kto kiedyś zamieszka. Że nikt nie zazna spokoju, dopóki ci, którzy ją odwiedzają, nie wymordują tu wszystkich do nogi. Słychać było też, jak jęczała, rzucając słowa klątwy: „Kości dzieci waszych będą połamane, a krew ich wypita…”.
 – Straszne… A ci, co ją spalili?
-– Żaden nie dożył zimy. Jeden po drugim tracili rozum. Gadali do siebie, nie sypiali, chodzili po ciemku nad wodę. Aż w końcu wszyscy weszli w bagno i już nie wyszli. Ci, którzy spotkali ich ostatni, mówili, że w oczach mieli coś dziwnego. Jakby żarzące się węgielki. # pokaz: wegielki
+– Żaden nie dożył zimy. Jeden po drugim tracili rozum. Gadali do siebie, nie sypiali, chodzili po ciemku nad wodę. Aż w końcu wszyscy weszli w bagno i już nie wyszli. Ci, którzy spotkali ich ostatni, mówili, że w oczach mieli coś dziwnego. Jakby w każdym tlił się kaganek. # pokaz: wegielki
 Andrzej pochylił się ku niemu.
 – To ich oczy mrugają po nocach nad mokradłami. Nie żadne błędne ognie. Oni tam stoją i wypatrują – wabią.
 { chata_macka:

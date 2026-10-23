@@ -45,7 +45,7 @@ Szedł prosto przed siebie, aż słońce stanęło wysoko. Wreszcie świerki roz
 *   [Znaczyć drogę siekierą na pniach.]
     ~ wejscie_do_boru = naciete_pnie
     # tlo: bor_suchy
-    Na każdym dziesiątym pniu zostawiał głębokie nacięcie, na wysokości twarzy. Żywica, która wyciekała z ran, była zimna jak woda ze studni i tak gęsta, że zalepiała ostrze – musiał je wyrywać z pnia całym ciężarem ciała. Po godzinie obejrzał się. Nacięcia, które zrobił na początku, zarastały mu w oczach – kora zsuwała się na nie jak powieka. # pokaz: naciecia
+    Co kilka pni zostawiał głębokie nacięcie, na wysokości twarzy. Żywica, która wyciekała z ran, była zimna jak woda ze studni i tak gęsta, że zalepiała ostrze – musiał je wyrywać z pnia całym ciężarem ciała. Po godzinie obejrzał się. Nacięcia, które zrobił na początku, zarastały mu w oczach – kora zsuwała się na nie jak powieka. # pokaz: naciecia
     Ale to wystarczyło: kiedy ścieżka chciała zawrócić, widział świeże rany przed sobą i szedł dalej. Gdzieś z głębi boru, bardzo daleko, dobiegł go jęk – niski, przeciągły, jakby przewracało się stare drzewo. Albo jakby ktoś bardzo duży syknął z bólu. Jaromir nie zatrzymał się, ale ręce zaczęły mu drżeć i do wieczora nie przestały. # dalej
 *   { ekwipunek ? szczenie_psa } [Zaufać psu – nos się nie gubi.]
     ~ wejscie_do_boru = za_psem
