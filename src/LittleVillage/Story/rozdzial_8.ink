@@ -13,7 +13,7 @@
 # tytul: Chude lato
 Po Zielonych Świątkach przestało padać.
 Z początku nikt się tym nie martwił. Sianokosy szły jak z płatka – trawa schła w dwa dni i pachniała miodem, a kosiarze śpiewali na łąkach od świtu do zmroku. Minął czerwiec, a niebo wciąż było białe i puste. Pastwiska pożółkły i chrzęściły pod stopami, żyto stanęło niskie i rzadkie, a liście ziemniaków zwijały się w rurki i kładły na grzędach jak zdeptane.
-Jezioro cofnęło się od brzegu o kilkanaście kroków. Odsłonięty muł popękał w kanciaste płyty, a pomost, z którego jeszcze niedawno dziewczęta puszczały wianki, sterczał teraz nad suchym dnem jak szkielet. Struga spływająca z boru zmalała do strużki, wielkie koło w tartaku stanęło, a Urbaniak klął w karczmie, że płaci ludziom za próżnowanie. # pokaz: pomost
+Jezioro cofnęło się od brzegu o kilkanaście kroków. Odsłonięty muł popękał w kanciaste płyty, a pomost, z którego jeszcze niedawno dziewczęta puszczały wianki, sterczał teraz nad suchym dnem jak szkielet. Struga spływająca z boru ledwie się sączyła, wielkie koło w tartaku stanęło, a Urbaniak klął w karczmie, że płaci ludziom za próżnowanie. # pokaz: pomost
 { korale_kaski == zatrzymane:
     W całej chałupie tylko jedno nie wysychało – szmatka z koralami Kaśki, schowana pod siennikiem. Co rano była mokra, jakby ktoś dopiero co wyjął ją z jeziora.
 }
@@ -32,7 +32,7 @@ Wszystkie cienie we wsi kładły się w jedną stronę, krótkie i czarne. Tylko
 # pytanie: Co zrobi Jaromir?
 *   [Oddać jej pajdę chleba, którą niósł na obiad dla ojca.]
     ~ licho_studnia = chleb_przy_studni
-    Żebraczka chwyciła chleb obiema rękami i schowała pod łachmany tak szybko, że nawet nie zauważył kiedy. Nie podziękowała. Patrzyła na niego tym jednym okiem jeszcze przez chwilę, a potem zsunęła się z cembrowiny i podreptała drobnymi kroczkami w stronę gościńca. Cień ruszył za nią dopiero po chwili, jakby się ociągał. # pokaz: odchodzi
+    Żebraczka chwyciła chleb obiema rękami i schowała pod łachmany tak szybko, że Jaromir nawet nie zauważył kiedy. Nie podziękowała. Patrzyła na niego jeszcze długo tym jednym okiem, a potem zsunęła się z cembrowiny i podreptała drobnymi kroczkami w stronę gościńca. Cień ruszył za nią dopiero po chwili, jakby się ociągał. # pokaz: odchodzi
     Ojciec przepracował tego dnia w polu do zmroku o samej wodzie i nie zapytał, gdzie się podział chleb. # dalej
     -> przy_stole
 *   [Przegnać ją od studni.]
@@ -42,7 +42,7 @@ Wszystkie cienie we wsi kładły się w jedną stronę, krótkie i czarne. Tylko
     -> przy_stole
 *   [Nabrać wody i odejść, nie patrząc na nią.]
     ~ licho_studnia = nie_patrzyl
-    Udał, że jej nie widzi. Nabrał wody i ruszył do domu, ale przez całą drogę czuł na plecach spojrzenie, a kiedy obejrzał się przy płocie, przy studni nie było już nikogo. W domu okazało się, że woda w wiadrze jest mętna i cuchnie mułem, choć czerpał ją z samej głębi. Matka wylała ją pod płot i od tamtej pory chodziła do studni sama. # pokaz: slad # dalej
+    Udał, że jej nie widzi. Nabrał wody i ruszył do domu, ale przez całą drogę czuł na plecach spojrzenie, a kiedy obejrzał się przy płocie, cembrowina była już pusta. W domu okazało się, że woda w wiadrze jest mętna i cuchnie mułem, choć czerpał ją z samej głębi. Matka wylała ją pod płot i od tamtej pory chodziła do studni sama. # pokaz: slad # dalej
     -> przy_stole
 
 = przy_stole
@@ -51,9 +51,9 @@ Wszystkie cienie we wsi kładły się w jedną stronę, krótkie i czarne. Tylko
 Pierwszego sierpnia ojciec wrócił z pola wcześniej niż zwykle. Usiadł przy stole i długo obracał w palcach kłos – lekki, prawie pusty – nie mówiąc ani słowa. Matka postawiła przed nim miskę kaszy i też milczała. W izbie słychać było tylko bzyczenie much. Było duszno, pachniało kaszą i nagrzanym drewnem ścian, a przez otwarte okno nie wpadał ani jeden powiew.
 – Z tego żyta nie będzie nawet na zasiew – odezwał się w końcu. – Kartofle uschną w ziemi. Do wiosny nie starczy nam ani na chleb.
 Potem spojrzał na syna tak, jak zaczął na niego patrzeć od Wielkanocy – jak na dorosłego.
-– Urbaniak szuka ludzi do wyrębu. Piła stoi, to chce przez lato naciąć jak najwięcej pni, a jak przyjdą deszcze i woda ruszy koło, przetnie wszystko naraz. Płaci od każdego drzewa. – Zacisnął szczęki. – Przysięgałem sobie, że u niego nie przepracuję ani jednego dnia.
+– Urbaniak szuka ludzi do wyrębu. Piła stoi, to chce przez lato naciąć jak najwięcej pni, a jak przyjdą deszcze i woda ruszy koło, przerobi wszystko naraz. Płaci od każdego drzewa. – Zacisnął szczęki. – Przysięgałem sobie, że u niego nie przepracuję ani jednego dnia.
 { pracowal_w_tartaku:
-    Jaromir pamiętał, jak ojciec patrzył na niego rok temu, kiedy sam przyniósł do domu pierwsze srebro od Urbaniaka.
+    Jaromir pamiętał, jak ojciec patrzył na niego rok temu, kiedy syn przyniósł do domu pierwsze srebro od Urbaniaka.
 }
 – Co o tym myślisz, synu?
 # pytanie: Co odpowie Jaromir?
@@ -71,13 +71,13 @@ Potem spojrzał na syna tak, jak zaczął na niego patrzeć od Wielkanocy – ja
     ~ ekwipunek -= monety
     Jaromir wyjął spod siennika zawiniątko i położył na stole srebro, które rok temu dostał od Urbaniaka. Ojciec patrzył na monety długo, aż matka musiała odwrócić wzrok. # pokaz: monety
     – Odkładałeś – powiedział cicho. – Mądrze.
-    Żyto w Bukowcu po suszy podrożało tak, że za srebro, za które rok wcześniej kupiłby cielaka, dostał ledwie dwa korce na zasiew. Na zimę już nie starczyło i po tygodniu i tak poszedł do wyrębu – sam, bo ktoś musiał zostać w obejściu. # dalej
+    Żyto w Bukowcu po suszy podrożało tak, że za srebro, za które rok wcześniej kupiłby cielaka, ojciec dostał ledwie dwa korce na zasiew. Na zimę już nie starczyło, więc po tygodniu i tak poszedł do wyrębu – sam, bo ktoś musiał zostać w obejściu. # dalej
     -> wiesci_z_wyrebu
 
 = na_wyrebie
 # tlo: wyreb
-Wyrąb miał miejsce za strugą, na skraju boru, tam gdzie jeszcze rok temu rosły najstarsze dęby. Ziemia była tu zryta i pełna pniaków, a między nimi leżały okorowane kłody, białe jak kości. Pracowało się od świtu, w kurzu i spiekocie, a powietrze drżało od stuku siekier i jęku pił. Jaromir okrzesywał gałęzie, a ojciec z dwoma traczami kładł drzewa.
-Trzeciego dnia, pod wieczór, Jaromir znowu ją zobaczył. Żebraczka siedziała na pniaku na skraju zrębu i jednym okiem przyglądała się ojcu. Nikt poza nim jej nie zauważył, choć przeszła tuż obok traczy. # pokaz: licho
+Wyrąb ciągnął się za strugą, na skraju boru, tam, gdzie jeszcze rok temu rosły najstarsze dęby. Ziemia była tu zryta i pełna pniaków, a między nimi leżały okorowane kłody, białe jak kości. Pracowało się od świtu, w kurzu i spiekocie, a powietrze drżało od stuku siekier i jęku pił. Jaromir okrzesywał gałęzie, a ojciec z dwoma traczami kładł drzewa.
+Trzeciego dnia, pod wieczór, Jaromir znowu ją zobaczył. Żebraczka siedziała na pniaku na skraju zrębu i jednym okiem przyglądała się ojcu. Nikt poza Jaromirem jej nie zauważył, choć przeszła tuż obok traczy. # pokaz: licho
 Ojciec podcinał właśnie wysoką sosnę. Powietrze było ciężkie i nieruchome, nie drgnął żaden listek – a jednak, kiedy drzewo zatrzeszczało, od boru przyszedł nagły podmuch, gorący i suchy jak oddech z pieca. Sosna obróciła się na pniu i runęła nie w tę stronę, w którą powinna. # pokaz: podmuch
 – Uciekaj! – wrzasnął któryś z traczy.
 Ojciec skoczył w bok, ale noga uwięzła mu w cierniach. Pień spadł z hukiem, aż zadudniła ziemia, i przygniótł go od kolan w dół. # pokaz: upadek
@@ -90,7 +90,7 @@ Kiedy Jaromir spojrzał w stronę pniaka, żebraczki już tam nie było.
     -> babka_hanki
 *   [Biec po pomoc na drugi koniec zrębu.]
     ~ noga_ojca = strzaskana
-    Jaromir pobiegł, co sił w nogach, przeskakując kłody i pniaki. Zanim wrócił z ludźmi i zdołali dźwignąć pień, minęła wieczność. # pokaz: pomoc
+    Jaromir pobiegł co sił w nogach, przeskakując kłody i pniaki. Zanim wrócił z ludźmi i zdołali dźwignąć pień, minęła wieczność. # pokaz: pomoc
     Kiedy wyciągnęli ojca, był szary na twarzy, a noga poniżej kolana wyglądała tak, że jeden z traczy odwrócił się i zwymiotował w paprocie. # dalej
     -> babka_hanki
 
@@ -106,7 +106,7 @@ Godzinę później usłyszał turkot. Drogą od strugi jechał wóz Urbaniaka, a
 
 = babka_hanki
 # tlo: izba_ranny
-Ojca położyli na ławie w izbie. Po babkę Hanki nikt nie musiał posyłać – dziewczyna przyprowadziła ją sama, ledwie usłyszała, co się stało. Znała się na złamaniach lepiej niż doktor z Bukowca. Stara przyszła z koszem ziół, obejrzała nogę, mruknęła coś pod nosem i kazała trzymać. Jaromir trzymał. Kiedy nastawiała kość, ojciec zemdlał, i dobrze, bo krzyk, który zdążył z siebie wydać, Jaromir słyszał potem w snach przez wiele nocy.
+Ojca położyli na ławie w izbie. Po babkę Hanki nikt nie musiał posyłać – dziewczyna przyprowadziła ją sama, ledwie usłyszała, co się stało. Babka znała się na złamaniach lepiej niż doktor z Bukowca. Stara przyszła z koszem ziół, obejrzała nogę, mruknęła coś pod nosem i kazała trzymać. Jaromir trzymał. Kiedy nastawiała kość, ojciec zemdlał, i dobrze, bo krzyk, który zdążył z siebie wydać, Jaromir słyszał potem w snach przez wiele nocy.
 Babka obłożyła złamanie rozgniecionym korzeniem i obwiązała łubkami z leszczyny. Zapachniało żywokostem i rumiankiem, gorzko i czysto, jak w polu po deszczu. Hanka nosiła wodę z jeziora, bo w studni zostało już tylko błoto, i chłodziła rannemu czoło mokrą szmatką.
 { noga_ojca == zlamana:
     – Zrośnie się – powiedziała stara. – Krzywo, ale się zrośnie. Przez miesiąc nie wstanie, a potem będzie chodził o kiju.
@@ -116,7 +116,7 @@ Babka obłożyła złamanie rozgniecionym korzeniem i obwiązała łubkami z les
 W sieni, kiedy już wychodziła, chwyciła Jaromira za rękaw i przyciągnęła do siebie.
 – Widziałeś ją, prawda? – szepnęła. – Małą, w łachmanach, z jednym okiem.
 Skinął głową.
-– Licho – powiedziała stara i splunęła przez ramię. – Licho, co nie śpi. Chodzi od chałupy do chałupy i siada tam, gdzie mu dobrze. Gdzie kapliczki stoją, a ludzie żyją po bożemu, długo miejsca nie zagrzeje. Ale gdzie las rąbią, a świętości przestawiają z kąta w kąt, tam się zasiedzi i będzie żarło, aż zostaną same kości. Ono nie przyszło z własnej woli. Ktoś je tu przysłał. – A wiesz, czemu ma jedno oko? – dodała ciszej. – Bo drugie zostało w borze. Mówią, że Licho to oczy, które Pan Lasu wysyła między ludzi. Co zobaczy jedno, to wie drugie. # pokaz: babka
+– Licho – rzekła stara i splunęła przez ramię. – Licho, co nie śpi. Chodzi od chałupy do chałupy i siada tam, gdzie mu dobrze. Gdzie kapliczki stoją, a ludzie żyją po bożemu, długo miejsca nie zagrzeje. Ale gdzie las rąbią, a świętości przestawiają z kąta w kąt, tam się zasiedzi i będzie żarło, aż zostaną same kości. Ono nie przyszło z własnej woli. Ktoś je tu przysłał. – A wiesz, czemu ma jedno oko? – dodała ciszej. – Bo drugie zostało w borze. Mówią, że Licho to oczy, które Pan Lasu wysyła między ludzi. Co zobaczy jedno, to wie drugie. # pokaz: babka
 – Jak je przegnać? – zapytał Jaromir.
 – Licha się nie przegania. Przegonisz od siebie, pójdzie do sąsiada. Można je ugościć, żeby poszło dalej syte. Albo nie otworzyć mu i nie odezwać się do niego ani słowem, choćby prosiło najsłodszym głosem. Do chałupy wejdzie tylko wtedy, kiedy je ktoś zawoła.
 { licho_studnia:
@@ -125,8 +125,8 @@ Skinął głową.
 - przegnal:
     – Przegoniłeś je od studni? – westchnęła. – To teraz cię zapamiętało.
 }
-Hanka wyszła za nimi na próg. Kiedy babka ruszyła w stronę kuźni, przystanęła przy Jaromirze i {pocalunek:szybko pocałowała go w policzek|ścisnęła mu dłoń}. # pokaz: hanka
-– Nie będę dziś spała – szepnęła. – Pomogę ci zająć się ojcem przez najbliższe dni. # dalej
+Hanka wyszła za nimi na próg. Kiedy babka ruszyła w stronę kuźni, dziewczyna przystanęła przy Jaromirze i {pocalunek:szybko pocałowała go w policzek|ścisnęła mu dłoń}. # pokaz: hanka
+– Nie będę dziś spała – szepnęła. – Pomogę ci przy ojcu, póki trzeba. # dalej
 -> pukanie
 
 = pukanie
@@ -167,7 +167,7 @@ Pod powałą, na haku, wisiał płat słoniny. Ostatni – a babka Hanki przykaz
 
 = kapliczki_pod_borem
 # tlo: kapliczki_wykop
-Pod koniec sierpnia Urbaniak postanowił, że nie będzie czekał na deszcz. Skoro piła stoi, a struga nie uniesie tratwy, pnie trzeba wozić wozami do Bukowca – a wozy z długimi kłodami nie mieściły się na zakrętach drogi pod borem. Tam, na każdym z nich, stała kapliczka. # dalej
+Pod koniec sierpnia Urbaniak postanowił, że nie będzie czekał na deszcz. Skoro piła stoi, a struga nie uniesie tratwy, pnie trzeba wozić do Bukowca – a wozy z długimi kłodami nie mieściły się na zakrętach drogi pod borem. Tam, na każdym zakręcie, stała kapliczka. # dalej
 -> u_urbaniaka
 
 = u_urbaniaka
@@ -183,23 +183,23 @@ Urbaniak wyszedł do nich na ganek w samej kamizelce, z serwetką jeszcze za ko�
 – Kapliczki stawiali nasi ojcowie – mówił Staś. – Póki stoją, bór siedzi tam, gdzie siedział. Niech pan wozi krótsze kłody, a świętości zostawi w spokoju.
 – Krótsze kłody, krótszy zarobek – odparł Urbaniak. – I to nie mój, tylko wasz. – Wyjął z kieszeni zeszycik w ceratowej okładce, polizał palec i zaczął przewracać kartki. – Wójcik: dwa korce mąki od Wielkanocy. Staś: na podatek, jeszcze z zimy. Kowal: żelazo na nowe kowadło. Czytać dalej? – Zamknął zeszycik. – Ja nikogo nie zmuszam. Kto nie chce mojego srebra, niech nie bierze. Ale niech mi wtedy odda, co już wziął.
 Chłopi spuścili głowy. Tylko Antek wysunął się przed starszych.
-– Ja panu nic nie jestem winien – powiedział. Głos mu drżał, ale się nie cofnął. – I nie będę.
+– Ja panu nic nie jestem winien – powiedział. Głos mu drżał, ale chłopak się nie cofnął. – I nie będę.
 – Ty od kowala? – Urbaniak przyjrzał mu się z rozbawieniem. – To kowal mi będzie winien, jak nie podkuje moich koni. – Antek poczerwieniał po uszy, a kowal bez słowa chwycił go za kołnierz i odciągnął do tyłu.
-{ pracowal_w_tartaku: – A ty nosiłeś u mnie deski – Urbaniak spojrzał na Jaromira. – Dobrze nosiłeś. Szkoda by było, żebyś w zimie nosił ojcu same obierki. }
+{ pracowal_w_tartaku: – A ty nosiłeś u mnie deski. – Urbaniak spojrzał na Jaromira. – Dobrze nosiłeś. Szkoda by było, żebyś w zimie nosił ojcu same obierki. }
 { powiedzial_ojcu_poludnica && not figurka_u_staruchy:– Rok temu dał pan mojemu ojcu słowo, że kapliczek nikt nie ruszy – powiedział Jaromir spokojnie, choć w środku cały się trząsł. – Ojciec leży z nogą w łubkach, to ja przyszedłem przypomnieć. – Rok temu padało – odparł Urbaniak.|– Kapliczek niech pan nie rusza – powiedział Jaromir spokojnie, choć w środku cały się trząsł. – Nie dla nas. Dla pana też.}
 { wyreb_z_ojcem:
     – Byłem na zrębie, kiedy ojca przygniotło – dodał Jaromir. – Ta sosna nie padła od wiatru. Wiatru nie było.
     – A od czego? – Urbaniak uniósł brwi. – Od licha? – Kilku chłopów przeżegnało się ukradkiem, a on się roześmiał.
 }
 { licho_noc == ugoszczone: – A piłę mi ktoś w nocy przepołowił i konia struł – dorzucił Urbaniak i na chwilę spoważniał. – Jak się dowiem, kto z waszych, to i święci go nie obronią. }
-– Kapliczki pójdą w poniedziałek – powiedział na koniec. – Kto chce, niech przyjdzie z łopatą, zapłacę jeszcze tego samego wieczora. A kto nie chce, niech pilnuje swojego chleba, bo ode mnie go już nie dostanie. – Wyjął serwetkę zza kołnierza, strzepnął ją i wrócił do środka.
+– Kapliczki pójdą w poniedziałek – oznajmił na koniec Urbaniak. – Kto chce, niech przyjdzie z łopatą, zapłacę jeszcze tego samego wieczora. A kto nie chce, niech pilnuje swojego chleba, bo ode mnie go już nie dostanie. – Wyjął serwetkę zza kołnierza, strzepnął ją i wrócił do środka.
 Wracali w milczeniu. Przy wyschniętej strudze stary Staś przystanął, splunął w popękany muł i powiedział, nie patrząc na nikogo:
 – Bór pamięta dłużej niż ten jego zeszyt. # dalej
 -> kopanie
 
 = kopanie
 # tlo: kapliczki_wykop
-W poniedziałek rano ludzie Urbaniaka przyszli z łopatami. Wykopywali słupy, ściągali daszki, a święte figurki wrzucali na wóz jak drewno na opał. Kobiety wyglądały zza płotów i płakały, starzy pomstowali – ale kiedy Urbaniak zawołał, że za dzień roboty płaci srebrem, od ręki, kilku chłopów z Zapadliny wzięło łopaty i przyłączyło się do jego ludzi. Głód był silniejszy niż strach. Łopaty zgrzytały o kamienie, a każdy słup wychodził z dołu z mlaśnięciem, jakby ziemia nie chciała go puścić. Jaromir czuł, jak coś ściska go w gardle – nie wiedział, czy to złość, czy wstyd za tych, którzy kopali. # pokaz: kopacze
+W poniedziałek rano ludzie Urbaniaka przyszli z łopatami. Wykopywali słupy, ściągali daszki, a święte figurki wrzucali na wóz jak drewno na opał. Kobiety wyglądały zza płotów i płakały, starzy pomstowali – ale kiedy Urbaniak zawołał, że za dzień roboty płaci srebrem, od ręki, kilku chłopów z Zapadliny przyłączyło się do jego ludzi. Głód był silniejszy niż strach. Łopaty zgrzytały o kamienie, a każdy słup wychodził z dołu z mlaśnięciem, jakby ziemia nie chciała go puścić. Jaromir czuł, jak coś ściska go w gardle – nie wiedział, czy to złość, czy wstyd za tych, którzy kopali. # pokaz: kopacze
 { kapliczka_podniesiona:
     Na samym skraju boru stała ta, którą Jaromir z Antkiem podnieśli pięć lat temu z błota.
 }
@@ -210,30 +210,30 @@ W poniedziałek rano ludzie Urbaniaka przyszli z łopatami. Wykopywali słupy, �
 *   [Stanąć przed kapliczką na skraju boru i nie dać jej ruszyć.]
     ~ kapliczki_drogi = obronil_kapliczke
     Jaromir stanął przed słupem i rozłożył ręce. Po chwili dołączył do niego Antek – milczący, z twarzą czarną od sadzy z kuźni. # pokaz: obrona
-    Jeden z ludzi Urbaniaka pchnął go tak, że upadł w pył. Jaromir wstał i wrócił na miejsce. Pchnął go jeszcze raz. Jaromir znów wstał.
+    Jeden z ludzi Urbaniaka pchnął Jaromira tak, że upadł w pył. Chłopak wstał i wrócił na miejsce. Tamten pchnął go jeszcze raz. Jaromir znów wstał.
     W końcu Urbaniak, który przyglądał się temu z bryczki, roześmiał się i machnął ręką.
     – Niech stoi, skoro taki uparty – rzucił. – Jedna kapliczka wozom nie zaszkodzi. Ale twój ojciec, chłopcze, roboty u mnie więcej nie dostanie. Nawet jak wstanie. # dalej
     -> blizej
 *   [W nocy zakraść się do wozu i ocalić choć jedną figurkę.]
     ~ kapliczki_drogi = ocalil_swiatka
     ~ ekwipunek += swiatek
-    Wóz z figurkami stał na noc pod szopą tartaku. Jaromir zakradł się tam po północy razem z Hanką – to ona wymyśliła, żeby podejść od strony strugi, skąd stróż nie widział z budy, i to ona została przy płocie, gotowa zahukać jak sowa, gdyby się ruszył. Po omacku wyciągnął spod plandeki pierwszą figurkę, jaka wpadła mu w ręce. Był to drewniany świątek – Matka Boża z dzieciątkiem, z twarzą wytartą przez deszcze tak, że ledwie było ją widać. # pokaz: noc
-    Zaniósł ją do bazy w starym bzie i schował pod deskami. Kiedy wracali, Hanka przez całą drogę oglądała się przez ramię, a dopiero przy kuźni szepnęła, że ktoś szedł za nimi skrajem boru i stawał, kiedy oni stawali. # dalej
+    Wóz z figurkami stał na noc pod szopą tartaku. Jaromir zakradł się tam po północy razem z Hanką – to ona wymyśliła, żeby podejść od strony strugi, skąd stróż nie widział z budy, i to ona została przy płocie, gotowa zahukać jak sowa, gdyby stróż się ruszył. Jaromir po omacku wyciągnął spod płachty pierwszą figurkę, jaka wpadła mu w ręce. Był to drewniany świątek – Matka Boża z dzieciątkiem, z twarzą wytartą przez deszcze tak, że ledwie było ją widać. # pokaz: noc
+    Zaniósł figurkę do bazy w starym bzie i schował pod deskami. Kiedy wracali, Hanka przez całą drogę oglądała się przez ramię, a dopiero przy kuźni szepnęła, że ktoś szedł za nimi skrajem boru i stawał, kiedy oni stawali. # dalej
     -> blizej
 *   [Nie wtrącać się – w domu nie ma chleba, a ojciec leży.]
     ~ kapliczki_drogi = nie_wtracal
-    Jaromir stał przy płocie i patrzył, jak wykopują jedną kapliczkę po drugiej. Nie zrobił nic. Zrobiła to za niego Hanka: stanęła przy ostatnim słupie, pod samym borem, i nie ruszyła się, póki dwóch ludzi Urbaniaka nie odstawiło jej na bok jak worka z plewami. Wracając, minęła Jaromira i nie spojrzała na niego ani razu. Wieczorem przyniósł do domu garść miedziaków – za noszenie desek z rozebranych daszków – i położył je na stole bez słowa. Matka też nic nie powiedziała. Kupiła za nie mąki. # pokaz: wozy # dalej
+    Jaromir stał przy płocie i patrzył, jak wykopują jedną kapliczkę po drugiej. Nie zrobił nic. Zrobiła to za niego Hanka: stanęła przy ostatnim słupie, pod samym borem, i nie ruszyła się, póki dwóch ludzi Urbaniaka nie odstawiło jej na bok jak worka z plewami. Wracając, minęła Jaromira i nie spojrzała na niego ani razu. Wieczorem Jaromir przyniósł do domu garść miedziaków – za noszenie desek z rozebranych daszków – i położył je na stole bez słowa. Matka też nic nie powiedziała. Kupiła za nie mąki. # pokaz: wozy # dalej
     -> blizej
 
 = blizej
 # tlo: bor_blizej
 Tej nocy od boru przyszedł wiatr.
 Wiał gorący i suchy, bez jednej kropli deszczu, i szumiał w koronach tak, że w całej Zapadlinie nikt nie zmrużył oka. Nad lasem błyskało bez grzmotów, a w tym świetle drzewa wyglądały, jakby się poruszały – nie kołysały, tylko szły. # pokaz: burza
-Rano drogę pod borem zobaczyła cała wieś. W dołach po kapliczkach rosły młode świerki – po kilka w każdym, zielone, pachnące żywicą, na łokieć wysokie – choć wieczorem były tam tylko gołe doły. # pokaz: swierki
+Rano drogę pod borem zobaczyła cała wieś. W dołach po kapliczkach rosły młode świerki – po kilka w każdym, zielone, pachnące żywicą, na łokieć wysokie – choć wieczorem nic tam jeszcze nie rosło. # pokaz: swierki
 { kapliczki_drogi == obronil_kapliczke:
     Tylko przy tej jednej, której Jaromir nie dał ruszyć, ziemia była goła i spokojna. # pokaz: kapliczka
 }
-Bór wydawał się bliżej niż wczoraj. Nikt nie umiał powiedzieć, o ile – ale wszyscy to czuli.
+Bór wydawał się bliższy niż poprzedniego dnia. Nikt nie umiał powiedzieć, o ile – ale wszyscy to czuli.
 Deszcz przyszedł dopiero we wrześniu, kiedy było już za późno. Z żyta zebrali tyle, że zmieściło się w dwóch workach, a ziemniaków niewiele więcej. {noga_ojca == zlamana:Ojciec wstał po miesiącu i chodził o kiju, krzywiąc się przy każdym kroku.|Ojciec przeżył gorączkę i zachował nogę, ale nie wstał z ławy aż do Bożego Narodzenia, a potem chodził już tylko o kulach.} Orał więc Jaromir. Sam zasiał oziminę, sam zwiózł drewno na zimę i sam targował się w Bukowcu o cenę zboża, aż handlarze przestali brać go za chłopaka.
 Ostatni raz widział żebraczkę w październiku, o zmroku. Szła drogą pod borem, drobnymi kroczkami, i nie oglądała się za siebie. Na skraju lasu przystanęła, jakby ktoś ją zawołał, a potem weszła między drzewa i zniknęła. # pokaz: zebraczka
 A kilka kroków przed nią, w tę samą stronę, szedł Franek. # pokaz: franek # dalej

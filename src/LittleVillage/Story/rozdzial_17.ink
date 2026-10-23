@@ -13,7 +13,7 @@
 # tlo: wies_sianokosy
 # rozdzial: Rozdział siedemnasty
 # tytul: Rozmowa w borze
-W Zapadlinie trzeci dzień z rzędu wstawano przed świtem. Siano leżało na łąkach pod wsią i trzeba je było przewracać, zanim zbutwieje od rosy, więc chłopi szli z grabiami, a kobiety za nimi. Nikt nie śpiewał. Słychać było tylko szelest przewracanego siana i derkacza w mokrej trawie. Kiedy któryś zapomniał się i zaczynał nucić, sąsiad trącał go łokciem i pokazywał brodą na chałupę Jaromira.
+W Zapadlinie trzeci dzień z rzędu wstawano przed świtem. Siano leżało na łąkach pod wsią i trzeba je było przewracać, zanim zbutwieje od rosy, więc chłopi szli z grabiami, a kobiety za nimi. Nikt nie śpiewał. Słychać było tylko szelest grabi i derkacza w mokrej trawie. Kiedy któryś zapomniał się i zaczął nucić, sąsiad trącał go łokciem i pokazywał brodą na chałupę Jaromira.
 Hanka nie chodziła na łąki. Siedziała przy oknie, w którym nocą paliło się łuczywo, i szyła – nie wiadomo co, bo rano pruła wszystko, co zrobiła wieczorem. W izbie pachniało dymem i kwaśnym mlekiem, którego nikt nie wylał. Raz {trzy_noce == czuwanie_przy_kolysce:Jadwisia|Wójcikowa} przyniosła jej garnek kaszy; po południu zabrała go z powrotem, nietknięty. # pokaz: luczywo
 { pole_zbite_gradem:
     Na zagonach Jaromira leżało zbite, poczerniałe zboże. Ludzie wykosili je w jedno popołudnie, razem z trawą z jego łąki, żeby Hanka miała choć słomę na ściółkę.
@@ -25,7 +25,7 @@ Antek przychodził pod wieczór, siadał na progu i opowiadał, gdzie dziś szuk
 { przysiega_ksiedzu:
     Ksiądz z Bukowca odprawił mszę za zaginione dziecko. Ludzie z Zapadliny stali pod ścianami kościoła i nie patrzyli sobie w oczy.
 }
-Tego samego ranka, w sercu boru, Pan Lasu osunął się na ziemię – powoli, z trzaskiem i jękiem drewna, jak stodoła, w której puściły belki – aż jego twarz zawisła nad Jaromirem na wysokości strzechy.
+Trzeciego ranka, w sercu boru, Pan Lasu osunął się na ziemię – powoli, z trzaskiem i jękiem drewna, jak stodoła, w której puściły belki – aż jego twarz zawisła nad Jaromirem na wysokości strzechy.
 Jaromir przysiadł na korzeniu, bo nogi i tak by go dłużej nie uniosły. # dalej
 -> pod_debem
 
@@ -40,12 +40,12 @@ Milczeli. Jaromir słyszał, jak w pniu dębu coś pracuje – cicho, równo, ja
 }
 {
 - pies_pobiegl_sam:
-    Między korzeniami, zwinięty w kłębek, spał rudy pies. Kiedy Jaromir szepnął jego imię, podniósł łeb, powęszył w jego stronę i obojętnie, jak na obcego, znów złożył pysk na łapach. Pomyślał wtedy, że wystarczyłoby wywrócić kapotę z powrotem. I nie zrobił tego. # pokaz: pies_spi
+    Pod korzeniami dębu, zwinięty w kłębek, spał rudy pies. Kiedy Jaromir szepnął jego imię, pies podniósł łeb, powęszył w tę stronę i obojętnie, jak na obcego, znów złożył pysk na łapach. Jaromir pomyślał wtedy, że wystarczyłoby wywrócić kapotę z powrotem. Ale nie zrobił tego. # pokaz: pies_spi
 - ekwipunek ? szczenie_psa:
     Pies przywarł mu do boku i drżał. Nie warczał. Patrzył na Pana Lasu tak, jak patrzy się na burzę, która już nadeszła. # pokaz: pies
 }
 { wejscie_do_boru == ubranie_na_lewo:
-    Pan Lasu przyjrzał się jego wywróconej kapocie i kora jego twarzy przesunęła się w bok – może był to uśmiech. – Nosisz się po naszemu – powiedział. – Uważaj, żeby ci się nie spodobało.
+    Pan Lasu przyjrzał się wywróconej kapocie Jaromira i kora jego twarzy przesunęła się w bok – może był to uśmiech. – Nosisz się po naszemu – powiedział. – Uważaj, żeby ci się nie spodobało.
 }
 { przed_panem_lasu == zawolal_marysie:
     – Wołałeś ją, a odpowiedziało ci bagno – powiedział Pan Lasu. – O świcie nie słuchaj uszami.
@@ -54,9 +54,9 @@ Milczeli. Jaromir słyszał, jak w pniu dębu coś pracuje – cicho, równo, ja
     – Zapaliłeś mi bór – powiedział Pan Lasu. – I zdusiłeś ogień. Zapamiętam jedno i drugie.
 }
 { weselny_gosc == zapytany:
-    – Mówiłem ci: pilnuj jej – powiedział Pan Lasu, a Jaromir poczuł, że policzki mu płoną.
+    – Mówiłem ci: pilnuj jej – przypomniał Pan Lasu, a Jaromir poczuł, że policzki mu płoną.
 }
-– Zadaj jedno pytanie – odezwał się w końcu. – Reszty dowiesz się sam albo wcale.
+– Zadaj jedno pytanie – odezwał się w końcu Pan Lasu. – Reszty dowiesz się sam albo wcale.
 Jaromir miał ich setki. Układał je sobie przez dwa dni drogi, po kolei, a teraz wszystkie mu się rozsypały.
 # pytanie: O co Jaromir zapyta?
 *   [Gdzie jest Marysia.]
@@ -67,7 +67,7 @@ Jaromir miał ich setki. Układał je sobie przez dwa dni drogi, po kolei, a ter
     Jaromir spojrzał pod nogi. Jego własny cień leżał na porostach, blady i krótki – jedyny w tym miejscu oprócz cienia dębu. # pokaz: cien # dalej
 *   [Kim jest.]
     ~ pytanie_do_leszego = kim_jest
-    – Tym, co zostaje, kiedy wy odchodzicie. – Pan Lasu podniósł rękę i z jego palców posypały się suche igły. – Byłem tu, zanim pierwszy z was zszedł w dolinę, i będę, kiedy po chałupach zostaną tylko kopce porośnięte pokrzywą. Wy mówicie na mnie Borowy albo Pan Lasu. Sosny nie mówią na mnie nic – po prostu wiedzą, kiedy przechodzę. # pokaz: igly
+    – Tym, co zostaje, kiedy wy odchodzicie. – Pan Lasu podniósł rękę i z jego palców posypały się suche igły. – Byłem tu, zanim pierwszy z was zszedł w dolinę, i będę, kiedy po chałupach zostaną tylko kopce porośnięte pokrzywą. Wy mówicie na mnie Borowy albo Pan Lasu. Sosny nie mówią na mnie nic – wiedzą, kiedy przechodzę. # pokaz: igly
     – W lesie coś liczyło. Słyszałem to jeszcze jako chłopiec, we mgle.
     – Ja. Liczę stare drzewa, które padły od waszych siekier po tej stronie granicy. I każdego z was, kto mi się sam oddał: głosem, krokiem, krwią.
     {
@@ -90,38 +90,38 @@ Jaromir miał ich setki. Układał je sobie przez dwa dni drogi, po kolei, a ter
 
 = granica
 ~ zapiski += (pan_lasu_9, zielarka_4)
-– Słuchaj, wnuku Maćka – zaczął Pan Lasu i bór ucichł tak, że Jaromir słyszał chrzęst porostu pod butami. – Opowiem ci to raz.
-Zanim przyszliście, ta dolina była moja, od grzbietu aż po jezioro. Pierwsi, którzy tu zeszli, rąbali, co chcieli, a ja co zimę zabierałem im dzieci, starych i bydło, bo tak to szło od zawsze. Aż jeden z nich przyszedł pod Dąb bez siekiery i powiedział: dalej nie pójdziemy. Słowo za słowo. Wy – nie dalej niż Dąb. Ja – jedno dziecko na pokolenie, w noc świętojańską. I oddam je, zanim zapomni dom. Cofnąłem się. Razem ze słowem postawiliście wzdłuż boru kapliczki. Słowo było płotem, a one gwoździami.
+– Słuchaj, wnuku Maćka – zaczął Pan Lasu i bór ucichł tak, że Jaromir słyszał chrzęst porostu, kiedy poruszył stopą. – Opowiem ci to raz.
+– Zanim przyszliście, ta dolina była moja, od grzbietu aż po jezioro. Pierwsi, którzy tu zeszli, rąbali, co chcieli, a ja co zimę zabierałem im dzieci, starych i bydło, bo tak to szło od zawsze. Aż jeden z nich przyszedł pod Dąb bez siekiery i powiedział: dalej nie pójdziemy. Słowo za słowo. Wy – nie dalej niż Dąb. Ja – jedno dziecko na pokolenie, w noc świętojańską. I oddam je, zanim zapomni dom. Cofnąłem się. Razem ze słowem postawiliście wzdłuż boru kapliczki. Słowo było płotem, a one gwoździami.
 { kapliczka_podniesiona:
     – Jedną postawiłeś mi z powrotem, chłopcze. Pamiętam.
 }
 { chleb_dla_dziadow:
     – I ktoś mi w Zaduszki zapalił {kapliczka_podniesiona:pod nią|pod kapliczką na skraju boru} światło.
 }
-Potem była ona. Spaliliście ją w zabitej deskami chacie, a ona w ogniu przeklęła was cudzymi rękami: moimi i tych znad wody. „Kości dzieci waszych będą połamane, a krew ich wypita.” Nikt nie pytał o moją zgodę. Dopóki stał Dąb, słowo trzymało mocniej niż klątwa i mogłem jej nie słuchać.
+– Potem była ona. Spaliliście ją w zabitej deskami chacie, a ona w ogniu przeklęła was cudzymi rękami: moimi i tych znad wody. „Kości dzieci waszych będą połamane, a krew ich wypita.” Nikt nie pytał o moją zgodę. Dopóki stał Dąb, słowo trzymało mocniej niż klątwa i mogłem jej nie słuchać.
 Liście dębu zwinęły się nad nimi, jakby ktoś przytknął do nich głownię. # pokaz: liscie
 { chata_macka == przy_lesie:
     – Potem przyszedł twój dziadek. Słowa nie znał. Postawił chałupę po mojej stronie, pod samym borem, i pierwszego ranka wbił siekierę w najbliższy świerk. Odpowiedziałem mu, ale nie zrozumiał. Od tamtego drzewa liczę.
     {figurka_u_staruchy:Jaromir przypomniał sobie zarośnięte pokrzywą podwaliny pod borem, o które ojciec nigdy nie pozwalał pytać.|Jaromir przypomniał sobie tylną ścianę ojcowskiej izby, za którą od zawsze szumiał bór, i zrobiło mu się wstyd za cudzą winę.}
 }
-– A potem przyszedł ten z miasta. Dąb padł{ franek_scial_dab: – i pierwsze cięcie zadała mu ręka Franka}. Kapliczki wykopali jego ludzie, a resztę wziął ogień. Wyście patrzyli.{ noc_ognia != ratowal_szymona: Ostała się jedna – za mało, żeby utrzymać płot.} A klątwa nie śpi. Budzi moich – tych, którzy coraz rzadziej mnie słuchają: te znad wody, mamuny, błędnice. Ciągnie ich do waszych chałup jak ćmy do łuczywa.
+– A potem przyszedł ten z miasta. Dąb padł{ franek_scial_dab: – i pierwsze cięcie zadała mu ręka Franka}. Kapliczki wykopali jego ludzie, a resztę wziął ogień. Wyście patrzyli.{ noc_ognia != ratowal_szymona: Ostała się jedna – za mało, żeby utrzymać płot.} A klątwa nie śpi. Budzi moje – te, które coraz rzadziej mnie słuchają: te znad wody, mamuny, błędnice. Ciągnie je do waszych chałup jak ćmy do łuczywa.
 – Dlatego wziąłem dziecko – powiedział Pan Lasu. – Noc świętojańska była moja. A gdybym jej nie wziął, wzięłyby ją one. Tamtą w życie posłałem ja, żeby przeprowadziła małą przez pole, zanim znajdą ją te znad wody.
 – To oddaj ją – wychrypiał Jaromir. – Skoro ją chroniłeś. Oddaj, jak oddawałeś tamte.
 – Do chałupy bez płotu? – Pan Lasu przechylił głowę. – Wy pierwsi złamaliście słowo. Tym razem nie oddam jej za darmo.
 Jaromir chciał krzyczeć, ale gardło miał suche jak porost pod nogami. Przed oczami stanęła mu żytnia baba, przykucnięta w zbożu, kołysząca drewniakiem – i to, jak ostrożnie przeprowadziła Marysię przez pole, jak cudzą rzecz, którą trzeba oddać w całości.
-Wtedy spomiędzy korzeni wysunął się biały wilk. # pokaz: wilk
+Spomiędzy korzeni wysunął się biały wilk. # pokaz: wilk
 Szedł wolno, z łbem nisko, ogromny i chudy, z obręczą wytartej sierści na przedniej łapie. W pysku niósł coś czerwonego. Dopiero kiedy stanął między nimi, Jaromir poznał drugi drewniak Marysi – ten z pola.
 {
 - oblawa_wilk == wydal_wilka:
-    Wilk szedł krzywo, oszczędzając bok, na którym bielał nagi pręt starej rany. Kiedy spojrzał na Jaromira, zmarszczył nos i z gardła dobyło mu się ciche, przeciągłe warczenie.
+    Wilk szedł krzywo, oszczędzając bok, na którym bielała naga pręga starej rany. Kiedy spojrzał na Jaromira, zmarszczył nos i z gardła dobyło mu się ciche, przeciągłe warczenie.
 - przejscie_bagna == za_wilkiem:
-    Wilk zerknął najpierw na jego owiniętą szmatą dłoń, a dopiero potem na twarz.
+    Wilk zerknął najpierw na owiniętą szmatą dłoń Jaromira, a dopiero potem na twarz.
 }
 { ekwipunek ? szczenie_psa:
     Pies zjeżył sierść, ale nie ruszył się od nogi Jaromira.
 }
 { dlug_u_jagny:
-    Jaromir pomyślał o Jagnie, która przebiera zioła pod jego płotem i czeka na pierwszą rzecz wyniesioną z boru.
+    Jaromir pomyślał o Jagnie, która czeka na pierwszą rzecz wyniesioną z boru.
 }
 # pytanie: Co zrobi Jaromir?
 *   [Nazwać go po imieniu.]
@@ -132,22 +132,22 @@ Szedł wolno, z łbem nisko, ogromny i chudy, z obręczą wytartej sierści na p
     - else:
         ~ wilk_przy_jaromirze = true
         ~ drugi_drewniak = true
-        Wilk stał bez ruchu.{ przejscie_bagna == za_wilkiem: Tym razem nie kłapnął.} Potem podszedł ostrożnie, z łbem przy ziemi, i położył mu drewniak na dłoni. Był ciepły i mokry od śliny. Wilk legł Jaromirowi u nóg, pyskiem do Pana Lasu. # pokaz: drewniak # tobolek
+        Wilk stał bez ruchu.{ przejscie_bagna == za_wilkiem: Tym razem nie kłapnął.} Potem podszedł ostrożnie, z łbem przy ziemi, i położył mu drewniak na dłoni. Drewniak był ciepły i mokry od śliny. Wilk legł Jaromirowi u nóg, pyskiem do Pana Lasu. # pokaz: drewniak # tobolek
     }
     – Imię to najcięższe ze słów – odezwał się Pan Lasu. – Zabrałeś mu nim rok wilczego życia. # dalej
 *   [Opowiedzieć mu o Antku i o małym Franku.]
     ~ wilk_pod_debem = opowiedzial_o_antku
     ~ wilk_przy_jaromirze = true
     ~ drugi_drewniak = true
-    Jaromir zaczął mówić, z początku cicho, potem coraz szybciej. O bochenkach, które brat nosił mu do szałasu nad jeziorem i które leżały tam, aż zjadły je myszy. O tym, że Antek ma syna i dał mu na imię po stryju, a on, Jaromir, trzymał małego do chrztu.{ obietnica_antkowi: O tym, że obiecał Antkowi, że nikt go nie dostanie.}
+    Jaromir zaczął mówić, z początku cicho, potem coraz szybciej. O bochenkach, które Antek nosił mu do szałasu nad jeziorem i które leżały tam, aż zjadły je myszy. O tym, że Antek ma syna i dał mu na imię po stryju, a on, Jaromir, trzymał małego do chrztu.{ obietnica_antkowi: O tym, że obiecał Antkowi, że nikt małego nie dostanie.}
     { oblawa_wilk == wydal_wilka:
         – I o tym, że to ja cię wtedy wydałem – powiedział na końcu. – Krzyknąłem do gajowego. Ja.
     }
-    Wilk słuchał z łbem przekrzywionym na bok. Kiedy Jaromir skończył, zawył – krótko, ochryple, ludzkim prawie głosem – i położył drewniak u jego stóp, a sam legł obok. # pokaz: drewniak # tobolek
+    Wilk słuchał z łbem przekrzywionym na bok. Kiedy Jaromir skończył, wilk zawył – krótko, ochryple, ludzkim prawie głosem – i położył drewniak u jego stóp, a sam legł obok. # pokaz: drewniak # tobolek
     – Niepotrzebnie – powiedział Pan Lasu. – Każde ludzkie słowo, które mu przypomnisz, zabiera mu kawałek wilczego życia. Z twoją pamięcią w głowie nie pożyje długo. # dalej
 *   [Nie ruszać się – to już nie Franek.]
     ~ wilk_pod_debem = nie_ruszal_sie
-    Jaromir nie drgnął. Patrzył na wilka tak, jak się patrzy na obce zwierzę na drodze: żeby go nie sprowokować i żeby samemu się nie zdradzić.
+    Jaromir nie drgnął. Patrzył na wilka tak, jak się patrzy na obce zwierzę na drodze: żeby go nie rozdrażnić i żeby samemu się nie zdradzić.
     Wilk postał chwilę. Potem obszedł go szerokim łukiem, zaniósł drewniak pod korzenie dębu i położył go Panu Lasu u stóp. Usiadł przy nim, wyprostowany, i od tej pory był dla Jaromira obojętny jak drzewa. # pokaz: wilk_przy_lesym
     – Mądrze – powiedział Pan Lasu. – I okrutnie. Jesteś w tym podobny do mnie. Za to on pożyje dłużej niż ty. # dalej
 -   -> zastaw
@@ -164,12 +164,12 @@ Pan Lasu podniósł się – kolana trzasnęły mu jak suche polana – i wypros
 # pytanie: Co Jaromir zostawi w zastaw?
 *   { ekwipunek ? siekiera } [Siekierę dziadka.]
     ~ zastaw_u_leszego = zastaw_siekiera
-    Jaromir położył ją przy dębie. Trzonek, wyślizgany od rąk Maćka, ojca i jego własnych, był jeszcze ciepły. Zanim zdążył cofnąć dłoń, spod ziemi wysunął się korzeń i oplótł żelazo powoli i ciasno, jak powój obrasta sztachety. Po chwili z oplotu wystawał już tylko skrawek ostrza. # pokaz: siekiera
+    Jaromir położył siekierę przy dębie. Trzonek, wyślizgany od rąk Maćka, ojca i jego własnych, był jeszcze ciepły. Zanim zdążył cofnąć dłoń, spod ziemi wysunął się korzeń i oplótł żelazo powoli i ciasno, jak powój obrasta sztachety. Po chwili z oplotu wystawał już tylko skrawek ostrza. # pokaz: siekiera
     ~ ekwipunek -= siekiera
     – {przed_panem_lasu == uniosl_siekiere:Rano chciałeś mnie nią straszyć – powiedział Pan Lasu. – }To żelazo zostanie tutaj. Długo na nie czekałem. # tobolek # dalej
 *   { ekwipunek ? krzesiwo } [Krzesiwo dziadka.]
     ~ zastaw_u_leszego = zastaw_krzesiwo
-    Jaromir wyjął je z kieszeni. Pan Lasu cofnął się – pierwszy raz, odkąd go zobaczył, cofnął się przed czymś – i wskazał mu wykrot pod korzeniem, daleko od pnia.
+    Jaromir wyjął krzesiwo z kieszeni. Pan Lasu cofnął się – pierwszy raz, odkąd Jaromir go zobaczył, cofnął się przed czymś – i wskazał mu wykrot pod korzeniem, daleko od pnia.
     – Wrzuć je tam. Nie podawaj mi go do ręki. – Jego głos zaszumiał nisko, jak wiatr w kominie. – Ogień, który ją spalił, wciąż w nim siedzi.
     ~ ekwipunek -= krzesiwo
     Coś stuknęło o kamień w wykrocie i ucichło. Dłonie zgrabiały mu, jak po zdjęciu rękawic na mrozie. # pokaz: krzesiwo # tobolek # dalej

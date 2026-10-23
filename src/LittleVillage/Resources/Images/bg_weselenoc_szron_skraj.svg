@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- LittleVillage — tło „pierwszy śnieg”: ślad 9 z 9: długi, wąski, od boru pod okno (# pokaz: slady, po kolei)
+<!-- LittleVillage — tło „noc wesela”: pusty skraj lasu, szron w miejscu, gdzie stał starzec (# pokaz: odszedl)
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="27" height="43" viewBox="127 391 27 43">
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="30" viewBox="260 262 70 30">
 <defs>
 <filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
@@ -25,6 +25,9 @@
 </pattern>
 </defs>
 <g filter="url(#ink)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
-<path d="M140.4 394.8C146.8 394.8 146.8 430.0 140.4 430.0C134.0 430.0 134.0 394.8 140.4 394.8Z" fill="url(#hatchDense)" stroke-width="1.9"/>
+<path d="M265 284h6M268 281v6" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M281 278h6M284 275v6" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M295 272h6M298 269v6" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+<path d="M309 268h6M312 265v6" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
 </g>
 </svg>

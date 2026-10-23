@@ -28,12 +28,12 @@ Na każdym parapecie stanęła miska kaszy i kubek wody. W każdej izbie zostawi
     Hanka nakryła o dwa miejsca więcej: jedno dla dziadów, drugie małe, z drewnianą łyżeczką, którą Jaromir wystrugał zeszłej zimy. Nikt nie powiedział ani słowa.
 }
 { ekwipunek ? szczenie_psa:
-    Rudy pies wcisnął się pod ławę i nie dał się stamtąd wywabić nawet kością.
+    Rudy pies wcisnął się pod ławę i nie wyszedł stamtąd nawet po kość.
 }
 { uboze == nakarmione:
     Spodek mleka, który Jaromir postawił za piecem o świcie, do wieczora stał nietknięty. W kącie coś szurało niespokojnie przez cały dzień.
 }
-Pod wieczór mgła dociągnęła do opłotków i stanęła. Nie ruszała się, choć wiatr szarpał strzechami. Gromnice, które zgasły w drodze z cmentarza, nie chciały się zapalić – knoty syczały i czerniały.
+Pod wieczór mgła zgęstniała pod opłotkami i stanęła. Nie ruszała się, choć wiatr szarpał strzechami. Gromnice, które zgasły w drodze z cmentarza, nie chciały się zapalić – knoty syczały i czerniały.
 { not marysia_odzyskana:
     Tylko gromnica Hanki paliła się na stole, równo, tak samo jak wczoraj. # pokaz: gromnica_hanki
 }
@@ -44,11 +44,11 @@ Jaromir usiadł na progu. Siekierę {zastaw_u_leszego == zastaw_siekiera:teścia
 # tlo: swita
 Przyszli przed północą.
 Najpierw zrobiło się cicho – tak cicho, że Jaromir słyszał, jak w izbie trzaska żar w piecu. Potem mgła się rozstąpiła i drogą od boru weszła do wsi świta.
-Szli powoli, bez najmniejszego dźwięku. Od pierwszych szeregów ciągnęło mułem i wilgocią, od ostatnich – słodkim próchnem. Jednooka żebraczka z workiem na plecach. Północnica, wysoka, płaska jak cień na ścianie{ polnocnica == policzyla_mak:, z makiem w zaciśniętej garści}. Rusałki w mokrych koszulach, wywołane z mułu nie w swoją porę – z włosów kapała im woda, a pośród nich szła Kaśka Wójcikówna{ ratunek_franka == krzyzem: i Bartek, syn młynarza, z wodorostem na szyi}. Mamuny z kijankami. Żytnia baba, przygarbiona, z kłosami we włosach{ not wilk_przy_jaromirze: i z czerwonym drewniakiem w garści}. Błędnice, które kołysały się nad głowami jak latarnie.{ los_figurki == figurka_u_stwora: Stwór z mokradeł, zgarbiony, z figurką przyciśniętą do piersi jak matka dziecko.}{ poludnica_uklon: Południca w białej koszuli, która przechodząc, skłoniła się Jaromirowi – tak samo jak wtedy, na ściernisku.} Dzieci spod dębu, trzymające się za ręce. Żadne nie rzucało cienia. # pokaz: swita, dzieci # dalej
+Szli powoli, bez najmniejszego dźwięku. Od pierwszych szeregów ciągnęło mułem i wilgocią, od ostatnich – słodkim próchnem. Jednooka żebraczka z workiem na plecach. Północnica, wysoka, płaska jak cień na ścianie{ polnocnica == policzyla_mak:, z makiem w zaciśniętej garści}. Rusałki w mokrych koszulach, wywołane z mułu nie w swoją porę – z włosów kapała im woda, a pośród nich szła Kaśka Wójcikówna{ ratunek_franka == krzyzem: i Bartek, syn młynarza, z wodorostem na szyi}. Mamuny z kijankami. Żytnia baba, przygarbiona, z kłosami we włosach{ not wilk_przy_jaromirze: i z czerwonym drewniakiem w ręku}. Błędnice, które kołysały się nad głowami jak latarnie.{ los_figurki == figurka_u_stwora: Stwór z mokradeł, zgarbiony, z figurką przyciśniętą do piersi jak matka dziecko.}{ poludnica_uklon: Południca w białej koszuli; przechodząc, skłoniła się Jaromirowi – tak samo jak wtedy, na ściernisku.} Dzieci spod dębu, trzymające się za ręce. Żadne nie rzucało cienia. # pokaz: swita, dzieci # dalej
 { not marysia_odzyskana:
-    Wśród nich szła jedna, która nie trzymała nikogo za rękę. Bosa, w białej koszulce, bez wstążki we włosach. Szła wolniej niż inne i oglądała się na chałupy, jakby szukała drogi do domu. Hanka zobaczyła ją przez okno. Nie krzyknęła. Przycisnęła tylko gromnicę do piersi, tak mocno, że wosk popłynął jej po palcach, a płomień nie drgnął. # pokaz: marysia
+    Wśród nich była jedna, która nie trzymała nikogo za rękę. Bosa, w białej koszulce, bez wstążki we włosach. Szła wolniej niż inne i oglądała się na chałupy, jakby szukała drogi do domu. Hanka zobaczyła ją przez okno. Nie krzyknęła. Przytuliła tylko gromnicę, tak mocno, że wosk popłynął jej po palcach, a płomień nie drgnął. # pokaz: marysia
 }
-Szli też umarli z Zapadliny. Stary Wójcik{ pochowek_wojcika == pochowany_za_murem || trzy_noce == rozkopany_grob: – z twarzą zwróconą w ziemię, choć szedł prosto}.{ trzy_noce == czuwanie_przy_kolysce: Wójcikowa, z rękami złożonymi na piersi{ korale_kaski == oddane: i z koralami córki pod chustką}.} Babka Marianna. A przed nimi wszystkimi – dziadek Maciek, z siekierą za pasem i z tobołkiem na ramieniu, tak jak siedemdziesiąt lat temu, kiedy pierwszy raz zszedł do Zapadliny. Przechodząc obok chałupy, spojrzał na wnuka i skinął mu głową. # pokaz: umarli
+Szli też umarli z Zapadliny. Stary Wójcik{ pochowek_wojcika == pochowany_za_murem || trzy_noce == rozkopany_grob: – z twarzą zwróconą w ziemię, choć szedł prosto}.{ trzy_noce == czuwanie_przy_kolysce: Wójcikowa, z rękami złożonymi na piersi{ korale_kaski == oddane: i z koralami córki pod chustką}.} Babka Marianna. Przed nimi wszystkimi – dziadek Maciek, z siekierą za pasem i z tobołkiem na ramieniu, tak jak siedemdziesiąt lat temu, kiedy pierwszy raz zszedł do Zapadliny. Przechodząc obok chałupy, spojrzał na wnuka i skinął mu głową. # pokaz: umarli
 { cena_caluna == cena_franek:
     I Franek – nie wilk, tylko Franek, chudy, z włosami do ramion, taki, jakim Jaromir widział go ostatni raz w szałasie nad jeziorem. Pod oknem Antka przystanął i położył dłoń na framudze, tak jak kładzie się dłoń na końskim karku. # pokaz: franek
 - else:
@@ -64,16 +64,16 @@ Stanął przed chałupą Jaromira. Świta zatrzymała się za nim. # dalej
     Jagna wysunęła się z mgły od strony płotu i stanęła przed Panem Lasu, nie spuszczając oczu.
     – Ten człowiek winien mi jest pierwszą rzecz z boru – powiedziała. # pokaz: jagna
     – Co wyszło z boru, wyszło za moim słowem – odparł Pan Lasu. – Twój dług jest u mnie.
-    Jagna długo stała bez ruchu, a potem skłoniła się i odeszła w mgłę.
+    Jagna długo stała bez ruchu, a potem skłoniła się i odeszła we mgłę.
 }
 { cialo_kopii == oddane_jagnie:
     Jagna wyszła z mgły z lnianym zawiniątkiem i położyła je Panu Lasu u stóp. – Oddaję, co nie moje – powiedziała. Płachta opadła płasko; zostały pod nią tylko suche liście i kora. # pokaz: jagna
 }
 – Przyszedłem policzyć się do końca – powiedział Pan Lasu. Jego głos szedł od ziemi, od strzech, od studni. – Dąb, słowo, kapliczki. Wszystko wzięliście. Moi przyszli po wasze dzieci, bo płot, którym ich trzymałem, runął. Dziś nie mam ich czym zatrzymać.
 Zza niego dobiegło nucenie – to dzieci spod dębu zaczęły swoją melodię. Szła od chałupy do chałupy, a w każdej, za zaryglowanymi drzwiami, budziło się jakieś dziecko i zaczynało płakać.{ marysia_odzyskana: Marysia też się obudziła. Nie płakała – usiadła na ławie i patrzyła w okno, a Hanka trzymała ją za ramiona.}
-– Możesz mi zwrócić granicę – powiedział Pan Lasu. – Po staremu: wy nie dalej niż ona, ja – jedno dziecko na pokolenie. Możesz zająć moje miejsce – ale do nich już nie wrócisz.
+– Możesz mi zwrócić granicę – powiedział Pan Lasu. – Po staremu: wy nie dalej niż ona, ja – jedno dziecko na pokolenie. Możesz zająć moje miejsce – ale do swoich już nie wrócisz.
 { ekwipunek ? krzesiwo:
-    Spojrzał na kapotę Jaromira i w jego głosie po raz pierwszy zabrzmiało coś jak lęk. – Albo możesz zrobić to, po co nosisz przy sobie krzesiwo. Ale po takim ogniu nie zostanie ani bór, ani wy.
+    Spojrzał na kapotę Jaromira i po raz pierwszy zabrzmiało mu w głosie coś jak lęk. – Albo możesz zrobić to, po co nosisz przy sobie krzesiwo. Ale po takim ogniu nie zostanie ani bór, ani wy.
 - else:
     { zastaw_u_leszego == zastaw_krzesiwo:
         – Ogień zostawiłeś u mnie. Mądrze.
@@ -110,11 +110,11 @@ Jaromir wbił siekierę w pniak, aż jęknęło drewno. Trzonek był ciężki i 
 }
 { dlug_jagny:
 - oddana_wstazka:
-    Jagna wystąpiła z mgły i bez słowa okręciła trzonek siekiery czerwoną wstążką Marysi. – Mówiłam, że zobaczysz, do jakiej roboty – mruknęła. # pokaz: wstazka
+    Jagna wystąpiła z mgły i okręciła trzonek siekiery czerwoną wstążką Marysi. – Mówiłam, że zobaczysz, do jakiej roboty – mruknęła. # pokaz: wstazka
 - oddany_drewniak:
     Jagna wystąpiła z mgły i położyła czerwony drewniak przy pniaku. – Drewno do drewna – mruknęła. # pokaz: drewniak
 }
-– Dalej nie pójdziemy – powiedział Jaromir. Para buchnęła mu z ust. Za nim powtórzyli wszyscy, nierówno, ochryple.{ pani_w_zbozu_noc == za_spiewem: Hanka poruszała tylko ustami.} – Słowo za słowo. # dalej
+– Dalej nie pójdziemy – powiedział Jaromir. Para buchnęła mu z ust. Za nim powtórzyli wszyscy, nierówno, ochryple.{ pani_w_zbozu_noc == za_spiewem: Hanka poruszała tylko wargami.} – Słowo za słowo. # dalej
 { zoladz_zasadzony:
     Pan Lasu nie patrzył na siekierę. Patrzył na kiełek. Pochylił się nad nim tak nisko, że poroże zaczepiło o mgłę, i dotknął go palcem – ostrożnie, jak dotyka się źrebięcia, które dopiero stanęło na nogi.
     – Tamten, pierwszy, dał mi słowo – powiedział cicho. – A ja wziąłem za nie dziecko na pokolenie, bo słowo nic nie waży, a Dąb był mój, nie wasz. – Wyprostował się. – Ten jest wasz. Wyrósł z mojego Dębu, a posadziła go ręka, która przechowała go przez całe życie. Dotąd dawaliście mi tylko swoje. Ty mi oddałeś moje. Póki ten dąb rośnie, dzieci od was nie wezmę. Wy – nie dalej niż to żelazo. Kapliczki postawicie z powrotem. Wszystkie. A ty będziesz pilnował słowa i drzewa do końca swoich dni. Co Zaduszki – tutaj.
@@ -124,9 +124,9 @@ Jaromir wbił siekierę w pniak, aż jęknęło drewno. Trzonek był ciężki i 
     – Słowo za słowo – powiedział. – Wy – nie dalej niż to żelazo. Ja – jedno dziecko na pokolenie, w noc świętojańską. I oddam je, zanim zapomni dom. Kapliczki postawicie z powrotem. Wszystkie. – Pochylił się nad Jaromirem. – A ty będziesz pilnował słowa, póki żyjesz. Co Zaduszki – tutaj.
 }
 { przysiega_ksiedzu:
-    Jaromir pomyślał o różańcu i o przysiędze złożonej w Bukowcu. Właśnie złamał ją{ cena_caluna == cena_umowa || cialo_kopii == spalone || cialo_kopii == pod_mlodnikiem: drugi raz} – i wiedział, że złamałby ją jeszcze raz.
+    Jaromir pomyślał o różańcu i o przysiędze złożonej w Bukowcu. Właśnie ją złamał{ cena_caluna == cena_umowa || cialo_kopii == spalone || cialo_kopii == pod_mlodnikiem: drugi raz} – i wiedział, że złamałby ją jeszcze raz.
 }
-Pan Lasu odwrócił się i poszedł w bór. Świta weszła za nim, jedno za drugim, i mgła zamknęła się za ostatnim.{ not zoladz_zasadzony || marysia_odzyskana: Umarli nie poszli za nim; rozeszli się drogą na Bukowy Grzbiet, każdy ku swojemu grobowi.}{ wilk_zywy() && not wilk_przy_mnie(): Biały wilk szedł tuż przed nim.}{ wilk_przy_mnie(): Biały wilk postał jeszcze chwilę przy nodze Jaromira, a potem pobiegł za nimi i nie obejrzał się.}
+Pan Lasu odwrócił się i poszedł w bór. Jego słudzy weszli za nim, jeden za drugim, i mgła zamknęła się za ostatnim.{ not zoladz_zasadzony || marysia_odzyskana: Umarli nie poszli za nim; rozeszli się drogą na Bukowy Grzbiet, każdy ku swojemu grobowi.}{ wilk_zywy() && not wilk_przy_mnie(): Biały wilk szedł tuż przed Panem Lasu.}{ wilk_przy_mnie(): Biały wilk postał jeszcze chwilę przy nodze Jaromira, a potem pobiegł za nimi i nie obejrzał się.}
 { not marysia_odzyskana:
     { zoladz_zasadzony:
         Ta jedna, w białej koszulce, nie weszła za nimi. Pan Lasu obejrzał się na nią ze skraju boru.
@@ -134,9 +134,9 @@ Pan Lasu odwrócił się i poszedł w bór. Świta weszła za nim, jedno za drug
         { ekwipunek ? wstazka_marysi:
             Jaromir podszedł do niej, odwinął z przegubu spłowiałą wstążkę i zawiązał jej we włosach na kokardę, jak robiła to Hanka.
         }
-        Mała stała chwilę bez ruchu, nie wiedząc, dokąd iść. Potem podbiegła do matki i dotknęła jej ręki, tak jak robiła to co wieczór przed snem. Wtedy dziadek Maciek wyciągnął do niej dłoń, a ona chwyciła ją bez lęku. Umarli z Zapadliny poszli drogą na Bukowy Grzbiet, każdy ku swojemu grobowi, nie w bór – i ona razem z nimi, ani razu się nie oglądając. Gromnica w ręce Hanki zgasła sama, spokojnie, jak się gasi świecę przed snem. # pokaz: marysia
+        Mała stała chwilę bez ruchu, nie wiedząc, dokąd iść. Potem podbiegła do matki i dotknęła jej ręki, tak jak co wieczór. Wtedy dziadek Maciek wyciągnął do niej dłoń, a ona chwyciła ją bez lęku. Umarli z Zapadliny poszli drogą na Bukowy Grzbiet, każdy ku swojemu grobowi, nie w bór – i ona razem z nimi, ani razu się nie oglądając. Gromnica w ręce Hanki zgasła sama, spokojnie, jak się gasi świecę przed snem. # pokaz: marysia
     - else:
-        Ta jedna, w białej koszulce, zatrzymała się jeszcze na skraju.{ ekwipunek ? wstazka_marysi: Jaromir podszedł do niej, odwinął z przegubu spłowiałą wstążkę i zawiązał jej we włosach na kokardę, jak robiła to Hanka.} Mała odwróciła się i pomachała matce rączką. Hanka podniosła swoją. Gromnica w jej drugiej ręce zgasła sama, spokojnie, jak się gasi świecę przed snem. # pokaz: marysia
+        Ta jedna, w białej koszulce, zatrzymała się jeszcze na skraju.{ ekwipunek ? wstazka_marysi: Jaromir podszedł do niej, odwinął z przegubu spłowiałą wstążkę i zawiązał jej we włosach na kokardę, jak robiła to Hanka.} Mała odwróciła się i pomachała matce rączką. Hanka podniosła rękę. Gromnica w jej drugiej ręce zgasła sama, spokojnie, jak się gasi świecę przed snem. # pokaz: marysia
     }
 }
 Nad Zapadliną zrobiło się jasno – zwyczajnie, szaro, jak w każdy listopadowy świt. W chałupach dzieci przestały płakać. # pokaz: swit # dalej
@@ -161,21 +161,21 @@ Pan Lasu nie odpowiadał, aż szron osiadł mu na brodzie.
 *   [Odejść bez słowa – tak będzie im lżej.]
     ~ pozegnanie = odszedl_bez_slowa
     Nie wszedł do izby. Stał chwilę przy oknie i patrzył przez szparę w okiennicy, jak Hanka, zmorzona czuwaniem, śpi na ławie z głową opartą o ścianę{ marysia_odzyskana:, a Marysia skulona przy niej, z kolanami pod brodą|, z palącą się gromnicą w dłoniach}. Położył na parapecie, obok miski kaszy dla dziadów, swoją czapkę. Potem odwrócił się i poszedł. # pokaz: czapka
-    Rano Hanka znalazła czapkę i wszystko zrozumiała. Nosiła ją potem w zanadrzu do końca życia. # dalej
+    Rano Hanka znalazła czapkę i wszystko zrozumiała. Nosiła ją w zanadrzu, a kiedy była już stara, położyła ją na krzyżu. # dalej
 -   Poszli razem na skraj boru. Przy pniaku Starego Dębu Pan Lasu zmalał do starca w wywróconym kożuchu i w kapeluszu z mchu – takiego, jakiego Jaromir widział w noc swojego wesela. # pokaz: starzec
-Zdjął kapelusz i włożył go Jaromirowi na głowę. Był ciężki, zimny i pachniał mokrą korą. Kiedy Jaromir go poczuł, coś w nim cicho trzasnęło – jak lód na stawie – i usłyszał bór. Każde drzewo. Każdy korzeń. Każde zwierzę, które zasypiało właśnie w norze przed zimą. I w tej samej chwili nie umiał sobie przypomnieć, jak pachniały włosy Marysi. # pokaz: kapelusz
+Zdjął kapelusz i włożył go Jaromirowi na głowę. Był ciężki, zimny i pachniał mokrą korą. Kiedy go poczuł, coś w Jaromirze cicho trzasnęło – jak lód na stawie – i usłyszał bór. Każde drzewo. Każdy korzeń. Każde zwierzę, które zasypiało właśnie w norze przed zimą. I w tej samej chwili nie umiał sobie przypomnieć, jak pachniały włosy Marysi. # pokaz: kapelusz
 Dawny Pan Lasu położył się pod pniakiem. Westchnął przeciągle, jak drzewo, kiedy puszcza w nim mróz, i zaczął zapadać się w ziemię. Mech zarastał go, liście przykrywały, aż został tylko pagórek okryty siwym porostem. # pokaz: pagorek
 – Teraz ty licz – szepnęło coś spod ziemi.
 { zastaw_u_leszego == zastaw_siekiera:
-    Przed odejściem dawny Pan Lasu wyjął z mroku siekierę dziadka, oplątaną jeszcze korzonkami, i położył ją przy pniaku. Jaromir jej nie podniósł.
+    Zanim się położył, dawny Pan Lasu wyjął z mroku siekierę dziadka, oplątaną jeszcze korzonkami, i położył ją przy pniaku. Jaromir jej nie podniósł.
 }
 Jaromir odwrócił się do świty. Stali przed nim wszyscy i czekali. # dalej
 – Wracajcie – powiedział. Jego głos przeszedł koronami od boru aż po jezioro. – Do domu. Wszyscy.
-Odeszli. Rusałki do jeziora, mamuny na kamienie, żytnia baba w ściernisko, licho w mgłę. Klątwa zielarki wiązała ręce tamtego. Jego rąk nie znała.
+Odeszli. Rusałki do jeziora, mamuny na kamienie, żytnia baba w ściernisko, licho we mgłę. Klątwa zielarki wiązała ręce tamtego. Rąk nowego nie znała.
 ~ zapiski += (pan_lasu_12, zielarka_5, dzieci_3)
 { marysia_odzyskana:
     { cena_caluna == cena_franek:
-        Spod okna Antka odszedł Franek. Obejrzał się raz na chałupę, w której spał jego brat, i zniknął w mgle. # pokaz: franek # dalej
+        Spod okna Antka odszedł Franek. Obejrzał się raz na chałupę, w której spał jego brat, i zniknął we mgle. # pokaz: franek # dalej
     - else:
         ~ zapiski += tropy_7
         Biały wilk został ostatni. Jaromir położył mu rękę na łbie. – Idź, Franek – powiedział. – Jesteś wolny. – Wilk polizał mu dłoń i pobiegł w bór, lekko, jak młody pies. # pokaz: wilk # dalej
@@ -183,23 +183,23 @@ Odeszli. Rusałki do jeziora, mamuny na kamienie, żytnia baba w ściernisko, li
 - else:
     ~ zapiski += tropy_7
     Biały wilk został ostatni. Jaromir położył mu rękę na łbie. – Idź, Franek – powiedział. – Jesteś wolny. – Wilk polizał mu dłoń i pobiegł w bór, lekko, jak młody pies. # pokaz: wilk
-    Na drodze została ta jedna, w białej koszulce. Jaromir podszedł do niej{ ekwipunek ? wstazka_marysi:, zawiązał jej we włosach swoją spłowiałą wstążkę} i podał jej rękę. Chwyciła ją od razu, mocno, tak jak dawniej. – Idziemy do domu, tata? – zapytała. – Idziemy – powiedział. I poszli razem w bór, a bór przyjął ich bez szelestu. W chałupie Hanki zgasła gromnica. # pokaz: marysia # dalej
+    Na drodze została ta jedna, w białej koszulce. Jaromir podszedł do niej{ ekwipunek ? wstazka_marysi:, zawiązał jej we włosach swoją spłowiałą wstążkę} i podał jej rękę. Chwyciła ją od razu, mocno, tak jak dawniej. – Idziemy do domu, tato? – zapytała. – Idziemy – powiedział. Poszli razem w bór, a bór przyjął ich bez szelestu. W chałupie Hanki zgasła gromnica. # pokaz: marysia # dalej
 }
 -> epilog_miejsce
 
 = ostatni_ogien
 # tlo: pozar_boru
-Jaromir wyjął krzesiwo. Było małe i poczerniałe i pamiętało ręce dziadka, który wygrzebał je z popiołu po chacie zielarki.
-– Nie – powiedział Pan Lasu. Pierwszy raz jego głos nie szedł zewsząd, tylko z jednego miejsca. – Wnuku Maćka. Nie. # pokaz: leszy
+Jaromir wyjął krzesiwo. Było małe, poczerniałe i pamiętało ręce dziadka, który wygrzebał je z popiołu po chacie zielarki.
+– Nie – powiedział Pan Lasu. Tym razem jego głos nie szedł zewsząd, tylko z jednego miejsca. – Wnuku Maćka. Nie. # pokaz: leszy
 Jaromir pobiegł na skraj młodnika, tam gdzie siwy porost podszedł już pod same opłotki, i uderzył. Raz. Drugi. Trzecia iskra skoczyła w suchy mech – i zajął się w jednej chwili, a za nim świerki, a za świerkami bór, tak jak płonie wszystko, na co od lat nie spadła kropla deszczu. # pokaz: ogien # dalej
-Huknęło, jakby ziemia westchnęła. Żar uderzył Jaromira w twarz, zapachniało żywicą i spaloną sierścią. Z boru, w stronę wsi, pognały sarny, dziki, zające, oślepione, nie bacząc na ludzi. Świta zawyła jednym głosem. Rusałki rzuciły się ku jezioru, mamuny za nimi, licho rozwiało się z pierwszym dymem.{ los_figurki == figurka_w_skrzyni: W chałupie Jaromira skrzynia pod łóżkiem trzasnęła i z jej szpar buchnął dym: figurka, której nie wziął żaden piec, płonęła wreszcie jak zwyczajne drewno.} Z głębi boru dobiegało jeszcze nucenie dzieci spod dębu. Urwało się w połowie i więcej nie zaczęło.
+Huknęło, jakby ziemia westchnęła. Żar buchnął Jaromirowi w twarz, zapachniało żywicą i spaloną sierścią. Z boru, w stronę wsi, pognały sarny, dziki, zające, oślepione, nie bacząc na ludzi. Świta zawyła jednym głosem. Rusałki rzuciły się ku jezioru, mamuny za nimi, licho rozwiało się z pierwszym dymem.{ los_figurki == figurka_w_skrzyni: W chałupie Jaromira skrzynia pod łóżkiem trzasnęła i z jej szpar buchnął dym: figurka, której nie wziął żaden piec, płonęła wreszcie jak zwyczajne drewno.} Dzieci spod dębu uciekły w bór; z głębi boru dobiegało jeszcze ich nucenie. Urwało się w połowie i więcej nie zaczęło.
 Pan Lasu stał w płomieniach i nie uciekał. Kora na jego twarzy pękała, poroże płonęło jak suche chrusty na sobótce, a oczy patrzyły na Jaromira spokojnie, aż do końca.
 – Policzone – powiedział jeszcze. I runął z trzaskiem, jak pada stary dąb. # pokaz: runal
 { wilk_zywy():
     { wilk_przy_mnie():
         Biały wilk stał przy Jaromirze do końca i nie drgnął, choć iskry przypalały mu sierść. # pokaz: wilk
     - else:
-        Biały wilk skoczył w ogień za swoim panem. Antek zawył, jakby to jego paliło.{ obietnica_antkowi: Nikt go nie dostał – tak mu Jaromir obiecał. Wziął go ogień.}
+        Biały wilk skoczył w ogień za swoim panem. Antek zawył, jakby to jego paliło.{ obietnica_antkowi: Nikt wilka nie dostał – tak Jaromir obiecał Antkowi. Wziął go ogień.}
     }
 }
 { not marysia_odzyskana:
@@ -208,7 +208,7 @@ Pan Lasu stał w płomieniach i nie uciekał. Kora na jego twarzy pękała, poro
 { zastaw_u_leszego == zastaw_cien:
     Cień do Jaromira nie wrócił. Spłonął pod dębem razem z resztą.
 }
-Klątwa zielarki zaczęła się od ognia i od ognia się skończyła. Ale wiatr zawrócił. Płomienie przeskoczyły młodnik{ cialo_kopii == pod_mlodnikiem:, przeszły po małym grobie z kijem i czerwoną wstążką} i poszły na wieś – na stodoły, na strzechy, na chałupy, w których spały dzieci.
+Klątwa zielarki zaczęła się od ognia i od ognia się skończyła. Ale wiatr zawrócił. Płomienie przeskoczyły młodnik{ cialo_kopii == pod_mlodnikiem:, przeszły po małym grobie z kijem i czerwoną wstążką} i poszły na wieś – na stodoły, na strzechy, na chałupy, w których płakały dzieci.
 # pytanie: Co zrobi Jaromir?
 *   [Biec do własnej chałupy, po Hankę{ marysia_odzyskana: i Marysię}.]
     ~ noc_pozaru = antek_pod_stodola
@@ -218,10 +218,10 @@ Klątwa zielarki zaczęła się od ognia i od ognia się skończyła. Ale wiatr 
 *   [Gasić płomienie na skraju opłotków samemu.]
     ~ noc_pozaru = oslepl
     Jaromir rzucił się sam – z kapotą, z mokrym workiem, z gołymi rękami – i tłukł płomienie na skraju opłotków, aż ludzie z wiadrami zdążyli wylać na strzechy całą wodę ze studni. # pokaz: gaszenie
-    Ogień nie przeszedł. Ale kiedy wzeszło słońce, Jaromir nie widział już ani światła, ani Hanki, która płakała nad nim w błocie. Żar wyżarł mu oczy. # dalej
+    Ogień nie przeszedł. Ale rano Jaromir nie widział już ani światła, ani Hanki, która płakała nad nim w błocie. Żar wypalił mu oczy. # dalej
 *   [Orać przesiekę razem z całą wsią.]
     ~ noc_pozaru = pol_wsi
-    – Konie! – krzyknął Jaromir. Kowal zaprzągł konie do pługa i orali przed opłotkami czarny pas ziemi, a kobiety biły ogień mokrymi płachtami. # pokaz: przesieka
+    – Konie! – krzyknął Jaromir. Kowal zaprzągł konie do pługa i chłopi orali przed opłotkami czarny pas ziemi, a kobiety biły ogień mokrymi płachtami. # pokaz: przesieka
     Bronili każdej strzechy osobno, a ogień brał to, czego nie zdążyli obronić. O świcie połowa Zapadliny leżała w popiele: stodoły, chlewy, cztery chałupy. Ludzie żyli. A zima zastała pół wsi bez dachu nad głową. # dalej
 -   Kiedy wzeszło słońce, bór był czarny, jak okiem sięgnąć. Nie stało ani jedno drzewo. Nad zgliszczami unosił się dym. Mówiono potem, że tam, gdzie w sercu boru stał dąb, leży tylko kopiec szarego popiołu, przykryty pierwszym śniegiem. # pokaz: popiol # dalej
 ~ zapiski += (pan_lasu_12, zielarka_5, dzieci_3)
@@ -238,18 +238,18 @@ Pół wieku później, w Zaduszki, stary Jaromir siedział na ławce pod krzyże
     Tuż przy pniaku po Starym Dębie rósł młody dąb, wyższy już niż strzecha. Przez pół wieku wrósł w stare drewno i wchłonął siekierę; z kory, na wysokości kolan, wystawało tylko zardzewiałe ostrze, którego nikt nie odważył się ruszyć. # pokaz: dab
 }
 { marysia_odzyskana:
-    Wokół niego siedziały dzieci Marysi – troje, piegowate, z dołkami w policzkach – i dzieci jej dzieci.{ cena_caluna == cena_umowa: Marysia, już siwiejąca, co roku w noc świętojańską niosła bochen na płaskie kamienie. Nikomu nie mówiła, po co.}
+    Wokół Jaromira siedziały dzieci Marysi – troje, piegowate, z dołkami w policzkach – i dzieci jej dzieci.{ cena_caluna == cena_umowa: Marysia, już siwiejąca, co roku w noc świętojańską niosła bochen na płaskie kamienie. Nikomu nie mówiła, po co.}
 - else:
-    Wokół niego siedziały wnuki Antka. Swoich nie doczekał.
+    Wokół Jaromira siedziały wnuki Antka; on sam swoich nie doczekał.
 }
 Hanka siedziała obok, z najmłodszym na kolanach, i obierała mu jabłko.
 – Dziadku, a opowiedz o Panu Lasu – poprosiło najmłodsze.
 { zastaw_u_leszego == zastaw_cien:
-    Jaromir uśmiechnął się. Dzieci od dawna nie dziwiło, że dziadek nie rzuca cienia. Tak po prostu było.
+    Jaromir uśmiechnął się. Dzieci od dawna nie dziwiło, że dziadek nie rzuca cienia. Tak już było.
 }
 – Jakieś siedemdziesiąt lat przed tym, nim pierwszy raz spojrzałem w stronę lasu – zaczął – mój dziadek zszedł do Zapadliny z tobołkiem na ramieniu…
 { zoladz_zasadzony:
-    Bór za jego plecami stał cicho. W noc świętojańską dzieci z Zapadliny paliły sobótki pod młodym dębem, skakały przez ogień i zbierały spod niego żołędzie, a rano wszystkie spały we własnych łóżkach. Od pół wieku nie przepadło żadne. {marysia_odzyskana:Któreś z wnucząt Marysi|Najmłodsze z wnucząt Antka} ściskało teraz jeden żołądź w garści i słuchało z otwartą buzią. # pokaz: zoledzie # dalej
+    Bór za jego plecami stał cicho. W noc świętojańską dzieci z Zapadliny paliły sobótki pod młodym dębem, skakały przez ogień i zbierały spod drzewa zeszłoroczne żołędzie, a rano wszystkie spały we własnych łóżkach. Od pół wieku nie przepadło żadne. {marysia_odzyskana:Któreś z wnucząt Marysi|Najmłodsze z wnucząt Antka} ściskało teraz jeden żołądź w garści i słuchało z otwartą buzią. # pokaz: zoledzie # dalej
 - else:
     Bór za jego plecami stał cicho. Tylko czasem, w noc świętojańską, z jakiejś chałupy znikało dziecko – i wracało po kilku nocach, pachnące żywicą, nie pamiętając niczego. Ostatnio przepadła na kilka nocy mała od Kowalczyków. Siedziała teraz najbliżej i słuchała z otwartą buzią. # dalej
 }
@@ -287,9 +287,9 @@ Pół wieku później na wzgórzach za Zapadliną nie rosło nic oprócz wrzosu 
     Chałupy postawione po pożarze stały z cegły, wożonej z miasta. Ludzie mówili, że cegła nie płonie.
 }
 Klątwy nie było. Nikt nie znikał w noc świętojańską.{ cena_caluna == cena_umowa: Kijanek nad jeziorem nie słyszał nikt – oprócz Marysi, która co roku niosła bochen na płaskie kamienie.} W Zaduszki na parapetach stała kasza i woda, a rano stały nietknięte.
-Tylko raz, wiosną, {marysia_odzyskana:wnuczka Jaromira|wnuczka Antka} przyniosła ze wzgórza coś w garści i pokazała mu na otwartej dłoni. Był to mały, zielony kiełek świerka, miękki i ciepły jak pisklę. # pokaz: kielek
+Tylko raz, wiosną, {marysia_odzyskana:wnuczka|wnuczka Antka} przyniosła ze wzgórza coś w garści i pokazała Jaromirowi na otwartej dłoni. Był to mały, zielony kiełek świerka, miękki i ciepły jak pisklę. # pokaz: kielek
 – Wyrzucić? – zapytała. – A jak było, dziadku, kiedy był las?
-Jaromir trzymał kiełek w palcach.{ noc_pozaru == oslepl: Nie widział go, ale czuł.} Potem oddał jej.
+Jaromir trzymał kiełek w palcach.{ noc_pozaru == oslepl: Nie widział go, ale czuł.} Potem jej go oddał.
 – Posadź – powiedział. – Daleko od wsi. – Usiadł wygodniej. – Jakieś siedemdziesiąt lat przed tym, nim pierwszy raz spojrzałem w stronę lasu, którego już nie ma… # dalej
 -> koniec_opowiesci
 

@@ -11,7 +11,7 @@
 #   kuznia_wieczor — wnetrze kuzni: palenisko, kowadlo; podkowa i krzyzyk (# pokaz: kowadlo), wybor (# pokaz: podkowa / krzyzyk)
 #   slub_droga     — droga do Bukowca pod borem, kosciolek na wzgorzu; wozy weselne (# pokaz: wozy)
 #   wesele_noc     — noc, rozswietlona chalupa, skraj lasu we mgle; oczepiny w oknie (# pokaz: oczepiny), starzec autora (# pokaz: starzec),
-#                    kolacz (# pokaz: kolacz), skinienie (# pokaz: skinienie), mgla (# pokaz: mgla), slady butow (# pokaz: slady), rygiel (# pokaz: rygiel)
+#                    kolacz (# pokaz: kolacz), skinienie (# pokaz: skinienie), mgla (# pokaz: mgla), pusty skraj w szronie (# pokaz: odszedl), rygiel (# pokaz: rygiel)
 #   pierwszy_ranek — swit, szron; wilcze tropy wokol chalupy (# pokaz: tropy), biale wlosy na plocie (# pokaz: wlosy)
 # Uzycie z katalogu glownego repozytorium:
 #   python3 tools/Backgrounds/wesele.py src/LittleVillage/Resources/Images
@@ -436,24 +436,24 @@ STAR = art.rig_names(RIG_N)
 N["kolacz"] = (240, 254, 24, 12, group(['<ellipse cx="250" cy="260" rx="7" ry="3" fill="#FFFFFF" stroke-width="1.2"/><path d="M258 258v-4" fill="none" stroke-width="1"/>']))
 N["skinienie"] = (280, 200, 50, 70, group([f'<path d="{ribbon(282, 326, 236, 22, 6)}" fill="#EDEBE6" stroke-width="1" opacity="0.7"/>']))
 N["mgla_gesta"] = (180, 200, 220, 90, group([f'<path d="{ribbon(180, 400, 222 + i * 22, 16, 5)}" fill="#EDEBE6" stroke-width="1" opacity="0.8"/>' for i in range(3)]))
-N["slady"] = (260, 262, 70, 30, group([f'<path d="M{x} {y}c2 -3 6 -3 7 0c0 3 -5 4 -7 0z" fill="#000000"/>' for x, y in [(268, 284), (284, 278), (298, 272), (312, 268)]]))
+N["szron_skraj"] = (260, 262, 70, 30, group([f'<path d="M{x - 3} {y}h6M{x} {y - 3}v6" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>' for x, y in [(268, 284), (284, 278), (298, 272), (312, 268)]]))
 N["rygiel"] = (130, 300, 40, 60, group(['<path d="M132 360V307H160V360Z" fill="#000000" stroke="none"/>']))
 N["przod"] = (0, 422, 390, 422, group(PRZOD))
-NOC = ["tlo", "okna", "tance", "oczepiny", "drzwi", "rygiel"] + STAR + ["kolacz", "skinienie", "mgla_gesta", "slady", "przod"]
-N_REVEAL = {"oczepiny": "oczepiny", **{n: "starzec" for n in STAR}, "kolacz": "kolacz", "skinienie": "skinienie", "mgla_gesta": "mgla", "slady": "slady", "rygiel": "rygiel"}
+NOC = ["tlo", "okna", "tance", "oczepiny", "drzwi", "rygiel"] + STAR + ["kolacz", "skinienie", "mgla_gesta", "szron_skraj", "przod"]
+N_REVEAL = {"oczepiny": "oczepiny", **{n: "starzec" for n in STAR}, "kolacz": "kolacz", "skinienie": "skinienie", "mgla_gesta": "mgla", "szron_skraj": "odszedl", "rygiel": "rygiel"}
 N_ANIM = {"okna": {"type": "flicker", "amplitude": 0.6, "duration": 900}, "tance": {"type": "bob", "amplitude": 1.2, "duration": 500},
           "oczepiny": {"type": "bob", "amplitude": 0.6, "duration": 800}, "drzwi": {"type": "flicker", "amplitude": 0.6, "duration": 1100},
           "skinienie": {"type": "rise", "amplitude": 20, "duration": 4000}, "mgla_gesta": {"type": "drift", "amplitude": 10, "duration": 6000},
           "kolacz": {"type": "flicker", "amplitude": 0.7, "duration": 2000}}
 N_ANIM.update(art.rig_anims(RIG_N))
 N_EXTRA = {"okna": {"noInvert": True}, "drzwi": {"noInvert": True}, "tance": {"hideOn": "oczepiny", "fadeDuration": 600}, "oczepiny": {"fadeDuration": 800},
-           **{n: {"fadeDuration": 3000, "hideOn": "skinienie,slady"} for n in STAR}, "kolacz": {"fadeDuration": 1500, "hideOn": "skinienie"},
-           "skinienie": {"hideAfter": 4000, "fadeDuration": 1500}, "mgla_gesta": {"fadeDuration": 3000, "hideOn": "slady"},
-           "slady": {"fadeDuration": 2500}, "rygiel": {"fadeDuration": 600}, "przod": {"depth": 1.0}}
+           **{n: {"fadeDuration": 3000, "hideOn": "skinienie,odszedl"} for n in STAR}, "kolacz": {"fadeDuration": 1500, "hideOn": "skinienie"},
+           "skinienie": {"hideAfter": 4000, "fadeDuration": 1500}, "mgla_gesta": {"fadeDuration": 3000, "hideOn": "odszedl"},
+           "szron_skraj": {"fadeDuration": 2500}, "rygiel": {"fadeDuration": 600}, "przod": {"depth": 1.0}}
 N_COMMENTS = {"tlo": "noc wesela: rozświetlona chałupa, pniak i bór we mgle", "okna": "rozświetlone okno izby", "tance": "tańczący w oknie",
               "oczepiny": "oczepiny w oknie — Hanka w czepcu (# pokaz: oczepiny)", "drzwi": "uchylone drzwi, światło z sieni",
               "kolacz": "kołacz na pniaku (# pokaz: kolacz)", "skinienie": "starzec znika we mgle (# pokaz: skinienie)",
-              "mgla_gesta": "mgła gęstnieje (# pokaz: mgla)", "slady": "ślady butów w szronie, lewy po prawej (# pokaz: slady)",
+              "mgla_gesta": "mgła gęstnieje (# pokaz: mgla)", "szron_skraj": "pusty skraj lasu, szron w miejscu, gdzie stał starzec (# pokaz: odszedl)",
               "rygiel": "drzwi zaryglowane — sień ciemnieje (# pokaz: rygiel)", "przod": "pierwszy plan",
               **{n: f"starzec w kapeluszu z mchu — {n[3:]} (rysunek autora; # pokaz: starzec)" for n in STAR}}
 _add(N, NOC, N_ANIM, N_COMMENTS, "gwiazdy", gwiazdy(0, 10, 390, 150, 920), before="okna")

@@ -862,8 +862,8 @@ public sealed class GameStoryTests
     }
 
     [Theory]
-    [InlineData(false, "Ojciec pomógł mu go wystrugać, śmiejąc się")]
-    [InlineData(true, "Ojciec bez słowa pomógł mu go zaostrzyć")]
+    [InlineData(false, "Ojciec pomógł mu wystrugać ten miecz, śmiejąc się")]
+    [InlineData(true, "Ojciec bez słowa pomógł mu zaostrzyć miecz")]
     public void Chapter_one_war_with_weeds_depends_on_the_father(bool cursed, string father)
     {
         var pages = Play(CreateEngine(), [.. cursed ? CursedPrologue : PeacefulPrologue, RunOut]);
@@ -884,7 +884,7 @@ public sealed class GameStoryTests
         var engine = CreateEngine();
         var bows = On(Play(engine, [.. PeacefulPrologue, RunOut, contest]), "luki");
 
-        Assert.Equal("Kiedy miecze się nudziły, przychodziła pora na łuki.", bows[0].Blocks[0].Text);
+        Assert.Equal("Kiedy znudziły im się miecze, przychodziła pora na łuki.", bows[0].Blocks[0].Text);
         Assert.Contains(bows[0].Blocks, b => b.Text.Contains("Franek wybierał z niej gałąź o odpowiedniej długości"));
         Assert.Contains(bows[0].Blocks, b => b.Reveal == "hanka" && b.Text.StartsWith("Celem był snop słomy"));
         Assert.Equal("Czy Jaromir zmierzy się z Hanką?", bows[0].Question);
@@ -918,7 +918,7 @@ public sealed class GameStoryTests
 
         Assert.Equal(question, lake[0].Question);
         Assert.Contains(lake[1].Blocks, b => b.Text.Contains(text));
-        Assert.StartsWith("Potem suszyli się na trawie", lake[1].Blocks[1].Text);
+        Assert.StartsWith("Po kąpieli suszyli się na trawie", lake[1].Blocks[1].Text);
     }
 
     [Theory]
@@ -954,7 +954,7 @@ public sealed class GameStoryTests
         Assert.Contains(evening[0].Blocks, b => b.Reveal == "matka" && b.Text == "– Jaroooomir! Do doooomu!");
         Assert.Equal(cursed, Has(evening, "drzwi są dobrze zaryglowane"));
         Assert.Equal(cursed, Has(evening, "Babka Marianna"));
-        Assert.Equal(!cursed, Has(evening, "morzył sen w połowie"));
+        Assert.Equal(!cursed, Has(evening, "zaczynał przysypiać w połowie"));
 
         var golden = pages.Last(p => p.BackgroundKey == "zapadlina_lato" && Has([p], "Takich dni"));
         Assert.StartsWith("Takich dni było bez liku.", golden.Blocks[0].Text);
@@ -1050,7 +1050,7 @@ public sealed class GameStoryTests
 
     [Theory]
     [InlineData(TakeBark, "kora", "śniło mu się, że ktoś liczy pod jego oknem")]
-    [InlineData(LeaveBark, "spirala", "zmierzch płata figle")]
+    [InlineData(LeaveBark, "spirala", "wzrok płata mu figle")]
     public void Chapter_two_bark_torn_in_a_spiral(int choice, string reveal, string text)
     {
         var engine = CreateEngine();
@@ -1110,7 +1110,7 @@ public sealed class GameStoryTests
         var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, bark, ribbon, book]);
 
         var desk = On(pages, "szkola_ksiega");
-        Assert.StartsWith("Przez kilka dni nosił w sobie to, co się stało.", desk[0].Blocks[0].Text);
+        Assert.StartsWith("Przez kilka dni Jaromir nosił w sobie to, co się stało.", desk[0].Blocks[0].Text);
         Assert.True(Has(desk, ribbon == FetchRibbon ? "o starcu w kożuchu wywróconym na lewą stronę" : "o wstążce, która sama wróciła na płot"));
         Assert.Equal(bark == TakeBark, desk[0].Blocks.Any(b => b.Reveal == "kora" && b.Text.Contains("porównał je z rysunkiem")));
         Assert.Contains(desk[0].Blocks, b => b.Reveal == "ksiega" && b.Text.Contains("„Opowiadania z okolic Bukowego Grzbietu, spisane przez Ignacego Zawadę”"));
@@ -1136,8 +1136,7 @@ public sealed class GameStoryTests
         Assert.Equal(book == BorrowBook, Has([snow], "wyciągał spod siennika księgę pana Ignacego"));
         Assert.True(Has([snow], father));
         Assert.Contains(snow.Blocks, b => b.Reveal == "snieg" && b.Text.StartsWith("W nocy z niedzieli na poniedziałek spadł pierwszy śnieg."));
-        Assert.Contains(snow.Blocks, b => b.Reveal == "slady" && b.Text.Contains("Długich, wąskich."));
-        Assert.StartsWith("Chłopak pomyślał, że zostawił je pewnie jakiś jeleń szukający jedzenia.", snow.Blocks[^1].Text);
+        Assert.StartsWith("Długo stał przy zimnej szybie i patrzył w stronę boru", snow.Blocks[^1].Text);
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału drugiego._"));
     }
 
@@ -1190,7 +1189,7 @@ public sealed class GameStoryTests
 
     [Theory]
     [InlineData(LetIn, "lira", "Pachniesz lasem, chłopcze")]
-    [InlineData(KeepOut, "rygiel", "na polu nie było nikogo")]
+    [InlineData(KeepOut, "rygiel", "nie było już nikogo")]
     public void Chapter_three_beggar_knocks_on_christmas_eve(int choice, string reveal, string text)
     {
         var engine = CreateEngine();
@@ -1239,7 +1238,7 @@ public sealed class GameStoryTests
 
         var night = On(pages, "noc_snieg");
         Assert.StartsWith("Na pasterkę do Bukowca tego roku nikt nie poszedł", night[0].Blocks[0].Text);
-        Assert.Equal(book == BorrowBook, Has([night[0]], "szmatkę z garścią maku"));
+        Assert.Equal(book == BorrowBook, Has([night[0]], "szmatkę z makiem"));
         Assert.Equal(book == BorrowBook, Inventory(engine).Contains("mak"));
         Assert.Contains(night[0].Blocks, b => b.Text == "– Synku, chodź do mnie. Zimno mi. Zgubiłam się.");
         Assert.Equal(3, night[0].Choices.Count);
@@ -1248,10 +1247,10 @@ public sealed class GameStoryTests
     }
 
     [Theory]
-    [InlineData(BorrowBook, 1, 0, "noz", "Niech zostanie u niej", false, true)]
+    [InlineData(BorrowBook, 1, 0, "noz", "Niech zostanie u Zosi", false, true)]
     [InlineData(BorrowBook, 1, 1, "mak", "Jedno – zaszeptała", true, false)]
-    [InlineData(BorrowBook, 1, 2, "krzyk", "przez kolejne noce wracała", true, false)]
-    [InlineData(LeaveBook, 0, 1, "krzyk", "przez kolejne noce wracała", true, false)]
+    [InlineData(BorrowBook, 1, 2, "krzyk", "wracała przez kolejne noce", true, false)]
+    [InlineData(LeaveBook, 0, 1, "krzyk", "wracała przez kolejne noce", true, false)]
     public void Chapter_three_midnight_wraith_over_the_cradle(int book, int advice, int choice, string reveal, string text, bool keepsKnife, bool hadPoppy)
     {
         var engine = CreateEngine();
@@ -1271,9 +1270,9 @@ public sealed class GameStoryTests
     }
 
     [Theory]
-    [InlineData(BorrowBook, 1, 0, "Nikt nie wiedział, skąd w kołysce wziął się nożyk.", "Od tamtej nocy Antek nie zostawał już w tyle.")]
+    [InlineData(BorrowBook, 1, 0, "Nikt z dorosłych nie wiedział, skąd w kołysce wziął się nożyk.", "Od tamtej nocy Antek nie zostawał już w tyle.")]
     [InlineData(BorrowBook, 1, 1, "Po maku nie było śladu", "Od tamtej nocy Antek nie zostawał już w tyle.")]
-    [InlineData(LeaveBook, 0, 1, "drobna, szara plamka", "Antek nie miał do niego żalu.")]
+    [InlineData(LeaveBook, 0, 1, "drobna, szara plamka", "Antek nie miał do Jaromira żalu.")]
     public void Chapter_three_ends_with_christmas_and_hankas_warning(int book, int advice, int cradle, string zosia, string antek)
     {
         var engine = CreateEngine();
@@ -1321,7 +1320,7 @@ public sealed class GameStoryTests
 
     [Theory]
     [InlineData(TieRibbon, LookBack, "reka", "Pazury powoli nawijały na siebie czerwoną wstążkę.")]
-    [InlineData(KeepRibbon, LookBack, "reka", "Tej nocy dostał gorączki.")]
+    [InlineData(KeepRibbon, LookBack, "reka", "Tej nocy Jaromir dostał gorączki.")]
     [InlineData(TieRibbon, DontLook, "chichot", "z rozplecionym warkoczem")]
     [InlineData(KeepRibbon, DontLook, "chichot", "Długo jeszcze żadne z nich nie odezwało się słowem.")]
     public void Chapter_four_drowning_marzanna_something_pulls_her_under(int ribbon, int look, string reveal, string text)
@@ -1378,7 +1377,7 @@ public sealed class GameStoryTests
         var pages = Play(CreateEngine(), [.. CursedToSpring, TieRibbon, DontLook, Promise, shrine]);
 
         var chapel = On(pages, "kapliczka_przewrocona");
-        Assert.StartsWith("Po Wielkanocy ziemia obeschła", chapel[0].Blocks[0].Text);
+        Assert.StartsWith("Po Wielkanocy ziemia zaczęła obsychać", chapel[0].Blocks[0].Text);
         Assert.Contains(chapel[0].Blocks, b => b.Reveal == "spirala");
         Assert.Contains(chapel[0].Blocks, b => b.Reveal == "pies" && b.Text.StartsWith("Burek zjeżył sierść"));
         Assert.Contains(chapel[1].Blocks, b => b.Reveal == reveal);
@@ -1428,7 +1427,7 @@ public sealed class GameStoryTests
     }
 
     [Theory]
-    [InlineData(WarnFranek, "Urbaniak wyrzucił go z roboty", "Dwaj tracze z tartaku", "Franek do niego nie wrócił.")]
+    [InlineData(WarnFranek, "Urbaniak wyrzucił go z roboty", "Dwaj tracze z tartaku", "Franek do tartaku nie wrócił.")]
     [InlineData(KeepQuietOak, "widzi go takiego po raz ostatni", "Franek i drugi tracz", "coś go woła – cienkim, śpiewnym głosem")]
     public void Chapter_five_old_oak_is_cut_down(int warn, string afterWarn, string cutters, string franek)
     {
@@ -1496,7 +1495,7 @@ public sealed class GameStoryTests
         Assert.Contains(field.Blocks, b => b.Reveal == "sam");
 
         var noon = On(pages, "poludnica");
-        Assert.Contains(noon[0].Blocks, b => b.Reveal == "poludnica" && b.Text == "Między kłosami stała kobieta.");
+        Assert.Contains(noon[0].Blocks, b => b.Reveal == "poludnica" && b.Text == "Między kłosami pojawiła się kobieta.");
         Assert.True(Has(noon, "Południca chodzi po polach w największy skwar"));
         Assert.Equal(mistakes, noon.SelectMany(p => p.Blocks).Count(b => b.Reveal == "ciecie"));
         Assert.True(Has(noon, text));
@@ -1645,7 +1644,7 @@ public sealed class GameStoryTests
         Assert.Contains(well.Blocks, b => b.Reveal == "zebraczka");
         Assert.True(Has(On(pages, "wyreb"), "przygniótł go od kolan w dół"));
         var wounded = On(pages, "izba_ranny");
-        Assert.True(Has(wounded, "– Licho – powiedziała stara"));
+        Assert.True(Has(wounded, "– Licho – rzekła stara"));
         Assert.True(Has(wounded, "Mądry chłopak"));
         Assert.True(Has(wounded, "Krzywo, ale się zrośnie"));
         Assert.True(Has(On(pages, "drzwi_noc"), "u Urbaniaka pękła na pół wielka piła"));
@@ -1751,7 +1750,7 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "slub_droga"), "żelazny krzyżyk od ojca"));
         Assert.True(Has(On(pages, "wesele_noc"), "Dobrze się żenisz, wnuku Maćka. Pilnuj jej."));
         var morning = On(pages, "pierwszy_ranek");
-        Assert.True(Has(morning, "zasypała stopioną ziemię"));
+        Assert.True(Has(morning, "zasypała odtajałe miejsce"));
         Assert.True(Has(morning, "z żelaznym krzyżykiem na szyi"));
         Assert.Equal("izba_kolyska", pages[^1].BackgroundKey);
     }
@@ -1801,7 +1800,7 @@ public sealed class GameStoryTests
         var engine = CreateEngine();
         var pages = Play(engine, [.. PeacefulToBirth, 0, 1, 0, 1, 1]);
 
-        Assert.True(Has(On(pages, "noc_mamun"), "nie zapłakało, choć Hanka szlochała"));
+        Assert.True(Has(On(pages, "noc_mamun"), "nie zapłakało, choć matka szlochała"));
         Assert.True(Has(On(pages, "odmieniec"), "To nie wasze"));
         Assert.True(Has(On(pages, "rozstaje"), "Za darmo nic nie oddajemy"));
         var lake = On(pages, "jezioro_mamun");
@@ -1847,7 +1846,7 @@ public sealed class GameStoryTests
 
         Assert.True(Has(On(pages, "noc_mamun"), "Żelazny krzyżyk na jej szyi zrobił się nagle zimny jak lód"));
         Assert.Empty(On(pages, "odmieniec"));
-        Assert.False(Has(pages, "nie zapłakało, choć Hanka szlochała"));
+        Assert.False(Has(pages, "nie zapłakało, choć matka szlochała"));
         Assert.Equal("owczarnia_noc", pages[^1].BackgroundKey);
     }
 
@@ -1959,7 +1958,7 @@ public sealed class GameStoryTests
             pages.Add(page);
         }
 
-        Assert.True(Has(pages, "Był martwy, ale obok niego"));
+        Assert.True(Has(pages, "Był martwy, ale tuż obok"));
         Assert.DoesNotContain("szczeniak", Inventory(engine));
         // w borze (rozdzial szesnasty) szczenie jest juz wyrosnietym psem
         Assert.Equal("Rudy pies", engine.GetInventory().Single(i => i.Id == "szczenie_psa").Name);
@@ -1992,7 +1991,7 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "cmentarz_bukowiec"), "Dziękuję ci, synku"));
         Assert.True(Has(On(pages, "cmentarz_bukowiec"), "siadała na kamieniu przy rozstajach"));
         Assert.Empty(On(pages, "strzyga_okno"));
-        Assert.True(Has(On(pages, "wigilia_stol"), "W jej chałupie zawsze paliła się świeca"));
+        Assert.True(Has(On(pages, "wigilia_stol"), "W jej chałupie co noc paliła się świeca"));
         Assert.True(Has(On(pages, "wigilia_stol"), "garść mchu"));
         var journal = engine.GetJournal();
         var strzyga = journal.Single(c => c.Id == "strzyga");
@@ -2037,7 +2036,7 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "polnoc_strzyga"), "Czarnej i gęstej jak smoła."));
         Assert.True(Has(On(pages, "strzyga_okno"), "dwa drobne, czerwone nakłucia"));
         Assert.True(Has(On(pages, "wigilia_stol"), "Chałupa Wójcików stała pusta"));
-        Assert.False(Has(pages, "W jej chałupie zawsze paliła się świeca"));
+        Assert.False(Has(pages, "W jej chałupie co noc paliła się świeca"));
         var journal = engine.GetJournal();
         Assert.Contains("martwą Wójcikową", journal.Single(c => c.Id == "strzyga").Notes[^1]);
         Assert.Contains("Pomyliła się", journal.Single(c => c.Id == "mamuny").Notes[^1]);
@@ -2120,7 +2119,7 @@ public sealed class GameStoryTests
         var stakes = On(pages, "paliki_pedy")[0];
         Assert.Equal("Rozdział czternasty", stakes.Blocks[0].Text);
         Assert.Equal("Kapliczki płoną", stakes.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
-        Assert.True(Has(On(pages, "karczma_zeszyt"), "wyprowadził im krowę z obory"));
+        Assert.True(Has(On(pages, "karczma_zeszyt"), "wyprowadził Jaromirowi krowę z obory"));
         Assert.True(Has(On(pages, "noc_ognia"), "szarpnięcie za włosy"));
         Assert.True(Has(On(pages, "noc_ognia"), "Wyniósł z ognia świątka"));
         Assert.True(Has(On(pages, "pogorzelisko"), "wyrwał z zeszytu kartki"));
@@ -2284,7 +2283,7 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "serce_boru"), "Usiądź, wnuku Maćka"));
         var journal = engine.GetJournal();
         Assert.Equal("Błędnice", journal.Single(c => c.Id == "blednice").Title);
-        Assert.Contains("Wodzą w kółko", journal.Single(c => c.Id == "blednice").Notes[^1]);
+        Assert.Contains("Wodzą dokoła", journal.Single(c => c.Id == "blednice").Notes[^1]);
         Assert.Contains("nie rzucał cienia", journal.Single(c => c.Id == "pan_lasu").Notes[^1]);
         Assert.Equal("W sercu boru zdjął kapelusz.", journal.Single(c => c.Id == "starzec").Notes[^1]);
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału szesnastego._"));
@@ -2301,7 +2300,7 @@ public sealed class GameStoryTests
         pages.AddRange(PlayByText(engine, pages[^1], "Znaczyć drogę", "Pójść za głosem Franka", "różaniec", "Unieść siekierę"));
 
         Assert.True(Has(On(pages, "bor_suchy"), "zalepiała ostrze"));
-        Assert.True(Has(On(pages, "glosy_noc"), "Teraz ledwie szeptała"));
+        Assert.True(Has(On(pages, "glosy_noc"), "ledwie szeptała"));
         Assert.True(Has(On(pages, "glosy_noc"), "źle zagojoną ranę po kuli"));
         Assert.DoesNotContain(pages.Single(p => p.BackgroundKey == "bagno_blednice" && p.Ending == PageEnding.Choices).Choices, c => c.Text.Contains("białym wilkiem"));
         Assert.True(Has(On(pages, "bagno_blednice"), "różaniec w jego dłoni był zwęglony"));
@@ -2432,11 +2431,11 @@ public sealed class GameStoryTests
         var room = On(pages, "izba_swit")[0];
         Assert.Equal("Rozdział osiemnasty", room.Blocks[0].Text);
         Assert.Equal("Wybór", room.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
-        Assert.True(Has([room], "zapalił nową szczypkę"));
+        Assert.True(Has([room], "krzesał ogień do nowej szczypki"));
         Assert.True(Has(On(pages, "dzieci_debu"), "Te we włosach dziewczynek były nowe"));
         Assert.True(Has(On(pages, "dzieci_debu"), "Patrzył, która zamknie usta"));
         Assert.True(Has(On(pages, "dzieci_debu"), "Ta płakała za wszystkie"));
-        Assert.True(Has(On(pages, "dzieci_debu"), "Nikt mu jej nie oddał"));
+        Assert.True(Has(On(pages, "dzieci_debu"), "Nikt mu siekiery nie oddał"));
         Assert.True(Has(On(pages, "dzieci_debu"), "W Zaduszki przyjdę do wsi"));
         var children = engine.GetJournal().Single(c => c.Id == "dzieci");
         Assert.Equal("Dzieci spod dębu", children.Title);
@@ -2533,7 +2532,7 @@ public sealed class GameStoryTests
         var pages = Play(engine, [.. PeacefulToKupala, 0, 0, 0]);
         pages.AddRange(PlayByText(engine, pages[^1], [.. PeacefulForestToOak, "Zanucić jej melodię", "Drewniak, który niósł", "Pobiec po Antka"]));
 
-        Assert.True(Has(On(pages, "wies_sianokosy"), "Chodziła boso do pierwszego śniegu"));
+        Assert.True(Has(On(pages, "wies_sianokosy"), "chodziła boso do pierwszego śniegu"));
         Assert.DoesNotContain("bucik_marysi", Inventory(engine));
         Assert.True(Has(On(pages, "calun_noc"), "Do kuźni Antek już nie wrócił"));
         Assert.True(Has(On(pages, "jesien_zaduszki"), "Prawą trzymał w kieszeni"));
@@ -2675,7 +2674,7 @@ public sealed class GameStoryTests
 
         Assert.True(Has(On(pages, "dziady"), "Tylko gromnica Hanki paliła się"));
         Assert.True(Has(On(pages, "swita"), "Oddaję, co nie moje"));
-        Assert.True(Has(On(pages, "miejsce"), "Idziemy do domu, tata?"));
+        Assert.True(Has(On(pages, "miejsce"), "Idziemy do domu, tato?"));
         Assert.True(Has(On(pages, "epilog_bor"), "położyła na krzyżu jego czapkę"));
         Assert.Equal(PageEnding.End, pages[^1].Ending);
     }
@@ -2697,7 +2696,7 @@ public sealed class GameStoryTests
 
     [Theory]
     [InlineData("Biec do własnej chałupy", "Franka mi pilnuj", "grób Antka")]
-    [InlineData("Gasić płomienie", "Żar wyżarł mu oczy", "Nie widział go, ale czuł")]
+    [InlineData("Gasić płomienie", "Żar wypalił mu oczy", "Nie widział go, ale czuł")]
     [InlineData("Orać przesiekę", "połowa Zapadliny leżała w popiele", "cegła nie płonie")]
     public void Chapter_twenty_the_fire_burns_the_forest_and_takes_its_price(string choice, string night, string epilogue)
     {

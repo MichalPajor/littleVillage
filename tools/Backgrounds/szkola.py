@@ -13,7 +13,7 @@
 #   jesien_plot — ranek: plot przed chata, wstazka zawiazana na kokarde (# pokaz: kokarda)
 #   szkola_ksiega — izba po lekcjach: pan Ignacy za biurkiem, Jaromir przy nim; kora (# pokaz: kora), ksiega (# pokaz: ksiega),
 #               ksiega przesunieta do Jaromira (# pokaz: pozyczka), Jaromir na progu (# pokaz: prog)
-#   pierwszy_snieg — podworze za oknem: listopadowa noc, potem snieg (# pokaz: snieg), slady od boru pod okno (# pokaz: slady)
+#   pierwszy_snieg — podworze za oknem: listopadowa noc, potem snieg (# pokaz: snieg)
 #   droga_bor — przed switem sciezka pnie sie pod gore na Bukowy Grzbiet: z lewej pola, z prawej sciana swierkow, mgla;
 #               czworka dzieci w drodze do szkoly; miedzy swierkami jasne oczy z czerwonymi zrenicami (# pokaz: oczy)
 # Uzycie z katalogu glownego repozytorium:
@@ -560,9 +560,9 @@ for k in range(3):
         x, y = rnd.uniform(0, 390), rnd.uniform(0 + k * 40, 200 + k * 40)
         fl.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{rnd.uniform(1.2, 2.2):.1f}" fill="#FFFFFF" stroke-width="0.8"/>')
     N[f"platki_{k}"] = (0, k * 40 - 4, 390, 208, group(fl))
-# rzad sladow od boru pod samo okno — dlugie, waskie; zawracaja pod parapetem
+# slady od boru pod okno usuniete (autor nie chce motywu sladow) — STEPS zostaje puste
 STEPS = []
-for i in range(9):
+for i in range(0):
     f = i / 8
     x = 200 + (150 - 200) * f + (6 if i % 2 else -6) * (0.6 + f)
     y = 206 + (414 - 206) * f

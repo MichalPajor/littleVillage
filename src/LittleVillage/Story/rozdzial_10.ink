@@ -19,19 +19,19 @@ Hanka wprowadziła się do nowej izby z jednym kufrem, dwiema pierzynami i koło
 Na Gromniczną, drugiego lutego, pojechali saniami do Bukowca. Matka uparła się, żeby kupili gromnicę – grubą, woskową świecę, którą ksiądz święcił tego dnia przed ołtarzem.
 ~ ekwipunek += gromnica
 – W każdym domu musi być gromnica – powiedziała. – Na burzę, na poród i na śmierć. # pokaz: gromnica
-Hanka zaczerwieniła się po same uszy, a Jaromir dopiero w drodze powrotnej zrozumiał dlaczego. Kiedy sanie wjechały między pierwsze chałupy Zapadliny, ujęła jego dłoń i położyła ją sobie na brzuchu. # dalej
+Hanka zaczerwieniła się po same uszy, a Jaromir dopiero w drodze powrotnej zrozumiał dlaczego. Kiedy sanie wjechały między pierwsze chałupy Zapadliny, żona ujęła jego dłoń i położyła ją sobie na brzuchu. # dalej
 -> przestrogi
 
 = przestrogi
 # tlo: przestrogi
 Od tamtej pory cała Zapadlina wiedziała, że u Jaromira będzie dziecko, i każda kobieta we wsi miała dla Hanki dobrą radę. Nie wolno jej było patrzeć na pożar, bo maleństwo urodzi się z czerwonym znamieniem. Nie wolno przechodzić pod sznurem do bielizny, bo pępowina owinie się wokół szyi. Nie wolno siadać na progu ani pożyczać nikomu ognia.
-Hanka śmiała się z tego wszystkiego, ale słuchała – i z każdej rady brała tyle, ile uznała za mądre. Na pożary patrzeć przestała, pod sznurem do bielizny nie przechodziła, ale kiedy w lutym Wójcikowej zgasło w piecu, sama zaniosła jej żar w garnku.
+Hanka śmiała się z tego wszystkiego, ale słuchała – i z każdej rady brała tyle, ile uznała za mądre. Na pożary nie patrzyła, pod sznurem do bielizny nie przechodziła, ale kiedy w lutym Wójcikowej zgasło w piecu, sama zaniosła jej żar w garnku.
 – Prędzej Pan Bóg pokarze za zimną chałupę sąsiadki niż za pożyczony ogień – ucięła, kiedy matka Jaromira złapała się za głowę.
 Najwięcej jednak mówiła jej babka – za każdym razem to samo, słowo w słowo, aż Jaromir znał to na pamięć:
-– Jak się dziecko urodzi, nie zostawiajcie go samego ani na chwilę. Ani w dzień, ani w nocy. Póki nie będzie ochrzczone, to nie wasze jeszcze, tylko niczyje. Nad jeziorem mieszkają mamuny. Rodzą dzieci brzydkie i chorowite, więc kradną ludziom zdrowe, a w kołysce podrzucają swoje. – Wiesz, co one piorą po nocach? – dodawała zawsze na koniec. – Całuny. Dla tych, którzy umrą we wsi przed następną wiosną. Nad każdym całunem wołają czyjeś imię. Kto podsłucha, ten będzie wiedział, kogo pochowają – ale lepiej nie słuchać.
+– Jak się dziecko urodzi, nie zostawiajcie go samego ani na chwilę. Ani w dzień, ani w nocy. Póki nie będzie ochrzczone, to nie wasze jeszcze, tylko niczyje. Nad jeziorem mieszkają mamuny. Rodzą dzieci brzydkie i chorowite, więc kradną ludziom zdrowe, a w kołysce podrzucają swoje. Wiesz, co one piorą po nocach? – dodawała zawsze na koniec. – Całuny. Dla tych, którzy umrą we wsi przed następną wiosną. Nad każdym całunem wołają czyjeś imię. Kto podsłucha, ten będzie wiedział, kogo pochowają – ale lepiej nie słuchać.
 { korale_kaski == zatrzymane:
     ~ ekwipunek -= korale
-    Tej wiosny Hanka znalazła pod siennikiem szmatkę z koralami Kaśki. Była tak mokra, że ociekała wodą. Jaromir bez słowa zaniósł korale nad jezioro i cisnął je jak najdalej od brzegu. Tej nocy pierwszy raz od lat spał spokojnie. # pokaz: korale
+    Tej wiosny Hanka znalazła pod siennikiem szmatkę z koralami Kaśki. Była tak mokra, że ociekała wodą. Jaromir bez słowa zaniósł korale nad jezioro i cisnął je jak najdalej od brzegu. Tamtej nocy pierwszy raz od lat spał spokojnie. # pokaz: korale
 }
 Latem, kiedy noce zrobiły się krótkie i ciepłe, znad jeziora zaczęło dochodzić miarowe klaskanie – jakby ktoś po ciemku prał bieliznę i tłukł ją kijanką o kamień. Kobiety we wsi żegnały się, słysząc ten odgłos, i zamykały okiennice. # pokaz: kijanki # dalej
 -> narodziny
@@ -39,7 +39,7 @@ Latem, kiedy noce zrobiły się krótkie i ciepłe, znad jeziora zaczęło docho
 = narodziny
 # tlo: przyzba_swit
 Hanka zaczęła rodzić pod koniec sierpnia, w nocy, kiedy na polach stały jeszcze snopy. Babka przyszła, zanim ktokolwiek po nią posłał, jakby wiedziała. Jaromira wygnała z izby razem z ojcem i kazała im czekać na przyzbie.
-Czekali do świtu. Jaromir słyszał krzyki Hanki, a każdy wbijał mu się w pierś jak gwóźdź. Ojciec siedział obok, {noga_ojca == zlamana:oparty na kiju|z kulami opartymi o ścianę}, i milczał. Dopiero raz, przed samym świtem, położył synowi rękę na karku i powiedział:
+Czekali całą noc. Jaromir słyszał krzyki Hanki, a każdy wbijał mu się w pierś jak gwóźdź. Ojciec siedział obok, {noga_ojca == zlamana:oparty na kiju|z kulami opartymi o ścianę}, i milczał. Tylko raz, przed samym świtem, położył synowi rękę na karku i powiedział:
 – Twoja matka krzyczała tak samo. A potem byłeś ty.
 Kiedy nad borem pojaśniało niebo, z izby dobiegł płacz – cienki, gniewny, zupełnie nowy. # pokaz: swit
 – Dziewucha – powiedziała babka, stając w progu. Wycierała ręce w fartuch i pierwszy raz, odkąd Jaromir ją znał, uśmiechała się szeroko. – Zdrowa jak rydz. # pokaz: babka
@@ -50,7 +50,7 @@ Dali jej na imię Maria – Marysia – po prababce Mariannie, żonie dziadka Ma
 # tlo: izba_kolyska
 ~ zapiski += mamuny_1
 Chrzest wyznaczono na najbliższą niedzielę i do tego czasu nikt w chałupie nie miał spać spokojnie.
-Jaromir sam zbił kołyskę z jesionowych desek i postawił ją przy łóżku, tak blisko, żeby Hanka mogła sięgnąć ręką. Pachniała jeszcze świeżym drewnem, a Marysia cmokała przez sen i zaciskała piąstki na rąbku pieluszki. Babka obeszła izbę dokoła, mamrocząc pod nosem, posypała próg solą i kazała zabezpieczyć dziecko.
+Jaromir sam zbił kołyskę z jesionowych desek i postawił ją przy łóżku, tak blisko, żeby Hanka mogła sięgnąć ręką. Pachniała jeszcze świeżym drewnem, a Marysia cmokała przez sen i zaciskała piąstki na rąbku pieluszki. Babka obeszła izbę dokoła, mamrocząc pod nosem, posypała próg solą i kazała czymś osłonić dziecko.
 – Jednym sposobem, a porządnie – powiedziała. – Mamuny są sprytne. Zostawisz im szparę choćby na włos, to się przecisną.
 # pytanie: Jak zabezpieczyć kołyskę?
 *   [Zawiązać Marysi na rączce czerwoną wstążkę.]
@@ -58,10 +58,10 @@ Jaromir sam zbił kołyskę z jesionowych desek i postawił ją przy łóżku, t
     { not wstazka_marzanny:
         Hanka rozplotła warkocz i wyjęła z niego wstążkę – {swaty == po_staremu:tę, którą odwiązała z butelki swata po zrękowinach i od tamtej pory znów nosiła we włosach|tę samą, którą nosiła od dziecka}.
     - else:
-        Babka wyciągnęła z kieszeni fartucha motek czerwonej wełny.
+        Babka wyciągnęła z kieszeni fartucha czerwoną wełnianą wstążkę.
     }
     Jaromir zawiązał ją dziecku na rączce, na podwójny supeł. Marysia skrzywiła się, ale nie zapłakała. # pokaz: wstazka
-    – Czerwonego się boją – kiwnęła głową babka. – Odwracają od niego oczy jak od ognia. # dalej
+    – Czerwonego się boją. – Babka kiwnęła głową. – Odwracają od niego oczy jak od ognia. # dalej
     -> trzecia_noc
 *   { ekwipunek ? siekiera } [Położyć pod kołyską siekierę dziadka.]
     ~ ochrona_kolyski = siekiera_pod_kolyska
@@ -77,38 +77,38 @@ Jaromir sam zbił kołyskę z jesionowych desek i postawił ją przy łóżku, t
 = trzecia_noc
 # tlo: noc_mamun
 Pierwsze noce minęły cicho. W ostatnią, z soboty na niedzielę, Jaromira obudziło klaskanie kijanek – tym razem nie nad jeziorem, tylko tuż pod oknem.
-Leżał bez ruchu i patrzył. Księżyc stał wysoko, a w jego blasku po izbie przesuwały się dwa cienie. Przy kołysce stały dwie kobiety – wysokie i garbate, z głowami zbyt dużymi na wątłe szyje. Włosy sterczały im na wszystkie strony jak zeschłe gałązki, a łachmany z mchu i kory ciągnęły się po podłodze, zostawiając mokre smugi. Jedna trzymała w ramionach zawiniątko w brudnej chuście. Druga sięgała do kołyski chudymi, sękatymi rękami, porośniętymi mchem – i cofała je za każdym razem, jakby się parzyła.{ ekwipunek ? podkowa: Przez próg, nad którym wisiała podkowa, nie przeszły – weszły oknem.} # pokaz: mamuny
+Leżał bez ruchu i patrzył. Księżyc świecił wysoko, a w jego blasku po izbie przesuwały się dwa cienie. Przy kołysce stały dwie kobiety – wysokie i garbate, z głowami zbyt dużymi na wątłe szyje. Włosy sterczały im na wszystkie strony jak zeschłe gałązki, a łachmany z mchu i kory ciągnęły się po podłodze, zostawiając mokre smugi. Jedna trzymała w ramionach zawiniątko w brudnej chuście. Druga sięgała do kołyski chudymi, sękatymi rękami, porośniętymi mchem – i cofała je za każdym razem, jakby się parzyła.{ ekwipunek ? podkowa: Przez próg, nad którym wisiała podkowa, nie przeszły – weszły oknem.} # pokaz: mamuny
 { ochrona_kolyski:
 - wstazka_na_raczce:
     Zasłaniały twarze przed czerwoną wstążką na rączce dziecka.
 - siekiera_pod_kolyska:
     Omijały kołyskę od strony, z której wystawało ostrze siekiery.
 - else:
-    Płomień gromnicy drżał i chylił się ku nim, ale się nie poddawał.
+    Płomień gromnicy drżał i chylił się ku nim, ale nie gasł.
 }
-Wtedy jedna z nich zaczęła nucić – cicho, kołysząco, tak podobnie do matki Hanki, że Jaromirowi ścisnęło się serce. Hanka usiadła na łóżku. Oczy miała otwarte, ale patrzyła przez niego, jakby był z powietrza. Powoli wyciągnęła rękę – {ochrona_kolyski == wstazka_na_raczce:do supła na rączce Marysi|{ochrona_kolyski == siekiera_pod_kolyska:do trzonka siekiery|do płomienia, żeby go zdmuchnąć}}. # pokaz: hanka
+Jedna z nich zaczęła nucić – cicho, kołysząco, tak podobnie do matki Hanki, że Jaromirowi ścisnęło się serce. Hanka usiadła na łóżku. Oczy miała otwarte, ale patrzyła przez niego, jakby był z powietrza. Powoli wyciągnęła rękę – {ochrona_kolyski == wstazka_na_raczce:do supła na rączce Marysi|{ochrona_kolyski == siekiera_pod_kolyska:do trzonka siekiery|do płomienia, żeby go zdusić}}. # pokaz: hanka
 # pytanie: Co zrobi Jaromir?
 *   [Rzucić się między Hankę a kołyskę.]
     ~ noc_mamun = zaslonil
     Jaromir skoczył z łóżka i zasłonił kołyskę własnym ciałem. Coś zimnego i mokrego przejechało mu po plecach, jakby ktoś rozorał je pazurami z lodu. Mamuny wrzasnęły – przeraźliwie, jak czajki nad bagnem – i wycofały się w stronę okna. Ta z zawiniątkiem syknęła na niego, pokazując czarne dziąsła, i w przelocie przeciągnęła mokrą dłonią po koszuli Hanki. Potem obie zniknęły w ciemności. # pokaz: zaslonil
     Hanka opadła na poduszkę i spała dalej. Rano niczego nie pamiętała – ale kiedy chciała nakarmić Marysię, mała szarpała się i krzyczała z głodu. Hanka nie miała już pokarmu.
     – Dziecka nie dostały, to wzięły mleko – powiedziała babka. – Tanio się wykupiliście, choć teraz wam się tak nie wydaje.
-    Nie dała sobie długo płakać. Jeszcze tego dnia wyprosiła u Stasiowych kozę i odtąd karmiła Marysię z rożka, kropla po kropli, w dzień i w nocy. # dalej
+    Hanka nie dała sobie długo płakać. Jeszcze tego dnia wyprosiła u Stasiowych kozę i odtąd karmiła Marysię z rożka, kropla po kropli, w dzień i w nocy. # dalej
     -> chrzest
 *   [Zawołać Hankę po imieniu.]
     ~ noc_mamun = zawolal
     – Hanka! – krzyknął Jaromir. – Hanka, obudź się!
     { ekwipunek ? krzyzyk:
-        Hanka drgnęła. Żelazny krzyżyk na jej szyi zrobił się nagle zimny jak lód – złapała go odruchowo i oprzytomniała w jednej chwili. Zobaczyła mamuny i krzyknęła tak, że zbudziła cały dom. Uciekły przez okno, zanim ojciec zdążył dobiec z drugiej izby. # pokaz: obudzona # dalej
+        Hanka drgnęła. Żelazny krzyżyk na jej szyi zrobił się nagle zimny jak lód – złapała go odruchowo i oprzytomniała w jednej chwili. Zobaczyła mamuny i krzyknęła tak, że zbudziła cały dom. Uciekły przez okno, zanim ojciec zdążył dokuśtykać z drugiej izby. # pokaz: obudzona # dalej
         -> chrzest
     }
     ~ podmiana = true
-    Hanka nie usłyszała. Jej palce {ochrona_kolyski == wstazka_na_raczce:rozsupłały wstążkę|{ochrona_kolyski == siekiera_pod_kolyska:odsunęły siekierę|zdusiły płomień gromnicy}} – i w tej samej chwili mamuna pochyliła się nad kołyską. Kiedy Hanka zamrugała i obudziła się z płaczem, przy kołysce nie było już nikogo. Zostało tylko otwarte okno, a w kołysce leżało dziecko – i nie zapłakało, choć Hanka szlochała nad nim na głos. # pokaz: okno # dalej
+    Hanka nie usłyszała. Jej palce {ochrona_kolyski == wstazka_na_raczce:rozsupłały wstążkę|{ochrona_kolyski == siekiera_pod_kolyska:odsunęły siekierę|zdusiły płomień gromnicy}} – i w tej samej chwili mamuna pochyliła się nad kołyską. Kiedy Hanka zamrugała i obudziła się z płaczem, przy kołysce nie było już nikogo. Zostało tylko otwarte okno, a w kołysce leżało dziecko – i nie zapłakało, choć matka szlochała nad nim na głos. # pokaz: okno # dalej
     -> odmieniec
 *   [Chwycić siekierę i pogonić je precz.]
     ~ noc_mamun = pogonil
     ~ podmiana = true
-    Jaromir porwał siekierę i z krzykiem rzucił się na mamuny. Ta z zawiniątkiem uciekła przez okno, a on za nią – przez podwórze, przez płot, aż na łąkę nad jeziorem, gdzie rozpłynęła się we mgle. Dopiero tam zrozumiał, że została tylko jedna.
+    Jaromir porwał siekierę i z krzykiem rzucił się na mamuny. Ta z zawiniątkiem uciekła przez okno, a on za nią – przez podwórze, przez płot, aż na łąkę nad jeziorem, gdzie rozpłynęła się we mgle. Dopiero tam zrozumiał, że druga została w izbie.
     Kiedy wbiegł z powrotem do izby, druga mamuna już znikała w oknie. Hanka siedziała na łóżku i patrzyła na niego nieprzytomnie. W kołysce spało dziecko, spokojne i ciężkie, choć przed chwilą w izbie trzęsły się ściany od krzyku. # pokaz: okno # dalej
     -> odmieniec
 
@@ -123,17 +123,17 @@ W niedzielę ochrzcili Marysię w kościółku w Bukowcu. W środku pachniało k
 # tlo: odmieniec
 ~ zapiski += odmieniec_1
 Dziecko w kołysce wyglądało jak Marysia, ale nie było nią.
-Było cięższe, niż powinno, i zimne w dotyku mimo pierzyny. Skóra na plecach marszczyła się i łuszczyła jak kora. Nie płakało – tylko bez ustanku jadło. Hanka karmiła je, aż słaniała się ze zmęczenia, a ono potem leżało cicho i patrzyło w powałę oczami ciemniejszymi niż oczy jakiegokolwiek dziecka. Czasem, kiedy myślało, że nikt nie patrzy, uśmiechało się jak stara kobieta. # pokaz: oczy
+Było cięższe, niż powinno, i zimne w dotyku mimo pierzyny. Skóra na plecach marszczyła się i łuszczyła jak kora. Nie płakało – tylko bez ustanku jadło. Hanka karmiła je, aż słaniała się ze zmęczenia, a ono potem leżało cicho i patrzyło w powałę oczami ciemniejszymi niż oczy jakiegokolwiek dziecka. Czasem, kiedy myślało, że nikt nie widzi, uśmiechało się jak stara kobieta. # pokaz: oczy
 Babka obejrzała je tylko raz i odsunęła się od kołyski.
 – To nie wasze – powiedziała. – Odmieniec.
-Hanką wstrząsnęły te słowa i rozpłakała się.
-– Da się jeszcze odwrócić – ciągnęła babka. – Ale trzeba się z tym uwinąć, zanim minie siedem dni. Potem mamuny zabiorą ją tak daleko, że już nie odda jej żadna siła.
+Hanka zadrżała na te słowa i rozpłakała się.
+– Da się jeszcze odwrócić – ciągnęła babka. – Ale trzeba się z tym uwinąć, zanim minie siedem dni. Potem mamuny zabiorą Marysię tak daleko, że już żadna siła jej nie odda.
 # pytanie: Co zrobi Jaromir?
 *   [Zrobić tak, jak radzi babka – wynieść odmieńca na rozstaje i udawać, że się go bije.]
     ~ sposob_na_odmienca = rozstaje
     # tlo: rozstaje
     O zmierzchu Jaromir wyniósł odmieńca na rozstaje dróg pod borem i położył na ziemi. Ręce mu się trzęsły. Uniósł brzozową rózgę i chlasnął nią obok, raz za razem, tak żeby świstała w powietrzu, a odmieniec zaczął się drzeć – nie po dziecięcemu, tylko chrapliwie, jak wrona. # pokaz: rozga
-    Wtedy z mgły nad łąką wybiegła mamuna. Porwała swoje dziecko z ziemi i przycisnęła je do piersi – ale zamiast oddać Marysię, cofnęła się we mgłę, chichocząc. # pokaz: mamuna
+    Z mgły nad łąką wybiegła mamuna. Porwała swoje dziecko z ziemi i przycisnęła je do piersi – ale zamiast oddać Marysię, cofnęła się we mgłę, chichocząc. # pokaz: mamuna
     – Za darmo nic nie oddajemy – zaskrzeczała. – Przyjdź nad jezioro, gospodarzu. Po północy. # dalej
     -> nad_jeziorem_mamun
 *   [Zanieść odmieńca do księdza i ochrzcić go od razu.]
@@ -156,8 +156,8 @@ Hanką wstrząsnęły te słowa i rozpłakała się.
 # tlo: jezioro_mamun
 Po północy Jaromir poszedł nad jezioro sam. Hanka odprowadziła go tylko do furtki.
 – Wróć z nią – powiedziała. – Albo nie wracaj wcale.
-I zaraz zasłoniła sobie usta dłonią, przerażona własnymi słowami.
-Na płaskich kamieniach przy brzegu klęczały mamuny – pięć, może sześć – i tłukły kijankami mokre szmaty. Na jego widok przestały. Najstarsza, tak zgarbiona, że brodą prawie dotykała kolan, podniosła się powoli. W ramionach trzymała zawiniątko, z którego dobiegało ciche kwilenie. # pokaz: najstarsza
+Zaraz zasłoniła sobie usta dłonią, przerażona własnymi słowami.
+Na płaskich kamieniach przy brzegu klęczały mamuny – było ich kilka – i tłukły kijankami mokre szmaty. Na jego widok przestały. Najstarsza, tak zgarbiona, że brodą prawie dotykała kolan, podniosła się powoli. W ramionach trzymała zawiniątko, z którego dobiegało ciche kwilenie. # pokaz: najstarsza
 – Dobre dziecko – zaskrzeczała. – Ciepłe. Zdrowe. Czemu miałybyśmy je oddać?
 { sposob_na_odmienca == chrzest_odmienca:
     – Wyście nasze w drzazgi obrócili – syknęła druga. – Za to zapłacisz podwójnie.
@@ -167,7 +167,7 @@ Na płaskich kamieniach przy brzegu klęczały mamuny – pięć, może sześć 
 # pytanie: Co Jaromir odda mamunom?
 *   [Oddać im skarb z dzieciństwa.]
     ~ uklad_z_mamunami = oddany_skarb
-    Jaromir sięgnął za pazuchę. Przed wyjściem zabrał ze skrzynki w bazie {skarb_jaromira == muszelka:białą muszelkę|{skarb_jaromira == pioro:sójcze pióro|zardzewiały gwóźdź}} – dla otuchy, jak kiedyś na każdą wyprawę z bazy. Nie przypuszczał, że przyda się do czegoś innego.
+    Jaromir sięgnął za pazuchę. Przed wyjściem zabrał ze skrzynki w bazie {skarb_jaromira == muszelka:białą muszelkę|{skarb_jaromira == pioro:sójcze pióro|zardzewiały gwóźdź}} – dla otuchy, jak kiedyś na każdą dziecięcą wyprawę. Nie przypuszczał, że przyda się do czegoś innego.
     Mamuna obwąchała skarb jak pies, uśmiechnęła się czarnymi dziąsłami i cisnęła go w jezioro. Krąg na wodzie rozchodził się długo, aż dobiegł do jego butów. # pokaz: skarb
     – Dziecięce szczęście – zaskrzeczała z zadowoleniem. – Pierwsze, najsłodsze. Dobra zapłata.{ sposob_na_odmienca == chrzest_odmienca: – A za nasze… – dodała druga i przeciągnęła lodowatym palcem po jego policzku. Został na nim cienki, biały ślad jak po oparzeniu mrozem.}
 *   [Obiecać im dar co roku, w noc świętojańską.]
@@ -180,7 +180,7 @@ Na płaskich kamieniach przy brzegu klęczały mamuny – pięć, może sześć 
     – Weźcie moje lata – powiedział Jaromir. – Tylko mi ją oddajcie.
     Najstarsza mamuna dotknęła jego skroni. Palce miała zimne i miękkie jak namokła kora. Poczuł, jak coś z niego wypływa – powoli, boleśnie, jak krew z rany – i nogi ugięły się pod nim. # pokaz: lata
     – {sposob_na_odmienca == chrzest_odmienca:Czternaście|Siedem} – powiedziała, cofając rękę. – Wystarczy.
-    Kiedy pochylił się nad wodą, żeby zaczerpnąć powietrza, zobaczył w niej twarz mężczyzny z posiwiałymi skroniami.
+    Kiedy, łapiąc powietrze, pochylił się nad wodą, zobaczył w niej twarz mężczyzny z posiwiałymi skroniami.
 -   Najstarsza mamuna podała mu zawiniątko. W chuście leżała Marysia – ciepła, zdrowa, zapłakana. Pachniała mułem i tatarakiem, a w zaciśniętej piąstce trzymała źdźbło sitowia i nie dała go sobie odebrać. # pokaz: oddana
     Kiedy podniósł głowę, na kamieniach nie było już nikogo. Tylko woda przy brzegu kołysała się jeszcze przez chwilę, jakby ktoś dopiero co w nią wszedł. # dalej
     -> skarb_z_bazy
@@ -191,7 +191,7 @@ Na płaskich kamieniach przy brzegu klęczały mamuny – pięć, może sześć 
     W niedzielę Jaromir poszedł do starego bzu i otworzył skrzynkę w bazie. Była pusta. Długo trzymał ją w rękach i myślał o tym, co leży teraz na dnie jeziora. Potem odłożył ją na miejsce. Marysia będzie musiała znaleźć sobie własne skarby. # pokaz: pusta # dalej
     -> jesien_z_marysia
 }
-W niedzielę, kiedy w chałupie było już spokojnie, Jaromir poszedł na skraj łąki, do starego bzu. Baza w jego koronie była już prawie ruiną, ale skrzynka na skarby wciąż tkwiła pod luźną deską, tam gdzie ją schowali jako dzieci. Drabinka trzeszczała pod jego ciężarem, a w koronie bzu pachniało dokładnie tak samo jak wtedy, gdy miał osiem lat. Na chwilę ścisnęło go w gardle. Na dnie, pod zbutwiałym liściem łopianu, leżał {skarb_jaromira == muszelka:biały jak mleko kawałek muszelki z jeziora|{skarb_jaromira == pioro:sójcze pióro, wciąż błękitne jak niebo po burzy|zardzewiały gwóźdź z rycerskiej zbroi – a przynajmniej tak się kiedyś wydawało}}. # pokaz: skrzynka
+W niedzielę, kiedy w chałupie było już spokojnie, Jaromir poszedł na skraj łąki, do starego bzu. Baza w jego koronie była już prawie ruiną, ale skrzynka na skarby wciąż tkwiła pod luźną deską, tam, gdzie ją schowali jako dzieci. Drabinka trzeszczała pod jego ciężarem, a w koronie bzu pachniało dokładnie tak samo jak wtedy, gdy miał osiem lat. Na chwilę ścisnęło go w gardle. Na dnie, pod zbutwiałym liściem łopianu, leżał {skarb_jaromira == muszelka:biały jak mleko kawałek muszelki z jeziora|{skarb_jaromira == pioro:sójcze pióro, wciąż błękitne jak niebo po burzy|zardzewiały gwóźdź z rycerskiej zbroi – a przynajmniej tak się kiedyś wydawało}}. # pokaz: skrzynka
 # pytanie: Co zrobi Jaromir?
 *   [Przywiązać skarb do kołyski Marysi.]
     ~ skarb_dla_corki = true
@@ -208,16 +208,16 @@ W niedzielę, kiedy w chałupie było już spokojnie, Jaromir poszedł na skraj 
     W pierwszą niedzielę po powrocie Marysi ochrzcili ją w kościółku w Bukowcu. Chrzestnym był Antek, który przez cały obrzęd miął w palcach czapkę brata, a matką chrzestną stara Wójcikowa. Hanka nie wypuściła córki z rąk przez całą drogę tam i z powrotem.
 }
 We wrześniu pod oknem zakwitły astry. Marysia z każdym tygodniem ciążyła w ramionach i coraz głośniej domagała się swego, a Hanka śpiewała jej kołysankę, której nauczyła się od swojej matki. # pokaz: kolysanka
-Najprędzej jednak mała zasypiała, kiedy wiatr szedł od boru i szumiał w strzesze – milkła wtedy w pół płaczu i leżała z otwartymi oczami, cicha i poważna.
+Najprędzej jednak mała się uspokajała, kiedy wiatr szedł od boru i szumiał w strzesze – milkła wtedy w pół płaczu i leżała z otwartymi oczami, cicha i poważna.
 – Las ją usypia lepiej niż ja – śmiała się Hanka.
 Tylko czasem, kiedy Jaromir wstawał w nocy, żeby dołożyć do pieca, słyszał od strony jeziora klaskanie kijanek.{ sposob_na_odmienca == chrzest_odmienca: Nie ustawało aż do świtu, a raz rano Hanka znalazła w kołysce, obok śpiącej Marysi, garść mokrego mchu.}
 { uklad_z_mamunami == dar_swietojanski:
     Jaromir nie zapominał o tym, co obiecał nad jeziorem. Wiedział, że w czerwcu będzie musiał zanieść na kamień chleb i wianek – i każdego następnego roku też.
 }
 { uklad_z_mamunami == oddane_lata:
-    Hanka pierwsza zauważyła, że skronie posiwiały mu jak u starego i że wieczorami bolą go kości, jakby przybyło mu lat więcej, niż przeżył.
+    Hanka zauważyła, że skronie posiwiały mu jak u starego i że wieczorami bolą go kości, jakby przybyło mu lat więcej, niż przeżył.
 }
-A kiedy spadł pierwszy śnieg, od boru zaczęło dochodzić wycie. Tym razem wyło całe stado – i z każdą nocą głosy były bliżej wsi. # pokaz: wycie # dalej
+Kiedy spadł pierwszy śnieg, od boru zaczęło dochodzić wycie. Tym razem odzywało się całe stado – i z każdą nocą głosy były bliżej wsi. # pokaz: wycie # dalej
 -> rozdzial_dziesiaty_ciag_dalszy
 
 
