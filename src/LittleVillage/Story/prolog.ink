@@ -265,10 +265,10 @@ Nie ruszał się, dopóki słońce nie wzeszło nad borem. Potem zawrócił. Nie
 
 = dach_gotowy
 Ostatnie snopy trzciny ułożył do południa. Związał je łykiem, docisnął żerdziami i zszedł z drabiny. Pierwszy raz od przyjścia do Zapadliny stał przed skończoną chatą – własną, od podwaliny po kalenicę. # pokaz: dach
-Tej nocy wreszcie zasnął pod nim. Ściany pachniały żywicą i wilgotną gliną, a przez szparę w drzwiach przeciskało się światło księżyca.
+Tej nocy wreszcie zasnął w niej. Ściany pachniały żywicą i wilgotną gliną, a przez szparę w drzwiach przeciskało się światło księżyca.
 Nie było jeszcze łóżka, ale przynajmniej nie spał pod gołym niebem. Tu, u siebie, pierwszy raz od tygodni przespał noc bez budzenia się.
 { los_psa == oswojony: Pies ułożył się na progu i od tej nocy nikomu go nie ustępował. }
-Rano poszedł do jedynego człowieka, któremu ufał. Musiał komuś powiedzieć. # dalej
+Rano Maciek poszedł do jedynego człowieka, któremu ufał. Musiał komuś powiedzieć. # dalej
 -> u_andrzeja
 
 = u_andrzeja
@@ -315,7 +315,7 @@ Andrzej zamilkł na chwilę.
 – Straszne… A ci, co ją spalili?
 – Żaden nie dożył zimy. Jeden po drugim tracili rozum. Gadali do siebie, nie sypiali, chodzili po ciemku nad wodę. Aż w końcu wszyscy weszli w bagno i już nie wyszli. Ci, którzy spotkali ich ostatni, mówili, że w oczach mieli coś dziwnego. Jakby żarzące się węgielki. # pokaz: wegielki
 Andrzej pochylił się ku niemu.
-– To ich oczy mrugają po nocach nad mokradłami. Nie żadne błędne ognie. Oni tam stoją i wypatrują. I wabią.
+– To ich oczy mrugają po nocach nad mokradłami. Nie żadne błędne ognie. Oni tam stoją i wypatrują – wabią.
 { chata_macka:
     - przy_mokradlach: Maciek poczuł, jak zimno ściska go w żołądku. Każdej nocy widział te światełka ze swojego progu. Myślał, że to gnijące drewno albo bagienny gaz. Że to tylko światło.
     - nad_jeziorem: Maciek zbladł. Te bale zepchnął własnymi rękami w trzciny. Swoją chatę postawił dokładnie tam, gdzie płonęła tamta.
@@ -393,7 +393,7 @@ A potem, gdy tylko zbierze siły, przyprowadzi tu rodzinę. Do domu, który zbud
 // ------------------------------------------------------------
 === droga_do_miasta ===
 # tlo: sciezka
-Wyruszył o świcie. Do miasta było sześć godzin drogi, a pierwszy jej odcinek prowadził krętą ścieżką między mokradłami, pod górę, aż na Bukowy Grzbiet. Szedł raźno, choć w brzuchu burczało mu z głodu. Myślał o żonie i synku – o tym, jak pierwszy raz staną w progu nowej chaty – i tęsknota ściskała go za gardło.
+Wyruszył o świcie. Do miasta było sześć godzin drogi, a pierwszy jej odcinek prowadził krętą ścieżką między mokradłami, pod górę, aż na Bukowy Grzbiet. Szedł raźno, choć w brzuchu burczało mu z głodu. Myślał o żonie i synku – o tym, jak pierwszy raz staną w progu nowej chaty. Tęsknota ściskała go za gardło.
 { los_psa == oswojony:
     Pies szedł tuż przy jego boku i wesoło poruszał ogonem. # pokaz: pies
 }
@@ -401,7 +401,7 @@ Mgła leżała nisko nad czarną wodą. Ścieżka była wąska, miejscami tak ro
 W połowie drogi coś kazało mu jednak podnieść wzrok. W głębi mokradeł tliło się blade światełko. Świtało już na dobre, a ono wciąż tam było. Mrugało powoli, równo, jakby ktoś stał z kagankiem i wypatrywał. # pokaz: swiatelko
 Wtedy usłyszał swoje imię.
 – Maaaciek…
-Cicho, przeciągle, znad wody. Głosem, który brzmiał jak głos jego żony.
+Cicho, przeciągle, znad wody. Głosem, który brzmiał jak jego ukochanej żony.
 Zawsze tak go wołała, kiedy coś się działo. Ale przecież została na folwarku za miastem i miała tam na niego czekać… Może tylko mu się zdawało. A może to bagno wołało go do siebie.
 # pytanie: Co zrobi Maciek?
 *   [Pójdzie w stronę głosu – być może jego żona potrzebuje pomocy.]

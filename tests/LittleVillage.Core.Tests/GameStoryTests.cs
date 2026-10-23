@@ -558,7 +558,7 @@ public sealed class GameStoryTests
         Assert.Equal("sciezka", road.BackgroundKey);
         Assert.Contains(road.Blocks, b => b.Reveal == "pies" && b.Text.StartsWith("Pies szedł tuż przy jego boku"));
         Assert.Contains(road.Blocks, b => b.Reveal == "swiatelko");
-        Assert.Contains(road.Blocks, b => b.Text.Contains("głos jego żony"));
+        Assert.Contains(road.Blocks, b => b.Text.Contains("jak jego ukochanej żony"));
         Assert.StartsWith("Pójdzie w stronę głosu", road.Choices[FollowVoice].Text);
     }
 

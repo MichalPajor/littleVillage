@@ -4,8 +4,7 @@ using LittleVillage.Theme;
 namespace LittleVillage.Controls;
 
 /// <summary>
-/// Akapit fabuły: obsługuje <c>_kursywę_</c> i inicjał (pierwsza litera czcionką Pirata One);
-/// wiersze łamie jak w książce (<see cref="BookTypography"/>).
+/// Akapit fabuły: obsługuje <c>_kursywę_</c> i inicjał (pierwsza litera czcionką Pirata One).
 /// </summary>
 public sealed class StoryTextLabel : Label
 {
@@ -42,7 +41,7 @@ public sealed class StoryTextLabel : Label
     private void Rebuild()
     {
         var formatted = new FormattedString();
-        var runs = InlineMarkup.Parse(BookTypography.KeepTogether(StoryText ?? string.Empty));
+        var runs = InlineMarkup.Parse(StoryText);
 
         for (var i = 0; i < runs.Count; i++)
         {
