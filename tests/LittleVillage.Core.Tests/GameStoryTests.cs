@@ -781,12 +781,16 @@ public sealed class GameStoryTests
     private const int TakeBark = 0, LeaveBark = 1;              // kora ze spirali
     private const int FetchRibbon = 0, LeaveRibbon = 1;         // wstazka Hanki w lesie
     private const int BorrowBook = 0, LeaveBook = 1;            // ksiega pana Ignacego
+    private const int ReadAtNight = 0, WaitForDay = 1;          // czytanie ksiegi: noca przy weglach albo za dnia
     private const int AskHanka = 0;                             // rada na polnocnice (z ksiega: 1 = ksiega, 2 = ojciec)
     private const int LetIn = 0, KeepOut = 1;                   // dziad w Wigilie
     private const int Answer = 0, TurnCoat = 1, RunAway = 2;    // glos matki z boru
 
     private static readonly int[] Summer = [RunOut, Contest, Shell, FirstOption, PlayOn];
-    private static readonly int[] School = [Shout, Defend, TakeBark, FetchRibbon, BorrowBook];
+    private static readonly int[] School = [Shout, Defend, TakeBark, FetchRibbon, BorrowBook, ReadAtNight];
+
+    /// <summary>Wybor ksiegi w rozdziale drugim; po pozyczeniu od razu pada pytanie, kiedy ja czytac (domyslnie noca).</summary>
+    private static int[] Book(int book, int read = ReadAtNight) => book == BorrowBook ? [BorrowBook, read] : [book];
     private static readonly int[] Winter = [AskHanka, LetIn, 0, 0, 0];  // imie psa (gdy jest), glos z boru, kolyska
     private static readonly int[] NoDogWinter = [AskHanka, LetIn, Answer, 0];      // bez psa: bez imienia
     private static readonly int[] DogWinter = [AskHanka, LetIn, 0, Answer, 0];     // z psem: imie, glos, kolyska
@@ -1125,19 +1129,43 @@ public sealed class GameStoryTests
     }
 
     [Theory]
-    [InlineData(true, BorrowBook, "długo chodzi po izbie")]
-    [InlineData(false, LeaveBook, "dostanie miskę kaszy")]
-    public void Chapter_two_ends_with_tracks_in_the_first_snow(bool cursed, int book, string father)
+    [InlineData(true, BorrowBook, ReadAtNight, "długo chodzi po izbie")]
+    [InlineData(true, BorrowBook, WaitForDay, "długo chodzi po izbie")]
+    [InlineData(false, LeaveBook, ReadAtNight, "dostanie miskę kaszy")]
+    public void Chapter_two_ends_with_tracks_in_the_first_snow(bool cursed, int book, int read, string father)
     {
-        var pages = Play(CreateEngine(), [.. cursed ? CursedPrologue : PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, book]);
+        var engine = CreateEngine();
+        var pages = Play(engine, [.. cursed ? CursedPrologue : PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, .. Book(book, read)]);
 
-        var snow = On(pages, "pierwszy_snieg")[0];
-        Assert.StartsWith("W listopadzie dni zrobiły się krótkie i szare", snow.Blocks[0].Text);
-        Assert.Equal(book == BorrowBook, Has([snow], "wyciągał spod siennika księgę pana Ignacego"));
-        Assert.True(Has([snow], father));
-        Assert.Contains(snow.Blocks, b => b.Reveal == "snieg" && b.Text.StartsWith("W nocy z niedzieli na poniedziałek spadł pierwszy śnieg."));
-        Assert.StartsWith("Długo stał przy zimnej szybie i patrzył w stronę boru", snow.Blocks[^1].Text);
+        var snow = On(pages, "pierwszy_snieg");
+        Assert.StartsWith("W listopadzie dni zrobiły się krótkie i szare", snow[0].Blocks[0].Text);
+        if (book == BorrowBook)
+        {
+            Assert.Equal("Kiedy Jaromir będzie czytał księgę?", snow[0].Question);
+            Assert.Equal(["Czytać nocą przy węglach.", "Czekać z czytaniem do rana."], snow[0].Choices.Select(c => c.Text));
+        }
+
+        Assert.Equal(book == BorrowBook && read == ReadAtNight, Has(snow, "wyciągał spod siennika księgę pana Ignacego"));
+        Assert.Equal(book == BorrowBook && read == WaitForDay, Has(snow, "Czytał o świcie, przy oknie"));
+        Assert.Equal(book == BorrowBook, Has(snow, "Tamten przychodzi z drugiej strony"));
+        Assert.Equal(book == BorrowBook && read == ReadAtNight, engine.SaveState().Contains("\"czytal_po_zmroku\":true"));
+        Assert.True(Has(snow, father));
+        var night = snow.Single(p => p.Blocks.Any(b => b.Reveal == "snieg"));
+        Assert.StartsWith("W nocy z niedzieli na poniedziałek spadł pierwszy śnieg.", night.Blocks.Single(b => b.Reveal == "snieg").Text);
+        Assert.StartsWith("Długo stał przy zimnej szybie i patrzył w stronę boru", night.Blocks[^1].Text);
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału drugiego._"));
+    }
+
+    [Theory]
+    [InlineData(ReadAtNight, true)]
+    [InlineData(WaitForDay, false)]
+    public void Chapter_three_teacher_sees_whether_the_book_was_read_after_dark(int read, bool readAtNight)
+    {
+        var pages = Play(CreateEngine(), [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, BorrowBook, read, AskHanka, LetIn]);
+
+        var eve = On(pages, "wigilia");
+        Assert.True(Has(eve, "Tylko pamiętaj: nie po zmroku."));
+        Assert.Equal(readAtNight, Has(eve, "Jaromir spuścił oczy."));
     }
 
     // ----- Rozdzial trzeci: Wigilia -----
@@ -1147,7 +1175,7 @@ public sealed class GameStoryTests
     [InlineData(WalkFaster, "starał się nie odwracać głowy w stronę drzew")]
     public void Chapter_three_opens_with_advent_lanterns_on_the_forest_path(int fog, string text)
     {
-        var pages = Play(CreateEngine(), [.. PeacefulPrologue, .. Summer, fog, Defend, TakeBark, FetchRibbon, BorrowBook]);
+        var pages = Play(CreateEngine(), [.. PeacefulPrologue, .. Summer, fog, Defend, TakeBark, FetchRibbon, BorrowBook, ReadAtNight]);
 
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału drugiego._"));
         var advent = On(pages, "roraty")[0];
@@ -1166,7 +1194,7 @@ public sealed class GameStoryTests
         { [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, LeaveBook, 1], false, "izba_noc", "Ale to bajki, synu.", "ojciec" },
         { [.. CursedPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, LeaveBook, 1], false, "izba_noc", "I nikomu ani słowa, rozumiesz?", "ojciec" },
         // z ksiega: trzy rady, ksiega opowiada o maku
-        { [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, BorrowBook, 1], true, "izba_noc", "garść maku, północnica musi policzyć", "ksiega" },
+        { [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, BorrowBook, ReadAtNight, 1], true, "izba_noc", "garść maku, północnica musi policzyć", "ksiega" },
     };
 
     [Theory]
@@ -1234,7 +1262,7 @@ public sealed class GameStoryTests
     public void Chapter_three_mothers_voice_calls_from_the_forest(int book, int advice, int choice, string text, string reveal)
     {
         var engine = CreateEngine();
-        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, book, advice, KeepOut, choice]);
+        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, .. Book(book), advice, KeepOut, choice]);
 
         var night = On(pages, "noc_snieg");
         Assert.StartsWith("Na pasterkę do Bukowca tego roku nikt nie poszedł", night[0].Blocks[0].Text);
@@ -1254,7 +1282,7 @@ public sealed class GameStoryTests
     public void Chapter_three_midnight_wraith_over_the_cradle(int book, int advice, int choice, string reveal, string text, bool keepsKnife, bool hadPoppy)
     {
         var engine = CreateEngine();
-        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, book, advice, LetIn, TurnCoat, choice]);
+        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, .. Book(book), advice, LetIn, TurnCoat, choice]);
 
         var cradle = On(pages, "kolyska");
         Assert.StartsWith("Antek czekał przy oknie", cradle[0].Blocks[0].Text);
@@ -1276,7 +1304,7 @@ public sealed class GameStoryTests
     public void Chapter_three_ends_with_christmas_and_hankas_warning(int book, int advice, int cradle, string zosia, string antek)
     {
         var engine = CreateEngine();
-        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, book, advice, LetIn, TurnCoat, cradle]);
+        var pages = Play(engine, [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, .. Book(book), advice, LetIn, TurnCoat, cradle]);
 
         var christmas = On(pages, "koledy")[0];
         Assert.True(Has([christmas], zosia));
@@ -2058,7 +2086,7 @@ public sealed class GameStoryTests
         Assert.Equal("Rozdział trzynasty", thaw.Blocks[0].Text);
         Assert.Equal("Wspólny sen", thaw.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
         Assert.True(Has(On(pages, "zgliszcza_kra"), "wystrugam ci konia z wozem"));
-        Assert.True(Has(On(pages, "sen_kladka"), "Jednego brakuje"));
+        Assert.True(Has(On(pages, "sen_kladka"), "Gdzie moja lalka?"));
         Assert.True(Has(On(pages, "sen_kladka"), "To lalka"));
         Assert.True(Has(On(pages, "noc_kladka"), "przeorał Jaromirowi pazurami bark"));
         Assert.True(Has(On(pages, "skrzynia_izba"), "okręcił skrzynię łańcuchem"));
@@ -2372,7 +2400,7 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "pod_debem"), "budzi moje – te znad wody, mamuny, błędnice"));
         Assert.True(Has(On(pages, "pod_debem"), "Marysię wziąłem ja"));
         Assert.True(Has(On(pages, "pod_debem"), "Tym razem nie oddam jej za darmo"));
-        Assert.True(Has(On(pages, "wies_sianokosy"), "szła przez stratowane żyto na skraj młodnika"));
+        Assert.True(Has(On(pages, "wies_sianokosy"), "szła przez podeptane żyto na skraj młodnika"));
         Assert.True(Has(On(pages, "pod_debem"), "Wpatrywał się w podaną dłoń"));
         Assert.True(Has(On(pages, "pod_debem"), "Zabrałeś mu nim rok wilczego życia"));
         Assert.DoesNotContain("siekiera", Inventory(engine));
@@ -2383,6 +2411,20 @@ public sealed class GameStoryTests
         Assert.Contains(pages, p => p.Blocks.Any(b => b.Text == "_Koniec rozdziału siedemnastego._"));
         Assert.Equal("dzieci_debu", pages[^1].BackgroundKey);
         Assert.Equal(PageEnding.Choices, pages[^1].Ending);
+    }
+
+    [Theory]
+    [InlineData(ReadAtNight, true)]
+    [InlineData(WaitForDay, false)]
+    public void Chapter_seventeen_remembers_whether_the_book_was_read_after_dark(int read, bool readAtNight)
+    {
+        var engine = CreateEngine();
+        var pages = PlayTo(engine, "skraj_bor", [.. PeacefulPrologue, .. Summer, Shout, Defend, TakeBark, FetchRibbon, BorrowBook, read]);
+        pages.AddRange(PlayByText(engine, pages[^1], PeacefulForestToOak));
+
+        Assert.True(Has(On(pages, "pod_debem"), "Słuchaj, wnuku Maćka"));
+        Assert.Equal(readAtNight, Has(On(pages, "pod_debem"), "czytałeś o mnie po zmroku"));
+        Assert.Equal(readAtNight, Has(On(pages, "pod_debem"), "Tamta przy kołysce też przyszła na twoje wołanie"));
     }
 
     [Fact]
@@ -2654,7 +2696,7 @@ public sealed class GameStoryTests
         Assert.Equal("Ostatnia noc", mist.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
         Assert.True(Has(On(pages, "swita"), "Przyszedłem policzyć się do końca"));
         Assert.DoesNotContain(On(pages, "swita").SelectMany(p => p.Choices), c => c.Text.Contains("Skrzesać ogień"));
-        Assert.True(Has(On(pages, "granica"), "do jakiej roboty"));
+        Assert.True(Has(On(pages, "granica"), "Mówiłam, że się przyda"));
         Assert.True(Has(On(pages, "granica"), "Ty mi oddałeś moje"));
         Assert.True(Has(On(pages, "epilog_dab"), "Od pół wieku nie przepadło żadne"));
         Assert.True(Has(On(pages, "epilog_dab"), "dzieci Marysi"));

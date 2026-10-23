@@ -114,7 +114,7 @@ Hanka zagryzła wargę. Nie płakała, ale Jaromir widział, jak drżą jej ręc
     Niedaleko, w półmroku, stał wysoki starzec – tak wysoki, że musiałby się schylić, żeby wejść do ich chaty. Miał na sobie kożuch wywrócony włosiem na wierzch, przepasany sznurkiem, i kapelusz z mchu o szerokim, opadającym rondzie. Twarzy pod nim nie było widać – tylko dwa jasne punkty oczu i gęstą, skołtunioną brodę. Nie poruszał się, oparty o sękatą laskę, z której wyrastały liście, a w jego dłoni trzepotało coś czerwonego. # pokaz: starzec
     Jaromir chciał krzyknąć, ale głos uwiązł mu w gardle. Zamrugał.
     Starca nie było. Wstążka wisiała na gałęzi tuż przed chłopcem, na wyciągnięcie ręki, a za jego plecami, kilka kroków dalej, prześwitywała ścieżka i słychać było, jak Hanka woła go po imieniu. # pokaz: zniknal
-    Wyszedł z lasu, ściskając wstążkę w garści. Dziewczynka rzuciła mu się na szyję, a potem, zawstydzona, odskoczyła i przez całą drogę do domu nie spojrzała mu w oczy. Dopiero przy kładce zauważyli, że słońce stoi już nisko nad borem, choć kiedy wchodził do lasu, było ledwie po południu. # dalej
+    Wyszedł z lasu, ściskając wstążkę w garści. Dziewczynka rzuciła mu się na szyję, a potem, zawstydzona, odskoczyła i przez całą drogę do domu nie spojrzała mu w oczy. Dopiero przy kładce zauważyli, że słońce stoi już nisko nad jeziorem, choć kiedy wchodził do lasu, było ledwie po południu. # dalej
     -> rozmowa_ksiega
 *   [Przekonać Hankę, żeby ją zostawiła – ojciec kupi jej nową.]
     – Nie chodź tam – szepnął i złapał ją za rękę. – Ojciec kupi ci nową.
@@ -156,10 +156,20 @@ Wyjął z szuflady gruby zeszyt oprawny w skórę i położył go na biurku. Na 
     ~ zapiski += starzec_1
 }
 W listopadzie dni zrobiły się krótkie i szare, a wieczory długie. Pod butami chlupotało błoto zmieszane z liśćmi, wiatr szarpał gołe gałęzie, a wszystko dookoła pachniało wilgocią i zgnilizną. Chłopiec wracał ze szkoły już po zmroku i całą drogę skrajem boru szedł z oczami wbitymi w ścieżkę i odmawiał w myślach Zdrowaś Maryjo, żeby nie słyszeć, czy w lesie ktoś liczy.
-{ ekwipunek ? ksiega:
+{ ekwipunek ? ksiega: -> czytanie_ksiegi }
+-> wieczory_jesienia
+
+= czytanie_ksiegi
+# pytanie: Kiedy Jaromir będzie czytał księgę?
+*   [Czytać nocą przy węglach.]
     ~ czytal_po_zmroku = true
-    Nocami, kiedy w domu wszyscy już spali, wyciągał spod siennika księgę pana Ignacego i czytał ją przy blasku żarzących się w piecu węgli, choć wiedział, że wolno po nią sięgać tylko za dnia. Były tam podania o południcach, które w największy skwar zadają zagadki żniwiarzom, o północnicach, które dręczą niemowlęta, o rusałkach i strzygach. Pośród gęsto zapisanych kartek ktoś narysował starca w ubraniu wywróconym na lewą stronę i w kapeluszu z mchu. Pod rysunkiem stało: „Kto go spotka, niech zrobi tak samo jak on. Tamten przychodzi z drugiej strony, gdzie wszystko jest odwrotnie”.
-}
+    Nocami, kiedy w domu wszyscy już spali, wyciągał spod siennika księgę pana Ignacego i czytał ją przy blasku żarzących się w piecu węgli, choć wiedział, że wolno po nią sięgać tylko za dnia.
+*   [Czekać z czytaniem do rana.]
+    Wieczorami księga leżała pod siennikiem i Jaromir jej nie ruszał, choć kusiła go bardziej niż ciepły piec. Czytał o świcie, przy oknie, zanim wyszedł do szkoły, i w niedzielę po kościele, póki było jasno.
+-   Były tam podania o południcach, które w największy skwar zadają zagadki żniwiarzom, o północnicach, które dręczą niemowlęta, o rusałkach i strzygach. Pośród gęsto zapisanych kartek ktoś narysował starca w ubraniu wywróconym na lewą stronę i w kapeluszu z mchu. Pod rysunkiem stało: „Kto go spotka, niech zrobi tak samo jak on. Tamten przychodzi z drugiej strony, gdzie wszystko jest odwrotnie”.
+-> wieczory_jesienia
+
+= wieczory_jesienia
 { figurka_u_staruchy:
     Ojciec coraz częściej siadywał wieczorami na progu z fajką, która dawno mu zgasła. Kiedy pewnego razu syn zapytał go, czy wierzy w Pana Lasu, ten odwrócił się do niego tak gwałtownie, że chłopak cofnął się o krok. Ojciec jednak nic nie powiedział. Wstał i poszedł spać, a w nocy Jaromir słyszał, jak długo chodzi po izbie.
 - else:

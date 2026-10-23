@@ -157,7 +157,7 @@ Była to jedna z najstarszych w Zapadlinie, postawiona jeszcze {figurka_u_staruc
 
 = urbaniak
 # tlo: urbaniak
-W maju, kiedy bociany siedziały już na starym gnieździe na dachu kuźni, do Zapadliny zajechała bryczka. Wysiadł z niej tęgi pan w miejskim płaszczu i kapeluszu, a za nim dwóch ludzi z siekierami i długim sznurem z węzłami. Chodzili skrajem boru przez cały dzień – mierzyli, liczyli i co kilka kroków wycinali na korze dębów białe znaki. # pokaz: znaki
+W maju, kiedy bociany siedziały już na starym gnieździe na dachu kuźni, do Zapadliny zajechała bryczka. Wysiadł z niej tęgi pan w miejskim płaszczu i kapeluszu, a za nim dwóch ludzi z siekierami i długim sznurem z węzłami. Chodzili skrajem boru przez cały dzień – mierzyli, coś zapisywali i co kilka kroków wycinali na korze dębów białe znaki. # pokaz: znaki
 Jaromir patrzył na nich zza płotu. Każde takie nacięcie wyglądało jak świeża rana.
 – Pan Urbaniak – powiedział ojciec, kiedy bryczka odjechała. – Dziedzic sprzedał mu wyrąb. Będzie tartak. # pokaz: odjazd
 Tej nocy po raz pierwszy od lat z boru dobiegło wycie – długie, przeciągłe, ani wilcze, ani psie. Ludzie zamykali okiennice i żegnali się ukradkiem, a Jaromir leżał w ciemności z pierzyną naciągniętą pod same oczy i słuchał, aż ucichło. # pokaz: noc # dalej

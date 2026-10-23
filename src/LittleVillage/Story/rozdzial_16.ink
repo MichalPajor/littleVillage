@@ -30,7 +30,7 @@ Stał na skraju młodnika, z siekierą w ręku i z torbą przez ramię. Wstążk
     Za opłotkami dogonił go pies – musiał się wyrwać Hance z progu. Jaromir nie miał serca go odpędzać. Podsunął mu drewniak Marysi; pies obwąchał drewniak, zaskomlał cienko i pobiegł przodem. # pokaz: pies
 }
 Za pierwszymi sosnami wszystko ucichło. Igły spadały z gałęzi pionowo, bez szelestu, bo nie było wiatru, który by je zniósł. Łąka za jego plecami ociekała rosą, a tu ziemia była sucha i ciepła, mech chrzęścił pod butami jak zeschła skóra, a w powietrzu wisiał zapach żywicy i nagrzanego drewna, od którego drapało w gardle.{ rada_przed_borem == rada_planetnika: „Tam, gdzie nie pada” – przypomniał sobie Jaromir i zacisnął palce na trzonku siekiery.} # pokaz: igly
-Szedł prosto przed siebie, aż słońce stanęło wysoko. Wreszcie świerki rozstąpiły się i zobaczył mokrą łąkę, stratowane żyto i jałowiec na skraju młodnika. Wrócił w to samo miejsce, z którego wyszedł. Spróbował drugi raz, trzymając słońce po prawej ręce. I trzeci. Za każdym razem bór wyprowadzał go z powrotem pod wieś – łagodnie, uprzejmie, tak jak odprowadza się do furtki gościa, którego nikt nie zapraszał.{ ekwipunek ? szczenie_psa: Pies przy każdej próbie zostawał trochę w tyle, z nosem przy korze, i wracał do Jaromira niechętnie, skomląc.}
+Szedł prosto przed siebie, aż słońce stanęło wysoko. Wreszcie świerki rozstąpiły się i zobaczył mokrą łąkę, {pani_w_zbozu_noc == z_pochodniami:stratowane żyto|{pole_zbite_gradem:zbite gradem zboże|{pani_w_zbozu_noc == gonil_babe:podeptane żyto|żyto}}} i jałowiec na skraju młodnika. Wrócił w to samo miejsce, z którego wyszedł. Spróbował drugi raz, trzymając słońce po prawej ręce. I trzeci. Za każdym razem bór wyprowadzał go z powrotem pod wieś – łagodnie, uprzejmie, tak jak odprowadza się do furtki gościa, którego nikt nie zapraszał.{ ekwipunek ? szczenie_psa: Pies przy każdej próbie zostawał trochę w tyle, z nosem przy korze, i wracał do Jaromira niechętnie, skomląc.}
 # pytanie: Jak Jaromir przejdzie przez bór?
 *   [Wywrócić ubranie na lewą stronę, jak uczył pan Ignacy.]
     ~ wejscie_do_boru = ubranie_na_lewo
@@ -68,7 +68,7 @@ Najpierw Hanka. Z lewej strony, zza gęstych świerków.
 { pani_w_zbozu_noc == za_spiewem:
     Głos był cały – ciepły, trochę zachrypnięty, taki, jakim Hanka mówiła, zanim tamto w zbożu zabrało jej połowę. Teraz Hanka ledwie szeptała. Jaromir zacisnął zęby.
 - else:
-    Głos był jej, w każdym zachrypnięciu. Jaromir zrobił krok w tamtą stronę, zanim przypomniał sobie, że Hanka stała w progu, kiedy wychodził, i nie miała zamiaru ruszać się z domu.
+    Głos był jej, w każdym zachrypnięciu. Jaromir zrobił krok w tamtą stronę, zanim przypomniał sobie, że Hanka obiecała palić łuczywo co noc, aż wrócą – pod wsią, nie w głębi boru.
 }
 Potem matka, z prawej, ciepło i łagodnie, tak jak mówiła do niego, kiedy był mały:
 – Synku, chodź do mnie. Zimno mi. Zgubiłam się.{ glos_w_lesie == odpowiedzial: Te same słowa, co tamtej zimy, kiedy miał dziewięć lat i odpowiedział. Co do jednego.}

@@ -66,7 +66,7 @@ Wtedy bardzo daleko, za borem, za wszystkimi drzewami, ktoś zaczął kołysank�
     -> zly_wybor
 *   [Zanucić jej melodię.]
     ~ znak_rozpoznania = po_melodii
-    Zaczął nucić od pierwszego dźwięku, ochryple, fałszując, ale nie przerwał – tę melodię, z którą Marysia co wieczór zasypiała. Po kilku taktach dziewczynki podjęły ją wszystkie razem, czysto i cienko, jak jeden głos podzielony na kilkanaście gardeł. # pokaz: spiew
+    Zaczął nucić od pierwszego dźwięku, ochryple, fałszując, ale nie przerwał – tę krótką, obcą melodię, którą Marysia nuciła sobie pod nosem przed snem, nie kołysankę Hanki. Po kilku taktach dziewczynki podjęły ją wszystkie razem, czysto i cienko, jak jeden głos podzielony na kilkanaście gardeł. # pokaz: spiew
     Nie słuchał, kto śpiewa. Patrzył, która zamknie usta.
     W połowie, na tym dźwięku, na którym zawsze się urywało, wszystkie oprócz jednej śpiewały dalej, gładko, do samego końca. Ta jedna zamknęła usta. Siedziała trzecia od lewej, dolna warga drżała jej tak, jak wtedy, gdy zbiła dzbanek i bała się, że ktoś krzyknie, i patrzyła na niego, czekając, aż podpowie jej, jak to idzie. # dalej
     -> dobry_wybor

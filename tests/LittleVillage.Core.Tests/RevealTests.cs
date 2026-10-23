@@ -133,16 +133,17 @@ public sealed class RevealTests
     // ----- strażnicy prawdziwej fabuły -----
 
     // Rozdzial drugi: kazdy ogon prologu i rozdzialu pierwszego konczy sie innym zestawem wyborow (wszystkie opcje choc raz).
-    private static readonly int[][] ChapterTwoTails = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 2, 2, 2], [1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1]];
+    // Piaty wybor to ksiega pana Ignacego; po pozyczeniu (0) szosty to czytanie noca (0) albo za dnia (1).
+    private static readonly int[][] ChapterTwoTails = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 2, 2, 2], [1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1]];
 
     private static readonly int[][] AllPaths =
         [.. new[] { 0, 1, 2 }.SelectMany(place => new[] { new[] { place, 1 }, [place, 0, 0], [place, 0, 1] })
             .SelectMany(path => new[] { new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 1, 1, 0, 0, 0, 0, 2, 1, 0], [1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1] }
                 .Select((tail, i) => path.Concat(tail).Concat(ChapterTwoTails[i]).ToArray())),
             // spokojny prolog bez psa az do ubozecia, ktore Jaromir udaje, ze nie widzi (# pokaz: slady)
-            [0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 2, 2, 1, 1, 1],
+            [0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 2, 2, 1, 1, 1],
             // ksiega: uklon Poludnicy i Jaromir sam przy kapliczkach
-            [0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 3, 0, 1, 1]];
+            [0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 3, 0, 1, 1]];
 
     // Rozdzialy siodmy i osmy: ogony z wyborami innymi niz domyslne — smiech z piolunu, krzyz albo sila, los korali, dlonie;
     // licho przy studni, wyrab albo dom, pomoc, nocne pukanie, kapliczki; swaty, Franek, kowal, starzec na weselu; kolyska, noc mamun, odmieniec, uklad nad jeziorem, skarb.

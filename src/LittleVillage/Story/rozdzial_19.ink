@@ -1,9 +1,9 @@
 // ------------------------------------------------------------
 //  Rozdział dziewiętnasty — Świt. Dwie drogi po rozdziale osiemnastym.
 //  [Marysia żyje] powrót o świcie, dług u Jagny (wstążka, drewniak albo odmowa),
-//  lato i żniwa, a pod koniec sierpnia mamuny piorą całun z imieniem Marysi:
-//  wyrwać go samemu (zdrowie), Antek (ręka), biały wilk (ginie) albo przedłużyć
-//  umowę z mamunami na córkę. Jesień, mgła pod płotami, gromnice gasną.
+//  lato i żniwa, pod koniec sierpnia kijanki nad jeziorem — mamuny piorą mały całun
+//  (cenę za zmycie imienia wybiera się w r20, w noc Zaduszek). Jesień, mgła pod płotami,
+//  gromnice gasną.
 //  [zły wybór] Hanka poznaje po zapachu, co Jaromir przyniósł; ciało pochowane,
 //  oddane Jagnie, spalone albo zakopane pod młodnikiem; trumienka z bzu, wianki,
 //  kołysanka; jesień — „Przyjdzie?”; paliła się tylko gromnica Hanki.
@@ -45,7 +45,7 @@ Hanka zatrzymała się w pół kroku. Marysia przywarła Jaromirowi do szyi.
     ~ dlug_jagny = oddana_wstazka
     Jaromir uniósł rękę z czerwoną pętlą na przegubie. – Szła przodem, kiedy odgarniałem gałęzie – powiedział. – Wyszła z boru, zanim wyniosłem córkę.
     ~ ekwipunek -= wstazka_marysi
-    Jagna przyglądała mu się bez słowa, a potem drgnęły jej kąciki ust. Zsunęła mu wstążkę z przegubu i schowała za pazuchę. – Co było w borze i wróciło, przyda mi się do roboty – powiedziała. – Jeszcze zobaczysz, do jakiej. # tobolek
+    Jagna przyglądała mu się bez słowa, a potem drgnęły jej kąciki ust. Zsunęła mu wstążkę z przegubu i schowała za pazuchę. – Co było w borze i wróciło, przyda mi się do roboty – powiedziała. # tobolek
     Hanka zacisnęła wargi. Tę wstążkę wplotła Marysi we włosy w wigilię świętego Jana. # dalej
 *   [Drewniak, który niósł za pazuchą.]
     ~ dlug_jagny = oddany_drewniak
@@ -82,7 +82,7 @@ Ale woda nie dawała im spokoju. Marysia nie chciała chodzić nad jezioro, a ki
 # tlo: calun_noc
 Pod koniec sierpnia, w noc, kiedy mijały trzy lata, odkąd Marysia przyszła na świat, Jaromira obudziło plaskanie. Miarowe, mokre, znad jeziora – kijanka o kamień. Pamiętał ten dźwięk z czasów, gdy Marysia leżała jeszcze w kołysce.
 Spojrzał na ławę przy piecu. Mała spała, zwinięta w kłębek, z piąstką pod policzkiem. Hanka oddychała równo.
-Wyszedł cicho, boso, i przyczaił się w trzcinach. Na płaskich kamieniach przy pomoście klęczały mamuny – garbate, mokre, w łachmanach z mchu – i prały w wodzie coś małego, jasnego. Akurat na dziecko. Imienia nie wołały. Kiedy trzcina zaszeleściła, najstarsza nawet nie podniosła głowy. # pokaz: mamuny
+Wyszedł cicho, boso, i przyczaił się w trzcinach. Na płaskich kamieniach po drugiej stronie jeziora klęczały mamuny – garbate, mokre, w łachmanach z mchu – i prały w wodzie coś małego, jasnego. Akurat na dziecko. Imienia nie wołały. Kiedy trzcina zaszeleściła, najstarsza nawet nie podniosła głowy. # pokaz: mamuny
 { dar_pominiety:
     – Raz zapomniałeś, gospodarzu – zaskrzeczała w wodę. – Nie będziemy prać wolniej.
 - else:
@@ -95,8 +95,8 @@ Wyszedł cicho, boso, i przyczaił się w trzcinach. Na płaskich kamieniach prz
 # tlo: jesien_zaduszki
 ~ zapiski += pan_lasu_11
 Jesień przyszła wcześnie. Młócka w stodołach, siew żyta pod zimę, międlenie lnu – wieś robiła swoje jak co roku, a Jaromir chwytał się każdej roboty, byle nie zostać sam z myślami. Marysia rosła. W październiku pierwszy raz od powrotu zaśmiała się na głos przy stole i Hanka wyszła do sieni, i długo nie wracała.
-Jaromir nie mówił Hance o kamieniach przy pomoście. Ale co wieczór, zanim zasnął, myślał o tym, ile jeszcze zostało do Zaduszek, i za każdym razem wydawało mu się, że mniej niż poprzedniej nocy.
-Ale im bliżej było Zaduszek, tym ciszej robiło się w Zapadlinie. Ludzie wracali z pól przed zmrokiem, ryglowali drzwi, a od boru co wieczór podchodziła łąkami mgła, ciężka i mokra, pod same płoty. Jaromir pamiętał każde słowo: „W Zaduszki przyjdę do wsi. Policzymy się wtedy do końca”. # pokaz: mgla
+Jaromir nie mówił Hance o kamieniach po drugiej stronie jeziora. Ale co wieczór, zanim zasnął, myślał o tym, ile jeszcze zostało do Zaduszek, i za każdym razem wydawało mu się, że mniej niż poprzedniej nocy.
+Im bliżej było Zaduszek, tym ciszej robiło się w Zapadlinie. Ludzie wracali z pól przed zmrokiem, ryglowali drzwi, a od boru co wieczór podchodziła łąkami mgła, ciężka i mokra, pod same płoty. Jaromir pamiętał każde słowo: „W Zaduszki przyjdę do wsi. Policzymy się wtedy do końca”. # pokaz: mgla
 Pierwszego listopada wieś szła na cmentarz do Bukowca. Tego roku zamiast kaganków ludzie nieśli z domów gromnice. W drodze powrotnej zgasły jednym tchem, wszystkie, choć powietrze stało. # pokaz: zgasly # dalej
 -> rozdzial_dziewietnasty_ciag_dalszy
 
@@ -118,7 +118,7 @@ Usiadła z dzieckiem w trawie i zaczęła je kołysać. Ludzie z grabiami stali 
     Nikt nie zauważył, że Jaromir nie rzuca cienia. Nikt na niego nie patrzył.
 }
 { dlug_u_jagny:
-    Jagna podeszła od strony płotu i pochyliła się nad dzieckiem w ramionach Hanki. Przyglądała się sztywnym stópkom i grzecznemu, zastygłemu uśmiechowi. Potem wyprostowała się i powiedziała do Jaromira cicho, tak żeby Hanka nie słyszała: – To nie jest twoje dziecko. To jest drewno. Pierwsza rzecz z boru. Mogę ją wziąć. Wiem, co się z takim robi. # pokaz: jagna
+    Jagna podeszła od strony płotu i pochyliła się nad dzieckiem w ramionach Hanki. Przyglądała się sztywnym stópkom i grzecznemu, zastygłemu uśmiechowi. Potem wyprostowała się i powiedziała do Jaromira cicho, tak żeby Hanka nie słyszała: – To nie jest twoje dziecko. To jest drewno. Wyszło z boru zaraz za tobą. Mogę je wziąć zamiast długu. Wiem, co się z takim robi. # pokaz: jagna
 - else:
     Stary Staś przykuśtykał z kijem, popatrzył na dziecko i przeżegnał się. – Dzieci z boru nie chowa się w poświęconej ziemi – mruknął. – Za mojego dziadka, jak jeszcze kościoła w Bukowcu nie było i na każdy pogrzeb do miasta się szło, to i tak wszyscy wiedzieli… Albo ogień, albo pod lasem. # pokaz: stas
 }

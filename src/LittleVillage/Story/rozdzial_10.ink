@@ -56,7 +56,7 @@ Jaromir sam zbił kołyskę z jesionowych desek i postawił ją przy łóżku, t
 *   [Zawiązać Marysi na rączce czerwoną wstążkę.]
     ~ ochrona_kolyski = wstazka_na_raczce
     { not wstazka_marzanny:
-        Hanka rozplotła warkocz i wyjęła z niego wstążkę – {swaty == po_staremu:tę, którą odwiązała z butelki swata po zrękowinach i od tamtej pory znów nosiła we włosach|tę samą, którą nosiła od dziecka}.
+        Hanka wyjęła z kufra wstążkę – {swaty == po_staremu:tę, którą odwiązała z butelki swata po zrękowinach i nosiła we włosach aż do oczepin|tę samą, którą nosiła od dziecka aż do oczepin}.
     - else:
         Babka wyciągnęła z kieszeni fartucha czerwoną wełnianą wstążkę.
     }
@@ -108,7 +108,7 @@ Jedna z nich zaczęła nucić – cicho, kołysząco, bez słów, melodię, któ
 *   [Chwycić siekierę i pogonić je precz.]
     ~ noc_mamun = pogonil
     ~ podmiana = true
-    Jaromir porwał siekierę i z krzykiem rzucił się na mamuny. Ta z zawiniątkiem uciekła przez okno, a on za nią – przez podwórze, przez płot, aż na łąkę nad jeziorem, gdzie rozpłynęła się we mgle. Dopiero tam zrozumiał, że druga została w izbie.
+    Jaromir porwał siekierę i z krzykiem rzucił się na mamuny. Ta z zawiniątkiem rzuciła je drugiej i uciekła przez okno, a on za nią – przez podwórze, przez płot, aż na łąkę nad jeziorem, gdzie rozpłynęła się we mgle. Dopiero tam zrozumiał, że druga została w izbie.
     Kiedy wbiegł z powrotem do izby, druga mamuna już znikała w oknie. Hanka siedziała na łóżku i patrzyła na niego nieprzytomnie. W kołysce spało dziecko, spokojne i ciężkie, choć przed chwilą w izbie trzęsły się ściany od krzyku. # pokaz: okno # dalej
     -> odmieniec
 

@@ -132,7 +132,7 @@ Antek rzucił się za bratem. Po trzech krokach dno urwało mu się spod nóg �
 Franek długo kaszlał wodą. Trząsł się cały, zęby szczękały mu z zimna, a z włosów kapało, ale zdawał się tego nie czuć. Potem usiadł, otarł twarz i spojrzał na nich, jakby widział ich pierwszy raz. # pokaz: franek
 – Po co mnie wyciągnęliście? – zapytał cicho. – Tam było tak dobrze. Ciepło, spokojnie… i nikt niczego ode mnie nie chciał.
 Antek, ubłocony po szyję, złapał go za mokrą koszulę i potrząsnął nim jak workiem.
-– A matka? – wychrypiał. – A dziadek? O nich pomyślałeś?
+– A ojciec? A matka? – wychrypiał. – A dziadek? O nich pomyślałeś?
 Wreszcie puścił go, usiadł w mule obok i rozpłakał się na dobre, nie udając, że to pot ani woda.
 { ratunek_franka != sila:
     – To była Kaśka – szepnęła Hanka, kiedy odzyskała głos. – Ta z koralami. Kaśka Wójcikówna.
@@ -185,7 +185,7 @@ Następnego ranka, kiedy mgła zeszła z jeziora, Jaromir znalazł na pomoście 
 = pod_bzem
 # tlo: bez_zachod
 Tydzień po Zielonych Świątkach stary bez na skraju łąki zakwitł tak obficie, że z daleka wyglądał jak oblepiony śniegiem. Ich dawna baza wciąż wisiała w jego koronie – zbutwiała, z dziurawym daszkiem, z drabinką, której brakowało już dwóch szczebli.
-Hanka siedziała na samej górze, z podkulonymi nogami, kiedy Jaromir wspiął się do niej. Słońce zachodziło za las, a powietrze pachniało bzem tak słodko, że kręciło się w głowie – zupełnie jak wtedy, kiedy byli dziećmi i chowali się tu przed burzą. # pokaz: para
+Hanka siedziała na samej górze, z podkulonymi nogami, kiedy Jaromir wspiął się do niej. Słońce zachodziło za jezioro, a powietrze pachniało bzem tak słodko, że kręciło się w głowie – zupełnie jak wtedy, kiedy byli dziećmi i chowali się tu przed burzą. # pokaz: para
 – Pamiętasz? – zapytała, nie patrząc na niego. – Mieściliśmy się tu we czwórkę.
 – Pamiętam – powiedział.
 Przez chwilę milczeli.{ mak_w_medaliku: Hanka bawiła się medalikiem na szyi, w którym od zeszłego lata nosiła zasuszony mak.}{ poszedl_po_wstazke && not wstazka_marzanny: We włosach miała czerwoną wstążkę – tę samą, po którą Jaromir kiedyś poszedł do boru.}
@@ -195,7 +195,7 @@ Przez chwilę milczeli.{ mak_w_medaliku: Hanka bawiła się medalikiem na szyi, 
     ~ pocalunek = true
     Nie odpowiedział. Pochylił się i pocałował ją – niezgrabnie, szybko, ledwie muskając jej usta. Hanka znieruchomiała, a potem zaśmiała się krótko, oparła mu głowę na ramieniu i tak już zostali, aż na niebie zapaliły się pierwsze gwiazdy, a z łąki dobiegło wołanie jej matki. # pokaz: pocalunek
 *   [Wziąć ją za rękę i nic nie mówić.]
-    Nie umiał znaleźć słów. Wziął ją tylko za rękę – szorstką od pracy, ciepłą – i trzymał tak długo, aż słońce zgasło za borem, a w trawie zaczęły grać świerszcze. Hanka nie cofnęła dłoni. # pokaz: dlonie
+    Nie umiał znaleźć słów. Wziął ją tylko za rękę – szorstką od pracy, ciepłą – i trzymał tak długo, aż słońce zgasło za jeziorem, a w trawie zaczęły grać świerszcze. Hanka nie cofnęła dłoni. # pokaz: dlonie
 -   Kiedy schodzili z bazy, od jeziora podnosiła się mgła. Sięgała już do połowy łąki, a w niej, brzegiem wody, szło coś wysokiego i ciemnego – powoli, bez pośpiechu, jak gospodarz, który wieczorem obchodzi miedze. Hanka ścisnęła Jaromirowi palce tak mocno, że zabolało, i żadne z nich nie odezwało się ani słowem, póki nie doszli do płotów. # pokaz: postac # dalej
     -> rozdzial_siodmy_ciag_dalszy
 

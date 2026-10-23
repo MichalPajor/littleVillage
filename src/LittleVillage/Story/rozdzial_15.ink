@@ -156,7 +156,7 @@ Hanka wyszła przed chałupę. Miała suche oczy i włosy zaplecione ciasno, jak
 W nocy Hanka szyła Jaromirowi torbę z płótna. Igła wypadała jej z palców, raz przebiła nią sobie kciuk i nawet tego nie zauważyła – na płótnie została rdzawa kropka. Do torby włożyła chleb, ser, sól zawiązaną w szmatkę i pęk świeżej bylicy. Na wierzch położyła ciepły wełniak Marysi, złożony starannie, jak do skrzyni. # pokaz: welniak
 – Żeby nie zmarzła – powiedziała. – Jak ją znajdziesz.
 { ekwipunek ? ksiega:
-    Tego dnia, póki było jasno, Jaromir czytał przy otwartym oknie księgę pana Ignacego – o Borowym, o zawracających ścieżkach, o ludziach, którzy wrócili z lasu po latach i nie poznawali własnych dzieci. Kiedy zaczęło zmierzchać, zamknął ją i odłożył na drogę.
+    Tego dnia, póki było jasno, Jaromir czytał przy otwartym oknie księgę pana Ignacego – o Borowym, o zawracających ścieżkach, o ludziach, którzy wrócili z lasu po latach i nie poznawali własnych dzieci. Kiedy zaczęło zmierzchać, zamknął ją i odłożył, żeby zabrać w drogę.
 }
 Na stole stał jeden drewniak. Jaromir nie mógł oderwać od niego oczu. Myślał tylko o tym, że Marysia jest boso, a rosa w borze jest zimna nawet w czerwcu.{ skarb_dla_corki: I o tym, że miała na szyi jego {skarb_jaromira == muszelka:muszelkę|{skarb_jaromira == pioro:pióro|gwóźdź}} – że w lesie, wśród obcych, ma przy sobie choć tyle z domu.}
 { ekwipunek ? zoladz: Zza belki nad piecem wyjął żołądź spod Starego Dębu, przechowany od chłopięcych lat – wciąż ciepły – i schował go za pazuchę.}

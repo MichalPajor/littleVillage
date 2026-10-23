@@ -199,7 +199,7 @@ Antek wbił Jaromirowi paznokcie w ramię tak mocno, że ten omal nie krzyknął
     Zosia słabła z każdym dniem. Dopiero na Trzech Króli stary Staś, który wysłuchał wnuka bez śmiechu, położył pod kołyską zardzewiały sierp. Mała przeżyła, ale już zawsze była chorowita i blada, a na jej czole została drobna, szara plamka, jakby od dotyku brudnego palca.
 }
 { polnocnica == uslyszala_krzyk:
-    Antek nie miał do Jaromira żalu. Mówił, że przynajmniej ktoś mu uwierzył – i to więcej, niż mógł powiedzieć o innych dorosłych.
+    Antek nie miał do Jaromira żalu. Mówił, że przynajmniej ktoś mu uwierzył – i to więcej, niż mógł powiedzieć o dorosłych.
 - else:
     Od tamtej nocy Antek nie zostawał już w tyle. Do szkoły chodził teraz obok Jaromira, a kiedy ktoś pytał, czemu tak się go trzyma, wzruszał tylko ramionami i uśmiechał się pod nosem.
 }

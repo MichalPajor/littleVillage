@@ -142,7 +142,7 @@ Upał kładł się na wszystkim jak ciepła pierzyna. Świerszcze cykały tak g�
 
 = lato_wieczor
 # tlo: wieczor_lato
-A jednak kończył się zawsze. Słońce zsuwało się za las, cienie wydłużały się na łące, aż sięgały od jednego jej skraju do drugiego, a niebo nad jeziorem nabierało koloru dojrzałych malin. Powietrze stygło i pachniało skoszoną trawą i dymem z kominów, a z mokradeł odzywały się pierwsze żaby – najpierw jedna, potem dziesiątki, aż rechotała cała dolina jak jeden wielki chór. Z kolejnych podwórek zaczynały wtedy dobiegać wołania.
+A jednak kończył się zawsze. Słońce zsuwało się za jezioro, cienie wydłużały się na łące, aż sięgały od jednego jej skraju do drugiego, a niebo nad wodą nabierało koloru dojrzałych malin. Powietrze stygło i pachniało skoszoną trawą i dymem z kominów, a z mokradeł odzywały się pierwsze żaby – najpierw jedna, potem dziesiątki, aż rechotała cała dolina jak jeden wielki chór. Z kolejnych podwórek zaczynały wtedy dobiegać wołania.
 – Jaroooomir! Do doooomu! # pokaz: matka
 # pytanie: Czy Jaromir wróci od razu?
 *   [Pobiegnie do domu od razu.]

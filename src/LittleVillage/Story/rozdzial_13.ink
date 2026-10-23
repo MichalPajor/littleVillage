@@ -95,7 +95,7 @@ Figurka z drewna, nadpalona z jednej strony. Woda przez tyle lat nie zmyła z ni
 = wspolny_sen
 # tlo: sen_kladka
 ~ zapiski += ogniki_2
-{ not przeszukal_zgliszcza:Pierwszy sen przyśnił się Józkowi.|Pierwszy sen przyśnił się Józkowi, najmłodszemu prawnukowi starego Stasia.} Po nim córce młynarza z Bukowca, potem bliźniakom od Kowalczyków. Po tygodniu matki przy studni nie mówiły już o niczym innym, bo każde dziecko śniło to samo: że stoi nocą na kładce nad mokradłami, wokół mrugają światełka, a pod deskami, w czarnej wodzie, ktoś przewraca gliniane garnki, jeden po drugim, i zagląda pod każdy. I że ten ktoś w końcu podnosi głowę i mówi: „Jednego brakuje”. # pokaz: glowa
+{ not przeszukal_zgliszcza:Pierwszy sen przyśnił się Józkowi.|Pierwszy sen przyśnił się Józkowi, najmłodszemu prawnukowi starego Stasia.} Po nim córce młynarza z Bukowca, potem bliźniakom od Kowalczyków. Po tygodniu matki przy studni nie mówiły już o niczym innym, bo każde dziecko śniło to samo: że stoi nocą na kładce nad mokradłami, wokół mrugają światełka, a pod deskami, w czarnej wodzie, ktoś przewraca gliniane garnki, jeden po drugim, i zagląda pod każdy. I że ten ktoś w końcu podnosi głowę i pyta: „Gdzie moja lalka?”. # pokaz: glowa
 { not odrzucil_figurke && not jozek_mial_figurke:
     Po kilku nocach ten sam sen przyśnił się Jaromirowi – jedynemu dorosłemu we wsi. Tylko on przecież wziął figurkę z własnej woli. Zrywał się przed świtem z szumem wody w uszach i z mokrymi stopami, choć spał pod pierzyną.
 }
@@ -179,7 +179,7 @@ Po Wielkanocy Jaromir długo siedział wieczorami nad skrzynią. Światełka nad
 *   [Zakopać ją pod kapliczką.]
     ~ los_figurki = figurka_pod_kapliczka
     ~ ekwipunek -= figurka
-    Po zmroku Jaromir poszedł z łopatą do kapliczki {noc_na_kladce == latarnia_na_wodzie:przy drodze do Bukowca|przy kładce}. Wykopał dół głęboki na łokieć, owinął figurkę w czyste płótno i zasypał, a ziemię ubił stopami. Tej samej nocy światełka nad mokradłami zgasły, a dzieci przestały śnić. # pokaz: lopata
+    Po zmroku Jaromir poszedł z łopatą do kapliczki {noc_na_kladce == latarnia_na_wodzie:przy drodze do Bukowca, za strugą|przy kładce}. Wykopał dół głęboki na łokieć, owinął figurkę w czyste płótno i zasypał, a ziemię ubił stopami. Tej samej nocy światełka nad mokradłami zgasły, a dzieci przestały śnić. # pokaz: lopata
     Nikomu nie powiedział, gdzie ją zakopał. Nawet Hance. # dalej
 *   { zaufal_jagnie } { not odrzucil_figurke } { not figurka_u_staruchy } [Oddać ją Jagnie.]
     ~ los_figurki = figurka_u_jagny

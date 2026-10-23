@@ -81,7 +81,7 @@ VAR glos_w_lesie = ()
 VAR ksiega_zatrzymana = false
 // Jaromir pożyczył księgę pana Ignacego (widział rysunek starca i podania).
 VAR czytal_ksiege = false
-// Jaromir czytał księgę pana Ignacego po zmroku, choć wolno tylko za dnia („kto czyta, ten woła”) — coś go wtedy zauważyło.
+// Jaromir czytał księgę pana Ignacego po zmroku, choć wolno tylko za dnia („kto czyta, ten woła”) — coś go wtedy zauważyło. Wybór w r2 („Czytać nocą przy węglach”) albo rada z księgi w r3.
 VAR czytal_po_zmroku = false
 
 // Jak Jaromir przegonił północnicę znad kołyski Zosi: nożykiem (zostaje w kołysce), makiem z księgi albo krzykiem (wracała).

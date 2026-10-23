@@ -14,7 +14,7 @@
 # rozdzial: Rozdział siedemnasty
 # tytul: Rozmowa w borze
 W Zapadlinie trzeci dzień z rzędu wstawano przed świtem. Siano leżało na łąkach pod wsią i trzeba je było przewracać, zanim zbutwieje od rosy, więc chłopi szli z grabiami, a kobiety za nimi. Nikt nie śpiewał. Słychać było tylko szelest grabi i derkacza w mokrej trawie. Kiedy któryś zapomniał się i zaczął nucić, sąsiad trącał go łokciem i pokazywał brodą na chałupę Jaromira.
-Hanka nie chodziła na łąki. Za dnia spała po kilka pacierzy, gdzie popadło, a o zmierzchu brała łuczywo i szła przez stratowane żyto na skraj młodnika. Siadała tam na pniaku, zatykała łuczywo w ziemię i do późnej nocy {pani_w_zbozu_noc == za_spiewem:mówiła w bór słowa kołysanki, jedno po drugim, chrapliwym szeptem|nuciła w bór kołysankę, tę samą, przy której Marysia zasypiała}. Przed świtem wracała i stawiała łuczywo w oknie od strony boru. Ludzie idący z grabiami odwracali wtedy głowy. Raz {trzy_noce == czuwanie_przy_kolysce:Jadwisia|Wójcikowa} przyniosła jej garnek kaszy; rano zabrała go z powrotem, nietknięty. # pokaz: luczywo
+Hanka nie chodziła na łąki. Za dnia spała po kilka pacierzy, gdzie popadło, a o zmierzchu brała łuczywo i szła przez {pani_w_zbozu_noc == z_pochodniami:stratowane żyto|{pole_zbite_gradem:zbite gradem zboże|{pani_w_zbozu_noc == gonil_babe:podeptane żyto|żyto}}} na skraj młodnika. Siadała tam na pniaku, zatykała łuczywo w ziemię i do późnej nocy {pani_w_zbozu_noc == za_spiewem:mówiła w bór słowa kołysanki, jedno po drugim, chrapliwym szeptem|nuciła w bór kołysankę, tę samą, przy której Marysia zasypiała}. Przed świtem wracała i stawiała łuczywo w oknie od strony boru. Ludzie idący z grabiami odwracali wtedy głowy. Raz {trzy_noce == czuwanie_przy_kolysce:Jadwisia|Wójcikowa} przyniosła jej garnek kaszy; rano zabrała go z powrotem, nietknięty. # pokaz: luczywo
 { pole_zbite_gradem:
     Na zagonach Jaromira leżało zbite, poczerniałe zboże. Ludzie wykosili je w jedno popołudnie, razem z trawą z jego łąki, żeby Hanka miała choć słomę na ściółkę.
 }
@@ -69,14 +69,14 @@ Jaromir miał ich setki. Układał je sobie przez dwa dni drogi, po kolei, a ter
     ~ pytanie_do_leszego = kim_jest
     – Tym, co zostaje, kiedy wy odchodzicie. – Pan Lasu podniósł rękę i z jego palców posypały się suche igły. – Byłem tu, zanim pierwszy z was zszedł w dolinę, i będę, kiedy po chałupach zostaną tylko kopce porośnięte pokrzywą. Wy mówicie na mnie Borowy albo Pan Lasu. Sosny nie mówią na mnie nic – wiedzą, kiedy przechodzę. # pokaz: igly
     – W lesie coś liczyło. Słyszałem to jeszcze jako chłopiec, we mgle.
-    – Ja. Liczę stare drzewa, które padły od waszych siekier po tej stronie granicy. I każdego z was, kto mi się sam oddał: głosem, krokiem, krwią.
+    – Ja. Liczę stare drzewa, które padły od waszych siekier po tej stronie granicy. I każdego z was, kto mi się sam oddał: głosem albo krwią.
     {
     - glosy_boru == odpowiedzial_marysi:
         – Ty odpowiedziałeś mi z własnej woli. Dlatego jesteś osiemsetny.
     - przejscie_bagna == za_wilkiem:
         – Twoja krew wsiąkła mi w ziemię. Policzyłem cię.
     - else:
-        – Ciebie jeszcze nie policzyłem. Nie spieszy mi się.
+        {zawolal_do_lasu:– Zawołałeś mnie kiedyś we mgle. Odłożyłem cię na później.|– Ciebie jeszcze nie policzyłem. Nie spieszy mi się.}
     }
     – A kiedy doliczysz… do końca?
     – Do tysiąca. – Pan Lasu odchylił głowę i poroże zaczepiło o gałęzie dębu, aż zaszumiały. – Wtedy będę mógł zasnąć na dobre. A ktoś inny będzie liczył za mnie. – Zamilkł na chwilę. – Ja też kiedyś przyszedłem tu sam.
@@ -113,7 +113,7 @@ Liście dębu zwinęły się nad nimi, jakby ktoś przytknął do nich głownię
 – Do chałupy bez płotu? – Pan Lasu przechylił głowę. – Wy pierwsi złamaliście słowo. Tym razem nie oddam jej za darmo.
 Jaromir chciał krzyczeć, ale gardło miał suche jak porost pod nogami. Przed oczami stanęła mu żytnia baba, przykucnięta w zbożu, kołysząca drewniakiem – i to, jak ostrożnie przeprowadziła Marysię przez pole, zanim doszły ją te znad wody. Nie wiedział, czy tak się niesie dziecko, które się chroni, czy rzecz, którą się kradnie w całości.
 Spomiędzy korzeni wysunął się biały wilk. # pokaz: wilk
-Szedł wolno, z łbem nisko, ogromny i chudy, z obręczą wytartej sierści na przedniej łapie. W pysku niósł coś czerwonego. Dopiero kiedy stanął między nimi, Jaromir poznał drugi drewniak Marysi – ten z pola.
+Szedł wolno, z łbem nisko, ogromny i chudy, z obręczą wytartej sierści na przedniej łapie. W pysku niósł coś czerwonego. Dopiero kiedy stanął między nimi, Jaromir poznał drugi drewniak Marysi – ten, którym kołysała żytnia baba.
 {
 - oblawa_wilk == wydal_wilka:
     Wilk szedł krzywo, oszczędzając bok, na którym bielała naga pręga starej rany. Kiedy spojrzał na Jaromira, zmarszczył nos i z gardła dobyło mu się ciche, przeciągłe warczenie.
@@ -152,7 +152,7 @@ Szedł wolno, z łbem nisko, ogromny i chudy, z obręczą wytartej sierści na p
     ~ wilk_pod_debem = nie_ruszal_sie
     Jaromir nie drgnął. Patrzył na wilka tak, jak się patrzy na obce zwierzę na drodze: żeby go nie rozdrażnić i żeby samemu się nie zdradzić.
     Wilk postał chwilę. Potem obszedł go szerokim łukiem, zaniósł drewniak pod korzenie dębu i położył go Panu Lasu u stóp. Usiadł przy nim, wyprostowany, i od tej pory był dla Jaromira obojętny jak drzewa. # pokaz: wilk_przy_lesym
-    – Mądrze – powiedział Pan Lasu. – I okrutnie. Jesteś w tym podobny do mnie. Za to on pożyje dłużej niż ty. # dalej
+    – Mądrze – powiedział Pan Lasu. – I okrutnie. Jesteś w tym podobny do mnie. Za to pójdzie ze mną, dokądkolwiek pójdę. # dalej
 -   -> zastaw
 
 = zastaw

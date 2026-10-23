@@ -29,7 +29,7 @@ Stary Staś wysunął się przed ludzi, wsparty na lasce. Za nim stanął kowal,
     ~ szarwark = sprzeciw_przy_karczmie
     – Kapliczek nie ruszycie – powiedział Jaromir głośno. – Ani tej, ani żadnej. A drogi do boru nikt z nas rąbać nie będzie.
     Kilku chłopów zamruczało przychylnie. Urbaniak przyglądał mu się przez chwilę, a potem otworzył zeszyt, poślinił palec i przewrócił kilka kartek.
-    – Twój ojciec – przeczytał – pożyczył ode mnie na doktora, kiedy go przygniotło w lesie. I drugi raz na zboże. Dobrze, że mi przypomniałeś.
+    – Twój ojciec – przeczytał – pożyczył ode mnie na zboże, jak leżał z nogą. I drugi raz na przednówek. Dobrze, że mi przypomniałeś.
     W poniedziałek majster wyprowadził Jaromirowi krowę z obory. Matka stała w progu i płakała bez głosu, a ojciec trzymał się framugi tak mocno, że pobielały mu palce. Ale kiedy przyszedł pierwszy dzień roboty, na przesiekę nie poszedł z Zapadliny ani jeden chłop. # pokaz: krowa # dalej
 *   [Zapisać się do roboty przy drodze – rodzinę trzeba wyżywić.]
     ~ szarwark = robota_na_przesiece
@@ -53,7 +53,7 @@ Stary Staś wysunął się przed ludzi, wsparty na lasce. Za nim stanął kowal,
 - else:
     Którejś nocy obudził Jaromira dzwon z Bukowca – nierówny, rwany, jak wtedy, gdy ktoś bije w niego na oślep. Kiedy wypadł przed chałupę, niebo od strony boru było już czerwone.
 }
-Paliły się kapliczki. Najpierw ta przy przesiece, potem ta przy drodze do Bukowca i {noc_na_kladce == latarnia_na_wodzie:brzozowy krzyż przy kładce|ta przy kładce} – jedna po drugiej, jak świece zapalane w kościele od jednego knota. # pokaz: ogien
+Paliły się kapliczki. Najpierw ta przy przesiece, potem ta przy drodze do Bukowca, za strugą, i {noc_na_kladce == latarnia_na_wodzie:brzozowy krzyż przy kładce|ta przy kładce} – jedna po drugiej, jak świece zapalane w kościele od jednego knota. # pokaz: ogien
 Chwilę później buchnęło od strugi – tartak. Płomienie wyskoczyły nad dach szopy, wyżej niż najwyższe świerki, i w ich świetle Jaromir zobaczył, że drzwi stróżówki są zamknięte, a w okienku coś się rusza. # pokaz: tartak
 Szymon. Ojciec Józka.
 # pytanie: Co zrobi Jaromir?
@@ -64,7 +64,7 @@ Szymon. Ojciec Józka.
 *   [Biec do tartaku – w stróżówce jest człowiek.]
     ~ noc_ognia = ratowal_szymona
     Drzwi stróżówki były zaparte od zewnątrz drągiem. Jaromir wybił go siekierą, wpadł w dym i wywlókł Szymona za kołnierz, półprzytomnego, z opalonymi brwiami. Chwilę później dach szopy runął z hukiem i w niebo poszedł słup iskier. # pokaz: szymon
-    Kiedy Jaromir się odwrócił, pod borem paliły się już tylko trzy czerwone punkty. Do rana z kapliczek zostały same zgliszcza.
+    Kiedy Jaromir się odwrócił, nad wsią paliły się już tylko trzy czerwone punkty. Do rana z kapliczek zostały same zgliszcza.
     Szymon, kiedy go cucili, powtarzał w kółko jedno: że ktoś zaparł mu drzwi. Nie chciał powiedzieć kto. # dalej
 *   { uboze == nakarmione } [Zbudzić wieś i posłać ludzi do kapliczki, a samemu biec do tartaku.]
     ~ noc_ognia = zbudzil_wies
@@ -76,7 +76,7 @@ Szymon. Ojciec Józka.
 # tlo: pogorzelisko
 ~ zapiski += pan_lasu_6
 Rano ogień przygasł, a ludzie stali na pogorzelisku tartaku w milczeniu.
-Bór podszedł pod wieś. Nie o krok czy dwa – o całe pole. Tam, gdzie wczoraj ciągnęło się ściernisko Wójcików i pastwisko Stasiowych, szumiał gęsty las, zroszony i ciemny, z jasnymi pędami na czubkach drzew, jakby stał tu od pokoleń. Spalone kapliczki zostały w środku tego młodnika jak nagrobki. # pokaz: las
+Bór podszedł pod wieś. Nie o krok czy dwa – o całe pole. Tam, gdzie wczoraj ciągnęło się ściernisko Wójcików i pastwisko Stasiowych, szumiał gęsty las, zroszony i ciemny, z jasnymi pędami na czubkach drzew, jakby stał tu od pokoleń. Kapliczka przy przesiece została w środku tego młodnika jak nagrobek. # pokaz: las
 { los_figurki == figurka_pod_kapliczka:
     Jaromir poszedł do kapliczki, pod którą wiosną zakopał figurkę. Kapliczka spłonęła razem z innymi. Ziemia pod nią była pęknięta i mokra, jak po ulewie, choć nie spadła ani kropla deszczu.
 }
