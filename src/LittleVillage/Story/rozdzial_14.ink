@@ -53,7 +53,7 @@ Stary Staś wysunął się przed ludzi, wsparty na lasce. Za nim stanął kowal,
 - else:
     Którejś nocy obudził Jaromira dzwon z Bukowca – nierówny, rwany, jak wtedy, gdy ktoś bije w niego na oślep. Kiedy wypadł przed chałupę, niebo od strony boru było już czerwone.
 }
-Paliły się kapliczki. Najpierw ta przy przesiece, potem ta przy drodze do Bukowca, za strugą, i {noc_na_kladce == latarnia_na_wodzie:brzozowy krzyż przy kładce|ta przy kładce} – jedna po drugiej, jak świece zapalane w kościele od jednego knota. # pokaz: ogien
+Paliły się kapliczki. Najpierw ta przy przesiece, potem ta przy drodze do Bukowca, za strugą, i {noc_na_kladce == latarnia_na_wodzie:brzozowy krzyż przy kładce|{noc_na_kladce == figurka_dla_stwora:ta przy zawalonej kładce|ta przy kładce}} – jedna po drugiej, jak świece zapalane w kościele od jednego knota. # pokaz: ogien
 Chwilę później buchnęło od strugi – tartak. Płomienie wyskoczyły nad dach szopy, wyżej niż najwyższe świerki, i w ich świetle Jaromir zobaczył, że drzwi stróżówki są zamknięte, a w okienku coś się rusza. # pokaz: tartak
 Szymon. Ojciec Józka.
 # pytanie: Co zrobi Jaromir?
@@ -76,7 +76,7 @@ Szymon. Ojciec Józka.
 # tlo: pogorzelisko
 ~ zapiski += pan_lasu_6
 Rano ogień przygasł, a ludzie stali na pogorzelisku tartaku w milczeniu.
-Bór podszedł pod wieś. Nie o krok czy dwa – o całe pole. Tam, gdzie wczoraj ciągnęło się ściernisko Wójcików i pastwisko Stasiowych, szumiał gęsty las, zroszony i ciemny, z jasnymi pędami na czubkach drzew, jakby stał tu od pokoleń. Kapliczka przy przesiece została w środku tego młodnika jak nagrobek. # pokaz: las
+Bór podszedł pod wieś. Nie o krok czy dwa – o całe pole. Tam, gdzie wczoraj ciągnęło się ściernisko Wójcików i pastwisko Stasiowych, szumiał gęsty las, zroszony i ciemny, z jasnymi pędami na czubkach drzew, jakby stał tu od pokoleń. {noc_ognia == ratowal_szymona:Zgliszcza kapliczki przy przesiece zostały|Kapliczka przy przesiece została} w środku tego młodnika jak nagrobek. # pokaz: las
 { los_figurki == figurka_pod_kapliczka:
     Jaromir poszedł do kapliczki, pod którą wiosną zakopał figurkę. Kapliczka spłonęła razem z innymi. Ziemia pod nią była pęknięta i mokra, jak po ulewie, choć nie spadła ani kropla deszczu.
 }

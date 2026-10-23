@@ -179,7 +179,7 @@ Jaromir wbił siekierę w pniak, aż jęknęło drewno. Trzonek był ciężki i 
 { przysiega_ksiedzu:
     Jaromir pomyślał o różańcu i o przysiędze złożonej w Bukowcu. Właśnie ją złamał{ cena_caluna == cena_umowa || cialo_kopii == spalone || cialo_kopii == pod_mlodnikiem: drugi raz} – i wiedział, że złamałby ją jeszcze raz.
 }
-Pan Lasu odwrócił się i poszedł w bór. Jego słudzy weszli za nim, jeden za drugim, i mgła zamknęła się za ostatnim.{ not zoladz_zasadzony || marysia_odzyskana: Umarli nie poszli za nim; rozeszli się drogą na Bukowy Grzbiet, każdy ku swojemu grobowi.}{ wilk_zywy() && not wilk_przy_mnie(): Biały wilk szedł tuż przed Panem Lasu.}{ wilk_przy_mnie(): Biały wilk postał jeszcze chwilę przy nodze Jaromira, a potem pobiegł za nimi i nie obejrzał się.}
+Pan Lasu odwrócił się i poszedł w bór. Jego słudzy weszli za nim, jeden za drugim, i mgła zamknęła się za ostatnim.{ not zoladz_zasadzony || marysia_odzyskana: Umarli nie poszli za nim; rozeszli się drogą na Bukowy Grzbiet, każdy ku swojemu spoczynkowi.}{ wilk_zywy() && not wilk_przy_mnie(): Biały wilk szedł tuż przed Panem Lasu.}{ wilk_przy_mnie(): Biały wilk postał jeszcze chwilę przy nodze Jaromira, a potem pobiegł za nimi i nie obejrzał się.}
 { not marysia_odzyskana:
     { zoladz_zasadzony:
         Ta jedna, w białej koszulce, nie weszła za nimi. Pan Lasu obejrzał się na nią ze skraju boru.
@@ -187,9 +187,9 @@ Pan Lasu odwrócił się i poszedł w bór. Jego słudzy weszli za nim, jeden za
         { ekwipunek ? wstazka_marysi:
             Jaromir podszedł do niej, odwinął z przegubu spłowiałą wstążkę i zawiązał jej we włosach na kokardę, jak robiła to Hanka.
         }
-        Mała stała chwilę bez ruchu, nie wiedząc, dokąd iść. Potem podbiegła do matki i dotknęła jej ręki, tak jak co wieczór. Wtedy dziadek Maciek wyciągnął do niej dłoń, a ona chwyciła ją bez lęku. Umarli z Zapadliny poszli drogą na Bukowy Grzbiet, każdy ku swojemu grobowi, nie w bór – i ona razem z nimi, ani razu się nie oglądając. Gromnica w ręce Hanki zgasła sama, spokojnie, jak się gasi świecę przed snem. # pokaz: marysia
+        Mała stała chwilę bez ruchu, nie wiedząc, dokąd iść. Potem podbiegła do matki i dotknęła jej ręki, tak jak co wieczór. Wtedy dziadek Maciek wyciągnął do niej dłoń, a ona chwyciła ją bez lęku. Umarli z Zapadliny poszli drogą na Bukowy Grzbiet, każdy ku swojemu spoczynkowi, nie w bór – i ona razem z nimi, ani razu się nie oglądając. Gromnica w ręce Hanki zgasła sama, spokojnie, jak się gasi świecę przed snem. # pokaz: marysia
     - else:
-        Ta jedna, w białej koszulce, zatrzymała się jeszcze na skraju.{ ekwipunek ? wstazka_marysi: Jaromir podszedł do niej, odwinął z przegubu spłowiałą wstążkę i zawiązał jej we włosach na kokardę, jak robiła to Hanka.} Mała odwróciła się i pomachała matce rączką. Hanka podniosła rękę. Gromnica w jej drugiej ręce zgasła sama, spokojnie, jak się gasi świecę przed snem. # pokaz: marysia
+        Ta jedna, w białej koszulce, zatrzymała się jeszcze na skraju. – Tę wziąłem, kiedy słowa nie było – powiedział Pan Lasu, nie oglądając się. – I za długo była u mnie.{ ekwipunek ? wstazka_marysi: Jaromir podszedł do niej, odwinął z przegubu spłowiałą wstążkę i zawiązał jej we włosach na kokardę, jak robiła to Hanka.} Mała odwróciła się i pomachała matce rączką. Hanka podniosła rękę. Gromnica w jej drugiej ręce zgasła sama, spokojnie, jak się gasi świecę przed snem. # pokaz: marysia
     }
 }
 Nad Zapadliną zrobiło się jasno – zwyczajnie, szaro, jak w każdy listopadowy świt. W chałupach dzieci przestały płakać. # pokaz: swit # dalej

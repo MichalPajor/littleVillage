@@ -117,7 +117,7 @@ Ogniki nad mokradłami z każdą nocą paliły się bliżej. Najpierw tylko za k
 *   [Pokazać Jagnie figurkę i opowiedzieć o snach.]
     ~ zaufal_jagnie = true
     Jagna długo obracała figurkę w palcach, przysunięta do okna, bo zdrowe oko miała słabe.
-    – To lalka – powiedziała w końcu. – Babka mi o takich opowiadała. Zielarka znad jeziora wystrugała ją z korzenia, który wyciągnęła z bagna, i nadała jej imię tego, co tam mieszka. Kto ma lalkę, za tym on idzie. Póki leżała daleko, spał. Teraz wróciła – i woła go. A dzieci słyszą, bo dzieci słyszą wszystko.
+    – To lalka – powiedziała w końcu. – Babka mi o takich opowiadała. Zielarka znad jeziora wystrugała ją z korzenia, który wyciągnęła z bagna, i nadała jej imię tego, co tam mieszka. Kto ma lalkę, za tym on idzie. Póki leżała {przeszukal_zgliszcza && not figurka_w_bagnie:daleko|nietknięta}, spał. Teraz wróciła – i woła go. A dzieci słyszą, bo dzieci słyszą wszystko.
     Zawinęła figurkę w szmatę i oddała Jaromirowi.
     – Ogień jej nie weźmie, już raz w nim była. Uciszy ją tylko poświęcona ziemia. {odrzucil_figurke:Albo… – urwała i pokręciła głową. – Nie. Mnie już nie posłucha. Odepchnęliście ją, a ona i tak do was wróciła. Teraz jest wasza.|{figurka_u_staruchy:Babka kazała mi ją oddać tam, skąd przyszła, i oddałam. Z powrotem jej nie wezmę.|Albo… – zawahała się – albo oddajcie mi ją. Zabiorę ją tak daleko, że jej nie dosłyszy.}} # dalej
 *   [Nie mówić jej nic.]

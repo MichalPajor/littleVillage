@@ -2051,7 +2051,7 @@ public sealed class GameStoryTests
         Assert.StartsWith("Ludzie mówili, że stary Wójcik urodził się z zębami.", strzyga.Notes[0]);
         Assert.Contains("imię córki", strzyga.Notes[^1]);
         Assert.Contains("rozkopali jego grób", strzyga.Notes[^1]);
-        Assert.True(Has(On(pages, "wigilia_stol"), "przetrwała do wiosny"));
+        Assert.True(Has(On(pages, "wigilia_stol"), "przetrwała zimę"));
         Assert.Contains(pages[^1].BackgroundKey, ChapterThirteenFigurinePages);
     }
 
@@ -2423,8 +2423,8 @@ public sealed class GameStoryTests
         pages.AddRange(PlayByText(engine, pages[^1], PeacefulForestToOak));
 
         Assert.True(Has(On(pages, "pod_debem"), "Słuchaj, wnuku Maćka"));
-        Assert.Equal(readAtNight, Has(On(pages, "pod_debem"), "czytałeś o mnie po zmroku"));
-        Assert.Equal(readAtNight, Has(On(pages, "pod_debem"), "Tamta przy kołysce też przyszła na twoje wołanie"));
+        Assert.Equal(readAtNight, Has(On(pages, "pod_debem"), "I czytałeś po zmroku"));
+        Assert.Equal(readAtNight, Has(On(pages, "pod_debem"), "Usłyszała cię tamta przy kołysce"));
     }
 
     [Fact]

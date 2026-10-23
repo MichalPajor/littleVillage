@@ -93,7 +93,7 @@ Babka wskazała kąt za łóżkiem. Pod starą kapotą leżała siekiera o wytar
 {obejrzal_sie:Kiedy Jaromir wstał po gorączce|Kiedy Jaromir wrócił znad rozlewiska}, ojciec nie zapytał o nic. Milczał przez cały wieczór. Dopiero gdy matka zasnęła, wziął syna za ramię, wyprowadził na próg i usiadł obok niego w ciemności.
 – Miałem tyle lat co ty – zaczął, a głos mu się łamał, nieużywany od bardzo dawna. – Może mniej.
 Opowiedział wszystko. O nocy, kiedy coś wyłamało drzwi ich chaty. O deskach nad głową, przez które sączył się księżyc, o krzykach – najpierw ojca, potem matki – i o czymś ciepłym, co kapało mu na włosy. O węszeniu tuż nad nim, chrapliwym jak u psa przy norze.
-– To, co było w wodzie, to był on – powiedział. – Dlatego sprawdzam rygiel. Każdej nocy, od pięćdziesięciu lat.
+– To, co było w wodzie, to był on – powiedział. – Dlatego sprawdzam rygiel. Każdej nocy, od blisko sześćdziesięciu lat.
 – Obiecaj mi jedno – poprosił. – Że nigdy nie wejdziesz do boru. Choćby nie wiem kto cię wołał.
 -> obietnica
 

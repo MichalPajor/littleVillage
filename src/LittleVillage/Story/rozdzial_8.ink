@@ -156,7 +156,7 @@ Pod powałą, na haku, wisiał płat słoniny. Ostatni – a babka Hanki przykaz
     Jaromir zacisnął zęby i nie odpowiedział.
     Żebraczka pukała długo. Potem przestała skrzeczeć i ucichła. Za to spod drzwi zaczął się sączyć zapach chleba – ciepłego, prosto z pieca, z przypieczoną skórką – a po dolnej desce coś skrobało, cierpliwie, raz po raz, jak kot, który prosi, żeby go wpuścić.
     { figurka_u_staruchy && los_psa == oswojony:
-        Pachniało tak samo jak w sobotę u babki Marianny, kiedy wyjmowała bochny z pieca, choć babka od pięciu lat leżała na cmentarzu w mieście. # pokaz: glos
+        Pachniało tak samo jak w sobotę u babki Marianny, kiedy wyjmowała bochny z pieca, choć babka od czterech lat leżała na cmentarzu w mieście. # pokaz: glos
     - else:
         Pachniało tak samo jak w sobotę, kiedy matka wyjmowała bochny z pieca. # pokaz: glos
         A matka spała przecież dwa kroki od niego, na zydlu przy ojcu, a w dzieży od tygodnia nie było ani garści mąki.
@@ -201,7 +201,7 @@ Wracali w milczeniu. Przy wyschniętej strudze stary Staś przystanął, spluną
 # tlo: kapliczki_wykop
 W poniedziałek rano ludzie Urbaniaka przyszli z łopatami. Wykopywali słupy, ściągali daszki, a święte figurki wrzucali na wóz jak drewno na opał. Kobiety wyglądały zza płotów i płakały, starzy pomstowali – ale kiedy Urbaniak zawołał, że za dzień roboty płaci srebrem, od ręki, kilku chłopów z Zapadliny przyłączyło się do jego ludzi. Głód był silniejszy niż strach. Łopaty zgrzytały o kamienie, a każdy słup wychodził z dołu z mlaśnięciem, jakby ziemia nie chciała go puścić. Jaromir czuł, jak coś ściska go w gardle – nie wiedział, czy to złość, czy wstyd za tych, którzy kopali. # pokaz: kopacze
 { kapliczka_podniesiona:
-    Na samym skraju boru stała ta, którą Jaromir z Antkiem podnieśli pięć lat temu z błota.
+    Na samym skraju boru stała ta, którą Jaromir z Antkiem podnieśli cztery lata temu z błota.
 }
 { ostrzezenie_poludnicy:
     W głowie zadźwięczały mu słowa, które usłyszał na ściernisku w samo południe: „Pan Lasu się budzi… Pilnuj kapliczek, chłopcze”.

@@ -82,7 +82,7 @@ Ale woda nie dawała im spokoju. Marysia nie chciała chodzić nad jezioro, a ki
 # tlo: calun_noc
 Pod koniec sierpnia, w noc, kiedy mijały trzy lata, odkąd Marysia przyszła na świat, Jaromira obudziło plaskanie. Miarowe, mokre, znad jeziora – kijanka o kamień. Pamiętał ten dźwięk z czasów, gdy Marysia leżała jeszcze w kołysce.
 Spojrzał na ławę przy piecu. Mała spała, zwinięta w kłębek, z piąstką pod policzkiem. Hanka oddychała równo.
-Wyszedł cicho, boso, i przyczaił się w trzcinach. Na płaskich kamieniach po drugiej stronie jeziora klęczały mamuny – garbate, mokre, w łachmanach z mchu – i prały w wodzie coś małego, jasnego. Akurat na dziecko. Imienia nie wołały. Kiedy trzcina zaszeleściła, najstarsza nawet nie podniosła głowy. # pokaz: mamuny
+Wyszedł cicho, boso, obszedł jezioro brzegiem i przyczaił się w trzcinach po drugiej stronie, tuż przy płaskich kamieniach. Klęczały na nich mamuny – garbate, mokre, w łachmanach z mchu – i prały w wodzie coś małego, jasnego. Akurat na dziecko. Imienia nie wołały. Kiedy trzcina zaszeleściła, najstarsza nawet nie podniosła głowy. # pokaz: mamuny
 { dar_pominiety:
     – Raz zapomniałeś, gospodarzu – zaskrzeczała w wodę. – Nie będziemy prać wolniej.
 - else:
@@ -95,7 +95,7 @@ Wyszedł cicho, boso, i przyczaił się w trzcinach. Na płaskich kamieniach po 
 # tlo: jesien_zaduszki
 ~ zapiski += pan_lasu_11
 Jesień przyszła wcześnie. Młócka w stodołach, siew żyta pod zimę, międlenie lnu – wieś robiła swoje jak co roku, a Jaromir chwytał się każdej roboty, byle nie zostać sam z myślami. Marysia rosła. W październiku pierwszy raz od powrotu zaśmiała się na głos przy stole i Hanka wyszła do sieni, i długo nie wracała.
-Jaromir nie mówił Hance o kamieniach po drugiej stronie jeziora. Ale co wieczór, zanim zasnął, myślał o tym, ile jeszcze zostało do Zaduszek, i za każdym razem wydawało mu się, że mniej niż poprzedniej nocy.
+Jaromir nie mówił Hance, co widział na kamieniach po drugiej stronie jeziora. Ale co wieczór, zanim zasnął, myślał o tym, ile jeszcze zostało do Zaduszek, i za każdym razem wydawało mu się, że mniej niż poprzedniej nocy.
 Im bliżej było Zaduszek, tym ciszej robiło się w Zapadlinie. Ludzie wracali z pól przed zmrokiem, ryglowali drzwi, a od boru co wieczór podchodziła łąkami mgła, ciężka i mokra, pod same płoty. Jaromir pamiętał każde słowo: „W Zaduszki przyjdę do wsi. Policzymy się wtedy do końca”. # pokaz: mgla
 Pierwszego listopada wieś szła na cmentarz do Bukowca. Tego roku zamiast kaganków ludzie nieśli z domów gromnice. W drodze powrotnej zgasły jednym tchem, wszystkie, choć powietrze stało. # pokaz: zgasly # dalej
 -> rozdzial_dziewietnasty_ciag_dalszy

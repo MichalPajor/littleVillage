@@ -40,7 +40,7 @@ Od strony lasu, daleko, ktoś zawołał przeciągle, a z drugiego krańca doliny
 = zima
 # tlo: zima_przedzenie
 ~ zapiski += uboze_2
-W połowie listopada spadł śnieg i długo nie chciał zejść. Drogę przez grzbiet zasypało po kolana, jezioro zamarzło tak, że chłopcy ślizgali się po nim aż pod sam bór, a tartak Urbaniaka stanął – wielkie koło obrosło lodem i przez trzy miesiące we wsi panowała cisza, jakiej Jaromir nie pamiętał od dzieciństwa.
+W połowie listopada spadł śnieg i długo nie chciał zejść. Drogę przez grzbiet zasypało po kolana, jezioro zamarzło tak, że chłopcy ślizgali się po nim od brzegu do brzegu, a tartak Urbaniaka stanął – wielkie koło obrosło lodem i przez trzy miesiące we wsi panowała cisza, jakiej Jaromir nie pamiętał od dzieciństwa.
 Wieczory spędzało się w chałupach. Kobiety przędły len przy kołowrotkach, aż furkot niósł się po izbie, a w lutym schodziły się na darcie pierza – po kilka sąsiadek przy jednym stole, nad koszem gęsiego puchu, który przy każdym otwarciu drzwi fruwał po kątach. Przy tej robocie opowiadało się historie – o strzygach, o płanetnikach, o pannie, która tańczyła z obcym do rana – a dziewczęta piszczały ze strachu i śmiały się na zmianę. Hanka przychodziła z matką i siadała zawsze tak, żeby widzieć Jaromira przez stół. # pokaz: pierze
 { uboze:
 - nakarmione:

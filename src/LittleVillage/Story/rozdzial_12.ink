@@ -108,7 +108,7 @@ Wójcikowa spojrzała na Jaromira. Była matką chrzestną jego córki i drugi r
     -> trzecia_noc
 *   { mak_w_medaliku } [Pochować go po księdzowsku – ale z makiem Hanki w trumnie.]
     ~ pochowek_wojcika = pochowany_z_makiem
-    Kiedy trumnę wynosili z chałupy, Hanka podeszła do trumny i otworzyła medalik, który nosiła na szyi od tamtego lata z Południcą. Wysypała na pierś zmarłego zasuszony mak – ten sam, który Jaromir położył jej kiedyś na dłoni, siedząc na płocie pod czerwonym księżycem.
+    Kiedy trumnę wynosili z chałupy, Hanka podeszła bliżej i otworzyła medalik, który nosiła na szyi od tamtego lata z Południcą. Wysypała na pierś zmarłego zasuszony mak – ten sam, który Jaromir położył jej kiedyś na dłoni, siedząc na płocie pod czerwonym księżycem.
     – Śpij – szepnęła. – Mak usypia nawet takich jak ty. # pokaz: mak
     ~ mak_w_medaliku = false
     Wójcik spoczął w poświęconej ziemi, twarzą do nieba, z różańcem w palcach i z garstką maku na piersi. Ale na progu Wójcików zostało kilka ziarenek i ksiądz je zobaczył. Po pogrzebie wezwał Hankę do zakrystii. Wyszła stamtąd blada i nie powiedziała Jaromirowi, co usłyszała – tylko tyle, że do Wielkanocy nie może przystąpić do komunii. Baby z Bukowca odsuwały się od niej w ławce. Hanka zamknęła pusty medalik i już nigdy go nie otworzyła. # pokaz: poswiecona # dalej
@@ -160,7 +160,7 @@ Wójcik więcej nie przyszedł. Ale ksiądz, kiedy zobaczył świeżo poruszoną
 { trzy_noce == czuwanie_przy_kolysce:
     Chałupa Wójcików stała pusta przez całą zimę. Nikt nie chciał jej kupić ani nawet zajrzeć do środka, a dzieci obchodziły ją szerokim łukiem.
 - else:
-    Wójcikowa zachorowała tej zimy na płuca, ale przetrwała do wiosny. W jej chałupie co noc paliła się świeca w oknie od strony jeziora. # pokaz: swieca
+    Wójcikowa zachorowała tej zimy na płuca, ale przetrwała zimę. W jej chałupie co noc paliła się świeca w oknie od strony jeziora. # pokaz: swieca
 }
 { ekwipunek ? szczenie_psa:
     Marysia mówiła już kilka słów, a najgłośniej „tata”. Rude szczenię wszędzie chodziło za nią i spało pod kołyską, z nosem przy szczebelkach. # pokaz: szczenie

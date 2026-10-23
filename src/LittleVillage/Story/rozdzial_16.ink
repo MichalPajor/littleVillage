@@ -19,7 +19,7 @@ Stał na skraju młodnika, z siekierą w ręku i z torbą przez ramię. Wstążk
 { obietnica_bor:
     Kiedyś obiecał {figurka_u_staruchy && los_psa == oswojony:babce na łożu śmierci|ojcu}, że nigdy nie wejdzie do boru, choćby nie wiem kto go wołał. Dotrzymywał tego słowa przez trzynaście lat. Pierwszy krok między sosnami postawił ostrożnie, z sercem w gardle, i czuł, że łamie coś, czego już nie da się poskładać.
 - else:
-    {poszedl_po_wstazke:Odkąd jako chłopiec wszedł między świerki po wstążkę Hanki, nigdy nie zapuścił się głębiej niż na kilkadziesiąt kroków.|Nigdy nie wszedł głębiej niż na skraj.} Nikomu tego nie obiecał – nogi same zawracały, kiedy drzewa zaczynały stać za gęsto.
+    {poszedl_po_wstazke:Odkąd jako chłopiec wszedł między świerki po wstążkę Hanki, nigdy nie zapuścił się głębiej niż na kilkadziesiąt kroków.|Nigdy nie zapuścił się głębiej niż na kilkadziesiąt kroków, tam, gdzie milkły ptaki.} Nikomu tego nie obiecał – nogi same zawracały, kiedy drzewa zaczynały stać za gęsto.
 }
 { droga_do_boru:
     Na przesiece Urbaniaka z każdego pieńka sterczały jasne pędy, a koleiny zarosły mchem, choć jesienią jeździły nimi wozy. Przy pierwszych wielkich sosnach droga się kończyła i dalej nie było już nic poza borem.
@@ -52,7 +52,7 @@ Szedł prosto przed siebie, aż słońce stanęło wysoko. Wreszcie świerki roz
     # tlo: bor_suchy
     – Szukaj – szepnął Jaromir i jeszcze raz podsunął psu drewniak. – Szukaj Marysi.
     Tym razem nie wołał go z powrotem. Pies szedł z nosem przy ziemi, zygzakiem, czasem przystawał i wąchał korę na wysokości dziecięcej rączki. Ścieżki skręcały, rozwidlały się i zawracały, ale pies ich nie słuchał – przełaził przez wykroty, przeciskał się pod zwalonymi pniami, prosto za zapachem. Jaromir szedł za nim, podarty, posiniaczony, z ustami pełnymi igieł. # pokaz: pies_trop
-    Pod wieczór pies stanął przy zwalonej sośnie i zaskowyczał. Na sęku wisiała nitka czerwonej wełny – z rękawka Marysi. A pod sękiem, na mchu, ktoś położył garść poziomek, równo, jedna przy drugiej, jak dla dziecka. Pachniały tak słodko, że Jaromirowi napłynęła ślina do ust; od rana nic nie jadł.{ rada_przed_borem == rada_jagny: „Co znajdziesz w borze, nie jedz” – przypomniał sobie i zacisnął pięść, aż paznokcie weszły mu w dłoń.} Odciągnął psa siłą. Dopiero wtedy zobaczył, że zwierzak ma krew na łapach – mech wokół poziomek był ostry jak tłuczone szkło. # pokaz: poziomki # dalej
+    Pod wieczór pies stanął przy zwalonej sośnie i zaskowyczał. Na sęku wisiał strzępek białego lnu – z koszulki Marysi. A pod sękiem, na mchu, ktoś położył garść poziomek, równo, jedna przy drugiej, jak dla dziecka. Pachniały tak słodko, że Jaromirowi napłynęła ślina do ust; od rana nic nie jadł.{ rada_przed_borem == rada_jagny: „Co znajdziesz w borze, nie jedz” – przypomniał sobie i zacisnął pięść, aż paznokcie weszły mu w dłoń.} Odciągnął psa siłą. Dopiero wtedy zobaczył, że zwierzak ma krew na łapach – mech wokół poziomek był ostry jak tłuczone szkło. # pokaz: poziomki # dalej
 *   { rada_przed_borem == rada_planetnika } [Iść tam, gdzie nad borem nie ma chmur.]
     ~ wejscie_do_boru = pod_czystym_niebem
     # tlo: bor_suchy

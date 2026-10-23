@@ -99,7 +99,7 @@ Jaromir miał ich setki. Układał je sobie przez dwa dni drogi, po kolei, a ter
     – I ktoś mi w Zaduszki zapalił {kapliczka_podniesiona:pod nią|pod kapliczką na skraju boru} światło.
 }
 { czytal_po_zmroku:
-    – I czytałeś o mnie po zmroku, chłopcze, choć ci mówiono, że nie wolno. Kto czyta, ten woła. Tamta przy kołysce też przyszła na twoje wołanie.
+    – I czytałeś po zmroku, chłopcze, choć ci mówiono, że nie wolno. Kto czyta, ten woła. Usłyszała cię tamta przy kołysce – i ja też.
 }
 – Potem była ona. Spaliliście ją w zabitej deskami chacie, a ona w ogniu przeklęła was cudzymi rękami: moimi i tych znad wody. „Kości dzieci waszych będą połamane, a krew ich wypita.” Póki stał Dąb, słowo trzymało mocniej niż klątwa.
 Liście dębu zwinęły się nad nimi, jakby ktoś przytknął do nich głownię. # pokaz: liscie
