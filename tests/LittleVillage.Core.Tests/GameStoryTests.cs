@@ -705,7 +705,7 @@ public sealed class GameStoryTests
         var pages = Play(CreateEngine(), Marsh, Stay, StayHere, TellBoy, Search, LeaveFlint, WalkOn, SellToWitch, KeepQuiet);
 
         Assert.True(Has(pages, "uniosła brwi"));
-        Assert.True(Has(pages, "zjedli kolację na progu nowej chaty"));
+        Assert.True(Has(pages, "zjedli wieczerzę na progu nowej chaty"));
         Assert.True(Has(pages, "Chata przy mokradłach."));
         Assert.True(Has(pages, "obudził ich huk"));
         var underFloor = pages.Single(p => p.BackgroundKey == "pod_podloga");
@@ -752,7 +752,7 @@ public sealed class GameStoryTests
     {
         var pages = Play(CreateEngine(), place, Stay, Leave, SendBoyAway, Avoid, WalkOn, TellWife);
 
-        var home = pages.Single(p => p.Blocks.Any(b => b.Text.StartsWith("Chata stała tam, gdzie ją zostawił.")));
+        var home = pages.Single(p => p.Blocks.Any(b => b.Text.StartsWith("Chata stała tam, gdzie ją Maciek zostawił.")));
         Assert.Equal(background, home.BackgroundKey);
         Assert.Contains(home.Blocks, b => b.Reveal == "dach" && b.Text.Contains(text));
         Assert.Contains(home.Blocks, b => b.Reveal == "rodzina");

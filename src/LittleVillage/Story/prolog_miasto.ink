@@ -34,7 +34,7 @@ Przed nim stała drobna, stara kobieta w ciemnym kapturze, wsparta na kosturze, 
 }
 Maciek chciał odejść, ale nie puszczała rękawa.
 – To nie twoje. Wygrzebałeś to tam, gdzie nie trzeba było grzebać – mówiła cicho, żeby nikt obok nie słyszał. – Ta rzecz woła, synku. Póki ją nosisz, to, co mieszka w wodzie, wie, gdzie cię szukać. Ciebie i tych, których kochasz. Nie pal jej i nie wrzucaj do wody, bo wróci. Ktoś musi wiedzieć, co z nią zrobić – a ja wiem.
-Dopiero teraz puściła rękaw.
+Dopiero teraz go puściła.
 – Wezmę ją od ciebie. Ale nie za darmo, bo co dane darmo, to do dawcy wraca. Dam dziesięć groszy. Pięć razy więcej, niż chciał dać ten przy wózku.
 Musiała stać gdzieś blisko, kiedy targował się z handlarzem. Tylko że nie pamiętał, żeby ją tam widział.
 # pytanie: Komu Maciek sprzeda figurkę?
@@ -57,11 +57,11 @@ Musiała stać gdzieś blisko, kiedy targował się z handlarzem. Tylko że nie 
 = zakupy
 ~ ekwipunek += (zapasy, nasiona)
 {
-- figurka_u_staruchy: Za monety od staruchy i resztę swoich miedziaków kupił dwa bochenki chleba, worek kaszy, sól, kawałek słoniny, nasiona warzyw, a nawet kosz sadzeniaków. Tobołek ciążył mu na plecach, ale był to najprzyjemniejszy ciężar od dawna.
-- przeszukal_zgliszcza && not figurka_w_bagnie: Za ostatnie miedziaki i dwa grosze od handlarza kupił bochenek chleba, garść soli, woreczek kaszy i trochę nasion warzyw. Niewiele, ale przez kilka dni da się przeżyć.
-- else: Za ostatnie miedziaki, które zostały mu po kupnie siekiery, kupił bochenek chleba, garść soli, woreczek kaszy i nasiona różnych warzyw.
+- figurka_u_staruchy: Za monety od staruchy i resztę swoich miedziaków Maciek kupił dwa bochenki chleba, worek kaszy, sól, kawałek słoniny, nasiona warzyw, a nawet kosz sadzeniaków. Tobołek przygniatał mu plecy, ale był to najprzyjemniejszy ciężar od dawna.
+- przeszukal_zgliszcza && not figurka_w_bagnie: Za ostatnie miedziaki i dwa grosze od handlarza Maciek kupił bochenek chleba, garść soli, woreczek kaszy i trochę nasion warzyw. Niewiele, ale przez kilka dni da się przeżyć.
+- else: Za ostatnie miedziaki – resztę po siekierze – Maciek kupił bochenek chleba, garść soli, woreczek kaszy i nasiona różnych warzyw.
 }
-Była wiosna, więc trzeba było jak najszybciej siać, żeby zdążyć z plonami.
+Była wiosna, więc z siewem trzeba się było śpieszyć.
 Przy miejskiej studni zjadł pierwszą kromkę od tygodni. Była miękka i jeszcze ciepła. Musiał się powstrzymać, żeby nie pochłonąć wszystkiego naraz.{ los_psa == oswojony: Drugą oddał psu.}
 Potem ruszył za miasto, do folwarku, gdzie przez cztery lata pracował na cudzym polu i gdzie czekała na niego żona z synkiem. # dalej
 -> rodzina
@@ -76,21 +76,21 @@ Potem ruszył za miasto, do folwarku, gdzie przez cztery lata pracował na cudzy
 # tytul: Rodzina
 Do Czworaków dotarł, gdy słońce chyliło się już ku zachodowi. Długi, niski budynek z krzywym kominem wyglądał tak samo jak w dniu, w którym stąd odchodził. Przed progiem kilkuletni chłopiec kreślił patykiem znaki w piachu. Podniósł głowę, spojrzał na obcego, wychudzonego mężczyznę – i przez chwilę go nie poznał. # pokaz: dziecko
 – Dobrosław – powiedział cicho Maciek.
-Malec zerwał się z ziemi i z krzykiem pobiegł do środka. W drzwiach niemal od razu stanęła Marianna. Wycierała ręce w fartuch i zamarła, kiedy go zobaczyła. # pokaz: marianna
-Potem rzuciła mu się na szyję tak gwałtownie, że aż się zachwiał. Płakała mu w ramię, a on gładził ją po włosach i nie mógł wydusić ani słowa. Dobrosław objął go za nogę i nie chciał puścić.
+Malec zerwał się z ziemi i z krzykiem pobiegł do środka. W drzwiach niemal od razu stanęła Marianna. Wycierała ręce w fartuch – i zamarła, kiedy zobaczyła męża. # pokaz: marianna
+Po chwili rzuciła mu się na szyję tak gwałtownie, że aż się zachwiał. Płakała mu w ramię, a on gładził ją po włosach i nie mógł wydusić ani słowa. Dobrosław objął go za nogę i nie chciał puścić.
 – Jezu, Maciek – szepnęła w końcu, odsuwając się, żeby mu się przyjrzeć. Dotknęła zapadniętych policzków, wystających obojczyków. – Jest cię o połowę mniej niż wtedy, kiedy odchodziłeś. Coś ty tam jadł? Korę z drzew?
 Zaśmiał się, choć w oczach miał łzy.
 { los_psa == oswojony:
-    Pies stał z boku, niepewny, aż Dobrosław wyciągnął do niego rękę. Po chwili pozwolił się drapać za uchem, a mały piszczał z radości. # pokaz: pies
+    Pies stał z boku, niepewny, aż Dobrosław wyciągnął do niego rękę. Po chwili pies dał się drapać za uchem, a mały piszczał z radości. # pokaz: pies
 }
 Wieczorem, przy misce kaszy, Maciek opowiadał. O chacie – o ścianach z bali, które sam ociosał, o dachu z trzciny, o progu, na którym siadywał po pracy. O ziemi, której będzie tyle, ile zdołają uprawić.
 – Jutro o świcie ruszamy – oznajmił. – Zaczniemy wszystko od nowa. Na swoim.
-Marianna słuchała, uśmiechając się do siebie. Ale gdy syn zasnął, przysunęła się bliżej i zajrzała mu w twarz.
+Marianna słuchała, uśmiechając się do siebie. Ale gdy syn zasnął, przysunęła się bliżej i zajrzała mężowi w twarz.
 – A teraz powiedz mi prawdę. Co się tam działo? Widzę przecież, że coś cię gryzie.
 # pytanie: Czy Maciek opowie żonie o tamtej nocy?
 *   [Tak – opowie jej o stworze, o legendzie i o głosie znad bagien. Musi wiedzieć, dokąd idzie.]
     ~ zona_wie = true
-    Nie przemilczał niczego. O wyciu w zaroślach, o ciszy, która go obudziła, o postaci, która wyszła z mgły. O spalonej zielarce i jej klątwie. O bagnie, które wołało go jej głosem.{ figurka_u_staruchy: I o nadpalonej figurce z popiołu, którą tego dnia sprzedał na rynku staruszce w kapturze.}
+    Nie przemilczał niczego. O wyciu w zaroślach, o ciszy, która go obudziła, o postaci, która wyszła z mgły. O spalonej zielarce i jej klątwie. O bagnie, które wołało go głosem Marianny.{ figurka_u_staruchy: O nadpalonej figurce spod popiołu, którą tego dnia sprzedał na rynku staruszce w kapturze.}
     Marianna słuchała w milczeniu, bledsza z każdym zdaniem. Kiedy skończył, długo patrzyła w ciemne okno.
     – Wrócimy tam? – zapytała w końcu cicho.
     – Wrócimy. To nasz dom.
@@ -115,9 +115,9 @@ Wyruszyli o świcie. Marianna niosła węzełek z dobytkiem, Maciek – tobołek
     Pies biegał od jednego do drugiego, jakby pilnował, żeby nikt nie został w tyle. # pokaz: pies
 }
 Było już dobrze po południu, gdy stanęli na Bukowym Grzbiecie. W dole leżała Zapadlina.{ chcial_odejsc: W tym samym miejscu kilka dni wcześniej Maciek stał z tobołkiem na ramieniu i chciał odejść na zawsze. Teraz na jego plecach spał syn.}
-Tam przystanął i spojrzał na żonę.
+Na grzbiecie Maciek przystanął i spojrzał na żonę.
 – Teraz uważaj – powiedział. – Idź zaraz za mną, krok w krok. Nie schodź ze ścieżki, choćby nie wiem co. Nie patrz w czarną wodę. I nie słuchaj głosów znad bagien. Cokolwiek usłyszysz – nie odpowiadaj i się nie odwracaj.
-{ zona_wie: Marianna wzięła syna za rękę i kiwnęła głową. Wiedziała, o czym mówi. | Marianna uniosła brwi, jakby chciała się roześmiać, ale coś w jego twarzy ją powstrzymało. Kiwnęła głową bez słowa. }
+{ zona_wie: Marianna {chcial_odejsc:położyła dłoń na plecach śpiącego syna|wzięła syna za rękę} i kiwnęła głową. Wiedziała, o czym mówi. | Marianna uniosła brwi, jakby chciała się roześmiać, ale coś w jego twarzy ją powstrzymało. Kiwnęła głową bez słowa. }
 Szli powoli, gęsiego. Mgła snuła się nisko nad rozlewiskami, a gdzieś daleko, w sitowiu, coś cicho pluskało. W połowie drogi doszło go zza pleców, jak Marianna gwałtownie wciąga powietrze. Nie obejrzał się. Dopiero gdy wyszli na suchą ziemię, zapytał, co słyszała.
 – Nic – odpowiedziała szybko. Za szybko. # dalej
 -> nowy_dom
@@ -128,13 +128,13 @@ Szli powoli, gęsiego. Mgła snuła się nisko nad rozlewiskami, a gdzieś dalek
     - przy_mokradlach: # tlo: chata_mokradla
     - else: # tlo: chata_jezioro
 }
-Chata stała tam, gdzie ją zostawił. {chata_macka == przy_lesie:Na skraju lasu, w cieniu świerków,}{chata_macka == przy_mokradlach:Na łące przy mokradłach, na kamiennej podmurówce,}{chata_macka == nad_jeziorem:Nad jeziorem, wśród szumiących trzcin,} z dachem, który sam ułożył snop po snopie. # pokaz: dach
+Chata stała tam, gdzie ją Maciek zostawił. {chata_macka == przy_lesie:Na skraju lasu, w cieniu świerków,}{chata_macka == przy_mokradlach:Na łące przy mokradłach, na kamiennej podmurówce,}{chata_macka == nad_jeziorem:Nad jeziorem, wśród szumiących trzcin,} z dachem, który sam ułożył snop po snopie. # pokaz: dach
 Marianna stanęła przed progiem i długo nic nie mówiła. Potem weszła do środka, przesunęła dłonią po ścianie, powąchała żywicę i rozpromieniła się jak dziewczyna. # pokaz: rodzina
 – Nasza – powiedziała. – Naprawdę nasza.
 Dobrosław szybko wypatrzył w kącie izby luźne deski. Maciek odsunął je i pokazał mu dół wykopany w ziemi – na tyle głęboki, żeby przechować w chłodzie ziemniaki i kaszę.
 – Piwniczka – oznajmił z dumą. – Na zapasy. Tylko nie właź tam bez pytania.
 Mały oczywiście natychmiast tam wskoczył i skulił się tak, że nie było go widać. Śmiali się wszyscy troje.
-{ ekwipunek ? krzesiwo: Tego wieczoru przed nową chatą zapłonął ogień | Tego wieczoru zjedli kolację na progu nowej chaty } i Maciek pomyślał, że to, co przeszedł, było tego warte. # dalej
+{ ekwipunek ? krzesiwo: Tego wieczoru przed nową chatą zapłonął ogień | Tego wieczoru zjedli wieczerzę na progu nowej chaty } i Maciek pomyślał, że warto było to wszystko przejść. # dalej
 { figurka_u_staruchy: -> czary | -> lata_spokoju }
 
 
@@ -147,11 +147,11 @@ Mały oczywiście natychmiast tam wskoczył i skulił się tak, że nie było go
 # tytul: Jedna świeca
 Tej samej nocy, daleko stąd, w ciasnej izbie za miejskim rynkiem paliła się jedna świeca.
 Starucha zsunęła kaptur. Rzadkie siwe włosy opadały jej na plecy. Na stole przed nią stała miska z czarną, mętną wodą, a obok – nadpalona figurka, odwinięta z lnianej szmatki.
-Kobieta nakłuła palec igłą i pozwoliła trzem kroplom krwi spaść na drewno. Potem zanurzyła ją w misce i zaczęła mruczeć – nisko, monotonnie, w mowie, której nikt w mieście by nie zrozumiał. Płomień świecy przygasł i pochylił się, choć w izbie nie było przeciągu.
+Kobieta nakłuła palec igłą i pozwoliła trzem kroplom krwi spaść na drewno. Potem zanurzyła figurkę w misce i zaczęła mruczeć – nisko, monotonnie, w mowie, której nikt w mieście by nie zrozumiał. Płomień świecy przygasł i pochylił się, choć w izbie nie było przeciągu.
 – Długo czekałam, matko – szepnęła. – Ale ktoś w końcu przyszedł. I sam mi cię przyniósł.
 Woda zabulgotała, jakby ktoś głęboko w niej odetchnął. Z mruczenia wyłoniły się słowa, wypowiadane coraz głośniej:
 – Kości dzieci waszych będą połamane, a krew ich wypita…
-Wtedy starucha pochyliła się nad miską. – Idź. Znasz drogę. Chata {chata_macka == przy_lesie:pod lasem}{chata_macka == przy_mokradlach:przy mokradłach}{chata_macka == nad_jeziorem:nad jeziorem}. Mężczyzna, kobieta i dziecko. # dalej
+Starucha pochyliła się niżej nad miską. – Idź. Znasz drogę. Chata {chata_macka == przy_lesie:pod lasem}{chata_macka == przy_mokradlach:przy mokradłach}{chata_macka == nad_jeziorem:nad jeziorem}. Mężczyzna, kobieta i dziecko. # dalej
 -> noc
 
 = noc
@@ -161,7 +161,7 @@ Minęło kilka dni. Maciek kopał grządki pod ziemniaki, Marianna lepiła z gli
 Maciek zerwał się z posłania. Przez szparę w drzwiach zobaczył we mgle dwa żarzące się ślepia. # pokaz: slepia
 Nie myślał. Chwycił Dobrosława na ręce, odsunął deski w kącie i wsadził go do piwniczki.
 – Siedź cicho – szepnął. – Cokolwiek się stanie, nie wychodź. Słyszysz? Nie wychodź, dopóki nie przyjdzie dzień.
-Ułożył je z powrotem nad jego głową. # dalej
+Ułożył deski z powrotem nad jego głową. # dalej
 { los_psa == oswojony: -> walka | -> rzez }
 
 = walka
@@ -170,15 +170,15 @@ Drzwi wpadły do środka razem z futryną. Stwór musiał się schylić, żeby p
 Pies rzucił się na niego pierwszy. Wbił zęby w przedramię i wisiał na nim, szarpiąc, dopóki potwór nie cisnął nim o ścianę. Zaskowyczał i upadł. # pokaz: pies
 Maciek stanął przed Marianną z uniesioną siekierą. # pokaz: maciek
 – Stań za mną!
-Bestia sięgnęła po niego. Szpony przeorały mu bark i bok, ale ustał w miejscu. Zamachnął się z całej siły i ostrze weszło głęboko w kościste ramię. Stwór zawył – tym samym przeciągłym, gardłowym jękiem, który słyszał już tamtej nocy przy szałasie. Uderzył jeszcze raz. I jeszcze.
-Potwór cofnął się, przewracając ławę, i z rykiem wybiegł w mgłę. Przez chwilę słychać było, jak coś ciężkiego przedziera się przez zarośla, a potem chlupot – coraz dalej, w stronę bagna.
+Bestia sięgnęła po niego. Szpony przeorały mu bark i bok, ale ustał w miejscu. Zamachnął się z całej siły i ostrze weszło głęboko w kościste ramię. Stwór zawył – tym samym przeciągłym, gardłowym jękiem co tamtej nocy przy szałasie. Maciek uderzył jeszcze raz. I jeszcze.
+Potwór cofnął się, przewracając ławę, i z rykiem wybiegł we mgłę. Przez chwilę słychać było, jak coś ciężkiego przedziera się przez zarośla, a potem chlupot – coraz dalej, w stronę bagna.
 Siekiera wypadła Maćkowi z rąk. Osunął się na kolana, potem na bok. Pod nim rosła ciemna kałuża. # pokaz: kaluza
 Marianna klęczała przy nim i przyciskała dłonie do jego ran, ale krew przeciekała jej przez palce.
 – Nie, nie, nie… Nie zostawiaj mnie…
 – Dobrosław… – wyszeptał. – Wyjmij go… dopiero rano.
-Pies przyczołgał się do niego, kulejąc, i położył łeb na jego piersi.
+Pies dowlókł się do niego, kulejąc, i położył łeb na jego piersi.
 Maciek uśmiechnął się jeszcze. Patrzył na żonę, aż jego oczy przestały widzieć cokolwiek.
-Pod podłogą, w piwniczce, Dobrosław zaciskał dłonie na uszach i nie wydawał z siebie żadnego dźwięku. Tak, jak obiecał ojcu. # dalej
+Pod podłogą, w piwniczce, Dobrosław zaciskał dłonie na uszach i nie wydawał z siebie żadnego dźwięku. Tak jak obiecał ojcu. # dalej
 -> sierota
 
 = rzez
@@ -191,7 +191,7 @@ Matka krzyczała dłużej.
 Kiedy i ona ucichła, przez szpary w deskach zaczęło kapać coś ciepłego. Kropla za kroplą, na jego włosy i policzki. # pokaz: krew
 Coś ciężkiego przeszło po podłodze, tuż nad nim. Zatrzymało się. Słyszał, jak węszy – długo, chrapliwie, jak pies przy norze. Zacisnął zęby na rękawie, żeby nie pisnąć.
 Potem kroki oddaliły się i rozpłynęły we mgle.
-Przesiedział w piwniczce do rana. Tak, jak obiecał ojcu. # dalej
+Przesiedział w piwniczce do rana. Tak jak obiecał ojcu. # dalej
 -> sierota
 
 // Epilog zakończenia A — chłopca przygarnia Andrzej.
@@ -201,7 +201,7 @@ Przesiedział w piwniczce do rana. Tak, jak obiecał ojcu. # dalej
     Rano zajrzał do nich Andrzej. Zastał Mariannę na klepisku, z głową męża na kolanach. Nie płakała już. Pies leżał obok i nie pozwalał nikomu podejść.
     Maćka pochowali na cmentarzu przy kościele w mieście. Wdowa do chaty już nie wróciła – zamieszkała z chłopcem u gospodarza z pagórka, który przyjął ich pod swój dach jak rodzinę.
 - else:
-    Rano zajrzał do nich Andrzej. Drzwi chaty leżały w trawie, wyrwane razem z futryną. W izbie nie było nikogo – tylko smuga mułu, która ciągnęła się od progu w stronę bagna, i ciemne plamy na klepisku. Długo stał w progu, zanim usłyszał spod podłogi ciche pochlipywanie.
+    Rano zajrzał do nich Andrzej. Drzwi chaty, pęknięte na pół, leżały w trawie. W izbie nie było nikogo – tylko smuga mułu, która ciągnęła się od progu w stronę bagna, i ciemne plamy na klepisku. Długo stał w progu, zanim usłyszał spod podłogi ciche pochlipywanie.
     Chłopiec nie powiedział ani słowa – ani tego dnia, ani przez wiele następnych. Andrzej zabrał go do siebie i wychował razem ze Stasiem jak własne dziecko.
 }
 Po tamtej nocy wieś zaczęła stawiać kapliczki – przy drogach, na rozstajach, na skraju lasu i przy kładce nad mokradłami. Z każdym rokiem przybywało ich więcej, aż w całej Zapadlinie nie zostało miejsca, z którego nie byłoby widać choć jednej.
@@ -218,9 +218,9 @@ Dali mu na imię Jaromir. # dalej
 # rozdzial: Prolog
 # tytul: Lata spokoju
 Topielec nie przyszedł. Ani tego roku, ani następnego.
-Maciek i Marianna orali pole, które z każdym rokiem było trochę większe. Dobrosław rósł szybko – najpierw pasał gęsi, potem chodził za pługiem, aż w końcu sam prowadził konia.{ los_psa == oswojony: Pies zestarzał się przy progu i pewnej zimy po prostu nie wstał. Pochowali go pod lasem.}
-Czasem, w długie zimowe wieczory, Maciek opowiadał chłopcu o pierwszej wiośnie w Zapadlinie. O wyciu w zaroślach, o tym, co wyszło z mgły przy szałasie, o głosie, który wołał go znad bagien. O zielarce spalonej w chacie nad jeziorem. Syn słuchał z wypiekami na twarzy, ale traktował to jak bajki – takie, jakie opowiada się dzieciom, żeby nie chodziły same nad wodę.
-Kiedy był już dorosły, wieś zaczęła stawiać kapliczki. Jedną przy drodze z Bukowego Grzbietu, drugą na skraju lasu, trzecią przy kładce nad mokradłami. Potem przybywały kolejne, aż stały niemal przy każdej miedzy. Ludzie mówili, że od tamtej pory światełka nad bagnami mrugają rzadziej. Dobrosław w to nie wierzył, ale co roku w maju przystrajał je kwiatami razem z innymi. # pokaz: kapliczki
-Rodzice Dobrosława zmarli ze starości, jedno po drugim, w tej samej chacie, którą Maciek kiedyś zbudował od pierwszego bala. On sam ożenił się z dziewczyną z sąsiedniej wsi i wkrótce urodził mu się syn.
+Maciek i Marianna orali pole, które z każdym rokiem było trochę większe. Dobrosław rósł szybko – najpierw pasał gęsi, potem chodził za pługiem, aż w końcu sam prowadził konia.{ los_psa == oswojony: Pies zestarzał się przy progu i pewnej zimy już nie wstał. Pochowali go pod lasem.}
+Czasem, w długie zimowe wieczory, Maciek opowiadał chłopcu o pierwszej wiośnie w Zapadlinie. O wyciu w zaroślach, o tym, co wyszło z mgły przy szałasie, o głosie, który wołał go znad bagien. O zielarce spalonej w chacie nad jeziorem. Syn słuchał z wypiekami na twarzy, ale miał to za bajki – takie, jakie opowiada się dzieciom, żeby nie chodziły same nad wodę.
+Kiedy syn dorósł, wieś zaczęła stawiać kapliczki. Jedną przy drodze z Bukowego Grzbietu, drugą na skraju lasu, trzecią przy kładce nad mokradłami. Potem przybywały kolejne, aż stały niemal przy każdej miedzy. Ludzie mówili, że od tamtej pory światełka nad bagnami mrugają rzadziej. Dobrosław w to nie wierzył, ale co roku w maju przystrajał kapliczki kwiatami razem z innymi. # pokaz: kapliczki
+Rodzice Dobrosława zmarli ze starości, jedno po drugim, w tej samej chacie, którą Maciek kiedyś zbudował od pierwszego bala. Dobrosław ożenił się z dziewczyną z sąsiedniej wsi i wkrótce urodził mu się syn.
 Dali mu na imię Jaromir. # dalej
 -> prolog_ciag_dalszy
