@@ -2368,7 +2368,7 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "pod_debem"), "Kości dzieci waszych będą połamane"));
         Assert.True(Has(On(pages, "pod_debem"), "wbił siekierę w najbliższy świerk"));
         Assert.True(Has(On(pages, "pod_debem"), "tylną ścianę ojcowskiej izby"));
-        Assert.True(Has(On(pages, "pod_debem"), "Ja – jedno dziecko na pokolenie, w noc świętojańską. I oddam je, zanim zapomni dom."));
+        Assert.True(Has(On(pages, "pod_debem"), "Ja – jedno dziecko na pokolenie, w noc świętojańską. I oddam je, zanim zapomni o swoim domu."));
         Assert.True(Has(On(pages, "pod_debem"), "budzi moje – te znad wody, mamuny, błędnice"));
         Assert.True(Has(On(pages, "pod_debem"), "Marysię wziąłem ja"));
         Assert.True(Has(On(pages, "pod_debem"), "Tym razem nie oddam jej za darmo"));

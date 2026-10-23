@@ -174,7 +174,7 @@ Jaromir wbił siekierę w pniak, aż jęknęło drewno. Trzonek był ciężki i 
     Hanka chwyciła Jaromira za rękę.{ marysia_odzyskana: Marysia spała w chuście i nie wiedziała, że właśnie wykupiono ją od boru – ją i wszystkie dzieci, które miały się jeszcze narodzić w Zapadlinie.}
 - else:
     Pan Lasu patrzył na siekierę w pniaku. Potem skinął głową.
-    – Słowo za słowo – powiedział. – Wy – nie dalej niż to żelazo. Ja – jedno dziecko na pokolenie, w noc świętojańską. I oddam je, zanim zapomni dom. Kapliczki postawicie z powrotem. Wszystkie. – Pochylił się nad Jaromirem. – A ty będziesz pilnował słowa, póki żyjesz. Co Zaduszki – tutaj.
+    – Słowo za słowo – powiedział. – Wy – nie dalej niż to żelazo. Ja – jedno dziecko na pokolenie, w noc świętojańską. I oddam je, zanim zapomni o swoim domu. Kapliczki postawicie z powrotem. Wszystkie. – Pochylił się nad Jaromirem. – A ty będziesz pilnował słowa, póki żyjesz. Co Zaduszki – tutaj.
 }
 { przysiega_ksiedzu:
     Jaromir pomyślał o różańcu i o przysiędze złożonej w Bukowcu. Właśnie ją złamał{ cena_caluna == cena_umowa || cialo_kopii == spalone || cialo_kopii == pod_mlodnikiem: drugi raz} – i wiedział, że złamałby ją jeszcze raz.
@@ -183,7 +183,7 @@ Pan Lasu odwrócił się i poszedł w bór. Jego słudzy weszli za nim, jeden za
 { not marysia_odzyskana:
     { zoladz_zasadzony:
         Ta jedna, w białej koszulce, nie weszła za nimi. Pan Lasu obejrzał się na nią ze skraju boru.
-        – Za długo była u mnie. Zapomniała dom – powiedział. – Żywej wam jej nie oddam. Ale moja już nie jest.
+        – Za długo była u mnie. Zapomniała o swoim domu – powiedział. – Żywej wam jej nie oddam. Ale moja już nie jest.
         { ekwipunek ? wstazka_marysi:
             Jaromir podszedł do niej, odwinął z przegubu spłowiałą wstążkę i zawiązał jej we włosach na kokardę, jak robiła to Hanka.
         }

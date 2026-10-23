@@ -91,7 +91,7 @@ Jaromir miał ich setki. Układał je sobie przez dwa dni drogi, po kolei, a ter
 = granica
 ~ zapiski += (pan_lasu_9, zielarka_4)
 – Słuchaj, wnuku Maćka – zaczął Pan Lasu i bór ucichł tak, że Jaromir słyszał chrzęst porostu, kiedy poruszył stopą. – Powiem raz.
-– Zanim przyszliście, ta dolina była moja, od grzbietu aż po jezioro. Aż jeden z was przyszedł pod Dąb bez siekiery i powiedział: dalej nie pójdziemy. Słowo za słowo. Wy – nie dalej niż Dąb. Ja – jedno dziecko na pokolenie, w noc świętojańską. I oddam je, zanim zapomni dom. Słowo było płotem, a kapliczki, które postawiliście wzdłuż boru, gwoździami.
+– Zanim przyszliście, ta dolina była moja, od grzbietu aż po jezioro. Aż jeden z was przyszedł pod Dąb bez siekiery i powiedział: dalej nie pójdziemy. Słowo za słowo. Wy – nie dalej niż Dąb. Ja – jedno dziecko na pokolenie, w noc świętojańską. I oddam je, zanim zapomni o swoim domu. Słowo było płotem, a kapliczki, które postawiliście wzdłuż boru, gwoździami.
 { kapliczka_podniesiona:
     – Jedną postawiłeś mi z powrotem, chłopcze. Pamiętam.
 }
@@ -108,7 +108,7 @@ Liście dębu zwinęły się nad nimi, jakby ktoś przytknął do nich głownię
     {figurka_u_staruchy:Jaromir przypomniał sobie zarośnięte pokrzywą podwaliny pod borem, o które ojciec nigdy nie pozwalał pytać.|Jaromir przypomniał sobie tylną ścianę ojcowskiej izby, za którą od zawsze szumiał bór, i zrobiło mu się wstyd za cudzą winę.}
 }
 – A potem przyszedł ten z miasta. Dąb padł{ franek_scial_dab: – i pierwsze cięcie zadała mu ręka Franka}. Kapliczki wykopali jego ludzie, a resztę wziął ogień – nie mój. Tartak podpaliła ludzka ręka i ta sama zaparła drzwi stróżówki: ktoś od was, komu zeszyt ciążył bardziej niż cudze życie. Wyście patrzyli.{ noc_ognia != ratowal_szymona: Ostała się jedna – za mało, żeby utrzymać płot.} Płotu już nie ma. A klątwa nie śpi: budzi moje – te znad wody, mamuny, błędnice – i ciągnie je do waszych chałup jak ćmy do łuczywa. Coraz rzadziej mnie słuchają.
-– Marysię wziąłem ja – powiedział Pan Lasu. – Noc świętojańska była moja. Tamtą w życie posłałem po nią sam.
+– Marysię wziąłem ja – powiedział Pan Lasu. – Noc świętojańska była moja. To ja posłałem po nią żytnią babę.
 – To oddaj ją – wychrypiał Jaromir. – Oddaj, jak oddawałeś tamte.
 – Do chałupy bez płotu? – Pan Lasu przechylił głowę. – Wy pierwsi złamaliście słowo. Tym razem nie oddam jej za darmo.
 Jaromir chciał krzyczeć, ale gardło miał suche jak porost pod nogami. Przed oczami stanęła mu żytnia baba, przykucnięta w zbożu, kołysząca drewniakiem – i to, jak ostrożnie przeprowadziła Marysię przez pole, zanim doszły ją te znad wody. Nie wiedział, czy tak się niesie dziecko, które się chroni, czy rzecz, którą się kradnie w całości.
