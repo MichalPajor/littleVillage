@@ -22,8 +22,9 @@ public sealed class SceneBackgroundView : ContentView
     private const string AnimationName = "SceneLayer";
     private const uint CrossFadeDuration = 700;
 
-    // Paralaksa: przechył ±3 m/s² przesuwa pierwszy plan o tyle jednostek płótna (nadmiar płótna przy AspectFill to ok. 5).
-    private const double ParallaxShift = 4;
+    // Paralaksa: przechył ±3 m/s² przesuwa pierwszy plan o tyle jednostek płótna. Płótno jest powiększone tak,
+    // żeby przy pełnym przechyle krawędzie warstw nie wychodziły na ekran (overscan w Arrange).
+    private const double ParallaxShift = 10;
     private const double ParallaxTilt = 3;
     private const double ParallaxSmoothing = 0.12;
 
@@ -257,7 +258,8 @@ public sealed class SceneBackgroundView : ContentView
                 return;
             }
 
-            _scale = Math.Max(width / Scene.Width, height / Scene.Height);
+            var overscan = 1 + 2 * ParallaxShift / Scene.Width;
+            _scale = Math.Max(width / Scene.Width, height / Scene.Height) * overscan;
             var offsetX = (width - Scene.Width * _scale) / 2;
             var offsetY = (height - Scene.Height * _scale) / 2;
 
