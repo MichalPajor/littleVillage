@@ -135,7 +135,7 @@ Rano Maciek rozwinął zawiniątko i zjadł ostatni kawałek chleba. Gryzł go p
 -> trzcina ->
 Ciął gęstwinę siekierą przy samej ziemi, wiązał w snopy i znosił pod chatę. Raz za razem, bez wytchnienia. Plecy paliły go żywym ogniem, ale sterta przy ścianie rosła.
 Po południu trzciny w tym miejscu już nie było, więc ruszył dalej. Wracał inną drogą – od tej strony, z której minionej nocy dochodziło wycie. Szedł, aż nagle noga zawisła mu w powietrzu.
-W trawie pod krzakiem leżał pies. Chudy, z długim pyskiem i za dużymi łapami. Był sztywny, przewrócony na bok, z na wpół otwartymi oczami. Muchy już go obsiadły.
+W trawie pod krzakiem leżał pies. Chudy, z długim pyskiem i zmierzwioną sierścią. Był sztywny, przewrócony na bok, z na wpół otwartymi oczami. Muchy już go obsiadły.
 { los_psa == niespotkany:
     Maciek długo stał nad nim bez ruchu. Dopiero teraz zrozumiał, co wyło tamtej nocy. Nie dzikie zwierzę, nie żadna zmora – tylko głodne, zziębnięte szczenię, które wołało, aż przestało.
     Ścisnęło go w gardle. Pomyślał, że mógł wtedy wyjść. Ale zaraz odpowiedział sam sobie: a gdyby tak trafił prosto w paszczę wilka? Po ciemku nie wiadomo, co czeka w krzakach. Rozsądny człowiek siedzi w szałasie z siekierą pod ręką – i żyje.
@@ -193,7 +193,7 @@ Maciek zerwał się na równe nogi. Siekiera sama znalazła się w jego dłoniac
 # tlo: zmierzch_zdobycz
 Krzaki rozchyliły się. Z mgły wyłoniła się postać. # pokaz: topielec
 Była wyższa od dorosłego mężczyzny, o dobre trzy głowy. Stała na dwóch nogach, ale zgarbiona, z rękami zakończonymi szponami, zwisającymi niemal do ziemi, i z długimi włosami ociekającymi bagnem. Miała ludzki kształt – i wcale nie była człowiekiem. W paszczy trzymała coś dużego i bezwładnego, co opadało jej po obu stronach łba.
-Maciek poznał to po łapach. Za dużych do reszty ciała. # pokaz: cialo
+Maciek poznał je od razu, choć wolałby nie poznać. # pokaz: cialo
 Postać zacisnęła szczęki. Rozległ się trzask – głośny, mokry, jak łamane suche gałęzie, tyle że to nie były one. Potem stwór odwrócił się i pomknął ku {chata_macka == przy_mokradlach:pobliskim }mokradłom, tak szybko, że mgła zawirowała za nim jak woda.
 Maciek nie mógł się ruszyć. Trząsł się cały, zimny pot spływał mu po plecach, a nogi miał jak z waty. Siekiera ciążyła mu w rękach, bezużyteczna. Stał tak bardzo długo, aż ciemność znów ucichła.
 -> strach_o_chate ->
@@ -203,9 +203,9 @@ W końcu wczołgał się do szałasu. Długo nie mógł zmrużyć oka i nasłuch
 = obrona
 # tlo: zmierzch_obrona
 Krzaki rozchyliły się. W mroku zapłonęły dwa ślepia – wysoko, za wysoko jak na wilka czy dzika. Postać stała w zaroślach na dwóch nogach, zgarbiona, z rękami zwisającymi niemal do ziemi i z długimi włosami ociekającymi bagnem. Miała ludzki kształt – i wcale nie była człowiekiem. # pokaz: topielec
-Maciek nie mógł się ruszyć. Trząsł się cały, zimny pot spływał mu po plecach. Patrzyły prosto na niego i powoli, bardzo powoli przybliżały się.
+Maciek nie mógł się ruszyć. Trząsł się cały, zimny pot spływał mu po plecach. Ślepia patrzyły prosto na niego i powoli, bardzo powoli przybliżały się.
 Z oddali dobiegło szczekanie.
-Pies wypadł z ciemności jak strzała i stanął między Maćkiem a zaroślami. Sierść zjeżyła mu się na karku, zaparł się w miejscu i ujadał – głośno, zajadle, bez chwili przerwy, choć cały drżał. Chudy, młody, z za dużymi łapami – i nie cofnął się ani o krok. # pokaz: pies
+Pies wypadł z ciemności jak strzała i stanął między Maćkiem a zaroślami. Sierść zjeżyła mu się na karku, zaparł się w miejscu i ujadał – głośno, zajadle, bez chwili przerwy, choć cały drżał. Chudy, młody, z podkulonym ogonem – i nie cofnął się ani o krok. # pokaz: pies
 Ślepia zatrzymały się. Postać zawahała się, wydała z siebie gardłowy syk – a potem zawróciła i z trzaskiem gałęzi pomknęła w stronę {chata_macka == przy_mokradlach:pobliskich }mokradeł, aż mgła zawirowała za nią jak woda.
 -> strach_o_chate ->
 ~ los_psa = oswojony
@@ -213,7 +213,7 @@ Pies wypadł z ciemności jak strzała i stanął między Maćkiem a zaroślami.
 Długo trwało, zanim Maciek doszedł do siebie. W końcu osunął się na ziemię przy szałasie i oddychał ciężko jak po długim biegu. Pies przestał ujadać. Podszedł do niego niepewnie, z opuszczonym łbem – i zamerdał ogonem, dumny z siebie jak nikt na świecie.
 Maciek wyciągnął drżącą rękę. Zwierzę obwąchało ją, a potem pozwoliło się pogłaskać.
 – Dobry pies – szepnął. – Dobry – odetchnął.
-Tej nocy weszli do szałasu razem. Pies zwinął się w kłębek przy boku człowieka i zasnął pierwszy. Maciek czuwał jeszcze, wsłuchany w ciemność. Ale nie był już sam. # tobolek # dalej
+Tej nocy weszli do szałasu razem. Pies położył się przy wejściu, łbem ku zaroślom. Maciek czuwał jeszcze długo, wsłuchany w ciemność, aż sen go zmógł. Ale nie był już sam. # tobolek # dalej
 -> zgliszcza
 
 // Tylko gdy chata stoi przy mokradłach — stwór uciekł właśnie tam.

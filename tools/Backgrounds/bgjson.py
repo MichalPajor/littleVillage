@@ -6,6 +6,12 @@ import json, os
 import ramki
 
 JSON_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "src", "LittleVillage", "Resources", "Raw", "backgrounds.json")
+# Postacie, ktorych stopy chowaly sie pod okno z tekstem (gorna ramka okna zaslania juz od ~424): warstwa -> o ile ja podniesc.
+PODNIES = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "podnies.json"), encoding="utf-8"))
+
+
+def podnies(image):
+    return next((dy for prefix, dy in PODNIES.items() if image.startswith(prefix)), 0)
 
 
 def entry(prefix, order, L, anim=None, reveal=None, extra=None):
@@ -17,7 +23,7 @@ def entry(prefix, order, L, anim=None, reveal=None, extra=None):
         first = frames[0] if frames else name
         x, y, w, h, _ = L[first]
         fit = ramki.box(f"{prefix}_{first}", x, y, w, h) if not frames else (x, y, w, h)
-        d = {"image": f"{prefix}_{first}.png", "x": fit[0], "y": fit[1], "width": fit[2], "height": fit[3]}
+        d = {"image": f"{prefix}_{first}.png", "x": fit[0], "y": fit[1] - podnies(f"{prefix}_{first}"), "width": fit[2], "height": fit[3]}
         if name in anim:
             d["animation"] = ramki.anim_for(anim[name], (x, y, w, h), fit)
         if name in reveal:

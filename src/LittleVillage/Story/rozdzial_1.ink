@@ -146,7 +146,7 @@ A jednak kończył się zawsze. Słońce zsuwało się za jezioro, cienie wydłu
 – Jaroooomir! Do doooomu! # pokaz: matka
 # pytanie: Czy Jaromir wróci od razu?
 *   [Pobiegnie do domu od razu.]
-    Głos matki niósł się po całej wsi. Chłopiec nie kazał na siebie czekać: żegnał się z resztą, umawiał na jutro – zawsze na jutro, zawsze przy drewnianym słupku, który znaczył granicę pola ojca, zaraz po śniadaniu – i biegł przez łąkę, na której zapalały się pierwsze świetliki. Matka nie mogła się nadziwić i do wieczerzy dokładała mu kawałek placka. # pokaz: jaromir
+    Głos matki niósł się po całej wsi. Chłopiec nie kazał na siebie czekać: żegnał się z resztą, umawiał na jutro – zawsze na jutro, zawsze przy drewnianym słupku, który znaczył granicę pola ojca, zaraz po śniadaniu – i biegł przez łąkę, na której zapalały się pierwsze świetliki. # pokaz: jaromir
     -> wieczor_dalej
 *   [Pobawi się jeszcze chwilę.]
     -> wieczor_zwlekanie
@@ -166,12 +166,12 @@ Wracał brudny, z trawą we włosach, z ziemią pod paznokciami i z kolanami w s
     Ojciec, jeśli wieczór był ciepły, wynosił ławę przed chatę i opowiadał. O dziadku Maćku, który zszedł do Zapadliny z samą siekierą, o stworze z bagien, o głosie, co wołał znad wody. Jaromir zwykle zaczynał przysypiać w połowie, z głową na kolanach ojca, i nigdy nie słyszał zakończenia.
 }
 Leżał potem na sienniku pod oknem i słuchał nocy. Żaby rechotały w rozlewiskach, w stajni parsknął koń, gdzieś daleko zaszczekał pies. Przez szparę w okiennicy widać było gwiazdy – gęste jak rosa na łące.
-Zasypiał z uśmiechem, myśląc o jutrze. Jutro będzie znów lato. Jutro będzie znów cały dzień. # dalej
+Zasypiał z uśmiechem, myśląc o tym, że rano znów będzie lato – całe, od świtu do zmierzchu. # dalej
 -> zloty_dzien
 
 = zloty_dzien
 # tlo: zapadlina_lato
-Takich dni było bez liku. Zlewały mu się potem w pamięci w jeden długi, złoty dzień, pachnący sianem i rozgrzaną ziemią, pełen słońca, śmiechu i brzęczenia pszczół. Lato mijało, a Jaromir rósł – coraz wyżej sięgał do gałęzi bzu, coraz dalej dolatywała jego strzała, coraz rzadziej potrzebował drabinki, żeby wspiąć się do bazy. # dalej
+Takich dni było bez liku. Zlewały mu się potem w pamięci w jedną długą, złotą smugę, pachnącą sianem i rozgrzaną ziemią, pełną słońca, śmiechu i brzęczenia pszczół. Lato mijało, a Jaromir rósł – coraz wyżej sięgał do gałęzi bzu, coraz dalej dolatywała jego strzała, coraz rzadziej potrzebował drabinki, żeby wspiąć się do bazy. # dalej
 -> rozdzial_pierwszy_ciag_dalszy
 
 
