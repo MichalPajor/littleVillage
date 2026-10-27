@@ -71,7 +71,7 @@ Jaromirowi przypomniały się piątkowe opowieści pana Ignacego i zrobiło mu s
 - else:
     W ostatni dzień przed świętami pan Ignacy rozdał dzieciom po kawałku piernika i życzył wszystkim wesołych świąt. Na Jaromira patrzył przy tym dłużej niż na innych, jakby chciał o coś zapytać, ale w końcu tylko skinął mu głową.
 }
-Od rana w chałupie pachniało grzybami, kapustą i makiem. Matka ucierała mak w makutrze, aż drewniany wałek śpiewał o gliniane ścianki, ojciec przyniósł ze stodoły snopek żyta i postawił go w kącie, a pod obrus wsunięto garść siana. Przy ławie stało jedno nakrycie więcej – dla wędrowca, gdyby zapukał, i dla tych, którzy odeszli, a tej nocy mogli wrócić. Jaromir od południa wyglądał przez okno pierwszej gwiazdki. Zapaliła się nad borem, maleńka i zimna. # pokaz: gwiazdka
+Od rana w chałupie pachniało grzybami, kapustą i makiem. Matka ucierała go w makutrze, aż drewniany wałek śpiewał o gliniane ścianki, ojciec przyniósł ze stodoły snopek żyta i postawił w kącie, a pod obrus wsunął garść siana. Przy ławie stało jedno nakrycie więcej – dla wędrowca, gdyby zapukał, i dla tych, którzy odeszli, a tej nocy mogli wrócić. Jaromir od południa wyglądał przez okno pierwszej gwiazdki. Zapaliła się nad borem, maleńka i zimna. # pokaz: gwiazdka
 Ledwie przełamali się opłatkiem, ktoś zapukał do drzwi.
 Na progu stał dziad – zgarbiony, w łachmanach przewiązanych sznurkiem, z torbą przez ramię i lirą na plecach. Broda zamarzła mu w sople, a oczy miał blade jak mleko, jakby od dawna nic nimi nie widział. # pokaz: dziad
 – Niech będzie pochwalony – zachrypiał. – Przyjmiecie starego do wieczerzy?
@@ -83,7 +83,7 @@ Na progu stał dziad – zgarbiony, w łachmanach przewiązanych sznurkiem, z to
 # pytanie: Czy dziad zostanie na wieczerzy?
 *   [Poprosić ojca, żeby go wpuścił.]
     ~ wpuscil_dziada = true
-    Dziad usiadł przy pustym nakryciu i jadł niewiele, za to powoli i z namaszczeniem. Potem zdjął z pleców lirę i zaśpiewał starą pieśń o duszach, które w tę jedną noc wracają do swoich chałup i grzeją ręce przy cudzym ogniu. Matka ocierała oczy fartuchem. # pokaz: lira
+    Dziad usiadł przy pustym nakryciu i jadł niewiele, za to powoli i dokładnie. Potem zdjął z pleców lirę i zaśpiewał starą pieśń o duszach, które w tę jedną noc wracają do swoich chałup i grzeją ręce przy cudzym ogniu. Matka ocierała oczy fartuchem. # pokaz: lira
     Wychodząc, dziad przystanął obok Jaromira i pochylił się nad nim tak nisko, że chłopca uderzył w nos zapach dymu i mrozu.
     – Pachniesz lasem, chłopcze – szepnął. – Jak przyjdzie do maleńkiej, nie odzywaj się do niej. Ani słowem.
     Zanim ktokolwiek zdążył zapytać, o co mu chodzi, był już za progiem. Noc była jasna od śniegu, a jednak nikt nie zobaczył, w którą stronę odszedł. – Dobrze, żeśmy go nie odprawili – szepnęła matka, zbierając ze stołu jego miskę. – Nigdy nie wiadomo, kto przyszedł. Czasem to dusza kogoś z rodziny wraca w przebraniu, żeby zobaczyć, czy jeszcze ją pamiętają. # pokaz: odszedl # dalej

@@ -132,7 +132,7 @@ Marianna zmarła kilka dni później, w Wielki Czwartek. Prosiła, żeby pochowa
 
 = kapliczka
 # tlo: kapliczka_przewrocona
-Po Wielkanocy ziemia zaczęła obsychać, a na miedzach zażółciły się pierwsze kaczeńce. Któregoś popołudnia, wracając ze szkoły ścieżką pod borem, Jaromir i Antek{ ekwipunek ? szczeniak: – i {imie_psa}, który wszędzie chodził teraz za Jaromirem –} zobaczyli, że kapliczka na skraju lasu leży w trawie. Obaj stanęli jak wryci. W ciszy, która nagle zapadła, słychać było tylko, jak krople kapią z gałęzi na leżący w błocie daszek.
+Po Wielkanocy ziemia zaczęła obsychać, a na miedzach zażółciły się pierwsze kaczeńce. Któregoś popołudnia, wracając ze szkoły ścieżką pod borem, Jaromir i Antek{ ekwipunek ? szczeniak: oraz pies {imie_psa}, który wszędzie chodził teraz za Jaromirem,} zobaczyli, że kapliczka na skraju lasu leży w trawie. Obaj stanęli jak wryci. W ciszy, która nagle zapadła, słychać było tylko, jak krople kapią z gałęzi na leżący w błocie daszek.
 Była to jedna z najstarszych w Zapadlinie, postawiona jeszcze {figurka_u_staruchy:za dzieciństwa|za młodości} ojca. Drewniany słup wyrwano z ziemi razem z darnią, daszek odłamał się i leżał kilka kroków dalej, a świątek – szary od deszczów, z obliczem wytartym przez {figurka_u_staruchy:pół wieku|dziesiątki lat} – tkwił w błocie twarzą w dół. Trawa dookoła była zryta, jakby ktoś ciągnął kapliczkę w stronę drzew i porzucił w pół drogi.
 { ekwipunek ? kora:
     U podstawy ktoś wydrapał na drewnie spiralę – taką samą jak na sośnie przy ścieżce. Jaromir nie musiał wyjmować z torby swojego kawałka kory, żeby to wiedzieć. # pokaz: spirala

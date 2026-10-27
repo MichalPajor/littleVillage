@@ -70,10 +70,10 @@ Sierp świsnął, zanim Jaromir zdążył mrugnąć. Poczuł piekący ból na ra
     -> zagadka_3
 *   [Kartofel.]
     -> zle_2
-*   { ekwipunek ? ksiega } [Ziarno – w ziemi umiera, spod kosy i cepa wraca, a w piecu rodzi się chlebem.]
+*   { ekwipunek ? ksiega } [Ziarno.]
     ~ poludnica_uklon = true
     Południca otworzyła usta i zamknęła je bez słowa. Długo patrzyła na niego tymi białymi oczami, a potem pochyliła głowę – lekko, ledwie widocznie, jak przed kimś, kogo się szanuje. # pokaz: uklon
-    – Takiej odpowiedzi nie słyszałam od stu lat – powiedziała. – Ktoś cię dobrze uczył. # dalej
+    – Ziarno – powtórzyła cicho. – W ziemi umiera, spod kosy i cepa wraca, a w piecu rodzi się chlebem. Takiej odpowiedzi nie słyszałam od stu lat. Ktoś cię dobrze uczył. # dalej
     -> zagadka_3
 
 = zle_2

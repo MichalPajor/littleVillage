@@ -5,7 +5,7 @@ import os
 # bywa szerszy niz plotno (szczekajacy pies ma 560 jednostek), a waski obszar ucinal mu zad i ogon.
 # Obszar filtra w jednostkach plotna (nie %): przy przeskalowanych grupach Svg.Skia (rasteryzacja MAUI)
 # liczy procenty od nieprzeskalowanego ksztaltu i obcinal np. glowe stwora.
-DEFS = '''<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+DEFS = '''<filter id="ink" filterUnits="userSpaceOnUse" x="-200" y="-60" width="800" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
 <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
 </filter>

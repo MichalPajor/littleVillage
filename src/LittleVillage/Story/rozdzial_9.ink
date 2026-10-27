@@ -89,7 +89,7 @@ Na tydzień przed ślubem do chałupy przyszedł Antek, blady jak płótno. # po
     Szli wzdłuż ostatniego rzędu świerków i wołali na zmianę, aż ochrypli. Las nie odpowiadał. Na najniższej gałęzi pierwszego świerka wisiała kapota Franka – starannie, jak na kołku w sieni, tylko wywrócona na lewą stronę, podszewką na wierzch. # pokaz: kapota
     – Na lewą stronę – powiedział Antek głucho. – Tak się robi, żeby las wziął cię za swojego.
     { obietnica_bor:
-        Antek chciał iść dalej. Jaromir został na granicy – obiecał kiedyś {figurka_u_staruchy && los_psa == oswojony:babce|ojcu}, że nie wejdzie do boru – i słuchał, jak wołanie przyjaciela oddala się między pniami, cichnie i wraca. Antek wyszedł dopiero o zmroku, podrapany, z pustymi rękami. Nie powiedział ani słowa wyrzutu – i to było gorsze niż wyrzut.
+        Antek chciał iść dalej. Jaromir został na granicy – obiecał kiedyś {figurka_u_staruchy && los_psa == oswojony:babce|ojcu}, że nie wejdzie do boru – i słuchał, jak wołanie przyjaciela oddala się między pniami, cichnie i wraca. Antek wyszedł dopiero o zmroku, podrapany, z pustymi rękami. Nie powiedział ani słowa wyrzutu – i to bolało bardziej, niż gdyby krzyczał.
     - else:
         Weszli między drzewa razem. Kilkadziesiąt kroków dalej umilkły sikory, ucichł nawet szum w koronach, i obaj zrozumieli bez słowa, że głębiej iść nie wolno. Wycofali się tyłem, jak z cudzej izby.
     }

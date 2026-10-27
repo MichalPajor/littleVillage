@@ -399,11 +399,12 @@ t.append('<path d="M240 222C280 196 330 190 400 196V222Z" fill="#EDEBE6" stroke-
 t.append(kosciolek(310, 202, 1.0))
 t.append('<path d="M-10 340C80 330 200 300 280 270C320 254 360 240 400 236V252C360 258 330 270 290 286C210 316 100 350 -10 362Z" fill="#FFFFFF" stroke-width="2"/>')
 S["tlo"] = (0, 0, 390, 440, t[0] + "\n" + group(t[1:]))
-S["wozy"] = (-160, 290, 220, 70, group([woz_weselny(-150, 350, 0.8, music=True), woz_weselny(-80, 340, 0.75), woz_weselny(-14, 330, 0.7)]))
+# wozy ustawione tak, by po przejezdzie (dx 300, dy -60) staly kolami na drodze, ktora wznosi sie ku koscielowi
+S["wozy"] = (-160, 284, 220, 92, group([woz_weselny(-150, 360, 0.8, music=True), woz_weselny(-80, 340, 0.75), woz_weselny(-14, 319, 0.7)]))
 S["przod"] = (0, 422, 390, 422, group(PRZOD))
 SLUB = ["tlo", "wozy", "przod"]
 S_REVEAL = {"wozy": "wozy"}
-S_ANIM = {"wozy": {"type": "slide", "dx": 300, "dy": -80, "duration": 20000, "once": True}}
+S_ANIM = {"wozy": {"type": "slide", "dx": 300, "dy": -60, "duration": 20000, "once": True}}
 S_EXTRA = {"wozy": {"fadeDuration": 1500}, "przod": {"depth": 1.0}}
 S_COMMENTS = {"tlo": "jesienny poranek: droga pod borem do Bukowca, kościółek na wzgórzu", "wozy": "trzy wozy weselne jadą do kościoła (# pokaz: wozy)", "przod": "pierwszy plan"}
 _add(S, SLUB, S_ANIM, S_COMMENTS, "chmury", ((40, 50, 300, 40, group(['<path d="M60 82c8 -14 28 -14 34 0c8 -8 24 -2 22 8h-56z" fill="#FFFFFF" stroke-width="1.6"/>', '<path d="M220 70c8 -14 28 -14 34 0c8 -8 24 -2 22 8h-56z" fill="#FFFFFF" stroke-width="1.6"/>'])),

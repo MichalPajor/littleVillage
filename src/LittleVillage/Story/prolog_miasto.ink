@@ -129,7 +129,7 @@ Szli powoli, gęsiego. Mgła snuła się nisko nad rozlewiskami, a gdzieś dalek
     - else: # tlo: chata_jezioro
 }
 Chata stała tam, gdzie ją Maciek zostawił. {chata_macka == przy_lesie:Na skraju lasu, w cieniu świerków,}{chata_macka == przy_mokradlach:Na łące przy mokradłach, na kamiennej podmurówce,}{chata_macka == nad_jeziorem:Nad jeziorem, wśród szumiących trzcin,} z dachem, który sam ułożył snop po snopie. # pokaz: dach
-Marianna stanęła przed progiem i długo nic nie mówiła. Potem weszła do środka, przesunęła dłonią po ścianie, powąchała żywicę i rozpromieniła się jak dziewczyna. # pokaz: rodzina
+Marianna stanęła przed progiem i długo nic nie mówiła. Potem weszła do środka, przesunęła dłonią po ścianie, powąchała żywicę i rozpromieniła się jak małe dziecko, gdy zobaczy twarz swojego rodzica. # pokaz: rodzina
 – Nasza – powiedziała. – Naprawdę nasza.
 Dobrosław szybko wypatrzył w kącie izby luźne deski. Maciek odsunął je i pokazał mu dół wykopany w ziemi – na tyle głęboki, żeby przechować w chłodzie ziemniaki i kaszę.
 – Piwniczka – oznajmił z dumą. – Na zapasy. Tylko nie właź tam bez pytania.

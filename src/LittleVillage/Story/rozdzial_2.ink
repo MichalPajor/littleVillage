@@ -46,9 +46,9 @@ Tyle że drwale nie liczą o świcie, we mgle, w miejscu, gdzie nie słychać an
 = szkola_izba
 # tlo: szkola_izba
 Szkoła mieściła się w drewnianym budynku – jedna izba z dwoma oknami, wielkim kaflowym piecem w kącie i ławkami tak wysłużonymi, że ich blaty pokrywały wyryte nożykami inicjały kilku pokoleń. Pachniało tam kredą, mokrą wełną i dymem.
-Pan Ignacy był stary i chudy, utykał na prawą nogę i nosił okulary w drucianej oprawce, które co chwila zsuwały mu się na czubek nosa. Miał cichy głos, ale kiedy go podnosił, milkła cała izba. Uczył wszystkiego naraz: pisania, rachunków, katechizmu i pieśni, a starsze dzieci pomagały młodszym. W szufladzie biurka trzymał gruby zeszyt oprawny w skórę, którego nikomu nie pokazywał.
+Pan Ignacy był stary i chudy, utykał na prawą nogę i nosił okulary w drucianej oprawce, które co chwila zsuwały mu się na czubek nosa. Miał cichy głos, ale kiedy go podnosił, milkła cała izba. Uczył wszystkiego naraz: pisania, rachunków, katechizmu i pieśni. W szufladzie biurka trzymał gruby zeszyt oprawny w skórę, którego nikomu nie pokazywał.
 Jaromir od pierwszego dnia polubił litery. Wyglądały jak małe ludziki – niektóre stały na jednej nodze, inne rozkładały ręce, jeszcze inne garbiły się jak dziadowie pod kapliczką – i wystarczyło je poustawiać obok siebie, żeby zaczęły tworzyć słowa. Hanka za to najlepiej liczyła, a Antek pięknie śpiewał, choć nikt wcześniej o tym nie wiedział, bo w domu wstydził się otworzyć usta.
-Nie wszystko było jednak dobre. W Bukowcu mieszkał Bartek, syn młynarza – wyższy od Franka, z pięściami jak bochenki i z wiecznie znudzoną miną. Upatrzył sobie Antka. Wyśmiewał jego łatane portki, chował mu czapkę, a na przerwie podstawiał nogę, kiedy ten przechodził obok.
+Nie zawsze jednak było miło i przyjemnie. W Bukowcu mieszkał Bartek, syn młynarza – wyższy od Franka, z pięściami jak bochenki i z wiecznie znudzoną miną. Upatrzył sobie Antka. Wyśmiewał jego łatane portki, chował mu czapkę, a na przerwie podstawiał nogę, kiedy ten przechodził obok.
 Pewnego dnia, gdy pan Ignacy wyszedł na chwilę z izby, Bartek wyrwał chłopcu tabliczkę i zaczął ścierać rękawem litery, które ten pisał przez całe przedpołudnie. Antek stał z czerwonymi uszami i zaciśniętymi pięściami, a w oczach miał łzy. # pokaz: bartek
 # pytanie: Jak zachowa się Jaromir?
 *   [Stanąć w obronie Antka.]
@@ -171,7 +171,7 @@ W listopadzie dni zrobiły się krótkie i szare, a wieczory długie. Pod butami
 
 = wieczory_jesienia
 { figurka_u_staruchy:
-    Ojciec coraz częściej siadywał wieczorami na progu z fajką, która dawno mu zgasła. Kiedy pewnego razu syn zapytał go, czy wierzy w Pana Lasu, ten odwrócił się do niego tak gwałtownie, że chłopak cofnął się o krok. Ojciec jednak nic nie powiedział. Wstał i poszedł spać, a w nocy Jaromir słyszał, jak długo chodzi po izbie.
+    Ojciec coraz częściej siadywał wieczorami na progu z fajką, która ciągle mu gasła. Kiedy pewnego razu syn zapytał go, czy wierzy w Pana Lasu, ten odwrócił się do niego tak gwałtownie, że chłopak cofnął się o krok. Ojciec jednak nic nie powiedział. Wstał i poszedł spać, a w nocy Jaromir słyszał, jak długo chodzi po izbie.
 - else:
     Ojciec, kiedy usłyszał przy wieczerzy o Panu Lasu, roześmiał się i powiedział, że jak Borowy przyjdzie, to dostanie miskę kaszy i pójdzie spać na piec. Ale potem jakoś długo patrzył w okno, a zanim się położył, postawił w sieni przy drzwiach siekierę, czego nigdy wcześniej nie robił.
 }
