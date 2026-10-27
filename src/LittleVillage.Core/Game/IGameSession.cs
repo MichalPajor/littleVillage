@@ -23,6 +23,7 @@ public interface IGameSession
     Task<StoryPage> ContinueSavedGameAsync(CancellationToken cancellationToken = default);
 
     /// <summary>Przechodzi dalej: wybiera opcję (gdy strona ma wybory) lub kontynuuje.</summary>
+    /// <exception cref="FullVersionRequiredException">Koniec darmowej części, a pełna wersja nie jest kupiona.</exception>
     Task<StoryPage> AdvanceAsync(int? choiceIndex, CancellationToken cancellationToken = default);
 
     IReadOnlyList<InventoryItem> GetInventory();

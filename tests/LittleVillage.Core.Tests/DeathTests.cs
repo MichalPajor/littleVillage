@@ -29,7 +29,7 @@ public sealed class DeathTests : IDisposable
     }
 
     private GameSession CreateSession() =>
-        new(new InkStoryEngine(), new Assets(InkTestStory.FromSource(Story)), new JsonFileSaveGameRepository(_saveDirectory), TimeProvider.System);
+        new(new InkStoryEngine(), new Assets(InkTestStory.FromSource(Story)), new JsonFileSaveGameRepository(_saveDirectory), new FullVersion(), TimeProvider.System);
 
     [Fact]
     public void Death_tag_ends_the_page_with_death()
@@ -79,6 +79,11 @@ public sealed class DeathTests : IDisposable
         await session.AdvanceAsync(0);
 
         await Assert.ThrowsAsync<InvalidOperationException>(() => session.AdvanceAsync(null));
+    }
+
+    private sealed class FullVersion : IFullVersion
+    {
+        public bool IsUnlocked => true;
     }
 
     private sealed class Assets(string story) : IStoryAssetSource

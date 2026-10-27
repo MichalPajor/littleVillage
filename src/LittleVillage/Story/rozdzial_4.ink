@@ -164,8 +164,8 @@ Tej nocy po raz pierwszy od lat z boru dobiegło wycie – długie, przeciągłe
 -> rozdzial_czwarty_ciag_dalszy
 
 
-// Koniec rozdziału czwartego — dalej rozdział piąty.
+// Koniec rozdziału czwartego i darmowej części — dalej rozdział piąty, już w pełnej wersji.
 === rozdzial_czwarty_ciag_dalszy ===
 # ozdobnik
-_Koniec rozdziału czwartego._ # dalej
+_Koniec rozdziału czwartego._ # pelna_wersja # dalej
 -> rozdzial_piaty

@@ -9,6 +9,7 @@ public sealed class GameSession(
     IStoryEngine engine,
     IStoryAssetSource assets,
     ISaveGameRepository saves,
+    IFullVersion fullVersion,
     TimeProvider timeProvider) : IGameSession
 {
     private readonly SemaphoreSlim _initializationLock = new(1, 1);
@@ -68,6 +69,11 @@ public sealed class GameSession(
     {
         EnsureInitialized();
         var page = CurrentPage ?? throw new InvalidOperationException("Gra nie została rozpoczęta.");
+
+        if (page.RequiresFullVersion && !fullVersion.IsUnlocked)
+        {
+            throw new FullVersionRequiredException();
+        }
 
         var next = page.Ending switch
         {

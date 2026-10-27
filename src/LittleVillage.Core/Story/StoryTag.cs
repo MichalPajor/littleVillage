@@ -21,6 +21,8 @@ public readonly record struct StoryTag(string Name, string? Value)
     public const string Inventory = "tobolek";
     /// <summary>Tobołek zmienia się bez powiadomień (<c># nowy_tobolek</c>) — np. nowy bohater zaczyna z pustymi rękami.</summary>
     public const string NewInventory = "nowy_tobolek";
+    /// <summary>Koniec darmowej części: dalej tylko z pełną wersją (<c># pelna_wersja</c>).</summary>
+    public const string FullVersion = "pelna_wersja";
 
     public static StoryTag Parse(string rawTag)
     {

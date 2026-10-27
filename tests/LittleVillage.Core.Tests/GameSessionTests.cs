@@ -16,8 +16,10 @@ public sealed class GameSessionTests : IDisposable
         }
     }
 
+    private readonly FakeFullVersion _fullVersion = new() { IsUnlocked = true };
+
     private GameSession CreateSession() =>
-        new(new InkStoryEngine(), new FakeAssets(), new JsonFileSaveGameRepository(_saveDirectory), TimeProvider.System);
+        new(new InkStoryEngine(), new FakeAssets(), new JsonFileSaveGameRepository(_saveDirectory), _fullVersion, TimeProvider.System);
 
     [Fact]
     public async Task New_game_is_autosaved_and_can_be_continued_in_a_new_session()
@@ -54,10 +56,14 @@ public sealed class GameSessionTests : IDisposable
         // + wybory rozdzialu pierwszego, a dalej same pierwsze opcje (nadmiarowe zostaja w kolejce)
         var choices = new Queue<int>([2, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, .. Enumerable.Repeat(0, 80)]);
         var page = session.CurrentPage!;
+        var gates = 0;
         while (page.Ending != PageEnding.End)
         {
+            gates += page.RequiresFullVersion ? 1 : 0;
             page = await session.AdvanceAsync(page.Ending == PageEnding.Choices ? choices.Dequeue() : null);
         }
+
+        Assert.Equal(1, gates);
 
         Assert.Equal(PageEnding.End, page.Ending);
         Assert.False(await session.HasSavedGameAsync());
@@ -71,6 +77,39 @@ public sealed class GameSessionTests : IDisposable
         await session.StartNewGameAsync();
 
         await Assert.ThrowsAsync<InvalidOperationException>(() => session.AdvanceAsync(null));
+    }
+
+    [Fact]
+    public async Task Free_part_ends_after_chapter_four_until_the_full_version_is_bought()
+    {
+        _fullVersion.IsUnlocked = false;
+        var session = CreateSession();
+        await session.InitializeAsync();
+        await session.StartNewGameAsync();
+
+        var choices = new Queue<int>([2, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, .. Enumerable.Repeat(0, 80)]);
+        var page = session.CurrentPage!;
+        while (!page.RequiresFullVersion)
+        {
+            page = await session.AdvanceAsync(page.Ending == PageEnding.Choices ? choices.Dequeue() : null);
+        }
+
+        Assert.Contains(page.Blocks, b => b.Text.Contains("Koniec rozdziału czwartego", StringComparison.Ordinal));
+        await Assert.ThrowsAsync<FullVersionRequiredException>(() => session.AdvanceAsync(null));
+
+        // Zapis zostaje na ostatniej darmowej stronie — po zakupie gra rusza stąd dalej.
+        var resumed = CreateSession();
+        await resumed.InitializeAsync();
+        Assert.True((await resumed.ContinueSavedGameAsync()).RequiresFullVersion);
+
+        _fullVersion.IsUnlocked = true;
+        var next = await resumed.AdvanceAsync(null);
+        Assert.Contains(next.Blocks, b => b.Kind == StoryBlockKind.Chapter && b.Text == "Rozdział piąty");
+    }
+
+    private sealed class FakeFullVersion : IFullVersion
+    {
+        public bool IsUnlocked { get; set; }
     }
 
     private sealed class FakeAssets : IStoryAssetSource

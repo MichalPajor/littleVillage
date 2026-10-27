@@ -64,6 +64,12 @@ public static class MauiProgram
         services.AddSingleton<IMessenger>(WeakReferenceMessenger.Default);
         services.AddSingleton(Preferences.Default);
         services.AddSingleton<IThemeService, ThemeService>();
+#if DEBUG
+        services.AddSingleton<IFullVersionStore, DebugFullVersionStore>();
+#else
+        services.AddSingleton<IFullVersionStore, PlayFullVersionStore>();
+#endif
+        services.AddSingleton<IFullVersion>(provider => provider.GetRequiredService<IFullVersionStore>());
         return services;
     }
 

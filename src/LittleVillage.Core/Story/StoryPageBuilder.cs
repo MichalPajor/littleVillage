@@ -21,6 +21,9 @@ internal sealed class StoryPageBuilder(string? initialBackground)
     /// <summary>Czy tobołek ma się zmienić po cichu (tag <c># nowy_tobolek</c>).</summary>
     public bool ResetsInventory { get; private set; }
 
+    /// <summary>Czy za tą stroną zaczyna się pełna wersja (tag <c># pelna_wersja</c>).</summary>
+    public bool RequiresFullVersion { get; private set; }
+
     public void AddLine(string? text, IEnumerable<string>? rawTags)
     {
         foreach (var tag in (rawTags ?? []).Select(StoryTag.Parse))
@@ -62,7 +65,8 @@ internal sealed class StoryPageBuilder(string? initialBackground)
             BackgroundKey,
             ending == PageEnding.Choices ? Question ?? defaultQuestion : null,
             alreadyRevealed,
-            ResetsInventory);
+            ResetsInventory,
+            RequiresFullVersion);
     }
 
     private void ApplyTag(StoryTag tag)
@@ -96,6 +100,9 @@ internal sealed class StoryPageBuilder(string? initialBackground)
                 break;
             case StoryTag.NewInventory:
                 ResetsInventory = true;
+                break;
+            case StoryTag.FullVersion:
+                RequiresFullVersion = true;
                 break;
             case StoryTag.Reveal when tag.Value is not null:
                 _pendingReveals.AddRange(RevealList.Split(tag.Value));

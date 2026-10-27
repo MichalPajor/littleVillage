@@ -321,6 +321,53 @@
                 </Grid>
             </controls:InkFrame>
         </Grid>
+
+        <!-- ===== Pełna wersja (nakładka na końcu darmowej części) ===== -->
+        <Grid Grid.RowSpan="2" IsVisible="{Binding IsFullVersionOpen}">
+            <BoxView Color="{StaticResource Scrim}">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding CloseFullVersionCommand}" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+
+            <controls:InkFrame
+                Margin="24,72"
+                FrameBackgroundColor="{DynamicResource PanelSolid}"
+                MaximumWidthRequest="420"
+                VerticalOptions="Center">
+                <Grid Padding="22,26,18,24" RowDefinitions="Auto,Auto,Auto" RowSpacing="0">
+
+                    <Label Text="Pełna wersja" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
+                    <controls:SketchIconButton
+                        HorizontalOptions="End"
+                        VerticalOptions="Start"
+                        FaceSize="40,40"
+                        IconSize="20"
+                        Icon="ic_close.png"
+                        StrokeThickness="3"
+                        ShadowOffset="3"
+                        Command="{Binding CloseFullVersionCommand}"
+                        SemanticProperties.Description="Zamknij" />
+
+                    <controls:ThemedImage Grid.Row="1" Source="decor_underline.png" WidthRequest="150" HeightRequest="8" Aspect="Fill" HorizontalOptions="Start" />
+
+                    <VerticalStackLayout Grid.Row="2" Margin="0,18,0,0" Spacing="16">
+                        <controls:StoryTextLabel Style="{StaticResource StoryParagraph}" StoryText="Tu kończy się darmowa część opowieści. Dalsze losy Zapadliny – rozdziały od piątego do dwudziestego i wszystkie zakończenia – czekają w pełnej wersji." />
+                        <Label Style="{StaticResource Hint}" LineHeight="1.35" Text="Płacisz raz – bez reklam i bez abonamentu. Zakup zostaje na Twoim koncie Google, także po ponownej instalacji gry." />
+                        <controls:SketchTextButton
+                            Margin="0,6,0,0"
+                            Text="{Binding BuyText}"
+                            Command="{Binding BuyFullVersionCommand}"
+                            SemanticProperties.Description="Kup pełną wersję" />
+                        <controls:SketchTextButton
+                            Text="Przywróć zakup"
+                            CornerRadius="10,15,16,11"
+                            Command="{Binding RestoreFullVersionCommand}"
+                            SemanticProperties.Description="Przywróć wcześniejszy zakup pełnej wersji" />
+                    </VerticalStackLayout>
+                </Grid>
+            </controls:InkFrame>
+        </Grid>
     </Grid>
 
 </views:BasePage>

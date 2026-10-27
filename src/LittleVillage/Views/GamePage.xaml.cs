@@ -57,6 +57,12 @@ public partial class GamePage : BasePage
             return true;
         }
 
+        if (_viewModel.IsFullVersionOpen)
+        {
+            _viewModel.CloseFullVersionCommand.Execute(null);
+            return true;
+        }
+
         return base.OnBackButtonPressed();
     }
 

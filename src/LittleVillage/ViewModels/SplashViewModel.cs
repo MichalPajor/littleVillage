@@ -9,6 +9,7 @@ public sealed class SplashViewModel(
     IGameSession session,
     INavigationService navigation,
     IDialogService dialogs,
+    IFullVersionStore store,
     ILogger<SplashViewModel> logger) : ViewModelBase
 {
     /// <summary>Minimalny czas wyświetlania — by animacja wejścia zdążyła wybrzmieć.</summary>
@@ -25,6 +26,10 @@ public sealed class SplashViewModel(
 
         _started = true;
         IsBusy = true;
+
+        // Po cichu, w tle: zakup z innego telefonu albo sprzed reinstalacji, zwrot pieniędzy.
+        _ = store.RestoreAsync();
+
         try
         {
             await Task.WhenAll(session.InitializeAsync(), Task.Delay(MinimumDisplayTime));

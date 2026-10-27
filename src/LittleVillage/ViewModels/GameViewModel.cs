@@ -18,6 +18,7 @@ public sealed partial class GameViewModel(
     IDialogService dialogs,
     IMessenger messenger,
     IThemeService theme,
+    IFullVersionStore store,
     ILogger<GameViewModel> logger) : ViewModelBase
 {
     private StoryPage? _shownPage;
@@ -64,6 +65,13 @@ public sealed partial class GameViewModel(
     [ObservableProperty]
     public partial bool HasJournalEntries { get; set; }
 
+    /// <summary>Okno zakupu pełnej wersji — po ostatniej stronie darmowej części.</summary>
+    [ObservableProperty]
+    public partial bool IsFullVersionOpen { get; set; }
+
+    [ObservableProperty]
+    public partial string BuyText { get; set; } = "Kup pełną wersję";
+
     /// <summary>Tryb ciemny okien z tekstem (czarne tło, jasne litery).</summary>
     [ObservableProperty]
     public partial bool IsDarkMode { get; set; }
@@ -104,14 +112,85 @@ public sealed partial class GameViewModel(
                 return;
             }
 
-            // Zmiany z poprzedniej strony, do których gracz nie zdążył doczytać, pokazujemy teraz — na nowej stronie.
-            AnnounceInventoryChange();
-            // Zmiany z nowej strony pokaże widok, gdy gracz doczyta do końca strony (albo do akapitu z tagiem # tobolek).
-            Show(await session.AdvanceAsync(SelectedChoice?.Choice.Index));
+            if (_shownPage is { RequiresFullVersion: true } && !store.IsUnlocked)
+            {
+                await OpenFullVersionAsync();
+                return;
+            }
+
+            await GoOnAsync();
+        }
+        catch (FullVersionRequiredException)
+        {
+            await OpenFullVersionAsync();
         }
         catch (Exception exception)
         {
             logger.LogError(exception, "Błąd podczas przechodzenia dalej w fabule.");
+            await dialogs.AlertAsync("Coś poszło nie tak", exception.Message);
+        }
+    }
+
+    private async Task GoOnAsync()
+    {
+        // Zmiany z poprzedniej strony, do których gracz nie zdążył doczytać, pokazujemy teraz — na nowej stronie.
+        AnnounceInventoryChange();
+        // Zmiany z nowej strony pokaże widok, gdy gracz doczyta do końca strony (albo do akapitu z tagiem # tobolek).
+        Show(await session.AdvanceAsync(SelectedChoice?.Choice.Index));
+    }
+
+    private async Task OpenFullVersionAsync()
+    {
+        IsFullVersionOpen = true;
+        if (await store.GetPriceAsync() is { } price)
+        {
+            BuyText = $"Kup za {price}";
+        }
+    }
+
+    [RelayCommand(AllowConcurrentExecutions = false)]
+    private async Task BuyFullVersionAsync()
+    {
+        switch (await store.BuyAsync())
+        {
+            case FullVersionPurchase.Bought:
+                await UnlockedAsync();
+                break;
+            case FullVersionPurchase.Pending:
+                await dialogs.AlertAsync("Płatność w toku", "Sklep czeka jeszcze na potwierdzenie płatności. Kiedy przejdzie, wróć tutaj i stuknij „Przywróć zakup”.");
+                break;
+            case FullVersionPurchase.Failed:
+                await dialogs.AlertAsync("Sklep niedostępny", "Nie udało się połączyć ze sklepem Google Play. Sprawdź internet i spróbuj jeszcze raz.");
+                break;
+        }
+    }
+
+    [RelayCommand(AllowConcurrentExecutions = false)]
+    private async Task RestoreFullVersionAsync()
+    {
+        if (await store.RestoreAsync())
+        {
+            await UnlockedAsync();
+        }
+        else
+        {
+            await dialogs.AlertAsync("Nie znaleziono zakupu", "Na tym koncie Google nie ma jeszcze pełnej wersji. Jeśli płatność dopiero co przeszła, spróbuj za chwilę.");
+        }
+    }
+
+    [RelayCommand]
+    private void CloseFullVersion() => IsFullVersionOpen = false;
+
+    private async Task UnlockedAsync()
+    {
+        IsFullVersionOpen = false;
+        try
+        {
+            await GoOnAsync();
+        }
+        catch (Exception exception)
+        {
+            logger.LogError(exception, "Błąd podczas przechodzenia dalej po zakupie pełnej wersji.");
             await dialogs.AlertAsync("Coś poszło nie tak", exception.Message);
         }
     }

@@ -56,6 +56,7 @@ public enum PageEnding
 /// (lista rozdzielona przecinkami, <see cref="RevealList"/>).
 /// </param>
 /// <param name="ResetsInventory">Tobołek zmienił się na tej stronie po cichu — bez „+ / − przedmiot”.</param>
+/// <param name="RequiresFullVersion">Ostatnia strona darmowej części — przejście dalej wymaga pełnej wersji.</param>
 public sealed record StoryPage(
     IReadOnlyList<StoryBlock> Blocks,
     IReadOnlyList<StoryChoice> Choices,
@@ -63,7 +64,8 @@ public sealed record StoryPage(
     string? BackgroundKey,
     string? Question,
     string? AlreadyRevealed = null,
-    bool ResetsInventory = false);
+    bool ResetsInventory = false,
+    bool RequiresFullVersion = false);
 
 /// <summary>Przedmiot w ekwipunku gracza.</summary>
 /// <param name="Id">Nazwa elementu listy ink, np. <c>kaganek</c>.</param>
