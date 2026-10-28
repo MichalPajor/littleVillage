@@ -2590,6 +2590,11 @@ public sealed class GameStoryTests
         Assert.True(Has(On(pages, "calun_noc"), "W Zaduszki przyniesiemy, co uprane"));
         Assert.True(Has(On(pages, "calun_noc"), "Do kuźni Antek już nie wrócił"));
         Assert.True(Has(On(pages, "swita"), "z prawą ręką wsuniętą za pas"));
+
+        // Po powrocie znad jeziora (tło calun_noc między stronami świty) świta stoi pod chałupą — odsłonięta od razu.
+        var back = On(pages, "swita").First(p => p.Blocks.Any(b => b.Text.Contains("świta stała tam, gdzie ją zostawił")));
+        var shown = back.Blocks.First(b => b.Text.Contains("świta stała tam")).Reveal;
+        Assert.Equal(["swita", "dzieci", "umarli", "leszy"], RevealList.Split(shown));
     }
 
     [Fact]
