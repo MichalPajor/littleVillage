@@ -12,4 +12,7 @@ public interface INavigationService
     Task GoToSettingsAsync();
 
     Task GoBackAsync();
+
+    /// <summary>Buduje ekrany od nowa (np. po zmianie języka) i wraca do ustawień.</summary>
+    Task ReloadAtSettingsAsync();
 }

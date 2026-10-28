@@ -3,6 +3,7 @@
     x:Class="LittleVillage.Views.MainMenuPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:res="clr-namespace:LittleVillage.Resources.Strings"
     xmlns:controls="clr-namespace:LittleVillage.Controls"
     xmlns:views="clr-namespace:LittleVillage.Views"
     xmlns:vm="clr-namespace:LittleVillage.ViewModels"
@@ -20,8 +21,8 @@
 
             <VerticalStackLayout Padding="26,30,26,28" Spacing="0">
 
-                <Label Text="{StaticResource MainMenuSubtitle}" Style="{StaticResource StoryChapter}" />
-                <Label Text="{StaticResource MainMenuTitle}" Style="{StaticResource StoryTitle}" FontSize="46" />
+                <Label Text="{x:Static res:AppResources.MainMenuSubtitle}" Style="{StaticResource StoryChapter}" />
+                <Label Text="{x:Static res:AppResources.MainMenuTitle}" Style="{StaticResource StoryTitle}" FontSize="46" />
                 <controls:ThemedImage
                     Source="decor_underline.png"
                     WidthRequest="190"
@@ -32,43 +33,43 @@
                 <!-- Menu -->
                 <VerticalStackLayout Margin="0,28,0,0" Spacing="18" IsVisible="{Binding IsMainMenuVisible}">
                     <controls:SketchTextButton
-                        Text="Nowa gra"
+                        Text="{x:Static res:AppResources.MenuNewGame}"
                         Command="{Binding NewGameCommand}"
-                        SemanticProperties.Description="Nowa gra" />
+                        SemanticProperties.Description="{x:Static res:AppResources.MenuNewGame}" />
                     <controls:SketchTextButton
-                        Text="Kontynuuj"
+                        Text="{x:Static res:AppResources.MenuContinue}"
                         CornerRadius="10,15,16,11"
                         Command="{Binding ContinueCommand}"
                         IsVisible="{Binding CanContinue}"
-                        SemanticProperties.Description="Kontynuuj zapisaną grę" />
+                        SemanticProperties.Description="{x:Static res:AppResources.MenuContinueDescription}" />
                     <controls:SketchTextButton
-                        Text="Rozdziały i zakończenia"
+                        Text="{x:Static res:AppResources.MenuStoryBook}"
                         FontSize="23"
                         CornerRadius="14,11,10,15"
                         Command="{Binding OpenStoryBookCommand}"
-                        SemanticProperties.Description="Rozdziały i zakończenia" />
+                        SemanticProperties.Description="{x:Static res:AppResources.MenuStoryBook}" />
                     <Grid ColumnDefinitions="*,*" ColumnSpacing="14">
                         <controls:SketchTextButton
-                            Text="Ustawienia"
+                            Text="{x:Static res:AppResources.MenuSettings}"
                             FontSize="17"
                             CornerRadius="12,9,14,10"
                             Command="{Binding OpenSettingsCommand}"
-                            SemanticProperties.Description="Ustawienia" />
+                            SemanticProperties.Description="{x:Static res:AppResources.MenuSettings}" />
                         <controls:SketchTextButton
                             Grid.Column="1"
-                            Text="Oceń grę"
+                            Text="{x:Static res:AppResources.MenuRate}"
                             FontSize="17"
                             CornerRadius="9,13,10,14"
                             Command="{Binding RateCommand}"
-                            SemanticProperties.Description="Oceń grę w Google Play" />
+                            SemanticProperties.Description="{x:Static res:AppResources.MenuRateDescription}" />
                     </Grid>
                 </VerticalStackLayout>
 
                 <!-- Potwierdzenie nadpisania zapisu -->
                 <VerticalStackLayout Margin="0,24,0,0" Spacing="18" IsVisible="{Binding IsConfirmingNewGame}">
-                    <Label Style="{StaticResource StoryParagraph}" Text="Zacząć od nowa? Dotychczasowa opowieść przepadnie jak ślad na mokradłach." />
-                    <controls:SketchTextButton Text="Tak, od nowa" Command="{Binding ConfirmNewGameCommand}" />
-                    <controls:SketchTextButton Text="Nie" CornerRadius="10,15,16,11" Command="{Binding CancelNewGameCommand}" />
+                    <Label Style="{StaticResource StoryParagraph}" Text="{x:Static res:AppResources.NewGameConfirm}" />
+                    <controls:SketchTextButton Text="{x:Static res:AppResources.NewGameYes}" Command="{Binding ConfirmNewGameCommand}" />
+                    <controls:SketchTextButton Text="{x:Static res:AppResources.No}" CornerRadius="10,15,16,11" Command="{Binding CancelNewGameCommand}" />
                 </VerticalStackLayout>
 
             </VerticalStackLayout>

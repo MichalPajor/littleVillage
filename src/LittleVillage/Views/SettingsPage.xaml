@@ -3,6 +3,7 @@
     x:Class="LittleVillage.Views.SettingsPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:res="clr-namespace:LittleVillage.Resources.Strings"
     xmlns:controls="clr-namespace:LittleVillage.Controls"
     xmlns:views="clr-namespace:LittleVillage.Views"
     xmlns:vm="clr-namespace:LittleVillage.ViewModels"
@@ -18,7 +19,7 @@
             VerticalOptions="Center">
             <Grid Padding="22,26,18,24" RowDefinitions="Auto,Auto,Auto" RowSpacing="0">
 
-                <Label Text="Ustawienia" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
+                <Label Text="{x:Static res:AppResources.SettingsTitle}" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
                 <controls:SketchIconButton
                     HorizontalOptions="End"
                     VerticalOptions="Start"
@@ -28,18 +29,31 @@
                     StrokeThickness="3"
                     ShadowOffset="3"
                     Command="{Binding CloseCommand}"
-                    SemanticProperties.Description="Wróć do menu" />
+                    SemanticProperties.Description="{x:Static res:AppResources.BackToMenu}" />
 
                 <controls:ThemedImage Grid.Row="1" Source="decor_underline.png" WidthRequest="150" HeightRequest="8" Aspect="Fill" HorizontalOptions="Start" />
 
-                <VerticalStackLayout Grid.Row="2" Margin="0,18,0,0" Spacing="14">
+                <VerticalStackLayout Grid.Row="2" Margin="0,18,0,0" Spacing="14" IsVisible="{Binding IsSettingsListVisible}">
                     <!-- Próbka tekstu w wybranej wielkości -->
-                    <controls:StoryTextLabel Style="{StaticResource StoryParagraph}" StoryText="Od wschodu napierał las – stary, iglasty i tak gęsty, że i za dnia drzewa rzucały głęboki, chłodny cień." />
+                    <controls:StoryTextLabel Style="{StaticResource StoryParagraph}" StoryText="{x:Static res:AppResources.TextSample}" />
                     <controls:SketchTextButton Text="{Binding TextSizeLabel}" FontSize="22" Command="{Binding ChangeTextSizeCommand}" />
 
-                    <Label Margin="0,10,0,0" Style="{StaticResource Hint}" Text="Tło przesuwa się lekko, kiedy przechylasz telefon." />
+                    <Label Margin="0,10,0,0" Style="{StaticResource Hint}" Text="{x:Static res:AppResources.ParallaxHint}" />
                     <controls:SketchTextButton Text="{Binding ParallaxLabel}" FontSize="22" CornerRadius="10,15,16,11" Command="{Binding ToggleParallaxCommand}" />
+
+                    <controls:SketchTextButton Margin="0,10,0,0" Text="{Binding LanguageLabel}" FontSize="22" CornerRadius="14,11,10,15" Command="{Binding OpenLanguagesCommand}" />
                 </VerticalStackLayout>
+
+                <!-- Wybór języka -->
+                <ScrollView Grid.Row="2" Margin="0,18,0,0" MaximumHeightRequest="460" IsVisible="{Binding IsLanguageListOpen}">
+                    <VerticalStackLayout Spacing="12" Padding="0,0,4,8" BindableLayout.ItemsSource="{Binding Languages}">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="vm:LanguageItem">
+                                <controls:SketchTextButton Text="{Binding Name}" FontSize="22" Command="{Binding Command}" />
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </VerticalStackLayout>
+                </ScrollView>
             </Grid>
         </controls:InkFrame>
     </Grid>

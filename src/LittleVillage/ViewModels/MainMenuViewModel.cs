@@ -2,6 +2,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using LittleVillage.Core.Game;
 using LittleVillage.Core.Scenes;
+using LittleVillage.Resources.Strings;
 using LittleVillage.Services;
 using Microsoft.Extensions.Logging;
 
@@ -41,7 +42,7 @@ public sealed partial class MainMenuViewModel(
         catch (Exception exception)
         {
             logger.LogError(exception, "Nie udało się przygotować menu.");
-            await dialogs.AlertAsync("Coś poszło nie tak", exception.Message);
+            await dialogs.AlertAsync(AppResources.ErrorTitle, exception.Message);
         }
     }
 
@@ -88,7 +89,7 @@ public sealed partial class MainMenuViewModel(
         catch (Exception exception)
         {
             logger.LogError(exception, "Nie udało się rozpocząć gry.");
-            await dialogs.AlertAsync("Coś poszło nie tak", exception.Message);
+            await dialogs.AlertAsync(AppResources.ErrorTitle, exception.Message);
         }
         finally
         {

@@ -4,6 +4,7 @@ using CommunityToolkit.Mvvm.Input;
 using LittleVillage.Core.Game;
 using LittleVillage.Core.Scenes;
 using LittleVillage.Core.Text;
+using LittleVillage.Resources.Strings;
 using LittleVillage.Services;
 using Microsoft.Extensions.Logging;
 
@@ -49,8 +50,8 @@ public sealed partial class StoryBookViewModel(
             var chapter = chapters[i];
             var available = chapter.Reached && (!chapter.RequiresFullVersion || store.IsUnlocked);
             Chapters.Add(new ChapterItem(
-                i == 0 ? "P" : RomanNumeral.From(i),
-                $"{chapter.Name}\n{(chapter.Reached ? chapter.Title : "? ? ?")}",
+                i == 0 ? AppResources.PrologueNumeral : RomanNumeral.From(i),
+                $"{chapter.Name}\n{(chapter.Reached ? chapter.Title : AppResources.Undiscovered)}",
                 available,
                 chapter.Id,
                 StartChapterCommand.ExecuteAsync));
@@ -60,10 +61,10 @@ public sealed partial class StoryBookViewModel(
         var endings = session.GetEndings();
         foreach (var ending in endings)
         {
-            Endings.Add(new EndingItem(ending.Discovered ? ending.Title : "? ? ?", ending.Discovered));
+            Endings.Add(new EndingItem(ending.Discovered ? ending.Title : AppResources.Undiscovered, ending.Discovered));
         }
 
-        EndingsSummary = $"Odkryte: {endings.Count(e => e.Discovered)} z {endings.Count}";
+        EndingsSummary = string.Format(AppResources.EndingsSummary, endings.Count(e => e.Discovered), endings.Count);
     }
 
     [RelayCommand(AllowConcurrentExecutions = false)]
@@ -98,12 +99,12 @@ public sealed partial class StoryBookViewModel(
         }
         catch (FullVersionRequiredException)
         {
-            await dialogs.AlertAsync("Pełna wersja", "Ten rozdział jest w pełnej wersji opowieści.");
+            await dialogs.AlertAsync(AppResources.FullVersionTitle, AppResources.ChapterInFullVersion);
         }
         catch (Exception exception)
         {
             logger.LogError(exception, "Nie udało się zacząć rozdziału {Chapter}.", chapter.Id);
-            await dialogs.AlertAsync("Coś poszło nie tak", exception.Message);
+            await dialogs.AlertAsync(AppResources.ErrorTitle, exception.Message);
         }
         finally
         {

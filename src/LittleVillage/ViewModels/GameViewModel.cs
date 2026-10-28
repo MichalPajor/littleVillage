@@ -6,6 +6,7 @@ using LittleVillage.Core.Game;
 using LittleVillage.Core.Scenes;
 using LittleVillage.Core.Story;
 using LittleVillage.Messages;
+using LittleVillage.Resources.Strings;
 using LittleVillage.Services;
 using Microsoft.Extensions.Logging;
 
@@ -77,7 +78,7 @@ public sealed partial class GameViewModel(
     public partial bool IsFullVersionOpen { get; set; }
 
     [ObservableProperty]
-    public partial string BuyText { get; set; } = "Kup pełną wersję";
+    public partial string BuyText { get; set; } = AppResources.Buy;
 
     /// <summary>„Poprzednio…” — przypomnienie po dłuższej przerwie.</summary>
     [ObservableProperty]
@@ -155,7 +156,7 @@ public sealed partial class GameViewModel(
         catch (Exception exception)
         {
             logger.LogError(exception, "Błąd podczas przechodzenia dalej w fabule.");
-            await dialogs.AlertAsync("Coś poszło nie tak", exception.Message);
+            await dialogs.AlertAsync(AppResources.ErrorTitle, exception.Message);
         }
     }
 
@@ -172,7 +173,7 @@ public sealed partial class GameViewModel(
         IsFullVersionOpen = true;
         if (await store.GetPriceAsync() is { } price)
         {
-            BuyText = $"Kup za {price}";
+            BuyText = string.Format(AppResources.BuyFor, price);
         }
     }
 
@@ -185,10 +186,10 @@ public sealed partial class GameViewModel(
                 await UnlockedAsync();
                 break;
             case FullVersionPurchase.Pending:
-                await dialogs.AlertAsync("Płatność w toku", "Sklep czeka jeszcze na potwierdzenie płatności. Kiedy przejdzie, wróć tutaj i stuknij „Przywróć zakup”.");
+                await dialogs.AlertAsync(AppResources.PaymentPendingTitle, AppResources.PaymentPendingText);
                 break;
             case FullVersionPurchase.Failed:
-                await dialogs.AlertAsync("Sklep niedostępny", "Nie udało się połączyć ze sklepem Google Play. Sprawdź internet i spróbuj jeszcze raz.");
+                await dialogs.AlertAsync(AppResources.StoreUnavailableTitle, AppResources.StoreUnavailableText);
                 break;
         }
     }
@@ -202,7 +203,7 @@ public sealed partial class GameViewModel(
         }
         else
         {
-            await dialogs.AlertAsync("Nie znaleziono zakupu", "Na tym koncie Google nie ma jeszcze pełnej wersji. Jeśli płatność dopiero co przeszła, spróbuj za chwilę.");
+            await dialogs.AlertAsync(AppResources.PurchaseNotFoundTitle, AppResources.PurchaseNotFoundText);
         }
     }
 
@@ -234,7 +235,7 @@ public sealed partial class GameViewModel(
         catch (Exception exception)
         {
             logger.LogError(exception, "Błąd podczas przechodzenia dalej po zakupie pełnej wersji.");
-            await dialogs.AlertAsync("Coś poszło nie tak", exception.Message);
+            await dialogs.AlertAsync(AppResources.ErrorTitle, exception.Message);
         }
     }
 
@@ -252,7 +253,7 @@ public sealed partial class GameViewModel(
         catch (Exception exception)
         {
             logger.LogError(exception, "Nie udało się wczytać ostatniego zapisu po śmierci.");
-            await dialogs.AlertAsync("Coś poszło nie tak", exception.Message);
+            await dialogs.AlertAsync(AppResources.ErrorTitle, exception.Message);
         }
     }
 
@@ -325,7 +326,7 @@ public sealed partial class GameViewModel(
         IsPanelCollapsed = false;
 
         EndingNote = page.Ending == PageEnding.End && session.LastEnding is { } ending
-            ? $"Zakończenie: „{ending.Title}”. Odkryte: {session.GetEndings().Count(e => e.Discovered)} z {session.GetEndings().Count}."
+            ? string.Format(AppResources.EndingNote, ending.Title, session.GetEndings().Count(e => e.Discovered), session.GetEndings().Count)
             : null;
 
         // Połowa opowieści — dobry moment na ocenę, ale tylko u tych, którzy mają pełną wersję.

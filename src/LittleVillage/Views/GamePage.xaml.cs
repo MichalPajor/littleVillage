@@ -1,6 +1,7 @@
 using CommunityToolkit.Mvvm.Messaging;
 using LittleVillage.Core.Story;
 using LittleVillage.Messages;
+using LittleVillage.Resources.Strings;
 using LittleVillage.ViewModels;
 
 namespace LittleVillage.Views;
@@ -113,7 +114,7 @@ public partial class GamePage : BasePage
             foreach (var (item, added) in change.Added.Select(i => (i, true)).Concat(change.Removed.Select(i => (i, false))))
             {
                 InventoryToastSign.Text = added ? "+" : "−";
-                InventoryToastCaption.Text = added ? "Do tobołka trafia" : "Z tobołka znika";
+                InventoryToastCaption.Text = added ? AppResources.InventoryAdded : AppResources.InventoryRemoved;
                 InventoryToastName.Text = item.Name;
                 InventoryToastName.TextDecorations = added ? TextDecorations.None : TextDecorations.Strikethrough;
 
@@ -150,7 +151,7 @@ public partial class GamePage : BasePage
             foreach (var update in change.Updates)
             {
                 InventoryToastSign.Text = "+";
-                InventoryToastCaption.Text = update.IsNewCard ? "Nowy wpis w zapiskach" : "Zapiski uzupełnione";
+                InventoryToastCaption.Text = update.IsNewCard ? AppResources.JournalNewCard : AppResources.JournalUpdated;
                 InventoryToastName.Text = update.Title;
                 InventoryToastName.TextDecorations = TextDecorations.None;
 

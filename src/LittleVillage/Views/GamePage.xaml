@@ -3,6 +3,7 @@
     x:Class="LittleVillage.Views.GamePage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:res="clr-namespace:LittleVillage.Resources.Strings"
     xmlns:controls="clr-namespace:LittleVillage.Controls"
     xmlns:story="clr-namespace:LittleVillage.Core.Story;assembly=LittleVillage.Core"
     xmlns:views="clr-namespace:LittleVillage.Views"
@@ -63,7 +64,7 @@
             StrokeThickness="4"
             CornerRadius="14,10,9,16"
             Command="{Binding OpenInventoryCommand}"
-            SemanticProperties.Description="Otwórz ekwipunek" />
+            SemanticProperties.Description="{x:Static res:AppResources.OpenInventory}" />
 
         <!-- Zapiski (bestiariusz): karty istot odsłaniane razem z fabułą -->
         <controls:SketchIconButton
@@ -78,7 +79,7 @@
             StrokeThickness="3.5"
             CornerRadius="12,14,10,13"
             Command="{Binding OpenJournalCommand}"
-            SemanticProperties.Description="Otwórz zapiski" />
+            SemanticProperties.Description="{x:Static res:AppResources.OpenJournal}" />
 
         <!-- Tryb jasny / ciemny okien z tekstem: księżyc = przełącz na ciemny, słońce = na jasny -->
         <controls:SketchIconButton
@@ -92,7 +93,7 @@
             ShadowOffset="3"
             CornerRadius="12,9,13,10"
             Command="{Binding ToggleThemeCommand}"
-            SemanticProperties.Description="Przełącz tryb jasny lub ciemny">
+            SemanticProperties.Description="{x:Static res:AppResources.ToggleTheme}">
             <controls:SketchIconButton.Style>
                 <Style TargetType="controls:SketchIconButton" BasedOn="{StaticResource SketchButtonTheme}">
                     <Setter Property="Icon" Value="ic_theme_dark.png" />
@@ -112,7 +113,7 @@
             FrameCornerRadius="6,10,0,0"
             controls:SlideAway.IsCollapsed="{Binding IsPanelCollapsed}"
             controls:SlideAway.ExtraDistance="28"
-            SemanticProperties.Description="Tekst fabuły">
+            SemanticProperties.Description="{x:Static res:AppResources.StoryTextDescription}">
 
             <ScrollView x:Name="StoryScroll" Margin="4,4,2,0">
                 <VerticalStackLayout x:Name="StoryContent" Padding="16,34,14,56" Spacing="14">
@@ -143,7 +144,7 @@
 
                     <Grid x:Name="StoryFooter" MinimumHeightRequest="76">
                         <Label
-                            Text="Wybierz, co robisz, by pójść dalej."
+                            Text="{x:Static res:AppResources.ChoiceHint}"
                             Style="{StaticResource Hint}"
                             HorizontalOptions="End"
                             VerticalOptions="Center"
@@ -159,12 +160,12 @@
                             CornerRadius="16,11,10,18"
                             Command="{Binding AdvanceCommand}"
                             IsVisible="{Binding CanAdvance}"
-                            SemanticProperties.Description="Dalej" />
+                            SemanticProperties.Description="{x:Static res:AppResources.Next}" />
                         <controls:SketchTextButton
-                            Text="Spróbuj jeszcze raz"
+                            Text="{x:Static res:AppResources.TryAgain}"
                             Command="{Binding TryAgainCommand}"
                             IsVisible="{Binding IsDeath}"
-                            SemanticProperties.Description="Wróć do ostatniego zapisu przed śmiercią" />
+                            SemanticProperties.Description="{x:Static res:AppResources.TryAgainDescription}" />
                     </Grid>
                 </VerticalStackLayout>
             </ScrollView>
@@ -185,7 +186,7 @@
             controls:SlideAway.IsCollapsed="{Binding IsPanelCollapsed}"
             controls:SlideAway.IncludeWidth="False"
             controls:SlideAway.ExtraDistance="8"
-            SemanticProperties.Description="Ukryj lub pokaż okno fabuły">
+            SemanticProperties.Description="{x:Static res:AppResources.TogglePanel}">
             <controls:SketchIconButton.Style>
                 <Style TargetType="controls:SketchIconButton" BasedOn="{StaticResource SketchButtonTheme}">
                     <Setter Property="Icon" Value="ic_panel_hide.png" />
@@ -235,7 +236,7 @@
                 VerticalOptions="Center">
                 <Grid Padding="22,26,18,24" RowDefinitions="Auto,Auto,Auto" RowSpacing="0">
 
-                    <Label Text="Zapiski" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
+                    <Label Text="{x:Static res:AppResources.JournalTitle}" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
                     <controls:SketchIconButton
                         HorizontalOptions="End"
                         VerticalOptions="Start"
@@ -245,13 +246,13 @@
                         StrokeThickness="3"
                         ShadowOffset="3"
                         Command="{Binding CloseJournalCommand}"
-                        SemanticProperties.Description="Zamknij zapiski" />
+                        SemanticProperties.Description="{x:Static res:AppResources.CloseJournal}" />
 
                     <controls:ThemedImage Grid.Row="1" Source="decor_underline.png" WidthRequest="150" HeightRequest="8" Aspect="Fill" HorizontalOptions="Start" />
 
                     <ScrollView Grid.Row="2" Margin="0,18,0,6" MaximumHeightRequest="440">
                         <VerticalStackLayout Spacing="22">
-                            <Label Text="Jeszcze nic tu nie zapisano." Style="{StaticResource Hint}" IsVisible="{Binding HasJournalEntries, Converter={StaticResource InvertedBool}}" />
+                            <Label Text="{x:Static res:AppResources.JournalEmpty}" Style="{StaticResource Hint}" IsVisible="{Binding HasJournalEntries, Converter={StaticResource InvertedBool}}" />
                             <VerticalStackLayout Spacing="22" BindableLayout.ItemsSource="{Binding JournalEntries}">
                                 <BindableLayout.ItemTemplate>
                                     <DataTemplate x:DataType="story:JournalEntry">
@@ -291,7 +292,7 @@
                 <!-- Okno dopasowuje się do liczby przedmiotów; przy długiej liście lista się przewija. -->
                 <Grid Padding="22,26,18,24" RowDefinitions="Auto,Auto,Auto" RowSpacing="0">
 
-                    <Label Text="Ekwipunek" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
+                    <Label Text="{x:Static res:AppResources.InventoryTitle}" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
                     <controls:SketchIconButton
                         HorizontalOptions="End"
                         VerticalOptions="Start"
@@ -301,13 +302,13 @@
                         StrokeThickness="3"
                         ShadowOffset="3"
                         Command="{Binding CloseInventoryCommand}"
-                        SemanticProperties.Description="Zamknij ekwipunek" />
+                        SemanticProperties.Description="{x:Static res:AppResources.CloseInventory}" />
 
                     <controls:ThemedImage Grid.Row="1" Source="decor_underline.png" WidthRequest="150" HeightRequest="8" Aspect="Fill" HorizontalOptions="Start" />
 
                     <ScrollView Grid.Row="2" Margin="0,18,0,0" MaximumHeightRequest="440">
                         <VerticalStackLayout Spacing="16">
-                            <Label Text="Twój tobołek jest pusty." Style="{StaticResource Hint}" IsVisible="{Binding HasInventoryItems, Converter={StaticResource InvertedBool}}" />
+                            <Label Text="{x:Static res:AppResources.InventoryEmpty}" Style="{StaticResource Hint}" IsVisible="{Binding HasInventoryItems, Converter={StaticResource InvertedBool}}" />
                             <VerticalStackLayout Spacing="16" BindableLayout.ItemsSource="{Binding InventoryItems}">
                                 <BindableLayout.ItemTemplate>
                                     <DataTemplate x:DataType="story:InventoryItem">
@@ -339,7 +340,7 @@
                 VerticalOptions="Center">
                 <Grid Padding="22,26,18,24" RowDefinitions="Auto,Auto,Auto" RowSpacing="0">
 
-                    <Label Text="Pełna wersja" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
+                    <Label Text="{x:Static res:AppResources.FullVersionTitle}" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
                     <controls:SketchIconButton
                         HorizontalOptions="End"
                         VerticalOptions="Start"
@@ -349,23 +350,23 @@
                         StrokeThickness="3"
                         ShadowOffset="3"
                         Command="{Binding CloseFullVersionCommand}"
-                        SemanticProperties.Description="Zamknij" />
+                        SemanticProperties.Description="{x:Static res:AppResources.Close}" />
 
                     <controls:ThemedImage Grid.Row="1" Source="decor_underline.png" WidthRequest="150" HeightRequest="8" Aspect="Fill" HorizontalOptions="Start" />
 
                     <VerticalStackLayout Grid.Row="2" Margin="0,18,0,0" Spacing="16">
-                        <controls:StoryTextLabel Style="{StaticResource StoryParagraph}" StoryText="Tu kończy się darmowa część opowieści. Dalsze losy Zapadliny – rozdziały od piątego do dwudziestego i wszystkie zakończenia – czekają w pełnej wersji." />
-                        <Label Style="{StaticResource Hint}" LineHeight="1.35" Text="Płacisz raz – bez reklam i bez abonamentu. Zakup zostaje na Twoim koncie Google, także po ponownej instalacji gry." />
+                        <controls:StoryTextLabel Style="{StaticResource StoryParagraph}" StoryText="{x:Static res:AppResources.FullVersionText}" />
+                        <Label Style="{StaticResource Hint}" LineHeight="1.35" Text="{x:Static res:AppResources.FullVersionHint}" />
                         <controls:SketchTextButton
                             Margin="0,6,0,0"
                             Text="{Binding BuyText}"
                             Command="{Binding BuyFullVersionCommand}"
-                            SemanticProperties.Description="Kup pełną wersję" />
+                            SemanticProperties.Description="{x:Static res:AppResources.Buy}" />
                         <controls:SketchTextButton
-                            Text="Przywróć zakup"
+                            Text="{x:Static res:AppResources.Restore}"
                             CornerRadius="10,15,16,11"
                             Command="{Binding RestoreFullVersionCommand}"
-                            SemanticProperties.Description="Przywróć wcześniejszy zakup pełnej wersji" />
+                            SemanticProperties.Description="{x:Static res:AppResources.RestoreDescription}" />
                     </VerticalStackLayout>
                 </Grid>
             </controls:InkFrame>
@@ -386,13 +387,13 @@
                 VerticalOptions="Center">
                 <Grid Padding="22,26,18,24" RowDefinitions="Auto,Auto,Auto" RowSpacing="0">
 
-                    <Label Text="Poprzednio…" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
+                    <Label Text="{x:Static res:AppResources.RecapTitle}" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
 
                     <controls:ThemedImage Grid.Row="1" Source="decor_underline.png" WidthRequest="150" HeightRequest="8" Aspect="Fill" HorizontalOptions="Start" />
 
                     <VerticalStackLayout Grid.Row="2" Margin="0,18,0,0" Spacing="12">
                         <Label Text="{Binding RecapChapter}" Style="{StaticResource ItemName}" />
-                        <Label Text="Ostatnie decyzje:" Style="{StaticResource Hint}" />
+                        <Label Text="{x:Static res:AppResources.RecapChoices}" Style="{StaticResource Hint}" />
                         <ScrollView MaximumHeightRequest="320">
                             <VerticalStackLayout Spacing="10" BindableLayout.ItemsSource="{Binding RecapChoices}">
                                 <BindableLayout.ItemTemplate>
@@ -404,9 +405,9 @@
                         </ScrollView>
                         <controls:SketchTextButton
                             Margin="0,8,0,0"
-                            Text="Czytaj dalej"
+                            Text="{x:Static res:AppResources.ReadOn}"
                             Command="{Binding CloseRecapCommand}"
-                            SemanticProperties.Description="Zamknij przypomnienie i czytaj dalej" />
+                            SemanticProperties.Description="{x:Static res:AppResources.ReadOnDescription}" />
                     </VerticalStackLayout>
                 </Grid>
             </controls:InkFrame>

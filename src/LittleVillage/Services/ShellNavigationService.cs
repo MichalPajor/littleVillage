@@ -12,4 +12,18 @@ public sealed class ShellNavigationService : INavigationService
     public Task GoToSettingsAsync() => Shell.Current.GoToAsync(Routes.Settings);
 
     public Task GoBackAsync() => Shell.Current.GoToAsync("..");
+
+    // Napisy z plików językowych trafiają do ekranów przy ich tworzeniu — nowy Shell, bez ekranu powitalnego.
+    public async Task ReloadAtSettingsAsync()
+    {
+        if (Application.Current?.Windows is not [var window, ..])
+        {
+            return;
+        }
+
+        var shell = new AppShell();
+        window.Page = shell;
+        await shell.GoToAsync($"//{Routes.MainMenu}", animate: false);
+        await shell.GoToAsync(Routes.Settings, animate: false);
+    }
 }

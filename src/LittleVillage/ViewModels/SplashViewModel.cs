@@ -1,4 +1,5 @@
 using LittleVillage.Core.Game;
+using LittleVillage.Resources.Strings;
 using LittleVillage.Services;
 using Microsoft.Extensions.Logging;
 
@@ -38,7 +39,7 @@ public sealed class SplashViewModel(
         catch (Exception exception)
         {
             logger.LogError(exception, "Nie udało się wczytać danych gry.");
-            await dialogs.AlertAsync("Coś poszło nie tak", $"Nie udało się wczytać opowieści.\n{exception.Message}");
+            await dialogs.AlertAsync(AppResources.ErrorTitle, $"{AppResources.LoadStoryFailed}\n{exception.Message}");
         }
         finally
         {

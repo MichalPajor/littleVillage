@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Messaging;
 using LittleVillage.Core.Game;
 using LittleVillage.Core.Persistence;
 using LittleVillage.Core.Story;
+using LittleVillage.Resources.Strings;
 using LittleVillage.Services;
 using LittleVillage.ViewModels;
 using LittleVillage.Views;
@@ -42,7 +43,8 @@ public static class MauiProgram
     /// <summary>Logika gry (LittleVillage.Core): silnik ink, zapis, sesja.</summary>
     private static IServiceCollection AddGameCore(this IServiceCollection services)
     {
-        services.AddSingleton(new InkStoryOptions());
+        // Fabryka, nie gotowy obiekt: pytanie domyślne w języku gry (ustawianym w App, już po zbudowaniu kontenera).
+        services.AddSingleton(_ => new InkStoryOptions { DefaultQuestion = AppResources.DefaultQuestion });
         services.AddSingleton<IStoryEngine>(provider =>
         {
             var engine = new InkStoryEngine(provider.GetRequiredService<InkStoryOptions>());
@@ -66,6 +68,7 @@ public static class MauiProgram
         services.AddSingleton(Preferences.Default);
         services.AddSingleton<IThemeService, ThemeService>();
         services.AddSingleton<ISettingsService, SettingsService>();
+        services.AddSingleton<ILanguageService, LanguageService>();
 #if DEBUG
         services.AddSingleton<IFullVersionStore, DebugFullVersionStore>();
 #else

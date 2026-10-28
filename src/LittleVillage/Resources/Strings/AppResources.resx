@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="GameTitle" xml:space="preserve">
+    <value>Mała wioska</value>
+    <comment>Nazwa gry (tytuł okna, ekran powitalny).</comment>
+  </data>
+  <data name="GameSubtitle" xml:space="preserve">
+    <value>Opowieść z zapomnianej wsi</value>
+  </data>
+  <data name="MainMenuSubtitle" xml:space="preserve">
+    <value>Opowieść z małej zapomnianej wsi zwanej</value>
+    <comment>Czytane razem z nazwą wsi pod spodem.</comment>
+  </data>
+  <data name="MainMenuTitle" xml:space="preserve">
+    <value>Zapadlina</value>
+    <comment>Nazwa wsi — w słowniczku.</comment>
+  </data>
+  <data name="MenuNewGame" xml:space="preserve">
+    <value>Nowa gra</value>
+  </data>
+  <data name="MenuContinue" xml:space="preserve">
+    <value>Kontynuuj</value>
+  </data>
+  <data name="MenuContinueDescription" xml:space="preserve">
+    <value>Kontynuuj zapisaną grę</value>
+    <comment>Opis dla czytnika ekranu.</comment>
+  </data>
+  <data name="MenuStoryBook" xml:space="preserve">
+    <value>Rozdziały i zakończenia</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="MenuRate" xml:space="preserve">
+    <value>Oceń grę</value>
+  </data>
+  <data name="MenuRateDescription" xml:space="preserve">
+    <value>Oceń grę w Google Play</value>
+    <comment>Opis dla czytnika ekranu.</comment>
+  </data>
+  <data name="NewGameConfirm" xml:space="preserve">
+    <value>Zacząć od nowa? Dotychczasowa opowieść przepadnie jak ślad na mokradłach.</value>
+  </data>
+  <data name="NewGameYes" xml:space="preserve">
+    <value>Tak, od nowa</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Zamknij</value>
+  </data>
+  <data name="BackToMenu" xml:space="preserve">
+    <value>Wróć do menu</value>
+    <comment>Opis dla czytnika ekranu (przycisk X).</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Coś poszło nie tak</value>
+  </data>
+  <data name="LoadStoryFailed" xml:space="preserve">
+    <value>Nie udało się wczytać opowieści.</value>
+  </data>
+  <data name="OpenInventory" xml:space="preserve">
+    <value>Otwórz ekwipunek</value>
+    <comment>Opis dla czytnika ekranu.</comment>
+  </data>
+  <data name="OpenJournal" xml:space="preserve">
+    <value>Otwórz zapiski</value>
+    <comment>Opis dla czytnika ekranu.</comment>
+  </data>
+  <data name="ToggleTheme" xml:space="preserve">
+    <value>Przełącz tryb jasny lub ciemny</value>
+    <comment>Opis dla czytnika ekranu.</comment>
+  </data>
+  <data name="StoryTextDescription" xml:space="preserve">
+    <value>Tekst fabuły</value>
+    <comment>Opis dla czytnika ekranu.</comment>
+  </data>
+  <data name="TogglePanel" xml:space="preserve">
+    <value>Ukryj lub pokaż okno fabuły</value>
+    <comment>Opis dla czytnika ekranu.</comment>
+  </data>
+  <data name="ChoiceHint" xml:space="preserve">
+    <value>Wybierz, co robisz, by pójść dalej.</value>
+  </data>
+  <data name="DefaultQuestion" xml:space="preserve">
+    <value>Co robisz?</value>
+    <comment>Pytanie nad wyborami, gdy scena nie ma własnego.</comment>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Dalej</value>
+    <comment>Opis dla czytnika ekranu (strzałka).</comment>
+  </data>
+  <data name="TryAgain" xml:space="preserve">
+    <value>Spróbuj jeszcze raz</value>
+    <comment>Po śmierci bohatera.</comment>
+  </data>
+  <data name="TryAgainDescription" xml:space="preserve">
+    <value>Wróć do ostatniego zapisu przed śmiercią</value>
+    <comment>Opis dla czytnika ekranu.</comment>
+  </data>
+  <data name="EndingNote" xml:space="preserve">
+    <value>Zakończenie: „{0}”. Odkryte: {1} z {2}.</value>
+    <comment>{0} tytuł zakończenia, {1} odkryte, {2} wszystkie.</comment>
+  </data>
+  <data name="JournalTitle" xml:space="preserve">
+    <value>Zapiski</value>
+  </data>
+  <data name="CloseJournal" xml:space="preserve">
+    <value>Zamknij zapiski</value>
+    <comment>Opis dla czytnika ekranu.</comment>
+  </data>
+  <data name="JournalEmpty" xml:space="preserve">
+    <value>Jeszcze nic tu nie zapisano.</value>
+  </data>
+  <data name="JournalNewCard" xml:space="preserve">
+    <value>Nowy wpis w zapiskach</value>
+    <comment>Karteczka przy księdze.</comment>
+  </data>
+  <data name="JournalUpdated" xml:space="preserve">
+    <value>Zapiski uzupełnione</value>
+    <comment>Karteczka przy księdze.</comment>
+  </data>
+  <data name="InventoryTitle" xml:space="preserve">
+    <value>Ekwipunek</value>
+  </data>
+  <data name="CloseInventory" xml:space="preserve">
+    <value>Zamknij ekwipunek</value>
+    <comment>Opis dla czytnika ekranu.</comment>
+  </data>
+  <data name="InventoryEmpty" xml:space="preserve">
+    <value>Twój tobołek jest pusty.</value>
+  </data>
+  <data name="InventoryAdded" xml:space="preserve">
+    <value>Do tobołka trafia</value>
+    <comment>Karteczka przy tobołku, pod spodem nazwa przedmiotu.</comment>
+  </data>
+  <data name="InventoryRemoved" xml:space="preserve">
+    <value>Z tobołka znika</value>
+    <comment>Karteczka przy tobołku, pod spodem nazwa przedmiotu.</comment>
+  </data>
+  <data name="FullVersionTitle" xml:space="preserve">
+    <value>Pełna wersja</value>
+  </data>
+  <data name="FullVersionText" xml:space="preserve">
+    <value>Tu kończy się darmowa część opowieści. Dalsze losy Zapadliny – rozdziały od piątego do dwudziestego i wszystkie zakończenia – czekają w pełnej wersji.</value>
+  </data>
+  <data name="FullVersionHint" xml:space="preserve">
+    <value>Płacisz raz – bez reklam i bez abonamentu. Zakup zostaje na Twoim koncie Google, także po ponownej instalacji gry.</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Kup pełną wersję</value>
+  </data>
+  <data name="BuyFor" xml:space="preserve">
+    <value>Kup za {0}</value>
+    <comment>{0} cena ze sklepu, np. 19,99 zł.</comment>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Przywróć zakup</value>
+  </data>
+  <data name="RestoreDescription" xml:space="preserve">
+    <value>Przywróć wcześniejszy zakup pełnej wersji</value>
+    <comment>Opis dla czytnika ekranu.</comment>
+  </data>
+  <data name="PaymentPendingTitle" xml:space="preserve">
+    <value>Płatność w toku</value>
+  </data>
+  <data name="PaymentPendingText" xml:space="preserve">
+    <value>Sklep czeka jeszcze na potwierdzenie płatności. Kiedy przejdzie, wróć tutaj i stuknij „Przywróć zakup”.</value>
+  </data>
+  <data name="StoreUnavailableTitle" xml:space="preserve">
+    <value>Sklep niedostępny</value>
+  </data>
+  <data name="StoreUnavailableText" xml:space="preserve">
+    <value>Nie udało się połączyć ze sklepem Google Play. Sprawdź internet i spróbuj jeszcze raz.</value>
+  </data>
+  <data name="PurchaseNotFoundTitle" xml:space="preserve">
+    <value>Nie znaleziono zakupu</value>
+  </data>
+  <data name="PurchaseNotFoundText" xml:space="preserve">
+    <value>Na tym koncie Google nie ma jeszcze pełnej wersji. Jeśli płatność dopiero co przeszła, spróbuj za chwilę.</value>
+  </data>
+  <data name="ChapterInFullVersion" xml:space="preserve">
+    <value>Ten rozdział jest w pełnej wersji opowieści.</value>
+  </data>
+  <data name="RecapTitle" xml:space="preserve">
+    <value>Poprzednio…</value>
+  </data>
+  <data name="RecapChoices" xml:space="preserve">
+    <value>Ostatnie decyzje:</value>
+  </data>
+  <data name="ReadOn" xml:space="preserve">
+    <value>Czytaj dalej</value>
+  </data>
+  <data name="ReadOnDescription" xml:space="preserve">
+    <value>Zamknij przypomnienie i czytaj dalej</value>
+    <comment>Opis dla czytnika ekranu.</comment>
+  </data>
+  <data name="StoryBookTitle" xml:space="preserve">
+    <value>Księga opowieści</value>
+  </data>
+  <data name="ChaptersHeader" xml:space="preserve">
+    <value>Rozdziały</value>
+  </data>
+  <data name="ChaptersHint" xml:space="preserve">
+    <value>Rozdział, do którego dotarła już Twoja opowieść, możesz zacząć od nowa.</value>
+  </data>
+  <data name="EndingsHeader" xml:space="preserve">
+    <value>Zakończenia</value>
+  </data>
+  <data name="EndingsSummary" xml:space="preserve">
+    <value>Odkryte: {0} z {1}</value>
+    <comment>{0} odkryte, {1} wszystkie.</comment>
+  </data>
+  <data name="Undiscovered" xml:space="preserve">
+    <value>? ? ?</value>
+    <comment>Nieodkryty rozdział lub zakończenie.</comment>
+  </data>
+  <data name="PrologueNumeral" xml:space="preserve">
+    <value>P</value>
+    <comment>Znak przy prologu zamiast cyfry rzymskiej.</comment>
+  </data>
+  <data name="ChapterConfirm" xml:space="preserve">
+    <value>Zacząć od tego rozdziału? Zapisana opowieść przepadnie jak ślad na mokradłach.</value>
+  </data>
+  <data name="ChapterYes" xml:space="preserve">
+    <value>Tak, od tego rozdziału</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="TextSample" xml:space="preserve">
+    <value>Od wschodu napierał las – stary, iglasty i tak gęsty, że i za dnia drzewa rzucały głęboki, chłodny cień.</value>
+    <comment>Próbka tekstu w wybranej wielkości.</comment>
+  </data>
+  <data name="TextSizeSmall" xml:space="preserve">
+    <value>Tekst: mały</value>
+  </data>
+  <data name="TextSizeMedium" xml:space="preserve">
+    <value>Tekst: średni</value>
+  </data>
+  <data name="TextSizeLarge" xml:space="preserve">
+    <value>Tekst: duży</value>
+  </data>
+  <data name="ParallaxHint" xml:space="preserve">
+    <value>Tło przesuwa się lekko, kiedy przechylasz telefon.</value>
+  </data>
+  <data name="ParallaxOn" xml:space="preserve">
+    <value>Ruch tła: tak</value>
+  </data>
+  <data name="ParallaxOff" xml:space="preserve">
+    <value>Ruch tła: nie</value>
+  </data>
+  <data name="LanguageButton" xml:space="preserve">
+    <value>Język: {0}</value>
+    <comment>{0} nazwa języka albo „jak w telefonie”.</comment>
+  </data>
+  <data name="LanguageDevice" xml:space="preserve">
+    <value>jak w telefonie</value>
+    <comment>Język wybierany automatycznie.</comment>
+  </data>
+  <data name="LanguageDeviceOption" xml:space="preserve">
+    <value>Jak w telefonie</value>
+    <comment>Pierwsza pozycja na liście języków.</comment>
+  </data>
+</root>
