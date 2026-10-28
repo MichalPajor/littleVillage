@@ -97,7 +97,8 @@ Wtedy bardzo daleko, za borem, za wszystkimi drzewami, ktoś zaczął kołysank�
         Gwoździe u wszystkich były czyste i suche. Tylko pod jednym, na białej koszulce, ciągnęła się brązowa smuga rdzy. # dalej
     }
     -> dobry_wybor
-*   { zastaw_u_leszego == zastaw_cien || pytanie_do_leszego == gdzie_marysia } [Wziąć tę, która rzuca cień.]
+// Cień oddany w zastaw widać od razu (pułapka); po pytaniu „gdzie Marysia” Jaromir pamięta tylko, że dzieci Pana Lasu cienia nie mają.
+*   { zastaw_u_leszego == zastaw_cien || pytanie_do_leszego == gdzie_marysia } [{zastaw_u_leszego == zastaw_cien:Wziąć tę, która rzuca cień.|Poszukać cienia – dzieci Pana Lasu go nie mają.}]
     ~ znak_rozpoznania = po_cieniu
     { zastaw_u_leszego == zastaw_cien:
         Jaromir podszedł prosto do tej, która rzucała cień. Był tak pewien, że nie spojrzał drugi raz. Dopiero kiedy wziął dziewczynkę na ręce, zobaczył, że cień za nią nie poszedł. Został na porostach – szeroki w ramionach, długi, jego własny. # dalej
