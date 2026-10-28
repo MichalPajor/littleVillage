@@ -54,15 +54,6 @@ def pedy(x, base, h=18, k=1.0):
             f'<path d="M{x} {t:.1f}v-5" fill="none" stroke-width="1"/>')
 
 
-def krowa(x, y, k=1.0, facing=1):
-    f = facing
-    P = lambda dx, dy: f"{x + dx * f * k:.1f} {y + dy * k:.1f}"
-    return (f'<g stroke-width="1.8"><path d="M{P(-22, -14)}C{P(-24, -28)} {P(14, -30)} {P(18, -20)}L{P(28, -24)}L{P(32, -16)}L{P(24, -10)}C{P(18, -6)} {P(-16, -6)} {P(-22, -14)}Z" fill="#FFFFFF"/>'
-            f'<path d="M{P(-8, -24)}c4 4 10 4 12 -2M{P(-18, -18)}c3 3 7 2 8 -2" fill="none" stroke-width="1"/>'
-            f'<path d="M{P(-18, -10)}V{y:.1f}M{P(-12, -9)}V{y:.1f}M{P(10, -9)}V{y:.1f}M{P(16, -10)}V{y:.1f}" fill="none" stroke-width="{2.6 * k:.1f}"/>'
-            f'<path d="M{P(27, -24)}l-2 -5M{P(30, -23)}l3 -4" fill="none" stroke-width="1.2"/><path d="M{P(-22, -16)}c-6 2 -6 10 -4 14" fill="none" stroke-width="1.2"/></g>')
-
-
 def ogien(x, base, s=1.0):
     return (plomyk(x - 6 * s, base, 1.1 * s) + plomyk(x + 5 * s, base - 2 * s, 1.3 * s) + plomyk(x, base - 6 * s, 1.6 * s))
 
@@ -140,7 +131,7 @@ K["bryczka"] = (220, 270, 170, 90, group([kon(352, 346, 1.0, 1), '<path d="M236 
 K["chlopi"] = (10, 320, 220, 100, group([staruszek(40, 420, 1.2), postacie.man(80, 420, 1.15, hat=False), postacie.man(120, 422, 1.1, hat=True, bundle=True),
                                          postacie.man(160, 420, 1.05, hat=True), postacie.woman(196, 420, 1.0)]))
 K["zeszyt"] = (262, 294, 20, 14, group(['<path d="M264 304l6 -6l8 2l-6 6z" fill="#FFFFFF" stroke-width="1.2"/>']))
-K["krowa"] = (0, 0, 390, 440, group(['<rect width="390" height="440" fill="#EDEBE6" stroke="none" opacity="0.7"/>', krowa(230, 404, 2.2, -1), postacie.man(140, 404, 1.4, hat=True, arm="l30 -2")]))
+K["krowa"] = (0, 0, 390, 440, group(['<rect width="390" height="440" fill="#EDEBE6" stroke="none" opacity="0.7"/>', postacie.krowa(275, 404, 1.2, -1, lead=(188, 335)), postacie.man(140, 404, 1.4, hat=True, arm="l34 4")]))
 K["swierk"] = (0, 0, 390, 440, group(['<rect width="390" height="440" fill="#EDEBE6" stroke="none" opacity="0.7"/>',
                                       '<g transform="rotate(-38 200 410)">' + spruce(200, 410, 220, 70) + '</g>', postacie.man(110, 412, 1.2, hat=False)]))
 K["noc"] = (0, 0, 390, 440, group([NOC, postacie.man(150, 404, 1.2, hat=False), postacie.man(200, 404, 1.2, hat=True),
@@ -218,7 +209,7 @@ P["zeszyt_plonie"] = (270, 260, 90, 90, group([f'<path d="M{x} {y}l5 -2l3 4l-5 2
 P["komornik"] = (0, 0, 390, 440, group(['<rect width="390" height="440" fill="#EDEBE6" stroke="none" opacity="0.6"/>', '<path d="M120 400H280L270 370H130Z" fill="#FFFFFF" stroke-width="2"/>',
                                         '<circle cx="148" cy="404" r="14" fill="none" stroke-width="2.4"/><circle cx="254" cy="404" r="14" fill="none" stroke-width="2.4"/>',
                                         '<path d="M150 370c0 -14 20 -14 20 0M180 370c0 -14 20 -14 20 0M210 370c0 -14 20 -14 20 0" fill="url(#hatch)" stroke-width="1.6"/>',
-                                        krowa(330, 410, 1.2, -1), postacie.man(80, 410, 1.2, hat=True)]))
+                                        postacie.krowa(330, 410, 1.0, -1, lead=(276, 372)), postacie.man(80, 410, 1.2, hat=True)]))
 P["przod"] = (0, 422, 390, 422, group(PRZOD))
 POG = ["tlo", "las", "zgliszcza", "ludzie", "zeszyt_plonie", "komornik", "przod"]
 P_REVEAL = {"las": "las", "zeszyt_plonie": "zeszyt_plonie", "komornik": "komornik"}

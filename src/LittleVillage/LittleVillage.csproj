@@ -56,6 +56,10 @@
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
 		<!-- Zakup pełnej wersji w Google Play (Play Billing Library 8). -->
 		<PackageReference Include="Plugin.InAppBilling" Version="10.0.0" />
+		<!-- Okno oceny Google Play (In-App Review) po ukończeniu gry. -->
+		<PackageReference Include="Xamarin.Google.Android.Play.Review" Version="2.0.2.10" />
+		<!-- Review ciągnie androidx.fragment 1.9 (z wbudowanym ktx); stary Fragment.Ktx 1.8 z MAUI dublowałby klasy (D8). -->
+		<PackageReference Include="Xamarin.AndroidX.Fragment.Ktx" Version="1.9.0" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -3,7 +3,7 @@
      Współrzędne płótna 390×844, viewBox = położenie warstwy. Animacje: Resources/Raw/backgrounds.json. -->
 <svg xmlns="http://www.w3.org/2000/svg" width="86" height="100" viewBox="72 330 86 100">
 <defs>
-<filter id="ink" filterUnits="userSpaceOnUse" x="-60" y="-60" width="520" height="980">
+<filter id="ink" filterUnits="userSpaceOnUse" x="-200" y="-60" width="800" height="980">
 <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
 <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
 </filter>

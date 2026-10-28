@@ -1771,7 +1771,7 @@
         {"image": "bg_dab_swiatlo.png", "x": 80, "y": 220, "width": 140, "height": 80, "animation": {"type": "flicker", "amplitude": 0.3, "duration": 2600}},
         {"image": "bg_dab_ptaki.png", "x": 94, "y": 74, "width": 84, "height": 32, "animation": {"type": "wander", "amplitude": 36, "flap": 0.55, "duration": 6200, "phase": 0.0}},
         {"image": "bg_dab_liscie.png", "x": 39, "y": 120, "width": 201, "height": 103, "animation": {"type": "rise", "amplitude": -120, "duration": 6000, "phase": 0.0, "anchorX": 0.502, "anchorY": 0.971}},
-        {"image": "bg_dab_krowy.png", "x": 10, "y": 280, "width": 90, "height": 51, "animation": {"type": "sway", "amplitude": 3, "duration": 3000, "anchorX": 0.3, "anchorY": 0.98}},
+        {"image": "bg_dab_krowy.png", "x": 10, "y": 280, "width": 110, "height": 54, "animation": {"type": "sway", "amplitude": 1, "duration": 4000, "anchorX": 0.3, "anchorY": 1.0}},
         {"image": "bg_dab_znak.png", "x": 140, "y": 236, "width": 24, "height": 30, "animation": {"type": "flicker", "amplitude": 0.6, "duration": 1800}, "revealOn": "znak", "fadeDuration": 2000},
         {"image": "bg_dab_chlopcy.png", "x": 200, "y": 309, "width": 90, "height": 111, "animation": {"type": "bob", "amplitude": 0.6, "duration": 1400, "anchorX": 0.5, "anchorY": 0.991}, "revealOn": "chlopcy", "hideOn": "odchodzi", "fadeDuration": 300},
         {"image": "bg_dab_jaromir_sam.png", "x": 200, "y": 309, "width": 50, "height": 110, "revealOn": "odchodzi", "fadeDuration": 300},

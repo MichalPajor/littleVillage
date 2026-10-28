@@ -1812,7 +1812,7 @@ public sealed class GameStoryTests
         Assert.Equal("Rozdział dziesiąty", winter.Blocks[0].Text);
         Assert.Equal("Narodziny", winter.Blocks.Single(b => b.Kind == StoryBlockKind.Title).Text);
         Assert.Equal("Gromnica", engine.GetInventory().Single(i => i.Id == "gromnica").Name);
-        Assert.True(Has(On(pages, "przyzba_swit"), "po prababce Mariannie"));
+        Assert.True(Has(On(pages, "przyzba_swit"), "ślubowała ją Najświętszej Panience"));
         Assert.Contains(On(pages, "noc_mamun")[0].Blocks, b => b.Reveal == "mamuny");
         Assert.True(Has(On(pages, "chrzest"), "Chrzestnym był Antek"));
         Assert.Empty(On(pages, "odmieniec"));

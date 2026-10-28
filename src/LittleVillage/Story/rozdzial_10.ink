@@ -43,7 +43,7 @@ Czekali całą noc. Jaromir słyszał krzyki Hanki, a każdy wbijał mu się w p
 – Twoja matka krzyczała tak samo. A potem byłeś ty.
 Kiedy nad borem pojaśniało niebo, z izby dobiegł płacz – cienki, gniewny, zupełnie nowy. # pokaz: swit
 – Dziewucha – powiedziała babka, stając w progu. Wycierała ręce w fartuch i pierwszy raz, odkąd Jaromir ją znał, uśmiechała się szeroko. – Zdrowa jak rydz. # pokaz: babka
-Dali jej na imię Maria – Marysia – po prababce Mariannie, żonie dziadka Maćka. # dalej
+Dali jej na imię Maria – Marysia – bo kiedy było najgorzej, Hanka ślubowała ją Najświętszej Panience. # dalej
 -> kolyska
 
 = kolyska

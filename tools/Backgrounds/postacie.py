@@ -153,3 +153,80 @@ def fluff(x, y, k=1.0):
     rays = "".join(f'M{x:.1f} {y - 6 * k:.1f}l{dx * k:.1f} {-5 * k:.1f}' for dx in (-5, -2.5, 0, 2.5, 5))
     return (f'<path d="M{x:.1f} {y:.1f}V{y - 6 * k:.1f}{rays}" fill="none" stroke-width="0.9"/>'
             f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{1.3 * k:.1f}" fill="#000000" stroke="none"/>')
+
+
+# ---------- Krowa (bok, czarno-biala lacia) ----------
+# Ksztalty w lokalnym ukladzie: przod (glowa) w strone +x, 0 = ziemia pod kopytami; ~95 jednostek dlugosci i ~72 do kłębu przy k=1.
+# Tylko polecenia bezwzgledne (M L C Z) — _krowa_d przelicza pary liczb na plotno (z odbiciem dla facing=-1).
+_KROWA = {
+    "nogi_dalsze": "M8 -40 L17 -40 L16 -22 L15.5 -16 L15 -6 L16 0 L8.5 0 L9.5 -6 L9 -16 L8.5 -22 Z"
+                   "M-22 -46 C-21 -38 -24 -32 -28 -27 L-29 -18 L-29 -6 L-28 0 L-35 0 L-35 -6 L-35 -16 C-37 -20 -38 -26 -39 -32 Z",
+    "ogon": "M-44 -66 C-49 -62 -50 -46 -48 -20",
+    "kita": "M-48 -22 C-51 -19 -51 -12 -48 -9 C-46 -12 -45 -18 -48 -22 Z",
+    "tulow": "M-44 -66 C-30 -70 -12 -65 2 -67 C12 -68 20 -73 28 -71 C36 -69 42 -64 47 -58 L47 -48 C44 -42 38 -38 34 -34 "
+             "C30 -29 26 -30 22 -34 C14 -30 -4 -27 -20 -32 C-24 -34 -27 -38 -28 -41 C-36 -42 -45 -46 -47 -54 C-48 -60 -47 -64 -44 -66 Z",
+    "laty": "M18 -69 C24 -70 30 -68 31 -62 C33 -58 29 -55 30 -51 C28 -46 22 -48 19 -45 C14 -43 10 -48 12 -53 C9 -56 12 -60 11 -64 C13 -67 15 -68 18 -69 Z"
+            "M-22 -64 C-16 -65 -8 -65 -4 -62 C-1 -58 -6 -55 -3 -50 C-4 -44 -11 -46 -14 -41 C-19 -38 -24 -43 -23 -48 C-28 -51 -27 -57 -25 -60 C-26 -62 -24 -64 -22 -64 Z"
+            "M-43 -63 C-39 -65 -34 -63 -35 -59 C-31 -56 -35 -51 -38 -52 C-41 -48 -46 -51 -46 -55 C-47 -58 -46 -61 -43 -63 Z",
+    "cien": "M22 -34 C14 -30 -4 -27 -20 -32 C-23 -35 -21 -38 -16 -37 C-4 -33 12 -35 21 -38 Z",
+    "kosc": "M-34 -68 C-32 -71 -27 -71 -25 -68M-6 -56 C-3 -50 -3 -43 -5 -38M2 -57 C5 -51 5 -44 3 -38M28 -62 C31 -54 32 -46 30 -40",
+    "wymie": "M-30 -34 C-30 -25 -22 -22 -17 -28 C-21 -31 -26 -32 -30 -34 Z",
+    "strzyki": "M-27 -26 L-27 -22M-21 -26 L-21 -22",
+    "nogi_blizsze": "M15 -40 L26 -40 L25 -22 C25 -20 24 -18 23.5 -16 L23 -6 L24.5 0 L16 0 L17.5 -6 L17 -16 C16.5 -18 16 -20 16 -22 Z"
+                    "M-28 -46 C-27 -38 -30 -32 -34 -27 C-35 -24 -35 -21 -35 -18 L-35 -6 L-34 0 L-42 0 L-41 -6 L-41 -16 C-42 -19 -44 -22 -45 -26 C-47 -32 -48 -40 -46 -48 Z",
+    "kopyta": "M17 -4 L23.5 -4 L24.5 0 L16 0 Z M-41 -4 L-35 -4 L-34 0 L-42 0 Z",
+    "ucho": "M46 -63 C42 -69 35 -69 33 -65 C37 -63 42 -62 46 -62 Z",
+    "glowa": "M44 -66 C48 -69 54 -68 56 -64 L66 -44 C68 -40 66 -35 61 -35 C57 -35 54 -37 52 -39 C48 -44 44 -50 42 -56 C41 -60 42 -64 44 -66 Z",
+    "lata_glowa": "M48 -65 C53 -66 56 -61 55 -56 C52 -53 48 -56 47 -60 C47 -62 47 -64 48 -65 Z",
+    "rog": "M47 -66 C45 -72 49 -77 55 -77 C52 -74 50 -70 51 -66 Z",
+    "grzywka": "M48 -68 L47 -71M50 -68 L50 -71M52 -67 L53 -70",
+    "nozdrza": "M63 -40 C64 -41 65 -40 64 -39 C63 -38 62 -39 63 -40 Z",
+    "pysk": "M57 -36 L61 -37",
+    "chrapy": "M61 -43 C65 -44 68 -40 66 -36 C64 -34 60 -35 59 -38 C59 -40 60 -42 61 -43 Z",
+    "kantar": "M50 -65 L57 -42M56 -44 C60 -46 64 -46 67 -43",
+}
+
+
+def _krowa_d(d, x, y, k, f):
+    import re
+    nums = iter(re.findall(r"-?\d+(?:\.\d+)?", d))
+    out = re.sub(r"-?\d+(?:\.\d+)?\s+-?\d+(?:\.\d+)?",
+                 lambda m: (lambda dx, dy: f"{x + dx * f * k:.1f} {y + dy * k:.1f}")(*map(float, m.group(0).split())), d)
+    return out
+
+
+def krowa(x, y, k=1.0, facing=1, lead=None):
+    """Krowa z boku, lacia. x,y = ziemia pod srodkiem tulowia; facing=-1 — glowa w lewo; lead = (x, y) konca postronka."""
+    f, sw = facing, round(0.9 + 0.5 * k, 2)
+    D = lambda name: _krowa_d(_KROWA[name], x, y, k, f)
+    ex, ey = x + 52 * f * k, y - 58 * k
+    g = [f'<g stroke-width="{sw}" stroke-linejoin="round">',
+         # nogi pod tulowiem — brzuch zakrywa ich gorne krawedzie
+         f'<path d="{D("nogi_dalsze")}" fill="#000000"/>',
+         f'<path d="{D("nogi_blizsze")}" fill="#FFFFFF"/>',
+         f'<path d="{D("kopyta")}" fill="#000000"/>',
+         f'<path d="{D("ogon")}" fill="none" stroke-width="{sw * 1.1:.2f}"/>',
+         f'<path d="{D("kita")}" fill="#000000"/>',
+         f'<path d="{D("tulow")}" fill="#FFFFFF"/>',
+         f'<path d="{D("laty")}" fill="#000000" stroke="none"/>',
+         f'<path d="{D("cien")}" fill="url(#hatch)" stroke="none" opacity="0.7"/>',
+         f'<path d="{D("kosc")}" fill="none" stroke-width="{sw * 0.55:.2f}"/>',
+         f'<path d="{D("wymie")}" fill="#FFFFFF" stroke-width="{sw * 0.8:.2f}"/>',
+         f'<path d="{D("strzyki")}" fill="none" stroke-width="{sw * 0.8:.2f}"/>',
+         f'<path d="{D("ucho")}" fill="#FFFFFF"/>',
+         f'<path d="{D("glowa")}" fill="#FFFFFF"/>',
+         f'<path d="{D("lata_glowa")}" fill="#000000" stroke="none"/>',
+         f'<path d="{D("rog")}" fill="#FFFFFF" stroke-width="{sw * 0.8:.2f}"/>',
+         f'<path d="{D("grzywka")}" fill="none" stroke-width="{sw * 0.6:.2f}"/>',
+         f'<circle cx="{ex:.1f}" cy="{ey:.1f}" r="{1.5 * k:.1f}" fill="#FFFFFF" stroke-width="{sw * 0.5:.2f}"/>',
+         f'<circle cx="{ex + 0.4 * f * k:.1f}" cy="{ey:.1f}" r="{0.8 * k:.1f}" fill="#000000" stroke="none"/>',
+         f'<path d="{D("chrapy")}" fill="#000000" stroke="none"/>',
+         f'<path d="{D("nozdrza")}" fill="#FFFFFF" stroke="none"/>',
+         f'<path d="{D("pysk")}" fill="none" stroke-width="{sw * 0.6:.2f}"/>']
+    if lead is not None:
+        g.append(f'<path d="{D("kantar")}" fill="none" stroke-width="{sw * 0.7:.2f}"/>')
+        rx, ry = x + 64 * f * k, y - 44 * k
+        tx, ty = lead
+        g.append(f'<path d="M{rx:.1f} {ry:.1f}Q{(rx + tx) / 2:.1f} {max(ry, ty) + 10 * k:.1f} {tx:.1f} {ty:.1f}" fill="none" stroke-width="{sw * 0.7:.2f}"/>')
+    g.append('</g>')
+    return "".join(g)

@@ -114,11 +114,17 @@ Ogniki nad mokradłami z każdą nocą paliły się bliżej. Najpierw tylko za k
 }
 {figurka_u_staruchy:– Powiedz jej o snach – odezwała się żona, zanim Jaromir zdążył otworzyć usta. – Sama to przyniosła, niech wie, co z tego wyrosło.|– Jeśli coś schowałeś, nie kryj tego przed nią – odezwała się żona, zanim Jaromir zdążył otworzyć usta. – {odrzucil_figurke && figurka_w_bagnie:Widziałam, co wróciło na nasz próg.|{jozek_mial_figurke:Widziałam, co przyniosła matka Józka.|Widziałam, jak zaglądasz pod łóżko.}}}
 # pytanie: Co zrobi Jaromir?
-*   [Pokazać Jagnie figurkę i opowiedzieć o snach.]
+*   [{figurka_u_staruchy:Opowiedzieć Jagnie o snach.|Pokazać Jagnie figurkę i opowiedzieć o snach.}]
     ~ zaufal_jagnie = true
-    Jagna długo obracała figurkę w palcach, przysunięta do okna, bo zdrowe oko miała słabe.
-    – To lalka – powiedziała w końcu. – Babka mi o takich opowiadała. Zielarka znad jeziora wystrugała ją z korzenia, który wyciągnęła z bagna, i nadała jej imię tego, co tam mieszka. Kto ma lalkę, za tym on idzie. Póki leżała {przeszukal_zgliszcza && not figurka_w_bagnie:daleko|nietknięta}, spał. Teraz wróciła – i woła go. A dzieci słyszą, bo dzieci słyszą wszystko.
-    Zawinęła figurkę w szmatę i oddała Jaromirowi.
+    { figurka_u_staruchy:
+        // Jagna przywiozła figurkę i wiedziała tylko, że babka bredziła o lalce i o wodzie — dopiero sny dzieci składają jej to w całość.
+        Jaromir opowiedział jej o kładce, o garnkach przewracanych na dnie mokradeł i o pytaniu, które słyszało we śnie każde dziecko. Przy słowie „lalka” Jagna zbladła.
+        – Babka w gorączce mówiła tylko o lalce i o wodzie. Myślałam, że bredzi – powiedziała cicho. – Stare zielarki opowiadały o takich rzeczach: struga się je z korzenia wyciągniętego z bagna i nadaje imię tego, co tam mieszka. Kto ma taką lalkę, za tym on idzie. Długo spał, a teraz wróciła nad jezioro i woła go. A dzieci to słyszą – uszy mają czulsze niż my.
+    - else:
+        Jagna długo obracała figurkę w palcach, przysunięta do okna, bo zdrowe oko miała słabe.
+        – To lalka – powiedziała w końcu. – Babka mi o takich opowiadała. Zielarka znad jeziora wystrugała ją z korzenia, który wyciągnęła z bagna, i nadała jej imię tego, co tam mieszka. Kto ma lalkę, za tym on idzie. Póki leżała {przeszukal_zgliszcza && not figurka_w_bagnie:daleko|nietknięta}, spał. Teraz wróciła – i woła go. A dzieci to słyszą – uszy mają czulsze niż my.
+        Zawinęła figurkę w szmatę i oddała Jaromirowi.
+    }
     – Ogień jej nie weźmie, już raz w nim była. Uciszy ją tylko poświęcona ziemia. {odrzucil_figurke:Albo… – urwała i pokręciła głową. – Nie. Mnie już nie posłucha. Odepchnęliście ją, a ona i tak do was wróciła. Teraz jest wasza.|{figurka_u_staruchy:Babka kazała mi ją oddać tam, skąd przyszła, i oddałam. Z powrotem jej nie wezmę.|Albo… – zawahała się – albo oddajcie mi ją. Zabiorę ją tak daleko, że jej nie dosłyszy.}} # dalej
 *   [Nie mówić jej nic.]
     {figurka_u_staruchy:– Dzieci śpią spokojnie – skłamał Jaromir.|– Nie wiem, o czym mówisz – odpowiedział Jaromir.}

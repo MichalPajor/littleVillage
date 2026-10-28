@@ -203,7 +203,7 @@ D["tlo"] = (0, 0, 390, 440, t[0] + "\n" + group(t[1:]))
 D["korona"] = (20, 40, 260, 170, group(['<path d="M40 180C10 150 30 90 80 80C90 50 150 40 180 60C220 40 270 70 262 110C290 140 270 190 230 190C200 210 120 210 90 196C70 200 50 194 40 180Z" fill="url(#hatchDense)" stroke-width="2.6"/>',
                                         '<path d="M150 180L110 130M150 180L200 120M150 180L150 100" fill="none" stroke-width="5"/>']))
 D["swiatlo"] = (80, 220, 140, 80, group(['<ellipse cx="110" cy="260" rx="10" ry="4" fill="#FFFFFF" stroke="none" opacity="0.6"/><ellipse cx="190" cy="270" rx="12" ry="4" fill="#FFFFFF" stroke="none" opacity="0.6"/>']))
-D["krowy"] = (10, 280, 90, 50, group(['<path d="M20 300h40v18h-40z M60 302l10 -4l4 8l-10 2z M24 318v10M56 318v10" fill="#FFFFFF" stroke-width="1.6"/><path d="M30 304h8v8h-8z" fill="#000000" stroke-width="1"/>']))
+D["krowy"] = (10, 284, 110, 50, group([postacie.krowa(40, 330, 0.5, 1), postacie.krowa(92, 328, 0.45, -1)]))
 D["znak"] = (140, 236, 24, 30, group(['<path d="M146 240h12v22h-12z" fill="#FFFFFF" stroke-width="1.2"/>']))
 D["chlopcy"] = (200, 320, 90, 110, group([postacie.child(226, 426, 1.9), postacie.child(266, 428, 2.1)]))
 D["franek_idzie"] = (240, 320, 60, 110, group([postacie.child(266, 428, 2.1)]))
@@ -215,13 +215,13 @@ D["przod"] = (0, 422, 390, 422, group(p))
 DAB = ["tlo", "korona", "swiatlo", "krowy", "znak", "chlopcy", "jaromir_sam", "franek_idzie", "przod"]
 D_REVEAL = {"znak": "znak", "chlopcy": "chlopcy", "jaromir_sam": "odchodzi", "franek_idzie": "odchodzi"}
 D_ANIM = {"korona": {"type": "sway", "amplitude": 1.2, "duration": 4200, "anchorX": 0.5, "anchorY": 1},
-          "swiatlo": {"type": "flicker", "amplitude": 0.3, "duration": 2600}, "krowy": {"type": "sway", "amplitude": 3, "duration": 3000, "anchorX": 0.3, "anchorY": 1},
+          "swiatlo": {"type": "flicker", "amplitude": 0.3, "duration": 2600}, "krowy": {"type": "sway", "amplitude": 1, "duration": 4000, "anchorX": 0.3, "anchorY": 1},
           "znak": {"type": "flicker", "amplitude": 0.6, "duration": 1800}, "chlopcy": {"type": "bob", "amplitude": 0.6, "duration": 1400},
           "franek_idzie": {"type": "slide", "dx": 160, "dy": -10, "duration": 5000, "once": True}}
 D_EXTRA = {"chlopcy": {"hideOn": "odchodzi", "fadeDuration": 300}, "jaromir_sam": {"fadeDuration": 300}, "franek_idzie": {"fadeDuration": 300, "hideAfter": 4200},
            "znak": {"fadeDuration": 2000}, "przod": {"depth": 1.0}}
 D_COMMENTS = {"tlo": "Stary Dąb na skraju boru: gruby pień, ścieżka", "korona": "korona dębu (kołysze się)", "swiatlo": "plamy słońca w cieniu (migoczą)",
-              "krowy": "krowa w cieniu dębu", "znak": "biały znak na korze (# pokaz: znak)", "chlopcy": "Jaromir i Franek (# pokaz: chlopcy)",
+              "krowy": "dwie krowy w cieniu dębu", "znak": "biały znak na korze (# pokaz: znak)", "chlopcy": "Jaromir i Franek (# pokaz: chlopcy)",
               "jaromir_sam": "Jaromir zostaje (# pokaz: odchodzi)", "franek_idzie": "Franek odchodzi do tartaku (# pokaz: odchodzi)", "przod": "pierwszy plan"}
 _add(D, DAB, D_ANIM, D_COMMENTS, "ptaki", efekty.wrony(100, 90, n=3, k=0.35, seed=56, amplitude=36), before="krowy")
 D_COMMENTS["ptaki"] = "ptaki krążą nad koroną"

@@ -70,6 +70,9 @@ public static class MauiProgram
         services.AddSingleton<IFullVersionStore, PlayFullVersionStore>();
 #endif
         services.AddSingleton<IFullVersion>(provider => provider.GetRequiredService<IFullVersionStore>());
+#if ANDROID
+        services.AddSingleton<IReviewService, PlayReviewService>();
+#endif
         return services;
     }
 

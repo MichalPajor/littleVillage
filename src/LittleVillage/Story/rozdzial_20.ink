@@ -98,7 +98,7 @@ Na płaskich kamieniach po drugiej stronie jeziora mamuny rozłożyły płótno 
 
 = powrot_do_swity
 # tlo: swita
-Kiedy wrócił pod chałupę, świta stała tam, gdzie ją zostawił. Pan Lasu nie ruszył się ani o krok.{ cena_caluna == cena_zdrowie: Jaromir szedł powoli; zimno jeziora wchodziło mu w nogi od dołu.}{ cena_caluna == cena_antek: Antek szedł obok niego, z prawą ręką wsuniętą za pas.}
+Kiedy wrócił pod chałupę, świta stała tam, gdzie ją zostawił. Pan Lasu nie ruszył się ani o krok.{ cena_caluna == cena_zdrowie: Jaromir szedł powoli; zimno jeziora wchodziło mu w nogi od dołu.}{ cena_caluna == cena_antek: Antek szedł obok niego, z prawą ręką wsuniętą za pas.} # pokaz: swita, dzieci, umarli, leszy
 -> po_calunie
 
 = po_calunie

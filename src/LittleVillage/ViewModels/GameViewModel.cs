@@ -19,6 +19,7 @@ public sealed partial class GameViewModel(
     IMessenger messenger,
     IThemeService theme,
     IFullVersionStore store,
+    IReviewService review,
     ILogger<GameViewModel> logger) : ViewModelBase
 {
     private StoryPage? _shownPage;
@@ -109,6 +110,8 @@ public sealed partial class GameViewModel(
             {
                 await session.FinishAsync();
                 await navigation.GoBackAsync();
+                // Okno oceny nad menu głównym, po pierwszym ukończeniu opowieści.
+                await review.RequestAfterFinishAsync();
                 return;
             }
 
