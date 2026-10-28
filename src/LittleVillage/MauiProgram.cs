@@ -51,6 +51,7 @@ public static class MauiProgram
             return engine;
         });
         services.AddSingleton<ISaveGameRepository>(_ => new JsonFileSaveGameRepository(FileSystem.AppDataDirectory));
+        services.AddSingleton<IProgressRepository>(_ => new JsonFileProgressRepository(FileSystem.AppDataDirectory));
         services.AddSingleton(TimeProvider.System);
         services.AddSingleton<IGameSession, GameSession>();
         return services;
@@ -64,6 +65,7 @@ public static class MauiProgram
         services.AddSingleton<IMessenger>(WeakReferenceMessenger.Default);
         services.AddSingleton(Preferences.Default);
         services.AddSingleton<IThemeService, ThemeService>();
+        services.AddSingleton<ISettingsService, SettingsService>();
 #if DEBUG
         services.AddSingleton<IFullVersionStore, DebugFullVersionStore>();
 #else
@@ -82,6 +84,8 @@ public static class MauiProgram
         services.AddTransient<SplashPage, SplashViewModel>();
         services.AddTransient<MainMenuPage, MainMenuViewModel>();
         services.AddTransientWithShellRoute<GamePage, GameViewModel>(Routes.Game);
+        services.AddTransientWithShellRoute<StoryBookPage, StoryBookViewModel>(Routes.StoryBook);
+        services.AddTransientWithShellRoute<SettingsPage, SettingsViewModel>(Routes.Settings);
         return services;
     }
 }

@@ -41,6 +41,27 @@
                         Command="{Binding ContinueCommand}"
                         IsVisible="{Binding CanContinue}"
                         SemanticProperties.Description="Kontynuuj zapisaną grę" />
+                    <controls:SketchTextButton
+                        Text="Rozdziały i zakończenia"
+                        FontSize="23"
+                        CornerRadius="14,11,10,15"
+                        Command="{Binding OpenStoryBookCommand}"
+                        SemanticProperties.Description="Rozdziały i zakończenia" />
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="14">
+                        <controls:SketchTextButton
+                            Text="Ustawienia"
+                            FontSize="17"
+                            CornerRadius="12,9,14,10"
+                            Command="{Binding OpenSettingsCommand}"
+                            SemanticProperties.Description="Ustawienia" />
+                        <controls:SketchTextButton
+                            Grid.Column="1"
+                            Text="Oceń grę"
+                            FontSize="17"
+                            CornerRadius="9,13,10,14"
+                            Command="{Binding RateCommand}"
+                            SemanticProperties.Description="Oceń grę w Google Play" />
+                    </Grid>
                 </VerticalStackLayout>
 
                 <!-- Potwierdzenie nadpisania zapisu -->

@@ -29,11 +29,12 @@ public sealed class SketchChoiceButton : SketchButton
         _text = new Label
         {
             FontFamily = Fonts.Body,
-            FontSize = 16,
             LineHeight = 1.35,
             LineBreakMode = LineBreakMode.WordWrap,
             VerticalOptions = LayoutOptions.Center,
         };
+        // Wielkość z ustawień gracza (zasób ChoiceTextSize, SettingsService).
+        _text.SetDynamicResource(Label.FontSizeProperty, "ChoiceTextSize");
 
         var layout = new Grid
         {

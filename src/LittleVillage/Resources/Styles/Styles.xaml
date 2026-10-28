@@ -79,8 +79,12 @@
         <Setter Property="LineHeight" Value="1.05" />
     </Style>
 
+    <!-- Wielkość tekstu opowieści i opcji — zmieniana w ustawieniach (SettingsService). -->
+    <x:Double x:Key="StoryTextSize">17</x:Double>
+    <x:Double x:Key="ChoiceTextSize">16</x:Double>
+
     <Style x:Key="StoryParagraph" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
-        <Setter Property="FontSize" Value="17" />
+        <Setter Property="FontSize" Value="{DynamicResource StoryTextSize}" />
         <Setter Property="LineHeight" Value="1.55" />
         <Setter Property="LineBreakMode" Value="WordWrap" />
     </Style>

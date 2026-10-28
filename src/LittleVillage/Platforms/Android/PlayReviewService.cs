@@ -11,11 +11,12 @@ namespace LittleVillage;
 /// </summary>
 public sealed class PlayReviewService(IPreferences preferences, ILogger<PlayReviewService> logger) : IReviewService
 {
-    private const string PreferenceKey = "ocena_poproszona";
+    private const string PreferencePrefix = "ocena_";
 
-    public async Task RequestAfterFinishAsync()
+    public async Task RequestAsync(string moment)
     {
-        if (preferences.Get(PreferenceKey, false) || Platform.CurrentActivity is not { } activity)
+        var key = PreferencePrefix + moment;
+        if (preferences.Get(key, false) || Platform.CurrentActivity is not { } activity)
         {
             return;
         }
@@ -31,11 +32,28 @@ public sealed class PlayReviewService(IPreferences preferences, ILogger<PlayRevi
             }
 
             await CompleteAsync(manager.LaunchReviewFlow(activity, Android.Runtime.Extensions.JavaCast<ReviewInfo>(result)));
-            preferences.Set(PreferenceKey, true);
+            preferences.Set(key, true);
         }
         catch (Exception exception)
         {
             logger.LogWarning(exception, "Nie udało się pokazać okna oceny.");
+        }
+    }
+
+    public async Task OpenStorePageAsync()
+    {
+        var package = AppInfo.Current.PackageName;
+        try
+        {
+            // Aplikacja Sklepu Play, a gdy jej nie ma — strona w przeglądarce.
+            if (!await Launcher.Default.TryOpenAsync($"market://details?id={package}"))
+            {
+                await Browser.Default.OpenAsync($"https://play.google.com/store/apps/details?id={package}", BrowserLaunchMode.External);
+            }
+        }
+        catch (Exception exception)
+        {
+            logger.LogWarning(exception, "Nie udało się otworzyć strony gry w sklepie.");
         }
     }
 

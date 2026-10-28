@@ -30,4 +30,13 @@ public interface IStoryEngine
 
     /// <summary>Zwraca karty zapisków (bestiariusza) z wpisami odsłoniętymi dotąd przez fabułę.</summary>
     IReadOnlyList<JournalEntry> GetJournal();
+
+    /// <summary>Wszystkie rozdziały z księgi opowieści, w kolejności opowieści.</summary>
+    IReadOnlyList<StoryChapter> GetChapters();
+
+    /// <summary>Wszystkie zakończenia opowieści.</summary>
+    IReadOnlyList<StoryEnding> GetEndings();
+
+    /// <summary>Zakończenie, do którego doszedł gracz (null przed końcem opowieści).</summary>
+    string? GetReachedEnding();
 }

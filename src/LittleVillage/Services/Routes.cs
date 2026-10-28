@@ -6,4 +6,6 @@ public static class Routes
     public const string Splash = "splash";
     public const string MainMenu = "menu";
     public const string Game = "game";
+    public const string StoryBook = "ksiega";
+    public const string Settings = "ustawienia";
 }

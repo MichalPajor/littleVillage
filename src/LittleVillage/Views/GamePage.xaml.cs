@@ -63,6 +63,12 @@ public partial class GamePage : BasePage
             return true;
         }
 
+        if (_viewModel.IsRecapOpen)
+        {
+            _viewModel.CloseRecapCommand.Execute(null);
+            return true;
+        }
+
         return base.OnBackButtonPressed();
     }
 

@@ -57,6 +57,7 @@ public enum PageEnding
 /// </param>
 /// <param name="ResetsInventory">Tobołek zmienił się na tej stronie po cichu — bez „+ / − przedmiot”.</param>
 /// <param name="RequiresFullVersion">Ostatnia strona darmowej części — przejście dalej wymaga pełnej wersji.</param>
+/// <param name="RequestsReview">Dobry moment na prośbę o ocenę gry (tag <c># ocena</c>).</param>
 public sealed record StoryPage(
     IReadOnlyList<StoryBlock> Blocks,
     IReadOnlyList<StoryChoice> Choices,
@@ -65,7 +66,8 @@ public sealed record StoryPage(
     string? Question,
     string? AlreadyRevealed = null,
     bool ResetsInventory = false,
-    bool RequiresFullVersion = false);
+    bool RequiresFullVersion = false,
+    bool RequestsReview = false);
 
 /// <summary>Przedmiot w ekwipunku gracza.</summary>
 /// <param name="Id">Nazwa elementu listy ink, np. <c>kaganek</c>.</param>
@@ -87,3 +89,12 @@ public sealed record JournalEntry(string Id, string Title, IReadOnlyList<string>
         return cut > 0 && cut < noteId.Length - 1 && noteId[(cut + 1)..].All(char.IsDigit) ? noteId[..cut] : noteId;
     }
 }
+
+/// <summary>Rozdział z księgi opowieści (lista ink <c>Rozdzialy</c>).</summary>
+/// <param name="Id">Element listy, np. <c>rozdz_5</c>.</param>
+/// <param name="Name">Nazwa jak w tagu <c># rozdzial:</c>, np. „Rozdział piąty”.</param>
+/// <param name="RequiresFullVersion">Rozdział za darmową częścią.</param>
+public sealed record StoryChapter(string Id, string Name, bool RequiresFullVersion);
+
+/// <summary>Zakończenie opowieści (lista ink <c>Zakonczenia</c>).</summary>
+public sealed record StoryEnding(string Id, string Title);

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:BasePage
+    x:Class="LittleVillage.Views.StoryBookPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:LittleVillage.Controls"
+    xmlns:views="clr-namespace:LittleVillage.Views"
+    xmlns:vm="clr-namespace:LittleVillage.ViewModels"
+    x:DataType="vm:StoryBookViewModel">
+
+    <Grid>
+        <controls:SceneBackgroundView Scene="{Binding Scene}" IsInverted="{DynamicResource SceneInverted}" />
+
+        <controls:InkFrame
+            Margin="16,24,16,24"
+            FrameBackgroundColor="{DynamicResource PanelSolid}"
+            MaximumWidthRequest="440">
+            <Grid Padding="22,26,18,18" RowDefinitions="Auto,Auto,*" RowSpacing="0">
+
+                <Label Text="Księga opowieści" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
+                <controls:SketchIconButton
+                    HorizontalOptions="End"
+                    VerticalOptions="Start"
+                    FaceSize="40,40"
+                    IconSize="20"
+                    Icon="ic_close.png"
+                    StrokeThickness="3"
+                    ShadowOffset="3"
+                    Command="{Binding CloseCommand}"
+                    SemanticProperties.Description="Wróć do menu" />
+
+                <controls:ThemedImage Grid.Row="1" Source="decor_underline.png" WidthRequest="150" HeightRequest="8" Aspect="Fill" HorizontalOptions="Start" />
+
+                <!-- Rozdziały i zakończenia -->
+                <ScrollView Grid.Row="2" Margin="0,18,0,0" IsVisible="{Binding IsListVisible}">
+                    <VerticalStackLayout Spacing="12" Padding="0,0,4,12">
+                        <Label Text="Rozdziały" Style="{StaticResource StoryChapter}" FontSize="18" />
+                        <Label Text="Rozdział, do którego dotarła już Twoja opowieść, możesz zacząć od nowa." Style="{StaticResource Hint}" />
+                        <VerticalStackLayout Spacing="10" BindableLayout.ItemsSource="{Binding Chapters}">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate x:DataType="vm:ChapterItem">
+                                    <controls:SketchChoiceButton
+                                        Numeral="{Binding Numeral}"
+                                        Text="{Binding Text}"
+                                        Command="{Binding Command}"
+                                        SemanticProperties.Description="{Binding Text}" />
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </VerticalStackLayout>
+
+                        <Label Margin="0,18,0,0" Text="Zakończenia" Style="{StaticResource StoryChapter}" FontSize="18" />
+                        <Label Text="{Binding EndingsSummary}" Style="{StaticResource Hint}" />
+                        <VerticalStackLayout Spacing="8" BindableLayout.ItemsSource="{Binding Endings}">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate x:DataType="vm:EndingItem">
+                                    <Label Text="{Binding Title}" Style="{StaticResource ItemName}">
+                                        <Label.Triggers>
+                                            <DataTrigger TargetType="Label" Binding="{Binding Discovered}" Value="False">
+                                                <Setter Property="TextColor" Value="{DynamicResource TextMuted}" />
+                                            </DataTrigger>
+                                        </Label.Triggers>
+                                    </Label>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </ScrollView>
+
+                <!-- Potwierdzenie nadpisania zapisu -->
+                <VerticalStackLayout Grid.Row="2" Margin="0,24,0,0" Spacing="18" IsVisible="{Binding IsConfirming}">
+                    <Label Style="{StaticResource StoryParagraph}" Text="Zacząć od tego rozdziału? Zapisana opowieść przepadnie jak ślad na mokradłach." />
+                    <controls:SketchTextButton Text="Tak, od tego rozdziału" FontSize="22" Command="{Binding ConfirmCommand}" />
+                    <controls:SketchTextButton Text="Nie" CornerRadius="10,15,16,11" Command="{Binding CancelCommand}" />
+                </VerticalStackLayout>
+            </Grid>
+        </controls:InkFrame>
+    </Grid>
+
+</views:BasePage>

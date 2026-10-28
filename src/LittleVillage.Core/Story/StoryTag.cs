@@ -23,6 +23,8 @@ public readonly record struct StoryTag(string Name, string? Value)
     public const string NewInventory = "nowy_tobolek";
     /// <summary>Koniec darmowej części: dalej tylko z pełną wersją (<c># pelna_wersja</c>).</summary>
     public const string FullVersion = "pelna_wersja";
+    /// <summary>Dobry moment na prośbę o ocenę gry w sklepie (<c># ocena</c>).</summary>
+    public const string Review = "ocena";
 
     public static StoryTag Parse(string rawTag)
     {

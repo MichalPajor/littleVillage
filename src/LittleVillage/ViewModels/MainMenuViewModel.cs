@@ -7,11 +7,12 @@ using Microsoft.Extensions.Logging;
 
 namespace LittleVillage.ViewModels;
 
-/// <summary>Menu główne: Nowa gra / Kontynuuj.</summary>
+/// <summary>Menu główne: Nowa gra / Kontynuuj / Księga opowieści / Ustawienia / Oceń grę.</summary>
 public sealed partial class MainMenuViewModel(
     IGameSession session,
     INavigationService navigation,
     IDialogService dialogs,
+    IReviewService review,
     ILogger<MainMenuViewModel> logger) : ViewModelBase
 {
     [ObservableProperty]
@@ -61,6 +62,15 @@ public sealed partial class MainMenuViewModel(
 
     [RelayCommand]
     private void CancelNewGame() => IsConfirmingNewGame = false;
+
+    [RelayCommand(AllowConcurrentExecutions = false)]
+    private Task OpenStoryBookAsync() => navigation.GoToStoryBookAsync();
+
+    [RelayCommand(AllowConcurrentExecutions = false)]
+    private Task OpenSettingsAsync() => navigation.GoToSettingsAsync();
+
+    [RelayCommand(AllowConcurrentExecutions = false)]
+    private Task RateAsync() => review.OpenStorePageAsync();
 
     [RelayCommand(CanExecute = nameof(CanContinue), AllowConcurrentExecutions = false)]
     private Task ContinueAsync() => RunAsync(() => session.ContinueSavedGameAsync());

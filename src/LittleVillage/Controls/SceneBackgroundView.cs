@@ -166,8 +166,30 @@ public sealed class SceneBackgroundView : ContentView
         }
     }
 
+    /// <summary>Ruch tła przy przechylaniu (ustawienia gracza). Wyłączony — warstwy wracają na miejsce.</summary>
+    public static bool ParallaxEnabled
+    {
+        get => s_parallaxEnabled;
+        set
+        {
+            s_parallaxEnabled = value;
+            if (!value)
+            {
+                s_tiltX = s_tiltY = 0;
+                TiltChanged?.Invoke(0, 0);
+            }
+        }
+    }
+
+    private static bool s_parallaxEnabled = true;
+
     private static void OnReading(object? sender, AccelerometerChangedEventArgs e)
     {
+        if (!s_parallaxEnabled)
+        {
+            return;
+        }
+
         // Odczyt w g; przeliczamy na m/s² i wygładzamy, żeby tło nie drżało w dłoni.
         var x = Math.Clamp(e.Reading.Acceleration.X * 9.81 / ParallaxTilt, -1, 1);
         var y = Math.Clamp((e.Reading.Acceleration.Z * 9.81 - 3) / ParallaxTilt, -1, 1);

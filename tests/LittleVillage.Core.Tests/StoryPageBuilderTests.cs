@@ -29,6 +29,18 @@ public sealed class InkStoryEngineTests
     }
 
     [Fact]
+    public void Review_tag_marks_the_page()
+    {
+        var page = Load("""
+            Cisza.
+            Koniec. # ocena
+            -> END
+            """).StartNew();
+
+        Assert.True(page.RequestsReview);
+    }
+
+    [Fact]
     public void Tags_with_polish_letters_and_case_are_accepted()
     {
         var page = Load("""

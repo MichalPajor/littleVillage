@@ -24,6 +24,9 @@ internal sealed class StoryPageBuilder(string? initialBackground)
     /// <summary>Czy za tą stroną zaczyna się pełna wersja (tag <c># pelna_wersja</c>).</summary>
     public bool RequiresFullVersion { get; private set; }
 
+    /// <summary>Czy to dobry moment na prośbę o ocenę gry (tag <c># ocena</c>).</summary>
+    public bool RequestsReview { get; private set; }
+
     public void AddLine(string? text, IEnumerable<string>? rawTags)
     {
         foreach (var tag in (rawTags ?? []).Select(StoryTag.Parse))
@@ -66,7 +69,8 @@ internal sealed class StoryPageBuilder(string? initialBackground)
             ending == PageEnding.Choices ? Question ?? defaultQuestion : null,
             alreadyRevealed,
             ResetsInventory,
-            RequiresFullVersion);
+            RequiresFullVersion,
+            RequestsReview);
     }
 
     private void ApplyTag(StoryTag tag)
@@ -103,6 +107,9 @@ internal sealed class StoryPageBuilder(string? initialBackground)
                 break;
             case StoryTag.FullVersion:
                 RequiresFullVersion = true;
+                break;
+            case StoryTag.Review:
+                RequestsReview = true;
                 break;
             case StoryTag.Reveal when tag.Value is not null:
                 _pendingReveals.AddRange(RevealList.Split(tag.Value));

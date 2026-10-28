@@ -6,6 +6,7 @@
 INCLUDE zmienne.ink
 INCLUDE przedmioty.ink
 INCLUDE zapiski.ink
+INCLUDE ksiega.ink
 INCLUDE prolog.ink
 INCLUDE prolog_miasto.ink
 INCLUDE rozdzial_1.ink

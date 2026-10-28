@@ -19,7 +19,7 @@ public sealed class GameSessionTests : IDisposable
     private readonly FakeFullVersion _fullVersion = new() { IsUnlocked = true };
 
     private GameSession CreateSession() =>
-        new(new InkStoryEngine(), new FakeAssets(), new JsonFileSaveGameRepository(_saveDirectory), _fullVersion, TimeProvider.System);
+        new(new InkStoryEngine(), new FakeAssets(), new JsonFileSaveGameRepository(_saveDirectory), new JsonFileProgressRepository(_saveDirectory), _fullVersion, TimeProvider.System);
 
     [Fact]
     public async Task New_game_is_autosaved_and_can_be_continued_in_a_new_session()
@@ -64,6 +64,14 @@ public sealed class GameSessionTests : IDisposable
         }
 
         Assert.Equal(1, gates);
+        Assert.NotNull(session.LastEnding);
+        Assert.Contains(session.GetEndings(), e => e.Id == session.LastEnding!.Id && e.Discovered);
+
+        // Odkryte zakończenie i początki rozdziałów zostają po skończonej grze — także w nowej sesji.
+        var next = CreateSession();
+        await next.InitializeAsync();
+        Assert.Single(next.GetEndings(), e => e.Discovered);
+        Assert.All(next.GetChapters(), c => Assert.True(c.Reached));
 
         Assert.Equal(PageEnding.End, page.Ending);
         Assert.False(await session.HasSavedGameAsync());
@@ -105,6 +113,84 @@ public sealed class GameSessionTests : IDisposable
         _fullVersion.IsUnlocked = true;
         var next = await resumed.AdvanceAsync(null);
         Assert.Contains(next.Blocks, b => b.Kind == StoryBlockKind.Chapter && b.Text == "Rozdział piąty");
+    }
+
+    [Fact]
+    public async Task Chapters_come_from_the_story_and_the_paid_part_starts_at_chapter_five()
+    {
+        var session = CreateSession();
+        await session.InitializeAsync();
+
+        var chapters = session.GetChapters();
+        Assert.Equal(21, chapters.Count);
+        Assert.Equal("Prolog", chapters[0].Name);
+        Assert.Equal("Rozdział dwudziesty", chapters[^1].Name);
+        Assert.Equal(["Prolog", "Rozdział pierwszy", "Rozdział drugi", "Rozdział trzeci", "Rozdział czwarty"],
+            chapters.Where(c => !c.RequiresFullVersion).Select(c => c.Name));
+        Assert.All(chapters, c => Assert.False(c.Reached));
+        Assert.Equal(8, session.GetEndings().Count);
+        Assert.All(session.GetEndings(), e => Assert.False(string.IsNullOrWhiteSpace(e.Title)));
+    }
+
+    [Fact]
+    public async Task A_reached_chapter_can_be_started_again_from_its_first_page()
+    {
+        var session = CreateSession();
+        await session.InitializeAsync();
+        await session.StartNewGameAsync();
+
+        var choices = new Queue<int>([2, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, .. Enumerable.Repeat(0, 80)]);
+        var page = session.CurrentPage!;
+        while (!page.Blocks.Any(b => b.Kind == StoryBlockKind.Chapter && b.Text == "Rozdział drugi"))
+        {
+            page = await session.AdvanceAsync(page.Ending == PageEnding.Choices ? choices.Dequeue() : null);
+        }
+
+        var chapterTwo = page;
+        page = await session.AdvanceAsync(page.Ending == PageEnding.Choices ? choices.Dequeue() : null);
+
+        var chapters = session.GetChapters();
+        Assert.True(chapters.Single(c => c.Id == "rozdz_1").Reached);
+        Assert.Equal("Szkoła", chapters.Single(c => c.Id == "rozdz_2").Title);
+        Assert.False(chapters.Single(c => c.Id == "rozdz_3").Reached);
+
+        var again = CreateSession();
+        await again.InitializeAsync();
+        var start = await again.StartChapterAsync("rozdz_2");
+        Assert.Equal(chapterTwo.Blocks, start.Blocks);
+        Assert.Equal(chapterTwo.Choices, start.Choices);
+
+        // Rozdział od piątego wzwyż — tylko z pełną wersją (tu: jeszcze nieodwiedzony).
+        await Assert.ThrowsAsync<InvalidOperationException>(() => again.StartChapterAsync("rozdz_5"));
+    }
+
+    [Fact]
+    public async Task Continuing_a_save_recalls_the_chapter_and_the_last_decisions()
+    {
+        var session = CreateSession();
+        await session.InitializeAsync();
+        var page = await session.StartNewGameAsync();
+        var picked = new List<string>();
+        foreach (var index in new[] { 2, 1, 0, 0 })
+        {
+            while (page.Ending != PageEnding.Choices)
+            {
+                page = await session.AdvanceAsync(null);
+            }
+
+            picked.Add(page.Choices[index].Text);
+            page = await session.AdvanceAsync(page.Choices[index].Index);
+        }
+
+        var resumed = CreateSession();
+        await resumed.InitializeAsync();
+        await resumed.ContinueSavedGameAsync();
+        var recap = resumed.TakeRecap();
+
+        Assert.NotNull(recap);
+        Assert.Equal("Prolog", recap.ChapterName);
+        Assert.Equal(picked[^3..], recap.RecentChoices);
+        Assert.Null(resumed.TakeRecap());
     }
 
     private sealed class FakeFullVersion : IFullVersion

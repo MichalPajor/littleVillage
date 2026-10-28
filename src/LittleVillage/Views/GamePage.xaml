@@ -139,6 +139,8 @@
                         </BindableLayout.ItemTemplate>
                     </VerticalStackLayout>
 
+                    <Label Text="{Binding EndingNote}" Style="{StaticResource Hint}" IsVisible="{Binding HasEndingNote}" />
+
                     <Grid x:Name="StoryFooter" MinimumHeightRequest="76">
                         <Label
                             Text="Wybierz, co robisz, by pójść dalej."
@@ -364,6 +366,47 @@
                             CornerRadius="10,15,16,11"
                             Command="{Binding RestoreFullVersionCommand}"
                             SemanticProperties.Description="Przywróć wcześniejszy zakup pełnej wersji" />
+                    </VerticalStackLayout>
+                </Grid>
+            </controls:InkFrame>
+        </Grid>
+
+        <!-- ===== Poprzednio… (po dłuższej przerwie w grze) ===== -->
+        <Grid Grid.RowSpan="2" IsVisible="{Binding IsRecapOpen}">
+            <BoxView Color="{StaticResource Scrim}">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding CloseRecapCommand}" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+
+            <controls:InkFrame
+                Margin="24,72"
+                FrameBackgroundColor="{DynamicResource PanelSolid}"
+                MaximumWidthRequest="420"
+                VerticalOptions="Center">
+                <Grid Padding="22,26,18,24" RowDefinitions="Auto,Auto,Auto" RowSpacing="0">
+
+                    <Label Text="Poprzednio…" Style="{StaticResource StoryTitle}" FontSize="34" VerticalOptions="Center" />
+
+                    <controls:ThemedImage Grid.Row="1" Source="decor_underline.png" WidthRequest="150" HeightRequest="8" Aspect="Fill" HorizontalOptions="Start" />
+
+                    <VerticalStackLayout Grid.Row="2" Margin="0,18,0,0" Spacing="12">
+                        <Label Text="{Binding RecapChapter}" Style="{StaticResource ItemName}" />
+                        <Label Text="Ostatnie decyzje:" Style="{StaticResource Hint}" />
+                        <ScrollView MaximumHeightRequest="320">
+                            <VerticalStackLayout Spacing="10" BindableLayout.ItemsSource="{Binding RecapChoices}">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate x:DataType="x:String">
+                                        <Label Text="{Binding ., StringFormat='– {0}'}" Style="{StaticResource Hint}" FontSize="16" LineHeight="1.35" />
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </VerticalStackLayout>
+                        </ScrollView>
+                        <controls:SketchTextButton
+                            Margin="0,8,0,0"
+                            Text="Czytaj dalej"
+                            Command="{Binding CloseRecapCommand}"
+                            SemanticProperties.Description="Zamknij przypomnienie i czytaj dalej" />
                     </VerticalStackLayout>
                 </Grid>
             </controls:InkFrame>

@@ -29,7 +29,7 @@ public sealed class DeathTests : IDisposable
     }
 
     private GameSession CreateSession() =>
-        new(new InkStoryEngine(), new Assets(InkTestStory.FromSource(Story)), new JsonFileSaveGameRepository(_saveDirectory), new FullVersion(), TimeProvider.System);
+        new(new InkStoryEngine(), new Assets(InkTestStory.FromSource(Story)), new JsonFileSaveGameRepository(_saveDirectory), new JsonFileProgressRepository(_saveDirectory), new FullVersion(), TimeProvider.System);
 
     [Fact]
     public void Death_tag_ends_the_page_with_death()

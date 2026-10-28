@@ -9,6 +9,10 @@ public sealed class SketchTextButton : SketchButton
         nameof(Text), typeof(string), typeof(SketchTextButton), string.Empty,
         propertyChanged: (b, _, n) => ((SketchTextButton)b)._label.Text = (string)n);
 
+    public static readonly BindableProperty FontSizeProperty = BindableProperty.Create(
+        nameof(FontSize), typeof(double), typeof(SketchTextButton), 26d,
+        propertyChanged: (b, _, n) => ((SketchTextButton)b)._label.FontSize = (double)n);
+
     private readonly Label _label;
 
     public SketchTextButton()
@@ -33,6 +37,12 @@ public sealed class SketchTextButton : SketchButton
     {
         get => (string)GetValue(TextProperty);
         set => SetValue(TextProperty, value);
+    }
+
+    public double FontSize
+    {
+        get => (double)GetValue(FontSizeProperty);
+        set => SetValue(FontSizeProperty, value);
     }
 
     protected override void ApplyForeground(Color foreground) => _label.TextColor = foreground;

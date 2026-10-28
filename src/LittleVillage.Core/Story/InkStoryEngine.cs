@@ -104,6 +104,36 @@ public sealed class InkStoryEngine(InkStoryOptions options) : IStoryEngine
             .ToArray();
     }
 
+    public IReadOnlyList<StoryChapter> GetChapters() =>
+        ListItems(options.ChaptersList)
+            .Select(item => new StoryChapter(
+                item.Key.itemName,
+                EvaluateText(options.ChapterNameFunction, Single(item)) ?? item.Key.itemName,
+                Story.HasFunction(options.ChapterFullVersionFunction) && Story.EvaluateFunction(options.ChapterFullVersionFunction, Single(item)) is true or 1))
+            .ToArray();
+
+    public IReadOnlyList<StoryEnding> GetEndings() =>
+        ListItems(options.EndingsList)
+            .Select(item => new StoryEnding(item.Key.itemName, EvaluateText(options.EndingTitleFunction, Single(item)) ?? item.Key.itemName))
+            .ToArray();
+
+    public string? GetReachedEnding() =>
+        Story.HasFunction(options.EndingFunction) && Story.EvaluateFunction(options.EndingFunction) is InkList { Count: > 0 } ending
+            ? ending.maxItem.Key.itemName
+            : null;
+
+    private IEnumerable<KeyValuePair<InkListItem, int>> ListItems(string listName)
+    {
+        if (!Story.listDefinitions.TryListGetDefinition(listName, out var definition))
+        {
+            return [];
+        }
+
+        return definition.items.OrderBy(item => item.Value).ToArray();
+    }
+
+    private static InkList Single(KeyValuePair<InkListItem, int> item) => new() { [item.Key] = item.Value };
+
     private StoryPage BuildPage()
     {
         var startBackground = _currentBackground;

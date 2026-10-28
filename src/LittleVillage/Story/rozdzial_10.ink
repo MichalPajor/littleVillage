@@ -225,5 +225,5 @@ Kiedy spadł pierwszy śnieg, od boru zaczęło dochodzić wycie. Tym razem odzy
 === rozdzial_dziesiaty_ciag_dalszy ===
 # ozdobnik
 ~ zapiski += mamuny_2
-_Koniec rozdziału dziesiątego._ # dalej
+_Koniec rozdziału dziesiątego._ # ocena # dalej
 -> rozdzial_jedenasty

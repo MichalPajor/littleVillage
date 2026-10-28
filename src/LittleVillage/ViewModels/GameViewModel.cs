@@ -20,8 +20,12 @@ public sealed partial class GameViewModel(
     IThemeService theme,
     IFullVersionStore store,
     IReviewService review,
+    TimeProvider timeProvider,
     ILogger<GameViewModel> logger) : ViewModelBase
 {
+    /// <summary>Po jak długiej przerwie przypominamy, gdzie gracz przerwał.</summary>
+    private static readonly TimeSpan RecapAfter = TimeSpan.FromHours(1);
+
     private StoryPage? _shownPage;
     private IReadOnlyList<InventoryItem>? _knownInventory;
     private IReadOnlyList<JournalEntry>? _knownJournal;
@@ -33,6 +37,8 @@ public sealed partial class GameViewModel(
     public ObservableCollection<InventoryItem> InventoryItems { get; } = [];
 
     public ObservableCollection<JournalEntry> JournalEntries { get; } = [];
+
+    public ObservableCollection<string> RecapChoices { get; } = [];
 
     [ObservableProperty]
     public partial SceneBackground? Scene { get; set; }
@@ -73,6 +79,20 @@ public sealed partial class GameViewModel(
     [ObservableProperty]
     public partial string BuyText { get; set; } = "Kup pełną wersję";
 
+    /// <summary>„Poprzednio…” — przypomnienie po dłuższej przerwie.</summary>
+    [ObservableProperty]
+    public partial bool IsRecapOpen { get; set; }
+
+    [ObservableProperty]
+    public partial string? RecapChapter { get; set; }
+
+    /// <summary>Na ostatniej stronie: które zakończenie gracz odkrył i ile już zna.</summary>
+    [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(HasEndingNote))]
+    public partial string? EndingNote { get; set; }
+
+    public bool HasEndingNote => EndingNote is not null;
+
     /// <summary>Tryb ciemny okien z tekstem (czarne tło, jasne litery).</summary>
     [ObservableProperty]
     public partial bool IsDarkMode { get; set; }
@@ -98,6 +118,11 @@ public sealed partial class GameViewModel(
             _knownJournal = session.GetJournal();
         }
 
+        if (session.TakeRecap() is { } recap && timeProvider.GetUtcNow() - recap.SavedAt >= RecapAfter)
+        {
+            ShowRecap(recap);
+        }
+
         return Task.CompletedTask;
     }
 
@@ -111,7 +136,7 @@ public sealed partial class GameViewModel(
                 await session.FinishAsync();
                 await navigation.GoBackAsync();
                 // Okno oceny nad menu głównym, po pierwszym ukończeniu opowieści.
-                await review.RequestAfterFinishAsync();
+                await review.RequestAsync("koniec");
                 return;
             }
 
@@ -184,6 +209,21 @@ public sealed partial class GameViewModel(
     [RelayCommand]
     private void CloseFullVersion() => IsFullVersionOpen = false;
 
+    [RelayCommand]
+    private void CloseRecap() => IsRecapOpen = false;
+
+    private void ShowRecap(GameRecap recap)
+    {
+        RecapChapter = recap.ChapterTitle is { } title ? $"{recap.ChapterName} — {title}" : recap.ChapterName;
+        RecapChoices.Clear();
+        foreach (var choice in recap.RecentChoices)
+        {
+            RecapChoices.Add(choice);
+        }
+
+        IsRecapOpen = RecapChapter is not null || RecapChoices.Count > 0;
+    }
+
     private async Task UnlockedAsync()
     {
         IsFullVersionOpen = false;
@@ -205,6 +245,7 @@ public sealed partial class GameViewModel(
         try
         {
             Show(await session.ContinueSavedGameAsync());
+            session.TakeRecap();
             _knownInventory = session.GetInventory();
             _knownJournal = session.GetJournal();
         }
@@ -282,6 +323,16 @@ public sealed partial class GameViewModel(
         Ending = page.Ending;
         Scene = session.Backgrounds.Resolve(page.BackgroundKey);
         IsPanelCollapsed = false;
+
+        EndingNote = page.Ending == PageEnding.End && session.LastEnding is { } ending
+            ? $"Zakończenie: „{ending.Title}”. Odkryte: {session.GetEndings().Count(e => e.Discovered)} z {session.GetEndings().Count}."
+            : null;
+
+        // Połowa opowieści — dobry moment na ocenę, ale tylko u tych, którzy mają pełną wersję.
+        if (page.RequestsReview && store.IsUnlocked)
+        {
+            _ = review.RequestAsync("w_trakcie");
+        }
 
         messenger.Send(new StoryPageShownMessage(page));
     }

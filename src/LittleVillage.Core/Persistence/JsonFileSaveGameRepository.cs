@@ -61,4 +61,5 @@ public sealed class JsonFileSaveGameRepository(string directory) : ISaveGameRepo
     UseStringEnumConverter = true)]
 [JsonSerializable(typeof(GameSnapshot))]
 [JsonSerializable(typeof(StoryPage))]
+[JsonSerializable(typeof(GameProgress))]
 internal sealed partial class SaveJsonContext : JsonSerializerContext;

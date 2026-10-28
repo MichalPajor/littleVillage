@@ -7,5 +7,9 @@ public interface INavigationService
 
     Task GoToGameAsync();
 
+    Task GoToStoryBookAsync();
+
+    Task GoToSettingsAsync();
+
     Task GoBackAsync();
 }

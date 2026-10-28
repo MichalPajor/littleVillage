@@ -21,6 +21,24 @@ public sealed class InkStoryOptions
     /// <summary>Funkcja ink wypisująca treść wpisu: <c>=== function tresc_zapisku(z)</c>.</summary>
     public string JournalTextFunction { get; init; } = "tresc_zapisku";
 
+    /// <summary>Lista ink z rozdziałami do wyboru w menu (kolejność = kolejność w opowieści).</summary>
+    public string ChaptersList { get; init; } = "Rozdzialy";
+
+    /// <summary>Funkcja ink zwracająca nazwę rozdziału, taką jak w tagu <c># rozdzial:</c>.</summary>
+    public string ChapterNameFunction { get; init; } = "nazwa_rozdzialu";
+
+    /// <summary>Funkcja ink: czy rozdział jest w pełnej wersji.</summary>
+    public string ChapterFullVersionFunction { get; init; } = "rozdzial_w_pelnej_wersji";
+
+    /// <summary>Lista ink ze wszystkimi zakończeniami.</summary>
+    public string EndingsList { get; init; } = "Zakonczenia";
+
+    /// <summary>Funkcja ink zwracająca zakończenie, do którego doszedł gracz.</summary>
+    public string EndingFunction { get; init; } = "zakonczenie";
+
+    /// <summary>Funkcja ink zwracająca tytuł zakończenia.</summary>
+    public string EndingTitleFunction { get; init; } = "tytul_zakonczenia";
+
     /// <summary>Pytanie nad opcjami, gdy scena nie ustawi własnego tagiem <c># pytanie:</c>.</summary>
     public string DefaultQuestion { get; init; } = "Co robisz?";
 }
