@@ -90,7 +90,7 @@ On the flat stones on the far side of the lake the mamunas spread the cloth out 
     The eldest studied him without moving. Then she set down her paddle. “Agreed,” she croaked. “But she’ll have to remember too. Every year. To the end.”
     When Jaromir reached for the shroud, the cloth melted away in the water like foam. # pokaz: piana
     { przysiega_ksiedzu:
-        The oath he had sworn in Bukowiec – to have done with gifts for what dwells in the water – he broke on the very night the priest had blessed his fence.
+        The oath he had sworn in Bukowiec – to have done with gifts for what dwells in the water – he broke on the very night the priest { cialo_kopii == spalone || cialo_kopii == pod_mlodnikiem: had turned back at his fence | had blessed his fence }.
     }
 -   ~ zapiski += mamuny_4
     The mamunas gathered up their paddles and, one after another, walked into the water. Jaromir set off back to the village. # dalej

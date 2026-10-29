@@ -90,7 +90,7 @@ Na płaskich kamieniach po drugiej stronie jeziora mamuny rozłożyły płótno 
     Najstarsza przyglądała mu się bez ruchu. Potem odłożyła kijankę. – Zgoda – zaskrzeczała. – Ale ona też będzie musiała pamiętać. Każdego roku. Do końca.
     Kiedy Jaromir sięgnął po całun, płótno rozpłynęło się w wodzie jak piana. # pokaz: piana
     { przysiega_ksiedzu:
-        Przysięgę złożoną w Bukowcu – że skończy z darami dla tego, co siedzi w wodzie – złamał tej samej nocy, w której ksiądz pokropił mu płot.
+        Przysięgę złożoną w Bukowcu – że skończy z darami dla tego, co siedzi w wodzie – złamał tej samej nocy, w której ksiądz { cialo_kopii == spalone || cialo_kopii == pod_mlodnikiem: zawrócił spod jego płotu | pokropił mu płot }.
     }
 -   ~ zapiski += mamuny_4
     Mamuny zebrały kijanki i jedna po drugiej weszły w wodę. Jaromir ruszył z powrotem do wsi. # dalej

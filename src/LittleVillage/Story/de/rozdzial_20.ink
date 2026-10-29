@@ -90,7 +90,7 @@ Auf den flachen Steinen am anderen Ufer des Sees breiteten die Mamunen das Tuch 
     Die Älteste musterte ihn reglos. Dann legte sie den Bleuel beiseite. „Abgemacht“, krächzte sie. „Aber auch sie wird daran denken müssen. Jedes Jahr. Bis zum Ende.“
     Als Jaromir nach dem Leichentuch griff, zerfloss das Leinen im Wasser wie Schaum. # pokaz: piana
     { przysiega_ksiedzu:
-        Den Schwur, den er in Bukowiec geleistet hatte – dass er mit den Gaben für das, was im Wasser sitzt, Schluss machen werde –, brach er in derselben Nacht, in der ihm der Pfarrer den Zaun besprengt hatte.
+        Den Schwur, den er in Bukowiec geleistet hatte – dass er mit den Gaben für das, was im Wasser sitzt, Schluss machen werde –, brach er in derselben Nacht, in der der Pfarrer { cialo_kopii == spalone || cialo_kopii == pod_mlodnikiem: vor seinem Zaun umgekehrt war | ihm den Zaun besprengt hatte }.
     }
 -   ~ zapiski += mamuny_4
     Die Mamunen sammelten ihre Bleuel ein und gingen eine nach der anderen ins Wasser. Jaromir machte sich auf den Rückweg ins Dorf. # dalej
