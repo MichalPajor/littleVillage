@@ -7,9 +7,10 @@ public partial class App : Application
 {
     public App(ILanguageService language, IThemeService theme, ISettingsService settings)
     {
-        // Język najpierw — napisy trafiają do zasobów i ekranów przy ich tworzeniu.
-        language.Apply();
         InitializeComponent();
+
+        // Język (napisy, czcionki) przed pierwszym ekranem — ekrany biorą je przy tworzeniu.
+        language.Apply();
 
         // Zapamiętany tryb jasny/ciemny okien z tekstem i ustawienia gracza — zanim powstanie pierwszy ekran.
         theme.Apply();

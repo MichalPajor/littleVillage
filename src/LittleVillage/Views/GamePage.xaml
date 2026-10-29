@@ -213,7 +213,7 @@
             IsVisible="False"
             InputTransparent="True">
             <HorizontalStackLayout Padding="14,8,16,8" Spacing="8">
-                <Label x:Name="InventoryToastSign" FontFamily="AlegreyaBold" FontSize="24" TextColor="{StaticResource Blood}" VerticalOptions="Center" />
+                <Label x:Name="InventoryToastSign" FontFamily="{DynamicResource FontBodyBold}" FontSize="24" TextColor="{StaticResource Blood}" VerticalOptions="Center" />
                 <VerticalStackLayout Spacing="0" VerticalOptions="Center">
                     <Label x:Name="InventoryToastCaption" Style="{StaticResource Hint}" FontSize="12" />
                     <Label x:Name="InventoryToastName" Style="{StaticResource ItemName}" FontSize="17" />

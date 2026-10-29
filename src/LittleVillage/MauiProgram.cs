@@ -21,10 +21,12 @@ public static class MauiProgram
             .UseMauiCommunityToolkit()
             .ConfigureFonts(fonts =>
             {
-                fonts.AddFont("Alegreya-Regular.ttf", ThemeFonts.Body);
-                fonts.AddFont("Alegreya-Italic.ttf", ThemeFonts.BodyItalic);
-                fonts.AddFont("Alegreya-Bold.ttf", ThemeFonts.BodyBold);
-                fonts.AddFont("PirataOne-Regular.ttf", ThemeFonts.Display);
+                fonts.AddFont("Alegreya-Regular.ttf", ThemeFonts.Alegreya);
+                fonts.AddFont("Alegreya-Italic.ttf", ThemeFonts.AlegreyaItalic);
+                fonts.AddFont("Alegreya-Bold.ttf", ThemeFonts.AlegreyaBold);
+                fonts.AddFont("PirataOne-Regular.ttf", ThemeFonts.PirataOne);
+                fonts.AddFont("ShipporiMincho-Regular.ttf", ThemeFonts.ShipporiMincho);
+                fonts.AddFont("ShipporiMincho-Bold.ttf", ThemeFonts.ShipporiMinchoBold);
             });
 
         builder.Services

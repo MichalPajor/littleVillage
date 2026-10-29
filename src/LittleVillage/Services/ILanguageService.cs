@@ -12,7 +12,7 @@ public interface ILanguageService : IStoryLanguage
     /// <summary>Wybór gracza; <c>null</c> — jak w telefonie.</summary>
     string? Preferred { get; }
 
-    /// <summary>Ustawia kulturę napisów interfejsu (wywoływane przy starcie, zanim powstanie pierwszy ekran).</summary>
+    /// <summary>Ustawia napisy interfejsu i czcionki języka gry (wywoływane przy starcie, zanim powstanie pierwszy ekran).</summary>
     void Apply();
 
     /// <summary>Zapamiętuje wybór gracza; zwraca <c>true</c>, gdy zmienił się język gry.</summary>

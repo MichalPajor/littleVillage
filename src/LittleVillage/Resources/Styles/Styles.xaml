@@ -9,6 +9,12 @@
     <!-- Konwertery (CommunityToolkit.Maui) -->
     <toolkit:InvertedBoolConverter x:Key="InvertedBool" />
 
+    <!-- Czcionki języka gry (Theme/Fonts.cs podmienia je np. dla japońskiego) -->
+    <x:String x:Key="FontBody">Alegreya</x:String>
+    <x:String x:Key="FontBodyItalic">AlegreyaItalic</x:String>
+    <x:String x:Key="FontBodyBold">AlegreyaBold</x:String>
+    <x:String x:Key="FontDisplay">PirataOne</x:String>
+
     <!-- ===== Style domyślne ===== -->
 
     <Style TargetType="Page" ApplyToDerivedTypes="True">
@@ -25,7 +31,7 @@
     <!-- Baza wszystkich etykiet. Style z kluczem dziedziczą po niej (BasedOn),
          bo jawny styl w MAUI zastępuje styl domyślny zamiast go uzupełniać. -->
     <Style x:Key="BaseLabel" TargetType="Label">
-        <Setter Property="FontFamily" Value="Alegreya" />
+        <Setter Property="FontFamily" Value="{DynamicResource FontBody}" />
         <Setter Property="FontSize" Value="17" />
         <Setter Property="TextColor" Value="{DynamicResource TextInk}" />
     </Style>
@@ -59,14 +65,14 @@
 
     <!-- „Rozdział pierwszy” -->
     <Style x:Key="StoryChapter" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
-        <Setter Property="FontFamily" Value="AlegreyaItalic" />
+        <Setter Property="FontFamily" Value="{DynamicResource FontBodyItalic}" />
         <Setter Property="FontSize" Value="15" />
         <Setter Property="TextColor" Value="{DynamicResource TextMuted}" />
     </Style>
 
     <!-- Tytuły: gry, rozdziałów, okien -->
     <Style x:Key="StoryTitle" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
-        <Setter Property="FontFamily" Value="PirataOne" />
+        <Setter Property="FontFamily" Value="{DynamicResource FontDisplay}" />
         <Setter Property="FontSize" Value="38" />
         <Setter Property="LineHeight" Value="1.05" />
     </Style>
@@ -83,20 +89,20 @@
 
     <!-- „Co robisz?” -->
     <Style x:Key="StoryQuestion" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
-        <Setter Property="FontFamily" Value="PirataOne" />
+        <Setter Property="FontFamily" Value="{DynamicResource FontDisplay}" />
         <Setter Property="FontSize" Value="28" />
         <Setter Property="LineHeight" Value="1.1" />
     </Style>
 
     <!-- Podpowiedzi, podpisy -->
     <Style x:Key="Hint" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
-        <Setter Property="FontFamily" Value="AlegreyaItalic" />
+        <Setter Property="FontFamily" Value="{DynamicResource FontBodyItalic}" />
         <Setter Property="FontSize" Value="15" />
         <Setter Property="TextColor" Value="{DynamicResource TextMuted}" />
     </Style>
 
     <Style x:Key="ItemName" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
-        <Setter Property="FontFamily" Value="AlegreyaBold" />
+        <Setter Property="FontFamily" Value="{DynamicResource FontBodyBold}" />
         <Setter Property="FontSize" Value="18" />
     </Style>
 

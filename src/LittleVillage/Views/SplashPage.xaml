@@ -30,7 +30,7 @@
                 <Label
                     x:Name="TitleLabel"
                     Text="{x:Static res:AppResources.GameTitle}"
-                    FontFamily="PirataOne"
+                    FontFamily="{DynamicResource FontDisplay}"
                     FontSize="60"
                     TextColor="{StaticResource Paper}"
                     HorizontalTextAlignment="Center"

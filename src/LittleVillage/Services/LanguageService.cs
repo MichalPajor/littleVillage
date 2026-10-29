@@ -1,6 +1,7 @@
 using System.Globalization;
 using LittleVillage.Core.Localization;
 using LittleVillage.Resources.Strings;
+using LittleVillage.Theme;
 
 namespace LittleVillage.Services;
 
@@ -26,6 +27,7 @@ public sealed class LanguageService(IPreferences preferences) : ILanguageService
         CultureInfo.DefaultThreadCurrentUICulture = culture;
         CultureInfo.CurrentUICulture = culture;
         AppResources.Culture = culture;
+        Fonts.UseFor(Current, Application.Current?.Resources);
     }
 
     public bool SetPreferred(string? code)
