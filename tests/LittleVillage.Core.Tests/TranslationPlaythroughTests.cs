@@ -12,10 +12,14 @@ public sealed partial class TranslationPlaythroughTests
     private const int Runs = 60;
 
     // Polskie imiona i słowa, które w tłumaczeniu zostają (słowniczek): wolno im mieć polskie litery.
-    private static readonly HashSet<string> KeptPolishWords =
-    [
+    private static readonly HashSet<string> KeptPolishWords = new(StringComparer.OrdinalIgnoreCase)
+    {
         "Staś", "Józek", "Kaśka", "Wójcik", "Wójciks", "Wójcikowa", "Dobrosław", "Dobruś", "turoń", "Łukasz", "Bożena", "Małgosia",
-    ];
+    };
+
+    // Imię z polskimi znakami albo jego dopełniacz (niem. „Józeks”, „Dobrosławs”).
+    private static bool IsKeptName(string word) =>
+        KeptPolishWords.Contains(word) || (word.EndsWith('s') && KeptPolishWords.Contains(word[..^1]));
 
     public static TheoryData<string> Translations()
     {
@@ -124,7 +128,7 @@ public sealed partial class TranslationPlaythroughTests
             foreach (Match word in PolishWord().Matches(text ?? ""))
             {
                 var bare = word.Value.Split('’', '\'')[0];
-                Check(KeptPolishWords.Contains(bare), $"[{language}] polskie słowo „{word.Value}” w „{Shorten(text)}”");
+                Check(IsKeptName(bare), $"[{language}] polskie słowo „{word.Value}” w „{Shorten(text)}”");
             }
         }
     }
