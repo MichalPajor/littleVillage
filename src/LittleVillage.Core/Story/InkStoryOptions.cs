@@ -39,6 +39,9 @@ public sealed class InkStoryOptions
     /// <summary>Funkcja ink zwracająca tytuł zakończenia.</summary>
     public string EndingTitleFunction { get; init; } = "tytul_zakonczenia";
 
-    /// <summary>Pytanie nad opcjami, gdy scena nie ustawi własnego tagiem <c># pytanie:</c>.</summary>
+    /// <summary>Funkcja ink zwracająca pytanie nad opcjami, gdy scena nie ustawi własnego tagiem <c># pytanie:</c>.</summary>
+    public string DefaultQuestionFunction { get; init; } = "domyslne_pytanie";
+
+    /// <summary>Pytanie nad opcjami, gdy fabuła nie ma funkcji <see cref="DefaultQuestionFunction"/>.</summary>
     public string DefaultQuestion { get; init; } = "Co robisz?";
 }

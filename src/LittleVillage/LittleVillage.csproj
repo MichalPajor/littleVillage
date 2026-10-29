@@ -77,13 +77,15 @@
 	</ItemGroup>
 
 	<!-- =====================================================================
-	     Fabuła ink: pliki Story\*.ink są kompilowane do story.json przy każdym
-	     budowaniu (tylko gdy się zmieniły). Błędy w fabule pojawiają się jako
-	     błędy kompilacji z nazwą pliku i numerem linii.
+	     Fabuła ink: Story\main.ink (oryginał) -> story.json, a każde tłumaczenie
+	     Story\<język>\main.ink -> story.<język>.json — przy każdym budowaniu
+	     (tylko gdy coś się zmieniło). Błędy w fabule i tłumaczenia o innej
+	     strukturze niż oryginał pojawiają się jako błędy kompilacji.
 	     ===================================================================== -->
 	<PropertyGroup>
-		<InkMainFile>$(MSBuildProjectDirectory)\Story\main.ink</InkMainFile>
-		<InkOutputFile>$([MSBuild]::NormalizePath('$(MSBuildProjectDirectory)', '$(BaseIntermediateOutputPath)', 'ink', 'story.json'))</InkOutputFile>
+		<InkStoryDirectory>$(MSBuildProjectDirectory)\Story</InkStoryDirectory>
+		<InkOutputDirectory>$([MSBuild]::NormalizeDirectory('$(MSBuildProjectDirectory)', '$(BaseIntermediateOutputPath)', 'ink'))</InkOutputDirectory>
+		<InkOutputFile>$(InkOutputDirectory)story.json</InkOutputFile>
 		<InkBuildProject>$(MSBuildProjectDirectory)\..\..\tools\LittleVillage.InkBuild\LittleVillage.InkBuild.csproj</InkBuildProject>
 	</PropertyGroup>
 
@@ -115,15 +117,19 @@
 	        Inputs="@(InkSource);$(InkCompilerPath)"
 	        Outputs="$(InkOutputFile)"
 	        Condition="'$(DesignTimeBuild)' != 'true'">
-		<Exec Command="dotnet &quot;$(InkCompilerPath)&quot; &quot;$(InkMainFile)&quot; &quot;$(InkOutputFile)&quot;" />
+		<!-- Stare pliki (np. po usunięciu tłumaczenia) nie mogą trafić do aplikacji. -->
 		<ItemGroup>
-			<FileWrites Include="$(InkOutputFile)" />
+			<_OldInkStory Include="$(InkOutputDirectory)story*.json" />
 		</ItemGroup>
+		<Delete Files="@(_OldInkStory)" />
+		<Exec Command="dotnet &quot;$(InkCompilerPath)&quot; &quot;$(InkStoryDirectory)&quot; &quot;$(InkOutputDirectory).&quot;" />
 	</Target>
 
 	<Target Name="IncludeInkStory" BeforeTargets="ProcessMauiAssets" DependsOnTargets="CompileInkStory">
 		<ItemGroup>
-			<MauiAsset Include="$(InkOutputFile)" LogicalName="story.json" />
+			<_InkStory Include="$(InkOutputDirectory)story*.json" />
+			<FileWrites Include="@(_InkStory)" />
+			<MauiAsset Include="@(_InkStory)" LogicalName="%(Filename)%(Extension)" />
 		</ItemGroup>
 	</Target>
 

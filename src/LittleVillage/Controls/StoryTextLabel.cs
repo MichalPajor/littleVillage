@@ -1,3 +1,4 @@
+using System.Globalization;
 using LittleVillage.Core.Text;
 using LittleVillage.Theme;
 
@@ -5,7 +6,7 @@ namespace LittleVillage.Controls;
 
 /// <summary>
 /// Akapit fabuły: obsługuje <c>_kursywę_</c> i inicjał (pierwsza litera czcionką Pirata One);
-/// jednoliterowe wyrazy nie zostają na końcu wiersza (<see cref="BookTypography"/>).
+/// zasady łamania wierszy w języku gry (<see cref="BookTypography"/>).
 /// </summary>
 public sealed class StoryTextLabel : Label
 {
@@ -42,7 +43,7 @@ public sealed class StoryTextLabel : Label
     private void Rebuild()
     {
         var formatted = new FormattedString();
-        var runs = InlineMarkup.Parse(BookTypography.KeepTogether(StoryText ?? string.Empty));
+        var runs = InlineMarkup.Parse(BookTypography.KeepTogether(StoryText ?? string.Empty, CultureInfo.CurrentUICulture.TwoLetterISOLanguageName));
 
         for (var i = 0; i < runs.Count; i++)
         {

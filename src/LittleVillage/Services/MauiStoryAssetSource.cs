@@ -1,4 +1,5 @@
 using LittleVillage.Core.Game;
+using LittleVillage.Core.Localization;
 
 namespace LittleVillage.Services;
 
@@ -8,8 +9,16 @@ public sealed class MauiStoryAssetSource : IStoryAssetSource
     private const string StoryFile = "story.json";
     private const string BackgroundsFile = "backgrounds.json";
 
-    public Task<string> LoadStoryJsonAsync(CancellationToken cancellationToken = default) =>
-        ReadAsync(StoryFile, cancellationToken);
+    // Tłumaczenie: story.<język>.json obok oryginału; bez niego — polska fabuła.
+    public async Task<string> LoadStoryJsonAsync(string language, CancellationToken cancellationToken = default)
+    {
+        if (language != GameLanguage.DefaultCode && await FileSystem.AppPackageFileExistsAsync($"story.{language}.json"))
+        {
+            return await ReadAsync($"story.{language}.json", cancellationToken);
+        }
+
+        return await ReadAsync(StoryFile, cancellationToken);
+    }
 
     public Task<string> LoadBackgroundsJsonAsync(CancellationToken cancellationToken = default) =>
         ReadAsync(BackgroundsFile, cancellationToken);

@@ -29,7 +29,7 @@ public sealed class DeathTests : IDisposable
     }
 
     private GameSession CreateSession() =>
-        new(new InkStoryEngine(), new Assets(InkTestStory.FromSource(Story)), new JsonFileSaveGameRepository(_saveDirectory), new JsonFileProgressRepository(_saveDirectory), new FullVersion(), TimeProvider.System);
+        new(new InkStoryEngine(), new Assets(InkTestStory.FromSource(Story)), new JsonFileSaveGameRepository(_saveDirectory), new JsonFileProgressRepository(_saveDirectory), new FullVersion(), new FixedStoryLanguage("pl"), TimeProvider.System);
 
     [Fact]
     public void Death_tag_ends_the_page_with_death()
@@ -88,7 +88,7 @@ public sealed class DeathTests : IDisposable
 
     private sealed class Assets(string story) : IStoryAssetSource
     {
-        public Task<string> LoadStoryJsonAsync(CancellationToken cancellationToken = default) => Task.FromResult(story);
+        public Task<string> LoadStoryJsonAsync(string language, CancellationToken cancellationToken = default) => Task.FromResult(story);
 
         public Task<string> LoadBackgroundsJsonAsync(CancellationToken cancellationToken = default) =>
             File.ReadAllTextAsync(TestPaths.BackgroundsJson, cancellationToken);

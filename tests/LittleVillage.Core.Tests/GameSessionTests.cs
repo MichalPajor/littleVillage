@@ -18,8 +18,10 @@ public sealed class GameSessionTests : IDisposable
 
     private readonly FakeFullVersion _fullVersion = new() { IsUnlocked = true };
 
+    private readonly FixedStoryLanguage _language = new("pl");
+
     private GameSession CreateSession() =>
-        new(new InkStoryEngine(), new FakeAssets(), new JsonFileSaveGameRepository(_saveDirectory), new JsonFileProgressRepository(_saveDirectory), _fullVersion, TimeProvider.System);
+        new(new InkStoryEngine(), new FakeAssets(), new JsonFileSaveGameRepository(_saveDirectory), new JsonFileProgressRepository(_saveDirectory), _fullVersion, _language, TimeProvider.System);
 
     [Fact]
     public async Task New_game_is_autosaved_and_can_be_continued_in_a_new_session()
@@ -165,6 +167,66 @@ public sealed class GameSessionTests : IDisposable
     }
 
     [Fact]
+    public async Task After_language_change_the_saved_page_and_chapters_are_rewritten_in_the_new_language()
+    {
+        var session = CreateSession();
+        await session.InitializeAsync();
+        await session.StartNewGameAsync();
+
+        var choices = new Queue<int>([2, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, .. Enumerable.Repeat(0, 80)]);
+        var page = session.CurrentPage!;
+        while (!page.Blocks.Any(b => b.Kind == StoryBlockKind.Chapter && b.Text == "Rozdział drugi"))
+        {
+            page = await session.AdvanceAsync(page.Ending == PageEnding.Choices ? choices.Dequeue() : null);
+        }
+
+        // Kilka stron dalej, na stronie z wyborami.
+        do
+        {
+            page = await session.AdvanceAsync(page.Ending == PageEnding.Choices ? choices.Dequeue() : null);
+        }
+        while (page.Ending != PageEnding.Choices);
+
+        var polish = page;
+
+        // Gracz zmienia język w ustawieniach — ta sama sesja wczytuje fabułę od nowa.
+        _language.Current = "xx";
+        Assert.False(session.IsInitialized);
+        await session.InitializeAsync();
+        Assert.Null(session.CurrentPage);
+
+        var translated = await session.ContinueSavedGameAsync();
+        Assert.Equal(polish.BackgroundKey, translated.BackgroundKey);
+        Assert.Equal(polish.Blocks.Count, translated.Blocks.Count);
+        Assert.All(translated.Blocks.Where(b => b.Kind == StoryBlockKind.Paragraph), b => Assert.StartsWith("[xx] ", b.Text));
+        Assert.Equal(polish.Choices.Select(c => $"[xx] {c.Text}"), translated.Choices.Select(c => c.Text));
+        Assert.StartsWith("[xx] ", translated.Question);
+
+        // Przypomnienie: rozdział w nowym języku, bez decyzji podjętych jeszcze po polsku.
+        var recap = session.TakeRecap();
+        Assert.Equal("[xx] Rozdział drugi", recap!.ChapterName);
+        Assert.Empty(recap.RecentChoices);
+
+        // Księga opowieści w nowym języku — także w nowej sesji.
+        var again = CreateSession();
+        await again.InitializeAsync();
+        Assert.Equal("[xx] Szkoła", again.GetChapters().Single(c => c.Id == "rozdz_2").Title);
+        var start = await again.StartChapterAsync("rozdz_2");
+        Assert.Contains(start.Blocks, b => b.Kind == StoryBlockKind.Chapter && b.Text == "[xx] Rozdział drugi");
+
+        // Gra toczy się dalej po przetłumaczonej stronie, a zapis wraca do polskiego tak samo.
+        var next = await session.AdvanceAsync(translated.Choices[0].Index);
+        Assert.All(next.Blocks.Where(b => b.Kind == StoryBlockKind.Paragraph), b => Assert.StartsWith("[xx] ", b.Text));
+
+        _language.Current = "pl";
+        var back = CreateSession();
+        await back.InitializeAsync();
+        var restored = await back.ContinueSavedGameAsync();
+        Assert.Equal(next.BackgroundKey, restored.BackgroundKey);
+        Assert.Equal(next.Blocks.Select(b => b.Text.Replace("[xx] ", "")), restored.Blocks.Select(b => b.Text));
+    }
+
+    [Fact]
     public async Task Continuing_a_save_recalls_the_chapter_and_the_last_decisions()
     {
         var session = CreateSession();
@@ -200,8 +262,9 @@ public sealed class GameSessionTests : IDisposable
 
     private sealed class FakeAssets : IStoryAssetSource
     {
-        public Task<string> LoadStoryJsonAsync(CancellationToken cancellationToken = default) =>
-            Task.FromResult(InkTestStory.Game);
+        // „xx” — próbne tłumaczenie: oryginał z tekstem poprzedzonym znacznikiem języka.
+        public Task<string> LoadStoryJsonAsync(string language, CancellationToken cancellationToken = default) =>
+            Task.FromResult(language == "xx" ? InkTestStory.GameIn("xx") : InkTestStory.Game);
 
         public Task<string> LoadBackgroundsJsonAsync(CancellationToken cancellationToken = default) =>
             File.ReadAllTextAsync(TestPaths.BackgroundsJson, cancellationToken);

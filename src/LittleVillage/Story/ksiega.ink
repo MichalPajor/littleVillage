@@ -71,3 +71,7 @@ LIST Zakonczenia = zak_granica_dab_marysia, zak_granica_dab, zak_granica_marysia
 - zak_ogien_marysia: ~ return "Las, którego nie ma"
 - zak_ogien: ~ return "Ciepły popiół"
 }
+
+// Pytanie nad wyborami, gdy scena nie ma własnego (# pytanie:).
+=== function domyslne_pytanie()
+~ return "Co robisz?"

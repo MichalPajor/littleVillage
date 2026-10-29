@@ -68,6 +68,21 @@ public sealed class InkStoryEngineTests
     }
 
     [Fact]
+    public void Default_question_comes_from_the_story_when_it_has_one()
+    {
+        var page = Load("""
+            Text.
+            * [A] -> END
+            * [B] -> END
+
+            === function domyslne_pytanie()
+            ~ return "What do you do?"
+            """).StartNew();
+
+        Assert.Equal("What do you do?", page.Question);
+    }
+
+    [Fact]
     public void Choosing_out_of_range_throws()
     {
         var engine = Load("""

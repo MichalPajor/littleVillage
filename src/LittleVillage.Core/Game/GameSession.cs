@@ -1,3 +1,4 @@
+using LittleVillage.Core.Localization;
 using LittleVillage.Core.Persistence;
 using LittleVillage.Core.Scenes;
 using LittleVillage.Core.Story;
@@ -11,6 +12,7 @@ public sealed class GameSession(
     ISaveGameRepository saves,
     IProgressRepository progressStore,
     IFullVersion fullVersion,
+    IStoryLanguage language,
     TimeProvider timeProvider) : IGameSession
 {
     /// <summary>Ile ostatnich decyzji pamiętamy do przypomnienia „Poprzednio…”.</summary>
@@ -24,8 +26,10 @@ public sealed class GameSession(
     private string? _chapter;
     private string? _chapterTitle;
     private GameRecap? _recap;
+    private string? _storyLanguage;
 
-    public bool IsInitialized { get; private set; }
+    /// <summary>Fabuła wczytana w bieżącym języku.</summary>
+    public bool IsInitialized => _storyLanguage is not null && _storyLanguage == language.Current;
 
     public StoryPage? CurrentPage { get; private set; }
 
@@ -43,16 +47,22 @@ public sealed class GameSession(
                 return;
             }
 
-            var storyJson = await assets.LoadStoryJsonAsync(cancellationToken);
-            var backgroundsJson = await assets.LoadBackgroundsJsonAsync(cancellationToken);
+            // Pierwsze wczytanie albo zmiana języka — fabuła w nowym języku, gra wraca do menu.
+            var storyLanguage = language.Current;
+            var storyJson = await assets.LoadStoryJsonAsync(storyLanguage, cancellationToken);
+            if (_storyLanguage is null)
+            {
+                Backgrounds = BackgroundCatalog.Parse(await assets.LoadBackgroundsJsonAsync(cancellationToken));
+            }
 
             // Parsowanie fabuły bywa kosztowne przy dużych historiach — poza wątkiem UI.
             await Task.Run(() => engine.Load(storyJson), cancellationToken);
-            Backgrounds = BackgroundCatalog.Parse(backgroundsJson);
+            CurrentPage = null;
+            _storyLanguage = storyLanguage;
             _chapters = engine.GetChapters();
             _endings = engine.GetEndings();
             _progress = await progressStore.LoadAsync(cancellationToken);
-            IsInitialized = true;
+            await TranslateCheckpointsAsync(cancellationToken);
         }
         finally
         {
@@ -67,7 +77,7 @@ public sealed class GameSession(
     {
         EnsureInitialized();
         ResetRun(null, null, []);
-        return await ShowAsync(engine.StartNew(), cancellationToken);
+        return await ShowAsync(engine.StartNew(), new PageOrigin(null, null, null, null), cancellationToken);
     }
 
     public async Task<StoryPage> ContinueSavedGameAsync(CancellationToken cancellationToken = default)
@@ -76,6 +86,12 @@ public sealed class GameSession(
 
         var snapshot = await saves.LoadAsync(cancellationToken)
             ?? throw new InvalidOperationException("Brak zapisanej gry.");
+
+        if (InOtherLanguage(snapshot))
+        {
+            snapshot = Translate(snapshot);
+            await saves.SaveAsync(snapshot, cancellationToken);
+        }
 
         Restore(snapshot);
         _recap = new GameRecap(ChapterName(snapshot.Chapter), snapshot.ChapterTitle, snapshot.RecentChoices ?? [], snapshot.SavedAt);
@@ -93,9 +109,10 @@ public sealed class GameSession(
             throw new FullVersionRequiredException();
         }
 
-        Restore(checkpoint.Snapshot);
-        await saves.SaveAsync(checkpoint.Snapshot with { SavedAt = timeProvider.GetUtcNow() }, cancellationToken);
-        return checkpoint.Snapshot.Page;
+        var snapshot = InOtherLanguage(checkpoint.Snapshot) ? Translate(checkpoint.Snapshot) : checkpoint.Snapshot;
+        Restore(snapshot);
+        await saves.SaveAsync(snapshot with { SavedAt = timeProvider.GetUtcNow() }, cancellationToken);
+        return snapshot.Page;
     }
 
     public async Task<StoryPage> AdvanceAsync(int? choiceIndex, CancellationToken cancellationToken = default)
@@ -108,6 +125,7 @@ public sealed class GameSession(
             throw new FullVersionRequiredException();
         }
 
+        var origin = new PageOrigin(engine.SaveState(), page.BackgroundKey, RevealList.AllOn(page), null);
         var next = page.Ending switch
         {
             PageEnding.Choices when choiceIndex is { } index => Choose(page, index),
@@ -117,7 +135,7 @@ public sealed class GameSession(
             _ => throw new InvalidOperationException("Opowieść dobiegła końca."),
         };
 
-        return await ShowAsync(next, cancellationToken);
+        return await ShowAsync(next, origin with { ChoiceIndex = page.Ending == PageEnding.Choices ? choiceIndex : null }, cancellationToken);
     }
 
     public IReadOnlyList<InventoryItem> GetInventory() =>
@@ -163,12 +181,12 @@ public sealed class GameSession(
         return engine.Choose(index);
     }
 
-    private async Task<StoryPage> ShowAsync(StoryPage page, CancellationToken cancellationToken)
+    private async Task<StoryPage> ShowAsync(StoryPage page, PageOrigin origin, CancellationToken cancellationToken)
     {
         CurrentPage = page;
         var enteredChapter = EnterChapter(page);
         var snapshot = new GameSnapshot(GameSnapshot.CurrentFormatVersion, engine.SaveState(), page, timeProvider.GetUtcNow(),
-            _chapter, _chapterTitle, _recentChoices.ToArray());
+            _chapter, _chapterTitle, _recentChoices.ToArray(), _storyLanguage, origin);
 
         if (page.Ending == PageEnding.End)
         {
@@ -210,6 +228,63 @@ public sealed class GameSession(
 
         _chapter = chapter.Id;
         return true;
+    }
+
+    private bool InOtherLanguage(GameSnapshot snapshot) =>
+        (snapshot.Language ?? GameLanguage.DefaultCode) != _storyLanguage && snapshot.Origin is not null;
+
+    /// <summary>
+    /// Ta sama strona w bieżącym języku: stan sprzed niej i ten sam ruch (wybór albo „dalej”) w przetłumaczonej fabule.
+    /// Ostatnie decyzje gracza zostały w starym języku — przypomnienie pokaże już tylko rozdział.
+    /// </summary>
+    private GameSnapshot Translate(GameSnapshot snapshot)
+    {
+        var origin = snapshot.Origin!;
+        StoryPage page;
+        if (origin.InkState is null)
+        {
+            page = engine.StartNew();
+        }
+        else
+        {
+            engine.RestoreState(origin.InkState, origin.BackgroundKey, origin.Revealed);
+            page = origin.ChoiceIndex is { } index ? engine.Choose(index) : engine.Continue();
+        }
+
+        var title = page.Blocks.FirstOrDefault(b => b.Kind == StoryBlockKind.Title)?.Text
+            ?? _progress.Chapters.FirstOrDefault(c => c.Chapter == snapshot.Chapter)?.Title;
+        return snapshot with
+        {
+            InkState = engine.SaveState(),
+            Page = page,
+            ChapterTitle = title,
+            RecentChoices = [],
+            Language = _storyLanguage,
+        };
+    }
+
+    /// <summary>Początki rozdziałów zapisane w innym języku — tytuły i strony w księdze w bieżącym.</summary>
+    private async Task TranslateCheckpointsAsync(CancellationToken cancellationToken)
+    {
+        if (!_progress.Chapters.Any(c => InOtherLanguage(c.Snapshot)))
+        {
+            return;
+        }
+
+        var chapters = _progress.Chapters.Select(checkpoint =>
+        {
+            if (!InOtherLanguage(checkpoint.Snapshot))
+            {
+                return checkpoint;
+            }
+
+            var snapshot = Translate(checkpoint.Snapshot);
+            var title = snapshot.Page.Blocks.FirstOrDefault(b => b.Kind == StoryBlockKind.Title)?.Text;
+            return checkpoint with { Title = title, Snapshot = snapshot with { ChapterTitle = title } };
+        }).ToArray();
+
+        _progress = _progress with { Chapters = chapters };
+        await progressStore.SaveAsync(_progress, cancellationToken);
     }
 
     private async Task SaveCheckpointAsync(GameSnapshot snapshot, CancellationToken cancellationToken)

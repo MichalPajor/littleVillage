@@ -21,6 +21,15 @@ public sealed class TextTests
     [InlineData("bór i", "bór i")]
     public void Short_words_and_dashes_stay_with_their_neighbours(string text, string expected) => Assert.Equal(expected, BookTypography.KeepTogether(text));
 
+    [Theory]
+    [InlineData("cs", "šel k lesu", "šel k\u00A0lesu")]
+    [InlineData("sk", "išiel s otcom", "išiel s\u00A0otcom")]
+    [InlineData("en", "a wolf and a dog", "a wolf and a dog")]
+    [InlineData("en", "the forest – old", "the forest\u00A0– old")]
+    [InlineData("pl", "poszedł k lesu", "poszedł k lesu")]
+    public void Short_word_rules_depend_on_language(string language, string text, string expected) =>
+        Assert.Equal(expected, BookTypography.KeepTogether(text, language));
+
     [Fact]
     public void Italic_markup_is_split_into_runs()
     {

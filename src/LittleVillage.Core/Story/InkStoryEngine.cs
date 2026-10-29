@@ -8,6 +8,7 @@ public sealed class InkStoryEngine(InkStoryOptions options) : IStoryEngine
 {
     private InkStory? _story;
     private string? _currentBackground;
+    private string? _defaultQuestion;
 
     // Warstwy odsłonięte na stronach z bieżącym tłem — zostają widoczne na kolejnych stronach z tym tłem.
     private readonly HashSet<string> _revealed = new(StringComparer.OrdinalIgnoreCase);
@@ -31,6 +32,11 @@ public sealed class InkStoryEngine(InkStoryOptions options) : IStoryEngine
         story.onError += (message, type) => StoryWarning?.Invoke(this, $"[{type}] {message}");
         _story = story;
         _currentBackground = null;
+
+        // Pytanie nad wyborami pisze fabuła — w swoim języku; bez funkcji w fabule zostaje to z ustawień.
+        _defaultQuestion = story.HasFunction(options.DefaultQuestionFunction)
+            ? story.EvaluateFunction(options.DefaultQuestionFunction) as string
+            : null;
     }
 
     public StoryPage StartNew()
@@ -166,7 +172,7 @@ public sealed class InkStoryEngine(InkStoryOptions options) : IStoryEngine
             : builder.DeathRequested ? PageEnding.Death
             : PageEnding.End;
 
-        var page = builder.Build(ending == PageEnding.Choices ? choices : [], ending, options.DefaultQuestion, alreadyRevealed);
+        var page = builder.Build(ending == PageEnding.Choices ? choices : [], ending, _defaultQuestion ?? options.DefaultQuestion, alreadyRevealed);
 
         _revealed.UnionWith(page.Blocks.SelectMany(b => RevealList.Split(b.Reveal)));
         return page;
