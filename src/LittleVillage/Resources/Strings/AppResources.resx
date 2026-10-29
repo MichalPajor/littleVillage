@@ -35,9 +35,6 @@
   <data name="MenuSettings" xml:space="preserve">
     <value>Ustawienia</value>
   </data>
-  <data name="MenuRate" xml:space="preserve">
-    <value>Oceń grę</value>
-  </data>
   <data name="MenuRateDescription" xml:space="preserve">
     <value>Oceń grę w Google Play</value>
     <comment>Opis dla czytnika ekranu.</comment>

@@ -48,21 +48,25 @@
                         CornerRadius="14,11,10,15"
                         Command="{Binding OpenStoryBookCommand}"
                         SemanticProperties.Description="{x:Static res:AppResources.MenuStoryBook}" />
-                    <Grid ColumnDefinitions="*,*" ColumnSpacing="14">
-                        <controls:SketchTextButton
-                            Text="{x:Static res:AppResources.MenuSettings}"
-                            FontSize="17"
+                    <!-- Ustawienia i ocena — same ikonki, bez napisów -->
+                    <HorizontalStackLayout Spacing="22" HorizontalOptions="Center">
+                        <controls:SketchIconButton
+                            FaceSize="62,62"
+                            IconSize="36"
+                            Icon="ic_settings.png"
+                            StrokeThickness="4"
                             CornerRadius="12,9,14,10"
                             Command="{Binding OpenSettingsCommand}"
                             SemanticProperties.Description="{x:Static res:AppResources.MenuSettings}" />
-                        <controls:SketchTextButton
-                            Grid.Column="1"
-                            Text="{x:Static res:AppResources.MenuRate}"
-                            FontSize="17"
+                        <controls:SketchIconButton
+                            FaceSize="62,62"
+                            IconSize="36"
+                            Icon="ic_star.png"
+                            StrokeThickness="4"
                             CornerRadius="9,13,10,14"
                             Command="{Binding RateCommand}"
                             SemanticProperties.Description="{x:Static res:AppResources.MenuRateDescription}" />
-                    </Grid>
+                    </HorizontalStackLayout>
                 </VerticalStackLayout>
 
                 <!-- Potwierdzenie nadpisania zapisu -->
