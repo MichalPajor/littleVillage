@@ -25,13 +25,13 @@ Antek came towards evening, sat on the threshold and told her where they had sea
 { przysiega_ksiedzu:
     The priest in Bukowiec said Mass for the lost child. The people of Zapadlina stood along the church walls and would not meet one another’s eyes.
 }
-On the third morning, in the heart of the forest, the Lord of the Forest sank to the ground—slowly, with a cracking and groaning of wood, like a barn whose beams have given way—until his face hung over Jaromir as high as a thatched roof.
+On the third morning, in the heart of the forest, the Lord of the Forest sank to the ground – slowly, with a cracking and groaning of wood, like a barn whose beams have given way – until his face hung over Jaromir as high as a thatched roof.
 Jaromir sat down on a root, for his legs would not have held him up much longer anyway. # dalej
 -> pod_debem
 
 = pod_debem
 # tlo: pod_debem
-They were silent. Jaromir could hear something at work inside the oak’s trunk—quietly, evenly, like a mill beyond a wall—and could not guess whether it was sap or a heart. Not a single bird flew over the clearing. The Lord of the Forest smelled of freshly dug earth, and the scent made him drowsy. Several times his eyelids drooped of their own accord, and each time he pinched his thigh until the pain roused him.
+They were silent. Jaromir could hear something at work inside the oak’s trunk – quietly, evenly, like a mill beyond a wall – and could not guess whether it was sap or a heart. Not a single bird flew over the clearing. The Lord of the Forest smelled of freshly dug earth, and the scent made him drowsy. Several times his eyelids drooped of their own accord, and each time he pinched his thigh until the pain roused him.
 { wejscie_do_boru == pod_czystym_niebem || rada_przed_borem == rada_jagny:
     His tongue stuck to the roof of his mouth. Between the roots water was seeping, clear and cold, and Jaromir kept turning his eyes away from it. # pokaz: woda
 }
@@ -45,7 +45,7 @@ They were silent. Jaromir could hear something at work inside the oak’s trunk�
     The dog pressed against his side, trembling. He did not growl. He watched the Lord of the Forest the way one watches a storm that has already broken. # pokaz: pies
 }
 { wejscie_do_boru == ubranie_na_lewo:
-    The Lord of the Forest studied Jaromir’s inside-out coat, and the bark of his face shifted sideways—perhaps it was a smile. “You dress our way,” he said. “Take care you don’t grow to like it.”
+    The Lord of the Forest studied Jaromir’s inside-out coat, and the bark of his face shifted sideways – perhaps it was a smile. “You dress our way,” he said. “Take care you don’t grow to like it.”
 }
 { przed_panem_lasu == zawolal_marysie:
     “You called to her, and the bog answered you,” said the Lord of the Forest. “At dawn, do not listen with your ears.”
@@ -64,10 +64,10 @@ Jaromir had hundreds. He had been setting them in order for two days on the road
     “Asleep.” The Lord of the Forest nodded towards the cleft in the trunk. A breath of damp came out of it, and a sweetish smell of rotten wood. “Where all of them sleep, all those I have taken. She is neither cold nor hungry. She does not cry. My children never cry.”
     “She isn’t yours.”
     “Not yet.” A dry silence. “I have more of them than you think. And mine have no shadows. Not even at high noon.”
-    Jaromir looked down at his feet. His own shadow lay on the lichen, pale and short—the only one in that place besides the oak’s. # pokaz: cien # dalej
+    Jaromir looked down at his feet. His own shadow lay on the lichen, pale and short – the only one in that place besides the oak’s. # pokaz: cien # dalej
 *   [Who he is.]
     ~ pytanie_do_leszego = kim_jest
-    “What remains when you are gone.” The Lord of the Forest raised his hand, and dry needles showered from his fingers. “I was here before the first of you came down into the valley, and I shall be here when nothing is left of your cottages but mounds overgrown with nettles. You call me Borowy, or the Lord of the Forest. The pines call me nothing—they know when I pass.” # pokaz: igly
+    “What remains when you are gone.” The Lord of the Forest raised his hand, and dry needles showered from his fingers. “I was here before the first of you came down into the valley, and I shall be here when nothing is left of your cottages but mounds overgrown with nettles. You call me Borowy, or the Lord of the Forest. The pines call me nothing – they know when I pass.” # pokaz: igly
     “Something in the forest was counting. I heard it once when I was a boy, in the mist.”
     “That was I. I count the old trees that have fallen to your axes on this side of the boundary. And every one of you who has given himself to me of his own accord: by voice or by blood.”
     {
@@ -83,15 +83,15 @@ Jaromir had hundreds. He had been setting them in order for two days on the road
     A cold sweat broke out on the back of Jaromir’s neck. # dalej
 *   [Why the village is cursed.]
     ~ pytanie_do_leszego = o_klatwe
-    “Because of her.” The Lord of the Forest turned his face towards where the lake lay, far off beyond the village. “Those from the water used to come to her. And so did I. She wanted to know what was to come, and we knew. Once I showed her a hut in flames, there in the water—her own. She did not believe it.”
+    “Because of her.” The Lord of the Forest turned his face towards where the lake lay, far off beyond the village. “Those from the water used to come to her. And so did I. She wanted to know what was to come, and we knew. Once I showed her a hut in flames, there in the water – her own. She did not believe it.”
     “Can the curse be lifted?”
-    “It can.” The Lord of the Forest was silent for so long that Jaromir thought he would say nothing more. “It will be lifted by the one who gives me back the boundary. Or by the one who takes my place. Or by the fire that began it—but after such a fire there will be neither forest nor any of you.” # dalej
+    “It can.” The Lord of the Forest was silent for so long that Jaromir thought he would say nothing more. “It will be lifted by the one who gives me back the boundary. Or by the one who takes my place. Or by the fire that began it – but after such a fire there will be neither forest nor any of you.” # dalej
 -   -> granica
 
 = granica
 ~ zapiski += (pan_lasu_9, zielarka_4)
 “Listen, grandson of Maciek,” the Lord of the Forest began, and the forest grew so hushed that Jaromir heard the lichen crunch when he shifted his foot. “I shall say this once.”
-“Before you came, this valley was mine, from the ridge down to the lake. Until one of you came to the Old Oak without an axe and said: we will go no further. A word for a word. You—no further than the Old Oak. I—one child a generation, on Midsummer Night. And I shall give it back before it forgets its home. The word was the fence, and the shrines you set up along the forest were its nails.”
+“Before you came, this valley was mine, from the ridge down to the lake. Until one of you came to the Old Oak without an axe and said: we will go no further. A word for a word. You – no further than the Old Oak. I – one child a generation, on Midsummer Night. And I shall give it back before it forgets its home. The word was the fence, and the shrines you set up along the forest were its nails.”
 { kapliczka_podniesiona:
     “One of them you set up again for me, boy. I remember.”
 }
@@ -99,7 +99,7 @@ Jaromir had hundreds. He had been setting them in order for two days on the road
     “And on All Souls’ Day someone lit a light for me {kapliczka_podniesiona:beneath it|beneath the shrine at the forest’s edge}.”
 }
 { czytal_po_zmroku:
-    “And you read after dark, boy, though you were told you must not. He who reads, calls. The one by the cradle heard you—and so did I.”
+    “And you read after dark, boy, though you were told you must not. He who reads, calls. The one by the cradle heard you – and so did I.”
 }
 “Then there was her. You burned her in a boarded-up hut, and in the fire she cursed you with other hands than her own: mine, and those of the ones from the water. ‘The bones of your children shall be broken, and their blood drunk.’ While the Old Oak stood, the word held stronger than the curse.”
 The leaves of the oak curled above them, as if someone had held a firebrand to them. # pokaz: liscie
@@ -107,13 +107,13 @@ The leaves of the oak curled above them, as if someone had held a firebrand to t
     “Then your grandfather came. He did not know of the word. He built his cottage on my side, right up against the forest, and on the very first morning he sank his axe into the nearest spruce. I answered him, but he did not understand. I have been counting since that tree.”
     {figurka_u_staruchy:Jaromir remembered the nettle-choked foundations under the forest, which his father had never let him ask about.|Jaromir remembered the back wall of the room in his father’s house, beyond which the forest had always murmured, and he felt ashamed of another man’s guilt.}
 }
-“And then came the man from the town. The Old Oak fell{ franek_scial_dab:—and the first cut was dealt it by Franek’s hand}. His men dug up the shrines, and fire took the rest—not my fire. The sawmill was set alight by a human hand, and the same hand barred the door of the watchman’s hut: one of your own, to whom the debt book weighed heavier than another man’s life. And you all looked on.{ noc_ognia != ratowal_szymona: One shrine was left standing—too few to hold up a fence.} There is no fence any more. And the curse does not sleep: it wakes my own—those from the water, the mamunas, the wisplings—and draws them to your cottages like moths to a torch. They heed me less and less.”
+“And then came the man from the town. The Old Oak fell{ franek_scial_dab: – and the first cut was dealt it by Franek’s hand}. His men dug up the shrines, and fire took the rest – not my fire. The sawmill was set alight by a human hand, and the same hand barred the door of the watchman’s hut: one of your own, to whom the debt book weighed heavier than another man’s life. And you all looked on.{ noc_ognia != ratowal_szymona: One shrine was left standing – too few to hold up a fence.} There is no fence any more. And the curse does not sleep: it wakes my own – those from the water, the mamunas, the wisplings – and draws them to your cottages like moths to a torch. They heed me less and less.”
 “It was I who took Marysia,” said the Lord of the Forest. “Midsummer Night was mine. It was I who sent the rye mother for her.”
 “Then give her back,” Jaromir rasped. “Give her back, as you gave back the others.”
 “To a cottage with no fence?” The Lord of the Forest tilted his head. “You were the first to break the word. This time I will not give her back for nothing.”
-Jaromir wanted to shout, but his throat was as dry as the lichen underfoot. Before his eyes rose the rye mother, crouching in the grain, rocking the clog—and how carefully she had led Marysia across the field before those from the water could reach them. He did not know whether that was how one carries a child one is protecting, or a thing one means to steal whole.
+Jaromir wanted to shout, but his throat was as dry as the lichen underfoot. Before his eyes rose the rye mother, crouching in the grain, rocking the clog – and how carefully she had led Marysia across the field before those from the water could reach them. He did not know whether that was how one carries a child one is protecting, or a thing one means to steal whole.
 Out from between the roots slipped the white wolf. # pokaz: wilk
-He came slowly, head low, huge and gaunt, with a ring of worn fur round one foreleg. In his jaws he carried something red. Only when he stopped between them did Jaromir recognise Marysia’s other clog—the one the rye mother had rocked.
+He came slowly, head low, huge and gaunt, with a ring of worn fur round one foreleg. In his jaws he carried something red. Only when he stopped between them did Jaromir recognise Marysia’s other clog – the one the rye mother had rocked.
 {
 - oblawa_wilk == wydal_wilka:
     The wolf moved crookedly, sparing the flank where the bare stripe of an old wound showed white. When he looked at Jaromir, he wrinkled his nose, and a low, drawn-out growl rose from his throat.
@@ -146,9 +146,9 @@ He came slowly, head low, huge and gaunt, with a ring of worn fur round one fore
     { oblawa_wilk == wydal_wilka:
         “And of how it was I who gave you away that time,” he said at the last. “I shouted to the gamekeeper. I did.”
     }
-    The wolf listened with his head cocked to one side. When Jaromir had finished, the wolf howled—briefly, hoarsely, in a voice almost human—and laid the clog at his feet, then lay down beside him. # pokaz: drewniak # tobolek
+    The wolf listened with his head cocked to one side. When Jaromir had finished, the wolf howled – briefly, hoarsely, in a voice almost human – and laid the clog at his feet, then lay down beside him. # pokaz: drewniak # tobolek
     “That was needless,” said the Lord of the Forest. “Every human word you bring back to him takes a piece of his wolf’s life. With your memories in his head he will not live long.” # dalej
-*   [Keep still—this is no longer Franek.]
+* [Keep still – this is no longer Franek.]
     ~ wilk_pod_debem = nie_ruszal_sie
     Jaromir did not stir. He watched the wolf the way one watches a strange animal on the road: so as not to provoke it, and not to give oneself away.
     The wolf stood a while. Then he went round him in a wide arc, carried the clog in under the oak’s roots and laid it at the Lord of the Forest’s feet. He sat down beside him, upright, and from then on was as indifferent to Jaromir as the trees. # pokaz: wilk_przy_lesym
@@ -157,8 +157,8 @@ He came slowly, head low, huge and gaunt, with a ring of worn fur round one fore
 
 = zastaw
 ~ zapiski += tropy_4
-The Lord of the Forest rose—his knees cracked like dry logs—and straightened over Jaromir, tall as the oak in whose shade they sat.
-“At dawn I will show you the children I keep. If you know your own, you will take it home and no one will stop you, neither I nor mine. If you are mistaken, you will take home the one you chose—and bury it as your own.”
+The Lord of the Forest rose – his knees cracked like dry logs – and straightened over Jaromir, tall as the oak in whose shade they sat.
+“At dawn I will show you the children I keep. If you know your own, you will take it home and no one will stop you, neither I nor mine. If you are mistaken, you will take home the one you chose – and bury it as your own.”
 “And until dawn?”
 “Until dawn you are my guest.” The Lord of the Forest bent down until Jaromir felt a breath of cold bark on his face. “And a guest who sleeps under another’s roof leaves something in pledge. Something he will long for.”
 { przysiega_ksiedzu:
@@ -172,7 +172,7 @@ The Lord of the Forest rose—his knees cracked like dry logs—and straightened
     “{przed_panem_lasu == uniosl_siekiere:This morning you meant to frighten me with it,” said the Lord of the Forest. “}This iron stays here. I have waited long for it.” # tobolek # dalej
 *   { ekwipunek ? krzesiwo } [Grandfather’s flint and steel.]
     ~ zastaw_u_leszego = zastaw_krzesiwo
-    Jaromir took the flint and steel out of his pocket. The Lord of the Forest drew back—for the first time since Jaromir had laid eyes on him, he drew back from something—and pointed him to a hollow under an upturned root, far from the trunk.
+    Jaromir took the flint and steel out of his pocket. The Lord of the Forest drew back – for the first time since Jaromir had laid eyes on him, he drew back from something – and pointed him to a hollow under an upturned root, far from the trunk.
     “Throw it in there. Do not put it into my hand.” His voice soughed low, like wind in a chimney. “The fire that burned her still lives in it.”
     ~ ekwipunek -= krzesiwo
     Something knocked against a stone in the hollow and went still. His hands grew numb, as when you pull off your mittens in a hard frost. # pokaz: krzesiwo # tobolek # dalej
@@ -186,9 +186,9 @@ The Lord of the Forest rose—his knees cracked like dry logs—and straightened
 = noc_pod_debem
 # tlo: noc_pod_debem
 He fell asleep, though he had sworn to himself he would not.
-He dreamed he was lying on the bench at home, and Hanka was humming by the cradle.{ pani_w_zbozu_noc == za_spiewem: Her voice was whole, as it used to be.} When he woke, the singing did not stop. It flowed from the cleft in the trunk, thin and clear—Marysia’s tune. He knew its ending now: he had heard it as he came into the clearing. Now a child’s voice was singing it. And Marysia had never got further than halfway. # pokaz: spiew
+He dreamed he was lying on the bench at home, and Hanka was humming by the cradle.{ pani_w_zbozu_noc == za_spiewem: Her voice was whole, as it used to be.} When he woke, the singing did not stop. It flowed from the cleft in the trunk, thin and clear – Marysia’s tune. He knew its ending now: he had heard it as he came into the clearing. Now a child’s voice was singing it. And Marysia had never got further than halfway. # pokaz: spiew
 { wejscie_do_boru == ubranie_na_lewo:
-    He tried to call her face to mind. The freckles—yes. The little tooth—yes. The dimple in her cheek… on which side? He lay with his eyes open, whispering “the left, the left, the left,” until the word lost all meaning.
+    He tried to call her face to mind. The freckles – yes. The little tooth – yes. The dimple in her cheek… on which side? He lay with his eyes open, whispering “the left, the left, the left,” until the word lost all meaning.
 }
 { wilk_przy_jaromirze:
     The white wolf lay at his side the whole night through. Warmth came off him as off a wall that has stood all day in the sun. # pokaz: wilk

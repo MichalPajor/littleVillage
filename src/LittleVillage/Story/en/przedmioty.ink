@@ -19,7 +19,7 @@ VAR ekwipunek = (siekiera, chleb)
         }
         ~ return "Axe"
     - chleb:     ~ return "A loaf of bread"
-    - pies_towarzysz: ~ return "The dog—a companion"
+    - pies_towarzysz: ~ return "The dog – a companion"
     - figurka:   ~ return "Charred figurine"
     - krzesiwo:  ~ return "Flint and steel"
     - zapasy:    ~ return "Provisions from town"
@@ -57,7 +57,7 @@ VAR ekwipunek = (siekiera, chleb)
 { p:
     - siekiera:
         { siekiera_dziadka:
-            ~ return "An axe with a worn, dark haft. Grandfather Maciek once bought it in town with the money from four years’ labour on another man’s field. Jaromir’s father gave it to him on his wedding day—now he is master of the farm."
+            ~ return "An axe with a worn, dark haft. Grandfather Maciek once bought it in town with the money from four years’ labour on another man’s field. Jaromir’s father gave it to him on his wedding day – now he is master of the farm."
         }
         ~ return "Bought in town with the money from four years’ labour on another man’s field. The whole future rests upon it."
     - chleb:     ~ return "Hard, coarse rye, wrapped in a scrap of linen. It has to last a long while."
@@ -75,7 +75,7 @@ VAR ekwipunek = (siekiera, chleb)
             ~ return "Grandfather Maciek’s small, blackened flint and steel. Grandmother Marianna gave it to Jaromir on her deathbed. Grandfather kept it by him to the very end."
         }
         { krzesiwo_na_slubie:
-            ~ return "Grandfather Maciek’s small, blackened flint and steel. Jaromir’s father gave it to him on his wedding day, together with the axe—Grandfather carried it on him till the day he died."
+            ~ return "Grandfather Maciek’s small, blackened flint and steel. Jaromir’s father gave it to him on his wedding day, together with the axe – Grandfather carried it on him till the day he died."
         }
         ~ return "It lay in the ashes beside the figurine. Could this be what set the witch’s hut alight?"
     - zapasy:
@@ -83,31 +83,31 @@ VAR ekwipunek = (siekiera, chleb)
             ~ return "Two loaves of bread, a sack of groats, salt, a slab of pork fat and a basket of seed potatoes. Bought with the old crone’s coins."
         }
         ~ return "A loaf of bread, a handful of salt and a little bag of groats. It must last until something grows."
-    - nasiona:   ~ return "Bought at the market in town. It was spring—they had to be sown without delay."
+    - nasiona: ~ return "Bought at the market in town. It was spring – they had to be sown without delay."
     - nozyk:     ~ return "A name-day gift from Father. Small, with a worn wooden handle and a blade he put an edge on with a whetstone. Jaromir has whittled more than one bow with it."
-    - kora:      ~ return "A piece of pine bark rolled into a tube, taken from beneath the tree with the spiral. On its smooth side someone has carved rows of strokes and circles—like letters, and yet Jaromir knows not one of them."
+    - kora: ~ return "A piece of pine bark rolled into a tube, taken from beneath the tree with the spiral. On its smooth side someone has carved rows of strokes and circles – like letters, and yet Jaromir knows not one of them."
     - ksiega:
         { ksiega_zatrzymana:
-            ~ return "Mr Ignacy’s thick notebook, bound in leather and filled with a careful, slanting hand—tales from the country around Beech Ridge. The schoolmaster let him keep it. It may only be read by day."
+            ~ return "Mr Ignacy’s thick notebook, bound in leather and filled with a careful, slanting hand – tales from the country around Beech Ridge. The schoolmaster let him keep it. It may only be read by day."
         }
-        ~ return "Mr Ignacy’s thick notebook, bound in leather and filled with a careful, slanting hand—tales from the country around Beech Ridge. It may only be read by day, and it must be given back at Christmas."
+        ~ return "Mr Ignacy’s thick notebook, bound in leather and filled with a careful, slanting hand – tales from the country around Beech Ridge. It may only be read by day, and it must be given back at Christmas."
     - szczeniak:
         { rozdzial_jedenasty:
-            ~ return "A dog descended from Grandfather Maciek’s—once a puppy from old Staś, now old himself, grey about the muzzle. He still sleeps at the foot of the bed and still growls in his sleep towards the forest."
+            ~ return "A dog descended from Grandfather Maciek’s – once a puppy from old Staś, now old himself, grey about the muzzle. He still sleeps at the foot of the bed and still growls in his sleep towards the forest."
         }
         { rozdzial_piaty:
             ~ return "A dog descended from Grandfather Maciek’s, once a Christmas Eve puppy from old Staś. He has grown big, with pricked ears and a white patch on his chest. He sleeps at the foot of the bed and growls in his sleep towards the window."
         }
         ~ return "A puppy of the line of Grandfather Maciek’s dog, a Christmas Eve present from old Staś. Pricked ears, a white patch on his chest and paws too big for the rest of him. He sleeps at the foot of the bed and growls in his sleep towards the window."
     - mak:       ~ return "A rag holding a handful of poppy seeds filched from the Christmas Eve bowl. According to Mr Ignacy’s book, Lady Midnight must count every last seed before she can come any closer."
-    - monety:    ~ return "Heavy, cold silver coins with an eagle on one side—Mr Urbaniak’s pay for a summer spent stacking planks."
+    - monety: ~ return "Heavy, cold silver coins with an eagle on one side – Mr Urbaniak’s pay for a summer spent stacking planks."
     - zoladz:    ~ return "A large, smooth acorn from beneath the roots of the felled Old Oak. It is still warm, as if something inside were alive."
-    - piolun:    ~ return "A bunch of grey-green stalks with a bitter, sharp smell. Hanka gave it to him at Whitsun—they say that what comes out of the water then fears wormwood more than fire."
+    - piolun: ~ return "A bunch of grey-green stalks with a bitter, sharp smell. Hanka gave it to him at Whitsun – they say that what comes out of the water then fears wormwood more than fire."
     - korale:    ~ return "A string of rowan-berry beads found on the jetty after the night of the rusalki. They belonged to Kaśka, the Wójciks’ daughter. They are still wet, and red as fresh blood."
     - swiatek:   ~ return "A wooden Mother of God with the Child, pulled by night from Urbaniak’s cart while his men were digging up the shrines below the forest. Her face is so worn by the rains it can barely be made out. Hidden under the boards in the den in the old elder."
     - podkowa:   ~ return "An iron horseshoe forged by Hanka’s father for the wedding. It hangs over the cottage threshold, points upward, so that nothing evil can come in and the luck cannot spill out."
-    - krzyzyk:   ~ return "A small iron cross on a leather thong, forged by Hanka’s father for the wedding. Hanka wears it round her neck and never takes it off—the smith bade her never to."
-    - gromnica:  ~ return "A thick wax candle blessed in Bukowiec at Candlemas. Every home must have one—for storms, for childbirth and for death."
+    - krzyzyk: ~ return "A small iron cross on a leather thong, forged by Hanka’s father for the wedding. Hanka wears it round her neck and never takes it off – the smith bade her never to."
+    - gromnica: ~ return "A thick wax candle blessed in Bukowiec at Candlemas. Every home must have one – for storms, for childbirth and for death."
     - bucik_marysi:
         { drugi_drewniak:
             ~ return "A pair of little limewood clogs, painted red and lined with felt from Grandfather Dobrosław’s old hat. The white wolf brought the second one back from beneath the oak."

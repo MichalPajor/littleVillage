@@ -1,3 +1,4 @@
+using System.Globalization;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using LittleVillage.Core.Story;
@@ -20,6 +21,7 @@ public sealed partial class ChoiceViewModel : ObservableObject
     public ChoiceViewModel(StoryChoice choice, int position, Action<ChoiceViewModel> onSelected)
     {
         Choice = choice;
+        Text = BookTypography.KeepTogether(choice.Text, CultureInfo.CurrentUICulture.TwoLetterISOLanguageName);
         Numeral = RomanNumeral.From(position + 1);
         CornerRadius = SketchRadii[position % SketchRadii.Length];
         SelectCommand = new RelayCommand(() => onSelected(this));
@@ -29,7 +31,8 @@ public sealed partial class ChoiceViewModel : ObservableObject
 
     public string Numeral { get; }
 
-    public string Text => Choice.Text;
+    // Łamanie wierszy jak w akapitach fabuły (jednoliterowe wyrazy, myślniki).
+    public string Text { get; }
 
     public CornerRadius CornerRadius { get; }
 

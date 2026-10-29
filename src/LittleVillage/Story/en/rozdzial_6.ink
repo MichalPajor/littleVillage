@@ -11,8 +11,8 @@
 # rozdzial: Chapter Six
 # tytul: High Noon
 The harvest came in a great heat. For weeks not a drop of rain had fallen, the sky turned white with glare by dawn, and the earth on the field balks split into long, crooked cracks. The grain had ripened suddenly, in a matter of days, and now stood in the fields golden and dry, rustling like paper at every breath of wind.
-They went out to the fields before the cocks crowed. The men walked in front, the women behind them binding sheaves, and the children gathered the gleanings and carried water in clay jugs. Jaromir was thirteen and for the first time was mowing alongside the grown-ups—in the row, step for step behind his father, and the blade in his hands swished almost as evenly as the old reapers’. The air smelled of hot straw and sweat, scythes rang against whetstones, and every so often startled quails whirred up from underfoot.
-Hanka was working on the neighbouring strip. Now and again she would straighten up, wipe her brow with the back of her hand and steal a glance towards Jaromir, and whenever their eyes met she would turn her head at once and go back to the sheaves with feigned zeal. Jaromir did not know why each time he grew so strangely hot—and not from the sun. # pokaz: hanka
+They went out to the fields before the cocks crowed. The men walked in front, the women behind them binding sheaves, and the children gathered the gleanings and carried water in clay jugs. Jaromir was thirteen and for the first time was mowing alongside the grown-ups – in the row, step for step behind his father, and the blade in his hands swished almost as evenly as the old reapers’. The air smelled of hot straw and sweat, scythes rang against whetstones, and every so often startled quails whirred up from underfoot.
+Hanka was working on the neighbouring strip. Now and again she would straighten up, wipe her brow with the back of her hand and steal a glance towards Jaromir, and whenever their eyes met she would turn her head at once and go back to the sheaves with feigned zeal. Jaromir did not know why each time he grew so strangely hot – and not from the sun. # pokaz: hanka
 { figurka_u_staruchy:
     His father hardly spoke. At high noon he always made everyone leave the field for the shade, even if the rye were to shed its grain.
 - else:
@@ -25,9 +25,9 @@ One day Jaromir was left alone at the end of the strip. He wanted to finish the 
 # tlo: poludnica
 It grew quiet. The crickets fell silent, the grain stopped rustling, and the air over the field thickened and rippled like water over a sun-baked stone.
 Among the ears of grain a woman appeared. # pokaz: poludnica
-She was tall and thin, straight as a bowstring, in a white shift down to her ankles that billowed, though not the slightest breeze was blowing. Fair hair reached to her knees and streamed out to either side, and on her head she wore a wreath of corn-ears and red poppies. Her face was pale and narrow, with high cheekbones, her eyes like linen bleached in the sun, without pupils, and her lips pressed into a thin line. Her bare feet did not touch the ground—she hovered a few inches above the stubble, and beneath her the heat quivered. In her right hand she held a sickle. From its tip hung a red drop.
+She was tall and thin, straight as a bowstring, in a white shift down to her ankles that billowed, though not the slightest breeze was blowing. Fair hair reached to her knees and streamed out to either side, and on her head she wore a wreath of corn-ears and red poppies. Her face was pale and narrow, with high cheekbones, her eyes like linen bleached in the sun, without pupils, and her lips pressed into a thin line. Her bare feet did not touch the ground – she hovered a few inches above the stubble, and beneath her the heat quivered. In her right hand she held a sickle. From its tip hung a red drop.
 Her left hand she stretched out towards him, open, as if asking for something.
-“Whoever works in my hour,” she said in a voice dry as the crackle of straw, “must answer me. Three riddles. For every mistake—one cut.”
+“Whoever works in my hour,” she said in a voice dry as the crackle of straw, “must answer me. Three riddles. For every mistake – one cut.”
 { ekwipunek ? ksiega:
     Before Jaromir’s eyes rose a page from Mr Ignacy’s book: “Lady Midday walks the fields in the fiercest heat and questions the reapers. Whoever answers everything goes free. Whoever errs or runs away, she cuts down with her sickle or sends a fever upon him.” Below, in smaller writing, the teacher had added one answer he had heard years before from an old woman in Bukowiec, and underlined it twice: “The grain dies three times and three times comes back.”
 }
@@ -41,7 +41,7 @@ Lady Midday tilted her head to one side, like a bird.
 *   [Fire.]
     -> zle_1
 *   [The wind.]
-    Lady Midday was silent for a moment. Then her lips twitched—it was not a smile, rather something that recalled one.
+    Lady Midday was silent for a moment. Then her lips twitched – it was not a smile, rather something that recalled one.
     “The wind,” she repeated. “My brother. Good.” # dalej
     -> zagadka_2
 *   [Smoke.]
@@ -50,7 +50,7 @@ Lady Midday tilted her head to one side, like a bird.
 = zle_1
 { odwaga_jaromira && not poludnica_darowala:
     ~ poludnica_darowala = true
-    The sickle whistled—and stopped a hair’s breadth from his shoulder. Jaromir did not flinch. {figurka_u_staruchy:Once, in deep water, something had brushed against his calf, and he had fled to the shore. This time he did not flee.|Once, in the reeds by the lake, he had laid his hand on a charred log, though the others had not dared. This time he did not draw back.}
+    The sickle whistled – and stopped a hair’s breadth from his shoulder. Jaromir did not flinch. {figurka_u_staruchy:Once, in deep water, something had brushed against his calf, and he had fled to the shore. This time he did not flee.|Once, in the reeds by the lake, he had laid his hand on a charred log, though the others had not dared. This time he did not draw back.}
     “You don’t run,” said Lady Midday, and moved the blade away. “This one I’ll spare you. But it was the wind. Fire and smoke everyone has seen, but the wind no one ever has.” # dalej
     -> zagadka_2
 }
@@ -61,7 +61,7 @@ The sickle whistled before Jaromir could blink. He felt a searing pain in his sh
 -> zagadka_2
 
 = zagadka_2
-“They bury him in the earth like a dead man, and he rises. They cut him down like a felon, and he does not bleed. They beat him, and he does not complain. And when they put him into the fire—only then does everyone want him. What is it?”
+“They bury him in the earth like a dead man, and he rises. They cut him down like a felon, and he does not bleed. They beat him, and he does not complain. And when they put him into the fire – only then does everyone want him. What is it?”
 # pytanie: What will Jaromir answer?
 *   [Flax.]
     -> zle_2
@@ -72,14 +72,14 @@ The sickle whistled before Jaromir could blink. He felt a searing pain in his sh
     -> zle_2
 *   { ekwipunek ? ksiega } [Grain.]
     ~ poludnica_uklon = true
-    Lady Midday opened her mouth and closed it again without a word. For a long time she looked at him with those white eyes, and then she bowed her head—slightly, barely perceptibly, as one bows to someone held in respect. # pokaz: uklon
+    Lady Midday opened her mouth and closed it again without a word. For a long time she looked at him with those white eyes, and then she bowed her head – slightly, barely perceptibly, as one bows to someone held in respect. # pokaz: uklon
     “Grain,” she repeated softly. “In the earth it dies, from under scythe and flail it comes back, and in the oven it is born as bread. Such an answer I have not heard in a hundred years. Someone taught you well.” # dalej
     -> zagadka_3
 
 = zle_2
 { odwaga_jaromira && not poludnica_darowala:
     ~ poludnica_darowala = true
-    The sickle whistled—and stopped a hair’s breadth from his hand. Jaromir did not flinch. {figurka_u_staruchy:Once, in deep water, something had brushed against his calf, and he had fled to the shore. This time he did not flee.|Once, in the reeds by the lake, he had laid his hand on a charred log, though the others had not dared. This time he did not draw back.}
+    The sickle whistled – and stopped a hair’s breadth from his hand. Jaromir did not flinch. {figurka_u_staruchy:Once, in deep water, something had brushed against his calf, and he had fled to the shore. This time he did not flee.|Once, in the reeds by the lake, he had laid his hand on a charred log, though the others had not dared. This time he did not draw back.}
     “You don’t run,” said Lady Midday, and moved the blade away. “This one I’ll spare you. But it was rye. Flax is not baked, and no one threshes potatoes.” # dalej
     -> zagadka_3
 }
@@ -91,7 +91,7 @@ The sickle flashed through the air. The cut went across the back of his hand, sh
 
 = zagadka_3
 The air rippled more strongly. The heat rose into Jaromir’s throat, his ears rang, and the field began to sway as though he were standing in a boat.
-“And now tell me,” Lady Midday lowered her voice, “who has a house older than all the cottages hereabouts, yet not a single door in it? Who herds wolves as you herd sheep? And from whose fence, this summer, did they tear the thickest stake—the oaken one?”
+“And now tell me,” Lady Midday lowered her voice, “who has a house older than all the cottages hereabouts, yet not a single door in it? Who herds wolves as you herd sheep? And from whose fence, this summer, did they tear the thickest stake – the oaken one?”
 # pytanie: What will Jaromir answer?
 *   [Saint George.]
     ~ pomylki_poludnica += 1
@@ -115,7 +115,7 @@ The air rippled more strongly. The heat rose into Jaromir’s throat, his ears r
     Lady Midday studied him for a long time, and then lowered her sickle.
     “It could have been worse,” she said. “Go. But remember: the Lord of the Forest is waking. Keep watch on the shrines.”
 - else:
-    Lady Midday raised the sickle high, above his head. The boy shut his eyes—and then he heard a shout. # pokaz: zamach
+    Lady Midday raised the sickle high, above his head. The boy shut his eyes – and then he heard a shout. # pokaz: zamach
 }
 Someone was running onto the strip, stumbling over the sheaves. Hanka. In her hands she carried a clay jug, water slopping out of it. # pokaz: dzban
 “Jaromir! Jaromir, what are you doing out here at high noon?!”
@@ -124,9 +124,9 @@ Someone was running onto the strip, stumbling over the sheaves. Hanka. In her ha
     When he looked ahead again, there was no one there. Only on the stubble lay the wreath of corn-ears and poppies, already beginning to wilt. # pokaz: znika, wianek # dalej
     -> po_poludniu
 - else:
-    Hanka did not slow down. She sprang to the boy’s side and dashed the water from the jug—not over him, but straight ahead, where the heat was rippling.
+    Hanka did not slow down. She sprang to the boy’s side and dashed the water from the jug – not over him, but straight ahead, where the heat was rippling.
     “Here, drink!” she cried into the emptiness in a breaking voice, just as her grandmother had taught her. “Drink, and let him go!”
-    Lady Midday hesitated with her sickle raised. She looked at the girl, then at the dark stain vanishing into the cracked earth—and dissolved into the quivering air like steam. Hanka poured the rest of the water over Jaromir’s head. # pokaz: znika, woda # dalej
+    Lady Midday hesitated with her sickle raised. She looked at the girl, then at the dark stain vanishing into the cracked earth – and dissolved into the quivering air like steam. Hanka poured the rest of the water over Jaromir’s head. # pokaz: znika, woda # dalej
     -> goraczka
 }
 
@@ -134,7 +134,7 @@ Someone was running onto the strip, stumbling over the sheaves. Hanka. In her ha
 # tlo: goraczka
 ~ blizna_sierpa = true
 ~ zapiski += poludnica_1
-For three days the fever consumed him. He lay in the cottage under wet cloths, {rany_sierpa()} burned as if seared with a hot iron, and in his delirium he kept seeing white eyes without pupils and hearing a dry whisper: “For every mistake—one cut.” # pokaz: majaki
+For three days the fever consumed him. He lay in the cottage under wet cloths, {rany_sierpa()} burned as if seared with a hot iron, and in his delirium he kept seeing white eyes without pupils and hearing a dry whisper: “For every mistake – one cut.” # pokaz: majaki
 His mother did not leave his side for a moment. Hanka brought herbs from her grandmother, and on the second day, telling no one, she went at high noon to that strip of field and set a jug of fresh water on the balk. She came back shaken and would not say what she had seen there. That night the fever began to break. # pokaz: hanka
 When at last he got up, a white scar in the shape of a crescent moon was left on his {miejsce_blizny()}, as if from the tip of a sickle.
 -> czy_powiedziec
@@ -165,7 +165,7 @@ Antek pounced on Jaromir as soon as they were alone.
     -> rozdzial_szosty_ciag_dalszy
 *   [Keep it to himself.]
     # tlo: kapliczki_noc
-    Jaromir told no one—apart from Antek, who knew anyway. Every night, when everyone was asleep, the two of them slipped out and made the rounds of the nearest wayside shrines. They straightened lopsided little roofs and pulled out the weeds twining round the posts. Sometimes, halfway through the work, the crickets fell silent—first beneath the forest, then nearer and nearer—and then the boys stood motionless until they began to chirp again. Jaromir came back before dawn drenched in cold sweat, the legs of his trousers wet with dew, and for a long time could not fall asleep, listening to every rustle outside the window. # pokaz: jaromir # dalej
+    Jaromir told no one – apart from Antek, who knew anyway. Every night, when everyone was asleep, the two of them slipped out and made the rounds of the nearest wayside shrines. They straightened lopsided little roofs and pulled out the weeds twining round the posts. Sometimes, halfway through the work, the crickets fell silent – first beneath the forest, then nearer and nearer – and then the boys stood motionless until they began to chirp again. Jaromir came back before dawn drenched in cold sweat, the legs of his trousers wet with dew, and for a long time could not fall asleep, listening to every rustle outside the window. # pokaz: jaromir # dalej
     -> rozdzial_szosty_ciag_dalszy
 
 

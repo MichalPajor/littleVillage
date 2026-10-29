@@ -119,10 +119,10 @@
     <value>Full version</value>
   </data>
   <data name="FullVersionText" xml:space="preserve">
-    <value>Here the free part of the story ends. The rest of Zapadlina’s fate—chapters five to twenty and all the endings—awaits in the full version.</value>
+    <value>Here the free part of the story ends. The rest of Zapadlina’s fate – chapters five to twenty and all the endings – awaits in the full version.</value>
   </data>
   <data name="FullVersionHint" xml:space="preserve">
-    <value>You pay once—no ads and no subscription. The purchase stays on your Google account, even if you reinstall the game.</value>
+    <value>You pay once – no ads and no subscription. The purchase stays on your Google account, even if you reinstall the game.</value>
   </data>
   <data name="Buy" xml:space="preserve">
     <value>Buy the full version</value>
@@ -200,7 +200,7 @@
     <value>Settings</value>
   </data>
   <data name="TextSample" xml:space="preserve">
-    <value>From the east the forest pressed in—old, coniferous and so dense that even by day the trees cast a deep, cool shade.</value>
+    <value>From the east the forest pressed in – old, coniferous and so dense that even by day the trees cast a deep, cool shade.</value>
   </data>
   <data name="TextSizeSmall" xml:space="preserve">
     <value>Text: small</value>

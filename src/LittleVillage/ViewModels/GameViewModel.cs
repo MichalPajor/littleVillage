@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -5,6 +6,7 @@ using CommunityToolkit.Mvvm.Messaging;
 using LittleVillage.Core.Game;
 using LittleVillage.Core.Scenes;
 using LittleVillage.Core.Story;
+using LittleVillage.Core.Text;
 using LittleVillage.Messages;
 using LittleVillage.Resources.Strings;
 using LittleVillage.Services;
@@ -273,7 +275,7 @@ public sealed partial class GameViewModel(
         InventoryItems.Clear();
         foreach (var item in session.GetInventory())
         {
-            InventoryItems.Add(item);
+            InventoryItems.Add(item with { Description = item.Description is { } text ? Book(text) : null });
         }
 
         HasInventoryItems = InventoryItems.Count > 0;
@@ -283,13 +285,16 @@ public sealed partial class GameViewModel(
     [RelayCommand]
     private void CloseInventory() => IsInventoryOpen = false;
 
+    // Łamanie wierszy jak w akapitach fabuły (StoryTextLabel) — karty tobołka i zapisków to zwykłe etykiety.
+    private static string Book(string text) => BookTypography.KeepTogether(text, CultureInfo.CurrentUICulture.TwoLetterISOLanguageName);
+
     [RelayCommand]
     private void OpenJournal()
     {
         JournalEntries.Clear();
         foreach (var entry in session.GetJournal())
         {
-            JournalEntries.Add(entry);
+            JournalEntries.Add(entry with { Notes = entry.Notes.Select(Book).ToArray() });
         }
 
         HasJournalEntries = JournalEntries.Count > 0;
