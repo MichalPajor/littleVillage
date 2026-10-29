@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="GameTitle" xml:space="preserve">
+    <value>Little village</value>
+  </data>
+  <data name="GameSubtitle" xml:space="preserve">
+    <value>A tale from a forgotten village</value>
+  </data>
+  <data name="MainMenuSubtitle" xml:space="preserve">
+    <value>A tale from a small, forgotten village called</value>
+  </data>
+  <data name="MainMenuTitle" xml:space="preserve">
+    <value>Zapadlina</value>
+  </data>
+  <data name="MenuNewGame" xml:space="preserve">
+    <value>New game</value>
+  </data>
+  <data name="MenuContinue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="MenuContinueDescription" xml:space="preserve">
+    <value>Continue the saved game</value>
+  </data>
+  <data name="MenuStoryBook" xml:space="preserve">
+    <value>Chapters and endings</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="MenuRateDescription" xml:space="preserve">
+    <value>Rate the game on Google Play</value>
+  </data>
+  <data name="NewGameConfirm" xml:space="preserve">
+    <value>Start again? The story so far will vanish like a footprint in the marsh.</value>
+  </data>
+  <data name="NewGameYes" xml:space="preserve">
+    <value>Yes, start again</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="BackToMenu" xml:space="preserve">
+    <value>Back to the menu</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Something went wrong</value>
+  </data>
+  <data name="LoadStoryFailed" xml:space="preserve">
+    <value>The story could not be loaded.</value>
+  </data>
+  <data name="OpenInventory" xml:space="preserve">
+    <value>Open the bundle</value>
+  </data>
+  <data name="OpenJournal" xml:space="preserve">
+    <value>Open the notes</value>
+  </data>
+  <data name="ToggleTheme" xml:space="preserve">
+    <value>Switch between light and dark mode</value>
+  </data>
+  <data name="StoryTextDescription" xml:space="preserve">
+    <value>Story text</value>
+  </data>
+  <data name="TogglePanel" xml:space="preserve">
+    <value>Hide or show the story window</value>
+  </data>
+  <data name="ChoiceHint" xml:space="preserve">
+    <value>Make your choice to go on.</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="TryAgain" xml:space="preserve">
+    <value>Try again</value>
+  </data>
+  <data name="TryAgainDescription" xml:space="preserve">
+    <value>Go back to the last save before death</value>
+  </data>
+  <data name="EndingNote" xml:space="preserve">
+    <value>Ending: “{0}”. Discovered: {1} of {2}.</value>
+  </data>
+  <data name="JournalTitle" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="CloseJournal" xml:space="preserve">
+    <value>Close the notes</value>
+  </data>
+  <data name="JournalEmpty" xml:space="preserve">
+    <value>Nothing has been written here yet.</value>
+  </data>
+  <data name="JournalNewCard" xml:space="preserve">
+    <value>A new entry in the notes</value>
+  </data>
+  <data name="JournalUpdated" xml:space="preserve">
+    <value>The notes are filled in</value>
+  </data>
+  <data name="InventoryTitle" xml:space="preserve">
+    <value>Bundle</value>
+  </data>
+  <data name="CloseInventory" xml:space="preserve">
+    <value>Close the bundle</value>
+  </data>
+  <data name="InventoryEmpty" xml:space="preserve">
+    <value>Your bundle is empty.</value>
+  </data>
+  <data name="InventoryAdded" xml:space="preserve">
+    <value>Into the bundle goes</value>
+  </data>
+  <data name="InventoryRemoved" xml:space="preserve">
+    <value>Gone from the bundle</value>
+  </data>
+  <data name="FullVersionTitle" xml:space="preserve">
+    <value>Full version</value>
+  </data>
+  <data name="FullVersionText" xml:space="preserve">
+    <value>Here the free part of the story ends. The rest of Zapadlina’s fate—chapters five to twenty and all the endings—awaits in the full version.</value>
+  </data>
+  <data name="FullVersionHint" xml:space="preserve">
+    <value>You pay once—no ads and no subscription. The purchase stays on your Google account, even if you reinstall the game.</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Buy the full version</value>
+  </data>
+  <data name="BuyFor" xml:space="preserve">
+    <value>Buy for {0}</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Restore purchase</value>
+  </data>
+  <data name="RestoreDescription" xml:space="preserve">
+    <value>Restore an earlier purchase of the full version</value>
+  </data>
+  <data name="PaymentPendingTitle" xml:space="preserve">
+    <value>Payment pending</value>
+  </data>
+  <data name="PaymentPendingText" xml:space="preserve">
+    <value>The store is still waiting for the payment to be confirmed. Once it goes through, come back here and tap “Restore purchase”.</value>
+  </data>
+  <data name="StoreUnavailableTitle" xml:space="preserve">
+    <value>Store unavailable</value>
+  </data>
+  <data name="StoreUnavailableText" xml:space="preserve">
+    <value>Could not connect to Google Play. Check your internet connection and try again.</value>
+  </data>
+  <data name="PurchaseNotFoundTitle" xml:space="preserve">
+    <value>Purchase not found</value>
+  </data>
+  <data name="PurchaseNotFoundText" xml:space="preserve">
+    <value>This Google account doesn’t have the full version yet. If you’ve only just paid, try again in a moment.</value>
+  </data>
+  <data name="ChapterInFullVersion" xml:space="preserve">
+    <value>This chapter is part of the full version of the story.</value>
+  </data>
+  <data name="RecapTitle" xml:space="preserve">
+    <value>Previously…</value>
+  </data>
+  <data name="RecapChoices" xml:space="preserve">
+    <value>Your last choices:</value>
+  </data>
+  <data name="ReadOn" xml:space="preserve">
+    <value>Read on</value>
+  </data>
+  <data name="ReadOnDescription" xml:space="preserve">
+    <value>Close the reminder and read on</value>
+  </data>
+  <data name="StoryBookTitle" xml:space="preserve">
+    <value>Book of Tales</value>
+  </data>
+  <data name="ChaptersHeader" xml:space="preserve">
+    <value>Chapters</value>
+  </data>
+  <data name="ChaptersHint" xml:space="preserve">
+    <value>You can start again from any chapter your story has already reached.</value>
+  </data>
+  <data name="EndingsHeader" xml:space="preserve">
+    <value>Endings</value>
+  </data>
+  <data name="EndingsSummary" xml:space="preserve">
+    <value>Discovered: {0} of {1}</value>
+  </data>
+  <data name="Undiscovered" xml:space="preserve">
+    <value>? ? ?</value>
+  </data>
+  <data name="PrologueNumeral" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="ChapterConfirm" xml:space="preserve">
+    <value>Start from this chapter? The saved story will vanish like a footprint in the marsh.</value>
+  </data>
+  <data name="ChapterYes" xml:space="preserve">
+    <value>Yes, from this chapter</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="TextSample" xml:space="preserve">
+    <value>From the east the forest pressed in—old, coniferous and so dense that even by day the trees cast a deep, cool shade.</value>
+  </data>
+  <data name="TextSizeSmall" xml:space="preserve">
+    <value>Text: small</value>
+  </data>
+  <data name="TextSizeMedium" xml:space="preserve">
+    <value>Text: medium</value>
+  </data>
+  <data name="TextSizeLarge" xml:space="preserve">
+    <value>Text: large</value>
+  </data>
+  <data name="ParallaxHint" xml:space="preserve">
+    <value>The background shifts slightly when you tilt your phone.</value>
+  </data>
+  <data name="ParallaxOn" xml:space="preserve">
+    <value>Moving background: on</value>
+  </data>
+  <data name="ParallaxOff" xml:space="preserve">
+    <value>Moving background: off</value>
+  </data>
+  <data name="LanguageButton" xml:space="preserve">
+    <value>Language: {0}</value>
+  </data>
+  <data name="LanguageDevice" xml:space="preserve">
+    <value>as on the phone</value>
+  </data>
+  <data name="LanguageDeviceOption" xml:space="preserve">
+    <value>As on the phone</value>
+  </data>
+</root>

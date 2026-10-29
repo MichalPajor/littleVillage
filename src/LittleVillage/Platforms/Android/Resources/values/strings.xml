@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nazwa pod ikoną: na świecie „Little village”, w Polsce „Mała wioska” (values-pl). -->
+    <string name="app_name">Little village</string>
+</resources>

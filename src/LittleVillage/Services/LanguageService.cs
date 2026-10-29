@@ -10,7 +10,7 @@ public sealed class LanguageService(IPreferences preferences) : ILanguageService
     private const string PreferredKey = "jezyk";
 
     /// <summary>Języki z gotowym tłumaczeniem interfejsu i fabuły — kolejne dopisujemy, gdy będą przetłumaczone.</summary>
-    private static readonly string[] Translated = [GameLanguage.DefaultCode];
+    private static readonly string[] Translated = [GameLanguage.DefaultCode, "en"];
 
     // Język telefonu zapamiętany przed pierwszą zmianą kultury przez grę.
     private readonly CultureInfo _deviceCulture = CultureInfo.CurrentUICulture;

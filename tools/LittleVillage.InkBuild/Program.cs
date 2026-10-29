@@ -2,9 +2,16 @@ using Ink;
 using LittleVillage.InkBuild;
 
 // Użycie: LittleVillage.InkBuild <katalog Story> <katalog wyjściowy>
+//         LittleVillage.InkBuild --check <katalog Story> <przetłumaczony plik .ink>
+//           (sprawdza jeden plik tłumaczenia: wstawia go w miejsce oryginału i porównuje strukturę)
 // Story/main.ink (oryginał, polski) -> story.json; Story/<język>/main.ink (tłumaczenie) -> story.<język>.json.
 // Tłumaczenie musi mieć strukturę oryginału (StoryStructure) — inaczej błąd kompilacji.
 // Komunikaty wypisywane są w formacie MSBuild, więc błędy fabuły widać na liście błędów IDE.
+if (args is ["--check", var checkStory, var checkFile])
+{
+    return CheckFile(Path.GetFullPath(checkStory), Path.GetFullPath(checkFile));
+}
+
 if (args.Length != 2)
 {
     Console.Error.WriteLine("Użycie: LittleVillage.InkBuild <katalog Story> <katalog wyjściowy>");
@@ -83,4 +90,27 @@ static string? Compile(string input, string output, string? originalJson = null)
     File.WriteAllText(output, result.Json);
     Console.WriteLine($"Fabuła skompilowana: {Path.GetRelativePath(Path.GetDirectoryName(inputDirectory)!, input)} -> {output}");
     return result.Json;
+}
+
+// Pojedynczy plik tłumaczenia: kopia oryginału z tym jednym plikiem podmienionym, potem jak przy budowaniu.
+static int CheckFile(string storyDirectory, string translatedFile)
+{
+    var temp = Directory.CreateTempSubdirectory("lv-check-");
+    try
+    {
+        foreach (var file in Directory.GetFiles(storyDirectory, "*.ink"))
+        {
+            File.Copy(file, Path.Combine(temp.FullName, Path.GetFileName(file)));
+        }
+
+        var original = InkStoryCompiler.Compile(Path.Combine(storyDirectory, "main.ink"));
+        File.Copy(translatedFile, Path.Combine(temp.FullName, Path.GetFileName(translatedFile)), overwrite: true);
+        var json = Compile(Path.Combine(temp.FullName, "main.ink"), Path.Combine(temp.FullName, "story.json"), original.Json);
+        Console.WriteLine(json is null ? $"{Path.GetFileName(translatedFile)}: BŁĘDY (wyżej)" : $"{Path.GetFileName(translatedFile)}: OK — struktura zgodna z oryginałem");
+        return json is null ? 1 : 0;
+    }
+    finally
+    {
+        temp.Delete(recursive: true);
+    }
 }
