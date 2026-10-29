@@ -135,7 +135,8 @@ public sealed partial class TranslationPlaythroughTests
 
     private static string Shorten(string? text) => text is null ? "" : text.Length <= 70 ? text : text[..70] + "…";
 
-    [GeneratedRegex(@"[\p{L}’']*[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ][\p{L}’']*")]
+    // „ó” pomijamy – to zwykła litera po hiszpańsku, portugalsku, czesku i słowacku.
+    [GeneratedRegex(@"[\p{L}’']*[ąćęłńśźżĄĆĘŁŃŚŹŻ][\p{L}’']*")]
     private static partial Regex PolishWord();
 
     [GeneratedRegex(@"[{}\[\]|]|->|<>|^\s*[#~=*+]|\s#\s")]

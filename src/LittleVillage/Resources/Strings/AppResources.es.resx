@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="GameTitle" xml:space="preserve">
+    <value>Little village</value>
+  </data>
+  <data name="GameSubtitle" xml:space="preserve">
+    <value>Una historia de una aldea olvidada</value>
+  </data>
+  <data name="MainMenuSubtitle" xml:space="preserve">
+    <value>Una historia de una pequeña aldea olvidada llamada</value>
+  </data>
+  <data name="MainMenuTitle" xml:space="preserve">
+    <value>Zapadlina</value>
+  </data>
+  <data name="MenuNewGame" xml:space="preserve">
+    <value>Nueva partida</value>
+  </data>
+  <data name="MenuContinue" xml:space="preserve">
+    <value>Continuar</value>
+  </data>
+  <data name="MenuContinueDescription" xml:space="preserve">
+    <value>Continuar la partida guardada</value>
+  </data>
+  <data name="MenuStoryBook" xml:space="preserve">
+    <value>Capítulos y finales</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="MenuRateDescription" xml:space="preserve">
+    <value>Valorar el juego en Google Play</value>
+  </data>
+  <data name="NewGameConfirm" xml:space="preserve">
+    <value>¿Empezar de nuevo? La historia hasta ahora se perderá como una huella en la ciénaga.</value>
+  </data>
+  <data name="NewGameYes" xml:space="preserve">
+    <value>Sí, de nuevo</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="BackToMenu" xml:space="preserve">
+    <value>Volver al menú</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Algo ha salido mal</value>
+  </data>
+  <data name="LoadStoryFailed" xml:space="preserve">
+    <value>No se ha podido cargar la historia.</value>
+  </data>
+  <data name="OpenInventory" xml:space="preserve">
+    <value>Abrir el hatillo</value>
+  </data>
+  <data name="OpenJournal" xml:space="preserve">
+    <value>Abrir los apuntes</value>
+  </data>
+  <data name="ToggleTheme" xml:space="preserve">
+    <value>Cambiar entre modo claro y oscuro</value>
+  </data>
+  <data name="StoryTextDescription" xml:space="preserve">
+    <value>Texto de la historia</value>
+  </data>
+  <data name="TogglePanel" xml:space="preserve">
+    <value>Ocultar o mostrar la ventana del texto</value>
+  </data>
+  <data name="ChoiceHint" xml:space="preserve">
+    <value>Elige qué hacer para seguir.</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Siguiente</value>
+  </data>
+  <data name="TryAgain" xml:space="preserve">
+    <value>Intentarlo de nuevo</value>
+  </data>
+  <data name="TryAgainDescription" xml:space="preserve">
+    <value>Volver a la última partida guardada antes de la muerte</value>
+  </data>
+  <data name="EndingNote" xml:space="preserve">
+    <value>Final: «{0}». Descubiertos: {1} de {2}.</value>
+  </data>
+  <data name="JournalTitle" xml:space="preserve">
+    <value>Apuntes</value>
+  </data>
+  <data name="CloseJournal" xml:space="preserve">
+    <value>Cerrar los apuntes</value>
+  </data>
+  <data name="JournalEmpty" xml:space="preserve">
+    <value>Aún no hay nada escrito aquí.</value>
+  </data>
+  <data name="JournalNewCard" xml:space="preserve">
+    <value>Una nueva entrada en los apuntes</value>
+  </data>
+  <data name="JournalUpdated" xml:space="preserve">
+    <value>Los apuntes se han completado</value>
+  </data>
+  <data name="InventoryTitle" xml:space="preserve">
+    <value>Hatillo</value>
+  </data>
+  <data name="CloseInventory" xml:space="preserve">
+    <value>Cerrar el hatillo</value>
+  </data>
+  <data name="InventoryEmpty" xml:space="preserve">
+    <value>Tu hatillo está vacío.</value>
+  </data>
+  <data name="InventoryAdded" xml:space="preserve">
+    <value>Al hatillo va</value>
+  </data>
+  <data name="InventoryRemoved" xml:space="preserve">
+    <value>Del hatillo desaparece</value>
+  </data>
+  <data name="FullVersionTitle" xml:space="preserve">
+    <value>Versión completa</value>
+  </data>
+  <data name="FullVersionText" xml:space="preserve">
+    <value>Aquí termina la parte gratuita de la historia. El resto del destino de Zapadlina – los capítulos del quinto al vigésimo y todos los finales – te espera en la versión completa.</value>
+  </data>
+  <data name="FullVersionHint" xml:space="preserve">
+    <value>Pagas una sola vez – sin anuncios ni suscripción. La compra queda en tu cuenta de Google, también si vuelves a instalar el juego.</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Comprar la versión completa</value>
+  </data>
+  <data name="BuyFor" xml:space="preserve">
+    <value>Comprar por {0}</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Restaurar compra</value>
+  </data>
+  <data name="RestoreDescription" xml:space="preserve">
+    <value>Restaurar una compra anterior de la versión completa</value>
+  </data>
+  <data name="PaymentPendingTitle" xml:space="preserve">
+    <value>Pago pendiente</value>
+  </data>
+  <data name="PaymentPendingText" xml:space="preserve">
+    <value>La tienda aún espera la confirmación del pago. Cuando se complete, vuelve aquí y toca «Restaurar compra».</value>
+  </data>
+  <data name="StoreUnavailableTitle" xml:space="preserve">
+    <value>Tienda no disponible</value>
+  </data>
+  <data name="StoreUnavailableText" xml:space="preserve">
+    <value>No se ha podido conectar con Google Play. Comprueba tu conexión a internet e inténtalo de nuevo.</value>
+  </data>
+  <data name="PurchaseNotFoundTitle" xml:space="preserve">
+    <value>No se ha encontrado la compra</value>
+  </data>
+  <data name="PurchaseNotFoundText" xml:space="preserve">
+    <value>Esta cuenta de Google aún no tiene la versión completa. Si acabas de pagar, inténtalo de nuevo dentro de un momento.</value>
+  </data>
+  <data name="ChapterInFullVersion" xml:space="preserve">
+    <value>Este capítulo forma parte de la versión completa de la historia.</value>
+  </data>
+  <data name="RecapTitle" xml:space="preserve">
+    <value>Anteriormente…</value>
+  </data>
+  <data name="RecapChoices" xml:space="preserve">
+    <value>Tus últimas decisiones:</value>
+  </data>
+  <data name="ReadOn" xml:space="preserve">
+    <value>Seguir leyendo</value>
+  </data>
+  <data name="ReadOnDescription" xml:space="preserve">
+    <value>Cerrar el recordatorio y seguir leyendo</value>
+  </data>
+  <data name="StoryBookTitle" xml:space="preserve">
+    <value>Libro de historias</value>
+  </data>
+  <data name="ChaptersHeader" xml:space="preserve">
+    <value>Capítulos</value>
+  </data>
+  <data name="ChaptersHint" xml:space="preserve">
+    <value>Puedes volver a empezar cualquier capítulo al que ya haya llegado tu historia.</value>
+  </data>
+  <data name="EndingsHeader" xml:space="preserve">
+    <value>Finales</value>
+  </data>
+  <data name="EndingsSummary" xml:space="preserve">
+    <value>Descubiertos: {0} de {1}</value>
+  </data>
+  <data name="Undiscovered" xml:space="preserve">
+    <value>? ? ?</value>
+  </data>
+  <data name="PrologueNumeral" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="ChapterConfirm" xml:space="preserve">
+    <value>¿Empezar desde este capítulo? La historia guardada se perderá como una huella en la ciénaga.</value>
+  </data>
+  <data name="ChapterYes" xml:space="preserve">
+    <value>Sí, desde este capítulo</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="TextSample" xml:space="preserve">
+    <value>Desde el este avanzaba el bosque – viejo, de coníferas y tan espeso que incluso de día los árboles proyectaban una sombra honda y fresca.</value>
+  </data>
+  <data name="TextSizeSmall" xml:space="preserve">
+    <value>Texto: pequeño</value>
+  </data>
+  <data name="TextSizeMedium" xml:space="preserve">
+    <value>Texto: mediano</value>
+  </data>
+  <data name="TextSizeLarge" xml:space="preserve">
+    <value>Texto: grande</value>
+  </data>
+  <data name="ParallaxHint" xml:space="preserve">
+    <value>El fondo se mueve un poco cuando inclinas el teléfono.</value>
+  </data>
+  <data name="ParallaxOn" xml:space="preserve">
+    <value>Fondo en movimiento: sí</value>
+  </data>
+  <data name="ParallaxOff" xml:space="preserve">
+    <value>Fondo en movimiento: no</value>
+  </data>
+  <data name="LanguageButton" xml:space="preserve">
+    <value>Idioma: {0}</value>
+  </data>
+  <data name="LanguageDevice" xml:space="preserve">
+    <value>como en el teléfono</value>
+  </data>
+  <data name="LanguageDeviceOption" xml:space="preserve">
+    <value>Como en el teléfono</value>
+  </data>
+</root>

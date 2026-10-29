@@ -89,6 +89,10 @@ public sealed partial class GameViewModel(
     [ObservableProperty]
     public partial string? RecapChapter { get; set; }
 
+    // Po zmianie języka ostatnie decyzje (w starym języku) przepadają – wtedy bez nagłówka nad pustą listą.
+    [ObservableProperty]
+    public partial bool HasRecapChoices { get; set; }
+
     /// <summary>Na ostatniej stronie: które zakończenie gracz odkrył i ile już zna.</summary>
     [ObservableProperty]
     [NotifyPropertyChangedFor(nameof(HasEndingNote))]
@@ -217,14 +221,15 @@ public sealed partial class GameViewModel(
 
     private void ShowRecap(GameRecap recap)
     {
-        RecapChapter = recap.ChapterTitle is { } title ? $"{recap.ChapterName} — {title}" : recap.ChapterName;
+        RecapChapter = recap.ChapterTitle is { } title ? $"{recap.ChapterName} – {title}" : recap.ChapterName;
         RecapChoices.Clear();
         foreach (var choice in recap.RecentChoices)
         {
             RecapChoices.Add(choice);
         }
 
-        IsRecapOpen = RecapChapter is not null || RecapChoices.Count > 0;
+        HasRecapChoices = RecapChoices.Count > 0;
+        IsRecapOpen = RecapChapter is not null || HasRecapChoices;
     }
 
     private async Task UnlockedAsync()

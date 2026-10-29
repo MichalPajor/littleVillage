@@ -393,7 +393,7 @@
 
                     <VerticalStackLayout Grid.Row="2" Margin="0,18,0,0" Spacing="12">
                         <Label Text="{Binding RecapChapter}" Style="{StaticResource ItemName}" />
-                        <Label Text="{x:Static res:AppResources.RecapChoices}" Style="{StaticResource Hint}" />
+                        <Label Text="{x:Static res:AppResources.RecapChoices}" Style="{StaticResource Hint}" IsVisible="{Binding HasRecapChoices}" />
                         <ScrollView MaximumHeightRequest="320">
                             <VerticalStackLayout Spacing="10" BindableLayout.ItemsSource="{Binding RecapChoices}">
                                 <BindableLayout.ItemTemplate>

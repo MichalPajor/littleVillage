@@ -131,7 +131,7 @@ public sealed class GameSession(
             PageEnding.Choices when choiceIndex is { } index => Choose(page, index),
             PageEnding.Choices => throw new InvalidOperationException("Ta strona wymaga wybrania opcji."),
             PageEnding.Continue => engine.Continue(),
-            PageEnding.Death => throw new InvalidOperationException("Bohater nie żyje — wczytaj ostatni zapis."),
+            PageEnding.Death => throw new InvalidOperationException("Bohater nie żyje – wczytaj ostatni zapis."),
             _ => throw new InvalidOperationException("Opowieść dobiegła końca."),
         };
 
