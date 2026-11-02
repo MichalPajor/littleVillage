@@ -27,6 +27,7 @@ public sealed class TextTests
     [InlineData("en", "a wolf and a dog", "a wolf and a dog")]
     [InlineData("en", "the forest – old", "the forest\u00A0– old")]
     [InlineData("en", "once more—on the threshold", "once more\u2060—on the threshold")]
+    [InlineData("fr", "Qui est là ? « Moi » dit-il.", "Qui est là\u202F? «\u202FMoi\u202F» dit-il.")]
     [InlineData("pl", "poszedł k lesu", "poszedł k lesu")]
     public void Short_word_rules_depend_on_language(string language, string text, string expected) =>
         Assert.Equal(expected, BookTypography.KeepTogether(text, language));

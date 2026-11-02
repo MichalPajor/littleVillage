@@ -10,6 +10,8 @@ public static partial class BookTypography
 {
     private const char NoBreakSpace = ' ';
 
+    private const char NarrowNoBreakSpace = '\u202F';
+
     // Niewidoczny znak, który nie pozwala złamać wiersza w tym miejscu (pauza zostaje przy poprzednim słowie).
     private const char WordJoiner = '\u2060';
 
@@ -23,6 +25,13 @@ public static partial class BookTypography
             _ => null,
         };
         var bound = shortWord is null ? text : shortWord.Replace(text, $"$1{NoBreakSpace}");
+
+        // Francuska typografia: wąska twarda spacja przed ? ! ; : » i po « – znak nie ląduje sam w nowym wierszu.
+        if (language == "fr")
+        {
+            bound = FrenchSpaceAfterGuillemet().Replace(FrenchSpaceBeforePunctuation().Replace(bound, $"{NarrowNoBreakSpace}$1"), $"«{NarrowNoBreakSpace}");
+        }
+
         return EmDashAfterWord().Replace(DashAfterSpace().Replace(bound, $"{NoBreakSpace}–"), $"$1{WordJoiner}—");
     }
 
@@ -31,6 +40,12 @@ public static partial class BookTypography
 
     [GeneratedRegex(@"(?<![\p{L}\p{N}])([aikosuvzAIKOSUVZ]) ")]
     private static partial Regex CzechShortWordBeforeSpace();
+
+    [GeneratedRegex(@" +([?!;:»])")]
+    private static partial Regex FrenchSpaceBeforePunctuation();
+
+    [GeneratedRegex(@"« +")]
+    private static partial Regex FrenchSpaceAfterGuillemet();
 
     [GeneratedRegex(@" –")]
     private static partial Regex DashAfterSpace();

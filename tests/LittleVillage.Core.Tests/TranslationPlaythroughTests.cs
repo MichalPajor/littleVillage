@@ -14,7 +14,7 @@ public sealed partial class TranslationPlaythroughTests
     // Polskie imiona i słowa, które w tłumaczeniu zostają (słowniczek): wolno im mieć polskie litery.
     private static readonly HashSet<string> KeptPolishWords = new(StringComparer.OrdinalIgnoreCase)
     {
-        "Staś", "Józek", "Kaśka", "Wójcik", "Wójciks", "Wójcikowa", "Dobrosław", "Dobruś", "turoń", "Łukasz", "Bożena", "Małgosia",
+        "Staś", "Józek", "Kaśka", "Wójcik", "Wójciks", "Wójcikowa", "Dobrosław", "Dobruś", "turoń", "Łukasz", "Bożena", "Małgosia", "opłatek",
     };
 
     // Imię z polskimi znakami albo jego dopełniacz (niem. „Józeks”, „Dobrosławs”).
@@ -127,7 +127,9 @@ public sealed partial class TranslationPlaythroughTests
             Check(!Syntax().IsMatch(text ?? ""), $"resztki składni ink w „{Shorten(text)}”");
             foreach (Match word in PolishWord().Matches(text ?? ""))
             {
-                var bare = word.Value.Split('’', '\'')[0];
+                // Francuska elizja („l’opłatek”) – liczy się słowo po apostrofie; dzierżawcze końcówki („Staś’s”) – przed nim.
+                var parts = word.Value.Split('’', '\'');
+                var bare = parts.Length > 1 && parts[0].Length <= 2 && parts[0].All(char.IsLower) ? parts[1] : parts[0];
                 Check(IsKeptName(bare), $"[{language}] polskie słowo „{word.Value}” w „{Shorten(text)}”");
             }
         }
