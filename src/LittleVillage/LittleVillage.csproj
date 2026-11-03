@@ -19,16 +19,25 @@
 		<!-- Display name -->
 		<ApplicationTitle>Mała wioska</ApplicationTitle>
 
-		<!-- App Identifier -->
-		<ApplicationId>com.littlevillage.game</ApplicationId>
+		<!-- Identyfikator w Google Play (konto yourmomentplace, ten sam schemat co place.yourmoment.gamecaller).
+		     Raz wgrany do sklepu nie może się już zmienić. -->
+		<ApplicationId>place.yourmoment.littlevillage</ApplicationId>
 
-		<!-- Versions -->
-		<ApplicationDisplayVersion>0.1</ApplicationDisplayVersion>
+		<!-- Wersja widoczna dla graczy i kod wersji dla sklepu — kod MUSI rosnąć z każdym wgraniem do Play Console. -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
 
 		<!-- Android 6.0 — tyle wymaga Google Play Billing (zakup pełnej wersji). -->
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">23.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<!-- Wydanie do Google Play: pakiet AAB podpisany kluczem przesyłania. Klucz i hasła są poza repozytorium —
+	     przekazywane przy budowaniu: -p:AndroidSigningKeyStore=... -p:AndroidSigningStorePass=... -p:AndroidSigningKeyPass=... -->
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<AndroidPackageFormat>aab</AndroidPackageFormat>
+		<AndroidKeyStore>true</AndroidKeyStore>
+		<AndroidSigningKeyAlias>littlevillage</AndroidSigningKeyAlias>
 	</PropertyGroup>
 
 	<ItemGroup>
