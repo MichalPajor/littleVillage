@@ -5,7 +5,8 @@ teksty/<język>/   nazwa.txt (max 30 znaków), krotki_opis.txt (max 80), pelny_o
 grafiki/ikona_512x512.png                     ikona aplikacji
 grafiki/grafika_promocyjna_1024x500_en.png    grafika promocyjna (en-US i pozostałe języki)
 grafiki/grafika_promocyjna_1024x500_pl.png    grafika promocyjna dla pl-PL
-grafiki/telefon/01–08.png                     zrzuty z telefonu (1080x1920), w kolejności wgrywania
+grafiki/telefon/01–08.png                     zrzuty z telefonu (1080x1920), w kolejności wgrywania;
+                                              01–03 to grafiki z hasłem i ramką telefonu, 04–08 zwykłe zrzuty
 grafiki/tablet/01–05.png                      zrzuty z tabletu 10" (1600x2560); można je wgrać też jako tablet 7"
 
 Zrzuty pochodzą z wersji angielskiej i pasują do wszystkich języków.
