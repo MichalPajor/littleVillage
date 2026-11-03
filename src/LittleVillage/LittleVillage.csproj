@@ -37,6 +37,8 @@
 	     (w GitHubie jako sekrety) — przekazywane przy budowaniu: -p:AndroidSigningKeyStore=... -p:AndroidSigningStorePass=... -p:AndroidSigningKeyPass=... -->
 	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
 		<AndroidPackageFormat>aab</AndroidPackageFormat>
+		<!-- Telefony 32- i 64-bitowe (ARM) oraz x86_64 (Chromebooki, emulatory). Domyślnie .NET 10 pomija 32-bitowy ARM. -->
+		<RuntimeIdentifiers>android-arm;android-arm64;android-x64</RuntimeIdentifiers>
 		<AndroidKeyStore>true</AndroidKeyStore>
 		<AndroidSigningKeyAlias>littlevillage</AndroidSigningKeyAlias>
 	</PropertyGroup>
