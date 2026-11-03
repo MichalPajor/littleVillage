@@ -23,7 +23,8 @@
 		     Raz wgrany do sklepu nie może się już zmienić. -->
 		<ApplicationId>place.yourmoment.littlevillage</ApplicationId>
 
-		<!-- Wersja widoczna dla graczy i kod wersji dla sklepu — kod MUSI rosnąć z każdym wgraniem do Play Console. -->
+		<!-- Wersja widoczna dla graczy i kod wersji dla sklepu — przy budowaniu lokalnym. Pakiet do Play Console
+		     buduje GitHub (.github/workflows/wydanie.yml): wersję podaje się przy uruchomieniu, kod = numer przebiegu. -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
 
@@ -32,8 +33,8 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
-	<!-- Wydanie do Google Play: pakiet AAB podpisany kluczem przesyłania. Klucz i hasła są poza repozytorium —
-	     przekazywane przy budowaniu: -p:AndroidSigningKeyStore=... -p:AndroidSigningStorePass=... -p:AndroidSigningKeyPass=... -->
+	<!-- Wydanie do Google Play: pakiet AAB podpisany kluczem przesyłania. Klucz i hasła są poza repozytorium
+	     (w GitHubie jako sekrety) — przekazywane przy budowaniu: -p:AndroidSigningKeyStore=... -p:AndroidSigningStorePass=... -p:AndroidSigningKeyPass=... -->
 	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
 		<AndroidPackageFormat>aab</AndroidPackageFormat>
 		<AndroidKeyStore>true</AndroidKeyStore>
