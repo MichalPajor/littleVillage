@@ -76,6 +76,31 @@ jobs:
           echo "numer=$WERSJA" >> "$GITHUB_OUTPUT"
           echo "Wersja: $WERSJA (kod ${{ github.run_number }})"
 
+      - name: Pamięć podręczna paczek NuGet
+        uses: actions/cache@v6
+        with:
+          path: ~/.nuget/packages
+          key: nuget-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
+          restore-keys: nuget-${{ runner.os }}-
+
+      # Grafiki to dwie trzecie czasu budowania: 3641 SVG przeliczane na PNG w 5 rozdzielczościach,
+      # a potem kompilowane przez aapt2. Gotowy wynik odzyskujemy tylko przy identycznych źródłach
+      # (dokładny klucz, bez restore-keys) — inaczej do pakietu mogłaby trafić stara grafika.
+      - name: Pamięć podręczna grafik
+        id: grafiki
+        uses: actions/cache@v6
+        with:
+          path: |
+            src/LittleVillage/obj-unix/Release/net10.0-android/resizetizer
+            src/LittleVillage/obj-unix/Release/net10.0-android/mauiimage.*
+          key: grafiki-${{ hashFiles('src/LittleVillage/Resources/Images/**', 'src/LittleVillage/Resources/AppIcon/**', 'src/LittleVillage/Resources/Splash/**', 'src/LittleVillage/LittleVillage.csproj', 'Directory.Build.props') }}
+
+      # Świeży checkout i workload są „nowsze” niż odzyskane pliki, więc MSBuild przeliczyłby wszystko od nowa.
+      # Data w przyszłości mówi mu, że grafiki są aktualne — bezpieczne, bo klucz pilnuje, że źródła się nie zmieniły.
+      - name: Odświeżenie dat grafik
+        if: steps.grafiki.outputs.cache-hit == 'true'
+        run: find src/LittleVillage/obj-unix -exec touch -d '+1 day' {} +
+
       - name: Testy
         run: dotnet test tests/LittleVillage.Core.Tests/LittleVillage.Core.Tests.csproj --configuration Release
 
@@ -90,6 +115,7 @@ jobs:
           dotnet publish src/LittleVillage/LittleVillage.csproj
           --configuration Release
           --framework net10.0-android
+          -p:AndroidPackageFormats=aab
           -p:ApplicationDisplayVersion=${{ steps.wersja.outputs.numer }}
           -p:ApplicationVersion=${{ github.run_number }}
           -p:AndroidSigningKeyStore=$RUNNER_TEMP/klucz.keystore
