@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="GameTitle" xml:space="preserve">
+    <value>Little village</value>
+  </data>
+  <data name="GameSubtitle" xml:space="preserve">
+    <value>Příběh ze zapomenuté vesnice</value>
+  </data>
+  <data name="MainMenuSubtitle" xml:space="preserve">
+    <value>Příběh z malé zapomenuté vesnice jménem</value>
+  </data>
+  <data name="MainMenuTitle" xml:space="preserve">
+    <value>Zapadlina</value>
+  </data>
+  <data name="MenuNewGame" xml:space="preserve">
+    <value>Nová hra</value>
+  </data>
+  <data name="MenuContinue" xml:space="preserve">
+    <value>Pokračovat</value>
+  </data>
+  <data name="MenuContinueDescription" xml:space="preserve">
+    <value>Pokračovat v uložené hře</value>
+  </data>
+  <data name="MenuStoryBook" xml:space="preserve">
+    <value>Kapitoly a konce</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>Nastavení</value>
+  </data>
+  <data name="MenuRateDescription" xml:space="preserve">
+    <value>Ohodnotit hru na Google Play</value>
+  </data>
+  <data name="NewGameConfirm" xml:space="preserve">
+    <value>Začít znovu? Dosavadní příběh zmizí jako stopa v mokřadech.</value>
+  </data>
+  <data name="NewGameYes" xml:space="preserve">
+    <value>Ano, znovu</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Zavřít</value>
+  </data>
+  <data name="BackToMenu" xml:space="preserve">
+    <value>Zpět do nabídky</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Něco se pokazilo</value>
+  </data>
+  <data name="LoadStoryFailed" xml:space="preserve">
+    <value>Příběh se nepodařilo načíst.</value>
+  </data>
+  <data name="OpenInventory" xml:space="preserve">
+    <value>Otevřít uzlík</value>
+  </data>
+  <data name="OpenJournal" xml:space="preserve">
+    <value>Otevřít zápisky</value>
+  </data>
+  <data name="ToggleTheme" xml:space="preserve">
+    <value>Přepnout světlý nebo tmavý režim</value>
+  </data>
+  <data name="StoryTextDescription" xml:space="preserve">
+    <value>Text příběhu</value>
+  </data>
+  <data name="TogglePanel" xml:space="preserve">
+    <value>Skrýt nebo zobrazit okno s příběhem</value>
+  </data>
+  <data name="ChoiceHint" xml:space="preserve">
+    <value>Vyber, co uděláš, a pokračuj dál.</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Dál</value>
+  </data>
+  <data name="TryAgain" xml:space="preserve">
+    <value>Zkusit znovu</value>
+  </data>
+  <data name="TryAgainDescription" xml:space="preserve">
+    <value>Vrátit se k poslednímu uložení před smrtí</value>
+  </data>
+  <data name="EndingNote" xml:space="preserve">
+    <value>Konec: „{0}“. Objeveno: {1} z {2}.</value>
+  </data>
+  <data name="JournalTitle" xml:space="preserve">
+    <value>Zápisky</value>
+  </data>
+  <data name="CloseJournal" xml:space="preserve">
+    <value>Zavřít zápisky</value>
+  </data>
+  <data name="JournalEmpty" xml:space="preserve">
+    <value>Zatím tu nic zapsáno není.</value>
+  </data>
+  <data name="JournalNewCard" xml:space="preserve">
+    <value>Nový záznam v zápiscích</value>
+  </data>
+  <data name="JournalUpdated" xml:space="preserve">
+    <value>Zápisky doplněny</value>
+  </data>
+  <data name="InventoryTitle" xml:space="preserve">
+    <value>Uzlík</value>
+  </data>
+  <data name="CloseInventory" xml:space="preserve">
+    <value>Zavřít uzlík</value>
+  </data>
+  <data name="InventoryEmpty" xml:space="preserve">
+    <value>Tvůj uzlík je prázdný.</value>
+  </data>
+  <data name="InventoryAdded" xml:space="preserve">
+    <value>Do uzlíku přibývá</value>
+  </data>
+  <data name="InventoryRemoved" xml:space="preserve">
+    <value>Z uzlíku mizí</value>
+  </data>
+  <data name="FullVersionTitle" xml:space="preserve">
+    <value>Plná verze</value>
+  </data>
+  <data name="FullVersionText" xml:space="preserve">
+    <value>Tady končí bezplatná část příběhu. Další osudy Zapadliny – kapitoly pátá až dvacátá a všechny konce – čekají v plné verzi.</value>
+  </data>
+  <data name="FullVersionHint" xml:space="preserve">
+    <value>Platíš jednou – bez reklam a bez předplatného. Nákup zůstane na tvém účtu Google, i když hru znovu nainstaluješ.</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Koupit plnou verzi</value>
+  </data>
+  <data name="BuyFor" xml:space="preserve">
+    <value>Koupit za {0}</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Obnovit nákup</value>
+  </data>
+  <data name="RestoreDescription" xml:space="preserve">
+    <value>Obnovit dřívější nákup plné verze</value>
+  </data>
+  <data name="PaymentPendingTitle" xml:space="preserve">
+    <value>Platba se zpracovává</value>
+  </data>
+  <data name="PaymentPendingText" xml:space="preserve">
+    <value>Obchod ještě čeká na potvrzení platby. Až projde, vrať se sem a klepni na „Obnovit nákup“.</value>
+  </data>
+  <data name="StoreUnavailableTitle" xml:space="preserve">
+    <value>Obchod není dostupný</value>
+  </data>
+  <data name="StoreUnavailableText" xml:space="preserve">
+    <value>Nepodařilo se spojit s Google Play. Zkontroluj připojení k internetu a zkus to znovu.</value>
+  </data>
+  <data name="PurchaseNotFoundTitle" xml:space="preserve">
+    <value>Nákup nenalezen</value>
+  </data>
+  <data name="PurchaseNotFoundText" xml:space="preserve">
+    <value>Tento účet Google zatím plnou verzi nemá. Pokud platba právě proběhla, zkus to za chvíli.</value>
+  </data>
+  <data name="ChapterInFullVersion" xml:space="preserve">
+    <value>Tato kapitola je součástí plné verze příběhu.</value>
+  </data>
+  <data name="RecapTitle" xml:space="preserve">
+    <value>Předtím…</value>
+  </data>
+  <data name="RecapChoices" xml:space="preserve">
+    <value>Poslední rozhodnutí:</value>
+  </data>
+  <data name="ReadOn" xml:space="preserve">
+    <value>Číst dál</value>
+  </data>
+  <data name="ReadOnDescription" xml:space="preserve">
+    <value>Zavřít připomínku a číst dál</value>
+  </data>
+  <data name="StoryBookTitle" xml:space="preserve">
+    <value>Kniha příběhů</value>
+  </data>
+  <data name="ChaptersHeader" xml:space="preserve">
+    <value>Kapitoly</value>
+  </data>
+  <data name="ChaptersHint" xml:space="preserve">
+    <value>Kapitolu, do které tvůj příběh už dospěl, můžeš začít znovu.</value>
+  </data>
+  <data name="EndingsHeader" xml:space="preserve">
+    <value>Konce</value>
+  </data>
+  <data name="EndingsSummary" xml:space="preserve">
+    <value>Objeveno: {0} z {1}</value>
+  </data>
+  <data name="Undiscovered" xml:space="preserve">
+    <value>? ? ?</value>
+  </data>
+  <data name="PrologueNumeral" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="ChapterConfirm" xml:space="preserve">
+    <value>Začít od této kapitoly? Uložený příběh zmizí jako stopa v mokřadech.</value>
+  </data>
+  <data name="ChapterYes" xml:space="preserve">
+    <value>Ano, od této kapitoly</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>Nastavení</value>
+  </data>
+  <data name="TextSample" xml:space="preserve">
+    <value>Od východu se tlačil les – starý, jehličnatý a tak hustý, že i ve dne vrhaly stromy hluboký, chladný stín.</value>
+  </data>
+  <data name="TextSizeSmall" xml:space="preserve">
+    <value>Text: malý</value>
+  </data>
+  <data name="TextSizeMedium" xml:space="preserve">
+    <value>Text: střední</value>
+  </data>
+  <data name="TextSizeLarge" xml:space="preserve">
+    <value>Text: velký</value>
+  </data>
+  <data name="ParallaxHint" xml:space="preserve">
+    <value>Pozadí se lehce posouvá, když telefon nakloníš.</value>
+  </data>
+  <data name="ParallaxOn" xml:space="preserve">
+    <value>Pohyb pozadí: ano</value>
+  </data>
+  <data name="ParallaxOff" xml:space="preserve">
+    <value>Pohyb pozadí: ne</value>
+  </data>
+  <data name="LanguageButton" xml:space="preserve">
+    <value>Jazyk: {0}</value>
+  </data>
+  <data name="LanguageDevice" xml:space="preserve">
+    <value>jako v telefonu</value>
+  </data>
+  <data name="LanguageDeviceOption" xml:space="preserve">
+    <value>Jako v telefonu</value>
+  </data>
+</root>

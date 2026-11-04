@@ -14,12 +14,18 @@ public sealed partial class TranslationPlaythroughTests
     // Polskie imiona i słowa, które w tłumaczeniu zostają (słowniczek): wolno im mieć polskie litery.
     private static readonly HashSet<string> KeptPolishWords = new(StringComparer.OrdinalIgnoreCase)
     {
-        "Staś", "Józek", "Kaśka", "Wójcik", "Wójciks", "Wójcikowa", "Dobrosław", "Dobruś", "turoń", "Łukasz", "Bożena", "Małgosia", "opłatek",
+        "Staś", "Józek", "Kaśka", "Wójcik", "Wójciks", "Wójcikowa", "Dobrosław", "Dobruś", "turoń", "Łukasz", "Bożena", "Małgosia", "opłatek", "Maaaćku",
     };
 
-    // Imię z polskimi znakami albo jego dopełniacz (niem. „Józeks”, „Dobrosławs”).
+    // Tematy imion odmienianych po czesku i słowacku (Maciek – Maćka, Kaśka – Kaśce, Józek – Józkovi).
+    private static readonly string[] KeptPolishStems = ["Maćk", "Kaśk", "Kaśc", "Józk", "Dobrosław", "Wójcik", "Łukasz", "Bożen", "Małgos"];
+
+    // Imię z polskimi znakami, jego dopełniacz (niem. „Józeks”, „Dobrosławs”) albo odmiana (cs „Maćkovi”, „Dobrosławem”).
     private static bool IsKeptName(string word) =>
-        KeptPolishWords.Contains(word) || (word.EndsWith('s') && KeptPolishWords.Contains(word[..^1]));
+        KeptPolishWords.Contains(word)
+        || (word.EndsWith('s') && KeptPolishWords.Contains(word[..^1]))
+        || KeptPolishStems.Any(stem => word.StartsWith(stem, StringComparison.OrdinalIgnoreCase)
+            && word.Length - stem.Length <= 4 && word[stem.Length..].All(char.IsLower));
 
     public static TheoryData<string> Translations()
     {
