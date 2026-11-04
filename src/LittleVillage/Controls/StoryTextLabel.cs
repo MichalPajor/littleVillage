@@ -1,5 +1,5 @@
-using System.Globalization;
 using LittleVillage.Core.Text;
+using LittleVillage.Services;
 using LittleVillage.Theme;
 
 namespace LittleVillage.Controls;
@@ -43,7 +43,7 @@ public sealed class StoryTextLabel : Label
     private void Rebuild()
     {
         var formatted = new FormattedString();
-        var runs = InlineMarkup.Parse(BookTypography.KeepTogether(StoryText ?? string.Empty, CultureInfo.CurrentUICulture.TwoLetterISOLanguageName));
+        var runs = InlineMarkup.Parse(BookTypography.KeepTogether(StoryText ?? string.Empty, LanguageService.TextLanguage));
 
         for (var i = 0; i < runs.Count; i++)
         {

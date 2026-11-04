@@ -12,6 +12,12 @@ public sealed class LanguageService(IPreferences preferences) : ILanguageService
     /// <summary>Języki z gotowym tłumaczeniem interfejsu i fabuły — kolejne dopisujemy, gdy będą przetłumaczone.</summary>
     private static readonly string[] Translated = [GameLanguage.DefaultCode, "en", "de", "es", "pt", "fr", "it"];
 
+    /// <summary>
+    /// Język tekstu do zasad łamania wierszy. Brany z kultury napisów, a nie z wątku: zmiana języka w ustawieniach
+    /// nie przestawia kultury wątku interfejsu, który ma ją ustawioną od startu (wtedy zostałby język telefonu).
+    /// </summary>
+    public static string TextLanguage => (AppResources.Culture ?? CultureInfo.CurrentUICulture).TwoLetterISOLanguageName;
+
     // Język telefonu zapamiętany przed pierwszą zmianą kultury przez grę.
     private readonly CultureInfo _deviceCulture = CultureInfo.CurrentUICulture;
 

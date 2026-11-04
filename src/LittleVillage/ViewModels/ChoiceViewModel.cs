@@ -1,8 +1,8 @@
-using System.Globalization;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using LittleVillage.Core.Story;
 using LittleVillage.Core.Text;
+using LittleVillage.Services;
 
 namespace LittleVillage.ViewModels;
 
@@ -21,7 +21,7 @@ public sealed partial class ChoiceViewModel : ObservableObject
     public ChoiceViewModel(StoryChoice choice, int position, Action<ChoiceViewModel> onSelected)
     {
         Choice = choice;
-        Text = BookTypography.KeepTogether(choice.Text, CultureInfo.CurrentUICulture.TwoLetterISOLanguageName);
+        Text = BookTypography.KeepTogether(choice.Text, LanguageService.TextLanguage);
         Numeral = RomanNumeral.From(position + 1);
         CornerRadius = SketchRadii[position % SketchRadii.Length];
         SelectCommand = new RelayCommand(() => onSelected(this));

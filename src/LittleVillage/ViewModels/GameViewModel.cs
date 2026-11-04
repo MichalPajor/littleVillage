@@ -1,4 +1,3 @@
-using System.Globalization;
 using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -291,7 +290,7 @@ public sealed partial class GameViewModel(
     private void CloseInventory() => IsInventoryOpen = false;
 
     // Łamanie wierszy jak w akapitach fabuły (StoryTextLabel) — karty tobołka i zapisków to zwykłe etykiety.
-    private static string Book(string text) => BookTypography.KeepTogether(text, CultureInfo.CurrentUICulture.TwoLetterISOLanguageName);
+    private static string Book(string text) => BookTypography.KeepTogether(text, LanguageService.TextLanguage);
 
     [RelayCommand]
     private void OpenJournal()
