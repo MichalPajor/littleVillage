@@ -10,7 +10,7 @@ public sealed class LanguageService(IPreferences preferences) : ILanguageService
     private const string PreferredKey = "jezyk";
 
     /// <summary>Języki z gotowym tłumaczeniem interfejsu i fabuły — kolejne dopisujemy, gdy będą przetłumaczone.</summary>
-    private static readonly string[] Translated = [GameLanguage.DefaultCode, "en", "de", "es", "pt", "fr", "it", "cs", "sk"];
+    private static readonly string[] Translated = [GameLanguage.DefaultCode, "en", "de", "es", "pt", "fr", "it", "cs", "sk", "ja"];
 
     /// <summary>
     /// Język tekstu do zasad łamania wierszy. Brany z kultury napisów, a nie z wątku: zmiana języka w ustawieniach

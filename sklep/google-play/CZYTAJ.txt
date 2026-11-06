@@ -1,7 +1,7 @@
 Materiały do karty sklepu Google Play – Little village / Mała wioska
 
 teksty/<język>/   nazwa.txt (max 30 znaków), krotki_opis.txt (max 80), pelny_opis.txt (max 4000)
-                  en-US to język domyślny karty; pl-PL, de-DE, es-ES, pt-BR, fr-FR, it-IT, cs-CZ jako tłumaczenia.
+                  en-US to język domyślny karty; pl-PL, de-DE, es-ES, pt-BR, fr-FR, it-IT, cs-CZ, sk-SK, ja-JP jako tłumaczenia.
 grafiki/ikona_512x512.png                     ikona aplikacji
 grafiki/grafika_promocyjna_1024x500_en.png    grafika promocyjna (en-US i pozostałe języki)
 grafiki/grafika_promocyjna_1024x500_pl.png    grafika promocyjna dla pl-PL

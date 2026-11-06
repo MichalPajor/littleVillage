@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="GameTitle" xml:space="preserve">
+    <value>Little village</value>
+  </data>
+  <data name="GameSubtitle" xml:space="preserve">
+    <value>忘れられた村の物語</value>
+  </data>
+  <data name="MainMenuSubtitle" xml:space="preserve">
+    <value>忘れられた小さな村の物語。その名は</value>
+  </data>
+  <data name="MainMenuTitle" xml:space="preserve">
+    <value>ザパドリナ</value>
+  </data>
+  <data name="MenuNewGame" xml:space="preserve">
+    <value>はじめから</value>
+  </data>
+  <data name="MenuContinue" xml:space="preserve">
+    <value>つづきから</value>
+  </data>
+  <data name="MenuContinueDescription" xml:space="preserve">
+    <value>保存した物語のつづきから読む</value>
+  </data>
+  <data name="MenuStoryBook" xml:space="preserve">
+    <value>章と結末</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="MenuRateDescription" xml:space="preserve">
+    <value>Google Play でこのゲームを評価する</value>
+  </data>
+  <data name="NewGameConfirm" xml:space="preserve">
+    <value>はじめからやり直しますか？　これまでの物語は、湿地の足跡のように消えてしまいます。</value>
+  </data>
+  <data name="NewGameYes" xml:space="preserve">
+    <value>はい、はじめから</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>いいえ</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="BackToMenu" xml:space="preserve">
+    <value>メニューに戻る</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>問題が起きました</value>
+  </data>
+  <data name="LoadStoryFailed" xml:space="preserve">
+    <value>物語を読み込めませんでした。</value>
+  </data>
+  <data name="OpenInventory" xml:space="preserve">
+    <value>包みを開く</value>
+  </data>
+  <data name="OpenJournal" xml:space="preserve">
+    <value>覚え書きを開く</value>
+  </data>
+  <data name="ToggleTheme" xml:space="preserve">
+    <value>明るい表示と暗い表示を切り替える</value>
+  </data>
+  <data name="StoryTextDescription" xml:space="preserve">
+    <value>物語の本文</value>
+  </data>
+  <data name="TogglePanel" xml:space="preserve">
+    <value>物語の窓を隠す、または表示する</value>
+  </data>
+  <data name="ChoiceHint" xml:space="preserve">
+    <value>どうするか選んで、先へ進んでください。</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次へ</value>
+  </data>
+  <data name="TryAgain" xml:space="preserve">
+    <value>もう一度</value>
+  </data>
+  <data name="TryAgainDescription" xml:space="preserve">
+    <value>死の直前の保存地点に戻る</value>
+  </data>
+  <data name="EndingNote" xml:space="preserve">
+    <value>結末『{0}』。発見済み：{2}のうち{1}</value>
+  </data>
+  <data name="JournalTitle" xml:space="preserve">
+    <value>覚え書き</value>
+  </data>
+  <data name="CloseJournal" xml:space="preserve">
+    <value>覚え書きを閉じる</value>
+  </data>
+  <data name="JournalEmpty" xml:space="preserve">
+    <value>まだ何も書かれていない。</value>
+  </data>
+  <data name="JournalNewCard" xml:space="preserve">
+    <value>覚え書きに新しい記録</value>
+  </data>
+  <data name="JournalUpdated" xml:space="preserve">
+    <value>覚え書きに書き足した</value>
+  </data>
+  <data name="InventoryTitle" xml:space="preserve">
+    <value>包み</value>
+  </data>
+  <data name="CloseInventory" xml:space="preserve">
+    <value>包みを閉じる</value>
+  </data>
+  <data name="InventoryEmpty" xml:space="preserve">
+    <value>包みは空っぽだ。</value>
+  </data>
+  <data name="InventoryAdded" xml:space="preserve">
+    <value>包みに加わった</value>
+  </data>
+  <data name="InventoryRemoved" xml:space="preserve">
+    <value>包みから消えた</value>
+  </data>
+  <data name="FullVersionTitle" xml:space="preserve">
+    <value>完全版</value>
+  </data>
+  <data name="FullVersionText" xml:space="preserve">
+    <value>物語の無料部分はここまでです。ザパドリナのその後、第五章から第二十章まで、そしてすべての結末は完全版でお読みいただけます。</value>
+  </data>
+  <data name="FullVersionHint" xml:space="preserve">
+    <value>お支払いは一度きり。広告も定期購入もありません。購入は Google アカウントに残るので、ゲームを入れ直しても大丈夫です。</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>完全版を購入する</value>
+  </data>
+  <data name="BuyFor" xml:space="preserve">
+    <value>{0}で購入する</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>購入を復元する</value>
+  </data>
+  <data name="RestoreDescription" xml:space="preserve">
+    <value>以前に購入した完全版を復元する</value>
+  </data>
+  <data name="PaymentPendingTitle" xml:space="preserve">
+    <value>支払い処理中</value>
+  </data>
+  <data name="PaymentPendingText" xml:space="preserve">
+    <value>ストアはまだ支払いの確認を待っています。確認が済んだら、ここに戻って「購入を復元する」をタップしてください。</value>
+  </data>
+  <data name="StoreUnavailableTitle" xml:space="preserve">
+    <value>ストアに接続できません</value>
+  </data>
+  <data name="StoreUnavailableText" xml:space="preserve">
+    <value>Google Play に接続できませんでした。インターネット接続を確かめて、もう一度お試しください。</value>
+  </data>
+  <data name="PurchaseNotFoundTitle" xml:space="preserve">
+    <value>購入が見つかりません</value>
+  </data>
+  <data name="PurchaseNotFoundText" xml:space="preserve">
+    <value>この Google アカウントにはまだ完全版がありません。支払いを済ませたばかりなら、少し待ってからお試しください。</value>
+  </data>
+  <data name="ChapterInFullVersion" xml:space="preserve">
+    <value>この章は物語の完全版に含まれています。</value>
+  </data>
+  <data name="RecapTitle" xml:space="preserve">
+    <value>これまでのあらすじ</value>
+  </data>
+  <data name="RecapChoices" xml:space="preserve">
+    <value>最近の選択：</value>
+  </data>
+  <data name="ReadOn" xml:space="preserve">
+    <value>続きを読む</value>
+  </data>
+  <data name="ReadOnDescription" xml:space="preserve">
+    <value>あらすじを閉じて続きを読む</value>
+  </data>
+  <data name="StoryBookTitle" xml:space="preserve">
+    <value>物語の書</value>
+  </data>
+  <data name="ChaptersHeader" xml:space="preserve">
+    <value>章</value>
+  </data>
+  <data name="ChaptersHint" xml:space="preserve">
+    <value>物語がすでにたどり着いた章からなら、やり直すことができます。</value>
+  </data>
+  <data name="EndingsHeader" xml:space="preserve">
+    <value>結末</value>
+  </data>
+  <data name="EndingsSummary" xml:space="preserve">
+    <value>発見済み：{1}のうち{0}</value>
+  </data>
+  <data name="Undiscovered" xml:space="preserve">
+    <value>？ ？ ？</value>
+  </data>
+  <data name="PrologueNumeral" xml:space="preserve">
+    <value>序</value>
+  </data>
+  <data name="ChapterConfirm" xml:space="preserve">
+    <value>この章からやり直しますか？　保存した物語は、湿地の足跡のように消えてしまいます。</value>
+  </data>
+  <data name="ChapterYes" xml:space="preserve">
+    <value>はい、この章から</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="TextSample" xml:space="preserve">
+    <value>東からは森が迫っていた。古い針葉樹の森で、あまりに深く茂っているため、昼でさえ木々が暗く冷たい影を落としていた。</value>
+  </data>
+  <data name="TextSizeSmall" xml:space="preserve">
+    <value>文字：小</value>
+  </data>
+  <data name="TextSizeMedium" xml:space="preserve">
+    <value>文字：中</value>
+  </data>
+  <data name="TextSizeLarge" xml:space="preserve">
+    <value>文字：大</value>
+  </data>
+  <data name="ParallaxHint" xml:space="preserve">
+    <value>スマートフォンを傾けると、背景が少し動きます。</value>
+  </data>
+  <data name="ParallaxOn" xml:space="preserve">
+    <value>背景の動き：あり</value>
+  </data>
+  <data name="ParallaxOff" xml:space="preserve">
+    <value>背景の動き：なし</value>
+  </data>
+  <data name="LanguageButton" xml:space="preserve">
+    <value>言語：{0}</value>
+  </data>
+  <data name="LanguageDevice" xml:space="preserve">
+    <value>端末の設定どおり</value>
+  </data>
+  <data name="LanguageDeviceOption" xml:space="preserve">
+    <value>端末の設定どおり</value>
+  </data>
+</root>
