@@ -1,0 +1,96 @@
+<en-US>
+The first release of Little village – a dark Slavic folk tale.
+• A prologue and 20 chapters, different endings depending on your choices
+• Hand-drawn scenes that come alive as you read
+• Jaromir's notes on the creatures you meet
+• 10 languages
+The prologue and the first four chapters are free; the rest of the story is a single purchase, with no ads and no subscription.
+</en-US>
+<cs-CZ>
+První vydání hry Little village – temné slovanské pohádky.
+• Prolog a 20 kapitol, různé konce podle tvých rozhodnutí
+• Ručně kreslené scény, které při čtení ožívají
+• Jaromirovy zápisky o bytostech, které potkáš
+• 10 jazyků
+Prolog a první čtyři kapitoly jsou zdarma, zbytek příběhu odemkne jednorázový nákup – bez reklam a bez předplatného.
+</cs-CZ>
+<de-DE>
+Die erste Ausgabe von Little village – ein düsteres slawisches Volksmärchen.
+• Ein Prolog und 20 Kapitel, verschiedene Enden je nach deinen Entscheidungen
+• Handgezeichnete Szenen, die beim Lesen lebendig werden
+• Jaromirs Aufzeichnungen über die Gestalten, denen du begegnest
+• 10 Sprachen
+Der Prolog und die ersten vier Kapitel sind kostenlos, den Rest schaltest du mit einem einmaligen Kauf frei – ohne Werbung und ohne Abo.
+</de-DE>
+<es-419>
+La primera versión de Little village, un oscuro cuento popular eslavo.
+• Un prólogo y 20 capítulos, con distintos finales según tus decisiones
+• Escenas dibujadas a mano que cobran vida mientras lees
+• Las notas de Jaromir sobre las criaturas que vas conociendo
+• 10 idiomas
+El prólogo y los cuatro primeros capítulos son gratis; el resto de la historia se desbloquea con una sola compra, sin anuncios ni suscripción.
+</es-419>
+<es-ES>
+La primera versión de Little village, un oscuro cuento popular eslavo.
+• Un prólogo y 20 capítulos, con distintos finales según tus decisiones
+• Escenas dibujadas a mano que cobran vida mientras lees
+• Los apuntes de Jaromir sobre las criaturas que te encuentras
+• 10 idiomas
+El prólogo y los cuatro primeros capítulos son gratuitos; el resto de la historia se desbloquea con una única compra, sin anuncios ni suscripción.
+</es-ES>
+<fr-FR>
+La première version de Little village, un sombre conte populaire slave.
+• Un prologue et 20 chapitres, plusieurs fins selon tes choix
+• Des scènes dessinées à la main qui s’animent pendant la lecture
+• Les notes de Jaromir sur les créatures que tu rencontres
+• 10 langues
+Le prologue et les quatre premiers chapitres sont gratuits ; la suite se débloque par un achat unique, sans publicité ni abonnement.
+</fr-FR>
+<it-IT>
+La prima versione di Little village, un’oscura fiaba popolare slava.
+• Un prologo e 20 capitoli, con finali diversi a seconda delle tue scelte
+• Scene disegnate a mano che prendono vita mentre leggi
+• Gli appunti di Jaromir sulle creature che incontri
+• 10 lingue
+Il prologo e i primi quattro capitoli sono gratuiti; il resto della storia si sblocca con un unico acquisto, senza pubblicità né abbonamento.
+</it-IT>
+<ja-JP>
+『Little village』最初のリリースです。スラヴの民話に根ざした暗い物語。
+・序章と二十の章、選択によって変わるさまざまな結末
+・読み進めるうちに動きだす、手描き風の情景
+・出会った存在を記したヤロミルの覚え書き
+・十の言語に対応
+序章と最初の四章は無料。残りの物語は一度きりの購入で解放されます。広告も定期購入もありません。
+</ja-JP>
+<pl-PL>
+Pierwsze wydanie gry Mała wioska – mrocznej słowiańskiej baśni.
+• Prolog i 20 rozdziałów, różne zakończenia zależnie od Twoich wyborów
+• Ręcznie rysowane sceny, które ożywają podczas czytania
+• Zapiski Jaromira o istotach, które spotkasz
+• 10 języków
+Prolog i pierwsze cztery rozdziały są za darmo, resztę opowieści odblokowuje jednorazowy zakup – bez reklam i bez abonamentu.
+</pl-PL>
+<pt-BR>
+O primeiro lançamento de Little village, um sombrio conto popular eslavo.
+• Um prólogo e 20 capítulos, com finais diferentes conforme suas escolhas
+• Cenas desenhadas à mão que ganham vida enquanto você lê
+• As anotações de Jaromir sobre as criaturas que você encontra
+• 10 idiomas
+O prólogo e os quatro primeiros capítulos são gratuitos; o resto da história é liberado com uma única compra, sem anúncios e sem assinatura.
+</pt-BR>
+<pt-PT>
+O primeiro lançamento de Little village, um sombrio conto popular eslavo.
+• Um prólogo e 20 capítulos, com finais diferentes consoante as tuas escolhas
+• Cenas desenhadas à mão que ganham vida enquanto lês
+• As notas de Jaromir sobre as criaturas que encontras
+• 10 idiomas
+O prólogo e os quatro primeiros capítulos são gratuitos; o resto da história desbloqueia-se com uma única compra, sem anúncios nem subscrição.
+</pt-PT>
+<sk>
+Prvé vydanie hry Little village – temnej slovanskej rozprávky.
+• Prológ a 20 kapitol, rôzne konce podľa tvojich rozhodnutí
+• Ručne kreslené scény, ktoré pri čítaní ožívajú
+• Jaromirove zápisky o bytostiach, ktoré stretneš
+• 10 jazykov
+Prológ a prvé štyri kapitoly sú zadarmo, zvyšok príbehu odomkne jednorazový nákup – bez reklám a bez predplatného.
+</sk>
