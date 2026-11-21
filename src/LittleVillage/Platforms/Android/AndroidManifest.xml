@@ -3,4 +3,7 @@
 	<application android:label="@string/app_name" android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true"></application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- Gra jest zablokowana w pionie (MainActivity), ale ekran pionowy nie może być wymaganiem do instalacji —
+	     inaczej Google Play ukrywa ją przed tabletami, Chromebookami i Google Play Games na PC. -->
+	<uses-feature android:name="android.hardware.screen.portrait" android:required="false" />
 </manifest>
